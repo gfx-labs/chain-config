@@ -1,5 +1,5 @@
 import { optimism as chain } from 'viem/chains'
-import { IChainInfo } from '../../chainInfo'
+import { IChainInfo } from '..'
 
 export const optimism: IChainInfo = {
   ...chain,

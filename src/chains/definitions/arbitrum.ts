@@ -1,5 +1,5 @@
 import { arbitrum as chain } from 'viem/chains'
-import { IChainInfo } from '../../chainInfo'
+import { IChainInfo } from '..'
 
 export const arbitrum: IChainInfo = {
   ...chain,

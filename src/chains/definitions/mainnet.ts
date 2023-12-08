@@ -1,5 +1,5 @@
 import { mainnet as chain } from 'viem/chains'
-import { IChainInfo } from '../../chainInfo'
+import { IChainInfo } from '..'
 
 export const mainnet: IChainInfo = {
   ...chain,

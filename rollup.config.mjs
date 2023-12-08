@@ -4,36 +4,6 @@ import rollupJson from '@rollup/plugin-json';
 import nodeGlobals from 'rollup-plugin-node-globals'
 import commonjs from '@rollup/plugin-commonjs';
 
-
-const browserConfig = {
-  input: 'src/index.ts',
-  output: [
-    {
-      file: 'dist/browser.js',
-      format: 'umd',
-      name: "oku-chains",
-    },
-    {
-      file: 'dist/index.mjs',
-      format: 'es',
-    },
-    {
-      file: 'dist/index-mjs.js',
-      format: 'es',
-    }
-  ],
-  plugins: [
-    typescript(),
-    nodeResolve({
-      browser: true,
-      jsnext: true,
-      preferBuiltins: true,
-    }),
-    rollupJson({ compact: true }),
-    nodeGlobals(),
-  ]
-}
-
 const nodeConfig = {
   input: 'src/index.ts',
   output: [
@@ -43,7 +13,6 @@ const nodeConfig = {
       name: "oku-chains",
     }
   ],
-  external: ["ws", "isomorphic-ws"],
   plugins: [
     typescript(),
     nodeResolve({
@@ -57,8 +26,6 @@ const nodeConfig = {
   ]
 }
 
-
 export default [
-  browserConfig,
   nodeConfig,
 ];

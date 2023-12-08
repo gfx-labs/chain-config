@@ -1,5 +1,5 @@
 import { rootstock as chain } from 'viem/chains'
-import { IChainInfo } from '../../chainInfo'
+import { IChainInfo } from '..'
 
 export const rootstock: IChainInfo = {
   ...chain,
