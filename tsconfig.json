@@ -16,7 +16,6 @@
     "strict": true,
     "esModuleInterop": true,
     "types": [
-      "mocha",
       "node"
     ]
   },
