@@ -1,0 +1,41 @@
+image: node:20
+
+.yarn-cache:
+  before_script:
+    - yarn install --immutable
+  cache:
+    paths:
+      - node_modules
+      - .yarn
+    key:
+      files:
+        - yarn.lock
+
+
+build:
+  stage: build
+  extends: .yarn-cache
+  script:
+    - yarn build
+  artifacts:
+    paths:
+      - dist
+
+test:
+  stage: test
+  extends: .yarn-cache
+  dependencies:
+    - build
+  script:
+    - yarn test
+
+deploy:
+  dependencies:
+    - build
+    - test
+  stage: deploy
+  extends: .yarn-cache
+  script:
+    - yarn semantic-release
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
