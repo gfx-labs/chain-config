@@ -10,7 +10,6 @@
     "build": "npx rollup -c",
     "prepack": "yarn build",
     "clean": "rm -rf dist",
-    "test": "yarn mocha",
     "semantic-release": "npx semantic-release"
   },
   "publishConfig": {

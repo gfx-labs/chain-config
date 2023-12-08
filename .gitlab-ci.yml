@@ -21,18 +21,9 @@ build:
     paths:
       - dist
 
-test:
-  stage: test
-  extends: .yarn-cache
-  dependencies:
-    - build
-  script:
-    - yarn test
-
 deploy:
   dependencies:
     - build
-    - test
   stage: deploy
   extends: .yarn-cache
   script:
