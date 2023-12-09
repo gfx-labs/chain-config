@@ -1,6 +1,6 @@
 {
   "name": "@gfxlabs/oku-chains",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "main": "./dist/index.js",
   "module": "./dist/index-mjs.js",
@@ -10,7 +10,9 @@
     "build": "npx rollup -c",
     "prepack": "yarn build",
     "clean": "rm -rf dist",
-    "semantic-release": "npx semantic-release"
+    "semantic-release": "npx semantic-release",
+    "bump": "npm version patch",
+    "publish": "npm publish --access=public"
   },
   "publishConfig": {
     "access": "public"
