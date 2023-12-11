@@ -1,6 +1,6 @@
 {
   "name": "@gfxlabs/oku-chains",
-  "version": "0.0.3",
+  "version": "0.0.8",
   "license": "MIT",
   "main": "./dist/index.js",
   "types": "./dist/types/index.d.ts",
@@ -21,7 +21,6 @@
   "devDependencies": {
     "@rollup/plugin-commonjs": "^25.0.4",
     "@rollup/plugin-json": "^6.0.0",
-    "@rollup/plugin-node-resolve": "^15.0.1",
     "@rollup/plugin-typescript": "^11.0.0",
     "@semantic-release/git": "^10.0.1",
     "@semantic-release/gitlab": "^9.0.1",
