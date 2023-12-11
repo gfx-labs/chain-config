@@ -1,6 +1,6 @@
 {
   "name": "@gfxlabs/oku-chains",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "license": "MIT",
   "main": "./dist/index.js",
   "types": "./dist/types/index.d.ts",
@@ -34,7 +34,8 @@
     "semantic-release-monorepo": "^7.0.5",
     "ts-node": "^10.9.1",
     "tslib": "^2.5.0",
-    "typescript": "^5.0.4"
+    "typescript": "^5.0.4",
+    "viem": "^1.19.13"
   },
   "packageManager": "yarn@4.0.2",
   "dependencies": {
