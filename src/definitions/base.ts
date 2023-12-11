@@ -1,7 +1,7 @@
 import { base as chain } from 'viem/chains'
 import { IChainInfo } from '..'
 
-export const boba: IChainInfo = {
+export const base: IChainInfo = {
   ...chain,
   blockTimeSeconds: 2,
   logoUrl: 'https://assets.oku.trade/base-logo.svg',

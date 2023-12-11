@@ -74,6 +74,7 @@ __metadata:
     "@semantic-release/gitlab": "npm:^9.0.1"
     "@semantic-release/npm": "npm:^9.0.2"
     "@types/node": "npm:^20.6.3"
+    barrelsby: "npm:^2.8.1"
     conventional-changelog-conventionalcommits: "npm:^7.0.2"
     rollup: "npm:^3.18.0"
     rollup-plugin-node-globals: "npm:^1.4.0"
@@ -915,6 +916,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/yargs-parser@npm:*":
+  version: 21.0.3
+  resolution: "@types/yargs-parser@npm:21.0.3"
+  checksum: e71c3bd9d0b73ca82e10bee2064c384ab70f61034bbfb78e74f5206283fc16a6d85267b606b5c22cb2a3338373586786fed595b2009825d6a9115afba36560a0
+  languageName: node
+  linkType: hard
+
+"@types/yargs@npm:^17.0.10":
+  version: 17.0.32
+  resolution: "@types/yargs@npm:17.0.32"
+  dependencies:
+    "@types/yargs-parser": "npm:*"
+  checksum: 2095e8aad8a4e66b86147415364266b8d607a3b95b4239623423efd7e29df93ba81bb862784a6e08664f645cc1981b25fd598f532019174cd3e5e1e689e1cccf
+  languageName: node
+  linkType: hard
+
 "JSONStream@npm:^1.0.4":
   version: 1.3.5
   resolution: "JSONStream@npm:1.3.5"
@@ -1167,6 +1184,19 @@ __metadata:
   version: 1.0.2
   resolution: "balanced-match@npm:1.0.2"
   checksum: 9308baf0a7e4838a82bbfd11e01b1cb0f0cf2893bc1676c27c2a8c0e70cbae1c59120c3268517a8ae7fb6376b4639ef81ca22582611dbee4ed28df945134aaee
+  languageName: node
+  linkType: hard
+
+"barrelsby@npm:^2.8.1":
+  version: 2.8.1
+  resolution: "barrelsby@npm:2.8.1"
+  dependencies:
+    "@types/yargs": "npm:^17.0.10"
+    signale: "npm:^1.4.0"
+    yargs: "npm:^17.4.1"
+  bin:
+    barrelsby: bin/cli.js
+  checksum: a326d39d5e78e803dd0fb25c9a36bbf8d0a4dcc0a161063d9d71bb6840f55712bbf42cc75c0204bcdb70e7be85f59aabe2667df0998025fd361cfe18b46d1b7b
   languageName: node
   linkType: hard
 
@@ -5170,7 +5200,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"signale@npm:^1.2.1":
+"signale@npm:^1.2.1, signale@npm:^1.4.0":
   version: 1.4.0
   resolution: "signale@npm:1.4.0"
   dependencies:
@@ -6013,7 +6043,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yargs@npm:^17.5.1":
+"yargs@npm:^17.4.1, yargs@npm:^17.5.1":
   version: 17.7.2
   resolution: "yargs@npm:17.7.2"
   dependencies:

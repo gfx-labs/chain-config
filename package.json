@@ -1,11 +1,12 @@
 {
   "name": "@gfxlabs/oku-chains",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "license": "MIT",
   "main": "./dist/index.js",
   "types": "./dist/types/index.d.ts",
   "scripts": {
-    "build": "npx rollup -c",
+    "generate-barrels": "barrelsby --delete --directory './src/definitions/'",
+    "build": "yarn generate-barrels && npx rollup -c",
     "prepack": "yarn build",
     "clean": "rm -rf dist",
     "semantic-release": "npx semantic-release",
@@ -37,6 +38,7 @@
   },
   "packageManager": "yarn@4.0.2",
   "dependencies": {
+    "barrelsby": "^2.8.1",
     "viem": "^1.19.11"
   }
 }

@@ -1,15 +1,6 @@
 import { Chain, ChainContract } from 'viem'
 
-export { optimism } from './definitions/optimism.js'
-export { arbitrum } from './definitions/arbitrum.js'
-export { bsc } from './definitions/bsc.js'
-export { boba } from './definitions/boba.js'
-export { moonbeam } from './definitions/moonbeam.js'
-export { filecoin } from './definitions/filecoin.js'
-export { zkSync } from './definitions/zksync.js'
-export { polygon } from './definitions/polygon.js'
-export { mainnet } from './definitions/mainnet.js'
-export { rootstock } from './definitions/rootstock.js'
+export * from './definitions/'
 
 export interface IChainInfo extends Chain {
   logoUrl: string
