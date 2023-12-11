@@ -38,7 +38,10 @@
   },
   "packageManager": "yarn@4.0.2",
   "dependencies": {
-    "barrelsby": "^2.8.1",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "barrelsby": "^2.8.1"
+  },
+  "peerDependencies": {
     "viem": "^1.19.11"
   }
 }

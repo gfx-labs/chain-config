@@ -1,4 +1,5 @@
 import typescript from '@rollup/plugin-typescript';
+import { nodeResolve } from '@rollup/plugin-node-resolve';
 import rollupJson from '@rollup/plugin-json';
 import nodeGlobals from 'rollup-plugin-node-globals'
 import commonjs from '@rollup/plugin-commonjs';
@@ -6,11 +7,12 @@ import commonjs from '@rollup/plugin-commonjs';
 
 const browserConfig = {
   input: 'src/index.ts',
+  external: ["viem", "viem/chains"],
   output: [
     {
       file: 'dist/browser.js',
       format: 'umd',
-      name: "jsrpc",
+      name: "oku-chains",
     },
     {
       file: 'dist/index.mjs',
@@ -23,6 +25,11 @@ const browserConfig = {
   ],
   plugins: [
     typescript(),
+    nodeResolve({
+      browser: true,
+      jsnext: true,
+      preferBuiltins: true,
+    }),
     rollupJson({ compact: true }),
     nodeGlobals(),
   ]
@@ -34,12 +41,17 @@ const nodeConfig = {
     {
       file: 'dist/index.js',
       format: 'cjs',
-      name: "jsrpc",
+      name: "oku-chains",
     }
   ],
-  external: ["ws", "isomorphic-ws"],
+  external: ["viem", "viem/chains"],
   plugins: [
     typescript(),
+    nodeResolve({
+      browser: false,
+      jsnext: true,
+      preferBuiltins: true,
+    }),
     rollupJson({ compact: true }),
     nodeGlobals(),
     commonjs({}),
