@@ -86,7 +86,7 @@ __metadata:
     typescript: "npm:^5.0.4"
     viem: "npm:^1.19.13"
   peerDependencies:
-    viem: ^1.19.11
+    viem: ^1.19.13
   languageName: unknown
   linkType: soft
 
