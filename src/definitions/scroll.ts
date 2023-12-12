@@ -5,7 +5,7 @@ export const scroll: IChainInfo = {
   ...chain,
   blockTimeSeconds: 3,
   logoUrl: 'https://assets.oku.trade/scroll-logo.png',
-  defaultPool: '0xff577f0e828a878743ecc5e2632cbf65cecf17cf',
+  defaultPool: '0x7211c32bfc1841cab1158d18fee62c9b8905ddfe',
   defaultToken0: '0x06efdbff2a14a7c8e15944d1f4a48f9f95f663a4',
   defaultToken1: '0x5300000000000000000000000000000000000004',
   tokenList: [
@@ -17,7 +17,9 @@ export const scroll: IChainInfo = {
   ],
   stables: ['0x06efdbff2a14a7c8e15944d1f4a48f9f95f663a4', '0xf55bec9cafdbe8730f096aa55dad6d22d44099df', '0xca77eb3fefe3725dc33bccb54edefc3d9f764f97'],
   watchlist: [
-    '0xff577f0e828a878743ecc5e2632cbf65cecf17cf',
+    '0x7211c32bfc1841cab1158d18fee62c9b8905ddfe',
+    '0xa2a37b632fe6a1cce7a7874a65f9e4ce62c7f05a',
+    '0xba63cb90f7b46e2b163e8c8adf57cf8b2a73500e',
   ],
   internalName: 'scroll',
   contracts: {
