@@ -1,1 +1,1 @@
-chains
+chain configs
