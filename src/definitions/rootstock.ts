@@ -13,8 +13,8 @@ export const rootstock: IChainInfo = {
     { symbol: 'RIF', address: '0x2acc95758f8b5f583470ba265eb685a8f45fc9d5' },
     { symbol: 'RUSDT', address: '0xef213441a85df4d7acbdae0cf78004e1e486bb96' },
   ],
-  stables: ['0xef213441a85df4d7acbdae0cf78004e1e486bb96'],
-  watchlist: ['0xdc72fed793f1e660ba6096948ea27b0490218ca3'],
+  stables: ['0xef213441a85df4d7acbdae0cf78004e1e486bb96', '0x3a15461d8ae0f0fb5fa2629e9da7d66a794a6e37'],
+  watchlist: ['0xd2ffe51ab4e622a411abbe634832a19d919e9c55', '0x022650756421f2e636d4138054331cbfafb55d9e', '0x549a5d92412161a1a2828549a657a49dd9fa046c', '0xcba7abe98fd6a65259837d76a3409841c1dd4288'],
   blockExplorers: {
     ...chain.blockExplorers,
     default: chain.blockExplorers.blockscout,
