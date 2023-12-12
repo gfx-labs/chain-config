@@ -5,7 +5,7 @@ export const rootstock: IChainInfo = {
   ...chain,
   blockTimeSeconds: 33,
   logoUrl: 'https://assets.oku.trade/rootstock-logo.svg',
-  defaultPool: '0xdc72fed793f1e660ba6096948ea27b0490218ca3',
+  defaultPool: '0xd2ffe51ab4e622a411abbe634832a19d919e9c55',
   defaultToken0: '0x542fda317318ebf1d3deaf76e0b632741a7e677d',
   defaultToken1: '0xef213441a85df4d7acbdae0cf78004e1e486bb96',
   tokenList: [
