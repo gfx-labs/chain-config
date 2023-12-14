@@ -21,6 +21,7 @@ export const optimism: IChainInfo = {
     '0x8aE125E8653821E851F12A49F7765db9a9ce7384',
     '0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1',
     '0x7f5c764cbc14f9669b88837ca1490cca17c31607',
+    '0x0b2c639c533813f4aa9d7837caf62653d097ff85',
   ],
   watchlist: [
     '0xb589969d38ce76d3d7aa319de7133bc9755fd840',
