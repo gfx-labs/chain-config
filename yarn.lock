@@ -84,9 +84,9 @@ __metadata:
     ts-node: "npm:^10.9.1"
     tslib: "npm:^2.5.0"
     typescript: "npm:^5.0.4"
-    viem: "npm:^1.19.13"
+    viem: "npm:^1.20.0"
   peerDependencies:
-    viem: ^1.19.13
+    viem: ^1.20.0
   languageName: unknown
   linkType: soft
 
@@ -5896,9 +5896,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"viem@npm:^1.19.13":
-  version: 1.19.13
-  resolution: "viem@npm:1.19.13"
+"viem@npm:^1.20.0":
+  version: 1.20.0
+  resolution: "viem@npm:1.20.0"
   dependencies:
     "@adraffy/ens-normalize": "npm:1.10.0"
     "@noble/curves": "npm:1.2.0"
@@ -5913,7 +5913,7 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: b08cfbd11a5f8af458042e622bb3ea5273c4ea98a8962ff11f3c80308fe608d03c38d5729c5702d2c3d4ffd73d26e2c4daa97d793dd4cf41292f2eee8443b0c3
+  checksum: e941b8af25e5ce82156e67145d9a8a3f98f33eff701a8e56fb1f02b883eefc67ef77fc2f31d20b21f51d1242fdf60caf3cd49b78d98e424117a79719b2acbf52
   languageName: node
   linkType: hard
 
