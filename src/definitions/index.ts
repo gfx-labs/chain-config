@@ -13,4 +13,5 @@ export * from "./optimism";
 export * from "./polygon";
 export * from "./rootstock";
 export * from "./scroll";
+export * from "./zkevm";
 export * from "./zksync";
