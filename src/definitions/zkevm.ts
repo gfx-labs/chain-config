@@ -3,6 +3,7 @@ import { IChainInfo } from '..'
 
 export const polygonZkEvm: IChainInfo = {
   ...chain,
+  sortIndex: 6,
   blockTimeSeconds: 7,
   logoUrl: 'https://assets.oku.trade/zkevm-logo.svg',
   defaultPool: '0xd2c7e323c6f5415dc0ee4e3811901b3380d316fd',

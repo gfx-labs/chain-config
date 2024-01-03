@@ -3,6 +3,7 @@ import { IChainInfo } from '..'
 
 export const scroll: IChainInfo = {
   ...chain,
+  sortIndex: 5,
   blockTimeSeconds: 3,
   logoUrl: 'https://assets.oku.trade/scroll-logo.png',
   defaultPool: '0x813df550a32d4a9d42010d057386429ad2328ed9',

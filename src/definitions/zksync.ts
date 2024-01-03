@@ -4,6 +4,7 @@ import { IChainInfo } from '..'
 export const zkSync: IChainInfo = {
   ...chain,
   blockTimeSeconds: 2,
+  sortIndex: 4,
   logoUrl: 'https://assets.oku.trade/zksync-logo.svg',
   defaultPool: '0xff577f0e828a878743ecc5e2632cbf65cecf17cf',
   defaultToken0: '0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4',

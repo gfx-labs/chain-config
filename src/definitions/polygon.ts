@@ -4,6 +4,7 @@ import { IChainInfo } from '..'
 export const polygon: IChainInfo = {
   ...chain,
   blockTimeSeconds: 2,
+  sortIndex: 3, 
   logoUrl: 'https://assets.oku.trade/polygon-logo.webp',
   defaultPool: '0xa374094527e1673a86de625aa59517c5de346d32',
   defaultToken0: '0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270',

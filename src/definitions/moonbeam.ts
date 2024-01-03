@@ -3,6 +3,7 @@ import { IChainInfo } from '..'
 
 export const moonbeam: IChainInfo = {
   ...chain,
+  sortIndex: 12,
   blockTimeSeconds: 30,
   logoUrl: 'https://assets.oku.trade/moonbeam-logo.svg',
   defaultPool: '0xba66370d96a9d61afa66283900b78c1f6ed02782',

@@ -4,6 +4,7 @@ import { IChainInfo } from '..'
 export const optimism: IChainInfo = {
   ...chain,
   blockTimeSeconds: 0.5,
+  sortIndex: 2,
   logoUrl: 'https://assets.oku.trade/optimism-logo.svg',
   defaultPool: '0x1c3140ab59d6caf9fa7459c6f83d4b52ba881d36',
   defaultToken0: '0x4200000000000000000000000000000000000042',

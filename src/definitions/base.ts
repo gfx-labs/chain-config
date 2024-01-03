@@ -3,6 +3,7 @@ import { IChainInfo } from '..'
 
 export const base: IChainInfo = {
   ...chain,
+  sortIndex: 8,
   blockTimeSeconds: 2,
   logoUrl: 'https://assets.oku.trade/base-logo.svg',
   defaultPool: '0x9e37cb775a047ae99fc5a24dded834127c4180cd',

@@ -3,6 +3,7 @@ import { IChainInfo } from '..'
 
 export const arbitrum: IChainInfo = {
   ...chain,
+  sortIndex: 1,
   blockTimeSeconds: 0.25,
   logoUrl: 'https://assets.oku.trade/arbitrum-logo.svg',
   defaultPool: '0xcda53b1f66614552f834ceef361a8d12a0b8dad8',

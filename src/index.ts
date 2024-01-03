@@ -4,6 +4,7 @@ export * from './definitions/'
 
 export interface IChainInfo extends Chain {
   logoUrl: string
+  sortIndex: number
   defaultPool: string
   internalName: string
   defaultToken0: string

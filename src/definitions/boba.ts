@@ -3,6 +3,7 @@ import { IChainInfo } from '..'
 
 export const boba: IChainInfo = {
   ...chain,
+  sortIndex: 11,
   blockTimeSeconds: 300,
   logoUrl: 'https://assets.oku.trade/boba-logo.svg',
   defaultPool: '0xdF37543dae7986E48E3ce83F390A828A9F3D23BA',

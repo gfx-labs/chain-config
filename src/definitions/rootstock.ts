@@ -3,6 +3,7 @@ import { IChainInfo } from '..'
 
 export const rootstock: IChainInfo = {
   ...chain,
+  sortIndex: 7,
   name: "Rootstock",
   blockTimeSeconds: 33,
   logoUrl: 'https://assets.oku.trade/rootstock-logo.svg',

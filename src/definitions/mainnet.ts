@@ -3,6 +3,7 @@ import { IChainInfo } from '..'
 
 export const mainnet: IChainInfo = {
   ...chain,
+  sortIndex: 0,
   blockTimeSeconds: 15,
   logoUrl: 'https://assets.oku.trade/ethereum-logo.webp',
   defaultPool: '0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640',

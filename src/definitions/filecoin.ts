@@ -3,6 +3,7 @@ import { IChainInfo } from '..'
 
 export const filecoin: IChainInfo = {
   ...chain,
+  sortIndex: 10,
   name: "Filecoin",
   blockTimeSeconds: 30,
   blockExplorers: {
