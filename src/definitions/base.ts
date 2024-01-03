@@ -36,5 +36,8 @@ export const base: IChainInfo = {
     weth9: {
       address: '0x4200000000000000000000000000000000000006',
     },
+    limitOrder: {
+      address: '0xff8b754c64e9a8473bd6e1118d0eac67f0a8ae27',
+    }
   },
 }
