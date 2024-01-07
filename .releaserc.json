@@ -1,32 +1,14 @@
 {
-  "branches": [
-    "master"
-  ],
+  "branches": ["master"],
   "plugins": [
+    ["@semantic-release/commit-analyzer",{"preset": "conventionalcommits"}],
+    ["@semantic-release/release-notes-generator",{"preset": "conventionalcommits"} ],
+    ["@semantic-release/gitlab",{
+      "gitlabUrl": "https://gfx.cafe"
+    }],
+    ["@semantic-release/npm"],
     [
-      "@semantic-release/commit-analyzer",
-      {
-        "preset": "conventionalcommits"
-      }
-    ],
-    [
-      "@semantic-release/release-notes-generator",
-      {
-        "preset": "conventionalcommits"
-      }
-    ],
-    [
-      "@semantic-release/gitlab",
-      {
-        "gitlabUrl": "https://gfx.cafe"
-      }
-    ],
-    [
-      "@semantic-release/npm"
-    ],
-    [
-      "@semantic-release/git",
-      {
+      "@semantic-release/git", {
         "assets": [
           "package.json",
           "dist/**/*.{js,mjs,d.ts}"
