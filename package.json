@@ -5,10 +5,10 @@
   "main": "./dist/index.js",
   "types": "./dist/types/index.d.ts",
   "scripts": {
+    "clean": "rm -rf dist",
     "generate-barrels": "barrelsby --delete --directory './src/definitions/'",
     "build": "yarn generate-barrels && npx rollup -c",
     "prepack": "yarn build",
-    "clean": "rm -rf dist",
     "semantic-release": "npx semantic-release",
     "bump": "npm version patch",
     "publish": "npm publish --access=public"
