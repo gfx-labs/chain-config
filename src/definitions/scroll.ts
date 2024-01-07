@@ -34,4 +34,4 @@ export const scroll: IChainInfo = {
       address: '0x5300000000000000000000000000000000000004',
     },
   },
-}
+} as const

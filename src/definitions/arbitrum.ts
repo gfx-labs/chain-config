@@ -74,4 +74,4 @@ export const arbitrum: IChainInfo = {
       address: '0x82af49447d8a07e3bd95bd0d56f35241523fbab1',
     },
   },
-}
+} as const

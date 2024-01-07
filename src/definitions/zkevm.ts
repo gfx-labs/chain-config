@@ -30,4 +30,4 @@ export const polygonZkEvm: IChainInfo = {
       address: '0x4f9a0e7fd2bf6067db6994cf12e4495df938e6e9',
     },
   },
-}
+} as const

@@ -44,4 +44,4 @@ export const filecoin: IChainInfo = {
       address: '0x60E1773636CF5E4A227d9AC24F20fEca034ee25A',
     },
   },
-}
+} as const

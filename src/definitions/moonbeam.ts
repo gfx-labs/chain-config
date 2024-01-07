@@ -39,4 +39,4 @@ export const moonbeam: IChainInfo = {
       address: '0xacc15dc74880c9944775448304b263d191c6077f',
     },
   },
-}
+} as const

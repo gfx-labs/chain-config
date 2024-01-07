@@ -41,4 +41,4 @@ export const boba: IChainInfo = {
       address: '0xdeaddeaddeaddeaddeaddeaddeaddeaddead0000',
     },
   },
-}
+} as const

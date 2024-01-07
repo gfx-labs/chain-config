@@ -34,4 +34,4 @@ export const rootstock: IChainInfo = {
       address: '0x542fDA317318eBF1d3DEAf76E0b632741A7e677d',
     },
   },
-}
+} as const
