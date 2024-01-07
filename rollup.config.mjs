@@ -13,6 +13,9 @@ const browserConfig = {
       file: 'dist/browser.js',
       format: 'umd',
       name: "oku-chains",
+      globals: {
+        'viem/chains':'chains',
+      },
     },
     {
       file: 'dist/index.mjs',
