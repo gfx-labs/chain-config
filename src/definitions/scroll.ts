@@ -1,7 +1,6 @@
 import { scroll as chain } from 'viem/chains'
-import { IChainInfo } from '..'
 
-export const scroll: IChainInfo = {
+export const scroll = {
   ...chain,
   sortIndex: 5,
   blockTimeSeconds: 3,
