@@ -25,7 +25,6 @@ export interface IChainInfo extends Chain {
   }
 }
 
-
 export const MAINNET_CHAINS = [
   defs.arbitrum,
   defs.base,
