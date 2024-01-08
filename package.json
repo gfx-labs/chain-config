@@ -11,6 +11,7 @@
     "prepack": "yarn build",
     "semantic-release": "npx semantic-release",
     "bump": "npm version patch",
+    "prepublish":"yarn build",
     "publish": "npm publish --access=public"
   },
   "publishConfig": {
