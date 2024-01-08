@@ -9,10 +9,7 @@
     "generate-barrels": "barrelsby --delete --directory './src/definitions/'",
     "build": "yarn generate-barrels && npx rollup -c",
     "prepack": "yarn build",
-    "semantic-release": "npx semantic-release",
-    "bump": "npm version patch",
-    "prepublish": "yarn build",
-    "publish": "npm publish --access=public"
+    "semantic-release": "npx semantic-release"
   },
   "publishConfig": {
     "access": "public"
