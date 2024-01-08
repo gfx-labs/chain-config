@@ -1,6 +1,6 @@
 {
   "name": "@gfxlabs/oku-chains",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "license": "MIT",
   "main": "./dist/index.js",
   "types": "./dist/types/index.d.ts",
@@ -11,7 +11,7 @@
     "prepack": "yarn build",
     "semantic-release": "npx semantic-release",
     "bump": "npm version patch",
-    "prepublish":"yarn build",
+    "prepublish": "yarn build",
     "publish": "npm publish --access=public"
   },
   "publishConfig": {
