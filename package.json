@@ -15,7 +15,7 @@
     "access": "public"
   },
   "files": [
-    "dist/**/*"
+    "dist"
   ],
   "devDependencies": {
     "@rollup/plugin-commonjs": "^25.0.7",
