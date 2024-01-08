@@ -1,7 +1,6 @@
 import { filecoin as chain } from 'viem/chains'
-import { IChainInfo } from '..'
 
-export const filecoin: IChainInfo = {
+export const filecoin = {
   ...chain,
   sortIndex: 10,
   name: "Filecoin",

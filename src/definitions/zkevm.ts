@@ -1,7 +1,6 @@
 import { polygonZkEvm as chain } from 'viem/chains'
-import { IChainInfo } from '..'
 
-export const polygonZkEvm: IChainInfo = {
+export const polygonZkEvm = {
   ...chain,
   sortIndex: 6,
   blockTimeSeconds: 7,

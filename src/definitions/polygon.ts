@@ -1,7 +1,6 @@
 import { polygon as chain } from 'viem/chains'
-import { IChainInfo } from '..'
 
-export const polygon: IChainInfo = {
+export const polygon = {
   ...chain,
   blockTimeSeconds: 2,
   sortIndex: 3,

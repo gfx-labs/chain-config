@@ -1,7 +1,6 @@
 import { boba as chain } from 'viem/chains'
-import { IChainInfo } from '..'
 
-export const boba: IChainInfo = {
+export const boba= {
   ...chain,
   sortIndex: 11,
   blockTimeSeconds: 300,

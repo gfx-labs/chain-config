@@ -1,7 +1,6 @@
 import { optimism as chain } from 'viem/chains'
-import { IChainInfo } from '..'
 
-export const optimism: IChainInfo = {
+export const optimism = {
   ...chain,
   blockTimeSeconds: 0.5,
   sortIndex: 2,

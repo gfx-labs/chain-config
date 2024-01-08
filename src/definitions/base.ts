@@ -1,7 +1,6 @@
 import { base as chain } from 'viem/chains'
-import { IChainInfo } from '..'
 
-export const base: IChainInfo = {
+export const base = {
   ...chain,
   sortIndex: 8,
   blockTimeSeconds: 2,

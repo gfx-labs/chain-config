@@ -1,2 +1,65 @@
-import { IChainInfo } from '..';
-export declare const polygon: IChainInfo;
+export declare const polygon: {
+    readonly blockTimeSeconds: 2;
+    readonly sortIndex: 3;
+    readonly logoUrl: "https://assets.oku.trade/polygon-logo.webp";
+    readonly defaultPool: "0xa374094527e1673a86de625aa59517c5de346d32";
+    readonly defaultToken0: "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270";
+    readonly defaultToken1: "0x2791bca1f2de4661ed88a30c99a7a9449aa84174";
+    readonly tokenList: readonly [{
+        readonly symbol: "DAI";
+        readonly address: "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063";
+    }, {
+        readonly symbol: "USDT";
+        readonly address: "0xc2132d05d31c914a87c6611c10748aeb04b58e8f";
+    }, {
+        readonly symbol: "WETH";
+        readonly address: "0x7ceb23fd6bc0add59e62ac25578270cff1b9f619";
+    }, {
+        readonly symbol: "USDC";
+        readonly address: "0x2791bca1f2de4661ed88a30c99a7a9449aa84174";
+    }, {
+        readonly symbol: "WMATIC";
+        readonly address: "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270";
+    }];
+    readonly stables: readonly ["0x2791bca1f2de4661ed88a30c99a7a9449aa84174", "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063", "0xc2132d05d31c914a87c6611c10748aeb04b58e8f"];
+    readonly watchlist: readonly ["0x847b64f9d3a95e977d157866447a5c0a5dfa0ee5", "0x0e44ceb592acfc5d3f09d996302eb4c499ff8c10", "0x167384319b41f7094e62f7506409eb38079abff8", "0x94ab9e4553ffb839431e37cc79ba8905f45bfbea", "0x88f3c15523544835ff6c738ddb30995339ad57d6", "0x45dda9cb7c25131df268515131f647d726f50608", "0xa374094527e1673a86de625aa59517c5de346d32", "0x9b08288c3be4f62bbf8d1c20ac9c5e6f9467d8b7", "0x50eaedb835021e4a108b7290636d62e9765cc6d7", "0x86f1d8390222a3691c28938ec7404a1661e618e0", "0xeef1a9507b3d505f0062f2be9453981255b503c8", "0x1f6082db7c8f4b199e17090cd5c8831a1dad1997", "0xdac8a8e6dbf8c690ec6815e0ff03491b2770255d", "0x3a5329ee48a06671ad1bf295b8a233ee9b9b975e", "0x0a63d3910ffc1529190e80e10855c4216407cc45", "0x5645dcb64c059aa11212707fbf4e7f984440a8cf", "0x7de263d0ad6e5d208844e65118c3a02a9a5d56b6", "0x2aceda63b5e958c45bd27d916ba701bc1dc08f7a", "0x4d05f2a005e6f36633778416764e82d1d12e7fbb", "0x3d0acd52ee4a9271a0ffe75f9b91049152bac64b", "0x3e31ab7f37c048fc6574189135d108df80f0ea26", "0xd866fac7db79994d08c0ca2221fee08935595b4b", "0x98b9162161164de1ed182a0dfa08f5fbf0f733ca", "0x4ccd010148379ea531d6c587cfdd60180196f9b1", "0xfe343675878100b344802a6763fd373fdeed07a4", "0x357faf5843c7fd7fb4e34fbeabdac16eabe8a5bc"];
+    readonly internalName: "polygon";
+    readonly contracts: {
+        readonly nftManager: {
+            readonly address: "0xC36442b4a4522E871399CD717aBDD847Ab11FE88";
+        };
+        readonly limitOrder: {
+            readonly address: "0x54dF9e11c7933a9cA3BD1E540B63dA15edAe40bf";
+        };
+        readonly weth9: {
+            readonly address: "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270";
+        };
+        readonly multicall3: {
+            readonly address: "0xca11bde05977b3631167028862be2a173976ca11";
+            readonly blockCreated: 25770160;
+        };
+    };
+    readonly blockExplorers: {
+        readonly default: {
+            readonly name: "PolygonScan";
+            readonly url: "https://polygonscan.com";
+        };
+    };
+    readonly id: 137;
+    readonly name: "Polygon";
+    readonly nativeCurrency: {
+        readonly name: "MATIC";
+        readonly symbol: "MATIC";
+        readonly decimals: 18;
+    };
+    readonly rpcUrls: {
+        readonly default: {
+            readonly http: readonly ["https://polygon-rpc.com"];
+        };
+    };
+    readonly sourceId?: number | undefined;
+    readonly testnet?: boolean | undefined;
+    readonly formatters?: undefined;
+    readonly serializers?: import("viem").ChainSerializers<undefined> | undefined;
+    readonly fees?: import("viem").ChainFees<undefined> | undefined;
+};

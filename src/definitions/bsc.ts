@@ -1,7 +1,6 @@
 import { bsc as chain } from 'viem/chains'
-import { IChainInfo } from '..'
 
-export const bsc: IChainInfo = {
+export const bsc = {
   ...chain,
   sortIndex: 9,
   blockTimeSeconds: 3,

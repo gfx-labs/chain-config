@@ -1,7 +1,6 @@
 import { zkSync as chain } from 'viem/chains'
-import { IChainInfo } from '..'
 
-export const zkSync: IChainInfo = {
+export const zkSync = {
   ...chain,
   blockTimeSeconds: 2,
   sortIndex: 4,

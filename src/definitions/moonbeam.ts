@@ -1,7 +1,6 @@
 import { moonbeam as chain } from 'viem/chains'
-import { IChainInfo } from '..'
 
-export const moonbeam: IChainInfo = {
+export const moonbeam = {
   ...chain,
   sortIndex: 12,
   blockTimeSeconds: 30,

@@ -1,7 +1,6 @@
 import { mainnet as chain } from 'viem/chains'
-import { IChainInfo } from '..'
 
-export const mainnet: IChainInfo = {
+export const mainnet = {
   ...chain,
   sortIndex: 0,
   blockTimeSeconds: 15,

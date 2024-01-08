@@ -1,7 +1,6 @@
 import { arbitrum as chain } from 'viem/chains'
-import { IChainInfo } from '..'
 
-export const arbitrum: IChainInfo = {
+export const arbitrum = {
   ...chain,
   sortIndex: 1,
   blockTimeSeconds: 0.25,

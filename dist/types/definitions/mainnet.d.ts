@@ -1,2 +1,72 @@
-import { IChainInfo } from '..';
-export declare const mainnet: IChainInfo;
+export declare const mainnet: {
+    readonly sortIndex: 0;
+    readonly blockTimeSeconds: 15;
+    readonly logoUrl: "https://assets.oku.trade/ethereum-logo.webp";
+    readonly defaultPool: "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640";
+    readonly defaultToken0: "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48";
+    readonly defaultToken1: "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2";
+    readonly tokenList: readonly [{
+        readonly symbol: "DAI";
+        readonly address: "0x6b175474e89094c44da98b954eedeac495271d0f";
+    }, {
+        readonly symbol: "WBTC";
+        readonly address: "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599";
+    }, {
+        readonly symbol: "USDT";
+        readonly address: "0xdac17f958d2ee523a2206206994597c13d831ec7";
+    }, {
+        readonly symbol: "WETH";
+        readonly address: "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2";
+    }, {
+        readonly symbol: "USDC";
+        readonly address: "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48";
+    }];
+    readonly stables: readonly ["0x6B175474E89094C44Da98b954EedeAC495271d0F", "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48", "0xdAC17F958D2ee523a2206206994597C13D831ec7", "0x0000000000085d4780B73119b644AE5ecd22b376", "0x57Ab1ec28D129707052df4dF418D58a2D46d5f51", "0x956f47f50a910163d8bf957cf5846d573e7f87ca", "0x4Fabb145d64652a948d72533023f6E7A623C7C53", "0x853d955acef822db058eb8505911ed77f175b99e", "0x8E870D67F660D95d5be530380D0eC0bd388289E1", "0x5f98805A4E8be255a32880FDeC7F6728C6568bA0", "0x99d8a9c45b2eca8864373a26d1459e3dff1e17f3", "0x1a13f4ca1d028320a707d99520abfefca3998b7f"];
+    readonly watchlist: readonly ["0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8", "0x4e68ccd3e89f51c3074ca5072bbac773960dfa36", "0x99ac8ca7087fa4a2a1fb6357269965a2014abc35", "0xcbcdf9626bc03e24f779434178a73a0b4bad62ed", "0xa6cc3c2531fdaa6ae1a3ca84c2855806728693e8", "0x1d42064fc4beb5f8aaf85f4617ae8b3b5b8bd801", "0x3416cf6c708da44db2624d63ea0aaef7113527c6", "0x5777d92f208679db4b9778590fa3cab3ac9e2168", "0x290a6a7460b308ee3f19023d2d00de604bcf5b42", "0xac4b3dacb91461209ae9d41ec517c2b9cb1b7daf", "0xa3f558aebaecaf0e11ca4b2199cc5ed341edfd74", "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640", "0x11b815efb8f581194ae79006d24e0d814b7697f6", "0x4585fe77225b41b697c938b018e2ac67ac5a20c0", "0x4e0924d3a751be199c426d52fb1f2337fa96f736", "0x9a772018fbd77fcd2d25657e5c547baff3fd7d16", "0x11950d141ecb863f01007add7d1a342041227b58", "0x109830a1aaad605bbf02a9dfa7b0b92ec2fb7daa", "0x60594a405d53811d3bc4766596efd80fd545a270", "0x840deeef2f115cf50da625f7368c24af6fe74410", "0xe8c6c9227491c0a8156a0106a0204d881bb7e531", "0xc2e9f25be6257c210d7adf0d4cd6e3e881ba25f8", "0xc5af84701f98fa483ece78af83f11b6c38aca71d", "0x7bea39867e4169dbe237d55c8242a8f2fcdcc387"];
+    readonly internalName: "ethereum";
+    readonly contracts: {
+        readonly limitOrder: {
+            readonly address: "0x54dF9e11c7933a9cA3BD1E540B63dA15edAe40bf";
+        };
+        readonly nftManager: {
+            readonly address: "0xC36442b4a4522E871399CD717aBDD847Ab11FE88";
+        };
+        readonly weth9: {
+            readonly address: "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2";
+        };
+        readonly ensRegistry: {
+            readonly address: "0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e";
+        };
+        readonly ensUniversalResolver: {
+            readonly address: "0xc0497E381f536Be9ce14B0dD3817cBcAe57d2F62";
+            readonly blockCreated: 16966585;
+        };
+        readonly multicall3: {
+            readonly address: "0xca11bde05977b3631167028862be2a173976ca11";
+            readonly blockCreated: 14353601;
+        };
+    };
+    readonly blockExplorers: {
+        readonly default: {
+            readonly name: "Etherscan";
+            readonly url: "https://etherscan.io";
+        };
+    };
+    readonly id: 1;
+    readonly name: "Ethereum";
+    readonly nativeCurrency: {
+        readonly name: "Ether";
+        readonly symbol: "ETH";
+        readonly decimals: 18;
+    };
+    readonly rpcUrls: {
+        readonly default: {
+            readonly http: readonly ["https://cloudflare-eth.com"];
+        };
+    };
+    readonly sourceId?: number | undefined;
+    readonly testnet?: boolean | undefined;
+    readonly formatters?: undefined;
+    readonly serializers?: import("viem").ChainSerializers<undefined> | undefined;
+    readonly fees?: import("viem").ChainFees<undefined> | undefined;
+};
