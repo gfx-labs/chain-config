@@ -595,6 +595,13 @@
             '0x1fa900dbb20ed45d18883849c00632bca16f6610',
         ],
         internalName: 'zksync',
+        blockExplorers: {
+            ...chains.zkSync.blockExplorers,
+            default: {
+                name: 'Zksync Era Explorer',
+                url: 'https://era.zksync.network',
+            },
+        },
         contracts: {
             ...chains.zkSync.contracts,
             limitOrder: {

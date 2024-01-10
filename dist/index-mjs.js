@@ -591,6 +591,13 @@ const zkSync = {
         '0x1fa900dbb20ed45d18883849c00632bca16f6610',
     ],
     internalName: 'zksync',
+    blockExplorers: {
+        ...zkSync$1.blockExplorers,
+        default: {
+            name: 'Zksync Era Explorer',
+            url: 'https://era.zksync.network',
+        },
+    },
     contracts: {
         ...zkSync$1.contracts,
         limitOrder: {

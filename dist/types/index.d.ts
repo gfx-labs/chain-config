@@ -1881,6 +1881,12 @@ export declare const MAINNET_CHAINS: readonly [{
     readonly stables: readonly ["0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4", "0x503234F203fC7Eb888EEC8513210612a43Cf6115"];
     readonly watchlist: readonly ["0xff577f0e828a878743ecc5e2632cbf65cecf17cf", "0x50b0b9e02aa6f72a70fefbdb50bdc2f27e594135", "0x3f618967492945c02d5222d333e903345fde741a", "0xc99bcff6564bafc70ba1b53c53a03541f780a546", "0x1fa900dbb20ed45d18883849c00632bca16f6610"];
     readonly internalName: "zksync";
+    readonly blockExplorers: {
+        readonly default: {
+            readonly name: "Zksync Era Explorer";
+            readonly url: "https://era.zksync.network";
+        };
+    };
     readonly contracts: {
         readonly limitOrder: {
             readonly address: "0x0FD66bD1e0974e2535CB424E6675D60aC52a84Fa";
@@ -1893,12 +1899,6 @@ export declare const MAINNET_CHAINS: readonly [{
         };
         readonly multicall3: {
             readonly address: "0xF9cda624FBC7e059355ce98a31693d299FACd963";
-        };
-    };
-    readonly blockExplorers: {
-        readonly default: {
-            readonly name: "zkExplorer";
-            readonly url: "https://explorer.zksync.io";
         };
     };
     readonly id: 324;

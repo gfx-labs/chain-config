@@ -21,6 +21,13 @@ export const zkSync = {
     '0x1fa900dbb20ed45d18883849c00632bca16f6610',
   ],
   internalName: 'zksync',
+  blockExplorers: {
+    ...chain.blockExplorers,
+    default: {
+      name: 'Zksync Era Explorer',
+      url: 'https://era.zksync.network',
+    },
+  },
   contracts: {
     ...chain.contracts,
     limitOrder: {
