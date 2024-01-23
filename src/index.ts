@@ -42,18 +42,18 @@ export const MAINNET_CHAINS = [
 ] as const
 
 // type checking
-var _: IChainInfo
-_ = defs.arbitrum
-_ = defs.base,
-_ = defs.boba,
-_ = defs.bsc,
-_ = defs.filecoin,
-_ = defs.mainnet,
-_ = defs.moonbeam,
-_ = defs.optimism,
-_ = defs.polygon,
-_ = defs.rootstock,
-_ = defs.scroll,
-_ = defs.polygonZkEvm,
-_ = defs.zkSync
-
+var _: IChainInfo[] = [
+  defs.arbitrum,
+  defs.base,
+  defs.boba,
+  defs.bsc,
+  defs.filecoin,
+  defs.mainnet,
+  defs.moonbeam,
+  defs.optimism,
+  defs.polygon,
+  defs.rootstock,
+  defs.scroll,
+  defs.polygonZkEvm,
+  defs.zkSync
+]
