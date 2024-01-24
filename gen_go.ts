@@ -50,7 +50,6 @@ const getPropType = (x:morph.PropertySignature):string=>{
   if(type.isArray()) {
     return `[]${getTypeType(type.getArrayElementType()!)}`
   }
-
   if(nodeType === "Address") {
    return "common.Address"
   }
