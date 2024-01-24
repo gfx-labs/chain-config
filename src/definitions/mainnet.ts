@@ -39,8 +39,8 @@ export const mainnet = makeConfig({
       nativeWrappedToken: "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
       nativeQuotePools: [
         {
-          pool: "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640",
-          deployBlock: 12369621,
+          address:"0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640",
+          blockCreated: 12369621,
         },
       ],
       stablecoinList: [

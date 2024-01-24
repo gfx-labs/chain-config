@@ -1,7 +1,7 @@
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('viem/chains')) :
   typeof define === 'function' && define.amd ? define(['exports', 'viem/chains'], factory) :
-  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global["oku-chains"] = {}, global.chains));
+  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global["oku-chains"] = {}, global.viem_chains));
 })(this, (function (exports, chains) { 'use strict';
 
   const makeConfig = (x) => {
@@ -44,8 +44,8 @@
               nativeWrappedToken: "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
               nativeQuotePools: [
                   {
-                      deployBlock: 100909,
-                      pool: "0xc31e54c7a869b9fcbecc14363cf510d1c41fa443",
+                      blockCreated: 100909,
+                      address: "0xc31e54c7a869b9fcbecc14363cf510d1c41fa443",
                   },
               ],
               stablecoinList: [
@@ -415,8 +415,8 @@
               ],
               nativeQuotePools: [
                   {
-                      deployBlock: 26495967,
-                      pool: "0x6fe9e9de56356f7edbfcbb29fab7cd69471a4869",
+                      blockCreated: 26495967,
+                      address: "0x6fe9e9de56356f7edbfcbb29fab7cd69471a4869",
                   },
               ],
               nativeWrappedToken: "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
@@ -607,8 +607,8 @@
               nativeWrappedToken: "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
               nativeQuotePools: [
                   {
-                      pool: "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640",
-                      deployBlock: 12369621,
+                      address: "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640",
+                      blockCreated: 12369621,
                   },
               ],
               stablecoinList: [
@@ -885,8 +885,8 @@
               nativeWrappedToken: "0x4200000000000000000000000000000000000006",
               nativeQuotePools: [
                   {
-                      deployBlock: 0,
-                      pool: "0x85149247691df622eaf1a8bd0cafd40bc45154a9",
+                      blockCreated: 0,
+                      address: "0x85149247691df622eaf1a8bd0cafd40bc45154a9",
                   },
               ],
               stablecoinList: [
@@ -1130,8 +1130,8 @@
               nativeWrappedToken: "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
               nativeQuotePools: [
                   {
-                      deployBlock: 22802494,
-                      pool: "0xa374094527e1673a86de625aa59517c5de346d32",
+                      blockCreated: 22802494,
+                      address: "0xa374094527e1673a86de625aa59517c5de346d32",
                   },
               ],
               stablecoinList: [

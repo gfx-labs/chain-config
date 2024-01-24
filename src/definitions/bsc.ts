@@ -40,8 +40,8 @@ export const bsc = makeConfig({
       ],
       nativeQuotePools: [
         {
-          deployBlock: 26495967,
-          pool: "0x6fe9e9de56356f7edbfcbb29fab7cd69471a4869",
+          blockCreated: 26495967,
+          address:"0x6fe9e9de56356f7edbfcbb29fab7cd69471a4869",
         },
       ],
       nativeWrappedToken: "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",

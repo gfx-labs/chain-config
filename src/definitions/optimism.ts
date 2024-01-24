@@ -15,8 +15,8 @@ export const optimism = makeConfig({
       nativeWrappedToken: "0x4200000000000000000000000000000000000006",
       nativeQuotePools: [
         {
-          deployBlock: 0,
-          pool: "0x85149247691df622eaf1a8bd0cafd40bc45154a9",
+          blockCreated: 0,
+          address:"0x85149247691df622eaf1a8bd0cafd40bc45154a9",
         },
       ],
       stablecoinList: [

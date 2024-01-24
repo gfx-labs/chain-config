@@ -1,0 +1,39 @@
+package networks
+
+import (
+  "github.com/ethereum/go-ethereum/common"
+)
+<%
+    var props_1 = IChainInfo.getProperties();
+    var props_2 = UniswapMetadata.getProperties();
+    var props_3 = TokenMetadata.getProperties();
+    var props_4 = OkuMetadata.getProperties();
+    var props_5 = OkuPricingMetadata.getProperties();
+    var props_6 = ChainContract.getProperties();
+%>
+type Network struct { <% for(const prop of props_1) {%>
+    <%= helpers.displayProp(prop) %> <% } %>
+}
+
+type UniswapMetadata struct {<% for(const prop of props_2) {%>
+    <%= helpers.displayProp(prop) %> <% } %>
+}
+
+type TokenMetadata struct {<% for(const prop of props_3) {%>
+    <%= helpers.displayProp(prop) %> <% } %>
+}
+
+type OkuMetadata struct {<% for(const prop of props_4) {%>
+    <%= helpers.displayProp(prop) %> <% } %>
+}
+
+type OkuPricingMetadata struct { <% for(const prop of props_5) {%>
+    <%= helpers.displayProp(prop) %> <% } %>
+}
+
+type ChainContract struct {<% for(const prop of props_6) {%>
+    <%= helpers.displayProp(prop) %> <% } %>
+}
+
+
+

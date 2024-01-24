@@ -1,0 +1,24 @@
+package networks
+
+import (
+"github.com/ethereum/go-ethereum/common"
+)
+<%
+%>
+
+var <%= helpers.snakeToCamel(chainName) %> Network = Network{
+  LogoUrl: "<%= chain.logoUrl %>",
+  SortIndex: <%= chain.sortIndex %>,
+  DefaultPool: common.HexToAddress("<%= chain.defaultPool %>"),
+  InternalName:     "<%= chain.internalName %>",
+  DefaultToken0:    common.HexToAddress("<%= chain.defaultToken0 %>"),
+  DefaultToken1:    common.HexToAddress("<%= chain.defaultToken1 %>"),
+  //TokenList:        "<%= chain.xx %>",
+  //Stables:          "<%= chain.xx %>",
+  //Watchlist:        "<%= chain.xx %>",
+  BlockTimeSeconds: <%= chain.blockTimeSeconds %>,
+  //Uniswap:          "<%= chain.xx %>",
+  //Token:            "<%= chain.xx %>",
+  //Oku:              "<%= chain.xx %>",
+  //Contracts:        "<%= chain.xx %>",
+}

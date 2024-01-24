@@ -39,8 +39,8 @@ export const arbitrum = makeConfig({
       nativeWrappedToken: "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
       nativeQuotePools: [
         {
-          deployBlock: 100909,
-          pool: "0xc31e54c7a869b9fcbecc14363cf510d1c41fa443",
+          blockCreated: 100909,
+          address: "0xc31e54c7a869b9fcbecc14363cf510d1c41fa443",
         },
       ] as const,
       stablecoinList: [

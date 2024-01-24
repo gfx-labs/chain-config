@@ -1,5 +1,9 @@
 import { Address, Chain, ChainContract } from "viem";
 
+export {ChainContract} from "viem"
+
+type float64 = number
+
 export interface UniswapMetadata {
   deployBlock?: number;
   poolFactory?: Address;
@@ -22,9 +26,9 @@ export interface UniswapMetadata {
 
 export interface OkuPricingMetadata {
   nativeWrappedToken?: Address;
-  nativeQuotePools?: ReadonlyArray<{ deployBlock: number; pool: Address }>;
+  nativeQuotePools?: ReadonlyArray<ChainContract>;
   pools?: ReadonlyArray<Address>;
-  stablecoinList?: ReadonlyArray<string>;
+  stablecoinList?: ReadonlyArray<Address>;
 }
 
 export interface OkuMetadata {
@@ -42,14 +46,15 @@ export interface TokenMetadata {
 export interface IChainInfo extends Chain {
   logoUrl: string;
   sortIndex: number;
-  defaultPool: string;
+  defaultPool: Address;
   internalName: string;
-  defaultToken0: string;
-  defaultToken1: string;
-  tokenList: ReadonlyArray<{ symbol: string; address: string }>;
-  stables: ReadonlyArray<string>;
-  watchlist: ReadonlyArray<string>;
-  blockTimeSeconds: number;
+  defaultToken0: Address;
+  defaultToken1: Address;
+  tokenList: ReadonlyArray<{ symbol: string; address: Address }>;
+  stables: ReadonlyArray<Address>;
+  watchlist: ReadonlyArray<Address>;
+
+  blockTimeSeconds: float64;
 
   uniswap: UniswapMetadata;
   token: TokenMetadata;
@@ -66,4 +71,9 @@ export interface IChainInfo extends Chain {
     limitOrder?: ChainContract;
     weth9: ChainContract;
   };
+}
+
+interface chainContract {
+  address: Address
+  blockCreated: number
 }
