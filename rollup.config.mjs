@@ -58,7 +58,6 @@ const nodeConfig = {
   ]
 }
 
-
 export default [
   browserConfig,
   nodeConfig,
