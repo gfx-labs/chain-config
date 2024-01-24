@@ -1,4 +1,4 @@
-import {  } from "viem";
+import {} from "viem";
 import { base as chain } from "viem/chains";
 import { makeConfig } from "../util";
 
@@ -12,16 +12,15 @@ export const base = makeConfig({
   defaultToken1: "0x4200000000000000000000000000000000000006",
   uniswap: {
     deployBlock: 1371680,
-    poolFactory: ("0x33128a8fC17869897dcE68Ed026d694621f6FDfD"),
-    multicall2: ("0x091e99cb1C49331a94dD62755D168E941AbD0693"),
-    tickLens: ("0x0CdeE061c75D43c82520eD998C23ac2991c9ac6d"),
-    nonfungiblePositionManager:
-      "0x03a520b32C04BF3bEEf7BEb72E919cf822Ed34f1",
-    positionsNFT: ("0x03a520b32C04BF3bEEf7BEb72E919cf822Ed34f1"),
+    poolFactory: "0x33128a8fC17869897dcE68Ed026d694621f6FDfD",
+    multicall2: "0x091e99cb1C49331a94dD62755D168E941AbD0693",
+    tickLens: "0x0CdeE061c75D43c82520eD998C23ac2991c9ac6d",
+    nonfungiblePositionManager: "0x03a520b32C04BF3bEEf7BEb72E919cf822Ed34f1",
+    positionsNFT: "0x03a520b32C04BF3bEEf7BEb72E919cf822Ed34f1",
     positionsNFTDeployBlock: 1371714,
   },
   token: {
-    usdcAddress: ("0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"),
+    usdcAddress: "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
   },
   oku: {
     pricing: {

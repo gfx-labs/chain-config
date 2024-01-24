@@ -1,4 +1,4 @@
-import {  } from "viem";
+import {} from "viem";
 import { arbitrum as chain } from "viem/chains";
 import { makeConfig } from "../util";
 
@@ -9,24 +9,22 @@ export const arbitrum = makeConfig({
   logoUrl: "https://assets.oku.trade/arbitrum-logo.svg",
   uniswap: {
     deployBlock: 165,
-    poolFactory: ("0x1F98431c8aD98523631AE4a59f267346ea31F984"),
-    multicall2: ("0x5BA1e12693Dc8F9c48aAD8770482f4739bEeD696"),
-    proxyAdmin: ("0xB753548F6E010e7e680BA186F9Ca1BdAB2E90cf2"),
-    tickLens: ("0xbfd8137f7d1516D3ea5cA83523914859ec47F573"),
-    quoter: ("0xb27308f9F90D607463bb33eA1BeBb41C27CE5AB6"),
-    swapRouter: ("0xE592427A0AEce92De3Edee1F18E0157C05861564"),
-    swapRouter02: ("0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45"),
-    NFTDescriptor: ("0x42B24A95702b9986e82d421cC3568932790A48Ec"),
+    poolFactory: "0x1F98431c8aD98523631AE4a59f267346ea31F984",
+    multicall2: "0x5BA1e12693Dc8F9c48aAD8770482f4739bEeD696",
+    proxyAdmin: "0xB753548F6E010e7e680BA186F9Ca1BdAB2E90cf2",
+    tickLens: "0xbfd8137f7d1516D3ea5cA83523914859ec47F573",
+    quoter: "0xb27308f9F90D607463bb33eA1BeBb41C27CE5AB6",
+    swapRouter: "0xE592427A0AEce92De3Edee1F18E0157C05861564",
+    swapRouter02: "0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45",
+    NFTDescriptor: "0x42B24A95702b9986e82d421cC3568932790A48Ec",
     nonfungibleTokenPositionDescriptor:
       "0x91ae842A5Ffd8d12023116943e72A606179294f3",
-    transparentUpgradeableProxy:
-      "0xEe6A57eC80ea46401049E92587E52f5Ec1c24785",
-    nonfungiblePositionManager:
-      "0xC36442b4a4522E871399CD717aBDD847Ab11FE88",
-    v3Migrator: ("0xA5644E29708357803b5A882D272c41cC0dF92B34"),
-    uniswapV3Staker: ("0xe34139463bA50bD61336E0c446Bd8C0867c6fE65"),
-    positionsNFT: ("0xC36442b4a4522E871399CD717aBDD847Ab11FE88"),
-    topNativePool: ("0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640"),
+    transparentUpgradeableProxy: "0xEe6A57eC80ea46401049E92587E52f5Ec1c24785",
+    nonfungiblePositionManager: "0xC36442b4a4522E871399CD717aBDD847Ab11FE88",
+    v3Migrator: "0xA5644E29708357803b5A882D272c41cC0dF92B34",
+    uniswapV3Staker: "0xe34139463bA50bD61336E0c446Bd8C0867c6fE65",
+    positionsNFT: "0xC36442b4a4522E871399CD717aBDD847Ab11FE88",
+    topNativePool: "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640",
     positionsNFTDeployBlock: 173,
   },
   token: {
@@ -42,7 +40,7 @@ export const arbitrum = makeConfig({
       nativeQuotePools: [
         {
           deployBlock: 100909,
-          pool: ("0xc31e54c7a869b9fcbecc14363cf510d1c41fa443"),
+          pool: "0xc31e54c7a869b9fcbecc14363cf510d1c41fa443",
         },
       ] as const,
       stablecoinList: [

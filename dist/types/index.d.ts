@@ -5,21 +5,21 @@ declare const arbitrum: Readonly<{
     logoUrl: "https://assets.oku.trade/arbitrum-logo.svg";
     uniswap: {
         deployBlock: number;
-        poolFactory: `0x${string}`;
-        multicall2: `0x${string}`;
-        proxyAdmin: `0x${string}`;
-        tickLens: `0x${string}`;
-        quoter: `0x${string}`;
-        swapRouter: `0x${string}`;
-        swapRouter02: `0x${string}`;
-        NFTDescriptor: `0x${string}`;
-        nonfungibleTokenPositionDescriptor: `0x${string}`;
-        transparentUpgradeableProxy: `0x${string}`;
-        nonfungiblePositionManager: `0x${string}`;
-        v3Migrator: `0x${string}`;
-        uniswapV3Staker: `0x${string}`;
-        positionsNFT: `0x${string}`;
-        topNativePool: `0x${string}`;
+        poolFactory: "0x1F98431c8aD98523631AE4a59f267346ea31F984";
+        multicall2: "0x5BA1e12693Dc8F9c48aAD8770482f4739bEeD696";
+        proxyAdmin: "0xB753548F6E010e7e680BA186F9Ca1BdAB2E90cf2";
+        tickLens: "0xbfd8137f7d1516D3ea5cA83523914859ec47F573";
+        quoter: "0xb27308f9F90D607463bb33eA1BeBb41C27CE5AB6";
+        swapRouter: "0xE592427A0AEce92De3Edee1F18E0157C05861564";
+        swapRouter02: "0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45";
+        NFTDescriptor: "0x42B24A95702b9986e82d421cC3568932790A48Ec";
+        nonfungibleTokenPositionDescriptor: "0x91ae842A5Ffd8d12023116943e72A606179294f3";
+        transparentUpgradeableProxy: "0xEe6A57eC80ea46401049E92587E52f5Ec1c24785";
+        nonfungiblePositionManager: "0xC36442b4a4522E871399CD717aBDD847Ab11FE88";
+        v3Migrator: "0xA5644E29708357803b5A882D272c41cC0dF92B34";
+        uniswapV3Staker: "0xe34139463bA50bD61336E0c446Bd8C0867c6fE65";
+        positionsNFT: "0xC36442b4a4522E871399CD717aBDD847Ab11FE88";
+        topNativePool: "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640";
         positionsNFTDeployBlock: number;
     };
     token: {
@@ -35,7 +35,7 @@ declare const arbitrum: Readonly<{
             nativeQuotePools: readonly [
                 {
                     readonly deployBlock: 100909;
-                    readonly pool: `0x${string}`;
+                    readonly pool: "0xc31e54c7a869b9fcbecc14363cf510d1c41fa443";
                 }
             ];
             stablecoinList: string[];
@@ -102,15 +102,15 @@ declare const base: Readonly<{
     defaultToken1: "0x4200000000000000000000000000000000000006";
     uniswap: {
         deployBlock: number;
-        poolFactory: `0x${string}`;
-        multicall2: `0x${string}`;
-        tickLens: `0x${string}`;
-        nonfungiblePositionManager: `0x${string}`;
-        positionsNFT: `0x${string}`;
+        poolFactory: "0x33128a8fC17869897dcE68Ed026d694621f6FDfD";
+        multicall2: "0x091e99cb1C49331a94dD62755D168E941AbD0693";
+        tickLens: "0x0CdeE061c75D43c82520eD998C23ac2991c9ac6d";
+        nonfungiblePositionManager: "0x03a520b32C04BF3bEEf7BEb72E919cf822Ed34f1";
+        positionsNFT: "0x03a520b32C04BF3bEEf7BEb72E919cf822Ed34f1";
         positionsNFTDeployBlock: number;
     };
     token: {
-        usdcAddress: `0x${string}`;
+        usdcAddress: "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913";
     };
     oku: {
         pricing: {
@@ -723,19 +723,19 @@ declare const boba: Readonly<{
     logoUrl: "https://assets.oku.trade/boba-logo.svg";
     uniswap: {
         deployBlock: number;
-        poolFactory: `0x${string}`;
-        multicall2: `0x${string}`;
-        proxyAdmin: `0x${string}`;
-        tickLens: `0x${string}`;
-        quoter: `0x${string}`;
-        swapRouter02: `0x${string}`;
-        NFTDescriptor: `0x${string}`;
-        nonfungibleTokenPositionDescriptor: `0x${string}`;
-        transparentUpgradeableProxy: `0x${string}`;
-        nonfungiblePositionManager: `0x${string}`;
-        v3Migrator: `0x${string}`;
-        uniswapV3Staker: `0x${string}`;
-        positionsNFT: `0x${string}`;
+        poolFactory: "0xFFCd7Aed9C627E82A765c3247d562239507f6f1B";
+        multicall2: "0xd213Ff319F8d28Fe31EbDB75b23aA61a2b905320";
+        proxyAdmin: "0xE8B5DaE430189ea6ccffF4eEeC58a98556525fB4";
+        tickLens: "0x36EBd44350E4406E67C5579026950793b8528402";
+        quoter: "0x483fc90DDC7aC847D4a752055DCF73483B6d97FD";
+        swapRouter02: "0x759E8B0cb9d65291e258aE3e043258ae1dD0df16";
+        NFTDescriptor: "0x531c3B226288854e992150FEfF4d95F7B8DEbD8c";
+        nonfungibleTokenPositionDescriptor: "0xb6751A274EDAe02A911E3bB23682FAaF380433b7";
+        transparentUpgradeableProxy: "0xEe6A57eC80ea46401049E92587E52f5Ec1c24785";
+        nonfungiblePositionManager: "0x0bfc9aC7E52f38EAA6dC8d10942478f695C6Cf71";
+        v3Migrator: "0x9ab1E646877732DD76bd662DC242723D7e4B42ba";
+        uniswapV3Staker: "0x6a6c1198f85B084822138DFd3fA9686e4029c091";
+        positionsNFT: "0x0bfc9aC7E52f38EAA6dC8d10942478f695C6Cf71";
         positionsNFTDeployBlock: number;
     };
     token: {
@@ -771,10 +771,10 @@ declare const boba: Readonly<{
             address: "0xdeaddeaddeaddeaddeaddeaddeaddeaddead0000";
         };
         multicall2: {
-            address: `0x${string}`;
+            address: "0x07956092c0F4818D6792a42035d2d2fa0C75E76B";
         };
         multicall3: {
-            address: `0x${string}`;
+            address: "0xcA11bde05977b3631167028862bE2a173976CA11";
         };
     };
     blockExplorers: {
@@ -809,19 +809,19 @@ declare const bsc: Readonly<{
     logoUrl: "https://assets.oku.trade/bsc-logo.svg";
     uniswap: {
         deployBlock: number;
-        poolFactory: `0x${string}`;
-        multicall2: `0x${string}`;
-        proxyAdmin: `0x${string}`;
-        tickLens: `0x${string}`;
-        quoter: `0x${string}`;
-        swapRouter02: `0x${string}`;
-        NFTDescriptor: `0x${string}`;
-        nonfungibleTokenPositionDescriptor: `0x${string}`;
-        transparentUpgradeableProxy: `0x${string}`;
-        nonfungiblePositionManager: `0x${string}`;
-        v3Migrator: `0x${string}`;
-        uniswapV3Staker: `0x${string}`;
-        positionsNFT: `0x${string}`;
+        poolFactory: "0xFFCd7Aed9C627E82A765c3247d562239507f6f1B";
+        multicall2: "0xd213Ff319F8d28Fe31EbDB75b23aA61a2b905320";
+        proxyAdmin: "0xE8B5DaE430189ea6ccffF4eEeC58a98556525fB4";
+        tickLens: "0x36EBd44350E4406E67C5579026950793b8528402";
+        quoter: "0x483fc90DDC7aC847D4a752055DCF73483B6d97FD";
+        swapRouter02: "0x759E8B0cb9d65291e258aE3e043258ae1dD0df16";
+        NFTDescriptor: "0x531c3B226288854e992150FEfF4d95F7B8DEbD8c";
+        nonfungibleTokenPositionDescriptor: "0xb6751A274EDAe02A911E3bB23682FAaF380433b7";
+        transparentUpgradeableProxy: "0xEe6A57eC80ea46401049E92587E52f5Ec1c24785";
+        nonfungiblePositionManager: "0x0bfc9aC7E52f38EAA6dC8d10942478f695C6Cf71";
+        v3Migrator: "0x9ab1E646877732DD76bd662DC242723D7e4B42ba";
+        uniswapV3Staker: "0x6a6c1198f85B084822138DFd3fA9686e4029c091";
+        positionsNFT: "0x0bfc9aC7E52f38EAA6dC8d10942478f695C6Cf71";
         positionsNFTDeployBlock: number;
     };
     token: {
@@ -900,11 +900,11 @@ declare const filecoin: Readonly<{
     logoUrl: "https://assets.oku.trade/filecoin-logo.svg";
     uniswap: {
         deployBlock: number;
-        poolFactory: `0x${string}`;
-        multicall2: `0x${string}`;
-        tickLens: `0x${string}`;
-        nonfungiblePositionManager: `0x${string}`;
-        positionsNFT: `0x${string}`;
+        poolFactory: "0xB4C47eD546Fc31E26470a186eC2C5F19eF09BA41";
+        multicall2: "0x732f5baac411e427d130fed03c2e82a3e0d64d35";
+        tickLens: "0x76c001ad9E527FEfA8Fa822a987Ad44ce720BAeD";
+        nonfungiblePositionManager: "0x4cd986dD509fbB6A695aE971d5C56c8795f640ee";
+        positionsNFT: "0x4cd986dD509fbB6A695aE971d5C56c8795f640ee";
         positionsNFTDeployBlock: number;
     };
     token: {
@@ -974,21 +974,21 @@ declare const mainnet: Readonly<{
     logoUrl: "https://assets.oku.trade/ethereum-logo.webp";
     uniswap: {
         deployBlock: number;
-        poolFactory: `0x${string}`;
-        multicall2: `0x${string}`;
-        proxyAdmin: `0x${string}`;
-        tickLens: `0x${string}`;
-        quoter: `0x${string}`;
-        swapRouter: `0x${string}`;
-        swapRouter02: `0x${string}`;
-        NFTDescriptor: `0x${string}`;
-        nonfungibleTokenPositionDescriptor: `0x${string}`;
-        transparentUpgradeableProxy: `0x${string}`;
-        nonfungiblePositionManager: `0x${string}`;
-        v3Migrator: `0x${string}`;
-        uniswapV3Staker: `0x${string}`;
-        positionsNFT: `0x${string}`;
-        topNativePool: `0x${string}`;
+        poolFactory: "0x1F98431c8aD98523631AE4a59f267346ea31F984";
+        multicall2: "0x5BA1e12693Dc8F9c48aAD8770482f4739bEeD696";
+        proxyAdmin: "0xB753548F6E010e7e680BA186F9Ca1BdAB2E90cf2";
+        tickLens: "0xbfd8137f7d1516D3ea5cA83523914859ec47F573";
+        quoter: "0xb27308f9F90D607463bb33eA1BeBb41C27CE5AB6";
+        swapRouter: "0xE592427A0AEce92De3Edee1F18E0157C05861564";
+        swapRouter02: "0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45";
+        NFTDescriptor: "0x42B24A95702b9986e82d421cC3568932790A48Ec";
+        nonfungibleTokenPositionDescriptor: "0x91ae842A5Ffd8d12023116943e72A606179294f3";
+        transparentUpgradeableProxy: "0xEe6A57eC80ea46401049E92587E52f5Ec1c24785";
+        nonfungiblePositionManager: "0xC36442b4a4522E871399CD717aBDD847Ab11FE88";
+        v3Migrator: "0xA5644E29708357803b5A882D272c41cC0dF92B34";
+        uniswapV3Staker: "0xe34139463bA50bD61336E0c446Bd8C0867c6fE65";
+        positionsNFT: "0xC36442b4a4522E871399CD717aBDD847Ab11FE88";
+        topNativePool: "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640";
         positionsNFTDeployBlock: number;
     };
     token: {
@@ -1005,8 +1005,8 @@ declare const mainnet: Readonly<{
                 pool: "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640";
                 deployBlock: number;
             }[];
-            stablecoinList: `0x${string}`[];
-            pools: `0x${string}`[];
+            stablecoinList: string[];
+            pools: ("0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640" | "0x11b815efb8f581194ae79006d24e0d814b7697f6" | "0x60594a405d53811d3bc4766596efd80fd545a270" | "0x3416cf6c708da44db2624d63ea0aaef7113527c6" | "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8" | "0x4e68ccd3e89f51c3074ca5072bbac773960dfa36" | "0x69d91b94f0aaf8e8a2586909fa77a5c2c89818d5" | "0x7858e59e0c01ea06df3af3d20ac7b0003275d4bf" | "0xe0554a476a092703abdb3ef35c80e0d76d32939f" | "0x5777d92f208679db4b9778590fa3cab3ac9e2168" | "0xc2e9f25be6257c210d7adf0d4cd6e3e881ba25f8" | "0x99ac8ca7087fa4a2a1fb6357269965a2014abc35" | "0x6c6bc977e13df9b0de53b251522280bb72383700" | "0x9a772018fbd77fcd2d25657e5c547baff3fd7d16" | "0x6f48eca74b38d2936b02ab603ff4e36a6c0e3a77" | "0xe859041c9c6d70177f83de991b9d757e13cea26e" | "0x3328ca5b535d537f88715b305375c591cf52d541" | "0x353bb62ed786cdf7624bd4049859182f3c1e9e5d" | "0x9a834b70c07c81a9fcd6f22e842bf002fbffbe4d" | "0x9db9e0e53058c89e5b94e29621a205198648425b" | "0xb07fe2f407f971125d4eb1977f8acee8846c7324" | "0x84383fb05f610222430f69727aa638f8fdbf5cc1" | "0xb0f4a77bde7fee134265307c5cc19abff0ba409b" | "0xc63b0708e2f7e69cb8a1df0e1389a98c35a76d52" | "0x92ab871abb9d567aa276b2ce58d0203d84e0181e" | "0x735a26a57a0a0069dfabd41595a970faf5e1ee8b" | "0x7bea39867e4169dbe237d55c8242a8f2fcdcc387" | "0x5e35c4eba72470ee1177dcb14dddf4d9e6d915f4" | "0x07a6e955ba4345bae83ac2a6faa771fddd8a2011" | "0xfad57d2039c21811c8f2b5d5b65308aa99d31559" | "0xd0fc8ba7e267f2bc56044a7715a489d851dc6d78" | "0x8c54aa2a32a779e6f6fbea568ad85a19e0109c26" | "0xe05e653453f733786f2dabae0ffa1e96cfcc4b25" | "0x094a28b22e1b4218d590ea6fa916b3c5e670ba55" | "0xdd005650ac6805457f4fa6ee1816813ce815e914" | "0x015769601d8d4879c0e193eeab31f10cf03c9ea9" | "0xc5af84701f98fa483ece78af83f11b6c38aca71d" | "0x48da0965ab2d2cbf1c17c09cfb5cbe67ad5b1406" | "0x4e0924d3a751be199c426d52fb1f2337fa96f736" | "0x94b4ba66da4faa4fe09e17c0a8810d2afee70163" | "0x92995d179a5528334356cb4dc5c6cbb1c068696c" | "0x18d96b617a3e5c42a2ada4bc5d1b48e223f17d0d" | "0x9febc984504356225405e26833608b17719c82ae" | "0x2cb162433e0cabac4825e6d198a125829156cc92" | "0xc2a856c3aff2110c1171b8f942256d40e980c726" | "0x6279653c28f138c8b31b8a0f6f8cd2c58e8c1705" | "0x97e7d56a0408570ba1a7852de36350f7713906ec" | "0x216fb666dd61600e74f7b2ca25a38aa99db1a4e9" | "0x7270233ccae676e776a659affc35219e6fcfbb10" | "0xff29d3e552155180809ea3a877408a4620058086" | "0xcb0c5d9d92f4f2f80cce7aa271a1e148c226e19d" | "0x486263aa56d1b49d78dea765754164b880c99954" | "0x25c0edc51909fc20429c6ece9b8f4fbb5af13878" | "0x14036bbda496e39dc3db6025fe858431c1ddadb1" | "0x16980c16811bde2b3358c1ce4341541a4c772ec9" | "0xdf50fbde8180c8785842c8e316ebe06f542d3443" | "0x298b7c5e0770d151e4c5cf6cca4dae3a3ffc8e27" | "0x3aaf77ba7da262e34dffb9b10fc6777bfda79ab7" | "0xd6a309f49cf79542cea91df7b334eb4bd29aa0d7" | "0xdb02d6827220475ece91893255fdf57bed51aee3" | "0xa19f4ebe4cbb3c9b57c16eb4dfc7a52d46a5e891" | "0x6c4ab1907805adcb0b7ae911a5d1b0b99d608b3c" | "0x19f83460e387f1b01f94b85c2532ebc15b0b712e" | "0xaae63df9a86f9a682507c922db38fae5e777a606" | "0x7ec0b75a98997c927ace6d87958147a105147ea0" | "0x868b7bbbfe148516e5397f23982923686182c2d2" | "0xd73ea444eef6faf5423b49be3448e94ed214f1ec" | "0xbb2e5c2ff298fd96e166f90c8abacaf714df14f8" | "0x1a349a3397a8431eed8d94a05f88f9001117fcaa" | "0x85b5a7dc1630f9465d8409e2ac53313b70a71b9c" | "0x3067c3054b4a605f9e327bad82d9ba6049fe76a0" | "0x00cef0386ed94d738c8f8a74e8bfd0376926d24c" | "0x75bff91af9878f5ec3fede9b52d51159afc2430a" | "0xa5ef2a6bbe8852bd6fd2ef6ab9bb45081a6f531c" | "0xb06e7ed37cfa8f0f2888355dd1913e45412798c5" | "0xfe0df74636bc25c7f2400f22fe7dae32d39443d2" | "0x07f3d316630719f4fc69c152f397c150f0831071" | "0x38b6e47a97f4680a983eadc8e510c37d73967c29" | "0xd3ca35355106cb8bc5fd7c534275509673319d83" | "0x020c349a0541d76c16f501abc6b2e9c98adae892" | "0x9275e26bfb23b18bebb07bff45e85110f60963e9" | "0xd5ad5ec825cac700d7deafe3102dc2b6da6d195d" | "0x537a0a5654045c52ec45c4c86ed0c1ffe893809d" | "0xc4d9c69962ddb2388e1532279704fc6eb199c963" | "0x813b22032e94667cc0f854cc7241fc5a309c45bc" | "0xe081eeab0adde30588ba8d5b3f6ae5284790f54a" | "0x5c28b5f471d97f53fcf132f16f9f3c0c888c1a01" | "0x9445bd19767f73dcae6f2de90e6cd31192f62589" | "0xa80964c5bbd1a0e95777094420555fead1a26c1e" | "0xb8c05b7ca698f7cfd9b8a08f177e0ac5f2696bf9" | "0xd0af1981f52146a6939385451daea0726e13a484" | "0xa109209a2380fd4454b0364c4689f6de18ad18cc" | "0x5f3c621d810c7c929fb440e03dadf8621fe61ab5" | "0x141df9a608856d1651c9a3c27b39960ff0418a12" | "0x08f68110f1e0ca67c80a24b4bd206675610f445d" | "0x39529e96c28807655b5856b3d342c6225111770e" | "0x391e8501b626c623d39474afca6f9e46c2686649" | "0xbe3cd9b751360a8030770425acf947c8cb4cab38" | "0xbd5fdda17bc27bb90e37df7a838b1bfc0dc997f5" | "0x3470447f3cecffac709d3e783a307790b0208d60")[];
         };
     };
     defaultPool: "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640";
@@ -1075,17 +1075,17 @@ declare const moonbeam: Readonly<{
     logoUrl: "https://assets.oku.trade/moonbeam-logo.svg";
     uniswap: {
         deployBlock: number;
-        poolFactory: `0x${string}`;
-        multicall2: `0x${string}`;
-        tickLens: `0x${string}`;
-        quoter: `0x${string}`;
-        swapRouter02: `0x${string}`;
-        NFTDescriptor: `0x${string}`;
-        nonfungibleTokenPositionDescriptor: `0x${string}`;
-        transparentUpgradeableProxy: `0x${string}`;
-        nonfungiblePositionManager: `0x${string}`;
-        v3Migrator: `0x${string}`;
-        positionsNFT: `0x${string}`;
+        poolFactory: "0x28f1158795A3585CaAA3cD6469CD65382b89BB70";
+        multicall2: "0xd213Ff319F8d28Fe31EbDB75b23aA61a2b905320";
+        tickLens: "0x1f4F7b041895D9eB1A79be0896AF3E68e4160010";
+        quoter: "0x48af91cdcad8ffdd7a8d4cdf73c16cb0632d3d17";
+        swapRouter02: "0xc507e22ba3140dc0a79fdf27e03c98aa20f3ee66";
+        NFTDescriptor: "0x041b81cb4d223d8e70ac96c0d103f8a956ed4514";
+        nonfungibleTokenPositionDescriptor: "0x921c55AE486e63D16dbfbE216573A21aeB684c02";
+        transparentUpgradeableProxy: "0xEe6A57eC80ea46401049E92587E52f5Ec1c24785";
+        nonfungiblePositionManager: "0x0bfc9aC7E52f38EAA6dC8d10942478f695C6Cf71";
+        v3Migrator: "0x76776b10d782a1d194fbfc92d4b01db1ce1eeb4b";
+        positionsNFT: "0x9036D0DcB5a059C9371B05D508f0072Df773854e";
         positionsNFTDeployBlock: number;
     };
     token: {
@@ -1173,21 +1173,21 @@ declare const optimism: Readonly<{
     };
     uniswap: {
         deployBlock: number;
-        poolFactory: `0x${string}`;
-        multicall2: `0x${string}`;
-        proxyAdmin: `0x${string}`;
-        tickLens: `0x${string}`;
-        quoter: `0x${string}`;
-        swapRouter: `0x${string}`;
-        swapRouter02: `0x${string}`;
-        NFTDescriptor: `0x${string}`;
-        nonfungibleTokenPositionDescriptor: `0x${string}`;
-        transparentUpgradeableProxy: `0x${string}`;
-        nonfungiblePositionManager: `0x${string}`;
-        v3Migrator: `0x${string}`;
-        uniswapV3Staker: `0x${string}`;
-        positionsNFT: `0x${string}`;
-        topNativePool: `0x${string}`;
+        poolFactory: "0x1F98431c8aD98523631AE4a59f267346ea31F984";
+        multicall2: "0x5BA1e12693Dc8F9c48aAD8770482f4739bEeD696";
+        proxyAdmin: "0xB753548F6E010e7e680BA186F9Ca1BdAB2E90cf2";
+        tickLens: "0xbfd8137f7d1516D3ea5cA83523914859ec47F573";
+        quoter: "0xb27308f9F90D607463bb33eA1BeBb41C27CE5AB6";
+        swapRouter: "0xE592427A0AEce92De3Edee1F18E0157C05861564";
+        swapRouter02: "0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45";
+        NFTDescriptor: "0x42B24A95702b9986e82d421cC3568932790A48Ec";
+        nonfungibleTokenPositionDescriptor: "0x91ae842A5Ffd8d12023116943e72A606179294f3";
+        transparentUpgradeableProxy: "0xEe6A57eC80ea46401049E92587E52f5Ec1c24785";
+        nonfungiblePositionManager: "0xC36442b4a4522E871399CD717aBDD847Ab11FE88";
+        v3Migrator: "0xA5644E29708357803b5A882D272c41cC0dF92B34";
+        uniswapV3Staker: "0xe34139463bA50bD61336E0c446Bd8C0867c6fE65";
+        positionsNFT: "0xC36442b4a4522E871399CD717aBDD847Ab11FE88";
+        topNativePool: "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640";
         positionsNFTDeployBlock: number;
     };
     token: {
@@ -1802,20 +1802,20 @@ declare const polygon: Readonly<{
     logoUrl: "https://assets.oku.trade/polygon-logo.webp";
     uniswap: {
         deployBlock: number;
-        poolFactory: `0x${string}`;
-        multicall2: `0x${string}`;
-        proxyAdmin: `0x${string}`;
-        tickLens: `0x${string}`;
-        quoter: `0x${string}`;
-        swapRouter: `0x${string}`;
-        swapRouter02: `0x${string}`;
-        NFTDescriptor: `0x${string}`;
-        nonfungibleTokenPositionDescriptor: `0x${string}`;
-        transparentUpgradeableProxy: `0x${string}`;
-        nonfungiblePositionManager: `0x${string}`;
-        v3Migrator: `0x${string}`;
-        uniswapV3Staker: `0x${string}`;
-        positionsNFT: `0x${string}`;
+        poolFactory: "0x1F98431c8aD98523631AE4a59f267346ea31F984";
+        multicall2: "0xca11bde05977b3631167028862be2a173976ca11";
+        proxyAdmin: "0xB753548F6E010e7e680BA186F9Ca1BdAB2E90cf2";
+        tickLens: "0xbfd8137f7d1516D3ea5cA83523914859ec47F573";
+        quoter: "0xb27308f9F90D607463bb33eA1BeBb41C27CE5AB6";
+        swapRouter: "0xE592427A0AEce92De3Edee1F18E0157C05861564";
+        swapRouter02: "0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45";
+        NFTDescriptor: "0x42B24A95702b9986e82d421cC3568932790A48Ec";
+        nonfungibleTokenPositionDescriptor: "0x91ae842A5Ffd8d12023116943e72A606179294f3";
+        transparentUpgradeableProxy: "0xEe6A57eC80ea46401049E92587E52f5Ec1c24785";
+        nonfungiblePositionManager: "0xC36442b4a4522E871399CD717aBDD847Ab11FE88";
+        v3Migrator: "0xA5644E29708357803b5A882D272c41cC0dF92B34";
+        uniswapV3Staker: "0xe34139463bA50bD61336E0c446Bd8C0867c6fE65";
+        positionsNFT: "0xC36442b4a4522E871399CD717aBDD847Ab11FE88";
         positionsNFTDeployBlock: number;
         topNativePool: "0xa374094527e1673a86de625aa59517c5de346d32";
     };
@@ -1834,7 +1834,7 @@ declare const polygon: Readonly<{
                 pool: "0xa374094527e1673a86de625aa59517c5de346d32";
             }[];
             stablecoinList: string[];
-            pools: `0x${string}`[];
+            pools: ("0xa374094527e1673a86de625aa59517c5de346d32" | "0x45dda9cb7c25131df268515131f647d726f50608" | "0x9b08288c3be4f62bbf8d1c20ac9c5e6f9467d8b7" | "0xeef1a9507b3d505f0062f2be9453981255b503c8" | "0xdac8a8e6dbf8c690ec6815e0ff03491b2770255d" | "0x5645dcb64c059aa11212707fbf4e7f984440a8cf" | "0x0a6c4588b7d8bd22cf120283b1fff953420c45f3" | "0x88f3c15523544835ff6c738ddb30995339ad57d6" | "0xbb98b3d2b18aef63a3178023a920971cf5f29be4" | "0x5f69c2ec01c22843f8273838d570243fd1963014" | "0x0e44ceb592acfc5d3f09d996302eb4c499ff8c10" | "0x67a9fe12fa6082d9d0203c84c6c56d3c4b269f28" | "0x04537f43f6add7b1b60cab199c7a910024ee0594" | "0x3f5228d0e7d75467366be7de2c31d0d098ba2c23" | "0x7de263d0ad6e5d208844e65118c3a02a9a5d56b6" | "0x254aa3a898071d6a2da0db11da73b02b4646078f" | "0x847b64f9d3a95e977d157866447a5c0a5dfa0ee5" | "0x0f663c16dd7c65cf87edb9229464ca77aeea536b" | "0x781067ef296e5c4a4203f81c593274824b7c185d" | "0x0a63d3910ffc1529190e80e10855c4216407cc45" | "0x4ccd010148379ea531d6c587cfdd60180196f9b1" | "0x94ab9e4553ffb839431e37cc79ba8905f45bfbea" | "0xfe530931da161232ec76a7c3bea7d36cf3811a0d" | "0x6488adfdbb85ce0302faa6ac72c8693eba81df83" | "0xdb11b39d8acdc877c58392e996a4a88424483705" | "0x16e7ca3eaaf7703b9724301e6fd3d4e2918fec59" | "0x3d0acd52ee4a9271a0ffe75f9b91049152bac64b" | "0x3165241b09823256465699625637d535d634cc8c" | "0x3bfcb475e528f54246f1847ec0e7b53dd88bda4e" | "0x4c0bc5d34369d5f89e7f3aa551150dc7d281b4c7" | "0x1cf0a4717f15ac0265d26986af8ac4ce25fd9a3f" | "0x3fa147d6309abeb5c1316f7d8a7d8bd023e0cd80" | "0x6bad0f9a89ca403bb91d253d385cec1a2b6eca97" | "0xb493e5aee0e0325632f4ed63cc889a23b8c77969" | "0x613e24ec04fa61a5967cccc90cdc1d9513f73d5a" | "0xb2f8ba544e4874d4e0f817359d0f4bcff209b87e" | "0x1edbf151b7a4bfb611030efcb460ae0d3516aee7" | "0x74d3c85df4dbd03c7c12f7649faa6457610e7604" | "0xbeaf7156ba07c3df8fac42e90188c5a752470db7" | "0xab4b63bd6c214ce8409fa1b31afa50d4e17597f9" | "0x26770cc2c612e5c97eb70a6531fa9d5098ef74ab" | "0x22177148e681a6ca5242c9888ace170ee7ec47bd" | "0xa1cfb393607d1a6888d273b762832ed14c8b56b1" | "0xa236278bec0e0677a48527340cfb567b4e6e9adc" | "0x156917664027312906a3e977e7f316a29934a37d" | "0x6cd22380745d4e4a5b674f692a1e84281e5e0896" | "0x286af3968aec55ec3acd463bf59edc7cbc04102e" | "0x42f0530351471dab7ec968476d19bd36af9ec52d" | "0x67e708986a809acefde16f2417fa5701241e3935" | "0x3e4bebfd2e3f6672640c83fc4888620741169825" | "0x33016df701b323c33cc027146c6a9e0997b2a923" | "0x30f5c777ab316e6878d2b71a32274e4c2842327a" | "0x78a750ca5f8dd1ef1c87e29e8a267ff4c8d12b38" | "0xfa22d298e3b0bc1752e5ef2849cec1149d596674" | "0x5884ddb0bb109c02150242edf00d0737d78ed61d" | "0x67b6ee9feab5fe2affed6a386950576d43f238dd" | "0x9159a880b930aced1080ed4742818362663c8d46" | "0xa90c1c009dc8292bd04ced30f9b53a5ff7a806a0" | "0x1f6082db7c8f4b199e17090cd5c8831a1dad1997" | "0xbd934a7778771a7e2d9bf80596002a214d8c9304" | "0xfc704de88db4858419d5d0af080486a95343ba15" | "0x32a222f69d00e717845a3d857d0392d6a25a2acd" | "0x7f567ce133b0b69458fc318af06eee27642865be" | "0x98349e1689538fd878646b77b3dcd89040a35eb6" | "0x6feae21e16097faa70afbb12872bdba3c85f4d9f" | "0xd0beb9570bc3d2af7fa461dfd3c75cc3a34f95e2" | "0x56fcb902bee19a645f9607cd1e1c0737b6358feb" | "0xe6617e2fb578e1df127f59fafeaa1122e543278f" | "0x08b446353ddb5a1695774bd547703879ff253aea" | "0xd67d3f77ad7acab1a75863b094176015df30cd8c" | "0xaa40be3a775451ddccf3aabf36bdea550391341f" | "0x0d1375f18e23099ae6a151e818cfe491b4feff31" | "0xf9e9526e55a0e1fac1813b2fe88bc9b30eea04f9" | "0xb69d18170a7d949777ead872cc6ba7cabb78fcfc" | "0xa708d430656aa379b6b0b1d570be8ae1095530e5" | "0xe93fde3c231c48db0a78e3d802afc55d845102c9" | "0x046bbdd927fc635dd6de7cf4efdad3e767274074" | "0xd06a93253d719ed8f28489ae9838d3d0f9eaba42" | "0xae732bd3d6becb4f0f458f54a6daad1fb1e9222c" | "0x039de30e4901793293a155dc3bcddc1b66fb5707" | "0x635fd65c546e66f73b7a760307ad884916f4c204" | "0x362d0401ed74db25219b6d02ac1791cfe3542d68" | "0x0581ef32b9393c5c282517282853267eed69621e" | "0x802c9f216f812b1a4b24636bec4f261b316797cb" | "0xc1dc5605b242a658adfc7d6e693a50aefb49bbae" | "0xba0216254163b57af68b7161cf824dbadcad61df" | "0x90e883972ebcbebc871f3f0658bab1821b8e8705" | "0xba91ae7312ace1137c15786177cbe687fd2d73d0" | "0x140ae14be4b5e86aa149f76e84953746e0bc04f1" | "0x2b5c2a5558bcc428ca97c6a6cd0eac8c1d180d65" | "0x6c8408f735c2f73b8f9271f663b1540bb8c2acce" | "0xa846934be7302304f2a8e5b92b576a3cfe655002" | "0xc21b964af2b0254580d44981d624335f2b7c6fb6" | "0x0dab5aedaf25201cce638b9d617d4b8c23d29b8d" | "0x30fe5e402139925634430eb88e9c209e4a2d6dec" | "0x9a72fc3fb9e99087d2eae500355e7902c763f9b3" | "0x02d07784818ada64827fce9f5c1309af688a5681" | "0x5e575a7050ca806248e8f4341601847fde52d9ba" | "0x80c5c7d7e94158fd2daac56734889a7cdf8dadfe" | "0xd48cb7ad6a0e2137ea81803c63d2863206ce4700")[];
         };
     };
     defaultPool: "0xa374094527e1673a86de625aa59517c5de346d32";
@@ -1858,10 +1858,10 @@ declare const polygon: Readonly<{
             address: "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270";
         };
         multicall2: {
-            address: `0x${string}`;
+            address: "0x275617327c958bD06b5D6b871E7f491D76113dd8";
         };
         multicall3: {
-            address: `0x${string}`;
+            address: "0xcA11bde05977b3631167028862bE2a173976CA11";
         };
     };
     blockExplorers: {
@@ -1897,11 +1897,11 @@ declare const rootstock: Readonly<{
     logoUrl: "https://assets.oku.trade/rootstock-logo.svg";
     uniswap: {
         deployBlock: number;
-        poolFactory: `0x${string}`;
-        multicall2: `0x${string}`;
-        tickLens: `0x${string}`;
-        nonfungiblePositionManager: `0x${string}`;
-        positionsNFT: `0x${string}`;
+        poolFactory: "0xaF37EC98A00FD63689CF3060BF3B6784E00caD82";
+        multicall2: "0x996a9858cdFa45aD68E47C9a30A7201E29c6A386";
+        tickLens: "0x55B9dF5bF68ADe972191a91980459f48ecA16afC";
+        nonfungiblePositionManager: "0x9d9386c042F194B460Ec424a1e57ACDE25f5C4b1";
+        positionsNFT: "0x9d9386c042F194B460Ec424a1e57ACDE25f5C4b1";
         positionsNFTDeployBlock: number;
     };
     token: {
@@ -1946,10 +1946,10 @@ declare const rootstock: Readonly<{
             address: "0x542fDA317318eBF1d3DEAf76E0b632741A7e677d";
         };
         Multicall2: {
-            address: `0x${string}`;
+            address: "0x996a9858cdFa45aD68E47C9a30A7201E29c6A386";
         };
         Multicall3: {
-            address: `0x${string}`;
+            address: "0xca11bde05977b3631167028862be2a173976ca11";
         };
         multicall3: {
             readonly address: "0xcA11bde05977b3631167028862bE2a173976CA11";
@@ -1982,8 +1982,8 @@ declare const scroll: Readonly<{
     logoUrl: "https://assets.oku.trade/scroll-logo.png";
     uniswap: {
         deployBlock: number;
-        poolFactory: `0x${string}`;
-        positionsNFT: `0x${string}`;
+        poolFactory: "0x70C62C8b8e801124A4Aa81ce07b637A3e83cb919";
+        positionsNFT: "0xB39002E4033b162fAc607fc3471E205FA2aE5967";
     };
     token: {
         usdcAddress: "0x06efdbff2a14a7c8e15944d1f4a48f9f95f663a4";
@@ -2019,10 +2019,10 @@ declare const scroll: Readonly<{
             address: "0x5300000000000000000000000000000000000004";
         };
         Multicall2: {
-            address: `0x${string}`;
+            address: "0x3b615B1AC55bc34e51a81D3dea67467F32bcb8C2";
         };
         Multicall3: {
-            address: `0x${string}`;
+            address: "0xcA11bde05977b3631167028862bE2a173976CA11";
         };
         multicall3: {
             readonly address: "0xca11bde05977b3631167028862be2a173976ca11";
@@ -2064,11 +2064,11 @@ declare const polygonZkEvm: Readonly<{
     logoUrl: "https://assets.oku.trade/zkevm-logo.svg";
     uniswap: {
         deployBlock: number;
-        poolFactory: `0x${string}`;
-        multicall2: `0x${string}`;
-        tickLens: `0x${string}`;
-        nonfungiblePositionManager: `0x${string}`;
-        positionsNFT: `0x${string}`;
+        poolFactory: "0xff83c3c800Fec21de45C5Ec30B69ddd5Ee60DFC2";
+        multicall2: "0x9073E304a15b1522132848B461857cd8BA932ea7";
+        tickLens: "0x64519b94A7248Bf17929fB03b9648ce277Fd7fDA";
+        nonfungiblePositionManager: "0xf0D61Aeda516CCa1FF20Be65Cfb0213be688A24f";
+        positionsNFT: "0xf0D61Aeda516CCa1FF20Be65Cfb0213be688A24f";
         positionsNFTDeployBlock: number;
     };
     token: {
@@ -2077,7 +2077,7 @@ declare const polygonZkEvm: Readonly<{
         usdcAddress: "0xa8ce8aee21bc2a48a5ef670afcc9274c7bbbc035";
     };
     oku: {
-        limitOrderRegistry: `0x${string}`;
+        limitOrderRegistry: "0x5f1ef1d278013567c3c67e18d2d35bfa9954f723";
         limitOrderRegistryDeployBlock: number;
         pricing: {
             nativeWrappedToken: "0x4F9A0e7FD2Bf6067db6994CF12E4495Df938E6e9";
@@ -2105,10 +2105,10 @@ declare const polygonZkEvm: Readonly<{
             address: "0x4f9a0e7fd2bf6067db6994cf12e4495df938e6e9";
         };
         multicall2: {
-            address: `0x${string}`;
+            address: "0x1FaE28D9C07a8a96E2ECc53BB328E787D5B88674";
         };
         multicall3: {
-            address: `0x${string}`;
+            address: "0xca11bde05977b3631167028862be2a173976ca11";
         };
     };
     blockExplorers: {
@@ -2143,11 +2143,11 @@ declare const zkSync: Readonly<{
     logoUrl: "https://assets.oku.trade/zksync-logo.svg";
     uniswap: {
         deployBlock: number;
-        poolFactory: `0x${string}`;
-        multicall2: `0x${string}`;
-        tickLens: `0x${string}`;
-        nonfungiblePositionManager: `0x${string}`;
-        positionsNFT: `0x${string}`;
+        poolFactory: "0x8FdA5a7a8dCA67BBcDd10F02Fa0649A937215422";
+        multicall2: "0x0c68a7C72f074d1c45C16d41fa74eEbC6D16a65C";
+        tickLens: "0xe10FF11b809f8EE07b056B452c3B2caa7FE24f89";
+        nonfungiblePositionManager: "0x0616e5762c1E7Dc3723c50663dF10a162D690a86";
+        positionsNFT: "0x0616e5762c1E7Dc3723c50663dF10a162D690a86";
         positionsNFTDeployBlock: number;
     };
     token: {
@@ -2190,10 +2190,10 @@ declare const zkSync: Readonly<{
             address: "0x5aea5775959fbc2557cc8789bc1bf90a239d9a91";
         };
         multicall2: {
-            address: `0x${string}`;
+            address: "0x8bB86A31795d3e8ef12c630C288770e13eEcF038";
         };
         multicall3: {
-            address: `0x${string}`;
+            address: "0xF9cda624FBC7e059355ce98a31693d299FACd963";
         };
     };
     id: 324;
@@ -2794,21 +2794,21 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     logoUrl: "https://assets.oku.trade/arbitrum-logo.svg";
     uniswap: {
         deployBlock: number;
-        poolFactory: `0x${string}`;
-        multicall2: `0x${string}`;
-        proxyAdmin: `0x${string}`;
-        tickLens: `0x${string}`;
-        quoter: `0x${string}`;
-        swapRouter: `0x${string}`;
-        swapRouter02: `0x${string}`;
-        NFTDescriptor: `0x${string}`;
-        nonfungibleTokenPositionDescriptor: `0x${string}`;
-        transparentUpgradeableProxy: `0x${string}`;
-        nonfungiblePositionManager: `0x${string}`;
-        v3Migrator: `0x${string}`;
-        uniswapV3Staker: `0x${string}`;
-        positionsNFT: `0x${string}`;
-        topNativePool: `0x${string}`;
+        poolFactory: "0x1F98431c8aD98523631AE4a59f267346ea31F984";
+        multicall2: "0x5BA1e12693Dc8F9c48aAD8770482f4739bEeD696";
+        proxyAdmin: "0xB753548F6E010e7e680BA186F9Ca1BdAB2E90cf2";
+        tickLens: "0xbfd8137f7d1516D3ea5cA83523914859ec47F573";
+        quoter: "0xb27308f9F90D607463bb33eA1BeBb41C27CE5AB6";
+        swapRouter: "0xE592427A0AEce92De3Edee1F18E0157C05861564";
+        swapRouter02: "0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45";
+        NFTDescriptor: "0x42B24A95702b9986e82d421cC3568932790A48Ec";
+        nonfungibleTokenPositionDescriptor: "0x91ae842A5Ffd8d12023116943e72A606179294f3";
+        transparentUpgradeableProxy: "0xEe6A57eC80ea46401049E92587E52f5Ec1c24785";
+        nonfungiblePositionManager: "0xC36442b4a4522E871399CD717aBDD847Ab11FE88";
+        v3Migrator: "0xA5644E29708357803b5A882D272c41cC0dF92B34";
+        uniswapV3Staker: "0xe34139463bA50bD61336E0c446Bd8C0867c6fE65";
+        positionsNFT: "0xC36442b4a4522E871399CD717aBDD847Ab11FE88";
+        topNativePool: "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640";
         positionsNFTDeployBlock: number;
     };
     token: {
@@ -2823,7 +2823,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             nativeWrappedToken: "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1";
             nativeQuotePools: readonly [{
                 readonly deployBlock: 100909;
-                readonly pool: `0x${string}`;
+                readonly pool: "0xc31e54c7a869b9fcbecc14363cf510d1c41fa443";
             }];
             stablecoinList: string[];
             pools: ("0xc31e54c7a869b9fcbecc14363cf510d1c41fa443" | "0x641c00a822e8b671738d32a431a4fb6074e5c79d" | "0xcda53b1f66614552f834ceef361a8d12a0b8dad8" | "0x13398e27a21be1218b6900cbedf677571df42a48" | "0x17c14d2c404d167802b16c450d3c99f88f2c4f4d" | "0x31fa55e03bad93c7f8affdd2ec616ebfde246001" | "0x8c9d230d45d6cfee39a6680fb7cb7e8de7ea8e71" | "0x81c48d31365e6b526f6bbadc5c9aafd822134863" | "0xd37af656abf91c7f548fffc0133175b5e4d3d5e6" | "0x50450351517117cb58189edba6bbad6284d45902" | "0xbed2589fefae17d62a8a4fdac92fa5895cae90d2" | "0xe754841b77c874135caca3386676e886459c2d61" | "0xa961f0473da4864c5ed28e00fcc53a3aab056c1b" | "0xc82819f72a9e77e2c0c3a69b3196478f44303cf4" | "0x97bca422ec0ee4851f2110ea743c1cd0a14835a1" | "0x6387b0d5853184645cc9a77d6db133355d2eb4e4" | "0xf0428617433652c9dc6d1093a42adfbf30d29f74" | "0x7bb5e71fab18feba077b28355f20f5643ceece28" | "0xac70bd92f89e6739b3a08db9b6081a923912f73d" | "0xa62ad78825e3a55a77823f00fe0050f567c1e4ee" | "0xeaab66d034e9a5033888402b742c9ddfbf901676" | "0x2039f8c9cd32ba9cd2ea7e575d5b1abea93f7527" | "0x42161084d0672e1d3f26a9b53e653be2084ff19c" | "0xa74eceae9c7670b019e0890881598b4c398d1c01" | "0xa8328bf492ba1b77ad6381b3f7567d942b000baf" | "0xea3d27d0b8d525f28365957f50b8ba8da9a618b5" | "0xdd092f5dce127961af6ebe975978c084c935bcc8" | "0x88b553f99bf8cc6c18435c0c19d4d9b433d83645" | "0x7f580f8a02b759c350e6b8340e7c2d4b8162b6a9" | "0x02c79a7e3d8a9cb773cd5f69be00a64f48308508" | "0x458bcc519fa8c223e0c1aeb458bb85710f594329" | "0xb791ad21ba45c76629003b4a2f04c0d544406e37" | "0x267fcf6cb04eda3c997b7e49d8b7b95382b0ee7b" | "0x37516211fe11d49b84cb959631526e1f4e3fb86f" | "0x39007024e17fd49f11382b597867fda2f4a3ef15" | "0x53c6ca2597711ca7a73b6921faf4031eedf71339" | "0x7f9a20548d9482041dc33435a7fb25be7c4b98b9" | "0xcc33cad0bd4c957fa6c28fdcd72040d626854a4f" | "0x7e5e4a3f855f19cc1a45b9eff1c8b2419036ce85" | "0x2dfbbc8c9405c70ca0f81944332841663d2333b1" | "0x2ce827d2b5d248f6b29cfade1542421176eb1171" | "0xf8e5a77a4f187cfb455663b37619257565439f6a" | "0x626b9d80ebc0ded0e92ba4061fe70d3154ba6d2e" | "0xcc9397675bd4d373996175fcc03bff775c1440e7" | "0xe4d9faddd9bca5d8393bee915dc56e916ab94d27" | "0xc26064c6768215cd1c54b17a5525387a36176173" | "0xfea0e46a50156675432f9bc35d0d173ed30674ae" | "0xc021d8012985c2781ca25c84103a8681d4e16acb" | "0x3ab43147e282667ede827579bb7d5e8d1e814742" | "0xf96146159d191410f1ca3890af71005c468aaff6" | "0xd3eb92fb329c043b24aa24253b98ce14816fa05f" | "0xea263b98314369f2245c7b7e6a9f72e25cb8cded" | "0x903c3d8adf51e169599bb5adb0d20bb4c48cb44c" | "0x76d56579aa6356d860dcf7f8028d9ffd2e3c90f3" | "0x8278591bbbbe7d86e783507e7f6320ffc9c021e5" | "0x4d2fe06fd1c4368042b926d082484d2e3cc8f3f5" | "0x3cc98f9e2a1f92bd290bea5637a29d9647bd8698" | "0x58039203442c9f2a45d5536bd021a383c7f3035c" | "0x99db8dba7b30ab3c6447c4388d81dcc27c5a8b61" | "0x32b89d2442b4140c052bdba2ac6b03bad7243286" | "0x99c2ce89030d53556c8ee4b57a8c51fb93760237" | "0xc09254d1be9c3b7335021873546ba480383981d9" | "0xb6cca513eb79833c09c0a4c50ed2c897c5574cb3" | "0x2e630136c42bc72f1285743347ba77a75077aff4" | "0x90605ac59f1f19a7fe71f777ddbda83a3f25778e" | "0x54b7fe035ac57892d68cba53dbb5156ce79058d6" | "0x5b309eee32fada35e8fe5948a5d95dd86da0f855" | "0xf95de9ce6a3499c23b09265a9abcd862451453ba" | "0x1442097733acf0a2b5c4ab422f1c0186e95d52ba" | "0x9a4898365d9d07d5a20724361ecd6bf26d200873" | "0xfdad2678d73d71c9804930b338daaf192d6daa9e" | "0x46c47c8daabca3e15bf238cda365894046bafa23" | "0xc051405edef0e64ebfc501cfe1158eb0d74f3208" | "0x20990c6edd90339c1f1c25bc9c8ed7837ff4ec46" | "0x1557fdfda61f135baf1a1682eebaa086a0fcab6e" | "0x80151aae63b24a7e1837fe578fb6be026ae8abba" | "0x4e0a15e2cdc8fde28ee4250c3deec0996190703f" | "0x74c1f85e5429ea828bedb2bb90ddbe2cb1c0fb31" | "0xdbbc93072295362d38b63accd447d9c0b36a1678" | "0xb8271188967be1d66baa122b6b1d6205d5d0096f" | "0x260d6d6c3ea3daf5d53442fc375054a3b023d38b" | "0x9a4d078024ca4d757209e4f4459fe501558960fc" | "0x32a5746ba6826828716cc1a394bc33301ebc7656" | "0x90d2fb08af9e9323d7cbd364181bda1e7d3c2c2f" | "0x76cb8fee30422d9ccc72ba98acf5ea078ef65ecd" | "0x04a8cddbb62e3499c8e84ccf77192ed6292bf29d" | "0x8d76e9c2bd1adde00a3dcdc315fcb2774cb3d1d6" | "0x4a15e653799b02927cad5893fa03c257ca3be43c" | "0xa3c015bfc999779d55bb849f85cdff53b4b82b7d" | "0x852bec42f6078d4b1af4703d2863e839ea5452c3" | "0x29e02c9fc7f3b23c2bd1b00357e267728e30705e" | "0x87adc4a56252206008134ca6e807f474290c867d" | "0xfb24cc51c53909d093feac9f460513a1751961c2" | "0x43c24bd16bce6f7b49316067cf48d2c55898c6bf" | "0x3574f407410d472564a135edae1bed00e77cdd13" | "0x4b3d3333125593816dbfc9cc2ff047bddd0e859f" | "0xd4ea7475ced55eae6f581f112b0603f066c72c49" | "0x3f4b104801f8b979b5448c05eaa39e0b1910da4c" | "0xcb7a3a9e1a057744a60d8103ee66dd28a71c4d75" | "0xff961c81c4aab577c313309ac790dc6f5a936e5a")[];
@@ -2886,15 +2886,15 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     defaultToken1: "0x4200000000000000000000000000000000000006";
     uniswap: {
         deployBlock: number;
-        poolFactory: `0x${string}`;
-        multicall2: `0x${string}`;
-        tickLens: `0x${string}`;
-        nonfungiblePositionManager: `0x${string}`;
-        positionsNFT: `0x${string}`;
+        poolFactory: "0x33128a8fC17869897dcE68Ed026d694621f6FDfD";
+        multicall2: "0x091e99cb1C49331a94dD62755D168E941AbD0693";
+        tickLens: "0x0CdeE061c75D43c82520eD998C23ac2991c9ac6d";
+        nonfungiblePositionManager: "0x03a520b32C04BF3bEEf7BEb72E919cf822Ed34f1";
+        positionsNFT: "0x03a520b32C04BF3bEEf7BEb72E919cf822Ed34f1";
         positionsNFTDeployBlock: number;
     };
     token: {
-        usdcAddress: `0x${string}`;
+        usdcAddress: "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913";
     };
     oku: {
         pricing: {
@@ -3501,19 +3501,19 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     logoUrl: "https://assets.oku.trade/boba-logo.svg";
     uniswap: {
         deployBlock: number;
-        poolFactory: `0x${string}`;
-        multicall2: `0x${string}`;
-        proxyAdmin: `0x${string}`;
-        tickLens: `0x${string}`;
-        quoter: `0x${string}`;
-        swapRouter02: `0x${string}`;
-        NFTDescriptor: `0x${string}`;
-        nonfungibleTokenPositionDescriptor: `0x${string}`;
-        transparentUpgradeableProxy: `0x${string}`;
-        nonfungiblePositionManager: `0x${string}`;
-        v3Migrator: `0x${string}`;
-        uniswapV3Staker: `0x${string}`;
-        positionsNFT: `0x${string}`;
+        poolFactory: "0xFFCd7Aed9C627E82A765c3247d562239507f6f1B";
+        multicall2: "0xd213Ff319F8d28Fe31EbDB75b23aA61a2b905320";
+        proxyAdmin: "0xE8B5DaE430189ea6ccffF4eEeC58a98556525fB4";
+        tickLens: "0x36EBd44350E4406E67C5579026950793b8528402";
+        quoter: "0x483fc90DDC7aC847D4a752055DCF73483B6d97FD";
+        swapRouter02: "0x759E8B0cb9d65291e258aE3e043258ae1dD0df16";
+        NFTDescriptor: "0x531c3B226288854e992150FEfF4d95F7B8DEbD8c";
+        nonfungibleTokenPositionDescriptor: "0xb6751A274EDAe02A911E3bB23682FAaF380433b7";
+        transparentUpgradeableProxy: "0xEe6A57eC80ea46401049E92587E52f5Ec1c24785";
+        nonfungiblePositionManager: "0x0bfc9aC7E52f38EAA6dC8d10942478f695C6Cf71";
+        v3Migrator: "0x9ab1E646877732DD76bd662DC242723D7e4B42ba";
+        uniswapV3Staker: "0x6a6c1198f85B084822138DFd3fA9686e4029c091";
+        positionsNFT: "0x0bfc9aC7E52f38EAA6dC8d10942478f695C6Cf71";
         positionsNFTDeployBlock: number;
     };
     token: {
@@ -3549,10 +3549,10 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             address: "0xdeaddeaddeaddeaddeaddeaddeaddeaddead0000";
         };
         multicall2: {
-            address: `0x${string}`;
+            address: "0x07956092c0F4818D6792a42035d2d2fa0C75E76B";
         };
         multicall3: {
-            address: `0x${string}`;
+            address: "0xcA11bde05977b3631167028862bE2a173976CA11";
         };
     };
     blockExplorers: {
@@ -3584,19 +3584,19 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     logoUrl: "https://assets.oku.trade/bsc-logo.svg";
     uniswap: {
         deployBlock: number;
-        poolFactory: `0x${string}`;
-        multicall2: `0x${string}`;
-        proxyAdmin: `0x${string}`;
-        tickLens: `0x${string}`;
-        quoter: `0x${string}`;
-        swapRouter02: `0x${string}`;
-        NFTDescriptor: `0x${string}`;
-        nonfungibleTokenPositionDescriptor: `0x${string}`;
-        transparentUpgradeableProxy: `0x${string}`;
-        nonfungiblePositionManager: `0x${string}`;
-        v3Migrator: `0x${string}`;
-        uniswapV3Staker: `0x${string}`;
-        positionsNFT: `0x${string}`;
+        poolFactory: "0xFFCd7Aed9C627E82A765c3247d562239507f6f1B";
+        multicall2: "0xd213Ff319F8d28Fe31EbDB75b23aA61a2b905320";
+        proxyAdmin: "0xE8B5DaE430189ea6ccffF4eEeC58a98556525fB4";
+        tickLens: "0x36EBd44350E4406E67C5579026950793b8528402";
+        quoter: "0x483fc90DDC7aC847D4a752055DCF73483B6d97FD";
+        swapRouter02: "0x759E8B0cb9d65291e258aE3e043258ae1dD0df16";
+        NFTDescriptor: "0x531c3B226288854e992150FEfF4d95F7B8DEbD8c";
+        nonfungibleTokenPositionDescriptor: "0xb6751A274EDAe02A911E3bB23682FAaF380433b7";
+        transparentUpgradeableProxy: "0xEe6A57eC80ea46401049E92587E52f5Ec1c24785";
+        nonfungiblePositionManager: "0x0bfc9aC7E52f38EAA6dC8d10942478f695C6Cf71";
+        v3Migrator: "0x9ab1E646877732DD76bd662DC242723D7e4B42ba";
+        uniswapV3Staker: "0x6a6c1198f85B084822138DFd3fA9686e4029c091";
+        positionsNFT: "0x0bfc9aC7E52f38EAA6dC8d10942478f695C6Cf71";
         positionsNFTDeployBlock: number;
     };
     token: {
@@ -3672,11 +3672,11 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     logoUrl: "https://assets.oku.trade/filecoin-logo.svg";
     uniswap: {
         deployBlock: number;
-        poolFactory: `0x${string}`;
-        multicall2: `0x${string}`;
-        tickLens: `0x${string}`;
-        nonfungiblePositionManager: `0x${string}`;
-        positionsNFT: `0x${string}`;
+        poolFactory: "0xB4C47eD546Fc31E26470a186eC2C5F19eF09BA41";
+        multicall2: "0x732f5baac411e427d130fed03c2e82a3e0d64d35";
+        tickLens: "0x76c001ad9E527FEfA8Fa822a987Ad44ce720BAeD";
+        nonfungiblePositionManager: "0x4cd986dD509fbB6A695aE971d5C56c8795f640ee";
+        positionsNFT: "0x4cd986dD509fbB6A695aE971d5C56c8795f640ee";
         positionsNFTDeployBlock: number;
     };
     token: {
@@ -3743,21 +3743,21 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     logoUrl: "https://assets.oku.trade/ethereum-logo.webp";
     uniswap: {
         deployBlock: number;
-        poolFactory: `0x${string}`;
-        multicall2: `0x${string}`;
-        proxyAdmin: `0x${string}`;
-        tickLens: `0x${string}`;
-        quoter: `0x${string}`;
-        swapRouter: `0x${string}`;
-        swapRouter02: `0x${string}`;
-        NFTDescriptor: `0x${string}`;
-        nonfungibleTokenPositionDescriptor: `0x${string}`;
-        transparentUpgradeableProxy: `0x${string}`;
-        nonfungiblePositionManager: `0x${string}`;
-        v3Migrator: `0x${string}`;
-        uniswapV3Staker: `0x${string}`;
-        positionsNFT: `0x${string}`;
-        topNativePool: `0x${string}`;
+        poolFactory: "0x1F98431c8aD98523631AE4a59f267346ea31F984";
+        multicall2: "0x5BA1e12693Dc8F9c48aAD8770482f4739bEeD696";
+        proxyAdmin: "0xB753548F6E010e7e680BA186F9Ca1BdAB2E90cf2";
+        tickLens: "0xbfd8137f7d1516D3ea5cA83523914859ec47F573";
+        quoter: "0xb27308f9F90D607463bb33eA1BeBb41C27CE5AB6";
+        swapRouter: "0xE592427A0AEce92De3Edee1F18E0157C05861564";
+        swapRouter02: "0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45";
+        NFTDescriptor: "0x42B24A95702b9986e82d421cC3568932790A48Ec";
+        nonfungibleTokenPositionDescriptor: "0x91ae842A5Ffd8d12023116943e72A606179294f3";
+        transparentUpgradeableProxy: "0xEe6A57eC80ea46401049E92587E52f5Ec1c24785";
+        nonfungiblePositionManager: "0xC36442b4a4522E871399CD717aBDD847Ab11FE88";
+        v3Migrator: "0xA5644E29708357803b5A882D272c41cC0dF92B34";
+        uniswapV3Staker: "0xe34139463bA50bD61336E0c446Bd8C0867c6fE65";
+        positionsNFT: "0xC36442b4a4522E871399CD717aBDD847Ab11FE88";
+        topNativePool: "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640";
         positionsNFTDeployBlock: number;
     };
     token: {
@@ -3774,8 +3774,8 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 pool: "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640";
                 deployBlock: number;
             }[];
-            stablecoinList: `0x${string}`[];
-            pools: `0x${string}`[];
+            stablecoinList: string[];
+            pools: ("0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640" | "0x11b815efb8f581194ae79006d24e0d814b7697f6" | "0x60594a405d53811d3bc4766596efd80fd545a270" | "0x3416cf6c708da44db2624d63ea0aaef7113527c6" | "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8" | "0x4e68ccd3e89f51c3074ca5072bbac773960dfa36" | "0x69d91b94f0aaf8e8a2586909fa77a5c2c89818d5" | "0x7858e59e0c01ea06df3af3d20ac7b0003275d4bf" | "0xe0554a476a092703abdb3ef35c80e0d76d32939f" | "0x5777d92f208679db4b9778590fa3cab3ac9e2168" | "0xc2e9f25be6257c210d7adf0d4cd6e3e881ba25f8" | "0x99ac8ca7087fa4a2a1fb6357269965a2014abc35" | "0x6c6bc977e13df9b0de53b251522280bb72383700" | "0x9a772018fbd77fcd2d25657e5c547baff3fd7d16" | "0x6f48eca74b38d2936b02ab603ff4e36a6c0e3a77" | "0xe859041c9c6d70177f83de991b9d757e13cea26e" | "0x3328ca5b535d537f88715b305375c591cf52d541" | "0x353bb62ed786cdf7624bd4049859182f3c1e9e5d" | "0x9a834b70c07c81a9fcd6f22e842bf002fbffbe4d" | "0x9db9e0e53058c89e5b94e29621a205198648425b" | "0xb07fe2f407f971125d4eb1977f8acee8846c7324" | "0x84383fb05f610222430f69727aa638f8fdbf5cc1" | "0xb0f4a77bde7fee134265307c5cc19abff0ba409b" | "0xc63b0708e2f7e69cb8a1df0e1389a98c35a76d52" | "0x92ab871abb9d567aa276b2ce58d0203d84e0181e" | "0x735a26a57a0a0069dfabd41595a970faf5e1ee8b" | "0x7bea39867e4169dbe237d55c8242a8f2fcdcc387" | "0x5e35c4eba72470ee1177dcb14dddf4d9e6d915f4" | "0x07a6e955ba4345bae83ac2a6faa771fddd8a2011" | "0xfad57d2039c21811c8f2b5d5b65308aa99d31559" | "0xd0fc8ba7e267f2bc56044a7715a489d851dc6d78" | "0x8c54aa2a32a779e6f6fbea568ad85a19e0109c26" | "0xe05e653453f733786f2dabae0ffa1e96cfcc4b25" | "0x094a28b22e1b4218d590ea6fa916b3c5e670ba55" | "0xdd005650ac6805457f4fa6ee1816813ce815e914" | "0x015769601d8d4879c0e193eeab31f10cf03c9ea9" | "0xc5af84701f98fa483ece78af83f11b6c38aca71d" | "0x48da0965ab2d2cbf1c17c09cfb5cbe67ad5b1406" | "0x4e0924d3a751be199c426d52fb1f2337fa96f736" | "0x94b4ba66da4faa4fe09e17c0a8810d2afee70163" | "0x92995d179a5528334356cb4dc5c6cbb1c068696c" | "0x18d96b617a3e5c42a2ada4bc5d1b48e223f17d0d" | "0x9febc984504356225405e26833608b17719c82ae" | "0x2cb162433e0cabac4825e6d198a125829156cc92" | "0xc2a856c3aff2110c1171b8f942256d40e980c726" | "0x6279653c28f138c8b31b8a0f6f8cd2c58e8c1705" | "0x97e7d56a0408570ba1a7852de36350f7713906ec" | "0x216fb666dd61600e74f7b2ca25a38aa99db1a4e9" | "0x7270233ccae676e776a659affc35219e6fcfbb10" | "0xff29d3e552155180809ea3a877408a4620058086" | "0xcb0c5d9d92f4f2f80cce7aa271a1e148c226e19d" | "0x486263aa56d1b49d78dea765754164b880c99954" | "0x25c0edc51909fc20429c6ece9b8f4fbb5af13878" | "0x14036bbda496e39dc3db6025fe858431c1ddadb1" | "0x16980c16811bde2b3358c1ce4341541a4c772ec9" | "0xdf50fbde8180c8785842c8e316ebe06f542d3443" | "0x298b7c5e0770d151e4c5cf6cca4dae3a3ffc8e27" | "0x3aaf77ba7da262e34dffb9b10fc6777bfda79ab7" | "0xd6a309f49cf79542cea91df7b334eb4bd29aa0d7" | "0xdb02d6827220475ece91893255fdf57bed51aee3" | "0xa19f4ebe4cbb3c9b57c16eb4dfc7a52d46a5e891" | "0x6c4ab1907805adcb0b7ae911a5d1b0b99d608b3c" | "0x19f83460e387f1b01f94b85c2532ebc15b0b712e" | "0xaae63df9a86f9a682507c922db38fae5e777a606" | "0x7ec0b75a98997c927ace6d87958147a105147ea0" | "0x868b7bbbfe148516e5397f23982923686182c2d2" | "0xd73ea444eef6faf5423b49be3448e94ed214f1ec" | "0xbb2e5c2ff298fd96e166f90c8abacaf714df14f8" | "0x1a349a3397a8431eed8d94a05f88f9001117fcaa" | "0x85b5a7dc1630f9465d8409e2ac53313b70a71b9c" | "0x3067c3054b4a605f9e327bad82d9ba6049fe76a0" | "0x00cef0386ed94d738c8f8a74e8bfd0376926d24c" | "0x75bff91af9878f5ec3fede9b52d51159afc2430a" | "0xa5ef2a6bbe8852bd6fd2ef6ab9bb45081a6f531c" | "0xb06e7ed37cfa8f0f2888355dd1913e45412798c5" | "0xfe0df74636bc25c7f2400f22fe7dae32d39443d2" | "0x07f3d316630719f4fc69c152f397c150f0831071" | "0x38b6e47a97f4680a983eadc8e510c37d73967c29" | "0xd3ca35355106cb8bc5fd7c534275509673319d83" | "0x020c349a0541d76c16f501abc6b2e9c98adae892" | "0x9275e26bfb23b18bebb07bff45e85110f60963e9" | "0xd5ad5ec825cac700d7deafe3102dc2b6da6d195d" | "0x537a0a5654045c52ec45c4c86ed0c1ffe893809d" | "0xc4d9c69962ddb2388e1532279704fc6eb199c963" | "0x813b22032e94667cc0f854cc7241fc5a309c45bc" | "0xe081eeab0adde30588ba8d5b3f6ae5284790f54a" | "0x5c28b5f471d97f53fcf132f16f9f3c0c888c1a01" | "0x9445bd19767f73dcae6f2de90e6cd31192f62589" | "0xa80964c5bbd1a0e95777094420555fead1a26c1e" | "0xb8c05b7ca698f7cfd9b8a08f177e0ac5f2696bf9" | "0xd0af1981f52146a6939385451daea0726e13a484" | "0xa109209a2380fd4454b0364c4689f6de18ad18cc" | "0x5f3c621d810c7c929fb440e03dadf8621fe61ab5" | "0x141df9a608856d1651c9a3c27b39960ff0418a12" | "0x08f68110f1e0ca67c80a24b4bd206675610f445d" | "0x39529e96c28807655b5856b3d342c6225111770e" | "0x391e8501b626c623d39474afca6f9e46c2686649" | "0xbe3cd9b751360a8030770425acf947c8cb4cab38" | "0xbd5fdda17bc27bb90e37df7a838b1bfc0dc997f5" | "0x3470447f3cecffac709d3e783a307790b0208d60")[];
         };
     };
     defaultPool: "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640";
@@ -3841,17 +3841,17 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     logoUrl: "https://assets.oku.trade/moonbeam-logo.svg";
     uniswap: {
         deployBlock: number;
-        poolFactory: `0x${string}`;
-        multicall2: `0x${string}`;
-        tickLens: `0x${string}`;
-        quoter: `0x${string}`;
-        swapRouter02: `0x${string}`;
-        NFTDescriptor: `0x${string}`;
-        nonfungibleTokenPositionDescriptor: `0x${string}`;
-        transparentUpgradeableProxy: `0x${string}`;
-        nonfungiblePositionManager: `0x${string}`;
-        v3Migrator: `0x${string}`;
-        positionsNFT: `0x${string}`;
+        poolFactory: "0x28f1158795A3585CaAA3cD6469CD65382b89BB70";
+        multicall2: "0xd213Ff319F8d28Fe31EbDB75b23aA61a2b905320";
+        tickLens: "0x1f4F7b041895D9eB1A79be0896AF3E68e4160010";
+        quoter: "0x48af91cdcad8ffdd7a8d4cdf73c16cb0632d3d17";
+        swapRouter02: "0xc507e22ba3140dc0a79fdf27e03c98aa20f3ee66";
+        NFTDescriptor: "0x041b81cb4d223d8e70ac96c0d103f8a956ed4514";
+        nonfungibleTokenPositionDescriptor: "0x921c55AE486e63D16dbfbE216573A21aeB684c02";
+        transparentUpgradeableProxy: "0xEe6A57eC80ea46401049E92587E52f5Ec1c24785";
+        nonfungiblePositionManager: "0x0bfc9aC7E52f38EAA6dC8d10942478f695C6Cf71";
+        v3Migrator: "0x76776b10d782a1d194fbfc92d4b01db1ce1eeb4b";
+        positionsNFT: "0x9036D0DcB5a059C9371B05D508f0072Df773854e";
         positionsNFTDeployBlock: number;
     };
     token: {
@@ -3934,21 +3934,21 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     };
     uniswap: {
         deployBlock: number;
-        poolFactory: `0x${string}`;
-        multicall2: `0x${string}`;
-        proxyAdmin: `0x${string}`;
-        tickLens: `0x${string}`;
-        quoter: `0x${string}`;
-        swapRouter: `0x${string}`;
-        swapRouter02: `0x${string}`;
-        NFTDescriptor: `0x${string}`;
-        nonfungibleTokenPositionDescriptor: `0x${string}`;
-        transparentUpgradeableProxy: `0x${string}`;
-        nonfungiblePositionManager: `0x${string}`;
-        v3Migrator: `0x${string}`;
-        uniswapV3Staker: `0x${string}`;
-        positionsNFT: `0x${string}`;
-        topNativePool: `0x${string}`;
+        poolFactory: "0x1F98431c8aD98523631AE4a59f267346ea31F984";
+        multicall2: "0x5BA1e12693Dc8F9c48aAD8770482f4739bEeD696";
+        proxyAdmin: "0xB753548F6E010e7e680BA186F9Ca1BdAB2E90cf2";
+        tickLens: "0xbfd8137f7d1516D3ea5cA83523914859ec47F573";
+        quoter: "0xb27308f9F90D607463bb33eA1BeBb41C27CE5AB6";
+        swapRouter: "0xE592427A0AEce92De3Edee1F18E0157C05861564";
+        swapRouter02: "0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45";
+        NFTDescriptor: "0x42B24A95702b9986e82d421cC3568932790A48Ec";
+        nonfungibleTokenPositionDescriptor: "0x91ae842A5Ffd8d12023116943e72A606179294f3";
+        transparentUpgradeableProxy: "0xEe6A57eC80ea46401049E92587E52f5Ec1c24785";
+        nonfungiblePositionManager: "0xC36442b4a4522E871399CD717aBDD847Ab11FE88";
+        v3Migrator: "0xA5644E29708357803b5A882D272c41cC0dF92B34";
+        uniswapV3Staker: "0xe34139463bA50bD61336E0c446Bd8C0867c6fE65";
+        positionsNFT: "0xC36442b4a4522E871399CD717aBDD847Ab11FE88";
+        topNativePool: "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640";
         positionsNFTDeployBlock: number;
     };
     token: {
@@ -4557,20 +4557,20 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     logoUrl: "https://assets.oku.trade/polygon-logo.webp";
     uniswap: {
         deployBlock: number;
-        poolFactory: `0x${string}`;
-        multicall2: `0x${string}`;
-        proxyAdmin: `0x${string}`;
-        tickLens: `0x${string}`;
-        quoter: `0x${string}`;
-        swapRouter: `0x${string}`;
-        swapRouter02: `0x${string}`;
-        NFTDescriptor: `0x${string}`;
-        nonfungibleTokenPositionDescriptor: `0x${string}`;
-        transparentUpgradeableProxy: `0x${string}`;
-        nonfungiblePositionManager: `0x${string}`;
-        v3Migrator: `0x${string}`;
-        uniswapV3Staker: `0x${string}`;
-        positionsNFT: `0x${string}`;
+        poolFactory: "0x1F98431c8aD98523631AE4a59f267346ea31F984";
+        multicall2: "0xca11bde05977b3631167028862be2a173976ca11";
+        proxyAdmin: "0xB753548F6E010e7e680BA186F9Ca1BdAB2E90cf2";
+        tickLens: "0xbfd8137f7d1516D3ea5cA83523914859ec47F573";
+        quoter: "0xb27308f9F90D607463bb33eA1BeBb41C27CE5AB6";
+        swapRouter: "0xE592427A0AEce92De3Edee1F18E0157C05861564";
+        swapRouter02: "0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45";
+        NFTDescriptor: "0x42B24A95702b9986e82d421cC3568932790A48Ec";
+        nonfungibleTokenPositionDescriptor: "0x91ae842A5Ffd8d12023116943e72A606179294f3";
+        transparentUpgradeableProxy: "0xEe6A57eC80ea46401049E92587E52f5Ec1c24785";
+        nonfungiblePositionManager: "0xC36442b4a4522E871399CD717aBDD847Ab11FE88";
+        v3Migrator: "0xA5644E29708357803b5A882D272c41cC0dF92B34";
+        uniswapV3Staker: "0xe34139463bA50bD61336E0c446Bd8C0867c6fE65";
+        positionsNFT: "0xC36442b4a4522E871399CD717aBDD847Ab11FE88";
         positionsNFTDeployBlock: number;
         topNativePool: "0xa374094527e1673a86de625aa59517c5de346d32";
     };
@@ -4589,7 +4589,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 pool: "0xa374094527e1673a86de625aa59517c5de346d32";
             }[];
             stablecoinList: string[];
-            pools: `0x${string}`[];
+            pools: ("0xa374094527e1673a86de625aa59517c5de346d32" | "0x45dda9cb7c25131df268515131f647d726f50608" | "0x9b08288c3be4f62bbf8d1c20ac9c5e6f9467d8b7" | "0xeef1a9507b3d505f0062f2be9453981255b503c8" | "0xdac8a8e6dbf8c690ec6815e0ff03491b2770255d" | "0x5645dcb64c059aa11212707fbf4e7f984440a8cf" | "0x0a6c4588b7d8bd22cf120283b1fff953420c45f3" | "0x88f3c15523544835ff6c738ddb30995339ad57d6" | "0xbb98b3d2b18aef63a3178023a920971cf5f29be4" | "0x5f69c2ec01c22843f8273838d570243fd1963014" | "0x0e44ceb592acfc5d3f09d996302eb4c499ff8c10" | "0x67a9fe12fa6082d9d0203c84c6c56d3c4b269f28" | "0x04537f43f6add7b1b60cab199c7a910024ee0594" | "0x3f5228d0e7d75467366be7de2c31d0d098ba2c23" | "0x7de263d0ad6e5d208844e65118c3a02a9a5d56b6" | "0x254aa3a898071d6a2da0db11da73b02b4646078f" | "0x847b64f9d3a95e977d157866447a5c0a5dfa0ee5" | "0x0f663c16dd7c65cf87edb9229464ca77aeea536b" | "0x781067ef296e5c4a4203f81c593274824b7c185d" | "0x0a63d3910ffc1529190e80e10855c4216407cc45" | "0x4ccd010148379ea531d6c587cfdd60180196f9b1" | "0x94ab9e4553ffb839431e37cc79ba8905f45bfbea" | "0xfe530931da161232ec76a7c3bea7d36cf3811a0d" | "0x6488adfdbb85ce0302faa6ac72c8693eba81df83" | "0xdb11b39d8acdc877c58392e996a4a88424483705" | "0x16e7ca3eaaf7703b9724301e6fd3d4e2918fec59" | "0x3d0acd52ee4a9271a0ffe75f9b91049152bac64b" | "0x3165241b09823256465699625637d535d634cc8c" | "0x3bfcb475e528f54246f1847ec0e7b53dd88bda4e" | "0x4c0bc5d34369d5f89e7f3aa551150dc7d281b4c7" | "0x1cf0a4717f15ac0265d26986af8ac4ce25fd9a3f" | "0x3fa147d6309abeb5c1316f7d8a7d8bd023e0cd80" | "0x6bad0f9a89ca403bb91d253d385cec1a2b6eca97" | "0xb493e5aee0e0325632f4ed63cc889a23b8c77969" | "0x613e24ec04fa61a5967cccc90cdc1d9513f73d5a" | "0xb2f8ba544e4874d4e0f817359d0f4bcff209b87e" | "0x1edbf151b7a4bfb611030efcb460ae0d3516aee7" | "0x74d3c85df4dbd03c7c12f7649faa6457610e7604" | "0xbeaf7156ba07c3df8fac42e90188c5a752470db7" | "0xab4b63bd6c214ce8409fa1b31afa50d4e17597f9" | "0x26770cc2c612e5c97eb70a6531fa9d5098ef74ab" | "0x22177148e681a6ca5242c9888ace170ee7ec47bd" | "0xa1cfb393607d1a6888d273b762832ed14c8b56b1" | "0xa236278bec0e0677a48527340cfb567b4e6e9adc" | "0x156917664027312906a3e977e7f316a29934a37d" | "0x6cd22380745d4e4a5b674f692a1e84281e5e0896" | "0x286af3968aec55ec3acd463bf59edc7cbc04102e" | "0x42f0530351471dab7ec968476d19bd36af9ec52d" | "0x67e708986a809acefde16f2417fa5701241e3935" | "0x3e4bebfd2e3f6672640c83fc4888620741169825" | "0x33016df701b323c33cc027146c6a9e0997b2a923" | "0x30f5c777ab316e6878d2b71a32274e4c2842327a" | "0x78a750ca5f8dd1ef1c87e29e8a267ff4c8d12b38" | "0xfa22d298e3b0bc1752e5ef2849cec1149d596674" | "0x5884ddb0bb109c02150242edf00d0737d78ed61d" | "0x67b6ee9feab5fe2affed6a386950576d43f238dd" | "0x9159a880b930aced1080ed4742818362663c8d46" | "0xa90c1c009dc8292bd04ced30f9b53a5ff7a806a0" | "0x1f6082db7c8f4b199e17090cd5c8831a1dad1997" | "0xbd934a7778771a7e2d9bf80596002a214d8c9304" | "0xfc704de88db4858419d5d0af080486a95343ba15" | "0x32a222f69d00e717845a3d857d0392d6a25a2acd" | "0x7f567ce133b0b69458fc318af06eee27642865be" | "0x98349e1689538fd878646b77b3dcd89040a35eb6" | "0x6feae21e16097faa70afbb12872bdba3c85f4d9f" | "0xd0beb9570bc3d2af7fa461dfd3c75cc3a34f95e2" | "0x56fcb902bee19a645f9607cd1e1c0737b6358feb" | "0xe6617e2fb578e1df127f59fafeaa1122e543278f" | "0x08b446353ddb5a1695774bd547703879ff253aea" | "0xd67d3f77ad7acab1a75863b094176015df30cd8c" | "0xaa40be3a775451ddccf3aabf36bdea550391341f" | "0x0d1375f18e23099ae6a151e818cfe491b4feff31" | "0xf9e9526e55a0e1fac1813b2fe88bc9b30eea04f9" | "0xb69d18170a7d949777ead872cc6ba7cabb78fcfc" | "0xa708d430656aa379b6b0b1d570be8ae1095530e5" | "0xe93fde3c231c48db0a78e3d802afc55d845102c9" | "0x046bbdd927fc635dd6de7cf4efdad3e767274074" | "0xd06a93253d719ed8f28489ae9838d3d0f9eaba42" | "0xae732bd3d6becb4f0f458f54a6daad1fb1e9222c" | "0x039de30e4901793293a155dc3bcddc1b66fb5707" | "0x635fd65c546e66f73b7a760307ad884916f4c204" | "0x362d0401ed74db25219b6d02ac1791cfe3542d68" | "0x0581ef32b9393c5c282517282853267eed69621e" | "0x802c9f216f812b1a4b24636bec4f261b316797cb" | "0xc1dc5605b242a658adfc7d6e693a50aefb49bbae" | "0xba0216254163b57af68b7161cf824dbadcad61df" | "0x90e883972ebcbebc871f3f0658bab1821b8e8705" | "0xba91ae7312ace1137c15786177cbe687fd2d73d0" | "0x140ae14be4b5e86aa149f76e84953746e0bc04f1" | "0x2b5c2a5558bcc428ca97c6a6cd0eac8c1d180d65" | "0x6c8408f735c2f73b8f9271f663b1540bb8c2acce" | "0xa846934be7302304f2a8e5b92b576a3cfe655002" | "0xc21b964af2b0254580d44981d624335f2b7c6fb6" | "0x0dab5aedaf25201cce638b9d617d4b8c23d29b8d" | "0x30fe5e402139925634430eb88e9c209e4a2d6dec" | "0x9a72fc3fb9e99087d2eae500355e7902c763f9b3" | "0x02d07784818ada64827fce9f5c1309af688a5681" | "0x5e575a7050ca806248e8f4341601847fde52d9ba" | "0x80c5c7d7e94158fd2daac56734889a7cdf8dadfe" | "0xd48cb7ad6a0e2137ea81803c63d2863206ce4700")[];
         };
     };
     defaultPool: "0xa374094527e1673a86de625aa59517c5de346d32";
@@ -4613,10 +4613,10 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             address: "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270";
         };
         multicall2: {
-            address: `0x${string}`;
+            address: "0x275617327c958bD06b5D6b871E7f491D76113dd8";
         };
         multicall3: {
-            address: `0x${string}`;
+            address: "0xcA11bde05977b3631167028862bE2a173976CA11";
         };
     };
     blockExplorers: {
@@ -4649,11 +4649,11 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     logoUrl: "https://assets.oku.trade/rootstock-logo.svg";
     uniswap: {
         deployBlock: number;
-        poolFactory: `0x${string}`;
-        multicall2: `0x${string}`;
-        tickLens: `0x${string}`;
-        nonfungiblePositionManager: `0x${string}`;
-        positionsNFT: `0x${string}`;
+        poolFactory: "0xaF37EC98A00FD63689CF3060BF3B6784E00caD82";
+        multicall2: "0x996a9858cdFa45aD68E47C9a30A7201E29c6A386";
+        tickLens: "0x55B9dF5bF68ADe972191a91980459f48ecA16afC";
+        nonfungiblePositionManager: "0x9d9386c042F194B460Ec424a1e57ACDE25f5C4b1";
+        positionsNFT: "0x9d9386c042F194B460Ec424a1e57ACDE25f5C4b1";
         positionsNFTDeployBlock: number;
     };
     token: {
@@ -4698,10 +4698,10 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             address: "0x542fDA317318eBF1d3DEAf76E0b632741A7e677d";
         };
         Multicall2: {
-            address: `0x${string}`;
+            address: "0x996a9858cdFa45aD68E47C9a30A7201E29c6A386";
         };
         Multicall3: {
-            address: `0x${string}`;
+            address: "0xca11bde05977b3631167028862be2a173976ca11";
         };
         multicall3: {
             readonly address: "0xcA11bde05977b3631167028862bE2a173976CA11";
@@ -4731,8 +4731,8 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     logoUrl: "https://assets.oku.trade/scroll-logo.png";
     uniswap: {
         deployBlock: number;
-        poolFactory: `0x${string}`;
-        positionsNFT: `0x${string}`;
+        poolFactory: "0x70C62C8b8e801124A4Aa81ce07b637A3e83cb919";
+        positionsNFT: "0xB39002E4033b162fAc607fc3471E205FA2aE5967";
     };
     token: {
         usdcAddress: "0x06efdbff2a14a7c8e15944d1f4a48f9f95f663a4";
@@ -4768,10 +4768,10 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             address: "0x5300000000000000000000000000000000000004";
         };
         Multicall2: {
-            address: `0x${string}`;
+            address: "0x3b615B1AC55bc34e51a81D3dea67467F32bcb8C2";
         };
         Multicall3: {
-            address: `0x${string}`;
+            address: "0xcA11bde05977b3631167028862bE2a173976CA11";
         };
         multicall3: {
             readonly address: "0xca11bde05977b3631167028862be2a173976ca11";
@@ -4808,11 +4808,11 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     logoUrl: "https://assets.oku.trade/zkevm-logo.svg";
     uniswap: {
         deployBlock: number;
-        poolFactory: `0x${string}`;
-        multicall2: `0x${string}`;
-        tickLens: `0x${string}`;
-        nonfungiblePositionManager: `0x${string}`;
-        positionsNFT: `0x${string}`;
+        poolFactory: "0xff83c3c800Fec21de45C5Ec30B69ddd5Ee60DFC2";
+        multicall2: "0x9073E304a15b1522132848B461857cd8BA932ea7";
+        tickLens: "0x64519b94A7248Bf17929fB03b9648ce277Fd7fDA";
+        nonfungiblePositionManager: "0xf0D61Aeda516CCa1FF20Be65Cfb0213be688A24f";
+        positionsNFT: "0xf0D61Aeda516CCa1FF20Be65Cfb0213be688A24f";
         positionsNFTDeployBlock: number;
     };
     token: {
@@ -4821,7 +4821,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         usdcAddress: "0xa8ce8aee21bc2a48a5ef670afcc9274c7bbbc035";
     };
     oku: {
-        limitOrderRegistry: `0x${string}`;
+        limitOrderRegistry: "0x5f1ef1d278013567c3c67e18d2d35bfa9954f723";
         limitOrderRegistryDeployBlock: number;
         pricing: {
             nativeWrappedToken: "0x4F9A0e7FD2Bf6067db6994CF12E4495Df938E6e9";
@@ -4849,10 +4849,10 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             address: "0x4f9a0e7fd2bf6067db6994cf12e4495df938e6e9";
         };
         multicall2: {
-            address: `0x${string}`;
+            address: "0x1FaE28D9C07a8a96E2ECc53BB328E787D5B88674";
         };
         multicall3: {
-            address: `0x${string}`;
+            address: "0xca11bde05977b3631167028862be2a173976ca11";
         };
     };
     blockExplorers: {
@@ -4884,11 +4884,11 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     logoUrl: "https://assets.oku.trade/zksync-logo.svg";
     uniswap: {
         deployBlock: number;
-        poolFactory: `0x${string}`;
-        multicall2: `0x${string}`;
-        tickLens: `0x${string}`;
-        nonfungiblePositionManager: `0x${string}`;
-        positionsNFT: `0x${string}`;
+        poolFactory: "0x8FdA5a7a8dCA67BBcDd10F02Fa0649A937215422";
+        multicall2: "0x0c68a7C72f074d1c45C16d41fa74eEbC6D16a65C";
+        tickLens: "0xe10FF11b809f8EE07b056B452c3B2caa7FE24f89";
+        nonfungiblePositionManager: "0x0616e5762c1E7Dc3723c50663dF10a162D690a86";
+        positionsNFT: "0x0616e5762c1E7Dc3723c50663dF10a162D690a86";
         positionsNFTDeployBlock: number;
     };
     token: {
@@ -4931,10 +4931,10 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             address: "0x5aea5775959fbc2557cc8789bc1bf90a239d9a91";
         };
         multicall2: {
-            address: `0x${string}`;
+            address: "0x8bB86A31795d3e8ef12c630C288770e13eEcF038";
         };
         multicall3: {
-            address: `0x${string}`;
+            address: "0xF9cda624FBC7e059355ce98a31693d299FACd963";
         };
     };
     id: 324;

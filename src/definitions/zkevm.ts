@@ -1,6 +1,6 @@
 import { polygonZkEvm as chain } from "viem/chains";
 import { makeConfig } from "../util";
-import {  } from "viem";
+import {} from "viem";
 
 export const polygonZkEvm = makeConfig({
   ...chain,
@@ -9,12 +9,11 @@ export const polygonZkEvm = makeConfig({
   logoUrl: "https://assets.oku.trade/zkevm-logo.svg",
   uniswap: {
     deployBlock: 8466867,
-    poolFactory: ("0xff83c3c800Fec21de45C5Ec30B69ddd5Ee60DFC2"),
-    multicall2: ("0x9073E304a15b1522132848B461857cd8BA932ea7"),
-    tickLens: ("0x64519b94A7248Bf17929fB03b9648ce277Fd7fDA"),
-    nonfungiblePositionManager:
-      "0xf0D61Aeda516CCa1FF20Be65Cfb0213be688A24f",
-    positionsNFT: ("0xf0D61Aeda516CCa1FF20Be65Cfb0213be688A24f"),
+    poolFactory: "0xff83c3c800Fec21de45C5Ec30B69ddd5Ee60DFC2",
+    multicall2: "0x9073E304a15b1522132848B461857cd8BA932ea7",
+    tickLens: "0x64519b94A7248Bf17929fB03b9648ce277Fd7fDA",
+    nonfungiblePositionManager: "0xf0D61Aeda516CCa1FF20Be65Cfb0213be688A24f",
+    positionsNFT: "0xf0D61Aeda516CCa1FF20Be65Cfb0213be688A24f",
     positionsNFTDeployBlock: 8466897,
   },
   token: {
@@ -23,8 +22,7 @@ export const polygonZkEvm = makeConfig({
     usdcAddress: "0xa8ce8aee21bc2a48a5ef670afcc9274c7bbbc035",
   },
   oku: {
-    limitOrderRegistry:
-      "0x5f1ef1d278013567c3c67e18d2d35bfa9954f723",
+    limitOrderRegistry: "0x5f1ef1d278013567c3c67e18d2d35bfa9954f723",
     limitOrderRegistryDeployBlock: 8467090,
     pricing: {
       nativeWrappedToken: "0x4F9A0e7FD2Bf6067db6994CF12E4495Df938E6e9",
@@ -65,10 +63,10 @@ export const polygonZkEvm = makeConfig({
     },
 
     multicall2: {
-      address: ("0x1FaE28D9C07a8a96E2ECc53BB328E787D5B88674"),
+      address: "0x1FaE28D9C07a8a96E2ECc53BB328E787D5B88674",
     },
     multicall3: {
-      address: ("0xca11bde05977b3631167028862be2a173976ca11"),
+      address: "0xca11bde05977b3631167028862be2a173976ca11",
     },
   },
 });

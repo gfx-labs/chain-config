@@ -1,6 +1,6 @@
 import { filecoin as chain } from "viem/chains";
 import { makeConfig } from "../util";
-import {  } from "viem";
+import {} from "viem";
 
 export const filecoin = makeConfig({
   ...chain,
@@ -18,12 +18,11 @@ export const filecoin = makeConfig({
 
   uniswap: {
     deployBlock: 3195837,
-    poolFactory: ("0xB4C47eD546Fc31E26470a186eC2C5F19eF09BA41"),
-    multicall2: ("0x732f5baac411e427d130fed03c2e82a3e0d64d35"),
-    tickLens: ("0x76c001ad9E527FEfA8Fa822a987Ad44ce720BAeD"),
-    nonfungiblePositionManager:
-      "0x4cd986dD509fbB6A695aE971d5C56c8795f640ee",
-    positionsNFT: ("0x4cd986dD509fbB6A695aE971d5C56c8795f640ee"),
+    poolFactory: "0xB4C47eD546Fc31E26470a186eC2C5F19eF09BA41",
+    multicall2: "0x732f5baac411e427d130fed03c2e82a3e0d64d35",
+    tickLens: "0x76c001ad9E527FEfA8Fa822a987Ad44ce720BAeD",
+    nonfungiblePositionManager: "0x4cd986dD509fbB6A695aE971d5C56c8795f640ee",
+    positionsNFT: "0x4cd986dD509fbB6A695aE971d5C56c8795f640ee",
     positionsNFTDeployBlock: 3195861,
   },
   token: {

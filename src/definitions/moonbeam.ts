@@ -1,6 +1,6 @@
 import { moonbeam as chain } from "viem/chains";
 import { makeConfig } from "../util";
-import {  } from "viem";
+import {} from "viem";
 
 export const moonbeam = makeConfig({
   ...chain,
@@ -9,20 +9,18 @@ export const moonbeam = makeConfig({
   logoUrl: "https://assets.oku.trade/moonbeam-logo.svg",
   uniswap: {
     deployBlock: 3340452,
-    poolFactory: ("0x28f1158795A3585CaAA3cD6469CD65382b89BB70"),
-    multicall2: ("0xd213Ff319F8d28Fe31EbDB75b23aA61a2b905320"),
-    tickLens: ("0x1f4F7b041895D9eB1A79be0896AF3E68e4160010"),
-    quoter: ("0x48af91cdcad8ffdd7a8d4cdf73c16cb0632d3d17"),
-    swapRouter02: ("0xc507e22ba3140dc0a79fdf27e03c98aa20f3ee66"),
-    NFTDescriptor: ("0x041b81cb4d223d8e70ac96c0d103f8a956ed4514"),
+    poolFactory: "0x28f1158795A3585CaAA3cD6469CD65382b89BB70",
+    multicall2: "0xd213Ff319F8d28Fe31EbDB75b23aA61a2b905320",
+    tickLens: "0x1f4F7b041895D9eB1A79be0896AF3E68e4160010",
+    quoter: "0x48af91cdcad8ffdd7a8d4cdf73c16cb0632d3d17",
+    swapRouter02: "0xc507e22ba3140dc0a79fdf27e03c98aa20f3ee66",
+    NFTDescriptor: "0x041b81cb4d223d8e70ac96c0d103f8a956ed4514",
     nonfungibleTokenPositionDescriptor:
       "0x921c55AE486e63D16dbfbE216573A21aeB684c02",
-    transparentUpgradeableProxy:
-      "0xEe6A57eC80ea46401049E92587E52f5Ec1c24785",
-    nonfungiblePositionManager:
-      "0x0bfc9aC7E52f38EAA6dC8d10942478f695C6Cf71",
-    v3Migrator: ("0x76776b10d782a1d194fbfc92d4b01db1ce1eeb4b"),
-    positionsNFT: ("0x9036D0DcB5a059C9371B05D508f0072Df773854e"),
+    transparentUpgradeableProxy: "0xEe6A57eC80ea46401049E92587E52f5Ec1c24785",
+    nonfungiblePositionManager: "0x0bfc9aC7E52f38EAA6dC8d10942478f695C6Cf71",
+    v3Migrator: "0x76776b10d782a1d194fbfc92d4b01db1ce1eeb4b",
+    positionsNFT: "0x9036D0DcB5a059C9371B05D508f0072Df773854e",
     positionsNFTDeployBlock: 3340476,
   },
   token: {

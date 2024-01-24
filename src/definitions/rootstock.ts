@@ -1,6 +1,6 @@
 import { rootstock as chain } from "viem/chains";
 import { makeConfig } from "../util";
-import {  } from "viem";
+import {} from "viem";
 
 export const rootstock = makeConfig({
   ...chain,
@@ -10,12 +10,11 @@ export const rootstock = makeConfig({
   logoUrl: "https://assets.oku.trade/rootstock-logo.svg",
   uniswap: {
     deployBlock: 5829210,
-    poolFactory: ("0xaF37EC98A00FD63689CF3060BF3B6784E00caD82"),
-    multicall2: ("0x996a9858cdFa45aD68E47C9a30A7201E29c6A386"),
-    tickLens: ("0x55B9dF5bF68ADe972191a91980459f48ecA16afC"),
-    nonfungiblePositionManager:
-      "0x9d9386c042F194B460Ec424a1e57ACDE25f5C4b1",
-    positionsNFT: ("0x9d9386c042F194B460Ec424a1e57ACDE25f5C4b1"),
+    poolFactory: "0xaF37EC98A00FD63689CF3060BF3B6784E00caD82",
+    multicall2: "0x996a9858cdFa45aD68E47C9a30A7201E29c6A386",
+    tickLens: "0x55B9dF5bF68ADe972191a91980459f48ecA16afC",
+    nonfungiblePositionManager: "0x9d9386c042F194B460Ec424a1e57ACDE25f5C4b1",
+    positionsNFT: "0x9d9386c042F194B460Ec424a1e57ACDE25f5C4b1",
     positionsNFTDeployBlock: 5829891,
   },
   token: {
@@ -70,10 +69,10 @@ export const rootstock = makeConfig({
     },
 
     Multicall2: {
-      address: ("0x996a9858cdFa45aD68E47C9a30A7201E29c6A386"),
+      address: "0x996a9858cdFa45aD68E47C9a30A7201E29c6A386",
     },
     Multicall3: {
-      address: ("0xca11bde05977b3631167028862be2a173976ca11"),
+      address: "0xca11bde05977b3631167028862be2a173976ca11",
     },
   },
 });

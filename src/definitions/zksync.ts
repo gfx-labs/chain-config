@@ -1,6 +1,6 @@
 import { zkSync as chain } from "viem/chains";
 import { makeConfig } from "../util";
-import {  } from "viem";
+import {} from "viem";
 
 export const zkSync = makeConfig({
   ...chain,
@@ -9,12 +9,11 @@ export const zkSync = makeConfig({
   logoUrl: "https://assets.oku.trade/zksync-logo.svg",
   uniswap: {
     deployBlock: 12637075,
-    poolFactory: ("0x8FdA5a7a8dCA67BBcDd10F02Fa0649A937215422"),
-    multicall2: ("0x0c68a7C72f074d1c45C16d41fa74eEbC6D16a65C"),
-    tickLens: ("0xe10FF11b809f8EE07b056B452c3B2caa7FE24f89"),
-    nonfungiblePositionManager:
-      "0x0616e5762c1E7Dc3723c50663dF10a162D690a86",
-    positionsNFT: ("0x0616e5762c1E7Dc3723c50663dF10a162D690a86"),
+    poolFactory: "0x8FdA5a7a8dCA67BBcDd10F02Fa0649A937215422",
+    multicall2: "0x0c68a7C72f074d1c45C16d41fa74eEbC6D16a65C",
+    tickLens: "0xe10FF11b809f8EE07b056B452c3B2caa7FE24f89",
+    nonfungiblePositionManager: "0x0616e5762c1E7Dc3723c50663dF10a162D690a86",
+    positionsNFT: "0x0616e5762c1E7Dc3723c50663dF10a162D690a86",
     positionsNFTDeployBlock: 12637120,
   },
   token: {
@@ -73,10 +72,10 @@ export const zkSync = makeConfig({
       address: "0x5aea5775959fbc2557cc8789bc1bf90a239d9a91",
     },
     multicall2: {
-      address: ("0x8bB86A31795d3e8ef12c630C288770e13eEcF038"),
+      address: "0x8bB86A31795d3e8ef12c630C288770e13eEcF038",
     },
     multicall3: {
-      address: ("0xF9cda624FBC7e059355ce98a31693d299FACd963"),
+      address: "0xF9cda624FBC7e059355ce98a31693d299FACd963",
     },
   },
 });

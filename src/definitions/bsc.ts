@@ -1,4 +1,4 @@
-import {  } from "viem";
+import {} from "viem";
 import { bsc as chain } from "viem/chains";
 import { makeConfig } from "../util";
 
@@ -9,22 +9,20 @@ export const bsc = makeConfig({
   logoUrl: "https://assets.oku.trade/bsc-logo.svg",
   uniswap: {
     deployBlock: 969351,
-    poolFactory: ("0xFFCd7Aed9C627E82A765c3247d562239507f6f1B"),
-    multicall2: ("0xd213Ff319F8d28Fe31EbDB75b23aA61a2b905320"),
-    proxyAdmin: ("0xE8B5DaE430189ea6ccffF4eEeC58a98556525fB4"),
-    tickLens: ("0x36EBd44350E4406E67C5579026950793b8528402"),
-    quoter: ("0x483fc90DDC7aC847D4a752055DCF73483B6d97FD"),
-    swapRouter02: ("0x759E8B0cb9d65291e258aE3e043258ae1dD0df16"),
-    NFTDescriptor: ("0x531c3B226288854e992150FEfF4d95F7B8DEbD8c"),
+    poolFactory: "0xFFCd7Aed9C627E82A765c3247d562239507f6f1B",
+    multicall2: "0xd213Ff319F8d28Fe31EbDB75b23aA61a2b905320",
+    proxyAdmin: "0xE8B5DaE430189ea6ccffF4eEeC58a98556525fB4",
+    tickLens: "0x36EBd44350E4406E67C5579026950793b8528402",
+    quoter: "0x483fc90DDC7aC847D4a752055DCF73483B6d97FD",
+    swapRouter02: "0x759E8B0cb9d65291e258aE3e043258ae1dD0df16",
+    NFTDescriptor: "0x531c3B226288854e992150FEfF4d95F7B8DEbD8c",
     nonfungibleTokenPositionDescriptor:
       "0xb6751A274EDAe02A911E3bB23682FAaF380433b7",
-    transparentUpgradeableProxy:
-      "0xEe6A57eC80ea46401049E92587E52f5Ec1c24785",
-    nonfungiblePositionManager:
-      "0x0bfc9aC7E52f38EAA6dC8d10942478f695C6Cf71",
-    v3Migrator: ("0x9ab1E646877732DD76bd662DC242723D7e4B42ba"),
-    uniswapV3Staker: ("0x6a6c1198f85B084822138DFd3fA9686e4029c091"),
-    positionsNFT: ("0x0bfc9aC7E52f38EAA6dC8d10942478f695C6Cf71"),
+    transparentUpgradeableProxy: "0xEe6A57eC80ea46401049E92587E52f5Ec1c24785",
+    nonfungiblePositionManager: "0x0bfc9aC7E52f38EAA6dC8d10942478f695C6Cf71",
+    v3Migrator: "0x9ab1E646877732DD76bd662DC242723D7e4B42ba",
+    uniswapV3Staker: "0x6a6c1198f85B084822138DFd3fA9686e4029c091",
+    positionsNFT: "0x0bfc9aC7E52f38EAA6dC8d10942478f695C6Cf71",
     positionsNFTDeployBlock: 969359,
   },
   token: {
