@@ -1,7 +1,7 @@
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('viem/chains')) :
   typeof define === 'function' && define.amd ? define(['exports', 'viem/chains'], factory) :
-  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global["oku-chains"] = {}, global.chains));
+  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global["oku-chains"] = {}, global.viem_chains));
 })(this, (function (exports, chains) { 'use strict';
 
   const makeConfig = (x) => {
