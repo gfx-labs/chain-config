@@ -1,25 +1,21 @@
-import typescript from '@rollup/plugin-typescript';
+//import typescript from '@rollup/plugin-typescript';
+import typescript from 'rollup-plugin-ts'
 import { nodeResolve } from '@rollup/plugin-node-resolve';
 import rollupJson from '@rollup/plugin-json';
 import nodeGlobals from 'rollup-plugin-node-globals'
 import commonjs from '@rollup/plugin-commonjs';
-
+import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 
 const browserConfig = {
   input: 'src/index.ts',
-  external: ["viem", "viem/chains"],
   output: [
     {
       file: 'dist/browser.js',
       format: 'umd',
       name: "oku-chains",
       globals: {
-        'viem/chains':'chains',
+        'viem':'viem',
       },
-    },
-    {
-      file: 'dist/index.mjs',
-      format: 'es',
     },
     {
       file: 'dist/index-mjs.js',
@@ -27,6 +23,7 @@ const browserConfig = {
     }
   ],
   plugins: [
+    peerDepsExternal({}),
     typescript(),
     nodeResolve({
       browser: true,
@@ -47,8 +44,8 @@ const nodeConfig = {
       name: "oku-chains",
     }
   ],
-  external: ["viem", "viem/chains"],
   plugins: [
+    peerDepsExternal({}),
     typescript(),
     nodeResolve({
       browser: false,
