@@ -71,6 +71,7 @@ declare const arbitrum: Readonly<{
         readonly default: {
             readonly name: "Arbiscan";
             readonly url: "https://arbiscan.io";
+            readonly apiUrl: "https://api.arbiscan.io/api";
         };
     };
     id: 42161;
@@ -175,6 +176,7 @@ declare const base: Readonly<{
         readonly default: {
             readonly name: "Basescan";
             readonly url: "https://basescan.org";
+            readonly apiUrl: "https://api.basescan.org/api";
         };
     };
     id: 8453;
@@ -865,6 +867,7 @@ declare const bsc: Readonly<{
         readonly default: {
             readonly name: "BscScan";
             readonly url: "https://bscscan.com";
+            readonly apiUrl: "https://api.bscscan.com/api";
         };
     };
     id: 56;
@@ -1039,14 +1042,15 @@ declare const mainnet: Readonly<{
             readonly address: "0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e";
         };
         ensUniversalResolver: {
-            readonly address: "0xc0497E381f536Be9ce14B0dD3817cBcAe57d2F62";
-            readonly blockCreated: 16966585;
+            readonly address: "0x8cab227b1162f03b8338331adaad7aadc83b895e";
+            readonly blockCreated: 18958930;
         };
     };
     blockExplorers: {
         readonly default: {
             readonly name: "Etherscan";
             readonly url: "https://etherscan.io";
+            readonly apiUrl: "https://api.etherscan.io/api";
         };
     };
     id: 1;
@@ -1129,6 +1133,7 @@ declare const moonbeam: Readonly<{
         readonly default: {
             readonly name: "Moonscan";
             readonly url: "https://moonscan.io";
+            readonly apiUrl: "https://api-moonbeam.moonscan.io/api";
         };
     };
     id: 1284;
@@ -1253,7 +1258,8 @@ declare const optimism: Readonly<{
     blockExplorers: {
         readonly default: {
             readonly name: "Optimism Explorer";
-            readonly url: "https://explorer.optimism.io";
+            readonly url: "https://optimistic.etherscan.io";
+            readonly apiUrl: "https://api-optimistic.etherscan.io";
         };
     };
     id: 10;
@@ -1868,6 +1874,7 @@ declare const polygon: Readonly<{
         readonly default: {
             readonly name: "PolygonScan";
             readonly url: "https://polygonscan.com";
+            readonly apiUrl: "https://api.polygonscan.com/api";
         };
     };
     id: 137;
@@ -1926,12 +1933,16 @@ declare const rootstock: Readonly<{
     watchlist: string[];
     blockExplorers: {
         default: {
-            readonly name: "Blockscout";
-            readonly url: "https://rootstock.blockscout.com";
+            name: string;
+            url: string;
+        };
+        rsk: {
+            readonly name: "RSK Explorer";
+            readonly url: "https://explorer.rsk.co";
         };
         blockscout: {
-            readonly name: "Blockscout";
-            readonly url: "https://rootstock.blockscout.com";
+            name: string;
+            url: string;
         };
     };
     internalName: "rootstock";
@@ -2033,6 +2044,7 @@ declare const scroll: Readonly<{
         readonly default: {
             readonly name: "Scrollscan";
             readonly url: "https://scrollscan.com";
+            readonly apiUrl: "https://api.scrollscan.com/api";
         };
     };
     id: 534352;
@@ -2115,6 +2127,7 @@ declare const polygonZkEvm: Readonly<{
         readonly default: {
             readonly name: "PolygonScan";
             readonly url: "https://zkevm.polygonscan.com";
+            readonly apiUrl: "https://api-zkevm.polygonscan.com/api";
         };
     };
     id: 1101;
@@ -2858,6 +2871,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         readonly default: {
             readonly name: "Arbiscan";
             readonly url: "https://arbiscan.io";
+            readonly apiUrl: "https://api.arbiscan.io/api";
         };
     };
     id: 42161;
@@ -2959,6 +2973,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         readonly default: {
             readonly name: "Basescan";
             readonly url: "https://basescan.org";
+            readonly apiUrl: "https://api.basescan.org/api";
         };
     };
     id: 8453;
@@ -3640,6 +3655,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         readonly default: {
             readonly name: "BscScan";
             readonly url: "https://bscscan.com";
+            readonly apiUrl: "https://api.bscscan.com/api";
         };
     };
     id: 56;
@@ -3808,14 +3824,15 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly address: "0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e";
         };
         ensUniversalResolver: {
-            readonly address: "0xc0497E381f536Be9ce14B0dD3817cBcAe57d2F62";
-            readonly blockCreated: 16966585;
+            readonly address: "0x8cab227b1162f03b8338331adaad7aadc83b895e";
+            readonly blockCreated: 18958930;
         };
     };
     blockExplorers: {
         readonly default: {
             readonly name: "Etherscan";
             readonly url: "https://etherscan.io";
+            readonly apiUrl: "https://api.etherscan.io/api";
         };
     };
     id: 1;
@@ -3895,6 +3912,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         readonly default: {
             readonly name: "Moonscan";
             readonly url: "https://moonscan.io";
+            readonly apiUrl: "https://api-moonbeam.moonscan.io/api";
         };
     };
     id: 1284;
@@ -4014,7 +4032,8 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     blockExplorers: {
         readonly default: {
             readonly name: "Optimism Explorer";
-            readonly url: "https://explorer.optimism.io";
+            readonly url: "https://optimistic.etherscan.io";
+            readonly apiUrl: "https://api-optimistic.etherscan.io";
         };
     };
     id: 10;
@@ -4623,6 +4642,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         readonly default: {
             readonly name: "PolygonScan";
             readonly url: "https://polygonscan.com";
+            readonly apiUrl: "https://api.polygonscan.com/api";
         };
     };
     id: 137;
@@ -4678,12 +4698,16 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     watchlist: string[];
     blockExplorers: {
         default: {
-            readonly name: "Blockscout";
-            readonly url: "https://rootstock.blockscout.com";
+            name: string;
+            url: string;
+        };
+        rsk: {
+            readonly name: "RSK Explorer";
+            readonly url: "https://explorer.rsk.co";
         };
         blockscout: {
-            readonly name: "Blockscout";
-            readonly url: "https://rootstock.blockscout.com";
+            name: string;
+            url: string;
         };
     };
     internalName: "rootstock";
@@ -4782,6 +4806,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         readonly default: {
             readonly name: "Scrollscan";
             readonly url: "https://scrollscan.com";
+            readonly apiUrl: "https://api.scrollscan.com/api";
         };
     };
     id: 534352;
@@ -4859,6 +4884,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         readonly default: {
             readonly name: "PolygonScan";
             readonly url: "https://zkevm.polygonscan.com";
+            readonly apiUrl: "https://api-zkevm.polygonscan.com/api";
         };
     };
     id: 1101;

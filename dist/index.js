@@ -1354,8 +1354,9 @@ const rootstock = makeConfig({
         "0xbe092d38045ef7f9cdc5014278a4239e896bf5ca",
     ],
     blockExplorers: {
-        ...chains.rootstock.blockExplorers,
-        default: chains.rootstock.blockExplorers.blockscout,
+        default: { name: "Blockscout", url: "https://rootstock.blockscout.com" },
+        rsk: chains.rootstock.blockExplorers.default,
+        blockscout: { name: "Blockscout", url: "https://rootstock.blockscout.com" },
     },
     internalName: "rootstock",
     contracts: {
