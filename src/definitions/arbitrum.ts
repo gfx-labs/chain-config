@@ -220,5 +220,7 @@ export const arbitrum = makeConfig({
     weth9: {
       address: "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
     },
+		multicall2: {address: "0x842eC2c7D803033Edf55E478F461FC547Bc54EB2"},
+		multicall3: {address: "0xcA11bde05977b3631167028862bE2a173976CA11"},
   },
 });
