@@ -16,7 +16,7 @@ build:
   stage: build
   extends: .yarn-cache
   script:
-    - yarn add -G tsx
+    - yarn add -D tsx
     - yarn build
   artifacts:
     paths:
