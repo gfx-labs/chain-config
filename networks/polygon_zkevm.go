@@ -11,8 +11,7 @@ var PolygonZkevm Network = Network{
 	InternalName:  "polygon-zkevm",
 	DefaultToken0: common.HexToAddress("0x4f9a0e7fd2bf6067db6994cf12e4495df938e6e9"),
 	DefaultToken1: common.HexToAddress("0xa8ce8aee21bc2a48a5ef670afcc9274c7bbbc035"),
-	//TODO: populate
-	//TokenList:        []any{},
+	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0x1e4a5963abfd975d8c9021ce480b42188849d41d"), common.HexToAddress("0xa8ce8aee21bc2a48a5ef670afcc9274c7bbbc035"), common.HexToAddress("0xc5015b9d9161dca7e18e32f6f25c4ad850731fd4")},
 	Watchlist:        []common.Address{common.HexToAddress("0xd2c7e323c6f5415dc0ee4e3811901b3380d316fd")},
 	BlockTimeSeconds: 7,

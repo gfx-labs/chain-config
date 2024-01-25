@@ -11,8 +11,7 @@ var Boba Network = Network{
 	InternalName:  "boba",
 	DefaultToken0: common.HexToAddress("0x66a2a913e447d6b4bf33efbec43aaef87890fbbc"),
 	DefaultToken1: common.HexToAddress("0xa18bf3994c0cc6e3b63ac420308e5383f53120d7"),
-	//TODO: populate
-	//TokenList:        []any{},
+	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0x66a2a913e447d6b4bf33efbec43aaef87890fbbc"), common.HexToAddress("0x5de1677344d3cb0d7d465c10b72a8f60699c062d"), common.HexToAddress("0xf74195bb8a5cf652411867c5c2c5b8c2a402be35")},
 	Watchlist:        []common.Address{common.HexToAddress("0xdF37543dae7986E48E3ce83F390A828A9F3D23BA"), common.HexToAddress("0x162b1fda171463974e5262bac5824da233f11e00"), common.HexToAddress("0xfe1a0c58e38fa71618545df15e5479559ce51108"), common.HexToAddress("0xb1ed67e29b2497404a2ac7f2a2989c3328ec2999"), common.HexToAddress("0x66faef55892dae3932a043d3238ecaa271d36e0d")},
 	BlockTimeSeconds: 300,

@@ -18,8 +18,7 @@ var <%- helpers.snakeToCamel(chainName) %> Network = Network{
   InternalName:     "<%- chain.internalName %>",
   DefaultToken0:    common.HexToAddress("<%- chain.defaultToken0 %>"),
   DefaultToken1:    common.HexToAddress("<%- chain.defaultToken1 %>"),
-  //TODO: populate
-  //TokenList:        []any{},
+  //TODO: TokenList:        []any{},
   Stables:          []common.Address{<%- chain.stables.map(h.toAddr).join(",") %>},
   Watchlist:          []common.Address{<%- chain.watchlist.map(h.toAddr).join(",") %>},
   BlockTimeSeconds: <%- chain.blockTimeSeconds %>,
