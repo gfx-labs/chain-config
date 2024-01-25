@@ -41,6 +41,10 @@ const clean = (x:string)=>{
   return x.replace("-","_")
 }
 
+const toAddr = (x:string)=>{
+  return `common.HexToAddress("${x}")`
+}
+
 const getPropType = (x:morph.PropertySignature):string=>{
   const type = x.getType()
   const nodeType = x.getTypeNode()?.getText()
@@ -101,14 +105,35 @@ const displayProp = (x:morph.PropertySignature)=>{
   return `${snakeToCamel(x.getName())} ${getPropType(x)}`
 }
 
+const formatValue = (x:any, hint: string) =>{
+  if(hint === "a" || hint === "addr" || hint === "address"){
+    return toAddr(`${x}`)
+  } else if(hint === "s" || hint === "str" || hint==="string") {
+    return `"${x}"`
+  } else if(hint === "n" || hint === "num") {
+    return `${x}`
+  } else {
+    return `${x}`
+  }
+}
+
+const isString = (x:any) => {
+  return typeof x === "string"
+}
+
 
 const helpers = {
+  formatValue,
+  isString,
   clean,
   snakeToCamel,
   displayProp,
+  toAddr,
 }
 
+
 const output = ejs.render(networksString.toString(), {
+  h:helpers,
   helpers,
   IChainInfo,
   UniswapMetadata,
@@ -122,7 +147,7 @@ writeFileSync(`${rootDir}/network.go`, output)
 
 for(const chain of MAINNET_CHAINS) {
   const chainName  = clean(chain.internalName)
-  const output = ejs.render(networkString.toString(), {chainName, helpers, chain, entries: Object.entries(chain)})
+  const output = ejs.render(networkString.toString(), {h:helpers, chainName, helpers, chain, entries: Object.entries(chain)})
   writeFileSync(`${rootDir}/${chainName}.go`, output)
 }
 

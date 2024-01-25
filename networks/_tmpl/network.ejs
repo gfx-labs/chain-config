@@ -4,21 +4,36 @@ import (
 "github.com/ethereum/go-ethereum/common"
 )
 <%
+    var uni = chain.uniswap;
+    var tok = chain.token;
+    var oku = chain.oku;
+    var cons = chain.contracts
 %>
 
-var <%= helpers.snakeToCamel(chainName) %> Network = Network{
-  LogoUrl: "<%= chain.logoUrl %>",
-  SortIndex: <%= chain.sortIndex %>,
-  DefaultPool: common.HexToAddress("<%= chain.defaultPool %>"),
-  InternalName:     "<%= chain.internalName %>",
-  DefaultToken0:    common.HexToAddress("<%= chain.defaultToken0 %>"),
-  DefaultToken1:    common.HexToAddress("<%= chain.defaultToken1 %>"),
-  //TokenList:        "<%= chain.xx %>",
-  //Stables:          "<%= chain.xx %>",
-  //Watchlist:        "<%= chain.xx %>",
-  BlockTimeSeconds: <%= chain.blockTimeSeconds %>,
-  //Uniswap:          "<%= chain.xx %>",
-  //Token:            "<%= chain.xx %>",
-  //Oku:              "<%= chain.xx %>",
-  //Contracts:        "<%= chain.xx %>",
+var <%- helpers.snakeToCamel(chainName) %> Network = Network{
+  LogoUrl: "<%- chain.logoUrl %>",
+  SortIndex: <%- chain.sortIndex %>,
+  DefaultPool: <%- helpers.toAddr(chain.defaultPool) %>,
+  InternalName:     "<%- chain.internalName %>",
+  DefaultToken0:    common.HexToAddress("<%- chain.defaultToken0 %>"),
+  DefaultToken1:    common.HexToAddress("<%- chain.defaultToken1 %>"),
+  //TokenList:        "<%- chain.xx %>",
+  Stables:          []common.Address{<%- chain.stables.map(h.toAddr).join(",") %>},
+  Watchlist:          []common.Address{<%- chain.watchlist.map(h.toAddr).join(",") %>},
+  BlockTimeSeconds: <%- chain.blockTimeSeconds %>,
+  Uniswap:          UniswapMetadata{ <% for(const prop of Object.entries(uni)) {%>
+    <%- h.snakeToCamel(prop[0]) %>: <%- h.formatValue(prop[1], h.isString(prop[1]) ? "a" : "n") %> , <% } %>
+  },
+  Token:          TokenMetadata{ <% for(const prop of Object.entries(tok)) {%>
+    <%- h.snakeToCamel(prop[0]) %>: <%- h.formatValue(prop[1], h.isString(prop[1]) ? "a" : "n") %> , <% } %>
+  },
+  Oku:            OkuMetadata{
+    //"<%- chain.xx %>",
+  },
+  Contracts: map[string]ChainContract{<% for(const prop of Object.entries(cons)) {%>
+    <%- h.formatValue(prop[0],"s") %>: {
+      BlockCreated: <%- prop[1].blockCreated || 0 %>,
+      Address: <%- h.formatValue(prop[1].address,"a") %>,
+    }, <% } %>
+  },
 }
