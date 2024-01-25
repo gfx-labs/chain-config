@@ -11,10 +11,26 @@ var Bsc Network = Network{
 	InternalName:  "bsc",
 	DefaultToken0: common.HexToAddress("0x55d398326f99059ff775485246999027b3197955"),
 	DefaultToken1: common.HexToAddress("0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c"),
-	//TokenList:        "",
+	//TODO: populate
+	//TokenList:        []any{},
 	Stables:          []common.Address{},
 	Watchlist:        []common.Address{common.HexToAddress("0x6fe9e9de56356f7edbfcbb29fab7cd69471a4869")},
 	BlockTimeSeconds: 3,
+	Oku: OkuMetadata{
+		LimitOrderRegistry:            common.HexToAddress("undefined"),
+		LimitOrderRegistryDeployBlock: undefined,
+		Pricing: OkuPricingMetadata{
+			NativeWrappedToken: common.HexToAddress("0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c"),
+			Pools:              []common.Address{common.HexToAddress("0x6fe9e9de56356f7edbfcbb29fab7cd69471a4869"), common.HexToAddress("0x5289a8dbf7029ee0b0498a84777ed3941d9acfec"), common.HexToAddress("0xc98f01bf2141e1140ef8f8cad99d4b021d10718f"), common.HexToAddress("0x7862d9b4be2156b15d54f41ee4ede2d5b0b455e4"), common.HexToAddress("0xd0a5e2818a23e2054449982fb9ff9575867cf92b"), common.HexToAddress("0xac18e282c0b89a9981520e148ddd2bf9592e440c"), common.HexToAddress("0x6bcb0ba386e9de0c29006e46b2f01f047ca1806e"), common.HexToAddress("0x38df85c7d266deb3bf679501d8a8dcaf71c3672f"), common.HexToAddress("0x9b501a7ad3087d603ceb34424b7b2a6c348ad0b7"), common.HexToAddress("0x84e47c7f2fe86f6b5efbe14fee46b8bb871b2e05"), common.HexToAddress("0xf9878a5dd55edc120fde01893ea713a4f032229c"), common.HexToAddress("0x329eeb1a58bdb3b804d1f94623c7a29a67a9b6b7"), common.HexToAddress("0x7b9f1b263a25c68cfe942953796e414eaddde1a1"), common.HexToAddress("0x17507bef4c3abc1bc715be723ee1baf571256e05"), common.HexToAddress("0x4d170f8714367c44787ae98259ce8adb72240067"), common.HexToAddress("0xc8b4b9d7fc77000fde9a17cd1fb1e9394412ab6e"), common.HexToAddress("0x87c029bbb64c39a2a6762ac0e031757d2974e275"), common.HexToAddress("0xa47f717929b7de4d131af93c39627531fe623c9a"), common.HexToAddress("0x023b6298e2f9ae728b324757599f2a36e002a55a"), common.HexToAddress("0x06396509195eb9e07c38a016694dc9ff535b128a"), common.HexToAddress("0x4ef938b633d704f29e593a8b51148d43429d0bc4"), common.HexToAddress("0xd2f21358c1549be193537b2a4c5dc7f0228ae011"), common.HexToAddress("0xe15c03d4ce70d2102d8d7a4e42af677a5ac7ee16"), common.HexToAddress("0xf624649736a106f2aa16e8027ce9aeed1bcd22f9"), common.HexToAddress("0xb873e889f28e3d2c86f2495820dd5eca329bddf4"), common.HexToAddress("0x107c1dcb81234146400c96bc3e1252b42cde7d3e"), common.HexToAddress("0x23b6888106ea1b69d0b1b48cffa58606ce63fb17"), common.HexToAddress("0x0bfebcaa1873ff6bac70b36a54860d301d434e43"), common.HexToAddress("0xbe7cc96a863bdb43e25896664cf0e3c65f7973eb"), common.HexToAddress("0xe7df69cc69f5a9425865e30625ce516269c43ad1")},
+			StablecoinList:     []common.Address{common.HexToAddress("0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3"), common.HexToAddress("0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d"), common.HexToAddress("0x55d398326f99059ff775485246999027b3197955"), common.HexToAddress("0x40af3827F39D0EAcBF4A168f8D4ee67c121D11c9")},
+			NativeQuotePools: []ChainContract{
+				{
+					BlockCreated: 26495967,
+					Address:      common.HexToAddress("0x6fe9e9de56356f7edbfcbb29fab7cd69471a4869"),
+				},
+			},
+		},
+	},
 	Uniswap: UniswapMetadata{
 		DeployBlock:                        969351,
 		PoolFactory:                        common.HexToAddress("0xFFCd7Aed9C627E82A765c3247d562239507f6f1B"),
@@ -36,9 +52,6 @@ var Bsc Network = Network{
 		UsdcAddress: common.HexToAddress("0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d"),
 		WbtcAddress: common.HexToAddress("0x7130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c"),
 		WethAddress: common.HexToAddress("0x2170ed0880ac9a755fd29b2688956bd959f933f8"),
-	},
-	Oku: OkuMetadata{
-		//"",
 	},
 	Contracts: map[string]ChainContract{
 		"multicall3": {

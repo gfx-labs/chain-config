@@ -7,7 +7,8 @@ import (
     var uni = chain.uniswap;
     var tok = chain.token;
     var oku = chain.oku;
-    var cons = chain.contracts
+    var cons = chain.contracts;
+    var pxs = oku.pricing;
 %>
 
 var <%- helpers.snakeToCamel(chainName) %> Network = Network{
@@ -17,23 +18,36 @@ var <%- helpers.snakeToCamel(chainName) %> Network = Network{
   InternalName:     "<%- chain.internalName %>",
   DefaultToken0:    common.HexToAddress("<%- chain.defaultToken0 %>"),
   DefaultToken1:    common.HexToAddress("<%- chain.defaultToken1 %>"),
-  //TokenList:        "<%- chain.xx %>",
+  //TODO: populate
+  //TokenList:        []any{},
   Stables:          []common.Address{<%- chain.stables.map(h.toAddr).join(",") %>},
   Watchlist:          []common.Address{<%- chain.watchlist.map(h.toAddr).join(",") %>},
   BlockTimeSeconds: <%- chain.blockTimeSeconds %>,
+  Oku:            OkuMetadata{
+    LimitOrderRegistry: <%- h.formatValue(oku.limitOrderRegistry, "a") %>,
+    LimitOrderRegistryDeployBlock: <%- h.formatValue(oku.limitOrderRegistryDeployBlock, "n") %>,
+    Pricing: OkuPricingMetadata{
+<% if(pxs.nativeWrappedToken !== undefined){%>    NativeWrappedToken: <%- h.formatValue(pxs.nativeWrappedToken, "a") %>,<% } %>
+      Pools:          []common.Address{<%- pxs.pools ? pxs.pools.map(h.toAddr).join(",") : "" %>},
+      StablecoinList:          []common.Address{<%- pxs.stablecoinList.map(h.toAddr).join(",") %>},
+      NativeQuotePools: []ChainContract{<% for(const p of (pxs.nativeQuotePools || []) ) {%>
+      {
+        BlockCreated: <%- p.blockCreated || 0 %>,
+        Address: <%- h.formatValue(p.address,"a") %>,
+        }, <% } %>
+      },
+    },
+  },
   Uniswap:          UniswapMetadata{ <% for(const prop of Object.entries(uni)) {%>
     <%- h.snakeToCamel(prop[0]) %>: <%- h.formatValue(prop[1], h.isString(prop[1]) ? "a" : "n") %> , <% } %>
   },
   Token:          TokenMetadata{ <% for(const prop of Object.entries(tok)) {%>
     <%- h.snakeToCamel(prop[0]) %>: <%- h.formatValue(prop[1], h.isString(prop[1]) ? "a" : "n") %> , <% } %>
   },
-  Oku:            OkuMetadata{
-    //"<%- chain.xx %>",
-  },
-  Contracts: map[string]ChainContract{<% for(const prop of Object.entries(cons)) {%>
+  Contracts: map[string]ChainContract{<% for(const prop of Object.entries(cons)) {%> <% if(prop[1].address){ %>
     <%- h.formatValue(prop[0],"s") %>: {
       BlockCreated: <%- prop[1].blockCreated || 0 %>,
       Address: <%- h.formatValue(prop[1].address,"a") %>,
-    }, <% } %>
+      }, <% } %> <% } %>
   },
 }

@@ -11,10 +11,21 @@ var Zksync Network = Network{
 	InternalName:  "zksync",
 	DefaultToken0: common.HexToAddress("0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4"),
 	DefaultToken1: common.HexToAddress("0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91"),
-	//TokenList:        "",
+	//TODO: populate
+	//TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4"), common.HexToAddress("0x503234F203fC7Eb888EEC8513210612a43Cf6115")},
 	Watchlist:        []common.Address{common.HexToAddress("0xff577f0e828a878743ecc5e2632cbf65cecf17cf"), common.HexToAddress("0x50b0b9e02aa6f72a70fefbdb50bdc2f27e594135"), common.HexToAddress("0x3f618967492945c02d5222d333e903345fde741a"), common.HexToAddress("0xc99bcff6564bafc70ba1b53c53a03541f780a546"), common.HexToAddress("0x1fa900dbb20ed45d18883849c00632bca16f6610")},
 	BlockTimeSeconds: 2,
+	Oku: OkuMetadata{
+		LimitOrderRegistry:            common.HexToAddress("0x0FD66bD1e0974e2535CB424E6675D60aC52a84Fa"),
+		LimitOrderRegistryDeployBlock: 13618344,
+		Pricing: OkuPricingMetadata{
+			NativeWrappedToken: common.HexToAddress("0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91"),
+			Pools:              []common.Address{},
+			StablecoinList:     []common.Address{common.HexToAddress("0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4"), common.HexToAddress("0x493257fd37edb34451f62edf8d2a0c418852ba4c"), common.HexToAddress("0x503234F203fC7Eb888EEC8513210612a43Cf6115")},
+			NativeQuotePools:   []ChainContract{},
+		},
+	},
 	Uniswap: UniswapMetadata{
 		DeployBlock:                12637075,
 		PoolFactory:                common.HexToAddress("0x8FdA5a7a8dCA67BBcDd10F02Fa0649A937215422"),
@@ -28,9 +39,6 @@ var Zksync Network = Network{
 		UsdcAddress: common.HexToAddress("0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4"),
 		WethAddress: common.HexToAddress("0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91"),
 		WbtcAddress: common.HexToAddress("0xBBeB516fb02a01611cBBE0453Fe3c580D7281011"),
-	},
-	Oku: OkuMetadata{
-		//"",
 	},
 	Contracts: map[string]ChainContract{
 		"multicall3": {

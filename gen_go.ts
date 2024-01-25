@@ -112,7 +112,9 @@ const formatValue = (x:any, hint: string) =>{
     return `"${x}"`
   } else if(hint === "n" || hint === "num") {
     return `${x}`
-  } else {
+  } else if (x === undefined) {
+    return `undefined`
+  }else {
     return `${x}`
   }
 }
