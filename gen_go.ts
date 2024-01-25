@@ -1,9 +1,11 @@
 import ejs from "ejs"
 import {MAINNET_CHAINS, IChainInfo} from "."
 import { writeFileSync } from "fs"
-
+import init, { format } from '@wasm-fmt/gofmt';
 import * as morph from "ts-morph"
 import { execSync } from "child_process"
+
+const formatFunc = format
 
 const project = new morph.Project({
 })
@@ -55,13 +57,13 @@ const getPropType = (x:morph.PropertySignature):string=>{
     return `[]${getTypeType(type.getArrayElementType()!)}`
   }
   if(nodeType === "Address") {
-   return "common.Address"
+    return "common.Address"
   }
   if(nodeType === "Address") {
-   return "common.Address"
+    return "common.Address"
   }
   if(nodeType === "float64") {
-   return "float64"
+    return "float64"
   }
   if(type.isObject() && nodeType) {
     return snakeToCamel(nodeType)
@@ -144,13 +146,16 @@ const output = ejs.render(networksString.toString(), {
   OkuMetadata,
   OkuPricingMetadata
 })
-writeFileSync(`${rootDir}/network.go`, output)
 
 
-for(const chain of MAINNET_CHAINS) {
-  const chainName  = clean(chain.internalName)
-  const output = ejs.render(networkString.toString(), {h:helpers, chainName, helpers, chain, entries: Object.entries(chain)})
-  writeFileSync(`${rootDir}/${chainName}.go`, output)
+const main = async()=> {
+  await init();
+  writeFileSync(`${rootDir}/network.go`, formatFunc(output))
+  for(const chain of MAINNET_CHAINS) {
+    const chainName  = clean(chain.internalName)
+    const output = ejs.render(networkString.toString(), {h:helpers, chainName, helpers, chain, entries: Object.entries(chain)})
+    writeFileSync(`${rootDir}/${chainName}.go`, formatFunc(output))
+  }
 }
 
-execSync(`cd ${rootDir} && go fmt .`)
+main().catch(console.error)

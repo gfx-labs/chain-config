@@ -9,7 +9,7 @@
     "fmt": "prettier ./src/* -w",
     "clean": "rm -rf dist",
     "generate-barrels": "barrelsby --delete --directory './src/definitions/'",
-    "build": "yarn generate-barrels && npx rollup -c",
+    "build": "yarn generate-barrels && npx rollup -c && yarn tsx gen_go.ts",
     "prepack": "yarn build",
     "semantic-release": "npx semantic-release"
   },
@@ -31,6 +31,7 @@
     "@types/ejs": "^3",
     "@types/node": "^20.11.5",
     "@types/rollup-plugin-peer-deps-external": "^2",
+    "@wasm-fmt/gofmt": "^0.4.7",
     "barrelsby": "^2.8.1",
     "conventional-changelog-conventionalcommits": "^7.0.2",
     "ejs": "^3.1.9",
@@ -43,6 +44,7 @@
     "ts-morph": "^21.0.1",
     "ts-node": "^10.9.2",
     "tslib": "^2.6.2",
+    "tsx": "^4.7.0",
     "typescript": "^5.3.3",
     "viem": "^2.5.0"
   },
