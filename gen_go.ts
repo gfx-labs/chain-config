@@ -3,7 +3,6 @@ import {MAINNET_CHAINS, IChainInfo} from "."
 import { writeFileSync } from "fs"
 import init, { format } from '@wasm-fmt/gofmt';
 import * as morph from "ts-morph"
-import { execSync } from "child_process"
 
 const formatFunc = format
 
