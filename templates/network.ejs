@@ -12,7 +12,7 @@ import (
 %>
 
 var <%- helpers.snakeToCamel(chainName) %> Network = Network{
-  ChainId: "<%- chain.id %>",
+  ChainId: <%- chain.id %>,
   LogoUrl: "<%- chain.logoUrl %>",
   SortIndex: <%- chain.sortIndex %>,
   DefaultPool: <%- helpers.toAddr(chain.defaultPool) %>,
