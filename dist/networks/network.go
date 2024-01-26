@@ -1,8 +1,67 @@
 package networks
 
 import (
+	"errors"
+	"fmt"
 	"github.com/ethereum/go-ethereum/common"
+	"strconv"
 )
+
+var ErrNetworkNotFound = errors.New("chain not found")
+
+var networksByName = map[string]Network{
+	"arbitrum":      Arbitrum,
+	"base":          Base,
+	"boba":          Boba,
+	"bsc":           Bsc,
+	"filecoin":      Filecoin,
+	"ethereum":      Ethereum,
+	"moonbeam":      Moonbeam,
+	"optimism":      Optimism,
+	"polygon":       Polygon,
+	"rootstock":     Rootstock,
+	"scroll":        Scroll,
+	"polygon-zkevm": PolygonZkevm,
+	"zksync":        Zksync,
+}
+
+var networksById = map[int]Network{
+	42161:  Arbitrum,
+	8453:   Base,
+	288:    Boba,
+	56:     Bsc,
+	314:    Filecoin,
+	1:      Ethereum,
+	1284:   Moonbeam,
+	10:     Optimism,
+	137:    Polygon,
+	30:     Rootstock,
+	534352: Scroll,
+	1101:   PolygonZkevm,
+	324:    Zksync,
+}
+
+func NetworkByName(name string) (*Network, error) {
+	val, ok := networksByName[name]
+	if !ok {
+		return nil, fmt.Errorf("%w: %v", ErrNetworkNotFound, name)
+	}
+	return &val, nil
+}
+func NetworkById(id int) (*Network, error) {
+	val, ok := networksById[id]
+	if !ok {
+		return nil, fmt.Errorf("%w: %v", ErrNetworkNotFound, id)
+	}
+	return &val, nil
+}
+func NetworkByIdString(idString string) (*Network, error) {
+	i64, err := strconv.ParseInt(idString, 0, 64)
+	if err != nil {
+		return nil, fmt.Errorf("%w: %v", ErrNetworkNotFound, idString)
+	}
+	return NetworkbyId(int(i64))
+}
 
 type Network struct {
 	LogoUrl          string
