@@ -18,8 +18,7 @@ var Moonbeam Network = Network{
 	Watchlist:        []common.Address{common.HexToAddress("0xB64fD2Cf30588e4ACbb92e98b28d976a61914D29"), common.HexToAddress("0xba66370d96a9d61afa66283900b78c1f6ed02782"), common.HexToAddress("0x19156c03a6fd894beb4fa6a828e854d3a4bed372")},
 	BlockTimeSeconds: 30,
 	Oku: OkuMetadata{
-		LimitOrderRegistry:            common.HexToAddress("undefined"),
-		LimitOrderRegistryDeployBlock: undefined,
+
 		Pricing: OkuPricingMetadata{
 			NativeWrappedToken: common.HexToAddress("0xacc15dc74880c9944775448304b263d191c6077f"),
 			NativeWrappedName:  "WGLMR",

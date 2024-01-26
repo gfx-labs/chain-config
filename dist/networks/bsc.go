@@ -18,8 +18,7 @@ var Bsc Network = Network{
 	Watchlist:        []common.Address{common.HexToAddress("0x6fe9e9de56356f7edbfcbb29fab7cd69471a4869")},
 	BlockTimeSeconds: 3,
 	Oku: OkuMetadata{
-		LimitOrderRegistry:            common.HexToAddress("undefined"),
-		LimitOrderRegistryDeployBlock: undefined,
+
 		Pricing: OkuPricingMetadata{
 			NativeWrappedToken: common.HexToAddress("0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c"),
 			NativeWrappedName:  "WBNB",
