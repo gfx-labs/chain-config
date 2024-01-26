@@ -1,4 +1,4 @@
-module gfx.cafe/uniswap/dist/networks
+module gfx.cafe/gfx/chain-config/dist/networks
 
 go 1.21.3
 
