@@ -32,20 +32,20 @@ func NetworkByName(name string) (*Network, error) {
     }
     return &val, nil
 }
-
-func NetworkById(idString string) (*Network, error) {
-    i64, err := strconv.ParseInt(idString, 0, 64)
-    if err != nil {
-      return nil, fmt.Errorf("%w: %v", ErrNetworkNotFound, idString)
-    }
-    id := int(i64)
+func NetworkById(id int) (*Network, error) {
     val, ok := networksById[id]
     if !ok {
       return nil, fmt.Errorf("%w: %v", ErrNetworkNotFound, id)
     }
     return &val, nil
 }
-
+func NetworkByIdString(idString string) (*Network, error) {
+    i64, err := strconv.ParseInt(idString, 0, 64)
+    if err != nil {
+      return nil, fmt.Errorf("%w: %v", ErrNetworkNotFound, idString)
+    }
+    return NetworkbyId(int(i64))
+}
 
 type Network struct { <% for(const prop of props_1) {%>
     <%- helpers.displayProp(prop) %> <% } %>
