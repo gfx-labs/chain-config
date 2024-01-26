@@ -60,7 +60,7 @@ func NetworkByIdString(idString string) (*Network, error) {
 	if err != nil {
 		return nil, fmt.Errorf("%w: %v", ErrNetworkNotFound, idString)
 	}
-	return NetworkbyId(int(i64))
+	return NetworkById(int(i64))
 }
 
 type Network struct {
