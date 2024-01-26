@@ -536,6 +536,7 @@
       watchlist: [
           "0x14d44c7ef81f6c18f5d22e0962f0279d83e80b05",
           "0x9d8ea62e1264ab667d234b5610774a08e608e3b8",
+          "0x443a6243a36ef0ae1c46523d563c15abd787f4e9",
       ],
       internalName: "filecoin",
       contracts: {
