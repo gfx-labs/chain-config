@@ -36,7 +36,7 @@ export default {
     commonjs({}),
     copy({
       targets: [
-        { src: 'src/static/**/*', dest: 'dist' },
+        { src: 'static/networks/*', dest: 'dist/networks/*' },
       ]
     })
   ]
