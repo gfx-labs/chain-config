@@ -5,13 +5,14 @@ import (
 )
 
 var Polygon Network = Network{
-	ChainId:       137,
-	LogoUrl:       "https://assets.oku.trade/polygon-logo.webp",
-	SortIndex:     3,
-	DefaultPool:   common.HexToAddress("0xa374094527e1673a86de625aa59517c5de346d32"),
-	InternalName:  "polygon",
-	DefaultToken0: common.HexToAddress("0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270"),
-	DefaultToken1: common.HexToAddress("0x2791bca1f2de4661ed88a30c99a7a9449aa84174"),
+	ChainId:           137,
+	LogoUrl:           "https://assets.oku.trade/polygon-logo.webp",
+	SortIndex:         3,
+	SafeReorgDistance: 90000,
+	DefaultPool:       common.HexToAddress("0xa374094527e1673a86de625aa59517c5de346d32"),
+	InternalName:      "polygon",
+	DefaultToken0:     common.HexToAddress("0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270"),
+	DefaultToken1:     common.HexToAddress("0x2791bca1f2de4661ed88a30c99a7a9449aa84174"),
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0x2791bca1f2de4661ed88a30c99a7a9449aa84174"), common.HexToAddress("0x8f3cf7ad23cd3cadbd9735aff958023239c6a063"), common.HexToAddress("0xc2132d05d31c914a87c6611c10748aeb04b58e8f")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x2791bca1f2de4661ed88a30c99a7a9449aa84174"): struct{}{}, common.HexToAddress("0x8f3cf7ad23cd3cadbd9735aff958023239c6a063"): struct{}{}, common.HexToAddress("0xc2132d05d31c914a87c6611c10748aeb04b58e8f"): struct{}{}},

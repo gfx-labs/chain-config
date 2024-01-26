@@ -5,13 +5,14 @@ import (
 )
 
 var Boba Network = Network{
-	ChainId:       288,
-	LogoUrl:       "https://assets.oku.trade/boba-logo.svg",
-	SortIndex:     11,
-	DefaultPool:   common.HexToAddress("0xdF37543dae7986E48E3ce83F390A828A9F3D23BA"),
-	InternalName:  "boba",
-	DefaultToken0: common.HexToAddress("0x66a2a913e447d6b4bf33efbec43aaef87890fbbc"),
-	DefaultToken1: common.HexToAddress("0xa18bf3994c0cc6e3b63ac420308e5383f53120d7"),
+	ChainId:           288,
+	LogoUrl:           "https://assets.oku.trade/boba-logo.svg",
+	SortIndex:         11,
+	SafeReorgDistance: 90000,
+	DefaultPool:       common.HexToAddress("0xdF37543dae7986E48E3ce83F390A828A9F3D23BA"),
+	InternalName:      "boba",
+	DefaultToken0:     common.HexToAddress("0x66a2a913e447d6b4bf33efbec43aaef87890fbbc"),
+	DefaultToken1:     common.HexToAddress("0xa18bf3994c0cc6e3b63ac420308e5383f53120d7"),
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0x66a2a913e447d6b4bf33efbec43aaef87890fbbc"), common.HexToAddress("0x5de1677344d3cb0d7d465c10b72a8f60699c062d"), common.HexToAddress("0xf74195bb8a5cf652411867c5c2c5b8c2a402be35")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x66a2a913e447d6b4bf33efbec43aaef87890fbbc"): struct{}{}, common.HexToAddress("0x5de1677344d3cb0d7d465c10b72a8f60699c062d"): struct{}{}, common.HexToAddress("0xf74195bb8a5cf652411867c5c2c5b8c2a402be35"): struct{}{}},

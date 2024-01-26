@@ -64,20 +64,21 @@ func NetworkByIdString(idString string) (*Network, error) {
 }
 
 type Network struct {
-	LogoUrl          string
-	SortIndex        int64
-	DefaultPool      common.Address
-	InternalName     string
-	DefaultToken0    common.Address
-	DefaultToken1    common.Address
-	TokenList        []any
-	Stables          []common.Address
-	Watchlist        []common.Address
-	BlockTimeSeconds float64
-	Uniswap          UniswapMetadata
-	Token            TokenMetadata
-	Oku              OkuMetadata
-	Contracts        map[string]ChainContract
+	LogoUrl           string
+	SortIndex         int64
+	SafeReorgDistance int64
+	DefaultPool       common.Address
+	InternalName      string
+	DefaultToken0     common.Address
+	DefaultToken1     common.Address
+	TokenList         []any
+	Stables           []common.Address
+	Watchlist         []common.Address
+	BlockTimeSeconds  float64
+	Uniswap           UniswapMetadata
+	Token             TokenMetadata
+	Oku               OkuMetadata
+	Contracts         map[string]ChainContract
 
 	ChainId       int `json:"chainId"`
 	StablecoinMap map[common.Address]struct{}

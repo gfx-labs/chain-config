@@ -5,13 +5,14 @@ import (
 )
 
 var Ethereum Network = Network{
-	ChainId:       1,
-	LogoUrl:       "https://assets.oku.trade/ethereum-logo.webp",
-	SortIndex:     0,
-	DefaultPool:   common.HexToAddress("0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640"),
-	InternalName:  "ethereum",
-	DefaultToken0: common.HexToAddress("0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"),
-	DefaultToken1: common.HexToAddress("0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"),
+	ChainId:           1,
+	LogoUrl:           "https://assets.oku.trade/ethereum-logo.webp",
+	SortIndex:         0,
+	SafeReorgDistance: 90000,
+	DefaultPool:       common.HexToAddress("0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640"),
+	InternalName:      "ethereum",
+	DefaultToken0:     common.HexToAddress("0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"),
+	DefaultToken1:     common.HexToAddress("0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"),
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0x6B175474E89094C44Da98b954EedeAC495271d0F"), common.HexToAddress("0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"), common.HexToAddress("0xdAC17F958D2ee523a2206206994597C13D831ec7"), common.HexToAddress("0x0000000000085d4780B73119b644AE5ecd22b376"), common.HexToAddress("0x57Ab1ec28D129707052df4dF418D58a2D46d5f51"), common.HexToAddress("0x956f47f50a910163d8bf957cf5846d573e7f87ca"), common.HexToAddress("0x4Fabb145d64652a948d72533023f6E7A623C7C53"), common.HexToAddress("0x853d955acef822db058eb8505911ed77f175b99e"), common.HexToAddress("0x8E870D67F660D95d5be530380D0eC0bd388289E1"), common.HexToAddress("0x5f98805A4E8be255a32880FDeC7F6728C6568bA0"), common.HexToAddress("0x99d8a9c45b2eca8864373a26d1459e3dff1e17f3"), common.HexToAddress("0x1a13f4ca1d028320a707d99520abfefca3998b7f")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x6B175474E89094C44Da98b954EedeAC495271d0F"): struct{}{}, common.HexToAddress("0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"): struct{}{}, common.HexToAddress("0xdAC17F958D2ee523a2206206994597C13D831ec7"): struct{}{}, common.HexToAddress("0x0000000000085d4780B73119b644AE5ecd22b376"): struct{}{}, common.HexToAddress("0x57Ab1ec28D129707052df4dF418D58a2D46d5f51"): struct{}{}, common.HexToAddress("0x956f47f50a910163d8bf957cf5846d573e7f87ca"): struct{}{}, common.HexToAddress("0x4Fabb145d64652a948d72533023f6E7A623C7C53"): struct{}{}, common.HexToAddress("0x853d955acef822db058eb8505911ed77f175b99e"): struct{}{}, common.HexToAddress("0x8E870D67F660D95d5be530380D0eC0bd388289E1"): struct{}{}, common.HexToAddress("0x5f98805A4E8be255a32880FDeC7F6728C6568bA0"): struct{}{}, common.HexToAddress("0x99d8a9c45b2eca8864373a26d1459e3dff1e17f3"): struct{}{}, common.HexToAddress("0x1a13f4ca1d028320a707d99520abfefca3998b7f"): struct{}{}},

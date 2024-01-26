@@ -5,13 +5,14 @@ import (
 )
 
 var Arbitrum Network = Network{
-	ChainId:       42161,
-	LogoUrl:       "https://assets.oku.trade/arbitrum-logo.svg",
-	SortIndex:     1,
-	DefaultPool:   common.HexToAddress("0xcda53b1f66614552f834ceef361a8d12a0b8dad8"),
-	InternalName:  "arbitrum",
-	DefaultToken0: common.HexToAddress("0x912ce59144191c1204e64559fe8253a0e49e6548"),
-	DefaultToken1: common.HexToAddress("0xff970a61a04b1ca14834a43f5de4533ebddb5cc8"),
+	ChainId:           42161,
+	LogoUrl:           "https://assets.oku.trade/arbitrum-logo.svg",
+	SortIndex:         1,
+	SafeReorgDistance: 180000,
+	DefaultPool:       common.HexToAddress("0xcda53b1f66614552f834ceef361a8d12a0b8dad8"),
+	InternalName:      "arbitrum",
+	DefaultToken0:     common.HexToAddress("0x912ce59144191c1204e64559fe8253a0e49e6548"),
+	DefaultToken1:     common.HexToAddress("0xff970a61a04b1ca14834a43f5de4533ebddb5cc8"),
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9"), common.HexToAddress("0xda10009cbd5d07dd0cecc66161fc93d7c9000da1"), common.HexToAddress("0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8"), common.HexToAddress("0xaf88d065e77c8cC2239327C5EDb3A432268e5831")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9"): struct{}{}, common.HexToAddress("0xda10009cbd5d07dd0cecc66161fc93d7c9000da1"): struct{}{}, common.HexToAddress("0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8"): struct{}{}, common.HexToAddress("0xaf88d065e77c8cC2239327C5EDb3A432268e5831"): struct{}{}},

@@ -9,6 +9,7 @@ const arbitrum = makeConfig({
     sortIndex: 1,
     blockTimeSeconds: 0.25,
     logoUrl: "https://assets.oku.trade/arbitrum-logo.svg",
+    safeReorgDistance: 90000 * 2,
     uniswap: {
         deployBlock: 165,
         poolFactory: "0x1F98431c8aD98523631AE4a59f267346ea31F984",
@@ -229,6 +230,7 @@ const base = makeConfig({
     defaultPool: "0x9e37cb775a047ae99fc5a24dded834127c4180cd",
     defaultToken0: "0x27d2decb4bfc9c76f0309b8e88dec3a601fe25a8",
     defaultToken1: "0x4200000000000000000000000000000000000006",
+    safeReorgDistance: 90000,
     uniswap: {
         deployBlock: 1371680,
         poolFactory: "0x33128a8fC17869897dcE68Ed026d694621f6FDfD",
@@ -292,6 +294,7 @@ const boba = makeConfig({
     sortIndex: 11,
     blockTimeSeconds: 300,
     logoUrl: "https://assets.oku.trade/boba-logo.svg",
+    safeReorgDistance: 90000,
     uniswap: {
         deployBlock: 969351,
         poolFactory: "0xFFCd7Aed9C627E82A765c3247d562239507f6f1B",
@@ -369,6 +372,7 @@ const bsc = makeConfig({
     sortIndex: 9,
     blockTimeSeconds: 3,
     logoUrl: "https://assets.oku.trade/bsc-logo.svg",
+    safeReorgDistance: 90000,
     uniswap: {
         deployBlock: 969351,
         poolFactory: "0xFFCd7Aed9C627E82A765c3247d562239507f6f1B",
@@ -464,6 +468,7 @@ const filecoin = makeConfig({
     sortIndex: 10,
     name: "Filecoin",
     blockTimeSeconds: 30,
+    safeReorgDistance: 90000,
     blockExplorers: {
         ...filecoin$1.blockExplorers,
         default: {
@@ -553,6 +558,7 @@ const mainnet = makeConfig({
     ...mainnet$1,
     sortIndex: 0,
     blockTimeSeconds: 15,
+    safeReorgDistance: 90000,
     logoUrl: "https://assets.oku.trade/ethereum-logo.webp",
     uniswap: {
         deployBlock: 12369621,
@@ -770,6 +776,7 @@ const moonbeam = makeConfig({
     sortIndex: 12,
     blockTimeSeconds: 30,
     logoUrl: "https://assets.oku.trade/moonbeam-logo.svg",
+    safeReorgDistance: 90000,
     uniswap: {
         deployBlock: 3340452,
         poolFactory: "0x28f1158795A3585CaAA3cD6469CD65382b89BB70",
@@ -841,6 +848,7 @@ const optimism = makeConfig({
     blockTimeSeconds: 0.5,
     sortIndex: 2,
     logoUrl: "https://assets.oku.trade/optimism-logo.svg",
+    safeReorgDistance: 90000,
     oku: {
         limitOrderRegistryDeployBlock: 105276132,
         limitOrderRegistry: "0x54dF9e11c7933a9cA3BD1E540B63dA15edAe40bf",
@@ -1055,6 +1063,7 @@ const polygon = makeConfig({
     blockTimeSeconds: 2,
     sortIndex: 3,
     logoUrl: "https://assets.oku.trade/polygon-logo.webp",
+    safeReorgDistance: 90000,
     uniswap: {
         deployBlock: 22757547,
         poolFactory: "0x1F98431c8aD98523631AE4a59f267346ea31F984",
@@ -1265,6 +1274,7 @@ const rootstock = makeConfig({
     name: "Rootstock",
     blockTimeSeconds: 33,
     logoUrl: "https://assets.oku.trade/rootstock-logo.svg",
+    safeReorgDistance: 90000,
     uniswap: {
         deployBlock: 5829210,
         poolFactory: "0xaF37EC98A00FD63689CF3060BF3B6784E00caD82",
@@ -1335,6 +1345,7 @@ const scroll = makeConfig({
     sortIndex: 5,
     blockTimeSeconds: 3,
     logoUrl: "https://assets.oku.trade/scroll-logo.png",
+    safeReorgDistance: 90000,
     uniswap: {
         deployBlock: 1367,
         poolFactory: "0x70C62C8b8e801124A4Aa81ce07b637A3e83cb919",
@@ -1398,6 +1409,7 @@ const polygonZkEvm = makeConfig({
     sortIndex: 6,
     blockTimeSeconds: 7,
     logoUrl: "https://assets.oku.trade/zkevm-logo.svg",
+    safeReorgDistance: 90000,
     uniswap: {
         deployBlock: 8466867,
         poolFactory: "0xff83c3c800Fec21de45C5Ec30B69ddd5Ee60DFC2",
@@ -1461,6 +1473,7 @@ const zkSync = makeConfig({
     blockTimeSeconds: 2,
     sortIndex: 4,
     logoUrl: "https://assets.oku.trade/zksync-logo.svg",
+    safeReorgDistance: 90000,
     uniswap: {
         deployBlock: 12637075,
         poolFactory: "0x8FdA5a7a8dCA67BBcDd10F02Fa0649A937215422",

@@ -5,13 +5,14 @@ import (
 )
 
 var Moonbeam Network = Network{
-	ChainId:       1284,
-	LogoUrl:       "https://assets.oku.trade/moonbeam-logo.svg",
-	SortIndex:     12,
-	DefaultPool:   common.HexToAddress("0xba66370d96a9d61afa66283900b78c1f6ed02782"),
-	InternalName:  "moonbeam",
-	DefaultToken0: common.HexToAddress("0xab3f0245b83feb11d15aaffefd7ad465a59817ed"),
-	DefaultToken1: common.HexToAddress("0xacc15dc74880c9944775448304b263d191c6077f"),
+	ChainId:           1284,
+	LogoUrl:           "https://assets.oku.trade/moonbeam-logo.svg",
+	SortIndex:         12,
+	SafeReorgDistance: 90000,
+	DefaultPool:       common.HexToAddress("0xba66370d96a9d61afa66283900b78c1f6ed02782"),
+	InternalName:      "moonbeam",
+	DefaultToken0:     common.HexToAddress("0xab3f0245b83feb11d15aaffefd7ad465a59817ed"),
+	DefaultToken1:     common.HexToAddress("0xacc15dc74880c9944775448304b263d191c6077f"),
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0x818ec0a7fe18ff94269904fced6ae3dae6d6dc0b"), common.HexToAddress("0x931715FEE2d06333043d11F658C8CE934aC61D0c"), common.HexToAddress("0x765277eebeca2e31912c9946eae1021199b39c61"), common.HexToAddress("0x06e605775296e851ff43b4daa541bb0984e9d6fd"), common.HexToAddress("0xefaeee334f0fd1712f9a8cc375f427d9cdd40d73"), common.HexToAddress("0x8e70cd5b4ff3f62659049e74b6649c6603a0e594")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x818ec0a7fe18ff94269904fced6ae3dae6d6dc0b"): struct{}{}, common.HexToAddress("0x931715FEE2d06333043d11F658C8CE934aC61D0c"): struct{}{}, common.HexToAddress("0x765277eebeca2e31912c9946eae1021199b39c61"): struct{}{}, common.HexToAddress("0x06e605775296e851ff43b4daa541bb0984e9d6fd"): struct{}{}, common.HexToAddress("0xefaeee334f0fd1712f9a8cc375f427d9cdd40d73"): struct{}{}, common.HexToAddress("0x8e70cd5b4ff3f62659049e74b6649c6603a0e594"): struct{}{}},
