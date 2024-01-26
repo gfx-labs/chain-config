@@ -14,8 +14,8 @@ import (
 type Network struct { <% for(const prop of props_1) {%>
     <%= helpers.displayProp(prop) %> <% } %>
 
-  ChainId int `json:"chainId"`
-  StablecoinMap map[string]common.Address
+    ChainId int `json:"chainId"`
+    StablecoinMap map[string]common.Address
 }
 
 type UniswapMetadata struct {<% for(const prop of props_2) {%>
