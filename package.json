@@ -3,7 +3,8 @@
   "version": "1.0.1",
   "license": "MIT",
   "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
+  "module": "./dist/index-mjs.js",
+  "browser": "./dist/browser.js",
   "types": "./dist/types/index.d.ts",
   "scripts": {
     "fmt": "prettier ./src/* -w",
