@@ -25,11 +25,7 @@ export const base = makeConfig({
   oku: {
     pricing: {
       nativeWrappedToken: "0x4200000000000000000000000000000000000006",
-      stablecoinList: [
-        "0xd9aaec86b65d86f6a7b5b1b0c42ffa531710b6ca",
-        "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
-        "0x50c5725949a6f0c72e6c4a641f24049a917db0cb",
-      ],
+      nativeWrappedName: "WETH",
     },
   },
   tokenList: [

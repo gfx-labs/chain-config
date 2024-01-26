@@ -23,11 +23,7 @@ export const scroll = makeConfig({
     limitOrderRegistryDeployBlock: 1409068,
     pricing: {
       nativeWrappedToken: "0x5300000000000000000000000000000000000004",
-      stablecoinList: [
-        "0x06efdbff2a14a7c8e15944d1f4a48f9f95f663a4",
-        "0xf55bec9cafdbe8730f096aa55dad6d22d44099df",
-        "0xca77eb3fefe3725dc33bccb54edefc3d9f764f97",
-      ],
+      nativeWrappedName: "ETH",
     },
   },
 

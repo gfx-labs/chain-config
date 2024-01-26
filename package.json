@@ -17,7 +17,8 @@
     "access": "public"
   },
   "files": [
-    "dist"
+    "dist/*.js",
+    "dist/types/*.d.ts"
   ],
   "devDependencies": {
     "@rollup/plugin-commonjs": "^25.0.7",
@@ -37,6 +38,8 @@
     "ejs": "^3.1.9",
     "prettier": "^3.2.4",
     "rollup": "^4.9.6",
+    "rollup-plugin-cleandir": "^2.0.0",
+    "rollup-plugin-copy": "^3.5.0",
     "rollup-plugin-node-globals": "^1.4.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-ts": "^3.4.5",

@@ -12,6 +12,7 @@ import (
 %>
 
 var <%- helpers.snakeToCamel(chainName) %> Network = Network{
+  ChainId: "<%- chain.id %>",
   LogoUrl: "<%- chain.logoUrl %>",
   SortIndex: <%- chain.sortIndex %>,
   DefaultPool: <%- helpers.toAddr(chain.defaultPool) %>,
@@ -20,6 +21,7 @@ var <%- helpers.snakeToCamel(chainName) %> Network = Network{
   DefaultToken1:    common.HexToAddress("<%- chain.defaultToken1 %>"),
   //TODO: TokenList:        []any{},
   Stables:          []common.Address{<%- chain.stables.map(h.toAddr).join(",") %>},
+  StablecoinMap:          map[common.Address]struct{}{<%- chain.stables.map(x=>`${h.toAddr(x)}: struct{}{}`).join(",") %>},
   Watchlist:          []common.Address{<%- chain.watchlist.map(h.toAddr).join(",") %>},
   BlockTimeSeconds: <%- chain.blockTimeSeconds %>,
   Oku:            OkuMetadata{
@@ -27,12 +29,12 @@ var <%- helpers.snakeToCamel(chainName) %> Network = Network{
     LimitOrderRegistryDeployBlock: <%- h.formatValue(oku.limitOrderRegistryDeployBlock, "n") %>,
     Pricing: OkuPricingMetadata{
 <% if(pxs.nativeWrappedToken !== undefined){%>    NativeWrappedToken: <%- h.formatValue(pxs.nativeWrappedToken, "a") %>,<% } %>
+<% if(pxs.nativeWrappedName !== undefined){%>    NativeWrappedName: <%- h.formatValue(pxs.nativeWrappedName, "s") %>,<% } %>
       Pools:          []common.Address{<%- pxs.pools ? pxs.pools.map(h.toAddr).join(",") : "" %>},
-      StablecoinList:          []common.Address{<%- pxs.stablecoinList.map(h.toAddr).join(",") %>},
       NativeQuotePools: []ChainContract{<% for(const p of (pxs.nativeQuotePools || []) ) {%>
-      {
-        BlockCreated: <%- p.blockCreated || 0 %>,
-        Address: <%- h.formatValue(p.address,"a") %>,
+        {
+          BlockCreated: <%- p.blockCreated || 0 %>,
+          Address: <%- h.formatValue(p.address,"a") %>,
         }, <% } %>
       },
     },

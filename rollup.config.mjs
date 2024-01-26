@@ -3,6 +3,8 @@ import rollupJson from '@rollup/plugin-json';
 import nodeGlobals from 'rollup-plugin-node-globals'
 import commonjs from '@rollup/plugin-commonjs';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
+import copy from 'rollup-plugin-copy'
+import { cleandir } from "rollup-plugin-cleandir";
 
 export default {
   input: 'src/index.ts',
@@ -26,10 +28,16 @@ export default {
     }
   ],
   plugins: [
+    cleandir("./dist"),
     peerDepsExternal({}),
     typescript(),
     rollupJson({ compact: true }),
     nodeGlobals(),
     commonjs({}),
+    copy({
+      targets: [
+        { src: 'src/static/**/*', dest: 'dist' },
+      ]
+    })
   ]
 }

@@ -26,9 +26,9 @@ export interface UniswapMetadata {
 
 export interface OkuPricingMetadata {
   nativeWrappedToken?: Address;
+  nativeWrappedName?: string;
   nativeQuotePools?: ReadonlyArray<ChainContract>;
   pools?: ReadonlyArray<Address>;
-  stablecoinList?: ReadonlyArray<Address>;
 }
 
 export interface OkuMetadata {

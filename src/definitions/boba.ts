@@ -35,10 +35,7 @@ export const boba = makeConfig({
     limitOrderRegistryDeployBlock: 1052192,
     pricing: {
       nativeWrappedToken: "0xdeaddeaddeaddeaddeaddeaddeaddeaddead0000",
-      stablecoinList: [
-        "0x66a2A913e447d6b4BF33EFbec43aAeF87890FBbc",
-        "0x5de1677344d3cb0d7d465c10b72a8f60699c062d",
-      ],
+      nativeWrappedName: "WETH",
     },
   },
 

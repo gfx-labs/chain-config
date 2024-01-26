@@ -26,11 +26,7 @@ export const polygonZkEvm = makeConfig({
     limitOrderRegistryDeployBlock: 8467090,
     pricing: {
       nativeWrappedToken: "0x4F9A0e7FD2Bf6067db6994CF12E4495Df938E6e9",
-      stablecoinList: [
-        "0x1e4a5963abfd975d8c9021ce480b42188849d41d",
-        "0xa8ce8aee21bc2a48a5ef670afcc9274c7bbbc035",
-        "0xc5015b9d9161dca7e18e32f6f25c4ad850731fd4",
-      ],
+      nativeWrappedName: "ETH",
     },
   },
 

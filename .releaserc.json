@@ -11,7 +11,8 @@
       "@semantic-release/git", {
         "assets": [
           "package.json",
-          "dist/**/*.{js,mjs,d.ts}"
+          "dist/**/*.{js,mjs,d.ts}",
+          "dist/**/*.{go,sum,mod}"
         ],
         "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
       }

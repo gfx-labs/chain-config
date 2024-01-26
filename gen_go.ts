@@ -1,6 +1,6 @@
 import ejs from "ejs"
 import {MAINNET_CHAINS, IChainInfo} from "."
-import { writeFileSync } from "fs"
+import { mkdirSync, writeFileSync } from "fs"
 import init, { format } from '@wasm-fmt/gofmt';
 import * as morph from "ts-morph"
 
@@ -11,7 +11,7 @@ const project = new morph.Project({
 
 project.addSourceFilesAtPaths("src/**/*.ts")
 
-const index = project.getSourceFile("src/defs/index.ts")
+const index = project.getSourceFile("src/spec/index.ts")
 
 const IChainInfo = index?.getInterface("IChainInfo")
 const UniswapMetadata = index?.getInterface("UniswapMetadata")
@@ -21,10 +21,11 @@ const OkuPricingMetadata = index?.getInterface("OkuPricingMetadata")
 const ChainContract = index?.getInterface("chainContract")
 
 
-const rootDir = `${__dirname}/networks`
+const rootDir = `${__dirname}/dist/networks`
+mkdirSync(rootDir, {recursive: true})
 
-const networkString = ejs.fileLoader(`${rootDir}/_tmpl/network.ejs`)
-const networksString = ejs.fileLoader(`${rootDir}/_tmpl/networks.ejs`)
+const networkString = ejs.fileLoader(`${__dirname}/templates/network.ejs`)
+const networksString = ejs.fileLoader(`${__dirname}/templates/networks.ejs`)
 
 function capitalize(s:string){
   return s[0].toUpperCase() + s.slice(1);

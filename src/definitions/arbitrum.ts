@@ -37,18 +37,13 @@ export const arbitrum = makeConfig({
     limitOrderRegistryDeployBlock: 98754575,
     pricing: {
       nativeWrappedToken: "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
+      nativeWrappedName: "WETH",
       nativeQuotePools: [
         {
           blockCreated: 100909,
           address: "0xc31e54c7a869b9fcbecc14363cf510d1c41fa443",
         },
       ] as const,
-      stablecoinList: [
-        "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
-        "0xda10009cbd5d07dd0cecc66161fc93d7c9000da1",
-        "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8",
-        "0xaf88d065e77c8cC2239327C5EDb3A432268e5831",
-      ],
       pools: [
         "0xc31e54c7a869b9fcbecc14363cf510d1c41fa443",
         "0x641c00a822e8b671738d32a431a4fb6074e5c79d",

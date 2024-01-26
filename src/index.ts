@@ -1,6 +1,6 @@
 import * as defs from "./definitions";
 export * from "./definitions/";
-export * from "./defs";
+export * from "./spec";
 
 export const MAINNET_CHAINS = [
   defs.arbitrum,

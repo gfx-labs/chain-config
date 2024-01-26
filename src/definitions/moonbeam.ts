@@ -30,10 +30,7 @@ export const moonbeam = makeConfig({
   oku: {
     pricing: {
       nativeWrappedToken: "0xacc15dc74880c9944775448304b263d191c6077f",
-      stablecoinList: [
-        "0x931715FEE2d06333043d11F658C8CE934aC61D0c",
-        "0xefaeee334f0fd1712f9a8cc375f427d9cdd40d73",
-      ],
+      nativeWrappedName: "WGLMR",
     },
   },
   defaultPool: "0xba66370d96a9d61afa66283900b78c1f6ed02782",

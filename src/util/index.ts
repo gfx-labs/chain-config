@@ -1,4 +1,4 @@
-import { IChainInfo } from "../defs";
+import { IChainInfo } from "../spec";
 
 export const makeConfig = <T extends IChainInfo>(
   x: Readonly<T>,

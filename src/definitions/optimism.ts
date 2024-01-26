@@ -13,19 +13,12 @@ export const optimism = makeConfig({
     limitOrderRegistry: "0x54dF9e11c7933a9cA3BD1E540B63dA15edAe40bf",
     pricing: {
       nativeWrappedToken: "0x4200000000000000000000000000000000000006",
+      nativeWrappedName: "WETH",
       nativeQuotePools: [
         {
           blockCreated: 0,
           address:"0x85149247691df622eaf1a8bd0cafd40bc45154a9",
         },
-      ],
-      stablecoinList: [
-        "0x0b2c639c533813f4aa9d7837caf62653d097ff85",
-        "0x7f5c764cbc14f9669b88837ca1490cca17c31607",
-        "0x94b008aA00579c1307B0EF2c499aD98a8ce58e58",
-        "0x8c6f28f2f1a3c87f0f938b96d27520d9751ec8d9",
-        "0x8aE125E8653821E851F12A49F7765db9a9ce7384",
-        "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1",
       ],
       pools: [
         "0x85149247691df622eaf1a8bd0cafd40bc45154a9",

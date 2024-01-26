@@ -38,17 +38,12 @@ const arbitrum = makeConfig({
         limitOrderRegistryDeployBlock: 98754575,
         pricing: {
             nativeWrappedToken: "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
+            nativeWrappedName: "WETH",
             nativeQuotePools: [
                 {
                     blockCreated: 100909,
                     address: "0xc31e54c7a869b9fcbecc14363cf510d1c41fa443",
                 },
-            ],
-            stablecoinList: [
-                "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
-                "0xda10009cbd5d07dd0cecc66161fc93d7c9000da1",
-                "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8",
-                "0xaf88d065e77c8cC2239327C5EDb3A432268e5831",
             ],
             pools: [
                 "0xc31e54c7a869b9fcbecc14363cf510d1c41fa443",
@@ -221,6 +216,8 @@ const arbitrum = makeConfig({
         weth9: {
             address: "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
         },
+        multicall2: { address: "0x842eC2c7D803033Edf55E478F461FC547Bc54EB2" },
+        multicall3: { address: "0xcA11bde05977b3631167028862bE2a173976CA11" },
     },
 });
 
@@ -247,11 +244,7 @@ const base = makeConfig({
     oku: {
         pricing: {
             nativeWrappedToken: "0x4200000000000000000000000000000000000006",
-            stablecoinList: [
-                "0xd9aaec86b65d86f6a7b5b1b0c42ffa531710b6ca",
-                "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
-                "0x50c5725949a6f0c72e6c4a641f24049a917db0cb",
-            ],
+            nativeWrappedName: "WETH",
         },
     },
     tokenList: [
@@ -325,10 +318,7 @@ const boba = makeConfig({
         limitOrderRegistryDeployBlock: 1052192,
         pricing: {
             nativeWrappedToken: "0xdeaddeaddeaddeaddeaddeaddeaddeaddead0000",
-            stablecoinList: [
-                "0x66a2A913e447d6b4BF33EFbec43aAeF87890FBbc",
-                "0x5de1677344d3cb0d7d465c10b72a8f60699c062d",
-            ],
+            nativeWrappedName: "WETH",
         },
     },
     defaultPool: "0xdF37543dae7986E48E3ce83F390A828A9F3D23BA",
@@ -403,12 +393,6 @@ const bsc = makeConfig({
     },
     oku: {
         pricing: {
-            stablecoinList: [
-                "0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3",
-                "0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d",
-                "0x55d398326f99059ff775485246999027b3197955",
-                "0x40af3827F39D0EAcBF4A168f8D4ee67c121D11c9",
-            ],
             nativeQuotePools: [
                 {
                     blockCreated: 26495967,
@@ -416,6 +400,7 @@ const bsc = makeConfig({
                 },
             ],
             nativeWrappedToken: "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
+            nativeWrappedName: "WBNB",
             pools: [
                 "0x6fe9e9de56356f7edbfcbb29fab7cd69471a4869",
                 "0x5289a8dbf7029ee0b0498a84777ed3941d9acfec",
@@ -503,12 +488,9 @@ const filecoin = makeConfig({
     },
     oku: {
         pricing: {
-            stablecoinList: [
-                "0xEB466342C4d449BC9f53A865D5Cb90586f405215",
-                "0x7f5373AE26c3E8FfC4c77b7255DF7eC1A9aF52a6",
-            ],
             pools: [],
             nativeWrappedToken: "0x60E1773636CF5E4A227d9AC24F20fEca034ee25A",
+            nativeWrappedName: "WFIL",
             nativeQuotePools: undefined,
         },
         limitOrderRegistry: "0xded8791056aa39581460a005a3c400a281e24bd7",
@@ -601,24 +583,12 @@ const mainnet = makeConfig({
         limitOrderRegistryDeployBlock: 17429412,
         pricing: {
             nativeWrappedToken: "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+            nativeWrappedName: "WETH",
             nativeQuotePools: [
                 {
                     address: "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640",
                     blockCreated: 12369621,
                 },
-            ],
-            stablecoinList: [
-                "0x6B175474E89094C44Da98b954EedeAC495271d0F",
-                "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
-                "0xdAC17F958D2ee523a2206206994597C13D831ec7",
-                "0x0000000000085d4780B73119b644AE5ecd22b376",
-                "0x57Ab1ec28D129707052df4dF418D58a2D46d5f51",
-                "0x956f47f50a910163d8bf957cf5846d573e7f87ca",
-                "0x4Fabb145d64652a948d72533023f6E7A623C7C53",
-                "0x853d955acef822db058eb8505911ed77f175b99e",
-                "0x8E870D67F660D95d5be530380D0eC0bd388289E1",
-                "0x5f98805A4E8be255a32880FDeC7F6728C6568bA0",
-                "0x99d8a9c45b2eca8864373a26d1459e3dff1e17f3",
             ],
             pools: [
                 "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640",
@@ -822,10 +792,7 @@ const moonbeam = makeConfig({
     oku: {
         pricing: {
             nativeWrappedToken: "0xacc15dc74880c9944775448304b263d191c6077f",
-            stablecoinList: [
-                "0x931715FEE2d06333043d11F658C8CE934aC61D0c",
-                "0xefaeee334f0fd1712f9a8cc375f427d9cdd40d73",
-            ],
+            nativeWrappedName: "WGLMR",
         },
     },
     defaultPool: "0xba66370d96a9d61afa66283900b78c1f6ed02782",
@@ -879,19 +846,12 @@ const optimism = makeConfig({
         limitOrderRegistry: "0x54dF9e11c7933a9cA3BD1E540B63dA15edAe40bf",
         pricing: {
             nativeWrappedToken: "0x4200000000000000000000000000000000000006",
+            nativeWrappedName: "WETH",
             nativeQuotePools: [
                 {
                     blockCreated: 0,
                     address: "0x85149247691df622eaf1a8bd0cafd40bc45154a9",
                 },
-            ],
-            stablecoinList: [
-                "0x0b2c639c533813f4aa9d7837caf62653d097ff85",
-                "0x7f5c764cbc14f9669b88837ca1490cca17c31607",
-                "0x94b008aA00579c1307B0EF2c499aD98a8ce58e58",
-                "0x8c6f28f2f1a3c87f0f938b96d27520d9751ec8d9",
-                "0x8aE125E8653821E851F12A49F7765db9a9ce7384",
-                "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1",
             ],
             pools: [
                 "0x85149247691df622eaf1a8bd0cafd40bc45154a9",
@@ -1124,16 +1084,12 @@ const polygon = makeConfig({
         limitOrderRegistryDeployBlock: 43640541,
         pricing: {
             nativeWrappedToken: "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
+            nativeWrappedName: "WMATIC",
             nativeQuotePools: [
                 {
                     blockCreated: 22802494,
                     address: "0xa374094527e1673a86de625aa59517c5de346d32",
                 },
-            ],
-            stablecoinList: [
-                "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
-                "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
-                "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
             ],
             pools: [
                 "0xa374094527e1673a86de625aa59517c5de346d32",
@@ -1326,10 +1282,7 @@ const rootstock = makeConfig({
         limitOrderRegistryDeployBlock: 5842098,
         pricing: {
             nativeWrappedToken: "0x542fDA317318eBF1d3DEAf76E0b632741A7e677d",
-            stablecoinList: [
-                "0x3A15461d8AE0f0Fb5fA2629e9dA7D66A794a6E37",
-                "0xef213441a85df4d7acbdae0cf78004e1e486bb96",
-            ],
+            nativeWrappedName: "WRBTC",
         },
     },
     defaultPool: "0xd2ffe51ab4e622a411abbe634832a19d919e9c55",
@@ -1397,11 +1350,7 @@ const scroll = makeConfig({
         limitOrderRegistryDeployBlock: 1409068,
         pricing: {
             nativeWrappedToken: "0x5300000000000000000000000000000000000004",
-            stablecoinList: [
-                "0x06efdbff2a14a7c8e15944d1f4a48f9f95f663a4",
-                "0xf55bec9cafdbe8730f096aa55dad6d22d44099df",
-                "0xca77eb3fefe3725dc33bccb54edefc3d9f764f97",
-            ],
+            nativeWrappedName: "ETH",
         },
     },
     defaultPool: "0x813df550a32d4a9d42010d057386429ad2328ed9",
@@ -1468,11 +1417,7 @@ const polygonZkEvm = makeConfig({
         limitOrderRegistryDeployBlock: 8467090,
         pricing: {
             nativeWrappedToken: "0x4F9A0e7FD2Bf6067db6994CF12E4495Df938E6e9",
-            stablecoinList: [
-                "0x1e4a5963abfd975d8c9021ce480b42188849d41d",
-                "0xa8ce8aee21bc2a48a5ef670afcc9274c7bbbc035",
-                "0xc5015b9d9161dca7e18e32f6f25c4ad850731fd4",
-            ],
+            nativeWrappedName: "ETH",
         },
     },
     defaultPool: "0xd2c7e323c6f5415dc0ee4e3811901b3380d316fd",
@@ -1535,11 +1480,7 @@ const zkSync = makeConfig({
         limitOrderRegistryDeployBlock: 13618344,
         pricing: {
             nativeWrappedToken: "0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91",
-            stablecoinList: [
-                "0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4",
-                "0x493257fd37edb34451f62edf8d2a0c418852ba4c",
-                "0x503234F203fC7Eb888EEC8513210612a43Cf6115",
-            ],
+            nativeWrappedName: "ETH",
         },
     },
     defaultPool: "0xff577f0e828a878743ecc5e2632cbf65cecf17cf",

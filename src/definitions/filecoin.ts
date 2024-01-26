@@ -32,12 +32,9 @@ export const filecoin = makeConfig({
   },
   oku: {
     pricing: {
-      stablecoinList: [
-        "0xEB466342C4d449BC9f53A865D5Cb90586f405215",
-        "0x7f5373AE26c3E8FfC4c77b7255DF7eC1A9aF52a6",
-      ],
       pools: [],
       nativeWrappedToken: "0x60E1773636CF5E4A227d9AC24F20fEca034ee25A",
+      nativeWrappedName: "WFIL",
       nativeQuotePools: undefined,
     },
     limitOrderRegistry: "0xded8791056aa39581460a005a3c400a281e24bd7",

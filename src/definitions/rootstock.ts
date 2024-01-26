@@ -25,10 +25,7 @@ export const rootstock = makeConfig({
     limitOrderRegistryDeployBlock: 5842098,
     pricing: {
       nativeWrappedToken: "0x542fDA317318eBF1d3DEAf76E0b632741A7e677d",
-      stablecoinList: [
-        "0x3A15461d8AE0f0Fb5fA2629e9dA7D66A794a6E37",
-        "0xef213441a85df4d7acbdae0cf78004e1e486bb96",
-      ],
+      nativeWrappedName: "WRBTC",
     },
   },
 
