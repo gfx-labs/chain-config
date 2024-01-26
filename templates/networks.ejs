@@ -2,6 +2,9 @@ package networks
 
 import (
   "github.com/ethereum/go-ethereum/common"
+  "errors"
+  "fmt"
+  "strconv"
 )
 <%
     var props_1 = IChainInfo.getProperties();
@@ -11,31 +14,64 @@ import (
     var props_5 = OkuPricingMetadata.getProperties();
     var props_6 = ChainContract.getProperties();
 %>
+
+var ErrNetworkNotFound = errors.New("chain not found")
+
+var networksByName = map[string]Network{<% for(const chain of chains) { %>
+    "<%- chain.internalName %>": <%- h.toCamel(chain.internalName) %>, <% } %>
+}
+
+var networksById = map[int]Network{<% for(const chain of chains) { %>
+    <%- chain.id %>: <%- h.toCamel(chain.internalName) %>, <% } %>
+}
+
+func NetworkByName(name string) (*Network, error) {
+    val, ok := networksByName[name]
+    if !ok {
+      return nil, fmt.Errorf("%w: %v", ErrNetworkNotFound, name)
+    }
+    return &val, nil
+}
+
+func NetworkById(idString string) (*Network, error) {
+    i64, err := strconv.ParseInt(idString, 0, 64)
+    if err != nil {
+      return nil, fmt.Errorf("%w: %v", ErrNetworkNotFound, idString)
+    }
+    id := int(i64)
+    val, ok := networksById[id]
+    if !ok {
+      return nil, fmt.Errorf("%w: %v", ErrNetworkNotFound, id)
+    }
+    return &val, nil
+}
+
+
 type Network struct { <% for(const prop of props_1) {%>
-    <%= helpers.displayProp(prop) %> <% } %>
+    <%- helpers.displayProp(prop) %> <% } %>
 
     ChainId int `json:"chainId"`
     StablecoinMap map[common.Address]struct{}
 }
 
 type UniswapMetadata struct {<% for(const prop of props_2) {%>
-    <%= helpers.displayProp(prop) %> <% } %>
+    <%- helpers.displayProp(prop) %> <% } %>
 }
 
 type TokenMetadata struct {<% for(const prop of props_3) {%>
-    <%= helpers.displayProp(prop) %> <% } %>
+    <%- helpers.displayProp(prop) %> <% } %>
 }
 
 type OkuMetadata struct {<% for(const prop of props_4) {%>
-    <%= helpers.displayProp(prop) %> <% } %>
+    <%- helpers.displayProp(prop) %> <% } %>
 }
 
 type OkuPricingMetadata struct { <% for(const prop of props_5) {%>
-    <%= helpers.displayProp(prop) %> <% } %>
+    <%- helpers.displayProp(prop) %> <% } %>
 }
 
 type ChainContract struct {<% for(const prop of props_6) {%>
-    <%= helpers.displayProp(prop) %> <% } %>
+    <%- helpers.displayProp(prop) %> <% } %>
 }
 
 

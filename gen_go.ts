@@ -131,6 +131,7 @@ const helpers = {
   isString,
   clean,
   snakeToCamel,
+  toCamel: snakeToCamel,
   displayProp,
   toAddr,
 }
@@ -138,6 +139,7 @@ const helpers = {
 
 const output = ejs.render(networksString.toString(), {
   h:helpers,
+  chains: MAINNET_CHAINS,
   helpers,
   IChainInfo,
   UniswapMetadata,

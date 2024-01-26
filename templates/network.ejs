@@ -25,8 +25,8 @@ var <%- helpers.snakeToCamel(chainName) %> Network = Network{
   Watchlist:          []common.Address{<%- chain.watchlist.map(h.toAddr).join(",") %>},
   BlockTimeSeconds: <%- chain.blockTimeSeconds %>,
   Oku:            OkuMetadata{
-    LimitOrderRegistry: <%- h.formatValue(oku.limitOrderRegistry, "a") %>,
-    LimitOrderRegistryDeployBlock: <%- h.formatValue(oku.limitOrderRegistryDeployBlock, "n") %>,
+     <%- oku.limitOrderRegistry ? "LimitOrderRegistry:" + h.formatValue(oku.limitOrderRegistry, "a")+"," : "" %>
+    <%- oku.limitOrderRegistryDeployBlock ? "LimitOrderRegistryDeployBlock:"+ h.formatValue(oku.limitOrderRegistryDeployBlock, "n")+",": "" %>
     Pricing: OkuPricingMetadata{
 <% if(pxs.nativeWrappedToken !== undefined){%>    NativeWrappedToken: <%- h.formatValue(pxs.nativeWrappedToken, "a") %>,<% } %>
 <% if(pxs.nativeWrappedName !== undefined){%>    NativeWrappedName: <%- h.formatValue(pxs.nativeWrappedName, "s") %>,<% } %>
