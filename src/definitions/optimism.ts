@@ -7,7 +7,7 @@ export const optimism = makeConfig({
   blockTimeSeconds: 0.5,
   sortIndex: 2,
   logoUrl: "https://assets.oku.trade/optimism-logo.svg",
-
+  safeReorgDistance: 90000,
   oku: {
     limitOrderRegistryDeployBlock: 105276132,
     limitOrderRegistry: "0x54dF9e11c7933a9cA3BD1E540B63dA15edAe40bf",

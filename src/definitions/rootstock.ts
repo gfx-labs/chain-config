@@ -8,6 +8,7 @@ export const rootstock = makeConfig({
   name: "Rootstock",
   blockTimeSeconds: 33,
   logoUrl: "https://assets.oku.trade/rootstock-logo.svg",
+  safeReorgDistance: 90000,
   uniswap: {
     deployBlock: 5829210,
     poolFactory: "0xaF37EC98A00FD63689CF3060BF3B6784E00caD82",

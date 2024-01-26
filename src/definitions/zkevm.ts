@@ -7,6 +7,7 @@ export const polygonZkEvm = makeConfig({
   sortIndex: 6,
   blockTimeSeconds: 7,
   logoUrl: "https://assets.oku.trade/zkevm-logo.svg",
+  safeReorgDistance: 90000,
   uniswap: {
     deployBlock: 8466867,
     poolFactory: "0xff83c3c800Fec21de45C5Ec30B69ddd5Ee60DFC2",

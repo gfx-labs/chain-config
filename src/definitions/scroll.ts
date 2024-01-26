@@ -7,6 +7,7 @@ export const scroll = makeConfig({
   sortIndex: 5,
   blockTimeSeconds: 3,
   logoUrl: "https://assets.oku.trade/scroll-logo.png",
+  safeReorgDistance: 90000,
 
   uniswap: {
     deployBlock: 1367,

@@ -46,6 +46,7 @@ export interface TokenMetadata {
 export interface IChainInfo extends Chain {
   logoUrl: string;
   sortIndex: number;
+  safeReorgDistance?: number;
   defaultPool: Address;
   internalName: string;
   defaultToken0: Address;

@@ -7,6 +7,7 @@ export const arbitrum = makeConfig({
   sortIndex: 1,
   blockTimeSeconds: 0.25,
   logoUrl: "https://assets.oku.trade/arbitrum-logo.svg",
+  safeReorgDistance: 90000*2,
   uniswap: {
     deployBlock: 165,
     poolFactory: "0x1F98431c8aD98523631AE4a59f267346ea31F984",

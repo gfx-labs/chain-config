@@ -6,6 +6,7 @@ export const mainnet = makeConfig({
   ...chain,
   sortIndex: 0,
   blockTimeSeconds: 15,
+  safeReorgDistance: 90_000,
   logoUrl: "https://assets.oku.trade/ethereum-logo.webp",
   uniswap: {
     deployBlock: 12369621,

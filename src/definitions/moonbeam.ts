@@ -7,6 +7,7 @@ export const moonbeam = makeConfig({
   sortIndex: 12,
   blockTimeSeconds: 30,
   logoUrl: "https://assets.oku.trade/moonbeam-logo.svg",
+  safeReorgDistance: 90000,
   uniswap: {
     deployBlock: 3340452,
     poolFactory: "0x28f1158795A3585CaAA3cD6469CD65382b89BB70",

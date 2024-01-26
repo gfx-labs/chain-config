@@ -7,6 +7,7 @@ export const filecoin = makeConfig({
   sortIndex: 10,
   name: "Filecoin",
   blockTimeSeconds: 30,
+  safeReorgDistance: 90000,
   blockExplorers: {
     ...chain.blockExplorers,
     default: {

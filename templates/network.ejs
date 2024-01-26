@@ -15,6 +15,7 @@ var <%- helpers.snakeToCamel(chainName) %> Network = Network{
   ChainId: <%- chain.id %>,
   LogoUrl: "<%- chain.logoUrl %>",
   SortIndex: <%- chain.sortIndex %>,
+  SafeReorgDistance: <%- chain.safeReorgDistance || 90000 %>,
   DefaultPool: <%- helpers.toAddr(chain.defaultPool) %>,
   InternalName:     "<%- chain.internalName %>",
   DefaultToken0:    common.HexToAddress("<%- chain.defaultToken0 %>"),
