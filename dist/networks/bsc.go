@@ -9,14 +9,14 @@ var Bsc Network = Network{
 	LogoUrl:           "https://assets.oku.trade/bsc-logo.svg",
 	SortIndex:         9,
 	SafeReorgDistance: 90000,
-	DefaultPool:       common.HexToAddress("0x6fe9e9de56356f7edbfcbb29fab7cd69471a4869"),
+	DefaultPool:       common.HexToAddress("0x3fb2623567e21f8c50f0ae86f54ef4849b4eb47b"),
 	InternalName:      "bsc",
-	DefaultToken0:     common.HexToAddress("0x55d398326f99059ff775485246999027b3197955"),
-	DefaultToken1:     common.HexToAddress("0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c"),
+	DefaultToken0:     common.HexToAddress("0x2170ed0880ac9a755fd29b2688956bd959f933f8"),
+	DefaultToken1:     common.HexToAddress("0x7130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c"),
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{},
 	StablecoinMap:    map[common.Address]struct{}{},
-	Watchlist:        []common.Address{common.HexToAddress("0x6fe9e9de56356f7edbfcbb29fab7cd69471a4869")},
+	Watchlist:        []common.Address{common.HexToAddress("0x55d398326f99059ff775485246999027b3197955"), common.HexToAddress("0x28df0835942396b7a1b7ae1cd068728e6ddbbafd"), common.HexToAddress("0x6fe9e9de56356f7edbfcbb29fab7cd69471a4869"), common.HexToAddress("0x0f338ec12d3f7c3d77a4b9fcc1f95f3fb6ad0ea6"), common.HexToAddress("0x47a90a2d92a8367a91efa1906bfc8c1e05bf10c4"), common.HexToAddress("0x06396509195eb9e07c38a016694dc9ff535b128a"), common.HexToAddress("0x4fb87838a29b37598099ef5aa6b3fbeeef987c50"), common.HexToAddress("0x2c3c320d49019d4f9a92352e947c7e5acfe47d68"), common.HexToAddress("0xf9878a5dd55edc120fde01893ea713a4f032229c"), common.HexToAddress("0x17507bef4c3abc1bc715be723ee1baf571256e05"), common.HexToAddress("0xc98f01bf2141e1140ef8f8cad99d4b021d10718f")},
 	BlockTimeSeconds: 3,
 	Oku: OkuMetadata{
 
