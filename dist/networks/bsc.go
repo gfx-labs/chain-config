@@ -19,7 +19,8 @@ var Bsc Network = Network{
 	Watchlist:        []common.Address{common.HexToAddress("0x55d398326f99059ff775485246999027b3197955"), common.HexToAddress("0x28df0835942396b7a1b7ae1cd068728e6ddbbafd"), common.HexToAddress("0x6fe9e9de56356f7edbfcbb29fab7cd69471a4869"), common.HexToAddress("0x0f338ec12d3f7c3d77a4b9fcc1f95f3fb6ad0ea6"), common.HexToAddress("0x47a90a2d92a8367a91efa1906bfc8c1e05bf10c4"), common.HexToAddress("0x06396509195eb9e07c38a016694dc9ff535b128a"), common.HexToAddress("0x4fb87838a29b37598099ef5aa6b3fbeeef987c50"), common.HexToAddress("0x2c3c320d49019d4f9a92352e947c7e5acfe47d68"), common.HexToAddress("0xf9878a5dd55edc120fde01893ea713a4f032229c"), common.HexToAddress("0x17507bef4c3abc1bc715be723ee1baf571256e05"), common.HexToAddress("0xc98f01bf2141e1140ef8f8cad99d4b021d10718f")},
 	BlockTimeSeconds: 3,
 	Oku: OkuMetadata{
-
+		LimitOrderRegistry:            common.HexToAddress("0x19b9bd76028cab6f414ed1fc57400b75b5ca0627"),
+		LimitOrderRegistryDeployBlock: 34187988,
 		Pricing: OkuPricingMetadata{
 			NativeWrappedToken: common.HexToAddress("0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c"),
 			NativeWrappedName:  "WBNB",
@@ -58,6 +59,10 @@ var Bsc Network = Network{
 		"multicall3": {
 			BlockCreated: 0,
 			Address:      common.HexToAddress("0xcA11bde05977b3631167028862bE2a173976CA11"),
+		},
+		"limitOrder": {
+			BlockCreated: 0,
+			Address:      common.HexToAddress("0x19b9bd76028cab6f414ed1fc57400b75b5ca0627"),
 		},
 		"nftManager": {
 			BlockCreated: 0,

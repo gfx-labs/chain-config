@@ -133,6 +133,8 @@ declare const base: Readonly<{
         usdcAddress: "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913";
     };
     oku: {
+        limitOrderRegistry: "0xff8b754c64e9a8473bd6e1118d0eac67f0a8ae27";
+        limitOrderRegistryDeployBlock: number;
         pricing: {
             nativeWrappedToken: "0x4200000000000000000000000000000000000006";
             nativeWrappedName: string;
@@ -874,6 +876,8 @@ declare const bsc: Readonly<{
         wethAddress: "0x2170ed0880ac9a755fd29b2688956bd959f933f8";
     };
     oku: {
+        limitOrderRegistry: "0x19b9bd76028cab6f414ed1fc57400b75b5ca0627";
+        limitOrderRegistryDeployBlock: number;
         pricing: {
             nativeQuotePools: {
                 blockCreated: number;
@@ -892,6 +896,9 @@ declare const bsc: Readonly<{
     watchlist: ("0x6fe9e9de56356f7edbfcbb29fab7cd69471a4869" | "0xc98f01bf2141e1140ef8f8cad99d4b021d10718f" | "0xf9878a5dd55edc120fde01893ea713a4f032229c" | "0x17507bef4c3abc1bc715be723ee1baf571256e05" | "0x06396509195eb9e07c38a016694dc9ff535b128a" | "0x55d398326f99059ff775485246999027b3197955" | "0x28df0835942396b7a1b7ae1cd068728e6ddbbafd" | "0x0f338ec12d3f7c3d77a4b9fcc1f95f3fb6ad0ea6" | "0x47a90a2d92a8367a91efa1906bfc8c1e05bf10c4" | "0x4fb87838a29b37598099ef5aa6b3fbeeef987c50" | "0x2c3c320d49019d4f9a92352e947c7e5acfe47d68")[];
     internalName: "bsc";
     contracts: {
+        limitOrder: {
+            address: "0x19b9bd76028cab6f414ed1fc57400b75b5ca0627";
+        };
         nftManager: {
             address: "0x7b8A01B39D58278b5DE7e48c8449c9f4F5170613";
         };
@@ -3061,6 +3068,8 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         usdcAddress: "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913";
     };
     oku: {
+        limitOrderRegistry: "0xff8b754c64e9a8473bd6e1118d0eac67f0a8ae27";
+        limitOrderRegistryDeployBlock: number;
         pricing: {
             nativeWrappedToken: "0x4200000000000000000000000000000000000006";
             nativeWrappedName: string;
@@ -3793,6 +3802,8 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         wethAddress: "0x2170ed0880ac9a755fd29b2688956bd959f933f8";
     };
     oku: {
+        limitOrderRegistry: "0x19b9bd76028cab6f414ed1fc57400b75b5ca0627";
+        limitOrderRegistryDeployBlock: number;
         pricing: {
             nativeQuotePools: {
                 blockCreated: number;
@@ -3811,6 +3822,9 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     watchlist: ("0x6fe9e9de56356f7edbfcbb29fab7cd69471a4869" | "0xc98f01bf2141e1140ef8f8cad99d4b021d10718f" | "0xf9878a5dd55edc120fde01893ea713a4f032229c" | "0x17507bef4c3abc1bc715be723ee1baf571256e05" | "0x06396509195eb9e07c38a016694dc9ff535b128a" | "0x55d398326f99059ff775485246999027b3197955" | "0x28df0835942396b7a1b7ae1cd068728e6ddbbafd" | "0x0f338ec12d3f7c3d77a4b9fcc1f95f3fb6ad0ea6" | "0x47a90a2d92a8367a91efa1906bfc8c1e05bf10c4" | "0x4fb87838a29b37598099ef5aa6b3fbeeef987c50" | "0x2c3c320d49019d4f9a92352e947c7e5acfe47d68")[];
     internalName: "bsc";
     contracts: {
+        limitOrder: {
+            address: "0x19b9bd76028cab6f414ed1fc57400b75b5ca0627";
+        };
         nftManager: {
             address: "0x7b8A01B39D58278b5DE7e48c8449c9f4F5170613";
         };

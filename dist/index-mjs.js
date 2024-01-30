@@ -244,6 +244,8 @@ const base = makeConfig({
         usdcAddress: "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
     },
     oku: {
+        limitOrderRegistry: "0xff8b754c64e9a8473bd6e1118d0eac67f0a8ae27",
+        limitOrderRegistryDeployBlock: 7644835,
         pricing: {
             nativeWrappedToken: "0x4200000000000000000000000000000000000006",
             nativeWrappedName: "WETH",
@@ -396,6 +398,8 @@ const bsc = makeConfig({
         wethAddress: "0x2170ed0880ac9a755fd29b2688956bd959f933f8",
     },
     oku: {
+        limitOrderRegistry: "0x19b9bd76028cab6f414ed1fc57400b75b5ca0627",
+        limitOrderRegistryDeployBlock: 34187988,
         pricing: {
             nativeQuotePools: [
                 {
@@ -460,6 +464,9 @@ const bsc = makeConfig({
     internalName: "bsc",
     contracts: {
         ...bsc$1.contracts,
+        limitOrder: {
+            address: "0x19b9bd76028cab6f414ed1fc57400b75b5ca0627",
+        },
         nftManager: {
             address: "0x7b8A01B39D58278b5DE7e48c8449c9f4F5170613",
         },

@@ -19,7 +19,8 @@ var Base Network = Network{
 	Watchlist:        []common.Address{common.HexToAddress("0x9e37cb775a047ae99fc5a24dded834127c4180cd"), common.HexToAddress("0x4c36388be6f416a29c8d8eee81c771ce6be14b18"), common.HexToAddress("0xd0b53d9277642d899df5c87a3966a349a798f224"), common.HexToAddress("0x3bc5180d5439b500f381f9a46f15dd6608101671"), common.HexToAddress("0x24e1cbd6fed006ceed9af0dce688acc7951d57a9"), common.HexToAddress("0x10648ba41b8565907cfa1496765fa4d95390aa0d")},
 	BlockTimeSeconds: 2,
 	Oku: OkuMetadata{
-
+		LimitOrderRegistry:            common.HexToAddress("0xff8b754c64e9a8473bd6e1118d0eac67f0a8ae27"),
+		LimitOrderRegistryDeployBlock: 7644835,
 		Pricing: OkuPricingMetadata{
 			NativeWrappedToken: common.HexToAddress("0x4200000000000000000000000000000000000006"),
 			NativeWrappedName:  "WETH",

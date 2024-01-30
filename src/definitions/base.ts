@@ -24,6 +24,8 @@ export const base = makeConfig({
     usdcAddress: "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
   },
   oku: {
+    limitOrderRegistry: "0xff8b754c64e9a8473bd6e1118d0eac67f0a8ae27",
+    limitOrderRegistryDeployBlock: 7644835,
     pricing: {
       nativeWrappedToken: "0x4200000000000000000000000000000000000006",
       nativeWrappedName: "WETH",

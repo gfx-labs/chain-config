@@ -32,6 +32,8 @@ export const bsc = makeConfig({
     wethAddress: "0x2170ed0880ac9a755fd29b2688956bd959f933f8",
   },
   oku: {
+    limitOrderRegistry: "0x19b9bd76028cab6f414ed1fc57400b75b5ca0627",
+    limitOrderRegistryDeployBlock: 34187988,
     pricing: {
       nativeQuotePools: [
         {
@@ -96,6 +98,9 @@ export const bsc = makeConfig({
   internalName: "bsc",
   contracts: {
     ...chain.contracts,
+    limitOrder: {
+      address: "0x19b9bd76028cab6f414ed1fc57400b75b5ca0627",
+    },
     nftManager: {
       address: "0x7b8A01B39D58278b5DE7e48c8449c9f4F5170613",
     },
