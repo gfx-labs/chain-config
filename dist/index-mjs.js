@@ -811,6 +811,7 @@ const mainnet = makeConfig({
 
 const manta = makeConfig({
     ...manta$1,
+    name: "Manta Pacific",
     blockTimeSeconds: 2,
     sortIndex: 13,
     logoUrl: "https://assets.oku.trade/manta-logo.png",

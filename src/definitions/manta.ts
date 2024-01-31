@@ -4,6 +4,7 @@ import {} from "viem";
 
 export const manta = makeConfig({
   ...chain,
+  name: "Manta Pacific",
   blockTimeSeconds: 2,
   sortIndex: 13,
   logoUrl: "https://assets.oku.trade/manta-logo.png",

@@ -1149,6 +1149,7 @@ declare const mainnet: Readonly<{
     fees?: import("viem").ChainFees<undefined> | undefined;
 }>;
 declare const manta: Readonly<{
+    name: "Manta Pacific";
     blockTimeSeconds: 2;
     sortIndex: 13;
     logoUrl: "https://assets.oku.trade/manta-logo.png";
@@ -1222,7 +1223,6 @@ declare const manta: Readonly<{
         };
     };
     id: 169;
-    name: "Manta Pacific Mainnet";
     nativeCurrency: {
         readonly decimals: 18;
         readonly name: "ETH";
@@ -5850,6 +5850,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     fees?: import("viem").ChainFees<undefined> | undefined;
     network: "zksync-era";
 }>, Readonly<{
+    name: "Manta Pacific";
     blockTimeSeconds: 2;
     sortIndex: 13;
     logoUrl: "https://assets.oku.trade/manta-logo.png";
@@ -5923,7 +5924,6 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         };
     };
     id: 169;
-    name: "Manta Pacific Mainnet";
     nativeCurrency: {
         readonly decimals: 18;
         readonly name: "ETH";
