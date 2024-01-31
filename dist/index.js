@@ -229,9 +229,9 @@ const base = makeConfig({
     sortIndex: 8,
     blockTimeSeconds: 2,
     logoUrl: "https://assets.oku.trade/base-logo.svg",
-    defaultPool: "0x9e37cb775a047ae99fc5a24dded834127c4180cd",
-    defaultToken0: "0x27d2decb4bfc9c76f0309b8e88dec3a601fe25a8",
-    defaultToken1: "0x4200000000000000000000000000000000000006",
+    defaultPool: "0x4c36388be6f416a29c8d8eee81c771ce6be14b18",
+    defaultToken0: "0x4200000000000000000000000000000000000006",
+    defaultToken1: "0xd9aaec86b65d86f6a7b5b1b0c42ffa531710b6ca",
     safeReorgDistance: 90000,
     uniswap: {
         deployBlock: 1371680,
@@ -265,12 +265,26 @@ const base = makeConfig({
         "0x50c5725949a6f0c72e6c4a641f24049a917db0cb",
     ],
     watchlist: [
-        "0x9e37cb775a047ae99fc5a24dded834127c4180cd",
         "0x4c36388be6f416a29c8d8eee81c771ce6be14b18",
+        "0x06959273e9a65433de71f5a452d529544e07ddd0",
+        "0xc9034c3e7f58003e6ae0c8438e7c8f4598d5acaa",
         "0xd0b53d9277642d899df5c87a3966a349a798f224",
-        "0x3bc5180d5439b500f381f9a46f15dd6608101671",
-        "0x24e1cbd6fed006ceed9af0dce688acc7951d57a9",
+        "0x48413707b70355597404018e7c603b261fcadf3f",
+        "0x4b0aaf3ebb163dd45f663b38b6d93f6093ebc2d3",
+        "0x0d5959a52e7004b601f0be70618d01ac3cdce976",
         "0x10648ba41b8565907cfa1496765fa4d95390aa0d",
+        "0x22f9623817f152148b4e080e98af66fbe9c5adf8",
+        "0xae2ce200bdb67c472030b31f602f0756c9aeb61c",
+        "0xd5638bf58e2762fa40bd753490f693cbb1986709",
+        "0x018046b1d182f7c0978c07610e1173c8e11913fd",
+        "0x24e1cbd6fed006ceed9af0dce688acc7951d57a9",
+        "0x97a25cc2793f0ffa90e1667cf7b3c1f130737189",
+        "0xfcc89a1f250d76de198767d33e1ca9138a7fb54b",
+        "0x3bc5180d5439b500f381f9a46f15dd6608101671",
+        "0xa555149210075702a734968f338d5e1cbd509354",
+        "0x5197195ac878741b192f84ff6d7da5a85b9e634b",
+        "0xe745a591970e0fa981204cf525e170a2b9e4fb93",
+        "0x7e904aaf3439402eb21958fe090bd852d5e882cf",
     ],
     internalName: "base",
     contracts: {
@@ -790,6 +804,70 @@ const mainnet = makeConfig({
         },
         multicall2: {
             address: "0x5BA1e12693Dc8F9c48aAD8770482f4739bEeD696",
+        },
+        multicall3: {
+            address: "0xcA11bde05977b3631167028862bE2a173976CA11",
+        },
+    },
+});
+
+const manta = makeConfig({
+    ...chains.manta,
+    blockTimeSeconds: 2,
+    sortIndex: 13,
+    logoUrl: "https://assets.oku.trade/manta-logo.png",
+    safeReorgDistance: 90000,
+    uniswap: {
+        deployBlock: 1191705,
+        poolFactory: "0x06D830e15081f65923674268121FF57Cc54e4e23",
+        multicall2: "0x3C7B6fA5376Ba88364e9BeAE6E1aEc9f738e8f63",
+        tickLens: "0xC94Fb2D13587b0b5af78094933490B35E004eAbE",
+        nonfungiblePositionManager: "0xA4F2Db71348697C65A64a146F709C73030C2ebcD",
+        positionsNFT: "0xA4F2Db71348697C65A64a146F709C73030C2ebcD",
+        positionsNFTDeployBlock: 1191836,
+    },
+    token: {
+        usdcAddress: "0xb73603C5d87fA094B7314C74ACE2e64D165016fb",
+        wethAddress: "0x0Dc808adcE2099A9F62AA87D9670745AbA741746",
+        wbtcAddress: "0x305E88d809c9DC03179554BFbf85Ac05Ce8F18d6",
+    },
+    oku: {
+        limitOrderRegistry: "0xFE83E1DDa189D71093f2a716A4D01d591d6Ca66C",
+        limitOrderRegistryDeployBlock: 1198851,
+        pricing: {
+            nativeWrappedToken: "0x0Dc808adcE2099A9F62AA87D9670745AbA741746",
+            nativeWrappedName: "ETH",
+        },
+    },
+    defaultPool: "0xff577f0e828a878743ecc5e2632cbf65cecf17cf",
+    defaultToken0: "0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4",
+    defaultToken1: "0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91",
+    tokenList: [
+        { symbol: "WETH", address: "0x0Dc808adcE2099A9F62AA87D9670745AbA741746" },
+        { symbol: "USDC", address: "0xb73603C5d87fA094B7314C74ACE2e64D165016fb" },
+        { symbol: "MANTA", address: "0x95CeF13441Be50d20cA4558CC0a27B601aC544E5" },
+        { symbol: "USDT", address: "0xf417F5A458eC102B90352F697D6e2Ac3A3d2851f" },
+        { symbol: "WBTC", address: "0x305E88d809c9DC03179554BFbf85Ac05Ce8F18d6" },
+    ],
+    stables: [
+        "0xf417F5A458eC102B90352F697D6e2Ac3A3d2851f",
+        "0xb73603C5d87fA094B7314C74ACE2e64D165016fb",
+    ],
+    watchlist: [],
+    internalName: "manta",
+    contracts: {
+        ...chains.manta.contracts,
+        limitOrder: {
+            address: "0xFE83E1DDa189D71093f2a716A4D01d591d6Ca66C",
+        },
+        nftManager: {
+            address: "0xA4F2Db71348697C65A64a146F709C73030C2ebcD",
+        },
+        weth9: {
+            address: "0x0Dc808adcE2099A9F62AA87D9670745AbA741746",
+        },
+        multicall2: {
+            address: "0x52dFC0D9960F11A9Ca9FF616e791B91188446a60",
         },
         multicall3: {
             address: "0xcA11bde05977b3631167028862bE2a173976CA11",
@@ -1582,6 +1660,7 @@ const MAINNET_CHAINS = [
     scroll,
     polygonZkEvm,
     zkSync,
+    manta,
 ];
 
 exports.MAINNET_CHAINS = MAINNET_CHAINS;
@@ -1591,6 +1670,7 @@ exports.boba = boba;
 exports.bsc = bsc;
 exports.filecoin = filecoin;
 exports.mainnet = mainnet;
+exports.manta = manta;
 exports.moonbeam = moonbeam;
 exports.optimism = optimism;
 exports.polygon = polygon;

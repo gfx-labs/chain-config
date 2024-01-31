@@ -16,4 +16,5 @@ export const MAINNET_CHAINS = [
   defs.scroll,
   defs.polygonZkEvm,
   defs.zkSync,
+  defs.manta,
 ] as const;

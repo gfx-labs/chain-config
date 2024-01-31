@@ -8,6 +8,7 @@ export * from "./boba";
 export * from "./bsc";
 export * from "./filecoin";
 export * from "./mainnet";
+export * from "./manta";
 export * from "./moonbeam";
 export * from "./optimism";
 export * from "./polygon";

@@ -23,6 +23,7 @@ var networksByName = map[string]Network{
 	"scroll":        Scroll,
 	"polygon-zkevm": PolygonZkevm,
 	"zksync":        Zksync,
+	"manta":         Manta,
 }
 
 var networksById = map[int]Network{
@@ -39,6 +40,7 @@ var networksById = map[int]Network{
 	534352: Scroll,
 	1101:   PolygonZkevm,
 	324:    Zksync,
+	169:    Manta,
 }
 
 func NetworkByName(name string) (*Network, error) {
