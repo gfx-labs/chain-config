@@ -840,9 +840,9 @@ const manta = makeConfig({
             nativeWrappedName: "ETH",
         },
     },
-    defaultPool: "0xff577f0e828a878743ecc5e2632cbf65cecf17cf",
-    defaultToken0: "0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4",
-    defaultToken1: "0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91",
+    defaultPool: "0xbfca3e002acbcea2f9d48a87cf545cb4344f9a3e",
+    defaultToken0: "0x0dc808adce2099a9f62aa87d9670745aba741746",
+    defaultToken1: "0xb73603c5d87fa094b7314c74ace2e64d165016fb",
     tokenList: [
         { symbol: "WETH", address: "0x0Dc808adcE2099A9F62AA87D9670745AbA741746" },
         { symbol: "USDC", address: "0xb73603C5d87fA094B7314C74ACE2e64D165016fb" },
@@ -854,7 +854,7 @@ const manta = makeConfig({
         "0xf417F5A458eC102B90352F697D6e2Ac3A3d2851f",
         "0xb73603C5d87fA094B7314C74ACE2e64D165016fb",
     ],
-    watchlist: [],
+    watchlist: ["0xbfca3e002acbcea2f9d48a87cf545cb4344f9a3e"],
     internalName: "manta",
     contracts: {
         ...chains.manta.contracts,
