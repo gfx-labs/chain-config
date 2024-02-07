@@ -44,6 +44,7 @@ var Boba Network = Network{
 		UniswapV3Staker:                    common.HexToAddress("0x6a6c1198f85B084822138DFd3fA9686e4029c091"),
 		PositionsNFT:                       common.HexToAddress("0x0bfc9aC7E52f38EAA6dC8d10942478f695C6Cf71"),
 		PositionsNFTDeployBlock:            969359,
+		UniversalRouter:                    common.HexToAddress("0x4BA622997559F9b5Ac68751D7Fc3dEecc23a0e88"),
 	},
 	Token: TokenMetadata{
 		WethAddress: common.HexToAddress("0xdeaddeaddeaddeaddeaddeaddeaddeaddead0000"),

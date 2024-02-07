@@ -51,6 +51,7 @@ var Polygon Network = Network{
 		PositionsNFT:                       common.HexToAddress("0xC36442b4a4522E871399CD717aBDD847Ab11FE88"),
 		PositionsNFTDeployBlock:            22760586,
 		TopNativePool:                      common.HexToAddress("0xa374094527e1673a86de625aa59517c5de346d32"),
+		UniversalRouter:                    common.HexToAddress("0x4C60051384bd2d3C01bfc845Cf5F4b44bcbE9de5"),
 	},
 	Token: TokenMetadata{
 		WbtcAddress: common.HexToAddress("0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6"),

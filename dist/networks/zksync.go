@@ -36,6 +36,7 @@ var Zksync Network = Network{
 		NonfungiblePositionManager: common.HexToAddress("0x0616e5762c1E7Dc3723c50663dF10a162D690a86"),
 		PositionsNFT:               common.HexToAddress("0x0616e5762c1E7Dc3723c50663dF10a162D690a86"),
 		PositionsNFTDeployBlock:    12637120,
+		UniversalRouter:            common.HexToAddress("0x28731BCC616B5f51dD52CF2e4dF0E78dD1136C06"),
 	},
 	Token: TokenMetadata{
 		UsdcAddress: common.HexToAddress("0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4"),

@@ -36,6 +36,7 @@ var Rootstock Network = Network{
 		NonfungiblePositionManager: common.HexToAddress("0x9d9386c042F194B460Ec424a1e57ACDE25f5C4b1"),
 		PositionsNFT:               common.HexToAddress("0x9d9386c042F194B460Ec424a1e57ACDE25f5C4b1"),
 		PositionsNFTDeployBlock:    5829891,
+		UniversalRouter:            common.HexToAddress("0x244f68e77357f86a8522323eBF80b5FC2F814d3E"),
 	},
 	Token: TokenMetadata{
 		UsdcAddress: common.HexToAddress("0x3A15461d8AE0f0Fb5fA2629e9dA7D66A794a6E37"),

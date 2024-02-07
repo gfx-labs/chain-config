@@ -23,6 +23,7 @@ export const moonbeam = makeConfig({
     v3Migrator: "0x76776b10d782a1d194fbfc92d4b01db1ce1eeb4b",
     positionsNFT: "0x9036D0DcB5a059C9371B05D508f0072Df773854e",
     positionsNFTDeployBlock: 3340476,
+    universalRouter: "0x1F56F4e1648e96633c7FE79002036E967403CDfF",
   },
   token: {
     wethAddress: "0xab3f0245b83feb11d15aaffefd7ad465a59817ed",

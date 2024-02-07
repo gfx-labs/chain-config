@@ -17,7 +17,7 @@ export const optimism = makeConfig({
       nativeQuotePools: [
         {
           blockCreated: 0,
-          address:"0x85149247691df622eaf1a8bd0cafd40bc45154a9",
+          address: "0x85149247691df622eaf1a8bd0cafd40bc45154a9",
         },
       ],
       pools: [
@@ -143,6 +143,7 @@ export const optimism = makeConfig({
     positionsNFT: "0xC36442b4a4522E871399CD717aBDD847Ab11FE88",
     topNativePool: "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640",
     positionsNFTDeployBlock: 0,
+    universalRouter: "0xb555edF5dcF85f42cEeF1f3630a52A108E55A654",
   },
   token: {
     usdcAddress: "0x0b2c639c533813f4aa9d7837caf62653d097ff85",

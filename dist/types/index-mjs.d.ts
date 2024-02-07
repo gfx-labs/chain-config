@@ -22,6 +22,7 @@ declare const arbitrum: Readonly<{
         positionsNFT: "0xC36442b4a4522E871399CD717aBDD847Ab11FE88";
         topNativePool: "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640";
         positionsNFTDeployBlock: number;
+        universalRouter: "0x4C60051384bd2d3C01bfc845Cf5F4b44bcbE9de5";
     };
     token: {
         wethAddress: "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1";
@@ -128,6 +129,7 @@ declare const base: Readonly<{
         nonfungiblePositionManager: "0x03a520b32C04BF3bEEf7BEb72E919cf822Ed34f1";
         positionsNFT: "0x03a520b32C04BF3bEEf7BEb72E919cf822Ed34f1";
         positionsNFTDeployBlock: number;
+        universalRouter: "0xec8b0f7ffe3ae75d7ffab09429e3675bb63503e4";
     };
     token: {
         usdcAddress: "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913";
@@ -770,6 +772,7 @@ declare const boba: Readonly<{
         uniswapV3Staker: "0x6a6c1198f85B084822138DFd3fA9686e4029c091";
         positionsNFT: "0x0bfc9aC7E52f38EAA6dC8d10942478f695C6Cf71";
         positionsNFTDeployBlock: number;
+        universalRouter: "0x4BA622997559F9b5Ac68751D7Fc3dEecc23a0e88";
     };
     token: {
         wethAddress: "0xdeaddeaddeaddeaddeaddeaddeaddeaddead0000";
@@ -869,6 +872,7 @@ declare const bsc: Readonly<{
         uniswapV3Staker: "0x6a6c1198f85B084822138DFd3fA9686e4029c091";
         positionsNFT: "0x0bfc9aC7E52f38EAA6dC8d10942478f695C6Cf71";
         positionsNFTDeployBlock: number;
+        universalRouter: "0xeC8B0F7Ffe3ae75d7FfAb09429e3675bb63503e4";
     };
     token: {
         usdcAddress: "0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d";
@@ -959,6 +963,7 @@ declare const filecoin: Readonly<{
         nonfungiblePositionManager: "0x4cd986dD509fbB6A695aE971d5C56c8795f640ee";
         positionsNFT: "0x4cd986dD509fbB6A695aE971d5C56c8795f640ee";
         positionsNFTDeployBlock: number;
+        universalRouter: "0x83702C6356A1028A900F83d446D189a31646a16b";
     };
     token: {
         usdcAddress: "0xEB466342C4d449BC9f53A865D5Cb90586f405215";
@@ -1056,6 +1061,7 @@ declare const mainnet: Readonly<{
         positionsNFT: "0xC36442b4a4522E871399CD717aBDD847Ab11FE88";
         topNativePool: "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640";
         positionsNFTDeployBlock: number;
+        universalRouter: "0xEf1c6E67703c7BD7107eed8303Fbe6EC2554BF6B";
     };
     token: {
         usdcAddress: "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2";
@@ -1162,6 +1168,7 @@ declare const manta: Readonly<{
         nonfungiblePositionManager: "0xA4F2Db71348697C65A64a146F709C73030C2ebcD";
         positionsNFT: "0xA4F2Db71348697C65A64a146F709C73030C2ebcD";
         positionsNFTDeployBlock: number;
+        universalRouter: "0x42Bff1f6b647462fcD8c28a488Be9C9988830ef6";
     };
     token: {
         usdcAddress: "0xb73603C5d87fA094B7314C74ACE2e64D165016fb";
@@ -1261,6 +1268,7 @@ declare const moonbeam: Readonly<{
         v3Migrator: "0x76776b10d782a1d194fbfc92d4b01db1ce1eeb4b";
         positionsNFT: "0x9036D0DcB5a059C9371B05D508f0072Df773854e";
         positionsNFTDeployBlock: number;
+        universalRouter: "0x1F56F4e1648e96633c7FE79002036E967403CDfF";
     };
     token: {
         wethAddress: "0xab3f0245b83feb11d15aaffefd7ad465a59817ed";
@@ -1368,6 +1376,7 @@ declare const optimism: Readonly<{
         positionsNFT: "0xC36442b4a4522E871399CD717aBDD847Ab11FE88";
         topNativePool: "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640";
         positionsNFTDeployBlock: number;
+        universalRouter: "0xb555edF5dcF85f42cEeF1f3630a52A108E55A654";
     };
     token: {
         usdcAddress: "0x0b2c639c533813f4aa9d7837caf62653d097ff85";
@@ -2011,6 +2020,7 @@ declare const polygon: Readonly<{
         positionsNFT: "0xC36442b4a4522E871399CD717aBDD847Ab11FE88";
         positionsNFTDeployBlock: number;
         topNativePool: "0xa374094527e1673a86de625aa59517c5de346d32";
+        universalRouter: "0x4C60051384bd2d3C01bfc845Cf5F4b44bcbE9de5";
     };
     token: {
         wbtcAddress: "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6";
@@ -2110,6 +2120,7 @@ declare const rootstock: Readonly<{
         nonfungiblePositionManager: "0x9d9386c042F194B460Ec424a1e57ACDE25f5C4b1";
         positionsNFT: "0x9d9386c042F194B460Ec424a1e57ACDE25f5C4b1";
         positionsNFTDeployBlock: number;
+        universalRouter: "0x244f68e77357f86a8522323eBF80b5FC2F814d3E";
     };
     token: {
         usdcAddress: "0x3A15461d8AE0f0Fb5fA2629e9dA7D66A794a6E37";
@@ -2202,6 +2213,7 @@ declare const scroll: Readonly<{
         deployBlock: number;
         poolFactory: "0x70C62C8b8e801124A4Aa81ce07b637A3e83cb919";
         positionsNFT: "0xB39002E4033b162fAc607fc3471E205FA2aE5967";
+        universalRouter: "0x595E7160858b1AdA94Bda790D8699C85e595117E";
     };
     token: {
         usdcAddress: "0x06efdbff2a14a7c8e15944d1f4a48f9f95f663a4";
@@ -2302,6 +2314,7 @@ declare const polygonZkEvm: Readonly<{
         nonfungiblePositionManager: "0xf0D61Aeda516CCa1FF20Be65Cfb0213be688A24f";
         positionsNFT: "0xf0D61Aeda516CCa1FF20Be65Cfb0213be688A24f";
         positionsNFTDeployBlock: number;
+        universalRouter: "0x32454e81d065FAA95Ec0d0Ab6Fe326599Af30fd7";
     };
     token: {
         wbtcAddress: "0xea034fb02eb1808c2cc3adbc15f447b93cbe08e1";
@@ -2392,6 +2405,7 @@ declare const zkSync: Readonly<{
         nonfungiblePositionManager: "0x0616e5762c1E7Dc3723c50663dF10a162D690a86";
         positionsNFT: "0x0616e5762c1E7Dc3723c50663dF10a162D690a86";
         positionsNFTDeployBlock: number;
+        universalRouter: "0x28731BCC616B5f51dD52CF2e4dF0E78dD1136C06";
     };
     token: {
         usdcAddress: "0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4";
@@ -2984,6 +2998,7 @@ interface UniswapMetadata {
     positionsNFT?: Address;
     topNativePool?: Address;
     positionsNFTDeployBlock?: number;
+    universalRouter?: Address;
 }
 interface OkuPricingMetadata {
     nativeWrappedToken?: Address;
@@ -3056,6 +3071,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         positionsNFT: "0xC36442b4a4522E871399CD717aBDD847Ab11FE88";
         topNativePool: "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640";
         positionsNFTDeployBlock: number;
+        universalRouter: "0x4C60051384bd2d3C01bfc845Cf5F4b44bcbE9de5";
     };
     token: {
         wethAddress: "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1";
@@ -3157,6 +3173,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         nonfungiblePositionManager: "0x03a520b32C04BF3bEEf7BEb72E919cf822Ed34f1";
         positionsNFT: "0x03a520b32C04BF3bEEf7BEb72E919cf822Ed34f1";
         positionsNFTDeployBlock: number;
+        universalRouter: "0xec8b0f7ffe3ae75d7ffab09429e3675bb63503e4";
     };
     token: {
         usdcAddress: "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913";
@@ -3793,6 +3810,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         uniswapV3Staker: "0x6a6c1198f85B084822138DFd3fA9686e4029c091";
         positionsNFT: "0x0bfc9aC7E52f38EAA6dC8d10942478f695C6Cf71";
         positionsNFTDeployBlock: number;
+        universalRouter: "0x4BA622997559F9b5Ac68751D7Fc3dEecc23a0e88";
     };
     token: {
         wethAddress: "0xdeaddeaddeaddeaddeaddeaddeaddeaddead0000";
@@ -3889,6 +3907,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         uniswapV3Staker: "0x6a6c1198f85B084822138DFd3fA9686e4029c091";
         positionsNFT: "0x0bfc9aC7E52f38EAA6dC8d10942478f695C6Cf71";
         positionsNFTDeployBlock: number;
+        universalRouter: "0xeC8B0F7Ffe3ae75d7FfAb09429e3675bb63503e4";
     };
     token: {
         usdcAddress: "0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d";
@@ -3976,6 +3995,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         nonfungiblePositionManager: "0x4cd986dD509fbB6A695aE971d5C56c8795f640ee";
         positionsNFT: "0x4cd986dD509fbB6A695aE971d5C56c8795f640ee";
         positionsNFTDeployBlock: number;
+        universalRouter: "0x83702C6356A1028A900F83d446D189a31646a16b";
     };
     token: {
         usdcAddress: "0xEB466342C4d449BC9f53A865D5Cb90586f405215";
@@ -4070,6 +4090,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         positionsNFT: "0xC36442b4a4522E871399CD717aBDD847Ab11FE88";
         topNativePool: "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640";
         positionsNFTDeployBlock: number;
+        universalRouter: "0xEf1c6E67703c7BD7107eed8303Fbe6EC2554BF6B";
     };
     token: {
         usdcAddress: "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2";
@@ -4178,6 +4199,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         v3Migrator: "0x76776b10d782a1d194fbfc92d4b01db1ce1eeb4b";
         positionsNFT: "0x9036D0DcB5a059C9371B05D508f0072Df773854e";
         positionsNFTDeployBlock: number;
+        universalRouter: "0x1F56F4e1648e96633c7FE79002036E967403CDfF";
     };
     token: {
         wethAddress: "0xab3f0245b83feb11d15aaffefd7ad465a59817ed";
@@ -4280,6 +4302,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         positionsNFT: "0xC36442b4a4522E871399CD717aBDD847Ab11FE88";
         topNativePool: "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640";
         positionsNFTDeployBlock: number;
+        universalRouter: "0xb555edF5dcF85f42cEeF1f3630a52A108E55A654";
     };
     token: {
         usdcAddress: "0x0b2c639c533813f4aa9d7837caf62653d097ff85";
@@ -4917,6 +4940,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         positionsNFT: "0xC36442b4a4522E871399CD717aBDD847Ab11FE88";
         positionsNFTDeployBlock: number;
         topNativePool: "0xa374094527e1673a86de625aa59517c5de346d32";
+        universalRouter: "0x4C60051384bd2d3C01bfc845Cf5F4b44bcbE9de5";
     };
     token: {
         wbtcAddress: "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6";
@@ -5013,6 +5037,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         nonfungiblePositionManager: "0x9d9386c042F194B460Ec424a1e57ACDE25f5C4b1";
         positionsNFT: "0x9d9386c042F194B460Ec424a1e57ACDE25f5C4b1";
         positionsNFTDeployBlock: number;
+        universalRouter: "0x244f68e77357f86a8522323eBF80b5FC2F814d3E";
     };
     token: {
         usdcAddress: "0x3A15461d8AE0f0Fb5fA2629e9dA7D66A794a6E37";
@@ -5102,6 +5127,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         deployBlock: number;
         poolFactory: "0x70C62C8b8e801124A4Aa81ce07b637A3e83cb919";
         positionsNFT: "0xB39002E4033b162fAc607fc3471E205FA2aE5967";
+        universalRouter: "0x595E7160858b1AdA94Bda790D8699C85e595117E";
     };
     token: {
         usdcAddress: "0x06efdbff2a14a7c8e15944d1f4a48f9f95f663a4";
@@ -5197,6 +5223,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         nonfungiblePositionManager: "0xf0D61Aeda516CCa1FF20Be65Cfb0213be688A24f";
         positionsNFT: "0xf0D61Aeda516CCa1FF20Be65Cfb0213be688A24f";
         positionsNFTDeployBlock: number;
+        universalRouter: "0x32454e81d065FAA95Ec0d0Ab6Fe326599Af30fd7";
     };
     token: {
         wbtcAddress: "0xea034fb02eb1808c2cc3adbc15f447b93cbe08e1";
@@ -5284,6 +5311,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         nonfungiblePositionManager: "0x0616e5762c1E7Dc3723c50663dF10a162D690a86";
         positionsNFT: "0x0616e5762c1E7Dc3723c50663dF10a162D690a86";
         positionsNFTDeployBlock: number;
+        universalRouter: "0x28731BCC616B5f51dD52CF2e4dF0E78dD1136C06";
     };
     token: {
         usdcAddress: "0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4";
@@ -5863,6 +5891,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         nonfungiblePositionManager: "0xA4F2Db71348697C65A64a146F709C73030C2ebcD";
         positionsNFT: "0xA4F2Db71348697C65A64a146F709C73030C2ebcD";
         positionsNFTDeployBlock: number;
+        universalRouter: "0x42Bff1f6b647462fcD8c28a488Be9C9988830ef6";
     };
     token: {
         usdcAddress: "0xb73603C5d87fA094B7314C74ACE2e64D165016fb";

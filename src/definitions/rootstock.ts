@@ -17,6 +17,7 @@ export const rootstock = makeConfig({
     nonfungiblePositionManager: "0x9d9386c042F194B460Ec424a1e57ACDE25f5C4b1",
     positionsNFT: "0x9d9386c042F194B460Ec424a1e57ACDE25f5C4b1",
     positionsNFTDeployBlock: 5829891,
+    universalRouter: "0x244f68e77357f86a8522323eBF80b5FC2F814d3E",
   },
   token: {
     usdcAddress: "0x3A15461d8AE0f0Fb5fA2629e9dA7D66A794a6E37",

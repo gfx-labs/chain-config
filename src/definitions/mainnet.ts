@@ -27,6 +27,7 @@ export const mainnet = makeConfig({
     positionsNFT: "0xC36442b4a4522E871399CD717aBDD847Ab11FE88",
     topNativePool: "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640",
     positionsNFTDeployBlock: 12369651,
+    universalRouter: "0xEf1c6E67703c7BD7107eed8303Fbe6EC2554BF6B",
   },
   token: {
     usdcAddress: "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
@@ -41,7 +42,7 @@ export const mainnet = makeConfig({
       nativeWrappedName: "WETH",
       nativeQuotePools: [
         {
-          address:"0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640",
+          address: "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640",
           blockCreated: 12369621,
         },
       ],

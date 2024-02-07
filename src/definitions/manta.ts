@@ -17,6 +17,7 @@ export const manta = makeConfig({
     nonfungiblePositionManager: "0xA4F2Db71348697C65A64a146F709C73030C2ebcD",
     positionsNFT: "0xA4F2Db71348697C65A64a146F709C73030C2ebcD",
     positionsNFTDeployBlock: 1191836,
+    universalRouter: "0x42Bff1f6b647462fcD8c28a488Be9C9988830ef6",
   },
   token: {
     usdcAddress: "0xb73603C5d87fA094B7314C74ACE2e64D165016fb",

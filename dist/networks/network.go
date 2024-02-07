@@ -104,6 +104,7 @@ type UniswapMetadata struct {
 	PositionsNFT                       common.Address
 	TopNativePool                      common.Address
 	PositionsNFTDeployBlock            int64
+	UniversalRouter                    common.Address
 }
 
 type TokenMetadata struct {

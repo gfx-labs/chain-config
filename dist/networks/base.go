@@ -36,6 +36,7 @@ var Base Network = Network{
 		NonfungiblePositionManager: common.HexToAddress("0x03a520b32C04BF3bEEf7BEb72E919cf822Ed34f1"),
 		PositionsNFT:               common.HexToAddress("0x03a520b32C04BF3bEEf7BEb72E919cf822Ed34f1"),
 		PositionsNFTDeployBlock:    1371714,
+		UniversalRouter:            common.HexToAddress("0xec8b0f7ffe3ae75d7ffab09429e3675bb63503e4"),
 	},
 	Token: TokenMetadata{
 		UsdcAddress: common.HexToAddress("0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"),

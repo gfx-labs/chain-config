@@ -36,6 +36,7 @@ var PolygonZkevm Network = Network{
 		NonfungiblePositionManager: common.HexToAddress("0xf0D61Aeda516CCa1FF20Be65Cfb0213be688A24f"),
 		PositionsNFT:               common.HexToAddress("0xf0D61Aeda516CCa1FF20Be65Cfb0213be688A24f"),
 		PositionsNFTDeployBlock:    8466897,
+		UniversalRouter:            common.HexToAddress("0x32454e81d065FAA95Ec0d0Ab6Fe326599Af30fd7"),
 	},
 	Token: TokenMetadata{
 		WbtcAddress: common.HexToAddress("0xea034fb02eb1808c2cc3adbc15f447b93cbe08e1"),

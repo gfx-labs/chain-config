@@ -16,6 +16,7 @@ export const polygonZkEvm = makeConfig({
     nonfungiblePositionManager: "0xf0D61Aeda516CCa1FF20Be65Cfb0213be688A24f",
     positionsNFT: "0xf0D61Aeda516CCa1FF20Be65Cfb0213be688A24f",
     positionsNFTDeployBlock: 8466897,
+    universalRouter: "0x32454e81d065FAA95Ec0d0Ab6Fe326599Af30fd7",
   },
   token: {
     wbtcAddress: "0xea034fb02eb1808c2cc3adbc15f447b93cbe08e1",

@@ -1,8 +1,8 @@
 import { Address, Chain, ChainContract } from "viem";
 
-export {ChainContract} from "viem"
+export { ChainContract } from "viem";
 
-type float64 = number
+type float64 = number;
 
 export interface UniswapMetadata {
   deployBlock?: number;
@@ -22,6 +22,7 @@ export interface UniswapMetadata {
   positionsNFT?: Address;
   topNativePool?: Address;
   positionsNFTDeployBlock?: number;
+  universalRouter?: Address;
 }
 
 export interface OkuPricingMetadata {
@@ -75,6 +76,6 @@ export interface IChainInfo extends Chain {
 }
 
 interface chainContract {
-  address: Address
-  blockCreated: number
+  address: Address;
+  blockCreated: number;
 }

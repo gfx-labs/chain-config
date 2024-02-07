@@ -29,9 +29,10 @@ var Scroll Network = Network{
 		},
 	},
 	Uniswap: UniswapMetadata{
-		DeployBlock:  1367,
-		PoolFactory:  common.HexToAddress("0x70C62C8b8e801124A4Aa81ce07b637A3e83cb919"),
-		PositionsNFT: common.HexToAddress("0xB39002E4033b162fAc607fc3471E205FA2aE5967"),
+		DeployBlock:     1367,
+		PoolFactory:     common.HexToAddress("0x70C62C8b8e801124A4Aa81ce07b637A3e83cb919"),
+		PositionsNFT:    common.HexToAddress("0xB39002E4033b162fAc607fc3471E205FA2aE5967"),
+		UniversalRouter: common.HexToAddress("0x595E7160858b1AdA94Bda790D8699C85e595117E"),
 	},
 	Token: TokenMetadata{
 		UsdcAddress: common.HexToAddress("0x06efdbff2a14a7c8e15944d1f4a48f9f95f663a4"),

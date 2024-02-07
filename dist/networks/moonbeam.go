@@ -41,6 +41,7 @@ var Moonbeam Network = Network{
 		V3Migrator:                         common.HexToAddress("0x76776b10d782a1d194fbfc92d4b01db1ce1eeb4b"),
 		PositionsNFT:                       common.HexToAddress("0x9036D0DcB5a059C9371B05D508f0072Df773854e"),
 		PositionsNFTDeployBlock:            3340476,
+		UniversalRouter:                    common.HexToAddress("0x1F56F4e1648e96633c7FE79002036E967403CDfF"),
 	},
 	Token: TokenMetadata{
 		WethAddress: common.HexToAddress("0xab3f0245b83feb11d15aaffefd7ad465a59817ed"),

@@ -36,6 +36,7 @@ var Manta Network = Network{
 		NonfungiblePositionManager: common.HexToAddress("0xA4F2Db71348697C65A64a146F709C73030C2ebcD"),
 		PositionsNFT:               common.HexToAddress("0xA4F2Db71348697C65A64a146F709C73030C2ebcD"),
 		PositionsNFTDeployBlock:    1191836,
+		UniversalRouter:            common.HexToAddress("0x42Bff1f6b647462fcD8c28a488Be9C9988830ef6"),
 	},
 	Token: TokenMetadata{
 		UsdcAddress: common.HexToAddress("0xb73603C5d87fA094B7314C74ACE2e64D165016fb"),

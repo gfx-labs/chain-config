@@ -1,6 +1,6 @@
 import { filecoin as chain } from "viem/chains";
 import { makeConfig } from "../util";
-import { } from "viem";
+import {} from "viem";
 
 export const filecoin = makeConfig({
   ...chain,
@@ -25,6 +25,7 @@ export const filecoin = makeConfig({
     nonfungiblePositionManager: "0x4cd986dD509fbB6A695aE971d5C56c8795f640ee",
     positionsNFT: "0x4cd986dD509fbB6A695aE971d5C56c8795f640ee",
     positionsNFTDeployBlock: 3195861,
+    universalRouter: "0x83702C6356A1028A900F83d446D189a31646a16b",
   },
   token: {
     usdcAddress: "0xEB466342C4d449BC9f53A865D5Cb90586f405215",

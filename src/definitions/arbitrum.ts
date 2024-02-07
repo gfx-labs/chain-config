@@ -7,7 +7,7 @@ export const arbitrum = makeConfig({
   sortIndex: 1,
   blockTimeSeconds: 0.25,
   logoUrl: "https://assets.oku.trade/arbitrum-logo.svg",
-  safeReorgDistance: 90000*2,
+  safeReorgDistance: 90000 * 2,
   uniswap: {
     deployBlock: 165,
     poolFactory: "0x1F98431c8aD98523631AE4a59f267346ea31F984",
@@ -27,6 +27,7 @@ export const arbitrum = makeConfig({
     positionsNFT: "0xC36442b4a4522E871399CD717aBDD847Ab11FE88",
     topNativePool: "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640",
     positionsNFTDeployBlock: 173,
+    universalRouter: "0x4C60051384bd2d3C01bfc845Cf5F4b44bcbE9de5",
   },
   token: {
     wethAddress: "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
@@ -216,7 +217,7 @@ export const arbitrum = makeConfig({
     weth9: {
       address: "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
     },
-		multicall2: {address: "0x842eC2c7D803033Edf55E478F461FC547Bc54EB2"},
-		multicall3: {address: "0xcA11bde05977b3631167028862bE2a173976CA11"},
+    multicall2: { address: "0x842eC2c7D803033Edf55E478F461FC547Bc54EB2" },
+    multicall3: { address: "0xcA11bde05977b3631167028862bE2a173976CA11" },
   },
 });

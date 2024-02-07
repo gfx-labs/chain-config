@@ -25,6 +25,7 @@ export const boba = makeConfig({
     uniswapV3Staker: "0x6a6c1198f85B084822138DFd3fA9686e4029c091",
     positionsNFT: "0x0bfc9aC7E52f38EAA6dC8d10942478f695C6Cf71",
     positionsNFTDeployBlock: 969359,
+    universalRouter: "0x4BA622997559F9b5Ac68751D7Fc3dEecc23a0e88",
   },
   token: {
     wethAddress: "0xdeaddeaddeaddeaddeaddeaddeaddeaddead0000",

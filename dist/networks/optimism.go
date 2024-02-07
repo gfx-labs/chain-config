@@ -51,6 +51,7 @@ var Optimism Network = Network{
 		PositionsNFT:                       common.HexToAddress("0xC36442b4a4522E871399CD717aBDD847Ab11FE88"),
 		TopNativePool:                      common.HexToAddress("0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640"),
 		PositionsNFTDeployBlock:            0,
+		UniversalRouter:                    common.HexToAddress("0xb555edF5dcF85f42cEeF1f3630a52A108E55A654"),
 	},
 	Token: TokenMetadata{
 		UsdcAddress: common.HexToAddress("0x0b2c639c533813f4aa9d7837caf62653d097ff85"),

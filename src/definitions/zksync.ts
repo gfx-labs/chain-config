@@ -16,6 +16,7 @@ export const zkSync = makeConfig({
     nonfungiblePositionManager: "0x0616e5762c1E7Dc3723c50663dF10a162D690a86",
     positionsNFT: "0x0616e5762c1E7Dc3723c50663dF10a162D690a86",
     positionsNFTDeployBlock: 12637120,
+    universalRouter: "0x28731BCC616B5f51dD52CF2e4dF0E78dD1136C06",
   },
   token: {
     usdcAddress: "0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4",

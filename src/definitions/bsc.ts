@@ -25,6 +25,7 @@ export const bsc = makeConfig({
     uniswapV3Staker: "0x6a6c1198f85B084822138DFd3fA9686e4029c091",
     positionsNFT: "0x0bfc9aC7E52f38EAA6dC8d10942478f695C6Cf71",
     positionsNFTDeployBlock: 969359,
+    universalRouter: "0xeC8B0F7Ffe3ae75d7FfAb09429e3675bb63503e4",
   },
   token: {
     usdcAddress: "0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d",

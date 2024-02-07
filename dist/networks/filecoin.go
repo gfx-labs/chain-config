@@ -36,6 +36,7 @@ var Filecoin Network = Network{
 		NonfungiblePositionManager: common.HexToAddress("0x4cd986dD509fbB6A695aE971d5C56c8795f640ee"),
 		PositionsNFT:               common.HexToAddress("0x4cd986dD509fbB6A695aE971d5C56c8795f640ee"),
 		PositionsNFTDeployBlock:    3195861,
+		UniversalRouter:            common.HexToAddress("0x83702C6356A1028A900F83d446D189a31646a16b"),
 	},
 	Token: TokenMetadata{
 		UsdcAddress: common.HexToAddress("0xEB466342C4d449BC9f53A865D5Cb90586f405215"),

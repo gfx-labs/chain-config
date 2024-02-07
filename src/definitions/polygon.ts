@@ -27,6 +27,7 @@ export const polygon = makeConfig({
     positionsNFT: "0xC36442b4a4522E871399CD717aBDD847Ab11FE88",
     positionsNFTDeployBlock: 22760586,
     topNativePool: "0xa374094527e1673a86de625aa59517c5de346d32",
+    universalRouter: "0x4C60051384bd2d3C01bfc845Cf5F4b44bcbE9de5",
   },
   token: {
     wbtcAddress: "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
@@ -42,7 +43,7 @@ export const polygon = makeConfig({
       nativeQuotePools: [
         {
           blockCreated: 22802494,
-          address:"0xa374094527e1673a86de625aa59517c5de346d32",
+          address: "0xa374094527e1673a86de625aa59517c5de346d32",
         },
       ],
       pools: [

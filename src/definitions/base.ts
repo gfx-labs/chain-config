@@ -19,6 +19,7 @@ export const base = makeConfig({
     nonfungiblePositionManager: "0x03a520b32C04BF3bEEf7BEb72E919cf822Ed34f1",
     positionsNFT: "0x03a520b32C04BF3bEEf7BEb72E919cf822Ed34f1",
     positionsNFTDeployBlock: 1371714,
+    universalRouter: "0xec8b0f7ffe3ae75d7ffab09429e3675bb63503e4",
   },
   token: {
     usdcAddress: "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
