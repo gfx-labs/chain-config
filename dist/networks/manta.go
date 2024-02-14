@@ -16,7 +16,7 @@ var Manta Network = Network{
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0xf417F5A458eC102B90352F697D6e2Ac3A3d2851f"), common.HexToAddress("0xb73603C5d87fA094B7314C74ACE2e64D165016fb")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0xf417F5A458eC102B90352F697D6e2Ac3A3d2851f"): struct{}{}, common.HexToAddress("0xb73603C5d87fA094B7314C74ACE2e64D165016fb"): struct{}{}},
-	Watchlist:        []common.Address{common.HexToAddress("0xbfca3e002acbcea2f9d48a87cf545cb4344f9a3e")},
+	Watchlist:        []common.Address{common.HexToAddress("0xbfca3e002acbcea2f9d48a87cf545cb4344f9a3e"), common.HexToAddress("0xbfca3e002acbcea2f9d48a87cf545cb4344f9a3e"), common.HexToAddress("0x9a70668cf02902b53c24f7d21762d19dfb9b69a6"), common.HexToAddress("0xa6f04e80aee9e491539cdf0cec8c2099df46816f"), common.HexToAddress("0x1cfd505f8a79be3a4fd9305239991f480e5fdc7b"), common.HexToAddress("0x775eac394b56cfad02d963c9c3c9cd2e425dab4e"), common.HexToAddress("0x060f2babc09826687be9cbf5c7ede3b3cd00dd78"), common.HexToAddress("0x6e32805add5f5255c22d8f0125a0c7d351926bc3"), common.HexToAddress("0x5bedc5d1e1d0b32caca78db23af71126b6fe26b6")},
 	BlockTimeSeconds: 2,
 	Oku: OkuMetadata{
 		LimitOrderRegistry:            common.HexToAddress("0xFE83E1DDa189D71093f2a716A4D01d591d6Ca66C"),
