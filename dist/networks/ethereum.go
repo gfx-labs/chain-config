@@ -54,7 +54,7 @@ var Ethereum Network = Network{
 		UniversalRouter:                    common.HexToAddress("0xEf1c6E67703c7BD7107eed8303Fbe6EC2554BF6B"),
 	},
 	Token: TokenMetadata{
-		UsdcAddress: common.HexToAddress("0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"),
+		UsdcAddress: common.HexToAddress("0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"),
 		WethAddress: common.HexToAddress("0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"),
 		WbtcAddress: common.HexToAddress("0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599"),
 	},
