@@ -5,4 +5,4 @@
 `yarn add @gfxlabs/oku-chains`
 
 
-`go get gfx.cafe/chain-config/dist/networks`
+`go get gfx.cafe/gfx/chain-config/dist/networks`
