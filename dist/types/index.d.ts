@@ -1241,7 +1241,7 @@ declare const filecoin: Readonly<{
         address: "0x7f5373AE26c3E8FfC4c77b7255DF7eC1A9aF52a6";
     })[];
     stables: ("0xEB466342C4d449BC9f53A865D5Cb90586f405215" | "0x7f5373AE26c3E8FfC4c77b7255DF7eC1A9aF52a6" | "0x2421db204968A367CC2C866CD057fA754Cb84EdF" | "0x422849b355039bc58f2780cc4854919fc9cfaf94")[];
-    watchlist: ("0x14d44c7ef81f6c18f5d22e0962f0279d83e80b05" | "0x9d8ea62e1264ab667d234b5610774a08e608e3b8" | "0x443a6243a36ef0ae1c46523d563c15abd787f4e9")[];
+    watchlist: ("0x14d44c7ef81f6c18f5d22e0962f0279d83e80b05" | "0x9d8ea62e1264ab667d234b5610774a08e608e3b8" | "0x443a6243a36ef0ae1c46523d563c15abd787f4e9" | "0xca166403c6f41e1fecc0eb40ac1947fd6399d5c5")[];
     internalName: "filecoin";
     contracts: {
         limitOrder: {
@@ -4879,7 +4879,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         address: "0x7f5373AE26c3E8FfC4c77b7255DF7eC1A9aF52a6";
     })[];
     stables: ("0xEB466342C4d449BC9f53A865D5Cb90586f405215" | "0x7f5373AE26c3E8FfC4c77b7255DF7eC1A9aF52a6" | "0x2421db204968A367CC2C866CD057fA754Cb84EdF" | "0x422849b355039bc58f2780cc4854919fc9cfaf94")[];
-    watchlist: ("0x14d44c7ef81f6c18f5d22e0962f0279d83e80b05" | "0x9d8ea62e1264ab667d234b5610774a08e608e3b8" | "0x443a6243a36ef0ae1c46523d563c15abd787f4e9")[];
+    watchlist: ("0x14d44c7ef81f6c18f5d22e0962f0279d83e80b05" | "0x9d8ea62e1264ab667d234b5610774a08e608e3b8" | "0x443a6243a36ef0ae1c46523d563c15abd787f4e9" | "0xca166403c6f41e1fecc0eb40ac1947fd6399d5c5")[];
     internalName: "filecoin";
     contracts: {
         limitOrder: {

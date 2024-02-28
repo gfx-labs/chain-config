@@ -16,7 +16,7 @@ var Filecoin Network = Network{
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0xEB466342C4d449BC9f53A865D5Cb90586f405215"), common.HexToAddress("0x7f5373AE26c3E8FfC4c77b7255DF7eC1A9aF52a6"), common.HexToAddress("0x2421db204968A367CC2C866CD057fA754Cb84EdF"), common.HexToAddress("0x422849b355039bc58f2780cc4854919fc9cfaf94")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0xEB466342C4d449BC9f53A865D5Cb90586f405215"): struct{}{}, common.HexToAddress("0x7f5373AE26c3E8FfC4c77b7255DF7eC1A9aF52a6"): struct{}{}, common.HexToAddress("0x2421db204968A367CC2C866CD057fA754Cb84EdF"): struct{}{}, common.HexToAddress("0x422849b355039bc58f2780cc4854919fc9cfaf94"): struct{}{}},
-	Watchlist:        []common.Address{common.HexToAddress("0x14d44c7ef81f6c18f5d22e0962f0279d83e80b05"), common.HexToAddress("0x9d8ea62e1264ab667d234b5610774a08e608e3b8"), common.HexToAddress("0x443a6243a36ef0ae1c46523d563c15abd787f4e9")},
+	Watchlist:        []common.Address{common.HexToAddress("0x14d44c7ef81f6c18f5d22e0962f0279d83e80b05"), common.HexToAddress("0x9d8ea62e1264ab667d234b5610774a08e608e3b8"), common.HexToAddress("0x443a6243a36ef0ae1c46523d563c15abd787f4e9"), common.HexToAddress("0xca166403c6f41e1fecc0eb40ac1947fd6399d5c5")},
 	BlockTimeSeconds: 30,
 	Oku: OkuMetadata{
 		LimitOrderRegistry:            common.HexToAddress("0xded8791056aa39581460a005a3c400a281e24bd7"),
