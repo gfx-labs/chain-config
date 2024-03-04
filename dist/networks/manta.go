@@ -11,6 +11,7 @@ var Manta Network = Network{
 	SafeReorgDistance: 90000,
 	DefaultPool:       common.HexToAddress("0xbfca3e002acbcea2f9d48a87cf545cb4344f9a3e"),
 	InternalName:      "manta",
+	ZerionId:          "",
 	DefaultToken0:     common.HexToAddress("0x0dc808adce2099a9f62aa87d9670745aba741746"),
 	DefaultToken1:     common.HexToAddress("0xb73603c5d87fa094b7314c74ace2e64d165016fb"),
 	//TODO: TokenList:        []any{},

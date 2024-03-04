@@ -8,6 +8,7 @@ export const mainnet = makeConfig({
   blockTimeSeconds: 15,
   safeReorgDistance: 90_000,
   logoUrl: "https://assets.oku.trade/ethereum-logo.webp",
+  zerionId: "ethereum",
   uniswap: {
     deployBlock: 12369621,
     poolFactory: "0x1F98431c8aD98523631AE4a59f267346ea31F984",

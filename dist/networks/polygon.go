@@ -11,6 +11,7 @@ var Polygon Network = Network{
 	SafeReorgDistance: 90000,
 	DefaultPool:       common.HexToAddress("0xa374094527e1673a86de625aa59517c5de346d32"),
 	InternalName:      "polygon",
+	ZerionId:          "polygon",
 	DefaultToken0:     common.HexToAddress("0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270"),
 	DefaultToken1:     common.HexToAddress("0x2791bca1f2de4661ed88a30c99a7a9449aa84174"),
 	//TODO: TokenList:        []any{},

@@ -56,6 +56,8 @@ export interface IChainInfo extends Chain {
   stables: ReadonlyArray<Address>;
   watchlist: ReadonlyArray<Address>;
 
+  zerionId?: string;
+
   blockTimeSeconds: float64;
 
   uniswap: UniswapMetadata;

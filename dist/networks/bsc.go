@@ -11,6 +11,7 @@ var Bsc Network = Network{
 	SafeReorgDistance: 90000,
 	DefaultPool:       common.HexToAddress("0x47a90a2d92a8367a91efa1906bfc8c1e05bf10c4"),
 	InternalName:      "bsc",
+	ZerionId:          "binance-smart-chain",
 	DefaultToken0:     common.HexToAddress("0x55d398326f99059ff775485246999027b3197955"),
 	DefaultToken1:     common.HexToAddress("0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c"),
 	//TODO: TokenList:        []any{},

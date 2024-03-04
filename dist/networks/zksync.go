@@ -11,6 +11,7 @@ var Zksync Network = Network{
 	SafeReorgDistance: 90000,
 	DefaultPool:       common.HexToAddress("0xff577f0e828a878743ecc5e2632cbf65cecf17cf"),
 	InternalName:      "zksync",
+	ZerionId:          "zksync-era",
 	DefaultToken0:     common.HexToAddress("0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4"),
 	DefaultToken1:     common.HexToAddress("0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91"),
 	//TODO: TokenList:        []any{},

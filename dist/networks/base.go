@@ -11,6 +11,7 @@ var Base Network = Network{
 	SafeReorgDistance: 90000,
 	DefaultPool:       common.HexToAddress("0x4c36388be6f416a29c8d8eee81c771ce6be14b18"),
 	InternalName:      "base",
+	ZerionId:          "base",
 	DefaultToken0:     common.HexToAddress("0x4200000000000000000000000000000000000006"),
 	DefaultToken1:     common.HexToAddress("0xd9aaec86b65d86f6a7b5b1b0c42ffa531710b6ca"),
 	//TODO: TokenList:        []any{},

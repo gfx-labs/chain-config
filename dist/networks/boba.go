@@ -11,6 +11,7 @@ var Boba Network = Network{
 	SafeReorgDistance: 90000,
 	DefaultPool:       common.HexToAddress("0xdF37543dae7986E48E3ce83F390A828A9F3D23BA"),
 	InternalName:      "boba",
+	ZerionId:          "",
 	DefaultToken0:     common.HexToAddress("0x66a2a913e447d6b4bf33efbec43aaef87890fbbc"),
 	DefaultToken1:     common.HexToAddress("0xa18bf3994c0cc6e3b63ac420308e5383f53120d7"),
 	//TODO: TokenList:        []any{},

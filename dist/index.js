@@ -12,6 +12,7 @@ const arbitrum = makeConfig({
     blockTimeSeconds: 0.25,
     logoUrl: "https://assets.oku.trade/arbitrum-logo.svg",
     safeReorgDistance: 90000 * 2,
+    zerionId: "arbitrum",
     uniswap: {
         deployBlock: 165,
         poolFactory: "0x1F98431c8aD98523631AE4a59f267346ea31F984",
@@ -233,6 +234,7 @@ const base = makeConfig({
     defaultPool: "0x4c36388be6f416a29c8d8eee81c771ce6be14b18",
     defaultToken0: "0x4200000000000000000000000000000000000006",
     defaultToken1: "0xd9aaec86b65d86f6a7b5b1b0c42ffa531710b6ca",
+    zerionId: "base",
     safeReorgDistance: 90000,
     uniswap: {
         deployBlock: 1371680,
@@ -394,6 +396,7 @@ const bsc = makeConfig({
     blockTimeSeconds: 3,
     logoUrl: "https://assets.oku.trade/bsc-logo.svg",
     safeReorgDistance: 90000,
+    zerionId: "binance-smart-chain",
     uniswap: {
         deployBlock: 969351,
         poolFactory: "0xFFCd7Aed9C627E82A765c3247d562239507f6f1B",
@@ -606,6 +609,7 @@ const mainnet = makeConfig({
     blockTimeSeconds: 15,
     safeReorgDistance: 90000,
     logoUrl: "https://assets.oku.trade/ethereum-logo.webp",
+    zerionId: "ethereum",
     uniswap: {
         deployBlock: 12369621,
         poolFactory: "0x1F98431c8aD98523631AE4a59f267346ea31F984",
@@ -973,6 +977,7 @@ const optimism = makeConfig({
     sortIndex: 2,
     logoUrl: "https://assets.oku.trade/optimism-logo.svg",
     safeReorgDistance: 90000,
+    zerionId: "optimism",
     oku: {
         limitOrderRegistryDeployBlock: 105276132,
         limitOrderRegistry: "0x54dF9e11c7933a9cA3BD1E540B63dA15edAe40bf",
@@ -1189,6 +1194,7 @@ const polygon = makeConfig({
     sortIndex: 3,
     logoUrl: "https://assets.oku.trade/polygon-logo.webp",
     safeReorgDistance: 90000,
+    zerionId: "polygon",
     uniswap: {
         deployBlock: 22757547,
         poolFactory: "0x1F98431c8aD98523631AE4a59f267346ea31F984",
@@ -1473,6 +1479,7 @@ const scroll = makeConfig({
     blockTimeSeconds: 3,
     logoUrl: "https://assets.oku.trade/scroll-logo.png",
     safeReorgDistance: 90000,
+    zerionId: "scroll",
     uniswap: {
         deployBlock: 1367,
         poolFactory: "0x70C62C8b8e801124A4Aa81ce07b637A3e83cb919",
@@ -1603,6 +1610,7 @@ const zkSync = makeConfig({
     sortIndex: 4,
     logoUrl: "https://assets.oku.trade/zksync-logo.svg",
     safeReorgDistance: 90000,
+    zerionId: "zksync-era",
     uniswap: {
         deployBlock: 12637075,
         poolFactory: "0x8FdA5a7a8dCA67BBcDd10F02Fa0649A937215422",

@@ -8,6 +8,7 @@ export const zkSync = makeConfig({
   sortIndex: 4,
   logoUrl: "https://assets.oku.trade/zksync-logo.svg",
   safeReorgDistance: 90000,
+  zerionId:"zksync-era",
   uniswap: {
     deployBlock: 12637075,
     poolFactory: "0x8FdA5a7a8dCA67BBcDd10F02Fa0649A937215422",

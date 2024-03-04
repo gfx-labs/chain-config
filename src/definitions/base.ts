@@ -10,6 +10,7 @@ export const base = makeConfig({
   defaultPool: "0x4c36388be6f416a29c8d8eee81c771ce6be14b18",
   defaultToken0: "0x4200000000000000000000000000000000000006",
   defaultToken1: "0xd9aaec86b65d86f6a7b5b1b0c42ffa531710b6ca",
+  zerionId: "base",
   safeReorgDistance: 90000,
   uniswap: {
     deployBlock: 1371680,

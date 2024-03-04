@@ -18,6 +18,7 @@ var <%- helpers.snakeToCamel(chainName) %> Network = Network{
   SafeReorgDistance: <%- chain.safeReorgDistance || 90000 %>,
   DefaultPool: <%- helpers.toAddr(chain.defaultPool) %>,
   InternalName:     "<%- chain.internalName %>",
+  ZerionId:     "<%- chain.zerionId %>",
   DefaultToken0:    common.HexToAddress("<%- chain.defaultToken0 %>"),
   DefaultToken1:    common.HexToAddress("<%- chain.defaultToken1 %>"),
   //TODO: TokenList:        []any{},

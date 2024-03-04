@@ -76,6 +76,7 @@ type Network struct {
 	TokenList         []any
 	Stables           []common.Address
 	Watchlist         []common.Address
+	ZerionId          string
 	BlockTimeSeconds  float64
 	Uniswap           UniswapMetadata
 	Token             TokenMetadata
