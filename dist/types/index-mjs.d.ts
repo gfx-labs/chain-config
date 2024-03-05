@@ -1020,7 +1020,7 @@ declare const blast: Readonly<{
             nativeWrappedName: string;
         };
     };
-    defaultPool: "0x0000000000000000000000000000000000000000";
+    defaultPool: "0xf52b4b69123cbcf07798ae8265642793b2e8990c";
     defaultToken0: "0x4300000000000000000000000000000000000003";
     defaultToken1: "0x4300000000000000000000000000000000000004";
     tokenList: ({
@@ -1031,7 +1031,7 @@ declare const blast: Readonly<{
         address: "0x4300000000000000000000000000000000000003";
     })[];
     stables: "0x4300000000000000000000000000000000000003"[];
-    watchlist: never[];
+    watchlist: "0xf52b4b69123cbcf07798ae8265642793b2e8990c"[];
     internalName: "blast";
     contracts: {
         limitOrder: {
@@ -4857,7 +4857,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             nativeWrappedName: string;
         };
     };
-    defaultPool: "0x0000000000000000000000000000000000000000";
+    defaultPool: "0xf52b4b69123cbcf07798ae8265642793b2e8990c";
     defaultToken0: "0x4300000000000000000000000000000000000003";
     defaultToken1: "0x4300000000000000000000000000000000000004";
     tokenList: ({
@@ -4868,7 +4868,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         address: "0x4300000000000000000000000000000000000003";
     })[];
     stables: "0x4300000000000000000000000000000000000003"[];
-    watchlist: never[];
+    watchlist: "0xf52b4b69123cbcf07798ae8265642793b2e8990c"[];
     internalName: "blast";
     contracts: {
         limitOrder: {

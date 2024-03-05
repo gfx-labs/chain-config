@@ -338,7 +338,7 @@ const blast = makeConfig({
             nativeWrappedName: "ETH",
         },
     },
-    defaultPool: "0x0000000000000000000000000000000000000000",
+    defaultPool: "0xf52b4b69123cbcf07798ae8265642793b2e8990c",
     defaultToken0: "0x4300000000000000000000000000000000000003",
     defaultToken1: "0x4300000000000000000000000000000000000004",
     tokenList: [
@@ -348,7 +348,7 @@ const blast = makeConfig({
     stables: [
         "0x4300000000000000000000000000000000000003",
     ],
-    watchlist: [],
+    watchlist: ["0xf52b4b69123cbcf07798ae8265642793b2e8990c"],
     internalName: "blast",
     contracts: {
         ...blast$1.contracts,

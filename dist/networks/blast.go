@@ -9,7 +9,7 @@ var Blast Network = Network{
 	LogoUrl:           "https://assets.oku.trade/blast-logo.svg",
 	SortIndex:         14,
 	SafeReorgDistance: 90000,
-	DefaultPool:       common.HexToAddress("0x0000000000000000000000000000000000000000"),
+	DefaultPool:       common.HexToAddress("0xf52b4b69123cbcf07798ae8265642793b2e8990c"),
 	InternalName:      "blast",
 	ZerionId:          "blast",
 	DefaultToken0:     common.HexToAddress("0x4300000000000000000000000000000000000003"),
@@ -17,7 +17,7 @@ var Blast Network = Network{
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0x4300000000000000000000000000000000000003")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x4300000000000000000000000000000000000003"): struct{}{}},
-	Watchlist:        []common.Address{},
+	Watchlist:        []common.Address{common.HexToAddress("0xf52b4b69123cbcf07798ae8265642793b2e8990c")},
 	BlockTimeSeconds: 2,
 	Oku: OkuMetadata{
 		LimitOrderRegistry:            common.HexToAddress("0x0337d36A3dF76d882369E3cBF984a2EA40f6636F"),
