@@ -6,6 +6,7 @@ export const MAINNET_CHAINS = [
   defs.arbitrum,
   defs.base,
   defs.boba,
+  defs.blast,
   defs.bsc,
   defs.filecoin,
   defs.mainnet,

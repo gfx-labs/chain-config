@@ -992,6 +992,92 @@ declare const base: Readonly<{
     };
     fees?: import("viem").ChainFees<undefined> | undefined;
 }>;
+declare const blast: Readonly<{
+    blockTimeSeconds: 2;
+    sortIndex: 14;
+    logoUrl: "https://assets.oku.trade/blast-logo.svg";
+    safeReorgDistance: 90000;
+    zerionId: "blast";
+    uniswap: {
+        deployBlock: number;
+        poolFactory: "0x792edAdE80af5fC680d96a2eD80A44247D2Cf6Fd";
+        multicall2: "0xdC7f370de7631cE9e2c2e1DCDA6B3B5744Cf4705";
+        tickLens: "0x2E95185bCdD928a3e984B7e2D6560Ab1b17d7274";
+        nonfungiblePositionManager: "0xB218e4f7cF0533d4696fDfC419A0023D33345F28";
+        positionsNFT: "0xB218e4f7cF0533d4696fDfC419A0023D33345F28";
+        positionsNFTDeployBlock: number;
+        universalRouter: "0xe463635f6e73C1E595554C3ae216472D0fb929a9";
+    };
+    token: {
+        usdcAddress: "0x4300000000000000000000000000000000000003";
+        wethAddress: "0x4300000000000000000000000000000000000004";
+    };
+    oku: {
+        limitOrderRegistry: "0x0337d36A3dF76d882369E3cBF984a2EA40f6636F";
+        limitOrderRegistryDeployBlock: number;
+        pricing: {
+            nativeWrappedToken: "0x4300000000000000000000000000000000000004";
+            nativeWrappedName: string;
+        };
+    };
+    defaultPool: "0x0000000000000000000000000000000000000000";
+    defaultToken0: "0x4300000000000000000000000000000000000003";
+    defaultToken1: "0x4300000000000000000000000000000000000004";
+    tokenList: ({
+        symbol: string;
+        address: "0x4300000000000000000000000000000000000004";
+    } | {
+        symbol: string;
+        address: "0x4300000000000000000000000000000000000003";
+    })[];
+    stables: "0x4300000000000000000000000000000000000003"[];
+    watchlist: never[];
+    internalName: "blast";
+    contracts: {
+        limitOrder: {
+            address: "0x0337d36A3dF76d882369E3cBF984a2EA40f6636F";
+        };
+        nftManager: {
+            address: "0xB218e4f7cF0533d4696fDfC419A0023D33345F28";
+        };
+        weth9: {
+            address: "0x4300000000000000000000000000000000000004";
+        };
+        multicall2: {
+            address: "0xc228c0343Ee4D4B3EAdF701154f1f1bD9E29d833";
+        };
+        multicall3: {
+            readonly address: "0xcA11bde05977b3631167028862bE2a173976CA11";
+            readonly blockCreated: 212929;
+        };
+    };
+    blockExplorers: {
+        readonly default: {
+            readonly name: "Blastscan";
+            readonly url: "https://blastscan.io";
+        };
+    };
+    id: 81457;
+    name: "Blast";
+    nativeCurrency: {
+        readonly decimals: 18;
+        readonly name: "Ether";
+        readonly symbol: "ETH";
+    };
+    rpcUrls: {
+        readonly default: {
+            readonly http: readonly [
+                "https://rpc.blast.io"
+            ];
+        };
+    };
+    sourceId: 1;
+    testnet?: boolean | undefined;
+    custom?: Record<string, unknown> | undefined;
+    formatters?: undefined;
+    serializers?: import("viem").ChainSerializers<undefined> | undefined;
+    fees?: import("viem").ChainFees<undefined> | undefined;
+}>;
 declare const boba: Readonly<{
     sortIndex: 11;
     blockTimeSeconds: 300;
@@ -4744,6 +4830,89 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     serializers?: import("viem").ChainSerializers<undefined> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
 }>, Readonly<{
+    blockTimeSeconds: 2;
+    sortIndex: 14;
+    logoUrl: "https://assets.oku.trade/blast-logo.svg";
+    safeReorgDistance: 90000;
+    zerionId: "blast";
+    uniswap: {
+        deployBlock: number;
+        poolFactory: "0x792edAdE80af5fC680d96a2eD80A44247D2Cf6Fd";
+        multicall2: "0xdC7f370de7631cE9e2c2e1DCDA6B3B5744Cf4705";
+        tickLens: "0x2E95185bCdD928a3e984B7e2D6560Ab1b17d7274";
+        nonfungiblePositionManager: "0xB218e4f7cF0533d4696fDfC419A0023D33345F28";
+        positionsNFT: "0xB218e4f7cF0533d4696fDfC419A0023D33345F28";
+        positionsNFTDeployBlock: number;
+        universalRouter: "0xe463635f6e73C1E595554C3ae216472D0fb929a9";
+    };
+    token: {
+        usdcAddress: "0x4300000000000000000000000000000000000003";
+        wethAddress: "0x4300000000000000000000000000000000000004";
+    };
+    oku: {
+        limitOrderRegistry: "0x0337d36A3dF76d882369E3cBF984a2EA40f6636F";
+        limitOrderRegistryDeployBlock: number;
+        pricing: {
+            nativeWrappedToken: "0x4300000000000000000000000000000000000004";
+            nativeWrappedName: string;
+        };
+    };
+    defaultPool: "0x0000000000000000000000000000000000000000";
+    defaultToken0: "0x4300000000000000000000000000000000000003";
+    defaultToken1: "0x4300000000000000000000000000000000000004";
+    tokenList: ({
+        symbol: string;
+        address: "0x4300000000000000000000000000000000000004";
+    } | {
+        symbol: string;
+        address: "0x4300000000000000000000000000000000000003";
+    })[];
+    stables: "0x4300000000000000000000000000000000000003"[];
+    watchlist: never[];
+    internalName: "blast";
+    contracts: {
+        limitOrder: {
+            address: "0x0337d36A3dF76d882369E3cBF984a2EA40f6636F";
+        };
+        nftManager: {
+            address: "0xB218e4f7cF0533d4696fDfC419A0023D33345F28";
+        };
+        weth9: {
+            address: "0x4300000000000000000000000000000000000004";
+        };
+        multicall2: {
+            address: "0xc228c0343Ee4D4B3EAdF701154f1f1bD9E29d833";
+        };
+        multicall3: {
+            readonly address: "0xcA11bde05977b3631167028862bE2a173976CA11";
+            readonly blockCreated: 212929;
+        };
+    };
+    blockExplorers: {
+        readonly default: {
+            readonly name: "Blastscan";
+            readonly url: "https://blastscan.io";
+        };
+    };
+    id: 81457;
+    name: "Blast";
+    nativeCurrency: {
+        readonly decimals: 18;
+        readonly name: "Ether";
+        readonly symbol: "ETH";
+    };
+    rpcUrls: {
+        readonly default: {
+            readonly http: readonly ["https://rpc.blast.io"];
+        };
+    };
+    sourceId: 1;
+    testnet?: boolean | undefined;
+    custom?: Record<string, unknown> | undefined;
+    formatters?: undefined;
+    serializers?: import("viem").ChainSerializers<undefined> | undefined;
+    fees?: import("viem").ChainFees<undefined> | undefined;
+}>, Readonly<{
     sortIndex: 9;
     blockTimeSeconds: 3;
     logoUrl: "https://assets.oku.trade/bsc-logo.svg";
@@ -7199,5 +7368,5 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     fees?: import("viem").ChainFees<undefined> | undefined;
     network: "manta";
 }>];
-export { arbitrum, base, boba, bsc, filecoin, mainnet, manta, moonbeam, optimism, polygon, rootstock, scroll, polygonZkEvm, zkSync, UniswapMetadata, OkuPricingMetadata, OkuMetadata, TokenMetadata, IChainInfo, MAINNET_CHAINS };
+export { arbitrum, base, blast, boba, bsc, filecoin, mainnet, manta, moonbeam, optimism, polygon, rootstock, scroll, polygonZkEvm, zkSync, UniswapMetadata, OkuPricingMetadata, OkuMetadata, TokenMetadata, IChainInfo, MAINNET_CHAINS };
 export { ChainContract } from "viem";
