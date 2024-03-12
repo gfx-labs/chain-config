@@ -8,6 +8,7 @@ const makeConfig = (x) => {
 
 const arbitrum = makeConfig({
     ...chains.arbitrum,
+    name: "Arbitrum",
     sortIndex: 1,
     blockTimeSeconds: 0.25,
     logoUrl: "https://assets.oku.trade/arbitrum-logo.svg",
@@ -16,7 +17,7 @@ const arbitrum = makeConfig({
     uniswap: {
         deployBlock: 165,
         poolFactory: "0x1F98431c8aD98523631AE4a59f267346ea31F984",
-        multicall2: "0x5BA1e12693Dc8F9c48aAD8770482f4739bEeD696",
+        multicall2: "0xBF69a56D35B8d6f5A8e0e96B245a72F735751e54",
         proxyAdmin: "0xB753548F6E010e7e680BA186F9Ca1BdAB2E90cf2",
         tickLens: "0xbfd8137f7d1516D3ea5cA83523914859ec47F573",
         quoter: "0xb27308f9F90D607463bb33eA1BeBb41C27CE5AB6",
@@ -371,6 +372,7 @@ const blast = makeConfig({
 
 const boba = makeConfig({
     ...chains.boba,
+    name: "Boba",
     sortIndex: 11,
     blockTimeSeconds: 300,
     logoUrl: "https://assets.oku.trade/boba-logo.svg",
@@ -450,6 +452,7 @@ const boba = makeConfig({
 
 const bsc = makeConfig({
     ...chains.bsc,
+    name: "BSC",
     sortIndex: 9,
     blockTimeSeconds: 3,
     logoUrl: "https://assets.oku.trade/bsc-logo.svg",
@@ -458,7 +461,7 @@ const bsc = makeConfig({
     uniswap: {
         deployBlock: 969351,
         poolFactory: "0xFFCd7Aed9C627E82A765c3247d562239507f6f1B",
-        multicall2: "0xd213Ff319F8d28Fe31EbDB75b23aA61a2b905320",
+        multicall2: "0xed386Fe855C1EFf2f843B910923Dd8846E45C5A4",
         proxyAdmin: "0xE8B5DaE430189ea6ccffF4eEeC58a98556525fB4",
         tickLens: "0x36EBd44350E4406E67C5579026950793b8528402",
         quoter: "0x483fc90DDC7aC847D4a752055DCF73483B6d97FD",
@@ -1031,6 +1034,7 @@ const moonbeam = makeConfig({
 
 const optimism = makeConfig({
     ...chains.optimism,
+    name: "Optimism",
     blockTimeSeconds: 0.5,
     sortIndex: 2,
     logoUrl: "https://assets.oku.trade/optimism-logo.svg",
@@ -1155,7 +1159,7 @@ const optimism = makeConfig({
     uniswap: {
         deployBlock: 0,
         poolFactory: "0x1F98431c8aD98523631AE4a59f267346ea31F984",
-        multicall2: "0x5BA1e12693Dc8F9c48aAD8770482f4739bEeD696",
+        multicall2: "0xD9bfE9979e9CA4b2fe84bA5d4Cf963bBcB376974",
         proxyAdmin: "0xB753548F6E010e7e680BA186F9Ca1BdAB2E90cf2",
         tickLens: "0xbfd8137f7d1516D3ea5cA83523914859ec47F573",
         quoter: "0xb27308f9F90D607463bb33eA1BeBb41C27CE5AB6",
@@ -1256,7 +1260,7 @@ const polygon = makeConfig({
     uniswap: {
         deployBlock: 22757547,
         poolFactory: "0x1F98431c8aD98523631AE4a59f267346ea31F984",
-        multicall2: "0xca11bde05977b3631167028862be2a173976ca11",
+        multicall2: "0xed386Fe855C1EFf2f843B910923Dd8846E45C5A4",
         proxyAdmin: "0xB753548F6E010e7e680BA186F9Ca1BdAB2E90cf2",
         tickLens: "0xbfd8137f7d1516D3ea5cA83523914859ec47F573",
         quoter: "0xb27308f9F90D607463bb33eA1BeBb41C27CE5AB6",

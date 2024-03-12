@@ -4,6 +4,7 @@ import { makeConfig } from "../util";
 
 export const boba = makeConfig({
   ...chain,
+  name: "Boba",
   sortIndex: 11,
   blockTimeSeconds: 300,
   logoUrl: "https://assets.oku.trade/boba-logo.svg",

@@ -1,5 +1,6 @@
 import { Address, Chain, ChainContract } from "viem";
 declare const arbitrum: Readonly<{
+    name: "Arbitrum";
     sortIndex: 1;
     blockTimeSeconds: 0.25;
     logoUrl: "https://assets.oku.trade/arbitrum-logo.svg";
@@ -8,7 +9,7 @@ declare const arbitrum: Readonly<{
     uniswap: {
         deployBlock: number;
         poolFactory: "0x1F98431c8aD98523631AE4a59f267346ea31F984";
-        multicall2: "0x5BA1e12693Dc8F9c48aAD8770482f4739bEeD696";
+        multicall2: "0xBF69a56D35B8d6f5A8e0e96B245a72F735751e54";
         proxyAdmin: "0xB753548F6E010e7e680BA186F9Ca1BdAB2E90cf2";
         tickLens: "0xbfd8137f7d1516D3ea5cA83523914859ec47F573";
         quoter: "0xb27308f9F90D607463bb33eA1BeBb41C27CE5AB6";
@@ -95,7 +96,6 @@ declare const arbitrum: Readonly<{
         };
     };
     id: 42161;
-    name: "Arbitrum One";
     nativeCurrency: {
         readonly name: "Ether";
         readonly symbol: "ETH";
@@ -1079,6 +1079,7 @@ declare const blast: Readonly<{
     fees?: import("viem").ChainFees<undefined> | undefined;
 }>;
 declare const boba: Readonly<{
+    name: "Boba";
     sortIndex: 11;
     blockTimeSeconds: 300;
     logoUrl: "https://assets.oku.trade/boba-logo.svg";
@@ -1159,7 +1160,6 @@ declare const boba: Readonly<{
         };
     };
     id: 288;
-    name: "Boba Network";
     nativeCurrency: {
         readonly decimals: 18;
         readonly name: "Boba";
@@ -1180,6 +1180,7 @@ declare const boba: Readonly<{
     fees?: import("viem").ChainFees<undefined> | undefined;
 }>;
 declare const bsc: Readonly<{
+    name: "BSC";
     sortIndex: 9;
     blockTimeSeconds: 3;
     logoUrl: "https://assets.oku.trade/bsc-logo.svg";
@@ -1188,7 +1189,7 @@ declare const bsc: Readonly<{
     uniswap: {
         deployBlock: number;
         poolFactory: "0xFFCd7Aed9C627E82A765c3247d562239507f6f1B";
-        multicall2: "0xd213Ff319F8d28Fe31EbDB75b23aA61a2b905320";
+        multicall2: "0xed386Fe855C1EFf2f843B910923Dd8846E45C5A4";
         proxyAdmin: "0xE8B5DaE430189ea6ccffF4eEeC58a98556525fB4";
         tickLens: "0x36EBd44350E4406E67C5579026950793b8528402";
         quoter: "0x483fc90DDC7aC847D4a752055DCF73483B6d97FD";
@@ -1253,7 +1254,6 @@ declare const bsc: Readonly<{
         };
     };
     id: 56;
-    name: "BNB Smart Chain";
     nativeCurrency: {
         readonly decimals: 18;
         readonly name: "BNB";
@@ -1676,6 +1676,7 @@ declare const moonbeam: Readonly<{
     fees?: import("viem").ChainFees<undefined> | undefined;
 }>;
 declare const optimism: Readonly<{
+    name: "Optimism";
     blockTimeSeconds: 0.5;
     sortIndex: 2;
     logoUrl: "https://assets.oku.trade/optimism-logo.svg";
@@ -1697,7 +1698,7 @@ declare const optimism: Readonly<{
     uniswap: {
         deployBlock: number;
         poolFactory: "0x1F98431c8aD98523631AE4a59f267346ea31F984";
-        multicall2: "0x5BA1e12693Dc8F9c48aAD8770482f4739bEeD696";
+        multicall2: "0xD9bfE9979e9CA4b2fe84bA5d4Cf963bBcB376974";
         proxyAdmin: "0xB753548F6E010e7e680BA186F9Ca1BdAB2E90cf2";
         tickLens: "0xbfd8137f7d1516D3ea5cA83523914859ec47F573";
         quoter: "0xb27308f9F90D607463bb33eA1BeBb41C27CE5AB6";
@@ -1799,7 +1800,6 @@ declare const optimism: Readonly<{
         };
     };
     id: 10;
-    name: "OP Mainnet";
     nativeCurrency: {
         readonly name: "Ether";
         readonly symbol: "ETH";
@@ -2579,7 +2579,7 @@ declare const polygon: Readonly<{
     uniswap: {
         deployBlock: number;
         poolFactory: "0x1F98431c8aD98523631AE4a59f267346ea31F984";
-        multicall2: "0xca11bde05977b3631167028862be2a173976ca11";
+        multicall2: "0xed386Fe855C1EFf2f843B910923Dd8846E45C5A4";
         proxyAdmin: "0xB753548F6E010e7e680BA186F9Ca1BdAB2E90cf2";
         tickLens: "0xbfd8137f7d1516D3ea5cA83523914859ec47F573";
         quoter: "0xb27308f9F90D607463bb33eA1BeBb41C27CE5AB6";
@@ -3750,6 +3750,7 @@ interface IChainInfo extends Chain {
     };
 }
 declare const MAINNET_CHAINS: readonly [Readonly<{
+    name: "Arbitrum";
     sortIndex: 1;
     blockTimeSeconds: 0.25;
     logoUrl: "https://assets.oku.trade/arbitrum-logo.svg";
@@ -3758,7 +3759,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     uniswap: {
         deployBlock: number;
         poolFactory: "0x1F98431c8aD98523631AE4a59f267346ea31F984";
-        multicall2: "0x5BA1e12693Dc8F9c48aAD8770482f4739bEeD696";
+        multicall2: "0xBF69a56D35B8d6f5A8e0e96B245a72F735751e54";
         proxyAdmin: "0xB753548F6E010e7e680BA186F9Ca1BdAB2E90cf2";
         tickLens: "0xbfd8137f7d1516D3ea5cA83523914859ec47F573";
         quoter: "0xb27308f9F90D607463bb33eA1BeBb41C27CE5AB6";
@@ -3843,7 +3844,6 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         };
     };
     id: 42161;
-    name: "Arbitrum One";
     nativeCurrency: {
         readonly name: "Ether";
         readonly symbol: "ETH";
@@ -4732,6 +4732,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     };
     fees?: import("viem").ChainFees<undefined> | undefined;
 }>, Readonly<{
+    name: "Boba";
     sortIndex: 11;
     blockTimeSeconds: 300;
     logoUrl: "https://assets.oku.trade/boba-logo.svg";
@@ -4812,7 +4813,6 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         };
     };
     id: 288;
-    name: "Boba Network";
     nativeCurrency: {
         readonly decimals: 18;
         readonly name: "Boba";
@@ -4913,6 +4913,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     serializers?: import("viem").ChainSerializers<undefined> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
 }>, Readonly<{
+    name: "BSC";
     sortIndex: 9;
     blockTimeSeconds: 3;
     logoUrl: "https://assets.oku.trade/bsc-logo.svg";
@@ -4921,7 +4922,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     uniswap: {
         deployBlock: number;
         poolFactory: "0xFFCd7Aed9C627E82A765c3247d562239507f6f1B";
-        multicall2: "0xd213Ff319F8d28Fe31EbDB75b23aA61a2b905320";
+        multicall2: "0xed386Fe855C1EFf2f843B910923Dd8846E45C5A4";
         proxyAdmin: "0xE8B5DaE430189ea6ccffF4eEeC58a98556525fB4";
         tickLens: "0x36EBd44350E4406E67C5579026950793b8528402";
         quoter: "0x483fc90DDC7aC847D4a752055DCF73483B6d97FD";
@@ -4986,7 +4987,6 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         };
     };
     id: 56;
-    name: "BNB Smart Chain";
     nativeCurrency: {
         readonly decimals: 18;
         readonly name: "BNB";
@@ -5299,6 +5299,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     serializers?: import("viem").ChainSerializers<undefined> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
 }>, Readonly<{
+    name: "Optimism";
     blockTimeSeconds: 0.5;
     sortIndex: 2;
     logoUrl: "https://assets.oku.trade/optimism-logo.svg";
@@ -5320,7 +5321,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     uniswap: {
         deployBlock: number;
         poolFactory: "0x1F98431c8aD98523631AE4a59f267346ea31F984";
-        multicall2: "0x5BA1e12693Dc8F9c48aAD8770482f4739bEeD696";
+        multicall2: "0xD9bfE9979e9CA4b2fe84bA5d4Cf963bBcB376974";
         proxyAdmin: "0xB753548F6E010e7e680BA186F9Ca1BdAB2E90cf2";
         tickLens: "0xbfd8137f7d1516D3ea5cA83523914859ec47F573";
         quoter: "0xb27308f9F90D607463bb33eA1BeBb41C27CE5AB6";
@@ -5422,7 +5423,6 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         };
     };
     id: 10;
-    name: "OP Mainnet";
     nativeCurrency: {
         readonly name: "Ether";
         readonly symbol: "ETH";
@@ -6196,7 +6196,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     uniswap: {
         deployBlock: number;
         poolFactory: "0x1F98431c8aD98523631AE4a59f267346ea31F984";
-        multicall2: "0xca11bde05977b3631167028862be2a173976ca11";
+        multicall2: "0xed386Fe855C1EFf2f843B910923Dd8846E45C5A4";
         proxyAdmin: "0xB753548F6E010e7e680BA186F9Ca1BdAB2E90cf2";
         tickLens: "0xbfd8137f7d1516D3ea5cA83523914859ec47F573";
         quoter: "0xb27308f9F90D607463bb33eA1BeBb41C27CE5AB6";

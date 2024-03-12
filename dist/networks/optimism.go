@@ -37,7 +37,7 @@ var Optimism Network = Network{
 	Uniswap: UniswapMetadata{
 		DeployBlock:                        0,
 		PoolFactory:                        common.HexToAddress("0x1F98431c8aD98523631AE4a59f267346ea31F984"),
-		Multicall2:                         common.HexToAddress("0x5BA1e12693Dc8F9c48aAD8770482f4739bEeD696"),
+		Multicall2:                         common.HexToAddress("0xD9bfE9979e9CA4b2fe84bA5d4Cf963bBcB376974"),
 		ProxyAdmin:                         common.HexToAddress("0xB753548F6E010e7e680BA186F9Ca1BdAB2E90cf2"),
 		TickLens:                           common.HexToAddress("0xbfd8137f7d1516D3ea5cA83523914859ec47F573"),
 		Quoter:                             common.HexToAddress("0xb27308f9F90D607463bb33eA1BeBb41C27CE5AB6"),

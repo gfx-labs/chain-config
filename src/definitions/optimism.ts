@@ -4,6 +4,7 @@ import {} from "viem";
 
 export const optimism = makeConfig({
   ...chain,
+  name: "Optimism",
   blockTimeSeconds: 0.5,
   sortIndex: 2,
   logoUrl: "https://assets.oku.trade/optimism-logo.svg",
@@ -128,7 +129,7 @@ export const optimism = makeConfig({
   uniswap: {
     deployBlock: 0,
     poolFactory: "0x1F98431c8aD98523631AE4a59f267346ea31F984",
-    multicall2: "0x5BA1e12693Dc8F9c48aAD8770482f4739bEeD696",
+    multicall2: "0xD9bfE9979e9CA4b2fe84bA5d4Cf963bBcB376974",
     proxyAdmin: "0xB753548F6E010e7e680BA186F9Ca1BdAB2E90cf2",
     tickLens: "0xbfd8137f7d1516D3ea5cA83523914859ec47F573",
     quoter: "0xb27308f9F90D607463bb33eA1BeBb41C27CE5AB6",

@@ -4,6 +4,7 @@ import { makeConfig } from "../util";
 
 export const arbitrum = makeConfig({
   ...chain,
+  name: "Arbitrum",
   sortIndex: 1,
   blockTimeSeconds: 0.25,
   logoUrl: "https://assets.oku.trade/arbitrum-logo.svg",
@@ -12,7 +13,7 @@ export const arbitrum = makeConfig({
   uniswap: {
     deployBlock: 165,
     poolFactory: "0x1F98431c8aD98523631AE4a59f267346ea31F984",
-    multicall2: "0x5BA1e12693Dc8F9c48aAD8770482f4739bEeD696",
+    multicall2: "0xBF69a56D35B8d6f5A8e0e96B245a72F735751e54",
     proxyAdmin: "0xB753548F6E010e7e680BA186F9Ca1BdAB2E90cf2",
     tickLens: "0xbfd8137f7d1516D3ea5cA83523914859ec47F573",
     quoter: "0xb27308f9F90D607463bb33eA1BeBb41C27CE5AB6",
