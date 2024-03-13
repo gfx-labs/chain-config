@@ -8,7 +8,10 @@ export const mainnet = makeConfig({
   blockTimeSeconds: 15,
   safeReorgDistance: 90_000,
   logoUrl: "https://assets.oku.trade/ethereum-logo.webp",
-  zerionId: "ethereum",
+  externalId: {
+    zerion: "ethereum",
+    debank: "eth",
+  },
   uniswap: {
     deployBlock: 12369621,
     poolFactory: "0x1F98431c8aD98523631AE4a59f267346ea31F984",
@@ -20,7 +23,7 @@ export const mainnet = makeConfig({
     swapRouter02: "0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45",
     NFTDescriptor: "0x42B24A95702b9986e82d421cC3568932790A48Ec",
     nonfungibleTokenPositionDescriptor:
-      "0x91ae842A5Ffd8d12023116943e72A606179294f3",
+    "0x91ae842A5Ffd8d12023116943e72A606179294f3",
     transparentUpgradeableProxy: "0xEe6A57eC80ea46401049E92587E52f5Ec1c24785",
     nonfungiblePositionManager: "0xC36442b4a4522E871399CD717aBDD847Ab11FE88",
     v3Migrator: "0xA5644E29708357803b5A882D272c41cC0dF92B34",

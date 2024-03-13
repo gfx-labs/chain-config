@@ -9,7 +9,10 @@ export const bsc = makeConfig({
   blockTimeSeconds: 3,
   logoUrl: "https://assets.oku.trade/bsc-logo.svg",
   safeReorgDistance: 90000,
-  zerionId: "binance-smart-chain",
+  externalId: {
+    zerion: "binance-smart-chain",
+    debank: "bsc",
+  },
   uniswap: {
     deployBlock: 969351,
     poolFactory: "0xFFCd7Aed9C627E82A765c3247d562239507f6f1B",
@@ -20,7 +23,7 @@ export const bsc = makeConfig({
     swapRouter02: "0x759E8B0cb9d65291e258aE3e043258ae1dD0df16",
     NFTDescriptor: "0x531c3B226288854e992150FEfF4d95F7B8DEbD8c",
     nonfungibleTokenPositionDescriptor:
-      "0xb6751A274EDAe02A911E3bB23682FAaF380433b7",
+    "0xb6751A274EDAe02A911E3bB23682FAaF380433b7",
     transparentUpgradeableProxy: "0xEe6A57eC80ea46401049E92587E52f5Ec1c24785",
     nonfungiblePositionManager: "0x0bfc9aC7E52f38EAA6dC8d10942478f695C6Cf71",
     v3Migrator: "0x9ab1E646877732DD76bd662DC242723D7e4B42ba",

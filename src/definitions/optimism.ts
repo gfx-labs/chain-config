@@ -9,7 +9,10 @@ export const optimism = makeConfig({
   sortIndex: 2,
   logoUrl: "https://assets.oku.trade/optimism-logo.svg",
   safeReorgDistance: 90000,
-  zerionId:"optimism",
+  externalId: {
+    zerion:"optimism",
+    debank: "op",
+  },
   oku: {
     limitOrderRegistryDeployBlock: 105276132,
     limitOrderRegistry: "0x54dF9e11c7933a9cA3BD1E540B63dA15edAe40bf",
@@ -137,7 +140,7 @@ export const optimism = makeConfig({
     swapRouter02: "0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45",
     NFTDescriptor: "0x42B24A95702b9986e82d421cC3568932790A48Ec",
     nonfungibleTokenPositionDescriptor:
-      "0x91ae842A5Ffd8d12023116943e72A606179294f3",
+    "0x91ae842A5Ffd8d12023116943e72A606179294f3",
     transparentUpgradeableProxy: "0xEe6A57eC80ea46401049E92587E52f5Ec1c24785",
     nonfungiblePositionManager: "0xC36442b4a4522E871399CD717aBDD847Ab11FE88",
     v3Migrator: "0xA5644E29708357803b5A882D272c41cC0dF92B34",

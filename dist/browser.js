@@ -15,7 +15,10 @@
       blockTimeSeconds: 0.25,
       logoUrl: "https://assets.oku.trade/arbitrum-logo.svg",
       safeReorgDistance: 90000 * 2,
-      zerionId: "arbitrum",
+      externalId: {
+          zerion: "arbitrum",
+          debank: "arb",
+      },
       uniswap: {
           deployBlock: 165,
           poolFactory: "0x1F98431c8aD98523631AE4a59f267346ea31F984",
@@ -237,7 +240,10 @@
       defaultPool: "0x4c36388be6f416a29c8d8eee81c771ce6be14b18",
       defaultToken0: "0x4200000000000000000000000000000000000006",
       defaultToken1: "0xd9aaec86b65d86f6a7b5b1b0c42ffa531710b6ca",
-      zerionId: "base",
+      externalId: {
+          zerion: "base",
+          debank: "base",
+      },
       safeReorgDistance: 90000,
       uniswap: {
           deployBlock: 1371680,
@@ -320,7 +326,9 @@
       sortIndex: 14,
       logoUrl: "https://assets.oku.trade/blast-logo.svg",
       safeReorgDistance: 90000,
-      zerionId: "blast",
+      externalId: {
+          zerion: "blast",
+      },
       uniswap: {
           deployBlock: 400903,
           poolFactory: "0x792edAdE80af5fC680d96a2eD80A44247D2Cf6Fd",
@@ -379,6 +387,9 @@
       blockTimeSeconds: 300,
       logoUrl: "https://assets.oku.trade/boba-logo.svg",
       safeReorgDistance: 90000,
+      externalId: {
+          debank: "boba",
+      },
       uniswap: {
           deployBlock: 969351,
           poolFactory: "0xFFCd7Aed9C627E82A765c3247d562239507f6f1B",
@@ -459,7 +470,10 @@
       blockTimeSeconds: 3,
       logoUrl: "https://assets.oku.trade/bsc-logo.svg",
       safeReorgDistance: 90000,
-      zerionId: "binance-smart-chain",
+      externalId: {
+          zerion: "binance-smart-chain",
+          debank: "bsc",
+      },
       uniswap: {
           deployBlock: 969351,
           poolFactory: "0xFFCd7Aed9C627E82A765c3247d562239507f6f1B",
@@ -586,6 +600,7 @@
           },
       },
       logoUrl: "https://assets.oku.trade/filecoin-logo.svg",
+      externalId: {},
       uniswap: {
           deployBlock: 3195837,
           poolFactory: "0xB4C47eD546Fc31E26470a186eC2C5F19eF09BA41",
@@ -672,7 +687,10 @@
       blockTimeSeconds: 15,
       safeReorgDistance: 90000,
       logoUrl: "https://assets.oku.trade/ethereum-logo.webp",
-      zerionId: "ethereum",
+      externalId: {
+          zerion: "ethereum",
+          debank: "eth",
+      },
       uniswap: {
           deployBlock: 12369621,
           poolFactory: "0x1F98431c8aD98523631AE4a59f267346ea31F984",
@@ -892,6 +910,7 @@
       sortIndex: 13,
       logoUrl: "https://assets.oku.trade/manta-logo.png",
       safeReorgDistance: 90000,
+      externalId: {},
       uniswap: {
           deployBlock: 1191705,
           poolFactory: "0x06D830e15081f65923674268121FF57Cc54e4e23",
@@ -967,6 +986,9 @@
       blockTimeSeconds: 30,
       logoUrl: "https://assets.oku.trade/moonbeam-logo.svg",
       safeReorgDistance: 90000,
+      externalId: {
+          debank: "mobm",
+      },
       uniswap: {
           deployBlock: 3340452,
           poolFactory: "0x28f1158795A3585CaAA3cD6469CD65382b89BB70",
@@ -1041,7 +1063,10 @@
       sortIndex: 2,
       logoUrl: "https://assets.oku.trade/optimism-logo.svg",
       safeReorgDistance: 90000,
-      zerionId: "optimism",
+      externalId: {
+          zerion: "optimism",
+          debank: "op",
+      },
       oku: {
           limitOrderRegistryDeployBlock: 105276132,
           limitOrderRegistry: "0x54dF9e11c7933a9cA3BD1E540B63dA15edAe40bf",
@@ -1258,7 +1283,10 @@
       sortIndex: 3,
       logoUrl: "https://assets.oku.trade/polygon-logo.webp",
       safeReorgDistance: 90000,
-      zerionId: "polygon",
+      externalId: {
+          zerion: "polygon",
+          debank: "matic",
+      },
       uniswap: {
           deployBlock: 22757547,
           poolFactory: "0x1F98431c8aD98523631AE4a59f267346ea31F984",
@@ -1471,6 +1499,7 @@
       blockTimeSeconds: 33,
       logoUrl: "https://assets.oku.trade/rootstock-logo.svg",
       safeReorgDistance: 90000,
+      externalId: {},
       uniswap: {
           deployBlock: 5829210,
           poolFactory: "0xaF37EC98A00FD63689CF3060BF3B6784E00caD82",
@@ -1543,7 +1572,9 @@
       blockTimeSeconds: 3,
       logoUrl: "https://assets.oku.trade/scroll-logo.png",
       safeReorgDistance: 90000,
-      zerionId: "scroll",
+      externalId: {
+          zerion: "scroll",
+      },
       uniswap: {
           deployBlock: 1367,
           multicall2: "0x3b615B1AC55bc34e51a81D3dea67467F32bcb8C2",
@@ -1610,6 +1641,7 @@
       blockTimeSeconds: 7,
       logoUrl: "https://assets.oku.trade/zkevm-logo.svg",
       safeReorgDistance: 90000,
+      externalId: {},
       uniswap: {
           deployBlock: 8466867,
           poolFactory: "0xff83c3c800Fec21de45C5Ec30B69ddd5Ee60DFC2",
@@ -1675,7 +1707,9 @@
       sortIndex: 4,
       logoUrl: "https://assets.oku.trade/zksync-logo.svg",
       safeReorgDistance: 90000,
-      zerionId: "zksync-era",
+      externalId: {
+          zerion: "zksync-era",
+      },
       uniswap: {
           deployBlock: 12637075,
           poolFactory: "0x8FdA5a7a8dCA67BBcDd10F02Fa0649A937215422",

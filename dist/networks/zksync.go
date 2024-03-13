@@ -11,12 +11,14 @@ var Zksync Network = Network{
 	SafeReorgDistance: 90000,
 	DefaultPool:       common.HexToAddress("0xff577f0e828a878743ecc5e2632cbf65cecf17cf"),
 	InternalName:      "zksync",
-	ZerionId:          "zksync-era",
-	DefaultToken0:     common.HexToAddress("0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4"),
-	DefaultToken1:     common.HexToAddress("0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91"),
+	ExternalId: map[string]string{
+		"zerion": "zksync-era",
+	},
+	DefaultToken0: common.HexToAddress("0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4"),
+	DefaultToken1: common.HexToAddress("0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91"),
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4"), common.HexToAddress("0x503234F203fC7Eb888EEC8513210612a43Cf6115")},
-	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4"): struct{}{}, common.HexToAddress("0x503234F203fC7Eb888EEC8513210612a43Cf6115"): struct{}{}},
+	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4"): {}, common.HexToAddress("0x503234F203fC7Eb888EEC8513210612a43Cf6115"): {}},
 	Watchlist:        []common.Address{common.HexToAddress("0xff577f0e828a878743ecc5e2632cbf65cecf17cf"), common.HexToAddress("0x50b0b9e02aa6f72a70fefbdb50bdc2f27e594135"), common.HexToAddress("0x3f618967492945c02d5222d333e903345fde741a"), common.HexToAddress("0xc99bcff6564bafc70ba1b53c53a03541f780a546"), common.HexToAddress("0x1fa900dbb20ed45d18883849c00632bca16f6610")},
 	BlockTimeSeconds: 2,
 	Oku: OkuMetadata{

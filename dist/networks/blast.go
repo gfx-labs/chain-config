@@ -11,12 +11,14 @@ var Blast Network = Network{
 	SafeReorgDistance: 90000,
 	DefaultPool:       common.HexToAddress("0xf52b4b69123cbcf07798ae8265642793b2e8990c"),
 	InternalName:      "blast",
-	ZerionId:          "blast",
-	DefaultToken0:     common.HexToAddress("0x4300000000000000000000000000000000000003"),
-	DefaultToken1:     common.HexToAddress("0x4300000000000000000000000000000000000004"),
+	ExternalId: map[string]string{
+		"zerion": "blast",
+	},
+	DefaultToken0: common.HexToAddress("0x4300000000000000000000000000000000000003"),
+	DefaultToken1: common.HexToAddress("0x4300000000000000000000000000000000000004"),
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0x4300000000000000000000000000000000000003")},
-	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x4300000000000000000000000000000000000003"): struct{}{}},
+	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x4300000000000000000000000000000000000003"): {}},
 	Watchlist:        []common.Address{common.HexToAddress("0xf52b4b69123cbcf07798ae8265642793b2e8990c")},
 	BlockTimeSeconds: 2,
 	Oku: OkuMetadata{

@@ -8,6 +8,9 @@ export const moonbeam = makeConfig({
   blockTimeSeconds: 30,
   logoUrl: "https://assets.oku.trade/moonbeam-logo.svg",
   safeReorgDistance: 90000,
+  externalId: {
+    debank: "mobm",
+  },
   uniswap: {
     deployBlock: 3340452,
     poolFactory: "0x28f1158795A3585CaAA3cD6469CD65382b89BB70",
@@ -17,7 +20,7 @@ export const moonbeam = makeConfig({
     swapRouter02: "0xc507e22ba3140dc0a79fdf27e03c98aa20f3ee66",
     NFTDescriptor: "0x041b81cb4d223d8e70ac96c0d103f8a956ed4514",
     nonfungibleTokenPositionDescriptor:
-      "0x921c55AE486e63D16dbfbE216573A21aeB684c02",
+    "0x921c55AE486e63D16dbfbE216573A21aeB684c02",
     transparentUpgradeableProxy: "0xEe6A57eC80ea46401049E92587E52f5Ec1c24785",
     nonfungiblePositionManager: "0x0bfc9aC7E52f38EAA6dC8d10942478f695C6Cf71",
     v3Migrator: "0x76776b10d782a1d194fbfc92d4b01db1ce1eeb4b",

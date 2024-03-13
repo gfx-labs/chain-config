@@ -55,8 +55,10 @@ export interface IChainInfo extends Chain {
   tokenList: ReadonlyArray<{ symbol: string; address: Address }>;
   stables: ReadonlyArray<Address>;
   watchlist: ReadonlyArray<Address>;
-
-  zerionId?: string;
+  externalId?: {
+    zerion?: string;
+    debank?: string;
+  }
 
   blockTimeSeconds: float64;
 

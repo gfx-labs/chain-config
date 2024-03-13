@@ -8,7 +8,9 @@ export const scroll = makeConfig({
   blockTimeSeconds: 3,
   logoUrl: "https://assets.oku.trade/scroll-logo.png",
   safeReorgDistance: 90000,
-  zerionId: "scroll",
+  externalId: {
+    zerion: "scroll",
+  },
   uniswap: {
     deployBlock: 1367,
     multicall2: "0x3b615B1AC55bc34e51a81D3dea67467F32bcb8C2",

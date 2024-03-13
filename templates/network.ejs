@@ -18,12 +18,14 @@ var <%- helpers.snakeToCamel(chainName) %> Network = Network{
   SafeReorgDistance: <%- chain.safeReorgDistance || 90000 %>,
   DefaultPool: <%- helpers.toAddr(chain.defaultPool) %>,
   InternalName:     "<%- chain.internalName %>",
-  ZerionId:     "<%- chain.zerionId %>",
+  ExternalId:  map[string]string{ <% for(const prop of Object.entries(chain.externalId)) {%>
+    "<%- prop[0] %>": "<%- prop[1] %>",<% } %>
+  },
   DefaultToken0:    common.HexToAddress("<%- chain.defaultToken0 %>"),
   DefaultToken1:    common.HexToAddress("<%- chain.defaultToken1 %>"),
   //TODO: TokenList:        []any{},
   Stables:          []common.Address{<%- chain.stables.map(h.toAddr).join(",") %>},
-  StablecoinMap:          map[common.Address]struct{}{<%- chain.stables.map(x=>`${h.toAddr(x)}: struct{}{}`).join(",") %>},
+  StablecoinMap:          map[common.Address]struct{}{<%- chain.stables.map(x=>`${h.toAddr(x)}: {}`).join(",") %>},
   Watchlist:          []common.Address{<%- chain.watchlist.map(h.toAddr).join(",") %>},
   BlockTimeSeconds: <%- chain.blockTimeSeconds %>,
   Oku:            OkuMetadata{

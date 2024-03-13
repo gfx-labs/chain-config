@@ -8,7 +8,9 @@ export const blast = makeConfig({
   sortIndex: 14,
   logoUrl: "https://assets.oku.trade/blast-logo.svg",
   safeReorgDistance: 90000,
-  zerionId: "blast",
+  externalId: {
+    zerion: "blast",
+  },
   uniswap: {
     deployBlock: 400903,
     poolFactory: "0x792edAdE80af5fC680d96a2eD80A44247D2Cf6Fd",

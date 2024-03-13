@@ -50,6 +50,9 @@ const toAddr = (x:string)=>{
 const getPropType = (x:morph.PropertySignature):string=>{
   const type = x.getType()
   const nodeType = x.getTypeNode()?.getText()
+  if(x.getName() == "externalId") {
+    return "map[string]string"
+  }
   if(nodeType == "ReadonlyArray<Address>") {
     return "[]common.Address"
   }
