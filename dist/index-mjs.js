@@ -15,7 +15,7 @@ const arbitrum = makeConfig({
     uniswap: {
         deployBlock: 165,
         poolFactory: "0x1F98431c8aD98523631AE4a59f267346ea31F984",
-        multicall2: "0xBF69a56D35B8d6f5A8e0e96B245a72F735751e54",
+        multicall2: "0x842eC2c7D803033Edf55E478F461FC547Bc54EB2",
         proxyAdmin: "0xB753548F6E010e7e680BA186F9Ca1BdAB2E90cf2",
         tickLens: "0xbfd8137f7d1516D3ea5cA83523914859ec47F573",
         quoter: "0xb27308f9F90D607463bb33eA1BeBb41C27CE5AB6",
@@ -238,7 +238,7 @@ const base = makeConfig({
     uniswap: {
         deployBlock: 1371680,
         poolFactory: "0x33128a8fC17869897dcE68Ed026d694621f6FDfD",
-        multicall2: "0x091e99cb1C49331a94dD62755D168E941AbD0693",
+        multicall2: "0x41A513463248971B41C0580726CF4D425c071732",
         tickLens: "0x0CdeE061c75D43c82520eD998C23ac2991c9ac6d",
         nonfungiblePositionManager: "0x03a520b32C04BF3bEEf7BEb72E919cf822Ed34f1",
         positionsNFT: "0x03a520b32C04BF3bEEf7BEb72E919cf822Ed34f1",
@@ -320,7 +320,7 @@ const blast = makeConfig({
     uniswap: {
         deployBlock: 400903,
         poolFactory: "0x792edAdE80af5fC680d96a2eD80A44247D2Cf6Fd",
-        multicall2: "0xdC7f370de7631cE9e2c2e1DCDA6B3B5744Cf4705",
+        multicall2: "0xc228c0343Ee4D4B3EAdF701154f1f1bD9E29d833",
         tickLens: "0x2E95185bCdD928a3e984B7e2D6560Ab1b17d7274",
         nonfungiblePositionManager: "0xB218e4f7cF0533d4696fDfC419A0023D33345F28",
         positionsNFT: "0xB218e4f7cF0533d4696fDfC419A0023D33345F28",
@@ -378,7 +378,7 @@ const boba = makeConfig({
     uniswap: {
         deployBlock: 969351,
         poolFactory: "0xFFCd7Aed9C627E82A765c3247d562239507f6f1B",
-        multicall2: "0xd213Ff319F8d28Fe31EbDB75b23aA61a2b905320",
+        multicall2: "0x07956092c0F4818D6792a42035d2d2fa0C75E76B",
         proxyAdmin: "0xE8B5DaE430189ea6ccffF4eEeC58a98556525fB4",
         tickLens: "0x36EBd44350E4406E67C5579026950793b8528402",
         quoter: "0x483fc90DDC7aC847D4a752055DCF73483B6d97FD",
@@ -459,7 +459,7 @@ const bsc = makeConfig({
     uniswap: {
         deployBlock: 969351,
         poolFactory: "0xFFCd7Aed9C627E82A765c3247d562239507f6f1B",
-        multicall2: "0xed386Fe855C1EFf2f843B910923Dd8846E45C5A4",
+        multicall2: "0xfF6FD90A470Aaa0c1B8A54681746b07AcdFedc9B",
         proxyAdmin: "0xE8B5DaE430189ea6ccffF4eEeC58a98556525fB4",
         tickLens: "0x36EBd44350E4406E67C5579026950793b8528402",
         quoter: "0x483fc90DDC7aC847D4a752055DCF73483B6d97FD",
@@ -891,7 +891,7 @@ const manta = makeConfig({
     uniswap: {
         deployBlock: 1191705,
         poolFactory: "0x06D830e15081f65923674268121FF57Cc54e4e23",
-        multicall2: "0x3C7B6fA5376Ba88364e9BeAE6E1aEc9f738e8f63",
+        multicall2: "0x52dFC0D9960F11A9Ca9FF616e791B91188446a60",
         tickLens: "0xC94Fb2D13587b0b5af78094933490B35E004eAbE",
         nonfungiblePositionManager: "0xA4F2Db71348697C65A64a146F709C73030C2ebcD",
         positionsNFT: "0xA4F2Db71348697C65A64a146F709C73030C2ebcD",
@@ -966,7 +966,7 @@ const moonbeam = makeConfig({
     uniswap: {
         deployBlock: 3340452,
         poolFactory: "0x28f1158795A3585CaAA3cD6469CD65382b89BB70",
-        multicall2: "0xd213Ff319F8d28Fe31EbDB75b23aA61a2b905320",
+        multicall2: "0x65dA327b1740D00fF7B366a4fd8F33830a2f03A2",
         tickLens: "0x1f4F7b041895D9eB1A79be0896AF3E68e4160010",
         quoter: "0x48af91cdcad8ffdd7a8d4cdf73c16cb0632d3d17",
         swapRouter02: "0xc507e22ba3140dc0a79fdf27e03c98aa20f3ee66",
@@ -1157,7 +1157,7 @@ const optimism = makeConfig({
     uniswap: {
         deployBlock: 0,
         poolFactory: "0x1F98431c8aD98523631AE4a59f267346ea31F984",
-        multicall2: "0xD9bfE9979e9CA4b2fe84bA5d4Cf963bBcB376974",
+        multicall2: "0x266557a864680a1401a3506c0eb72934bd13bf59",
         proxyAdmin: "0xB753548F6E010e7e680BA186F9Ca1BdAB2E90cf2",
         tickLens: "0xbfd8137f7d1516D3ea5cA83523914859ec47F573",
         quoter: "0xb27308f9F90D607463bb33eA1BeBb41C27CE5AB6",
@@ -1258,7 +1258,7 @@ const polygon = makeConfig({
     uniswap: {
         deployBlock: 22757547,
         poolFactory: "0x1F98431c8aD98523631AE4a59f267346ea31F984",
-        multicall2: "0xed386Fe855C1EFf2f843B910923Dd8846E45C5A4",
+        multicall2: "0x275617327c958bD06b5D6b871E7f491D76113dd8",
         proxyAdmin: "0xB753548F6E010e7e680BA186F9Ca1BdAB2E90cf2",
         tickLens: "0xbfd8137f7d1516D3ea5cA83523914859ec47F573",
         quoter: "0xb27308f9F90D607463bb33eA1BeBb41C27CE5AB6",
@@ -1542,6 +1542,7 @@ const scroll = makeConfig({
     zerionId: "scroll",
     uniswap: {
         deployBlock: 1367,
+        multicall2: "0x3b615B1AC55bc34e51a81D3dea67467F32bcb8C2",
         poolFactory: "0x70C62C8b8e801124A4Aa81ce07b637A3e83cb919",
         positionsNFT: "0xB39002E4033b162fAc607fc3471E205FA2aE5967",
         universalRouter: "0x595E7160858b1AdA94Bda790D8699C85e595117E",
@@ -1608,7 +1609,7 @@ const polygonZkEvm = makeConfig({
     uniswap: {
         deployBlock: 8466867,
         poolFactory: "0xff83c3c800Fec21de45C5Ec30B69ddd5Ee60DFC2",
-        multicall2: "0x9073E304a15b1522132848B461857cd8BA932ea7",
+        multicall2: "0x1FaE28D9C07a8a96E2ECc53BB328E787D5B88674",
         tickLens: "0x64519b94A7248Bf17929fB03b9648ce277Fd7fDA",
         nonfungiblePositionManager: "0xf0D61Aeda516CCa1FF20Be65Cfb0213be688A24f",
         positionsNFT: "0xf0D61Aeda516CCa1FF20Be65Cfb0213be688A24f",
@@ -1674,7 +1675,7 @@ const zkSync = makeConfig({
     uniswap: {
         deployBlock: 12637075,
         poolFactory: "0x8FdA5a7a8dCA67BBcDd10F02Fa0649A937215422",
-        multicall2: "0x0c68a7C72f074d1c45C16d41fa74eEbC6D16a65C",
+        multicall2: "0x8bB86A31795d3e8ef12c630C288770e13eEcF038",
         tickLens: "0xe10FF11b809f8EE07b056B452c3B2caa7FE24f89",
         nonfungiblePositionManager: "0x0616e5762c1E7Dc3723c50663dF10a162D690a86",
         positionsNFT: "0x0616e5762c1E7Dc3723c50663dF10a162D690a86",

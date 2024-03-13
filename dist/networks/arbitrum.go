@@ -37,7 +37,7 @@ var Arbitrum Network = Network{
 	Uniswap: UniswapMetadata{
 		DeployBlock:                        165,
 		PoolFactory:                        common.HexToAddress("0x1F98431c8aD98523631AE4a59f267346ea31F984"),
-		Multicall2:                         common.HexToAddress("0xBF69a56D35B8d6f5A8e0e96B245a72F735751e54"),
+		Multicall2:                         common.HexToAddress("0x842eC2c7D803033Edf55E478F461FC547Bc54EB2"),
 		ProxyAdmin:                         common.HexToAddress("0xB753548F6E010e7e680BA186F9Ca1BdAB2E90cf2"),
 		TickLens:                           common.HexToAddress("0xbfd8137f7d1516D3ea5cA83523914859ec47F573"),
 		Quoter:                             common.HexToAddress("0xb27308f9F90D607463bb33eA1BeBb41C27CE5AB6"),

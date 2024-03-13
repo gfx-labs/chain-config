@@ -32,7 +32,7 @@ var PolygonZkevm Network = Network{
 	Uniswap: UniswapMetadata{
 		DeployBlock:                8466867,
 		PoolFactory:                common.HexToAddress("0xff83c3c800Fec21de45C5Ec30B69ddd5Ee60DFC2"),
-		Multicall2:                 common.HexToAddress("0x9073E304a15b1522132848B461857cd8BA932ea7"),
+		Multicall2:                 common.HexToAddress("0x1FaE28D9C07a8a96E2ECc53BB328E787D5B88674"),
 		TickLens:                   common.HexToAddress("0x64519b94A7248Bf17929fB03b9648ce277Fd7fDA"),
 		NonfungiblePositionManager: common.HexToAddress("0xf0D61Aeda516CCa1FF20Be65Cfb0213be688A24f"),
 		PositionsNFT:               common.HexToAddress("0xf0D61Aeda516CCa1FF20Be65Cfb0213be688A24f"),

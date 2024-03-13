@@ -37,7 +37,7 @@ var Polygon Network = Network{
 	Uniswap: UniswapMetadata{
 		DeployBlock:                        22757547,
 		PoolFactory:                        common.HexToAddress("0x1F98431c8aD98523631AE4a59f267346ea31F984"),
-		Multicall2:                         common.HexToAddress("0xed386Fe855C1EFf2f843B910923Dd8846E45C5A4"),
+		Multicall2:                         common.HexToAddress("0x275617327c958bD06b5D6b871E7f491D76113dd8"),
 		ProxyAdmin:                         common.HexToAddress("0xB753548F6E010e7e680BA186F9Ca1BdAB2E90cf2"),
 		TickLens:                           common.HexToAddress("0xbfd8137f7d1516D3ea5cA83523914859ec47F573"),
 		Quoter:                             common.HexToAddress("0xb27308f9F90D607463bb33eA1BeBb41C27CE5AB6"),

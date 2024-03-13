@@ -37,7 +37,7 @@ var Bsc Network = Network{
 	Uniswap: UniswapMetadata{
 		DeployBlock:                        969351,
 		PoolFactory:                        common.HexToAddress("0xFFCd7Aed9C627E82A765c3247d562239507f6f1B"),
-		Multicall2:                         common.HexToAddress("0xed386Fe855C1EFf2f843B910923Dd8846E45C5A4"),
+		Multicall2:                         common.HexToAddress("0xfF6FD90A470Aaa0c1B8A54681746b07AcdFedc9B"),
 		ProxyAdmin:                         common.HexToAddress("0xE8B5DaE430189ea6ccffF4eEeC58a98556525fB4"),
 		TickLens:                           common.HexToAddress("0x36EBd44350E4406E67C5579026950793b8528402"),
 		Quoter:                             common.HexToAddress("0x483fc90DDC7aC847D4a752055DCF73483B6d97FD"),

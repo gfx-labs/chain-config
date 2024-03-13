@@ -32,7 +32,7 @@ var Zksync Network = Network{
 	Uniswap: UniswapMetadata{
 		DeployBlock:                12637075,
 		PoolFactory:                common.HexToAddress("0x8FdA5a7a8dCA67BBcDd10F02Fa0649A937215422"),
-		Multicall2:                 common.HexToAddress("0x0c68a7C72f074d1c45C16d41fa74eEbC6D16a65C"),
+		Multicall2:                 common.HexToAddress("0x8bB86A31795d3e8ef12c630C288770e13eEcF038"),
 		TickLens:                   common.HexToAddress("0xe10FF11b809f8EE07b056B452c3B2caa7FE24f89"),
 		NonfungiblePositionManager: common.HexToAddress("0x0616e5762c1E7Dc3723c50663dF10a162D690a86"),
 		PositionsNFT:               common.HexToAddress("0x0616e5762c1E7Dc3723c50663dF10a162D690a86"),

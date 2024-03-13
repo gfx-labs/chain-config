@@ -32,7 +32,7 @@ var Base Network = Network{
 	Uniswap: UniswapMetadata{
 		DeployBlock:                1371680,
 		PoolFactory:                common.HexToAddress("0x33128a8fC17869897dcE68Ed026d694621f6FDfD"),
-		Multicall2:                 common.HexToAddress("0x091e99cb1C49331a94dD62755D168E941AbD0693"),
+		Multicall2:                 common.HexToAddress("0x41A513463248971B41C0580726CF4D425c071732"),
 		TickLens:                   common.HexToAddress("0x0CdeE061c75D43c82520eD998C23ac2991c9ac6d"),
 		NonfungiblePositionManager: common.HexToAddress("0x03a520b32C04BF3bEEf7BEb72E919cf822Ed34f1"),
 		PositionsNFT:               common.HexToAddress("0x03a520b32C04BF3bEEf7BEb72E919cf822Ed34f1"),

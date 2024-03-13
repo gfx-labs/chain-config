@@ -32,7 +32,7 @@ var Blast Network = Network{
 	Uniswap: UniswapMetadata{
 		DeployBlock:                400903,
 		PoolFactory:                common.HexToAddress("0x792edAdE80af5fC680d96a2eD80A44247D2Cf6Fd"),
-		Multicall2:                 common.HexToAddress("0xdC7f370de7631cE9e2c2e1DCDA6B3B5744Cf4705"),
+		Multicall2:                 common.HexToAddress("0xc228c0343Ee4D4B3EAdF701154f1f1bD9E29d833"),
 		TickLens:                   common.HexToAddress("0x2E95185bCdD928a3e984B7e2D6560Ab1b17d7274"),
 		NonfungiblePositionManager: common.HexToAddress("0xB218e4f7cF0533d4696fDfC419A0023D33345F28"),
 		PositionsNFT:               common.HexToAddress("0xB218e4f7cF0533d4696fDfC419A0023D33345F28"),
