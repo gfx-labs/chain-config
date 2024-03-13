@@ -11,7 +11,7 @@ export const polygonZkEvm = makeConfig({
   uniswap: {
     deployBlock: 8466867,
     poolFactory: "0xff83c3c800Fec21de45C5Ec30B69ddd5Ee60DFC2",
-    multicall2: "0x9073E304a15b1522132848B461857cd8BA932ea7",
+    multicall2: "0x1FaE28D9C07a8a96E2ECc53BB328E787D5B88674",
     tickLens: "0x64519b94A7248Bf17929fB03b9648ce277Fd7fDA",
     nonfungiblePositionManager: "0xf0D61Aeda516CCa1FF20Be65Cfb0213be688A24f",
     positionsNFT: "0xf0D61Aeda516CCa1FF20Be65Cfb0213be688A24f",

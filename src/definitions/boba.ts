@@ -12,7 +12,7 @@ export const boba = makeConfig({
   uniswap: {
     deployBlock: 969351,
     poolFactory: "0xFFCd7Aed9C627E82A765c3247d562239507f6f1B",
-    multicall2: "0xd213Ff319F8d28Fe31EbDB75b23aA61a2b905320",
+    multicall2: "0x07956092c0F4818D6792a42035d2d2fa0C75E76B",
     proxyAdmin: "0xE8B5DaE430189ea6ccffF4eEeC58a98556525fB4",
     tickLens: "0x36EBd44350E4406E67C5579026950793b8528402",
     quoter: "0x483fc90DDC7aC847D4a752055DCF73483B6d97FD",

@@ -12,7 +12,7 @@ export const zkSync = makeConfig({
   uniswap: {
     deployBlock: 12637075,
     poolFactory: "0x8FdA5a7a8dCA67BBcDd10F02Fa0649A937215422",
-    multicall2: "0x0c68a7C72f074d1c45C16d41fa74eEbC6D16a65C",
+    multicall2: "0x8bB86A31795d3e8ef12c630C288770e13eEcF038",
     tickLens: "0xe10FF11b809f8EE07b056B452c3B2caa7FE24f89",
     nonfungiblePositionManager: "0x0616e5762c1E7Dc3723c50663dF10a162D690a86",
     positionsNFT: "0x0616e5762c1E7Dc3723c50663dF10a162D690a86",

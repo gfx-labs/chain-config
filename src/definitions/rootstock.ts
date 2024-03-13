@@ -67,7 +67,6 @@ export const rootstock = makeConfig({
     weth9: {
       address: "0x542fDA317318eBF1d3DEAf76E0b632741A7e677d",
     },
-
     Multicall2: {
       address: "0x996a9858cdFa45aD68E47C9a30A7201E29c6A386",
     },

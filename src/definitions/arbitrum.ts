@@ -13,7 +13,7 @@ export const arbitrum = makeConfig({
   uniswap: {
     deployBlock: 165,
     poolFactory: "0x1F98431c8aD98523631AE4a59f267346ea31F984",
-    multicall2: "0xBF69a56D35B8d6f5A8e0e96B245a72F735751e54",
+    multicall2: "0x842eC2c7D803033Edf55E478F461FC547Bc54EB2",
     proxyAdmin: "0xB753548F6E010e7e680BA186F9Ca1BdAB2E90cf2",
     tickLens: "0xbfd8137f7d1516D3ea5cA83523914859ec47F573",
     quoter: "0xb27308f9F90D607463bb33eA1BeBb41C27CE5AB6",
