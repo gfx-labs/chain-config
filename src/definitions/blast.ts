@@ -44,7 +44,14 @@ export const blast = makeConfig({
   stables: [
     "0x4300000000000000000000000000000000000003",
   ],
-  watchlist: ["0xf52b4b69123cbcf07798ae8265642793b2e8990c"],
+  watchlist: [
+    "0xf52b4b69123cbcf07798ae8265642793b2e8990c",
+    "0xf52b4b69123cbcf07798ae8265642793b2e8990c",
+    "0x310a0a4bc2edd2f29321356d880e0906d7700c14",
+    "0xbb60bb410182d8e96c41dfc92e017dd79f5100bf",
+    "0xf52df2cde73228cc058abfe88f3801dcddf885eb",
+    "0x99f8a29a332eb9004f83abb1b4690de8b00dfccf",
+  ],
   internalName: "blast",
   contracts: {
     ...chain.contracts,
