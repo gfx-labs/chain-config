@@ -17,6 +17,12 @@ import (
 
 var ErrNetworkNotFound = errors.New("chain not found")
 
+type InternalName string
+
+const (<% for(const chain of chains) { %>
+   Name<%- h.toCamel(chain.internalName) %> InternalName = "<%- chain.internalName %>" <% } %>
+)
+
 var networksByName = map[string]Network{<% for(const chain of chains) { %>
     "<%- chain.internalName %>": <%- h.toCamel(chain.internalName) %>, <% } %>
 }
