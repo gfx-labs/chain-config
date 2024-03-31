@@ -1,4 +1,4 @@
-import {} from "viem";
+import { } from "viem";
 import { boba as chain } from "viem/chains";
 import { makeConfig } from "../util";
 
@@ -11,6 +11,11 @@ export const boba = makeConfig({
   safeReorgDistance: 90000,
   externalId: {
     debank: "boba",
+  },
+  nativeCurrency: {
+    decimals: 18,
+    name: 'Ether',
+    symbol: 'ETH',
   },
   uniswap: {
     deployBlock: 969351,

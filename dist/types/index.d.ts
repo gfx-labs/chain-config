@@ -1095,6 +1095,11 @@ declare const boba: Readonly<{
     externalId: {
         debank: string;
     };
+    nativeCurrency: {
+        decimals: number;
+        name: string;
+        symbol: string;
+    };
     uniswap: {
         deployBlock: number;
         poolFactory: "0xFFCd7Aed9C627E82A765c3247d562239507f6f1B";
@@ -1171,11 +1176,6 @@ declare const boba: Readonly<{
         };
     };
     id: 288;
-    nativeCurrency: {
-        readonly decimals: 18;
-        readonly name: "Boba";
-        readonly symbol: "BOBA";
-    };
     rpcUrls: {
         readonly default: {
             readonly http: readonly [
@@ -4784,6 +4784,11 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     externalId: {
         debank: string;
     };
+    nativeCurrency: {
+        decimals: number;
+        name: string;
+        symbol: string;
+    };
     uniswap: {
         deployBlock: number;
         poolFactory: "0xFFCd7Aed9C627E82A765c3247d562239507f6f1B";
@@ -4860,11 +4865,6 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         };
     };
     id: 288;
-    nativeCurrency: {
-        readonly decimals: 18;
-        readonly name: "Boba";
-        readonly symbol: "BOBA";
-    };
     rpcUrls: {
         readonly default: {
             readonly http: readonly ["https://mainnet.boba.network"];
