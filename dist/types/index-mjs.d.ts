@@ -1014,7 +1014,7 @@ declare const blast: Readonly<{
         nonfungiblePositionManager: "0xB218e4f7cF0533d4696fDfC419A0023D33345F28";
         positionsNFT: "0xB218e4f7cF0533d4696fDfC419A0023D33345F28";
         positionsNFTDeployBlock: number;
-        universalRouter: "0xe463635f6e73C1E595554C3ae216472D0fb929a9";
+        universalRouter: "0x643770E279d5D0733F21d6DC03A8efbABf3255B4";
     };
     token: {
         usdcAddress: "0x4300000000000000000000000000000000000003";
@@ -4892,7 +4892,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         nonfungiblePositionManager: "0xB218e4f7cF0533d4696fDfC419A0023D33345F28";
         positionsNFT: "0xB218e4f7cF0533d4696fDfC419A0023D33345F28";
         positionsNFTDeployBlock: number;
-        universalRouter: "0xe463635f6e73C1E595554C3ae216472D0fb929a9";
+        universalRouter: "0x643770E279d5D0733F21d6DC03A8efbABf3255B4";
     };
     token: {
         usdcAddress: "0x4300000000000000000000000000000000000003";

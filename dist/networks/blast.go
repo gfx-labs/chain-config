@@ -39,7 +39,7 @@ var Blast Network = Network{
 		NonfungiblePositionManager: common.HexToAddress("0xB218e4f7cF0533d4696fDfC419A0023D33345F28"),
 		PositionsNFT:               common.HexToAddress("0xB218e4f7cF0533d4696fDfC419A0023D33345F28"),
 		PositionsNFTDeployBlock:    400947,
-		UniversalRouter:            common.HexToAddress("0xe463635f6e73C1E595554C3ae216472D0fb929a9"),
+		UniversalRouter:            common.HexToAddress("0x643770E279d5D0733F21d6DC03A8efbABf3255B4"),
 	},
 	Token: TokenMetadata{
 		UsdcAddress: common.HexToAddress("0x4300000000000000000000000000000000000003"),
