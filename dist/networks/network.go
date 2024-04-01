@@ -9,6 +9,26 @@ import (
 
 var ErrNetworkNotFound = errors.New("chain not found")
 
+type InternalName string
+
+const (
+	NameArbitrum     InternalName = "arbitrum"
+	NameBase         InternalName = "base"
+	NameBoba         InternalName = "boba"
+	NameBlast        InternalName = "blast"
+	NameBsc          InternalName = "bsc"
+	NameFilecoin     InternalName = "filecoin"
+	NameEthereum     InternalName = "ethereum"
+	NameMoonbeam     InternalName = "moonbeam"
+	NameOptimism     InternalName = "optimism"
+	NamePolygon      InternalName = "polygon"
+	NameRootstock    InternalName = "rootstock"
+	NameScroll       InternalName = "scroll"
+	NamePolygonZkevm InternalName = "polygon-zkevm"
+	NameZksync       InternalName = "zksync"
+	NameManta        InternalName = "manta"
+)
+
 var networksByName = map[string]Network{
 	"arbitrum":      Arbitrum,
 	"base":          Base,
