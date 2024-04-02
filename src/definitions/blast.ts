@@ -34,7 +34,7 @@ export const blast = makeConfig({
     },
   },
 
-  defaultPool: "0xf52b4b69123cbcf07798ae8265642793b2e8990c",
+  defaultPool: "0xf5A23bDD36a56EDe75D503F6f643d5eaF25B1a8F",
   defaultToken0: "0x4300000000000000000000000000000000000003",
   defaultToken1: "0x4300000000000000000000000000000000000004",
   tokenList: [
@@ -45,6 +45,7 @@ export const blast = makeConfig({
     "0x4300000000000000000000000000000000000003",
   ],
   watchlist: [
+    "0xf5A23bDD36a56EDe75D503F6f643d5eaF25B1a8F",
     "0xf52b4b69123cbcf07798ae8265642793b2e8990c",
     "0xf52b4b69123cbcf07798ae8265642793b2e8990c",
     "0x310a0a4bc2edd2f29321356d880e0906d7700c14",
