@@ -1,6 +1,6 @@
 import { filecoin as chain } from "viem/chains";
 import { makeConfig } from "../util";
-import {} from "viem";
+import { } from "viem";
 
 export const filecoin = makeConfig({
   ...chain,
@@ -43,11 +43,18 @@ export const filecoin = makeConfig({
     limitOrderRegistry: "0xded8791056aa39581460a005a3c400a281e24bd7",
     limitOrderRegistryDeployBlock: 3413267,
   },
-  defaultPool: "0x14d44c7ef81f6c18f5d22e0962f0279d83e80b05",
-  defaultToken0: "0xb829b68f57cc546da7e5806a929e53be32a4625d",
-  defaultToken1: "0xeb466342c4d449bc9f53a865d5cb90586f405215",
+  defaultPool: "0x74eb355808481587a1fa7101c210592e8d591e34",
+  defaultToken0: "0x2421db204968a367cc2c866cd057fa754cb84edf",
+  defaultToken1: "0x60e1773636cf5e4a227d9ac24f20feca034ee25a",
   tokenList: [
-    { symbol: "WFIL", address: "0x60E1773636CF5E4A227d9AC24F20fEca034ee25A" },
+    {
+      symbol: "WFIL",
+      address: "0x60E1773636CF5E4A227d9AC24F20fEca034ee25A",
+    },
+    {
+      symbol: "celerUSDC",
+      address: "0x2421db204968a367cc2c866cd057fa754cb84edf",
+    },
     {
       symbol: "axlWETH",
       address: "0xb829b68f57CC546dA7E5806A929e53bE32a4625D",
@@ -72,7 +79,7 @@ export const filecoin = makeConfig({
     "0x422849b355039bc58f2780cc4854919fc9cfaf94",
   ],
   watchlist: [
-    "0x14d44c7ef81f6c18f5d22e0962f0279d83e80b05",
+    "0x74eb355808481587a1fa7101c210592e8d591e34",
     "0x9d8ea62e1264ab667d234b5610774a08e608e3b8",
     "0x443a6243a36ef0ae1c46523d563c15abd787f4e9",
     "0xca166403c6f41e1fecc0eb40ac1947fd6399d5c5",
