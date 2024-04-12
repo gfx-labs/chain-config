@@ -1879,6 +1879,7 @@ const MAINNET_CHAINS = [
     polygonZkEvm,
     zkSync,
     manta,
+    linea,
 ];
 
 exports.MAINNET_CHAINS = MAINNET_CHAINS;

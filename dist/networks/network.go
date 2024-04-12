@@ -27,6 +27,7 @@ const (
 	NamePolygonZkevm InternalName = "polygon-zkevm"
 	NameZksync       InternalName = "zksync"
 	NameManta        InternalName = "manta"
+	NameLinea        InternalName = "linea"
 )
 
 var networksByName = map[string]Network{
@@ -45,6 +46,7 @@ var networksByName = map[string]Network{
 	"polygon-zkevm": PolygonZkevm,
 	"zksync":        Zksync,
 	"manta":         Manta,
+	"linea":         Linea,
 }
 
 var networksById = map[int]Network{
@@ -63,6 +65,7 @@ var networksById = map[int]Network{
 	1101:   PolygonZkevm,
 	324:    Zksync,
 	169:    Manta,
+	59144:  Linea,
 }
 
 func NetworkByName(name string) (*Network, error) {
