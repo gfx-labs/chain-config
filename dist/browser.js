@@ -703,6 +703,7 @@
 
   const linea = makeConfig({
       ...chains.linea,
+      name: "Linea",
       blockTimeSeconds: 3,
       sortIndex: 15,
       logoUrl: "https://assets.oku.trade/linea-logo.svg",

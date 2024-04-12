@@ -1653,6 +1653,7 @@ declare const filecoin: Readonly<{
     fees?: import("viem").ChainFees<undefined> | undefined;
 }>;
 declare const linea: Readonly<{
+    name: "Linea";
     blockTimeSeconds: 3;
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/linea-logo.svg";
@@ -1721,7 +1722,6 @@ declare const linea: Readonly<{
         };
     };
     id: 59144;
-    name: "Linea Mainnet";
     nativeCurrency: {
         readonly name: "Linea Ether";
         readonly symbol: "ETH";
@@ -10205,6 +10205,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     fees?: import("viem").ChainFees<undefined> | undefined;
     network: "manta";
 }>, Readonly<{
+    name: "Linea";
     blockTimeSeconds: 3;
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/linea-logo.svg";
@@ -10273,7 +10274,6 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         };
     };
     id: 59144;
-    name: "Linea Mainnet";
     nativeCurrency: {
         readonly name: "Linea Ether";
         readonly symbol: "ETH";
