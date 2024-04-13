@@ -9,7 +9,7 @@ var Linea Network = Network{
 	LogoUrl:           "https://assets.oku.trade/linea-logo.svg",
 	SortIndex:         15,
 	SafeReorgDistance: 100,
-	DefaultPool:       common.HexToAddress("0xff577f0e828a878743ecc5e2632cbf65cecf17cf"),
+	DefaultPool:       common.HexToAddress("0xc48622190a6b91d64ee7459c62fade9abe61b48a"),
 	InternalName:      "linea",
 	ExternalId: map[string]string{
 		"zerion": "linea",
@@ -19,7 +19,7 @@ var Linea Network = Network{
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0x176211869ca2b568f2a7d4ee941e073a821ee1ff"), common.HexToAddress("0xa219439258ca9da29e9cc4ce5596924745e12b93"), common.HexToAddress("0x4af15ec2a0bd43db75dd04e62faa3b8ef36b00d5")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x176211869ca2b568f2a7d4ee941e073a821ee1ff"): {}, common.HexToAddress("0xa219439258ca9da29e9cc4ce5596924745e12b93"): {}, common.HexToAddress("0x4af15ec2a0bd43db75dd04e62faa3b8ef36b00d5"): {}},
-	Watchlist:        []common.Address{},
+	Watchlist:        []common.Address{common.HexToAddress("0xc48622190a6b91d64ee7459c62fade9abe61b48a"), common.HexToAddress("0x5856edf9212bdcec74301ec78afc573b62d6a283"), common.HexToAddress("0xf8296e87192aa71158bd9ba323fc2e1d9a047aa2"), common.HexToAddress("0x93f626d0e471279bd8d1420959cc881bdacfdab1"), common.HexToAddress("0xfe64636280a98d21701a607e6a52ed5d62bacfe4"), common.HexToAddress("0xf2d33caaedc4daab2c1f0bfc7cccb03a9acf3e4e"), common.HexToAddress("0xe848d169080a0022039fcaefc19263c410fe3520"), common.HexToAddress("0x30b44df5010f8b2a4d4e566a2ba638496e76a8fc"), common.HexToAddress("0x42a72c7fbb355b2cfe08f8716595f3f3509b3bea")},
 	BlockTimeSeconds: 3,
 	Oku: OkuMetadata{
 		LimitOrderRegistry:            common.HexToAddress("0x63c8527f670d4eb3401c80c5905ceca8727f1e74"),
