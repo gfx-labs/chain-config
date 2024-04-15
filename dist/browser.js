@@ -608,8 +608,8 @@
       blockExplorers: {
           ...chains.filecoin.blockExplorers,
           default: {
-              name: "FVM Explorer",
-              url: "https://fvm.starboard.ventures/explorer",
+              name: "Blockscout",
+              url: "https://filecoin.blockscout.com",
           },
       },
       logoUrl: "https://assets.oku.trade/filecoin-logo.svg",
