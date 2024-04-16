@@ -57,6 +57,7 @@ type Network struct { <% for(const prop of props_1) {%>
     <%- helpers.displayProp(prop) %> <% } %>
 
     ChainId int `json:"chainId"`
+    BlockExplorers map[string]string
     StablecoinMap map[common.Address]struct{}
 }
 

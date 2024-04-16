@@ -108,8 +108,9 @@ type Network struct {
 	Oku               OkuMetadata
 	Contracts         map[string]ChainContract
 
-	ChainId       int `json:"chainId"`
-	StablecoinMap map[common.Address]struct{}
+	ChainId        int `json:"chainId"`
+	BlockExplorers map[string]string
+	StablecoinMap  map[common.Address]struct{}
 }
 
 type UniswapMetadata struct {

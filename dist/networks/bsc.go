@@ -9,8 +9,11 @@ var Bsc Network = Network{
 	LogoUrl:           "https://assets.oku.trade/bsc-logo.svg",
 	SortIndex:         9,
 	SafeReorgDistance: 90000,
-	DefaultPool:       common.HexToAddress("0x47a90a2d92a8367a91efa1906bfc8c1e05bf10c4"),
-	InternalName:      "bsc",
+	BlockExplorers: map[string]string{
+		"default": "https://bscscan.com",
+	},
+	DefaultPool:  common.HexToAddress("0x47a90a2d92a8367a91efa1906bfc8c1e05bf10c4"),
+	InternalName: "bsc",
 	ExternalId: map[string]string{
 		"zerion": "binance-smart-chain",
 		"debank": "bsc",

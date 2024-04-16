@@ -9,8 +9,11 @@ var Polygon Network = Network{
 	LogoUrl:           "https://assets.oku.trade/polygon-logo.webp",
 	SortIndex:         3,
 	SafeReorgDistance: 90000,
-	DefaultPool:       common.HexToAddress("0xa374094527e1673a86de625aa59517c5de346d32"),
-	InternalName:      "polygon",
+	BlockExplorers: map[string]string{
+		"default": "https://polygonscan.com",
+	},
+	DefaultPool:  common.HexToAddress("0xa374094527e1673a86de625aa59517c5de346d32"),
+	InternalName: "polygon",
 	ExternalId: map[string]string{
 		"zerion": "polygon",
 		"debank": "matic",

@@ -9,8 +9,11 @@ var Scroll Network = Network{
 	LogoUrl:           "https://assets.oku.trade/scroll-logo.png",
 	SortIndex:         5,
 	SafeReorgDistance: 90000,
-	DefaultPool:       common.HexToAddress("0x813df550a32d4a9d42010d057386429ad2328ed9"),
-	InternalName:      "scroll",
+	BlockExplorers: map[string]string{
+		"default": "https://scrollscan.com",
+	},
+	DefaultPool:  common.HexToAddress("0x813df550a32d4a9d42010d057386429ad2328ed9"),
+	InternalName: "scroll",
 	ExternalId: map[string]string{
 		"zerion": "scroll",
 	},

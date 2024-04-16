@@ -9,8 +9,11 @@ var Arbitrum Network = Network{
 	LogoUrl:           "https://assets.oku.trade/arbitrum-logo.svg",
 	SortIndex:         1,
 	SafeReorgDistance: 180000,
-	DefaultPool:       common.HexToAddress("0xcda53b1f66614552f834ceef361a8d12a0b8dad8"),
-	InternalName:      "arbitrum",
+	BlockExplorers: map[string]string{
+		"default": "https://arbiscan.io",
+	},
+	DefaultPool:  common.HexToAddress("0xcda53b1f66614552f834ceef361a8d12a0b8dad8"),
+	InternalName: "arbitrum",
 	ExternalId: map[string]string{
 		"zerion": "arbitrum",
 		"debank": "arb",

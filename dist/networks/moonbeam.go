@@ -9,8 +9,11 @@ var Moonbeam Network = Network{
 	LogoUrl:           "https://assets.oku.trade/moonbeam-logo.svg",
 	SortIndex:         12,
 	SafeReorgDistance: 90000,
-	DefaultPool:       common.HexToAddress("0xba66370d96a9d61afa66283900b78c1f6ed02782"),
-	InternalName:      "moonbeam",
+	BlockExplorers: map[string]string{
+		"default": "https://moonscan.io",
+	},
+	DefaultPool:  common.HexToAddress("0xba66370d96a9d61afa66283900b78c1f6ed02782"),
+	InternalName: "moonbeam",
 	ExternalId: map[string]string{
 		"debank": "mobm",
 	},

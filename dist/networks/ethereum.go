@@ -9,8 +9,11 @@ var Ethereum Network = Network{
 	LogoUrl:           "https://assets.oku.trade/ethereum-logo.webp",
 	SortIndex:         0,
 	SafeReorgDistance: 90000,
-	DefaultPool:       common.HexToAddress("0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640"),
-	InternalName:      "ethereum",
+	BlockExplorers: map[string]string{
+		"default": "https://etherscan.io",
+	},
+	DefaultPool:  common.HexToAddress("0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640"),
+	InternalName: "ethereum",
 	ExternalId: map[string]string{
 		"zerion": "ethereum",
 		"debank": "eth",

@@ -9,6 +9,7 @@ import (
     var oku = chain.oku;
     var cons = chain.contracts;
     var pxs = oku.pricing;
+    var explorers = chain.blockExplorers;
 %>
 
 var <%- helpers.snakeToCamel(chainName) %> Network = Network{
@@ -16,6 +17,10 @@ var <%- helpers.snakeToCamel(chainName) %> Network = Network{
   LogoUrl: "<%- chain.logoUrl %>",
   SortIndex: <%- chain.sortIndex %>,
   SafeReorgDistance: <%- chain.safeReorgDistance || 90000 %>,
+  BlockExplorers: map[string]string{<% for(const prop of Object.entries(explorers)) {%> <% if(prop[1].name){ %>
+    <%- h.formatValue(prop[0],"s") %>: <%- h.formatValue(prop[1].url,"s") %>,
+    <% } %> <% } %>
+  },
   DefaultPool: <%- helpers.toAddr(chain.defaultPool) %>,
   InternalName:     "<%- chain.internalName %>",
   ExternalId:  map[string]string{ <% for(const prop of Object.entries(chain.externalId)) {%>

@@ -9,8 +9,11 @@ var Optimism Network = Network{
 	LogoUrl:           "https://assets.oku.trade/optimism-logo.svg",
 	SortIndex:         2,
 	SafeReorgDistance: 90000,
-	DefaultPool:       common.HexToAddress("0x1c3140ab59d6caf9fa7459c6f83d4b52ba881d36"),
-	InternalName:      "optimism",
+	BlockExplorers: map[string]string{
+		"default": "https://optimistic.etherscan.io",
+	},
+	DefaultPool:  common.HexToAddress("0x1c3140ab59d6caf9fa7459c6f83d4b52ba881d36"),
+	InternalName: "optimism",
 	ExternalId: map[string]string{
 		"zerion": "optimism",
 		"debank": "op",

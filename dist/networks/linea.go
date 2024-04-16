@@ -9,8 +9,11 @@ var Linea Network = Network{
 	LogoUrl:           "https://assets.oku.trade/linea-logo.svg",
 	SortIndex:         15,
 	SafeReorgDistance: 100,
-	DefaultPool:       common.HexToAddress("0xc48622190a6b91d64ee7459c62fade9abe61b48a"),
-	InternalName:      "linea",
+	BlockExplorers: map[string]string{
+		"default": "https://lineascan.build",
+	},
+	DefaultPool:  common.HexToAddress("0xc48622190a6b91d64ee7459c62fade9abe61b48a"),
+	InternalName: "linea",
 	ExternalId: map[string]string{
 		"zerion": "linea",
 	},

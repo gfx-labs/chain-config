@@ -9,8 +9,11 @@ var Zksync Network = Network{
 	LogoUrl:           "https://assets.oku.trade/zksync-logo.svg",
 	SortIndex:         4,
 	SafeReorgDistance: 90000,
-	DefaultPool:       common.HexToAddress("0xff577f0e828a878743ecc5e2632cbf65cecf17cf"),
-	InternalName:      "zksync",
+	BlockExplorers: map[string]string{
+		"default": "https://era.zksync.network",
+	},
+	DefaultPool:  common.HexToAddress("0xff577f0e828a878743ecc5e2632cbf65cecf17cf"),
+	InternalName: "zksync",
 	ExternalId: map[string]string{
 		"zerion": "zksync-era",
 	},

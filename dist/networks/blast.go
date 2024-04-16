@@ -9,8 +9,11 @@ var Blast Network = Network{
 	LogoUrl:           "https://assets.oku.trade/blast-logo.svg",
 	SortIndex:         14,
 	SafeReorgDistance: 90000,
-	DefaultPool:       common.HexToAddress("0xf5A23bDD36a56EDe75D503F6f643d5eaF25B1a8F"),
-	InternalName:      "blast",
+	BlockExplorers: map[string]string{
+		"default": "https://blastscan.io",
+	},
+	DefaultPool:  common.HexToAddress("0xf5A23bDD36a56EDe75D503F6f643d5eaF25B1a8F"),
+	InternalName: "blast",
 	ExternalId: map[string]string{
 		"zerion": "blast",
 	},

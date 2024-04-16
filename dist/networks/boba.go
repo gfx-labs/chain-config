@@ -9,8 +9,11 @@ var Boba Network = Network{
 	LogoUrl:           "https://assets.oku.trade/boba-logo.svg",
 	SortIndex:         11,
 	SafeReorgDistance: 90000,
-	DefaultPool:       common.HexToAddress("0xdF37543dae7986E48E3ce83F390A828A9F3D23BA"),
-	InternalName:      "boba",
+	BlockExplorers: map[string]string{
+		"default": "https://bobascan.com",
+	},
+	DefaultPool:  common.HexToAddress("0xdF37543dae7986E48E3ce83F390A828A9F3D23BA"),
+	InternalName: "boba",
 	ExternalId: map[string]string{
 		"debank": "boba",
 	},

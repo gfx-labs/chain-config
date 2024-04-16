@@ -9,11 +9,18 @@ var Rootstock Network = Network{
 	LogoUrl:           "https://assets.oku.trade/rootstock-logo.svg",
 	SortIndex:         7,
 	SafeReorgDistance: 90000,
-	DefaultPool:       common.HexToAddress("0xd2ffe51ab4e622a411abbe634832a19d919e9c55"),
-	InternalName:      "rootstock",
-	ExternalId:        map[string]string{},
-	DefaultToken0:     common.HexToAddress("0x542fda317318ebf1d3deaf76e0b632741a7e677d"),
-	DefaultToken1:     common.HexToAddress("0xef213441a85df4d7acbdae0cf78004e1e486bb96"),
+	BlockExplorers: map[string]string{
+		"default": "https://rootstock.blockscout.com",
+
+		"rsk": "https://explorer.rsk.co",
+
+		"blockscout": "https://rootstock.blockscout.com",
+	},
+	DefaultPool:   common.HexToAddress("0xd2ffe51ab4e622a411abbe634832a19d919e9c55"),
+	InternalName:  "rootstock",
+	ExternalId:    map[string]string{},
+	DefaultToken0: common.HexToAddress("0x542fda317318ebf1d3deaf76e0b632741a7e677d"),
+	DefaultToken1: common.HexToAddress("0xef213441a85df4d7acbdae0cf78004e1e486bb96"),
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0xef213441a85df4d7acbdae0cf78004e1e486bb96"), common.HexToAddress("0x3a15461d8ae0f0fb5fa2629e9da7d66a794a6e37")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0xef213441a85df4d7acbdae0cf78004e1e486bb96"): {}, common.HexToAddress("0x3a15461d8ae0f0fb5fa2629e9da7d66a794a6e37"): {}},

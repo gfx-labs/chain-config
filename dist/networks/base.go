@@ -9,8 +9,11 @@ var Base Network = Network{
 	LogoUrl:           "https://assets.oku.trade/base-logo.svg",
 	SortIndex:         8,
 	SafeReorgDistance: 90000,
-	DefaultPool:       common.HexToAddress("0x4c36388be6f416a29c8d8eee81c771ce6be14b18"),
-	InternalName:      "base",
+	BlockExplorers: map[string]string{
+		"default": "https://basescan.org",
+	},
+	DefaultPool:  common.HexToAddress("0x4c36388be6f416a29c8d8eee81c771ce6be14b18"),
+	InternalName: "base",
 	ExternalId: map[string]string{
 		"zerion": "base",
 		"debank": "base",
