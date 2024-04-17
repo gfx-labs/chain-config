@@ -269,11 +269,13 @@ const base = makeConfig({
         { symbol: "cbETH", address: "0x2ae3f1ec7f1f5012cfeab0185bfc7aa3cf0dec22" },
         { symbol: "WETH", address: "0x4200000000000000000000000000000000000006" },
         { symbol: "USDC", address: "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913" },
+        { symbol: "USDT", address: "0xfde4C96c8593536E31F229EA8f37b2ADa2699bb2" },
     ],
     stables: [
         "0xd9aaec86b65d86f6a7b5b1b0c42ffa531710b6ca",
         "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
         "0x50c5725949a6f0c72e6c4a641f24049a917db0cb",
+        "0xfde4C96c8593536E31F229EA8f37b2ADa2699bb2",
     ],
     watchlist: [
         "0x4c36388be6f416a29c8d8eee81c771ce6be14b18",
