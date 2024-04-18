@@ -30,6 +30,25 @@ const (
 	NameLinea        InternalName = "linea"
 )
 
+var AllNetworks = []Network{
+	Arbitrum,
+	Base,
+	Boba,
+	Blast,
+	Bsc,
+	Filecoin,
+	Ethereum,
+	Moonbeam,
+	Optimism,
+	Polygon,
+	Rootstock,
+	Scroll,
+	PolygonZkevm,
+	Zksync,
+	Manta,
+	Linea,
+}
+
 var networksByName = map[string]Network{
 	"arbitrum":      Arbitrum,
 	"base":          Base,
