@@ -1357,7 +1357,7 @@ declare const blast: Readonly<{
 declare const boba: Readonly<{
     name: "Boba";
     sortIndex: 11;
-    blockTimeSeconds: 300;
+    blockTimeSeconds: 2;
     logoUrl: "https://assets.oku.trade/boba-logo.svg";
     safeReorgDistance: 90000;
     externalId: {
@@ -6476,7 +6476,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
 }>, Readonly<{
     name: "Boba";
     sortIndex: 11;
-    blockTimeSeconds: 300;
+    blockTimeSeconds: 2;
     logoUrl: "https://assets.oku.trade/boba-logo.svg";
     safeReorgDistance: 90000;
     externalId: {

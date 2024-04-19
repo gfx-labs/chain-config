@@ -394,7 +394,7 @@
       ...chains.boba,
       name: "Boba",
       sortIndex: 11,
-      blockTimeSeconds: 300,
+      blockTimeSeconds: 2,
       logoUrl: "https://assets.oku.trade/boba-logo.svg",
       safeReorgDistance: 90000,
       externalId: {
