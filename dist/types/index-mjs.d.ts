@@ -294,19 +294,19 @@ declare const base: Readonly<{
                 maxFeePerBlobGas?: `0x${string}` | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
+                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
                 to?: `0x${string}` | null | undefined;
                 from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
-                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
-                accessList?: undefined;
-                blobVersionedHashes?: undefined;
                 blockHash?: `0x${string}` | null | undefined;
                 blockNumber?: `0x${string}` | null | undefined;
                 hash?: `0x${string}` | undefined;
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
+                accessList?: undefined;
+                blobVersionedHashes?: undefined;
                 chainId?: `0x${string}` | undefined;
             } & import("viem/chains").Omit<import("viem/chains").PartialBy<{
                 r: `0x${string}`;
@@ -345,19 +345,19 @@ declare const base: Readonly<{
                 maxFeePerBlobGas?: `0x${string}` | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
+                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
                 to?: `0x${string}` | null | undefined;
                 from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
-                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
-                accessList?: undefined;
-                blobVersionedHashes?: undefined;
                 blockHash?: `0x${string}` | null | undefined;
                 blockNumber?: `0x${string}` | null | undefined;
                 hash?: `0x${string}` | undefined;
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
+                accessList?: undefined;
+                blobVersionedHashes?: undefined;
                 chainId?: `0x${string}` | undefined;
             } & Omit<import("viem").TransactionBase<`0x${string}`, `0x${string}`, boolean>, "typeHex"> & import("viem").FeeValuesEIP1559<`0x${string}`> & {
                 isSystemTx?: boolean | undefined;
@@ -373,19 +373,19 @@ declare const base: Readonly<{
                 maxFeePerBlobGas?: `0x${string}` | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
+                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
                 to?: `0x${string}` | null | undefined;
                 from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
-                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
-                accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: undefined;
                 blockHash?: `0x${string}` | null | undefined;
                 blockNumber?: `0x${string}` | null | undefined;
                 hash?: `0x${string}` | undefined;
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
+                accessList?: import("viem").AccessList | undefined;
+                blobVersionedHashes?: undefined;
                 chainId?: `0x${string}` | undefined;
             } & import("viem/chains").Omit<import("viem/chains").PartialBy<{
                 r: `0x${string}`;
@@ -424,19 +424,19 @@ declare const base: Readonly<{
                 maxFeePerBlobGas?: `0x${string}` | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
+                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
                 to?: `0x${string}` | null | undefined;
                 from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
-                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
-                accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: undefined;
                 blockHash?: `0x${string}` | null | undefined;
                 blockNumber?: `0x${string}` | null | undefined;
                 hash?: `0x${string}` | undefined;
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
+                accessList?: import("viem").AccessList | undefined;
+                blobVersionedHashes?: undefined;
                 chainId?: `0x${string}` | undefined;
             } & import("viem/chains").Omit<import("viem/chains").PartialBy<{
                 blockHash: `0x${string}` | null;
@@ -475,19 +475,19 @@ declare const base: Readonly<{
                 maxFeePerBlobGas?: `0x${string}` | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
+                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
                 to?: `0x${string}` | null | undefined;
                 from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
-                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
-                accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: undefined;
                 blockHash?: `0x${string}` | null | undefined;
                 blockNumber?: `0x${string}` | null | undefined;
                 hash?: `0x${string}` | undefined;
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
+                accessList?: import("viem").AccessList | undefined;
+                blobVersionedHashes?: undefined;
                 chainId?: `0x${string}` | undefined;
             } & import("viem/chains").Omit<import("viem/chains").PartialBy<{
                 blockHash: `0x${string}` | null;
@@ -526,19 +526,19 @@ declare const base: Readonly<{
                 maxFeePerBlobGas?: `0x${string}` | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
+                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
                 to?: `0x${string}` | null | undefined;
                 from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
-                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
-                accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: undefined;
                 blockHash?: `0x${string}` | null | undefined;
                 blockNumber?: `0x${string}` | null | undefined;
                 hash?: `0x${string}` | undefined;
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
+                accessList?: import("viem").AccessList | undefined;
+                blobVersionedHashes?: undefined;
                 chainId?: `0x${string}` | undefined;
             } & Omit<import("viem").TransactionBase<`0x${string}`, `0x${string}`, boolean>, "typeHex"> & import("viem").FeeValuesEIP1559<`0x${string}`> & {
                 isSystemTx?: boolean | undefined;
@@ -554,19 +554,19 @@ declare const base: Readonly<{
                 maxFeePerBlobGas?: `0x${string}` | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
+                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
                 to?: `0x${string}` | null | undefined;
                 from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
-                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
-                accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: undefined;
                 blockHash?: `0x${string}` | null | undefined;
                 blockNumber?: `0x${string}` | null | undefined;
                 hash?: `0x${string}` | undefined;
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
+                accessList?: import("viem").AccessList | undefined;
+                blobVersionedHashes?: undefined;
                 chainId?: `0x${string}` | undefined;
             } & import("viem/chains").Omit<import("viem/chains").PartialBy<{
                 r: `0x${string}`;
@@ -605,19 +605,19 @@ declare const base: Readonly<{
                 maxFeePerBlobGas?: `0x${string}` | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
+                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
                 to?: `0x${string}` | null | undefined;
                 from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
-                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
-                accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: undefined;
                 blockHash?: `0x${string}` | null | undefined;
                 blockNumber?: `0x${string}` | null | undefined;
                 hash?: `0x${string}` | undefined;
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
+                accessList?: import("viem").AccessList | undefined;
+                blobVersionedHashes?: undefined;
                 chainId?: `0x${string}` | undefined;
             } & import("viem/chains").Omit<import("viem/chains").PartialBy<{
                 blockHash: `0x${string}` | null;
@@ -656,19 +656,19 @@ declare const base: Readonly<{
                 maxFeePerBlobGas?: `0x${string}` | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
+                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
                 to?: `0x${string}` | null | undefined;
                 from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
-                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
-                accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: undefined;
                 blockHash?: `0x${string}` | null | undefined;
                 blockNumber?: `0x${string}` | null | undefined;
                 hash?: `0x${string}` | undefined;
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
+                accessList?: import("viem").AccessList | undefined;
+                blobVersionedHashes?: undefined;
                 chainId?: `0x${string}` | undefined;
             } & import("viem/chains").Omit<import("viem/chains").PartialBy<{
                 blockHash: `0x${string}` | null;
@@ -707,19 +707,19 @@ declare const base: Readonly<{
                 maxFeePerBlobGas?: `0x${string}` | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
+                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
                 to?: `0x${string}` | null | undefined;
                 from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
-                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
-                accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: undefined;
                 blockHash?: `0x${string}` | null | undefined;
                 blockNumber?: `0x${string}` | null | undefined;
                 hash?: `0x${string}` | undefined;
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
+                accessList?: import("viem").AccessList | undefined;
+                blobVersionedHashes?: undefined;
                 chainId?: `0x${string}` | undefined;
             } & Omit<import("viem").TransactionBase<`0x${string}`, `0x${string}`, boolean>, "typeHex"> & import("viem").FeeValuesEIP1559<`0x${string}`> & {
                 isSystemTx?: boolean | undefined;
@@ -735,19 +735,19 @@ declare const base: Readonly<{
                 maxFeePerBlobGas?: `0x${string}` | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
+                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
                 to?: `0x${string}` | null | undefined;
                 from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
-                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
-                accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: `0x${string}`[] | undefined;
                 blockHash?: `0x${string}` | null | undefined;
                 blockNumber?: `0x${string}` | null | undefined;
                 hash?: `0x${string}` | undefined;
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
+                accessList?: import("viem").AccessList | undefined;
+                blobVersionedHashes?: `0x${string}`[] | undefined;
                 chainId?: `0x${string}` | undefined;
             } & import("viem/chains").Omit<import("viem/chains").PartialBy<{
                 r: `0x${string}`;
@@ -786,19 +786,19 @@ declare const base: Readonly<{
                 maxFeePerBlobGas?: `0x${string}` | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
+                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
                 to?: `0x${string}` | null | undefined;
                 from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
-                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
-                accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: `0x${string}`[] | undefined;
                 blockHash?: `0x${string}` | null | undefined;
                 blockNumber?: `0x${string}` | null | undefined;
                 hash?: `0x${string}` | undefined;
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
+                accessList?: import("viem").AccessList | undefined;
+                blobVersionedHashes?: `0x${string}`[] | undefined;
                 chainId?: `0x${string}` | undefined;
             } & import("viem/chains").Omit<import("viem/chains").PartialBy<{
                 blockHash: `0x${string}` | null;
@@ -837,19 +837,19 @@ declare const base: Readonly<{
                 maxFeePerBlobGas?: `0x${string}` | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
+                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
                 to?: `0x${string}` | null | undefined;
                 from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
-                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
-                accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: `0x${string}`[] | undefined;
                 blockHash?: `0x${string}` | null | undefined;
                 blockNumber?: `0x${string}` | null | undefined;
                 hash?: `0x${string}` | undefined;
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
+                accessList?: import("viem").AccessList | undefined;
+                blobVersionedHashes?: `0x${string}`[] | undefined;
                 chainId?: `0x${string}` | undefined;
             } & import("viem/chains").Omit<import("viem/chains").PartialBy<{
                 blockHash: `0x${string}` | null;
@@ -888,19 +888,19 @@ declare const base: Readonly<{
                 maxFeePerBlobGas?: `0x${string}` | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
+                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
                 to?: `0x${string}` | null | undefined;
                 from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
-                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
-                accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: `0x${string}`[] | undefined;
                 blockHash?: `0x${string}` | null | undefined;
                 blockNumber?: `0x${string}` | null | undefined;
                 hash?: `0x${string}` | undefined;
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
+                accessList?: import("viem").AccessList | undefined;
+                blobVersionedHashes?: `0x${string}`[] | undefined;
                 chainId?: `0x${string}` | undefined;
             } & import("viem/chains").Omit<import("viem/chains").PartialBy<{
                 blockHash: `0x${string}` | null;
@@ -939,19 +939,19 @@ declare const base: Readonly<{
                 maxFeePerBlobGas?: `0x${string}` | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
+                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
                 to?: `0x${string}` | null | undefined;
                 from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
-                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
-                accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: `0x${string}`[] | undefined;
                 blockHash?: `0x${string}` | null | undefined;
                 blockNumber?: `0x${string}` | null | undefined;
                 hash?: `0x${string}` | undefined;
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
+                accessList?: import("viem").AccessList | undefined;
+                blobVersionedHashes?: `0x${string}`[] | undefined;
                 chainId?: `0x${string}` | undefined;
             } & Omit<import("viem").TransactionBase<`0x${string}`, `0x${string}`, boolean>, "typeHex"> & import("viem").FeeValuesEIP1559<`0x${string}`> & {
                 isSystemTx?: boolean | undefined;
@@ -2251,19 +2251,19 @@ declare const optimism: Readonly<{
                 maxFeePerBlobGas?: `0x${string}` | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
+                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
                 to?: `0x${string}` | null | undefined;
                 from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
-                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
-                accessList?: undefined;
-                blobVersionedHashes?: undefined;
                 blockHash?: `0x${string}` | null | undefined;
                 blockNumber?: `0x${string}` | null | undefined;
                 hash?: `0x${string}` | undefined;
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
+                accessList?: undefined;
+                blobVersionedHashes?: undefined;
                 chainId?: `0x${string}` | undefined;
             } & import("viem/chains").Omit<import("viem/chains").PartialBy<{
                 r: `0x${string}`;
@@ -2302,19 +2302,19 @@ declare const optimism: Readonly<{
                 maxFeePerBlobGas?: `0x${string}` | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
+                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
                 to?: `0x${string}` | null | undefined;
                 from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
-                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
-                accessList?: undefined;
-                blobVersionedHashes?: undefined;
                 blockHash?: `0x${string}` | null | undefined;
                 blockNumber?: `0x${string}` | null | undefined;
                 hash?: `0x${string}` | undefined;
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
+                accessList?: undefined;
+                blobVersionedHashes?: undefined;
                 chainId?: `0x${string}` | undefined;
             } & Omit<import("viem").TransactionBase<`0x${string}`, `0x${string}`, boolean>, "typeHex"> & import("viem").FeeValuesEIP1559<`0x${string}`> & {
                 isSystemTx?: boolean | undefined;
@@ -2330,19 +2330,19 @@ declare const optimism: Readonly<{
                 maxFeePerBlobGas?: `0x${string}` | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
+                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
                 to?: `0x${string}` | null | undefined;
                 from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
-                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
-                accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: undefined;
                 blockHash?: `0x${string}` | null | undefined;
                 blockNumber?: `0x${string}` | null | undefined;
                 hash?: `0x${string}` | undefined;
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
+                accessList?: import("viem").AccessList | undefined;
+                blobVersionedHashes?: undefined;
                 chainId?: `0x${string}` | undefined;
             } & import("viem/chains").Omit<import("viem/chains").PartialBy<{
                 r: `0x${string}`;
@@ -2381,19 +2381,19 @@ declare const optimism: Readonly<{
                 maxFeePerBlobGas?: `0x${string}` | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
+                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
                 to?: `0x${string}` | null | undefined;
                 from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
-                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
-                accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: undefined;
                 blockHash?: `0x${string}` | null | undefined;
                 blockNumber?: `0x${string}` | null | undefined;
                 hash?: `0x${string}` | undefined;
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
+                accessList?: import("viem").AccessList | undefined;
+                blobVersionedHashes?: undefined;
                 chainId?: `0x${string}` | undefined;
             } & import("viem/chains").Omit<import("viem/chains").PartialBy<{
                 blockHash: `0x${string}` | null;
@@ -2432,19 +2432,19 @@ declare const optimism: Readonly<{
                 maxFeePerBlobGas?: `0x${string}` | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
+                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
                 to?: `0x${string}` | null | undefined;
                 from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
-                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
-                accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: undefined;
                 blockHash?: `0x${string}` | null | undefined;
                 blockNumber?: `0x${string}` | null | undefined;
                 hash?: `0x${string}` | undefined;
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
+                accessList?: import("viem").AccessList | undefined;
+                blobVersionedHashes?: undefined;
                 chainId?: `0x${string}` | undefined;
             } & import("viem/chains").Omit<import("viem/chains").PartialBy<{
                 blockHash: `0x${string}` | null;
@@ -2483,19 +2483,19 @@ declare const optimism: Readonly<{
                 maxFeePerBlobGas?: `0x${string}` | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
+                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
                 to?: `0x${string}` | null | undefined;
                 from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
-                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
-                accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: undefined;
                 blockHash?: `0x${string}` | null | undefined;
                 blockNumber?: `0x${string}` | null | undefined;
                 hash?: `0x${string}` | undefined;
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
+                accessList?: import("viem").AccessList | undefined;
+                blobVersionedHashes?: undefined;
                 chainId?: `0x${string}` | undefined;
             } & Omit<import("viem").TransactionBase<`0x${string}`, `0x${string}`, boolean>, "typeHex"> & import("viem").FeeValuesEIP1559<`0x${string}`> & {
                 isSystemTx?: boolean | undefined;
@@ -2511,19 +2511,19 @@ declare const optimism: Readonly<{
                 maxFeePerBlobGas?: `0x${string}` | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
+                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
                 to?: `0x${string}` | null | undefined;
                 from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
-                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
-                accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: undefined;
                 blockHash?: `0x${string}` | null | undefined;
                 blockNumber?: `0x${string}` | null | undefined;
                 hash?: `0x${string}` | undefined;
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
+                accessList?: import("viem").AccessList | undefined;
+                blobVersionedHashes?: undefined;
                 chainId?: `0x${string}` | undefined;
             } & import("viem/chains").Omit<import("viem/chains").PartialBy<{
                 r: `0x${string}`;
@@ -2562,19 +2562,19 @@ declare const optimism: Readonly<{
                 maxFeePerBlobGas?: `0x${string}` | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
+                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
                 to?: `0x${string}` | null | undefined;
                 from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
-                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
-                accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: undefined;
                 blockHash?: `0x${string}` | null | undefined;
                 blockNumber?: `0x${string}` | null | undefined;
                 hash?: `0x${string}` | undefined;
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
+                accessList?: import("viem").AccessList | undefined;
+                blobVersionedHashes?: undefined;
                 chainId?: `0x${string}` | undefined;
             } & import("viem/chains").Omit<import("viem/chains").PartialBy<{
                 blockHash: `0x${string}` | null;
@@ -2613,19 +2613,19 @@ declare const optimism: Readonly<{
                 maxFeePerBlobGas?: `0x${string}` | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
+                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
                 to?: `0x${string}` | null | undefined;
                 from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
-                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
-                accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: undefined;
                 blockHash?: `0x${string}` | null | undefined;
                 blockNumber?: `0x${string}` | null | undefined;
                 hash?: `0x${string}` | undefined;
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
+                accessList?: import("viem").AccessList | undefined;
+                blobVersionedHashes?: undefined;
                 chainId?: `0x${string}` | undefined;
             } & import("viem/chains").Omit<import("viem/chains").PartialBy<{
                 blockHash: `0x${string}` | null;
@@ -2664,19 +2664,19 @@ declare const optimism: Readonly<{
                 maxFeePerBlobGas?: `0x${string}` | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
+                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
                 to?: `0x${string}` | null | undefined;
                 from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
-                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
-                accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: undefined;
                 blockHash?: `0x${string}` | null | undefined;
                 blockNumber?: `0x${string}` | null | undefined;
                 hash?: `0x${string}` | undefined;
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
+                accessList?: import("viem").AccessList | undefined;
+                blobVersionedHashes?: undefined;
                 chainId?: `0x${string}` | undefined;
             } & Omit<import("viem").TransactionBase<`0x${string}`, `0x${string}`, boolean>, "typeHex"> & import("viem").FeeValuesEIP1559<`0x${string}`> & {
                 isSystemTx?: boolean | undefined;
@@ -2692,19 +2692,19 @@ declare const optimism: Readonly<{
                 maxFeePerBlobGas?: `0x${string}` | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
+                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
                 to?: `0x${string}` | null | undefined;
                 from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
-                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
-                accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: `0x${string}`[] | undefined;
                 blockHash?: `0x${string}` | null | undefined;
                 blockNumber?: `0x${string}` | null | undefined;
                 hash?: `0x${string}` | undefined;
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
+                accessList?: import("viem").AccessList | undefined;
+                blobVersionedHashes?: `0x${string}`[] | undefined;
                 chainId?: `0x${string}` | undefined;
             } & import("viem/chains").Omit<import("viem/chains").PartialBy<{
                 r: `0x${string}`;
@@ -2743,19 +2743,19 @@ declare const optimism: Readonly<{
                 maxFeePerBlobGas?: `0x${string}` | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
+                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
                 to?: `0x${string}` | null | undefined;
                 from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
-                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
-                accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: `0x${string}`[] | undefined;
                 blockHash?: `0x${string}` | null | undefined;
                 blockNumber?: `0x${string}` | null | undefined;
                 hash?: `0x${string}` | undefined;
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
+                accessList?: import("viem").AccessList | undefined;
+                blobVersionedHashes?: `0x${string}`[] | undefined;
                 chainId?: `0x${string}` | undefined;
             } & import("viem/chains").Omit<import("viem/chains").PartialBy<{
                 blockHash: `0x${string}` | null;
@@ -2794,19 +2794,19 @@ declare const optimism: Readonly<{
                 maxFeePerBlobGas?: `0x${string}` | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
+                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
                 to?: `0x${string}` | null | undefined;
                 from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
-                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
-                accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: `0x${string}`[] | undefined;
                 blockHash?: `0x${string}` | null | undefined;
                 blockNumber?: `0x${string}` | null | undefined;
                 hash?: `0x${string}` | undefined;
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
+                accessList?: import("viem").AccessList | undefined;
+                blobVersionedHashes?: `0x${string}`[] | undefined;
                 chainId?: `0x${string}` | undefined;
             } & import("viem/chains").Omit<import("viem/chains").PartialBy<{
                 blockHash: `0x${string}` | null;
@@ -2845,19 +2845,19 @@ declare const optimism: Readonly<{
                 maxFeePerBlobGas?: `0x${string}` | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
+                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
                 to?: `0x${string}` | null | undefined;
                 from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
-                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
-                accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: `0x${string}`[] | undefined;
                 blockHash?: `0x${string}` | null | undefined;
                 blockNumber?: `0x${string}` | null | undefined;
                 hash?: `0x${string}` | undefined;
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
+                accessList?: import("viem").AccessList | undefined;
+                blobVersionedHashes?: `0x${string}`[] | undefined;
                 chainId?: `0x${string}` | undefined;
             } & import("viem/chains").Omit<import("viem/chains").PartialBy<{
                 blockHash: `0x${string}` | null;
@@ -2896,19 +2896,19 @@ declare const optimism: Readonly<{
                 maxFeePerBlobGas?: `0x${string}` | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
+                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
                 to?: `0x${string}` | null | undefined;
                 from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
-                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
-                accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: `0x${string}`[] | undefined;
                 blockHash?: `0x${string}` | null | undefined;
                 blockNumber?: `0x${string}` | null | undefined;
                 hash?: `0x${string}` | undefined;
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
+                accessList?: import("viem").AccessList | undefined;
+                blobVersionedHashes?: `0x${string}`[] | undefined;
                 chainId?: `0x${string}` | undefined;
             } & Omit<import("viem").TransactionBase<`0x${string}`, `0x${string}`, boolean>, "typeHex"> & import("viem").FeeValuesEIP1559<`0x${string}`> & {
                 isSystemTx?: boolean | undefined;
@@ -3533,6 +3533,93 @@ declare const scroll: Readonly<{
     };
     sourceId?: number | undefined;
     testnet: false;
+    custom?: Record<string, unknown> | undefined;
+    formatters?: undefined;
+    serializers?: import("viem").ChainSerializers<undefined> | undefined;
+    fees?: import("viem").ChainFees<undefined> | undefined;
+}>;
+declare const seitestnet: Readonly<{
+    blockTimeSeconds: 0.5;
+    sortIndex: 17;
+    logoUrl: "https://assets.oku.trade/sei-logo.webp";
+    safeReorgDistance: 90000;
+    externalId: {};
+    uniswap: {
+        deployBlock: number;
+        poolFactory: "0x32CB2e76E80B2A8abc968985B23408E2D5885341";
+        multicall2: "0x474bD11F7777d0a1EE0B7c0bb48Acd9244A2afCE";
+        tickLens: "0x09E6a35D9c4d6fA4257aeE015793Cd5Cbf8fa6D8";
+        nonfungiblePositionManager: "0x2d1886A4C71df03685ba1e6B0075e285a34e2c30";
+        positionsNFT: "0x2d1886A4C71df03685ba1e6B0075e285a34e2c30";
+        positionsNFTDeployBlock: number;
+        universalRouter: "0x61a27a55f72bbCba64554246BCE2da43C164543B";
+    };
+    token: {
+        usdcAddress: "0xace5f7Ea93439Af39b46d2748fA1aC19951c8d7C";
+        wethAddress: "0x26841a0A5D958B128209F4ea9a1DD7E61558c330";
+    };
+    oku: {
+        limitOrderRegistry: "0x0000000000000000000000000000000000000000";
+        limitOrderRegistryDeployBlock: number;
+        pricing: {
+            nativeWrappedToken: "0x26841a0A5D958B128209F4ea9a1DD7E61558c330";
+            nativeWrappedName: string;
+        };
+    };
+    defaultPool: "0x0000000000000000000000000000000000000000";
+    defaultToken0: "0x26841a0A5D958B128209F4ea9a1DD7E61558c330";
+    defaultToken1: "0xace5f7Ea93439Af39b46d2748fA1aC19951c8d7C";
+    tokenList: ({
+        symbol: string;
+        address: "0x26841a0A5D958B128209F4ea9a1DD7E61558c330";
+    } | {
+        symbol: string;
+        address: "0xace5f7Ea93439Af39b46d2748fA1aC19951c8d7C";
+    })[];
+    stables: "0xace5f7Ea93439Af39b46d2748fA1aC19951c8d7C"[];
+    watchlist: never[];
+    internalName: "seitestnet";
+    contracts: {
+        limitOrder: {
+            address: "0x0000000000000000000000000000000000000000";
+        };
+        nftManager: {
+            address: "0x2d1886A4C71df03685ba1e6B0075e285a34e2c30";
+        };
+        weth9: {
+            address: "0x26841a0A5D958B128209F4ea9a1DD7E61558c330";
+        };
+        multicall2: {
+            address: "0x58A80812EDC79CE80eeF0c9940528f57CafFe2a2";
+        };
+        multicall3: {
+            address: "0xcA11bde05977b3631167028862bE2a173976CA11";
+        };
+        ensRegistry?: import("viem").ChainContract | undefined;
+        ensUniversalResolver?: import("viem").ChainContract | undefined;
+    };
+    blockExplorers: {
+        readonly default: {
+            readonly name: "Seitrace";
+            readonly url: "https://seitrace.com";
+        };
+    };
+    id: 713715;
+    name: "Sei Devnet";
+    nativeCurrency: {
+        readonly name: "Sei";
+        readonly symbol: "SEI";
+        readonly decimals: 18;
+    };
+    rpcUrls: {
+        readonly default: {
+            readonly http: readonly [
+                "https://evm-rpc-arctic-1.sei-apis.com"
+            ];
+        };
+    };
+    sourceId?: number | undefined;
+    testnet: true;
     custom?: Record<string, unknown> | undefined;
     formatters?: undefined;
     serializers?: import("viem").ChainSerializers<undefined> | undefined;
@@ -4681,7 +4768,7 @@ declare const zkSync: Readonly<{
                 accessList?: import("viem").AccessList | undefined;
                 blobs?: readonly `0x${string}`[] | readonly Uint8Array[] | undefined;
                 blobVersionedHashes?: readonly `0x${string}`[] | undefined;
-                kzg?: import("viem/_types/types/kzg").Kzg | undefined;
+                kzg?: import("viem").Kzg | undefined;
                 sidecars?: readonly import("viem").BlobSidecar<`0x${string}`>[] | undefined;
                 type?: "legacy" | "eip2930" | "eip1559" | "eip4844" | "priority" | "eip712" | undefined;
             } & {
@@ -4721,7 +4808,7 @@ declare const zkSync: Readonly<{
                 accessList?: import("viem").AccessList | undefined;
                 blobs?: readonly `0x${string}`[] | readonly Uint8Array[] | undefined;
                 blobVersionedHashes?: readonly `0x${string}`[] | undefined;
-                kzg?: import("viem/_types/types/kzg").Kzg | undefined;
+                kzg?: import("viem").Kzg | undefined;
                 sidecars?: readonly import("viem").BlobSidecar<`0x${string}`>[] | undefined;
                 type?: "legacy" | "eip2930" | "eip1559" | "eip4844" | "priority" | "eip712" | undefined;
             } & {
@@ -4761,7 +4848,7 @@ declare const zkSync: Readonly<{
                 accessList?: import("viem").AccessList | undefined;
                 blobs?: readonly `0x${string}`[] | readonly Uint8Array[] | undefined;
                 blobVersionedHashes?: readonly `0x${string}`[] | undefined;
-                kzg?: import("viem/_types/types/kzg").Kzg | undefined;
+                kzg?: import("viem").Kzg | undefined;
                 sidecars?: readonly import("viem").BlobSidecar<`0x${string}`>[] | undefined;
                 type?: "legacy" | "eip2930" | "eip1559" | "eip4844" | "priority" | "eip712" | undefined;
             } & {
@@ -4801,7 +4888,7 @@ declare const zkSync: Readonly<{
                 accessList?: import("viem").AccessList | undefined;
                 blobs?: readonly `0x${string}`[] | readonly Uint8Array[] | undefined;
                 blobVersionedHashes?: readonly `0x${string}`[] | undefined;
-                kzg?: import("viem/_types/types/kzg").Kzg | undefined;
+                kzg?: import("viem").Kzg | undefined;
                 sidecars?: readonly import("viem").BlobSidecar<`0x${string}`>[] | undefined;
                 type?: "legacy" | "eip2930" | "eip1559" | "eip4844" | "priority" | "eip712" | undefined;
             } & {
@@ -4818,7 +4905,7 @@ declare const zkSync: Readonly<{
                 accessList?: import("viem").AccessList | undefined;
                 blobs: readonly `0x${string}`[] | readonly Uint8Array[];
                 blobVersionedHashes?: readonly `0x${string}`[] | undefined;
-                kzg?: import("viem/_types/types/kzg").Kzg | undefined;
+                kzg?: import("viem").Kzg | undefined;
                 sidecars?: readonly import("viem").BlobSidecar<`0x${string}`>[] | undefined;
                 type?: "eip4844" | undefined;
             } & {
@@ -4841,7 +4928,7 @@ declare const zkSync: Readonly<{
                 accessList?: import("viem").AccessList | undefined;
                 blobs?: readonly `0x${string}`[] | readonly Uint8Array[] | undefined;
                 blobVersionedHashes?: readonly `0x${string}`[] | undefined;
-                kzg?: import("viem/_types/types/kzg").Kzg | undefined;
+                kzg?: import("viem").Kzg | undefined;
                 sidecars?: readonly import("viem").BlobSidecar<`0x${string}`>[] | undefined;
                 type?: "legacy" | "eip2930" | "eip1559" | "eip4844" | "priority" | "eip712" | undefined;
             } & Omit<import("viem").TransactionRequestBase<bigint, number>, "type"> & import("viem").ExactPartial<import("viem").FeeValuesEIP1559<bigint>> & {
@@ -4866,7 +4953,7 @@ declare const zkSync: Readonly<{
                 accessList?: import("viem").AccessList | undefined;
                 blobs?: readonly `0x${string}`[] | readonly Uint8Array[] | undefined;
                 blobVersionedHashes?: readonly `0x${string}`[] | undefined;
-                kzg?: import("viem/_types/types/kzg").Kzg | undefined;
+                kzg?: import("viem").Kzg | undefined;
                 sidecars?: readonly import("viem").BlobSidecar<`0x${string}`>[] | undefined;
                 type?: "legacy" | "eip2930" | "eip1559" | "eip4844" | "priority" | "eip712" | undefined;
             } & Omit<import("viem").TransactionRequestBase<bigint, number>, "type"> & import("viem").ExactPartial<import("viem").FeeValuesEIP1559<bigint>> & {
@@ -5107,7 +5194,7 @@ declare const zkSync: Readonly<{
                 accessList?: import("viem").AccessList | undefined;
                 blobs: readonly `0x${string}`[] | readonly Uint8Array[];
                 blobVersionedHashes?: readonly `0x${string}`[] | undefined;
-                kzg?: import("viem/_types/types/kzg").Kzg | undefined;
+                kzg?: import("viem").Kzg | undefined;
                 sidecars?: readonly import("viem").BlobSidecar<`0x${string}`>[] | undefined;
                 type?: "0x3" | undefined;
                 eip712Meta?: undefined;
@@ -5125,7 +5212,7 @@ declare const zkSync: Readonly<{
                 accessList?: import("viem").AccessList | undefined;
                 blobs: readonly `0x${string}`[] | readonly Uint8Array[];
                 blobVersionedHashes?: readonly `0x${string}`[] | undefined;
-                kzg?: import("viem/_types/types/kzg").Kzg | undefined;
+                kzg?: import("viem").Kzg | undefined;
                 sidecars?: readonly import("viem").BlobSidecar<`0x${string}`>[] | undefined;
                 type: "0xff" | "0x71";
                 eip712Meta: import("viem/chains").ZkSyncEip712Meta;
@@ -5504,19 +5591,19 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 maxFeePerBlobGas?: `0x${string}` | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
+                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
                 to?: `0x${string}` | null | undefined;
                 from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
-                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
-                accessList?: undefined;
-                blobVersionedHashes?: undefined;
                 blockHash?: `0x${string}` | null | undefined;
                 blockNumber?: `0x${string}` | null | undefined;
                 hash?: `0x${string}` | undefined;
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
+                accessList?: undefined;
+                blobVersionedHashes?: undefined;
                 chainId?: `0x${string}` | undefined;
             } & import("viem/chains").Omit<import("viem/chains").PartialBy<{
                 r: `0x${string}`;
@@ -5555,19 +5642,19 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 maxFeePerBlobGas?: `0x${string}` | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
+                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
                 to?: `0x${string}` | null | undefined;
                 from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
-                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
-                accessList?: undefined;
-                blobVersionedHashes?: undefined;
                 blockHash?: `0x${string}` | null | undefined;
                 blockNumber?: `0x${string}` | null | undefined;
                 hash?: `0x${string}` | undefined;
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
+                accessList?: undefined;
+                blobVersionedHashes?: undefined;
                 chainId?: `0x${string}` | undefined;
             } & Omit<import("viem").TransactionBase<`0x${string}`, `0x${string}`, boolean>, "typeHex"> & import("viem").FeeValuesEIP1559<`0x${string}`> & {
                 isSystemTx?: boolean | undefined;
@@ -5583,19 +5670,19 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 maxFeePerBlobGas?: `0x${string}` | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
+                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
                 to?: `0x${string}` | null | undefined;
                 from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
-                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
-                accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: undefined;
                 blockHash?: `0x${string}` | null | undefined;
                 blockNumber?: `0x${string}` | null | undefined;
                 hash?: `0x${string}` | undefined;
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
+                accessList?: import("viem").AccessList | undefined;
+                blobVersionedHashes?: undefined;
                 chainId?: `0x${string}` | undefined;
             } & import("viem/chains").Omit<import("viem/chains").PartialBy<{
                 r: `0x${string}`;
@@ -5634,19 +5721,19 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 maxFeePerBlobGas?: `0x${string}` | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
+                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
                 to?: `0x${string}` | null | undefined;
                 from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
-                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
-                accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: undefined;
                 blockHash?: `0x${string}` | null | undefined;
                 blockNumber?: `0x${string}` | null | undefined;
                 hash?: `0x${string}` | undefined;
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
+                accessList?: import("viem").AccessList | undefined;
+                blobVersionedHashes?: undefined;
                 chainId?: `0x${string}` | undefined;
             } & import("viem/chains").Omit<import("viem/chains").PartialBy<{
                 blockHash: `0x${string}` | null;
@@ -5685,19 +5772,19 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 maxFeePerBlobGas?: `0x${string}` | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
+                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
                 to?: `0x${string}` | null | undefined;
                 from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
-                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
-                accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: undefined;
                 blockHash?: `0x${string}` | null | undefined;
                 blockNumber?: `0x${string}` | null | undefined;
                 hash?: `0x${string}` | undefined;
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
+                accessList?: import("viem").AccessList | undefined;
+                blobVersionedHashes?: undefined;
                 chainId?: `0x${string}` | undefined;
             } & import("viem/chains").Omit<import("viem/chains").PartialBy<{
                 blockHash: `0x${string}` | null;
@@ -5736,19 +5823,19 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 maxFeePerBlobGas?: `0x${string}` | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
+                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
                 to?: `0x${string}` | null | undefined;
                 from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
-                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
-                accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: undefined;
                 blockHash?: `0x${string}` | null | undefined;
                 blockNumber?: `0x${string}` | null | undefined;
                 hash?: `0x${string}` | undefined;
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
+                accessList?: import("viem").AccessList | undefined;
+                blobVersionedHashes?: undefined;
                 chainId?: `0x${string}` | undefined;
             } & Omit<import("viem").TransactionBase<`0x${string}`, `0x${string}`, boolean>, "typeHex"> & import("viem").FeeValuesEIP1559<`0x${string}`> & {
                 isSystemTx?: boolean | undefined;
@@ -5764,19 +5851,19 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 maxFeePerBlobGas?: `0x${string}` | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
+                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
                 to?: `0x${string}` | null | undefined;
                 from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
-                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
-                accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: undefined;
                 blockHash?: `0x${string}` | null | undefined;
                 blockNumber?: `0x${string}` | null | undefined;
                 hash?: `0x${string}` | undefined;
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
+                accessList?: import("viem").AccessList | undefined;
+                blobVersionedHashes?: undefined;
                 chainId?: `0x${string}` | undefined;
             } & import("viem/chains").Omit<import("viem/chains").PartialBy<{
                 r: `0x${string}`;
@@ -5815,19 +5902,19 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 maxFeePerBlobGas?: `0x${string}` | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
+                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
                 to?: `0x${string}` | null | undefined;
                 from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
-                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
-                accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: undefined;
                 blockHash?: `0x${string}` | null | undefined;
                 blockNumber?: `0x${string}` | null | undefined;
                 hash?: `0x${string}` | undefined;
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
+                accessList?: import("viem").AccessList | undefined;
+                blobVersionedHashes?: undefined;
                 chainId?: `0x${string}` | undefined;
             } & import("viem/chains").Omit<import("viem/chains").PartialBy<{
                 blockHash: `0x${string}` | null;
@@ -5866,19 +5953,19 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 maxFeePerBlobGas?: `0x${string}` | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
+                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
                 to?: `0x${string}` | null | undefined;
                 from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
-                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
-                accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: undefined;
                 blockHash?: `0x${string}` | null | undefined;
                 blockNumber?: `0x${string}` | null | undefined;
                 hash?: `0x${string}` | undefined;
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
+                accessList?: import("viem").AccessList | undefined;
+                blobVersionedHashes?: undefined;
                 chainId?: `0x${string}` | undefined;
             } & import("viem/chains").Omit<import("viem/chains").PartialBy<{
                 blockHash: `0x${string}` | null;
@@ -5917,19 +6004,19 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 maxFeePerBlobGas?: `0x${string}` | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
+                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
                 to?: `0x${string}` | null | undefined;
                 from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
-                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
-                accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: undefined;
                 blockHash?: `0x${string}` | null | undefined;
                 blockNumber?: `0x${string}` | null | undefined;
                 hash?: `0x${string}` | undefined;
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
+                accessList?: import("viem").AccessList | undefined;
+                blobVersionedHashes?: undefined;
                 chainId?: `0x${string}` | undefined;
             } & Omit<import("viem").TransactionBase<`0x${string}`, `0x${string}`, boolean>, "typeHex"> & import("viem").FeeValuesEIP1559<`0x${string}`> & {
                 isSystemTx?: boolean | undefined;
@@ -5945,19 +6032,19 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 maxFeePerBlobGas?: `0x${string}` | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
+                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
                 to?: `0x${string}` | null | undefined;
                 from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
-                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
-                accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: `0x${string}`[] | undefined;
                 blockHash?: `0x${string}` | null | undefined;
                 blockNumber?: `0x${string}` | null | undefined;
                 hash?: `0x${string}` | undefined;
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
+                accessList?: import("viem").AccessList | undefined;
+                blobVersionedHashes?: `0x${string}`[] | undefined;
                 chainId?: `0x${string}` | undefined;
             } & import("viem/chains").Omit<import("viem/chains").PartialBy<{
                 r: `0x${string}`;
@@ -5996,19 +6083,19 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 maxFeePerBlobGas?: `0x${string}` | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
+                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
                 to?: `0x${string}` | null | undefined;
                 from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
-                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
-                accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: `0x${string}`[] | undefined;
                 blockHash?: `0x${string}` | null | undefined;
                 blockNumber?: `0x${string}` | null | undefined;
                 hash?: `0x${string}` | undefined;
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
+                accessList?: import("viem").AccessList | undefined;
+                blobVersionedHashes?: `0x${string}`[] | undefined;
                 chainId?: `0x${string}` | undefined;
             } & import("viem/chains").Omit<import("viem/chains").PartialBy<{
                 blockHash: `0x${string}` | null;
@@ -6047,19 +6134,19 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 maxFeePerBlobGas?: `0x${string}` | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
+                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
                 to?: `0x${string}` | null | undefined;
                 from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
-                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
-                accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: `0x${string}`[] | undefined;
                 blockHash?: `0x${string}` | null | undefined;
                 blockNumber?: `0x${string}` | null | undefined;
                 hash?: `0x${string}` | undefined;
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
+                accessList?: import("viem").AccessList | undefined;
+                blobVersionedHashes?: `0x${string}`[] | undefined;
                 chainId?: `0x${string}` | undefined;
             } & import("viem/chains").Omit<import("viem/chains").PartialBy<{
                 blockHash: `0x${string}` | null;
@@ -6098,19 +6185,19 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 maxFeePerBlobGas?: `0x${string}` | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
+                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
                 to?: `0x${string}` | null | undefined;
                 from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
-                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
-                accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: `0x${string}`[] | undefined;
                 blockHash?: `0x${string}` | null | undefined;
                 blockNumber?: `0x${string}` | null | undefined;
                 hash?: `0x${string}` | undefined;
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
+                accessList?: import("viem").AccessList | undefined;
+                blobVersionedHashes?: `0x${string}`[] | undefined;
                 chainId?: `0x${string}` | undefined;
             } & import("viem/chains").Omit<import("viem/chains").PartialBy<{
                 blockHash: `0x${string}` | null;
@@ -6149,19 +6236,19 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 maxFeePerBlobGas?: `0x${string}` | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
+                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
                 to?: `0x${string}` | null | undefined;
                 from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
-                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
-                accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: `0x${string}`[] | undefined;
                 blockHash?: `0x${string}` | null | undefined;
                 blockNumber?: `0x${string}` | null | undefined;
                 hash?: `0x${string}` | undefined;
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
+                accessList?: import("viem").AccessList | undefined;
+                blobVersionedHashes?: `0x${string}`[] | undefined;
                 chainId?: `0x${string}` | undefined;
             } & Omit<import("viem").TransactionBase<`0x${string}`, `0x${string}`, boolean>, "typeHex"> & import("viem").FeeValuesEIP1559<`0x${string}`> & {
                 isSystemTx?: boolean | undefined;
@@ -7246,19 +7333,19 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 maxFeePerBlobGas?: `0x${string}` | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
+                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
                 to?: `0x${string}` | null | undefined;
                 from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
-                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
-                accessList?: undefined;
-                blobVersionedHashes?: undefined;
                 blockHash?: `0x${string}` | null | undefined;
                 blockNumber?: `0x${string}` | null | undefined;
                 hash?: `0x${string}` | undefined;
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
+                accessList?: undefined;
+                blobVersionedHashes?: undefined;
                 chainId?: `0x${string}` | undefined;
             } & import("viem/chains").Omit<import("viem/chains").PartialBy<{
                 r: `0x${string}`;
@@ -7297,19 +7384,19 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 maxFeePerBlobGas?: `0x${string}` | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
+                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
                 to?: `0x${string}` | null | undefined;
                 from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
-                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
-                accessList?: undefined;
-                blobVersionedHashes?: undefined;
                 blockHash?: `0x${string}` | null | undefined;
                 blockNumber?: `0x${string}` | null | undefined;
                 hash?: `0x${string}` | undefined;
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
+                accessList?: undefined;
+                blobVersionedHashes?: undefined;
                 chainId?: `0x${string}` | undefined;
             } & Omit<import("viem").TransactionBase<`0x${string}`, `0x${string}`, boolean>, "typeHex"> & import("viem").FeeValuesEIP1559<`0x${string}`> & {
                 isSystemTx?: boolean | undefined;
@@ -7325,19 +7412,19 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 maxFeePerBlobGas?: `0x${string}` | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
+                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
                 to?: `0x${string}` | null | undefined;
                 from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
-                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
-                accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: undefined;
                 blockHash?: `0x${string}` | null | undefined;
                 blockNumber?: `0x${string}` | null | undefined;
                 hash?: `0x${string}` | undefined;
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
+                accessList?: import("viem").AccessList | undefined;
+                blobVersionedHashes?: undefined;
                 chainId?: `0x${string}` | undefined;
             } & import("viem/chains").Omit<import("viem/chains").PartialBy<{
                 r: `0x${string}`;
@@ -7376,19 +7463,19 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 maxFeePerBlobGas?: `0x${string}` | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
+                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
                 to?: `0x${string}` | null | undefined;
                 from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
-                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
-                accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: undefined;
                 blockHash?: `0x${string}` | null | undefined;
                 blockNumber?: `0x${string}` | null | undefined;
                 hash?: `0x${string}` | undefined;
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
+                accessList?: import("viem").AccessList | undefined;
+                blobVersionedHashes?: undefined;
                 chainId?: `0x${string}` | undefined;
             } & import("viem/chains").Omit<import("viem/chains").PartialBy<{
                 blockHash: `0x${string}` | null;
@@ -7427,19 +7514,19 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 maxFeePerBlobGas?: `0x${string}` | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
+                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
                 to?: `0x${string}` | null | undefined;
                 from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
-                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
-                accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: undefined;
                 blockHash?: `0x${string}` | null | undefined;
                 blockNumber?: `0x${string}` | null | undefined;
                 hash?: `0x${string}` | undefined;
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
+                accessList?: import("viem").AccessList | undefined;
+                blobVersionedHashes?: undefined;
                 chainId?: `0x${string}` | undefined;
             } & import("viem/chains").Omit<import("viem/chains").PartialBy<{
                 blockHash: `0x${string}` | null;
@@ -7478,19 +7565,19 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 maxFeePerBlobGas?: `0x${string}` | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
+                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
                 to?: `0x${string}` | null | undefined;
                 from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
-                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
-                accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: undefined;
                 blockHash?: `0x${string}` | null | undefined;
                 blockNumber?: `0x${string}` | null | undefined;
                 hash?: `0x${string}` | undefined;
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
+                accessList?: import("viem").AccessList | undefined;
+                blobVersionedHashes?: undefined;
                 chainId?: `0x${string}` | undefined;
             } & Omit<import("viem").TransactionBase<`0x${string}`, `0x${string}`, boolean>, "typeHex"> & import("viem").FeeValuesEIP1559<`0x${string}`> & {
                 isSystemTx?: boolean | undefined;
@@ -7506,19 +7593,19 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 maxFeePerBlobGas?: `0x${string}` | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
+                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
                 to?: `0x${string}` | null | undefined;
                 from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
-                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
-                accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: undefined;
                 blockHash?: `0x${string}` | null | undefined;
                 blockNumber?: `0x${string}` | null | undefined;
                 hash?: `0x${string}` | undefined;
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
+                accessList?: import("viem").AccessList | undefined;
+                blobVersionedHashes?: undefined;
                 chainId?: `0x${string}` | undefined;
             } & import("viem/chains").Omit<import("viem/chains").PartialBy<{
                 r: `0x${string}`;
@@ -7557,19 +7644,19 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 maxFeePerBlobGas?: `0x${string}` | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
+                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
                 to?: `0x${string}` | null | undefined;
                 from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
-                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
-                accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: undefined;
                 blockHash?: `0x${string}` | null | undefined;
                 blockNumber?: `0x${string}` | null | undefined;
                 hash?: `0x${string}` | undefined;
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
+                accessList?: import("viem").AccessList | undefined;
+                blobVersionedHashes?: undefined;
                 chainId?: `0x${string}` | undefined;
             } & import("viem/chains").Omit<import("viem/chains").PartialBy<{
                 blockHash: `0x${string}` | null;
@@ -7608,19 +7695,19 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 maxFeePerBlobGas?: `0x${string}` | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
+                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
                 to?: `0x${string}` | null | undefined;
                 from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
-                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
-                accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: undefined;
                 blockHash?: `0x${string}` | null | undefined;
                 blockNumber?: `0x${string}` | null | undefined;
                 hash?: `0x${string}` | undefined;
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
+                accessList?: import("viem").AccessList | undefined;
+                blobVersionedHashes?: undefined;
                 chainId?: `0x${string}` | undefined;
             } & import("viem/chains").Omit<import("viem/chains").PartialBy<{
                 blockHash: `0x${string}` | null;
@@ -7659,19 +7746,19 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 maxFeePerBlobGas?: `0x${string}` | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
+                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
                 to?: `0x${string}` | null | undefined;
                 from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
-                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
-                accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: undefined;
                 blockHash?: `0x${string}` | null | undefined;
                 blockNumber?: `0x${string}` | null | undefined;
                 hash?: `0x${string}` | undefined;
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
+                accessList?: import("viem").AccessList | undefined;
+                blobVersionedHashes?: undefined;
                 chainId?: `0x${string}` | undefined;
             } & Omit<import("viem").TransactionBase<`0x${string}`, `0x${string}`, boolean>, "typeHex"> & import("viem").FeeValuesEIP1559<`0x${string}`> & {
                 isSystemTx?: boolean | undefined;
@@ -7687,19 +7774,19 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 maxFeePerBlobGas?: `0x${string}` | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
+                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
                 to?: `0x${string}` | null | undefined;
                 from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
-                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
-                accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: `0x${string}`[] | undefined;
                 blockHash?: `0x${string}` | null | undefined;
                 blockNumber?: `0x${string}` | null | undefined;
                 hash?: `0x${string}` | undefined;
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
+                accessList?: import("viem").AccessList | undefined;
+                blobVersionedHashes?: `0x${string}`[] | undefined;
                 chainId?: `0x${string}` | undefined;
             } & import("viem/chains").Omit<import("viem/chains").PartialBy<{
                 r: `0x${string}`;
@@ -7738,19 +7825,19 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 maxFeePerBlobGas?: `0x${string}` | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
+                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
                 to?: `0x${string}` | null | undefined;
                 from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
-                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
-                accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: `0x${string}`[] | undefined;
                 blockHash?: `0x${string}` | null | undefined;
                 blockNumber?: `0x${string}` | null | undefined;
                 hash?: `0x${string}` | undefined;
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
+                accessList?: import("viem").AccessList | undefined;
+                blobVersionedHashes?: `0x${string}`[] | undefined;
                 chainId?: `0x${string}` | undefined;
             } & import("viem/chains").Omit<import("viem/chains").PartialBy<{
                 blockHash: `0x${string}` | null;
@@ -7789,19 +7876,19 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 maxFeePerBlobGas?: `0x${string}` | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
+                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
                 to?: `0x${string}` | null | undefined;
                 from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
-                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
-                accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: `0x${string}`[] | undefined;
                 blockHash?: `0x${string}` | null | undefined;
                 blockNumber?: `0x${string}` | null | undefined;
                 hash?: `0x${string}` | undefined;
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
+                accessList?: import("viem").AccessList | undefined;
+                blobVersionedHashes?: `0x${string}`[] | undefined;
                 chainId?: `0x${string}` | undefined;
             } & import("viem/chains").Omit<import("viem/chains").PartialBy<{
                 blockHash: `0x${string}` | null;
@@ -7840,19 +7927,19 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 maxFeePerBlobGas?: `0x${string}` | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
+                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
                 to?: `0x${string}` | null | undefined;
                 from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
-                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
-                accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: `0x${string}`[] | undefined;
                 blockHash?: `0x${string}` | null | undefined;
                 blockNumber?: `0x${string}` | null | undefined;
                 hash?: `0x${string}` | undefined;
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
+                accessList?: import("viem").AccessList | undefined;
+                blobVersionedHashes?: `0x${string}`[] | undefined;
                 chainId?: `0x${string}` | undefined;
             } & import("viem/chains").Omit<import("viem/chains").PartialBy<{
                 blockHash: `0x${string}` | null;
@@ -7891,19 +7978,19 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 maxFeePerBlobGas?: `0x${string}` | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
+                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
                 to?: `0x${string}` | null | undefined;
                 from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
-                type?: "0x0" | "0x1" | "0x2" | "0x3" | "0x7e" | undefined;
-                accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: `0x${string}`[] | undefined;
                 blockHash?: `0x${string}` | null | undefined;
                 blockNumber?: `0x${string}` | null | undefined;
                 hash?: `0x${string}` | undefined;
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
+                accessList?: import("viem").AccessList | undefined;
+                blobVersionedHashes?: `0x${string}`[] | undefined;
                 chainId?: `0x${string}` | undefined;
             } & Omit<import("viem").TransactionBase<`0x${string}`, `0x${string}`, boolean>, "typeHex"> & import("viem").FeeValuesEIP1559<`0x${string}`> & {
                 isSystemTx?: boolean | undefined;
@@ -9653,7 +9740,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 accessList?: import("viem").AccessList | undefined;
                 blobs?: readonly `0x${string}`[] | readonly Uint8Array[] | undefined;
                 blobVersionedHashes?: readonly `0x${string}`[] | undefined;
-                kzg?: import("viem/_types/types/kzg").Kzg | undefined;
+                kzg?: import("viem").Kzg | undefined;
                 sidecars?: readonly import("viem").BlobSidecar<`0x${string}`>[] | undefined;
                 type?: "legacy" | "eip2930" | "eip1559" | "eip4844" | "priority" | "eip712" | undefined;
             } & {
@@ -9693,7 +9780,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 accessList?: import("viem").AccessList | undefined;
                 blobs?: readonly `0x${string}`[] | readonly Uint8Array[] | undefined;
                 blobVersionedHashes?: readonly `0x${string}`[] | undefined;
-                kzg?: import("viem/_types/types/kzg").Kzg | undefined;
+                kzg?: import("viem").Kzg | undefined;
                 sidecars?: readonly import("viem").BlobSidecar<`0x${string}`>[] | undefined;
                 type?: "legacy" | "eip2930" | "eip1559" | "eip4844" | "priority" | "eip712" | undefined;
             } & {
@@ -9733,7 +9820,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 accessList?: import("viem").AccessList | undefined;
                 blobs?: readonly `0x${string}`[] | readonly Uint8Array[] | undefined;
                 blobVersionedHashes?: readonly `0x${string}`[] | undefined;
-                kzg?: import("viem/_types/types/kzg").Kzg | undefined;
+                kzg?: import("viem").Kzg | undefined;
                 sidecars?: readonly import("viem").BlobSidecar<`0x${string}`>[] | undefined;
                 type?: "legacy" | "eip2930" | "eip1559" | "eip4844" | "priority" | "eip712" | undefined;
             } & {
@@ -9773,7 +9860,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 accessList?: import("viem").AccessList | undefined;
                 blobs?: readonly `0x${string}`[] | readonly Uint8Array[] | undefined;
                 blobVersionedHashes?: readonly `0x${string}`[] | undefined;
-                kzg?: import("viem/_types/types/kzg").Kzg | undefined;
+                kzg?: import("viem").Kzg | undefined;
                 sidecars?: readonly import("viem").BlobSidecar<`0x${string}`>[] | undefined;
                 type?: "legacy" | "eip2930" | "eip1559" | "eip4844" | "priority" | "eip712" | undefined;
             } & {
@@ -9790,7 +9877,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 accessList?: import("viem").AccessList | undefined;
                 blobs: readonly `0x${string}`[] | readonly Uint8Array[];
                 blobVersionedHashes?: readonly `0x${string}`[] | undefined;
-                kzg?: import("viem/_types/types/kzg").Kzg | undefined;
+                kzg?: import("viem").Kzg | undefined;
                 sidecars?: readonly import("viem").BlobSidecar<`0x${string}`>[] | undefined;
                 type?: "eip4844" | undefined;
             } & {
@@ -9813,7 +9900,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 accessList?: import("viem").AccessList | undefined;
                 blobs?: readonly `0x${string}`[] | readonly Uint8Array[] | undefined;
                 blobVersionedHashes?: readonly `0x${string}`[] | undefined;
-                kzg?: import("viem/_types/types/kzg").Kzg | undefined;
+                kzg?: import("viem").Kzg | undefined;
                 sidecars?: readonly import("viem").BlobSidecar<`0x${string}`>[] | undefined;
                 type?: "legacy" | "eip2930" | "eip1559" | "eip4844" | "priority" | "eip712" | undefined;
             } & Omit<import("viem").TransactionRequestBase<bigint, number>, "type"> & import("viem").ExactPartial<import("viem").FeeValuesEIP1559<bigint>> & {
@@ -9838,7 +9925,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 accessList?: import("viem").AccessList | undefined;
                 blobs?: readonly `0x${string}`[] | readonly Uint8Array[] | undefined;
                 blobVersionedHashes?: readonly `0x${string}`[] | undefined;
-                kzg?: import("viem/_types/types/kzg").Kzg | undefined;
+                kzg?: import("viem").Kzg | undefined;
                 sidecars?: readonly import("viem").BlobSidecar<`0x${string}`>[] | undefined;
                 type?: "legacy" | "eip2930" | "eip1559" | "eip4844" | "priority" | "eip712" | undefined;
             } & Omit<import("viem").TransactionRequestBase<bigint, number>, "type"> & import("viem").ExactPartial<import("viem").FeeValuesEIP1559<bigint>> & {
@@ -10079,7 +10166,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 accessList?: import("viem").AccessList | undefined;
                 blobs: readonly `0x${string}`[] | readonly Uint8Array[];
                 blobVersionedHashes?: readonly `0x${string}`[] | undefined;
-                kzg?: import("viem/_types/types/kzg").Kzg | undefined;
+                kzg?: import("viem").Kzg | undefined;
                 sidecars?: readonly import("viem").BlobSidecar<`0x${string}`>[] | undefined;
                 type?: "0x3" | undefined;
                 eip712Meta?: undefined;
@@ -10097,7 +10184,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 accessList?: import("viem").AccessList | undefined;
                 blobs: readonly `0x${string}`[] | readonly Uint8Array[];
                 blobVersionedHashes?: readonly `0x${string}`[] | undefined;
-                kzg?: import("viem/_types/types/kzg").Kzg | undefined;
+                kzg?: import("viem").Kzg | undefined;
                 sidecars?: readonly import("viem").BlobSidecar<`0x${string}`>[] | undefined;
                 type: "0xff" | "0x71";
                 eip712Meta: import("viem/zksync").ZkSyncEip712Meta;
@@ -10298,5 +10385,5 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     serializers?: import("viem").ChainSerializers<undefined> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
 }>];
-export { arbitrum, base, blast, boba, bsc, filecoin, linea, mainnet, manta, moonbeam, optimism, polygon, rootstock, scroll, polygonZkEvm, zkSync, UniswapMetadata, OkuPricingMetadata, OkuMetadata, TokenMetadata, IChainInfo, MAINNET_CHAINS };
+export { arbitrum, base, blast, boba, bsc, filecoin, linea, mainnet, manta, moonbeam, optimism, polygon, rootstock, scroll, seitestnet, polygonZkEvm, zkSync, UniswapMetadata, OkuPricingMetadata, OkuMetadata, TokenMetadata, IChainInfo, MAINNET_CHAINS };
 export { ChainContract } from "viem";

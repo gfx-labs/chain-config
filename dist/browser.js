@@ -1,8 +1,8 @@
 (function (global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('viem/chains')) :
-  typeof define === 'function' && define.amd ? define(['exports', 'viem/chains'], factory) :
-  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global["oku-chains"] = {}, global.viem_chains));
-})(this, (function (exports, chains) { 'use strict';
+  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('viem/chains'), require('viem')) :
+  typeof define === 'function' && define.amd ? define(['exports', 'viem/chains', 'viem'], factory) :
+  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global["oku-chains"] = {}, global.viem_chains, global.viem));
+})(this, (function (exports, chains, viem) { 'use strict';
 
   const makeConfig = (x) => {
       return x;
@@ -1734,6 +1734,67 @@
       },
   });
 
+  const seitestnet = makeConfig({
+      ...chains.seiDevnet,
+      blockTimeSeconds: .5,
+      sortIndex: 17,
+      logoUrl: "https://assets.oku.trade/sei-logo.webp",
+      safeReorgDistance: 90000,
+      externalId: {},
+      uniswap: {
+          deployBlock: 16206422,
+          poolFactory: "0x32CB2e76E80B2A8abc968985B23408E2D5885341",
+          multicall2: "0x474bD11F7777d0a1EE0B7c0bb48Acd9244A2afCE",
+          tickLens: "0x09E6a35D9c4d6fA4257aeE015793Cd5Cbf8fa6D8",
+          nonfungiblePositionManager: "0x2d1886A4C71df03685ba1e6B0075e285a34e2c30",
+          positionsNFT: "0x2d1886A4C71df03685ba1e6B0075e285a34e2c30",
+          positionsNFTDeployBlock: 16206612,
+          universalRouter: "0x61a27a55f72bbCba64554246BCE2da43C164543B",
+      },
+      token: {
+          usdcAddress: "0xace5f7Ea93439Af39b46d2748fA1aC19951c8d7C",
+          wethAddress: "0x26841a0A5D958B128209F4ea9a1DD7E61558c330",
+      },
+      oku: {
+          limitOrderRegistry: viem.zeroAddress,
+          limitOrderRegistryDeployBlock: 0,
+          pricing: {
+              nativeWrappedToken: "0x26841a0A5D958B128209F4ea9a1DD7E61558c330",
+              nativeWrappedName: "SEI",
+          },
+      },
+      defaultPool: viem.zeroAddress,
+      defaultToken0: "0x26841a0A5D958B128209F4ea9a1DD7E61558c330",
+      defaultToken1: "0xace5f7Ea93439Af39b46d2748fA1aC19951c8d7C",
+      tokenList: [
+          { symbol: "WSEI", address: "0x26841a0A5D958B128209F4ea9a1DD7E61558c330" },
+          { symbol: "USDC", address: "0xace5f7Ea93439Af39b46d2748fA1aC19951c8d7C" },
+      ],
+      stables: [
+          "0xace5f7Ea93439Af39b46d2748fA1aC19951c8d7C",
+      ],
+      watchlist: [],
+      internalName: "seitestnet",
+      contracts: {
+          ...chains.seiDevnet.contracts,
+          limitOrder: {
+              address: viem.zeroAddress,
+          },
+          nftManager: {
+              address: "0x2d1886A4C71df03685ba1e6B0075e285a34e2c30",
+          },
+          weth9: {
+              address: "0x26841a0A5D958B128209F4ea9a1DD7E61558c330",
+          },
+          multicall2: {
+              address: "0x58A80812EDC79CE80eeF0c9940528f57CafFe2a2",
+          },
+          multicall3: {
+              address: "0xcA11bde05977b3631167028862bE2a173976CA11",
+          },
+      },
+  });
+
   const polygonZkEvm = makeConfig({
       ...chains.polygonZkEvm,
       sortIndex: 6,
@@ -1913,6 +1974,7 @@
   exports.polygonZkEvm = polygonZkEvm;
   exports.rootstock = rootstock;
   exports.scroll = scroll;
+  exports.seitestnet = seitestnet;
   exports.zkSync = zkSync;
 
 }));
