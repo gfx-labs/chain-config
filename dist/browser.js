@@ -1956,6 +1956,7 @@
       zkSync,
       manta,
       linea,
+      seitestnet,
   ];
 
   exports.MAINNET_CHAINS = MAINNET_CHAINS;

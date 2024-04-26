@@ -19,4 +19,5 @@ export const MAINNET_CHAINS = [
   defs.zkSync,
   defs.manta,
   defs.linea,
+  defs.seitestnet,
 ] as const;

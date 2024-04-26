@@ -1953,6 +1953,7 @@ const MAINNET_CHAINS = [
     zkSync,
     manta,
     linea,
+    seitestnet,
 ];
 
 export { MAINNET_CHAINS, arbitrum, base, blast, boba, bsc, filecoin, linea, mainnet, manta, moonbeam, optimism, polygon, polygonZkEvm, rootstock, scroll, seitestnet, zkSync };

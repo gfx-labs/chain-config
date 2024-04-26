@@ -10384,6 +10384,90 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     formatters?: undefined;
     serializers?: import("viem").ChainSerializers<undefined> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
+}>, Readonly<{
+    blockTimeSeconds: 0.5;
+    sortIndex: 17;
+    logoUrl: "https://assets.oku.trade/sei-logo.webp";
+    safeReorgDistance: 90000;
+    externalId: {};
+    uniswap: {
+        deployBlock: number;
+        poolFactory: "0x32CB2e76E80B2A8abc968985B23408E2D5885341";
+        multicall2: "0x474bD11F7777d0a1EE0B7c0bb48Acd9244A2afCE";
+        tickLens: "0x09E6a35D9c4d6fA4257aeE015793Cd5Cbf8fa6D8";
+        nonfungiblePositionManager: "0x2d1886A4C71df03685ba1e6B0075e285a34e2c30";
+        positionsNFT: "0x2d1886A4C71df03685ba1e6B0075e285a34e2c30";
+        positionsNFTDeployBlock: number;
+        universalRouter: "0x61a27a55f72bbCba64554246BCE2da43C164543B";
+    };
+    token: {
+        usdcAddress: "0xace5f7Ea93439Af39b46d2748fA1aC19951c8d7C";
+        wethAddress: "0x26841a0A5D958B128209F4ea9a1DD7E61558c330";
+    };
+    oku: {
+        limitOrderRegistry: "0x0000000000000000000000000000000000000000";
+        limitOrderRegistryDeployBlock: number;
+        pricing: {
+            nativeWrappedToken: "0x26841a0A5D958B128209F4ea9a1DD7E61558c330";
+            nativeWrappedName: string;
+        };
+    };
+    defaultPool: "0x0000000000000000000000000000000000000000";
+    defaultToken0: "0x26841a0A5D958B128209F4ea9a1DD7E61558c330";
+    defaultToken1: "0xace5f7Ea93439Af39b46d2748fA1aC19951c8d7C";
+    tokenList: ({
+        symbol: string;
+        address: "0x26841a0A5D958B128209F4ea9a1DD7E61558c330";
+    } | {
+        symbol: string;
+        address: "0xace5f7Ea93439Af39b46d2748fA1aC19951c8d7C";
+    })[];
+    stables: "0xace5f7Ea93439Af39b46d2748fA1aC19951c8d7C"[];
+    watchlist: never[];
+    internalName: "seitestnet";
+    contracts: {
+        limitOrder: {
+            address: "0x0000000000000000000000000000000000000000";
+        };
+        nftManager: {
+            address: "0x2d1886A4C71df03685ba1e6B0075e285a34e2c30";
+        };
+        weth9: {
+            address: "0x26841a0A5D958B128209F4ea9a1DD7E61558c330";
+        };
+        multicall2: {
+            address: "0x58A80812EDC79CE80eeF0c9940528f57CafFe2a2";
+        };
+        multicall3: {
+            address: "0xcA11bde05977b3631167028862bE2a173976CA11";
+        };
+        ensRegistry?: ChainContract | undefined;
+        ensUniversalResolver?: ChainContract | undefined;
+    };
+    blockExplorers: {
+        readonly default: {
+            readonly name: "Seitrace";
+            readonly url: "https://seitrace.com";
+        };
+    };
+    id: 713715;
+    name: "Sei Devnet";
+    nativeCurrency: {
+        readonly name: "Sei";
+        readonly symbol: "SEI";
+        readonly decimals: 18;
+    };
+    rpcUrls: {
+        readonly default: {
+            readonly http: readonly ["https://evm-rpc-arctic-1.sei-apis.com"];
+        };
+    };
+    sourceId?: number | undefined;
+    testnet: true;
+    custom?: Record<string, unknown> | undefined;
+    formatters?: undefined;
+    serializers?: import("viem").ChainSerializers<undefined> | undefined;
+    fees?: import("viem").ChainFees<undefined> | undefined;
 }>];
 export { arbitrum, base, blast, boba, bsc, filecoin, linea, mainnet, manta, moonbeam, optimism, polygon, rootstock, scroll, seitestnet, polygonZkEvm, zkSync, UniswapMetadata, OkuPricingMetadata, OkuMetadata, TokenMetadata, IChainInfo, MAINNET_CHAINS };
 export { ChainContract } from "viem";
