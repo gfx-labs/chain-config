@@ -1733,7 +1733,7 @@ const scroll = makeConfig({
 
 const seitestnet = makeConfig({
     ...seiDevnet,
-    blockTimeSeconds: .5,
+    blockTimeSeconds: 0.5,
     sortIndex: 17,
     logoUrl: "https://assets.oku.trade/sei-logo.webp",
     safeReorgDistance: 90000,
@@ -1749,27 +1749,25 @@ const seitestnet = makeConfig({
         universalRouter: "0x61a27a55f72bbCba64554246BCE2da43C164543B",
     },
     token: {
-        usdcAddress: "0xace5f7Ea93439Af39b46d2748fA1aC19951c8d7C",
-        wethAddress: "0x26841a0A5D958B128209F4ea9a1DD7E61558c330",
+        usdcAddress: "0xA09F3386E05CEAC547b02f223bF500a728BE7d77",
+        wethAddress: "0x57eE725BEeB991c70c53f9642f36755EC6eb2139",
     },
     oku: {
         limitOrderRegistry: zeroAddress,
         limitOrderRegistryDeployBlock: 0,
         pricing: {
-            nativeWrappedToken: "0x26841a0A5D958B128209F4ea9a1DD7E61558c330",
+            nativeWrappedToken: "0x57eE725BEeB991c70c53f9642f36755EC6eb2139",
             nativeWrappedName: "SEI",
         },
     },
-    defaultPool: zeroAddress,
-    defaultToken0: "0x26841a0A5D958B128209F4ea9a1DD7E61558c330",
-    defaultToken1: "0xace5f7Ea93439Af39b46d2748fA1aC19951c8d7C",
+    defaultPool: "0xf3a56d08504f3e09aa94245c0ee841b91fcc5dee",
+    defaultToken0: "0x57eE725BEeB991c70c53f9642f36755EC6eb2139",
+    defaultToken1: "0xA09F3386E05CEAC547b02f223bF500a728BE7d77",
     tokenList: [
-        { symbol: "WSEI", address: "0x26841a0A5D958B128209F4ea9a1DD7E61558c330" },
-        { symbol: "USDC", address: "0xace5f7Ea93439Af39b46d2748fA1aC19951c8d7C" },
+        { symbol: "WSEI", address: "0x57eE725BEeB991c70c53f9642f36755EC6eb2139" },
+        { symbol: "USDC", address: "0xA09F3386E05CEAC547b02f223bF500a728BE7d77" },
     ],
-    stables: [
-        "0xace5f7Ea93439Af39b46d2748fA1aC19951c8d7C",
-    ],
+    stables: ["0xA09F3386E05CEAC547b02f223bF500a728BE7d77"],
     watchlist: [],
     internalName: "seitestnet",
     contracts: {
@@ -1781,7 +1779,7 @@ const seitestnet = makeConfig({
             address: "0x2d1886A4C71df03685ba1e6B0075e285a34e2c30",
         },
         weth9: {
-            address: "0x26841a0A5D958B128209F4ea9a1DD7E61558c330",
+            address: "0x57eE725BEeB991c70c53f9642f36755EC6eb2139",
         },
         multicall2: {
             address: "0x58A80812EDC79CE80eeF0c9940528f57CafFe2a2",

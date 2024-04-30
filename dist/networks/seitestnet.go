@@ -12,21 +12,21 @@ var Seitestnet Network = Network{
 	BlockExplorers: map[string]string{
 		"default": "https://seitrace.com",
 	},
-	DefaultPool:   common.HexToAddress("0x0000000000000000000000000000000000000000"),
+	DefaultPool:   common.HexToAddress("0xf3a56d08504f3e09aa94245c0ee841b91fcc5dee"),
 	InternalName:  "seitestnet",
 	ExternalId:    map[string]string{},
-	DefaultToken0: common.HexToAddress("0x26841a0A5D958B128209F4ea9a1DD7E61558c330"),
-	DefaultToken1: common.HexToAddress("0xace5f7Ea93439Af39b46d2748fA1aC19951c8d7C"),
+	DefaultToken0: common.HexToAddress("0x57eE725BEeB991c70c53f9642f36755EC6eb2139"),
+	DefaultToken1: common.HexToAddress("0xA09F3386E05CEAC547b02f223bF500a728BE7d77"),
 	//TODO: TokenList:        []any{},
-	Stables:          []common.Address{common.HexToAddress("0xace5f7Ea93439Af39b46d2748fA1aC19951c8d7C")},
-	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0xace5f7Ea93439Af39b46d2748fA1aC19951c8d7C"): {}},
+	Stables:          []common.Address{common.HexToAddress("0xA09F3386E05CEAC547b02f223bF500a728BE7d77")},
+	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0xA09F3386E05CEAC547b02f223bF500a728BE7d77"): {}},
 	Watchlist:        []common.Address{},
 	BlockTimeSeconds: 0.5,
 	Oku: OkuMetadata{
 		LimitOrderRegistry: common.HexToAddress("0x0000000000000000000000000000000000000000"),
 
 		Pricing: OkuPricingMetadata{
-			NativeWrappedToken: common.HexToAddress("0x26841a0A5D958B128209F4ea9a1DD7E61558c330"),
+			NativeWrappedToken: common.HexToAddress("0x57eE725BEeB991c70c53f9642f36755EC6eb2139"),
 			NativeWrappedName:  "SEI",
 			Pools:              []common.Address{},
 			NativeQuotePools:   []ChainContract{},
@@ -43,8 +43,8 @@ var Seitestnet Network = Network{
 		UniversalRouter:            common.HexToAddress("0x61a27a55f72bbCba64554246BCE2da43C164543B"),
 	},
 	Token: TokenMetadata{
-		UsdcAddress: common.HexToAddress("0xace5f7Ea93439Af39b46d2748fA1aC19951c8d7C"),
-		WethAddress: common.HexToAddress("0x26841a0A5D958B128209F4ea9a1DD7E61558c330"),
+		UsdcAddress: common.HexToAddress("0xA09F3386E05CEAC547b02f223bF500a728BE7d77"),
+		WethAddress: common.HexToAddress("0x57eE725BEeB991c70c53f9642f36755EC6eb2139"),
 	},
 	Contracts: map[string]ChainContract{
 		"limitOrder": {
@@ -57,7 +57,7 @@ var Seitestnet Network = Network{
 		},
 		"weth9": {
 			BlockCreated: 0,
-			Address:      common.HexToAddress("0x26841a0A5D958B128209F4ea9a1DD7E61558c330"),
+			Address:      common.HexToAddress("0x57eE725BEeB991c70c53f9642f36755EC6eb2139"),
 		},
 		"multicall2": {
 			BlockCreated: 0,
