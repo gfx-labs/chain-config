@@ -43,7 +43,6 @@ export const seitestnet = makeConfig({
   watchlist: [],
   internalName: "seitestnet",
   contracts: {
-    ...chain.contracts,
     limitOrder: {
       address: zeroAddress,
     },

@@ -1771,7 +1771,6 @@ const seitestnet = makeConfig({
     watchlist: [],
     internalName: "seitestnet",
     contracts: {
-        ...seiDevnet.contracts,
         limitOrder: {
             address: zeroAddress,
         },

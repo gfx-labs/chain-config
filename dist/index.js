@@ -1773,7 +1773,6 @@ const seitestnet = makeConfig({
     watchlist: [],
     internalName: "seitestnet",
     contracts: {
-        ...chains.seiDevnet.contracts,
         limitOrder: {
             address: viem.zeroAddress,
         },
