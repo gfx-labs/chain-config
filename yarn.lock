@@ -249,7 +249,7 @@ __metadata:
     tslib: "npm:^2.6.2"
     tsx: "npm:^4.7.1"
     typescript: "npm:^5.3.3"
-    viem: "npm:^2.9.28"
+    viem: "npm:^2.9.29"
   peerDependencies:
     viem: 2.x
   languageName: unknown
@@ -5963,9 +5963,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"viem@npm:^2.9.28":
-  version: 2.9.28
-  resolution: "viem@npm:2.9.28"
+"viem@npm:^2.9.29":
+  version: 2.9.29
+  resolution: "viem@npm:2.9.29"
   dependencies:
     "@adraffy/ens-normalize": "npm:1.10.0"
     "@noble/curves": "npm:1.2.0"
@@ -5980,7 +5980,7 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 87659531a521ae2d47379394b52ca1b57788cfb1ea505318aad9ae308724e0b3da2f70cacd6cc2ba28247f8de7c1967167bd1cbdc0c872051a5f4b8964fd7af2
+  checksum: 24cb04c5422d0f9cc9fb9e2e28084b2d64c2a58f4fe99d8ff730c1c421b79560d0565aee79f028bd92413165c09e49314e3b3b5bc50a108088cb6149e4fe45c2
   languageName: node
   linkType: hard
 

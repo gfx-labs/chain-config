@@ -234,9 +234,9 @@ const base = makeConfig({
     sortIndex: 8,
     blockTimeSeconds: 2,
     logoUrl: "https://assets.oku.trade/base-logo.svg",
-    defaultPool: "0x4c36388be6f416a29c8d8eee81c771ce6be14b18",
+    defaultPool: "0xd0b53d9277642d899df5c87a3966a349a798f224",
     defaultToken0: "0x4200000000000000000000000000000000000006",
-    defaultToken1: "0xd9aaec86b65d86f6a7b5b1b0c42ffa531710b6ca",
+    defaultToken1: "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
     externalId: {
         zerion: "base",
         debank: "base",
