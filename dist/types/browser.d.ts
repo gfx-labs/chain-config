@@ -747,7 +747,7 @@ declare const base: Readonly<{
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
                 accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: `0x${string}`[] | undefined;
+                blobVersionedHashes?: readonly `0x${string}`[] | undefined;
                 chainId?: `0x${string}` | undefined;
             } & import("viem/chains").Omit<import("viem/chains").PartialBy<{
                 r: `0x${string}`;
@@ -798,7 +798,7 @@ declare const base: Readonly<{
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
                 accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: `0x${string}`[] | undefined;
+                blobVersionedHashes?: readonly `0x${string}`[] | undefined;
                 chainId?: `0x${string}` | undefined;
             } & import("viem/chains").Omit<import("viem/chains").PartialBy<{
                 blockHash: `0x${string}` | null;
@@ -849,7 +849,7 @@ declare const base: Readonly<{
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
                 accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: `0x${string}`[] | undefined;
+                blobVersionedHashes?: readonly `0x${string}`[] | undefined;
                 chainId?: `0x${string}` | undefined;
             } & import("viem/chains").Omit<import("viem/chains").PartialBy<{
                 blockHash: `0x${string}` | null;
@@ -900,7 +900,7 @@ declare const base: Readonly<{
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
                 accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: `0x${string}`[] | undefined;
+                blobVersionedHashes?: readonly `0x${string}`[] | undefined;
                 chainId?: `0x${string}` | undefined;
             } & import("viem/chains").Omit<import("viem/chains").PartialBy<{
                 blockHash: `0x${string}` | null;
@@ -923,7 +923,7 @@ declare const base: Readonly<{
                 maxFeePerGas: `0x${string}`;
                 maxPriorityFeePerGas: `0x${string}`;
                 accessList: import("viem").AccessList;
-                blobVersionedHashes: `0x${string}`[];
+                blobVersionedHashes: readonly `0x${string}`[];
                 chainId: `0x${string}`;
                 type: "0x3";
             }, "yParity">, "typeHex"> & {
@@ -951,7 +951,7 @@ declare const base: Readonly<{
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
                 accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: `0x${string}`[] | undefined;
+                blobVersionedHashes?: readonly `0x${string}`[] | undefined;
                 chainId?: `0x${string}` | undefined;
             } & Omit<import("viem").TransactionBase<`0x${string}`, `0x${string}`, boolean>, "typeHex"> & import("viem").FeeValuesEIP1559<`0x${string}`> & {
                 isSystemTx?: boolean | undefined;
@@ -1195,7 +1195,7 @@ declare const base: Readonly<{
                 maxFeePerGas: bigint;
                 maxPriorityFeePerGas: bigint;
                 accessList: import("viem").AccessList;
-                blobVersionedHashes: `0x${string}`[];
+                blobVersionedHashes: readonly `0x${string}`[];
                 chainId: number;
                 type: "eip4844";
                 isSystemTx?: undefined;
@@ -1222,7 +1222,7 @@ declare const base: Readonly<{
                 maxFeePerGas: bigint;
                 maxPriorityFeePerGas: bigint;
                 accessList: import("viem").AccessList;
-                blobVersionedHashes: `0x${string}`[];
+                blobVersionedHashes: readonly `0x${string}`[];
                 chainId: number;
                 type: "deposit";
                 isSystemTx?: boolean | undefined;
@@ -2704,7 +2704,7 @@ declare const optimism: Readonly<{
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
                 accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: `0x${string}`[] | undefined;
+                blobVersionedHashes?: readonly `0x${string}`[] | undefined;
                 chainId?: `0x${string}` | undefined;
             } & import("viem/chains").Omit<import("viem/chains").PartialBy<{
                 r: `0x${string}`;
@@ -2755,7 +2755,7 @@ declare const optimism: Readonly<{
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
                 accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: `0x${string}`[] | undefined;
+                blobVersionedHashes?: readonly `0x${string}`[] | undefined;
                 chainId?: `0x${string}` | undefined;
             } & import("viem/chains").Omit<import("viem/chains").PartialBy<{
                 blockHash: `0x${string}` | null;
@@ -2806,7 +2806,7 @@ declare const optimism: Readonly<{
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
                 accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: `0x${string}`[] | undefined;
+                blobVersionedHashes?: readonly `0x${string}`[] | undefined;
                 chainId?: `0x${string}` | undefined;
             } & import("viem/chains").Omit<import("viem/chains").PartialBy<{
                 blockHash: `0x${string}` | null;
@@ -2857,7 +2857,7 @@ declare const optimism: Readonly<{
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
                 accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: `0x${string}`[] | undefined;
+                blobVersionedHashes?: readonly `0x${string}`[] | undefined;
                 chainId?: `0x${string}` | undefined;
             } & import("viem/chains").Omit<import("viem/chains").PartialBy<{
                 blockHash: `0x${string}` | null;
@@ -2880,7 +2880,7 @@ declare const optimism: Readonly<{
                 maxFeePerGas: `0x${string}`;
                 maxPriorityFeePerGas: `0x${string}`;
                 accessList: import("viem").AccessList;
-                blobVersionedHashes: `0x${string}`[];
+                blobVersionedHashes: readonly `0x${string}`[];
                 chainId: `0x${string}`;
                 type: "0x3";
             }, "yParity">, "typeHex"> & {
@@ -2908,7 +2908,7 @@ declare const optimism: Readonly<{
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
                 accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: `0x${string}`[] | undefined;
+                blobVersionedHashes?: readonly `0x${string}`[] | undefined;
                 chainId?: `0x${string}` | undefined;
             } & Omit<import("viem").TransactionBase<`0x${string}`, `0x${string}`, boolean>, "typeHex"> & import("viem").FeeValuesEIP1559<`0x${string}`> & {
                 isSystemTx?: boolean | undefined;
@@ -3152,7 +3152,7 @@ declare const optimism: Readonly<{
                 maxFeePerGas: bigint;
                 maxPriorityFeePerGas: bigint;
                 accessList: import("viem").AccessList;
-                blobVersionedHashes: `0x${string}`[];
+                blobVersionedHashes: readonly `0x${string}`[];
                 chainId: number;
                 type: "eip4844";
                 isSystemTx?: undefined;
@@ -3179,7 +3179,7 @@ declare const optimism: Readonly<{
                 maxFeePerGas: bigint;
                 maxPriorityFeePerGas: bigint;
                 accessList: import("viem").AccessList;
-                blobVersionedHashes: `0x${string}`[];
+                blobVersionedHashes: readonly `0x${string}`[];
                 chainId: number;
                 type: "deposit";
                 isSystemTx?: boolean | undefined;
@@ -4068,7 +4068,7 @@ declare const zkSync: Readonly<{
                 maxFeePerGas: bigint;
                 maxPriorityFeePerGas: bigint;
                 accessList: import("viem").AccessList;
-                blobVersionedHashes: `0x${string}`[];
+                blobVersionedHashes: readonly `0x${string}`[];
                 chainId: number;
                 type: "eip4844";
                 l1BatchNumber: bigint | null;
@@ -4094,7 +4094,7 @@ declare const zkSync: Readonly<{
                 maxFeePerGas: bigint;
                 maxPriorityFeePerGas: bigint;
                 accessList: import("viem").AccessList;
-                blobVersionedHashes: `0x${string}`[];
+                blobVersionedHashes: readonly `0x${string}`[];
                 chainId: number;
                 type: "priority";
                 l1BatchNumber: bigint | null;
@@ -4120,7 +4120,7 @@ declare const zkSync: Readonly<{
                 maxFeePerGas: bigint;
                 maxPriorityFeePerGas: bigint;
                 accessList: import("viem").AccessList;
-                blobVersionedHashes: `0x${string}`[];
+                blobVersionedHashes: readonly `0x${string}`[];
                 chainId: number;
                 type: "priority" | "eip712";
                 l1BatchNumber: bigint | null;
@@ -5957,7 +5957,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
                 accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: `0x${string}`[] | undefined;
+                blobVersionedHashes?: readonly `0x${string}`[] | undefined;
                 chainId?: `0x${string}` | undefined;
             } & import("viem/chains").Omit<import("viem/chains").PartialBy<{
                 r: `0x${string}`;
@@ -6008,7 +6008,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
                 accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: `0x${string}`[] | undefined;
+                blobVersionedHashes?: readonly `0x${string}`[] | undefined;
                 chainId?: `0x${string}` | undefined;
             } & import("viem/chains").Omit<import("viem/chains").PartialBy<{
                 blockHash: `0x${string}` | null;
@@ -6059,7 +6059,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
                 accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: `0x${string}`[] | undefined;
+                blobVersionedHashes?: readonly `0x${string}`[] | undefined;
                 chainId?: `0x${string}` | undefined;
             } & import("viem/chains").Omit<import("viem/chains").PartialBy<{
                 blockHash: `0x${string}` | null;
@@ -6110,7 +6110,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
                 accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: `0x${string}`[] | undefined;
+                blobVersionedHashes?: readonly `0x${string}`[] | undefined;
                 chainId?: `0x${string}` | undefined;
             } & import("viem/chains").Omit<import("viem/chains").PartialBy<{
                 blockHash: `0x${string}` | null;
@@ -6133,7 +6133,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 maxFeePerGas: `0x${string}`;
                 maxPriorityFeePerGas: `0x${string}`;
                 accessList: import("viem").AccessList;
-                blobVersionedHashes: `0x${string}`[];
+                blobVersionedHashes: readonly `0x${string}`[];
                 chainId: `0x${string}`;
                 type: "0x3";
             }, "yParity">, "typeHex"> & {
@@ -6161,7 +6161,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
                 accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: `0x${string}`[] | undefined;
+                blobVersionedHashes?: readonly `0x${string}`[] | undefined;
                 chainId?: `0x${string}` | undefined;
             } & Omit<import("viem").TransactionBase<`0x${string}`, `0x${string}`, boolean>, "typeHex"> & import("viem").FeeValuesEIP1559<`0x${string}`> & {
                 isSystemTx?: boolean | undefined;
@@ -6405,7 +6405,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 maxFeePerGas: bigint;
                 maxPriorityFeePerGas: bigint;
                 accessList: import("viem").AccessList;
-                blobVersionedHashes: `0x${string}`[];
+                blobVersionedHashes: readonly `0x${string}`[];
                 chainId: number;
                 type: "eip4844";
                 isSystemTx?: undefined;
@@ -6432,7 +6432,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 maxFeePerGas: bigint;
                 maxPriorityFeePerGas: bigint;
                 accessList: import("viem").AccessList;
-                blobVersionedHashes: `0x${string}`[];
+                blobVersionedHashes: readonly `0x${string}`[];
                 chainId: number;
                 type: "deposit";
                 isSystemTx?: boolean | undefined;
@@ -7699,7 +7699,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
                 accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: `0x${string}`[] | undefined;
+                blobVersionedHashes?: readonly `0x${string}`[] | undefined;
                 chainId?: `0x${string}` | undefined;
             } & import("viem/chains").Omit<import("viem/chains").PartialBy<{
                 r: `0x${string}`;
@@ -7750,7 +7750,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
                 accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: `0x${string}`[] | undefined;
+                blobVersionedHashes?: readonly `0x${string}`[] | undefined;
                 chainId?: `0x${string}` | undefined;
             } & import("viem/chains").Omit<import("viem/chains").PartialBy<{
                 blockHash: `0x${string}` | null;
@@ -7801,7 +7801,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
                 accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: `0x${string}`[] | undefined;
+                blobVersionedHashes?: readonly `0x${string}`[] | undefined;
                 chainId?: `0x${string}` | undefined;
             } & import("viem/chains").Omit<import("viem/chains").PartialBy<{
                 blockHash: `0x${string}` | null;
@@ -7852,7 +7852,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
                 accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: `0x${string}`[] | undefined;
+                blobVersionedHashes?: readonly `0x${string}`[] | undefined;
                 chainId?: `0x${string}` | undefined;
             } & import("viem/chains").Omit<import("viem/chains").PartialBy<{
                 blockHash: `0x${string}` | null;
@@ -7875,7 +7875,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 maxFeePerGas: `0x${string}`;
                 maxPriorityFeePerGas: `0x${string}`;
                 accessList: import("viem").AccessList;
-                blobVersionedHashes: `0x${string}`[];
+                blobVersionedHashes: readonly `0x${string}`[];
                 chainId: `0x${string}`;
                 type: "0x3";
             }, "yParity">, "typeHex"> & {
@@ -7903,7 +7903,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 input?: `0x${string}` | undefined;
                 transactionIndex?: `0x${string}` | null | undefined;
                 accessList?: import("viem").AccessList | undefined;
-                blobVersionedHashes?: `0x${string}`[] | undefined;
+                blobVersionedHashes?: readonly `0x${string}`[] | undefined;
                 chainId?: `0x${string}` | undefined;
             } & Omit<import("viem").TransactionBase<`0x${string}`, `0x${string}`, boolean>, "typeHex"> & import("viem").FeeValuesEIP1559<`0x${string}`> & {
                 isSystemTx?: boolean | undefined;
@@ -8147,7 +8147,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 maxFeePerGas: bigint;
                 maxPriorityFeePerGas: bigint;
                 accessList: import("viem").AccessList;
-                blobVersionedHashes: `0x${string}`[];
+                blobVersionedHashes: readonly `0x${string}`[];
                 chainId: number;
                 type: "eip4844";
                 isSystemTx?: undefined;
@@ -8174,7 +8174,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 maxFeePerGas: bigint;
                 maxPriorityFeePerGas: bigint;
                 accessList: import("viem").AccessList;
-                blobVersionedHashes: `0x${string}`[];
+                blobVersionedHashes: readonly `0x${string}`[];
                 chainId: number;
                 type: "deposit";
                 isSystemTx?: boolean | undefined;
@@ -9041,7 +9041,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 maxFeePerGas: bigint;
                 maxPriorityFeePerGas: bigint;
                 accessList: import("viem").AccessList;
-                blobVersionedHashes: `0x${string}`[];
+                blobVersionedHashes: readonly `0x${string}`[];
                 chainId: number;
                 type: "eip4844";
                 l1BatchNumber: bigint | null;
@@ -9067,7 +9067,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 maxFeePerGas: bigint;
                 maxPriorityFeePerGas: bigint;
                 accessList: import("viem").AccessList;
-                blobVersionedHashes: `0x${string}`[];
+                blobVersionedHashes: readonly `0x${string}`[];
                 chainId: number;
                 type: "priority";
                 l1BatchNumber: bigint | null;
@@ -9093,7 +9093,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 maxFeePerGas: bigint;
                 maxPriorityFeePerGas: bigint;
                 accessList: import("viem").AccessList;
-                blobVersionedHashes: `0x${string}`[];
+                blobVersionedHashes: readonly `0x${string}`[];
                 chainId: number;
                 type: "priority" | "eip712";
                 l1BatchNumber: bigint | null;
