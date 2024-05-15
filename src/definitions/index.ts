@@ -11,6 +11,7 @@ export * from "./filecoin";
 export * from "./linea";
 export * from "./mainnet";
 export * from "./manta";
+export * from "./mantle";
 export * from "./moonbeam";
 export * from "./optimism";
 export * from "./polygon";

@@ -1965,6 +1965,94 @@ declare const manta: Readonly<{
     fees?: import("viem").ChainFees<undefined> | undefined;
     network: "manta";
 }>;
+declare const mantle: Readonly<{
+    blockTimeSeconds: 2;
+    sortIndex: 15;
+    logoUrl: "https://assets.oku.trade/mantle-logo.png";
+    safeReorgDistance: 90000;
+    externalId: {
+        zerion: string;
+    };
+    uniswap: {
+        deployBlock: number;
+        poolFactory: "0x0d922Fb1Bc191F64970ac40376643808b4B74Df9";
+        multicall2: "0xE3dbcD53f4Ce1b06Ab200f4912BD35672e68f1FA";
+        tickLens: "0x38EB9e62ABe4d3F70C0e161971F29593b8aE29FF";
+        nonfungiblePositionManager: "0x5911cB3633e764939edc2d92b7e1ad375Bb57649";
+        positionsNFT: "0x5911cB3633e764939edc2d92b7e1ad375Bb57649";
+        positionsNFTDeployBlock: number;
+        universalRouter: "0xd9a85F8bf4dA2749Bae7fbBa6Be6FEea1129C31a";
+    };
+    token: {
+        usdcAddress: "0x09Bc4E0D864854c6aFB6eB9A9cdF58aC190D0dF9";
+        wethAddress: "0x78c1b0C915c4FAA5FffA6CAbf0219DA63d7f4cb8";
+    };
+    oku: {
+        limitOrderRegistry: "0x9db70E29712Cc8Af10c2B597BaDA6784544FF407";
+        limitOrderRegistryDeployBlock: number;
+        pricing: {
+            nativeWrappedToken: "0x78c1b0C915c4FAA5FffA6CAbf0219DA63d7f4cb8";
+            nativeWrappedName: string;
+        };
+    };
+    defaultPool: "0x0000000000000000000000000000000000000000";
+    defaultToken0: "0x09Bc4E0D864854c6aFB6eB9A9cdF58aC190D0dF9";
+    defaultToken1: "0x78c1b0C915c4FAA5FffA6CAbf0219DA63d7f4cb8";
+    tokenList: ({
+        symbol: string;
+        address: "0x78c1b0C915c4FAA5FffA6CAbf0219DA63d7f4cb8";
+    } | {
+        symbol: string;
+        address: "0x09Bc4E0D864854c6aFB6eB9A9cdF58aC190D0dF9";
+    })[];
+    stables: ("0x09Bc4E0D864854c6aFB6eB9A9cdF58aC190D0dF9" | "0x201EBa5CC46D216Ce6DC03F6a759e8E766e956aE")[];
+    watchlist: never[];
+    internalName: "mantle";
+    contracts: {
+        limitOrder: {
+            address: "0x9db70E29712Cc8Af10c2B597BaDA6784544FF407";
+        };
+        nftManager: {
+            address: "0x5911cB3633e764939edc2d92b7e1ad375Bb57649";
+        };
+        weth9: {
+            address: "0x78c1b0C915c4FAA5FffA6CAbf0219DA63d7f4cb8";
+        };
+        multicall2: {
+            address: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D";
+        };
+        multicall3: {
+            address: "0xcA11bde05977b3631167028862bE2a173976CA11";
+        };
+    };
+    blockExplorers: {
+        readonly default: {
+            readonly name: "Mantle Explorer";
+            readonly url: "https://mantlescan.xyz/";
+            readonly apiUrl: "https://api.mantlescan.xyz/api";
+        };
+    };
+    id: 5000;
+    name: "Mantle";
+    nativeCurrency: {
+        readonly decimals: 18;
+        readonly name: "MNT";
+        readonly symbol: "MNT";
+    };
+    rpcUrls: {
+        readonly default: {
+            readonly http: readonly [
+                "https://rpc.mantle.xyz"
+            ];
+        };
+    };
+    sourceId?: number | undefined;
+    testnet?: boolean | undefined;
+    custom?: Record<string, unknown> | undefined;
+    formatters?: undefined;
+    serializers?: import("viem").ChainSerializers<undefined> | undefined;
+    fees?: import("viem").ChainFees<undefined> | undefined;
+}>;
 declare const moonbeam: Readonly<{
     sortIndex: 12;
     blockTimeSeconds: 30;
@@ -10297,6 +10385,91 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     formatters?: undefined;
     serializers?: import("viem").ChainSerializers<undefined> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
+}>, Readonly<{
+    blockTimeSeconds: 2;
+    sortIndex: 15;
+    logoUrl: "https://assets.oku.trade/mantle-logo.png";
+    safeReorgDistance: 90000;
+    externalId: {
+        zerion: string;
+    };
+    uniswap: {
+        deployBlock: number;
+        poolFactory: "0x0d922Fb1Bc191F64970ac40376643808b4B74Df9";
+        multicall2: "0xE3dbcD53f4Ce1b06Ab200f4912BD35672e68f1FA";
+        tickLens: "0x38EB9e62ABe4d3F70C0e161971F29593b8aE29FF";
+        nonfungiblePositionManager: "0x5911cB3633e764939edc2d92b7e1ad375Bb57649";
+        positionsNFT: "0x5911cB3633e764939edc2d92b7e1ad375Bb57649";
+        positionsNFTDeployBlock: number;
+        universalRouter: "0xd9a85F8bf4dA2749Bae7fbBa6Be6FEea1129C31a";
+    };
+    token: {
+        usdcAddress: "0x09Bc4E0D864854c6aFB6eB9A9cdF58aC190D0dF9";
+        wethAddress: "0x78c1b0C915c4FAA5FffA6CAbf0219DA63d7f4cb8";
+    };
+    oku: {
+        limitOrderRegistry: "0x9db70E29712Cc8Af10c2B597BaDA6784544FF407";
+        limitOrderRegistryDeployBlock: number;
+        pricing: {
+            nativeWrappedToken: "0x78c1b0C915c4FAA5FffA6CAbf0219DA63d7f4cb8";
+            nativeWrappedName: string;
+        };
+    };
+    defaultPool: "0x0000000000000000000000000000000000000000";
+    defaultToken0: "0x09Bc4E0D864854c6aFB6eB9A9cdF58aC190D0dF9";
+    defaultToken1: "0x78c1b0C915c4FAA5FffA6CAbf0219DA63d7f4cb8";
+    tokenList: ({
+        symbol: string;
+        address: "0x78c1b0C915c4FAA5FffA6CAbf0219DA63d7f4cb8";
+    } | {
+        symbol: string;
+        address: "0x09Bc4E0D864854c6aFB6eB9A9cdF58aC190D0dF9";
+    })[];
+    stables: ("0x09Bc4E0D864854c6aFB6eB9A9cdF58aC190D0dF9" | "0x201EBa5CC46D216Ce6DC03F6a759e8E766e956aE")[];
+    watchlist: never[];
+    internalName: "mantle";
+    contracts: {
+        limitOrder: {
+            address: "0x9db70E29712Cc8Af10c2B597BaDA6784544FF407";
+        };
+        nftManager: {
+            address: "0x5911cB3633e764939edc2d92b7e1ad375Bb57649";
+        };
+        weth9: {
+            address: "0x78c1b0C915c4FAA5FffA6CAbf0219DA63d7f4cb8";
+        };
+        multicall2: {
+            address: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D";
+        };
+        multicall3: {
+            address: "0xcA11bde05977b3631167028862bE2a173976CA11";
+        };
+    };
+    blockExplorers: {
+        readonly default: {
+            readonly name: "Mantle Explorer";
+            readonly url: "https://mantlescan.xyz/";
+            readonly apiUrl: "https://api.mantlescan.xyz/api";
+        };
+    };
+    id: 5000;
+    name: "Mantle";
+    nativeCurrency: {
+        readonly decimals: 18;
+        readonly name: "MNT";
+        readonly symbol: "MNT";
+    };
+    rpcUrls: {
+        readonly default: {
+            readonly http: readonly ["https://rpc.mantle.xyz"];
+        };
+    };
+    sourceId?: number | undefined;
+    testnet?: boolean | undefined;
+    custom?: Record<string, unknown> | undefined;
+    formatters?: undefined;
+    serializers?: import("viem").ChainSerializers<undefined> | undefined;
+    fees?: import("viem").ChainFees<undefined> | undefined;
 }>];
-export { arbitrum, base, blast, boba, bsc, filecoin, linea, mainnet, manta, moonbeam, optimism, polygon, rootstock, scroll, polygonZkEvm, zkSync, UniswapMetadata, OkuPricingMetadata, OkuMetadata, TokenMetadata, IChainInfo, MAINNET_CHAINS };
+export { arbitrum, base, blast, boba, bsc, filecoin, linea, mainnet, manta, mantle, moonbeam, optimism, polygon, rootstock, scroll, polygonZkEvm, zkSync, UniswapMetadata, OkuPricingMetadata, OkuMetadata, TokenMetadata, IChainInfo, MAINNET_CHAINS };
 export { ChainContract } from "viem";
