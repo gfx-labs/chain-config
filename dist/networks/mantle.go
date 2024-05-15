@@ -25,8 +25,8 @@ var Mantle Network = Network{
 	Watchlist:        []common.Address{},
 	BlockTimeSeconds: 2,
 	Oku: OkuMetadata{
-		LimitOrderRegistry:            common.HexToAddress("0x9db70E29712Cc8Af10c2B597BaDA6784544FF407"),
-		LimitOrderRegistryDeployBlock: 63839392,
+		LimitOrderRegistry:            common.HexToAddress("0x346239972d1fa486FC4a521031BC81bFB7D6e8a4"),
+		LimitOrderRegistryDeployBlock: 63839894,
 		Pricing: OkuPricingMetadata{
 			NativeWrappedToken: common.HexToAddress("0x78c1b0C915c4FAA5FffA6CAbf0219DA63d7f4cb8"),
 			NativeWrappedName:  "MNT",
