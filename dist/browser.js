@@ -1,8 +1,8 @@
 (function (global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('viem/chains'), require('viem')) :
-  typeof define === 'function' && define.amd ? define(['exports', 'viem/chains', 'viem'], factory) :
-  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global["oku-chains"] = {}, global.viem_chains, global.viem));
-})(this, (function (exports, chains, viem) { 'use strict';
+  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('viem/chains')) :
+  typeof define === 'function' && define.amd ? define(['exports', 'viem/chains'], factory) :
+  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global["oku-chains"] = {}, global.viem_chains));
+})(this, (function (exports, chains) { 'use strict';
 
   const makeConfig = (x) => {
       return x;
@@ -1110,8 +1110,7 @@
               nativeWrappedName: "MNT",
           },
       },
-      // TODO: default pool
-      defaultPool: viem.zeroAddress,
+      defaultPool: "0x086F766b336DFB0f705Dc030dB01993b22D81266",
       defaultToken0: "0x09Bc4E0D864854c6aFB6eB9A9cdF58aC190D0dF9",
       defaultToken1: "0x78c1b0C915c4FAA5FffA6CAbf0219DA63d7f4cb8",
       tokenList: [
@@ -1122,7 +1121,7 @@
           "0x09Bc4E0D864854c6aFB6eB9A9cdF58aC190D0dF9",
           "0x201EBa5CC46D216Ce6DC03F6a759e8E766e956aE",
       ],
-      watchlist: [],
+      watchlist: ["0x086F766b336DFB0f705Dc030dB01993b22D81266"],
       internalName: "mantle",
       contracts: {
           ...chains.mantle.contracts,

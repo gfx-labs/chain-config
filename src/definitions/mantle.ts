@@ -1,4 +1,3 @@
-import { zeroAddress } from "viem";
 import { mantle as chain } from "viem/chains";
 import { makeConfig } from "../util";
 
@@ -34,8 +33,7 @@ export const mantle = makeConfig({
     },
   },
 
-  // TODO: default pool
-  defaultPool: zeroAddress,
+  defaultPool: "0x086F766b336DFB0f705Dc030dB01993b22D81266",
   defaultToken0: "0x09Bc4E0D864854c6aFB6eB9A9cdF58aC190D0dF9",
   defaultToken1: "0x78c1b0C915c4FAA5FffA6CAbf0219DA63d7f4cb8",
   tokenList: [
@@ -46,7 +44,7 @@ export const mantle = makeConfig({
     "0x09Bc4E0D864854c6aFB6eB9A9cdF58aC190D0dF9",
     "0x201EBa5CC46D216Ce6DC03F6a759e8E766e956aE",
   ],
-  watchlist: [],
+  watchlist: ["0x086F766b336DFB0f705Dc030dB01993b22D81266"],
   internalName: "mantle",
   contracts: {
     ...chain.contracts,

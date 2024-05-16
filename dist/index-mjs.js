@@ -1,5 +1,4 @@
 import { arbitrum as arbitrum$1, base as base$1, blast as blast$1, boba as boba$1, bsc as bsc$1, filecoin as filecoin$1, linea as linea$1, mainnet as mainnet$1, manta as manta$1, mantle as mantle$1, moonbeam as moonbeam$1, optimism as optimism$1, polygon as polygon$1, rootstock as rootstock$1, scroll as scroll$1, polygonZkEvm as polygonZkEvm$1, zkSync as zkSync$1 } from 'viem/chains';
-import { zeroAddress } from 'viem';
 
 const makeConfig = (x) => {
     return x;
@@ -1107,8 +1106,7 @@ const mantle = makeConfig({
             nativeWrappedName: "MNT",
         },
     },
-    // TODO: default pool
-    defaultPool: zeroAddress,
+    defaultPool: "0x086F766b336DFB0f705Dc030dB01993b22D81266",
     defaultToken0: "0x09Bc4E0D864854c6aFB6eB9A9cdF58aC190D0dF9",
     defaultToken1: "0x78c1b0C915c4FAA5FffA6CAbf0219DA63d7f4cb8",
     tokenList: [
@@ -1119,7 +1117,7 @@ const mantle = makeConfig({
         "0x09Bc4E0D864854c6aFB6eB9A9cdF58aC190D0dF9",
         "0x201EBa5CC46D216Ce6DC03F6a759e8E766e956aE",
     ],
-    watchlist: [],
+    watchlist: ["0x086F766b336DFB0f705Dc030dB01993b22D81266"],
     internalName: "mantle",
     contracts: {
         ...mantle$1.contracts,

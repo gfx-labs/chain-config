@@ -12,7 +12,7 @@ var Mantle Network = Network{
 	BlockExplorers: map[string]string{
 		"default": "https://mantlescan.xyz/",
 	},
-	DefaultPool:  common.HexToAddress("0x0000000000000000000000000000000000000000"),
+	DefaultPool:  common.HexToAddress("0x086F766b336DFB0f705Dc030dB01993b22D81266"),
 	InternalName: "mantle",
 	ExternalId: map[string]string{
 		"zerion": "mantle",
@@ -22,7 +22,7 @@ var Mantle Network = Network{
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0x09Bc4E0D864854c6aFB6eB9A9cdF58aC190D0dF9"), common.HexToAddress("0x201EBa5CC46D216Ce6DC03F6a759e8E766e956aE")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x09Bc4E0D864854c6aFB6eB9A9cdF58aC190D0dF9"): {}, common.HexToAddress("0x201EBa5CC46D216Ce6DC03F6a759e8E766e956aE"): {}},
-	Watchlist:        []common.Address{},
+	Watchlist:        []common.Address{common.HexToAddress("0x086F766b336DFB0f705Dc030dB01993b22D81266")},
 	BlockTimeSeconds: 2,
 	Oku: OkuMetadata{
 		LimitOrderRegistry:            common.HexToAddress("0x346239972d1fa486FC4a521031BC81bFB7D6e8a4"),
