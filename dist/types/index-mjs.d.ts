@@ -1981,14 +1981,14 @@ declare const mantle: Readonly<{
         nonfungiblePositionManager: "0x5911cB3633e764939edc2d92b7e1ad375Bb57649";
         positionsNFT: "0x5911cB3633e764939edc2d92b7e1ad375Bb57649";
         positionsNFTDeployBlock: number;
-        universalRouter: "0xd9a85F8bf4dA2749Bae7fbBa6Be6FEea1129C31a";
+        universalRouter: "0x447B8E40B0CdA8e55F405C86bC635D02d0540aB8";
     };
     token: {
         usdcAddress: "0x09Bc4E0D864854c6aFB6eB9A9cdF58aC190D0dF9";
         wethAddress: "0x78c1b0C915c4FAA5FffA6CAbf0219DA63d7f4cb8";
     };
     oku: {
-        limitOrderRegistry: "0x9db70E29712Cc8Af10c2B597BaDA6784544FF407";
+        limitOrderRegistry: "0x346239972d1fa486FC4a521031BC81bFB7D6e8a4";
         limitOrderRegistryDeployBlock: number;
         pricing: {
             nativeWrappedToken: "0x78c1b0C915c4FAA5FffA6CAbf0219DA63d7f4cb8";
@@ -10401,14 +10401,14 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         nonfungiblePositionManager: "0x5911cB3633e764939edc2d92b7e1ad375Bb57649";
         positionsNFT: "0x5911cB3633e764939edc2d92b7e1ad375Bb57649";
         positionsNFTDeployBlock: number;
-        universalRouter: "0xd9a85F8bf4dA2749Bae7fbBa6Be6FEea1129C31a";
+        universalRouter: "0x447B8E40B0CdA8e55F405C86bC635D02d0540aB8";
     };
     token: {
         usdcAddress: "0x09Bc4E0D864854c6aFB6eB9A9cdF58aC190D0dF9";
         wethAddress: "0x78c1b0C915c4FAA5FffA6CAbf0219DA63d7f4cb8";
     };
     oku: {
-        limitOrderRegistry: "0x9db70E29712Cc8Af10c2B597BaDA6784544FF407";
+        limitOrderRegistry: "0x346239972d1fa486FC4a521031BC81bFB7D6e8a4";
         limitOrderRegistryDeployBlock: number;
         pricing: {
             nativeWrappedToken: "0x78c1b0C915c4FAA5FffA6CAbf0219DA63d7f4cb8";
