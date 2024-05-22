@@ -1029,7 +1029,7 @@ const manta = makeConfig({
             nativeWrappedName: "ETH",
         },
     },
-    defaultPool: "0xbfca3e002acbcea2f9d48a87cf545cb4344f9a3e",
+    defaultPool: "0xc108d8702d42bae7b3d7d8209a9b40613a7b1d37",
     defaultToken0: "0x0dc808adce2099a9f62aa87d9670745aba741746",
     defaultToken1: "0xb73603c5d87fa094b7314c74ace2e64d165016fb",
     tokenList: [

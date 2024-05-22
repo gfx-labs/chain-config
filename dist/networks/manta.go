@@ -12,7 +12,7 @@ var Manta Network = Network{
 	BlockExplorers: map[string]string{
 		"default": "https://pacific-explorer.manta.network",
 	},
-	DefaultPool:   common.HexToAddress("0xbfca3e002acbcea2f9d48a87cf545cb4344f9a3e"),
+	DefaultPool:   common.HexToAddress("0xc108d8702d42bae7b3d7d8209a9b40613a7b1d37"),
 	InternalName:  "manta",
 	ExternalId:    map[string]string{},
 	DefaultToken0: common.HexToAddress("0x0dc808adce2099a9f62aa87d9670745aba741746"),
