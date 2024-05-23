@@ -136,6 +136,11 @@ type Network struct {
 	StablecoinMap  map[common.Address]struct{}
 }
 
+func (n *Network) IsStable(a common.Address) bool {
+	_, ok := n.StablecoinMap[a]
+	return ok
+}
+
 type UniswapMetadata struct {
 	DeployBlock                        int64
 	PoolFactory                        common.Address

@@ -65,6 +65,11 @@ type Network struct { <% for(const prop of props_1) {%>
     StablecoinMap map[common.Address]struct{}
 }
 
+func (n *Network) IsStable(a common.Address) bool {
+    _, ok := n.StablecoinMap[a]
+    return ok
+}
+
 type UniswapMetadata struct {<% for(const prop of props_2) {%>
     <%- helpers.displayProp(prop) %> <% } %>
 }
