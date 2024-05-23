@@ -71,7 +71,7 @@ func (n *Network) IsStable(a common.Address) bool {
 }
 
 // determines if we should swap the two tokens. we swap if token0 is a stable, or a priority token
-func (n *Network) ShouldFlip(n *networks.Network, token0, token1 common.Address) bool {
+func (n *Network) ShouldFlip(token0, token1 common.Address) bool {
 	priority := func(t common.Address) int {
 		if t == n.Token.WethAddress {
 			return 3
