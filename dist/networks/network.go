@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"github.com/ethereum/go-ethereum/common"
 	"strconv"
+	"time"
 )
 
 var ErrNetworkNotFound = errors.New("chain not found")
@@ -139,6 +140,10 @@ type Network struct {
 func (n *Network) IsStable(a common.Address) bool {
 	_, ok := n.StablecoinMap[a]
 	return ok
+}
+
+func (n *Network) BlockTime() time.Duration {
+	return time.Duration(n.BlockTimeSeconds * float64(time.Second))
 }
 
 // determines if we should swap the two tokens. we swap if token0 is a stable, or a priority token
