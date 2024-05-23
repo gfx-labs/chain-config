@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"github.com/ethereum/go-ethereum/common"
 	"strconv"
+	"strings"
 	"time"
 )
 
@@ -144,6 +145,14 @@ func (n *Network) IsStable(a common.Address) bool {
 
 func (n *Network) BlockTime() time.Duration {
 	return time.Duration(n.BlockTimeSeconds * float64(time.Second))
+}
+
+func (n *Network) GetContract(name string) common.Address {
+	res, ok := n.Contract[strings.ToLower(name)]
+	if !ok {
+		return common.Address{}
+	}
+	return res
 }
 
 // determines if we should swap the two tokens. we swap if token0 is a stable, or a priority token
