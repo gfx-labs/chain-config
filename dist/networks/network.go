@@ -152,7 +152,7 @@ func (n *Network) GetContract(name string) common.Address {
 	if !ok {
 		return common.Address{}
 	}
-	return res
+	return res.Address
 }
 
 // determines if we should swap the two tokens. we swap if token0 is a stable, or a priority token

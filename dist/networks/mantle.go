@@ -10,7 +10,7 @@ var Mantle Network = Network{
 	SortIndex:         15,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]string{
-		"default": "https://mantlescan.xyz/",
+		"default": "https://explorer.mantle.xyz",
 	},
 	DefaultPool:  common.HexToAddress("0x086F766b336DFB0f705Dc030dB01993b22D81266"),
 	InternalName: "mantle",
