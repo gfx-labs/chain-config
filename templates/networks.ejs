@@ -77,7 +77,7 @@ func (n *Network) BlockTime() time.Duration {
 }
 
 func (n *Network) GetContract(name string) common.Address {
-    res, ok := n.Contract[strings.ToLower(name)]
+    res, ok := n.Contracts[strings.ToLower(name)]
     if !ok {
         return common.Address{}
     }
