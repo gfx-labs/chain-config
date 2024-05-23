@@ -184,6 +184,16 @@ func (n *Network) ShouldFlip(token0, token1 common.Address) bool {
 	return false
 }
 
+func (n *Network) GetNativePoolToQuoteWith(block int64) (common.Address, error) {
+	for _, q := range n.Oku.Pricing.NativeQuotePools {
+		if q.BlockCreated > block {
+			continue
+		}
+		return q.Address, nil
+	}
+	return common.Address{}, fmt.Errorf("no pool available")
+}
+
 type UniswapMetadata struct {
 	DeployBlock                        int64
 	PoolFactory                        common.Address
