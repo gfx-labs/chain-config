@@ -71,8 +71,8 @@ var Ethereum Network = Network{
 			Address:      common.HexToAddress("0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e"),
 		},
 		"ensUniversalResolver": {
-			BlockCreated: 18958930,
-			Address:      common.HexToAddress("0x8cab227b1162f03b8338331adaad7aadc83b895e"),
+			BlockCreated: 19258213,
+			Address:      common.HexToAddress("0xce01f8eee7E479C928F8919abD53E553a36CeF67"),
 		},
 		"multicall3": {
 			BlockCreated: 0,
