@@ -141,6 +141,35 @@ func (n *Network) IsStable(a common.Address) bool {
 	return ok
 }
 
+// determines if we should swap the two tokens. we swap if token0 is a stable, or a priority token
+func (n *Network) ShouldFlip(n *networks.Network, token0, token1 common.Address) bool {
+	priority := func(t common.Address) int {
+		if t == n.Token.WethAddress {
+			return 3
+		}
+		if t == n.Token.WbtcAddress {
+			return 2
+		}
+		return 0
+	}
+	token0Stable, token1Stable := n.IsStable(token0), n.IsStable(token1)
+
+	// if token0 is a stablecoin, we should flip
+	if token0Stable {
+		return true
+	}
+	// otherwise, if token1 is a stable, we shouldn't flip
+	if token1Stable {
+		return false
+	}
+	token0Priority, token1Priority := priority(token0), priority(token1)
+	// token0 is a prioirty token, so we should swap
+	if token0Priority > token1Priority {
+		return true
+	}
+	return false
+}
+
 type UniswapMetadata struct {
 	DeployBlock                        int64
 	PoolFactory                        common.Address
