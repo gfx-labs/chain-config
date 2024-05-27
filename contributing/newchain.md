@@ -1,5 +1,7 @@
 - [ ] make sure chain is in viem. make a pr if it isnt
 
+- [ ] upload logo to assets repo
+
 - [ ] add chain to oku/chain-configs
 
 - [ ] venn
