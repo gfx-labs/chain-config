@@ -95,6 +95,10 @@
 
 - [ ] test swap with cli
 
+- [ ] accounts
+
+  - [ ] update oku-chains import
+
 - [ ] canoe
   - [ ] update oku-chains import
   - [ ] update smart-order-router import
