@@ -20,7 +20,7 @@
 
 - [ ] trade
 
-  - [ ] update chain-configs import
+  - [ ] update viem and chain-configs import
   - [ ] make sure it is visible in the drop down
   - [ ] make sure frontend can connect to backend
   - [ ] create new stable/wrapped native pool
@@ -28,7 +28,7 @@
 
 - [ ] analytics
 
-  - [ ] update chain-configs import
+  - [ ] update viem and chain-configs import
   - [ ] make sure it is visible in the drop down
   - [ ] make sure frontend can connect to backend
 
@@ -46,8 +46,6 @@
     - [ ] add override to SWAP_ROUTER_02_ADDRESSES
     - [ ] add entry to WETH9
   - [ ] publish new package
-
-- [ ] add chain to viem
 
 - [ ] universal-router-sdk
 
