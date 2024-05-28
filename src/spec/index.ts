@@ -44,7 +44,7 @@ export interface TokenMetadata {
   usdcAddress?: Address;
 }
 
-export interface IChainInfo<formatters extends ChainFormatters | undefined> extends Chain<formatters> {
+export interface IChainInfo<formatters extends ChainFormatters | undefined = (ChainFormatters | undefined)> extends Chain<formatters> {
   logoUrl: string;
   sortIndex: number;
   safeReorgDistance?: number;

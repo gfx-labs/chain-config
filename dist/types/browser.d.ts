@@ -5364,7 +5364,7 @@ interface TokenMetadata {
     wbtcAddress?: Address;
     usdcAddress?: Address;
 }
-interface IChainInfo<formatters extends ChainFormatters | undefined> extends Chain<formatters> {
+interface IChainInfo<formatters extends ChainFormatters | undefined = (ChainFormatters | undefined)> extends Chain<formatters> {
     logoUrl: string;
     sortIndex: number;
     safeReorgDistance?: number;
