@@ -30,6 +30,7 @@ const (
 	NameZksync       InternalName = "zksync"
 	NameManta        InternalName = "manta"
 	NameLinea        InternalName = "linea"
+	NameTaiko        InternalName = "taiko"
 	NameMantle       InternalName = "mantle"
 )
 
@@ -50,6 +51,7 @@ var AllNetworks = []Network{
 	Zksync,
 	Manta,
 	Linea,
+	Taiko,
 	Mantle,
 }
 
@@ -70,6 +72,7 @@ var networksByName = map[string]Network{
 	"zksync":        Zksync,
 	"manta":         Manta,
 	"linea":         Linea,
+	"taiko":         Taiko,
 	"mantle":        Mantle,
 }
 
@@ -90,6 +93,7 @@ var networksById = map[int]Network{
 	324:    Zksync,
 	169:    Manta,
 	59144:  Linea,
+	167000: Taiko,
 	5000:   Mantle,
 }
 

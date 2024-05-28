@@ -2028,6 +2028,7 @@ const MAINNET_CHAINS = [
     zkSync,
     manta,
     linea,
+    taiko,
     mantle,
 ];
 

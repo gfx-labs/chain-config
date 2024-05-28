@@ -10484,6 +10484,91 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     serializers?: import("viem").ChainSerializers<undefined> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
 }>, Readonly<{
+    blockTimeSeconds: 24;
+    sortIndex: 4;
+    logoUrl: "https://assets.oku.trade/taiko-logo.svg";
+    safeReorgDistance: 90000;
+    externalId: {
+        zerion: string;
+    };
+    uniswap: {
+        deployBlock: number;
+        poolFactory: "0x75FC67473A91335B5b8F8821277262a13B38c9b3";
+        multicall2: "0x0d922Fb1Bc191F64970ac40376643808b4B74Df9";
+        tickLens: "0xE3dbcD53f4Ce1b06Ab200f4912BD35672e68f1FA";
+        nonfungiblePositionManager: "0x8B3c541c30f9b29560f56B9E44b59718916B69EF";
+        positionsNFT: "0x8B3c541c30f9b29560f56B9E44b59718916B69EF";
+        positionsNFTDeployBlock: number;
+        universalRouter: "0x346239972d1fa486FC4a521031BC81bFB7D6e8a4";
+    };
+    token: {
+        usdcAddress: "0x07d83526730c7438048D55A4fc0b850e2aaB6f0b";
+        wethAddress: "0xA51894664A773981C6C112C43ce576f315d5b1B6";
+    };
+    oku: {
+        limitOrderRegistry: "0x447B8E40B0CdA8e55F405C86bC635D02d0540aB8";
+        limitOrderRegistryDeployBlock: number;
+        pricing: {
+            nativeWrappedToken: "0xA51894664A773981C6C112C43ce576f315d5b1B6";
+            nativeWrappedName: string;
+        };
+    };
+    defaultPool: "0x0000000000000000000000000000000000000000";
+    defaultToken0: "0x07d83526730c7438048D55A4fc0b850e2aaB6f0b";
+    defaultToken1: "0xA51894664A773981C6C112C43ce576f315d5b1B6";
+    tokenList: ({
+        symbol: string;
+        address: "0xA51894664A773981C6C112C43ce576f315d5b1B6";
+    } | {
+        symbol: string;
+        address: "0x07d83526730c7438048D55A4fc0b850e2aaB6f0b";
+    })[];
+    stables: "0x07d83526730c7438048D55A4fc0b850e2aaB6f0b"[];
+    watchlist: never[];
+    internalName: "taiko";
+    blockExplorers: {
+        default: {
+            name: string;
+            url: string;
+        };
+    };
+    contracts: {
+        limitOrder: {
+            address: "0x447B8E40B0CdA8e55F405C86bC635D02d0540aB8";
+        };
+        nftManager: {
+            address: "0x8B3c541c30f9b29560f56B9E44b59718916B69EF";
+        };
+        weth9: {
+            address: "0xA51894664A773981C6C112C43ce576f315d5b1B6";
+        };
+        multicall2: {
+            address: "0x0d922Fb1Bc191F64970ac40376643808b4B74Df9";
+        };
+        multicall3: {
+            address: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D";
+        };
+    };
+    id: 167000;
+    name: "Taiko Mainnet";
+    nativeCurrency: {
+        readonly decimals: 18;
+        readonly name: "Ether";
+        readonly symbol: "ETH";
+    };
+    rpcUrls: {
+        readonly default: {
+            readonly http: readonly ["https://rpc.mainnet.taiko.xyz"];
+            readonly webSocket: readonly ["wss://ws.mainnet.taiko.xyz"];
+        };
+    };
+    sourceId?: number | undefined;
+    testnet?: boolean | undefined;
+    custom?: Record<string, unknown> | undefined;
+    formatters?: undefined;
+    serializers?: import("viem").ChainSerializers<undefined> | undefined;
+    fees?: import("viem").ChainFees<undefined> | undefined;
+}>, Readonly<{
     blockTimeSeconds: 2;
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/mantle-logo.png";

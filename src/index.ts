@@ -19,5 +19,6 @@ export const MAINNET_CHAINS = [
   defs.zkSync,
   defs.manta,
   defs.linea,
+  defs.taiko,
   defs.mantle,
 ] as const;

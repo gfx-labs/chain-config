@@ -2029,6 +2029,7 @@
       zkSync,
       manta,
       linea,
+      taiko,
       mantle,
   ];
 
