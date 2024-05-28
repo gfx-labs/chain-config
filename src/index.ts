@@ -1,8 +1,10 @@
+import { IChainInfo } from "./spec";
+
 import * as defs from "./definitions";
 export * from "./definitions/";
 export * from "./spec";
 
-export const MAINNET_CHAINS = [
+export const MAINNET_CHAINS: IChainInfo[] = [
   defs.arbitrum,
   defs.base,
   defs.boba,
