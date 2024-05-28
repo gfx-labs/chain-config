@@ -1,4 +1,4 @@
-import { Address, Chain, ChainContract } from "viem";
+import { Address, Chain, ChainContract, ChainFormatters } from "viem";
 type float64 = number;
 interface UniswapMetadata {
     deployBlock?: number;
@@ -36,7 +36,7 @@ interface TokenMetadata {
     wbtcAddress?: Address;
     usdcAddress?: Address;
 }
-interface IChainInfo extends Chain {
+interface IChainInfo extends Chain<ChainFormatters> {
     logoUrl: string;
     sortIndex: number;
     safeReorgDistance?: number;

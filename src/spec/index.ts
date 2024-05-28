@@ -1,4 +1,4 @@
-import { Address, Chain, ChainContract } from "viem";
+import { Address, Chain, ChainContract, ChainFormatters } from "viem";
 
 export { ChainContract } from "viem";
 
@@ -44,7 +44,7 @@ export interface TokenMetadata {
   usdcAddress?: Address;
 }
 
-export interface IChainInfo extends Chain<any, any> {
+export interface IChainInfo extends Chain<ChainFormatters> {
   logoUrl: string;
   sortIndex: number;
   safeReorgDistance?: number;
