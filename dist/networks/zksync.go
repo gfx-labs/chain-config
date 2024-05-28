@@ -11,6 +11,8 @@ var Zksync Network = Network{
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]string{
 		"default": "https://era.zksync.network",
+
+		"native": "https://explorer.zksync.io/",
 	},
 	DefaultPool:  common.HexToAddress("0xff577f0e828a878743ecc5e2632cbf65cecf17cf"),
 	InternalName: "zksync",

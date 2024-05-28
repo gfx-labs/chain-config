@@ -2,7 +2,7 @@
 
 - [ ] upload logo to assets repo
 
-- [ ] add chain to oku/chain-configs
+- [ ] add chain to oku/chain-configs (use zero address for default pool if none are deployed yet)
 
 - [ ] venn
 
@@ -24,6 +24,7 @@
   - [ ] make sure it is visible in the drop down
   - [ ] make sure frontend can connect to backend
   - [ ] create new stable/wrapped native pool
+  - [ ] add new pools to chain-config for default and watchlist
 
 - [ ] analytics
 

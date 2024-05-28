@@ -1,6 +1,7 @@
 'use strict';
 
 var chains = require('viem/chains');
+var viem = require('viem');
 
 const makeConfig = (x) => {
     return x;
@@ -1797,6 +1798,75 @@ const scroll = makeConfig({
     },
 });
 
+const taiko = makeConfig({
+    ...chains.taiko,
+    blockTimeSeconds: 24,
+    sortIndex: 4,
+    logoUrl: "https://assets.oku.trade/taiko-logo.svg",
+    safeReorgDistance: 90000,
+    externalId: {
+        zerion: "taiko",
+    },
+    uniswap: {
+        deployBlock: 961,
+        poolFactory: "0x75FC67473A91335B5b8F8821277262a13B38c9b3",
+        multicall2: "0x0d922Fb1Bc191F64970ac40376643808b4B74Df9",
+        tickLens: "0xE3dbcD53f4Ce1b06Ab200f4912BD35672e68f1FA",
+        nonfungiblePositionManager: "0x8B3c541c30f9b29560f56B9E44b59718916B69EF",
+        positionsNFT: "0x8B3c541c30f9b29560f56B9E44b59718916B69EF",
+        positionsNFTDeployBlock: 980,
+        universalRouter: "0x346239972d1fa486FC4a521031BC81bFB7D6e8a4",
+    },
+    token: {
+        usdcAddress: "0x07d83526730c7438048D55A4fc0b850e2aaB6f0b",
+        wethAddress: "0xA51894664A773981C6C112C43ce576f315d5b1B6",
+    },
+    oku: {
+        limitOrderRegistry: "0x447B8E40B0CdA8e55F405C86bC635D02d0540aB8",
+        limitOrderRegistryDeployBlock: 2396,
+        pricing: {
+            nativeWrappedToken: "0xA51894664A773981C6C112C43ce576f315d5b1B6",
+            nativeWrappedName: "ETH",
+        },
+    },
+    // TODO: default pool address
+    defaultPool: viem.zeroAddress,
+    defaultToken0: "0x07d83526730c7438048D55A4fc0b850e2aaB6f0b",
+    defaultToken1: "0xA51894664A773981C6C112C43ce576f315d5b1B6",
+    tokenList: [
+        { symbol: "WETH", address: "0xA51894664A773981C6C112C43ce576f315d5b1B6" },
+        { symbol: "USDC", address: "0x07d83526730c7438048D55A4fc0b850e2aaB6f0b" },
+    ],
+    stables: ["0x07d83526730c7438048D55A4fc0b850e2aaB6f0b"],
+    watchlist: [],
+    internalName: "taiko",
+    blockExplorers: {
+        ...chains.taiko.blockExplorers,
+        default: {
+            name: "Taikoscan",
+            url: "https://taikoscan.io",
+        },
+    },
+    contracts: {
+        ...chains.taiko.contracts,
+        limitOrder: {
+            address: "0x447B8E40B0CdA8e55F405C86bC635D02d0540aB8",
+        },
+        nftManager: {
+            address: "0x8B3c541c30f9b29560f56B9E44b59718916B69EF",
+        },
+        weth9: {
+            address: "0xA51894664A773981C6C112C43ce576f315d5b1B6",
+        },
+        multicall2: {
+            address: "0x0d922Fb1Bc191F64970ac40376643808b4B74Df9",
+        },
+        multicall3: {
+            address: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D",
+        },
+    },
+});
+
 const polygonZkEvm = makeConfig({
     ...chains.polygonZkEvm,
     sortIndex: 6,
@@ -1978,4 +2048,5 @@ exports.polygon = polygon;
 exports.polygonZkEvm = polygonZkEvm;
 exports.rootstock = rootstock;
 exports.scroll = scroll;
+exports.taiko = taiko;
 exports.zkSync = zkSync;

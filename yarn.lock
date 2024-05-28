@@ -249,7 +249,7 @@ __metadata:
     tslib: "npm:^2.6.2"
     tsx: "npm:^4.7.1"
     typescript: "npm:^5.3.3"
-    viem: "npm:^2.10.5"
+    viem: "npm:^2.13.1"
   peerDependencies:
     viem: 2.x
   languageName: unknown
@@ -3350,12 +3350,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"isows@npm:1.0.3":
-  version: 1.0.3
-  resolution: "isows@npm:1.0.3"
+"isows@npm:1.0.4":
+  version: 1.0.4
+  resolution: "isows@npm:1.0.4"
   peerDependencies:
     ws: "*"
-  checksum: 10c0/adec15db704bb66615dd8ef33f889d41ae2a70866b21fa629855da98cc82a628ae072ee221fe9779a9a19866cad2a3e72593f2d161a0ce0e168b4484c7df9cd2
+  checksum: 10c0/46f43b07edcf148acba735ddfc6ed985e1e124446043ea32b71023e67671e46619c8818eda8c34a9ac91cb37c475af12a3aeeee676a88a0aceb5d67a3082313f
   languageName: node
   linkType: hard
 
@@ -5993,9 +5993,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"viem@npm:^2.10.5":
-  version: 2.10.5
-  resolution: "viem@npm:2.10.5"
+"viem@npm:^2.13.1":
+  version: 2.13.1
+  resolution: "viem@npm:2.13.1"
   dependencies:
     "@adraffy/ens-normalize": "npm:1.10.0"
     "@noble/curves": "npm:1.2.0"
@@ -6003,14 +6003,14 @@ __metadata:
     "@scure/bip32": "npm:1.3.2"
     "@scure/bip39": "npm:1.2.1"
     abitype: "npm:1.0.0"
-    isows: "npm:1.0.3"
+    isows: "npm:1.0.4"
     ws: "npm:8.13.0"
   peerDependencies:
     typescript: ">=5.0.4"
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 10c0/5d82c420cf10a3900716d6c7524b42f6aac16cb462952131ed5c12501f21ceb83393f4416647fd872431effdc68a5a688d1185efc29c3c19e2ea225f6e75c4cf
+  checksum: 10c0/215510e3e2a5c40df4b569adfb8c25694009bc09e43ef937cc53e89bcf83f898f0e115a9ebc5ffdf9715479c81d194599da05496008bbfbb327bdf75cac925d7
   languageName: node
   linkType: hard
 
