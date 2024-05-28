@@ -12,7 +12,7 @@ var Taiko Network = Network{
 	BlockExplorers: map[string]string{
 		"default": "https://taikoscan.io",
 	},
-	DefaultPool:  common.HexToAddress("0x0000000000000000000000000000000000000000"),
+	DefaultPool:  common.HexToAddress("0x5B731355AAd31C132dd4754E70E92c590Ae42386"),
 	InternalName: "taiko",
 	ExternalId: map[string]string{
 		"zerion": "taiko",
@@ -22,7 +22,7 @@ var Taiko Network = Network{
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0x07d83526730c7438048D55A4fc0b850e2aaB6f0b")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x07d83526730c7438048D55A4fc0b850e2aaB6f0b"): {}},
-	Watchlist:        []common.Address{},
+	Watchlist:        []common.Address{common.HexToAddress("0x5B731355AAd31C132dd4754E70E92c590Ae42386")},
 	BlockTimeSeconds: 24,
 	Oku: OkuMetadata{
 		LimitOrderRegistry:            common.HexToAddress("0x447B8E40B0CdA8e55F405C86bC635D02d0540aB8"),

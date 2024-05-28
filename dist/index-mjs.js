@@ -1,5 +1,4 @@
 import { arbitrum as arbitrum$1, base as base$1, blast as blast$1, boba as boba$1, bsc as bsc$1, filecoin as filecoin$1, linea as linea$1, mainnet as mainnet$1, manta as manta$1, mantle as mantle$1, moonbeam as moonbeam$1, optimism as optimism$1, polygon as polygon$1, rootstock as rootstock$1, scroll as scroll$1, taiko as taiko$1, polygonZkEvm as polygonZkEvm$1, zkSync as zkSync$1 } from 'viem/chains';
-import { zeroAddress } from 'viem';
 
 const makeConfig = (x) => {
     return x;
@@ -1827,8 +1826,7 @@ const taiko = makeConfig({
             nativeWrappedName: "ETH",
         },
     },
-    // TODO: default pool address
-    defaultPool: zeroAddress,
+    defaultPool: "0x5B731355AAd31C132dd4754E70E92c590Ae42386",
     defaultToken0: "0x07d83526730c7438048D55A4fc0b850e2aaB6f0b",
     defaultToken1: "0xA51894664A773981C6C112C43ce576f315d5b1B6",
     tokenList: [
@@ -1836,7 +1834,7 @@ const taiko = makeConfig({
         { symbol: "USDC", address: "0x07d83526730c7438048D55A4fc0b850e2aaB6f0b" },
     ],
     stables: ["0x07d83526730c7438048D55A4fc0b850e2aaB6f0b"],
-    watchlist: [],
+    watchlist: ["0x5B731355AAd31C132dd4754E70E92c590Ae42386"],
     internalName: "taiko",
     blockExplorers: {
         ...taiko$1.blockExplorers,
