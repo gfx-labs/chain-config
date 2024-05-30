@@ -1,6 +1,6 @@
+import {} from "viem";
 import { zkSync as chain } from "viem/chains";
 import { makeConfig } from "../util";
-import {} from "viem";
 
 export const zkSync = makeConfig({
   ...chain,
@@ -9,7 +9,7 @@ export const zkSync = makeConfig({
   logoUrl: "https://assets.oku.trade/zksync-logo.svg",
   safeReorgDistance: 90000,
   externalId: {
-    zerion:"zksync-era",
+    zerion: "zksync-era",
   },
   uniswap: {
     deployBlock: 12637075,
@@ -52,6 +52,10 @@ export const zkSync = makeConfig({
     "0x3f618967492945c02d5222d333e903345fde741a",
     "0xc99bcff6564bafc70ba1b53c53a03541f780a546",
     "0x1fa900dbb20ed45d18883849c00632bca16f6610",
+    "0xbEEA3B382696669e0E67C08Ea9f4aaE8d528Af0F",
+    "0xf8C42655373A280e8800BEeE44fcC12ffC99E797",
+    "0xa07028B453a1f6Ac277e93f3A0eA73B4bE5c7d63",
+    "0x23C77A553AAc0ad009441C856c05D117c1131e3d",
   ],
   internalName: "zksync",
   blockExplorers: {
