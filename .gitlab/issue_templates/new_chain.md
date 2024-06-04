@@ -4,6 +4,8 @@
 
 - [ ] add chain to oku/chain-configs (use zero address for default pool if none are deployed yet)
 
+- [ ] add relevant tokens to the tokenlist and add any sources to the tokenlist job
+
 - [ ] venn
 
   - [ ] add rpcs to venn.hcl
