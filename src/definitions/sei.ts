@@ -1,4 +1,3 @@
-import { zeroAddress } from "viem";
 import { sei as chain } from "viem/chains";
 import { makeConfig } from "../util";
 
@@ -32,7 +31,7 @@ export const sei = makeConfig({
     },
   },
 
-  defaultPool: zeroAddress,
+  defaultPool: "0x0A6358F069268c7dc4918D5B12c69a782b957Ead",
   defaultToken0: "0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1",
   defaultToken1: "0xE30feDd158A2e3b13e9badaeABaFc5516e95e8C7",
   tokenList: [
@@ -40,7 +39,7 @@ export const sei = makeConfig({
     { symbol: "USDC", address: "0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1" },
   ],
   stables: ["0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1"],
-  watchlist: [],
+  watchlist: ["0x0A6358F069268c7dc4918D5B12c69a782b957Ead"],
   internalName: "sei",
   contracts: {
     ...chain.contracts,

@@ -1,8 +1,8 @@
 (function (global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('viem/chains'), require('viem')) :
-  typeof define === 'function' && define.amd ? define(['exports', 'viem/chains', 'viem'], factory) :
-  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global["oku-chains"] = {}, global.viem_chains, global.viem));
-})(this, (function (exports, chains, viem) { 'use strict';
+  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('viem/chains')) :
+  typeof define === 'function' && define.amd ? define(['exports', 'viem/chains'], factory) :
+  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global["oku-chains"] = {}, global.viem_chains));
+})(this, (function (exports, chains) { 'use strict';
 
   const makeConfig = (x) => {
       return x;
@@ -1831,7 +1831,7 @@
               nativeWrappedName: "SEI",
           },
       },
-      defaultPool: viem.zeroAddress,
+      defaultPool: "0x0A6358F069268c7dc4918D5B12c69a782b957Ead",
       defaultToken0: "0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1",
       defaultToken1: "0xE30feDd158A2e3b13e9badaeABaFc5516e95e8C7",
       tokenList: [
@@ -1839,7 +1839,7 @@
           { symbol: "USDC", address: "0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1" },
       ],
       stables: ["0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1"],
-      watchlist: [],
+      watchlist: ["0x0A6358F069268c7dc4918D5B12c69a782b957Ead"],
       internalName: "sei",
       contracts: {
           ...chains.sei.contracts,

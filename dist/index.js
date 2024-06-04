@@ -1,7 +1,6 @@
 'use strict';
 
 var chains = require('viem/chains');
-var viem = require('viem');
 
 const makeConfig = (x) => {
     return x;
@@ -1830,7 +1829,7 @@ const sei = makeConfig({
             nativeWrappedName: "SEI",
         },
     },
-    defaultPool: viem.zeroAddress,
+    defaultPool: "0x0A6358F069268c7dc4918D5B12c69a782b957Ead",
     defaultToken0: "0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1",
     defaultToken1: "0xE30feDd158A2e3b13e9badaeABaFc5516e95e8C7",
     tokenList: [
@@ -1838,7 +1837,7 @@ const sei = makeConfig({
         { symbol: "USDC", address: "0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1" },
     ],
     stables: ["0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1"],
-    watchlist: [],
+    watchlist: ["0x0A6358F069268c7dc4918D5B12c69a782b957Ead"],
     internalName: "sei",
     contracts: {
         ...chains.sei.contracts,

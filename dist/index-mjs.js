@@ -1,5 +1,4 @@
 import { arbitrum as arbitrum$1, base as base$1, blast as blast$1, boba as boba$1, bsc as bsc$1, filecoin as filecoin$1, linea as linea$1, mainnet as mainnet$1, manta as manta$1, mantle as mantle$1, moonbeam as moonbeam$1, optimism as optimism$1, polygon as polygon$1, rootstock as rootstock$1, scroll as scroll$1, sei as sei$1, taiko as taiko$1, polygonZkEvm as polygonZkEvm$1, zkSync as zkSync$1 } from 'viem/chains';
-import { zeroAddress } from 'viem';
 
 const makeConfig = (x) => {
     return x;
@@ -1828,7 +1827,7 @@ const sei = makeConfig({
             nativeWrappedName: "SEI",
         },
     },
-    defaultPool: zeroAddress,
+    defaultPool: "0x0A6358F069268c7dc4918D5B12c69a782b957Ead",
     defaultToken0: "0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1",
     defaultToken1: "0xE30feDd158A2e3b13e9badaeABaFc5516e95e8C7",
     tokenList: [
@@ -1836,7 +1835,7 @@ const sei = makeConfig({
         { symbol: "USDC", address: "0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1" },
     ],
     stables: ["0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1"],
-    watchlist: [],
+    watchlist: ["0x0A6358F069268c7dc4918D5B12c69a782b957Ead"],
     internalName: "sei",
     contracts: {
         ...sei$1.contracts,

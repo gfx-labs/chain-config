@@ -12,7 +12,7 @@ var Sei Network = Network{
 	BlockExplorers: map[string]string{
 		"default": "https://seitrace.com",
 	},
-	DefaultPool:   common.HexToAddress("0x0000000000000000000000000000000000000000"),
+	DefaultPool:   common.HexToAddress("0x0A6358F069268c7dc4918D5B12c69a782b957Ead"),
 	InternalName:  "sei",
 	ExternalId:    map[string]string{},
 	DefaultToken0: common.HexToAddress("0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1"),
@@ -20,8 +20,8 @@ var Sei Network = Network{
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1"): {}},
-	Watchlist:        []common.Address{},
-	BlockTimeSeconds: 3,
+	Watchlist:        []common.Address{common.HexToAddress("0x0A6358F069268c7dc4918D5B12c69a782b957Ead")},
+	BlockTimeSeconds: 0.4,
 	Oku: OkuMetadata{
 		LimitOrderRegistry:            common.HexToAddress("0xA9d71E1dd7ca26F26e656E66d6AA81ed7f745bf0"),
 		LimitOrderRegistryDeployBlock: 79448363,

@@ -3652,7 +3652,7 @@ declare const sei: Readonly<{
             nativeWrappedName: string;
         };
     };
-    defaultPool: "0x0000000000000000000000000000000000000000";
+    defaultPool: "0x0A6358F069268c7dc4918D5B12c69a782b957Ead";
     defaultToken0: "0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1";
     defaultToken1: "0xE30feDd158A2e3b13e9badaeABaFc5516e95e8C7";
     tokenList: ({
@@ -3663,7 +3663,7 @@ declare const sei: Readonly<{
         address: "0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1";
     })[];
     stables: "0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1"[];
-    watchlist: never[];
+    watchlist: "0x0A6358F069268c7dc4918D5B12c69a782b957Ead"[];
     internalName: "sei";
     contracts: {
         limitOrder: {
@@ -10771,7 +10771,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             nativeWrappedName: string;
         };
     };
-    defaultPool: "0x0000000000000000000000000000000000000000";
+    defaultPool: "0x0A6358F069268c7dc4918D5B12c69a782b957Ead";
     defaultToken0: "0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1";
     defaultToken1: "0xE30feDd158A2e3b13e9badaeABaFc5516e95e8C7";
     tokenList: ({
@@ -10782,7 +10782,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         address: "0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1";
     })[];
     stables: "0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1"[];
-    watchlist: never[];
+    watchlist: "0x0A6358F069268c7dc4918D5B12c69a782b957Ead"[];
     internalName: "sei";
     contracts: {
         limitOrder: {
