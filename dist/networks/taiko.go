@@ -12,11 +12,9 @@ var Taiko Network = Network{
 	BlockExplorers: map[string]string{
 		"default": "https://taikoscan.io",
 	},
-	DefaultPool:  common.HexToAddress("0xDaC937d4263E6A667A027FE59B2FFe2F91D54f46"),
-	InternalName: "taiko",
-	ExternalId: map[string]string{
-		"zerion": "taiko",
-	},
+	DefaultPool:   common.HexToAddress("0xDaC937d4263E6A667A027FE59B2FFe2F91D54f46"),
+	InternalName:  "taiko",
+	ExternalId:    map[string]string{},
 	DefaultToken0: common.HexToAddress("0x07d83526730c7438048D55A4fc0b850e2aaB6f0b"),
 	DefaultToken1: common.HexToAddress("0xa9d23408b9ba935c230493c40c73824df71a0975"),
 	//TODO: TokenList:        []any{},

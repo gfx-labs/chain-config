@@ -1970,9 +1970,7 @@ declare const mantle: Readonly<{
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/mantle-logo.png";
     safeReorgDistance: 90000;
-    externalId: {
-        zerion: string;
-    };
+    externalId: {};
     uniswap: {
         deployBlock: number;
         poolFactory: "0x0d922Fb1Bc191F64970ac40376643808b4B74Df9";
@@ -3631,9 +3629,7 @@ declare const taiko: Readonly<{
     sortIndex: 4;
     logoUrl: "https://assets.oku.trade/taiko-logo.svg";
     safeReorgDistance: 90000;
-    externalId: {
-        zerion: string;
-    };
+    externalId: {};
     uniswap: {
         deployBlock: number;
         poolFactory: "0x75FC67473A91335B5b8F8821277262a13B38c9b3";
@@ -3724,7 +3720,9 @@ declare const polygonZkEvm: Readonly<{
     blockTimeSeconds: 7;
     logoUrl: "https://assets.oku.trade/zkevm-logo.svg";
     safeReorgDistance: 90000;
-    externalId: {};
+    externalId: {
+        zerion: string;
+    };
     uniswap: {
         deployBlock: number;
         poolFactory: "0xff83c3c800Fec21de45C5Ec30B69ddd5Ee60DFC2";
@@ -8710,7 +8708,9 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     blockTimeSeconds: 7;
     logoUrl: "https://assets.oku.trade/zkevm-logo.svg";
     safeReorgDistance: 90000;
-    externalId: {};
+    externalId: {
+        zerion: string;
+    };
     uniswap: {
         deployBlock: number;
         poolFactory: "0xff83c3c800Fec21de45C5Ec30B69ddd5Ee60DFC2";
@@ -10491,9 +10491,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     sortIndex: 4;
     logoUrl: "https://assets.oku.trade/taiko-logo.svg";
     safeReorgDistance: 90000;
-    externalId: {
-        zerion: string;
-    };
+    externalId: {};
     uniswap: {
         deployBlock: number;
         poolFactory: "0x75FC67473A91335B5b8F8821277262a13B38c9b3";
@@ -10579,9 +10577,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/mantle-logo.png";
     safeReorgDistance: 90000;
-    externalId: {
-        zerion: string;
-    };
+    externalId: {};
     uniswap: {
         deployBlock: number;
         poolFactory: "0x0d922Fb1Bc191F64970ac40376643808b4B74Df9";

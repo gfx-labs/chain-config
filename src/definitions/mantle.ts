@@ -7,9 +7,7 @@ export const mantle = makeConfig({
   sortIndex: 15,
   logoUrl: "https://assets.oku.trade/mantle-logo.png",
   safeReorgDistance: 90000,
-  externalId: {
-    zerion: "mantle",
-  },
+  externalId: {},
   uniswap: {
     deployBlock: 63795918,
     poolFactory: "0x0d922Fb1Bc191F64970ac40376643808b4B74Df9",

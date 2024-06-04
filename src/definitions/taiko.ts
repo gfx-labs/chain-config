@@ -7,9 +7,7 @@ export const taiko = makeConfig({
   sortIndex: 4,
   logoUrl: "https://assets.oku.trade/taiko-logo.svg",
   safeReorgDistance: 90000,
-  externalId: {
-    zerion: "taiko",
-  },
+  externalId: {},
   uniswap: {
     deployBlock: 961,
     poolFactory: "0x75FC67473A91335B5b8F8821277262a13B38c9b3",

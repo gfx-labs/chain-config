@@ -1084,9 +1084,7 @@ const mantle = makeConfig({
     sortIndex: 15,
     logoUrl: "https://assets.oku.trade/mantle-logo.png",
     safeReorgDistance: 90000,
-    externalId: {
-        zerion: "mantle",
-    },
+    externalId: {},
     uniswap: {
         deployBlock: 63795918,
         poolFactory: "0x0d922Fb1Bc191F64970ac40376643808b4B74Df9",
@@ -1808,9 +1806,7 @@ const taiko = makeConfig({
     sortIndex: 4,
     logoUrl: "https://assets.oku.trade/taiko-logo.svg",
     safeReorgDistance: 90000,
-    externalId: {
-        zerion: "taiko",
-    },
+    externalId: {},
     uniswap: {
         deployBlock: 961,
         poolFactory: "0x75FC67473A91335B5b8F8821277262a13B38c9b3",
@@ -1883,7 +1879,9 @@ const polygonZkEvm = makeConfig({
     blockTimeSeconds: 7,
     logoUrl: "https://assets.oku.trade/zkevm-logo.svg",
     safeReorgDistance: 90000,
-    externalId: {},
+    externalId: {
+        zerion: "polygon-zkevm",
+    },
     uniswap: {
         deployBlock: 8466867,
         poolFactory: "0xff83c3c800Fec21de45C5Ec30B69ddd5Ee60DFC2",

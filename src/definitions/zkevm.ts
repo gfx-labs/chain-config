@@ -1,6 +1,6 @@
+import { } from "viem";
 import { polygonZkEvm as chain } from "viem/chains";
 import { makeConfig } from "../util";
-import {} from "viem";
 
 export const polygonZkEvm = makeConfig({
   ...chain,
@@ -9,6 +9,7 @@ export const polygonZkEvm = makeConfig({
   logoUrl: "https://assets.oku.trade/zkevm-logo.svg",
   safeReorgDistance: 90000,
   externalId: {
+    zerion: "polygon-zkevm",
   },
   uniswap: {
     deployBlock: 8466867,
