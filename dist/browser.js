@@ -1804,7 +1804,7 @@
 
   const sei = makeConfig({
       ...chains.sei,
-      blockTimeSeconds: 3,
+      blockTimeSeconds: 0.4,
       sortIndex: 5,
       logoUrl: "https://assets.oku.trade/sei-logo.svg",
       safeReorgDistance: 90000,

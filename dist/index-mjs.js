@@ -1801,7 +1801,7 @@ const scroll = makeConfig({
 
 const sei = makeConfig({
     ...sei$1,
-    blockTimeSeconds: 3,
+    blockTimeSeconds: 0.4,
     sortIndex: 5,
     logoUrl: "https://assets.oku.trade/sei-logo.svg",
     safeReorgDistance: 90000,

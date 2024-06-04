@@ -3625,7 +3625,7 @@ declare const scroll: Readonly<{
     fees?: import("viem").ChainFees<undefined> | undefined;
 }>;
 declare const sei: Readonly<{
-    blockTimeSeconds: 3;
+    blockTimeSeconds: 0.4;
     sortIndex: 5;
     logoUrl: "https://assets.oku.trade/sei-logo.svg";
     safeReorgDistance: 90000;
@@ -10744,7 +10744,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     serializers?: import("viem").ChainSerializers<undefined> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
 }>, Readonly<{
-    blockTimeSeconds: 3;
+    blockTimeSeconds: 0.4;
     sortIndex: 5;
     logoUrl: "https://assets.oku.trade/sei-logo.svg";
     safeReorgDistance: 90000;
