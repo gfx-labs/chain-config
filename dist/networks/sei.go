@@ -21,7 +21,7 @@ var Sei Network = Network{
 	Stables:          []common.Address{common.HexToAddress("0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1"): {}},
 	Watchlist:        []common.Address{},
-	BlockTimeSeconds: 3,
+	BlockTimeSeconds: 0.4,
 	Oku: OkuMetadata{
 		LimitOrderRegistry:            common.HexToAddress("0xA9d71E1dd7ca26F26e656E66d6AA81ed7f745bf0"),
 		LimitOrderRegistryDeployBlock: 79448363,
