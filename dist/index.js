@@ -1851,9 +1851,8 @@ const sei = makeConfig({
         weth9: {
             address: "0xE30feDd158A2e3b13e9badaeABaFc5516e95e8C7",
         },
-        // TODO: check if this is good or not
         multicall2: {
-            address: "0x0d922Fb1Bc191F64970ac40376643808b4B74Df9",
+            address: "0x9b7aC6735b23578E81260acD34E3668D0cc6000A",
         },
         multicall3: {
             address: "0xcA11bde05977b3631167028862bE2a173976CA11",
