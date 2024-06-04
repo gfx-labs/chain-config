@@ -32,6 +32,7 @@ const (
 	NameLinea        InternalName = "linea"
 	NameTaiko        InternalName = "taiko"
 	NameMantle       InternalName = "mantle"
+	NameSei          InternalName = "sei"
 )
 
 var AllNetworks = []Network{
@@ -53,6 +54,7 @@ var AllNetworks = []Network{
 	Linea,
 	Taiko,
 	Mantle,
+	Sei,
 }
 
 var networksByName = map[string]Network{
@@ -74,6 +76,7 @@ var networksByName = map[string]Network{
 	"linea":         Linea,
 	"taiko":         Taiko,
 	"mantle":        Mantle,
+	"sei":           Sei,
 }
 
 var networksById = map[int]Network{
@@ -95,6 +98,7 @@ var networksById = map[int]Network{
 	59144:  Linea,
 	167000: Taiko,
 	5000:   Mantle,
+	1329:   Sei,
 }
 
 func NetworkByName(name string) (*Network, error) {

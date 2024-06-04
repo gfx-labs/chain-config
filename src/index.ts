@@ -21,5 +21,5 @@ export const MAINNET_CHAINS = [
   defs.linea,
   defs.taiko,
   defs.mantle,
+  defs.sei,
 ] as const;
-
