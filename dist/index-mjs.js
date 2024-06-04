@@ -1839,7 +1839,12 @@ const taiko = makeConfig({
         { symbol: "USDC", address: "0x07d83526730c7438048D55A4fc0b850e2aaB6f0b" },
     ],
     stables: ["0x07d83526730c7438048D55A4fc0b850e2aaB6f0b"],
-    watchlist: ["0x5B731355AAd31C132dd4754E70E92c590Ae42386"],
+    watchlist: [
+        "0x5B731355AAd31C132dd4754E70E92c590Ae42386",
+        "0xe47a76e15a6f3976c8dc070b3a54c7f7083d668b",
+        "0xcbf2e8520B88C4eC30B2B6ddfAa2900087B42D55",
+        "0x4e35666b3ebf367842b9b6d5b297a2a069f862f5",
+    ],
     internalName: "taiko",
     blockExplorers: {
         ...taiko$1.blockExplorers,
