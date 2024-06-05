@@ -20,7 +20,7 @@ var Taiko Network = Network{
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0x07d83526730c7438048D55A4fc0b850e2aaB6f0b")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x07d83526730c7438048D55A4fc0b850e2aaB6f0b"): {}},
-	Watchlist:        []common.Address{common.HexToAddress("0xDaC937d4263E6A667A027FE59B2FFe2F91D54f46"), common.HexToAddress("0x5B731355AAd31C132dd4754E70E92c590Ae42386"), common.HexToAddress("0xe47a76e15a6f3976c8dc070b3a54c7f7083d668b"), common.HexToAddress("0xcbf2e8520B88C4eC30B2B6ddfAa2900087B42D55"), common.HexToAddress("0x4e35666b3ebf367842b9b6d5b297a2a069f862f5")},
+	Watchlist:        []common.Address{common.HexToAddress("0xDaC937d4263E6A667A027FE59B2FFe2F91D54f46"), common.HexToAddress("0x5B731355AAd31C132dd4754E70E92c590Ae42386"), common.HexToAddress("0xe47a76e15a6f3976c8dc070b3a54c7f7083d668b"), common.HexToAddress("0xcbf2e8520B88C4eC30B2B6ddfAa2900087B42D55"), common.HexToAddress("0x4e35666b3ebf367842b9b6d5b297a2a069f862f5"), common.HexToAddress("0x6dA6B21DB1Dfd19D67BfF1877f62953a2D365fc9")},
 	BlockTimeSeconds: 24,
 	Oku: OkuMetadata{
 		LimitOrderRegistry:            common.HexToAddress("0x447B8E40B0CdA8e55F405C86bC635D02d0540aB8"),

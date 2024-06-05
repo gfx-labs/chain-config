@@ -45,6 +45,7 @@ export const taiko = makeConfig({
     "0xe47a76e15a6f3976c8dc070b3a54c7f7083d668b",
     "0xcbf2e8520B88C4eC30B2B6ddfAa2900087B42D55",
     "0x4e35666b3ebf367842b9b6d5b297a2a069f862f5",
+    "0x6dA6B21DB1Dfd19D67BfF1877f62953a2D365fc9",
   ],
   internalName: "taiko",
   blockExplorers: {
