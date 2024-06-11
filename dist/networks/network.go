@@ -125,6 +125,7 @@ func NetworkByIdString(idString string) (*Network, error) {
 
 type Network struct {
 	LogoUrl           string
+	NativeLogoUrl     string
 	SortIndex         int64
 	SafeReorgDistance int64
 	DefaultPool       common.Address

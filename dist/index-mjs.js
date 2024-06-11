@@ -212,6 +212,7 @@ const arbitrum = makeConfig({
         "0x50450351517117cb58189edba6bbad6284d45902",
     ],
     internalName: "arbitrum",
+    nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
     contracts: {
         ...arbitrum$1.contracts,
         nftManager: {
@@ -298,6 +299,7 @@ const base = makeConfig({
         "0x7e904aaf3439402eb21958fe090bd852d5e882cf",
     ],
     internalName: "base",
+    nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
     contracts: {
         ...base$1.contracts,
         nftManager: {
@@ -356,9 +358,7 @@ const blast = makeConfig({
         { symbol: "WETH", address: "0x4300000000000000000000000000000000000004" },
         { symbol: "USDB", address: "0x4300000000000000000000000000000000000003" },
     ],
-    stables: [
-        "0x4300000000000000000000000000000000000003",
-    ],
+    stables: ["0x4300000000000000000000000000000000000003"],
     watchlist: [
         "0xf5A23bDD36a56EDe75D503F6f643d5eaF25B1a8F",
         "0xf52b4b69123cbcf07798ae8265642793b2e8990c",
@@ -369,6 +369,7 @@ const blast = makeConfig({
         "0x99f8a29a332eb9004f83abb1b4690de8b00dfccf",
     ],
     internalName: "blast",
+    nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
     contracts: {
         ...blast$1.contracts,
         limitOrder: {
@@ -398,8 +399,8 @@ const boba = makeConfig({
     },
     nativeCurrency: {
         decimals: 18,
-        name: 'Ether',
-        symbol: 'ETH',
+        name: "Ether",
+        symbol: "ETH",
     },
     uniswap: {
         deployBlock: 969351,
@@ -454,6 +455,7 @@ const boba = makeConfig({
         "0x66faef55892dae3932a043d3238ecaa271d36e0d",
     ],
     internalName: "boba",
+    nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
     contracts: {
         ...boba$1.contracts,
         limitOrder: {
@@ -577,6 +579,7 @@ const bsc = makeConfig({
         "0x06396509195eb9e07c38a016694dc9ff535b128a",
     ],
     internalName: "bsc",
+    nativeLogoUrl: "https://assets.oku.trade/natives/bnb.png",
     contracts: {
         ...bsc$1.contracts,
         limitOrder: {
@@ -679,6 +682,7 @@ const filecoin = makeConfig({
         "0xca166403c6f41e1fecc0eb40ac1947fd6399d5c5",
     ],
     internalName: "filecoin",
+    nativeLogoUrl: "https://assets.oku.trade/natives/fil.png",
     contracts: {
         ...filecoin$1.contracts,
         limitOrder: {
@@ -756,6 +760,7 @@ const linea = makeConfig({
         "0x42a72c7fbb355b2cfe08f8716595f3f3509b3bea",
     ],
     internalName: "linea",
+    nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
     contracts: {
         ...linea$1.contracts,
         limitOrder: {
@@ -978,6 +983,7 @@ const mainnet = makeConfig({
         "0x7bea39867e4169dbe237d55c8242a8f2fcdcc387",
     ],
     internalName: "ethereum",
+    nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
     contracts: {
         ...mainnet$1.contracts,
         limitOrder: {
@@ -1056,6 +1062,7 @@ const manta = makeConfig({
         "0x5bedc5d1e1d0b32caca78db23af71126b6fe26b6",
     ],
     internalName: "manta",
+    nativeLogoUrl: "https://assets.oku.trade/natives/manta.png",
     contracts: {
         ...manta$1.contracts,
         limitOrder: {
@@ -1123,6 +1130,7 @@ const mantle = makeConfig({
     ],
     watchlist: ["0x086F766b336DFB0f705Dc030dB01993b22D81266"],
     internalName: "mantle",
+    nativeLogoUrl: "https://assets.oku.trade/natives/mnt.png",
     contracts: {
         ...mantle$1.contracts,
         limitOrder: {
@@ -1199,6 +1207,7 @@ const moonbeam = makeConfig({
         "0x19156c03a6fd894beb4fa6a828e854d3a4bed372",
     ],
     internalName: "moonbeam",
+    nativeLogoUrl: "https://assets.oku.trade/natives/glmr.png",
     contracts: {
         ...moonbeam$1.contracts,
         limitOrder: {
@@ -1422,6 +1431,7 @@ const optimism = makeConfig({
         "0x730691cdac3cbd4d41fc5eb9d8abbb0cea795b94",
     ],
     internalName: "optimism",
+    nativeLogoUrl: "https://assets.oku.trade/naitves/eth.png",
     contracts: {
         ...optimism$1.contracts,
         limitOrder: {
@@ -1635,6 +1645,7 @@ const polygon = makeConfig({
         "0x357faf5843c7fd7fb4e34fbeabdac16eabe8a5bc",
     ],
     internalName: "polygon",
+    nativeLogoUrl: "https://assets.oku.trade/naitves/matic.png",
     contracts: {
         ...polygon$1.contracts,
         nftManager: {
@@ -1709,6 +1720,7 @@ const rootstock = makeConfig({
         blockscout: { name: "Blockscout", url: "https://rootstock.blockscout.com" },
     },
     internalName: "rootstock",
+    nativeLogoUrl: "https://assets.oku.trade/naitves/rbtc.png",
     contracts: {
         ...rootstock$1.contracts,
         limitOrder: {
@@ -1778,6 +1790,7 @@ const scroll = makeConfig({
         "0x813df550a32d4a9d42010d057386429ad2328ed9",
     ],
     internalName: "scroll",
+    nativeLogoUrl: "https://assets.oku.trade/naitves/eth.png",
     contracts: {
         ...scroll$1.contracts,
         limitOrder: {
@@ -1837,6 +1850,7 @@ const sei = makeConfig({
     stables: ["0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1"],
     watchlist: ["0x0A6358F069268c7dc4918D5B12c69a782b957Ead"],
     internalName: "sei",
+    nativeLogoUrl: "https://assets.oku.trade/naitves/sei.png",
     contracts: {
         ...sei$1.contracts,
         limitOrder: {
@@ -1904,6 +1918,7 @@ const taiko = makeConfig({
         "0x6dA6B21DB1Dfd19D67BfF1877f62953a2D365fc9",
     ],
     internalName: "taiko",
+    nativeLogoUrl: "https://assets.oku.trade/naitves/eth.png",
     blockExplorers: {
         ...taiko$1.blockExplorers,
         default: {
@@ -1979,6 +1994,7 @@ const polygonZkEvm = makeConfig({
     ],
     watchlist: ["0xd2c7e323c6f5415dc0ee4e3811901b3380d316fd"],
     internalName: "polygon-zkevm",
+    nativeLogoUrl: "https://assets.oku.trade/naitves/eth.png",
     contracts: {
         ...polygonZkEvm$1.contracts,
         limitOrder: {
@@ -2054,6 +2070,7 @@ const zkSync = makeConfig({
         "0x23C77A553AAc0ad009441C856c05D117c1131e3d",
     ],
     internalName: "zksync",
+    nativeLogoUrl: "https://assets.oku.trade/naitves/eth.png",
     blockExplorers: {
         ...zkSync$1.blockExplorers,
         default: {
