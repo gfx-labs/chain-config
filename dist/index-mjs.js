@@ -1431,7 +1431,7 @@ const optimism = makeConfig({
         "0x730691cdac3cbd4d41fc5eb9d8abbb0cea795b94",
     ],
     internalName: "optimism",
-    nativeLogoUrl: "https://assets.oku.trade/naitves/eth.png",
+    nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
     contracts: {
         ...optimism$1.contracts,
         limitOrder: {
@@ -1645,7 +1645,7 @@ const polygon = makeConfig({
         "0x357faf5843c7fd7fb4e34fbeabdac16eabe8a5bc",
     ],
     internalName: "polygon",
-    nativeLogoUrl: "https://assets.oku.trade/naitves/matic.png",
+    nativeLogoUrl: "https://assets.oku.trade/natives/matic.png",
     contracts: {
         ...polygon$1.contracts,
         nftManager: {
@@ -1720,7 +1720,7 @@ const rootstock = makeConfig({
         blockscout: { name: "Blockscout", url: "https://rootstock.blockscout.com" },
     },
     internalName: "rootstock",
-    nativeLogoUrl: "https://assets.oku.trade/naitves/rbtc.png",
+    nativeLogoUrl: "https://assets.oku.trade/natives/rbtc.png",
     contracts: {
         ...rootstock$1.contracts,
         limitOrder: {
@@ -1790,7 +1790,7 @@ const scroll = makeConfig({
         "0x813df550a32d4a9d42010d057386429ad2328ed9",
     ],
     internalName: "scroll",
-    nativeLogoUrl: "https://assets.oku.trade/naitves/eth.png",
+    nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
     contracts: {
         ...scroll$1.contracts,
         limitOrder: {
@@ -1850,7 +1850,7 @@ const sei = makeConfig({
     stables: ["0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1"],
     watchlist: ["0x0A6358F069268c7dc4918D5B12c69a782b957Ead"],
     internalName: "sei",
-    nativeLogoUrl: "https://assets.oku.trade/naitves/sei.png",
+    nativeLogoUrl: "https://assets.oku.trade/natives/sei.png",
     contracts: {
         ...sei$1.contracts,
         limitOrder: {
@@ -1918,7 +1918,7 @@ const taiko = makeConfig({
         "0x6dA6B21DB1Dfd19D67BfF1877f62953a2D365fc9",
     ],
     internalName: "taiko",
-    nativeLogoUrl: "https://assets.oku.trade/naitves/eth.png",
+    nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
     blockExplorers: {
         ...taiko$1.blockExplorers,
         default: {
@@ -1994,7 +1994,7 @@ const polygonZkEvm = makeConfig({
     ],
     watchlist: ["0xd2c7e323c6f5415dc0ee4e3811901b3380d316fd"],
     internalName: "polygon-zkevm",
-    nativeLogoUrl: "https://assets.oku.trade/naitves/eth.png",
+    nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
     contracts: {
         ...polygonZkEvm$1.contracts,
         limitOrder: {
@@ -2070,7 +2070,7 @@ const zkSync = makeConfig({
         "0x23C77A553AAc0ad009441C856c05D117c1131e3d",
     ],
     internalName: "zksync",
-    nativeLogoUrl: "https://assets.oku.trade/naitves/eth.png",
+    nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
     blockExplorers: {
         ...zkSync$1.blockExplorers,
         default: {
