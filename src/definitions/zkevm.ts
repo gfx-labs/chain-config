@@ -51,7 +51,7 @@ export const polygonZkEvm = makeConfig({
   ],
   watchlist: ["0xd2c7e323c6f5415dc0ee4e3811901b3380d316fd"],
   internalName: "polygon-zkevm",
-  nativeLogoUrl: "https://assets.oku.trade/naitves/eth.png",
+  nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
   contracts: {
     ...chain.contracts,
     limitOrder: {

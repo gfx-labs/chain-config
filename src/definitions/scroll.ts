@@ -52,7 +52,7 @@ export const scroll = makeConfig({
     "0x813df550a32d4a9d42010d057386429ad2328ed9",
   ],
   internalName: "scroll",
-  nativeLogoUrl: "https://assets.oku.trade/naitves/eth.png",
+  nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
   contracts: {
     ...chain.contracts,
     limitOrder: {

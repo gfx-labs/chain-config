@@ -207,7 +207,7 @@ export const optimism = makeConfig({
     "0x730691cdac3cbd4d41fc5eb9d8abbb0cea795b94",
   ],
   internalName: "optimism",
-  nativeLogoUrl: "https://assets.oku.trade/naitves/eth.png",
+  nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
   contracts: {
     ...chain.contracts,
     limitOrder: {

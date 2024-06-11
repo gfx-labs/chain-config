@@ -58,7 +58,7 @@ export const zkSync = makeConfig({
     "0x23C77A553AAc0ad009441C856c05D117c1131e3d",
   ],
   internalName: "zksync",
-  nativeLogoUrl: "https://assets.oku.trade/naitves/eth.png",
+  nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
   blockExplorers: {
     ...chain.blockExplorers,
     default: {

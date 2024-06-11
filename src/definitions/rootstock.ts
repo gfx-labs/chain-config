@@ -57,7 +57,7 @@ export const rootstock = makeConfig({
     blockscout: { name: "Blockscout", url: "https://rootstock.blockscout.com" },
   },
   internalName: "rootstock",
-  nativeLogoUrl: "https://assets.oku.trade/naitves/rbtc.png",
+  nativeLogoUrl: "https://assets.oku.trade/natives/rbtc.png",
   contracts: {
     ...chain.contracts,
     limitOrder: {

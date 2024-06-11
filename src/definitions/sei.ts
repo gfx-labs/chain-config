@@ -41,7 +41,7 @@ export const sei = makeConfig({
   stables: ["0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1"],
   watchlist: ["0x0A6358F069268c7dc4918D5B12c69a782b957Ead"],
   internalName: "sei",
-  nativeLogoUrl: "https://assets.oku.trade/naitves/sei.png",
+  nativeLogoUrl: "https://assets.oku.trade/natives/sei.png",
   contracts: {
     ...chain.contracts,
     limitOrder: {

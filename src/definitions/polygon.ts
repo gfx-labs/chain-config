@@ -199,7 +199,7 @@ export const polygon = makeConfig({
     "0x357faf5843c7fd7fb4e34fbeabdac16eabe8a5bc",
   ],
   internalName: "polygon",
-  nativeLogoUrl: "https://assets.oku.trade/naitves/matic.png",
+  nativeLogoUrl: "https://assets.oku.trade/natives/matic.png",
   contracts: {
     ...chain.contracts,
     nftManager: {
