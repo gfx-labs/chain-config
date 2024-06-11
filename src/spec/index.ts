@@ -44,8 +44,11 @@ export interface TokenMetadata {
   usdcAddress?: Address;
 }
 
-export interface IChainInfo<formatters extends ChainFormatters | undefined = (ChainFormatters | undefined)> extends Chain<formatters> {
+export interface IChainInfo<
+  formatters extends ChainFormatters | undefined = ChainFormatters | undefined,
+> extends Chain<formatters> {
   logoUrl: string;
+  nativeLogoUrl: string;
   sortIndex: number;
   safeReorgDistance?: number;
   defaultPool: Address;
@@ -58,7 +61,7 @@ export interface IChainInfo<formatters extends ChainFormatters | undefined = (Ch
   externalId?: {
     zerion?: string;
     debank?: string;
-  }
+  };
 
   blockTimeSeconds: float64;
 

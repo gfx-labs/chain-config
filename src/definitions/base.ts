@@ -72,6 +72,7 @@ export const base = makeConfig({
     "0x7e904aaf3439402eb21958fe090bd852d5e882cf",
   ],
   internalName: "base",
+  nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
   contracts: {
     ...chain.contracts,
     nftManager: {

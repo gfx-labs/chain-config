@@ -61,6 +61,7 @@ export const manta = makeConfig({
     "0x5bedc5d1e1d0b32caca78db23af71126b6fe26b6",
   ],
   internalName: "manta",
+  nativeLogoUrl: "https://assets.oku.trade/natives/manta.png",
   contracts: {
     ...chain.contracts,
     limitOrder: {

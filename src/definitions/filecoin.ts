@@ -1,6 +1,6 @@
+import {} from "viem";
 import { filecoin as chain } from "viem/chains";
 import { makeConfig } from "../util";
-import { } from "viem";
 
 export const filecoin = makeConfig({
   ...chain,
@@ -16,8 +16,7 @@ export const filecoin = makeConfig({
     },
   },
   logoUrl: "https://assets.oku.trade/filecoin-logo.svg",
-  externalId: {
-  },
+  externalId: {},
   uniswap: {
     deployBlock: 3195837,
     poolFactory: "0xB4C47eD546Fc31E26470a186eC2C5F19eF09BA41",
@@ -85,6 +84,7 @@ export const filecoin = makeConfig({
     "0xca166403c6f41e1fecc0eb40ac1947fd6399d5c5",
   ],
   internalName: "filecoin",
+  nativeLogoUrl: "https://assets.oku.trade/natives/fil.png",
   contracts: {
     ...chain.contracts,
     limitOrder: {

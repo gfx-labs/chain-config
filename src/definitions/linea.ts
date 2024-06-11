@@ -1,6 +1,6 @@
 import { linea as chain } from "viem/chains";
 import { makeConfig } from "../util";
-import { } from "viem";
+import {} from "viem";
 
 export const linea = makeConfig({
   ...chain,
@@ -60,6 +60,7 @@ export const linea = makeConfig({
     "0x42a72c7fbb355b2cfe08f8716595f3f3509b3bea",
   ],
   internalName: "linea",
+  nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
   contracts: {
     ...chain.contracts,
     limitOrder: {

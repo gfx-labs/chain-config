@@ -48,6 +48,7 @@ export const taiko = makeConfig({
     "0x6dA6B21DB1Dfd19D67BfF1877f62953a2D365fc9",
   ],
   internalName: "taiko",
+  nativeLogoUrl: "https://assets.oku.trade/naitves/eth.png",
   blockExplorers: {
     ...chain.blockExplorers,
     default: {

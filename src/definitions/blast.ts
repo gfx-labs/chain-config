@@ -1,6 +1,6 @@
 import { blast as chain } from "viem/chains";
 import { makeConfig } from "../util";
-import { } from "viem";
+import {} from "viem";
 
 export const blast = makeConfig({
   ...chain,
@@ -41,9 +41,7 @@ export const blast = makeConfig({
     { symbol: "WETH", address: "0x4300000000000000000000000000000000000004" },
     { symbol: "USDB", address: "0x4300000000000000000000000000000000000003" },
   ],
-  stables: [
-    "0x4300000000000000000000000000000000000003",
-  ],
+  stables: ["0x4300000000000000000000000000000000000003"],
   watchlist: [
     "0xf5A23bDD36a56EDe75D503F6f643d5eaF25B1a8F",
     "0xf52b4b69123cbcf07798ae8265642793b2e8990c",
@@ -54,6 +52,7 @@ export const blast = makeConfig({
     "0x99f8a29a332eb9004f83abb1b4690de8b00dfccf",
   ],
   internalName: "blast",
+  nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
   contracts: {
     ...chain.contracts,
     limitOrder: {

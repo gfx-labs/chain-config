@@ -1,6 +1,6 @@
 import { rootstock as chain } from "viem/chains";
 import { makeConfig } from "../util";
-import {} from "viem";
+import { } from "viem";
 
 export const rootstock = makeConfig({
   ...chain,
@@ -9,8 +9,7 @@ export const rootstock = makeConfig({
   blockTimeSeconds: 33,
   logoUrl: "https://assets.oku.trade/rootstock-logo.svg",
   safeReorgDistance: 90000,
-  externalId: {
-  },
+  externalId: {},
   uniswap: {
     deployBlock: 5829210,
     poolFactory: "0xaF37EC98A00FD63689CF3060BF3B6784E00caD82",
@@ -58,6 +57,7 @@ export const rootstock = makeConfig({
     blockscout: { name: "Blockscout", url: "https://rootstock.blockscout.com" },
   },
   internalName: "rootstock",
+  nativeLogoUrl: "https://assets.oku.trade/naitves/rbtc.png",
   contracts: {
     ...chain.contracts,
     limitOrder: {

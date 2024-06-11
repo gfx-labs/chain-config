@@ -1,4 +1,4 @@
-import { } from "viem";
+import {} from "viem";
 import { boba as chain } from "viem/chains";
 import { makeConfig } from "../util";
 
@@ -14,8 +14,8 @@ export const boba = makeConfig({
   },
   nativeCurrency: {
     decimals: 18,
-    name: 'Ether',
-    symbol: 'ETH',
+    name: "Ether",
+    symbol: "ETH",
   },
   uniswap: {
     deployBlock: 969351,
@@ -72,6 +72,7 @@ export const boba = makeConfig({
     "0x66faef55892dae3932a043d3238ecaa271d36e0d",
   ],
   internalName: "boba",
+  nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
   contracts: {
     ...chain.contracts,
     limitOrder: {
