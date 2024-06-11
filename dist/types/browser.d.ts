@@ -2227,7 +2227,7 @@ declare const optimism: Readonly<{
     stables: ("0x0b2c639c533813f4aa9d7837caf62653d097ff85" | "0x7f5c764cbc14f9669b88837ca1490cca17c31607" | "0x94b008aA00579c1307B0EF2c499aD98a8ce58e58" | "0x8c6f28f2f1a3c87f0f938b96d27520d9751ec8d9" | "0x8aE125E8653821E851F12A49F7765db9a9ce7384" | "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1")[];
     watchlist: ("0x85149247691df622eaf1a8bd0cafd40bc45154a9" | "0xc858a329bf053be78d6239c4a4343b8fbd21472b" | "0x95d9d28606ee55de7667f0f176ebfc3215cfd9c0" | "0x1c3140ab59d6caf9fa7459c6f83d4b52ba881d36" | "0xbf16ef186e715668aa29cef57e2fd7f9d48adfe6" | "0xb589969d38ce76d3d7aa319de7133bc9755fd840" | "0x03af20bdaaffb4cc0a521796a223f7d85e2aac31" | "0xf1f199342687a7d78bcc16fce79fa2665ef870e1" | "0xadb35413ec50e0afe41039eac8b930d313e94fa4" | "0xb2ac2e5a3684411254d58b1c5a542212b782114d" | "0x6168ec836d0b1f0c37381ec7ed1891a412872121" | "0xdd0c6bae8ad5998c358b823df15a2a4181da1b80" | "0x320616dbe138aa2f3db7a5a46ba79a13032cc5f2" | "0x0bb50d3e479e4682558fdb86f41a205e2c035ae5" | "0x68f5c0a2de713a54991e01858fd27a3832401849" | "0x73b14a78a0d396c521f954532d43fd5ffe385216" | "0x04f6c85a1b00f6d9b75f91fd23835974cc07e65c" | "0x85c31ffa3706d1cce9d525a00f1c7d4a2911754c" | "0xfc1f3296458f9b2a27a0b91dd7681c4020e09d05" | "0xaefc1edaede6adadcdf3bb344577d45a80b19582" | "0x0392B358CE4547601BEFA962680BEDE836606AE2" | "0x36E42931A765022790B797963E42C5522D6B585A" | "0x03A9DC118B231480058E7A3B051042EC83663794" | "0x95D7D146AE40D4822C2750276B54B6EED530D374" | "0x7f1c919a92bce8790a85d6360b85cf21b997a6b5" | "0x1a54ae9f662b463f8d432482975c17e51518b50d" | "0xff7fbdf7832ae524deda39ca402e03d92adff7a5" | "0x55bc964fe3b0c8cc2d4c63d65f1be7aef9bb1a3c" | "0x535541f1aa08416e69dc4d610131099fa2ae7222" | "0x730691cdac3cbd4d41fc5eb9d8abbb0cea795b94")[];
     internalName: "optimism";
-    nativeLogoUrl: "https://assets.oku.trade/naitves/eth.png";
+    nativeLogoUrl: "https://assets.oku.trade/natives/eth.png";
     contracts: {
         limitOrder: {
             address: "0x54dF9e11c7933a9cA3BD1E540B63dA15edAe40bf";
@@ -3389,7 +3389,7 @@ declare const polygon: Readonly<{
     stables: ("0x2791bca1f2de4661ed88a30c99a7a9449aa84174" | "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063" | "0xc2132d05d31c914a87c6611c10748aeb04b58e8f")[];
     watchlist: ("0xa374094527e1673a86de625aa59517c5de346d32" | "0x45dda9cb7c25131df268515131f647d726f50608" | "0x9b08288c3be4f62bbf8d1c20ac9c5e6f9467d8b7" | "0xeef1a9507b3d505f0062f2be9453981255b503c8" | "0xdac8a8e6dbf8c690ec6815e0ff03491b2770255d" | "0x5645dcb64c059aa11212707fbf4e7f984440a8cf" | "0x88f3c15523544835ff6c738ddb30995339ad57d6" | "0x0e44ceb592acfc5d3f09d996302eb4c499ff8c10" | "0x7de263d0ad6e5d208844e65118c3a02a9a5d56b6" | "0x847b64f9d3a95e977d157866447a5c0a5dfa0ee5" | "0x0a63d3910ffc1529190e80e10855c4216407cc45" | "0x4ccd010148379ea531d6c587cfdd60180196f9b1" | "0x94ab9e4553ffb839431e37cc79ba8905f45bfbea" | "0x3d0acd52ee4a9271a0ffe75f9b91049152bac64b" | "0x1f6082db7c8f4b199e17090cd5c8831a1dad1997" | "0x167384319b41f7094e62f7506409eb38079abff8" | "0x50eaedb835021e4a108b7290636d62e9765cc6d7" | "0x86f1d8390222a3691c28938ec7404a1661e618e0" | "0x3a5329ee48a06671ad1bf295b8a233ee9b9b975e" | "0x2aceda63b5e958c45bd27d916ba701bc1dc08f7a" | "0x4d05f2a005e6f36633778416764e82d1d12e7fbb" | "0x3e31ab7f37c048fc6574189135d108df80f0ea26" | "0xd866fac7db79994d08c0ca2221fee08935595b4b" | "0x98b9162161164de1ed182a0dfa08f5fbf0f733ca" | "0xfe343675878100b344802a6763fd373fdeed07a4" | "0x357faf5843c7fd7fb4e34fbeabdac16eabe8a5bc")[];
     internalName: "polygon";
-    nativeLogoUrl: "https://assets.oku.trade/naitves/matic.png";
+    nativeLogoUrl: "https://assets.oku.trade/natives/matic.png";
     contracts: {
         nftManager: {
             address: "0xC36442b4a4522E871399CD717aBDD847Ab11FE88";
@@ -3493,7 +3493,7 @@ declare const rootstock: Readonly<{
         };
     };
     internalName: "rootstock";
-    nativeLogoUrl: "https://assets.oku.trade/naitves/rbtc.png";
+    nativeLogoUrl: "https://assets.oku.trade/natives/rbtc.png";
     contracts: {
         limitOrder: {
             address: "0x83B1cF411f57F7373bBFF81dCE81437e768F4252";
@@ -3586,7 +3586,7 @@ declare const scroll: Readonly<{
     stables: ("0x06efdbff2a14a7c8e15944d1f4a48f9f95f663a4" | "0xf55bec9cafdbe8730f096aa55dad6d22d44099df" | "0xca77eb3fefe3725dc33bccb54edefc3d9f764f97")[];
     watchlist: ("0x813df550a32d4a9d42010d057386429ad2328ed9" | "0xf1783f3377b3a70465c193ef33942c0803121ba0")[];
     internalName: "scroll";
-    nativeLogoUrl: "https://assets.oku.trade/naitves/eth.png";
+    nativeLogoUrl: "https://assets.oku.trade/natives/eth.png";
     contracts: {
         limitOrder: {
             address: "0xeC3E5eeC51D8C3D4f03DABB84B4Db313a739f377";
@@ -3680,7 +3680,7 @@ declare const sei: Readonly<{
     stables: "0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1"[];
     watchlist: "0x0A6358F069268c7dc4918D5B12c69a782b957Ead"[];
     internalName: "sei";
-    nativeLogoUrl: "https://assets.oku.trade/naitves/sei.png";
+    nativeLogoUrl: "https://assets.oku.trade/natives/sei.png";
     contracts: {
         limitOrder: {
             address: "0xA9d71E1dd7ca26F26e656E66d6AA81ed7f745bf0";
@@ -3772,7 +3772,7 @@ declare const taiko: Readonly<{
     stables: "0x07d83526730c7438048D55A4fc0b850e2aaB6f0b"[];
     watchlist: ("0xDaC937d4263E6A667A027FE59B2FFe2F91D54f46" | "0x5B731355AAd31C132dd4754E70E92c590Ae42386" | "0xe47a76e15a6f3976c8dc070b3a54c7f7083d668b" | "0xcbf2e8520B88C4eC30B2B6ddfAa2900087B42D55" | "0x4e35666b3ebf367842b9b6d5b297a2a069f862f5" | "0x6dA6B21DB1Dfd19D67BfF1877f62953a2D365fc9")[];
     internalName: "taiko";
-    nativeLogoUrl: "https://assets.oku.trade/naitves/eth.png";
+    nativeLogoUrl: "https://assets.oku.trade/natives/eth.png";
     blockExplorers: {
         default: {
             name: string;
@@ -3870,7 +3870,7 @@ declare const polygonZkEvm: Readonly<{
     stables: ("0xa8ce8aee21bc2a48a5ef670afcc9274c7bbbc035" | "0x1e4a5963abfd975d8c9021ce480b42188849d41d" | "0xc5015b9d9161dca7e18e32f6f25c4ad850731fd4")[];
     watchlist: "0xd2c7e323c6f5415dc0ee4e3811901b3380d316fd"[];
     internalName: "polygon-zkevm";
-    nativeLogoUrl: "https://assets.oku.trade/naitves/eth.png";
+    nativeLogoUrl: "https://assets.oku.trade/natives/eth.png";
     contracts: {
         limitOrder: {
             address: "0x5f1ef1d278013567c3c67e18d2d35bfa9954f723";
@@ -3960,7 +3960,7 @@ declare const zkSync: Readonly<{
     stables: ("0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4" | "0x503234F203fC7Eb888EEC8513210612a43Cf6115")[];
     watchlist: ("0xff577f0e828a878743ecc5e2632cbf65cecf17cf" | "0x50b0b9e02aa6f72a70fefbdb50bdc2f27e594135" | "0x3f618967492945c02d5222d333e903345fde741a" | "0xc99bcff6564bafc70ba1b53c53a03541f780a546" | "0x1fa900dbb20ed45d18883849c00632bca16f6610" | "0xbEEA3B382696669e0E67C08Ea9f4aaE8d528Af0F" | "0xf8C42655373A280e8800BEeE44fcC12ffC99E797" | "0xa07028B453a1f6Ac277e93f3A0eA73B4bE5c7d63" | "0x23C77A553AAc0ad009441C856c05D117c1131e3d")[];
     internalName: "zksync";
-    nativeLogoUrl: "https://assets.oku.trade/naitves/eth.png";
+    nativeLogoUrl: "https://assets.oku.trade/natives/eth.png";
     blockExplorers: {
         default: {
             name: string;
@@ -7428,7 +7428,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     stables: ("0x0b2c639c533813f4aa9d7837caf62653d097ff85" | "0x7f5c764cbc14f9669b88837ca1490cca17c31607" | "0x94b008aA00579c1307B0EF2c499aD98a8ce58e58" | "0x8c6f28f2f1a3c87f0f938b96d27520d9751ec8d9" | "0x8aE125E8653821E851F12A49F7765db9a9ce7384" | "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1")[];
     watchlist: ("0x85149247691df622eaf1a8bd0cafd40bc45154a9" | "0xc858a329bf053be78d6239c4a4343b8fbd21472b" | "0x95d9d28606ee55de7667f0f176ebfc3215cfd9c0" | "0x1c3140ab59d6caf9fa7459c6f83d4b52ba881d36" | "0xbf16ef186e715668aa29cef57e2fd7f9d48adfe6" | "0xb589969d38ce76d3d7aa319de7133bc9755fd840" | "0x03af20bdaaffb4cc0a521796a223f7d85e2aac31" | "0xf1f199342687a7d78bcc16fce79fa2665ef870e1" | "0xadb35413ec50e0afe41039eac8b930d313e94fa4" | "0xb2ac2e5a3684411254d58b1c5a542212b782114d" | "0x6168ec836d0b1f0c37381ec7ed1891a412872121" | "0xdd0c6bae8ad5998c358b823df15a2a4181da1b80" | "0x320616dbe138aa2f3db7a5a46ba79a13032cc5f2" | "0x0bb50d3e479e4682558fdb86f41a205e2c035ae5" | "0x68f5c0a2de713a54991e01858fd27a3832401849" | "0x73b14a78a0d396c521f954532d43fd5ffe385216" | "0x04f6c85a1b00f6d9b75f91fd23835974cc07e65c" | "0x85c31ffa3706d1cce9d525a00f1c7d4a2911754c" | "0xfc1f3296458f9b2a27a0b91dd7681c4020e09d05" | "0xaefc1edaede6adadcdf3bb344577d45a80b19582" | "0x0392B358CE4547601BEFA962680BEDE836606AE2" | "0x36E42931A765022790B797963E42C5522D6B585A" | "0x03A9DC118B231480058E7A3B051042EC83663794" | "0x95D7D146AE40D4822C2750276B54B6EED530D374" | "0x7f1c919a92bce8790a85d6360b85cf21b997a6b5" | "0x1a54ae9f662b463f8d432482975c17e51518b50d" | "0xff7fbdf7832ae524deda39ca402e03d92adff7a5" | "0x55bc964fe3b0c8cc2d4c63d65f1be7aef9bb1a3c" | "0x535541f1aa08416e69dc4d610131099fa2ae7222" | "0x730691cdac3cbd4d41fc5eb9d8abbb0cea795b94")[];
     internalName: "optimism";
-    nativeLogoUrl: "https://assets.oku.trade/naitves/eth.png";
+    nativeLogoUrl: "https://assets.oku.trade/natives/eth.png";
     contracts: {
         limitOrder: {
             address: "0x54dF9e11c7933a9cA3BD1E540B63dA15edAe40bf";
@@ -8584,7 +8584,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     stables: ("0x2791bca1f2de4661ed88a30c99a7a9449aa84174" | "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063" | "0xc2132d05d31c914a87c6611c10748aeb04b58e8f")[];
     watchlist: ("0xa374094527e1673a86de625aa59517c5de346d32" | "0x45dda9cb7c25131df268515131f647d726f50608" | "0x9b08288c3be4f62bbf8d1c20ac9c5e6f9467d8b7" | "0xeef1a9507b3d505f0062f2be9453981255b503c8" | "0xdac8a8e6dbf8c690ec6815e0ff03491b2770255d" | "0x5645dcb64c059aa11212707fbf4e7f984440a8cf" | "0x88f3c15523544835ff6c738ddb30995339ad57d6" | "0x0e44ceb592acfc5d3f09d996302eb4c499ff8c10" | "0x7de263d0ad6e5d208844e65118c3a02a9a5d56b6" | "0x847b64f9d3a95e977d157866447a5c0a5dfa0ee5" | "0x0a63d3910ffc1529190e80e10855c4216407cc45" | "0x4ccd010148379ea531d6c587cfdd60180196f9b1" | "0x94ab9e4553ffb839431e37cc79ba8905f45bfbea" | "0x3d0acd52ee4a9271a0ffe75f9b91049152bac64b" | "0x1f6082db7c8f4b199e17090cd5c8831a1dad1997" | "0x167384319b41f7094e62f7506409eb38079abff8" | "0x50eaedb835021e4a108b7290636d62e9765cc6d7" | "0x86f1d8390222a3691c28938ec7404a1661e618e0" | "0x3a5329ee48a06671ad1bf295b8a233ee9b9b975e" | "0x2aceda63b5e958c45bd27d916ba701bc1dc08f7a" | "0x4d05f2a005e6f36633778416764e82d1d12e7fbb" | "0x3e31ab7f37c048fc6574189135d108df80f0ea26" | "0xd866fac7db79994d08c0ca2221fee08935595b4b" | "0x98b9162161164de1ed182a0dfa08f5fbf0f733ca" | "0xfe343675878100b344802a6763fd373fdeed07a4" | "0x357faf5843c7fd7fb4e34fbeabdac16eabe8a5bc")[];
     internalName: "polygon";
-    nativeLogoUrl: "https://assets.oku.trade/naitves/matic.png";
+    nativeLogoUrl: "https://assets.oku.trade/natives/matic.png";
     contracts: {
         nftManager: {
             address: "0xC36442b4a4522E871399CD717aBDD847Ab11FE88";
@@ -8685,7 +8685,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         };
     };
     internalName: "rootstock";
-    nativeLogoUrl: "https://assets.oku.trade/naitves/rbtc.png";
+    nativeLogoUrl: "https://assets.oku.trade/natives/rbtc.png";
     contracts: {
         limitOrder: {
             address: "0x83B1cF411f57F7373bBFF81dCE81437e768F4252";
@@ -8775,7 +8775,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     stables: ("0x06efdbff2a14a7c8e15944d1f4a48f9f95f663a4" | "0xf55bec9cafdbe8730f096aa55dad6d22d44099df" | "0xca77eb3fefe3725dc33bccb54edefc3d9f764f97")[];
     watchlist: ("0x813df550a32d4a9d42010d057386429ad2328ed9" | "0xf1783f3377b3a70465c193ef33942c0803121ba0")[];
     internalName: "scroll";
-    nativeLogoUrl: "https://assets.oku.trade/naitves/eth.png";
+    nativeLogoUrl: "https://assets.oku.trade/natives/eth.png";
     contracts: {
         limitOrder: {
             address: "0xeC3E5eeC51D8C3D4f03DABB84B4Db313a739f377";
@@ -8873,7 +8873,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     stables: ("0xa8ce8aee21bc2a48a5ef670afcc9274c7bbbc035" | "0x1e4a5963abfd975d8c9021ce480b42188849d41d" | "0xc5015b9d9161dca7e18e32f6f25c4ad850731fd4")[];
     watchlist: "0xd2c7e323c6f5415dc0ee4e3811901b3380d316fd"[];
     internalName: "polygon-zkevm";
-    nativeLogoUrl: "https://assets.oku.trade/naitves/eth.png";
+    nativeLogoUrl: "https://assets.oku.trade/natives/eth.png";
     contracts: {
         limitOrder: {
             address: "0x5f1ef1d278013567c3c67e18d2d35bfa9954f723";
@@ -8960,7 +8960,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     stables: ("0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4" | "0x503234F203fC7Eb888EEC8513210612a43Cf6115")[];
     watchlist: ("0xff577f0e828a878743ecc5e2632cbf65cecf17cf" | "0x50b0b9e02aa6f72a70fefbdb50bdc2f27e594135" | "0x3f618967492945c02d5222d333e903345fde741a" | "0xc99bcff6564bafc70ba1b53c53a03541f780a546" | "0x1fa900dbb20ed45d18883849c00632bca16f6610" | "0xbEEA3B382696669e0E67C08Ea9f4aaE8d528Af0F" | "0xf8C42655373A280e8800BEeE44fcC12ffC99E797" | "0xa07028B453a1f6Ac277e93f3A0eA73B4bE5c7d63" | "0x23C77A553AAc0ad009441C856c05D117c1131e3d")[];
     internalName: "zksync";
-    nativeLogoUrl: "https://assets.oku.trade/naitves/eth.png";
+    nativeLogoUrl: "https://assets.oku.trade/natives/eth.png";
     blockExplorers: {
         default: {
             name: string;
@@ -10654,7 +10654,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     stables: "0x07d83526730c7438048D55A4fc0b850e2aaB6f0b"[];
     watchlist: ("0xDaC937d4263E6A667A027FE59B2FFe2F91D54f46" | "0x5B731355AAd31C132dd4754E70E92c590Ae42386" | "0xe47a76e15a6f3976c8dc070b3a54c7f7083d668b" | "0xcbf2e8520B88C4eC30B2B6ddfAa2900087B42D55" | "0x4e35666b3ebf367842b9b6d5b297a2a069f862f5" | "0x6dA6B21DB1Dfd19D67BfF1877f62953a2D365fc9")[];
     internalName: "taiko";
-    nativeLogoUrl: "https://assets.oku.trade/naitves/eth.png";
+    nativeLogoUrl: "https://assets.oku.trade/natives/eth.png";
     blockExplorers: {
         default: {
             name: string;
@@ -10822,7 +10822,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     stables: "0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1"[];
     watchlist: "0x0A6358F069268c7dc4918D5B12c69a782b957Ead"[];
     internalName: "sei";
-    nativeLogoUrl: "https://assets.oku.trade/naitves/sei.png";
+    nativeLogoUrl: "https://assets.oku.trade/natives/sei.png";
     contracts: {
         limitOrder: {
             address: "0xA9d71E1dd7ca26F26e656E66d6AA81ed7f745bf0";
