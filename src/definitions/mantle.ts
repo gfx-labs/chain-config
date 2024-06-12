@@ -8,7 +8,6 @@ export const mantle = makeConfig({
   logoUrl: "https://assets.oku.trade/mantle-logo.png",
   safeReorgDistance: 90000,
   externalId: {},
-  api: "https://explorer.mantle.xyz/api",
   uniswap: {
     deployBlock: 63795918,
     poolFactory: "0x0d922Fb1Bc191F64970ac40376643808b4B74Df9",
@@ -31,7 +30,6 @@ export const mantle = makeConfig({
       nativeWrappedName: "MNT",
     },
   },
-
   defaultPool: "0x086F766b336DFB0f705Dc030dB01993b22D81266",
   defaultToken0: "0x09Bc4E0D864854c6aFB6eB9A9cdF58aC190D0dF9",
   defaultToken1: "0x78c1b0C915c4FAA5FffA6CAbf0219DA63d7f4cb8",

@@ -13,7 +13,6 @@ export const arbitrum = makeConfig({
     zerion: "arbitrum",
     debank: "arb",
   },
-  api: "https://api.arbiscan.io/api",
   uniswap: {
     deployBlock: 165,
     poolFactory: "0x1F98431c8aD98523631AE4a59f267346ea31F984",

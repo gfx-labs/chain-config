@@ -13,7 +13,6 @@ export const optimism = makeConfig({
     zerion: "optimism",
     debank: "op",
   },
-  api: "https://api-optimistic.etherscan.io/api",
   oku: {
     limitOrderRegistryDeployBlock: 105276132,
     limitOrderRegistry: "0x54dF9e11c7933a9cA3BD1E540B63dA15edAe40bf",
@@ -156,7 +155,6 @@ export const optimism = makeConfig({
     wethAddress: "0x4200000000000000000000000000000000000006",
     wbtcAddress: "0x68f180fcce6836688e9084f035309e29bf0a2095",
   },
-
   defaultPool: "0x1c3140ab59d6caf9fa7459c6f83d4b52ba881d36",
   defaultToken0: "0x4200000000000000000000000000000000000042",
   defaultToken1: "0x7f5c764cbc14f9669b88837ca1490cca17c31607",

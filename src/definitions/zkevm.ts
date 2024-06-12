@@ -11,7 +11,6 @@ export const polygonZkEvm = makeConfig({
   externalId: {
     zerion: "polygon-zkevm",
   },
-  api: "https://api-zkevm.polygonscan.com/api",
   uniswap: {
     deployBlock: 8466867,
     poolFactory: "0xff83c3c800Fec21de45C5Ec30B69ddd5Ee60DFC2",
@@ -35,7 +34,6 @@ export const polygonZkEvm = makeConfig({
       nativeWrappedName: "ETH",
     },
   },
-
   defaultPool: "0xd2c7e323c6f5415dc0ee4e3811901b3380d316fd",
   defaultToken0: "0x4f9a0e7fd2bf6067db6994cf12e4495df938e6e9",
   defaultToken1: "0xa8ce8aee21bc2a48a5ef670afcc9274c7bbbc035",

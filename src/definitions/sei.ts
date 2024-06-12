@@ -8,6 +8,18 @@ export const sei = makeConfig({
   logoUrl: "https://assets.oku.trade/sei-logo.svg",
   safeReorgDistance: 90000,
   externalId: {},
+  blockExplorers: {
+    default: {
+      name: "Seistream",
+      url: "https://seistream.app",
+      apiUrl: "https://api.seistream.app"
+    },
+    seitrace: {
+      name: "Seitrace",
+      url: "https://seitrace.com",
+      apiUrl: "https://seitrace.com/pacific-1/api",
+    }
+  },
   uniswap: {
     deployBlock: 79245151,
     poolFactory: "0x75FC67473A91335B5b8F8821277262a13B38c9b3",
@@ -30,7 +42,6 @@ export const sei = makeConfig({
       nativeWrappedName: "SEI",
     },
   },
-
   defaultPool: "0x0A6358F069268c7dc4918D5B12c69a782b957Ead",
   defaultToken0: "0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1",
   defaultToken1: "0xE30feDd158A2e3b13e9badaeABaFc5516e95e8C7",

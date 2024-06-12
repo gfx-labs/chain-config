@@ -11,7 +11,18 @@ export const zkSync = makeConfig({
   externalId: {
     zerion: "zksync-era",
   },
-  api: "https://block-explorer-api.mainnet.zksync.io/api",
+  blockExplorers: {
+    default: {
+      name: "zksync Era Explorer",
+      url: "https://era.zksync.network",
+      apiUrl: "https://api-era.zksync.network/api"
+    },
+    explorer: {
+      name: "zkSync Era Block Explorer",
+      url: "https://explorer.zksync.io",
+      apiUrl: "https://block-explorer-api.mainnet.zksync.io/api",
+    }
+  },
   uniswap: {
     deployBlock: 12637075,
     poolFactory: "0x8FdA5a7a8dCA67BBcDd10F02Fa0649A937215422",
@@ -35,7 +46,6 @@ export const zkSync = makeConfig({
       nativeWrappedName: "ETH",
     },
   },
-
   defaultPool: "0xff577f0e828a878743ecc5e2632cbf65cecf17cf",
   defaultToken0: "0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4",
   defaultToken1: "0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91",
@@ -60,13 +70,6 @@ export const zkSync = makeConfig({
   ],
   internalName: "zksync",
   nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
-  blockExplorers: {
-    ...chain.blockExplorers,
-    default: {
-      name: "Zksync Era Explorer",
-      url: "https://era.zksync.network",
-    },
-  },
   contracts: {
     ...chain.contracts,
     limitOrder: {

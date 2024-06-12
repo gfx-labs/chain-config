@@ -10,7 +10,14 @@ export const rootstock = makeConfig({
   logoUrl: "https://assets.oku.trade/rootstock-logo.svg",
   safeReorgDistance: 90000,
   externalId: {},
-  api: "https://rootstock.blockscout.com/api",
+  blockExplorers: {
+    default: {
+      name: "Blockscout",
+      url: "https://rootstock.blockscout.com",
+      apiUrl: "https://rootstock.blockscout.com/api",
+    },
+    rsk: chain.blockExplorers.default,
+  },
   uniswap: {
     deployBlock: 5829210,
     poolFactory: "0xaF37EC98A00FD63689CF3060BF3B6784E00caD82",
@@ -52,11 +59,6 @@ export const rootstock = makeConfig({
     "0xcba7abe98fd6a65259837d76a3409841c1dd4288",
     "0xbe092d38045ef7f9cdc5014278a4239e896bf5ca",
   ],
-  blockExplorers: {
-    default: { name: "Blockscout", url: "https://rootstock.blockscout.com" },
-    rsk: chain.blockExplorers.default,
-    blockscout: { name: "Blockscout", url: "https://rootstock.blockscout.com" },
-  },
   internalName: "rootstock",
   nativeLogoUrl: "https://assets.oku.trade/natives/rbtc.png",
   contracts: {

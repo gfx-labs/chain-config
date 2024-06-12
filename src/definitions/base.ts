@@ -14,7 +14,6 @@ export const base = makeConfig({
     zerion: "base",
     debank: "base",
   },
-  api: "https://api.basescan.org/api",
   safeReorgDistance: 90000,
   uniswap: {
     deployBlock: 1371680,

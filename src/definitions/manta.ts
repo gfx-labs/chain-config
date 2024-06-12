@@ -10,7 +10,6 @@ export const manta = makeConfig({
   logoUrl: "https://assets.oku.trade/manta-logo.png",
   safeReorgDistance: 90000,
   externalId: {},
-  api: "https://pacific-explorer.manta.network/api",
   uniswap: {
     deployBlock: 1191705,
     poolFactory: "0x06D830e15081f65923674268121FF57Cc54e4e23",

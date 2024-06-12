@@ -15,6 +15,7 @@ import (
     var props_4 = OkuMetadata.getProperties();
     var props_5 = OkuPricingMetadata.getProperties();
     var props_6 = ChainContract.getProperties();
+    var props_7 = BlockExplorer.getProperties();
 %>
 
 var ErrNetworkNotFound = errors.New("chain not found")
@@ -63,7 +64,7 @@ type Network struct { <% for(const prop of props_1) {%>
     <%- helpers.displayProp(prop) %> <% } %>
 
     ChainId int `json:"chainId"`
-    BlockExplorers map[string]string
+    BlockExplorers map[string]BlockExplorer
     StablecoinMap map[common.Address]struct{}
 }
 
@@ -144,4 +145,6 @@ type ChainContract struct {<% for(const prop of props_6) {%>
     <%- helpers.displayProp(prop) %> <% } %>
 }
 
-
+type BlockExplorer struct {<% for(const prop of props_7) {%>
+    <%- helpers.displayProp(prop) %> <% } %>
+}

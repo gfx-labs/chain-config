@@ -19,7 +19,7 @@ const TokenMetadata = index?.getInterface("TokenMetadata")
 const OkuMetadata = index?.getInterface("OkuMetadata")
 const OkuPricingMetadata = index?.getInterface("OkuPricingMetadata")
 const ChainContract = index?.getInterface("chainContract")
-
+const BlockExplorer = index?.getInterface("blockExplorer")
 
 const rootDir = `${__dirname}/dist/networks`
 mkdirSync(rootDir, {recursive: true})
@@ -128,7 +128,6 @@ const isString = (x:any) => {
   return typeof x === "string"
 }
 
-
 const helpers = {
   formatValue,
   isString,
@@ -139,7 +138,6 @@ const helpers = {
   toAddr,
 }
 
-
 const output = ejs.render(networksString.toString(), {
   h:helpers,
   chains: MAINNET_CHAINS,
@@ -148,10 +146,10 @@ const output = ejs.render(networksString.toString(), {
   UniswapMetadata,
   TokenMetadata,
   ChainContract,
+  BlockExplorer,
   OkuMetadata,
   OkuPricingMetadata
 })
-
 
 const main = async()=> {
   await init();

@@ -11,7 +11,6 @@ export const moonbeam = makeConfig({
   externalId: {
     debank: "mobm",
   },
-  api: "https://api-moonbase.moonscan.io/api", 
   uniswap: {
     deployBlock: 3340452,
     poolFactory: "0x28f1158795A3585CaAA3cD6469CD65382b89BB70",
