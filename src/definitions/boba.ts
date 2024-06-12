@@ -12,6 +12,7 @@ export const boba = makeConfig({
   externalId: {
     debank: "boba",
   },
+  api: "https://api.routescan.io/v2/network/mainnet/evm/288/etherscan/api",
   nativeCurrency: {
     decimals: 18,
     name: "Ether",

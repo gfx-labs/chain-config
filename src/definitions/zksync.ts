@@ -11,6 +11,7 @@ export const zkSync = makeConfig({
   externalId: {
     zerion: "zksync-era",
   },
+  api: "https://block-explorer-api.mainnet.zksync.io/api",
   uniswap: {
     deployBlock: 12637075,
     poolFactory: "0x8FdA5a7a8dCA67BBcDd10F02Fa0649A937215422",

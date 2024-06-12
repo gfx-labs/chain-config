@@ -11,6 +11,7 @@ export const polygonZkEvm = makeConfig({
   externalId: {
     zerion: "polygon-zkevm",
   },
+  api: "https://api-zkevm.polygonscan.com/api",
   uniswap: {
     deployBlock: 8466867,
     poolFactory: "0xff83c3c800Fec21de45C5Ec30B69ddd5Ee60DFC2",

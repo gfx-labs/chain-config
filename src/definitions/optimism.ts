@@ -13,6 +13,7 @@ export const optimism = makeConfig({
     zerion: "optimism",
     debank: "op",
   },
+  api: "https://api-optimistic.etherscan.io/api",
   oku: {
     limitOrderRegistryDeployBlock: 105276132,
     limitOrderRegistry: "0x54dF9e11c7933a9cA3BD1E540B63dA15edAe40bf",

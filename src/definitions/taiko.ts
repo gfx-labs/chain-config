@@ -8,6 +8,7 @@ export const taiko = makeConfig({
   logoUrl: "https://assets.oku.trade/taiko-logo.svg",
   safeReorgDistance: 90000,
   externalId: {},
+  api: "https://api.taikoscan.io/api",
   uniswap: {
     deployBlock: 961,
     poolFactory: "0x75FC67473A91335B5b8F8821277262a13B38c9b3",

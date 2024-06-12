@@ -11,6 +11,7 @@ export const scroll = makeConfig({
   externalId: {
     zerion: "scroll",
   },
+  api: "https://api.scrollscan.com/api",
   uniswap: {
     deployBlock: 1367,
     multicall2: "0x3b615B1AC55bc34e51a81D3dea67467F32bcb8C2",

@@ -12,6 +12,7 @@ export const polygon = makeConfig({
     zerion: "polygon",
     debank: "matic",
   },
+  api: "https://api.polygonscan.com/api",
   uniswap: {
     deployBlock: 22757547,
     poolFactory: "0x1F98431c8aD98523631AE4a59f267346ea31F984",

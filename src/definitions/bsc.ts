@@ -13,6 +13,7 @@ export const bsc = makeConfig({
     zerion: "binance-smart-chain",
     debank: "bsc",
   },
+  api: "https://api.bscscan.com/api",
   uniswap: {
     deployBlock: 969351,
     poolFactory: "0xFFCd7Aed9C627E82A765c3247d562239507f6f1B",

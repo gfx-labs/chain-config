@@ -15,6 +15,7 @@ export const filecoin = makeConfig({
       url: "https://filecoin.blockscout.com",
     },
   },
+  api: "https://filecoin.blockscout.com/api",
   logoUrl: "https://assets.oku.trade/filecoin-logo.svg",
   externalId: {},
   uniswap: {

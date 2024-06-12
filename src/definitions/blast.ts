@@ -11,6 +11,7 @@ export const blast = makeConfig({
   externalId: {
     zerion: "blast",
   },
+  api: "https://api.blastscan.io/api",
   uniswap: {
     deployBlock: 400903,
     poolFactory: "0x792edAdE80af5fC680d96a2eD80A44247D2Cf6Fd",

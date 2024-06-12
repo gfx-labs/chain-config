@@ -12,6 +12,7 @@ export const mainnet = makeConfig({
     zerion: "ethereum",
     debank: "eth",
   },
+  api: "https://api.etherscan.io/api", 
   uniswap: {
     deployBlock: 12369621,
     poolFactory: "0x1F98431c8aD98523631AE4a59f267346ea31F984",

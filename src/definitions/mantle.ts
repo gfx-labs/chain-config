@@ -8,6 +8,7 @@ export const mantle = makeConfig({
   logoUrl: "https://assets.oku.trade/mantle-logo.png",
   safeReorgDistance: 90000,
   externalId: {},
+  api: "https://explorer.mantle.xyz/api",
   uniswap: {
     deployBlock: 63795918,
     poolFactory: "0x0d922Fb1Bc191F64970ac40376643808b4B74Df9",

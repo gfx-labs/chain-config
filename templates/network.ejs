@@ -21,6 +21,7 @@ var <%- helpers.snakeToCamel(chainName) %> Network = Network{
     <%- h.formatValue(prop[0],"s") %>: <%- h.formatValue(prop[1].url,"s") %>,
     <% } %> <% } %>
   },
+  Api: "<%- chain.api %>",
   DefaultPool: <%- helpers.toAddr(chain.defaultPool) %>,
   InternalName:     "<%- chain.internalName %>",
   ExternalId:  map[string]string{ <% for(const prop of Object.entries(chain.externalId)) {%>
