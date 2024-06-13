@@ -3783,9 +3783,9 @@ declare const taiko: Readonly<{
             nativeWrappedName: string;
         };
     };
-    defaultPool: "0xDaC937d4263E6A667A027FE59B2FFe2F91D54f46";
+    defaultPool: "0xe47a76e15a6f3976c8dc070b3a54c7f7083d668b";
     defaultToken0: "0x07d83526730c7438048D55A4fc0b850e2aaB6f0b";
-    defaultToken1: "0xa9d23408b9ba935c230493c40c73824df71a0975";
+    defaultToken1: "0xa51894664a773981c6c112c43ce576f315d5b1b6";
     tokenList: ({
         symbol: string;
         address: "0xa9d23408b9ba935c230493c40c73824df71a0975";
@@ -3797,7 +3797,7 @@ declare const taiko: Readonly<{
         address: "0x07d83526730c7438048D55A4fc0b850e2aaB6f0b";
     })[];
     stables: "0x07d83526730c7438048D55A4fc0b850e2aaB6f0b"[];
-    watchlist: ("0xDaC937d4263E6A667A027FE59B2FFe2F91D54f46" | "0x5B731355AAd31C132dd4754E70E92c590Ae42386" | "0xe47a76e15a6f3976c8dc070b3a54c7f7083d668b" | "0xcbf2e8520B88C4eC30B2B6ddfAa2900087B42D55" | "0x4e35666b3ebf367842b9b6d5b297a2a069f862f5" | "0x6dA6B21DB1Dfd19D67BfF1877f62953a2D365fc9")[];
+    watchlist: ("0xe47a76e15a6f3976c8dc070b3a54c7f7083d668b" | "0xDaC937d4263E6A667A027FE59B2FFe2F91D54f46" | "0x5B731355AAd31C132dd4754E70E92c590Ae42386" | "0xcbf2e8520B88C4eC30B2B6ddfAa2900087B42D55" | "0x4e35666b3ebf367842b9b6d5b297a2a069f862f5" | "0x6dA6B21DB1Dfd19D67BfF1877f62953a2D365fc9")[];
     internalName: "taiko";
     nativeLogoUrl: "https://assets.oku.trade/natives/eth.png";
     contracts: {
@@ -10684,9 +10684,9 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             nativeWrappedName: string;
         };
     };
-    defaultPool: "0xDaC937d4263E6A667A027FE59B2FFe2F91D54f46";
+    defaultPool: "0xe47a76e15a6f3976c8dc070b3a54c7f7083d668b";
     defaultToken0: "0x07d83526730c7438048D55A4fc0b850e2aaB6f0b";
-    defaultToken1: "0xa9d23408b9ba935c230493c40c73824df71a0975";
+    defaultToken1: "0xa51894664a773981c6c112c43ce576f315d5b1b6";
     tokenList: ({
         symbol: string;
         address: "0xa9d23408b9ba935c230493c40c73824df71a0975";
@@ -10698,7 +10698,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         address: "0x07d83526730c7438048D55A4fc0b850e2aaB6f0b";
     })[];
     stables: "0x07d83526730c7438048D55A4fc0b850e2aaB6f0b"[];
-    watchlist: ("0xDaC937d4263E6A667A027FE59B2FFe2F91D54f46" | "0x5B731355AAd31C132dd4754E70E92c590Ae42386" | "0xe47a76e15a6f3976c8dc070b3a54c7f7083d668b" | "0xcbf2e8520B88C4eC30B2B6ddfAa2900087B42D55" | "0x4e35666b3ebf367842b9b6d5b297a2a069f862f5" | "0x6dA6B21DB1Dfd19D67BfF1877f62953a2D365fc9")[];
+    watchlist: ("0xe47a76e15a6f3976c8dc070b3a54c7f7083d668b" | "0xDaC937d4263E6A667A027FE59B2FFe2F91D54f46" | "0x5B731355AAd31C132dd4754E70E92c590Ae42386" | "0xcbf2e8520B88C4eC30B2B6ddfAa2900087B42D55" | "0x4e35666b3ebf367842b9b6d5b297a2a069f862f5" | "0x6dA6B21DB1Dfd19D67BfF1877f62953a2D365fc9")[];
     internalName: "taiko";
     nativeLogoUrl: "https://assets.oku.trade/natives/eth.png";
     contracts: {

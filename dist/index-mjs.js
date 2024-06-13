@@ -1920,7 +1920,7 @@ const taiko = makeConfig({
             name: "Routescan",
             url: "https://taikoscan.network",
             apiUrl: "https://api.routescan.io/v2/network/mainnet/evm/43114/etherscan/api",
-        }
+        },
     },
     uniswap: {
         deployBlock: 961,
@@ -1944,9 +1944,9 @@ const taiko = makeConfig({
             nativeWrappedName: "ETH",
         },
     },
-    defaultPool: "0xDaC937d4263E6A667A027FE59B2FFe2F91D54f46",
+    defaultPool: "0xe47a76e15a6f3976c8dc070b3a54c7f7083d668b",
     defaultToken0: "0x07d83526730c7438048D55A4fc0b850e2aaB6f0b",
-    defaultToken1: "0xa9d23408b9ba935c230493c40c73824df71a0975",
+    defaultToken1: "0xa51894664a773981c6c112c43ce576f315d5b1b6",
     tokenList: [
         { symbol: "TAIKO", address: "0xa9d23408b9ba935c230493c40c73824df71a0975" },
         { symbol: "WETH", address: "0xA51894664A773981C6C112C43ce576f315d5b1B6" },
