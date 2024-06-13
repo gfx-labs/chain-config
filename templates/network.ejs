@@ -17,9 +17,11 @@ var <%- helpers.snakeToCamel(chainName) %> Network = Network{
   LogoUrl: "<%- chain.logoUrl %>",
   SortIndex: <%- chain.sortIndex %>,
   SafeReorgDistance: <%- chain.safeReorgDistance || 90000 %>,
-  BlockExplorers: map[string]string{<% for(const prop of Object.entries(explorers)) {%> <% if(prop[1].name){ %>
-    <%- h.formatValue(prop[0],"s") %>: <%- h.formatValue(prop[1].url,"s") %>,
-    <% } %> <% } %>
+  BlockExplorers: map[string]BlockExplorer {<% for(const prop of Object.entries(explorers)) {%> <% if(prop[1].name){ %>
+    <%- h.formatValue(prop[0],"s") %>: {
+      Url: <%- h.formatValue(prop[1].url,"s") %>,
+      <%- prop[1].apiUrl ? "ApiUrl:" + h.formatValue(prop[1].apiUrl, "s")+"," : "" %>
+    }, <% } %> <% } %>
   },
   DefaultPool: <%- helpers.toAddr(chain.defaultPool) %>,
   InternalName:     "<%- chain.internalName %>",

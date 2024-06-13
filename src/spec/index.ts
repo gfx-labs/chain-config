@@ -82,6 +82,11 @@ export interface IChainInfo<
   };
 }
 
+interface blockExplorer {
+  url: string;
+  apiUrl: string;
+}
+
 interface chainContract {
   address: Address;
   blockCreated: number;

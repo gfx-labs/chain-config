@@ -35,7 +35,6 @@ export const linea = makeConfig({
       nativeWrappedName: "ETH",
     },
   },
-
   defaultPool: "0xc48622190a6b91d64ee7459c62fade9abe61b48a",
   defaultToken0: "0x176211869ca2b568f2a7d4ee941e073a821ee1ff",
   defaultToken1: "0xe5d7c2a44ffddf6b295a15c148167daaaf5cf34f",

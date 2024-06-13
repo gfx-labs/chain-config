@@ -9,11 +9,21 @@ export const filecoin = makeConfig({
   blockTimeSeconds: 30,
   safeReorgDistance: 90000,
   blockExplorers: {
-    ...chain.blockExplorers,
     default: {
       name: "Blockscout",
       url: "https://filecoin.blockscout.com",
+      apiUrl: "https://filecoin.blockscout.com/api",
     },
+    filfox: {
+      name: "Filfox",
+      url: "https://filfox.info/en",
+      apiUrl: "https://filfox.info/api"
+    },
+    filutils: {
+      name: "Filutils",
+      url: "https://www.filutils.com/en",
+      apiUrl: "https://api.filutils.com/api"
+    }
   },
   logoUrl: "https://assets.oku.trade/filecoin-logo.svg",
   externalId: {},

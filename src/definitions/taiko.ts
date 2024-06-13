@@ -8,6 +8,18 @@ export const taiko = makeConfig({
   logoUrl: "https://assets.oku.trade/taiko-logo.svg",
   safeReorgDistance: 90000,
   externalId: {},
+  blockExplorers: {
+    default: {
+      name: "Taikoscan",
+      url: "https://taikoscan.io",
+      apiUrl: "https://api.taikoscan.io/api",
+    },
+    routescan: {
+      name: "Routescan",
+      url: "https://taikoscan.network",
+      apiUrl: "https://api.routescan.io/v2/network/mainnet/evm/43114/etherscan/api",
+    }
+  },
   uniswap: {
     deployBlock: 961,
     poolFactory: "0x75FC67473A91335B5b8F8821277262a13B38c9b3",
@@ -49,13 +61,6 @@ export const taiko = makeConfig({
   ],
   internalName: "taiko",
   nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
-  blockExplorers: {
-    ...chain.blockExplorers,
-    default: {
-      name: "Taikoscan",
-      url: "https://taikoscan.io",
-    },
-  },
   contracts: {
     ...chain.contracts,
     limitOrder: {
