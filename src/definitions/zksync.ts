@@ -15,13 +15,13 @@ export const zkSync = makeConfig({
     default: {
       name: "zksync Era Explorer",
       url: "https://era.zksync.network",
-      apiUrl: "https://api-era.zksync.network/api"
+      apiUrl: "https://api-era.zksync.network/api",
     },
     explorer: {
       name: "zkSync Era Block Explorer",
       url: "https://explorer.zksync.io",
       apiUrl: "https://block-explorer-api.mainnet.zksync.io/api",
-    }
+    },
   },
   uniswap: {
     deployBlock: 12637075,
@@ -51,11 +51,14 @@ export const zkSync = makeConfig({
   defaultToken1: "0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91",
   tokenList: [
     { symbol: "WETH", address: "0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91" },
-    { symbol: "USDC", address: "0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4" },
+    { symbol: "USDC.e", address: "0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4" },
+    { symbol: "USDC", address: "0x1d17CBcF0D6D143135aE902365D2E5e2A16538D4" },
   ],
   stables: [
     "0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4",
     "0x503234F203fC7Eb888EEC8513210612a43Cf6115",
+    "0x493257fD37EDB34451f62EDf8D2a0C418852bA4C",
+    "0x1d17CBcF0D6D143135aE902365D2E5e2A16538D4",
   ],
   watchlist: [
     "0xff577f0e828a878743ecc5e2632cbf65cecf17cf",
