@@ -3989,8 +3989,11 @@ declare const zkSync: Readonly<{
     } | {
         symbol: string;
         address: "0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4";
+    } | {
+        symbol: string;
+        address: "0x1d17CBcF0D6D143135aE902365D2E5e2A16538D4";
     })[];
-    stables: ("0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4" | "0x503234F203fC7Eb888EEC8513210612a43Cf6115")[];
+    stables: ("0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4" | "0x1d17CBcF0D6D143135aE902365D2E5e2A16538D4" | "0x503234F203fC7Eb888EEC8513210612a43Cf6115" | "0x493257fD37EDB34451f62EDf8D2a0C418852bA4C")[];
     watchlist: ("0xff577f0e828a878743ecc5e2632cbf65cecf17cf" | "0x50b0b9e02aa6f72a70fefbdb50bdc2f27e594135" | "0x3f618967492945c02d5222d333e903345fde741a" | "0xc99bcff6564bafc70ba1b53c53a03541f780a546" | "0x1fa900dbb20ed45d18883849c00632bca16f6610" | "0xbEEA3B382696669e0E67C08Ea9f4aaE8d528Af0F" | "0xf8C42655373A280e8800BEeE44fcC12ffC99E797" | "0xa07028B453a1f6Ac277e93f3A0eA73B4bE5c7d63" | "0x23C77A553AAc0ad009441C856c05D117c1131e3d")[];
     internalName: "zksync";
     nativeLogoUrl: "https://assets.oku.trade/natives/eth.png";
@@ -9000,8 +9003,11 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     } | {
         symbol: string;
         address: "0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4";
+    } | {
+        symbol: string;
+        address: "0x1d17CBcF0D6D143135aE902365D2E5e2A16538D4";
     })[];
-    stables: ("0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4" | "0x503234F203fC7Eb888EEC8513210612a43Cf6115")[];
+    stables: ("0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4" | "0x1d17CBcF0D6D143135aE902365D2E5e2A16538D4" | "0x503234F203fC7Eb888EEC8513210612a43Cf6115" | "0x493257fD37EDB34451f62EDf8D2a0C418852bA4C")[];
     watchlist: ("0xff577f0e828a878743ecc5e2632cbf65cecf17cf" | "0x50b0b9e02aa6f72a70fefbdb50bdc2f27e594135" | "0x3f618967492945c02d5222d333e903345fde741a" | "0xc99bcff6564bafc70ba1b53c53a03541f780a546" | "0x1fa900dbb20ed45d18883849c00632bca16f6610" | "0xbEEA3B382696669e0E67C08Ea9f4aaE8d528Af0F" | "0xf8C42655373A280e8800BEeE44fcC12ffC99E797" | "0xa07028B453a1f6Ac277e93f3A0eA73B4bE5c7d63" | "0x23C77A553AAc0ad009441C856c05D117c1131e3d")[];
     internalName: "zksync";
     nativeLogoUrl: "https://assets.oku.trade/natives/eth.png";
