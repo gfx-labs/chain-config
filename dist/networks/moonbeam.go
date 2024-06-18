@@ -25,7 +25,7 @@ var Moonbeam Network = Network{
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0x818ec0a7fe18ff94269904fced6ae3dae6d6dc0b"), common.HexToAddress("0x931715FEE2d06333043d11F658C8CE934aC61D0c"), common.HexToAddress("0x765277eebeca2e31912c9946eae1021199b39c61"), common.HexToAddress("0x06e605775296e851ff43b4daa541bb0984e9d6fd"), common.HexToAddress("0xefaeee334f0fd1712f9a8cc375f427d9cdd40d73"), common.HexToAddress("0x8e70cd5b4ff3f62659049e74b6649c6603a0e594")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x818ec0a7fe18ff94269904fced6ae3dae6d6dc0b"): {}, common.HexToAddress("0x931715FEE2d06333043d11F658C8CE934aC61D0c"): {}, common.HexToAddress("0x765277eebeca2e31912c9946eae1021199b39c61"): {}, common.HexToAddress("0x06e605775296e851ff43b4daa541bb0984e9d6fd"): {}, common.HexToAddress("0xefaeee334f0fd1712f9a8cc375f427d9cdd40d73"): {}, common.HexToAddress("0x8e70cd5b4ff3f62659049e74b6649c6603a0e594"): {}},
-	Watchlist:        []common.Address{common.HexToAddress("0xB64fD2Cf30588e4ACbb92e98b28d976a61914D29"), common.HexToAddress("0xba66370d96a9d61afa66283900b78c1f6ed02782"), common.HexToAddress("0x19156c03a6fd894beb4fa6a828e854d3a4bed372")},
+	Watchlist:        []common.Address{common.HexToAddress("0xB64fD2Cf30588e4ACbb92e98b28d976a61914D29"), common.HexToAddress("0xba66370d96a9d61afa66283900b78c1f6ed02782"), common.HexToAddress("0x19156c03a6fd894beb4fa6a828e854d3a4bed372"), common.HexToAddress("0xCb1f81BEf053d3C8adfFd37D2da84Fcc3BcC9954"), common.HexToAddress("0x53c1341cd81562c1b1a7562fff712CD7be95D51e"), common.HexToAddress("0x45bD0680bDFd180341A6dE806Aa4637f9AfBFc39")},
 	BlockTimeSeconds: 30,
 	Oku: OkuMetadata{
 
