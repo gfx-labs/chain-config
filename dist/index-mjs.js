@@ -1876,8 +1876,12 @@ const sei = makeConfig({
     tokenList: [
         { symbol: "WSEI", address: "0xE30feDd158A2e3b13e9badaeABaFc5516e95e8C7" },
         { symbol: "USDC", address: "0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1" },
+        { symbol: "USDT", address: "0xb75d0b03c06a926e488e2659df1a861f860bd3d1" },
     ],
-    stables: ["0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1"],
+    stables: [
+        "0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1",
+        "0xb75d0b03c06a926e488e2659df1a861f860bd3d1",
+    ],
     watchlist: [
         "0x0A6358F069268c7dc4918D5B12c69a782b957Ead",
         "0x8a1a9efb7f7f74ace10a31f2f5f9f7e804f957b1",
