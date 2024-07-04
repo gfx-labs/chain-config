@@ -1129,7 +1129,7 @@ const mantle = makeConfig({
             nativeWrappedName: "MNT",
         },
     },
-    defaultPool: "0x086F766b336DFB0f705Dc030dB01993b22D81266",
+    defaultPool: "0x076eb72e74c16b208c692eeab3750978d76b8f28",
     defaultToken0: "0x09Bc4E0D864854c6aFB6eB9A9cdF58aC190D0dF9",
     defaultToken1: "0x78c1b0C915c4FAA5FffA6CAbf0219DA63d7f4cb8",
     tokenList: [
@@ -1137,8 +1137,8 @@ const mantle = makeConfig({
         { symbol: "USDC", address: "0x09Bc4E0D864854c6aFB6eB9A9cdF58aC190D0dF9" },
     ],
     stables: [
-        "0x09Bc4E0D864854c6aFB6eB9A9cdF58aC190D0dF9",
         "0x201EBa5CC46D216Ce6DC03F6a759e8E766e956aE",
+        "0xdeaddeaddeaddeaddeaddeaddeaddeaddead1111",
     ],
     watchlist: [
         "0x086F766b336DFB0f705Dc030dB01993b22D81266",
