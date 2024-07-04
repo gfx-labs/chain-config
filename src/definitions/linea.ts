@@ -5,7 +5,7 @@ import {} from "viem";
 export const linea = makeConfig({
   ...chain,
   name: "Linea",
-  blockTimeSeconds: 3,
+  blockTimeSeconds: 2,
   sortIndex: 15,
   logoUrl: "https://assets.oku.trade/linea-logo.svg",
   safeReorgDistance: 100,
