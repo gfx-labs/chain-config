@@ -723,7 +723,7 @@ const filecoin = makeConfig({
 const linea = makeConfig({
     ...linea$1,
     name: "Linea",
-    blockTimeSeconds: 3,
+    blockTimeSeconds: 2,
     sortIndex: 15,
     logoUrl: "https://assets.oku.trade/linea-logo.svg",
     safeReorgDistance: 100,
