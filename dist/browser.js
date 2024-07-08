@@ -571,7 +571,13 @@
       defaultToken0: "0x55d398326f99059ff775485246999027b3197955",
       defaultToken1: "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
       tokenList: [],
-      stables: [],
+      stables: [
+          "0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3",
+          "0x55d398326f99059ff775485246999027b3197955",
+          "0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d",
+          "0xe9e7cea3dedca5984780bafc599bd69add087d56",
+          "0x40af3827F39D0EAcBF4A168f8D4ee67c121D11c9",
+      ],
       watchlist: [
           "0x47a90a2d92a8367a91efa1906bfc8c1e05bf10c4",
           "0x28df0835942396b7a1b7ae1cd068728e6ddbbafd",

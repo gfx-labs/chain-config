@@ -700,7 +700,7 @@ declare const bsc: Readonly<{
     defaultToken0: "0x55d398326f99059ff775485246999027b3197955";
     defaultToken1: "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c";
     tokenList: never[];
-    stables: never[];
+    stables: ("0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d" | "0x55d398326f99059ff775485246999027b3197955" | "0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3" | "0xe9e7cea3dedca5984780bafc599bd69add087d56" | "0x40af3827F39D0EAcBF4A168f8D4ee67c121D11c9")[];
     watchlist: ("0x6fe9e9de56356f7edbfcbb29fab7cd69471a4869" | "0x5289a8dbf7029ee0b0498a84777ed3941d9acfec" | "0xc98f01bf2141e1140ef8f8cad99d4b021d10718f" | "0xf9878a5dd55edc120fde01893ea713a4f032229c" | "0x06396509195eb9e07c38a016694dc9ff535b128a" | "0x47a90a2d92a8367a91efa1906bfc8c1e05bf10c4" | "0x28df0835942396b7a1b7ae1cd068728e6ddbbafd" | "0xb125aa15ad943d96e813e4a06d0c34716f897e26" | "0x0f338ec12d3f7c3d77a4b9fcc1f95f3fb6ad0ea6" | "0x2c3c320d49019d4f9a92352e947c7e5acfe47d68" | "0x3fb2623567e21f8c50f0ae86f54ef4849b4eb47b" | "0xf2c9339945bff71dd0bffd3c142164112cd05dc6" | "0xf5c616e7b58226b8081dcc7e4a7123a63734eef6" | "0x0525190f3532b99b32fb42b2697807bd80268565" | "0xcb99fe720124129520f7a09ca3cbef78d58ed934")[];
     internalName: "bsc";
     nativeLogoUrl: "https://assets.oku.trade/natives/bnb.png";
@@ -3493,7 +3493,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     defaultToken0: "0x55d398326f99059ff775485246999027b3197955";
     defaultToken1: "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c";
     tokenList: never[];
-    stables: never[];
+    stables: ("0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d" | "0x55d398326f99059ff775485246999027b3197955" | "0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3" | "0xe9e7cea3dedca5984780bafc599bd69add087d56" | "0x40af3827F39D0EAcBF4A168f8D4ee67c121D11c9")[];
     watchlist: ("0x6fe9e9de56356f7edbfcbb29fab7cd69471a4869" | "0x5289a8dbf7029ee0b0498a84777ed3941d9acfec" | "0xc98f01bf2141e1140ef8f8cad99d4b021d10718f" | "0xf9878a5dd55edc120fde01893ea713a4f032229c" | "0x06396509195eb9e07c38a016694dc9ff535b128a" | "0x47a90a2d92a8367a91efa1906bfc8c1e05bf10c4" | "0x28df0835942396b7a1b7ae1cd068728e6ddbbafd" | "0xb125aa15ad943d96e813e4a06d0c34716f897e26" | "0x0f338ec12d3f7c3d77a4b9fcc1f95f3fb6ad0ea6" | "0x2c3c320d49019d4f9a92352e947c7e5acfe47d68" | "0x3fb2623567e21f8c50f0ae86f54ef4849b4eb47b" | "0xf2c9339945bff71dd0bffd3c142164112cd05dc6" | "0xf5c616e7b58226b8081dcc7e4a7123a63734eef6" | "0x0525190f3532b99b32fb42b2697807bd80268565" | "0xcb99fe720124129520f7a09ca3cbef78d58ed934")[];
     internalName: "bsc";
     nativeLogoUrl: "https://assets.oku.trade/natives/bnb.png";
