@@ -7,4 +7,3 @@
 
 `go get gfx.cafe/gfx/chain-config/dist/networks`
 
-
