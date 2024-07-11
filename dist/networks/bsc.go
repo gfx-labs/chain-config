@@ -17,7 +17,7 @@ var Bsc Network = Network{
 	},
 	DefaultPool:  common.HexToAddress("0x47a90a2d92a8367a91efa1906bfc8c1e05bf10c4"),
 	InternalName: "bsc",
-	InitCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
+	InitCodeHash: common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId: map[string]string{
 		"zerion": "binance-smart-chain",
 		"debank": "bsc",

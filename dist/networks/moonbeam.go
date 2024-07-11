@@ -17,7 +17,7 @@ var Moonbeam Network = Network{
 	},
 	DefaultPool:  common.HexToAddress("0xba66370d96a9d61afa66283900b78c1f6ed02782"),
 	InternalName: "moonbeam",
-	InitCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
+	InitCodeHash: common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId: map[string]string{
 		"debank": "mobm",
 	},

@@ -20,7 +20,7 @@ var Rootstock Network = Network{
 	},
 	DefaultPool:   common.HexToAddress("0xd2ffe51ab4e622a411abbe634832a19d919e9c55"),
 	InternalName:  "rootstock",
-	InitCodeHash:  "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
+	InitCodeHash:  common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId:    map[string]string{},
 	DefaultToken0: common.HexToAddress("0x542fda317318ebf1d3deaf76e0b632741a7e677d"),
 	DefaultToken1: common.HexToAddress("0xef213441a85df4d7acbdae0cf78004e1e486bb96"),

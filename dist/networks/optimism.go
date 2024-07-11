@@ -17,7 +17,7 @@ var Optimism Network = Network{
 	},
 	DefaultPool:  common.HexToAddress("0x1c3140ab59d6caf9fa7459c6f83d4b52ba881d36"),
 	InternalName: "optimism",
-	InitCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
+	InitCodeHash: common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId: map[string]string{
 		"zerion": "optimism",
 		"debank": "op",
