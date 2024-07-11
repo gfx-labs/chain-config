@@ -17,6 +17,7 @@ var Base Network = Network{
 	},
 	DefaultPool:  common.HexToAddress("0xd0b53d9277642d899df5c87a3966a349a798f224"),
 	InternalName: "base",
+	InitCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
 	ExternalId: map[string]string{
 		"zerion": "base",
 		"debank": "base",

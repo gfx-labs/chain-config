@@ -1,10 +1,12 @@
-import { } from "viem";
+import {} from "viem";
 import { bsc as chain } from "viem/chains";
 import { makeConfig } from "../util";
 
 export const bsc = makeConfig({
   ...chain,
   name: "BSC",
+  initCodeHash:
+    "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
   sortIndex: 9,
   blockTimeSeconds: 3,
   logoUrl: "https://assets.oku.trade/bsc-logo.svg",

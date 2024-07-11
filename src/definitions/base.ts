@@ -1,4 +1,4 @@
-import {} from "viem";
+import { } from "viem";
 import { base as chain } from "viem/chains";
 import { makeConfig } from "../util";
 
@@ -72,6 +72,8 @@ export const base = makeConfig({
     "0x7e904aaf3439402eb21958fe090bd852d5e882cf",
   ],
   internalName: "base",
+  initCodeHash:
+    "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
   nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
   contracts: {
     ...chain.contracts,

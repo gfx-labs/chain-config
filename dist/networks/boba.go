@@ -17,6 +17,7 @@ var Boba Network = Network{
 	},
 	DefaultPool:  common.HexToAddress("0xdF37543dae7986E48E3ce83F390A828A9F3D23BA"),
 	InternalName: "boba",
+	InitCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
 	ExternalId: map[string]string{
 		"debank": "boba",
 	},

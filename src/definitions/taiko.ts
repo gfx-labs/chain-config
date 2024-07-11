@@ -3,6 +3,8 @@ import { makeConfig } from "../util";
 
 export const taiko = makeConfig({
   ...chain,
+  initCodeHash:
+    "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
   blockTimeSeconds: 24,
   sortIndex: 4,
   logoUrl: "https://assets.oku.trade/taiko-logo.svg",

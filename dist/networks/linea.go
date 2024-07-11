@@ -17,6 +17,7 @@ var Linea Network = Network{
 	},
 	DefaultPool:  common.HexToAddress("0xc48622190a6b91d64ee7459c62fade9abe61b48a"),
 	InternalName: "linea",
+	InitCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
 	ExternalId: map[string]string{
 		"zerion": "linea",
 	},

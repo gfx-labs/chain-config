@@ -4,6 +4,8 @@ import { makeConfig } from "../util";
 
 export const moonbeam = makeConfig({
   ...chain,
+  initCodeHash:
+    "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
   sortIndex: 12,
   blockTimeSeconds: 30,
   logoUrl: "https://assets.oku.trade/moonbeam-logo.svg",

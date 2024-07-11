@@ -52,6 +52,8 @@ export const blast = makeConfig({
     "0x99f8a29a332eb9004f83abb1b4690de8b00dfccf",
   ],
   internalName: "blast",
+  initCodeHash:
+    "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
   nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
   contracts: {
     ...chain.contracts,

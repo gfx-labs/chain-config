@@ -17,6 +17,7 @@ var Sei Network = Network{
 	},
 	DefaultPool:   common.HexToAddress("0x0A6358F069268c7dc4918D5B12c69a782b957Ead"),
 	InternalName:  "sei",
+	InitCodeHash:  "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
 	ExternalId:    map[string]string{},
 	DefaultToken0: common.HexToAddress("0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1"),
 	DefaultToken1: common.HexToAddress("0xE30feDd158A2e3b13e9badaeABaFc5516e95e8C7"),

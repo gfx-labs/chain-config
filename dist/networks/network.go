@@ -3,10 +3,11 @@ package networks
 import (
 	"errors"
 	"fmt"
-	"github.com/ethereum/go-ethereum/common"
 	"strconv"
 	"strings"
 	"time"
+
+	"github.com/ethereum/go-ethereum/common"
 )
 
 var ErrNetworkNotFound = errors.New("chain not found")
@@ -108,6 +109,7 @@ func NetworkByName(name string) (*Network, error) {
 	}
 	return &val, nil
 }
+
 func NetworkById(id int) (*Network, error) {
 	val, ok := networksById[id]
 	if !ok {
@@ -115,6 +117,7 @@ func NetworkById(id int) (*Network, error) {
 	}
 	return &val, nil
 }
+
 func NetworkByIdString(idString string) (*Network, error) {
 	i64, err := strconv.ParseInt(idString, 0, 64)
 	if err != nil {
@@ -136,6 +139,7 @@ type Network struct {
 	Stables           []common.Address
 	Watchlist         []common.Address
 	ExternalId        map[string]string
+	InitCodeHash      common.Hash
 	BlockTimeSeconds  float64
 	Uniswap           UniswapMetadata
 	Token             TokenMetadata

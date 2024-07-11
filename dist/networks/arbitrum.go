@@ -17,6 +17,7 @@ var Arbitrum Network = Network{
 	},
 	DefaultPool:  common.HexToAddress("0xcda53b1f66614552f834ceef361a8d12a0b8dad8"),
 	InternalName: "arbitrum",
+	InitCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
 	ExternalId: map[string]string{
 		"zerion": "arbitrum",
 		"debank": "arb",

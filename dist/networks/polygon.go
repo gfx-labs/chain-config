@@ -17,6 +17,7 @@ var Polygon Network = Network{
 	},
 	DefaultPool:  common.HexToAddress("0xa374094527e1673a86de625aa59517c5de346d32"),
 	InternalName: "polygon",
+	InitCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
 	ExternalId: map[string]string{
 		"zerion": "polygon",
 		"debank": "matic",

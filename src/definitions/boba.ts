@@ -1,10 +1,12 @@
-import {} from "viem";
+import { } from "viem";
 import { boba as chain } from "viem/chains";
 import { makeConfig } from "../util";
 
 export const boba = makeConfig({
   ...chain,
   name: "Boba",
+  initCodeHash:
+    "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
   sortIndex: 11,
   blockTimeSeconds: 2,
   logoUrl: "https://assets.oku.trade/boba-logo.svg",
@@ -16,7 +18,8 @@ export const boba = makeConfig({
     default: {
       name: "Bobascan",
       url: "https://bobascan.com",
-      apiUrl: "https://api.routescan.io/v2/network/mainnet/evm/288/etherscan/api",
+      apiUrl:
+        "https://api.routescan.io/v2/network/mainnet/evm/288/etherscan/api",
     },
   },
   nativeCurrency: {

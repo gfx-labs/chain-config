@@ -17,6 +17,7 @@ var Manta Network = Network{
 	},
 	DefaultPool:   common.HexToAddress("0xc108d8702d42bae7b3d7d8209a9b40613a7b1d37"),
 	InternalName:  "manta",
+	InitCodeHash:  "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
 	ExternalId:    map[string]string{},
 	DefaultToken0: common.HexToAddress("0x0dc808adce2099a9f62aa87d9670745aba741746"),
 	DefaultToken1: common.HexToAddress("0xb73603c5d87fa094b7314c74ace2e64d165016fb"),

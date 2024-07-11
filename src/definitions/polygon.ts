@@ -1,9 +1,11 @@
+import {} from "viem";
 import { polygon as chain } from "viem/chains";
 import { makeConfig } from "../util";
-import {} from "viem";
 
 export const polygon = makeConfig({
   ...chain,
+  initCodeHash:
+    "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
   blockTimeSeconds: 2,
   sortIndex: 3,
   logoUrl: "https://assets.oku.trade/polygon-logo.webp",

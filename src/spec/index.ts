@@ -1,4 +1,4 @@
-import { Address, Chain, ChainContract, ChainFormatters } from "viem";
+import { Address, Chain, ChainContract, ChainFormatters, Hash } from "viem";
 
 export { ChainContract } from "viem";
 
@@ -62,6 +62,7 @@ export interface IChainInfo<
     zerion?: string;
     debank?: string;
   };
+  initCodeHash: Hash;
 
   blockTimeSeconds: float64;
 

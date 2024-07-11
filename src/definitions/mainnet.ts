@@ -4,6 +4,8 @@ import { makeConfig } from "../util";
 
 export const mainnet = makeConfig({
   ...chain,
+  initCodeHash:
+    "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
   sortIndex: 0,
   blockTimeSeconds: 15,
   safeReorgDistance: 90_000,

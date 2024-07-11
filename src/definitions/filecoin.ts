@@ -6,6 +6,8 @@ export const filecoin = makeConfig({
   ...chain,
   sortIndex: 10,
   name: "Filecoin",
+  initCodeHash:
+    "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
   blockTimeSeconds: 30,
   safeReorgDistance: 90000,
   blockExplorers: {
@@ -17,13 +19,13 @@ export const filecoin = makeConfig({
     filfox: {
       name: "Filfox",
       url: "https://filfox.info/en",
-      apiUrl: "https://filfox.info/api"
+      apiUrl: "https://filfox.info/api",
     },
     filutils: {
       name: "Filutils",
       url: "https://www.filutils.com/en",
-      apiUrl: "https://api.filutils.com/api"
-    }
+      apiUrl: "https://api.filutils.com/api",
+    },
   },
   logoUrl: "https://assets.oku.trade/filecoin-logo.svg",
   externalId: {},

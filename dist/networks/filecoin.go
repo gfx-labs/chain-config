@@ -25,6 +25,7 @@ var Filecoin Network = Network{
 	},
 	DefaultPool:   common.HexToAddress("0x74eb355808481587a1fa7101c210592e8d591e34"),
 	InternalName:  "filecoin",
+	InitCodeHash:  "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
 	ExternalId:    map[string]string{},
 	DefaultToken0: common.HexToAddress("0x2421db204968a367cc2c866cd057fa754cb84edf"),
 	DefaultToken1: common.HexToAddress("0x60e1773636cf5e4a227d9ac24f20feca034ee25a"),

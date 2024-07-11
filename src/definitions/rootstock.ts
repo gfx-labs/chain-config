@@ -1,11 +1,13 @@
 import { rootstock as chain } from "viem/chains";
 import { makeConfig } from "../util";
-import { } from "viem";
+import {} from "viem";
 
 export const rootstock = makeConfig({
   ...chain,
   sortIndex: 7,
   name: "Rootstock",
+  initCodeHash:
+    "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
   blockTimeSeconds: 33,
   logoUrl: "https://assets.oku.trade/rootstock-logo.svg",
   safeReorgDistance: 90000,

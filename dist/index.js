@@ -215,6 +215,7 @@ const arbitrum = makeConfig({
     ],
     internalName: "arbitrum",
     nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
+    initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
     contracts: {
         ...chains.arbitrum.contracts,
         nftManager: {
@@ -301,6 +302,7 @@ const base = makeConfig({
         "0x7e904aaf3439402eb21958fe090bd852d5e882cf",
     ],
     internalName: "base",
+    initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
     nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
     contracts: {
         ...chains.base.contracts,
@@ -371,6 +373,7 @@ const blast = makeConfig({
         "0x99f8a29a332eb9004f83abb1b4690de8b00dfccf",
     ],
     internalName: "blast",
+    initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
     nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
     contracts: {
         ...chains.blast.contracts,
@@ -392,6 +395,7 @@ const blast = makeConfig({
 const boba = makeConfig({
     ...chains.boba,
     name: "Boba",
+    initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
     sortIndex: 11,
     blockTimeSeconds: 2,
     logoUrl: "https://assets.oku.trade/boba-logo.svg",
@@ -488,6 +492,7 @@ const boba = makeConfig({
 const bsc = makeConfig({
     ...chains.bsc,
     name: "BSC",
+    initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
     sortIndex: 9,
     blockTimeSeconds: 3,
     logoUrl: "https://assets.oku.trade/bsc-logo.svg",
@@ -497,21 +502,21 @@ const bsc = makeConfig({
         debank: "bsc",
     },
     uniswap: {
-        deployBlock: 969351,
-        poolFactory: "0xFFCd7Aed9C627E82A765c3247d562239507f6f1B",
+        deployBlock: 26324014,
+        poolFactory: "0xdB1d10011AD0Ff90774D0C6Bb92e5C5c8b4461F7",
         multicall2: "0xfF6FD90A470Aaa0c1B8A54681746b07AcdFedc9B",
-        proxyAdmin: "0xE8B5DaE430189ea6ccffF4eEeC58a98556525fB4",
-        tickLens: "0x36EBd44350E4406E67C5579026950793b8528402",
-        quoter: "0x483fc90DDC7aC847D4a752055DCF73483B6d97FD",
-        swapRouter02: "0x759E8B0cb9d65291e258aE3e043258ae1dD0df16",
-        NFTDescriptor: "0x531c3B226288854e992150FEfF4d95F7B8DEbD8c",
-        nonfungibleTokenPositionDescriptor: "0xb6751A274EDAe02A911E3bB23682FAaF380433b7",
+        proxyAdmin: "0xC9A7f5b73E853664044ab31936D0E6583d8b1c79",
+        tickLens: "0xD9270014D396281579760619CCf4c3af0501A47C",
+        quoter: "0x78D78E420Da98ad378D7799bE8f4AF69033EB077",
+        swapRouter02: "0xB971eF87ede563556b2ED4b1C0b0019111Dd85d2",
+        NFTDescriptor: "0x831d93E55AF23A2977E4DA892d5005f4F2995071",
+        nonfungibleTokenPositionDescriptor: "0x0281E98322e4e8E53491D576Ee6A2BFCE644C55C",
         transparentUpgradeableProxy: "0xEe6A57eC80ea46401049E92587E52f5Ec1c24785",
-        nonfungiblePositionManager: "0x0bfc9aC7E52f38EAA6dC8d10942478f695C6Cf71",
-        v3Migrator: "0x9ab1E646877732DD76bd662DC242723D7e4B42ba",
-        uniswapV3Staker: "0x6a6c1198f85B084822138DFd3fA9686e4029c091",
-        positionsNFT: "0x0bfc9aC7E52f38EAA6dC8d10942478f695C6Cf71",
-        positionsNFTDeployBlock: 969359,
+        nonfungiblePositionManager: "0x7b8A01B39D58278b5DE7e48c8449c9f4F5170613",
+        v3Migrator: "0x32681814957e0C13117ddc0c2aba232b5c9e760f",
+        uniswapV3Staker: "0x49B53C35AF9072fC71767577BF6380a88EE32C71",
+        positionsNFT: "0x7b8A01B39D58278b5DE7e48c8449c9f4F5170613",
+        positionsNFTDeployBlock: 26324045,
         universalRouter: "0xeC8B0F7Ffe3ae75d7FfAb09429e3675bb63503e4",
     },
     token: {
@@ -619,6 +624,7 @@ const filecoin = makeConfig({
     ...chains.filecoin,
     sortIndex: 10,
     name: "Filecoin",
+    initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
     blockTimeSeconds: 30,
     safeReorgDistance: 90000,
     blockExplorers: {
@@ -630,13 +636,13 @@ const filecoin = makeConfig({
         filfox: {
             name: "Filfox",
             url: "https://filfox.info/en",
-            apiUrl: "https://filfox.info/api"
+            apiUrl: "https://filfox.info/api",
         },
         filutils: {
             name: "Filutils",
             url: "https://www.filutils.com/en",
-            apiUrl: "https://api.filutils.com/api"
-        }
+            apiUrl: "https://api.filutils.com/api",
+        },
     },
     logoUrl: "https://assets.oku.trade/filecoin-logo.svg",
     externalId: {},
@@ -731,6 +737,7 @@ const filecoin = makeConfig({
 const linea = makeConfig({
     ...chains.linea,
     name: "Linea",
+    initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
     blockTimeSeconds: 2,
     sortIndex: 15,
     logoUrl: "https://assets.oku.trade/linea-logo.svg",
@@ -808,6 +815,7 @@ const linea = makeConfig({
 
 const mainnet = makeConfig({
     ...chains.mainnet,
+    initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
     sortIndex: 0,
     blockTimeSeconds: 15,
     safeReorgDistance: 90000,
@@ -1032,6 +1040,7 @@ const mainnet = makeConfig({
 const manta = makeConfig({
     ...chains.manta,
     name: "Manta Pacific",
+    initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
     blockTimeSeconds: 2,
     sortIndex: 13,
     logoUrl: "https://assets.oku.trade/manta-logo.png",
@@ -1110,6 +1119,7 @@ const manta = makeConfig({
 
 const mantle = makeConfig({
     ...chains.mantle,
+    initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
     blockTimeSeconds: 2,
     sortIndex: 15,
     logoUrl: "https://assets.oku.trade/mantle-logo.png",
@@ -1180,6 +1190,7 @@ const mantle = makeConfig({
 
 const moonbeam = makeConfig({
     ...chains.moonbeam,
+    initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
     sortIndex: 12,
     blockTimeSeconds: 30,
     logoUrl: "https://assets.oku.trade/moonbeam-logo.svg",
@@ -1261,6 +1272,7 @@ const moonbeam = makeConfig({
 const optimism = makeConfig({
     ...chains.optimism,
     name: "Optimism",
+    initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
     blockTimeSeconds: 0.5,
     sortIndex: 2,
     logoUrl: "https://assets.oku.trade/optimism-logo.svg",
@@ -1482,6 +1494,7 @@ const optimism = makeConfig({
 
 const polygon = makeConfig({
     ...chains.polygon,
+    initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
     blockTimeSeconds: 2,
     sortIndex: 3,
     logoUrl: "https://assets.oku.trade/polygon-logo.webp",
@@ -1700,6 +1713,7 @@ const rootstock = makeConfig({
     ...chains.rootstock,
     sortIndex: 7,
     name: "Rootstock",
+    initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
     blockTimeSeconds: 33,
     logoUrl: "https://assets.oku.trade/rootstock-logo.svg",
     safeReorgDistance: 90000,
@@ -1776,6 +1790,7 @@ const rootstock = makeConfig({
 
 const scroll = makeConfig({
     ...chains.scroll,
+    initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
     sortIndex: 5,
     blockTimeSeconds: 3,
     logoUrl: "https://assets.oku.trade/scroll-logo.png",
@@ -1846,6 +1861,7 @@ const scroll = makeConfig({
 
 const sei = makeConfig({
     ...chains.sei,
+    initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
     blockTimeSeconds: 0.4,
     sortIndex: 5,
     logoUrl: "https://assets.oku.trade/sei-logo.svg",
@@ -1923,6 +1939,7 @@ const sei = makeConfig({
 
 const taiko = makeConfig({
     ...chains.taiko,
+    initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
     blockTimeSeconds: 24,
     sortIndex: 4,
     logoUrl: "https://assets.oku.trade/taiko-logo.svg",
@@ -2003,6 +2020,7 @@ const taiko = makeConfig({
 
 const polygonZkEvm = makeConfig({
     ...chains.polygonZkEvm,
+    initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
     sortIndex: 6,
     blockTimeSeconds: 7,
     logoUrl: "https://assets.oku.trade/zkevm-logo.svg",
@@ -2079,6 +2097,7 @@ const zkSync = makeConfig({
     externalId: {
         zerion: "zksync-era",
     },
+    initCodeHash: "0x010013f177ea1fcbc4520f9a3ca7cd2d1d77959e05aa66484027cb38e712aeed",
     blockExplorers: {
         default: {
             name: "zksync Era Explorer",

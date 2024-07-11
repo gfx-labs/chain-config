@@ -1,4 +1,3 @@
-import {} from "viem";
 import { zkSync as chain } from "viem/chains";
 import { makeConfig } from "../util";
 
@@ -11,6 +10,8 @@ export const zkSync = makeConfig({
   externalId: {
     zerion: "zksync-era",
   },
+  initCodeHash:
+    "0x010013f177ea1fcbc4520f9a3ca7cd2d1d77959e05aa66484027cb38e712aeed",
   blockExplorers: {
     default: {
       name: "zksync Era Explorer",

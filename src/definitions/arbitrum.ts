@@ -1,4 +1,4 @@
-import { } from "viem";
+import {} from "viem";
 import { arbitrum as chain } from "viem/chains";
 import { makeConfig } from "../util";
 
@@ -212,6 +212,8 @@ export const arbitrum = makeConfig({
   ],
   internalName: "arbitrum",
   nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
+  initCodeHash:
+    "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
   contracts: {
     ...chain.contracts,
     nftManager: {
