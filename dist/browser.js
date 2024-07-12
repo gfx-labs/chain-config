@@ -1234,6 +1234,7 @@
           { symbol: "USDC", address: "0x931715fee2d06333043d11f658c8ce934ac61d0c" },
       ],
       stables: [
+          "0xffffffff7d2b0b761af01ca8e25242976ac0ad7d",
           "0x818ec0a7fe18ff94269904fced6ae3dae6d6dc0b",
           "0x931715FEE2d06333043d11F658C8CE934aC61D0c",
           "0x765277eebeca2e31912c9946eae1021199b39c61",
