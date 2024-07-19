@@ -1156,7 +1156,7 @@ const mantle = makeConfig({
     ],
     stables: [
         "0x201EBa5CC46D216Ce6DC03F6a759e8E766e956aE",
-        "0xdeaddeaddeaddeaddeaddeaddeaddeaddead1111",
+        "0x09Bc4E0D864854c6aFB6eB9A9cdF58aC190D0dF9",
     ],
     watchlist: [
         "0x086F766b336DFB0f705Dc030dB01993b22D81266",
