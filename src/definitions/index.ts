@@ -20,4 +20,5 @@ export * from "./scroll";
 export * from "./sei";
 export * from "./taiko";
 export * from "./zkevm";
+export * from "./zklink";
 export * from "./zksync";

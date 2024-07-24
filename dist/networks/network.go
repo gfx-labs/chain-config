@@ -33,6 +33,7 @@ const (
 	NameTaiko        InternalName = "taiko"
 	NameMantle       InternalName = "mantle"
 	NameSei          InternalName = "sei"
+	NameZklink       InternalName = "zklink"
 )
 
 var AllNetworks = []Network{
@@ -55,6 +56,7 @@ var AllNetworks = []Network{
 	Taiko,
 	Mantle,
 	Sei,
+	Zklink,
 }
 
 var networksByName = map[string]Network{
@@ -77,6 +79,7 @@ var networksByName = map[string]Network{
 	"taiko":         Taiko,
 	"mantle":        Mantle,
 	"sei":           Sei,
+	"zklink":        Zklink,
 }
 
 var networksById = map[int]Network{
@@ -99,6 +102,7 @@ var networksById = map[int]Network{
 	167000: Taiko,
 	5000:   Mantle,
 	1329:   Sei,
+	810180: Zklink,
 }
 
 func NetworkByName(name string) (*Network, error) {
