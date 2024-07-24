@@ -70,11 +70,11 @@ export const zkLink = makeConfig({
       address: "0x8280a4e7D5B3B658ec4580d3Bc30f5e50454F169",
     },
     multicall2: {
-      address: "0xccca83bd6343fe9535E0e65AF4601424E95e3974",
+      // TODO: this is the multicall3 address, make sure this works
+      address: "0x825267E0fA5CAe92F98540828a54198dcB3Eaeb5",
     },
     multicall3: {
-      // TODO: multicall3
-      address: zeroAddress,
+      address: "0x825267E0fA5CAe92F98540828a54198dcB3Eaeb5",
     },
   },
 });
