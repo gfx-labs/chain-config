@@ -67,11 +67,11 @@ var Zklink Network = Network{
 		},
 		"multicall2": {
 			BlockCreated: 0,
-			Address:      common.HexToAddress("0xccca83bd6343fe9535E0e65AF4601424E95e3974"),
+			Address:      common.HexToAddress("0x825267E0fA5CAe92F98540828a54198dcB3Eaeb5"),
 		},
 		"multicall3": {
 			BlockCreated: 0,
-			Address:      common.HexToAddress("0x0000000000000000000000000000000000000000"),
+			Address:      common.HexToAddress("0x825267E0fA5CAe92F98540828a54198dcB3Eaeb5"),
 		},
 	},
 }

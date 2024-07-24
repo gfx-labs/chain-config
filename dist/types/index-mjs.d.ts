@@ -2398,10 +2398,10 @@ declare const zkLink: Readonly<{
             address: "0x8280a4e7D5B3B658ec4580d3Bc30f5e50454F169";
         };
         multicall2: {
-            address: "0xccca83bd6343fe9535E0e65AF4601424E95e3974";
+            address: "0x825267E0fA5CAe92F98540828a54198dcB3Eaeb5";
         };
         multicall3: {
-            address: "0x0000000000000000000000000000000000000000";
+            address: "0x825267E0fA5CAe92F98540828a54198dcB3Eaeb5";
         };
         ensRegistry?: import("viem").ChainContract | undefined;
         ensUniversalResolver?: import("viem").ChainContract | undefined;
@@ -5671,10 +5671,10 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             address: "0x8280a4e7D5B3B658ec4580d3Bc30f5e50454F169";
         };
         multicall2: {
-            address: "0xccca83bd6343fe9535E0e65AF4601424E95e3974";
+            address: "0x825267E0fA5CAe92F98540828a54198dcB3Eaeb5";
         };
         multicall3: {
-            address: "0x0000000000000000000000000000000000000000";
+            address: "0x825267E0fA5CAe92F98540828a54198dcB3Eaeb5";
         };
         ensRegistry?: ChainContract | undefined;
         ensUniversalResolver?: ChainContract | undefined;
