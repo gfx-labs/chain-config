@@ -167,9 +167,9 @@ export const arbitrum = makeConfig({
     { symbol: "ARB", address: "0x912ce59144191c1204e64559fe8253a0e49e6548" },
   ],
   stables: [
+    "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8",
     "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
     "0xda10009cbd5d07dd0cecc66161fc93d7c9000da1",
-    "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8",
     "0xaf88d065e77c8cC2239327C5EDb3A432268e5831",
   ],
   watchlist: [

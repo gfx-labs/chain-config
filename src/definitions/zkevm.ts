@@ -1,4 +1,4 @@
-import { } from "viem";
+import {} from "viem";
 import { polygonZkEvm as chain } from "viem/chains";
 import { makeConfig } from "../util";
 
@@ -47,8 +47,8 @@ export const polygonZkEvm = makeConfig({
     { symbol: "DAI", address: "0x744C5860ba161b5316F7E80D9Ec415e2727e5bD5" },
   ],
   stables: [
-    "0x1e4a5963abfd975d8c9021ce480b42188849d41d",
     "0xa8ce8aee21bc2a48a5ef670afcc9274c7bbbc035",
+    "0x1e4a5963abfd975d8c9021ce480b42188849d41d",
     "0xc5015b9d9161dca7e18e32f6f25c4ad850731fd4",
     "0x744C5860ba161b5316F7E80D9Ec415e2727e5bD5",
   ],

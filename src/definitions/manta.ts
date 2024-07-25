@@ -48,8 +48,8 @@ export const manta = makeConfig({
     { symbol: "WBTC", address: "0x305E88d809c9DC03179554BFbf85Ac05Ce8F18d6" },
   ],
   stables: [
-    "0xf417F5A458eC102B90352F697D6e2Ac3A3d2851f",
     "0xb73603C5d87fA094B7314C74ACE2e64D165016fb",
+    "0xf417F5A458eC102B90352F697D6e2Ac3A3d2851f",
   ],
   watchlist: [
     "0x7881dc8e59e644517a95a9687a6b58b86d98db78",

@@ -85,9 +85,9 @@ export const filecoin = makeConfig({
     },
   ],
   stables: [
+    "0x2421db204968A367CC2C866CD057fA754Cb84EdF",
     "0xEB466342C4d449BC9f53A865D5Cb90586f405215",
     "0x7f5373AE26c3E8FfC4c77b7255DF7eC1A9aF52a6",
-    "0x2421db204968A367CC2C866CD057fA754Cb84EdF",
     "0x422849b355039bc58f2780cc4854919fc9cfaf94",
   ],
   watchlist: [
