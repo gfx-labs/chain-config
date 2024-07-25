@@ -40,6 +40,7 @@ var Moonbeam Network = Network{
 	Uniswap: UniswapMetadata{
 		DeployBlock:                        3340452,
 		PoolFactory:                        common.HexToAddress("0x28f1158795A3585CaAA3cD6469CD65382b89BB70"),
+		Permit2:                            common.HexToAddress("0xe96e30e92e01dc8a880f701b2d2160f93da18df7"),
 		Multicall2:                         common.HexToAddress("0x65dA327b1740D00fF7B366a4fd8F33830a2f03A2"),
 		TickLens:                           common.HexToAddress("0x1f4F7b041895D9eB1A79be0896AF3E68e4160010"),
 		Quoter:                             common.HexToAddress("0x48af91cdcad8ffdd7a8d4cdf73c16cb0632d3d17"),

@@ -15,6 +15,7 @@ export const manta = makeConfig({
   uniswap: {
     deployBlock: 1191705,
     poolFactory: "0x06D830e15081f65923674268121FF57Cc54e4e23",
+    permit2: "0x83986Ff655A54ee061F6B7F476B92f4Fed111B93",
     multicall2: "0x52dFC0D9960F11A9Ca9FF616e791B91188446a60",
     tickLens: "0xC94Fb2D13587b0b5af78094933490B35E004eAbE",
     nonfungiblePositionManager: "0xA4F2Db71348697C65A64a146F709C73030C2ebcD",

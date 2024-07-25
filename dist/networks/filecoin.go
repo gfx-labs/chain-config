@@ -47,6 +47,7 @@ var Filecoin Network = Network{
 	Uniswap: UniswapMetadata{
 		DeployBlock:                3195837,
 		PoolFactory:                common.HexToAddress("0xB4C47eD546Fc31E26470a186eC2C5F19eF09BA41"),
+		Permit2:                    common.HexToAddress("0xb81363578d377F8DA3902e9e705FD60198a9cEc2"),
 		Multicall2:                 common.HexToAddress("0x732f5baac411e427d130fed03c2e82a3e0d64d35"),
 		TickLens:                   common.HexToAddress("0x76c001ad9E527FEfA8Fa822a987Ad44ce720BAeD"),
 		NonfungiblePositionManager: common.HexToAddress("0x4cd986dD509fbB6A695aE971d5C56c8795f640ee"),

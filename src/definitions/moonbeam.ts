@@ -1,4 +1,4 @@
-import { } from "viem";
+import {} from "viem";
 import { moonbeam as chain } from "viem/chains";
 import { makeConfig } from "../util";
 
@@ -16,6 +16,7 @@ export const moonbeam = makeConfig({
   uniswap: {
     deployBlock: 3340452,
     poolFactory: "0x28f1158795A3585CaAA3cD6469CD65382b89BB70",
+    permit2: "0xe96e30e92e01dc8a880f701b2d2160f93da18df7",
     multicall2: "0x65dA327b1740D00fF7B366a4fd8F33830a2f03A2",
     tickLens: "0x1f4F7b041895D9eB1A79be0896AF3E68e4160010",
     quoter: "0x48af91cdcad8ffdd7a8d4cdf73c16cb0632d3d17",

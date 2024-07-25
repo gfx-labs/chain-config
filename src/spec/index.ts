@@ -7,6 +7,7 @@ type float64 = number;
 export interface UniswapMetadata {
   deployBlock?: number;
   poolFactory?: Address;
+  permit2?: Address;
   multicall2?: Address;
   proxyAdmin?: Address;
   tickLens?: Address;

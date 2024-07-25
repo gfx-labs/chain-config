@@ -41,6 +41,7 @@ var Boba Network = Network{
 	Uniswap: UniswapMetadata{
 		DeployBlock:                        969351,
 		PoolFactory:                        common.HexToAddress("0xFFCd7Aed9C627E82A765c3247d562239507f6f1B"),
+		Permit2:                            common.HexToAddress("0xF80c91442D3EF66632958C0d395667075FC82fB0"),
 		Multicall2:                         common.HexToAddress("0x07956092c0F4818D6792a42035d2d2fa0C75E76B"),
 		ProxyAdmin:                         common.HexToAddress("0xE8B5DaE430189ea6ccffF4eEeC58a98556525fB4"),
 		TickLens:                           common.HexToAddress("0x36EBd44350E4406E67C5579026950793b8528402"),

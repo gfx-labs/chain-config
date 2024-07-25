@@ -42,6 +42,7 @@ var Rootstock Network = Network{
 	Uniswap: UniswapMetadata{
 		DeployBlock:                5829210,
 		PoolFactory:                common.HexToAddress("0xaF37EC98A00FD63689CF3060BF3B6784E00caD82"),
+		Permit2:                    common.HexToAddress("0xFcf5986450E4A014fFE7ad4Ae24921B589D039b5"),
 		Multicall2:                 common.HexToAddress("0x996a9858cdFa45aD68E47C9a30A7201E29c6A386"),
 		TickLens:                   common.HexToAddress("0x55B9dF5bF68ADe972191a91980459f48ecA16afC"),
 		NonfungiblePositionManager: common.HexToAddress("0x9d9386c042F194B460Ec424a1e57ACDE25f5C4b1"),

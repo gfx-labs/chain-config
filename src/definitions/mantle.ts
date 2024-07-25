@@ -13,6 +13,7 @@ export const mantle = makeConfig({
   uniswap: {
     deployBlock: 63795918,
     poolFactory: "0x0d922Fb1Bc191F64970ac40376643808b4B74Df9",
+    permit2: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435",
     multicall2: "0xE3dbcD53f4Ce1b06Ab200f4912BD35672e68f1FA",
     tickLens: "0x38EB9e62ABe4d3F70C0e161971F29593b8aE29FF",
     nonfungiblePositionManager: "0x5911cB3633e764939edc2d92b7e1ad375Bb57649",

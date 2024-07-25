@@ -39,6 +39,7 @@ var Manta Network = Network{
 	Uniswap: UniswapMetadata{
 		DeployBlock:                1191705,
 		PoolFactory:                common.HexToAddress("0x06D830e15081f65923674268121FF57Cc54e4e23"),
+		Permit2:                    common.HexToAddress("0x83986Ff655A54ee061F6B7F476B92f4Fed111B93"),
 		Multicall2:                 common.HexToAddress("0x52dFC0D9960F11A9Ca9FF616e791B91188446a60"),
 		TickLens:                   common.HexToAddress("0xC94Fb2D13587b0b5af78094933490B35E004eAbE"),
 		NonfungiblePositionManager: common.HexToAddress("0xA4F2Db71348697C65A64a146F709C73030C2ebcD"),

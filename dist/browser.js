@@ -420,6 +420,7 @@
       uniswap: {
           deployBlock: 969351,
           poolFactory: "0xFFCd7Aed9C627E82A765c3247d562239507f6f1B",
+          permit2: "0xF80c91442D3EF66632958C0d395667075FC82fB0",
           multicall2: "0x07956092c0F4818D6792a42035d2d2fa0C75E76B",
           proxyAdmin: "0xE8B5DaE430189ea6ccffF4eEeC58a98556525fB4",
           tickLens: "0x36EBd44350E4406E67C5579026950793b8528402",
@@ -651,6 +652,7 @@
       uniswap: {
           deployBlock: 3195837,
           poolFactory: "0xB4C47eD546Fc31E26470a186eC2C5F19eF09BA41",
+          permit2: "0xb81363578d377F8DA3902e9e705FD60198a9cEc2",
           multicall2: "0x732f5baac411e427d130fed03c2e82a3e0d64d35",
           tickLens: "0x76c001ad9E527FEfA8Fa822a987Ad44ce720BAeD",
           nonfungiblePositionManager: "0x4cd986dD509fbB6A695aE971d5C56c8795f640ee",
@@ -1051,6 +1053,7 @@
       uniswap: {
           deployBlock: 1191705,
           poolFactory: "0x06D830e15081f65923674268121FF57Cc54e4e23",
+          permit2: "0x83986Ff655A54ee061F6B7F476B92f4Fed111B93",
           multicall2: "0x52dFC0D9960F11A9Ca9FF616e791B91188446a60",
           tickLens: "0xC94Fb2D13587b0b5af78094933490B35E004eAbE",
           nonfungiblePositionManager: "0xA4F2Db71348697C65A64a146F709C73030C2ebcD",
@@ -1130,6 +1133,7 @@
       uniswap: {
           deployBlock: 63795918,
           poolFactory: "0x0d922Fb1Bc191F64970ac40376643808b4B74Df9",
+          permit2: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435",
           multicall2: "0xE3dbcD53f4Ce1b06Ab200f4912BD35672e68f1FA",
           tickLens: "0x38EB9e62ABe4d3F70C0e161971F29593b8aE29FF",
           nonfungiblePositionManager: "0x5911cB3633e764939edc2d92b7e1ad375Bb57649",
@@ -1203,6 +1207,7 @@
       uniswap: {
           deployBlock: 3340452,
           poolFactory: "0x28f1158795A3585CaAA3cD6469CD65382b89BB70",
+          permit2: "0xe96e30e92e01dc8a880f701b2d2160f93da18df7",
           multicall2: "0x65dA327b1740D00fF7B366a4fd8F33830a2f03A2",
           tickLens: "0x1f4F7b041895D9eB1A79be0896AF3E68e4160010",
           quoter: "0x48af91cdcad8ffdd7a8d4cdf73c16cb0632d3d17",
@@ -1732,6 +1737,7 @@
       uniswap: {
           deployBlock: 5829210,
           poolFactory: "0xaF37EC98A00FD63689CF3060BF3B6784E00caD82",
+          permit2: "0xFcf5986450E4A014fFE7ad4Ae24921B589D039b5",
           multicall2: "0x996a9858cdFa45aD68E47C9a30A7201E29c6A386",
           tickLens: "0x55B9dF5bF68ADe972191a91980459f48ecA16afC",
           nonfungiblePositionManager: "0x9d9386c042F194B460Ec424a1e57ACDE25f5C4b1",
@@ -1804,6 +1810,7 @@
       uniswap: {
           deployBlock: 1367,
           multicall2: "0x3b615B1AC55bc34e51a81D3dea67467F32bcb8C2",
+          permit2: "0x83986Ff655A54ee061F6B7F476B92f4Fed111B93",
           poolFactory: "0x70C62C8b8e801124A4Aa81ce07b637A3e83cb919",
           positionsNFT: "0xB39002E4033b162fAc607fc3471E205FA2aE5967",
           universalRouter: "0x595E7160858b1AdA94Bda790D8699C85e595117E",
@@ -1880,6 +1887,7 @@
       uniswap: {
           deployBlock: 79245151,
           poolFactory: "0x75FC67473A91335B5b8F8821277262a13B38c9b3",
+          permit2: "0xB952578f3520EE8Ea45b7914994dcf4702cEe578",
           multicall2: "0x0d922Fb1Bc191F64970ac40376643808b4B74Df9",
           tickLens: "0xE3dbcD53f4Ce1b06Ab200f4912BD35672e68f1FA",
           nonfungiblePositionManager: "0x8B3c541c30f9b29560f56B9E44b59718916B69EF",
@@ -1963,6 +1971,7 @@
       uniswap: {
           deployBlock: 961,
           poolFactory: "0x75FC67473A91335B5b8F8821277262a13B38c9b3",
+          permit2: "0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc",
           multicall2: "0x0d922Fb1Bc191F64970ac40376643808b4B74Df9",
           tickLens: "0xE3dbcD53f4Ce1b06Ab200f4912BD35672e68f1FA",
           nonfungiblePositionManager: "0x8B3c541c30f9b29560f56B9E44b59718916B69EF",
@@ -2034,6 +2043,7 @@
       uniswap: {
           deployBlock: 8466867,
           poolFactory: "0xff83c3c800Fec21de45C5Ec30B69ddd5Ee60DFC2",
+          permit2: "0xCEc9e219281B78E1946b6b894f75ae89Bc10FEb6",
           multicall2: "0x1FaE28D9C07a8a96E2ECc53BB328E787D5B88674",
           tickLens: "0x64519b94A7248Bf17929fB03b9648ce277Fd7fDA",
           nonfungiblePositionManager: "0xf0D61Aeda516CCa1FF20Be65Cfb0213be688A24f",
@@ -2061,14 +2071,21 @@
           { symbol: "WETH", address: "0x4f9a0e7fd2bf6067db6994cf12e4495df938e6e9" },
           { symbol: "USDC", address: "0xa8ce8aee21bc2a48a5ef670afcc9274c7bbbc035" },
           { symbol: "USDT", address: "0x1e4a5963abfd975d8c9021ce480b42188849d41d" },
-          { symbol: "DAI", address: "0xc5015b9d9161dca7e18e32f6f25c4ad850731fd4" },
+          { symbol: "DAI", address: "0x744C5860ba161b5316F7E80D9Ec415e2727e5bD5" },
       ],
       stables: [
           "0x1e4a5963abfd975d8c9021ce480b42188849d41d",
           "0xa8ce8aee21bc2a48a5ef670afcc9274c7bbbc035",
           "0xc5015b9d9161dca7e18e32f6f25c4ad850731fd4",
+          "0x744C5860ba161b5316F7E80D9Ec415e2727e5bD5",
       ],
-      watchlist: ["0xd2c7e323c6f5415dc0ee4e3811901b3380d316fd"],
+      watchlist: [
+          "0xd2c7e323c6f5415dc0ee4e3811901b3380d316fd",
+          "0x539d23BE81696560C12Cf8d24AE8bb4641381E7D",
+          "0x90C865Da46D948EF3792fb57B0d60D14A96ecf49",
+          "0x7908F0eD78de3c850A5d1DC261c39341b274D07c",
+          "0x0A44b12799eBC21E1dF271284921e1e4F6f17f81",
+      ],
       internalName: "polygon-zkevm",
       nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
       contracts: {
@@ -2192,6 +2209,7 @@
       uniswap: {
           deployBlock: 12637075,
           poolFactory: "0x8FdA5a7a8dCA67BBcDd10F02Fa0649A937215422",
+          permit2: "0x0000000000225e31d15943971f47ad3022f714fa",
           multicall2: "0x8bB86A31795d3e8ef12c630C288770e13eEcF038",
           tickLens: "0xe10FF11b809f8EE07b056B452c3B2caa7FE24f89",
           nonfungiblePositionManager: "0x0616e5762c1E7Dc3723c50663dF10a162D690a86",

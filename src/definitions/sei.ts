@@ -20,6 +20,7 @@ export const sei = makeConfig({
   uniswap: {
     deployBlock: 79245151,
     poolFactory: "0x75FC67473A91335B5b8F8821277262a13B38c9b3",
+    permit2: "0xB952578f3520EE8Ea45b7914994dcf4702cEe578",
     multicall2: "0x0d922Fb1Bc191F64970ac40376643808b4B74Df9",
     tickLens: "0xE3dbcD53f4Ce1b06Ab200f4912BD35672e68f1FA",
     nonfungiblePositionManager: "0x8B3c541c30f9b29560f56B9E44b59718916B69EF",

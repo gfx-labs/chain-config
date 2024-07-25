@@ -211,6 +211,7 @@ func (n *Network) GetNativePoolToQuoteWith(block int64) (common.Address, error) 
 type UniswapMetadata struct {
 	DeployBlock                        int64
 	PoolFactory                        common.Address
+	Permit2                            common.Address
 	Multicall2                         common.Address
 	ProxyAdmin                         common.Address
 	TickLens                           common.Address
