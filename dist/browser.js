@@ -172,9 +172,9 @@
           { symbol: "ARB", address: "0x912ce59144191c1204e64559fe8253a0e49e6548" },
       ],
       stables: [
+          "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8",
           "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
           "0xda10009cbd5d07dd0cecc66161fc93d7c9000da1",
-          "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8",
           "0xaf88d065e77c8cC2239327C5EDb3A432268e5831",
       ],
       watchlist: [
@@ -276,8 +276,8 @@
           { symbol: "USDT", address: "0xfde4C96c8593536E31F229EA8f37b2ADa2699bb2" },
       ],
       stables: [
-          "0xd9aaec86b65d86f6a7b5b1b0c42ffa531710b6ca",
           "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+          "0xd9aaec86b65d86f6a7b5b1b0c42ffa531710b6ca",
           "0x50c5725949a6f0c72e6c4a641f24049a917db0cb",
           "0xfde4C96c8593536E31F229EA8f37b2ADa2699bb2",
       ],
@@ -578,8 +578,8 @@
       defaultToken1: "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
       tokenList: [],
       stables: [
-          "0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3",
           "0x55d398326f99059ff775485246999027b3197955",
+          "0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3",
           "0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d",
           "0xe9e7cea3dedca5984780bafc599bd69add087d56",
           "0x40af3827F39D0EAcBF4A168f8D4ee67c121D11c9",
@@ -705,9 +705,9 @@
           },
       ],
       stables: [
+          "0x2421db204968A367CC2C866CD057fA754Cb84EdF",
           "0xEB466342C4d449BC9f53A865D5Cb90586f405215",
           "0x7f5373AE26c3E8FfC4c77b7255DF7eC1A9aF52a6",
-          "0x2421db204968A367CC2C866CD057fA754Cb84EdF",
           "0x422849b355039bc58f2780cc4854919fc9cfaf94",
       ],
       watchlist: [
@@ -980,8 +980,8 @@
           { symbol: "USDC", address: "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48" },
       ],
       stables: [
-          "0x6B175474E89094C44Da98b954EedeAC495271d0F",
           "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+          "0x6B175474E89094C44Da98b954EedeAC495271d0F",
           "0xdAC17F958D2ee523a2206206994597C13D831ec7",
           "0x0000000000085d4780B73119b644AE5ecd22b376",
           "0x57Ab1ec28D129707052df4dF418D58a2D46d5f51",
@@ -1085,8 +1085,8 @@
           { symbol: "WBTC", address: "0x305E88d809c9DC03179554BFbf85Ac05Ce8F18d6" },
       ],
       stables: [
-          "0xf417F5A458eC102B90352F697D6e2Ac3A3d2851f",
           "0xb73603C5d87fA094B7314C74ACE2e64D165016fb",
+          "0xf417F5A458eC102B90352F697D6e2Ac3A3d2851f",
       ],
       watchlist: [
           "0x7881dc8e59e644517a95a9687a6b58b86d98db78",
@@ -1161,8 +1161,8 @@
           { symbol: "USDC", address: "0x09Bc4E0D864854c6aFB6eB9A9cdF58aC190D0dF9" },
       ],
       stables: [
-          "0x201EBa5CC46D216Ce6DC03F6a759e8E766e956aE",
           "0x09Bc4E0D864854c6aFB6eB9A9cdF58aC190D0dF9",
+          "0x201EBa5CC46D216Ce6DC03F6a759e8E766e956aE",
       ],
       watchlist: [
           "0x086F766b336DFB0f705Dc030dB01993b22D81266",
@@ -1441,11 +1441,11 @@
           { symbol: "OP", address: "0x4200000000000000000000000000000000000042" },
       ],
       stables: [
+          "0x7f5c764cbc14f9669b88837ca1490cca17c31607",
           "0x94b008aA00579c1307B0EF2c499aD98a8ce58e58",
           "0x8c6f28f2f1a3c87f0f938b96d27520d9751ec8d9",
           "0x8aE125E8653821E851F12A49F7765db9a9ce7384",
           "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1",
-          "0x7f5c764cbc14f9669b88837ca1490cca17c31607",
           "0x0b2c639c533813f4aa9d7837caf62653d097ff85",
       ],
       watchlist: [
@@ -2074,8 +2074,8 @@
           { symbol: "DAI", address: "0x744C5860ba161b5316F7E80D9Ec415e2727e5bD5" },
       ],
       stables: [
-          "0x1e4a5963abfd975d8c9021ce480b42188849d41d",
           "0xa8ce8aee21bc2a48a5ef670afcc9274c7bbbc035",
+          "0x1e4a5963abfd975d8c9021ce480b42188849d41d",
           "0xc5015b9d9161dca7e18e32f6f25c4ad850731fd4",
           "0x744C5860ba161b5316F7E80D9Ec415e2727e5bD5",
       ],

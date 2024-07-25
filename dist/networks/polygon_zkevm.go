@@ -24,8 +24,8 @@ var PolygonZkevm Network = Network{
 	DefaultToken0: common.HexToAddress("0x4f9a0e7fd2bf6067db6994cf12e4495df938e6e9"),
 	DefaultToken1: common.HexToAddress("0xa8ce8aee21bc2a48a5ef670afcc9274c7bbbc035"),
 	//TODO: TokenList:        []any{},
-	Stables:          []common.Address{common.HexToAddress("0x1e4a5963abfd975d8c9021ce480b42188849d41d"), common.HexToAddress("0xa8ce8aee21bc2a48a5ef670afcc9274c7bbbc035"), common.HexToAddress("0xc5015b9d9161dca7e18e32f6f25c4ad850731fd4"), common.HexToAddress("0x744C5860ba161b5316F7E80D9Ec415e2727e5bD5")},
-	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x1e4a5963abfd975d8c9021ce480b42188849d41d"): {}, common.HexToAddress("0xa8ce8aee21bc2a48a5ef670afcc9274c7bbbc035"): {}, common.HexToAddress("0xc5015b9d9161dca7e18e32f6f25c4ad850731fd4"): {}, common.HexToAddress("0x744C5860ba161b5316F7E80D9Ec415e2727e5bD5"): {}},
+	Stables:          []common.Address{common.HexToAddress("0xa8ce8aee21bc2a48a5ef670afcc9274c7bbbc035"), common.HexToAddress("0x1e4a5963abfd975d8c9021ce480b42188849d41d"), common.HexToAddress("0xc5015b9d9161dca7e18e32f6f25c4ad850731fd4"), common.HexToAddress("0x744C5860ba161b5316F7E80D9Ec415e2727e5bD5")},
+	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0xa8ce8aee21bc2a48a5ef670afcc9274c7bbbc035"): {}, common.HexToAddress("0x1e4a5963abfd975d8c9021ce480b42188849d41d"): {}, common.HexToAddress("0xc5015b9d9161dca7e18e32f6f25c4ad850731fd4"): {}, common.HexToAddress("0x744C5860ba161b5316F7E80D9Ec415e2727e5bD5"): {}},
 	Watchlist:        []common.Address{common.HexToAddress("0xd2c7e323c6f5415dc0ee4e3811901b3380d316fd"), common.HexToAddress("0x539d23BE81696560C12Cf8d24AE8bb4641381E7D"), common.HexToAddress("0x90C865Da46D948EF3792fb57B0d60D14A96ecf49"), common.HexToAddress("0x7908F0eD78de3c850A5d1DC261c39341b274D07c"), common.HexToAddress("0x0A44b12799eBC21E1dF271284921e1e4F6f17f81")},
 	BlockTimeSeconds: 7,
 	Oku: OkuMetadata{
