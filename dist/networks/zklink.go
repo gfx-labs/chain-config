@@ -14,7 +14,7 @@ var Zklink Network = Network{
 			Url: "https://explorer.zklink.io",
 		},
 	},
-	DefaultPool:  common.HexToAddress("0x0000000000000000000000000000000000000000"),
+	DefaultPool:  common.HexToAddress("0x8ad8cbb174539ba7ae7cb7e8c957acd8ab814700"),
 	InternalName: "zklink",
 	InitCodeHash: common.HexToHash("0x010013f177ea1fcbc4520f9a3ca7cd2d1d77959e05aa66484027cb38e712aeed"),
 	ExternalId: map[string]string{
@@ -25,7 +25,7 @@ var Zklink Network = Network{
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0x1a1A3b2ff016332e866787B311fcB63928464509"), common.HexToAddress("0x2F8A25ac62179B31D62D7F80884AE57464699059"), common.HexToAddress("0xF573fA04A73d5AC442F3DEa8741317fEaA3cDeab")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x1a1A3b2ff016332e866787B311fcB63928464509"): {}, common.HexToAddress("0x2F8A25ac62179B31D62D7F80884AE57464699059"): {}, common.HexToAddress("0xF573fA04A73d5AC442F3DEa8741317fEaA3cDeab"): {}},
-	Watchlist:        []common.Address{},
+	Watchlist:        []common.Address{common.HexToAddress("0x8ad8cbb174539ba7ae7cb7e8c957acd8ab814700")},
 	BlockTimeSeconds: 2,
 	Oku: OkuMetadata{
 		LimitOrderRegistry: common.HexToAddress("0x0000000000000000000000000000000000000000"),

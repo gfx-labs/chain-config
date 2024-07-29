@@ -1,6 +1,6 @@
 {
   "name": "@gfxlabs/oku-chains",
-  "version": "1.1.75",
+  "version": "1.1.76",
   "license": "MIT",
   "main": "./dist/index.js",
   "module": "./dist/index-mjs.js",
