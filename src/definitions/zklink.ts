@@ -56,7 +56,6 @@ export const zkLink = makeConfig({
   internalName: "zklink",
   nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
   contracts: {
-    ...chain.contracts,
     limitOrder: {
       // TODO: limitOrder
       address: zeroAddress,
