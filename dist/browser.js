@@ -2161,7 +2161,6 @@
       internalName: "zklink",
       nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
       contracts: {
-          ...chains.zkLinkNova.contracts,
           limitOrder: {
               // TODO: limitOrder
               address: viem.zeroAddress,
