@@ -2141,8 +2141,7 @@ const zkLink = makeConfig({
             nativeWrappedName: "ETH",
         },
     },
-    // TODO: defaultPool
-    defaultPool: viem.zeroAddress,
+    defaultPool: "0x8ad8cbb174539ba7ae7cb7e8c957acd8ab814700",
     defaultToken0: "0x8280a4e7D5B3B658ec4580d3Bc30f5e50454F169",
     defaultToken1: "0x1a1A3b2ff016332e866787B311fcB63928464509",
     tokenList: [
@@ -2157,8 +2156,7 @@ const zkLink = makeConfig({
         "0x2F8A25ac62179B31D62D7F80884AE57464699059",
         "0xF573fA04A73d5AC442F3DEa8741317fEaA3cDeab",
     ],
-    // TODO: watchlist
-    watchlist: [],
+    watchlist: ["0x8ad8cbb174539ba7ae7cb7e8c957acd8ab814700"],
     internalName: "zklink",
     nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
     contracts: {
