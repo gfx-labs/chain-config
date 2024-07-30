@@ -848,8 +848,7 @@ const lisk = makeConfig({
             nativeWrappedName: "ETH",
         },
     },
-    // TODO: default pool
-    defaultPool: viem.zeroAddress,
+    defaultPool: "0x3a670179bdece7eb4f570e30ee9d560f7ff4fac3",
     defaultToken0: "0x05D032ac25d322df992303dCa074EE7392C117b9",
     defaultToken1: "0x4200000000000000000000000000000000000006",
     tokenList: [
@@ -857,8 +856,7 @@ const lisk = makeConfig({
         { symbol: "USDT", address: "0x05D032ac25d322df992303dCa074EE7392C117b9" },
     ],
     stables: ["0x05D032ac25d322df992303dCa074EE7392C117b9"],
-    // TODO: watchlist
-    watchlist: [],
+    watchlist: ["0x3a670179bdece7eb4f570e30ee9d560f7ff4fac3"],
     internalName: "lisk",
     nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
     contracts: {

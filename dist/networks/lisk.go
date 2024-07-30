@@ -15,7 +15,7 @@ var Lisk Network = Network{
 			ApiUrl: "https://blockscout.lisk.com/api",
 		},
 	},
-	DefaultPool:  common.HexToAddress("0x0000000000000000000000000000000000000000"),
+	DefaultPool:  common.HexToAddress("0x3a670179bdece7eb4f570e30ee9d560f7ff4fac3"),
 	InternalName: "lisk",
 	InitCodeHash: common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId: map[string]string{
@@ -26,7 +26,7 @@ var Lisk Network = Network{
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0x05D032ac25d322df992303dCa074EE7392C117b9")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x05D032ac25d322df992303dCa074EE7392C117b9"): {}},
-	Watchlist:        []common.Address{},
+	Watchlist:        []common.Address{common.HexToAddress("0x3a670179bdece7eb4f570e30ee9d560f7ff4fac3")},
 	BlockTimeSeconds: 2,
 	Oku: OkuMetadata{
 		LimitOrderRegistry:            common.HexToAddress("0x81dE30A9a2816F95f2EE8DF62bafC45a095d57b2"),
