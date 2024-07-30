@@ -6,7 +6,7 @@ import (
 
 var Lisk Network = Network{
 	ChainId:           1135,
-	LogoUrl:           "https://assets.oku.trade/lisk-logo.svg",
+	LogoUrl:           "https://assets.oku.trade/lisk-logo.png",
 	SortIndex:         15,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

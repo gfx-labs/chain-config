@@ -965,7 +965,7 @@ declare const linea: Readonly<{
 declare const lisk: Readonly<{
     blockTimeSeconds: 2;
     sortIndex: 15;
-    logoUrl: "https://assets.oku.trade/lisk-logo.svg";
+    logoUrl: "https://assets.oku.trade/lisk-logo.png";
     safeReorgDistance: 90000;
     externalId: {
         zerion: string;
@@ -6135,7 +6135,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
 }>, Readonly<{
     blockTimeSeconds: 2;
     sortIndex: 15;
-    logoUrl: "https://assets.oku.trade/lisk-logo.svg";
+    logoUrl: "https://assets.oku.trade/lisk-logo.png";
     safeReorgDistance: 90000;
     externalId: {
         zerion: string;
