@@ -962,6 +962,416 @@ declare const linea: Readonly<{
     formatters?: undefined;
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>;
+declare const lisk: Readonly<{
+    blockTimeSeconds: 2;
+    sortIndex: 15;
+    logoUrl: "https://assets.oku.trade/lisk-logo.svg";
+    safeReorgDistance: 90000;
+    externalId: {
+        zerion: string;
+    };
+    initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
+    uniswap: {
+        deployBlock: number;
+        poolFactory: "0x0d922Fb1Bc191F64970ac40376643808b4B74Df9";
+        permit2: "0xB952578f3520EE8Ea45b7914994dcf4702cEe578";
+        multicall2: "0xE3dbcD53f4Ce1b06Ab200f4912BD35672e68f1FA";
+        tickLens: "0x38EB9e62ABe4d3F70C0e161971F29593b8aE29FF";
+        nonfungiblePositionManager: "0x5911cB3633e764939edc2d92b7e1ad375Bb57649";
+        positionsNFT: "0x5911cB3633e764939edc2d92b7e1ad375Bb57649";
+        positionsNFTDeployBlock: number;
+        universalRouter: "0x447B8E40B0CdA8e55F405C86bC635D02d0540aB8";
+    };
+    token: {
+        wethAddress: "0x4200000000000000000000000000000000000006";
+    };
+    oku: {
+        limitOrderRegistry: "0x81dE30A9a2816F95f2EE8DF62bafC45a095d57b2";
+        limitOrderRegistryDeployBlock: number;
+        pricing: {
+            nativeWrappedToken: "0x4200000000000000000000000000000000000006";
+            nativeWrappedName: string;
+        };
+    };
+    defaultPool: "0x0000000000000000000000000000000000000000";
+    defaultToken0: "0x05D032ac25d322df992303dCa074EE7392C117b9";
+    defaultToken1: "0x4200000000000000000000000000000000000006";
+    tokenList: ({
+        symbol: string;
+        address: "0x4200000000000000000000000000000000000006";
+    } | {
+        symbol: string;
+        address: "0x05D032ac25d322df992303dCa074EE7392C117b9";
+    })[];
+    stables: "0x05D032ac25d322df992303dCa074EE7392C117b9"[];
+    watchlist: never[];
+    internalName: "lisk";
+    nativeLogoUrl: "https://assets.oku.trade/natives/eth.png";
+    contracts: {
+        limitOrder: {
+            address: "0x81dE30A9a2816F95f2EE8DF62bafC45a095d57b2";
+        };
+        nftManager: {
+            address: "0x5911cB3633e764939edc2d92b7e1ad375Bb57649";
+        };
+        weth9: {
+            address: "0x4200000000000000000000000000000000000006";
+        };
+        multicall2: {
+            address: "0xA9d71E1dd7ca26F26e656E66d6AA81ed7f745bf0";
+        };
+        multicall3: {
+            address: "0xA9d71E1dd7ca26F26e656E66d6AA81ed7f745bf0";
+        };
+    };
+    blockExplorers: {
+        readonly default: {
+            readonly name: "Blockscout";
+            readonly url: "https://blockscout.lisk.com";
+            readonly apiUrl: "https://blockscout.lisk.com/api";
+        };
+    };
+    id: 1135;
+    name: "Lisk";
+    nativeCurrency: {
+        readonly decimals: 18;
+        readonly name: "Ether";
+        readonly symbol: "ETH";
+    };
+    rpcUrls: {
+        readonly default: {
+            readonly http: readonly [
+                "https://rpc.api.lisk.com"
+            ];
+        };
+    };
+    sourceId?: number | undefined;
+    testnet?: boolean | undefined;
+    custom: {
+        readonly getEip712Domain: import("viem/zksync").EIP712DomainFn<import("viem/chains").ZkSyncTransactionSerializable, import("viem/chains").ZkSyncEIP712TransactionSignable>;
+    };
+    fees?: import("viem").ChainFees<undefined> | undefined;
+    formatters: {
+        readonly block: {
+            exclude: [
+            ] | undefined;
+            format: (args: import("viem/chains").ZkSyncRpcBlock<import("viem").BlockTag, boolean>) => {
+                baseFeePerGas: bigint | null;
+                blobGasUsed: bigint;
+                difficulty: bigint;
+                excessBlobGas: bigint;
+                extraData: `0x${string}`;
+                gasLimit: bigint;
+                gasUsed: bigint;
+                hash: `0x${string}` | null;
+                logsBloom: `0x${string}` | null;
+                miner: `0x${string}`;
+                mixHash: `0x${string}`;
+                nonce: `0x${string}` | null;
+                number: bigint | null;
+                parentHash: `0x${string}`;
+                receiptsRoot: `0x${string}`;
+                sealFields: `0x${string}`[];
+                sha3Uncles: `0x${string}`;
+                size: bigint;
+                stateRoot: `0x${string}`;
+                timestamp: bigint;
+                totalDifficulty: bigint | null;
+                transactions: `0x${string}`[] | import("viem/chains").ZkSyncTransaction<boolean>[];
+                transactionsRoot: `0x${string}`;
+                uncles: `0x${string}`[];
+                withdrawals?: import("viem").Withdrawal[] | undefined;
+                withdrawalsRoot?: `0x${string}` | undefined;
+                l1BatchNumber: bigint | null;
+                l1BatchTimestamp: bigint | null;
+            };
+            type: "block";
+        };
+        readonly transaction: {
+            exclude: [
+            ] | undefined;
+            format: (args: import("viem/chains").ZkSyncRpcTransaction<boolean>) => {
+                r: `0x${string}`;
+                s: `0x${string}`;
+                v: bigint;
+                to: `0x${string}` | null;
+                from: `0x${string}`;
+                gas: bigint;
+                nonce: number;
+                value: bigint;
+                blockHash: `0x${string}` | null;
+                blockNumber: bigint | null;
+                hash: `0x${string}`;
+                input: `0x${string}`;
+                transactionIndex: number | null;
+                typeHex: `0x${string}` | null;
+                accessList?: undefined;
+                blobVersionedHashes?: undefined;
+                chainId?: number | undefined;
+                yParity?: undefined;
+                type: "legacy";
+                gasPrice: bigint;
+                maxFeePerBlobGas?: undefined;
+                maxFeePerGas?: undefined;
+                maxPriorityFeePerGas?: undefined;
+                l1BatchNumber: bigint | null;
+                l1BatchTxIndex: bigint | null;
+            } | {
+                blockHash: `0x${string}` | null;
+                blockNumber: bigint | null;
+                from: `0x${string}`;
+                gas: bigint;
+                hash: `0x${string}`;
+                input: `0x${string}`;
+                nonce: number;
+                r: `0x${string}`;
+                s: `0x${string}`;
+                to: `0x${string}` | null;
+                transactionIndex: number | null;
+                typeHex: `0x${string}` | null;
+                v: bigint;
+                value: bigint;
+                yParity: number;
+                accessList: import("viem").AccessList;
+                blobVersionedHashes?: undefined;
+                chainId: number;
+                type: "eip2930";
+                gasPrice: bigint;
+                maxFeePerBlobGas?: undefined;
+                maxFeePerGas?: undefined;
+                maxPriorityFeePerGas?: undefined;
+                l1BatchNumber: bigint | null;
+                l1BatchTxIndex: bigint | null;
+            } | {
+                blockHash: `0x${string}` | null;
+                blockNumber: bigint | null;
+                from: `0x${string}`;
+                gas: bigint;
+                hash: `0x${string}`;
+                input: `0x${string}`;
+                nonce: number;
+                r: `0x${string}`;
+                s: `0x${string}`;
+                to: `0x${string}` | null;
+                transactionIndex: number | null;
+                typeHex: `0x${string}` | null;
+                v: bigint;
+                value: bigint;
+                yParity: number;
+                accessList: import("viem").AccessList;
+                blobVersionedHashes?: undefined;
+                chainId: number;
+                type: "eip1559";
+                gasPrice?: undefined;
+                maxFeePerBlobGas?: undefined;
+                maxFeePerGas: bigint;
+                maxPriorityFeePerGas: bigint;
+                l1BatchNumber: bigint | null;
+                l1BatchTxIndex: bigint | null;
+            } | {
+                blockHash: `0x${string}` | null;
+                blockNumber: bigint | null;
+                from: `0x${string}`;
+                gas: bigint;
+                hash: `0x${string}`;
+                input: `0x${string}`;
+                nonce: number;
+                r: `0x${string}`;
+                s: `0x${string}`;
+                to: `0x${string}` | null;
+                transactionIndex: number | null;
+                typeHex: `0x${string}` | null;
+                v: bigint;
+                value: bigint;
+                yParity: number;
+                accessList: import("viem").AccessList;
+                blobVersionedHashes: readonly `0x${string}`[];
+                chainId: number;
+                type: "eip4844";
+                gasPrice?: undefined;
+                maxFeePerBlobGas: bigint;
+                maxFeePerGas: bigint;
+                maxPriorityFeePerGas: bigint;
+                l1BatchNumber: bigint | null;
+                l1BatchTxIndex: bigint | null;
+            } | {
+                blockHash: `0x${string}` | null;
+                blockNumber: bigint | null;
+                from: `0x${string}`;
+                gas: bigint;
+                hash: `0x${string}`;
+                input: `0x${string}`;
+                nonce: number;
+                r: `0x${string}`;
+                s: `0x${string}`;
+                to: `0x${string}` | null;
+                transactionIndex: number | null;
+                typeHex: `0x${string}` | null;
+                v: bigint;
+                value: bigint;
+                yParity: number;
+                l1BatchNumber: bigint | null;
+                l1BatchTxIndex: bigint | null;
+                gasPrice?: undefined;
+                maxFeePerBlobGas?: undefined;
+                maxFeePerGas: bigint;
+                maxPriorityFeePerGas: bigint;
+                type: "priority";
+            } | {
+                blockHash: `0x${string}` | null;
+                blockNumber: bigint | null;
+                from: `0x${string}`;
+                gas: bigint;
+                hash: `0x${string}`;
+                input: `0x${string}`;
+                nonce: number;
+                r: `0x${string}`;
+                s: `0x${string}`;
+                to: `0x${string}` | null;
+                transactionIndex: number | null;
+                typeHex: `0x${string}` | null;
+                v: bigint;
+                value: bigint;
+                yParity: number;
+                l1BatchNumber: bigint | null;
+                l1BatchTxIndex: bigint | null;
+                gasPrice?: undefined;
+                maxFeePerBlobGas?: undefined;
+                maxFeePerGas: bigint;
+                maxPriorityFeePerGas: bigint;
+                type: "priority" | "eip712";
+            };
+            type: "transaction";
+        };
+        readonly transactionReceipt: {
+            exclude: [
+            ] | undefined;
+            format: (args: import("viem/chains").ZkSyncRpcTransactionReceipt) => {
+                type: import("viem/chains").ZkSyncTransactionType;
+                to: `0x${string}` | null;
+                from: `0x${string}`;
+                blockHash: `0x${string}`;
+                blockNumber: bigint;
+                transactionIndex: number;
+                status: "success" | "reverted";
+                logsBloom: `0x${string}`;
+                blobGasUsed?: bigint | undefined;
+                gasUsed: bigint;
+                contractAddress: `0x${string}` | null | undefined;
+                transactionHash: `0x${string}`;
+                blobGasPrice?: bigint | undefined;
+                cumulativeGasUsed: bigint;
+                effectiveGasPrice: bigint;
+                root?: `0x${string}` | undefined;
+                l1BatchNumber: bigint | null;
+                l1BatchTxIndex: bigint | null;
+                logs: import("viem/chains").ZkSyncLog<bigint, number, boolean, undefined, undefined, undefined, undefined>[];
+                l2ToL1Logs: import("viem/chains").ZkSyncL2ToL1Log[];
+            };
+            type: "transactionReceipt";
+        };
+        readonly transactionRequest: {
+            exclude: ("gasPerPubdata" | "paymaster" | "factoryDeps" | "paymasterInput" | "customSignature")[] | undefined;
+            format: (args: import("viem/chains").ZkSyncTransactionRequest<bigint, number>) => ({
+                data?: `0x${string}` | undefined;
+                from: `0x${string}`;
+                gas?: `0x${string}` | undefined;
+                nonce?: `0x${string}` | undefined;
+                to?: `0x${string}` | null | undefined;
+                value?: `0x${string}` | undefined;
+                accessList?: undefined;
+                blobs?: undefined;
+                type?: "0x0" | undefined;
+                gasPrice?: `0x${string}` | undefined;
+                maxFeePerBlobGas?: undefined;
+                maxFeePerGas?: undefined;
+                maxPriorityFeePerGas?: undefined;
+                blobVersionedHashes?: undefined;
+                kzg?: undefined;
+                sidecars?: undefined;
+                eip712Meta?: undefined;
+            } | {
+                data?: `0x${string}` | undefined;
+                from: `0x${string}`;
+                gas?: `0x${string}` | undefined;
+                nonce?: `0x${string}` | undefined;
+                to?: `0x${string}` | null | undefined;
+                value?: `0x${string}` | undefined;
+                accessList?: import("viem").AccessList | undefined;
+                blobs?: undefined;
+                type?: "0x1" | undefined;
+                gasPrice?: `0x${string}` | undefined;
+                maxFeePerBlobGas?: undefined;
+                maxFeePerGas?: undefined;
+                maxPriorityFeePerGas?: undefined;
+                blobVersionedHashes?: undefined;
+                kzg?: undefined;
+                sidecars?: undefined;
+                eip712Meta?: undefined;
+            } | {
+                data?: `0x${string}` | undefined;
+                from: `0x${string}`;
+                gas?: `0x${string}` | undefined;
+                nonce?: `0x${string}` | undefined;
+                to?: `0x${string}` | null | undefined;
+                value?: `0x${string}` | undefined;
+                gasPrice?: undefined;
+                maxFeePerBlobGas?: undefined;
+                maxFeePerGas?: `0x${string}` | undefined;
+                maxPriorityFeePerGas?: `0x${string}` | undefined;
+                accessList?: import("viem").AccessList | undefined;
+                blobs?: undefined;
+                type?: "0x2" | undefined;
+                blobVersionedHashes?: undefined;
+                kzg?: undefined;
+                sidecars?: undefined;
+                eip712Meta?: undefined;
+            } | {
+                data?: `0x${string}` | undefined;
+                from: `0x${string}`;
+                gas?: `0x${string}` | undefined;
+                nonce?: `0x${string}` | undefined;
+                value?: `0x${string}` | undefined;
+                to: `0x${string}` | null;
+                accessList?: import("viem").AccessList | undefined;
+                blobs: readonly `0x${string}`[] | readonly Uint8Array[];
+                blobVersionedHashes?: readonly `0x${string}`[] | undefined;
+                kzg?: import("viem").Kzg | undefined;
+                sidecars?: readonly import("viem").BlobSidecar<`0x${string}`>[] | undefined;
+                type?: "0x3" | undefined;
+                gasPrice?: undefined;
+                maxFeePerGas?: `0x${string}` | undefined;
+                maxPriorityFeePerGas?: `0x${string}` | undefined;
+                maxFeePerBlobGas: `0x${string}`;
+                eip712Meta?: undefined;
+            } | {
+                data?: `0x${string}` | undefined;
+                from: `0x${string}`;
+                gas?: `0x${string}` | undefined;
+                nonce?: `0x${string}` | undefined;
+                to?: `0x${string}` | null | undefined;
+                value?: `0x${string}` | undefined;
+                gasPrice?: undefined;
+                maxFeePerBlobGas?: undefined;
+                maxFeePerGas?: `0x${string}` | undefined;
+                maxPriorityFeePerGas?: `0x${string}` | undefined;
+                eip712Meta: import("viem/chains").ZkSyncEip712Meta;
+                type: "0xff" | "0x71";
+            }) & {
+                paymaster: never;
+                gasPerPubdata: never;
+                factoryDeps: never;
+                paymasterInput: never;
+                customSignature: never;
+            };
+            type: "transactionRequest";
+        };
+    };
+    serializers: {
+        readonly transaction: typeof import("viem/zksync").serializeTransaction;
+    };
+    network: "lisk";
+}>;
 declare const mainnet: Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     sortIndex: 0;
@@ -2850,8 +3260,8 @@ declare const zkSync: Readonly<{
                 eip712Meta: import("viem/chains").ZkSyncEip712Meta;
                 type: "0xff" | "0x71";
             }) & {
-                gasPerPubdata: never;
                 paymaster: never;
+                gasPerPubdata: never;
                 factoryDeps: never;
                 paymasterInput: never;
                 customSignature: never;
@@ -5156,8 +5566,8 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 eip712Meta: import("viem/zksync").ZkSyncEip712Meta;
                 type: "0xff" | "0x71";
             }) & {
-                gasPerPubdata: never;
                 paymaster: never;
+                gasPerPubdata: never;
                 factoryDeps: never;
                 paymasterInput: never;
                 customSignature: never;
@@ -5722,6 +6132,410 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     fees?: import("viem").ChainFees<undefined> | undefined;
     formatters?: undefined;
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
+}>, Readonly<{
+    blockTimeSeconds: 2;
+    sortIndex: 15;
+    logoUrl: "https://assets.oku.trade/lisk-logo.svg";
+    safeReorgDistance: 90000;
+    externalId: {
+        zerion: string;
+    };
+    initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
+    uniswap: {
+        deployBlock: number;
+        poolFactory: "0x0d922Fb1Bc191F64970ac40376643808b4B74Df9";
+        permit2: "0xB952578f3520EE8Ea45b7914994dcf4702cEe578";
+        multicall2: "0xE3dbcD53f4Ce1b06Ab200f4912BD35672e68f1FA";
+        tickLens: "0x38EB9e62ABe4d3F70C0e161971F29593b8aE29FF";
+        nonfungiblePositionManager: "0x5911cB3633e764939edc2d92b7e1ad375Bb57649";
+        positionsNFT: "0x5911cB3633e764939edc2d92b7e1ad375Bb57649";
+        positionsNFTDeployBlock: number;
+        universalRouter: "0x447B8E40B0CdA8e55F405C86bC635D02d0540aB8";
+    };
+    token: {
+        wethAddress: "0x4200000000000000000000000000000000000006";
+    };
+    oku: {
+        limitOrderRegistry: "0x81dE30A9a2816F95f2EE8DF62bafC45a095d57b2";
+        limitOrderRegistryDeployBlock: number;
+        pricing: {
+            nativeWrappedToken: "0x4200000000000000000000000000000000000006";
+            nativeWrappedName: string;
+        };
+    };
+    defaultPool: "0x0000000000000000000000000000000000000000";
+    defaultToken0: "0x05D032ac25d322df992303dCa074EE7392C117b9";
+    defaultToken1: "0x4200000000000000000000000000000000000006";
+    tokenList: ({
+        symbol: string;
+        address: "0x4200000000000000000000000000000000000006";
+    } | {
+        symbol: string;
+        address: "0x05D032ac25d322df992303dCa074EE7392C117b9";
+    })[];
+    stables: "0x05D032ac25d322df992303dCa074EE7392C117b9"[];
+    watchlist: never[];
+    internalName: "lisk";
+    nativeLogoUrl: "https://assets.oku.trade/natives/eth.png";
+    contracts: {
+        limitOrder: {
+            address: "0x81dE30A9a2816F95f2EE8DF62bafC45a095d57b2";
+        };
+        nftManager: {
+            address: "0x5911cB3633e764939edc2d92b7e1ad375Bb57649";
+        };
+        weth9: {
+            address: "0x4200000000000000000000000000000000000006";
+        };
+        multicall2: {
+            address: "0xA9d71E1dd7ca26F26e656E66d6AA81ed7f745bf0";
+        };
+        multicall3: {
+            address: "0xA9d71E1dd7ca26F26e656E66d6AA81ed7f745bf0";
+        };
+    };
+    blockExplorers: {
+        readonly default: {
+            readonly name: "Blockscout";
+            readonly url: "https://blockscout.lisk.com";
+            readonly apiUrl: "https://blockscout.lisk.com/api";
+        };
+    };
+    id: 1135;
+    name: "Lisk";
+    nativeCurrency: {
+        readonly decimals: 18;
+        readonly name: "Ether";
+        readonly symbol: "ETH";
+    };
+    rpcUrls: {
+        readonly default: {
+            readonly http: readonly ["https://rpc.api.lisk.com"];
+        };
+    };
+    sourceId?: number | undefined;
+    testnet?: boolean | undefined;
+    custom: {
+        readonly getEip712Domain: import("viem/zksync").EIP712DomainFn<import("viem/zksync").ZkSyncTransactionSerializable, import("viem/zksync").ZkSyncEIP712TransactionSignable>;
+    };
+    fees?: import("viem").ChainFees<undefined> | undefined;
+    formatters: {
+        readonly block: {
+            exclude: [] | undefined;
+            format: (args: import("viem/zksync").ZkSyncRpcBlock<import("viem").BlockTag, boolean>) => {
+                baseFeePerGas: bigint | null;
+                blobGasUsed: bigint;
+                difficulty: bigint;
+                excessBlobGas: bigint;
+                extraData: `0x${string}`;
+                gasLimit: bigint;
+                gasUsed: bigint;
+                hash: `0x${string}` | null;
+                logsBloom: `0x${string}` | null;
+                miner: `0x${string}`;
+                mixHash: `0x${string}`;
+                nonce: `0x${string}` | null;
+                number: bigint | null;
+                parentHash: `0x${string}`;
+                receiptsRoot: `0x${string}`;
+                sealFields: `0x${string}`[];
+                sha3Uncles: `0x${string}`;
+                size: bigint;
+                stateRoot: `0x${string}`;
+                timestamp: bigint;
+                totalDifficulty: bigint | null;
+                transactions: `0x${string}`[] | import("viem/zksync").ZkSyncTransaction<boolean>[];
+                transactionsRoot: `0x${string}`;
+                uncles: `0x${string}`[];
+                withdrawals?: import("viem").Withdrawal[] | undefined;
+                withdrawalsRoot?: `0x${string}` | undefined;
+                l1BatchNumber: bigint | null;
+                l1BatchTimestamp: bigint | null;
+            };
+            type: "block";
+        };
+        readonly transaction: {
+            exclude: [] | undefined;
+            format: (args: import("viem/zksync").ZkSyncRpcTransaction<boolean>) => {
+                r: `0x${string}`;
+                s: `0x${string}`;
+                v: bigint;
+                to: `0x${string}` | null;
+                from: `0x${string}`;
+                gas: bigint;
+                nonce: number;
+                value: bigint;
+                blockHash: `0x${string}` | null;
+                blockNumber: bigint | null;
+                hash: `0x${string}`;
+                input: `0x${string}`;
+                transactionIndex: number | null;
+                typeHex: `0x${string}` | null;
+                accessList?: undefined;
+                blobVersionedHashes?: undefined;
+                chainId?: number | undefined;
+                yParity?: undefined;
+                type: "legacy";
+                gasPrice: bigint;
+                maxFeePerBlobGas?: undefined;
+                maxFeePerGas?: undefined;
+                maxPriorityFeePerGas?: undefined;
+                l1BatchNumber: bigint | null;
+                l1BatchTxIndex: bigint | null;
+            } | {
+                blockHash: `0x${string}` | null;
+                blockNumber: bigint | null;
+                from: `0x${string}`;
+                gas: bigint;
+                hash: `0x${string}`;
+                input: `0x${string}`;
+                nonce: number;
+                r: `0x${string}`;
+                s: `0x${string}`;
+                to: `0x${string}` | null;
+                transactionIndex: number | null;
+                typeHex: `0x${string}` | null;
+                v: bigint;
+                value: bigint;
+                yParity: number;
+                accessList: import("viem").AccessList;
+                blobVersionedHashes?: undefined;
+                chainId: number;
+                type: "eip2930";
+                gasPrice: bigint;
+                maxFeePerBlobGas?: undefined;
+                maxFeePerGas?: undefined;
+                maxPriorityFeePerGas?: undefined;
+                l1BatchNumber: bigint | null;
+                l1BatchTxIndex: bigint | null;
+            } | {
+                blockHash: `0x${string}` | null;
+                blockNumber: bigint | null;
+                from: `0x${string}`;
+                gas: bigint;
+                hash: `0x${string}`;
+                input: `0x${string}`;
+                nonce: number;
+                r: `0x${string}`;
+                s: `0x${string}`;
+                to: `0x${string}` | null;
+                transactionIndex: number | null;
+                typeHex: `0x${string}` | null;
+                v: bigint;
+                value: bigint;
+                yParity: number;
+                accessList: import("viem").AccessList;
+                blobVersionedHashes?: undefined;
+                chainId: number;
+                type: "eip1559";
+                gasPrice?: undefined;
+                maxFeePerBlobGas?: undefined;
+                maxFeePerGas: bigint;
+                maxPriorityFeePerGas: bigint;
+                l1BatchNumber: bigint | null;
+                l1BatchTxIndex: bigint | null;
+            } | {
+                blockHash: `0x${string}` | null;
+                blockNumber: bigint | null;
+                from: `0x${string}`;
+                gas: bigint;
+                hash: `0x${string}`;
+                input: `0x${string}`;
+                nonce: number;
+                r: `0x${string}`;
+                s: `0x${string}`;
+                to: `0x${string}` | null;
+                transactionIndex: number | null;
+                typeHex: `0x${string}` | null;
+                v: bigint;
+                value: bigint;
+                yParity: number;
+                accessList: import("viem").AccessList;
+                blobVersionedHashes: readonly `0x${string}`[];
+                chainId: number;
+                type: "eip4844";
+                gasPrice?: undefined;
+                maxFeePerBlobGas: bigint;
+                maxFeePerGas: bigint;
+                maxPriorityFeePerGas: bigint;
+                l1BatchNumber: bigint | null;
+                l1BatchTxIndex: bigint | null;
+            } | {
+                blockHash: `0x${string}` | null;
+                blockNumber: bigint | null;
+                from: `0x${string}`;
+                gas: bigint;
+                hash: `0x${string}`;
+                input: `0x${string}`;
+                nonce: number;
+                r: `0x${string}`;
+                s: `0x${string}`;
+                to: `0x${string}` | null;
+                transactionIndex: number | null;
+                typeHex: `0x${string}` | null;
+                v: bigint;
+                value: bigint;
+                yParity: number;
+                l1BatchNumber: bigint | null;
+                l1BatchTxIndex: bigint | null;
+                gasPrice?: undefined;
+                maxFeePerBlobGas?: undefined;
+                maxFeePerGas: bigint;
+                maxPriorityFeePerGas: bigint;
+                type: "priority";
+            } | {
+                blockHash: `0x${string}` | null;
+                blockNumber: bigint | null;
+                from: `0x${string}`;
+                gas: bigint;
+                hash: `0x${string}`;
+                input: `0x${string}`;
+                nonce: number;
+                r: `0x${string}`;
+                s: `0x${string}`;
+                to: `0x${string}` | null;
+                transactionIndex: number | null;
+                typeHex: `0x${string}` | null;
+                v: bigint;
+                value: bigint;
+                yParity: number;
+                l1BatchNumber: bigint | null;
+                l1BatchTxIndex: bigint | null;
+                gasPrice?: undefined;
+                maxFeePerBlobGas?: undefined;
+                maxFeePerGas: bigint;
+                maxPriorityFeePerGas: bigint;
+                type: "priority" | "eip712";
+            };
+            type: "transaction";
+        };
+        readonly transactionReceipt: {
+            exclude: [] | undefined;
+            format: (args: import("viem/chains").ZkSyncRpcTransactionReceipt) => {
+                type: import("viem/zksync").ZkSyncTransactionType;
+                to: `0x${string}` | null;
+                from: `0x${string}`;
+                blockHash: `0x${string}`;
+                blockNumber: bigint;
+                transactionIndex: number;
+                status: "success" | "reverted";
+                logsBloom: `0x${string}`;
+                blobGasUsed?: bigint | undefined;
+                gasUsed: bigint;
+                contractAddress: `0x${string}` | null | undefined;
+                transactionHash: `0x${string}`;
+                blobGasPrice?: bigint | undefined;
+                cumulativeGasUsed: bigint;
+                effectiveGasPrice: bigint;
+                root?: `0x${string}` | undefined;
+                l1BatchNumber: bigint | null;
+                l1BatchTxIndex: bigint | null;
+                logs: import("viem/zksync").ZkSyncLog<bigint, number, boolean, undefined, undefined, undefined, undefined>[];
+                l2ToL1Logs: import("viem/zksync").ZkSyncL2ToL1Log[];
+            };
+            type: "transactionReceipt";
+        };
+        readonly transactionRequest: {
+            exclude: ("gasPerPubdata" | "paymaster" | "factoryDeps" | "paymasterInput" | "customSignature")[] | undefined;
+            format: (args: import("viem/zksync").ZkSyncTransactionRequest<bigint, number>) => ({
+                data?: `0x${string}` | undefined;
+                from: `0x${string}`;
+                gas?: `0x${string}` | undefined;
+                nonce?: `0x${string}` | undefined;
+                to?: `0x${string}` | null | undefined;
+                value?: `0x${string}` | undefined;
+                accessList?: undefined;
+                blobs?: undefined;
+                type?: "0x0" | undefined;
+                gasPrice?: `0x${string}` | undefined;
+                maxFeePerBlobGas?: undefined;
+                maxFeePerGas?: undefined;
+                maxPriorityFeePerGas?: undefined;
+                blobVersionedHashes?: undefined;
+                kzg?: undefined;
+                sidecars?: undefined;
+                eip712Meta?: undefined;
+            } | {
+                data?: `0x${string}` | undefined;
+                from: `0x${string}`;
+                gas?: `0x${string}` | undefined;
+                nonce?: `0x${string}` | undefined;
+                to?: `0x${string}` | null | undefined;
+                value?: `0x${string}` | undefined;
+                accessList?: import("viem").AccessList | undefined;
+                blobs?: undefined;
+                type?: "0x1" | undefined;
+                gasPrice?: `0x${string}` | undefined;
+                maxFeePerBlobGas?: undefined;
+                maxFeePerGas?: undefined;
+                maxPriorityFeePerGas?: undefined;
+                blobVersionedHashes?: undefined;
+                kzg?: undefined;
+                sidecars?: undefined;
+                eip712Meta?: undefined;
+            } | {
+                data?: `0x${string}` | undefined;
+                from: `0x${string}`;
+                gas?: `0x${string}` | undefined;
+                nonce?: `0x${string}` | undefined;
+                to?: `0x${string}` | null | undefined;
+                value?: `0x${string}` | undefined;
+                gasPrice?: undefined;
+                maxFeePerBlobGas?: undefined;
+                maxFeePerGas?: `0x${string}` | undefined;
+                maxPriorityFeePerGas?: `0x${string}` | undefined;
+                accessList?: import("viem").AccessList | undefined;
+                blobs?: undefined;
+                type?: "0x2" | undefined;
+                blobVersionedHashes?: undefined;
+                kzg?: undefined;
+                sidecars?: undefined;
+                eip712Meta?: undefined;
+            } | {
+                data?: `0x${string}` | undefined;
+                from: `0x${string}`;
+                gas?: `0x${string}` | undefined;
+                nonce?: `0x${string}` | undefined;
+                value?: `0x${string}` | undefined;
+                to: `0x${string}` | null;
+                accessList?: import("viem").AccessList | undefined;
+                blobs: readonly `0x${string}`[] | readonly Uint8Array[];
+                blobVersionedHashes?: readonly `0x${string}`[] | undefined;
+                kzg?: import("viem").Kzg | undefined;
+                sidecars?: readonly import("viem").BlobSidecar<`0x${string}`>[] | undefined;
+                type?: "0x3" | undefined;
+                gasPrice?: undefined;
+                maxFeePerGas?: `0x${string}` | undefined;
+                maxPriorityFeePerGas?: `0x${string}` | undefined;
+                maxFeePerBlobGas: `0x${string}`;
+                eip712Meta?: undefined;
+            } | {
+                data?: `0x${string}` | undefined;
+                from: `0x${string}`;
+                gas?: `0x${string}` | undefined;
+                nonce?: `0x${string}` | undefined;
+                to?: `0x${string}` | null | undefined;
+                value?: `0x${string}` | undefined;
+                gasPrice?: undefined;
+                maxFeePerBlobGas?: undefined;
+                maxFeePerGas?: `0x${string}` | undefined;
+                maxPriorityFeePerGas?: `0x${string}` | undefined;
+                eip712Meta: import("viem/zksync").ZkSyncEip712Meta;
+                type: "0xff" | "0x71";
+            }) & {
+                paymaster: never;
+                gasPerPubdata: never;
+                factoryDeps: never;
+                paymasterInput: never;
+                customSignature: never;
+            };
+            type: "transactionRequest";
+        };
+    };
+    serializers: {
+        readonly transaction: typeof import("viem/zksync").serializeTransaction;
+    };
+    network: "lisk";
 }>];
-export { arbitrum, base, blast, boba, bsc, filecoin, linea, mainnet, manta, mantle, moonbeam, optimism, polygon, rootstock, scroll, sei, taiko, polygonZkEvm, zkLink, zkSync, UniswapMetadata, OkuPricingMetadata, OkuMetadata, TokenMetadata, IChainInfo, MAINNET_CHAINS };
+export { arbitrum, base, blast, boba, bsc, filecoin, linea, lisk, mainnet, manta, mantle, moonbeam, optimism, polygon, rootstock, scroll, sei, taiko, polygonZkEvm, zkLink, zkSync, UniswapMetadata, OkuPricingMetadata, OkuMetadata, TokenMetadata, IChainInfo, MAINNET_CHAINS };
 export { ChainContract } from "viem";

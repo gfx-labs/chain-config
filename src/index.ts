@@ -23,4 +23,5 @@ export const MAINNET_CHAINS = [
   defs.mantle,
   defs.sei,
   defs.zkLink,
+  defs.lisk,
 ] as const;

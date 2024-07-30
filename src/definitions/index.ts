@@ -9,6 +9,7 @@ export * from "./boba";
 export * from "./bsc";
 export * from "./filecoin";
 export * from "./linea";
+export * from "./lisk";
 export * from "./mainnet";
 export * from "./manta";
 export * from "./mantle";
