@@ -15,7 +15,7 @@ var Mantle Network = Network{
 			ApiUrl: "https://api.mantlescan.xyz/api",
 		},
 	},
-	DefaultPool:   common.HexToAddress("0x076eb72e74c16b208c692eeab3750978d76b8f28"),
+	DefaultPool:   common.HexToAddress("0x076eb72E74C16b208c692EEAB3750978D76B8F28"),
 	InternalName:  "mantle",
 	InitCodeHash:  common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId:    map[string]string{},

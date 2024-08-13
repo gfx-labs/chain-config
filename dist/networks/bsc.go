@@ -15,14 +15,14 @@ var Bsc Network = Network{
 			ApiUrl: "https://api.bscscan.com/api",
 		},
 	},
-	DefaultPool:  common.HexToAddress("0x47a90a2d92a8367a91efa1906bfc8c1e05bf10c4"),
+	DefaultPool:  common.HexToAddress("0x47a90A2d92A8367A91EfA1906bFc8c1E05bf10c4"),
 	InternalName: "bsc",
 	InitCodeHash: common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId: map[string]string{
 		"zerion": "binance-smart-chain",
 		"debank": "bsc",
 	},
-	DefaultToken0: common.HexToAddress("0x55d398326f99059ff775485246999027b3197955"),
+	DefaultToken0: common.HexToAddress("0x55d398326f99059fF775485246999027B3197955"),
 	DefaultToken1: common.HexToAddress("0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c"),
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0x55d398326f99059ff775485246999027b3197955"), common.HexToAddress("0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3"), common.HexToAddress("0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d"), common.HexToAddress("0xe9e7cea3dedca5984780bafc599bd69add087d56"), common.HexToAddress("0x40af3827F39D0EAcBF4A168f8D4ee67c121D11c9")},
@@ -30,7 +30,7 @@ var Bsc Network = Network{
 	Watchlist:        []common.Address{common.HexToAddress("0x47a90a2d92a8367a91efa1906bfc8c1e05bf10c4"), common.HexToAddress("0x28df0835942396b7a1b7ae1cd068728e6ddbbafd"), common.HexToAddress("0xb125aa15ad943d96e813e4a06d0c34716f897e26"), common.HexToAddress("0x0f338ec12d3f7c3d77a4b9fcc1f95f3fb6ad0ea6"), common.HexToAddress("0xf9878a5dd55edc120fde01893ea713a4f032229c"), common.HexToAddress("0x2c3c320d49019d4f9a92352e947c7e5acfe47d68"), common.HexToAddress("0xc98f01bf2141e1140ef8f8cad99d4b021d10718f"), common.HexToAddress("0x3fb2623567e21f8c50f0ae86f54ef4849b4eb47b"), common.HexToAddress("0x5289a8dbf7029ee0b0498a84777ed3941d9acfec"), common.HexToAddress("0xf2c9339945bff71dd0bffd3c142164112cd05dc6"), common.HexToAddress("0xf5c616e7b58226b8081dcc7e4a7123a63734eef6"), common.HexToAddress("0x6fe9e9de56356f7edbfcbb29fab7cd69471a4869"), common.HexToAddress("0x0525190f3532b99b32fb42b2697807bd80268565"), common.HexToAddress("0xcb99fe720124129520f7a09ca3cbef78d58ed934"), common.HexToAddress("0x06396509195eb9e07c38a016694dc9ff535b128a")},
 	BlockTimeSeconds: 3,
 	Oku: OkuMetadata{
-		LimitOrderRegistry:            common.HexToAddress("0x19b9bd76028cab6f414ed1fc57400b75b5ca0627"),
+		LimitOrderRegistry:            common.HexToAddress("0x19b9bD76028caB6F414ed1Fc57400b75B5cA0627"),
 		LimitOrderRegistryDeployBlock: 34187988,
 		Pricing: OkuPricingMetadata{
 			NativeWrappedToken: common.HexToAddress("0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c"),
@@ -39,7 +39,7 @@ var Bsc Network = Network{
 			NativeQuotePools: []ChainContract{
 				{
 					BlockCreated: 26495967,
-					Address:      common.HexToAddress("0x6fe9e9de56356f7edbfcbb29fab7cd69471a4869"),
+					Address:      common.HexToAddress("0x6fe9E9de56356F7eDBfcBB29FAB7cd69471a4869"),
 				},
 			},
 		},
@@ -63,9 +63,9 @@ var Bsc Network = Network{
 		UniversalRouter:                    common.HexToAddress("0xeC8B0F7Ffe3ae75d7FfAb09429e3675bb63503e4"),
 	},
 	Token: TokenMetadata{
-		UsdcAddress: common.HexToAddress("0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d"),
-		WbtcAddress: common.HexToAddress("0x7130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c"),
-		WethAddress: common.HexToAddress("0x2170ed0880ac9a755fd29b2688956bd959f933f8"),
+		UsdcAddress: common.HexToAddress("0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d"),
+		WbtcAddress: common.HexToAddress("0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c"),
+		WethAddress: common.HexToAddress("0x2170Ed0880ac9A755fd29B2688956BD959F933F8"),
 	},
 	Contracts: map[string]ChainContract{
 		"multicall3": {
@@ -74,7 +74,7 @@ var Bsc Network = Network{
 		},
 		"limitOrder": {
 			BlockCreated: 0,
-			Address:      common.HexToAddress("0x19b9bd76028cab6f414ed1fc57400b75b5ca0627"),
+			Address:      common.HexToAddress("0x19b9bD76028caB6F414ed1Fc57400b75B5cA0627"),
 		},
 		"nftManager": {
 			BlockCreated: 0,

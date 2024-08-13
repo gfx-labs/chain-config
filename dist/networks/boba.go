@@ -21,18 +21,18 @@ var Boba Network = Network{
 	ExternalId: map[string]string{
 		"debank": "boba",
 	},
-	DefaultToken0: common.HexToAddress("0x66a2a913e447d6b4bf33efbec43aaef87890fbbc"),
-	DefaultToken1: common.HexToAddress("0xa18bf3994c0cc6e3b63ac420308e5383f53120d7"),
+	DefaultToken0: common.HexToAddress("0x66a2A913e447d6b4BF33EFbec43aAeF87890FBbc"),
+	DefaultToken1: common.HexToAddress("0xa18bF3994C0Cc6E3b63ac420308E5383f53120D7"),
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0x66a2a913e447d6b4bf33efbec43aaef87890fbbc"), common.HexToAddress("0x5de1677344d3cb0d7d465c10b72a8f60699c062d"), common.HexToAddress("0xf74195bb8a5cf652411867c5c2c5b8c2a402be35")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x66a2a913e447d6b4bf33efbec43aaef87890fbbc"): {}, common.HexToAddress("0x5de1677344d3cb0d7d465c10b72a8f60699c062d"): {}, common.HexToAddress("0xf74195bb8a5cf652411867c5c2c5b8c2a402be35"): {}},
 	Watchlist:        []common.Address{common.HexToAddress("0xdF37543dae7986E48E3ce83F390A828A9F3D23BA"), common.HexToAddress("0x162b1fda171463974e5262bac5824da233f11e00"), common.HexToAddress("0xfe1a0c58e38fa71618545df15e5479559ce51108"), common.HexToAddress("0xb1ed67e29b2497404a2ac7f2a2989c3328ec2999"), common.HexToAddress("0x66faef55892dae3932a043d3238ecaa271d36e0d")},
 	BlockTimeSeconds: 2,
 	Oku: OkuMetadata{
-		LimitOrderRegistry:            common.HexToAddress("0xfefb60591cffc694c0137983a9091d64af8ecbac"),
+		LimitOrderRegistry:            common.HexToAddress("0xfEFb60591cffc694C0137983a9091D64Af8Ecbac"),
 		LimitOrderRegistryDeployBlock: 1052192,
 		Pricing: OkuPricingMetadata{
-			NativeWrappedToken: common.HexToAddress("0xdeaddeaddeaddeaddeaddeaddeaddeaddead0000"),
+			NativeWrappedToken: common.HexToAddress("0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000"),
 			NativeWrappedName:  "WETH",
 			Pools:              []common.Address{},
 			NativeQuotePools:   []ChainContract{},
@@ -58,7 +58,7 @@ var Boba Network = Network{
 		UniversalRouter:                    common.HexToAddress("0x4BA622997559F9b5Ac68751D7Fc3dEecc23a0e88"),
 	},
 	Token: TokenMetadata{
-		WethAddress: common.HexToAddress("0xdeaddeaddeaddeaddeaddeaddeaddeaddead0000"),
+		WethAddress: common.HexToAddress("0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000"),
 		UsdcAddress: common.HexToAddress("0x66a2A913e447d6b4BF33EFbec43aAeF87890FBbc"),
 	},
 	Contracts: map[string]ChainContract{
@@ -68,15 +68,15 @@ var Boba Network = Network{
 		},
 		"limitOrder": {
 			BlockCreated: 0,
-			Address:      common.HexToAddress("0xfefb60591cffc694c0137983a9091d64af8ecbac"),
+			Address:      common.HexToAddress("0xfEFb60591cffc694C0137983a9091D64Af8Ecbac"),
 		},
 		"nftManager": {
 			BlockCreated: 0,
-			Address:      common.HexToAddress("0x0bfc9ac7e52f38eaa6dc8d10942478f695c6cf71"),
+			Address:      common.HexToAddress("0x0bfc9aC7E52f38EAA6dC8d10942478f695C6Cf71"),
 		},
 		"weth9": {
 			BlockCreated: 0,
-			Address:      common.HexToAddress("0xdeaddeaddeaddeaddeaddeaddeaddeaddead0000"),
+			Address:      common.HexToAddress("0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000"),
 		},
 		"multicall2": {
 			BlockCreated: 0,

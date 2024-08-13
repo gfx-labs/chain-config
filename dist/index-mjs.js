@@ -1,8 +1,27 @@
 import { arbitrum as arbitrum$1, base as base$1, blast as blast$1, boba as boba$1, bsc as bsc$1, filecoin as filecoin$1, linea as linea$1, lisk as lisk$1, mainnet as mainnet$1, manta as manta$1, mantle as mantle$1, moonbeam as moonbeam$1, optimism as optimism$1, polygon as polygon$1, rootstock as rootstock$1, scroll as scroll$1, sei as sei$1, taiko as taiko$1, polygonZkEvm as polygonZkEvm$1, zkLinkNova, zkSync as zkSync$1 } from 'viem/chains';
-import { zeroAddress } from 'viem';
+import { getAddress, isAddress, zeroAddress } from 'viem';
 
 const makeConfig = (x) => {
-    return x;
+    const checksumAddresses = (input) => {
+        if (Array.isArray(input)) {
+            return input.map(checksumAddresses);
+        }
+        else if (typeof input === "object" && input !== null) {
+            return Object.keys(input).reduce((result, key) => {
+                const value = input[key];
+                result[key] = isStringAndAddress(value)
+                    ? getAddress(value)
+                    : checksumAddresses(value);
+                return result;
+            }, {});
+        }
+        return input;
+    };
+    const isStringAndAddress = (value) => {
+        return typeof value === "string" && isAddress(value, { strict: false });
+    };
+    const checksummedConfig = checksumAddresses(x);
+    return Object.freeze(checksummedConfig);
 };
 
 const arbitrum = makeConfig({

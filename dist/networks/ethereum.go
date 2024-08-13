@@ -15,15 +15,15 @@ var Ethereum Network = Network{
 			ApiUrl: "https://api.etherscan.io/api",
 		},
 	},
-	DefaultPool:  common.HexToAddress("0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640"),
+	DefaultPool:  common.HexToAddress("0x88e6A0c2dDD26FEEb64F039a2c41296FcB3f5640"),
 	InternalName: "ethereum",
 	InitCodeHash: common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId: map[string]string{
 		"zerion": "ethereum",
 		"debank": "eth",
 	},
-	DefaultToken0: common.HexToAddress("0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"),
-	DefaultToken1: common.HexToAddress("0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"),
+	DefaultToken0: common.HexToAddress("0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"),
+	DefaultToken1: common.HexToAddress("0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"),
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"), common.HexToAddress("0x6B175474E89094C44Da98b954EedeAC495271d0F"), common.HexToAddress("0xdAC17F958D2ee523a2206206994597C13D831ec7"), common.HexToAddress("0x0000000000085d4780B73119b644AE5ecd22b376"), common.HexToAddress("0x57Ab1ec28D129707052df4dF418D58a2D46d5f51"), common.HexToAddress("0x956f47f50a910163d8bf957cf5846d573e7f87ca"), common.HexToAddress("0x4Fabb145d64652a948d72533023f6E7A623C7C53"), common.HexToAddress("0x853d955acef822db058eb8505911ed77f175b99e"), common.HexToAddress("0x8E870D67F660D95d5be530380D0eC0bd388289E1"), common.HexToAddress("0x5f98805A4E8be255a32880FDeC7F6728C6568bA0"), common.HexToAddress("0x99d8a9c45b2eca8864373a26d1459e3dff1e17f3"), common.HexToAddress("0x1a13f4ca1d028320a707d99520abfefca3998b7f")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"): {}, common.HexToAddress("0x6B175474E89094C44Da98b954EedeAC495271d0F"): {}, common.HexToAddress("0xdAC17F958D2ee523a2206206994597C13D831ec7"): {}, common.HexToAddress("0x0000000000085d4780B73119b644AE5ecd22b376"): {}, common.HexToAddress("0x57Ab1ec28D129707052df4dF418D58a2D46d5f51"): {}, common.HexToAddress("0x956f47f50a910163d8bf957cf5846d573e7f87ca"): {}, common.HexToAddress("0x4Fabb145d64652a948d72533023f6E7A623C7C53"): {}, common.HexToAddress("0x853d955acef822db058eb8505911ed77f175b99e"): {}, common.HexToAddress("0x8E870D67F660D95d5be530380D0eC0bd388289E1"): {}, common.HexToAddress("0x5f98805A4E8be255a32880FDeC7F6728C6568bA0"): {}, common.HexToAddress("0x99d8a9c45b2eca8864373a26d1459e3dff1e17f3"): {}, common.HexToAddress("0x1a13f4ca1d028320a707d99520abfefca3998b7f"): {}},
@@ -39,7 +39,7 @@ var Ethereum Network = Network{
 			NativeQuotePools: []ChainContract{
 				{
 					BlockCreated: 12369621,
-					Address:      common.HexToAddress("0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640"),
+					Address:      common.HexToAddress("0x88e6A0c2dDD26FEEb64F039a2c41296FcB3f5640"),
 				},
 			},
 		},
@@ -60,12 +60,12 @@ var Ethereum Network = Network{
 		V3Migrator:                         common.HexToAddress("0xA5644E29708357803b5A882D272c41cC0dF92B34"),
 		UniswapV3Staker:                    common.HexToAddress("0xe34139463bA50bD61336E0c446Bd8C0867c6fE65"),
 		PositionsNFT:                       common.HexToAddress("0xC36442b4a4522E871399CD717aBDD847Ab11FE88"),
-		TopNativePool:                      common.HexToAddress("0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640"),
+		TopNativePool:                      common.HexToAddress("0x88e6A0c2dDD26FEEb64F039a2c41296FcB3f5640"),
 		PositionsNFTDeployBlock:            12369651,
 		UniversalRouter:                    common.HexToAddress("0xEf1c6E67703c7BD7107eed8303Fbe6EC2554BF6B"),
 	},
 	Token: TokenMetadata{
-		UsdcAddress: common.HexToAddress("0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"),
+		UsdcAddress: common.HexToAddress("0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"),
 		WethAddress: common.HexToAddress("0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"),
 		WbtcAddress: common.HexToAddress("0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599"),
 	},
@@ -92,7 +92,7 @@ var Ethereum Network = Network{
 		},
 		"weth9": {
 			BlockCreated: 0,
-			Address:      common.HexToAddress("0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"),
+			Address:      common.HexToAddress("0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"),
 		},
 		"multicall2": {
 			BlockCreated: 0,
