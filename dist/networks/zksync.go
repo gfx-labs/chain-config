@@ -19,7 +19,7 @@ var Zksync Network = Network{
 			ApiUrl: "https://block-explorer-api.mainnet.zksync.io/api",
 		},
 	},
-	DefaultPool:  common.HexToAddress("0xff577f0E828a878743Ecc5E2632cbf65ceCf17cF"),
+	DefaultPool:  common.HexToAddress("0xff577f0e828a878743ecc5e2632cbf65cecf17cf"),
 	InternalName: "zksync",
 	InitCodeHash: common.HexToHash("0x010013f177ea1fcbc4520f9a3ca7cd2d1d77959e05aa66484027cb38e712aeed"),
 	ExternalId: map[string]string{
@@ -45,7 +45,7 @@ var Zksync Network = Network{
 	Uniswap: UniswapMetadata{
 		DeployBlock:                12637075,
 		PoolFactory:                common.HexToAddress("0x8FdA5a7a8dCA67BBcDd10F02Fa0649A937215422"),
-		Permit2:                    common.HexToAddress("0x0000000000225e31D15943971F47aD3022F714Fa"),
+		Permit2:                    common.HexToAddress("0x0000000000225e31d15943971f47ad3022f714fa"),
 		Multicall2:                 common.HexToAddress("0x8bB86A31795d3e8ef12c630C288770e13eEcF038"),
 		TickLens:                   common.HexToAddress("0xe10FF11b809f8EE07b056B452c3B2caa7FE24f89"),
 		NonfungiblePositionManager: common.HexToAddress("0x0616e5762c1E7Dc3723c50663dF10a162D690a86"),
@@ -73,7 +73,7 @@ var Zksync Network = Network{
 		},
 		"weth9": {
 			BlockCreated: 0,
-			Address:      common.HexToAddress("0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91"),
+			Address:      common.HexToAddress("0x5aea5775959fbc2557cc8789bc1bf90a239d9a91"),
 		},
 		"multicall2": {
 			BlockCreated: 0,

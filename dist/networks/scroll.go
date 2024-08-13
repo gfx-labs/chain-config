@@ -15,13 +15,13 @@ var Scroll Network = Network{
 			ApiUrl: "https://api.scrollscan.com/api",
 		},
 	},
-	DefaultPool:  common.HexToAddress("0x813Df550a32d4A9d42010D057386429ad2328ED9"),
+	DefaultPool:  common.HexToAddress("0x813df550a32d4a9d42010d057386429ad2328ed9"),
 	InternalName: "scroll",
 	InitCodeHash: common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId: map[string]string{
 		"zerion": "scroll",
 	},
-	DefaultToken0: common.HexToAddress("0x06eFdBFf2a14a7c8E15944D1F4A48F9F95F663A4"),
+	DefaultToken0: common.HexToAddress("0x06efdbff2a14a7c8e15944d1f4a48f9f95f663a4"),
 	DefaultToken1: common.HexToAddress("0x5300000000000000000000000000000000000004"),
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0x06efdbff2a14a7c8e15944d1f4a48f9f95f663a4"), common.HexToAddress("0xf55bec9cafdbe8730f096aa55dad6d22d44099df"), common.HexToAddress("0xca77eb3fefe3725dc33bccb54edefc3d9f764f97")},
@@ -47,14 +47,14 @@ var Scroll Network = Network{
 		UniversalRouter: common.HexToAddress("0x595E7160858b1AdA94Bda790D8699C85e595117E"),
 	},
 	Token: TokenMetadata{
-		UsdcAddress: common.HexToAddress("0x06eFdBFf2a14a7c8E15944D1F4A48F9F95F663A4"),
+		UsdcAddress: common.HexToAddress("0x06efdbff2a14a7c8e15944d1f4a48f9f95f663a4"),
 		WethAddress: common.HexToAddress("0x5300000000000000000000000000000000000004"),
-		WbtcAddress: common.HexToAddress("0x3C1BCa5a656e69edCD0D4E36BEbb3FcDAcA60Cf1"),
+		WbtcAddress: common.HexToAddress("0x3c1bca5a656e69edcd0d4e36bebb3fcdaca60cf1"),
 	},
 	Contracts: map[string]ChainContract{
 		"multicall3": {
 			BlockCreated: 14,
-			Address:      common.HexToAddress("0xcA11bde05977b3631167028862bE2a173976CA11"),
+			Address:      common.HexToAddress("0xca11bde05977b3631167028862be2a173976ca11"),
 		},
 		"limitOrder": {
 			BlockCreated: 0,

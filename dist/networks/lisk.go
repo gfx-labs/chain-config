@@ -15,7 +15,7 @@ var Lisk Network = Network{
 			ApiUrl: "https://blockscout.lisk.com/api",
 		},
 	},
-	DefaultPool:  common.HexToAddress("0x3A670179BdecE7eB4f570e30Ee9D560f7ff4Fac3"),
+	DefaultPool:  common.HexToAddress("0x3a670179bdece7eb4f570e30ee9d560f7ff4fac3"),
 	InternalName: "lisk",
 	InitCodeHash: common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId: map[string]string{

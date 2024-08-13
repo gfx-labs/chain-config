@@ -18,12 +18,12 @@ var Rootstock Network = Network{
 			Url: "https://explorer.rsk.co",
 		},
 	},
-	DefaultPool:   common.HexToAddress("0xD2Ffe51aB4E622a411abBe634832a19D919E9c55"),
+	DefaultPool:   common.HexToAddress("0xd2ffe51ab4e622a411abbe634832a19d919e9c55"),
 	InternalName:  "rootstock",
 	InitCodeHash:  common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId:    map[string]string{},
-	DefaultToken0: common.HexToAddress("0x542fDA317318eBF1d3DEAf76E0b632741A7e677d"),
-	DefaultToken1: common.HexToAddress("0xef213441A85dF4d7ACbDaE0Cf78004e1E486bB96"),
+	DefaultToken0: common.HexToAddress("0x542fda317318ebf1d3deaf76e0b632741a7e677d"),
+	DefaultToken1: common.HexToAddress("0xef213441a85df4d7acbdae0cf78004e1e486bb96"),
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0xef213441a85df4d7acbdae0cf78004e1e486bb96"), common.HexToAddress("0x3a15461d8ae0f0fb5fa2629e9da7d66a794a6e37")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0xef213441a85df4d7acbdae0cf78004e1e486bb96"): {}, common.HexToAddress("0x3a15461d8ae0f0fb5fa2629e9da7d66a794a6e37"): {}},
@@ -43,7 +43,7 @@ var Rootstock Network = Network{
 		DeployBlock:                5829210,
 		PoolFactory:                common.HexToAddress("0xaF37EC98A00FD63689CF3060BF3B6784E00caD82"),
 		Permit2:                    common.HexToAddress("0xFcf5986450E4A014fFE7ad4Ae24921B589D039b5"),
-		Multicall2:                 common.HexToAddress("0x996a9858cDfa45Ad68E47c9A30a7201E29c6a386"),
+		Multicall2:                 common.HexToAddress("0x996a9858cdFa45aD68E47C9a30A7201E29c6A386"),
 		TickLens:                   common.HexToAddress("0x55B9dF5bF68ADe972191a91980459f48ecA16afC"),
 		NonfungiblePositionManager: common.HexToAddress("0x9d9386c042F194B460Ec424a1e57ACDE25f5C4b1"),
 		PositionsNFT:               common.HexToAddress("0x9d9386c042F194B460Ec424a1e57ACDE25f5C4b1"),
@@ -51,7 +51,7 @@ var Rootstock Network = Network{
 		UniversalRouter:            common.HexToAddress("0x244f68e77357f86a8522323eBF80b5FC2F814d3E"),
 	},
 	Token: TokenMetadata{
-		UsdcAddress: common.HexToAddress("0x3A15461d8aE0F0Fb5Fa2629e9DA7D66A794a6e37"),
+		UsdcAddress: common.HexToAddress("0x3A15461d8AE0f0Fb5fA2629e9dA7D66A794a6E37"),
 	},
 	Contracts: map[string]ChainContract{
 		"multicall3": {
@@ -72,11 +72,11 @@ var Rootstock Network = Network{
 		},
 		"Multicall2": {
 			BlockCreated: 0,
-			Address:      common.HexToAddress("0x996a9858cDfa45Ad68E47c9A30a7201E29c6a386"),
+			Address:      common.HexToAddress("0x996a9858cdFa45aD68E47C9a30A7201E29c6A386"),
 		},
 		"Multicall3": {
 			BlockCreated: 0,
-			Address:      common.HexToAddress("0xcA11bde05977b3631167028862bE2a173976CA11"),
+			Address:      common.HexToAddress("0xca11bde05977b3631167028862be2a173976ca11"),
 		},
 	},
 }

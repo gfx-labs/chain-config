@@ -5,26 +5,7 @@
 })(this, (function (exports, chains, viem) { 'use strict';
 
   const makeConfig = (x) => {
-      const checksumAddresses = (input) => {
-          if (Array.isArray(input)) {
-              return input.map(checksumAddresses);
-          }
-          if (typeof input === "object" && input !== null) {
-              return Object.keys(input).reduce((result, key) => {
-                  const value = input[key];
-                  result[key] = isStringAndAddress(value)
-                      ? viem.getAddress(value)
-                      : checksumAddresses(value);
-                  return result;
-              }, {});
-          }
-          return input;
-      };
-      const isStringAndAddress = (value) => {
-          return typeof value === "string" && viem.isAddress(value, { strict: false });
-      };
-      const checksummedConfig = checksumAddresses(x);
-      return Object.freeze(checksummedConfig);
+      return x;
   };
 
   const arbitrum = makeConfig({

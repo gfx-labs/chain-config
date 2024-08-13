@@ -15,7 +15,7 @@ var Base Network = Network{
 			ApiUrl: "https://api.basescan.org/api",
 		},
 	},
-	DefaultPool:  common.HexToAddress("0xd0b53D9277642d899DF5C87A3966A349A798F224"),
+	DefaultPool:  common.HexToAddress("0xd0b53d9277642d899df5c87a3966a349a798f224"),
 	InternalName: "base",
 	InitCodeHash: common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId: map[string]string{
@@ -23,14 +23,14 @@ var Base Network = Network{
 		"debank": "base",
 	},
 	DefaultToken0: common.HexToAddress("0x4200000000000000000000000000000000000006"),
-	DefaultToken1: common.HexToAddress("0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"),
+	DefaultToken1: common.HexToAddress("0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"),
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"), common.HexToAddress("0xd9aaec86b65d86f6a7b5b1b0c42ffa531710b6ca"), common.HexToAddress("0x50c5725949a6f0c72e6c4a641f24049a917db0cb"), common.HexToAddress("0xfde4C96c8593536E31F229EA8f37b2ADa2699bb2")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"): {}, common.HexToAddress("0xd9aaec86b65d86f6a7b5b1b0c42ffa531710b6ca"): {}, common.HexToAddress("0x50c5725949a6f0c72e6c4a641f24049a917db0cb"): {}, common.HexToAddress("0xfde4C96c8593536E31F229EA8f37b2ADa2699bb2"): {}},
 	Watchlist:        []common.Address{common.HexToAddress("0x4c36388be6f416a29c8d8eee81c771ce6be14b18"), common.HexToAddress("0x06959273e9a65433de71f5a452d529544e07ddd0"), common.HexToAddress("0xc9034c3e7f58003e6ae0c8438e7c8f4598d5acaa"), common.HexToAddress("0xd0b53d9277642d899df5c87a3966a349a798f224"), common.HexToAddress("0x48413707b70355597404018e7c603b261fcadf3f"), common.HexToAddress("0x4b0aaf3ebb163dd45f663b38b6d93f6093ebc2d3"), common.HexToAddress("0x0d5959a52e7004b601f0be70618d01ac3cdce976"), common.HexToAddress("0x10648ba41b8565907cfa1496765fa4d95390aa0d"), common.HexToAddress("0x22f9623817f152148b4e080e98af66fbe9c5adf8"), common.HexToAddress("0xae2ce200bdb67c472030b31f602f0756c9aeb61c"), common.HexToAddress("0xd5638bf58e2762fa40bd753490f693cbb1986709"), common.HexToAddress("0x018046b1d182f7c0978c07610e1173c8e11913fd"), common.HexToAddress("0x24e1cbd6fed006ceed9af0dce688acc7951d57a9"), common.HexToAddress("0x97a25cc2793f0ffa90e1667cf7b3c1f130737189"), common.HexToAddress("0xfcc89a1f250d76de198767d33e1ca9138a7fb54b"), common.HexToAddress("0x3bc5180d5439b500f381f9a46f15dd6608101671"), common.HexToAddress("0xa555149210075702a734968f338d5e1cbd509354"), common.HexToAddress("0x5197195ac878741b192f84ff6d7da5a85b9e634b"), common.HexToAddress("0xe745a591970e0fa981204cf525e170a2b9e4fb93"), common.HexToAddress("0x7e904aaf3439402eb21958fe090bd852d5e882cf")},
 	BlockTimeSeconds: 2,
 	Oku: OkuMetadata{
-		LimitOrderRegistry:            common.HexToAddress("0xfF8b754c64e9a8473Bd6E1118d0eaC67F0A8Ae27"),
+		LimitOrderRegistry:            common.HexToAddress("0xff8b754c64e9a8473bd6e1118d0eac67f0a8ae27"),
 		LimitOrderRegistryDeployBlock: 7644835,
 		Pricing: OkuPricingMetadata{
 			NativeWrappedToken: common.HexToAddress("0x4200000000000000000000000000000000000006"),
@@ -47,10 +47,10 @@ var Base Network = Network{
 		NonfungiblePositionManager: common.HexToAddress("0x03a520b32C04BF3bEEf7BEb72E919cf822Ed34f1"),
 		PositionsNFT:               common.HexToAddress("0x03a520b32C04BF3bEEf7BEb72E919cf822Ed34f1"),
 		PositionsNFTDeployBlock:    1371714,
-		UniversalRouter:            common.HexToAddress("0xeC8B0F7Ffe3ae75d7FfAb09429e3675bb63503e4"),
+		UniversalRouter:            common.HexToAddress("0xec8b0f7ffe3ae75d7ffab09429e3675bb63503e4"),
 	},
 	Token: TokenMetadata{
-		UsdcAddress: common.HexToAddress("0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"),
+		UsdcAddress: common.HexToAddress("0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"),
 	},
 	Contracts: map[string]ChainContract{
 		"gasPriceOracle": {
@@ -91,7 +91,7 @@ var Base Network = Network{
 		},
 		"limitOrder": {
 			BlockCreated: 0,
-			Address:      common.HexToAddress("0xfF8b754c64e9a8473Bd6E1118d0eaC67F0A8Ae27"),
+			Address:      common.HexToAddress("0xff8b754c64e9a8473bd6e1118d0eac67f0a8ae27"),
 		},
 		"multicall2": {
 			BlockCreated: 0,

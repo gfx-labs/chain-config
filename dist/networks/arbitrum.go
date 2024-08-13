@@ -15,15 +15,15 @@ var Arbitrum Network = Network{
 			ApiUrl: "https://api.arbiscan.io/api",
 		},
 	},
-	DefaultPool:  common.HexToAddress("0xcDa53B1F66614552F834cEeF361A8D12a0B8DaD8"),
+	DefaultPool:  common.HexToAddress("0xcda53b1f66614552f834ceef361a8d12a0b8dad8"),
 	InternalName: "arbitrum",
 	InitCodeHash: common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId: map[string]string{
 		"zerion": "arbitrum",
 		"debank": "arb",
 	},
-	DefaultToken0: common.HexToAddress("0x912CE59144191C1204E64559FE8253a0e49E6548"),
-	DefaultToken1: common.HexToAddress("0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8"),
+	DefaultToken0: common.HexToAddress("0x912ce59144191c1204e64559fe8253a0e49e6548"),
+	DefaultToken1: common.HexToAddress("0xff970a61a04b1ca14834a43f5de4533ebddb5cc8"),
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8"), common.HexToAddress("0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9"), common.HexToAddress("0xda10009cbd5d07dd0cecc66161fc93d7c9000da1"), common.HexToAddress("0xaf88d065e77c8cC2239327C5EDb3A432268e5831")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8"): {}, common.HexToAddress("0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9"): {}, common.HexToAddress("0xda10009cbd5d07dd0cecc66161fc93d7c9000da1"): {}, common.HexToAddress("0xaf88d065e77c8cC2239327C5EDb3A432268e5831"): {}},
@@ -39,7 +39,7 @@ var Arbitrum Network = Network{
 			NativeQuotePools: []ChainContract{
 				{
 					BlockCreated: 100909,
-					Address:      common.HexToAddress("0xC31E54c7a869B9FcBEcc14363CF510d1c41fa443"),
+					Address:      common.HexToAddress("0xc31e54c7a869b9fcbecc14363cf510d1c41fa443"),
 				},
 			},
 		},
@@ -60,13 +60,13 @@ var Arbitrum Network = Network{
 		V3Migrator:                         common.HexToAddress("0xA5644E29708357803b5A882D272c41cC0dF92B34"),
 		UniswapV3Staker:                    common.HexToAddress("0xe34139463bA50bD61336E0c446Bd8C0867c6fE65"),
 		PositionsNFT:                       common.HexToAddress("0xC36442b4a4522E871399CD717aBDD847Ab11FE88"),
-		TopNativePool:                      common.HexToAddress("0x88e6A0c2dDD26FEEb64F039a2c41296FcB3f5640"),
+		TopNativePool:                      common.HexToAddress("0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640"),
 		PositionsNFTDeployBlock:            173,
 		UniversalRouter:                    common.HexToAddress("0x4C60051384bd2d3C01bfc845Cf5F4b44bcbE9de5"),
 	},
 	Token: TokenMetadata{
 		WethAddress: common.HexToAddress("0x82aF49447D8a07e3bd95BD0d56f35241523fBab1"),
-		WbtcAddress: common.HexToAddress("0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f"),
+		WbtcAddress: common.HexToAddress("0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f"),
 		UsdcAddress: common.HexToAddress("0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8"),
 	},
 	Contracts: map[string]ChainContract{
@@ -84,7 +84,7 @@ var Arbitrum Network = Network{
 		},
 		"weth9": {
 			BlockCreated: 0,
-			Address:      common.HexToAddress("0x82aF49447D8a07e3bd95BD0d56f35241523fBab1"),
+			Address:      common.HexToAddress("0x82af49447d8a07e3bd95bd0d56f35241523fbab1"),
 		},
 		"multicall2": {
 			BlockCreated: 0,

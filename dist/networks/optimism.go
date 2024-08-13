@@ -15,7 +15,7 @@ var Optimism Network = Network{
 			ApiUrl: "https://api-optimistic.etherscan.io/api",
 		},
 	},
-	DefaultPool:  common.HexToAddress("0x1C3140aB59d6cAf9fa7459C6f83D4B52ba881d36"),
+	DefaultPool:  common.HexToAddress("0x1c3140ab59d6caf9fa7459c6f83d4b52ba881d36"),
 	InternalName: "optimism",
 	InitCodeHash: common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId: map[string]string{
@@ -23,7 +23,7 @@ var Optimism Network = Network{
 		"debank": "op",
 	},
 	DefaultToken0: common.HexToAddress("0x4200000000000000000000000000000000000042"),
-	DefaultToken1: common.HexToAddress("0x7F5c764cBc14f9669B88837ca1490cCa17c31607"),
+	DefaultToken1: common.HexToAddress("0x7f5c764cbc14f9669b88837ca1490cca17c31607"),
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0x7f5c764cbc14f9669b88837ca1490cca17c31607"), common.HexToAddress("0x94b008aA00579c1307B0EF2c499aD98a8ce58e58"), common.HexToAddress("0x8c6f28f2f1a3c87f0f938b96d27520d9751ec8d9"), common.HexToAddress("0x8aE125E8653821E851F12A49F7765db9a9ce7384"), common.HexToAddress("0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1"), common.HexToAddress("0x0b2c639c533813f4aa9d7837caf62653d097ff85")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x7f5c764cbc14f9669b88837ca1490cca17c31607"): {}, common.HexToAddress("0x94b008aA00579c1307B0EF2c499aD98a8ce58e58"): {}, common.HexToAddress("0x8c6f28f2f1a3c87f0f938b96d27520d9751ec8d9"): {}, common.HexToAddress("0x8aE125E8653821E851F12A49F7765db9a9ce7384"): {}, common.HexToAddress("0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1"): {}, common.HexToAddress("0x0b2c639c533813f4aa9d7837caf62653d097ff85"): {}},
@@ -39,7 +39,7 @@ var Optimism Network = Network{
 			NativeQuotePools: []ChainContract{
 				{
 					BlockCreated: 0,
-					Address:      common.HexToAddress("0x85149247691df622eaF1a8Bd0CaFd40BC45154a9"),
+					Address:      common.HexToAddress("0x85149247691df622eaf1a8bd0cafd40bc45154a9"),
 				},
 			},
 		},
@@ -47,7 +47,7 @@ var Optimism Network = Network{
 	Uniswap: UniswapMetadata{
 		DeployBlock:                        0,
 		PoolFactory:                        common.HexToAddress("0x1F98431c8aD98523631AE4a59f267346ea31F984"),
-		Multicall2:                         common.HexToAddress("0x266557A864680A1401A3506c0eb72934BD13Bf59"),
+		Multicall2:                         common.HexToAddress("0x266557a864680a1401a3506c0eb72934bd13bf59"),
 		ProxyAdmin:                         common.HexToAddress("0xB753548F6E010e7e680BA186F9Ca1BdAB2E90cf2"),
 		TickLens:                           common.HexToAddress("0xbfd8137f7d1516D3ea5cA83523914859ec47F573"),
 		Quoter:                             common.HexToAddress("0xb27308f9F90D607463bb33eA1BeBb41C27CE5AB6"),
@@ -60,14 +60,14 @@ var Optimism Network = Network{
 		V3Migrator:                         common.HexToAddress("0xA5644E29708357803b5A882D272c41cC0dF92B34"),
 		UniswapV3Staker:                    common.HexToAddress("0xe34139463bA50bD61336E0c446Bd8C0867c6fE65"),
 		PositionsNFT:                       common.HexToAddress("0xC36442b4a4522E871399CD717aBDD847Ab11FE88"),
-		TopNativePool:                      common.HexToAddress("0x88e6A0c2dDD26FEEb64F039a2c41296FcB3f5640"),
+		TopNativePool:                      common.HexToAddress("0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640"),
 		PositionsNFTDeployBlock:            0,
 		UniversalRouter:                    common.HexToAddress("0xb555edF5dcF85f42cEeF1f3630a52A108E55A654"),
 	},
 	Token: TokenMetadata{
-		UsdcAddress: common.HexToAddress("0x0b2C639c533813f4Aa9D7837CAf62653d097Ff85"),
+		UsdcAddress: common.HexToAddress("0x0b2c639c533813f4aa9d7837caf62653d097ff85"),
 		WethAddress: common.HexToAddress("0x4200000000000000000000000000000000000006"),
-		WbtcAddress: common.HexToAddress("0x68f180fcCe6836688e9084f035309E29Bf0A2095"),
+		WbtcAddress: common.HexToAddress("0x68f180fcce6836688e9084f035309e29bf0a2095"),
 	},
 	Contracts: map[string]ChainContract{
 		"gasPriceOracle": {
@@ -112,7 +112,7 @@ var Optimism Network = Network{
 		},
 		"multicall2": {
 			BlockCreated: 0,
-			Address:      common.HexToAddress("0x266557A864680A1401A3506c0eb72934BD13Bf59"),
+			Address:      common.HexToAddress("0x266557a864680a1401a3506c0eb72934bd13bf59"),
 		},
 	},
 }

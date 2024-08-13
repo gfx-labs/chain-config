@@ -14,7 +14,7 @@ var Zklink Network = Network{
 			Url: "https://explorer.zklink.io",
 		},
 	},
-	DefaultPool:  common.HexToAddress("0x8AD8Cbb174539bA7aE7CB7e8C957acd8ab814700"),
+	DefaultPool:  common.HexToAddress("0x8ad8cbb174539ba7ae7cb7e8c957acd8ab814700"),
 	InternalName: "zklink",
 	InitCodeHash: common.HexToHash("0x010013f177ea1fcbc4520f9a3ca7cd2d1d77959e05aa66484027cb38e712aeed"),
 	ExternalId: map[string]string{
