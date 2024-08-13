@@ -6,7 +6,7 @@ const makeConfig = (x) => {
         if (Array.isArray(input)) {
             return input.map(checksumAddresses);
         }
-        else if (typeof input === "object" && input !== null) {
+        if (typeof input === "object" && input !== null) {
             return Object.keys(input).reduce((result, key) => {
                 const value = input[key];
                 result[key] = isStringAndAddress(value)

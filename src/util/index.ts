@@ -7,7 +7,9 @@ export const makeConfig = <T extends IChainInfo<ChainFormatters>>(
   const checksumAddresses = (input: any): any => {
     if (Array.isArray(input)) {
       return input.map(checksumAddresses);
-    } else if (typeof input === "object" && input !== null) {
+    }
+
+    if (typeof input === "object" && input !== null) {
       return Object.keys(input).reduce((result, key) => {
         const value = input[key];
         result[key] = isStringAndAddress(value)
