@@ -450,7 +450,7 @@ const blast = makeConfig({
     },
     oracles: {
         cmc: {
-            slug: "blast-io",
+            slug: "blast",
             native: "ethereum"
         },
         coingecko: {
@@ -1775,7 +1775,7 @@ const optimism = makeConfig({
             native: "ethereum"
         },
         coingecko: {
-            slug: "optimistic-ethereu",
+            slug: "optimistic-ethereum",
             native: "ethereum"
         },
         dexscreener: "optimism"
