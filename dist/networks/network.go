@@ -35,6 +35,7 @@ const (
 	NameSei          InternalName = "sei"
 	NameZklink       InternalName = "zklink"
 	NameLisk         InternalName = "lisk"
+	NameBob          InternalName = "bob"
 )
 
 var AllNetworks = []Network{
@@ -59,6 +60,7 @@ var AllNetworks = []Network{
 	Sei,
 	Zklink,
 	Lisk,
+	Bob,
 }
 
 var networksByName = map[string]Network{
@@ -83,6 +85,7 @@ var networksByName = map[string]Network{
 	"sei":           Sei,
 	"zklink":        Zklink,
 	"lisk":          Lisk,
+	"bob":           Bob,
 }
 
 var networksById = map[int]Network{
@@ -107,6 +110,7 @@ var networksById = map[int]Network{
 	1329:   Sei,
 	810180: Zklink,
 	1135:   Lisk,
+	60808:  Bob,
 }
 
 func NetworkByName(name string) (*Network, error) {

@@ -5,6 +5,7 @@
 export * from "./arbitrum";
 export * from "./base";
 export * from "./blast";
+export * from "./bob";
 export * from "./boba";
 export * from "./bsc";
 export * from "./filecoin";
