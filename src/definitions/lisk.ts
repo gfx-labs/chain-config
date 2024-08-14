@@ -10,6 +10,21 @@ export const lisk = makeConfig({
   externalId: {
     zerion: "lisk",
   },
+  markets: {},
+  bridges: {},
+  oracles: {
+    coingecko: {
+      slug: "lisk",
+      native: "ethereum",
+    }
+  },
+  blockExplorers: {
+    default: {
+      name: "Blockscout",
+      url: "https://blockscout.lisk.com",
+      apiUrl: "https://blockscout.lisk.com/api/v2"
+    }
+  },
   initCodeHash:
     "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
   uniswap: {

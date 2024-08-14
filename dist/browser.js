@@ -19,6 +19,60 @@
           zerion: "arbitrum",
           debank: "arb",
       },
+      markets: {
+          kyberswap: "arbitrum",
+          oneinch: true,
+          paraswap: {
+              tokenTransferProxy: "0x216B4B4Ba9F3e719726886d34a177484278Bfcae"
+          },
+          propellerswap: "arbitrum",
+          openocean: "arbitrum",
+          zeroex: true,
+      },
+      bridges: {
+          chainlink: {
+              atlasNetworkName: "ethereum-mainnet-arbitrum-1",
+              routerAddress: "0x141fa059441E0ca23ce184B6A78bafD2A517DdE8",
+              chainSelector: 4949039107694359620n,
+          },
+          rhinofi: "ARBITRUM",
+          stargate: {
+              endpointID: 30110,
+              blockConfirmations: 20,
+              pools: [
+                  {
+                      id: 13,
+                      address: "0xA45B5130f36CDcA45667738e2a258AB09f4A5f7F",
+                  },
+                  {
+                      id: 1,
+                      address: "0xe8CDF27AcD73a434D661C84887215F7598e7d0d3",
+                  },
+                  {
+                      id: 2,
+                      address: "0xcE8CcA271Ebc0533920C83d39F417ED6A0abB7D0",
+                  },
+              ]
+          },
+          wanbridge: {
+              requiredConfirmations: 1
+          },
+          wormhole: {
+              chain: "Arbitrum",
+              timeToFinalize: 1066
+          }
+      },
+      oracles: {
+          cmc: {
+              slug: "arbitrum",
+              native: "ethereum"
+          },
+          coingecko: {
+              slug: "arbitrum-one",
+              native: "ethereum"
+          },
+          dexscreener: "arbitrum",
+      },
       uniswap: {
           deployBlock: 165,
           poolFactory: "0x1F98431c8aD98523631AE4a59f267346ea31F984",
@@ -246,6 +300,55 @@
           zerion: "base",
           debank: "base",
       },
+      markets: {
+          kyberswap: "base",
+          oneinch: true,
+          paraswap: {
+              tokenTransferProxy: "0x93aAAe79a53759cD164340E4C8766E4Db5331cD7"
+          },
+          openocean: "base",
+          zeroex: true,
+      },
+      bridges: {
+          chainlink: {
+              atlasNetworkName: "ethereum-mainnet-base-1",
+              routerAddress: "0x881e3A65B4d4a04dD529061dd0071cf975F58bCD",
+              chainSelector: 15971525489660198786n,
+          },
+          rhinofi: "BASE",
+          stargate: {
+              endpointID: 30184,
+              blockConfirmations: 20,
+              pools: [
+                  {
+                      id: 13,
+                      address: "0xdc181Bd607330aeeBEF6ea62e03e5e1Fb4B6F7C7",
+                  },
+                  {
+                      id: 1,
+                      address: "0x27a16dc786820B16E5c9028b75B99F6f604b5d26",
+                  },
+              ]
+          },
+          wanbridge: {
+              requiredConfirmations: 200
+          },
+          wormhole: {
+              chain: "Base",
+              timeToFinalize: 1800
+          }
+      },
+      oracles: {
+          cmc: {
+              slug: "base",
+              native: "ethereum",
+          },
+          coingecko: {
+              slug: "base",
+              native: "ethereum",
+          },
+          dexscreener: "base",
+      },
       safeReorgDistance: 90000,
       uniswap: {
           deployBlock: 1371680,
@@ -335,6 +438,28 @@
       externalId: {
           zerion: "blast",
       },
+      markets: {
+          kyberswap: "blast",
+          openocean: "blast",
+      },
+      bridges: {
+          rhinofi: "BLAST",
+          wormhole: {
+              chain: "Blast",
+              timeToFinalize: 1800,
+          }
+      },
+      oracles: {
+          cmc: {
+              slug: "blast-io",
+              native: "ethereum"
+          },
+          coingecko: {
+              slug: "blast",
+              native: "ethereum"
+          },
+          dexscreener: "blast"
+      },
       uniswap: {
           deployBlock: 400903,
           poolFactory: "0x792edAdE80af5fC680d96a2eD80A44247D2Cf6Fd",
@@ -404,6 +529,15 @@
       safeReorgDistance: 90000,
       externalId: {
           debank: "boba",
+      },
+      markets: {},
+      bridges: {},
+      oracles: {
+          coingecko: {
+              slug: "boba",
+              native: "ethereum"
+          },
+          dexscreener: "boba"
       },
       blockExplorers: {
           default: {
@@ -503,6 +637,53 @@
       externalId: {
           zerion: "binance-smart-chain",
           debank: "bsc",
+      },
+      markets: {
+          airswap: true,
+          kyberswap: "bsc",
+          oneinch: true,
+          paraswap: {
+              tokenTransferProxy: "0x216b4b4ba9f3e719726886d34a177484278bfcae",
+          },
+          propellerswap: "bsc",
+          openocean: "bsc",
+          zeroex: true,
+      },
+      bridges: {
+          chainlink: {
+              atlasNetworkName: "binance_smart_chain-mainnet",
+              routerAddress: "0x34B03Cb9086d7D758AC55af71584F81A598759FE",
+              chainSelector: 11344663589394136015n,
+          },
+          rhinofi: "BINANCE",
+          stargate: {
+              endpointID: 30102,
+              blockConfirmations: 20,
+              pools: [
+                  {
+                      id: 2,
+                      address: "0x138EB30f73BC423c6455C53df6D89CB01d9eBc63",
+                  },
+              ]
+          },
+          wanbridge: {
+              requiredConfirmations: 12
+          },
+          wormhole: {
+              chain: "Bsc",
+              timeToFinalize: 48
+          }
+      },
+      oracles: {
+          cmc: {
+              slug: "bnb",
+              native: "bnb"
+          },
+          coingecko: {
+              slug: "binance-smart-chain",
+              native: "binancecoin"
+          },
+          dexscreener: "bsc"
       },
       uniswap: {
           deployBlock: 26324014,
@@ -649,6 +830,15 @@
       },
       logoUrl: "https://assets.oku.trade/filecoin-logo.svg",
       externalId: {},
+      markets: {},
+      bridges: {},
+      oracles: {
+          coingecko: {
+              slug: "filecoin",
+              native: "filecoin"
+          },
+          dexscreener: "filecoin"
+      },
       uniswap: {
           deployBlock: 3195837,
           poolFactory: "0xB4C47eD546Fc31E26470a186eC2C5F19eF09BA41",
@@ -749,6 +939,38 @@
       externalId: {
           zerion: "linea",
       },
+      markets: {
+          kyberswap: "linea",
+          openocean: "linea",
+      },
+      bridges: {
+          rhinofi: "LINEA",
+          stargate: {
+              endpointID: 30183,
+              blockConfirmations: 20,
+              pools: [
+                  {
+                      id: 13,
+                      address: "0x81F6138153d473E8c5EcebD3DC8Cd4903506B075",
+                  },
+              ]
+          },
+          wormhole: {
+              chain: "Linea",
+              timeToFinalize: 1800,
+          }
+      },
+      oracles: {
+          cmc: {
+              slug: "linea",
+              native: "ethereum"
+          },
+          coingecko: {
+              slug: "linea",
+              native: "ethereum"
+          },
+          dexscreener: "linea"
+      },
       uniswap: {
           deployBlock: 25248,
           poolFactory: "0x31FAfd4889FA1269F7a13A66eE0fB458f27D72A9",
@@ -826,6 +1048,21 @@
       externalId: {
           zerion: "lisk",
       },
+      markets: {},
+      bridges: {},
+      oracles: {
+          coingecko: {
+              slug: "lisk",
+              native: "ethereum",
+          }
+      },
+      blockExplorers: {
+          default: {
+              name: "Blockscout",
+              url: "https://blockscout.lisk.com",
+              apiUrl: "https://blockscout.lisk.com/api/v2"
+          }
+      },
       initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
       uniswap: {
           deployBlock: 577168,
@@ -890,6 +1127,69 @@
       externalId: {
           zerion: "ethereum",
           debank: "eth",
+      },
+      markets: {
+          airswap: true,
+          kyberswap: "ethereum",
+          oneinch: true,
+          paraswap: {
+              tokenTransferProxy: "0x216b4b4ba9f3e719726886d34a177484278bfcae"
+          },
+          propellerswap: "ethereum",
+          openocean: "eth",
+          zeroex: true,
+      },
+      bridges: {
+          chainlink: {
+              atlasNetworkName: "ethereum-mainnet",
+              routerAddress: "0x80226fc0Ee2b096224EeAc085Bb9a8cba1146f7D",
+              chainSelector: 5009297550715157269n,
+          },
+          rhinofi: "ETHEREUM",
+          stargate: {
+              endpointID: 30101,
+              blockConfirmations: 15,
+              pools: [
+                  {
+                      id: 13,
+                      address: "0x77b2043768d28E9C9aB44E1aBfC95944bcE57931"
+                  },
+                  {
+                      id: 1,
+                      address: "0xc026395860Db2d07ee33e05fE50ed7bD583189C7",
+                  },
+                  {
+                      id: 2,
+                      address: "0x933597a323Eb81cAe705C5bC29985172fd5A3973",
+                  },
+                  {
+                      id: 17,
+                      address: "0xcDafB1b2dB43f366E48e6F614b8DCCBFeeFEEcD3",
+                  },
+                  {
+                      id: 22,
+                      address: "0x268Ca24DAefF1FaC2ed883c598200CcbB79E931D",
+                  },
+              ]
+          },
+          wanbridge: {
+              requiredConfirmations: 6
+          },
+          wormhole: {
+              chain: "Ethereum",
+              timeToFinalize: 975,
+          }
+      },
+      oracles: {
+          cmc: {
+              slug: "ethereum",
+              native: "ethereum"
+          },
+          coingecko: {
+              slug: "ethereum",
+              native: "ethereum"
+          },
+          dexscreener: "ethereum"
       },
       uniswap: {
           deployBlock: 12369621,
@@ -1113,6 +1413,23 @@
       logoUrl: "https://assets.oku.trade/manta-logo.png",
       safeReorgDistance: 90000,
       externalId: {},
+      markets: {
+          openocean: "manta"
+      },
+      bridges: {
+          rhinofi: "MANTA"
+      },
+      oracles: {
+          cmc: {
+              slug: "manta-network",
+              native: "ethereum"
+          },
+          coingecko: {
+              slug: "manta-pacific",
+              native: "ethereum"
+          },
+          dexscreener: "manta"
+      },
       uniswap: {
           deployBlock: 1191705,
           poolFactory: "0x06D830e15081f65923674268121FF57Cc54e4e23",
@@ -1193,6 +1510,44 @@
       logoUrl: "https://assets.oku.trade/mantle-logo.png",
       safeReorgDistance: 90000,
       externalId: {},
+      markets: {
+          openocean: "mantle"
+      },
+      bridges: {
+          stargate: {
+              endpointID: 30181,
+              blockConfirmations: 20,
+              pools: [
+                  {
+                      id: 13,
+                      address: "0x4c1d3Fc3fC3c177c3b633427c2F769276c547463",
+                  },
+                  {
+                      id: 1,
+                      address: "0xAc290Ad4e0c891FDc295ca4F0a6214cf6dC6acDC",
+                  },
+                  {
+                      id: 2,
+                      address: "0xB715B85682B731dB9D5063187C450095c91C57FC",
+                  },
+                  {
+                      id: 22,
+                      address: "0xF7628d84a2BbD9bb9c8E686AC95BB5d55169F3F1",
+                  },
+              ]
+          }
+      },
+      oracles: {
+          cmc: {
+              slug: "mantle",
+              native: "mantle"
+          },
+          coingecko: {
+              slug: "mantle",
+              native: "mantle"
+          },
+          dexscreener: "mantle"
+      },
       uniswap: {
           deployBlock: 63795918,
           poolFactory: "0x0d922Fb1Bc191F64970ac40376643808b4B74Df9",
@@ -1266,6 +1621,27 @@
       safeReorgDistance: 90000,
       externalId: {
           debank: "mobm",
+      },
+      markets: {},
+      bridges: {
+          wanbridge: {
+              requiredConfirmations: 30
+          },
+          wormhole: {
+              chain: "Moonbeam",
+              timeToFinalize: 24,
+          }
+      },
+      oracles: {
+          cmc: {
+              slug: "moonbeam",
+              native: "moonbeam"
+          },
+          coingecko: {
+              slug: "moonbeam",
+              native: "moonbeam",
+          },
+          dexscreener: "moonbeam"
       },
       uniswap: {
           deployBlock: 3340452,
@@ -1351,6 +1727,59 @@
       externalId: {
           zerion: "optimism",
           debank: "op",
+      },
+      markets: {
+          kyberswap: "optimism",
+          oneinch: true,
+          paraswap: {
+              tokenTransferProxy: "0x216B4B4Ba9F3e719726886d34a177484278Bfcae"
+          },
+          openocean: "optimism",
+          zeroex: true,
+      },
+      bridges: {
+          chainlink: {
+              atlasNetworkName: "ethereum-mainnet-optimism-1",
+              routerAddress: "0x3206695CaE29952f4b0c22a169725a865bc8Ce0f",
+              chainSelector: 3734403246176062136n,
+          },
+          rhinofi: "OPTIMISM",
+          stargate: {
+              endpointID: 30111,
+              blockConfirmations: 20,
+              pools: [
+                  {
+                      id: 13,
+                      address: "0xe8CDF27AcD73a434D661C84887215F7598e7d0d3",
+                  },
+                  {
+                      id: 1,
+                      address: "0xcE8CcA271Ebc0533920C83d39F417ED6A0abB7D0",
+                  },
+                  {
+                      id: 2,
+                      address: "0x19cFCE47eD54a88614648DC3f19A5980097007dD",
+                  },
+              ]
+          },
+          wanbridge: {
+              requiredConfirmations: 1
+          },
+          wormhole: {
+              chain: "Optimism",
+              timeToFinalize: 1026,
+          }
+      },
+      oracles: {
+          cmc: {
+              slug: "optimism-ethereum",
+              native: "ethereum"
+          },
+          coingecko: {
+              slug: "optimistic-ethereu",
+              native: "ethereum"
+          },
+          dexscreener: "optimism"
       },
       oku: {
           limitOrderRegistryDeployBlock: 105276132,
@@ -1574,6 +2003,57 @@
           zerion: "polygon",
           debank: "matic",
       },
+      markets: {
+          airswap: true,
+          kyberswap: "polygon",
+          oneinch: true,
+          paraswap: {
+              tokenTransferProxy: "0x216b4b4ba9f3e719726886d34a177484278bfcae"
+          },
+          propellerswap: "polygon",
+          openocean: "polygon",
+          zeroex: true,
+      },
+      bridges: {
+          chainlink: {
+              atlasNetworkName: "polygon-mainnet",
+              routerAddress: "0x849c5ED5a80F5B408Dd4969b78c2C8fdf0565Bfe",
+              chainSelector: 4051577828743386545n,
+          },
+          rhinofi: "MATIC_POS",
+          stargate: {
+              endpointID: 30109,
+              blockConfirmations: 512,
+              pools: [
+                  {
+                      id: 1,
+                      address: "0x9Aa02D4Fae7F58b8E8f34c66E756cC734DAc7fe4",
+                  },
+                  {
+                      id: 2,
+                      address: "0xd47b03ee6d86Cf251ee7860FB2ACf9f91B9fD4d7",
+                  },
+              ]
+          },
+          wanbridge: {
+              requiredConfirmations: 500
+          },
+          wormhole: {
+              chain: "Polygon",
+              timeToFinalize: 66,
+          }
+      },
+      oracles: {
+          cmc: {
+              slug: "polygon",
+              native: "polygon"
+          },
+          coingecko: {
+              slug: "polygon-pos",
+              native: "matic-network"
+          },
+          dexscreener: "polygon"
+      },
       uniswap: {
           deployBlock: 22757547,
           poolFactory: "0x1F98431c8aD98523631AE4a59f267346ea31F984",
@@ -1789,6 +2269,18 @@
       logoUrl: "https://assets.oku.trade/rootstock-logo.svg",
       safeReorgDistance: 90000,
       externalId: {},
+      markets: {},
+      bridges: {},
+      oracles: {
+          cmc: {
+              slug: "rsk-smart-bitcoin",
+              native: "rsk-smart-bitcoin"
+          },
+          coingecko: {
+              slug: "rootstock",
+              native: "rootstock"
+          },
+      },
       blockExplorers: {
           default: {
               name: "Blockscout",
@@ -1870,6 +2362,42 @@
       externalId: {
           zerion: "scroll",
       },
+      markets: {
+          kyberswap: "scroll",
+          openocean: "scroll"
+      },
+      bridges: {
+          rhinofi: "SCROLL",
+          stargate: {
+              endpointID: 30214,
+              blockConfirmations: 20,
+              pools: [
+                  {
+                      id: 13,
+                      address: "0xC2b638Cb5042c1B3c5d5C969361fB50569840583",
+                  },
+                  {
+                      id: 1,
+                      address: "0x3Fc69CC4A842838bCDC9499178740226062b14E4",
+                  },
+              ]
+          },
+          wormhole: {
+              chain: "Scroll",
+              timeToFinalize: 1800,
+          }
+      },
+      oracles: {
+          cmc: {
+              slug: "scroll",
+              native: "ethereum"
+          },
+          coingecko: {
+              slug: "scroll",
+              native: "ethereum",
+          },
+          dexscreener: "scroll"
+      },
       uniswap: {
           deployBlock: 1367,
           multicall2: "0x3b615B1AC55bc34e51a81D3dea67467F32bcb8C2",
@@ -1940,6 +2468,38 @@
       logoUrl: "https://assets.oku.trade/sei-logo.svg",
       safeReorgDistance: 90000,
       externalId: {},
+      markets: {},
+      bridges: {
+          stargate: {
+              endpointID: 30280,
+              blockConfirmations: 20,
+              pools: [
+                  {
+                      id: 13,
+                      address: '0x5c386D85b1B82FD9Db681b9176C8a4248bb6345B',
+                  },
+                  {
+                      id: 1,
+                      address: '0x45d417612e177672958dC0537C45a8f8d754Ac2E',
+                  },
+                  {
+                      id: 2,
+                      address: '0x0dB9afb4C33be43a0a0e396Fd1383B4ea97aB10a',
+                  },
+              ]
+          }
+      },
+      oracles: {
+          cmc: {
+              slug: "sei",
+              native: "sei"
+          },
+          coingecko: {
+              slug: "sei-v2",
+              native: "sei-network"
+          },
+          dexscreener: "seiv2"
+      },
       blockExplorers: {
           default: {
               name: "Seitrace",
@@ -2019,6 +2579,30 @@
       logoUrl: "https://assets.oku.trade/taiko-logo.svg",
       safeReorgDistance: 90000,
       externalId: {},
+      markets: {},
+      bridges: {
+          rhinofi: "TAIKO",
+          stargate: {
+              endpointID: 30290,
+              blockConfirmations: 20,
+              pools: [
+                  {
+                      id: 1,
+                      address: "0x77C71633C34C3784ede189d74223122422492a0f",
+                  },
+                  {
+                      id: 2,
+                      address: "0x1C10CC06DC6D35970d1D53B2A23c76ef370d4135",
+                  },
+              ]
+          }
+      },
+      oracles: {
+          coingecko: {
+              slug: "taiko",
+              native: "ethereum"
+          }
+      },
       blockExplorers: {
           default: {
               name: "Taikoscan",
@@ -2103,6 +2687,23 @@
       externalId: {
           zerion: "polygon-zkevm",
       },
+      markets: {
+          kyberswap: "polygon-zkevm",
+          paraswap: {
+              tokenTransferProxy: "0xc8a21fcd5a100c3ecc037c97e2f9c53a8d3a02a1"
+          },
+          openocean: "polygon_zkevm"
+      },
+      bridges: {
+          rhinofi: "ZKEVM"
+      },
+      oracles: {
+          coingecko: {
+              slug: "polygon-zkevm",
+              native: "ethereum"
+          },
+          dexscreener: "polygonzkevm"
+      },
       uniswap: {
           deployBlock: 8466867,
           poolFactory: "0xff83c3c800Fec21de45C5Ec30B69ddd5Ee60DFC2",
@@ -2181,8 +2782,21 @@
       sortIndex: 4,
       logoUrl: "https://assets.oku.trade/zklink-logo.svg",
       safeReorgDistance: 90000,
-      externalId: {
-          zerion: "",
+      externalId: {},
+      markets: {},
+      bridges: {},
+      oracles: {
+          coingecko: {
+              slug: "zklink-nova",
+              native: "ethereum"
+          }
+      },
+      blockExplorers: {
+          default: {
+              name: "zkLink Nova Block Explorer",
+              url: "https://explorer.zklink.io/",
+              apiUrl: "https://explorer-api.zklink.io/api",
+          }
       },
       initCodeHash: "0x010013f177ea1fcbc4520f9a3ca7cd2d1d77959e05aa66484027cb38e712aeed",
       uniswap: {
@@ -2256,6 +2870,26 @@
       safeReorgDistance: 90000,
       externalId: {
           zerion: "zksync-era",
+      },
+      markets: {
+          kyberswap: "zksync",
+          oneinch: true,
+          propellerswap: "zksync",
+          openocean: "zksync"
+      },
+      bridges: {
+          rhinofi: "ZKSYNC"
+      },
+      oracles: {
+          cmc: {
+              slug: "zksync",
+              native: "ethereum"
+          },
+          coingecko: {
+              slug: "zksync",
+              native: "ethereum"
+          },
+          dexscreener: "zksync"
       },
       initCodeHash: "0x010013f177ea1fcbc4520f9a3ca7cd2d1d77959e05aa66484027cb38e712aeed",
       blockExplorers: {

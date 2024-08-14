@@ -19,6 +19,9 @@ const OkuMetadata = index?.getInterface("OkuMetadata");
 const OkuPricingMetadata = index?.getInterface("OkuPricingMetadata");
 const ChainContract = index?.getInterface("chainContract");
 const BlockExplorer = index?.getInterface("blockExplorer");
+const Markets = index?.getInterface("Markets");
+const Bridges = index?.getInterface("Bridges");
+const Oracles = index?.getInterface("Oracles");
 
 const rootDir = `${__dirname}/dist/networks`;
 mkdirSync(rootDir, { recursive: true });
@@ -66,8 +69,14 @@ const getPropType = (x: morph.PropertySignature): string => {
   if (nodeType === "float64") {
     return "float64";
   }
-  if (type.isObject() && nodeType) {
+  if (nodeType === "any") {
+   return "interface{}" 
+  }
+  if (type.isObject() && nodeType && nodeType.charAt(0) !== '{') {
     return snakeToCamel(nodeType);
+  }
+  if (type.isObject()) {
+    return "map[string]interface{}"
   }
   if (x.getName() == "contracts") {
     return "map[string]ChainContract";
@@ -80,6 +89,9 @@ const getPropType = (x: morph.PropertySignature): string => {
   }
   if (type.isString()) {
     return "string";
+  }
+  if (type.isBoolean()) {
+    return "bool"
   }
   return "";
 };
@@ -150,6 +162,9 @@ const output = ejs.render(networksString.toString(), {
   BlockExplorer,
   OkuMetadata,
   OkuPricingMetadata,
+  Markets,
+  Bridges,
+  Oracles
 });
 
 const main = async () => {

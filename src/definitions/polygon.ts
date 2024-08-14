@@ -14,6 +14,57 @@ export const polygon = makeConfig({
     zerion: "polygon",
     debank: "matic",
   },
+  markets: {
+    airswap: true,
+    kyberswap: "polygon",
+    oneinch: true,
+    paraswap: {
+      tokenTransferProxy: "0x216b4b4ba9f3e719726886d34a177484278bfcae"
+    },
+    propellerswap: "polygon",
+    openocean: "polygon",
+    zeroex: true,
+  },
+  bridges: {
+    chainlink: {
+      atlasNetworkName: "polygon-mainnet",
+      routerAddress: "0x849c5ED5a80F5B408Dd4969b78c2C8fdf0565Bfe",
+      chainSelector: 4051577828743386545n,
+    },
+    rhinofi: "MATIC_POS",
+    stargate: {
+      endpointID: 30109,
+      blockConfirmations: 512,
+      pools: [
+        {
+          id: 1,
+          address: "0x9Aa02D4Fae7F58b8E8f34c66E756cC734DAc7fe4",
+        },
+        {
+          id: 2,
+          address: "0xd47b03ee6d86Cf251ee7860FB2ACf9f91B9fD4d7",
+        },
+      ]
+    },
+    wanbridge: {
+      requiredConfirmations: 500
+    },
+    wormhole: {
+      chain: "Polygon",
+      timeToFinalize: 66,
+    }
+  },
+  oracles: {
+    cmc: {
+      slug: "polygon",
+      native: "polygon"
+    },
+    coingecko: {
+      slug: "polygon-pos",
+      native: "matic-network"
+    },
+    dexscreener: "polygon"
+  },
   uniswap: {
     deployBlock: 22757547,
     poolFactory: "0x1F98431c8aD98523631AE4a59f267346ea31F984",

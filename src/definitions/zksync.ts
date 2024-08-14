@@ -10,6 +10,26 @@ export const zkSync = makeConfig({
   externalId: {
     zerion: "zksync-era",
   },
+  markets: {
+    kyberswap: "zksync",
+    oneinch: true,
+    propellerswap: "zksync",
+    openocean: "zksync"
+  },
+  bridges: {
+    rhinofi: "ZKSYNC"
+  },
+  oracles: {
+    cmc: {
+      slug: "zksync",
+      native: "ethereum"
+    },
+    coingecko: {
+      slug: "zksync",
+      native: "ethereum"
+    },
+    dexscreener: "zksync"
+  },
   initCodeHash:
     "0x010013f177ea1fcbc4520f9a3ca7cd2d1d77959e05aa66484027cb38e712aeed",
   blockExplorers: {

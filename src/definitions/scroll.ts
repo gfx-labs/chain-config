@@ -13,6 +13,42 @@ export const scroll = makeConfig({
   externalId: {
     zerion: "scroll",
   },
+  markets: {
+    kyberswap: "scroll",
+    openocean: "scroll"
+  },
+  bridges: {
+    rhinofi: "SCROLL",
+    stargate: {
+      endpointID: 30214,
+      blockConfirmations: 20,
+      pools: [
+        {
+          id: 13,
+          address: "0xC2b638Cb5042c1B3c5d5C969361fB50569840583",
+        },
+        {
+          id: 1,
+          address: "0x3Fc69CC4A842838bCDC9499178740226062b14E4",
+        },
+      ]
+    },
+    wormhole: {
+      chain: "Scroll",
+      timeToFinalize: 1800,
+    }
+  },
+  oracles: {
+    cmc: {
+      slug: "scroll",
+      native: "ethereum"
+    },
+    coingecko: {
+      slug: "scroll",
+      native: "ethereum",
+    },
+    dexscreener: "scroll"
+  },
   uniswap: {
     deployBlock: 1367,
     multicall2: "0x3b615B1AC55bc34e51a81D3dea67467F32bcb8C2",

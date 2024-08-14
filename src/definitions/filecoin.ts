@@ -29,6 +29,15 @@ export const filecoin = makeConfig({
   },
   logoUrl: "https://assets.oku.trade/filecoin-logo.svg",
   externalId: {},
+  markets: {},
+  bridges: {},
+  oracles: {
+    coingecko: {
+      slug: "filecoin",
+      native: "filecoin"
+    },
+    dexscreener: "filecoin"
+  },
   uniswap: {
     deployBlock: 3195837,
     poolFactory: "0xB4C47eD546Fc31E26470a186eC2C5F19eF09BA41",

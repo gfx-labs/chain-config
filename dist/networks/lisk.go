@@ -12,7 +12,7 @@ var Lisk Network = Network{
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {
 			Url:    "https://blockscout.lisk.com",
-			ApiUrl: "https://blockscout.lisk.com/api",
+			ApiUrl: "https://blockscout.lisk.com/api/v2",
 		},
 	},
 	DefaultPool:  common.HexToAddress("0x3a670179bdece7eb4f570e30ee9d560f7ff4fac3"),

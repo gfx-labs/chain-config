@@ -45,6 +45,66 @@ export interface TokenMetadata {
   usdcAddress?: Address;
 }
 
+export interface Markets {
+  airswap?: boolean,
+  enso?: any,
+  kyberswap?: string,
+  odos?: any,
+  okx?: any,
+  oneinch?: boolean,
+  openocean?: string,
+  paraswap?: {
+    tokenTransferProxy: string
+  },
+  propellerswap?: string,
+  usor?: any,
+  zeroex?: boolean,
+}
+
+export interface Bridges {
+  deswap?: any,
+  bungee?: any,
+  lifi?: any,
+  across?: any,
+  orbiter?: any,
+  wormhole?: {
+    chain: string,
+    timeToFinalize: number,
+  },
+  rhinofi?: string,
+  chainlink?: {
+    atlasNetworkName: string,
+    routerAddress: string,
+    chainSelector: bigint,
+  },
+  squidrouter?: any,
+  wanbridge?: {
+    requiredConfirmations: number
+  },
+  stargate?: {
+    endpointID: number,
+    blockConfirmations: number,
+    pools: {
+      id: number,
+      address: string,
+    }[],
+  },
+}
+
+export interface Oracles {
+  cmc?: {
+    slug: string,
+    native: string
+  },
+  coingecko?: {
+    slug: string,
+    native: string
+  },
+  dexguru?: any,
+  dexscreener?: string,
+  oku?: any,
+}
+
 export interface IChainInfo<
   formatters extends ChainFormatters | undefined = ChainFormatters | undefined,
 > extends Chain<formatters> {
@@ -59,12 +119,15 @@ export interface IChainInfo<
   tokenList: ReadonlyArray<{ symbol: string; address: Address }>;
   stables: ReadonlyArray<Address>;
   watchlist: ReadonlyArray<Address>;
-  externalId?: {
+  externalId: {
     zerion?: string;
     debank?: string;
   };
-  initCodeHash: Hash;
+  markets: Markets;
+  bridges: Bridges;
+  oracles: Oracles;
 
+  initCodeHash: Hash;
   blockTimeSeconds: float64;
 
   uniswap: UniswapMetadata;

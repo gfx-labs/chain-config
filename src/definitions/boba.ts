@@ -14,6 +14,15 @@ export const boba = makeConfig({
   externalId: {
     debank: "boba",
   },
+  markets: {},
+  bridges: {},
+  oracles: {
+    coingecko: {
+      slug: "boba",
+      native: "ethereum"
+    },
+    dexscreener: "boba"
+  },
   blockExplorers: {
     default: {
       name: "Bobascan",

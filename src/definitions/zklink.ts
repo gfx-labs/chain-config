@@ -8,8 +8,21 @@ export const zkLink = makeConfig({
   sortIndex: 4,
   logoUrl: "https://assets.oku.trade/zklink-logo.svg",
   safeReorgDistance: 90000,
-  externalId: {
-    zerion: "",
+  externalId: {},
+  markets: {},
+  bridges: {},
+  oracles: {
+    coingecko: {
+      slug: "zklink-nova",
+      native: "ethereum"
+    }
+  },
+  blockExplorers: {
+    default: {
+      name: "zkLink Nova Block Explorer",
+      url: "https://explorer.zklink.io/",
+      apiUrl: "https://explorer-api.zklink.io/api",
+    }
   },
   initCodeHash:
     "0x010013f177ea1fcbc4520f9a3ca7cd2d1d77959e05aa66484027cb38e712aeed",

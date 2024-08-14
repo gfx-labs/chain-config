@@ -12,6 +12,18 @@ export const rootstock = makeConfig({
   logoUrl: "https://assets.oku.trade/rootstock-logo.svg",
   safeReorgDistance: 90000,
   externalId: {},
+  markets: {},
+  bridges: {},
+  oracles: {
+    cmc: {
+      slug: "rsk-smart-bitcoin",
+      native: "rsk-smart-bitcoin"
+    },
+    coingecko: {
+      slug: "rootstock",
+      native: "rootstock"
+    },
+  },
   blockExplorers: {
     default: {
       name: "Blockscout",

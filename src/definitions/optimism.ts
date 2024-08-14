@@ -15,6 +15,59 @@ export const optimism = makeConfig({
     zerion: "optimism",
     debank: "op",
   },
+  markets: {
+    kyberswap: "optimism",
+    oneinch: true,
+    paraswap: {
+      tokenTransferProxy: "0x216B4B4Ba9F3e719726886d34a177484278Bfcae"
+    },
+    openocean: "optimism",
+    zeroex: true,
+  },
+  bridges: {
+    chainlink: {
+      atlasNetworkName: "ethereum-mainnet-optimism-1",
+      routerAddress: "0x3206695CaE29952f4b0c22a169725a865bc8Ce0f",
+      chainSelector: 3734403246176062136n,
+    },
+    rhinofi: "OPTIMISM",
+    stargate: {
+      endpointID: 30111,
+      blockConfirmations: 20,
+      pools: [
+        {
+          id: 13,
+          address: "0xe8CDF27AcD73a434D661C84887215F7598e7d0d3",
+        },
+        {
+          id: 1,
+          address: "0xcE8CcA271Ebc0533920C83d39F417ED6A0abB7D0",
+        },
+        {
+          id: 2,
+          address: "0x19cFCE47eD54a88614648DC3f19A5980097007dD",
+        },
+      ]
+    },
+    wanbridge: {
+      requiredConfirmations: 1
+    },
+    wormhole: {
+      chain: "Optimism",
+      timeToFinalize: 1026,
+    }
+  },
+  oracles: {
+    cmc: {
+      slug: "optimism-ethereum",
+      native: "ethereum"
+    },
+    coingecko: {
+      slug: "optimistic-ethereum",
+      native: "ethereum"
+    },
+    dexscreener: "optimism"
+  },
   oku: {
     limitOrderRegistryDeployBlock: 105276132,
     limitOrderRegistry: "0x54dF9e11c7933a9cA3BD1E540B63dA15edAe40bf",

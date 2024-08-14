@@ -12,6 +12,23 @@ export const manta = makeConfig({
   logoUrl: "https://assets.oku.trade/manta-logo.png",
   safeReorgDistance: 90000,
   externalId: {},
+  markets: {
+    openocean: "manta"
+  },
+  bridges: {
+    rhinofi: "MANTA"
+  },
+  oracles: {
+    cmc: {
+      slug: "manta-network",
+      native: "ethereum"
+    },
+    coingecko: {
+      slug: "manta-pacific",
+      native: "ethereum"
+    },
+    dexscreener: "manta"
+  },
   uniswap: {
     deployBlock: 1191705,
     poolFactory: "0x06D830e15081f65923674268121FF57Cc54e4e23",

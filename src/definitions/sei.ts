@@ -10,6 +10,38 @@ export const sei = makeConfig({
   logoUrl: "https://assets.oku.trade/sei-logo.svg",
   safeReorgDistance: 90000,
   externalId: {},
+  markets: {},
+  bridges: {
+    stargate: {
+      endpointID: 30280,
+      blockConfirmations: 20,
+      pools: [
+        {
+          id: 13,
+          address: '0x5c386D85b1B82FD9Db681b9176C8a4248bb6345B',
+        },
+        {
+          id: 1,
+          address: '0x45d417612e177672958dC0537C45a8f8d754Ac2E',
+        },
+        {
+          id: 2,
+          address: '0x0dB9afb4C33be43a0a0e396Fd1383B4ea97aB10a',
+        },
+      ]  
+    }
+  },
+  oracles: {
+    cmc: {
+      slug: "sei",
+      native: "sei"
+    },
+    coingecko: {
+      slug: "sei-v2",
+      native: "sei-network"
+    },
+    dexscreener: "seiv2"
+  },
   blockExplorers: {
     default: {
       name: "Seitrace",

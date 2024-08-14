@@ -144,6 +144,9 @@ type Network struct {
 	Stables           []common.Address
 	Watchlist         []common.Address
 	ExternalId        map[string]string
+	Markets           Markets
+	Bridges           Bridges
+	Oracles           Oracles
 	InitCodeHash      common.Hash
 	BlockTimeSeconds  float64
 	Uniswap           UniswapMetadata
@@ -261,4 +264,40 @@ type ChainContract struct {
 type BlockExplorer struct {
 	Url    string
 	ApiUrl string
+}
+
+type Markets struct {
+	Airswap       bool
+	Enso          interface{}
+	Kyberswap     string
+	Odos          interface{}
+	Okx           interface{}
+	Oneinch       bool
+	Openocean     string
+	Paraswap      map[string]interface{}
+	Propellerswap string
+	Usor          interface{}
+	Zeroex        bool
+}
+
+type Bridges struct {
+	Deswap      interface{}
+	Bungee      interface{}
+	Lifi        interface{}
+	Across      interface{}
+	Orbiter     interface{}
+	Wormhole    map[string]interface{}
+	Rhinofi     string
+	Chainlink   map[string]interface{}
+	Squidrouter interface{}
+	Wanbridge   map[string]interface{}
+	Stargate    map[string]interface{}
+}
+
+type Oracles struct {
+	Cmc         map[string]interface{}
+	Coingecko   map[string]interface{}
+	Dexguru     interface{}
+	Dexscreener string
+	Oku         interface{}
 }

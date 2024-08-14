@@ -14,6 +14,38 @@ export const linea = makeConfig({
   externalId: {
     zerion: "linea",
   },
+  markets: {
+    kyberswap: "linea",
+    openocean: "linea",
+  },
+  bridges: {
+    rhinofi: "LINEA",
+    stargate: {
+      endpointID: 30183,
+      blockConfirmations: 20,
+      pools: [
+        {
+          id: 13,
+          address: "0x81F6138153d473E8c5EcebD3DC8Cd4903506B075",
+        },
+      ]
+    },
+    wormhole: {
+      chain: "Linea",
+      timeToFinalize: 1800,
+    }
+  },
+  oracles: {
+    cmc: {
+      slug: "linea",
+      native: "ethereum"
+    },
+    coingecko: {
+      slug: "linea",
+      native: "ethereum"
+    },
+    dexscreener: "linea"
+  },
   uniswap: {
     deployBlock: 25248,
     poolFactory: "0x31FAfd4889FA1269F7a13A66eE0fB458f27D72A9",
