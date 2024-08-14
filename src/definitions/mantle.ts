@@ -10,6 +10,44 @@ export const mantle = makeConfig({
   logoUrl: "https://assets.oku.trade/mantle-logo.png",
   safeReorgDistance: 90000,
   externalId: {},
+  markets: {
+    openocean: "mantle"
+  },
+  bridges: {
+    stargate: {
+      endpointID: 30181,
+      blockConfirmations: 20,
+      pools: [
+        {
+          id: 13,
+          address: "0x4c1d3Fc3fC3c177c3b633427c2F769276c547463",
+        },
+        {
+          id: 1,
+          address: "0xAc290Ad4e0c891FDc295ca4F0a6214cf6dC6acDC",
+        },
+        {
+          id: 2,
+          address: "0xB715B85682B731dB9D5063187C450095c91C57FC",
+        },
+        {
+          id: 22,
+          address: "0xF7628d84a2BbD9bb9c8E686AC95BB5d55169F3F1",
+        },
+      ]
+    }
+  },
+  oracles: {
+    cmc: {
+      slug: "mantle",
+      native: "mantle"
+    },
+    coingecko: {
+      slug: "mantle",
+      native: "mantle"
+    },
+    dexscreener: "mantle"
+  },
   uniswap: {
     deployBlock: 63795918,
     poolFactory: "0x0d922Fb1Bc191F64970ac40376643808b4B74Df9",

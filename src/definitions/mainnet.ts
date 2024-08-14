@@ -14,6 +14,69 @@ export const mainnet = makeConfig({
     zerion: "ethereum",
     debank: "eth",
   },
+  markets: {
+    airswap: true,
+    kyberswap: "ethereum",
+    oneinch: true,
+    paraswap: {
+      tokenTransferProxy: "0x216b4b4ba9f3e719726886d34a177484278bfcae"
+    },
+    propellerswap: "ethereum",
+    openocean: "eth",
+    zeroex: true,
+  },
+  bridges: {
+    chainlink: {
+      atlasNetworkName: "ethereum-mainnet",
+      routerAddress: "0x80226fc0Ee2b096224EeAc085Bb9a8cba1146f7D",
+      chainSelector: 5009297550715157269n,
+    },
+    rhinofi: "ETHEREUM",
+    stargate: {
+      endpointID: 30101,
+      blockConfirmations: 15,
+      pools: [
+        {
+          id: 13,
+          address: "0x77b2043768d28E9C9aB44E1aBfC95944bcE57931"
+        },
+        {
+          id: 1,
+          address: "0xc026395860Db2d07ee33e05fE50ed7bD583189C7",
+        },
+        {
+          id: 2,
+          address: "0x933597a323Eb81cAe705C5bC29985172fd5A3973",
+        },
+        {
+          id: 17,
+          address: "0xcDafB1b2dB43f366E48e6F614b8DCCBFeeFEEcD3",
+        },
+        {
+          id: 22,
+          address: "0x268Ca24DAefF1FaC2ed883c598200CcbB79E931D",
+        },
+      ]
+    },
+    wanbridge: {
+      requiredConfirmations: 6
+    },
+    wormhole: {
+      chain: "Ethereum",
+      timeToFinalize: 975,
+    }
+  },
+  oracles: {
+    cmc: {
+      slug: "ethereum",
+      native: "ethereum"
+    },
+    coingecko: {
+      slug: "ethereum",
+      native: "ethereum"
+    },
+    dexscreener: "ethereum"
+  },
   uniswap: {
     deployBlock: 12369621,
     poolFactory: "0x1F98431c8aD98523631AE4a59f267346ea31F984",

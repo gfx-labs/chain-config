@@ -13,6 +13,23 @@ export const polygonZkEvm = makeConfig({
   externalId: {
     zerion: "polygon-zkevm",
   },
+  markets: {
+    kyberswap: "polygon-zkevm",
+    paraswap: {
+      tokenTransferProxy: "0xc8a21fcd5a100c3ecc037c97e2f9c53a8d3a02a1"
+    },
+    openocean: "polygon_zkevm"
+  },
+  bridges: {
+    rhinofi: "ZKEVM"
+  },
+  oracles: {
+    coingecko: {
+      slug: "polygon-zkevm",
+      native: "ethereum"
+    },
+    dexscreener: "polygonzkevm"
+  },
   uniswap: {
     deployBlock: 8466867,
     poolFactory: "0xff83c3c800Fec21de45C5Ec30B69ddd5Ee60DFC2",

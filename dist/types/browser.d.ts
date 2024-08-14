@@ -9,6 +9,50 @@ declare const arbitrum: Readonly<{
         zerion: string;
         debank: string;
     };
+    markets: {
+        kyberswap: string;
+        oneinch: true;
+        paraswap: {
+            tokenTransferProxy: string;
+        };
+        propellerswap: string;
+        openocean: string;
+        zeroex: true;
+    };
+    bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+        };
+        rhinofi: string;
+        stargate: {
+            endpointID: number;
+            blockConfirmations: number;
+            pools: {
+                id: number;
+                address: string;
+            }[];
+        };
+        wanbridge: {
+            requiredConfirmations: number;
+        };
+        wormhole: {
+            chain: string;
+            timeToFinalize: number;
+        };
+    };
+    oracles: {
+        cmc: {
+            slug: string;
+            native: string;
+        };
+        coingecko: {
+            slug: string;
+            native: string;
+        };
+        dexscreener: string;
+    };
     uniswap: {
         deployBlock: number;
         poolFactory: "0x1F98431c8aD98523631AE4a59f267346ea31F984";
@@ -130,6 +174,49 @@ declare const base: Readonly<{
     externalId: {
         zerion: string;
         debank: string;
+    };
+    markets: {
+        kyberswap: string;
+        oneinch: true;
+        paraswap: {
+            tokenTransferProxy: string;
+        };
+        openocean: string;
+        zeroex: true;
+    };
+    bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+        };
+        rhinofi: string;
+        stargate: {
+            endpointID: number;
+            blockConfirmations: number;
+            pools: {
+                id: number;
+                address: string;
+            }[];
+        };
+        wanbridge: {
+            requiredConfirmations: number;
+        };
+        wormhole: {
+            chain: string;
+            timeToFinalize: number;
+        };
+    };
+    oracles: {
+        cmc: {
+            slug: string;
+            native: string;
+        };
+        coingecko: {
+            slug: string;
+            native: string;
+        };
+        dexscreener: string;
     };
     safeReorgDistance: 90000;
     uniswap: {
@@ -464,6 +551,28 @@ declare const blast: Readonly<{
     externalId: {
         zerion: string;
     };
+    markets: {
+        kyberswap: string;
+        openocean: string;
+    };
+    bridges: {
+        rhinofi: string;
+        wormhole: {
+            chain: string;
+            timeToFinalize: number;
+        };
+    };
+    oracles: {
+        cmc: {
+            slug: string;
+            native: string;
+        };
+        coingecko: {
+            slug: string;
+            native: string;
+        };
+        dexscreener: string;
+    };
     uniswap: {
         deployBlock: number;
         poolFactory: "0x792edAdE80af5fC680d96a2eD80A44247D2Cf6Fd";
@@ -556,6 +665,15 @@ declare const boba: Readonly<{
     safeReorgDistance: 90000;
     externalId: {
         debank: string;
+    };
+    markets: {};
+    bridges: {};
+    oracles: {
+        coingecko: {
+            slug: string;
+            native: string;
+        };
+        dexscreener: string;
     };
     blockExplorers: {
         default: {
@@ -665,6 +783,51 @@ declare const bsc: Readonly<{
     externalId: {
         zerion: string;
         debank: string;
+    };
+    markets: {
+        airswap: true;
+        kyberswap: string;
+        oneinch: true;
+        paraswap: {
+            tokenTransferProxy: string;
+        };
+        propellerswap: string;
+        openocean: string;
+        zeroex: true;
+    };
+    bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+        };
+        rhinofi: string;
+        stargate: {
+            endpointID: number;
+            blockConfirmations: number;
+            pools: {
+                id: number;
+                address: string;
+            }[];
+        };
+        wanbridge: {
+            requiredConfirmations: number;
+        };
+        wormhole: {
+            chain: string;
+            timeToFinalize: number;
+        };
+    };
+    oracles: {
+        cmc: {
+            slug: string;
+            native: string;
+        };
+        coingecko: {
+            slug: string;
+            native: string;
+        };
+        dexscreener: string;
     };
     uniswap: {
         deployBlock: number;
@@ -779,6 +942,15 @@ declare const filecoin: Readonly<{
     };
     logoUrl: "https://assets.oku.trade/filecoin-logo.svg";
     externalId: {};
+    markets: {};
+    bridges: {};
+    oracles: {
+        coingecko: {
+            slug: string;
+            native: string;
+        };
+        dexscreener: string;
+    };
     uniswap: {
         deployBlock: number;
         poolFactory: "0xB4C47eD546Fc31E26470a186eC2C5F19eF09BA41";
@@ -878,6 +1050,36 @@ declare const linea: Readonly<{
     externalId: {
         zerion: string;
     };
+    markets: {
+        kyberswap: string;
+        openocean: string;
+    };
+    bridges: {
+        rhinofi: string;
+        stargate: {
+            endpointID: number;
+            blockConfirmations: number;
+            pools: {
+                id: number;
+                address: string;
+            }[];
+        };
+        wormhole: {
+            chain: string;
+            timeToFinalize: number;
+        };
+    };
+    oracles: {
+        cmc: {
+            slug: string;
+            native: string;
+        };
+        coingecko: {
+            slug: string;
+            native: string;
+        };
+        dexscreener: string;
+    };
     uniswap: {
         deployBlock: number;
         poolFactory: "0x31FAfd4889FA1269F7a13A66eE0fB458f27D72A9";
@@ -970,6 +1172,21 @@ declare const lisk: Readonly<{
     externalId: {
         zerion: string;
     };
+    markets: {};
+    bridges: {};
+    oracles: {
+        coingecko: {
+            slug: string;
+            native: string;
+        };
+    };
+    blockExplorers: {
+        default: {
+            name: string;
+            url: string;
+            apiUrl: string;
+        };
+    };
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     uniswap: {
         deployBlock: number;
@@ -1022,13 +1239,6 @@ declare const lisk: Readonly<{
         };
         multicall3: {
             address: "0xA9d71E1dd7ca26F26e656E66d6AA81ed7f745bf0";
-        };
-    };
-    blockExplorers: {
-        readonly default: {
-            readonly name: "Blockscout";
-            readonly url: "https://blockscout.lisk.com";
-            readonly apiUrl: "https://blockscout.lisk.com/api";
         };
     };
     id: 1135;
@@ -1382,6 +1592,51 @@ declare const mainnet: Readonly<{
         zerion: string;
         debank: string;
     };
+    markets: {
+        airswap: true;
+        kyberswap: string;
+        oneinch: true;
+        paraswap: {
+            tokenTransferProxy: string;
+        };
+        propellerswap: string;
+        openocean: string;
+        zeroex: true;
+    };
+    bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+        };
+        rhinofi: string;
+        stargate: {
+            endpointID: number;
+            blockConfirmations: number;
+            pools: {
+                id: number;
+                address: string;
+            }[];
+        };
+        wanbridge: {
+            requiredConfirmations: number;
+        };
+        wormhole: {
+            chain: string;
+            timeToFinalize: number;
+        };
+    };
+    oracles: {
+        cmc: {
+            slug: string;
+            native: string;
+        };
+        coingecko: {
+            slug: string;
+            native: string;
+        };
+        dexscreener: string;
+    };
     uniswap: {
         deployBlock: number;
         poolFactory: "0x1F98431c8aD98523631AE4a59f267346ea31F984";
@@ -1503,6 +1758,23 @@ declare const manta: Readonly<{
     logoUrl: "https://assets.oku.trade/manta-logo.png";
     safeReorgDistance: 90000;
     externalId: {};
+    markets: {
+        openocean: string;
+    };
+    bridges: {
+        rhinofi: string;
+    };
+    oracles: {
+        cmc: {
+            slug: string;
+            native: string;
+        };
+        coingecko: {
+            slug: string;
+            native: string;
+        };
+        dexscreener: string;
+    };
     uniswap: {
         deployBlock: number;
         poolFactory: "0x06D830e15081f65923674268121FF57Cc54e4e23";
@@ -1602,6 +1874,30 @@ declare const mantle: Readonly<{
     logoUrl: "https://assets.oku.trade/mantle-logo.png";
     safeReorgDistance: 90000;
     externalId: {};
+    markets: {
+        openocean: string;
+    };
+    bridges: {
+        stargate: {
+            endpointID: number;
+            blockConfirmations: number;
+            pools: {
+                id: number;
+                address: string;
+            }[];
+        };
+    };
+    oracles: {
+        cmc: {
+            slug: string;
+            native: string;
+        };
+        coingecko: {
+            slug: string;
+            native: string;
+        };
+        dexscreener: string;
+    };
     uniswap: {
         deployBlock: number;
         poolFactory: "0x0d922Fb1Bc191F64970ac40376643808b4B74Df9";
@@ -1692,6 +1988,27 @@ declare const moonbeam: Readonly<{
     safeReorgDistance: 90000;
     externalId: {
         debank: string;
+    };
+    markets: {};
+    bridges: {
+        wanbridge: {
+            requiredConfirmations: number;
+        };
+        wormhole: {
+            chain: string;
+            timeToFinalize: number;
+        };
+    };
+    oracles: {
+        cmc: {
+            slug: string;
+            native: string;
+        };
+        coingecko: {
+            slug: string;
+            native: string;
+        };
+        dexscreener: string;
     };
     uniswap: {
         deployBlock: number;
@@ -1792,6 +2109,49 @@ declare const optimism: Readonly<{
     externalId: {
         zerion: string;
         debank: string;
+    };
+    markets: {
+        kyberswap: string;
+        oneinch: true;
+        paraswap: {
+            tokenTransferProxy: string;
+        };
+        openocean: string;
+        zeroex: true;
+    };
+    bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+        };
+        rhinofi: string;
+        stargate: {
+            endpointID: number;
+            blockConfirmations: number;
+            pools: {
+                id: number;
+                address: string;
+            }[];
+        };
+        wanbridge: {
+            requiredConfirmations: number;
+        };
+        wormhole: {
+            chain: string;
+            timeToFinalize: number;
+        };
+    };
+    oracles: {
+        cmc: {
+            slug: string;
+            native: string;
+        };
+        coingecko: {
+            slug: string;
+            native: string;
+        };
+        dexscreener: string;
     };
     oku: {
         limitOrderRegistryDeployBlock: number;
@@ -2148,6 +2508,51 @@ declare const polygon: Readonly<{
         zerion: string;
         debank: string;
     };
+    markets: {
+        airswap: true;
+        kyberswap: string;
+        oneinch: true;
+        paraswap: {
+            tokenTransferProxy: string;
+        };
+        propellerswap: string;
+        openocean: string;
+        zeroex: true;
+    };
+    bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+        };
+        rhinofi: string;
+        stargate: {
+            endpointID: number;
+            blockConfirmations: number;
+            pools: {
+                id: number;
+                address: string;
+            }[];
+        };
+        wanbridge: {
+            requiredConfirmations: number;
+        };
+        wormhole: {
+            chain: string;
+            timeToFinalize: number;
+        };
+    };
+    oracles: {
+        cmc: {
+            slug: string;
+            native: string;
+        };
+        coingecko: {
+            slug: string;
+            native: string;
+        };
+        dexscreener: string;
+    };
     uniswap: {
         deployBlock: number;
         poolFactory: "0x1F98431c8aD98523631AE4a59f267346ea31F984";
@@ -2262,6 +2667,18 @@ declare const rootstock: Readonly<{
     logoUrl: "https://assets.oku.trade/rootstock-logo.svg";
     safeReorgDistance: 90000;
     externalId: {};
+    markets: {};
+    bridges: {};
+    oracles: {
+        cmc: {
+            slug: string;
+            native: string;
+        };
+        coingecko: {
+            slug: string;
+            native: string;
+        };
+    };
     blockExplorers: {
         default: {
             name: string;
@@ -2362,6 +2779,36 @@ declare const scroll: Readonly<{
     safeReorgDistance: 90000;
     externalId: {
         zerion: string;
+    };
+    markets: {
+        kyberswap: string;
+        openocean: string;
+    };
+    bridges: {
+        rhinofi: string;
+        stargate: {
+            endpointID: number;
+            blockConfirmations: number;
+            pools: {
+                id: number;
+                address: string;
+            }[];
+        };
+        wormhole: {
+            chain: string;
+            timeToFinalize: number;
+        };
+    };
+    oracles: {
+        cmc: {
+            slug: string;
+            native: string;
+        };
+        coingecko: {
+            slug: string;
+            native: string;
+        };
+        dexscreener: string;
     };
     uniswap: {
         deployBlock: number;
@@ -2466,6 +2913,28 @@ declare const sei: Readonly<{
     logoUrl: "https://assets.oku.trade/sei-logo.svg";
     safeReorgDistance: 90000;
     externalId: {};
+    markets: {};
+    bridges: {
+        stargate: {
+            endpointID: number;
+            blockConfirmations: number;
+            pools: {
+                id: number;
+                address: string;
+            }[];
+        };
+    };
+    oracles: {
+        cmc: {
+            slug: string;
+            native: string;
+        };
+        coingecko: {
+            slug: string;
+            native: string;
+        };
+        dexscreener: string;
+    };
     blockExplorers: {
         default: {
             name: string;
@@ -2561,6 +3030,24 @@ declare const taiko: Readonly<{
     logoUrl: "https://assets.oku.trade/taiko-logo.svg";
     safeReorgDistance: 90000;
     externalId: {};
+    markets: {};
+    bridges: {
+        rhinofi: string;
+        stargate: {
+            endpointID: number;
+            blockConfirmations: number;
+            pools: {
+                id: number;
+                address: string;
+            }[];
+        };
+    };
+    oracles: {
+        coingecko: {
+            slug: string;
+            native: string;
+        };
+    };
     blockExplorers: {
         default: {
             name: string;
@@ -2663,6 +3150,23 @@ declare const polygonZkEvm: Readonly<{
     externalId: {
         zerion: string;
     };
+    markets: {
+        kyberswap: string;
+        paraswap: {
+            tokenTransferProxy: string;
+        };
+        openocean: string;
+    };
+    bridges: {
+        rhinofi: string;
+    };
+    oracles: {
+        coingecko: {
+            slug: string;
+            native: string;
+        };
+        dexscreener: string;
+    };
     uniswap: {
         deployBlock: number;
         poolFactory: "0xff83c3c800Fec21de45C5Ec30B69ddd5Ee60DFC2";
@@ -2760,8 +3264,21 @@ declare const zkLink: Readonly<{
     sortIndex: 4;
     logoUrl: "https://assets.oku.trade/zklink-logo.svg";
     safeReorgDistance: 90000;
-    externalId: {
-        zerion: string;
+    externalId: {};
+    markets: {};
+    bridges: {};
+    oracles: {
+        coingecko: {
+            slug: string;
+            native: string;
+        };
+    };
+    blockExplorers: {
+        default: {
+            name: string;
+            url: string;
+            apiUrl: string;
+        };
     };
     initCodeHash: "0x010013f177ea1fcbc4520f9a3ca7cd2d1d77959e05aa66484027cb38e712aeed";
     uniswap: {
@@ -2827,12 +3344,6 @@ declare const zkLink: Readonly<{
             address: "0x825267E0fA5CAe92F98540828a54198dcB3Eaeb5";
         };
     };
-    blockExplorers: {
-        readonly default: {
-            readonly name: "zkLink Nova Block Explorer";
-            readonly url: "https://explorer.zklink.io";
-        };
-    };
     id: 810180;
     name: "zkLink Nova";
     nativeCurrency: {
@@ -2861,6 +3372,26 @@ declare const zkSync: Readonly<{
     safeReorgDistance: 90000;
     externalId: {
         zerion: string;
+    };
+    markets: {
+        kyberswap: string;
+        oneinch: true;
+        propellerswap: string;
+        openocean: string;
+    };
+    bridges: {
+        rhinofi: string;
+    };
+    oracles: {
+        cmc: {
+            slug: string;
+            native: string;
+        };
+        coingecko: {
+            slug: string;
+            native: string;
+        };
+        dexscreener: string;
     };
     initCodeHash: "0x010013f177ea1fcbc4520f9a3ca7cd2d1d77959e05aa66484027cb38e712aeed";
     blockExplorers: {
@@ -3315,6 +3846,63 @@ interface TokenMetadata {
     wbtcAddress?: Address;
     usdcAddress?: Address;
 }
+interface Markets {
+    airswap?: boolean;
+    enso?: any;
+    kyberswap?: string;
+    odos?: any;
+    okx?: any;
+    oneinch?: boolean;
+    openocean?: string;
+    paraswap?: {
+        tokenTransferProxy: string;
+    };
+    propellerswap?: string;
+    usor?: any;
+    zeroex?: boolean;
+}
+interface Bridges {
+    deswap?: any;
+    bungee?: any;
+    lifi?: any;
+    across?: any;
+    orbiter?: any;
+    wormhole?: {
+        chain: string;
+        timeToFinalize: number;
+    };
+    rhinofi?: string;
+    chainlink?: {
+        atlasNetworkName: string;
+        routerAddress: string;
+        chainSelector: bigint;
+    };
+    squidrouter?: any;
+    wanbridge?: {
+        requiredConfirmations: number;
+    };
+    stargate?: {
+        endpointID: number;
+        blockConfirmations: number;
+        pools: {
+            id: number;
+            address: string;
+        }[];
+    };
+}
+interface Oracles {
+    cmc?: {
+        slug: string;
+        native: string;
+    };
+    coingecko?: {
+        slug: string;
+        native: string;
+    };
+    dexguru?: any;
+    dexscreener?: string;
+    oku?: any;
+}
 interface IChainInfo<formatters extends ChainFormatters | undefined = ChainFormatters | undefined> extends Chain<formatters> {
     logoUrl: string;
     nativeLogoUrl: string;
@@ -3330,10 +3918,13 @@ interface IChainInfo<formatters extends ChainFormatters | undefined = ChainForma
     }>;
     stables: ReadonlyArray<Address>;
     watchlist: ReadonlyArray<Address>;
-    externalId?: {
+    externalId: {
         zerion?: string;
         debank?: string;
     };
+    markets: Markets;
+    bridges: Bridges;
+    oracles: Oracles;
     initCodeHash: Hash;
     blockTimeSeconds: float64;
     uniswap: UniswapMetadata;
@@ -3362,6 +3953,50 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     externalId: {
         zerion: string;
         debank: string;
+    };
+    markets: {
+        kyberswap: string;
+        oneinch: true;
+        paraswap: {
+            tokenTransferProxy: string;
+        };
+        propellerswap: string;
+        openocean: string;
+        zeroex: true;
+    };
+    bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+        };
+        rhinofi: string;
+        stargate: {
+            endpointID: number;
+            blockConfirmations: number;
+            pools: {
+                id: number;
+                address: string;
+            }[];
+        };
+        wanbridge: {
+            requiredConfirmations: number;
+        };
+        wormhole: {
+            chain: string;
+            timeToFinalize: number;
+        };
+    };
+    oracles: {
+        cmc: {
+            slug: string;
+            native: string;
+        };
+        coingecko: {
+            slug: string;
+            native: string;
+        };
+        dexscreener: string;
     };
     uniswap: {
         deployBlock: number;
@@ -3479,6 +4114,49 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     externalId: {
         zerion: string;
         debank: string;
+    };
+    markets: {
+        kyberswap: string;
+        oneinch: true;
+        paraswap: {
+            tokenTransferProxy: string;
+        };
+        openocean: string;
+        zeroex: true;
+    };
+    bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+        };
+        rhinofi: string;
+        stargate: {
+            endpointID: number;
+            blockConfirmations: number;
+            pools: {
+                id: number;
+                address: string;
+            }[];
+        };
+        wanbridge: {
+            requiredConfirmations: number;
+        };
+        wormhole: {
+            chain: string;
+            timeToFinalize: number;
+        };
+    };
+    oracles: {
+        cmc: {
+            slug: string;
+            native: string;
+        };
+        coingecko: {
+            slug: string;
+            native: string;
+        };
+        dexscreener: string;
     };
     safeReorgDistance: 90000;
     uniswap: {
@@ -3809,6 +4487,15 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     externalId: {
         debank: string;
     };
+    markets: {};
+    bridges: {};
+    oracles: {
+        coingecko: {
+            slug: string;
+            native: string;
+        };
+        dexscreener: string;
+    };
     blockExplorers: {
         default: {
             name: string;
@@ -3912,6 +4599,28 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     externalId: {
         zerion: string;
     };
+    markets: {
+        kyberswap: string;
+        openocean: string;
+    };
+    bridges: {
+        rhinofi: string;
+        wormhole: {
+            chain: string;
+            timeToFinalize: number;
+        };
+    };
+    oracles: {
+        cmc: {
+            slug: string;
+            native: string;
+        };
+        coingecko: {
+            slug: string;
+            native: string;
+        };
+        dexscreener: string;
+    };
     uniswap: {
         deployBlock: number;
         poolFactory: "0x792edAdE80af5fC680d96a2eD80A44247D2Cf6Fd";
@@ -4002,6 +4711,51 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     externalId: {
         zerion: string;
         debank: string;
+    };
+    markets: {
+        airswap: true;
+        kyberswap: string;
+        oneinch: true;
+        paraswap: {
+            tokenTransferProxy: string;
+        };
+        propellerswap: string;
+        openocean: string;
+        zeroex: true;
+    };
+    bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+        };
+        rhinofi: string;
+        stargate: {
+            endpointID: number;
+            blockConfirmations: number;
+            pools: {
+                id: number;
+                address: string;
+            }[];
+        };
+        wanbridge: {
+            requiredConfirmations: number;
+        };
+        wormhole: {
+            chain: string;
+            timeToFinalize: number;
+        };
+    };
+    oracles: {
+        cmc: {
+            slug: string;
+            native: string;
+        };
+        coingecko: {
+            slug: string;
+            native: string;
+        };
+        dexscreener: string;
     };
     uniswap: {
         deployBlock: number;
@@ -4113,6 +4867,15 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     };
     logoUrl: "https://assets.oku.trade/filecoin-logo.svg";
     externalId: {};
+    markets: {};
+    bridges: {};
+    oracles: {
+        coingecko: {
+            slug: string;
+            native: string;
+        };
+        dexscreener: string;
+    };
     uniswap: {
         deployBlock: number;
         poolFactory: "0xB4C47eD546Fc31E26470a186eC2C5F19eF09BA41";
@@ -4208,6 +4971,51 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     externalId: {
         zerion: string;
         debank: string;
+    };
+    markets: {
+        airswap: true;
+        kyberswap: string;
+        oneinch: true;
+        paraswap: {
+            tokenTransferProxy: string;
+        };
+        propellerswap: string;
+        openocean: string;
+        zeroex: true;
+    };
+    bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+        };
+        rhinofi: string;
+        stargate: {
+            endpointID: number;
+            blockConfirmations: number;
+            pools: {
+                id: number;
+                address: string;
+            }[];
+        };
+        wanbridge: {
+            requiredConfirmations: number;
+        };
+        wormhole: {
+            chain: string;
+            timeToFinalize: number;
+        };
+    };
+    oracles: {
+        cmc: {
+            slug: string;
+            native: string;
+        };
+        coingecko: {
+            slug: string;
+            native: string;
+        };
+        dexscreener: string;
     };
     uniswap: {
         deployBlock: number;
@@ -4328,6 +5136,27 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     externalId: {
         debank: string;
     };
+    markets: {};
+    bridges: {
+        wanbridge: {
+            requiredConfirmations: number;
+        };
+        wormhole: {
+            chain: string;
+            timeToFinalize: number;
+        };
+    };
+    oracles: {
+        cmc: {
+            slug: string;
+            native: string;
+        };
+        coingecko: {
+            slug: string;
+            native: string;
+        };
+        dexscreener: string;
+    };
     uniswap: {
         deployBlock: number;
         poolFactory: "0x28f1158795A3585CaAA3cD6469CD65382b89BB70";
@@ -4422,6 +5251,49 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     externalId: {
         zerion: string;
         debank: string;
+    };
+    markets: {
+        kyberswap: string;
+        oneinch: true;
+        paraswap: {
+            tokenTransferProxy: string;
+        };
+        openocean: string;
+        zeroex: true;
+    };
+    bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+        };
+        rhinofi: string;
+        stargate: {
+            endpointID: number;
+            blockConfirmations: number;
+            pools: {
+                id: number;
+                address: string;
+            }[];
+        };
+        wanbridge: {
+            requiredConfirmations: number;
+        };
+        wormhole: {
+            chain: string;
+            timeToFinalize: number;
+        };
+    };
+    oracles: {
+        cmc: {
+            slug: string;
+            native: string;
+        };
+        coingecko: {
+            slug: string;
+            native: string;
+        };
+        dexscreener: string;
     };
     oku: {
         limitOrderRegistryDeployBlock: number;
@@ -4772,6 +5644,51 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         zerion: string;
         debank: string;
     };
+    markets: {
+        airswap: true;
+        kyberswap: string;
+        oneinch: true;
+        paraswap: {
+            tokenTransferProxy: string;
+        };
+        propellerswap: string;
+        openocean: string;
+        zeroex: true;
+    };
+    bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+        };
+        rhinofi: string;
+        stargate: {
+            endpointID: number;
+            blockConfirmations: number;
+            pools: {
+                id: number;
+                address: string;
+            }[];
+        };
+        wanbridge: {
+            requiredConfirmations: number;
+        };
+        wormhole: {
+            chain: string;
+            timeToFinalize: number;
+        };
+    };
+    oracles: {
+        cmc: {
+            slug: string;
+            native: string;
+        };
+        coingecko: {
+            slug: string;
+            native: string;
+        };
+        dexscreener: string;
+    };
     uniswap: {
         deployBlock: number;
         poolFactory: "0x1F98431c8aD98523631AE4a59f267346ea31F984";
@@ -4883,6 +5800,18 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     logoUrl: "https://assets.oku.trade/rootstock-logo.svg";
     safeReorgDistance: 90000;
     externalId: {};
+    markets: {};
+    bridges: {};
+    oracles: {
+        cmc: {
+            slug: string;
+            native: string;
+        };
+        coingecko: {
+            slug: string;
+            native: string;
+        };
+    };
     blockExplorers: {
         default: {
             name: string;
@@ -4980,6 +5909,36 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     safeReorgDistance: 90000;
     externalId: {
         zerion: string;
+    };
+    markets: {
+        kyberswap: string;
+        openocean: string;
+    };
+    bridges: {
+        rhinofi: string;
+        stargate: {
+            endpointID: number;
+            blockConfirmations: number;
+            pools: {
+                id: number;
+                address: string;
+            }[];
+        };
+        wormhole: {
+            chain: string;
+            timeToFinalize: number;
+        };
+    };
+    oracles: {
+        cmc: {
+            slug: string;
+            native: string;
+        };
+        coingecko: {
+            slug: string;
+            native: string;
+        };
+        dexscreener: string;
     };
     uniswap: {
         deployBlock: number;
@@ -5081,6 +6040,23 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     externalId: {
         zerion: string;
     };
+    markets: {
+        kyberswap: string;
+        paraswap: {
+            tokenTransferProxy: string;
+        };
+        openocean: string;
+    };
+    bridges: {
+        rhinofi: string;
+    };
+    oracles: {
+        coingecko: {
+            slug: string;
+            native: string;
+        };
+        dexscreener: string;
+    };
     uniswap: {
         deployBlock: number;
         poolFactory: "0xff83c3c800Fec21de45C5Ec30B69ddd5Ee60DFC2";
@@ -5177,6 +6153,26 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     safeReorgDistance: 90000;
     externalId: {
         zerion: string;
+    };
+    markets: {
+        kyberswap: string;
+        oneinch: true;
+        propellerswap: string;
+        openocean: string;
+    };
+    bridges: {
+        rhinofi: string;
+    };
+    oracles: {
+        cmc: {
+            slug: string;
+            native: string;
+        };
+        coingecko: {
+            slug: string;
+            native: string;
+        };
+        dexscreener: string;
     };
     initCodeHash: "0x010013f177ea1fcbc4520f9a3ca7cd2d1d77959e05aa66484027cb38e712aeed";
     blockExplorers: {
@@ -5593,6 +6589,23 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     logoUrl: "https://assets.oku.trade/manta-logo.png";
     safeReorgDistance: 90000;
     externalId: {};
+    markets: {
+        openocean: string;
+    };
+    bridges: {
+        rhinofi: string;
+    };
+    oracles: {
+        cmc: {
+            slug: string;
+            native: string;
+        };
+        coingecko: {
+            slug: string;
+            native: string;
+        };
+        dexscreener: string;
+    };
     uniswap: {
         deployBlock: number;
         poolFactory: "0x06D830e15081f65923674268121FF57Cc54e4e23";
@@ -5692,6 +6705,36 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     externalId: {
         zerion: string;
     };
+    markets: {
+        kyberswap: string;
+        openocean: string;
+    };
+    bridges: {
+        rhinofi: string;
+        stargate: {
+            endpointID: number;
+            blockConfirmations: number;
+            pools: {
+                id: number;
+                address: string;
+            }[];
+        };
+        wormhole: {
+            chain: string;
+            timeToFinalize: number;
+        };
+    };
+    oracles: {
+        cmc: {
+            slug: string;
+            native: string;
+        };
+        coingecko: {
+            slug: string;
+            native: string;
+        };
+        dexscreener: string;
+    };
     uniswap: {
         deployBlock: number;
         poolFactory: "0x31FAfd4889FA1269F7a13A66eE0fB458f27D72A9";
@@ -5778,6 +6821,24 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     logoUrl: "https://assets.oku.trade/taiko-logo.svg";
     safeReorgDistance: 90000;
     externalId: {};
+    markets: {};
+    bridges: {
+        rhinofi: string;
+        stargate: {
+            endpointID: number;
+            blockConfirmations: number;
+            pools: {
+                id: number;
+                address: string;
+            }[];
+        };
+    };
+    oracles: {
+        coingecko: {
+            slug: string;
+            native: string;
+        };
+    };
     blockExplorers: {
         default: {
             name: string;
@@ -5873,6 +6934,30 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     logoUrl: "https://assets.oku.trade/mantle-logo.png";
     safeReorgDistance: 90000;
     externalId: {};
+    markets: {
+        openocean: string;
+    };
+    bridges: {
+        stargate: {
+            endpointID: number;
+            blockConfirmations: number;
+            pools: {
+                id: number;
+                address: string;
+            }[];
+        };
+    };
+    oracles: {
+        cmc: {
+            slug: string;
+            native: string;
+        };
+        coingecko: {
+            slug: string;
+            native: string;
+        };
+        dexscreener: string;
+    };
     uniswap: {
         deployBlock: number;
         poolFactory: "0x0d922Fb1Bc191F64970ac40376643808b4B74Df9";
@@ -5959,6 +7044,28 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     logoUrl: "https://assets.oku.trade/sei-logo.svg";
     safeReorgDistance: 90000;
     externalId: {};
+    markets: {};
+    bridges: {
+        stargate: {
+            endpointID: number;
+            blockConfirmations: number;
+            pools: {
+                id: number;
+                address: string;
+            }[];
+        };
+    };
+    oracles: {
+        cmc: {
+            slug: string;
+            native: string;
+        };
+        coingecko: {
+            slug: string;
+            native: string;
+        };
+        dexscreener: string;
+    };
     blockExplorers: {
         default: {
             name: string;
@@ -6047,8 +7154,21 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     sortIndex: 4;
     logoUrl: "https://assets.oku.trade/zklink-logo.svg";
     safeReorgDistance: 90000;
-    externalId: {
-        zerion: string;
+    externalId: {};
+    markets: {};
+    bridges: {};
+    oracles: {
+        coingecko: {
+            slug: string;
+            native: string;
+        };
+    };
+    blockExplorers: {
+        default: {
+            name: string;
+            url: string;
+            apiUrl: string;
+        };
     };
     initCodeHash: "0x010013f177ea1fcbc4520f9a3ca7cd2d1d77959e05aa66484027cb38e712aeed";
     uniswap: {
@@ -6114,12 +7234,6 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             address: "0x825267E0fA5CAe92F98540828a54198dcB3Eaeb5";
         };
     };
-    blockExplorers: {
-        readonly default: {
-            readonly name: "zkLink Nova Block Explorer";
-            readonly url: "https://explorer.zklink.io";
-        };
-    };
     id: 810180;
     name: "zkLink Nova";
     nativeCurrency: {
@@ -6145,6 +7259,21 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     safeReorgDistance: 90000;
     externalId: {
         zerion: string;
+    };
+    markets: {};
+    bridges: {};
+    oracles: {
+        coingecko: {
+            slug: string;
+            native: string;
+        };
+    };
+    blockExplorers: {
+        default: {
+            name: string;
+            url: string;
+            apiUrl: string;
+        };
     };
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     uniswap: {
@@ -6198,13 +7327,6 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         };
         multicall3: {
             address: "0xA9d71E1dd7ca26F26e656E66d6AA81ed7f745bf0";
-        };
-    };
-    blockExplorers: {
-        readonly default: {
-            readonly name: "Blockscout";
-            readonly url: "https://blockscout.lisk.com";
-            readonly apiUrl: "https://blockscout.lisk.com/api";
         };
     };
     id: 1135;
@@ -6543,5 +7665,5 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     };
     network: "lisk";
 }>];
-export { arbitrum, base, blast, boba, bsc, filecoin, linea, lisk, mainnet, manta, mantle, moonbeam, optimism, polygon, rootstock, scroll, sei, taiko, polygonZkEvm, zkLink, zkSync, UniswapMetadata, OkuPricingMetadata, OkuMetadata, TokenMetadata, IChainInfo, MAINNET_CHAINS };
+export { arbitrum, base, blast, boba, bsc, filecoin, linea, lisk, mainnet, manta, mantle, moonbeam, optimism, polygon, rootstock, scroll, sei, taiko, polygonZkEvm, zkLink, zkSync, UniswapMetadata, OkuPricingMetadata, OkuMetadata, TokenMetadata, Markets, Bridges, Oracles, IChainInfo, MAINNET_CHAINS };
 export { ChainContract } from "viem";

@@ -11,6 +11,28 @@ export const blast = makeConfig({
   externalId: {
     zerion: "blast",
   },
+  markets: {
+    kyberswap: "blast",
+    openocean: "blast",
+  },
+  bridges: {
+    rhinofi: "BLAST",
+    wormhole: {
+      chain: "Blast",
+      timeToFinalize: 1800,
+    }
+  },
+  oracles: {
+    cmc: {
+      slug: "blast",
+      native: "ethereum"
+    },
+    coingecko: {
+      slug: "blast",
+      native: "ethereum"
+    },
+    dexscreener: "blast"
+  },
   uniswap: {
     deployBlock: 400903,
     poolFactory: "0x792edAdE80af5fC680d96a2eD80A44247D2Cf6Fd",
@@ -33,7 +55,6 @@ export const blast = makeConfig({
       nativeWrappedName: "ETH",
     },
   },
-
   defaultPool: "0xf5A23bDD36a56EDe75D503F6f643d5eaF25B1a8F",
   defaultToken0: "0x4300000000000000000000000000000000000003",
   defaultToken1: "0x4300000000000000000000000000000000000004",

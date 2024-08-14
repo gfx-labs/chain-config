@@ -15,6 +15,53 @@ export const bsc = makeConfig({
     zerion: "binance-smart-chain",
     debank: "bsc",
   },
+  markets: {
+    airswap: true,
+    kyberswap: "bsc",
+    oneinch: true,
+    paraswap: {
+      tokenTransferProxy: "0x216b4b4ba9f3e719726886d34a177484278bfcae",
+    },
+    propellerswap: "bsc",
+    openocean: "bsc",
+    zeroex: true,
+  },
+  bridges: {
+    chainlink: {
+      atlasNetworkName: "binance_smart_chain-mainnet",
+      routerAddress: "0x34B03Cb9086d7D758AC55af71584F81A598759FE",
+      chainSelector: 11344663589394136015n,
+    },
+    rhinofi: "BINANCE",
+    stargate: {
+      endpointID: 30102,
+      blockConfirmations: 20,
+      pools: [
+        {
+          id: 2,
+          address: "0x138EB30f73BC423c6455C53df6D89CB01d9eBc63",
+        },
+      ]
+    },
+    wanbridge: {
+      requiredConfirmations: 12
+    },
+    wormhole: {
+      chain: "Bsc",
+      timeToFinalize: 48
+    }
+  },
+  oracles: {
+    cmc: {
+      slug: "bnb",
+      native: "bnb"
+    },
+    coingecko: {
+      slug: "binance-smart-chain",
+      native: "binancecoin"
+    },
+    dexscreener: "bsc"
+  },
   uniswap: {
     deployBlock: 26324014,
     poolFactory: "0xdB1d10011AD0Ff90774D0C6Bb92e5C5c8b4461F7",

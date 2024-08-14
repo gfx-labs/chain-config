@@ -13,6 +13,60 @@ export const arbitrum = makeConfig({
     zerion: "arbitrum",
     debank: "arb",
   },
+  markets: {
+    kyberswap: "arbitrum",
+    oneinch: true,
+    paraswap: {
+      tokenTransferProxy: "0x216B4B4Ba9F3e719726886d34a177484278Bfcae"
+    },
+    propellerswap: "arbitrum",
+    openocean: "arbitrum",
+    zeroex: true,
+  },
+  bridges: {
+    chainlink: {
+      atlasNetworkName: "ethereum-mainnet-arbitrum-1",
+      routerAddress: "0x141fa059441E0ca23ce184B6A78bafD2A517DdE8",
+      chainSelector: 4949039107694359620n,
+    },
+    rhinofi: "ARBITRUM",
+    stargate: {
+      endpointID: 30110,
+      blockConfirmations: 20,
+      pools: [
+        {
+          id: 13,
+          address: "0xA45B5130f36CDcA45667738e2a258AB09f4A5f7F",
+        },
+        {
+          id: 1,
+          address: "0xe8CDF27AcD73a434D661C84887215F7598e7d0d3",
+        },
+        {
+          id: 2,
+          address: "0xcE8CcA271Ebc0533920C83d39F417ED6A0abB7D0",
+        },
+      ]
+    },
+    wanbridge: {
+      requiredConfirmations: 1
+    },
+    wormhole: {
+      chain: "Arbitrum",
+      timeToFinalize: 1066
+    }
+  },
+  oracles: {
+    cmc: {
+      slug: "arbitrum",
+      native: "ethereum"
+    },
+    coingecko: {
+      slug: "arbitrum-one",
+      native: "ethereum"
+    },
+    dexscreener: "arbitrum",
+  },
   uniswap: {
     deployBlock: 165,
     poolFactory: "0x1F98431c8aD98523631AE4a59f267346ea31F984",

@@ -10,6 +10,30 @@ export const taiko = makeConfig({
   logoUrl: "https://assets.oku.trade/taiko-logo.svg",
   safeReorgDistance: 90000,
   externalId: {},
+  markets: {},
+  bridges: {
+    rhinofi: "TAIKO",
+    stargate: {
+      endpointID: 30290,
+      blockConfirmations: 20,
+      pools: [
+        {
+          id: 1,
+          address: "0x77C71633C34C3784ede189d74223122422492a0f",
+        },
+        {
+          id: 2,
+          address: "0x1C10CC06DC6D35970d1D53B2A23c76ef370d4135",
+        },
+      ]
+    }
+  },
+  oracles: {
+    coingecko: {
+      slug: "taiko",
+      native: "ethereum"
+    }
+  },
   blockExplorers: {
     default: {
       name: "Taikoscan",
@@ -19,8 +43,7 @@ export const taiko = makeConfig({
     routescan: {
       name: "Routescan",
       url: "https://taikoscan.network",
-      apiUrl:
-        "https://api.routescan.io/v2/network/mainnet/evm/43114/etherscan/api",
+      apiUrl: "https://api.routescan.io/v2/network/mainnet/evm/43114/etherscan/api",
     },
   },
   uniswap: {

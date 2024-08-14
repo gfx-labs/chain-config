@@ -14,6 +14,55 @@ export const base = makeConfig({
     zerion: "base",
     debank: "base",
   },
+  markets: {
+    kyberswap: "base",
+    oneinch: true,
+    paraswap: {
+      tokenTransferProxy: "0x93aAAe79a53759cD164340E4C8766E4Db5331cD7"
+    },
+    openocean: "base",
+    zeroex: true,
+  },
+  bridges: {
+    chainlink: {
+      atlasNetworkName: "ethereum-mainnet-base-1",
+      routerAddress: "0x881e3A65B4d4a04dD529061dd0071cf975F58bCD",
+      chainSelector: 15971525489660198786n,
+    },
+    rhinofi: "BASE",
+    stargate: {
+      endpointID: 30184,
+      blockConfirmations: 20,
+      pools: [
+        {
+          id: 13,
+          address: "0xdc181Bd607330aeeBEF6ea62e03e5e1Fb4B6F7C7",
+        },
+        {
+          id: 1,
+          address: "0x27a16dc786820B16E5c9028b75B99F6f604b5d26",
+        },
+      ]
+    },
+    wanbridge: {
+      requiredConfirmations: 200
+    },
+    wormhole: {
+      chain: "Base",
+      timeToFinalize: 1800
+    }
+  },
+  oracles: {
+    cmc: {
+      slug: "base",
+      native: "ethereum",
+    },
+    coingecko: {
+      slug: "base",
+      native: "ethereum",
+    },
+    dexscreener: "base",
+  },
   safeReorgDistance: 90000,
   uniswap: {
     deployBlock: 1371680,

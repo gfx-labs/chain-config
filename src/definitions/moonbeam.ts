@@ -13,6 +13,27 @@ export const moonbeam = makeConfig({
   externalId: {
     debank: "mobm",
   },
+  markets: {},
+  bridges: {
+    wanbridge: {
+      requiredConfirmations: 30
+    },
+    wormhole: {
+      chain: "Moonbeam",
+      timeToFinalize: 24,
+    }
+  },
+  oracles: {
+    cmc: {
+      slug: "moonbeam",
+      native: "moonbeam"
+    },
+    coingecko: {
+      slug: "moonbeam",
+      native: "moonbeam",
+    },
+    dexscreener: "moonbeam"
+  },
   uniswap: {
     deployBlock: 3340452,
     poolFactory: "0x28f1158795A3585CaAA3cD6469CD65382b89BB70",

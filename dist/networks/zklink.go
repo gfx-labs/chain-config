@@ -11,15 +11,14 @@ var Zklink Network = Network{
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {
-			Url: "https://explorer.zklink.io",
+			Url:    "https://explorer.zklink.io/",
+			ApiUrl: "https://explorer-api.zklink.io/api",
 		},
 	},
-	DefaultPool:  common.HexToAddress("0x8ad8cbb174539ba7ae7cb7e8c957acd8ab814700"),
-	InternalName: "zklink",
-	InitCodeHash: common.HexToHash("0x010013f177ea1fcbc4520f9a3ca7cd2d1d77959e05aa66484027cb38e712aeed"),
-	ExternalId: map[string]string{
-		"zerion": "",
-	},
+	DefaultPool:   common.HexToAddress("0x8ad8cbb174539ba7ae7cb7e8c957acd8ab814700"),
+	InternalName:  "zklink",
+	InitCodeHash:  common.HexToHash("0x010013f177ea1fcbc4520f9a3ca7cd2d1d77959e05aa66484027cb38e712aeed"),
+	ExternalId:    map[string]string{},
 	DefaultToken0: common.HexToAddress("0x8280a4e7D5B3B658ec4580d3Bc30f5e50454F169"),
 	DefaultToken1: common.HexToAddress("0x1a1A3b2ff016332e866787B311fcB63928464509"),
 	//TODO: TokenList:        []any{},
