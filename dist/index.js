@@ -2670,14 +2670,14 @@ const taiko = makeConfig({
                     id: 2,
                     address: "0x1C10CC06DC6D35970d1D53B2A23c76ef370d4135",
                 },
-            ]
-        }
+            ],
+        },
     },
     oracles: {
         coingecko: {
             slug: "taiko",
-            native: "ethereum"
-        }
+            native: "ethereum",
+        },
     },
     blockExplorers: {
         default: {
@@ -2722,7 +2722,11 @@ const taiko = makeConfig({
         { symbol: "WETH", address: "0xA51894664A773981C6C112C43ce576f315d5b1B6" },
         { symbol: "USDC", address: "0x07d83526730c7438048D55A4fc0b850e2aaB6f0b" },
     ],
-    stables: ["0x07d83526730c7438048D55A4fc0b850e2aaB6f0b"],
+    stables: [
+        "0x07d83526730c7438048D55A4fc0b850e2aaB6f0b",
+        "0x19e26b0638bf63aa9fa4d14c6baf8d52ebe86c5c",
+        "0x9c2dc7377717603eB92b2655c5f2E7997a4945BD",
+    ],
     watchlist: [
         "0xDaC937d4263E6A667A027FE59B2FFe2F91D54f46",
         "0x5B731355AAd31C132dd4754E70E92c590Ae42386",
