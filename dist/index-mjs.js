@@ -2953,21 +2953,21 @@ const zkSync = makeConfig({
         kyberswap: "zksync",
         oneinch: true,
         propellerswap: "zksync",
-        openocean: "zksync"
+        openocean: "zksync",
     },
     bridges: {
-        rhinofi: "ZKSYNC"
+        rhinofi: "ZKSYNC",
     },
     oracles: {
         cmc: {
             slug: "zksync",
-            native: "ethereum"
+            native: "ethereum",
         },
         coingecko: {
             slug: "zksync",
-            native: "ethereum"
+            native: "ethereum",
         },
-        dexscreener: "zksync"
+        dexscreener: "zksync",
     },
     initCodeHash: "0x010013f177ea1fcbc4520f9a3ca7cd2d1d77959e05aa66484027cb38e712aeed",
     blockExplorers: {
