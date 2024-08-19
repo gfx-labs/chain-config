@@ -43,8 +43,7 @@ export const taiko = makeConfig({
     routescan: {
       name: "Routescan",
       url: "https://taikoscan.network",
-      apiUrl:
-        "https://api.routescan.io/v2/network/mainnet/evm/43114/etherscan/api",
+      apiUrl: "https://api.routescan.io/v2/network/mainnet/evm/43114/etherscan/api",
     },
   },
   uniswap: {
