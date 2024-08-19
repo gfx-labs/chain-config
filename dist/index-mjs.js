@@ -1119,9 +1119,7 @@ const lisk = makeConfig({
     sortIndex: 15,
     logoUrl: "https://assets.oku.trade/lisk-logo.png",
     safeReorgDistance: 90000,
-    externalId: {
-        zerion: "lisk",
-    },
+    externalId: {},
     markets: {},
     bridges: {},
     oracles: {
@@ -1490,7 +1488,9 @@ const manta = makeConfig({
     sortIndex: 13,
     logoUrl: "https://assets.oku.trade/manta-logo.png",
     safeReorgDistance: 90000,
-    externalId: {},
+    externalId: {
+        zerion: "manta-pacific"
+    },
     markets: {
         openocean: "manta"
     },
@@ -1587,7 +1587,9 @@ const mantle = makeConfig({
     sortIndex: 15,
     logoUrl: "https://assets.oku.trade/mantle-logo.png",
     safeReorgDistance: 90000,
-    externalId: {},
+    externalId: {
+        zerion: "mantle"
+    },
     markets: {
         openocean: "mantle"
     },

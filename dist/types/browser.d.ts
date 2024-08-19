@@ -1568,9 +1568,7 @@ declare const lisk: Readonly<{
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/lisk-logo.png";
     safeReorgDistance: 90000;
-    externalId: {
-        zerion: string;
-    };
+    externalId: {};
     markets: {};
     bridges: {};
     oracles: {
@@ -2074,7 +2072,9 @@ declare const manta: Readonly<{
     sortIndex: 13;
     logoUrl: "https://assets.oku.trade/manta-logo.png";
     safeReorgDistance: 90000;
-    externalId: {};
+    externalId: {
+        zerion: string;
+    };
     markets: {
         openocean: string;
     };
@@ -2190,7 +2190,9 @@ declare const mantle: Readonly<{
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/mantle-logo.png";
     safeReorgDistance: 90000;
-    externalId: {};
+    externalId: {
+        zerion: string;
+    };
     markets: {
         openocean: string;
     };
@@ -7109,7 +7111,9 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     sortIndex: 13;
     logoUrl: "https://assets.oku.trade/manta-logo.png";
     safeReorgDistance: 90000;
-    externalId: {};
+    externalId: {
+        zerion: string;
+    };
     markets: {
         openocean: string;
     };
@@ -7454,7 +7458,9 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/mantle-logo.png";
     safeReorgDistance: 90000;
-    externalId: {};
+    externalId: {
+        zerion: string;
+    };
     markets: {
         openocean: string;
     };
@@ -7778,9 +7784,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/lisk-logo.png";
     safeReorgDistance: 90000;
-    externalId: {
-        zerion: string;
-    };
+    externalId: {};
     markets: {};
     bridges: {};
     oracles: {
