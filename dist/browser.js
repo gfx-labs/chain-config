@@ -1131,14 +1131,14 @@
           coingecko: {
               slug: "lisk",
               native: "ethereum",
-          }
+          },
       },
       blockExplorers: {
           default: {
               name: "Blockscout",
               url: "https://blockscout.lisk.com",
-              apiUrl: "https://blockscout.lisk.com/api/v2"
-          }
+              apiUrl: "https://blockscout.lisk.com/api/v2",
+          },
       },
       initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
       uniswap: {
@@ -1163,15 +1163,19 @@
               nativeWrappedName: "ETH",
           },
       },
-      defaultPool: "0x3a670179bdece7eb4f570e30ee9d560f7ff4fac3",
-      defaultToken0: "0x05D032ac25d322df992303dCa074EE7392C117b9",
-      defaultToken1: "0x4200000000000000000000000000000000000006",
+      defaultPool: "0xd501d4e381491f64274cc65fdec32b47264a2422",
+      defaultToken0: "0x4200000000000000000000000000000000000006",
+      defaultToken1: "0xac485391eb2d7d88253a7f1ef18c37f4242d1a24",
       tokenList: [
           { symbol: "WETH", address: "0x4200000000000000000000000000000000000006" },
           { symbol: "USDT", address: "0x05D032ac25d322df992303dCa074EE7392C117b9" },
+          { symbol: "LSK", address: "0xac485391eb2d7d88253a7f1ef18c37f4242d1a24" },
       ],
       stables: ["0x05D032ac25d322df992303dCa074EE7392C117b9"],
-      watchlist: ["0x3a670179bdece7eb4f570e30ee9d560f7ff4fac3"],
+      watchlist: [
+          "0x3a670179bdece7eb4f570e30ee9d560f7ff4fac3",
+          "0xd501d4e381491f64274cc65fdec32b47264a2422",
+      ],
       internalName: "lisk",
       nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
       contracts: {
