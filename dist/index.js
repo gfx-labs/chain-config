@@ -551,9 +551,8 @@ const bob = makeConfig({
         wethAddress: "0x4200000000000000000000000000000000000006",
     },
     oku: {
-        // TODO: limit order
-        limitOrderRegistry: viem.zeroAddress,
-        limitOrderRegistryDeployBlock: 1748477,
+        limitOrderRegistry: "0x447b8e40b0cda8e55f405c86bc635d02d0540ab8",
+        limitOrderRegistryDeployBlock: 5624845,
         pricing: {
             nativeWrappedToken: "0x4200000000000000000000000000000000000006",
             nativeWrappedName: "ETH",
@@ -577,8 +576,7 @@ const bob = makeConfig({
     contracts: {
         ...chains.bob.contracts,
         limitOrder: {
-            // TODO: limit order
-            address: viem.zeroAddress,
+            address: "0x447B8E40B0CdA8e55F405C86bC635D02d0540aB8",
         },
         nftManager: {
             address: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c",

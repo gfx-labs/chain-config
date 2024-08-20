@@ -28,8 +28,8 @@ var Bob Network = Network{
 	Watchlist:        []common.Address{common.HexToAddress("0x9a3b17a2e2daf54ce80f2f4b2c8440902be715de")},
 	BlockTimeSeconds: 2,
 	Oku: OkuMetadata{
-		LimitOrderRegistry:            common.HexToAddress("0x0000000000000000000000000000000000000000"),
-		LimitOrderRegistryDeployBlock: 1748477,
+		LimitOrderRegistry:            common.HexToAddress("0x447b8e40b0cda8e55f405c86bc635d02d0540ab8"),
+		LimitOrderRegistryDeployBlock: 5624845,
 		Pricing: OkuPricingMetadata{
 			NativeWrappedToken: common.HexToAddress("0x4200000000000000000000000000000000000006"),
 			NativeWrappedName:  "ETH",
@@ -82,7 +82,7 @@ var Bob Network = Network{
 		},
 		"limitOrder": {
 			BlockCreated: 0,
-			Address:      common.HexToAddress("0x0000000000000000000000000000000000000000"),
+			Address:      common.HexToAddress("0x447B8E40B0CdA8e55F405C86bC635D02d0540aB8"),
 		},
 		"nftManager": {
 			BlockCreated: 0,
