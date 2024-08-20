@@ -27,8 +27,8 @@ var Lisk Network = Network{
 	Watchlist:        []common.Address{common.HexToAddress("0x3a670179bdece7eb4f570e30ee9d560f7ff4fac3"), common.HexToAddress("0xd501d4e381491f64274cc65fdec32b47264a2422")},
 	BlockTimeSeconds: 2,
 	Oku: OkuMetadata{
-		LimitOrderRegistry:            common.HexToAddress("0x81dE30A9a2816F95f2EE8DF62bafC45a095d57b2"),
-		LimitOrderRegistryDeployBlock: 1748477,
+		LimitOrderRegistry:            common.HexToAddress("0x352A86168e6988A1aDF9A15Cb00017AAd3B67155"),
+		LimitOrderRegistryDeployBlock: 579872,
 		Pricing: OkuPricingMetadata{
 			NativeWrappedToken: common.HexToAddress("0x4200000000000000000000000000000000000006"),
 			NativeWrappedName:  "ETH",
@@ -57,7 +57,7 @@ var Lisk Network = Network{
 		},
 		"limitOrder": {
 			BlockCreated: 0,
-			Address:      common.HexToAddress("0x81dE30A9a2816F95f2EE8DF62bafC45a095d57b2"),
+			Address:      common.HexToAddress("0x352A86168e6988A1aDF9A15Cb00017AAd3B67155"),
 		},
 		"nftManager": {
 			BlockCreated: 0,

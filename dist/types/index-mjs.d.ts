@@ -1600,7 +1600,7 @@ declare const lisk: Readonly<{
         wethAddress: "0x4200000000000000000000000000000000000006";
     };
     oku: {
-        limitOrderRegistry: "0x81dE30A9a2816F95f2EE8DF62bafC45a095d57b2";
+        limitOrderRegistry: "0x352A86168e6988A1aDF9A15Cb00017AAd3B67155";
         limitOrderRegistryDeployBlock: number;
         pricing: {
             nativeWrappedToken: "0x4200000000000000000000000000000000000006";
@@ -1626,7 +1626,7 @@ declare const lisk: Readonly<{
     nativeLogoUrl: "https://assets.oku.trade/natives/eth.png";
     contracts: {
         limitOrder: {
-            address: "0x81dE30A9a2816F95f2EE8DF62bafC45a095d57b2";
+            address: "0x352A86168e6988A1aDF9A15Cb00017AAd3B67155";
         };
         nftManager: {
             address: "0x5911cB3633e764939edc2d92b7e1ad375Bb57649";
@@ -7816,7 +7816,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         wethAddress: "0x4200000000000000000000000000000000000006";
     };
     oku: {
-        limitOrderRegistry: "0x81dE30A9a2816F95f2EE8DF62bafC45a095d57b2";
+        limitOrderRegistry: "0x352A86168e6988A1aDF9A15Cb00017AAd3B67155";
         limitOrderRegistryDeployBlock: number;
         pricing: {
             nativeWrappedToken: "0x4200000000000000000000000000000000000006";
@@ -7842,7 +7842,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     nativeLogoUrl: "https://assets.oku.trade/natives/eth.png";
     contracts: {
         limitOrder: {
-            address: "0x81dE30A9a2816F95f2EE8DF62bafC45a095d57b2";
+            address: "0x352A86168e6988A1aDF9A15Cb00017AAd3B67155";
         };
         nftManager: {
             address: "0x5911cB3633e764939edc2d92b7e1ad375Bb57649";
