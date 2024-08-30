@@ -15,7 +15,7 @@ var Gnosis Network = Network{
 			ApiUrl: "https://api.gnosisscan.io/api",
 		},
 	},
-	DefaultPool:  common.HexToAddress("0x0000000000000000000000000000000000000000"),
+	DefaultPool:  common.HexToAddress("0x909e36aB6eA5DB6Fd71876Fe319328BAe4DfeA29"),
 	InternalName: "gnosis",
 	InitCodeHash: common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId: map[string]string{
@@ -26,7 +26,7 @@ var Gnosis Network = Network{
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0x4ecaba5870353805a9f068101a40e0f32ed605c6"), common.HexToAddress("0x2a22f9c3b484c3629090feed35f17ff8f88f76f0"), common.HexToAddress("0xddafbb505ad214d7b80b1f830fccc89b60fb7a83")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x4ecaba5870353805a9f068101a40e0f32ed605c6"): {}, common.HexToAddress("0x2a22f9c3b484c3629090feed35f17ff8f88f76f0"): {}, common.HexToAddress("0xddafbb505ad214d7b80b1f830fccc89b60fb7a83"): {}},
-	Watchlist:        []common.Address{},
+	Watchlist:        []common.Address{common.HexToAddress("0x909e36aB6eA5DB6Fd71876Fe319328BAe4DfeA29")},
 	BlockTimeSeconds: 5,
 	Oku: OkuMetadata{
 		LimitOrderRegistry:            common.HexToAddress("0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435"),
