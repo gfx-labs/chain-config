@@ -1484,7 +1484,7 @@ declare const gnosis: Readonly<{
             nativeWrappedName: string;
         };
     };
-    defaultPool: "0x0000000000000000000000000000000000000000";
+    defaultPool: "0x909e36aB6eA5DB6Fd71876Fe319328BAe4DfeA29";
     defaultToken0: "0xddafbb505ad214d7b80b1f830fccc89b60fb7a83";
     defaultToken1: "0xe91d153e0b41518a2ce8dd3d7944fa863463a97d";
     tokenList: ({
@@ -1501,7 +1501,7 @@ declare const gnosis: Readonly<{
         address: "0x4ecaba5870353805a9f068101a40e0f32ed605c6";
     })[];
     stables: ("0xddafbb505ad214d7b80b1f830fccc89b60fb7a83" | "0x2a22f9c3b484c3629090feed35f17ff8f88f76f0" | "0x4ecaba5870353805a9f068101a40e0f32ed605c6")[];
-    watchlist: never[];
+    watchlist: "0x909e36aB6eA5DB6Fd71876Fe319328BAe4DfeA29"[];
     internalName: "gnosis";
     nativeLogoUrl: "https://assets.oku.trade/natives/xdai.png";
     contracts: {
@@ -3648,7 +3648,7 @@ declare const xLayer: Readonly<{
             nativeWrappedName: string;
         };
     };
-    defaultPool: "0x0000000000000000000000000000000000000000";
+    defaultPool: "0x87d7a0a51e27bf7232f97015ab3e53edc8104989";
     defaultToken0: "0x74b7f16337b8972027f6196a17a631ac6de26d22";
     defaultToken1: "0xe538905cf8410324e03a5a23c1c177a474d59b2b";
     tokenList: ({
@@ -3668,7 +3668,7 @@ declare const xLayer: Readonly<{
         address: "0xea034fb02eb1808c2cc3adbc15f447b93cbe08e1";
     })[];
     stables: ("0x2a22f9c3b484c3629090feed35f17ff8f88f76f0" | "0x1e4a5963abfd975d8c9021ce480b42188849d41d" | "0xc5015b9d9161dca7e18e32f6f25c4ad850731fd4")[];
-    watchlist: never[];
+    watchlist: "0x87d7a0a51e27bf7232f97015ab3e53edc8104989"[];
     internalName: "xlayer";
     nativeLogoUrl: "https://assets.oku.trade/natives/okb.png";
     contracts: {
@@ -8734,7 +8734,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             nativeWrappedName: string;
         };
     };
-    defaultPool: "0x0000000000000000000000000000000000000000";
+    defaultPool: "0x909e36aB6eA5DB6Fd71876Fe319328BAe4DfeA29";
     defaultToken0: "0xddafbb505ad214d7b80b1f830fccc89b60fb7a83";
     defaultToken1: "0xe91d153e0b41518a2ce8dd3d7944fa863463a97d";
     tokenList: ({
@@ -8751,7 +8751,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         address: "0x4ecaba5870353805a9f068101a40e0f32ed605c6";
     })[];
     stables: ("0xddafbb505ad214d7b80b1f830fccc89b60fb7a83" | "0x2a22f9c3b484c3629090feed35f17ff8f88f76f0" | "0x4ecaba5870353805a9f068101a40e0f32ed605c6")[];
-    watchlist: never[];
+    watchlist: "0x909e36aB6eA5DB6Fd71876Fe319328BAe4DfeA29"[];
     internalName: "gnosis";
     nativeLogoUrl: "https://assets.oku.trade/natives/xdai.png";
     contracts: {
@@ -8840,7 +8840,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             nativeWrappedName: string;
         };
     };
-    defaultPool: "0x0000000000000000000000000000000000000000";
+    defaultPool: "0x87d7a0a51e27bf7232f97015ab3e53edc8104989";
     defaultToken0: "0x74b7f16337b8972027f6196a17a631ac6de26d22";
     defaultToken1: "0xe538905cf8410324e03a5a23c1c177a474d59b2b";
     tokenList: ({
@@ -8860,7 +8860,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         address: "0xea034fb02eb1808c2cc3adbc15f447b93cbe08e1";
     })[];
     stables: ("0x2a22f9c3b484c3629090feed35f17ff8f88f76f0" | "0x1e4a5963abfd975d8c9021ce480b42188849d41d" | "0xc5015b9d9161dca7e18e32f6f25c4ad850731fd4")[];
-    watchlist: never[];
+    watchlist: "0x87d7a0a51e27bf7232f97015ab3e53edc8104989"[];
     internalName: "xlayer";
     nativeLogoUrl: "https://assets.oku.trade/natives/okb.png";
     contracts: {

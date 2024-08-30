@@ -14,7 +14,7 @@ var Xlayer Network = Network{
 			Url: "https://www.oklink.com/xlayer",
 		},
 	},
-	DefaultPool:   common.HexToAddress("0x0000000000000000000000000000000000000000"),
+	DefaultPool:   common.HexToAddress("0x87d7a0a51e27bf7232f97015ab3e53edc8104989"),
 	InternalName:  "xlayer",
 	InitCodeHash:  common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId:    map[string]string{},
@@ -23,7 +23,7 @@ var Xlayer Network = Network{
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0x2a22f9c3b484c3629090feed35f17ff8f88f76f0"), common.HexToAddress("0x1e4a5963abfd975d8c9021ce480b42188849d41d"), common.HexToAddress("0xc5015b9d9161dca7e18e32f6f25c4ad850731fd4")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x2a22f9c3b484c3629090feed35f17ff8f88f76f0"): {}, common.HexToAddress("0x1e4a5963abfd975d8c9021ce480b42188849d41d"): {}, common.HexToAddress("0xc5015b9d9161dca7e18e32f6f25c4ad850731fd4"): {}},
-	Watchlist:        []common.Address{},
+	Watchlist:        []common.Address{common.HexToAddress("0x87d7a0a51e27bf7232f97015ab3e53edc8104989")},
 	BlockTimeSeconds: 3,
 	Oku: OkuMetadata{
 		LimitOrderRegistry:            common.HexToAddress("0x9db70E29712Cc8Af10c2B597BaDA6784544FF407"),
