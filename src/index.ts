@@ -25,4 +25,6 @@ export const MAINNET_CHAINS = [
   defs.zkLink,
   defs.lisk,
   defs.bob,
+  defs.gnosis,
+  defs.xLayer,
 ] as const;

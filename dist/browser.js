@@ -1003,6 +1003,89 @@
       },
   });
 
+  const gnosis = makeConfig({
+      ...chains.gnosis,
+      blockTimeSeconds: 5,
+      sortIndex: 18,
+      logoUrl: "https://assets.oku.trade/gnosis-logo.svg",
+      safeReorgDistance: 90000,
+      externalId: {
+          zerion: "gnosis",
+      },
+      markets: {},
+      bridges: {},
+      oracles: {
+          cmc: {
+              slug: "gnosis",
+              native: "xdai",
+          },
+          coingecko: {
+              slug: "xdai",
+              native: "xdai",
+          },
+          dexscreener: "gnosischain",
+      },
+      initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
+      uniswap: {
+          deployBlock: 27416614,
+          poolFactory: "0xe32F7dD7e3f098D518ff19A22d5f028e076489B1",
+          permit2: "0x000000000022D473030F116dDEE9F6B43aC78BA3",
+          multicall2: "0x4dfa9a980efE4802E969AC33968E3d6E59B8a19e",
+          tickLens: "0x8fe3D346B53dCA838B228e0e53aCdBED5DEC70Dc",
+          nonfungiblePositionManager: "0xAE8fbE656a77519a7490054274910129c9244FA3",
+          positionsNFT: "0xAE8fbE656a77519a7490054274910129c9244FA3",
+          positionsNFTDeployBlock: 27416645,
+          universalRouter: "0x75FC67473A91335B5b8F8821277262a13B38c9b3",
+      },
+      token: {
+          usdcAddress: "0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4",
+          wethAddress: "0xe91d153e0b41518a2ce8dd3d7944fa863463a97d",
+      },
+      oku: {
+          limitOrderRegistry: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435",
+          limitOrderRegistryDeployBlock: 35719277,
+          pricing: {
+              nativeWrappedToken: "0xe91d153e0b41518a2ce8dd3d7944fa863463a97d",
+              nativeWrappedName: "xDAI",
+          },
+      },
+      defaultPool: viem.zeroAddress,
+      defaultToken0: "0xddafbb505ad214d7b80b1f830fccc89b60fb7a83",
+      defaultToken1: "0xe91d153e0b41518a2ce8dd3d7944fa863463a97d",
+      tokenList: [
+          { symbol: "WXDAI", address: "0xe91d153e0b41518a2ce8dd3d7944fa863463a97d" },
+          { symbol: "USDC.e", address: "0x2a22f9c3b484c3629090feed35f17ff8f88f76f0" },
+          { symbol: "USDC", address: "0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4" },
+          { symbol: "USDT", address: "0x4ecaba5870353805a9f068101a40e0f32ed605c6" },
+      ],
+      stables: [
+          "0x4ecaba5870353805a9f068101a40e0f32ed605c6",
+          "0x2a22f9c3b484c3629090feed35f17ff8f88f76f0",
+          "0xddafbb505ad214d7b80b1f830fccc89b60fb7a83",
+      ],
+      watchlist: [],
+      internalName: "gnosis",
+      nativeLogoUrl: "https://assets.oku.trade/natives/xdai.png",
+      contracts: {
+          ...chains.gnosis.contracts,
+          limitOrder: {
+              address: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435",
+          },
+          nftManager: {
+              address: "0xAE8fbE656a77519a7490054274910129c9244FA3",
+          },
+          weth9: {
+              address: "0xe91d153e0b41518a2ce8dd3d7944fa863463a97d",
+          },
+          multicall2: {
+              address: "0xcA11bde05977b3631167028862bE2a173976CA11",
+          },
+          multicall3: {
+              address: "0xcA11bde05977b3631167028862bE2a173976CA11",
+          },
+      },
+  });
+
   const linea = makeConfig({
       ...chains.linea,
       name: "Linea",
@@ -2762,6 +2845,88 @@
       },
   });
 
+  const xLayer = makeConfig({
+      ...chains.xLayer,
+      blockTimeSeconds: 3,
+      sortIndex: 18,
+      logoUrl: "https://assets.oku.trade/xlayer-logo.svg",
+      safeReorgDistance: 90000,
+      externalId: {},
+      markets: {},
+      bridges: {},
+      oracles: {
+          cmc: {
+              slug: "x-layer",
+              native: "okb",
+          },
+          coingecko: {
+              slug: "x-layer",
+              native: "okb",
+          },
+          dexscreener: "x-layer",
+      },
+      initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
+      uniswap: {
+          deployBlock: 4345920,
+          poolFactory: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D",
+          permit2: "0x000000000022D473030F116dDEE9F6B43aC78BA3",
+          multicall2: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435",
+          tickLens: "0xB3309C48F8407651D918ca3Da4C45DE40109E641",
+          nonfungiblePositionManager: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c",
+          positionsNFT: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c",
+          positionsNFTDeployBlock: 4346185,
+          universalRouter: "0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc",
+      },
+      token: {
+          usdcAddress: "0x74b7f16337b8972027f6196a17a631ac6de26d22",
+          wethAddress: "0xe538905cf8410324e03a5a23c1c177a474d59b2b",
+      },
+      oku: {
+          limitOrderRegistry: "0x9db70E29712Cc8Af10c2B597BaDA6784544FF407",
+          limitOrderRegistryDeployBlock: 4348466,
+          pricing: {
+              nativeWrappedToken: "0xe538905cf8410324e03a5a23c1c177a474d59b2b",
+              nativeWrappedName: "OKB",
+          },
+      },
+      defaultPool: viem.zeroAddress,
+      defaultToken0: "0x74b7f16337b8972027f6196a17a631ac6de26d22",
+      defaultToken1: "0xe538905cf8410324e03a5a23c1c177a474d59b2b",
+      tokenList: [
+          { symbol: "WOKB", address: "0xe538905cf8410324e03a5a23c1c177a474d59b2b" },
+          { symbol: "USDC", address: "0x2a22f9c3b484c3629090feed35f17ff8f88f76f0" },
+          { symbol: "USDT", address: "0x1e4a5963abfd975d8c9021ce480b42188849d41d" },
+          { symbol: "DAI", address: "0xc5015b9d9161dca7e18e32f6f25c4ad850731fd4" },
+          { symbol: "WBTC", address: "0xea034fb02eb1808c2cc3adbc15f447b93cbe08e1" },
+      ],
+      stables: [
+          "0x2a22f9c3b484c3629090feed35f17ff8f88f76f0",
+          "0x1e4a5963abfd975d8c9021ce480b42188849d41d",
+          "0xc5015b9d9161dca7e18e32f6f25c4ad850731fd4",
+      ],
+      watchlist: [],
+      internalName: "xlayer",
+      nativeLogoUrl: "https://assets.oku.trade/natives/okb.png",
+      contracts: {
+          ...chains.xLayer.contracts,
+          limitOrder: {
+              address: "0x9db70E29712Cc8Af10c2B597BaDA6784544FF407",
+          },
+          nftManager: {
+              address: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c",
+          },
+          weth9: {
+              address: "0xe538905cf8410324e03a5a23c1c177a474d59b2b",
+          },
+          multicall2: {
+              address: "0xcA11bde05977b3631167028862bE2a173976CA11",
+          },
+          multicall3: {
+              address: "0xcA11bde05977b3631167028862bE2a173976CA11",
+          },
+      },
+  });
+
   const polygonZkEvm = makeConfig({
       ...chains.polygonZkEvm,
       initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
@@ -2948,7 +3113,7 @@
   });
 
   const zkSync = makeConfig({
-      ...chains.zkSync,
+      ...chains.zksync,
       blockTimeSeconds: 2,
       sortIndex: 4,
       logoUrl: "https://assets.oku.trade/zksync-logo.svg",
@@ -3041,7 +3206,7 @@
       internalName: "zksync",
       nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
       contracts: {
-          ...chains.zkSync.contracts,
+          ...chains.zksync.contracts,
           limitOrder: {
               address: "0x0FD66bD1e0974e2535CB424E6675D60aC52a84Fa",
           },
@@ -3083,6 +3248,8 @@
       zkLink,
       lisk,
       bob,
+      gnosis,
+      xLayer,
   ];
 
   exports.MAINNET_CHAINS = MAINNET_CHAINS;
@@ -3093,6 +3260,7 @@
   exports.boba = boba;
   exports.bsc = bsc;
   exports.filecoin = filecoin;
+  exports.gnosis = gnosis;
   exports.linea = linea;
   exports.lisk = lisk;
   exports.mainnet = mainnet;
@@ -3106,6 +3274,7 @@
   exports.scroll = scroll;
   exports.sei = sei;
   exports.taiko = taiko;
+  exports.xLayer = xLayer;
   exports.zkLink = zkLink;
   exports.zkSync = zkSync;
 
