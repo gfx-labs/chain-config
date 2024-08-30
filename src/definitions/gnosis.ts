@@ -1,4 +1,3 @@
-import { zeroAddress } from "viem";
 import { gnosis as chain } from "viem/chains";
 import { makeConfig } from "../util";
 
@@ -49,7 +48,7 @@ export const gnosis = makeConfig({
       nativeWrappedName: "xDAI",
     },
   },
-  defaultPool: zeroAddress,
+  defaultPool: "0x909e36aB6eA5DB6Fd71876Fe319328BAe4DfeA29",
   defaultToken0: "0xddafbb505ad214d7b80b1f830fccc89b60fb7a83",
   defaultToken1: "0xe91d153e0b41518a2ce8dd3d7944fa863463a97d",
   tokenList: [
@@ -63,7 +62,7 @@ export const gnosis = makeConfig({
     "0x2a22f9c3b484c3629090feed35f17ff8f88f76f0",
     "0xddafbb505ad214d7b80b1f830fccc89b60fb7a83",
   ],
-  watchlist: [],
+  watchlist: ["0x909e36aB6eA5DB6Fd71876Fe319328BAe4DfeA29"],
   internalName: "gnosis",
   nativeLogoUrl: "https://assets.oku.trade/natives/xdai.png",
   contracts: {

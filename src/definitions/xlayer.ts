@@ -1,4 +1,3 @@
-import { zeroAddress } from "viem";
 import { xLayer as chain } from "viem/chains";
 import { makeConfig } from "../util";
 
@@ -47,7 +46,7 @@ export const xLayer = makeConfig({
       nativeWrappedName: "OKB",
     },
   },
-  defaultPool: zeroAddress,
+  defaultPool: "0x87d7a0a51e27bf7232f97015ab3e53edc8104989",
   defaultToken0: "0x74b7f16337b8972027f6196a17a631ac6de26d22",
   defaultToken1: "0xe538905cf8410324e03a5a23c1c177a474d59b2b",
   tokenList: [
@@ -62,7 +61,7 @@ export const xLayer = makeConfig({
     "0x1e4a5963abfd975d8c9021ce480b42188849d41d",
     "0xc5015b9d9161dca7e18e32f6f25c4ad850731fd4",
   ],
-  watchlist: [],
+  watchlist: ["0x87d7a0a51e27bf7232f97015ab3e53edc8104989"],
   internalName: "xlayer",
   nativeLogoUrl: "https://assets.oku.trade/natives/okb.png",
   contracts: {
