@@ -1004,7 +1004,7 @@ const gnosis = makeConfig({
     ...gnosis$1,
     blockTimeSeconds: 5,
     sortIndex: 18,
-    logoUrl: "https://assets.oku.trade/gnosis-logo.svg",
+    logoUrl: "https://assets.oku.trade/gnosis-logo.png",
     safeReorgDistance: 90000,
     externalId: {
         zerion: "gnosis",

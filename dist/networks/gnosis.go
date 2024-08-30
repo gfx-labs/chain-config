@@ -6,7 +6,7 @@ import (
 
 var Gnosis Network = Network{
 	ChainId:           100,
-	LogoUrl:           "https://assets.oku.trade/gnosis-logo.svg",
+	LogoUrl:           "https://assets.oku.trade/gnosis-logo.png",
 	SortIndex:         18,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
