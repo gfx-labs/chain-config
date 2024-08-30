@@ -6,7 +6,7 @@ import (
 
 var Gnosis Network = Network{
 	ChainId:           100,
-	LogoUrl:           "https://assets.oku.trade/gnosis-logo.svg",
+	LogoUrl:           "https://assets.oku.trade/gnosis-logo.png",
 	SortIndex:         18,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
@@ -23,7 +23,7 @@ var Gnosis Network = Network{
 	},
 	DefaultToken0: common.HexToAddress("0xddafbb505ad214d7b80b1f830fccc89b60fb7a83"),
 	DefaultToken1: common.HexToAddress("0xe91d153e0b41518a2ce8dd3d7944fa863463a97d"),
-	//TODO: TokenList:        []any{},
+	// TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0x4ecaba5870353805a9f068101a40e0f32ed605c6"), common.HexToAddress("0x2a22f9c3b484c3629090feed35f17ff8f88f76f0"), common.HexToAddress("0xddafbb505ad214d7b80b1f830fccc89b60fb7a83")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x4ecaba5870353805a9f068101a40e0f32ed605c6"): {}, common.HexToAddress("0x2a22f9c3b484c3629090feed35f17ff8f88f76f0"): {}, common.HexToAddress("0xddafbb505ad214d7b80b1f830fccc89b60fb7a83"): {}},
 	Watchlist:        []common.Address{},
