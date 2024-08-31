@@ -19,7 +19,7 @@ var Zksync Network = Network{
 			ApiUrl: "https://block-explorer-api.mainnet.zksync.io/api",
 		},
 	},
-	DefaultPool:  common.HexToAddress("0xff577f0e828a878743ecc5e2632cbf65cecf17cf"),
+	DefaultPool:  common.HexToAddress("0x3e3dd517fec2e70eddba2a626422a4ba286e8c38"),
 	InternalName: "zksync",
 	InitCodeHash: common.HexToHash("0x010013f177ea1fcbc4520f9a3ca7cd2d1d77959e05aa66484027cb38e712aeed"),
 	ExternalId: map[string]string{
