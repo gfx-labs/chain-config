@@ -3608,7 +3608,7 @@ declare const taiko: Readonly<{
 declare const xLayer: Readonly<{
     blockTimeSeconds: 3;
     sortIndex: 18;
-    logoUrl: "https://assets.oku.trade/xlayer-logo.svg";
+    logoUrl: "https://assets.oku.trade/xlayer-logo.png";
     safeReorgDistance: 90000;
     externalId: {};
     markets: {};
@@ -8800,7 +8800,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
 }>, Readonly<{
     blockTimeSeconds: 3;
     sortIndex: 18;
-    logoUrl: "https://assets.oku.trade/xlayer-logo.svg";
+    logoUrl: "https://assets.oku.trade/xlayer-logo.png";
     safeReorgDistance: 90000;
     externalId: {};
     markets: {};

@@ -2846,7 +2846,7 @@ const xLayer = makeConfig({
     ...xLayer$1,
     blockTimeSeconds: 3,
     sortIndex: 18,
-    logoUrl: "https://assets.oku.trade/xlayer-logo.svg",
+    logoUrl: "https://assets.oku.trade/xlayer-logo.png",
     safeReorgDistance: 90000,
     externalId: {},
     markets: {},

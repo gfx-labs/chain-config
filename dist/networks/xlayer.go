@@ -6,7 +6,7 @@ import (
 
 var Xlayer Network = Network{
 	ChainId:           196,
-	LogoUrl:           "https://assets.oku.trade/xlayer-logo.svg",
+	LogoUrl:           "https://assets.oku.trade/xlayer-logo.png",
 	SortIndex:         18,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
