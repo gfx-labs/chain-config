@@ -1064,7 +1064,6 @@
           "0x2a22f9c3b484c3629090feed35f17ff8f88f76f0",
           "0xddafbb505ad214d7b80b1f830fccc89b60fb7a83",
           "0xe91d153e0b41518a2ce8dd3d7944fa863463a97d",
-          "0xaf204776c7245bf4147c2612bf6e5972ee483701",
       ],
       watchlist: [
           "0x909e36aB6eA5DB6Fd71876Fe319328BAe4DfeA29",
