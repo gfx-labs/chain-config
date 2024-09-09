@@ -63,6 +63,7 @@ export const gnosis = makeConfig({
     "0x2a22f9c3b484c3629090feed35f17ff8f88f76f0",
     "0xddafbb505ad214d7b80b1f830fccc89b60fb7a83",
     "0xe91d153e0b41518a2ce8dd3d7944fa863463a97d",
+    "0xaf204776c7245bf4147c2612bf6e5972ee483701",
   ],
   watchlist: [
     "0x909e36aB6eA5DB6Fd71876Fe319328BAe4DfeA29",
@@ -70,6 +71,7 @@ export const gnosis = makeConfig({
     "0x8Fb50102bC76798C13a68de3bd5F1974feDF48CD",
     "0xa180bEDd56438C596C9ACed94D03A3001C5BB83C",
     "0xE9E1793954f32D880Ec0B2186E96d88e2b870e40",
+    "0xbb98d4e20b054ede4c4143ecee59368f88ecbbe4",
   ],
   internalName: "gnosis",
   nativeLogoUrl: "https://assets.oku.trade/natives/xdai.png",
