@@ -24,8 +24,8 @@ var Gnosis Network = Network{
 	DefaultToken0: common.HexToAddress("0x6a023ccd1ff6f2045c3309768ead9e68f978f6e1"),
 	DefaultToken1: common.HexToAddress("0xe91d153e0b41518a2ce8dd3d7944fa863463a97d"),
 	//TODO: TokenList:        []any{},
-	Stables:          []common.Address{common.HexToAddress("0x4ecaba5870353805a9f068101a40e0f32ed605c6"), common.HexToAddress("0x2a22f9c3b484c3629090feed35f17ff8f88f76f0"), common.HexToAddress("0xddafbb505ad214d7b80b1f830fccc89b60fb7a83")},
-	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x4ecaba5870353805a9f068101a40e0f32ed605c6"): {}, common.HexToAddress("0x2a22f9c3b484c3629090feed35f17ff8f88f76f0"): {}, common.HexToAddress("0xddafbb505ad214d7b80b1f830fccc89b60fb7a83"): {}},
+	Stables:          []common.Address{common.HexToAddress("0x4ecaba5870353805a9f068101a40e0f32ed605c6"), common.HexToAddress("0x2a22f9c3b484c3629090feed35f17ff8f88f76f0"), common.HexToAddress("0xddafbb505ad214d7b80b1f830fccc89b60fb7a83"), common.HexToAddress("0xe91d153e0b41518a2ce8dd3d7944fa863463a97d")},
+	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x4ecaba5870353805a9f068101a40e0f32ed605c6"): {}, common.HexToAddress("0x2a22f9c3b484c3629090feed35f17ff8f88f76f0"): {}, common.HexToAddress("0xddafbb505ad214d7b80b1f830fccc89b60fb7a83"): {}, common.HexToAddress("0xe91d153e0b41518a2ce8dd3d7944fa863463a97d"): {}},
 	Watchlist:        []common.Address{common.HexToAddress("0x909e36aB6eA5DB6Fd71876Fe319328BAe4DfeA29"), common.HexToAddress("0x4A562E482e9e6b140b322CA50Cc4D8535Cdf85c9"), common.HexToAddress("0x8Fb50102bC76798C13a68de3bd5F1974feDF48CD"), common.HexToAddress("0xa180bEDd56438C596C9ACed94D03A3001C5BB83C"), common.HexToAddress("0xE9E1793954f32D880Ec0B2186E96d88e2b870e40")},
 	BlockTimeSeconds: 5,
 	Oku: OkuMetadata{

@@ -1063,6 +1063,7 @@
           "0x4ecaba5870353805a9f068101a40e0f32ed605c6",
           "0x2a22f9c3b484c3629090feed35f17ff8f88f76f0",
           "0xddafbb505ad214d7b80b1f830fccc89b60fb7a83",
+          "0xe91d153e0b41518a2ce8dd3d7944fa863463a97d",
       ],
       watchlist: [
           "0x909e36aB6eA5DB6Fd71876Fe319328BAe4DfeA29",
