@@ -1675,7 +1675,10 @@ declare const linea: Readonly<{
     sourceId?: number | undefined;
     testnet: false;
     custom?: Record<string, unknown> | undefined;
-    fees?: import("viem").ChainFees<undefined> | undefined;
+    fees: {
+        readonly estimateFeesPerGas: ({ client, multiply, request, type }: import("viem").ChainEstimateFeesPerGasFnParameters<import("viem").ChainFormatters | undefined>) => Promise<import("viem").EstimateFeesPerGasReturnType | null>;
+        readonly maxPriorityFeePerGas: ({ block, client, request }: import("viem").ChainFeesFnParameters<import("viem").ChainFormatters | undefined>) => Promise<bigint | null>;
+    };
     formatters?: undefined;
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>;
@@ -4298,10 +4301,10 @@ declare const zkSync: Readonly<{
                 blockNumber: bigint;
                 transactionIndex: number;
                 status: "success" | "reverted";
+                contractAddress: `0x${string}` | null | undefined;
                 logsBloom: `0x${string}`;
                 blobGasUsed?: bigint | undefined;
                 gasUsed: bigint;
-                contractAddress: `0x${string}` | null | undefined;
                 transactionHash: `0x${string}`;
                 blobGasPrice?: bigint | undefined;
                 cumulativeGasUsed: bigint;
@@ -7190,10 +7193,10 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 blockNumber: bigint;
                 transactionIndex: number;
                 status: "success" | "reverted";
+                contractAddress: `0x${string}` | null | undefined;
                 logsBloom: `0x${string}`;
                 blobGasUsed?: bigint | undefined;
                 gasUsed: bigint;
-                contractAddress: `0x${string}` | null | undefined;
                 transactionHash: `0x${string}`;
                 blobGasPrice?: bigint | undefined;
                 cumulativeGasUsed: bigint;
@@ -7562,7 +7565,10 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     sourceId?: number | undefined;
     testnet: false;
     custom?: Record<string, unknown> | undefined;
-    fees?: import("viem").ChainFees<undefined> | undefined;
+    fees: {
+        readonly estimateFeesPerGas: ({ client, multiply, request, type, }: import("viem").ChainEstimateFeesPerGasFnParameters<import("viem").ChainFormatters | undefined>) => Promise<import("viem").EstimateFeesPerGasReturnType | null>;
+        readonly maxPriorityFeePerGas: ({ block, client, request }: import("viem").ChainFeesFnParameters<import("viem").ChainFormatters | undefined>) => Promise<bigint | null>;
+    };
     formatters?: undefined;
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>, Readonly<{
