@@ -14,6 +14,7 @@ export const blast = makeConfig({
   markets: {
     kyberswap: "blast",
     openocean: "blast",
+    zeroex: true
   },
   bridges: {
     rhinofi: "BLAST",
