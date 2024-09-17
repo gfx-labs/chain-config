@@ -17,6 +17,7 @@ export const linea = makeConfig({
   markets: {
     kyberswap: "linea",
     openocean: "linea",
+    zeroex: true,
   },
   bridges: {
     rhinofi: "LINEA",
