@@ -40,12 +40,11 @@ export const polygonZkEvm = makeConfig({
     positionsNFT: "0xf0D61Aeda516CCa1FF20Be65Cfb0213be688A24f",
     positionsNFTDeployBlock: 8466897,
     universalRouter: "0x32454e81d065FAA95Ec0d0Ab6Fe326599Af30fd7",
-    wrappedNativeToken: {
-      address: "0x4F9A0e7FD2Bf6067db6994CF12E4495Df938E6e9",
-      symbol: "WETH",
-      name: "Wrapped Ether",
-      decimals: 18,
-    },
+
+    wrappedNativeAddress: "0x4F9A0e7FD2Bf6067db6994CF12E4495Df938E6e9",
+    wrappedNativeSymbol: "WETH",
+    wrappedNativeName: "Wrapped Ether",
+    wrappedNativeDecimals: 18,
     nativeCurrencyName: "ETH",
   },
   token: {

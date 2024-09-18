@@ -51,12 +51,11 @@ export const moonbeam = makeConfig({
     positionsNFT: "0x9036D0DcB5a059C9371B05D508f0072Df773854e",
     positionsNFTDeployBlock: 3340476,
     universalRouter: "0x1F56F4e1648e96633c7FE79002036E967403CDfF",
-    wrappedNativeToken: {
-      address: "0xab3f0245b83feb11d15aaffefd7ad465a59817ed",
-      symbol: "WGLMR",
-      name: "Wrapped GLMR",
-      decimals: 18,
-    },
+
+    wrappedNativeAddress: "0xab3f0245b83feb11d15aaffefd7ad465a59817ed",
+    wrappedNativeSymbol: "WGLMR",
+    wrappedNativeName: "Wrapped GLMR",
+    wrappedNativeDecimals: 18,
     nativeCurrencyName: "GLMR",
   },
   token: {

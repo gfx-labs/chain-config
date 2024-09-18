@@ -57,12 +57,11 @@ export const scroll = makeConfig({
     poolFactory: "0x70C62C8b8e801124A4Aa81ce07b637A3e83cb919",
     positionsNFT: "0xB39002E4033b162fAc607fc3471E205FA2aE5967",
     universalRouter: "0x595E7160858b1AdA94Bda790D8699C85e595117E",
-    wrappedNativeToken: {
-      address: "0x5300000000000000000000000000000000000004",
-      symbol: "WETH",
-      name: "Wrapped Ether",
-      decimals: 18,
-    },
+
+    wrappedNativeAddress: "0x5300000000000000000000000000000000000004",
+    wrappedNativeSymbol: "WETH",
+    wrappedNativeName: "Wrapped Ether",
+    wrappedNativeDecimals: 18,
     nativeCurrencyName: "ETH",
   },
   token: {

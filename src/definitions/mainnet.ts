@@ -97,12 +97,11 @@ export const mainnet = makeConfig({
     topNativePool: "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640",
     positionsNFTDeployBlock: 12369651,
     universalRouter: "0xEf1c6E67703c7BD7107eed8303Fbe6EC2554BF6B",
-    wrappedNativeToken: {
-      address: "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
-      symbol: "WETH",
-      name: "Wrapped Ether",
-      decimals: 18,
-    },
+
+    wrappedNativeAddress: "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+    wrappedNativeSymbol: "WETH",
+    wrappedNativeName: "Wrapped Ether",
+    wrappedNativeDecimals: 18,
     nativeCurrencyName: "ETH",
   },
   token: {

@@ -41,12 +41,11 @@ export const manta = makeConfig({
     positionsNFT: "0xA4F2Db71348697C65A64a146F709C73030C2ebcD",
     positionsNFTDeployBlock: 1191836,
     universalRouter: "0x42Bff1f6b647462fcD8c28a488Be9C9988830ef6",
-    wrappedNativeToken: {
-      address: "0x0Dc808adcE2099A9F62AA87D9670745AbA741746",
-      symbol: "WETH",
-      name: "Wrapped Ether",
-      decimals: 18,
-    },
+
+    wrappedNativeAddress: "0x0Dc808adcE2099A9F62AA87D9670745AbA741746",
+    wrappedNativeSymbol: "WETH",
+    wrappedNativeName: "Wrapped Ether",
+    wrappedNativeDecimals: 18,
     nativeCurrencyName: "ETH",
   },
   token: {

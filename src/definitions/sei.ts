@@ -59,12 +59,11 @@ export const sei = makeConfig({
     positionsNFT: "0x8B3c541c30f9b29560f56B9E44b59718916B69EF",
     positionsNFTDeployBlock: 79245279,
     universalRouter: "0xa683c66045ad16abb1bCE5ad46A64d95f9A25785",
-    wrappedNativeToken: {
-      address: "0xE30feDd158A2e3b13e9badaeABaFc5516e95e8C7",
-      symbol: "WSEI",
-      name: "Wrapped SEI",
-      decimals: 18,
-    },
+
+    wrappedNativeAddress: "0xE30feDd158A2e3b13e9badaeABaFc5516e95e8C7",
+    wrappedNativeSymbol: "WSEI",
+    wrappedNativeName: "Wrapped SEI",
+    wrappedNativeDecimals: 18,
     nativeCurrencyName: "SEI",
   },
   token: {

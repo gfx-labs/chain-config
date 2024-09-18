@@ -80,12 +80,11 @@ export const bsc = makeConfig({
     positionsNFT: "0x7b8A01B39D58278b5DE7e48c8449c9f4F5170613",
     positionsNFTDeployBlock: 26324045,
     universalRouter: "0xeC8B0F7Ffe3ae75d7FfAb09429e3675bb63503e4",
-    wrappedNativeToken: {
-      address: "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
-      symbol: "WBNB",
-      name: "Wrapped BNB",
-      decimals: 18,
-    },
+
+    wrappedNativeAddress: "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
+    wrappedNativeSymbol: "WBNB",
+    wrappedNativeName: "Wrapped BNB",
+    wrappedNativeDecimals: 18,
     nativeCurrencyName: "BNB",
   },
   token: {

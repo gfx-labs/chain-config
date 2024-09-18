@@ -55,12 +55,11 @@ export const boba = makeConfig({
     positionsNFT: "0x0bfc9aC7E52f38EAA6dC8d10942478f695C6Cf71",
     positionsNFTDeployBlock: 969359,
     universalRouter: "0x4BA622997559F9b5Ac68751D7Fc3dEecc23a0e88",
-    wrappedNativeToken: {
-      address: "0xdeaddeaddeaddeaddeaddeaddeaddeaddead0000",
-      symbol: "WETH",
-      name: "Wrapped Ether",
-      decimals: 18,
-    },
+
+    wrappedNativeAddress: "0xdeaddeaddeaddeaddeaddeaddeaddeaddead0000",
+    wrappedNativeSymbol: "WETH",
+    wrappedNativeName: "Wrapped Ether",
+    wrappedNativeDecimals: 18,
     nativeCurrencyName: "ETH",
   },
   token: {

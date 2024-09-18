@@ -85,12 +85,11 @@ export const polygon = makeConfig({
     positionsNFTDeployBlock: 22760586,
     topNativePool: "0xa374094527e1673a86de625aa59517c5de346d32",
     universalRouter: "0x4C60051384bd2d3C01bfc845Cf5F4b44bcbE9de5",
-    wrappedNativeToken: {
-      address: "0x7ceb23fd6bc0add59e62ac25578270cff1b9f619",
-      symbol: "WMATIC",
-      name: "Wrapped MATIC",
-      decimals: 18,
-    },
+
+    wrappedNativeAddress: "0x7ceb23fd6bc0add59e62ac25578270cff1b9f619",
+    wrappedNativeSymbol: "WMATIC",
+    wrappedNativeName: "Wrapped MATIC",
+    wrappedNativeDecimals: 18,
     nativeCurrencyName: "MATIC",
   },
   token: {

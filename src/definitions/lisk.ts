@@ -35,12 +35,11 @@ export const lisk = makeConfig({
     positionsNFT: "0x5911cB3633e764939edc2d92b7e1ad375Bb57649",
     positionsNFTDeployBlock: 578398,
     universalRouter: "0x447B8E40B0CdA8e55F405C86bC635D02d0540aB8",
-    wrappedNativeToken: {
-      address: "0x4200000000000000000000000000000000000006",
-      symbol: "WETH",
-      name: "Wrapped Ether",
-      decimals: 18,
-    },
+
+    wrappedNativeAddress: "0x4200000000000000000000000000000000000006",
+    wrappedNativeSymbol: "WETH",
+    wrappedNativeName: "Wrapped Ether",
+    wrappedNativeDecimals: 18,
     nativeCurrencyName: "ETH",
   },
   token: {

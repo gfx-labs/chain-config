@@ -35,12 +35,11 @@ export const gnosis = makeConfig({
     positionsNFT: "0xAE8fbE656a77519a7490054274910129c9244FA3",
     positionsNFTDeployBlock: 27416645,
     universalRouter: "0x75FC67473A91335B5b8F8821277262a13B38c9b3",
-    wrappedNativeToken: {
-      address: "0xe91d153e0b41518a2ce8dd3d7944fa863463a97d",
-      symbol: "WXDAI",
-      name: "Wrapped XDAI",
-      decimals: 18,
-    },
+
+    wrappedNativeAddress: "0xe91d153e0b41518a2ce8dd3d7944fa863463a97d",
+    wrappedNativeSymbol: "WXDAI",
+    wrappedNativeName: "Wrapped XDAI",
+    wrappedNativeDecimals: 18,
     nativeCurrencyName: "XDAI",
   },
   token: {

@@ -73,12 +73,10 @@ export const base = makeConfig({
     positionsNFT: "0x03a520b32C04BF3bEEf7BEb72E919cf822Ed34f1",
     positionsNFTDeployBlock: 1371714,
     universalRouter: "0xec8b0f7ffe3ae75d7ffab09429e3675bb63503e4",
-    wrappedNativeToken: {
-      address: "0x4200000000000000000000000000000000000006",
-      symbol: "WETH",
-      name: "Wrapped Ether",
-      decimals: 18,
-    },
+    wrappedNativeAddress: "0x4200000000000000000000000000000000000006",
+    wrappedNativeSymbol: "WETH",
+    wrappedNativeName: "Wrapped Ether",
+    wrappedNativeDecimals: 18,
     nativeCurrencyName: "ETH",
   },
   token: {

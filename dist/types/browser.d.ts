@@ -72,12 +72,10 @@ declare const arbitrum: Readonly<{
         topNativePool: "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640";
         positionsNFTDeployBlock: number;
         universalRouter: "0x4C60051384bd2d3C01bfc845Cf5F4b44bcbE9de5";
-        wrappedNativeToken: {
-            address: "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1";
-            symbol: string;
-            name: string;
-            decimals: number;
-        };
+        wrappedNativeAddress: "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
         nativeCurrencyName: string;
     };
     token: {
@@ -235,12 +233,10 @@ declare const base: Readonly<{
         positionsNFT: "0x03a520b32C04BF3bEEf7BEb72E919cf822Ed34f1";
         positionsNFTDeployBlock: number;
         universalRouter: "0xec8b0f7ffe3ae75d7ffab09429e3675bb63503e4";
-        wrappedNativeToken: {
-            address: "0x4200000000000000000000000000000000000006";
-            symbol: string;
-            name: string;
-            decimals: number;
-        };
+        wrappedNativeAddress: "0x4200000000000000000000000000000000000006";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
         nativeCurrencyName: string;
     };
     token: {
@@ -629,12 +625,10 @@ declare const blast: Readonly<{
         positionsNFT: "0xB218e4f7cF0533d4696fDfC419A0023D33345F28";
         positionsNFTDeployBlock: number;
         universalRouter: "0x643770E279d5D0733F21d6DC03A8efbABf3255B4";
-        wrappedNativeToken: {
-            address: "0x4300000000000000000000000000000000000004";
-            symbol: string;
-            name: string;
-            decimals: number;
-        };
+        wrappedNativeAddress: "0x4300000000000000000000000000000000000004";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
         nativeCurrencyName: string;
     };
     token: {
@@ -737,12 +731,10 @@ declare const bob: Readonly<{
         positionsNFT: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c";
         positionsNFTDeployBlock: number;
         universalRouter: "0x346239972d1fa486FC4a521031BC81bFB7D6e8a4";
-        wrappedNativeToken: {
-            address: "0x4200000000000000000000000000000000000006";
-            symbol: string;
-            name: string;
-            decimals: number;
-        };
+        wrappedNativeAddress: "0x4200000000000000000000000000000000000006";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
         nativeCurrencyName: string;
     };
     token: {
@@ -1133,12 +1125,10 @@ declare const boba: Readonly<{
         positionsNFT: "0x0bfc9aC7E52f38EAA6dC8d10942478f695C6Cf71";
         positionsNFTDeployBlock: number;
         universalRouter: "0x4BA622997559F9b5Ac68751D7Fc3dEecc23a0e88";
-        wrappedNativeToken: {
-            address: "0xdeaddeaddeaddeaddeaddeaddeaddeaddead0000";
-            symbol: string;
-            name: string;
-            decimals: number;
-        };
+        wrappedNativeAddress: "0xdeaddeaddeaddeaddeaddeaddeaddeaddead0000";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
         nativeCurrencyName: string;
     };
     token: {
@@ -1281,12 +1271,10 @@ declare const bsc: Readonly<{
         positionsNFT: "0x7b8A01B39D58278b5DE7e48c8449c9f4F5170613";
         positionsNFTDeployBlock: number;
         universalRouter: "0xeC8B0F7Ffe3ae75d7FfAb09429e3675bb63503e4";
-        wrappedNativeToken: {
-            address: "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c";
-            symbol: string;
-            name: string;
-            decimals: number;
-        };
+        wrappedNativeAddress: "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
         nativeCurrencyName: string;
     };
     token: {
@@ -1403,12 +1391,10 @@ declare const filecoin: Readonly<{
         positionsNFT: "0x4cd986dD509fbB6A695aE971d5C56c8795f640ee";
         positionsNFTDeployBlock: number;
         universalRouter: "0x83702C6356A1028A900F83d446D189a31646a16b";
-        wrappedNativeToken: {
-            address: "0x60E1773636CF5E4A227d9AC24F20fEca034ee25A";
-            symbol: string;
-            name: string;
-            decimals: number;
-        };
+        wrappedNativeAddress: "0x60E1773636CF5E4A227d9AC24F20fEca034ee25A";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
         nativeCurrencyName: string;
     };
     token: {
@@ -1521,12 +1507,10 @@ declare const gnosis: Readonly<{
         positionsNFT: "0xAE8fbE656a77519a7490054274910129c9244FA3";
         positionsNFTDeployBlock: number;
         universalRouter: "0x75FC67473A91335B5b8F8821277262a13B38c9b3";
-        wrappedNativeToken: {
-            address: "0xe91d153e0b41518a2ce8dd3d7944fa863463a97d";
-            symbol: string;
-            name: string;
-            decimals: number;
-        };
+        wrappedNativeAddress: "0xe91d153e0b41518a2ce8dd3d7944fa863463a97d";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
         nativeCurrencyName: string;
     };
     token: {
@@ -1662,12 +1646,10 @@ declare const linea: Readonly<{
         positionsNFT: "0x4615C383F85D0a2BbED973d83ccecf5CB7121463";
         positionsNFTDeployBlock: number;
         universalRouter: "0xd7c7d7f18dd5388d5217c9696c7e799fcd75c6bd";
-        wrappedNativeToken: {
-            address: "0xe5d7c2a44ffddf6b295a15c148167daaaf5cf34f";
-            symbol: string;
-            name: string;
-            decimals: number;
-        };
+        wrappedNativeAddress: "0xe5d7c2a44ffddf6b295a15c148167daaaf5cf34f";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
         nativeCurrencyName: string;
     };
     token: {
@@ -1779,12 +1761,10 @@ declare const lisk: Readonly<{
         positionsNFT: "0x5911cB3633e764939edc2d92b7e1ad375Bb57649";
         positionsNFTDeployBlock: number;
         universalRouter: "0x447B8E40B0CdA8e55F405C86bC635D02d0540aB8";
-        wrappedNativeToken: {
-            address: "0x4200000000000000000000000000000000000006";
-            symbol: string;
-            name: string;
-            decimals: number;
-        };
+        wrappedNativeAddress: "0x4200000000000000000000000000000000000006";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
         nativeCurrencyName: string;
     };
     token: {
@@ -2162,12 +2142,10 @@ declare const mainnet: Readonly<{
         topNativePool: "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640";
         positionsNFTDeployBlock: number;
         universalRouter: "0xEf1c6E67703c7BD7107eed8303Fbe6EC2554BF6B";
-        wrappedNativeToken: {
-            address: "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2";
-            symbol: string;
-            name: string;
-            decimals: number;
-        };
+        wrappedNativeAddress: "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
         nativeCurrencyName: string;
     };
     token: {
@@ -2300,12 +2278,10 @@ declare const manta: Readonly<{
         positionsNFT: "0xA4F2Db71348697C65A64a146F709C73030C2ebcD";
         positionsNFTDeployBlock: number;
         universalRouter: "0x42Bff1f6b647462fcD8c28a488Be9C9988830ef6";
-        wrappedNativeToken: {
-            address: "0x0Dc808adcE2099A9F62AA87D9670745AbA741746";
-            symbol: string;
-            name: string;
-            decimals: number;
-        };
+        wrappedNativeAddress: "0x0Dc808adcE2099A9F62AA87D9670745AbA741746";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
         nativeCurrencyName: string;
     };
     token: {
@@ -2432,12 +2408,10 @@ declare const mantle: Readonly<{
         positionsNFT: "0x5911cB3633e764939edc2d92b7e1ad375Bb57649";
         positionsNFTDeployBlock: number;
         universalRouter: "0x447B8E40B0CdA8e55F405C86bC635D02d0540aB8";
-        wrappedNativeToken: {
-            address: "0x78c1b0C915c4FAA5FffA6CAbf0219DA63d7f4cb8";
-            symbol: string;
-            name: string;
-            decimals: number;
-        };
+        wrappedNativeAddress: "0x78c1b0C915c4FAA5FffA6CAbf0219DA63d7f4cb8";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
         nativeCurrencyName: string;
     };
     token: {
@@ -2557,12 +2531,10 @@ declare const moonbeam: Readonly<{
         positionsNFT: "0x9036D0DcB5a059C9371B05D508f0072Df773854e";
         positionsNFTDeployBlock: number;
         universalRouter: "0x1F56F4e1648e96633c7FE79002036E967403CDfF";
-        wrappedNativeToken: {
-            address: "0xab3f0245b83feb11d15aaffefd7ad465a59817ed";
-            symbol: string;
-            name: string;
-            decimals: number;
-        };
+        wrappedNativeAddress: "0xab3f0245b83feb11d15aaffefd7ad465a59817ed";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
         nativeCurrencyName: string;
     };
     token: {
@@ -2723,12 +2695,10 @@ declare const optimism: Readonly<{
         topNativePool: "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640";
         positionsNFTDeployBlock: number;
         universalRouter: "0xb555edF5dcF85f42cEeF1f3630a52A108E55A654";
-        wrappedNativeToken: {
-            address: "0x4200000000000000000000000000000000000006";
-            symbol: string;
-            name: string;
-            decimals: number;
-        };
+        wrappedNativeAddress: "0x4200000000000000000000000000000000000006";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
         nativeCurrencyName: string;
     };
     token: {
@@ -3149,12 +3119,10 @@ declare const polygon: Readonly<{
         positionsNFTDeployBlock: number;
         topNativePool: "0xa374094527e1673a86de625aa59517c5de346d32";
         universalRouter: "0x4C60051384bd2d3C01bfc845Cf5F4b44bcbE9de5";
-        wrappedNativeToken: {
-            address: "0x7ceb23fd6bc0add59e62ac25578270cff1b9f619";
-            symbol: string;
-            name: string;
-            decimals: number;
-        };
+        wrappedNativeAddress: "0x7ceb23fd6bc0add59e62ac25578270cff1b9f619";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
         nativeCurrencyName: string;
     };
     token: {
@@ -3284,12 +3252,10 @@ declare const rootstock: Readonly<{
         positionsNFT: "0x9d9386c042F194B460Ec424a1e57ACDE25f5C4b1";
         positionsNFTDeployBlock: number;
         universalRouter: "0x244f68e77357f86a8522323eBF80b5FC2F814d3E";
-        wrappedNativeToken: {
-            address: "0x542fDA317318eBF1d3DEAf76E0b632741A7e677d";
-            symbol: string;
-            name: string;
-            decimals: number;
-        };
+        wrappedNativeAddress: "0x542fDA317318eBF1d3DEAf76E0b632741A7e677d";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
         nativeCurrencyName: string;
     };
     token: {
@@ -3409,12 +3375,10 @@ declare const scroll: Readonly<{
         poolFactory: "0x70C62C8b8e801124A4Aa81ce07b637A3e83cb919";
         positionsNFT: "0xB39002E4033b162fAc607fc3471E205FA2aE5967";
         universalRouter: "0x595E7160858b1AdA94Bda790D8699C85e595117E";
-        wrappedNativeToken: {
-            address: "0x5300000000000000000000000000000000000004";
-            symbol: string;
-            name: string;
-            decimals: number;
-        };
+        wrappedNativeAddress: "0x5300000000000000000000000000000000000004";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
         nativeCurrencyName: string;
     };
     token: {
@@ -3551,12 +3515,10 @@ declare const sei: Readonly<{
         positionsNFT: "0x8B3c541c30f9b29560f56B9E44b59718916B69EF";
         positionsNFTDeployBlock: number;
         universalRouter: "0xa683c66045ad16abb1bCE5ad46A64d95f9A25785";
-        wrappedNativeToken: {
-            address: "0xE30feDd158A2e3b13e9badaeABaFc5516e95e8C7";
-            symbol: string;
-            name: string;
-            decimals: number;
-        };
+        wrappedNativeAddress: "0xE30feDd158A2e3b13e9badaeABaFc5516e95e8C7";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
         nativeCurrencyName: string;
     };
     token: {
@@ -3676,12 +3638,10 @@ declare const taiko: Readonly<{
         positionsNFT: "0x8B3c541c30f9b29560f56B9E44b59718916B69EF";
         positionsNFTDeployBlock: number;
         universalRouter: "0x346239972d1fa486FC4a521031BC81bFB7D6e8a4";
-        wrappedNativeToken: {
-            address: "0xA51894664A773981C6C112C43ce576f315d5b1B6";
-            symbol: string;
-            name: string;
-            decimals: number;
-        };
+        wrappedNativeAddress: "0xA51894664A773981C6C112C43ce576f315d5b1B6";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
         nativeCurrencyName: string;
     };
     token: {
@@ -3784,12 +3744,10 @@ declare const xLayer: Readonly<{
         positionsNFT: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c";
         positionsNFTDeployBlock: number;
         universalRouter: "0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc";
-        wrappedNativeToken: {
-            address: "0xe538905cf8410324e03a5a23c1c177a474d59b2b";
-            symbol: string;
-            name: string;
-            decimals: number;
-        };
+        wrappedNativeAddress: "0xe538905cf8410324e03a5a23c1c177a474d59b2b";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
         nativeCurrencyName: string;
     };
     token: {
@@ -3907,12 +3865,10 @@ declare const polygonZkEvm: Readonly<{
         positionsNFT: "0xf0D61Aeda516CCa1FF20Be65Cfb0213be688A24f";
         positionsNFTDeployBlock: number;
         universalRouter: "0x32454e81d065FAA95Ec0d0Ab6Fe326599Af30fd7";
-        wrappedNativeToken: {
-            address: "0x4F9A0e7FD2Bf6067db6994CF12E4495Df938E6e9";
-            symbol: string;
-            name: string;
-            decimals: number;
-        };
+        wrappedNativeAddress: "0x4F9A0e7FD2Bf6067db6994CF12E4495Df938E6e9";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
         nativeCurrencyName: string;
     };
     token: {
@@ -4027,12 +3983,10 @@ declare const zkLink: Readonly<{
         positionsNFT: "0xAA904d497e42608C014BE83a026E984aFc16129b";
         positionsNFTDeployBlock: number;
         universalRouter: "0x2274bDE50218DDB955e7f60e4f2344e3Bff9D193";
-        wrappedNativeToken: {
-            address: "0x8280a4e7D5B3B658ec4580d3Bc30f5e50454F169";
-            symbol: string;
-            name: string;
-            decimals: number;
-        };
+        wrappedNativeAddress: "0x8280a4e7D5B3B658ec4580d3Bc30f5e50454F169";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
         nativeCurrencyName: string;
     };
     token: {
@@ -4160,12 +4114,10 @@ declare const zkSync: Readonly<{
         positionsNFT: "0x0616e5762c1E7Dc3723c50663dF10a162D690a86";
         positionsNFTDeployBlock: number;
         universalRouter: "0x28731BCC616B5f51dD52CF2e4dF0E78dD1136C06";
-        wrappedNativeToken: {
-            address: "0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91";
-            symbol: string;
-            name: string;
-            decimals: number;
-        };
+        wrappedNativeAddress: "0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
         nativeCurrencyName: string;
     };
     token: {
@@ -4634,14 +4586,11 @@ interface UniswapMetadata {
     topNativePool?: Address;
     positionsNFTDeployBlock?: number;
     universalRouter?: Address;
-    wrappedNativeToken?: TokenInfo;
+    wrappedNativeAddress: Address;
+    wrappedNativeSymbol: string;
+    wrappedNativeName: string;
+    wrappedNativeDecimals: number;
     nativeCurrencyName?: string;
-}
-interface TokenInfo {
-    address: Address;
-    symbol: string;
-    name: string;
-    decimals: number;
 }
 interface OkuPricingMetadata {
     nativeWrappedToken?: Address;
@@ -4830,12 +4779,10 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         topNativePool: "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640";
         positionsNFTDeployBlock: number;
         universalRouter: "0x4C60051384bd2d3C01bfc845Cf5F4b44bcbE9de5";
-        wrappedNativeToken: {
-            address: "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1";
-            symbol: string;
-            name: string;
-            decimals: number;
-        };
+        wrappedNativeAddress: "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
         nativeCurrencyName: string;
     };
     token: {
@@ -4988,12 +4935,10 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         positionsNFT: "0x03a520b32C04BF3bEEf7BEb72E919cf822Ed34f1";
         positionsNFTDeployBlock: number;
         universalRouter: "0xec8b0f7ffe3ae75d7ffab09429e3675bb63503e4";
-        wrappedNativeToken: {
-            address: "0x4200000000000000000000000000000000000006";
-            symbol: string;
-            name: string;
-            decimals: number;
-        };
+        wrappedNativeAddress: "0x4200000000000000000000000000000000000006";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
         nativeCurrencyName: string;
     };
     token: {
@@ -5385,12 +5330,10 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         positionsNFT: "0x0bfc9aC7E52f38EAA6dC8d10942478f695C6Cf71";
         positionsNFTDeployBlock: number;
         universalRouter: "0x4BA622997559F9b5Ac68751D7Fc3dEecc23a0e88";
-        wrappedNativeToken: {
-            address: "0xdeaddeaddeaddeaddeaddeaddeaddeaddead0000";
-            symbol: string;
-            name: string;
-            decimals: number;
-        };
+        wrappedNativeAddress: "0xdeaddeaddeaddeaddeaddeaddeaddeaddead0000";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
         nativeCurrencyName: string;
     };
     token: {
@@ -5497,12 +5440,10 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         positionsNFT: "0xB218e4f7cF0533d4696fDfC419A0023D33345F28";
         positionsNFTDeployBlock: number;
         universalRouter: "0x643770E279d5D0733F21d6DC03A8efbABf3255B4";
-        wrappedNativeToken: {
-            address: "0x4300000000000000000000000000000000000004";
-            symbol: string;
-            name: string;
-            decimals: number;
-        };
+        wrappedNativeAddress: "0x4300000000000000000000000000000000000004";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
         nativeCurrencyName: string;
     };
     token: {
@@ -5648,12 +5589,10 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         positionsNFT: "0x7b8A01B39D58278b5DE7e48c8449c9f4F5170613";
         positionsNFTDeployBlock: number;
         universalRouter: "0xeC8B0F7Ffe3ae75d7FfAb09429e3675bb63503e4";
-        wrappedNativeToken: {
-            address: "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c";
-            symbol: string;
-            name: string;
-            decimals: number;
-        };
+        wrappedNativeAddress: "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
         nativeCurrencyName: string;
     };
     token: {
@@ -5767,12 +5706,10 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         positionsNFT: "0x4cd986dD509fbB6A695aE971d5C56c8795f640ee";
         positionsNFTDeployBlock: number;
         universalRouter: "0x83702C6356A1028A900F83d446D189a31646a16b";
-        wrappedNativeToken: {
-            address: "0x60E1773636CF5E4A227d9AC24F20fEca034ee25A";
-            symbol: string;
-            name: string;
-            decimals: number;
-        };
+        wrappedNativeAddress: "0x60E1773636CF5E4A227d9AC24F20fEca034ee25A";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
         nativeCurrencyName: string;
     };
     token: {
@@ -5924,12 +5861,10 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         topNativePool: "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640";
         positionsNFTDeployBlock: number;
         universalRouter: "0xEf1c6E67703c7BD7107eed8303Fbe6EC2554BF6B";
-        wrappedNativeToken: {
-            address: "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2";
-            symbol: string;
-            name: string;
-            decimals: number;
-        };
+        wrappedNativeAddress: "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
         nativeCurrencyName: string;
     };
     token: {
@@ -6068,12 +6003,10 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         positionsNFT: "0x9036D0DcB5a059C9371B05D508f0072Df773854e";
         positionsNFTDeployBlock: number;
         universalRouter: "0x1F56F4e1648e96633c7FE79002036E967403CDfF";
-        wrappedNativeToken: {
-            address: "0xab3f0245b83feb11d15aaffefd7ad465a59817ed";
-            symbol: string;
-            name: string;
-            decimals: number;
-        };
+        wrappedNativeAddress: "0xab3f0245b83feb11d15aaffefd7ad465a59817ed";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
         nativeCurrencyName: string;
     };
     token: {
@@ -6229,12 +6162,10 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         topNativePool: "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640";
         positionsNFTDeployBlock: number;
         universalRouter: "0xb555edF5dcF85f42cEeF1f3630a52A108E55A654";
-        wrappedNativeToken: {
-            address: "0x4200000000000000000000000000000000000006";
-            symbol: string;
-            name: string;
-            decimals: number;
-        };
+        wrappedNativeAddress: "0x4200000000000000000000000000000000000006";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
         nativeCurrencyName: string;
     };
     token: {
@@ -6649,12 +6580,10 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         positionsNFTDeployBlock: number;
         topNativePool: "0xa374094527e1673a86de625aa59517c5de346d32";
         universalRouter: "0x4C60051384bd2d3C01bfc845Cf5F4b44bcbE9de5";
-        wrappedNativeToken: {
-            address: "0x7ceb23fd6bc0add59e62ac25578270cff1b9f619";
-            symbol: string;
-            name: string;
-            decimals: number;
-        };
+        wrappedNativeAddress: "0x7ceb23fd6bc0add59e62ac25578270cff1b9f619";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
         nativeCurrencyName: string;
     };
     token: {
@@ -6781,12 +6710,10 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         positionsNFT: "0x9d9386c042F194B460Ec424a1e57ACDE25f5C4b1";
         positionsNFTDeployBlock: number;
         universalRouter: "0x244f68e77357f86a8522323eBF80b5FC2F814d3E";
-        wrappedNativeToken: {
-            address: "0x542fDA317318eBF1d3DEAf76E0b632741A7e677d";
-            symbol: string;
-            name: string;
-            decimals: number;
-        };
+        wrappedNativeAddress: "0x542fDA317318eBF1d3DEAf76E0b632741A7e677d";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
         nativeCurrencyName: string;
     };
     token: {
@@ -6903,12 +6830,10 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         poolFactory: "0x70C62C8b8e801124A4Aa81ce07b637A3e83cb919";
         positionsNFT: "0xB39002E4033b162fAc607fc3471E205FA2aE5967";
         universalRouter: "0x595E7160858b1AdA94Bda790D8699C85e595117E";
-        wrappedNativeToken: {
-            address: "0x5300000000000000000000000000000000000004";
-            symbol: string;
-            name: string;
-            decimals: number;
-        };
+        wrappedNativeAddress: "0x5300000000000000000000000000000000000004";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
         nativeCurrencyName: string;
     };
     token: {
@@ -7030,12 +6955,10 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         positionsNFT: "0xf0D61Aeda516CCa1FF20Be65Cfb0213be688A24f";
         positionsNFTDeployBlock: number;
         universalRouter: "0x32454e81d065FAA95Ec0d0Ab6Fe326599Af30fd7";
-        wrappedNativeToken: {
-            address: "0x4F9A0e7FD2Bf6067db6994CF12E4495Df938E6e9";
-            symbol: string;
-            name: string;
-            decimals: number;
-        };
+        wrappedNativeAddress: "0x4F9A0e7FD2Bf6067db6994CF12E4495Df938E6e9";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
         nativeCurrencyName: string;
     };
     token: {
@@ -7167,12 +7090,10 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         positionsNFT: "0x0616e5762c1E7Dc3723c50663dF10a162D690a86";
         positionsNFTDeployBlock: number;
         universalRouter: "0x28731BCC616B5f51dD52CF2e4dF0E78dD1136C06";
-        wrappedNativeToken: {
-            address: "0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91";
-            symbol: string;
-            name: string;
-            decimals: number;
-        };
+        wrappedNativeAddress: "0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
         nativeCurrencyName: string;
     };
     token: {
@@ -7649,12 +7570,10 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         positionsNFT: "0xA4F2Db71348697C65A64a146F709C73030C2ebcD";
         positionsNFTDeployBlock: number;
         universalRouter: "0x42Bff1f6b647462fcD8c28a488Be9C9988830ef6";
-        wrappedNativeToken: {
-            address: "0x0Dc808adcE2099A9F62AA87D9670745AbA741746";
-            symbol: string;
-            name: string;
-            decimals: number;
-        };
+        wrappedNativeAddress: "0x0Dc808adcE2099A9F62AA87D9670745AbA741746";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
         nativeCurrencyName: string;
     };
     token: {
@@ -7785,12 +7704,10 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         positionsNFT: "0x4615C383F85D0a2BbED973d83ccecf5CB7121463";
         positionsNFTDeployBlock: number;
         universalRouter: "0xd7c7d7f18dd5388d5217c9696c7e799fcd75c6bd";
-        wrappedNativeToken: {
-            address: "0xe5d7c2a44ffddf6b295a15c148167daaaf5cf34f";
-            symbol: string;
-            name: string;
-            decimals: number;
-        };
+        wrappedNativeAddress: "0xe5d7c2a44ffddf6b295a15c148167daaaf5cf34f";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
         nativeCurrencyName: string;
     };
     token: {
@@ -7912,12 +7829,10 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         positionsNFT: "0x8B3c541c30f9b29560f56B9E44b59718916B69EF";
         positionsNFTDeployBlock: number;
         universalRouter: "0x346239972d1fa486FC4a521031BC81bFB7D6e8a4";
-        wrappedNativeToken: {
-            address: "0xA51894664A773981C6C112C43ce576f315d5b1B6";
-            symbol: string;
-            name: string;
-            decimals: number;
-        };
+        wrappedNativeAddress: "0xA51894664A773981C6C112C43ce576f315d5b1B6";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
         nativeCurrencyName: string;
     };
     token: {
@@ -8028,12 +7943,10 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         positionsNFT: "0x5911cB3633e764939edc2d92b7e1ad375Bb57649";
         positionsNFTDeployBlock: number;
         universalRouter: "0x447B8E40B0CdA8e55F405C86bC635D02d0540aB8";
-        wrappedNativeToken: {
-            address: "0x78c1b0C915c4FAA5FffA6CAbf0219DA63d7f4cb8";
-            symbol: string;
-            name: string;
-            decimals: number;
-        };
+        wrappedNativeAddress: "0x78c1b0C915c4FAA5FffA6CAbf0219DA63d7f4cb8";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
         nativeCurrencyName: string;
     };
     token: {
@@ -8150,12 +8063,10 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         positionsNFT: "0x8B3c541c30f9b29560f56B9E44b59718916B69EF";
         positionsNFTDeployBlock: number;
         universalRouter: "0xa683c66045ad16abb1bCE5ad46A64d95f9A25785";
-        wrappedNativeToken: {
-            address: "0xE30feDd158A2e3b13e9badaeABaFc5516e95e8C7";
-            symbol: string;
-            name: string;
-            decimals: number;
-        };
+        wrappedNativeAddress: "0xE30feDd158A2e3b13e9badaeABaFc5516e95e8C7";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
         nativeCurrencyName: string;
     };
     token: {
@@ -8254,12 +8165,10 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         positionsNFT: "0xAA904d497e42608C014BE83a026E984aFc16129b";
         positionsNFTDeployBlock: number;
         universalRouter: "0x2274bDE50218DDB955e7f60e4f2344e3Bff9D193";
-        wrappedNativeToken: {
-            address: "0x8280a4e7D5B3B658ec4580d3Bc30f5e50454F169";
-            symbol: string;
-            name: string;
-            decimals: number;
-        };
+        wrappedNativeAddress: "0x8280a4e7D5B3B658ec4580d3Bc30f5e50454F169";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
         nativeCurrencyName: string;
     };
     token: {
@@ -8365,12 +8274,10 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         positionsNFT: "0x5911cB3633e764939edc2d92b7e1ad375Bb57649";
         positionsNFTDeployBlock: number;
         universalRouter: "0x447B8E40B0CdA8e55F405C86bC635D02d0540aB8";
-        wrappedNativeToken: {
-            address: "0x4200000000000000000000000000000000000006";
-            symbol: string;
-            name: string;
-            decimals: number;
-        };
+        wrappedNativeAddress: "0x4200000000000000000000000000000000000006";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
         nativeCurrencyName: string;
     };
     token: {
@@ -8695,12 +8602,10 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         positionsNFT: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c";
         positionsNFTDeployBlock: number;
         universalRouter: "0x346239972d1fa486FC4a521031BC81bFB7D6e8a4";
-        wrappedNativeToken: {
-            address: "0x4200000000000000000000000000000000000006";
-            symbol: string;
-            name: string;
-            decimals: number;
-        };
+        wrappedNativeAddress: "0x4200000000000000000000000000000000000006";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
         nativeCurrencyName: string;
     };
     token: {
@@ -9066,12 +8971,10 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         positionsNFT: "0xAE8fbE656a77519a7490054274910129c9244FA3";
         positionsNFTDeployBlock: number;
         universalRouter: "0x75FC67473A91335B5b8F8821277262a13B38c9b3";
-        wrappedNativeToken: {
-            address: "0xe91d153e0b41518a2ce8dd3d7944fa863463a97d";
-            symbol: string;
-            name: string;
-            decimals: number;
-        };
+        wrappedNativeAddress: "0xe91d153e0b41518a2ce8dd3d7944fa863463a97d";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
         nativeCurrencyName: string;
     };
     token: {
@@ -9182,12 +9085,10 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         positionsNFT: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c";
         positionsNFTDeployBlock: number;
         universalRouter: "0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc";
-        wrappedNativeToken: {
-            address: "0xe538905cf8410324e03a5a23c1c177a474d59b2b";
-            symbol: string;
-            name: string;
-            decimals: number;
-        };
+        wrappedNativeAddress: "0xe538905cf8410324e03a5a23c1c177a474d59b2b";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
         nativeCurrencyName: string;
     };
     token: {
@@ -9267,5 +9168,5 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     formatters?: undefined;
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>];
-export { arbitrum, base, blast, bob, boba, bsc, filecoin, gnosis, linea, lisk, mainnet, manta, mantle, moonbeam, optimism, polygon, rootstock, scroll, sei, taiko, xLayer, polygonZkEvm, zkLink, zkSync, UniswapMetadata, TokenInfo, OkuPricingMetadata, OkuMetadata, TokenMetadata, Markets, Bridges, Oracles, IChainInfo, MAINNET_CHAINS };
+export { arbitrum, base, blast, bob, boba, bsc, filecoin, gnosis, linea, lisk, mainnet, manta, mantle, moonbeam, optimism, polygon, rootstock, scroll, sei, taiko, xLayer, polygonZkEvm, zkLink, zkSync, UniswapMetadata, OkuPricingMetadata, OkuMetadata, TokenMetadata, Markets, Bridges, Oracles, IChainInfo, MAINNET_CHAINS };
 export { ChainContract } from "viem";

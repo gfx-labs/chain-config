@@ -247,7 +247,10 @@ type UniswapMetadata struct {
 	TopNativePool                      common.Address
 	PositionsNFTDeployBlock            int64
 	UniversalRouter                    common.Address
-	WrappedNativeToken                 TokenInfo
+	WrappedNativeAddress               common.Address
+	WrappedNativeSymbol                string
+	WrappedNativeName                  string
+	WrappedNativeDecimals              int64
 	NativeCurrencyName                 string
 }
 

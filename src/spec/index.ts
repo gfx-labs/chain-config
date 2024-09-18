@@ -24,15 +24,11 @@ export interface UniswapMetadata {
   topNativePool?: Address;
   positionsNFTDeployBlock?: number;
   universalRouter?: Address;
-  wrappedNativeToken?: TokenInfo;
+  wrappedNativeAddress: Address;
+  wrappedNativeSymbol: string;
+  wrappedNativeName: string;
+  wrappedNativeDecimals: number;
   nativeCurrencyName?: string;
-}
-
-export interface TokenInfo {
-  address: Address;
-  symbol: string;
-  name: string;
-  decimals: number;
 }
 
 export interface OkuPricingMetadata {

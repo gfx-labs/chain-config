@@ -87,12 +87,10 @@ export const arbitrum = makeConfig({
     topNativePool: "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640",
     positionsNFTDeployBlock: 173,
     universalRouter: "0x4C60051384bd2d3C01bfc845Cf5F4b44bcbE9de5",
-    wrappedNativeToken: {
-      address: "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
-      symbol: "WETH",
-      name: "Wrapped Ether",
-      decimals: 18,
-    },
+    wrappedNativeAddress: "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
+    wrappedNativeSymbol: "WETH",
+    wrappedNativeName: "Wrapped Ether",
+    wrappedNativeDecimals: 18,
     nativeCurrencyName: "ETH",
   },
   token: {

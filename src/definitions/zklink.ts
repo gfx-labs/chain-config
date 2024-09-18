@@ -35,12 +35,11 @@ export const zkLink = makeConfig({
     positionsNFT: "0xAA904d497e42608C014BE83a026E984aFc16129b",
     positionsNFTDeployBlock: 3919226,
     universalRouter: "0x2274bDE50218DDB955e7f60e4f2344e3Bff9D193",
-    wrappedNativeToken: {
-      address: "0x8280a4e7D5B3B658ec4580d3Bc30f5e50454F169",
-      symbol: "WETH",
-      name: "Wrapped Ether",
-      decimals: 18,
-    },
+
+    wrappedNativeAddress: "0x8280a4e7D5B3B658ec4580d3Bc30f5e50454F169",
+    wrappedNativeSymbol: "WETH",
+    wrappedNativeName: "Wrapped Ether",
+    wrappedNativeDecimals: 18,
     nativeCurrencyName: "ETH",
   },
   token: {

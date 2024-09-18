@@ -48,12 +48,11 @@ export const filecoin = makeConfig({
     positionsNFT: "0x4cd986dD509fbB6A695aE971d5C56c8795f640ee",
     positionsNFTDeployBlock: 3195861,
     universalRouter: "0x83702C6356A1028A900F83d446D189a31646a16b",
-    wrappedNativeToken: {
-      address: "0x60E1773636CF5E4A227d9AC24F20fEca034ee25A",
-      symbol: "WFIL",
-      name: "Wrapped FIL",
-      decimals: 18,
-    },
+
+    wrappedNativeAddress: "0x60E1773636CF5E4A227d9AC24F20fEca034ee25A",
+    wrappedNativeSymbol: "WFIL",
+    wrappedNativeName: "Wrapped FIL",
+    wrappedNativeDecimals: 18,
     nativeCurrencyName: "FIL",
   },
   token: {
