@@ -18,29 +18,29 @@ export const sei = makeConfig({
       pools: [
         {
           id: 13,
-          address: '0x5c386D85b1B82FD9Db681b9176C8a4248bb6345B',
+          address: "0x5c386D85b1B82FD9Db681b9176C8a4248bb6345B",
         },
         {
           id: 1,
-          address: '0x45d417612e177672958dC0537C45a8f8d754Ac2E',
+          address: "0x45d417612e177672958dC0537C45a8f8d754Ac2E",
         },
         {
           id: 2,
-          address: '0x0dB9afb4C33be43a0a0e396Fd1383B4ea97aB10a',
+          address: "0x0dB9afb4C33be43a0a0e396Fd1383B4ea97aB10a",
         },
-      ]  
-    }
+      ],
+    },
   },
   oracles: {
     cmc: {
       slug: "sei",
-      native: "sei"
+      native: "sei",
     },
     coingecko: {
       slug: "sei-v2",
-      native: "sei-network"
+      native: "sei-network",
     },
-    dexscreener: "seiv2"
+    dexscreener: "seiv2",
   },
   blockExplorers: {
     default: {
@@ -59,6 +59,13 @@ export const sei = makeConfig({
     positionsNFT: "0x8B3c541c30f9b29560f56B9E44b59718916B69EF",
     positionsNFTDeployBlock: 79245279,
     universalRouter: "0xa683c66045ad16abb1bCE5ad46A64d95f9A25785",
+    wrappedNativeToken: {
+      address: "0xE30feDd158A2e3b13e9badaeABaFc5516e95e8C7",
+      symbol: "WSEI",
+      name: "Wrapped SEI",
+      decimals: 18,
+    },
+    nativeCurrencyName: "SEI",
   },
   token: {
     usdcAddress: "0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1",

@@ -1,4 +1,4 @@
-import { } from "viem";
+import {} from "viem";
 import { polygon as chain } from "viem/chains";
 import { makeConfig } from "../util";
 
@@ -19,7 +19,7 @@ export const polygon = makeConfig({
     kyberswap: "polygon",
     oneinch: true,
     paraswap: {
-      tokenTransferProxy: "0x216b4b4ba9f3e719726886d34a177484278bfcae"
+      tokenTransferProxy: "0x216b4b4ba9f3e719726886d34a177484278bfcae",
     },
     propellerswap: "polygon",
     openocean: "polygon",
@@ -44,26 +44,26 @@ export const polygon = makeConfig({
           id: 2,
           address: "0xd47b03ee6d86Cf251ee7860FB2ACf9f91B9fD4d7",
         },
-      ]
+      ],
     },
     wanbridge: {
-      requiredConfirmations: 500
+      requiredConfirmations: 500,
     },
     wormhole: {
       chain: "Polygon",
       timeToFinalize: 66,
-    }
+    },
   },
   oracles: {
     cmc: {
       slug: "polygon",
-      native: "polygon"
+      native: "polygon",
     },
     coingecko: {
       slug: "polygon-pos",
-      native: "matic-network"
+      native: "matic-network",
     },
-    dexscreener: "polygon"
+    dexscreener: "polygon",
   },
   uniswap: {
     deployBlock: 22757547,
@@ -85,6 +85,13 @@ export const polygon = makeConfig({
     positionsNFTDeployBlock: 22760586,
     topNativePool: "0xa374094527e1673a86de625aa59517c5de346d32",
     universalRouter: "0x4C60051384bd2d3C01bfc845Cf5F4b44bcbE9de5",
+    wrappedNativeToken: {
+      address: "0x7ceb23fd6bc0add59e62ac25578270cff1b9f619",
+      symbol: "WMATIC",
+      name: "Wrapped MATIC",
+      decimals: 18,
+    },
+    nativeCurrencyName: "MATIC",
   },
   token: {
     wbtcAddress: "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",

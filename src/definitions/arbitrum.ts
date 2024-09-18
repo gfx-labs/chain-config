@@ -17,7 +17,7 @@ export const arbitrum = makeConfig({
     kyberswap: "arbitrum",
     oneinch: true,
     paraswap: {
-      tokenTransferProxy: "0x216B4B4Ba9F3e719726886d34a177484278Bfcae"
+      tokenTransferProxy: "0x216B4B4Ba9F3e719726886d34a177484278Bfcae",
     },
     propellerswap: "arbitrum",
     openocean: "arbitrum",
@@ -46,24 +46,24 @@ export const arbitrum = makeConfig({
           id: 2,
           address: "0xcE8CcA271Ebc0533920C83d39F417ED6A0abB7D0",
         },
-      ]
+      ],
     },
     wanbridge: {
-      requiredConfirmations: 1
+      requiredConfirmations: 1,
     },
     wormhole: {
       chain: "Arbitrum",
-      timeToFinalize: 1066
-    }
+      timeToFinalize: 1066,
+    },
   },
   oracles: {
     cmc: {
       slug: "arbitrum",
-      native: "ethereum"
+      native: "ethereum",
     },
     coingecko: {
       slug: "arbitrum-one",
-      native: "ethereum"
+      native: "ethereum",
     },
     dexscreener: "arbitrum",
   },
@@ -87,6 +87,13 @@ export const arbitrum = makeConfig({
     topNativePool: "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640",
     positionsNFTDeployBlock: 173,
     universalRouter: "0x4C60051384bd2d3C01bfc845Cf5F4b44bcbE9de5",
+    wrappedNativeToken: {
+      address: "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
+      symbol: "WETH",
+      name: "Wrapped Ether",
+      decimals: 18,
+    },
+    nativeCurrencyName: "ETH",
   },
   token: {
     wethAddress: "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",

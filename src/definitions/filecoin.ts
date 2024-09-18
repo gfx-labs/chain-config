@@ -34,9 +34,9 @@ export const filecoin = makeConfig({
   oracles: {
     coingecko: {
       slug: "filecoin",
-      native: "filecoin"
+      native: "filecoin",
     },
-    dexscreener: "filecoin"
+    dexscreener: "filecoin",
   },
   uniswap: {
     deployBlock: 3195837,
@@ -48,6 +48,13 @@ export const filecoin = makeConfig({
     positionsNFT: "0x4cd986dD509fbB6A695aE971d5C56c8795f640ee",
     positionsNFTDeployBlock: 3195861,
     universalRouter: "0x83702C6356A1028A900F83d446D189a31646a16b",
+    wrappedNativeToken: {
+      address: "0x60E1773636CF5E4A227d9AC24F20fEca034ee25A",
+      symbol: "WFIL",
+      name: "Wrapped FIL",
+      decimals: 18,
+    },
+    nativeCurrencyName: "FIL",
   },
   token: {
     usdcAddress: "0xEB466342C4d449BC9f53A865D5Cb90586f405215",

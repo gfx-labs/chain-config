@@ -16,19 +16,19 @@ export const polygonZkEvm = makeConfig({
   markets: {
     kyberswap: "polygon-zkevm",
     paraswap: {
-      tokenTransferProxy: "0xc8a21fcd5a100c3ecc037c97e2f9c53a8d3a02a1"
+      tokenTransferProxy: "0xc8a21fcd5a100c3ecc037c97e2f9c53a8d3a02a1",
     },
-    openocean: "polygon_zkevm"
+    openocean: "polygon_zkevm",
   },
   bridges: {
-    rhinofi: "ZKEVM"
+    rhinofi: "ZKEVM",
   },
   oracles: {
     coingecko: {
       slug: "polygon-zkevm",
-      native: "ethereum"
+      native: "ethereum",
     },
-    dexscreener: "polygonzkevm"
+    dexscreener: "polygonzkevm",
   },
   uniswap: {
     deployBlock: 8466867,
@@ -40,6 +40,13 @@ export const polygonZkEvm = makeConfig({
     positionsNFT: "0xf0D61Aeda516CCa1FF20Be65Cfb0213be688A24f",
     positionsNFTDeployBlock: 8466897,
     universalRouter: "0x32454e81d065FAA95Ec0d0Ab6Fe326599Af30fd7",
+    wrappedNativeToken: {
+      address: "0x4F9A0e7FD2Bf6067db6994CF12E4495Df938E6e9",
+      symbol: "WETH",
+      name: "Wrapped Ether",
+      decimals: 18,
+    },
+    nativeCurrencyName: "ETH",
   },
   token: {
     wbtcAddress: "0xea034fb02eb1808c2cc3adbc15f447b93cbe08e1",

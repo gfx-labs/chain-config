@@ -43,7 +43,8 @@ export const taiko = makeConfig({
     routescan: {
       name: "Routescan",
       url: "https://taikoscan.network",
-      apiUrl: "https://api.routescan.io/v2/network/mainnet/evm/43114/etherscan/api",
+      apiUrl:
+        "https://api.routescan.io/v2/network/mainnet/evm/43114/etherscan/api",
     },
   },
   uniswap: {
@@ -56,6 +57,13 @@ export const taiko = makeConfig({
     positionsNFT: "0x8B3c541c30f9b29560f56B9E44b59718916B69EF",
     positionsNFTDeployBlock: 980,
     universalRouter: "0x346239972d1fa486FC4a521031BC81bFB7D6e8a4",
+    wrappedNativeToken: {
+      address: "0xA51894664A773981C6C112C43ce576f315d5b1B6",
+      symbol: "WETH",
+      name: "Wrapped Ether",
+      decimals: 18,
+    },
+    nativeCurrencyName: "ETH",
   },
   token: {
     usdcAddress: "0x07d83526730c7438048D55A4fc0b850e2aaB6f0b",

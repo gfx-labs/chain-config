@@ -12,24 +12,24 @@ export const manta = makeConfig({
   logoUrl: "https://assets.oku.trade/manta-logo.png",
   safeReorgDistance: 90000,
   externalId: {
-    zerion: "manta-pacific"
+    zerion: "manta-pacific",
   },
   markets: {
-    openocean: "manta"
+    openocean: "manta",
   },
   bridges: {
-    rhinofi: "MANTA"
+    rhinofi: "MANTA",
   },
   oracles: {
     cmc: {
       slug: "manta-network",
-      native: "ethereum"
+      native: "ethereum",
     },
     coingecko: {
       slug: "manta-pacific",
-      native: "ethereum"
+      native: "ethereum",
     },
-    dexscreener: "manta"
+    dexscreener: "manta",
   },
   uniswap: {
     deployBlock: 1191705,
@@ -41,6 +41,13 @@ export const manta = makeConfig({
     positionsNFT: "0xA4F2Db71348697C65A64a146F709C73030C2ebcD",
     positionsNFTDeployBlock: 1191836,
     universalRouter: "0x42Bff1f6b647462fcD8c28a488Be9C9988830ef6",
+    wrappedNativeToken: {
+      address: "0x0Dc808adcE2099A9F62AA87D9670745AbA741746",
+      symbol: "WETH",
+      name: "Wrapped Ether",
+      decimals: 18,
+    },
+    nativeCurrencyName: "ETH",
   },
   token: {
     usdcAddress: "0xb73603C5d87fA094B7314C74ACE2e64D165016fb",

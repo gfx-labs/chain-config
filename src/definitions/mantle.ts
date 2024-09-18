@@ -10,10 +10,10 @@ export const mantle = makeConfig({
   logoUrl: "https://assets.oku.trade/mantle-logo.png",
   safeReorgDistance: 90000,
   externalId: {
-    zerion: "mantle"
+    zerion: "mantle",
   },
   markets: {
-    openocean: "mantle"
+    openocean: "mantle",
   },
   bridges: {
     stargate: {
@@ -36,19 +36,19 @@ export const mantle = makeConfig({
           id: 22,
           address: "0xF7628d84a2BbD9bb9c8E686AC95BB5d55169F3F1",
         },
-      ]
-    }
+      ],
+    },
   },
   oracles: {
     cmc: {
       slug: "mantle",
-      native: "mantle"
+      native: "mantle",
     },
     coingecko: {
       slug: "mantle",
-      native: "mantle"
+      native: "mantle",
     },
-    dexscreener: "mantle"
+    dexscreener: "mantle",
   },
   uniswap: {
     deployBlock: 63795918,
@@ -60,6 +60,13 @@ export const mantle = makeConfig({
     positionsNFT: "0x5911cB3633e764939edc2d92b7e1ad375Bb57649",
     positionsNFTDeployBlock: 63796102,
     universalRouter: "0x447B8E40B0CdA8e55F405C86bC635D02d0540aB8",
+    wrappedNativeToken: {
+      address: "0x78c1b0C915c4FAA5FffA6CAbf0219DA63d7f4cb8",
+      symbol: "WMNT",
+      name: "Wrapped MNT",
+      decimals: 18,
+    },
+    nativeCurrencyName: "MNT",
   },
   token: {
     usdcAddress: "0x09Bc4E0D864854c6aFB6eB9A9cdF58aC190D0dF9",

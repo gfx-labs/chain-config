@@ -33,6 +33,13 @@ export const xLayer = makeConfig({
     positionsNFT: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c",
     positionsNFTDeployBlock: 4346185,
     universalRouter: "0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc",
+    wrappedNativeToken: {
+      address: "0xe538905cf8410324e03a5a23c1c177a474d59b2b",
+      symbol: "WOKB",
+      name: "Wrapped OKB",
+      decimals: 18,
+    },
+    nativeCurrencyName: "OKB",
   },
   token: {
     usdcAddress: "0x74b7f16337b8972027f6196a17a631ac6de26d22",

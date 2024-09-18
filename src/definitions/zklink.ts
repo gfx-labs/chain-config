@@ -14,15 +14,15 @@ export const zkLink = makeConfig({
   oracles: {
     coingecko: {
       slug: "zklink-nova",
-      native: "ethereum"
-    }
+      native: "ethereum",
+    },
   },
   blockExplorers: {
     default: {
       name: "zkLink Nova Block Explorer",
       url: "https://explorer.zklink.io/",
       apiUrl: "https://explorer-api.zklink.io/api",
-    }
+    },
   },
   initCodeHash:
     "0x010013f177ea1fcbc4520f9a3ca7cd2d1d77959e05aa66484027cb38e712aeed",
@@ -35,6 +35,13 @@ export const zkLink = makeConfig({
     positionsNFT: "0xAA904d497e42608C014BE83a026E984aFc16129b",
     positionsNFTDeployBlock: 3919226,
     universalRouter: "0x2274bDE50218DDB955e7f60e4f2344e3Bff9D193",
+    wrappedNativeToken: {
+      address: "0x8280a4e7D5B3B658ec4580d3Bc30f5e50454F169",
+      symbol: "WETH",
+      name: "Wrapped Ether",
+      decimals: 18,
+    },
+    nativeCurrencyName: "ETH",
   },
   token: {
     usdcAddress: "0x1a1A3b2ff016332e866787B311fcB63928464509",

@@ -24,6 +24,15 @@ export interface UniswapMetadata {
   topNativePool?: Address;
   positionsNFTDeployBlock?: number;
   universalRouter?: Address;
+  wrappedNativeToken?: TokenInfo;
+  nativeCurrencyName?: string;
+}
+
+export interface TokenInfo {
+  address: Address;
+  symbol: string;
+  name: string;
+  decimals: number;
 }
 
 export interface OkuPricingMetadata {
@@ -46,63 +55,63 @@ export interface TokenMetadata {
 }
 
 export interface Markets {
-  airswap?: boolean,
-  enso?: any,
-  kyberswap?: string,
-  odos?: any,
-  okx?: any,
-  oneinch?: boolean,
-  openocean?: string,
+  airswap?: boolean;
+  enso?: any;
+  kyberswap?: string;
+  odos?: any;
+  okx?: any;
+  oneinch?: boolean;
+  openocean?: string;
   paraswap?: {
-    tokenTransferProxy: string
-  },
-  propellerswap?: string,
-  usor?: any,
-  zeroex?: boolean,
+    tokenTransferProxy: string;
+  };
+  propellerswap?: string;
+  usor?: any;
+  zeroex?: boolean;
 }
 
 export interface Bridges {
-  deswap?: any,
-  bungee?: any,
-  lifi?: any,
-  across?: any,
-  orbiter?: any,
+  deswap?: any;
+  bungee?: any;
+  lifi?: any;
+  across?: any;
+  orbiter?: any;
   wormhole?: {
-    chain: string,
-    timeToFinalize: number,
-  },
-  rhinofi?: string,
+    chain: string;
+    timeToFinalize: number;
+  };
+  rhinofi?: string;
   chainlink?: {
-    atlasNetworkName: string,
-    routerAddress: string,
-    chainSelector: bigint,
-  },
-  squidrouter?: any,
+    atlasNetworkName: string;
+    routerAddress: string;
+    chainSelector: bigint;
+  };
+  squidrouter?: any;
   wanbridge?: {
-    requiredConfirmations: number
-  },
+    requiredConfirmations: number;
+  };
   stargate?: {
-    endpointID: number,
-    blockConfirmations: number,
+    endpointID: number;
+    blockConfirmations: number;
     pools: {
-      id: number,
-      address: string,
-    }[],
-  },
+      id: number;
+      address: string;
+    }[];
+  };
 }
 
 export interface Oracles {
   cmc?: {
-    slug: string,
-    native: string
-  },
+    slug: string;
+    native: string;
+  };
   coingecko?: {
-    slug: string,
-    native: string
-  },
-  dexguru?: any,
-  dexscreener?: string,
-  oku?: any,
+    slug: string;
+    native: string;
+  };
+  dexguru?: any;
+  dexscreener?: string;
+  oku?: any;
 }
 
 export interface IChainInfo<

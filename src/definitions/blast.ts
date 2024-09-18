@@ -14,25 +14,25 @@ export const blast = makeConfig({
   markets: {
     kyberswap: "blast",
     openocean: "blast",
-    zeroex: true
+    zeroex: true,
   },
   bridges: {
     rhinofi: "BLAST",
     wormhole: {
       chain: "Blast",
       timeToFinalize: 1800,
-    }
+    },
   },
   oracles: {
     cmc: {
       slug: "blast",
-      native: "ethereum"
+      native: "ethereum",
     },
     coingecko: {
       slug: "blast",
-      native: "ethereum"
+      native: "ethereum",
     },
-    dexscreener: "blast"
+    dexscreener: "blast",
   },
   uniswap: {
     deployBlock: 400903,
@@ -43,6 +43,13 @@ export const blast = makeConfig({
     positionsNFT: "0xB218e4f7cF0533d4696fDfC419A0023D33345F28",
     positionsNFTDeployBlock: 400947,
     universalRouter: "0x643770E279d5D0733F21d6DC03A8efbABf3255B4",
+    wrappedNativeToken: {
+      address: "0x4300000000000000000000000000000000000004",
+      symbol: "WETH",
+      name: "Wrapped Ether",
+      decimals: 18,
+    },
+    nativeCurrencyName: "ETH",
   },
   token: {
     usdcAddress: "0x4300000000000000000000000000000000000003",

@@ -29,23 +29,23 @@ export const linea = makeConfig({
           id: 13,
           address: "0x81F6138153d473E8c5EcebD3DC8Cd4903506B075",
         },
-      ]
+      ],
     },
     wormhole: {
       chain: "Linea",
       timeToFinalize: 1800,
-    }
+    },
   },
   oracles: {
     cmc: {
       slug: "linea",
-      native: "ethereum"
+      native: "ethereum",
     },
     coingecko: {
       slug: "linea",
-      native: "ethereum"
+      native: "ethereum",
     },
-    dexscreener: "linea"
+    dexscreener: "linea",
   },
   uniswap: {
     deployBlock: 25248,
@@ -56,6 +56,13 @@ export const linea = makeConfig({
     positionsNFT: "0x4615C383F85D0a2BbED973d83ccecf5CB7121463",
     positionsNFTDeployBlock: 25264,
     universalRouter: "0xd7c7d7f18dd5388d5217c9696c7e799fcd75c6bd",
+    wrappedNativeToken: {
+      address: "0xe5d7c2a44ffddf6b295a15c148167daaaf5cf34f",
+      symbol: "WETH",
+      name: "Wrapped Ether",
+      decimals: 18,
+    },
+    nativeCurrencyName: "ETH",
   },
   token: {
     usdcAddress: "0x176211869ca2b568f2a7d4ee941e073a821ee1ff",

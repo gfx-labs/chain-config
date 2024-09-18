@@ -17,11 +17,11 @@ export const rootstock = makeConfig({
   oracles: {
     cmc: {
       slug: "rsk-smart-bitcoin",
-      native: "rsk-smart-bitcoin"
+      native: "rsk-smart-bitcoin",
     },
     coingecko: {
       slug: "rootstock",
-      native: "rootstock"
+      native: "rootstock",
     },
   },
   blockExplorers: {
@@ -42,6 +42,13 @@ export const rootstock = makeConfig({
     positionsNFT: "0x9d9386c042F194B460Ec424a1e57ACDE25f5C4b1",
     positionsNFTDeployBlock: 5829891,
     universalRouter: "0x244f68e77357f86a8522323eBF80b5FC2F814d3E",
+    wrappedNativeToken: {
+      address: "0x542fDA317318eBF1d3DEAf76E0b632741A7e677d",
+      symbol: "WRBTC",
+      name: "Wrapped BTC",
+      decimals: 18,
+    },
+    nativeCurrencyName: "RBTC",
   },
   token: {
     usdcAddress: "0x3A15461d8AE0f0Fb5fA2629e9dA7D66A794a6E37",

@@ -1,4 +1,4 @@
-import { } from "viem";
+import {} from "viem";
 import { base as chain } from "viem/chains";
 import { makeConfig } from "../util";
 
@@ -18,7 +18,7 @@ export const base = makeConfig({
     kyberswap: "base",
     oneinch: true,
     paraswap: {
-      tokenTransferProxy: "0x93aAAe79a53759cD164340E4C8766E4Db5331cD7"
+      tokenTransferProxy: "0x93aAAe79a53759cD164340E4C8766E4Db5331cD7",
     },
     openocean: "base",
     zeroex: true,
@@ -42,15 +42,15 @@ export const base = makeConfig({
           id: 1,
           address: "0x27a16dc786820B16E5c9028b75B99F6f604b5d26",
         },
-      ]
+      ],
     },
     wanbridge: {
-      requiredConfirmations: 200
+      requiredConfirmations: 200,
     },
     wormhole: {
       chain: "Base",
-      timeToFinalize: 1800
-    }
+      timeToFinalize: 1800,
+    },
   },
   oracles: {
     cmc: {
@@ -73,6 +73,13 @@ export const base = makeConfig({
     positionsNFT: "0x03a520b32C04BF3bEEf7BEb72E919cf822Ed34f1",
     positionsNFTDeployBlock: 1371714,
     universalRouter: "0xec8b0f7ffe3ae75d7ffab09429e3675bb63503e4",
+    wrappedNativeToken: {
+      address: "0x4200000000000000000000000000000000000006",
+      symbol: "WETH",
+      name: "Wrapped Ether",
+      decimals: 18,
+    },
+    nativeCurrencyName: "ETH",
   },
   token: {
     usdcAddress: "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",

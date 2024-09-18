@@ -19,7 +19,7 @@ export const mainnet = makeConfig({
     kyberswap: "ethereum",
     oneinch: true,
     paraswap: {
-      tokenTransferProxy: "0x216b4b4ba9f3e719726886d34a177484278bfcae"
+      tokenTransferProxy: "0x216b4b4ba9f3e719726886d34a177484278bfcae",
     },
     propellerswap: "ethereum",
     openocean: "eth",
@@ -38,7 +38,7 @@ export const mainnet = makeConfig({
       pools: [
         {
           id: 13,
-          address: "0x77b2043768d28E9C9aB44E1aBfC95944bcE57931"
+          address: "0x77b2043768d28E9C9aB44E1aBfC95944bcE57931",
         },
         {
           id: 1,
@@ -56,26 +56,26 @@ export const mainnet = makeConfig({
           id: 22,
           address: "0x268Ca24DAefF1FaC2ed883c598200CcbB79E931D",
         },
-      ]
+      ],
     },
     wanbridge: {
-      requiredConfirmations: 6
+      requiredConfirmations: 6,
     },
     wormhole: {
       chain: "Ethereum",
       timeToFinalize: 975,
-    }
+    },
   },
   oracles: {
     cmc: {
       slug: "ethereum",
-      native: "ethereum"
+      native: "ethereum",
     },
     coingecko: {
       slug: "ethereum",
-      native: "ethereum"
+      native: "ethereum",
     },
-    dexscreener: "ethereum"
+    dexscreener: "ethereum",
   },
   uniswap: {
     deployBlock: 12369621,
@@ -97,6 +97,13 @@ export const mainnet = makeConfig({
     topNativePool: "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640",
     positionsNFTDeployBlock: 12369651,
     universalRouter: "0xEf1c6E67703c7BD7107eed8303Fbe6EC2554BF6B",
+    wrappedNativeToken: {
+      address: "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+      symbol: "WETH",
+      name: "Wrapped Ether",
+      decimals: 18,
+    },
+    nativeCurrencyName: "ETH",
   },
   token: {
     usdcAddress: "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",

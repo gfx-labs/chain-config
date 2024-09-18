@@ -41,26 +41,26 @@ export const bsc = makeConfig({
           id: 2,
           address: "0x138EB30f73BC423c6455C53df6D89CB01d9eBc63",
         },
-      ]
+      ],
     },
     wanbridge: {
-      requiredConfirmations: 12
+      requiredConfirmations: 12,
     },
     wormhole: {
       chain: "Bsc",
-      timeToFinalize: 48
-    }
+      timeToFinalize: 48,
+    },
   },
   oracles: {
     cmc: {
       slug: "bnb",
-      native: "bnb"
+      native: "bnb",
     },
     coingecko: {
       slug: "binance-smart-chain",
-      native: "binancecoin"
+      native: "binancecoin",
     },
-    dexscreener: "bsc"
+    dexscreener: "bsc",
   },
   uniswap: {
     deployBlock: 26324014,
@@ -80,6 +80,13 @@ export const bsc = makeConfig({
     positionsNFT: "0x7b8A01B39D58278b5DE7e48c8449c9f4F5170613",
     positionsNFTDeployBlock: 26324045,
     universalRouter: "0xeC8B0F7Ffe3ae75d7FfAb09429e3675bb63503e4",
+    wrappedNativeToken: {
+      address: "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
+      symbol: "WBNB",
+      name: "Wrapped BNB",
+      decimals: 18,
+    },
+    nativeCurrencyName: "BNB",
   },
   token: {
     usdcAddress: "0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d",

@@ -19,7 +19,7 @@ export const optimism = makeConfig({
     kyberswap: "optimism",
     oneinch: true,
     paraswap: {
-      tokenTransferProxy: "0x216B4B4Ba9F3e719726886d34a177484278Bfcae"
+      tokenTransferProxy: "0x216B4B4Ba9F3e719726886d34a177484278Bfcae",
     },
     openocean: "optimism",
     zeroex: true,
@@ -47,26 +47,26 @@ export const optimism = makeConfig({
           id: 2,
           address: "0x19cFCE47eD54a88614648DC3f19A5980097007dD",
         },
-      ]
+      ],
     },
     wanbridge: {
-      requiredConfirmations: 1
+      requiredConfirmations: 1,
     },
     wormhole: {
       chain: "Optimism",
       timeToFinalize: 1026,
-    }
+    },
   },
   oracles: {
     cmc: {
       slug: "optimism-ethereum",
-      native: "ethereum"
+      native: "ethereum",
     },
     coingecko: {
       slug: "optimistic-ethereum",
-      native: "ethereum"
+      native: "ethereum",
     },
-    dexscreener: "optimism"
+    dexscreener: "optimism",
   },
   oku: {
     limitOrderRegistryDeployBlock: 105276132,
@@ -204,6 +204,13 @@ export const optimism = makeConfig({
     topNativePool: "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640",
     positionsNFTDeployBlock: 0,
     universalRouter: "0xb555edF5dcF85f42cEeF1f3630a52A108E55A654",
+    wrappedNativeToken: {
+      address: "0x4200000000000000000000000000000000000006",
+      symbol: "WETH",
+      name: "Wrapped Ether",
+      decimals: 18,
+    },
+    nativeCurrencyName: "ETH",
   },
   token: {
     usdcAddress: "0x0b2c639c533813f4aa9d7837caf62653d097ff85",

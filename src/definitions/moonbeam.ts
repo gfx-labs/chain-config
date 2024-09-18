@@ -16,23 +16,23 @@ export const moonbeam = makeConfig({
   markets: {},
   bridges: {
     wanbridge: {
-      requiredConfirmations: 30
+      requiredConfirmations: 30,
     },
     wormhole: {
       chain: "Moonbeam",
       timeToFinalize: 24,
-    }
+    },
   },
   oracles: {
     cmc: {
       slug: "moonbeam",
-      native: "moonbeam"
+      native: "moonbeam",
     },
     coingecko: {
       slug: "moonbeam",
       native: "moonbeam",
     },
-    dexscreener: "moonbeam"
+    dexscreener: "moonbeam",
   },
   uniswap: {
     deployBlock: 3340452,
@@ -51,6 +51,13 @@ export const moonbeam = makeConfig({
     positionsNFT: "0x9036D0DcB5a059C9371B05D508f0072Df773854e",
     positionsNFTDeployBlock: 3340476,
     universalRouter: "0x1F56F4e1648e96633c7FE79002036E967403CDfF",
+    wrappedNativeToken: {
+      address: "0xab3f0245b83feb11d15aaffefd7ad465a59817ed",
+      symbol: "WGLMR",
+      name: "Wrapped GLMR",
+      decimals: 18,
+    },
+    nativeCurrencyName: "GLMR",
   },
   token: {
     wethAddress: "0xab3f0245b83feb11d15aaffefd7ad465a59817ed",

@@ -23,7 +23,7 @@
           kyberswap: "arbitrum",
           oneinch: true,
           paraswap: {
-              tokenTransferProxy: "0x216B4B4Ba9F3e719726886d34a177484278Bfcae"
+              tokenTransferProxy: "0x216B4B4Ba9F3e719726886d34a177484278Bfcae",
           },
           propellerswap: "arbitrum",
           openocean: "arbitrum",
@@ -52,24 +52,24 @@
                       id: 2,
                       address: "0xcE8CcA271Ebc0533920C83d39F417ED6A0abB7D0",
                   },
-              ]
+              ],
           },
           wanbridge: {
-              requiredConfirmations: 1
+              requiredConfirmations: 1,
           },
           wormhole: {
               chain: "Arbitrum",
-              timeToFinalize: 1066
-          }
+              timeToFinalize: 1066,
+          },
       },
       oracles: {
           cmc: {
               slug: "arbitrum",
-              native: "ethereum"
+              native: "ethereum",
           },
           coingecko: {
               slug: "arbitrum-one",
-              native: "ethereum"
+              native: "ethereum",
           },
           dexscreener: "arbitrum",
       },
@@ -92,6 +92,13 @@
           topNativePool: "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640",
           positionsNFTDeployBlock: 173,
           universalRouter: "0x4C60051384bd2d3C01bfc845Cf5F4b44bcbE9de5",
+          wrappedNativeToken: {
+              address: "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
+              symbol: "WETH",
+              name: "Wrapped Ether",
+              decimals: 18,
+          },
+          nativeCurrencyName: "ETH",
       },
       token: {
           wethAddress: "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
@@ -304,7 +311,7 @@
           kyberswap: "base",
           oneinch: true,
           paraswap: {
-              tokenTransferProxy: "0x93aAAe79a53759cD164340E4C8766E4Db5331cD7"
+              tokenTransferProxy: "0x93aAAe79a53759cD164340E4C8766E4Db5331cD7",
           },
           openocean: "base",
           zeroex: true,
@@ -328,15 +335,15 @@
                       id: 1,
                       address: "0x27a16dc786820B16E5c9028b75B99F6f604b5d26",
                   },
-              ]
+              ],
           },
           wanbridge: {
-              requiredConfirmations: 200
+              requiredConfirmations: 200,
           },
           wormhole: {
               chain: "Base",
-              timeToFinalize: 1800
-          }
+              timeToFinalize: 1800,
+          },
       },
       oracles: {
           cmc: {
@@ -359,6 +366,13 @@
           positionsNFT: "0x03a520b32C04BF3bEEf7BEb72E919cf822Ed34f1",
           positionsNFTDeployBlock: 1371714,
           universalRouter: "0xec8b0f7ffe3ae75d7ffab09429e3675bb63503e4",
+          wrappedNativeToken: {
+              address: "0x4200000000000000000000000000000000000006",
+              symbol: "WETH",
+              name: "Wrapped Ether",
+              decimals: 18,
+          },
+          nativeCurrencyName: "ETH",
       },
       token: {
           usdcAddress: "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
@@ -441,25 +455,25 @@
       markets: {
           kyberswap: "blast",
           openocean: "blast",
-          zeroex: true
+          zeroex: true,
       },
       bridges: {
           rhinofi: "BLAST",
           wormhole: {
               chain: "Blast",
               timeToFinalize: 1800,
-          }
+          },
       },
       oracles: {
           cmc: {
               slug: "blast",
-              native: "ethereum"
+              native: "ethereum",
           },
           coingecko: {
               slug: "blast",
-              native: "ethereum"
+              native: "ethereum",
           },
-          dexscreener: "blast"
+          dexscreener: "blast",
       },
       uniswap: {
           deployBlock: 400903,
@@ -470,6 +484,13 @@
           positionsNFT: "0xB218e4f7cF0533d4696fDfC419A0023D33345F28",
           positionsNFTDeployBlock: 400947,
           universalRouter: "0x643770E279d5D0733F21d6DC03A8efbABf3255B4",
+          wrappedNativeToken: {
+              address: "0x4300000000000000000000000000000000000004",
+              symbol: "WETH",
+              name: "Wrapped Ether",
+              decimals: 18,
+          },
+          nativeCurrencyName: "ETH",
       },
       token: {
           usdcAddress: "0x4300000000000000000000000000000000000003",
@@ -548,6 +569,13 @@
           positionsNFT: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c",
           positionsNFTDeployBlock: 5189019,
           universalRouter: "0x346239972d1fa486FC4a521031BC81bFB7D6e8a4",
+          wrappedNativeToken: {
+              address: "0x4200000000000000000000000000000000000006",
+              symbol: "WETH",
+              name: "Wrapped Ether",
+              decimals: 18,
+          },
+          nativeCurrencyName: "ETH",
       },
       token: {
           wethAddress: "0x4200000000000000000000000000000000000006",
@@ -611,9 +639,9 @@
       oracles: {
           coingecko: {
               slug: "boba",
-              native: "ethereum"
+              native: "ethereum",
           },
-          dexscreener: "boba"
+          dexscreener: "boba",
       },
       blockExplorers: {
           default: {
@@ -645,6 +673,13 @@
           positionsNFT: "0x0bfc9aC7E52f38EAA6dC8d10942478f695C6Cf71",
           positionsNFTDeployBlock: 969359,
           universalRouter: "0x4BA622997559F9b5Ac68751D7Fc3dEecc23a0e88",
+          wrappedNativeToken: {
+              address: "0xdeaddeaddeaddeaddeaddeaddeaddeaddead0000",
+              symbol: "WETH",
+              name: "Wrapped Ether",
+              decimals: 18,
+          },
+          nativeCurrencyName: "ETH",
       },
       token: {
           wethAddress: "0xdeaddeaddeaddeaddeaddeaddeaddeaddead0000",
@@ -740,26 +775,26 @@
                       id: 2,
                       address: "0x138EB30f73BC423c6455C53df6D89CB01d9eBc63",
                   },
-              ]
+              ],
           },
           wanbridge: {
-              requiredConfirmations: 12
+              requiredConfirmations: 12,
           },
           wormhole: {
               chain: "Bsc",
-              timeToFinalize: 48
-          }
+              timeToFinalize: 48,
+          },
       },
       oracles: {
           cmc: {
               slug: "bnb",
-              native: "bnb"
+              native: "bnb",
           },
           coingecko: {
               slug: "binance-smart-chain",
-              native: "binancecoin"
+              native: "binancecoin",
           },
-          dexscreener: "bsc"
+          dexscreener: "bsc",
       },
       uniswap: {
           deployBlock: 26324014,
@@ -778,6 +813,13 @@
           positionsNFT: "0x7b8A01B39D58278b5DE7e48c8449c9f4F5170613",
           positionsNFTDeployBlock: 26324045,
           universalRouter: "0xeC8B0F7Ffe3ae75d7FfAb09429e3675bb63503e4",
+          wrappedNativeToken: {
+              address: "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
+              symbol: "WBNB",
+              name: "Wrapped BNB",
+              decimals: 18,
+          },
+          nativeCurrencyName: "BNB",
       },
       token: {
           usdcAddress: "0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d",
@@ -911,9 +953,9 @@
       oracles: {
           coingecko: {
               slug: "filecoin",
-              native: "filecoin"
+              native: "filecoin",
           },
-          dexscreener: "filecoin"
+          dexscreener: "filecoin",
       },
       uniswap: {
           deployBlock: 3195837,
@@ -925,6 +967,13 @@
           positionsNFT: "0x4cd986dD509fbB6A695aE971d5C56c8795f640ee",
           positionsNFTDeployBlock: 3195861,
           universalRouter: "0x83702C6356A1028A900F83d446D189a31646a16b",
+          wrappedNativeToken: {
+              address: "0x60E1773636CF5E4A227d9AC24F20fEca034ee25A",
+              symbol: "WFIL",
+              name: "Wrapped FIL",
+              decimals: 18,
+          },
+          nativeCurrencyName: "FIL",
       },
       token: {
           usdcAddress: "0xEB466342C4d449BC9f53A865D5Cb90586f405215",
@@ -1037,6 +1086,13 @@
           positionsNFT: "0xAE8fbE656a77519a7490054274910129c9244FA3",
           positionsNFTDeployBlock: 27416645,
           universalRouter: "0x75FC67473A91335B5b8F8821277262a13B38c9b3",
+          wrappedNativeToken: {
+              address: "0xe91d153e0b41518a2ce8dd3d7944fa863463a97d",
+              symbol: "WXDAI",
+              name: "Wrapped XDAI",
+              decimals: 18,
+          },
+          nativeCurrencyName: "XDAI",
       },
       token: {
           usdcAddress: "0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4",
@@ -1122,23 +1178,23 @@
                       id: 13,
                       address: "0x81F6138153d473E8c5EcebD3DC8Cd4903506B075",
                   },
-              ]
+              ],
           },
           wormhole: {
               chain: "Linea",
               timeToFinalize: 1800,
-          }
+          },
       },
       oracles: {
           cmc: {
               slug: "linea",
-              native: "ethereum"
+              native: "ethereum",
           },
           coingecko: {
               slug: "linea",
-              native: "ethereum"
+              native: "ethereum",
           },
-          dexscreener: "linea"
+          dexscreener: "linea",
       },
       uniswap: {
           deployBlock: 25248,
@@ -1149,6 +1205,13 @@
           positionsNFT: "0x4615C383F85D0a2BbED973d83ccecf5CB7121463",
           positionsNFTDeployBlock: 25264,
           universalRouter: "0xd7c7d7f18dd5388d5217c9696c7e799fcd75c6bd",
+          wrappedNativeToken: {
+              address: "0xe5d7c2a44ffddf6b295a15c148167daaaf5cf34f",
+              symbol: "WETH",
+              name: "Wrapped Ether",
+              decimals: 18,
+          },
+          nativeCurrencyName: "ETH",
       },
       token: {
           usdcAddress: "0x176211869ca2b568f2a7d4ee941e073a821ee1ff",
@@ -1241,6 +1304,13 @@
           positionsNFT: "0x5911cB3633e764939edc2d92b7e1ad375Bb57649",
           positionsNFTDeployBlock: 578398,
           universalRouter: "0x447B8E40B0CdA8e55F405C86bC635D02d0540aB8",
+          wrappedNativeToken: {
+              address: "0x4200000000000000000000000000000000000006",
+              symbol: "WETH",
+              name: "Wrapped Ether",
+              decimals: 18,
+          },
+          nativeCurrencyName: "ETH",
       },
       token: {
           wethAddress: "0x4200000000000000000000000000000000000006",
@@ -1304,7 +1374,7 @@
           kyberswap: "ethereum",
           oneinch: true,
           paraswap: {
-              tokenTransferProxy: "0x216b4b4ba9f3e719726886d34a177484278bfcae"
+              tokenTransferProxy: "0x216b4b4ba9f3e719726886d34a177484278bfcae",
           },
           propellerswap: "ethereum",
           openocean: "eth",
@@ -1323,7 +1393,7 @@
               pools: [
                   {
                       id: 13,
-                      address: "0x77b2043768d28E9C9aB44E1aBfC95944bcE57931"
+                      address: "0x77b2043768d28E9C9aB44E1aBfC95944bcE57931",
                   },
                   {
                       id: 1,
@@ -1341,26 +1411,26 @@
                       id: 22,
                       address: "0x268Ca24DAefF1FaC2ed883c598200CcbB79E931D",
                   },
-              ]
+              ],
           },
           wanbridge: {
-              requiredConfirmations: 6
+              requiredConfirmations: 6,
           },
           wormhole: {
               chain: "Ethereum",
               timeToFinalize: 975,
-          }
+          },
       },
       oracles: {
           cmc: {
               slug: "ethereum",
-              native: "ethereum"
+              native: "ethereum",
           },
           coingecko: {
               slug: "ethereum",
-              native: "ethereum"
+              native: "ethereum",
           },
-          dexscreener: "ethereum"
+          dexscreener: "ethereum",
       },
       uniswap: {
           deployBlock: 12369621,
@@ -1381,6 +1451,13 @@
           topNativePool: "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640",
           positionsNFTDeployBlock: 12369651,
           universalRouter: "0xEf1c6E67703c7BD7107eed8303Fbe6EC2554BF6B",
+          wrappedNativeToken: {
+              address: "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+              symbol: "WETH",
+              name: "Wrapped Ether",
+              decimals: 18,
+          },
+          nativeCurrencyName: "ETH",
       },
       token: {
           usdcAddress: "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
@@ -1584,24 +1661,24 @@
       logoUrl: "https://assets.oku.trade/manta-logo.png",
       safeReorgDistance: 90000,
       externalId: {
-          zerion: "manta-pacific"
+          zerion: "manta-pacific",
       },
       markets: {
-          openocean: "manta"
+          openocean: "manta",
       },
       bridges: {
-          rhinofi: "MANTA"
+          rhinofi: "MANTA",
       },
       oracles: {
           cmc: {
               slug: "manta-network",
-              native: "ethereum"
+              native: "ethereum",
           },
           coingecko: {
               slug: "manta-pacific",
-              native: "ethereum"
+              native: "ethereum",
           },
-          dexscreener: "manta"
+          dexscreener: "manta",
       },
       uniswap: {
           deployBlock: 1191705,
@@ -1613,6 +1690,13 @@
           positionsNFT: "0xA4F2Db71348697C65A64a146F709C73030C2ebcD",
           positionsNFTDeployBlock: 1191836,
           universalRouter: "0x42Bff1f6b647462fcD8c28a488Be9C9988830ef6",
+          wrappedNativeToken: {
+              address: "0x0Dc808adcE2099A9F62AA87D9670745AbA741746",
+              symbol: "WETH",
+              name: "Wrapped Ether",
+              decimals: 18,
+          },
+          nativeCurrencyName: "ETH",
       },
       token: {
           usdcAddress: "0xb73603C5d87fA094B7314C74ACE2e64D165016fb",
@@ -1683,10 +1767,10 @@
       logoUrl: "https://assets.oku.trade/mantle-logo.png",
       safeReorgDistance: 90000,
       externalId: {
-          zerion: "mantle"
+          zerion: "mantle",
       },
       markets: {
-          openocean: "mantle"
+          openocean: "mantle",
       },
       bridges: {
           stargate: {
@@ -1709,19 +1793,19 @@
                       id: 22,
                       address: "0xF7628d84a2BbD9bb9c8E686AC95BB5d55169F3F1",
                   },
-              ]
-          }
+              ],
+          },
       },
       oracles: {
           cmc: {
               slug: "mantle",
-              native: "mantle"
+              native: "mantle",
           },
           coingecko: {
               slug: "mantle",
-              native: "mantle"
+              native: "mantle",
           },
-          dexscreener: "mantle"
+          dexscreener: "mantle",
       },
       uniswap: {
           deployBlock: 63795918,
@@ -1733,6 +1817,13 @@
           positionsNFT: "0x5911cB3633e764939edc2d92b7e1ad375Bb57649",
           positionsNFTDeployBlock: 63796102,
           universalRouter: "0x447B8E40B0CdA8e55F405C86bC635D02d0540aB8",
+          wrappedNativeToken: {
+              address: "0x78c1b0C915c4FAA5FffA6CAbf0219DA63d7f4cb8",
+              symbol: "WMNT",
+              name: "Wrapped MNT",
+              decimals: 18,
+          },
+          nativeCurrencyName: "MNT",
       },
       token: {
           usdcAddress: "0x09Bc4E0D864854c6aFB6eB9A9cdF58aC190D0dF9",
@@ -1800,23 +1891,23 @@
       markets: {},
       bridges: {
           wanbridge: {
-              requiredConfirmations: 30
+              requiredConfirmations: 30,
           },
           wormhole: {
               chain: "Moonbeam",
               timeToFinalize: 24,
-          }
+          },
       },
       oracles: {
           cmc: {
               slug: "moonbeam",
-              native: "moonbeam"
+              native: "moonbeam",
           },
           coingecko: {
               slug: "moonbeam",
               native: "moonbeam",
           },
-          dexscreener: "moonbeam"
+          dexscreener: "moonbeam",
       },
       uniswap: {
           deployBlock: 3340452,
@@ -1834,6 +1925,13 @@
           positionsNFT: "0x9036D0DcB5a059C9371B05D508f0072Df773854e",
           positionsNFTDeployBlock: 3340476,
           universalRouter: "0x1F56F4e1648e96633c7FE79002036E967403CDfF",
+          wrappedNativeToken: {
+              address: "0xab3f0245b83feb11d15aaffefd7ad465a59817ed",
+              symbol: "WGLMR",
+              name: "Wrapped GLMR",
+              decimals: 18,
+          },
+          nativeCurrencyName: "GLMR",
       },
       token: {
           wethAddress: "0xab3f0245b83feb11d15aaffefd7ad465a59817ed",
@@ -1907,7 +2005,7 @@
           kyberswap: "optimism",
           oneinch: true,
           paraswap: {
-              tokenTransferProxy: "0x216B4B4Ba9F3e719726886d34a177484278Bfcae"
+              tokenTransferProxy: "0x216B4B4Ba9F3e719726886d34a177484278Bfcae",
           },
           openocean: "optimism",
           zeroex: true,
@@ -1935,26 +2033,26 @@
                       id: 2,
                       address: "0x19cFCE47eD54a88614648DC3f19A5980097007dD",
                   },
-              ]
+              ],
           },
           wanbridge: {
-              requiredConfirmations: 1
+              requiredConfirmations: 1,
           },
           wormhole: {
               chain: "Optimism",
               timeToFinalize: 1026,
-          }
+          },
       },
       oracles: {
           cmc: {
               slug: "optimism-ethereum",
-              native: "ethereum"
+              native: "ethereum",
           },
           coingecko: {
               slug: "optimistic-ethereum",
-              native: "ethereum"
+              native: "ethereum",
           },
-          dexscreener: "optimism"
+          dexscreener: "optimism",
       },
       oku: {
           limitOrderRegistryDeployBlock: 105276132,
@@ -2091,6 +2189,13 @@
           topNativePool: "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640",
           positionsNFTDeployBlock: 0,
           universalRouter: "0xb555edF5dcF85f42cEeF1f3630a52A108E55A654",
+          wrappedNativeToken: {
+              address: "0x4200000000000000000000000000000000000006",
+              symbol: "WETH",
+              name: "Wrapped Ether",
+              decimals: 18,
+          },
+          nativeCurrencyName: "ETH",
       },
       token: {
           usdcAddress: "0x0b2c639c533813f4aa9d7837caf62653d097ff85",
@@ -2183,7 +2288,7 @@
           kyberswap: "polygon",
           oneinch: true,
           paraswap: {
-              tokenTransferProxy: "0x216b4b4ba9f3e719726886d34a177484278bfcae"
+              tokenTransferProxy: "0x216b4b4ba9f3e719726886d34a177484278bfcae",
           },
           propellerswap: "polygon",
           openocean: "polygon",
@@ -2208,26 +2313,26 @@
                       id: 2,
                       address: "0xd47b03ee6d86Cf251ee7860FB2ACf9f91B9fD4d7",
                   },
-              ]
+              ],
           },
           wanbridge: {
-              requiredConfirmations: 500
+              requiredConfirmations: 500,
           },
           wormhole: {
               chain: "Polygon",
               timeToFinalize: 66,
-          }
+          },
       },
       oracles: {
           cmc: {
               slug: "polygon",
-              native: "polygon"
+              native: "polygon",
           },
           coingecko: {
               slug: "polygon-pos",
-              native: "matic-network"
+              native: "matic-network",
           },
-          dexscreener: "polygon"
+          dexscreener: "polygon",
       },
       uniswap: {
           deployBlock: 22757547,
@@ -2248,6 +2353,13 @@
           positionsNFTDeployBlock: 22760586,
           topNativePool: "0xa374094527e1673a86de625aa59517c5de346d32",
           universalRouter: "0x4C60051384bd2d3C01bfc845Cf5F4b44bcbE9de5",
+          wrappedNativeToken: {
+              address: "0x7ceb23fd6bc0add59e62ac25578270cff1b9f619",
+              symbol: "WMATIC",
+              name: "Wrapped MATIC",
+              decimals: 18,
+          },
+          nativeCurrencyName: "MATIC",
       },
       token: {
           wbtcAddress: "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
@@ -2449,11 +2561,11 @@
       oracles: {
           cmc: {
               slug: "rsk-smart-bitcoin",
-              native: "rsk-smart-bitcoin"
+              native: "rsk-smart-bitcoin",
           },
           coingecko: {
               slug: "rootstock",
-              native: "rootstock"
+              native: "rootstock",
           },
       },
       blockExplorers: {
@@ -2474,6 +2586,13 @@
           positionsNFT: "0x9d9386c042F194B460Ec424a1e57ACDE25f5C4b1",
           positionsNFTDeployBlock: 5829891,
           universalRouter: "0x244f68e77357f86a8522323eBF80b5FC2F814d3E",
+          wrappedNativeToken: {
+              address: "0x542fDA317318eBF1d3DEAf76E0b632741A7e677d",
+              symbol: "WRBTC",
+              name: "Wrapped BTC",
+              decimals: 18,
+          },
+          nativeCurrencyName: "RBTC",
       },
       token: {
           usdcAddress: "0x3A15461d8AE0f0Fb5fA2629e9dA7D66A794a6E37",
@@ -2540,7 +2659,7 @@
       markets: {
           kyberswap: "scroll",
           openocean: "scroll",
-          zeroex: true
+          zeroex: true,
       },
       bridges: {
           rhinofi: "SCROLL",
@@ -2556,23 +2675,23 @@
                       id: 1,
                       address: "0x3Fc69CC4A842838bCDC9499178740226062b14E4",
                   },
-              ]
+              ],
           },
           wormhole: {
               chain: "Scroll",
               timeToFinalize: 1800,
-          }
+          },
       },
       oracles: {
           cmc: {
               slug: "scroll",
-              native: "ethereum"
+              native: "ethereum",
           },
           coingecko: {
               slug: "scroll",
               native: "ethereum",
           },
-          dexscreener: "scroll"
+          dexscreener: "scroll",
       },
       uniswap: {
           deployBlock: 1367,
@@ -2581,6 +2700,13 @@
           poolFactory: "0x70C62C8b8e801124A4Aa81ce07b637A3e83cb919",
           positionsNFT: "0xB39002E4033b162fAc607fc3471E205FA2aE5967",
           universalRouter: "0x595E7160858b1AdA94Bda790D8699C85e595117E",
+          wrappedNativeToken: {
+              address: "0x5300000000000000000000000000000000000004",
+              symbol: "WETH",
+              name: "Wrapped Ether",
+              decimals: 18,
+          },
+          nativeCurrencyName: "ETH",
       },
       token: {
           usdcAddress: "0x06efdbff2a14a7c8e15944d1f4a48f9f95f663a4",
@@ -2652,29 +2778,29 @@
               pools: [
                   {
                       id: 13,
-                      address: '0x5c386D85b1B82FD9Db681b9176C8a4248bb6345B',
+                      address: "0x5c386D85b1B82FD9Db681b9176C8a4248bb6345B",
                   },
                   {
                       id: 1,
-                      address: '0x45d417612e177672958dC0537C45a8f8d754Ac2E',
+                      address: "0x45d417612e177672958dC0537C45a8f8d754Ac2E",
                   },
                   {
                       id: 2,
-                      address: '0x0dB9afb4C33be43a0a0e396Fd1383B4ea97aB10a',
+                      address: "0x0dB9afb4C33be43a0a0e396Fd1383B4ea97aB10a",
                   },
-              ]
-          }
+              ],
+          },
       },
       oracles: {
           cmc: {
               slug: "sei",
-              native: "sei"
+              native: "sei",
           },
           coingecko: {
               slug: "sei-v2",
-              native: "sei-network"
+              native: "sei-network",
           },
-          dexscreener: "seiv2"
+          dexscreener: "seiv2",
       },
       blockExplorers: {
           default: {
@@ -2693,6 +2819,13 @@
           positionsNFT: "0x8B3c541c30f9b29560f56B9E44b59718916B69EF",
           positionsNFTDeployBlock: 79245279,
           universalRouter: "0xa683c66045ad16abb1bCE5ad46A64d95f9A25785",
+          wrappedNativeToken: {
+              address: "0xE30feDd158A2e3b13e9badaeABaFc5516e95e8C7",
+              symbol: "WSEI",
+              name: "Wrapped SEI",
+              decimals: 18,
+          },
+          nativeCurrencyName: "SEI",
       },
       token: {
           usdcAddress: "0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1",
@@ -2801,6 +2934,13 @@
           positionsNFT: "0x8B3c541c30f9b29560f56B9E44b59718916B69EF",
           positionsNFTDeployBlock: 980,
           universalRouter: "0x346239972d1fa486FC4a521031BC81bFB7D6e8a4",
+          wrappedNativeToken: {
+              address: "0xA51894664A773981C6C112C43ce576f315d5b1B6",
+              symbol: "WETH",
+              name: "Wrapped Ether",
+              decimals: 18,
+          },
+          nativeCurrencyName: "ETH",
       },
       token: {
           usdcAddress: "0x07d83526730c7438048D55A4fc0b850e2aaB6f0b",
@@ -2888,6 +3028,13 @@
           positionsNFT: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c",
           positionsNFTDeployBlock: 4346185,
           universalRouter: "0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc",
+          wrappedNativeToken: {
+              address: "0xe538905cf8410324e03a5a23c1c177a474d59b2b",
+              symbol: "WOKB",
+              name: "Wrapped OKB",
+              decimals: 18,
+          },
+          nativeCurrencyName: "OKB",
       },
       token: {
           usdcAddress: "0x74b7f16337b8972027f6196a17a631ac6de26d22",
@@ -2952,19 +3099,19 @@
       markets: {
           kyberswap: "polygon-zkevm",
           paraswap: {
-              tokenTransferProxy: "0xc8a21fcd5a100c3ecc037c97e2f9c53a8d3a02a1"
+              tokenTransferProxy: "0xc8a21fcd5a100c3ecc037c97e2f9c53a8d3a02a1",
           },
-          openocean: "polygon_zkevm"
+          openocean: "polygon_zkevm",
       },
       bridges: {
-          rhinofi: "ZKEVM"
+          rhinofi: "ZKEVM",
       },
       oracles: {
           coingecko: {
               slug: "polygon-zkevm",
-              native: "ethereum"
+              native: "ethereum",
           },
-          dexscreener: "polygonzkevm"
+          dexscreener: "polygonzkevm",
       },
       uniswap: {
           deployBlock: 8466867,
@@ -2976,6 +3123,13 @@
           positionsNFT: "0xf0D61Aeda516CCa1FF20Be65Cfb0213be688A24f",
           positionsNFTDeployBlock: 8466897,
           universalRouter: "0x32454e81d065FAA95Ec0d0Ab6Fe326599Af30fd7",
+          wrappedNativeToken: {
+              address: "0x4F9A0e7FD2Bf6067db6994CF12E4495Df938E6e9",
+              symbol: "WETH",
+              name: "Wrapped Ether",
+              decimals: 18,
+          },
+          nativeCurrencyName: "ETH",
       },
       token: {
           wbtcAddress: "0xea034fb02eb1808c2cc3adbc15f447b93cbe08e1",
@@ -3050,15 +3204,15 @@
       oracles: {
           coingecko: {
               slug: "zklink-nova",
-              native: "ethereum"
-          }
+              native: "ethereum",
+          },
       },
       blockExplorers: {
           default: {
               name: "zkLink Nova Block Explorer",
               url: "https://explorer.zklink.io/",
               apiUrl: "https://explorer-api.zklink.io/api",
-          }
+          },
       },
       initCodeHash: "0x010013f177ea1fcbc4520f9a3ca7cd2d1d77959e05aa66484027cb38e712aeed",
       uniswap: {
@@ -3070,6 +3224,13 @@
           positionsNFT: "0xAA904d497e42608C014BE83a026E984aFc16129b",
           positionsNFTDeployBlock: 3919226,
           universalRouter: "0x2274bDE50218DDB955e7f60e4f2344e3Bff9D193",
+          wrappedNativeToken: {
+              address: "0x8280a4e7D5B3B658ec4580d3Bc30f5e50454F169",
+              symbol: "WETH",
+              name: "Wrapped Ether",
+              decimals: 18,
+          },
+          nativeCurrencyName: "ETH",
       },
       token: {
           usdcAddress: "0x1a1A3b2ff016332e866787B311fcB63928464509",
@@ -3176,6 +3337,13 @@
           positionsNFT: "0x0616e5762c1E7Dc3723c50663dF10a162D690a86",
           positionsNFTDeployBlock: 12637120,
           universalRouter: "0x28731BCC616B5f51dD52CF2e4dF0E78dD1136C06",
+          wrappedNativeToken: {
+              address: "0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91",
+              symbol: "WETH",
+              name: "Wrapped Ether",
+              decimals: 18,
+          },
+          nativeCurrencyName: "ETH",
       },
       token: {
           usdcAddress: "0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4",
