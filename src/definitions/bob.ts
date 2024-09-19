@@ -60,7 +60,15 @@ export const bob = makeConfig({
     "0x05D032ac25d322df992303dCa074EE7392C117b9",
     "0xe75D0fB2C24A55cA1e3F96781a2bCC7bdba058F0",
   ],
-  watchlist: ["0x9a3b17a2e2daf54ce80f2f4b2c8440902be715de"],
+  watchlist: [
+    "0x9a3b17a2e2daf54ce80f2f4b2c8440902be715de",
+    "0x6407fec527abad1aafdb9a3b5a2171800c21a2fe",
+    "0xe112389471d577f7bc45c03c7c37f70abca1cc93",
+    "0x566b9414c8733c14a96b8a21ca47711972f99d1a",
+    "0x4a1df9716147b785f3f82019f36f248ac15dc308",
+    "0xb091ed2491a179a9f14a34f88587cd08195e592c",
+    "0x508a838922a93096c1eb23fe21d8938bbd653db6",
+  ],
   internalName: "bob",
   nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
   contracts: {
