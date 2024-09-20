@@ -46,10 +46,10 @@ var Xlayer Network = Network{
 		PositionsNFTDeployBlock:    4346185,
 		UniversalRouter:            common.HexToAddress("0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc"),
 		WrappedNativeAddress:       common.HexToAddress("0xe538905cf8410324e03a5a23c1c177a474d59b2b"),
-		WrappedNativeSymbol:        common.HexToAddress("WOKB"),
-		WrappedNativeName:          common.HexToAddress("Wrapped OKB"),
+		WrappedNativeSymbol:        "WOKB",
+		WrappedNativeName:          "Wrapped OKB",
 		WrappedNativeDecimals:      18,
-		NativeCurrencyName:         common.HexToAddress("OKB"),
+		NativeCurrencyName:         "OKB",
 	},
 	Token: TokenMetadata{
 		UsdcAddress: common.HexToAddress("0x74b7f16337b8972027f6196a17a631ac6de26d22"),

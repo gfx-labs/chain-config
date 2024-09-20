@@ -47,10 +47,10 @@ var Sei Network = Network{
 		PositionsNFTDeployBlock:    79245279,
 		UniversalRouter:            common.HexToAddress("0xa683c66045ad16abb1bCE5ad46A64d95f9A25785"),
 		WrappedNativeAddress:       common.HexToAddress("0xE30feDd158A2e3b13e9badaeABaFc5516e95e8C7"),
-		WrappedNativeSymbol:        common.HexToAddress("WSEI"),
-		WrappedNativeName:          common.HexToAddress("Wrapped SEI"),
+		WrappedNativeSymbol:        "WSEI",
+		WrappedNativeName:          "Wrapped SEI",
 		WrappedNativeDecimals:      18,
-		NativeCurrencyName:         common.HexToAddress("SEI"),
+		NativeCurrencyName:         "SEI",
 	},
 	Token: TokenMetadata{
 		UsdcAddress: common.HexToAddress("0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1"),

@@ -53,10 +53,10 @@ var Zksync Network = Network{
 		PositionsNFTDeployBlock:    12637120,
 		UniversalRouter:            common.HexToAddress("0x28731BCC616B5f51dD52CF2e4dF0E78dD1136C06"),
 		WrappedNativeAddress:       common.HexToAddress("0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91"),
-		WrappedNativeSymbol:        common.HexToAddress("WETH"),
-		WrappedNativeName:          common.HexToAddress("Wrapped Ether"),
+		WrappedNativeSymbol:        "WETH",
+		WrappedNativeName:          "Wrapped Ether",
 		WrappedNativeDecimals:      18,
-		NativeCurrencyName:         common.HexToAddress("ETH"),
+		NativeCurrencyName:         "ETH",
 	},
 	Token: TokenMetadata{
 		UsdcAddress: common.HexToAddress("0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4"),

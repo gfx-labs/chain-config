@@ -64,10 +64,10 @@ var Polygon Network = Network{
 		TopNativePool:                      common.HexToAddress("0xa374094527e1673a86de625aa59517c5de346d32"),
 		UniversalRouter:                    common.HexToAddress("0x4C60051384bd2d3C01bfc845Cf5F4b44bcbE9de5"),
 		WrappedNativeAddress:               common.HexToAddress("0x7ceb23fd6bc0add59e62ac25578270cff1b9f619"),
-		WrappedNativeSymbol:                common.HexToAddress("WMATIC"),
-		WrappedNativeName:                  common.HexToAddress("Wrapped MATIC"),
+		WrappedNativeSymbol:                "WMATIC",
+		WrappedNativeName:                  "Wrapped MATIC",
 		WrappedNativeDecimals:              18,
-		NativeCurrencyName:                 common.HexToAddress("MATIC"),
+		NativeCurrencyName:                 "MATIC",
 	},
 	Token: TokenMetadata{
 		WbtcAddress: common.HexToAddress("0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6"),

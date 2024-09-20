@@ -48,10 +48,10 @@ var Linea Network = Network{
 		PositionsNFTDeployBlock:    25264,
 		UniversalRouter:            common.HexToAddress("0xd7c7d7f18dd5388d5217c9696c7e799fcd75c6bd"),
 		WrappedNativeAddress:       common.HexToAddress("0xe5d7c2a44ffddf6b295a15c148167daaaf5cf34f"),
-		WrappedNativeSymbol:        common.HexToAddress("WETH"),
-		WrappedNativeName:          common.HexToAddress("Wrapped Ether"),
+		WrappedNativeSymbol:        "WETH",
+		WrappedNativeName:          "Wrapped Ether",
 		WrappedNativeDecimals:      18,
-		NativeCurrencyName:         common.HexToAddress("ETH"),
+		NativeCurrencyName:         "ETH",
 	},
 	Token: TokenMetadata{
 		UsdcAddress: common.HexToAddress("0x176211869ca2b568f2a7d4ee941e073a821ee1ff"),

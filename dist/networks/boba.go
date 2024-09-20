@@ -57,10 +57,10 @@ var Boba Network = Network{
 		PositionsNFTDeployBlock:            969359,
 		UniversalRouter:                    common.HexToAddress("0x4BA622997559F9b5Ac68751D7Fc3dEecc23a0e88"),
 		WrappedNativeAddress:               common.HexToAddress("0xdeaddeaddeaddeaddeaddeaddeaddeaddead0000"),
-		WrappedNativeSymbol:                common.HexToAddress("WETH"),
-		WrappedNativeName:                  common.HexToAddress("Wrapped Ether"),
+		WrappedNativeSymbol:                "WETH",
+		WrappedNativeName:                  "Wrapped Ether",
 		WrappedNativeDecimals:              18,
-		NativeCurrencyName:                 common.HexToAddress("ETH"),
+		NativeCurrencyName:                 "ETH",
 	},
 	Token: TokenMetadata{
 		WethAddress: common.HexToAddress("0xdeaddeaddeaddeaddeaddeaddeaddeaddead0000"),

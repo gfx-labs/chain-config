@@ -52,7 +52,7 @@ var <%- helpers.snakeToCamel(chainName) %> Network = Network{
     },
   },
   Uniswap:          UniswapMetadata{ <% for(const prop of Object.entries(uni)) {%>
-    <%- h.snakeToCamel(prop[0]) %>: <%- h.formatValue(prop[1], h.isString(prop[1]) ? "a" : "n") %> , <% } %>
+    <%- h.snakeToCamel(prop[0]) %>: <%- h.formatValue(prop[1], h.isString(prop[1]) ? (h.isAddress(prop[1]) ? "a" : "s") : "n") %> , <% } %>
   },
   Token:          TokenMetadata{ <% for(const prop of Object.entries(tok)) {%>
     <%- h.snakeToCamel(prop[0]) %>: <%- h.formatValue(prop[1], h.isString(prop[1]) ? "a" : "n") %> , <% } %>

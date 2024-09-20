@@ -55,10 +55,10 @@ var Filecoin Network = Network{
 		PositionsNFTDeployBlock:    3195861,
 		UniversalRouter:            common.HexToAddress("0x83702C6356A1028A900F83d446D189a31646a16b"),
 		WrappedNativeAddress:       common.HexToAddress("0x60E1773636CF5E4A227d9AC24F20fEca034ee25A"),
-		WrappedNativeSymbol:        common.HexToAddress("WFIL"),
-		WrappedNativeName:          common.HexToAddress("Wrapped FIL"),
+		WrappedNativeSymbol:        "WFIL",
+		WrappedNativeName:          "Wrapped FIL",
 		WrappedNativeDecimals:      18,
-		NativeCurrencyName:         common.HexToAddress("FIL"),
+		NativeCurrencyName:         "FIL",
 	},
 	Token: TokenMetadata{
 		UsdcAddress: common.HexToAddress("0xEB466342C4d449BC9f53A865D5Cb90586f405215"),

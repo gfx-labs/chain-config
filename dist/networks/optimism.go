@@ -64,10 +64,10 @@ var Optimism Network = Network{
 		PositionsNFTDeployBlock:            0,
 		UniversalRouter:                    common.HexToAddress("0xb555edF5dcF85f42cEeF1f3630a52A108E55A654"),
 		WrappedNativeAddress:               common.HexToAddress("0x4200000000000000000000000000000000000006"),
-		WrappedNativeSymbol:                common.HexToAddress("WETH"),
-		WrappedNativeName:                  common.HexToAddress("Wrapped Ether"),
+		WrappedNativeSymbol:                "WETH",
+		WrappedNativeName:                  "Wrapped Ether",
 		WrappedNativeDecimals:              18,
-		NativeCurrencyName:                 common.HexToAddress("ETH"),
+		NativeCurrencyName:                 "ETH",
 	},
 	Token: TokenMetadata{
 		UsdcAddress: common.HexToAddress("0x0b2c639c533813f4aa9d7837caf62653d097ff85"),

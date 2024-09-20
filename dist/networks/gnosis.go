@@ -49,10 +49,10 @@ var Gnosis Network = Network{
 		PositionsNFTDeployBlock:    27416645,
 		UniversalRouter:            common.HexToAddress("0x75FC67473A91335B5b8F8821277262a13B38c9b3"),
 		WrappedNativeAddress:       common.HexToAddress("0xe91d153e0b41518a2ce8dd3d7944fa863463a97d"),
-		WrappedNativeSymbol:        common.HexToAddress("WXDAI"),
-		WrappedNativeName:          common.HexToAddress("Wrapped XDAI"),
+		WrappedNativeSymbol:        "WXDAI",
+		WrappedNativeName:          "Wrapped XDAI",
 		WrappedNativeDecimals:      18,
-		NativeCurrencyName:         common.HexToAddress("XDAI"),
+		NativeCurrencyName:         "XDAI",
 	},
 	Token: TokenMetadata{
 		UsdcAddress: common.HexToAddress("0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4"),

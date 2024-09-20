@@ -47,10 +47,10 @@ var Lisk Network = Network{
 		PositionsNFTDeployBlock:    578398,
 		UniversalRouter:            common.HexToAddress("0x447B8E40B0CdA8e55F405C86bC635D02d0540aB8"),
 		WrappedNativeAddress:       common.HexToAddress("0x4200000000000000000000000000000000000006"),
-		WrappedNativeSymbol:        common.HexToAddress("WETH"),
-		WrappedNativeName:          common.HexToAddress("Wrapped Ether"),
+		WrappedNativeSymbol:        "WETH",
+		WrappedNativeName:          "Wrapped Ether",
 		WrappedNativeDecimals:      18,
-		NativeCurrencyName:         common.HexToAddress("ETH"),
+		NativeCurrencyName:         "ETH",
 	},
 	Token: TokenMetadata{
 		WethAddress: common.HexToAddress("0x4200000000000000000000000000000000000006"),

@@ -49,10 +49,10 @@ var PolygonZkevm Network = Network{
 		PositionsNFTDeployBlock:    8466897,
 		UniversalRouter:            common.HexToAddress("0x32454e81d065FAA95Ec0d0Ab6Fe326599Af30fd7"),
 		WrappedNativeAddress:       common.HexToAddress("0x4F9A0e7FD2Bf6067db6994CF12E4495Df938E6e9"),
-		WrappedNativeSymbol:        common.HexToAddress("WETH"),
-		WrappedNativeName:          common.HexToAddress("Wrapped Ether"),
+		WrappedNativeSymbol:        "WETH",
+		WrappedNativeName:          "Wrapped Ether",
 		WrappedNativeDecimals:      18,
-		NativeCurrencyName:         common.HexToAddress("ETH"),
+		NativeCurrencyName:         "ETH",
 	},
 	Token: TokenMetadata{
 		WbtcAddress: common.HexToAddress("0xea034fb02eb1808c2cc3adbc15f447b93cbe08e1"),

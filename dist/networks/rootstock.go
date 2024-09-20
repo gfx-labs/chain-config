@@ -50,10 +50,10 @@ var Rootstock Network = Network{
 		PositionsNFTDeployBlock:    5829891,
 		UniversalRouter:            common.HexToAddress("0x244f68e77357f86a8522323eBF80b5FC2F814d3E"),
 		WrappedNativeAddress:       common.HexToAddress("0x542fDA317318eBF1d3DEAf76E0b632741A7e677d"),
-		WrappedNativeSymbol:        common.HexToAddress("WRBTC"),
-		WrappedNativeName:          common.HexToAddress("Wrapped BTC"),
+		WrappedNativeSymbol:        "WRBTC",
+		WrappedNativeName:          "Wrapped BTC",
 		WrappedNativeDecimals:      18,
-		NativeCurrencyName:         common.HexToAddress("RBTC"),
+		NativeCurrencyName:         "RBTC",
 	},
 	Token: TokenMetadata{
 		UsdcAddress: common.HexToAddress("0x3A15461d8AE0f0Fb5fA2629e9dA7D66A794a6E37"),

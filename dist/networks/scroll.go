@@ -46,10 +46,10 @@ var Scroll Network = Network{
 		PositionsNFT:          common.HexToAddress("0xB39002E4033b162fAc607fc3471E205FA2aE5967"),
 		UniversalRouter:       common.HexToAddress("0x595E7160858b1AdA94Bda790D8699C85e595117E"),
 		WrappedNativeAddress:  common.HexToAddress("0x5300000000000000000000000000000000000004"),
-		WrappedNativeSymbol:   common.HexToAddress("WETH"),
-		WrappedNativeName:     common.HexToAddress("Wrapped Ether"),
+		WrappedNativeSymbol:   "WETH",
+		WrappedNativeName:     "Wrapped Ether",
 		WrappedNativeDecimals: 18,
-		NativeCurrencyName:    common.HexToAddress("ETH"),
+		NativeCurrencyName:    "ETH",
 	},
 	Token: TokenMetadata{
 		UsdcAddress: common.HexToAddress("0x06efdbff2a14a7c8e15944d1f4a48f9f95f663a4"),

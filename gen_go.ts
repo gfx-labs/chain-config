@@ -70,13 +70,13 @@ const getPropType = (x: morph.PropertySignature): string => {
     return "float64";
   }
   if (nodeType === "any") {
-   return "interface{}" 
+    return "interface{}";
   }
-  if (type.isObject() && nodeType && nodeType.charAt(0) !== '{') {
+  if (type.isObject() && nodeType && nodeType.charAt(0) !== "{") {
     return snakeToCamel(nodeType);
   }
   if (type.isObject()) {
-    return "map[string]interface{}"
+    return "map[string]interface{}";
   }
   if (x.getName() == "contracts") {
     return "map[string]ChainContract";
@@ -91,7 +91,7 @@ const getPropType = (x: morph.PropertySignature): string => {
     return "string";
   }
   if (type.isBoolean()) {
-    return "bool"
+    return "bool";
   }
   return "";
 };
@@ -141,9 +141,14 @@ const isString = (x: any) => {
   return typeof x === "string";
 };
 
+const isAddress = (x: any) => {
+  return typeof x === "string" && /^0x[a-fA-F0-9]{40}$/.test(x);
+};
+
 const helpers = {
   formatValue,
   isString,
+  isAddress,
   clean,
   snakeToCamel,
   toCamel: snakeToCamel,
@@ -164,7 +169,7 @@ const output = ejs.render(networksString.toString(), {
   OkuPricingMetadata,
   Markets,
   Bridges,
-  Oracles
+  Oracles,
 });
 
 const main = async () => {

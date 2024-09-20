@@ -64,10 +64,10 @@ var Arbitrum Network = Network{
 		PositionsNFTDeployBlock:            173,
 		UniversalRouter:                    common.HexToAddress("0x4C60051384bd2d3C01bfc845Cf5F4b44bcbE9de5"),
 		WrappedNativeAddress:               common.HexToAddress("0x82aF49447D8a07e3bd95BD0d56f35241523fBab1"),
-		WrappedNativeSymbol:                common.HexToAddress("WETH"),
-		WrappedNativeName:                  common.HexToAddress("Wrapped Ether"),
+		WrappedNativeSymbol:                "WETH",
+		WrappedNativeName:                  "Wrapped Ether",
 		WrappedNativeDecimals:              18,
-		NativeCurrencyName:                 common.HexToAddress("ETH"),
+		NativeCurrencyName:                 "ETH",
 	},
 	Token: TokenMetadata{
 		WethAddress: common.HexToAddress("0x82aF49447D8a07e3bd95BD0d56f35241523fBab1"),

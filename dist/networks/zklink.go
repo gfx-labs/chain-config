@@ -46,10 +46,10 @@ var Zklink Network = Network{
 		PositionsNFTDeployBlock:    3919226,
 		UniversalRouter:            common.HexToAddress("0x2274bDE50218DDB955e7f60e4f2344e3Bff9D193"),
 		WrappedNativeAddress:       common.HexToAddress("0x8280a4e7D5B3B658ec4580d3Bc30f5e50454F169"),
-		WrappedNativeSymbol:        common.HexToAddress("WETH"),
-		WrappedNativeName:          common.HexToAddress("Wrapped Ether"),
+		WrappedNativeSymbol:        "WETH",
+		WrappedNativeName:          "Wrapped Ether",
 		WrappedNativeDecimals:      18,
-		NativeCurrencyName:         common.HexToAddress("ETH"),
+		NativeCurrencyName:         "ETH",
 	},
 	Token: TokenMetadata{
 		UsdcAddress: common.HexToAddress("0x1a1A3b2ff016332e866787B311fcB63928464509"),

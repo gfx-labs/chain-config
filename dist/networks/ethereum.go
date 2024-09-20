@@ -64,10 +64,10 @@ var Ethereum Network = Network{
 		PositionsNFTDeployBlock:            12369651,
 		UniversalRouter:                    common.HexToAddress("0xEf1c6E67703c7BD7107eed8303Fbe6EC2554BF6B"),
 		WrappedNativeAddress:               common.HexToAddress("0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"),
-		WrappedNativeSymbol:                common.HexToAddress("WETH"),
-		WrappedNativeName:                  common.HexToAddress("Wrapped Ether"),
+		WrappedNativeSymbol:                "WETH",
+		WrappedNativeName:                  "Wrapped Ether",
 		WrappedNativeDecimals:              18,
-		NativeCurrencyName:                 common.HexToAddress("ETH"),
+		NativeCurrencyName:                 "ETH",
 	},
 	Token: TokenMetadata{
 		UsdcAddress: common.HexToAddress("0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"),

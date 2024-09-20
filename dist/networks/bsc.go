@@ -62,10 +62,10 @@ var Bsc Network = Network{
 		PositionsNFTDeployBlock:            26324045,
 		UniversalRouter:                    common.HexToAddress("0xeC8B0F7Ffe3ae75d7FfAb09429e3675bb63503e4"),
 		WrappedNativeAddress:               common.HexToAddress("0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c"),
-		WrappedNativeSymbol:                common.HexToAddress("WBNB"),
-		WrappedNativeName:                  common.HexToAddress("Wrapped BNB"),
+		WrappedNativeSymbol:                "WBNB",
+		WrappedNativeName:                  "Wrapped BNB",
 		WrappedNativeDecimals:              18,
-		NativeCurrencyName:                 common.HexToAddress("BNB"),
+		NativeCurrencyName:                 "BNB",
 	},
 	Token: TokenMetadata{
 		UsdcAddress: common.HexToAddress("0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d"),

@@ -54,10 +54,10 @@ var Moonbeam Network = Network{
 		PositionsNFTDeployBlock:            3340476,
 		UniversalRouter:                    common.HexToAddress("0x1F56F4e1648e96633c7FE79002036E967403CDfF"),
 		WrappedNativeAddress:               common.HexToAddress("0xab3f0245b83feb11d15aaffefd7ad465a59817ed"),
-		WrappedNativeSymbol:                common.HexToAddress("WGLMR"),
-		WrappedNativeName:                  common.HexToAddress("Wrapped GLMR"),
+		WrappedNativeSymbol:                "WGLMR",
+		WrappedNativeName:                  "Wrapped GLMR",
 		WrappedNativeDecimals:              18,
-		NativeCurrencyName:                 common.HexToAddress("GLMR"),
+		NativeCurrencyName:                 "GLMR",
 	},
 	Token: TokenMetadata{
 		WethAddress: common.HexToAddress("0xab3f0245b83feb11d15aaffefd7ad465a59817ed"),
