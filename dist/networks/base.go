@@ -8,6 +8,7 @@ var Base Network = Network{
 	ChainId:           8453,
 	LogoUrl:           "https://assets.oku.trade/base-logo.svg",
 	SortIndex:         8,
+	LaunchTime:        1707321600,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

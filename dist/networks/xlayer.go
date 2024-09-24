@@ -8,6 +8,7 @@ var Xlayer Network = Network{
 	ChainId:           196,
 	LogoUrl:           "https://assets.oku.trade/xlayer-logo.png",
 	SortIndex:         18,
+	LaunchTime:        0,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

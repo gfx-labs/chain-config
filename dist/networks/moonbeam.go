@@ -8,6 +8,7 @@ var Moonbeam Network = Network{
 	ChainId:           1284,
 	LogoUrl:           "https://assets.oku.trade/moonbeam-logo.svg",
 	SortIndex:         12,
+	LaunchTime:        1696341600,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

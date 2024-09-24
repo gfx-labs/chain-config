@@ -8,6 +8,7 @@ var Arbitrum Network = Network{
 	ChainId:           42161,
 	LogoUrl:           "https://assets.oku.trade/arbitrum-logo.svg",
 	SortIndex:         1,
+	LaunchTime:        1688997600,
 	SafeReorgDistance: 180000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

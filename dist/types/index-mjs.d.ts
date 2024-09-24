@@ -1,6 +1,7 @@
 import { Address, Chain, ChainContract, ChainFormatters, Hash } from "viem";
 declare const arbitrum: Readonly<{
     name: "Arbitrum";
+    launchTime: 1688997600;
     sortIndex: 1;
     blockTimeSeconds: 0.25;
     logoUrl: "https://assets.oku.trade/arbitrum-logo.svg";
@@ -171,6 +172,7 @@ declare const arbitrum: Readonly<{
 }>;
 declare const base: Readonly<{
     sortIndex: 8;
+    launchTime: 1707321600;
     blockTimeSeconds: 2;
     logoUrl: "https://assets.oku.trade/base-logo.svg";
     defaultPool: "0xd0b53d9277642d899df5c87a3966a349a798f224";
@@ -587,6 +589,7 @@ declare const base: Readonly<{
 }>;
 declare const blast: Readonly<{
     blockTimeSeconds: 2;
+    launchTime: 1719410400;
     sortIndex: 14;
     logoUrl: "https://assets.oku.trade/blast-logo.svg";
     safeReorgDistance: 90000;
@@ -706,6 +709,7 @@ declare const blast: Readonly<{
 }>;
 declare const bob: Readonly<{
     blockTimeSeconds: 2;
+    launchTime: 1727359200;
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/bob-logo.svg";
     safeReorgDistance: 90000;
@@ -1078,6 +1082,7 @@ declare const bob: Readonly<{
 }>;
 declare const boba: Readonly<{
     name: "Boba";
+    launchTime: 1690297200;
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     sortIndex: 11;
     blockTimeSeconds: 2;
@@ -1200,6 +1205,7 @@ declare const boba: Readonly<{
 }>;
 declare const bsc: Readonly<{
     name: "BSC";
+    launchTime: 1689346800;
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     sortIndex: 9;
     blockTimeSeconds: 3;
@@ -1349,6 +1355,7 @@ declare const bsc: Readonly<{
 }>;
 declare const filecoin: Readonly<{
     sortIndex: 10;
+    launchTime: 1677600000;
     name: "Filecoin";
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     blockTimeSeconds: 30;
@@ -1477,6 +1484,7 @@ declare const filecoin: Readonly<{
 }>;
 declare const gnosis: Readonly<{
     blockTimeSeconds: 5;
+    launchTime: 1725890400;
     sortIndex: 18;
     logoUrl: "https://assets.oku.trade/gnosis-logo.png";
     safeReorgDistance: 90000;
@@ -1598,6 +1606,7 @@ declare const gnosis: Readonly<{
 }>;
 declare const linea: Readonly<{
     name: "Linea";
+    launchTime: 1713362400;
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     blockTimeSeconds: 2;
     sortIndex: 15;
@@ -1731,6 +1740,7 @@ declare const linea: Readonly<{
 }>;
 declare const lisk: Readonly<{
     blockTimeSeconds: 2;
+    launchTime: 1724076000;
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/lisk-logo.png";
     safeReorgDistance: 90000;
@@ -2071,6 +2081,7 @@ declare const lisk: Readonly<{
 declare const mainnet: Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     sortIndex: 0;
+    launchTime: 1688997600;
     blockTimeSeconds: 15;
     safeReorgDistance: 90000;
     logoUrl: "https://assets.oku.trade/ethereum-logo.webp";
@@ -2243,6 +2254,7 @@ declare const mainnet: Readonly<{
 }>;
 declare const manta: Readonly<{
     name: "Manta Pacific";
+    launchTime: 1709910000;
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     blockTimeSeconds: 2;
     sortIndex: 13;
@@ -2368,6 +2380,7 @@ declare const manta: Readonly<{
 declare const mantle: Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     blockTimeSeconds: 2;
+    launchTime: 1720101600;
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/mantle-logo.png";
     safeReorgDistance: 90000;
@@ -2488,6 +2501,7 @@ declare const mantle: Readonly<{
 declare const moonbeam: Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     sortIndex: 12;
+    launchTime: 1696341600;
     blockTimeSeconds: 30;
     logoUrl: "https://assets.oku.trade/moonbeam-logo.svg";
     safeReorgDistance: 90000;
@@ -2613,6 +2627,7 @@ declare const optimism: Readonly<{
     name: "Optimism";
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     blockTimeSeconds: 0.5;
+    launchTime: 1688997600;
     sortIndex: 2;
     logoUrl: "https://assets.oku.trade/optimism-logo.svg";
     safeReorgDistance: 90000;
@@ -3048,6 +3063,7 @@ declare const optimism: Readonly<{
 declare const polygon: Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     blockTimeSeconds: 2;
+    launchTime: 1688997600;
     sortIndex: 3;
     logoUrl: "https://assets.oku.trade/polygon-logo.webp";
     safeReorgDistance: 90000;
@@ -3213,6 +3229,7 @@ declare const polygon: Readonly<{
 }>;
 declare const rootstock: Readonly<{
     sortIndex: 7;
+    launchTime: 1702479600;
     name: "Rootstock";
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     blockTimeSeconds: 33;
@@ -3331,6 +3348,7 @@ declare const rootstock: Readonly<{
 declare const scroll: Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     sortIndex: 5;
+    launchTime: 1703257200;
     blockTimeSeconds: 3;
     logoUrl: "https://assets.oku.trade/scroll-logo.png";
     safeReorgDistance: 90000;
@@ -3472,6 +3490,7 @@ declare const scroll: Readonly<{
 declare const sei: Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     blockTimeSeconds: 0.4;
+    launchTime: 1687788000;
     sortIndex: 5;
     logoUrl: "https://assets.oku.trade/sei-logo.svg";
     safeReorgDistance: 90000;
@@ -3594,6 +3613,7 @@ declare const sei: Readonly<{
 declare const taiko: Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     blockTimeSeconds: 24;
+    launchTime: 1717509600;
     sortIndex: 4;
     logoUrl: "https://assets.oku.trade/taiko-logo.svg";
     safeReorgDistance: 90000;
@@ -3716,6 +3736,7 @@ declare const taiko: Readonly<{
 }>;
 declare const xLayer: Readonly<{
     blockTimeSeconds: 3;
+    launchTime: 0;
     sortIndex: 18;
     logoUrl: "https://assets.oku.trade/xlayer-logo.png";
     safeReorgDistance: 90000;
@@ -3832,6 +3853,7 @@ declare const xLayer: Readonly<{
 declare const polygonZkEvm: Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     sortIndex: 6;
+    launchTime: 1722520800;
     blockTimeSeconds: 7;
     logoUrl: "https://assets.oku.trade/zkevm-logo.svg";
     safeReorgDistance: 90000;
@@ -3954,6 +3976,7 @@ declare const polygonZkEvm: Readonly<{
 }>;
 declare const zkLink: Readonly<{
     blockTimeSeconds: 2;
+    launchTime: 0;
     sortIndex: 4;
     logoUrl: "https://assets.oku.trade/zklink-logo.svg";
     safeReorgDistance: 90000;
@@ -4066,6 +4089,7 @@ declare const zkLink: Readonly<{
 declare const zkSync: Readonly<{
     blockTimeSeconds: 2;
     sortIndex: 4;
+    launchTime: 1696514400;
     logoUrl: "https://assets.oku.trade/zksync-logo.svg";
     safeReorgDistance: 90000;
     externalId: {
@@ -4667,6 +4691,7 @@ interface Oracles {
 }
 interface IChainInfo<formatters extends ChainFormatters | undefined = ChainFormatters | undefined> extends Chain<formatters> {
     logoUrl: string;
+    launchTime: number;
     nativeLogoUrl: string;
     sortIndex: number;
     safeReorgDistance?: number;
@@ -4708,6 +4733,7 @@ interface IChainInfo<formatters extends ChainFormatters | undefined = ChainForma
 }
 declare const MAINNET_CHAINS: readonly [Readonly<{
     name: "Arbitrum";
+    launchTime: 1688997600;
     sortIndex: 1;
     blockTimeSeconds: 0.25;
     logoUrl: "https://assets.oku.trade/arbitrum-logo.svg";
@@ -4873,6 +4899,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>, Readonly<{
     sortIndex: 8;
+    launchTime: 1707321600;
     blockTimeSeconds: 2;
     logoUrl: "https://assets.oku.trade/base-logo.svg";
     defaultPool: "0xd0b53d9277642d899df5c87a3966a349a798f224";
@@ -5283,6 +5310,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     };
 }>, Readonly<{
     name: "Boba";
+    launchTime: 1690297200;
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     sortIndex: 11;
     blockTimeSeconds: 2;
@@ -5402,6 +5430,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>, Readonly<{
     blockTimeSeconds: 2;
+    launchTime: 1719410400;
     sortIndex: 14;
     logoUrl: "https://assets.oku.trade/blast-logo.svg";
     safeReorgDistance: 90000;
@@ -5518,6 +5547,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>, Readonly<{
     name: "BSC";
+    launchTime: 1689346800;
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     sortIndex: 9;
     blockTimeSeconds: 3;
@@ -5664,6 +5694,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>, Readonly<{
     sortIndex: 10;
+    launchTime: 1677600000;
     name: "Filecoin";
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     blockTimeSeconds: 30;
@@ -5790,6 +5821,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
 }>, Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     sortIndex: 0;
+    launchTime: 1688997600;
     blockTimeSeconds: 15;
     safeReorgDistance: 90000;
     logoUrl: "https://assets.oku.trade/ethereum-logo.webp";
@@ -5960,6 +5992,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
 }>, Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     sortIndex: 12;
+    launchTime: 1696341600;
     blockTimeSeconds: 30;
     logoUrl: "https://assets.oku.trade/moonbeam-logo.svg";
     safeReorgDistance: 90000;
@@ -6080,6 +6113,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     name: "Optimism";
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     blockTimeSeconds: 0.5;
+    launchTime: 1688997600;
     sortIndex: 2;
     logoUrl: "https://assets.oku.trade/optimism-logo.svg";
     safeReorgDistance: 90000;
@@ -6509,6 +6543,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
 }>, Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     blockTimeSeconds: 2;
+    launchTime: 1688997600;
     sortIndex: 3;
     logoUrl: "https://assets.oku.trade/polygon-logo.webp";
     safeReorgDistance: 90000;
@@ -6671,6 +6706,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>, Readonly<{
     sortIndex: 7;
+    launchTime: 1702479600;
     name: "Rootstock";
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     blockTimeSeconds: 33;
@@ -6786,6 +6822,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
 }>, Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     sortIndex: 5;
+    launchTime: 1703257200;
     blockTimeSeconds: 3;
     logoUrl: "https://assets.oku.trade/scroll-logo.png";
     safeReorgDistance: 90000;
@@ -6922,6 +6959,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
 }>, Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     sortIndex: 6;
+    launchTime: 1722520800;
     blockTimeSeconds: 7;
     logoUrl: "https://assets.oku.trade/zkevm-logo.svg";
     safeReorgDistance: 90000;
@@ -7042,6 +7080,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
 }>, Readonly<{
     blockTimeSeconds: 2;
     sortIndex: 4;
+    launchTime: 1696514400;
     logoUrl: "https://assets.oku.trade/zksync-logo.svg";
     safeReorgDistance: 90000;
     externalId: {
@@ -7535,6 +7574,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     network: "zksync-era";
 }>, Readonly<{
     name: "Manta Pacific";
+    launchTime: 1709910000;
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     blockTimeSeconds: 2;
     sortIndex: 13;
@@ -7656,6 +7696,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     network: "manta";
 }>, Readonly<{
     name: "Linea";
+    launchTime: 1713362400;
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     blockTimeSeconds: 2;
     sortIndex: 15;
@@ -7785,6 +7826,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
 }>, Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     blockTimeSeconds: 24;
+    launchTime: 1717509600;
     sortIndex: 4;
     logoUrl: "https://assets.oku.trade/taiko-logo.svg";
     safeReorgDistance: 90000;
@@ -7903,6 +7945,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
 }>, Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     blockTimeSeconds: 2;
+    launchTime: 1720101600;
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/mantle-logo.png";
     safeReorgDistance: 90000;
@@ -8020,6 +8063,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
 }>, Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     blockTimeSeconds: 0.4;
+    launchTime: 1687788000;
     sortIndex: 5;
     logoUrl: "https://assets.oku.trade/sei-logo.svg";
     safeReorgDistance: 90000;
@@ -8136,6 +8180,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>, Readonly<{
     blockTimeSeconds: 2;
+    launchTime: 0;
     sortIndex: 4;
     logoUrl: "https://assets.oku.trade/zklink-logo.svg";
     safeReorgDistance: 90000;
@@ -8244,6 +8289,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>, Readonly<{
     blockTimeSeconds: 2;
+    launchTime: 1724076000;
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/lisk-logo.png";
     safeReorgDistance: 90000;
@@ -8577,6 +8623,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     network: "lisk";
 }>, Readonly<{
     blockTimeSeconds: 2;
+    launchTime: 1727359200;
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/bob-logo.svg";
     safeReorgDistance: 90000;
@@ -8941,6 +8988,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     };
 }>, Readonly<{
     blockTimeSeconds: 5;
+    launchTime: 1725890400;
     sortIndex: 18;
     logoUrl: "https://assets.oku.trade/gnosis-logo.png";
     safeReorgDistance: 90000;
@@ -9057,6 +9105,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>, Readonly<{
     blockTimeSeconds: 3;
+    launchTime: 0;
     sortIndex: 18;
     logoUrl: "https://assets.oku.trade/xlayer-logo.png";
     safeReorgDistance: 90000;

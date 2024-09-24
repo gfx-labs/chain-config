@@ -4,6 +4,7 @@ import { makeConfig } from "../util";
 export const bob = makeConfig({
   ...chain,
   blockTimeSeconds: 2,
+  launchTime: 1727359200,
   sortIndex: 15,
   logoUrl: "https://assets.oku.trade/bob-logo.svg",
   safeReorgDistance: 90000,

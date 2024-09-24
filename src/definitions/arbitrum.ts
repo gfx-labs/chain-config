@@ -5,6 +5,7 @@ import { makeConfig } from "../util";
 export const arbitrum = makeConfig({
   ...chain,
   name: "Arbitrum",
+  launchTime: 1688997600,
   sortIndex: 1,
   blockTimeSeconds: 0.25,
   logoUrl: "https://assets.oku.trade/arbitrum-logo.svg",

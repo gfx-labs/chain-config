@@ -8,6 +8,7 @@ var Sei Network = Network{
 	ChainId:           1329,
 	LogoUrl:           "https://assets.oku.trade/sei-logo.svg",
 	SortIndex:         5,
+	LaunchTime:        1687788000,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

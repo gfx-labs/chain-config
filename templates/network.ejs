@@ -16,6 +16,7 @@ var <%- helpers.snakeToCamel(chainName) %> Network = Network{
   ChainId: <%- chain.id %>,
   LogoUrl: "<%- chain.logoUrl %>",
   SortIndex: <%- chain.sortIndex %>,
+  LaunchTime: <%- chain.launchTime %>,
   SafeReorgDistance: <%- chain.safeReorgDistance || 90000 %>,
   BlockExplorers: map[string]BlockExplorer {<% for(const prop of Object.entries(explorers)) {%> <% if(prop[1].name){ %>
     <%- h.formatValue(prop[0],"s") %>: {

@@ -7,6 +7,7 @@ export const mainnet = makeConfig({
   initCodeHash:
     "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
   sortIndex: 0,
+  launchTime: 1688997600,
   blockTimeSeconds: 15,
   safeReorgDistance: 90_000,
   logoUrl: "https://assets.oku.trade/ethereum-logo.webp",

@@ -8,6 +8,7 @@ var Filecoin Network = Network{
 	ChainId:           314,
 	LogoUrl:           "https://assets.oku.trade/filecoin-logo.svg",
 	SortIndex:         10,
+	LaunchTime:        1677600000,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

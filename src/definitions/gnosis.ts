@@ -4,6 +4,7 @@ import { makeConfig } from "../util";
 export const gnosis = makeConfig({
   ...chain,
   blockTimeSeconds: 5,
+  launchTime: 1725890400,
   sortIndex: 18,
   logoUrl: "https://assets.oku.trade/gnosis-logo.png",
   safeReorgDistance: 90000,

@@ -8,6 +8,7 @@ var Linea Network = Network{
 	ChainId:           59144,
 	LogoUrl:           "https://assets.oku.trade/linea-logo.svg",
 	SortIndex:         15,
+	LaunchTime:        1713362400,
 	SafeReorgDistance: 100,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

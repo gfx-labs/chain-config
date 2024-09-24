@@ -8,6 +8,7 @@ var Zklink Network = Network{
 	ChainId:           810180,
 	LogoUrl:           "https://assets.oku.trade/zklink-logo.svg",
 	SortIndex:         4,
+	LaunchTime:        0,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

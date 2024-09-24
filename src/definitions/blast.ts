@@ -5,6 +5,7 @@ import {} from "viem";
 export const blast = makeConfig({
   ...chain,
   blockTimeSeconds: 2,
+  launchTime: 1719410400,
   sortIndex: 14,
   logoUrl: "https://assets.oku.trade/blast-logo.svg",
   safeReorgDistance: 90000,

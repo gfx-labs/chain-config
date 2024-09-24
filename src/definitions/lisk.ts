@@ -4,6 +4,7 @@ import { makeConfig } from "../util";
 export const lisk = makeConfig({
   ...chain,
   blockTimeSeconds: 2,
+  launchTime: 1724076000,
   sortIndex: 15,
   logoUrl: "https://assets.oku.trade/lisk-logo.png",
   safeReorgDistance: 90000,

@@ -8,6 +8,7 @@ var Lisk Network = Network{
 	ChainId:           1135,
 	LogoUrl:           "https://assets.oku.trade/lisk-logo.png",
 	SortIndex:         15,
+	LaunchTime:        1724076000,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

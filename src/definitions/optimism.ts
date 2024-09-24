@@ -8,6 +8,7 @@ export const optimism = makeConfig({
   initCodeHash:
     "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
   blockTimeSeconds: 0.5,
+  launchTime: 1688997600,
   sortIndex: 2,
   logoUrl: "https://assets.oku.trade/optimism-logo.svg",
   safeReorgDistance: 90000,

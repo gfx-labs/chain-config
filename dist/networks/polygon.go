@@ -8,6 +8,7 @@ var Polygon Network = Network{
 	ChainId:           137,
 	LogoUrl:           "https://assets.oku.trade/polygon-logo.webp",
 	SortIndex:         3,
+	LaunchTime:        1688997600,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

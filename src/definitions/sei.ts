@@ -6,6 +6,7 @@ export const sei = makeConfig({
   initCodeHash:
     "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
   blockTimeSeconds: 0.4,
+  launchTime: 1687788000,
   sortIndex: 5,
   logoUrl: "https://assets.oku.trade/sei-logo.svg",
   safeReorgDistance: 90000,

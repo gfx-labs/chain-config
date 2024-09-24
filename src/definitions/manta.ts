@@ -5,6 +5,7 @@ import { makeConfig } from "../util";
 export const manta = makeConfig({
   ...chain,
   name: "Manta Pacific",
+  launchTime: 1709910000,
   initCodeHash:
     "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
   blockTimeSeconds: 2,

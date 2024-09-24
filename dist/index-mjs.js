@@ -8,6 +8,7 @@ const makeConfig = (x) => {
 const arbitrum = makeConfig({
     ...arbitrum$1,
     name: "Arbitrum",
+    launchTime: 1688997600,
     sortIndex: 1,
     blockTimeSeconds: 0.25,
     logoUrl: "https://assets.oku.trade/arbitrum-logo.svg",
@@ -293,6 +294,7 @@ const arbitrum = makeConfig({
 const base = makeConfig({
     ...base$1,
     sortIndex: 8,
+    launchTime: 1707321600,
     blockTimeSeconds: 2,
     logoUrl: "https://assets.oku.trade/base-logo.svg",
     defaultPool: "0xd0b53d9277642d899df5c87a3966a349a798f224",
@@ -439,6 +441,7 @@ const base = makeConfig({
 const blast = makeConfig({
     ...blast$1,
     blockTimeSeconds: 2,
+    launchTime: 1719410400,
     sortIndex: 14,
     logoUrl: "https://assets.oku.trade/blast-logo.svg",
     safeReorgDistance: 90000,
@@ -535,6 +538,7 @@ const blast = makeConfig({
 const bob = makeConfig({
     ...bob$1,
     blockTimeSeconds: 2,
+    launchTime: 1727359200,
     sortIndex: 15,
     logoUrl: "https://assets.oku.trade/bob-logo.svg",
     safeReorgDistance: 90000,
@@ -623,6 +627,7 @@ const bob = makeConfig({
 const boba = makeConfig({
     ...boba$1,
     name: "Boba",
+    launchTime: 1690297200,
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
     sortIndex: 11,
     blockTimeSeconds: 2,
@@ -735,6 +740,7 @@ const boba = makeConfig({
 const bsc = makeConfig({
     ...bsc$1,
     name: "BSC",
+    launchTime: 1689346800,
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
     sortIndex: 9,
     blockTimeSeconds: 3,
@@ -918,6 +924,7 @@ const bsc = makeConfig({
 const filecoin = makeConfig({
     ...filecoin$1,
     sortIndex: 10,
+    launchTime: 1677600000,
     name: "Filecoin",
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
     blockTimeSeconds: 30,
@@ -1047,6 +1054,7 @@ const filecoin = makeConfig({
 const gnosis = makeConfig({
     ...gnosis$1,
     blockTimeSeconds: 5,
+    launchTime: 1725890400,
     sortIndex: 18,
     logoUrl: "https://assets.oku.trade/gnosis-logo.png",
     safeReorgDistance: 90000,
@@ -1144,6 +1152,7 @@ const gnosis = makeConfig({
 const linea = makeConfig({
     ...linea$1,
     name: "Linea",
+    launchTime: 1713362400,
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
     blockTimeSeconds: 2,
     sortIndex: 15,
@@ -1261,6 +1270,7 @@ const linea = makeConfig({
 const lisk = makeConfig({
     ...lisk$1,
     blockTimeSeconds: 2,
+    launchTime: 1724076000,
     sortIndex: 15,
     logoUrl: "https://assets.oku.trade/lisk-logo.png",
     safeReorgDistance: 90000,
@@ -1347,6 +1357,7 @@ const mainnet = makeConfig({
     ...mainnet$1,
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
     sortIndex: 0,
+    launchTime: 1688997600,
     blockTimeSeconds: 15,
     safeReorgDistance: 90000,
     logoUrl: "https://assets.oku.trade/ethereum-logo.webp",
@@ -1638,6 +1649,7 @@ const mainnet = makeConfig({
 const manta = makeConfig({
     ...manta$1,
     name: "Manta Pacific",
+    launchTime: 1709910000,
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
     blockTimeSeconds: 2,
     sortIndex: 13,
@@ -1744,6 +1756,7 @@ const mantle = makeConfig({
     ...mantle$1,
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
     blockTimeSeconds: 2,
+    launchTime: 1720101600,
     sortIndex: 15,
     logoUrl: "https://assets.oku.trade/mantle-logo.png",
     safeReorgDistance: 90000,
@@ -1861,6 +1874,7 @@ const moonbeam = makeConfig({
     ...moonbeam$1,
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
     sortIndex: 12,
+    launchTime: 1696341600,
     blockTimeSeconds: 30,
     logoUrl: "https://assets.oku.trade/moonbeam-logo.svg",
     safeReorgDistance: 90000,
@@ -1971,6 +1985,7 @@ const optimism = makeConfig({
     name: "Optimism",
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
     blockTimeSeconds: 0.5,
+    launchTime: 1688997600,
     sortIndex: 2,
     logoUrl: "https://assets.oku.trade/optimism-logo.svg",
     safeReorgDistance: 90000,
@@ -2251,6 +2266,7 @@ const polygon = makeConfig({
     ...polygon$1,
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
     blockTimeSeconds: 2,
+    launchTime: 1688997600,
     sortIndex: 3,
     logoUrl: "https://assets.oku.trade/polygon-logo.webp",
     safeReorgDistance: 90000,
@@ -2523,6 +2539,7 @@ const polygon = makeConfig({
 const rootstock = makeConfig({
     ...rootstock$1,
     sortIndex: 7,
+    launchTime: 1702479600,
     name: "Rootstock",
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
     blockTimeSeconds: 33,
@@ -2621,6 +2638,7 @@ const scroll = makeConfig({
     ...scroll$1,
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
     sortIndex: 5,
+    launchTime: 1703257200,
     blockTimeSeconds: 3,
     logoUrl: "https://assets.oku.trade/scroll-logo.png",
     safeReorgDistance: 90000,
@@ -2735,6 +2753,7 @@ const sei = makeConfig({
     ...sei$1,
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
     blockTimeSeconds: 0.4,
+    launchTime: 1687788000,
     sortIndex: 5,
     logoUrl: "https://assets.oku.trade/sei-logo.svg",
     safeReorgDistance: 90000,
@@ -2851,6 +2870,7 @@ const taiko = makeConfig({
     ...taiko$1,
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
     blockTimeSeconds: 24,
+    launchTime: 1717509600,
     sortIndex: 4,
     logoUrl: "https://assets.oku.trade/taiko-logo.svg",
     safeReorgDistance: 90000,
@@ -2965,6 +2985,7 @@ const taiko = makeConfig({
 const xLayer = makeConfig({
     ...xLayer$1,
     blockTimeSeconds: 3,
+    launchTime: 0,
     sortIndex: 18,
     logoUrl: "https://assets.oku.trade/xlayer-logo.png",
     safeReorgDistance: 90000,
@@ -3053,6 +3074,7 @@ const polygonZkEvm = makeConfig({
     ...polygonZkEvm$1,
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
     sortIndex: 6,
+    launchTime: 1722520800,
     blockTimeSeconds: 7,
     logoUrl: "https://assets.oku.trade/zkevm-logo.svg",
     safeReorgDistance: 90000,
@@ -3156,6 +3178,7 @@ const polygonZkEvm = makeConfig({
 const zkLink = makeConfig({
     ...zkLinkNova,
     blockTimeSeconds: 2,
+    launchTime: 0,
     sortIndex: 4,
     logoUrl: "https://assets.oku.trade/zklink-logo.svg",
     safeReorgDistance: 90000,
@@ -3248,6 +3271,7 @@ const zkSync = makeConfig({
     ...zksync,
     blockTimeSeconds: 2,
     sortIndex: 4,
+    launchTime: 1696514400,
     logoUrl: "https://assets.oku.trade/zksync-logo.svg",
     safeReorgDistance: 90000,
     externalId: {

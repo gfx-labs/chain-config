@@ -114,6 +114,7 @@ export interface IChainInfo<
   formatters extends ChainFormatters | undefined = ChainFormatters | undefined,
 > extends Chain<formatters> {
   logoUrl: string;
+  launchTime: number;
   nativeLogoUrl: string;
   sortIndex: number;
   safeReorgDistance?: number;

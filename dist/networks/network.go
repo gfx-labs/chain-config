@@ -145,6 +145,7 @@ func NetworkByIdString(idString string) (*Network, error) {
 
 type Network struct {
 	LogoUrl           string
+	LaunchTime        int64
 	NativeLogoUrl     string
 	SortIndex         int64
 	SafeReorgDistance int64

@@ -8,6 +8,7 @@ var Optimism Network = Network{
 	ChainId:           10,
 	LogoUrl:           "https://assets.oku.trade/optimism-logo.svg",
 	SortIndex:         2,
+	LaunchTime:        1688997600,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

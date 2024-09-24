@@ -8,6 +8,7 @@ var Ethereum Network = Network{
 	ChainId:           1,
 	LogoUrl:           "https://assets.oku.trade/ethereum-logo.webp",
 	SortIndex:         0,
+	LaunchTime:        1688997600,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

@@ -5,6 +5,7 @@ import { makeConfig } from "../util";
 export const base = makeConfig({
   ...chain,
   sortIndex: 8,
+  launchTime: 1707321600,
   blockTimeSeconds: 2,
   logoUrl: "https://assets.oku.trade/base-logo.svg",
   defaultPool: "0xd0b53d9277642d899df5c87a3966a349a798f224",

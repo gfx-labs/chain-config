@@ -5,6 +5,7 @@ import { makeConfig } from "../util";
 export const zkLink = makeConfig({
   ...chain,
   blockTimeSeconds: 2,
+  launchTime: 0,
   sortIndex: 4,
   logoUrl: "https://assets.oku.trade/zklink-logo.svg",
   safeReorgDistance: 90000,
