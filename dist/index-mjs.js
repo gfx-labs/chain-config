@@ -587,7 +587,17 @@ const bob = makeConfig({
     tokenList: [
         { symbol: "WETH", address: "0x4200000000000000000000000000000000000006" },
         { symbol: "USDT", address: "0x05D032ac25d322df992303dCa074EE7392C117b9" },
-        { symbol: "USDC.e", address: "0xe75D0fB2C24A55cA1e3F96781a2bCC7bdba058F0" },
+        { symbol: "USDC.e", address: "0xe75d0fb2c24a55ca1e3f96781a2bcc7bdba058f0" },
+        { symbol: "WBTC", address: "0x03c7054bcb39f7b2e5b2c7acb37583e32d70cfa3" },
+        {
+            symbol: "SolvBTC.BBN",
+            address: "0xcc0966d8418d412c599a6421b760a847eb169a8c",
+        },
+        {
+            symbol: "SolvBTC",
+            address: "0x541fd749419ca806a8bc7da8ac23d346f2df8b77",
+        },
+        { symbol: "uniBTC", address: "0x236f8c0a61da474db21b693fb2ea7aab0c803894" },
     ],
     stables: [
         "0x05D032ac25d322df992303dCa074EE7392C117b9",
