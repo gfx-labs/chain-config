@@ -572,6 +572,7 @@ const bob = makeConfig({
     },
     token: {
         wethAddress: "0x4200000000000000000000000000000000000006",
+        wbtcAddress: "0x03c7054bcb39f7b2e5b2c7acb37583e32d70cfa3",
     },
     oku: {
         limitOrderRegistry: "0x447b8e40b0cda8e55f405c86bc635d02d0540ab8",
