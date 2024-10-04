@@ -1504,7 +1504,9 @@ declare const gnosis: Readonly<{
     externalId: {
         zerion: string;
     };
-    markets: {};
+    markets: {
+        openocean: string;
+    };
     bridges: {};
     oracles: {
         cmc: {
@@ -3249,7 +3251,9 @@ declare const rootstock: Readonly<{
     logoUrl: "https://assets.oku.trade/rootstock-logo.svg";
     safeReorgDistance: 90000;
     externalId: {};
-    markets: {};
+    markets: {
+        openocean: string;
+    };
     bridges: {};
     oracles: {
         cmc: {
@@ -3508,7 +3512,9 @@ declare const sei: Readonly<{
     logoUrl: "https://assets.oku.trade/sei-logo.svg";
     safeReorgDistance: 90000;
     externalId: {};
-    markets: {};
+    markets: {
+        openocean: string;
+    };
     bridges: {
         stargate: {
             endpointID: number;
@@ -6726,7 +6732,9 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     logoUrl: "https://assets.oku.trade/rootstock-logo.svg";
     safeReorgDistance: 90000;
     externalId: {};
-    markets: {};
+    markets: {
+        openocean: string;
+    };
     bridges: {};
     oracles: {
         cmc: {
@@ -8081,7 +8089,9 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     logoUrl: "https://assets.oku.trade/sei-logo.svg";
     safeReorgDistance: 90000;
     externalId: {};
-    markets: {};
+    markets: {
+        openocean: string;
+    };
     bridges: {
         stargate: {
             endpointID: number;
@@ -9021,7 +9031,9 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     externalId: {
         zerion: string;
     };
-    markets: {};
+    markets: {
+        openocean: string;
+    };
     bridges: {};
     oracles: {
         cmc: {

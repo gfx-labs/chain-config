@@ -1074,7 +1074,9 @@ const gnosis = makeConfig({
     externalId: {
         zerion: "gnosis",
     },
-    markets: {},
+    markets: {
+        openocean: "xdai",
+    },
     bridges: {},
     oracles: {
         cmc: {
@@ -2559,7 +2561,9 @@ const rootstock = makeConfig({
     logoUrl: "https://assets.oku.trade/rootstock-logo.svg",
     safeReorgDistance: 90000,
     externalId: {},
-    markets: {},
+    markets: {
+        openocean: "rootstock",
+    },
     bridges: {},
     oracles: {
         cmc: {
@@ -2771,7 +2775,9 @@ const sei = makeConfig({
     logoUrl: "https://assets.oku.trade/sei-logo.svg",
     safeReorgDistance: 90000,
     externalId: {},
-    markets: {},
+    markets: {
+        openocean: "sei",
+    },
     bridges: {
         stargate: {
             endpointID: 30280,
