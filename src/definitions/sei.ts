@@ -11,7 +11,9 @@ export const sei = makeConfig({
   logoUrl: "https://assets.oku.trade/sei-logo.svg",
   safeReorgDistance: 90000,
   externalId: {},
-  markets: {},
+  markets: {
+    openocean: "sei",
+  },
   bridges: {
     stargate: {
       endpointID: 30280,

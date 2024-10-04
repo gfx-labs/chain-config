@@ -13,7 +13,9 @@ export const rootstock = makeConfig({
   logoUrl: "https://assets.oku.trade/rootstock-logo.svg",
   safeReorgDistance: 90000,
   externalId: {},
-  markets: {},
+  markets: {
+    openocean: "rootstock",
+  },
   bridges: {},
   oracles: {
     cmc: {

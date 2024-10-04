@@ -11,7 +11,9 @@ export const gnosis = makeConfig({
   externalId: {
     zerion: "gnosis",
   },
-  markets: {},
+  markets: {
+    openocean: "xdai",
+  },
   bridges: {},
   oracles: {
     cmc: {
