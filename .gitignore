@@ -37,10 +37,8 @@ Thumbs.db
 # Ignore built ts files
 dist/**/*
 dist/**
+dist
+dist-browser
 
 # ignore package-lock.json
 package-lock.json
-
-
-dist
-dist-browser
