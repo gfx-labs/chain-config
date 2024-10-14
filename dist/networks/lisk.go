@@ -57,6 +57,30 @@ var Lisk Network = Network{
 		WethAddress: common.HexToAddress("0x4200000000000000000000000000000000000006"),
 	},
 	Contracts: map[string]ChainContract{
+		"gasPriceOracle": {
+			BlockCreated: 0,
+			Address:      common.HexToAddress("0x420000000000000000000000000000000000000F"),
+		},
+		"l1Block": {
+			BlockCreated: 0,
+			Address:      common.HexToAddress("0x4200000000000000000000000000000000000015"),
+		},
+		"l2CrossDomainMessenger": {
+			BlockCreated: 0,
+			Address:      common.HexToAddress("0x4200000000000000000000000000000000000007"),
+		},
+		"l2Erc721Bridge": {
+			BlockCreated: 0,
+			Address:      common.HexToAddress("0x4200000000000000000000000000000000000014"),
+		},
+		"l2StandardBridge": {
+			BlockCreated: 0,
+			Address:      common.HexToAddress("0x4200000000000000000000000000000000000010"),
+		},
+		"l2ToL1MessagePasser": {
+			BlockCreated: 0,
+			Address:      common.HexToAddress("0x4200000000000000000000000000000000000016"),
+		},
 		"multicall3": {
 			BlockCreated: 0,
 			Address:      common.HexToAddress("0xA9d71E1dd7ca26F26e656E66d6AA81ed7f745bf0"),

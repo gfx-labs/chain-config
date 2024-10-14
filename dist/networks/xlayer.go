@@ -12,7 +12,8 @@ var Xlayer Network = Network{
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {
-			Url: "https://www.oklink.com/xlayer",
+			Url:    "https://www.oklink.com/xlayer",
+			ApiUrl: "https://www.oklink.com/api/v5/explorer/xlayer/api",
 		},
 	},
 	DefaultPool:   common.HexToAddress("0x87d7a0a51e27bf7232f97015ab3e53edc8104989"),

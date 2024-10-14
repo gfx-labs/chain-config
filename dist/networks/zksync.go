@@ -69,6 +69,10 @@ var Zksync Network = Network{
 			BlockCreated: 0,
 			Address:      common.HexToAddress("0xF9cda624FBC7e059355ce98a31693d299FACd963"),
 		},
+		"universalSignatureVerifier": {
+			BlockCreated: 45659388,
+			Address:      common.HexToAddress("0xfB688330379976DA81eB64Fe4BF50d7401763B9C"),
+		},
 		"limitOrder": {
 			BlockCreated: 0,
 			Address:      common.HexToAddress("0x0FD66bD1e0974e2535CB424E6675D60aC52a84Fa"),

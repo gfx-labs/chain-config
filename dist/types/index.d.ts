@@ -368,6 +368,7 @@ declare const base: Readonly<{
                 mixHash: `0x${string}`;
                 nonce: `0x${string}` | null;
                 number: bigint | null;
+                parentBeaconBlockRoot?: `0x${string}` | undefined;
                 parentHash: `0x${string}`;
                 receiptsRoot: `0x${string}`;
                 sealFields: `0x${string}`[];
@@ -874,6 +875,7 @@ declare const bob: Readonly<{
                 mixHash: `0x${string}`;
                 nonce: `0x${string}` | null;
                 number: bigint | null;
+                parentBeaconBlockRoot?: `0x${string}` | undefined;
                 parentHash: `0x${string}`;
                 receiptsRoot: `0x${string}`;
                 sealFields: `0x${string}`[];
@@ -1836,6 +1838,39 @@ declare const lisk: Readonly<{
         multicall3: {
             address: "0xA9d71E1dd7ca26F26e656E66d6AA81ed7f745bf0";
         };
+        l2OutputOracle: {
+            readonly 1: {
+                readonly address: "0x113cB99283AF242Da0A0C54347667edF531Aa7d6";
+            };
+        };
+        portal: {
+            readonly 1: {
+                readonly address: "0x26dB93F8b8b4f7016240af62F7730979d353f9A7";
+            };
+        };
+        l1StandardBridge: {
+            readonly 1: {
+                readonly address: "0x2658723Bf70c7667De6B25F99fcce13A16D25d08";
+            };
+        };
+        gasPriceOracle: {
+            readonly address: "0x420000000000000000000000000000000000000F";
+        };
+        l1Block: {
+            readonly address: "0x4200000000000000000000000000000000000015";
+        };
+        l2CrossDomainMessenger: {
+            readonly address: "0x4200000000000000000000000000000000000007";
+        };
+        l2Erc721Bridge: {
+            readonly address: "0x4200000000000000000000000000000000000014";
+        };
+        l2StandardBridge: {
+            readonly address: "0x4200000000000000000000000000000000000010";
+        };
+        l2ToL1MessagePasser: {
+            readonly address: "0x4200000000000000000000000000000000000016";
+        };
     };
     id: 1135;
     name: "Lisk";
@@ -1851,7 +1886,7 @@ declare const lisk: Readonly<{
             ];
         };
     };
-    sourceId?: number | undefined;
+    sourceId: 1;
     testnet?: boolean | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
@@ -1873,6 +1908,7 @@ declare const lisk: Readonly<{
                 mixHash: `0x${string}`;
                 nonce: `0x${string}` | null;
                 number: bigint | null;
+                parentBeaconBlockRoot?: `0x${string}` | undefined;
                 parentHash: `0x${string}`;
                 receiptsRoot: `0x${string}`;
                 sealFields: `0x${string}`[];
@@ -2857,6 +2893,7 @@ declare const optimism: Readonly<{
                 mixHash: `0x${string}`;
                 nonce: `0x${string}` | null;
                 number: bigint | null;
+                parentBeaconBlockRoot?: `0x${string}` | undefined;
                 parentHash: `0x${string}`;
                 receiptsRoot: `0x${string}`;
                 sealFields: `0x${string}`[];
@@ -3225,8 +3262,8 @@ declare const polygon: Readonly<{
     id: 137;
     name: "Polygon";
     nativeCurrency: {
-        readonly name: "MATIC";
-        readonly symbol: "MATIC";
+        readonly name: "POL";
+        readonly symbol: "POL";
         readonly decimals: 18;
     };
     rpcUrls: {
@@ -3847,6 +3884,7 @@ declare const xLayer: Readonly<{
         readonly default: {
             readonly name: "OKLink";
             readonly url: "https://www.oklink.com/xlayer";
+            readonly apiUrl: "https://www.oklink.com/api/v5/explorer/xlayer/api";
         };
     };
     id: 196;
@@ -4210,6 +4248,10 @@ declare const zkSync: Readonly<{
         multicall3: {
             address: "0xF9cda624FBC7e059355ce98a31693d299FACd963";
         };
+        universalSignatureVerifier: {
+            readonly address: "0xfB688330379976DA81eB64Fe4BF50d7401763B9C";
+            readonly blockCreated: 45659388;
+        };
     };
     id: 324;
     name: "ZKsync Era";
@@ -4252,6 +4294,7 @@ declare const zkSync: Readonly<{
                 mixHash: `0x${string}`;
                 nonce: `0x${string}` | null;
                 number: bigint | null;
+                parentBeaconBlockRoot?: `0x${string}` | undefined;
                 parentHash: `0x${string}`;
                 receiptsRoot: `0x${string}`;
                 sealFields: `0x${string}`[];
@@ -4488,7 +4531,7 @@ declare const zkSync: Readonly<{
             exclude: ("gasPerPubdata" | "paymaster" | "factoryDeps" | "paymasterInput" | "customSignature")[] | undefined;
             format: (args: import("viem/chains").ZkSyncTransactionRequest<bigint, number>) => ({
                 data?: `0x${string}` | undefined;
-                from: `0x${string}`;
+                from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 to?: `0x${string}` | null | undefined;
@@ -4507,7 +4550,7 @@ declare const zkSync: Readonly<{
                 eip712Meta?: undefined;
             } | {
                 data?: `0x${string}` | undefined;
-                from: `0x${string}`;
+                from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 to?: `0x${string}` | null | undefined;
@@ -4526,7 +4569,7 @@ declare const zkSync: Readonly<{
                 eip712Meta?: undefined;
             } | {
                 data?: `0x${string}` | undefined;
-                from: `0x${string}`;
+                from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 to?: `0x${string}` | null | undefined;
@@ -4546,7 +4589,7 @@ declare const zkSync: Readonly<{
             } | {
                 type?: "0x3" | undefined;
                 data?: `0x${string}` | undefined;
-                from: `0x${string}`;
+                from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
@@ -4570,7 +4613,7 @@ declare const zkSync: Readonly<{
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
                 to?: `0x${string}` | null | undefined;
                 data?: `0x${string}` | undefined;
-                from: `0x${string}`;
+                from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
@@ -4583,7 +4626,7 @@ declare const zkSync: Readonly<{
                 eip712Meta?: undefined;
             } | {
                 data?: `0x${string}` | undefined;
-                from: `0x${string}`;
+                from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 to?: `0x${string}` | null | undefined;
@@ -5112,6 +5155,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 mixHash: `0x${string}`;
                 nonce: `0x${string}` | null;
                 number: bigint | null;
+                parentBeaconBlockRoot?: `0x${string}` | undefined;
                 parentHash: `0x${string}`;
                 receiptsRoot: `0x${string}`;
                 sealFields: `0x${string}`[];
@@ -6344,6 +6388,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 mixHash: `0x${string}`;
                 nonce: `0x${string}` | null;
                 number: bigint | null;
+                parentBeaconBlockRoot?: `0x${string}` | undefined;
                 parentHash: `0x${string}`;
                 receiptsRoot: `0x${string}`;
                 sealFields: `0x${string}`[];
@@ -6709,8 +6754,8 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     id: 137;
     name: "Polygon";
     nativeCurrency: {
-        readonly name: "MATIC";
-        readonly symbol: "MATIC";
+        readonly name: "POL";
+        readonly symbol: "POL";
         readonly decimals: 18;
     };
     rpcUrls: {
@@ -7203,6 +7248,10 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         multicall3: {
             address: "0xF9cda624FBC7e059355ce98a31693d299FACd963";
         };
+        universalSignatureVerifier: {
+            readonly address: "0xfB688330379976DA81eB64Fe4BF50d7401763B9C";
+            readonly blockCreated: 45659388;
+        };
     };
     id: 324;
     name: "ZKsync Era";
@@ -7240,6 +7289,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 mixHash: `0x${string}`;
                 nonce: `0x${string}` | null;
                 number: bigint | null;
+                parentBeaconBlockRoot?: `0x${string}` | undefined;
                 parentHash: `0x${string}`;
                 receiptsRoot: `0x${string}`;
                 sealFields: `0x${string}`[];
@@ -7474,7 +7524,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             exclude: ("gasPerPubdata" | "paymaster" | "factoryDeps" | "paymasterInput" | "customSignature")[] | undefined;
             format: (args: import("viem/zksync").ZkSyncTransactionRequest<bigint, number>) => ({
                 data?: `0x${string}` | undefined;
-                from: `0x${string}`;
+                from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 to?: `0x${string}` | null | undefined;
@@ -7493,7 +7543,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 eip712Meta?: undefined;
             } | {
                 data?: `0x${string}` | undefined;
-                from: `0x${string}`;
+                from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 to?: `0x${string}` | null | undefined;
@@ -7512,7 +7562,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 eip712Meta?: undefined;
             } | {
                 data?: `0x${string}` | undefined;
-                from: `0x${string}`;
+                from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 to?: `0x${string}` | null | undefined;
@@ -7532,7 +7582,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             } | {
                 type?: "0x3" | undefined;
                 data?: `0x${string}` | undefined;
-                from: `0x${string}`;
+                from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
@@ -7556,7 +7606,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
                 to?: `0x${string}` | null | undefined;
                 data?: `0x${string}` | undefined;
-                from: `0x${string}`;
+                from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
@@ -7569,7 +7619,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 eip712Meta?: undefined;
             } | {
                 data?: `0x${string}` | undefined;
-                from: `0x${string}`;
+                from?: `0x${string}` | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 to?: `0x${string}` | null | undefined;
@@ -8395,6 +8445,39 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         multicall3: {
             address: "0xA9d71E1dd7ca26F26e656E66d6AA81ed7f745bf0";
         };
+        l2OutputOracle: {
+            readonly 1: {
+                readonly address: "0x113cB99283AF242Da0A0C54347667edF531Aa7d6";
+            };
+        };
+        portal: {
+            readonly 1: {
+                readonly address: "0x26dB93F8b8b4f7016240af62F7730979d353f9A7";
+            };
+        };
+        l1StandardBridge: {
+            readonly 1: {
+                readonly address: "0x2658723Bf70c7667De6B25F99fcce13A16D25d08";
+            };
+        };
+        gasPriceOracle: {
+            readonly address: "0x420000000000000000000000000000000000000F";
+        };
+        l1Block: {
+            readonly address: "0x4200000000000000000000000000000000000015";
+        };
+        l2CrossDomainMessenger: {
+            readonly address: "0x4200000000000000000000000000000000000007";
+        };
+        l2Erc721Bridge: {
+            readonly address: "0x4200000000000000000000000000000000000014";
+        };
+        l2StandardBridge: {
+            readonly address: "0x4200000000000000000000000000000000000010";
+        };
+        l2ToL1MessagePasser: {
+            readonly address: "0x4200000000000000000000000000000000000016";
+        };
     };
     id: 1135;
     name: "Lisk";
@@ -8408,7 +8491,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly http: readonly ["https://rpc.api.lisk.com"];
         };
     };
-    sourceId?: number | undefined;
+    sourceId: 1;
     testnet?: boolean | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
@@ -8429,6 +8512,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 mixHash: `0x${string}`;
                 nonce: `0x${string}` | null;
                 number: bigint | null;
+                parentBeaconBlockRoot?: `0x${string}` | undefined;
                 parentHash: `0x${string}`;
                 receiptsRoot: `0x${string}`;
                 sealFields: `0x${string}`[];
@@ -8808,6 +8892,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 mixHash: `0x${string}`;
                 nonce: `0x${string}` | null;
                 number: bigint | null;
+                parentBeaconBlockRoot?: `0x${string}` | undefined;
                 parentHash: `0x${string}`;
                 receiptsRoot: `0x${string}`;
                 sealFields: `0x${string}`[];
@@ -9236,6 +9321,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         readonly default: {
             readonly name: "OKLink";
             readonly url: "https://www.oklink.com/xlayer";
+            readonly apiUrl: "https://www.oklink.com/api/v5/explorer/xlayer/api";
         };
     };
     id: 196;
