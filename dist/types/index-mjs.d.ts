@@ -2140,6 +2140,11 @@ declare const mainnet: Readonly<{
         zerion: string;
         debank: string;
     };
+    rpcUrls: {
+        default: {
+            http: string[];
+        };
+    };
     markets: {
         airswap: true;
         kyberswap: string;
@@ -2288,13 +2293,6 @@ declare const mainnet: Readonly<{
         readonly name: "Ether";
         readonly symbol: "ETH";
         readonly decimals: 18;
-    };
-    rpcUrls: {
-        readonly default: {
-            readonly http: readonly [
-                "https://cloudflare-eth.com"
-            ];
-        };
     };
     sourceId?: number | undefined;
     testnet?: boolean | undefined;
@@ -5893,6 +5891,11 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         zerion: string;
         debank: string;
     };
+    rpcUrls: {
+        default: {
+            http: string[];
+        };
+    };
     markets: {
         airswap: true;
         kyberswap: string;
@@ -6041,11 +6044,6 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         readonly name: "Ether";
         readonly symbol: "ETH";
         readonly decimals: 18;
-    };
-    rpcUrls: {
-        readonly default: {
-            readonly http: readonly ["https://cloudflare-eth.com"];
-        };
     };
     sourceId?: number | undefined;
     testnet?: boolean | undefined;

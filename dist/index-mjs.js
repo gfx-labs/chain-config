@@ -1378,6 +1378,11 @@ const mainnet = makeConfig({
         zerion: "ethereum",
         debank: "eth",
     },
+    rpcUrls: {
+        default: {
+            http: ["https://rpc.ankr.com/eth"],
+        },
+    },
     markets: {
         airswap: true,
         kyberswap: "ethereum",
