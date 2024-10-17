@@ -13,6 +13,7 @@ export const gnosis = makeConfig({
   },
   markets: {
     openocean: "xdai",
+    cowswap: "xdai",
   },
   bridges: {},
   oracles: {

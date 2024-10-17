@@ -23,6 +23,7 @@ export const arbitrum = makeConfig({
     propellerswap: "arbitrum",
     openocean: "arbitrum",
     zeroex: true,
+    cowswap: "arbitrum_one",
   },
   bridges: {
     chainlink: {

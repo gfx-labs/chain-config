@@ -64,6 +64,7 @@ export interface Markets {
   propellerswap?: string;
   usor?: any;
   zeroex?: boolean;
+  cowswap?: string;
 }
 
 export interface Bridges {
