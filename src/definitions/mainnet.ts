@@ -30,6 +30,7 @@ export const mainnet = makeConfig({
     propellerswap: "ethereum",
     openocean: "eth",
     zeroex: true,
+    cowswap: "mainnet",
   },
   bridges: {
     chainlink: {
