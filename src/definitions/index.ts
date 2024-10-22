@@ -24,5 +24,4 @@ export * from "./sei";
 export * from "./taiko";
 export * from "./xlayer";
 export * from "./zkevm";
-export * from "./zklink";
 export * from "./zksync";

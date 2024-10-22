@@ -22,7 +22,6 @@ export const MAINNET_CHAINS = [
   defs.taiko,
   defs.mantle,
   defs.sei,
-  defs.zkLink,
   defs.lisk,
   defs.bob,
   defs.gnosis,
