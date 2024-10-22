@@ -33,7 +33,6 @@ const (
 	NameTaiko        InternalName = "taiko"
 	NameMantle       InternalName = "mantle"
 	NameSei          InternalName = "sei"
-	NameZklink       InternalName = "zklink"
 	NameLisk         InternalName = "lisk"
 	NameBob          InternalName = "bob"
 	NameGnosis       InternalName = "gnosis"
@@ -60,7 +59,6 @@ var AllNetworks = []Network{
 	Taiko,
 	Mantle,
 	Sei,
-	Zklink,
 	Lisk,
 	Bob,
 	Gnosis,
@@ -87,7 +85,6 @@ var networksByName = map[string]Network{
 	"taiko":         Taiko,
 	"mantle":        Mantle,
 	"sei":           Sei,
-	"zklink":        Zklink,
 	"lisk":          Lisk,
 	"bob":           Bob,
 	"gnosis":        Gnosis,
@@ -114,7 +111,6 @@ var networksById = map[int]Network{
 	167000: Taiko,
 	5000:   Mantle,
 	1329:   Sei,
-	810180: Zklink,
 	1135:   Lisk,
 	60808:  Bob,
 	100:    Gnosis,
