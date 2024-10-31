@@ -10,7 +10,9 @@ export const taiko = makeConfig({
   sortIndex: 4,
   logoUrl: "https://assets.oku.trade/taiko-logo.svg",
   safeReorgDistance: 90000,
-  externalId: {},
+  externalId: {
+    zerion: "taiko"
+  },
   markets: {},
   bridges: {
     rhinofi: "TAIKO",

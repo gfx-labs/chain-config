@@ -9,7 +9,7 @@ export const gnosis = makeConfig({
   logoUrl: "https://assets.oku.trade/gnosis-logo.png",
   safeReorgDistance: 90000,
   externalId: {
-    zerion: "gnosis",
+    zerion: "xdai",
   },
   markets: {
     openocean: "xdai",
