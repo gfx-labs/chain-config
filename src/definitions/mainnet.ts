@@ -25,7 +25,7 @@ export const mainnet = makeConfig({
     kyberswap: "ethereum",
     oneinch: true,
     paraswap: {
-      tokenTransferProxy: "0x216b4b4ba9f3e719726886d34a177484278bfcae",
+      routerContract: "0x6A000F20005980200259B80c5102003040001068",
     },
     propellerswap: "ethereum",
     openocean: "eth",

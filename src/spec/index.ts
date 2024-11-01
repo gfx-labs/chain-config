@@ -59,7 +59,7 @@ export interface Markets {
   oneinch?: boolean;
   openocean?: string;
   paraswap?: {
-    tokenTransferProxy: string;
+    routerContract: string;
   };
   propellerswap?: string;
   usor?: any;
