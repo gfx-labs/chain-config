@@ -19,7 +19,7 @@ export const base = makeConfig({
     kyberswap: "base",
     oneinch: true,
     paraswap: {
-      tokenTransferProxy: "0x93aAAe79a53759cD164340E4C8766E4Db5331cD7",
+      routerContract: "0x6A000F20005980200259B80c5102003040001068",
     },
     openocean: "base",
     zeroex: true,

@@ -20,7 +20,7 @@ export const optimism = makeConfig({
     kyberswap: "optimism",
     oneinch: true,
     paraswap: {
-      tokenTransferProxy: "0x216B4B4Ba9F3e719726886d34a177484278Bfcae",
+      routerContract: "0x6A000F20005980200259B80c5102003040001068",
     },
     openocean: "optimism",
     zeroex: true,

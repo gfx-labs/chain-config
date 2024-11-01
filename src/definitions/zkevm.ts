@@ -17,7 +17,7 @@ export const polygonZkEvm = makeConfig({
   markets: {
     kyberswap: "polygon-zkevm",
     paraswap: {
-      tokenTransferProxy: "0xc8a21fcd5a100c3ecc037c97e2f9c53a8d3a02a1",
+      routerContract: "0x6A000F20005980200259B80c5102003040001068",
     },
     openocean: "polygon_zkevm",
   },
