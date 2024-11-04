@@ -27,7 +27,7 @@ var Lisk Network = Network{
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0x05D032ac25d322df992303dCa074EE7392C117b9")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x05D032ac25d322df992303dCa074EE7392C117b9"): {}},
-	Watchlist:        []common.Address{common.HexToAddress("0x3a670179bdece7eb4f570e30ee9d560f7ff4fac3"), common.HexToAddress("0xd501d4e381491f64274cc65fdec32b47264a2422")},
+	Watchlist:        []common.Address{common.HexToAddress("0x3a670179bdece7eb4f570e30ee9d560f7ff4fac3"), common.HexToAddress("0xd501d4e381491f64274cc65fdec32b47264a2422"), common.HexToAddress("0x304d69c5e03e030d6b298C0d0467baeb310f1f68")},
 	BlockTimeSeconds: 2,
 	Oku: OkuMetadata{
 		LimitOrderRegistry:            common.HexToAddress("0x352A86168e6988A1aDF9A15Cb00017AAd3B67155"),

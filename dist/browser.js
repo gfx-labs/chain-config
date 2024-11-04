@@ -1298,7 +1298,7 @@
       logoUrl: "https://assets.oku.trade/lisk-logo.png",
       safeReorgDistance: 90000,
       externalId: {
-          zerion: "lisk"
+          zerion: "lisk",
       },
       markets: {},
       bridges: {},
@@ -1355,6 +1355,7 @@
       watchlist: [
           "0x3a670179bdece7eb4f570e30ee9d560f7ff4fac3",
           "0xd501d4e381491f64274cc65fdec32b47264a2422",
+          "0x304d69c5e03e030d6b298C0d0467baeb310f1f68",
       ],
       internalName: "lisk",
       nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
