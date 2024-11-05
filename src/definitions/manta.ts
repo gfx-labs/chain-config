@@ -12,9 +12,7 @@ export const manta = makeConfig({
   sortIndex: 13,
   logoUrl: "https://assets.oku.trade/manta-logo.png",
   safeReorgDistance: 90000,
-  externalId: {
-    zerion: "manta-pacific",
-  },
+  externalId: {},
   markets: {
     openocean: "manta",
   },

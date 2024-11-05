@@ -8,9 +8,7 @@ export const bob = makeConfig({
   sortIndex: 15,
   logoUrl: "https://assets.oku.trade/bob-logo.svg",
   safeReorgDistance: 90000,
-  externalId: {
-    zerion: "bob",
-  },
+  externalId: {},
   markets: {},
   bridges: {},
   oracles: {
