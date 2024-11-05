@@ -546,9 +546,7 @@
       sortIndex: 15,
       logoUrl: "https://assets.oku.trade/bob-logo.svg",
       safeReorgDistance: 90000,
-      externalId: {
-          zerion: "bob",
-      },
+      externalId: {},
       markets: {},
       bridges: {},
       oracles: {
@@ -1297,9 +1295,7 @@
       sortIndex: 15,
       logoUrl: "https://assets.oku.trade/lisk-logo.png",
       safeReorgDistance: 90000,
-      externalId: {
-          zerion: "lisk",
-      },
+      externalId: {},
       markets: {},
       bridges: {},
       oracles: {
@@ -1687,9 +1683,7 @@
       sortIndex: 13,
       logoUrl: "https://assets.oku.trade/manta-logo.png",
       safeReorgDistance: 90000,
-      externalId: {
-          zerion: "manta-pacific",
-      },
+      externalId: {},
       markets: {
           openocean: "manta",
       },
@@ -2911,9 +2905,7 @@
       sortIndex: 4,
       logoUrl: "https://assets.oku.trade/taiko-logo.svg",
       safeReorgDistance: 90000,
-      externalId: {
-          zerion: "taiko"
-      },
+      externalId: {},
       markets: {},
       bridges: {
           rhinofi: "TAIKO",

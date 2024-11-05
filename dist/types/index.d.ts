@@ -715,9 +715,7 @@ declare const bob: Readonly<{
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/bob-logo.svg";
     safeReorgDistance: 90000;
-    externalId: {
-        zerion: string;
-    };
+    externalId: {};
     markets: {};
     bridges: {};
     oracles: {
@@ -1766,9 +1764,7 @@ declare const lisk: Readonly<{
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/lisk-logo.png";
     safeReorgDistance: 90000;
-    externalId: {
-        zerion: string;
-    };
+    externalId: {};
     markets: {};
     bridges: {};
     oracles: {
@@ -2317,9 +2313,7 @@ declare const manta: Readonly<{
     sortIndex: 13;
     logoUrl: "https://assets.oku.trade/manta-logo.png";
     safeReorgDistance: 90000;
-    externalId: {
-        zerion: string;
-    };
+    externalId: {};
     markets: {
         openocean: string;
     };
@@ -3680,9 +3674,7 @@ declare const taiko: Readonly<{
     sortIndex: 4;
     logoUrl: "https://assets.oku.trade/taiko-logo.svg";
     safeReorgDistance: 90000;
-    externalId: {
-        zerion: string;
-    };
+    externalId: {};
     markets: {};
     bridges: {
         rhinofi: string;
@@ -7551,9 +7543,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     sortIndex: 13;
     logoUrl: "https://assets.oku.trade/manta-logo.png";
     safeReorgDistance: 90000;
-    externalId: {
-        zerion: string;
-    };
+    externalId: {};
     markets: {
         openocean: string;
     };
@@ -7801,9 +7791,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     sortIndex: 4;
     logoUrl: "https://assets.oku.trade/taiko-logo.svg";
     safeReorgDistance: 90000;
-    externalId: {
-        zerion: string;
-    };
+    externalId: {};
     markets: {};
     bridges: {
         rhinofi: string;
@@ -8160,9 +8148,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/lisk-logo.png";
     safeReorgDistance: 90000;
-    externalId: {
-        zerion: string;
-    };
+    externalId: {};
     markets: {};
     bridges: {};
     oracles: {
@@ -8530,9 +8516,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/bob-logo.svg";
     safeReorgDistance: 90000;
-    externalId: {
-        zerion: string;
-    };
+    externalId: {};
     markets: {};
     bridges: {};
     oracles: {
