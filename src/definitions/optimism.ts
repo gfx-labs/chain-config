@@ -219,7 +219,7 @@ export const optimism = makeConfig({
   },
   defaultPool: "0x1c3140ab59d6caf9fa7459c6f83d4b52ba881d36",
   defaultToken0: "0x4200000000000000000000000000000000000042",
-  defaultToken1: "0x7f5c764cbc14f9669b88837ca1490cca17c31607",
+  defaultToken1: "0x0b2c639c533813f4aa9d7837caf62653d097ff85",
   tokenList: [
     { symbol: "USDT", address: "0x94b008aa00579c1307b0ef2c499ad98a8ce58e58" },
     { symbol: "DAI", address: "0xda10009cbd5d07dd0cecc66161fc93d7c9000da1" },
