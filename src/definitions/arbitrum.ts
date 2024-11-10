@@ -218,7 +218,7 @@ export const arbitrum = makeConfig({
   },
   defaultPool: "0xcda53b1f66614552f834ceef361a8d12a0b8dad8",
   defaultToken0: "0x912ce59144191c1204e64559fe8253a0e49e6548",
-  defaultToken1: "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+  defaultToken1: "0xaf88d065e77c8cc2239327c5edb3a432268e5831",
   tokenList: [
     { symbol: "USDT", address: "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9" },
     { symbol: "USDC.e", address: "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8" },
@@ -228,10 +228,10 @@ export const arbitrum = makeConfig({
     { symbol: "ARB", address: "0x912ce59144191c1204e64559fe8253a0e49e6548" },
   ],
   stables: [
+    "0xaf88d065e77c8cc2239327c5edb3a432268e5831",
     "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8",
     "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
     "0xda10009cbd5d07dd0cecc66161fc93d7c9000da1",
-    "0xaf88d065e77c8cC2239327C5EDb3A432268e5831",
   ],
   watchlist: [
     "0x17c14d2c404d167802b16c450d3c99f88f2c4f4d",

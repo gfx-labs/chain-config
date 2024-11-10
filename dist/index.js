@@ -221,7 +221,7 @@ const arbitrum = makeConfig({
     },
     defaultPool: "0xcda53b1f66614552f834ceef361a8d12a0b8dad8",
     defaultToken0: "0x912ce59144191c1204e64559fe8253a0e49e6548",
-    defaultToken1: "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    defaultToken1: "0xaf88d065e77c8cc2239327c5edb3a432268e5831",
     tokenList: [
         { symbol: "USDT", address: "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9" },
         { symbol: "USDC.e", address: "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8" },
@@ -231,10 +231,10 @@ const arbitrum = makeConfig({
         { symbol: "ARB", address: "0x912ce59144191c1204e64559fe8253a0e49e6548" },
     ],
     stables: [
+        "0xaf88d065e77c8cc2239327c5edb3a432268e5831",
         "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8",
         "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
         "0xda10009cbd5d07dd0cecc66161fc93d7c9000da1",
-        "0xaf88d065e77c8cC2239327C5EDb3A432268e5831",
     ],
     watchlist: [
         "0x17c14d2c404d167802b16c450d3c99f88f2c4f4d",
@@ -2228,12 +2228,12 @@ const optimism = makeConfig({
         { symbol: "OP", address: "0x4200000000000000000000000000000000000042" },
     ],
     stables: [
+        "0x0b2c639c533813f4aa9d7837caf62653d097ff85",
         "0x7f5c764cbc14f9669b88837ca1490cca17c31607",
         "0x94b008aA00579c1307B0EF2c499aD98a8ce58e58",
         "0x8c6f28f2f1a3c87f0f938b96d27520d9751ec8d9",
         "0x8aE125E8653821E851F12A49F7765db9a9ce7384",
         "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1",
-        "0x0b2c639c533813f4aa9d7837caf62653d097ff85",
     ],
     watchlist: [
         "0xb589969d38ce76d3d7aa319de7133bc9755fd840",
@@ -2498,7 +2498,7 @@ const polygon = makeConfig({
     },
     defaultPool: "0xa374094527e1673a86de625aa59517c5de346d32",
     defaultToken0: "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
-    defaultToken1: "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+    defaultToken1: "0x3c499c542cef5e3811e1192ce70d8cc03d5c3359",
     tokenList: [
         { symbol: "DAI", address: "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063" },
         { symbol: "USDT", address: "0xc2132d05d31c914a87c6611c10748aeb04b58e8f" },
@@ -2507,6 +2507,7 @@ const polygon = makeConfig({
         { symbol: "WMATIC", address: "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270" },
     ],
     stables: [
+        "0x3c499c542cef5e3811e1192ce70d8cc03d5c3359",
         "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
         "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
         "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
