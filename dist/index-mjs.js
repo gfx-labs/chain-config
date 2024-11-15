@@ -602,7 +602,6 @@ const bob = makeConfig({
         "0x05D032ac25d322df992303dCa074EE7392C117b9",
         "0xe75D0fB2C24A55cA1e3F96781a2bCC7bdba058F0",
         "0x6c851f501a3f24e29a8e39a29591cddf09369080",
-        "0x78fea795cbfcc5ffd6fb5b845a4f53d25c283bdb",
     ],
     watchlist: [
         "0x9a3b17a2e2daf54ce80f2f4b2c8440902be715de",
