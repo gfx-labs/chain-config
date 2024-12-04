@@ -1898,7 +1898,7 @@ const metal = makeConfig({
     blockTimeSeconds: 2,
     launchTime: 1733882663,
     sortIndex: 15,
-    logoUrl: "https://assets.oku.trade/metal-logo.svg",
+    logoUrl: "https://assets.oku.trade/metal-logo.png",
     safeReorgDistance: 90000,
     externalId: {},
     markets: {},
