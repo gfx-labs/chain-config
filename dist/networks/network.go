@@ -37,6 +37,7 @@ const (
 	NameBob          InternalName = "bob"
 	NameGnosis       InternalName = "gnosis"
 	NameXlayer       InternalName = "xlayer"
+	NameMetal        InternalName = "metal"
 )
 
 var AllNetworks = []Network{
@@ -63,6 +64,7 @@ var AllNetworks = []Network{
 	Bob,
 	Gnosis,
 	Xlayer,
+	Metal,
 }
 
 var networksByName = map[string]Network{
@@ -89,6 +91,7 @@ var networksByName = map[string]Network{
 	"bob":           Bob,
 	"gnosis":        Gnosis,
 	"xlayer":        Xlayer,
+	"metal":         Metal,
 }
 
 var networksById = map[int]Network{
@@ -115,6 +118,7 @@ var networksById = map[int]Network{
 	60808:  Bob,
 	100:    Gnosis,
 	196:    Xlayer,
+	1750:   Metal,
 }
 
 func NetworkByName(name string) (*Network, error) {
