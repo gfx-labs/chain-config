@@ -38,6 +38,7 @@ const (
 	NameGnosis       InternalName = "gnosis"
 	NameXlayer       InternalName = "xlayer"
 	NameMetal        InternalName = "metal"
+	NameCorn         InternalName = "corn"
 )
 
 var AllNetworks = []Network{
@@ -65,6 +66,7 @@ var AllNetworks = []Network{
 	Gnosis,
 	Xlayer,
 	Metal,
+	Corn,
 }
 
 var networksByName = map[string]Network{
@@ -92,33 +94,35 @@ var networksByName = map[string]Network{
 	"gnosis":        Gnosis,
 	"xlayer":        Xlayer,
 	"metal":         Metal,
+	"corn":          Corn,
 }
 
 var networksById = map[int]Network{
-	42161:  Arbitrum,
-	8453:   Base,
-	288:    Boba,
-	81457:  Blast,
-	56:     Bsc,
-	314:    Filecoin,
-	1:      Ethereum,
-	1284:   Moonbeam,
-	10:     Optimism,
-	137:    Polygon,
-	30:     Rootstock,
-	534352: Scroll,
-	1101:   PolygonZkevm,
-	324:    Zksync,
-	169:    Manta,
-	59144:  Linea,
-	167000: Taiko,
-	5000:   Mantle,
-	1329:   Sei,
-	1135:   Lisk,
-	60808:  Bob,
-	100:    Gnosis,
-	196:    Xlayer,
-	1750:   Metal,
+	42161:    Arbitrum,
+	8453:     Base,
+	288:      Boba,
+	81457:    Blast,
+	56:       Bsc,
+	314:      Filecoin,
+	1:        Ethereum,
+	1284:     Moonbeam,
+	10:       Optimism,
+	137:      Polygon,
+	30:       Rootstock,
+	534352:   Scroll,
+	1101:     PolygonZkevm,
+	324:      Zksync,
+	169:      Manta,
+	59144:    Linea,
+	167000:   Taiko,
+	5000:     Mantle,
+	1329:     Sei,
+	1135:     Lisk,
+	60808:    Bob,
+	100:      Gnosis,
+	196:      Xlayer,
+	1750:     Metal,
+	21000000: Corn,
 }
 
 func NetworkByName(name string) (*Network, error) {

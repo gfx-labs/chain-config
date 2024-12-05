@@ -27,4 +27,5 @@ export const MAINNET_CHAINS = [
   defs.gnosis,
   defs.xLayer,
   defs.metal,
+  defs.corn,
 ] as const;

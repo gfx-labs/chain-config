@@ -8,6 +8,7 @@ export * from "./blast";
 export * from "./bob";
 export * from "./boba";
 export * from "./bsc";
+export * from "./corn";
 export * from "./filecoin";
 export * from "./gnosis";
 export * from "./linea";
