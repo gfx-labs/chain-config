@@ -2537,9 +2537,7 @@ declare const mantle: Readonly<{
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/mantle-logo.png";
     safeReorgDistance: 90000;
-    externalId: {
-        zerion: string;
-    };
+    externalId: {};
     markets: {
         openocean: string;
         zeroex: true;
@@ -8388,9 +8386,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/mantle-logo.png";
     safeReorgDistance: 90000;
-    externalId: {
-        zerion: string;
-    };
+    externalId: {};
     markets: {
         openocean: string;
         zeroex: true;

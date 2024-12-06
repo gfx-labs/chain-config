@@ -1855,9 +1855,7 @@
       sortIndex: 15,
       logoUrl: "https://assets.oku.trade/mantle-logo.png",
       safeReorgDistance: 90000,
-      externalId: {
-          zerion: "mantle",
-      },
+      externalId: {},
       markets: {
           openocean: "mantle",
           zeroex: true,
