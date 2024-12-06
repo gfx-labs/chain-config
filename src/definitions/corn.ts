@@ -43,7 +43,7 @@ export const corn = makeConfig({
       nativeWrappedName: "BTCN",
     },
   },
-  defaultPool: zeroAddress,
+  defaultPool: "0xe435E14815d28a86c643E4606Ed0e8E5624782c6",
   defaultToken0: "0xda5dDd7270381A7C2717aD10D1c0ecB19e3CDFb2",
   defaultToken1: "0xDF0B24095e15044538866576754F3C964e902Ee6",
   tokenList: [

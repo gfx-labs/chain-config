@@ -1,6 +1,5 @@
 import { metalL2 as chain } from "viem/chains";
 import { makeConfig } from "../util";
-import { zeroAddress } from "viem";
 
 export const metal = makeConfig({
   ...chain,
@@ -43,7 +42,7 @@ export const metal = makeConfig({
       nativeWrappedName: "ETH",
     },
   },
-  defaultPool: zeroAddress,
+  defaultPool: "0xC06B6d6242E84c96AeE28C7FcfE48D2c9909e37B",
   defaultToken0: "0x4200000000000000000000000000000000000006",
   defaultToken1: "0x51E85d70944256710cb141847F1a04f568C1Db0e",
   tokenList: [
@@ -55,7 +54,7 @@ export const metal = makeConfig({
     "0x51E85d70944256710cb141847F1a04f568C1Db0e",
     "0xb91CFCcA485C6E40E3bC622f9BFA02a8ACdEeBab",
   ],
-  watchlist: [],
+  watchlist: ["0xC06B6d6242E84c96AeE28C7FcfE48D2c9909e37B"],
   internalName: "metal",
   nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
   contracts: {
