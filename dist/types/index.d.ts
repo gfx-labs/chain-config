@@ -1421,7 +1421,7 @@ declare const corn: Readonly<{
         address: "0xDF0B24095e15044538866576754F3C964e902Ee6";
     })[];
     stables: "0xDF0B24095e15044538866576754F3C964e902Ee6"[];
-    watchlist: never[];
+    watchlist: "0xe435E14815d28a86c643E4606Ed0e8E5624782c6"[];
     internalName: "corn";
     nativeLogoUrl: "https://assets.oku.trade/natives/eth.png";
     contracts: {
@@ -10010,7 +10010,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         address: "0xDF0B24095e15044538866576754F3C964e902Ee6";
     })[];
     stables: "0xDF0B24095e15044538866576754F3C964e902Ee6"[];
-    watchlist: never[];
+    watchlist: "0xe435E14815d28a86c643E4606Ed0e8E5624782c6"[];
     internalName: "corn";
     nativeLogoUrl: "https://assets.oku.trade/natives/eth.png";
     contracts: {
