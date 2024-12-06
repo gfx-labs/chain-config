@@ -45,15 +45,15 @@ export const metal = makeConfig({
   },
   defaultPool: zeroAddress,
   defaultToken0: "0x4200000000000000000000000000000000000006",
-  defaultToken1: "0xb91CFCcA485C6E40E3bC622f9BFA02a8ACdEeBab",
+  defaultToken1: "0x51E85d70944256710cb141847F1a04f568C1Db0e",
   tokenList: [
     { symbol: "WETH", address: "0x4200000000000000000000000000000000000006" },
     { symbol: "MTL", address: "0xBCFc435d8F276585f6431Fc1b9EE9A850B5C00A9" },
-    { symbol: "USDC", address: "0xb91CFCcA485C6E40E3bC622f9BFA02a8ACdEeBab" },
+    { symbol: "USDC", address: "0x51E85d70944256710cb141847F1a04f568C1Db0e" },
   ],
   stables: [
-    "0xb91CFCcA485C6E40E3bC622f9BFA02a8ACdEeBab",
     "0x51E85d70944256710cb141847F1a04f568C1Db0e",
+    "0xb91CFCcA485C6E40E3bC622f9BFA02a8ACdEeBab",
   ],
   watchlist: [],
   internalName: "metal",

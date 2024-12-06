@@ -21,10 +21,10 @@ var Metal Network = Network{
 	InitCodeHash:  common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId:    map[string]string{},
 	DefaultToken0: common.HexToAddress("0x4200000000000000000000000000000000000006"),
-	DefaultToken1: common.HexToAddress("0xb91CFCcA485C6E40E3bC622f9BFA02a8ACdEeBab"),
+	DefaultToken1: common.HexToAddress("0x51E85d70944256710cb141847F1a04f568C1Db0e"),
 	//TODO: TokenList:        []any{},
-	Stables:          []common.Address{common.HexToAddress("0xb91CFCcA485C6E40E3bC622f9BFA02a8ACdEeBab"), common.HexToAddress("0x51E85d70944256710cb141847F1a04f568C1Db0e")},
-	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0xb91CFCcA485C6E40E3bC622f9BFA02a8ACdEeBab"): {}, common.HexToAddress("0x51E85d70944256710cb141847F1a04f568C1Db0e"): {}},
+	Stables:          []common.Address{common.HexToAddress("0x51E85d70944256710cb141847F1a04f568C1Db0e"), common.HexToAddress("0xb91CFCcA485C6E40E3bC622f9BFA02a8ACdEeBab")},
+	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x51E85d70944256710cb141847F1a04f568C1Db0e"): {}, common.HexToAddress("0xb91CFCcA485C6E40E3bC622f9BFA02a8ACdEeBab"): {}},
 	Watchlist:        []common.Address{},
 	BlockTimeSeconds: 2,
 	Oku: OkuMetadata{

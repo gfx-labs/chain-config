@@ -21,10 +21,10 @@ var Corn Network = Network{
 	InitCodeHash:  common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId:    map[string]string{},
 	DefaultToken0: common.HexToAddress("0xda5dDd7270381A7C2717aD10D1c0ecB19e3CDFb2"),
-	DefaultToken1: common.HexToAddress("0x0000000000000000000000000000000000000000"),
+	DefaultToken1: common.HexToAddress("0xDF0B24095e15044538866576754F3C964e902Ee6"),
 	//TODO: TokenList:        []any{},
-	Stables:          []common.Address{},
-	StablecoinMap:    map[common.Address]struct{}{},
+	Stables:          []common.Address{common.HexToAddress("0xDF0B24095e15044538866576754F3C964e902Ee6")},
+	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0xDF0B24095e15044538866576754F3C964e902Ee6"): {}},
 	Watchlist:        []common.Address{},
 	BlockTimeSeconds: 35,
 	Oku: OkuMetadata{
