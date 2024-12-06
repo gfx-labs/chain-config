@@ -16,7 +16,7 @@ var Corn Network = Network{
 			ApiUrl: "https://api.routescan.io/v2/network/mainnet/evm/21000000/etherscan/api",
 		},
 	},
-	DefaultPool:   common.HexToAddress("0x0000000000000000000000000000000000000000"),
+	DefaultPool:   common.HexToAddress("0xe435E14815d28a86c643E4606Ed0e8E5624782c6"),
 	InternalName:  "corn",
 	InitCodeHash:  common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId:    map[string]string{},

@@ -16,7 +16,7 @@ var Metal Network = Network{
 			ApiUrl: "https://explorer.metall2.com/api",
 		},
 	},
-	DefaultPool:   common.HexToAddress("0x0000000000000000000000000000000000000000"),
+	DefaultPool:   common.HexToAddress("0xC06B6d6242E84c96AeE28C7FcfE48D2c9909e37B"),
 	InternalName:  "metal",
 	InitCodeHash:  common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId:    map[string]string{},
@@ -25,7 +25,7 @@ var Metal Network = Network{
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0x51E85d70944256710cb141847F1a04f568C1Db0e"), common.HexToAddress("0xb91CFCcA485C6E40E3bC622f9BFA02a8ACdEeBab")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x51E85d70944256710cb141847F1a04f568C1Db0e"): {}, common.HexToAddress("0xb91CFCcA485C6E40E3bC622f9BFA02a8ACdEeBab"): {}},
-	Watchlist:        []common.Address{},
+	Watchlist:        []common.Address{common.HexToAddress("0xC06B6d6242E84c96AeE28C7FcfE48D2c9909e37B")},
 	BlockTimeSeconds: 2,
 	Oku: OkuMetadata{
 		LimitOrderRegistry:            common.HexToAddress("0x352A86168e6988A1aDF9A15Cb00017AAd3B67155"),

@@ -1410,7 +1410,7 @@ declare const corn: Readonly<{
             nativeWrappedName: string;
         };
     };
-    defaultPool: "0x0000000000000000000000000000000000000000";
+    defaultPool: "0xe435E14815d28a86c643E4606Ed0e8E5624782c6";
     defaultToken0: "0xda5dDd7270381A7C2717aD10D1c0ecB19e3CDFb2";
     defaultToken1: "0xDF0B24095e15044538866576754F3C964e902Ee6";
     tokenList: ({
@@ -2690,7 +2690,7 @@ declare const metal: Readonly<{
             nativeWrappedName: string;
         };
     };
-    defaultPool: "0x0000000000000000000000000000000000000000";
+    defaultPool: "0xC06B6d6242E84c96AeE28C7FcfE48D2c9909e37B";
     defaultToken0: "0x4200000000000000000000000000000000000006";
     defaultToken1: "0x51E85d70944256710cb141847F1a04f568C1Db0e";
     tokenList: ({
@@ -2704,7 +2704,7 @@ declare const metal: Readonly<{
         address: "0x51E85d70944256710cb141847F1a04f568C1Db0e";
     })[];
     stables: ("0x51E85d70944256710cb141847F1a04f568C1Db0e" | "0xb91CFCcA485C6E40E3bC622f9BFA02a8ACdEeBab")[];
-    watchlist: never[];
+    watchlist: "0xC06B6d6242E84c96AeE28C7FcfE48D2c9909e37B"[];
     internalName: "metal";
     nativeLogoUrl: "https://assets.oku.trade/natives/eth.png";
     contracts: {
@@ -9640,7 +9640,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             nativeWrappedName: string;
         };
     };
-    defaultPool: "0x0000000000000000000000000000000000000000";
+    defaultPool: "0xC06B6d6242E84c96AeE28C7FcfE48D2c9909e37B";
     defaultToken0: "0x4200000000000000000000000000000000000006";
     defaultToken1: "0x51E85d70944256710cb141847F1a04f568C1Db0e";
     tokenList: ({
@@ -9654,7 +9654,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         address: "0x51E85d70944256710cb141847F1a04f568C1Db0e";
     })[];
     stables: ("0x51E85d70944256710cb141847F1a04f568C1Db0e" | "0xb91CFCcA485C6E40E3bC622f9BFA02a8ACdEeBab")[];
-    watchlist: never[];
+    watchlist: "0xC06B6d6242E84c96AeE28C7FcfE48D2c9909e37B"[];
     internalName: "metal";
     nativeLogoUrl: "https://assets.oku.trade/natives/eth.png";
     contracts: {
@@ -10003,7 +10003,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             nativeWrappedName: string;
         };
     };
-    defaultPool: "0x0000000000000000000000000000000000000000";
+    defaultPool: "0xe435E14815d28a86c643E4606Ed0e8E5624782c6";
     defaultToken0: "0xda5dDd7270381A7C2717aD10D1c0ecB19e3CDFb2";
     defaultToken1: "0xDF0B24095e15044538866576754F3C964e902Ee6";
     tokenList: ({
