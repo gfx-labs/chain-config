@@ -51,7 +51,7 @@ export const corn = makeConfig({
     { symbol: "USDC.e", address: "0xDF0B24095e15044538866576754F3C964e902Ee6" },
   ],
   stables: ["0xDF0B24095e15044538866576754F3C964e902Ee6"],
-  watchlist: [],
+  watchlist: ["0xe435E14815d28a86c643E4606Ed0e8E5624782c6"],
   internalName: "corn",
   nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
   contracts: {
