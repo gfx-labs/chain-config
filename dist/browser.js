@@ -19,6 +19,7 @@
       externalId: {
           zerion: "arbitrum",
           debank: "arb",
+          cowswap: "arbitrum_one",
       },
       markets: {
           kyberswap: "arbitrum",
@@ -1144,6 +1145,7 @@
       safeReorgDistance: 90000,
       externalId: {
           zerion: "xdai",
+          cowswap: "xdai",
       },
       markets: {
           openocean: "xdai",
@@ -1455,6 +1457,7 @@
       externalId: {
           zerion: "ethereum",
           debank: "eth",
+          cowswap: "mainnet",
       },
       rpcUrls: {
           default: {

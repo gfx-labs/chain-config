@@ -17,6 +17,7 @@ const arbitrum = makeConfig({
     externalId: {
         zerion: "arbitrum",
         debank: "arb",
+        cowswap: "arbitrum_one",
     },
     markets: {
         kyberswap: "arbitrum",
@@ -1142,6 +1143,7 @@ const gnosis = makeConfig({
     safeReorgDistance: 90000,
     externalId: {
         zerion: "xdai",
+        cowswap: "xdai",
     },
     markets: {
         openocean: "xdai",
@@ -1453,6 +1455,7 @@ const mainnet = makeConfig({
     externalId: {
         zerion: "ethereum",
         debank: "eth",
+        cowswap: "mainnet",
     },
     rpcUrls: {
         default: {

@@ -9,6 +9,7 @@ declare const arbitrum: Readonly<{
     externalId: {
         zerion: string;
         debank: string;
+        cowswap: string;
     };
     markets: {
         kyberswap: string;
@@ -1606,6 +1607,7 @@ declare const gnosis: Readonly<{
     safeReorgDistance: 90000;
     externalId: {
         zerion: string;
+        cowswap: string;
     };
     markets: {
         openocean: string;
@@ -2244,6 +2246,7 @@ declare const mainnet: Readonly<{
     externalId: {
         zerion: string;
         debank: string;
+        cowswap: string;
     };
     rpcUrls: {
         default: {
@@ -5131,6 +5134,7 @@ interface IChainInfo<formatters extends ChainFormatters | undefined = ChainForma
     externalId: {
         zerion?: string;
         debank?: string;
+        cowswap?: string;
     };
     markets: Markets;
     bridges: Bridges;
@@ -5164,6 +5168,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     externalId: {
         zerion: string;
         debank: string;
+        cowswap: string;
     };
     markets: {
         kyberswap: string;
@@ -6258,6 +6263,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     externalId: {
         zerion: string;
         debank: string;
+        cowswap: string;
     };
     rpcUrls: {
         default: {
@@ -9369,6 +9375,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     safeReorgDistance: 90000;
     externalId: {
         zerion: string;
+        cowswap: string;
     };
     markets: {
         openocean: string;

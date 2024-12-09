@@ -129,6 +129,7 @@ export interface IChainInfo<
   externalId: {
     zerion?: string;
     debank?: string;
+    cowswap?: string;
   };
   markets: Markets;
   bridges: Bridges;
