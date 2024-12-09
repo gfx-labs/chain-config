@@ -20,8 +20,9 @@ var Ethereum Network = Network{
 	InternalName: "ethereum",
 	InitCodeHash: common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId: map[string]string{
-		"zerion": "ethereum",
-		"debank": "eth",
+		"zerion":  "ethereum",
+		"debank":  "eth",
+		"cowswap": "mainnet",
 	},
 	DefaultToken0: common.HexToAddress("0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"),
 	DefaultToken1: common.HexToAddress("0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"),

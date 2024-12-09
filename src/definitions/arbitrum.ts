@@ -13,6 +13,7 @@ export const arbitrum = makeConfig({
   externalId: {
     zerion: "arbitrum",
     debank: "arb",
+    cowswap: "arbitrum_one",
   },
   markets: {
     kyberswap: "arbitrum",

@@ -10,6 +10,7 @@ export const gnosis = makeConfig({
   safeReorgDistance: 90000,
   externalId: {
     zerion: "xdai",
+    cowswap: "xdai",
   },
   markets: {
     openocean: "xdai",

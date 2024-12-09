@@ -14,6 +14,7 @@ export const mainnet = makeConfig({
   externalId: {
     zerion: "ethereum",
     debank: "eth",
+    cowswap: "mainnet",
   },
   rpcUrls: {
     default: {
