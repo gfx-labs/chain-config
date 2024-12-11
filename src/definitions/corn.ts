@@ -58,7 +58,7 @@ export const corn = makeConfig({
     "0xbD108c1Dd7802DFF6c24138A72949184FFbe006F",
   ],
   internalName: "corn",
-  nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
+  nativeLogoUrl: "https://assets.oku.trade/natives/corn.png",
   contracts: {
     ...chain.contracts,
     limitOrder: {
