@@ -1422,9 +1422,9 @@ declare const corn: Readonly<{
         address: "0xDF0B24095e15044538866576754F3C964e902Ee6";
     })[];
     stables: "0xDF0B24095e15044538866576754F3C964e902Ee6"[];
-    watchlist: ("0xe435E14815d28a86c643E4606Ed0e8E5624782c6" | "0x43aA32cf4f6389aB89d8C79092A0fc65899C20ba" | "0x0F12dac5217868b3d6772632543ef16df8df17E5" | "0xbD108c1Dd7802DFF6c24138A72949184FFbe006F")[];
+    watchlist: ("0xe435E14815d28a86c643E4606Ed0e8E5624782c6" | "0x43aA32cf4f6389aB89d8C79092A0fc65899C20ba" | "0x0F12dac5217868b3d6772632543ef16df8df17E5" | "0xbD108c1Dd7802DFF6c24138A72949184FFbe006F" | "0xb6a7be3ca6698859b374640b3db439fda7b7a5e3")[];
     internalName: "corn";
-    nativeLogoUrl: "https://assets.oku.trade/natives/eth.png";
+    nativeLogoUrl: "https://assets.oku.trade/natives/corn.png";
     contracts: {
         limitOrder: {
             address: "0x346239972d1fa486FC4a521031BC81bFB7D6e8a4";
@@ -10017,9 +10017,9 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         address: "0xDF0B24095e15044538866576754F3C964e902Ee6";
     })[];
     stables: "0xDF0B24095e15044538866576754F3C964e902Ee6"[];
-    watchlist: ("0xe435E14815d28a86c643E4606Ed0e8E5624782c6" | "0x43aA32cf4f6389aB89d8C79092A0fc65899C20ba" | "0x0F12dac5217868b3d6772632543ef16df8df17E5" | "0xbD108c1Dd7802DFF6c24138A72949184FFbe006F")[];
+    watchlist: ("0xe435E14815d28a86c643E4606Ed0e8E5624782c6" | "0x43aA32cf4f6389aB89d8C79092A0fc65899C20ba" | "0x0F12dac5217868b3d6772632543ef16df8df17E5" | "0xbD108c1Dd7802DFF6c24138A72949184FFbe006F" | "0xb6a7be3ca6698859b374640b3db439fda7b7a5e3")[];
     internalName: "corn";
-    nativeLogoUrl: "https://assets.oku.trade/natives/eth.png";
+    nativeLogoUrl: "https://assets.oku.trade/natives/corn.png";
     contracts: {
         limitOrder: {
             address: "0x346239972d1fa486FC4a521031BC81bFB7D6e8a4";

@@ -988,9 +988,10 @@
           "0x43aA32cf4f6389aB89d8C79092A0fc65899C20ba",
           "0x0F12dac5217868b3d6772632543ef16df8df17E5",
           "0xbD108c1Dd7802DFF6c24138A72949184FFbe006F",
+          "0xb6a7be3ca6698859b374640b3db439fda7b7a5e3",
       ],
       internalName: "corn",
-      nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
+      nativeLogoUrl: "https://assets.oku.trade/natives/corn.png",
       contracts: {
           ...chains.corn.contracts,
           limitOrder: {
