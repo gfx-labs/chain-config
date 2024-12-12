@@ -1,9 +1,9 @@
 import { corn as chain } from "viem/chains";
 import { makeConfig } from "../util";
-import { zeroAddress } from "viem";
 
 export const corn = makeConfig({
   ...chain,
+  name: "Corn",
   blockTimeSeconds: 35,
   launchTime: 1733882663,
   sortIndex: 15,
