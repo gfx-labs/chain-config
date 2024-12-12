@@ -1374,6 +1374,7 @@ declare const bsc: Readonly<{
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>;
 declare const corn: Readonly<{
+    name: "Corn";
     blockTimeSeconds: 35;
     launchTime: 1733882663;
     sortIndex: 15;
@@ -1450,7 +1451,6 @@ declare const corn: Readonly<{
         };
     };
     id: 21000000;
-    name: "Corn Maizenet";
     nativeCurrency: {
         readonly decimals: 18;
         readonly name: "Bitcorn";
@@ -9969,6 +9969,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         readonly transaction: typeof import("viem/chains").serializeTransactionOpStack;
     };
 }>, Readonly<{
+    name: "Corn";
     blockTimeSeconds: 35;
     launchTime: 1733882663;
     sortIndex: 15;
@@ -10045,7 +10046,6 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         };
     };
     id: 21000000;
-    name: "Corn Maizenet";
     nativeCurrency: {
         readonly decimals: 18;
         readonly name: "Bitcorn";

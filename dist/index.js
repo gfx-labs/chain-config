@@ -936,6 +936,7 @@ const bsc = makeConfig({
 
 const corn = makeConfig({
     ...chains.corn,
+    name: "Corn",
     blockTimeSeconds: 35,
     launchTime: 1733882663,
     sortIndex: 15,
