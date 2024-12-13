@@ -6,7 +6,7 @@ export const gnosis = makeConfig({
   blockTimeSeconds: 5,
   launchTime: 1725890400,
   sortIndex: 18,
-  logoUrl: "https://assets.oku.trade/gnosis-logo.png",
+  logoUrl: "https://assets.oku.trade/chains/gnosis-logo.png",
   safeReorgDistance: 90000,
   externalId: {
     zerion: "xdai",

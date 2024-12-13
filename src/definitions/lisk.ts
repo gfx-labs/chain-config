@@ -6,7 +6,7 @@ export const lisk = makeConfig({
   blockTimeSeconds: 2,
   launchTime: 1724076000,
   sortIndex: 15,
-  logoUrl: "https://assets.oku.trade/lisk-logo.png",
+  logoUrl: "https://assets.oku.trade/chains/lisk-logo.png",
   safeReorgDistance: 90000,
   externalId: {},
   markets: {},

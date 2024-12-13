@@ -8,7 +8,7 @@ export const sei = makeConfig({
   blockTimeSeconds: 0.4,
   launchTime: 1687788000,
   sortIndex: 5,
-  logoUrl: "https://assets.oku.trade/sei-logo.svg",
+  logoUrl: "https://assets.oku.trade/chains/sei-logo.svg",
   safeReorgDistance: 90000,
   externalId: {},
   markets: {

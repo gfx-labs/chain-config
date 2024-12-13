@@ -6,7 +6,7 @@ import (
 
 var Arbitrum Network = Network{
 	ChainId:           42161,
-	LogoUrl:           "https://assets.oku.trade/arbitrum-logo.svg",
+	LogoUrl:           "https://assets.oku.trade/chains/arbitrum-logo.svg",
 	SortIndex:         1,
 	LaunchTime:        1688997600,
 	SafeReorgDistance: 180000,

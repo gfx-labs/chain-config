@@ -7,7 +7,7 @@ export const base = makeConfig({
   sortIndex: 8,
   launchTime: 1707321600,
   blockTimeSeconds: 2,
-  logoUrl: "https://assets.oku.trade/base-logo.svg",
+  logoUrl: "https://assets.oku.trade/chains/base-logo.svg",
   defaultPool: "0xd0b53d9277642d899df5c87a3966a349a798f224",
   defaultToken0: "0x4200000000000000000000000000000000000006",
   defaultToken1: "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",

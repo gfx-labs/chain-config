@@ -7,7 +7,7 @@ export const corn = makeConfig({
   blockTimeSeconds: 35,
   launchTime: 1733882663,
   sortIndex: 15,
-  logoUrl: "https://assets.oku.trade/corn-logo.png",
+  logoUrl: "https://assets.oku.trade/chains/corn-logo.png",
   safeReorgDistance: 90000,
   externalId: {},
   markets: {},

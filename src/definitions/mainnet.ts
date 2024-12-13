@@ -10,7 +10,7 @@ export const mainnet = makeConfig({
   launchTime: 1688997600,
   blockTimeSeconds: 15,
   safeReorgDistance: 90_000,
-  logoUrl: "https://assets.oku.trade/ethereum-logo.webp",
+  logoUrl: "https://assets.oku.trade/chains/ethereum-logo.webp",
   externalId: {
     zerion: "ethereum",
     debank: "eth",

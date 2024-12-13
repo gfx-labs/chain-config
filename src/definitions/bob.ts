@@ -6,7 +6,7 @@ export const bob = makeConfig({
   blockTimeSeconds: 2,
   launchTime: 1727359200,
   sortIndex: 15,
-  logoUrl: "https://assets.oku.trade/bob-logo.svg",
+  logoUrl: "https://assets.oku.trade/chains/bob-logo.svg",
   safeReorgDistance: 90000,
   externalId: {},
   markets: {},

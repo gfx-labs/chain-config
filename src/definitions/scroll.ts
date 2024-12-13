@@ -9,7 +9,7 @@ export const scroll = makeConfig({
   sortIndex: 5,
   launchTime: 1703257200,
   blockTimeSeconds: 3,
-  logoUrl: "https://assets.oku.trade/scroll-logo.png",
+  logoUrl: "https://assets.oku.trade/chains/scroll-logo.png",
   safeReorgDistance: 90000,
   externalId: {
     zerion: "scroll",

@@ -6,7 +6,7 @@ export const xLayer = makeConfig({
   blockTimeSeconds: 3,
   launchTime: 0,
   sortIndex: 18,
-  logoUrl: "https://assets.oku.trade/xlayer-logo.png",
+  logoUrl: "https://assets.oku.trade/chains/xlayer-logo.png",
   safeReorgDistance: 90000,
   externalId: {},
   markets: {},

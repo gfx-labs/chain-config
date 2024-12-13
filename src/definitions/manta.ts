@@ -10,7 +10,7 @@ export const manta = makeConfig({
     "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
   blockTimeSeconds: 2,
   sortIndex: 13,
-  logoUrl: "https://assets.oku.trade/manta-logo.png",
+  logoUrl: "https://assets.oku.trade/chains/manta-logo.png",
   safeReorgDistance: 90000,
   externalId: {},
   markets: {

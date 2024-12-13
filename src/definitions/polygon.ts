@@ -9,7 +9,7 @@ export const polygon = makeConfig({
   blockTimeSeconds: 2,
   launchTime: 1688997600,
   sortIndex: 3,
-  logoUrl: "https://assets.oku.trade/polygon-logo.webp",
+  logoUrl: "https://assets.oku.trade/chains/polygon-logo.webp",
   safeReorgDistance: 90000,
   externalId: {
     zerion: "polygon",

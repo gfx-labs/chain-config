@@ -8,7 +8,7 @@ export const mantle = makeConfig({
   blockTimeSeconds: 2,
   launchTime: 1720101600,
   sortIndex: 15,
-  logoUrl: "https://assets.oku.trade/mantle-logo.png",
+  logoUrl: "https://assets.oku.trade/chains/mantle-logo.png",
   safeReorgDistance: 90000,
   externalId: {},
   markets: {

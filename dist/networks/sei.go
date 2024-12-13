@@ -6,7 +6,7 @@ import (
 
 var Sei Network = Network{
 	ChainId:           1329,
-	LogoUrl:           "https://assets.oku.trade/sei-logo.svg",
+	LogoUrl:           "https://assets.oku.trade/chains/sei-logo.svg",
 	SortIndex:         5,
 	LaunchTime:        1687788000,
 	SafeReorgDistance: 90000,

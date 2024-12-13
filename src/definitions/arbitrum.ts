@@ -8,7 +8,7 @@ export const arbitrum = makeConfig({
   launchTime: 1688997600,
   sortIndex: 1,
   blockTimeSeconds: 0.25,
-  logoUrl: "https://assets.oku.trade/arbitrum-logo.svg",
+  logoUrl: "https://assets.oku.trade/chains/arbitrum-logo.svg",
   safeReorgDistance: 90000 * 2,
   externalId: {
     zerion: "arbitrum",

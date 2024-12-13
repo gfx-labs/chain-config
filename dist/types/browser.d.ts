@@ -4,7 +4,7 @@ declare const arbitrum: Readonly<{
     launchTime: 1688997600;
     sortIndex: 1;
     blockTimeSeconds: 0.25;
-    logoUrl: "https://assets.oku.trade/arbitrum-logo.svg";
+    logoUrl: "https://assets.oku.trade/chains/arbitrum-logo.svg";
     safeReorgDistance: number;
     externalId: {
         zerion: string;
@@ -176,7 +176,7 @@ declare const base: Readonly<{
     sortIndex: 8;
     launchTime: 1707321600;
     blockTimeSeconds: 2;
-    logoUrl: "https://assets.oku.trade/base-logo.svg";
+    logoUrl: "https://assets.oku.trade/chains/base-logo.svg";
     defaultPool: "0xd0b53d9277642d899df5c87a3966a349a798f224";
     defaultToken0: "0x4200000000000000000000000000000000000006";
     defaultToken1: "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913";
@@ -599,7 +599,7 @@ declare const blast: Readonly<{
     blockTimeSeconds: 2;
     launchTime: 1719410400;
     sortIndex: 14;
-    logoUrl: "https://assets.oku.trade/blast-logo.svg";
+    logoUrl: "https://assets.oku.trade/chains/blast-logo.svg";
     safeReorgDistance: 90000;
     externalId: {
         zerion: string;
@@ -719,7 +719,7 @@ declare const bob: Readonly<{
     blockTimeSeconds: 2;
     launchTime: 1727359200;
     sortIndex: 15;
-    logoUrl: "https://assets.oku.trade/bob-logo.svg";
+    logoUrl: "https://assets.oku.trade/chains/bob-logo.svg";
     safeReorgDistance: 90000;
     externalId: {};
     markets: {};
@@ -1106,7 +1106,7 @@ declare const boba: Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     sortIndex: 11;
     blockTimeSeconds: 2;
-    logoUrl: "https://assets.oku.trade/boba-logo.svg";
+    logoUrl: "https://assets.oku.trade/chains/boba-logo.svg";
     safeReorgDistance: 90000;
     externalId: {
         debank: string;
@@ -1229,7 +1229,7 @@ declare const bsc: Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     sortIndex: 9;
     blockTimeSeconds: 3;
-    logoUrl: "https://assets.oku.trade/bsc-logo.svg";
+    logoUrl: "https://assets.oku.trade/chains/bsc-logo.svg";
     safeReorgDistance: 90000;
     externalId: {
         zerion: string;
@@ -1378,7 +1378,7 @@ declare const corn: Readonly<{
     blockTimeSeconds: 35;
     launchTime: 1733882663;
     sortIndex: 15;
-    logoUrl: "https://assets.oku.trade/corn-logo.png";
+    logoUrl: "https://assets.oku.trade/chains/corn-logo.png";
     safeReorgDistance: 90000;
     externalId: {};
     markets: {};
@@ -1494,7 +1494,7 @@ declare const filecoin: Readonly<{
             apiUrl: string;
         };
     };
-    logoUrl: "https://assets.oku.trade/filecoin-logo.svg";
+    logoUrl: "https://assets.oku.trade/chains/filecoin-logo.svg";
     externalId: {};
     markets: {};
     bridges: {};
@@ -1603,7 +1603,7 @@ declare const gnosis: Readonly<{
     blockTimeSeconds: 5;
     launchTime: 1725890400;
     sortIndex: 18;
-    logoUrl: "https://assets.oku.trade/gnosis-logo.png";
+    logoUrl: "https://assets.oku.trade/chains/gnosis-logo.png";
     safeReorgDistance: 90000;
     externalId: {
         zerion: string;
@@ -1734,7 +1734,7 @@ declare const linea: Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     blockTimeSeconds: 2;
     sortIndex: 15;
-    logoUrl: "https://assets.oku.trade/linea-logo.svg";
+    logoUrl: "https://assets.oku.trade/chains/linea-logo.svg";
     safeReorgDistance: 100;
     externalId: {
         zerion: string;
@@ -1866,7 +1866,7 @@ declare const lisk: Readonly<{
     blockTimeSeconds: 2;
     launchTime: 1724076000;
     sortIndex: 15;
-    logoUrl: "https://assets.oku.trade/lisk-logo.png";
+    logoUrl: "https://assets.oku.trade/chains/lisk-logo.png";
     safeReorgDistance: 90000;
     externalId: {};
     markets: {};
@@ -2242,7 +2242,7 @@ declare const mainnet: Readonly<{
     launchTime: 1688997600;
     blockTimeSeconds: 15;
     safeReorgDistance: 90000;
-    logoUrl: "https://assets.oku.trade/ethereum-logo.webp";
+    logoUrl: "https://assets.oku.trade/chains/ethereum-logo.webp";
     externalId: {
         zerion: string;
         debank: string;
@@ -2416,7 +2416,7 @@ declare const manta: Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     blockTimeSeconds: 2;
     sortIndex: 13;
-    logoUrl: "https://assets.oku.trade/manta-logo.png";
+    logoUrl: "https://assets.oku.trade/chains/manta-logo.png";
     safeReorgDistance: 90000;
     externalId: {};
     markets: {
@@ -2538,7 +2538,7 @@ declare const mantle: Readonly<{
     blockTimeSeconds: 2;
     launchTime: 1720101600;
     sortIndex: 15;
-    logoUrl: "https://assets.oku.trade/mantle-logo.png";
+    logoUrl: "https://assets.oku.trade/chains/mantle-logo.png";
     safeReorgDistance: 90000;
     externalId: {};
     markets: {
@@ -2657,7 +2657,7 @@ declare const metal: Readonly<{
     blockTimeSeconds: 2;
     launchTime: 1733882663;
     sortIndex: 15;
-    logoUrl: "https://assets.oku.trade/metal-logo.png";
+    logoUrl: "https://assets.oku.trade/chains/metal-logo.png";
     safeReorgDistance: 90000;
     externalId: {};
     markets: {};
@@ -3029,7 +3029,7 @@ declare const moonbeam: Readonly<{
     sortIndex: 12;
     launchTime: 1696341600;
     blockTimeSeconds: 30;
-    logoUrl: "https://assets.oku.trade/moonbeam-logo.svg";
+    logoUrl: "https://assets.oku.trade/chains/moonbeam-logo.svg";
     safeReorgDistance: 90000;
     externalId: {
         debank: string;
@@ -3155,7 +3155,7 @@ declare const optimism: Readonly<{
     blockTimeSeconds: 0.5;
     launchTime: 1688997600;
     sortIndex: 2;
-    logoUrl: "https://assets.oku.trade/optimism-logo.svg";
+    logoUrl: "https://assets.oku.trade/chains/optimism-logo.svg";
     safeReorgDistance: 90000;
     externalId: {
         zerion: string;
@@ -3592,7 +3592,7 @@ declare const polygon: Readonly<{
     blockTimeSeconds: 2;
     launchTime: 1688997600;
     sortIndex: 3;
-    logoUrl: "https://assets.oku.trade/polygon-logo.webp";
+    logoUrl: "https://assets.oku.trade/chains/polygon-logo.webp";
     safeReorgDistance: 90000;
     externalId: {
         zerion: string;
@@ -3760,7 +3760,7 @@ declare const rootstock: Readonly<{
     name: "Rootstock";
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     blockTimeSeconds: 33;
-    logoUrl: "https://assets.oku.trade/rootstock-logo.svg";
+    logoUrl: "https://assets.oku.trade/chains/rootstock-logo.svg";
     safeReorgDistance: 90000;
     externalId: {};
     markets: {
@@ -3879,7 +3879,7 @@ declare const scroll: Readonly<{
     sortIndex: 5;
     launchTime: 1703257200;
     blockTimeSeconds: 3;
-    logoUrl: "https://assets.oku.trade/scroll-logo.png";
+    logoUrl: "https://assets.oku.trade/chains/scroll-logo.png";
     safeReorgDistance: 90000;
     externalId: {
         zerion: string;
@@ -4021,7 +4021,7 @@ declare const sei: Readonly<{
     blockTimeSeconds: 0.4;
     launchTime: 1687788000;
     sortIndex: 5;
-    logoUrl: "https://assets.oku.trade/sei-logo.svg";
+    logoUrl: "https://assets.oku.trade/chains/sei-logo.svg";
     safeReorgDistance: 90000;
     externalId: {};
     markets: {
@@ -4146,7 +4146,7 @@ declare const taiko: Readonly<{
     blockTimeSeconds: 24;
     launchTime: 1717509600;
     sortIndex: 4;
-    logoUrl: "https://assets.oku.trade/taiko-logo.svg";
+    logoUrl: "https://assets.oku.trade/chains/taiko-logo.svg";
     safeReorgDistance: 90000;
     externalId: {};
     markets: {};
@@ -4269,7 +4269,7 @@ declare const xLayer: Readonly<{
     blockTimeSeconds: 3;
     launchTime: 0;
     sortIndex: 18;
-    logoUrl: "https://assets.oku.trade/xlayer-logo.png";
+    logoUrl: "https://assets.oku.trade/chains/xlayer-logo.png";
     safeReorgDistance: 90000;
     externalId: {};
     markets: {};
@@ -4387,7 +4387,7 @@ declare const polygonZkEvm: Readonly<{
     sortIndex: 6;
     launchTime: 1722520800;
     blockTimeSeconds: 7;
-    logoUrl: "https://assets.oku.trade/zkevm-logo.svg";
+    logoUrl: "https://assets.oku.trade/chains/zkevm-logo.svg";
     safeReorgDistance: 90000;
     externalId: {
         zerion: string;
@@ -4510,7 +4510,7 @@ declare const zkSync: Readonly<{
     blockTimeSeconds: 2;
     sortIndex: 4;
     launchTime: 1696514400;
-    logoUrl: "https://assets.oku.trade/zksync-logo.svg";
+    logoUrl: "https://assets.oku.trade/chains/zksync-logo.svg";
     safeReorgDistance: 90000;
     externalId: {
         zerion: string;
@@ -5163,7 +5163,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     launchTime: 1688997600;
     sortIndex: 1;
     blockTimeSeconds: 0.25;
-    logoUrl: "https://assets.oku.trade/arbitrum-logo.svg";
+    logoUrl: "https://assets.oku.trade/chains/arbitrum-logo.svg";
     safeReorgDistance: number;
     externalId: {
         zerion: string;
@@ -5330,7 +5330,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     sortIndex: 8;
     launchTime: 1707321600;
     blockTimeSeconds: 2;
-    logoUrl: "https://assets.oku.trade/base-logo.svg";
+    logoUrl: "https://assets.oku.trade/chains/base-logo.svg";
     defaultPool: "0xd0b53d9277642d899df5c87a3966a349a798f224";
     defaultToken0: "0x4200000000000000000000000000000000000006";
     defaultToken1: "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913";
@@ -5749,7 +5749,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     sortIndex: 11;
     blockTimeSeconds: 2;
-    logoUrl: "https://assets.oku.trade/boba-logo.svg";
+    logoUrl: "https://assets.oku.trade/chains/boba-logo.svg";
     safeReorgDistance: 90000;
     externalId: {
         debank: string;
@@ -5867,7 +5867,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     blockTimeSeconds: 2;
     launchTime: 1719410400;
     sortIndex: 14;
-    logoUrl: "https://assets.oku.trade/blast-logo.svg";
+    logoUrl: "https://assets.oku.trade/chains/blast-logo.svg";
     safeReorgDistance: 90000;
     externalId: {
         zerion: string;
@@ -5986,7 +5986,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     sortIndex: 9;
     blockTimeSeconds: 3;
-    logoUrl: "https://assets.oku.trade/bsc-logo.svg";
+    logoUrl: "https://assets.oku.trade/chains/bsc-logo.svg";
     safeReorgDistance: 90000;
     externalId: {
         zerion: string;
@@ -6151,7 +6151,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             apiUrl: string;
         };
     };
-    logoUrl: "https://assets.oku.trade/filecoin-logo.svg";
+    logoUrl: "https://assets.oku.trade/chains/filecoin-logo.svg";
     externalId: {};
     markets: {};
     bridges: {};
@@ -6259,7 +6259,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     launchTime: 1688997600;
     blockTimeSeconds: 15;
     safeReorgDistance: 90000;
-    logoUrl: "https://assets.oku.trade/ethereum-logo.webp";
+    logoUrl: "https://assets.oku.trade/chains/ethereum-logo.webp";
     externalId: {
         zerion: string;
         debank: string;
@@ -6431,7 +6431,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     sortIndex: 12;
     launchTime: 1696341600;
     blockTimeSeconds: 30;
-    logoUrl: "https://assets.oku.trade/moonbeam-logo.svg";
+    logoUrl: "https://assets.oku.trade/chains/moonbeam-logo.svg";
     safeReorgDistance: 90000;
     externalId: {
         debank: string;
@@ -6552,7 +6552,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     blockTimeSeconds: 0.5;
     launchTime: 1688997600;
     sortIndex: 2;
-    logoUrl: "https://assets.oku.trade/optimism-logo.svg";
+    logoUrl: "https://assets.oku.trade/chains/optimism-logo.svg";
     safeReorgDistance: 90000;
     externalId: {
         zerion: string;
@@ -6983,7 +6983,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     blockTimeSeconds: 2;
     launchTime: 1688997600;
     sortIndex: 3;
-    logoUrl: "https://assets.oku.trade/polygon-logo.webp";
+    logoUrl: "https://assets.oku.trade/chains/polygon-logo.webp";
     safeReorgDistance: 90000;
     externalId: {
         zerion: string;
@@ -7148,7 +7148,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     name: "Rootstock";
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     blockTimeSeconds: 33;
-    logoUrl: "https://assets.oku.trade/rootstock-logo.svg";
+    logoUrl: "https://assets.oku.trade/chains/rootstock-logo.svg";
     safeReorgDistance: 90000;
     externalId: {};
     markets: {
@@ -7264,7 +7264,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     sortIndex: 5;
     launchTime: 1703257200;
     blockTimeSeconds: 3;
-    logoUrl: "https://assets.oku.trade/scroll-logo.png";
+    logoUrl: "https://assets.oku.trade/chains/scroll-logo.png";
     safeReorgDistance: 90000;
     externalId: {
         zerion: string;
@@ -7401,7 +7401,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     sortIndex: 6;
     launchTime: 1722520800;
     blockTimeSeconds: 7;
-    logoUrl: "https://assets.oku.trade/zkevm-logo.svg";
+    logoUrl: "https://assets.oku.trade/chains/zkevm-logo.svg";
     safeReorgDistance: 90000;
     externalId: {
         zerion: string;
@@ -7521,7 +7521,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     blockTimeSeconds: 2;
     sortIndex: 4;
     launchTime: 1696514400;
-    logoUrl: "https://assets.oku.trade/zksync-logo.svg";
+    logoUrl: "https://assets.oku.trade/chains/zksync-logo.svg";
     safeReorgDistance: 90000;
     externalId: {
         zerion: string;
@@ -8023,7 +8023,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     blockTimeSeconds: 2;
     sortIndex: 13;
-    logoUrl: "https://assets.oku.trade/manta-logo.png";
+    logoUrl: "https://assets.oku.trade/chains/manta-logo.png";
     safeReorgDistance: 90000;
     externalId: {};
     markets: {
@@ -8143,7 +8143,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     blockTimeSeconds: 2;
     sortIndex: 15;
-    logoUrl: "https://assets.oku.trade/linea-logo.svg";
+    logoUrl: "https://assets.oku.trade/chains/linea-logo.svg";
     safeReorgDistance: 100;
     externalId: {
         zerion: string;
@@ -8271,7 +8271,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     blockTimeSeconds: 24;
     launchTime: 1717509600;
     sortIndex: 4;
-    logoUrl: "https://assets.oku.trade/taiko-logo.svg";
+    logoUrl: "https://assets.oku.trade/chains/taiko-logo.svg";
     safeReorgDistance: 90000;
     externalId: {};
     markets: {};
@@ -8390,7 +8390,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     blockTimeSeconds: 2;
     launchTime: 1720101600;
     sortIndex: 15;
-    logoUrl: "https://assets.oku.trade/mantle-logo.png";
+    logoUrl: "https://assets.oku.trade/chains/mantle-logo.png";
     safeReorgDistance: 90000;
     externalId: {};
     markets: {
@@ -8507,7 +8507,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     blockTimeSeconds: 0.4;
     launchTime: 1687788000;
     sortIndex: 5;
-    logoUrl: "https://assets.oku.trade/sei-logo.svg";
+    logoUrl: "https://assets.oku.trade/chains/sei-logo.svg";
     safeReorgDistance: 90000;
     externalId: {};
     markets: {
@@ -8626,7 +8626,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     blockTimeSeconds: 2;
     launchTime: 1724076000;
     sortIndex: 15;
-    logoUrl: "https://assets.oku.trade/lisk-logo.png";
+    logoUrl: "https://assets.oku.trade/chains/lisk-logo.png";
     safeReorgDistance: 90000;
     externalId: {};
     markets: {};
@@ -8994,7 +8994,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     blockTimeSeconds: 2;
     launchTime: 1727359200;
     sortIndex: 15;
-    logoUrl: "https://assets.oku.trade/bob-logo.svg";
+    logoUrl: "https://assets.oku.trade/chains/bob-logo.svg";
     safeReorgDistance: 90000;
     externalId: {};
     markets: {};
@@ -9371,7 +9371,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     blockTimeSeconds: 5;
     launchTime: 1725890400;
     sortIndex: 18;
-    logoUrl: "https://assets.oku.trade/gnosis-logo.png";
+    logoUrl: "https://assets.oku.trade/chains/gnosis-logo.png";
     safeReorgDistance: 90000;
     externalId: {
         zerion: string;
@@ -9495,7 +9495,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     blockTimeSeconds: 3;
     launchTime: 0;
     sortIndex: 18;
-    logoUrl: "https://assets.oku.trade/xlayer-logo.png";
+    logoUrl: "https://assets.oku.trade/chains/xlayer-logo.png";
     safeReorgDistance: 90000;
     externalId: {};
     markets: {};
@@ -9609,7 +9609,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     blockTimeSeconds: 2;
     launchTime: 1733882663;
     sortIndex: 15;
-    logoUrl: "https://assets.oku.trade/metal-logo.png";
+    logoUrl: "https://assets.oku.trade/chains/metal-logo.png";
     safeReorgDistance: 90000;
     externalId: {};
     markets: {};
@@ -9973,7 +9973,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     blockTimeSeconds: 35;
     launchTime: 1733882663;
     sortIndex: 15;
-    logoUrl: "https://assets.oku.trade/corn-logo.png";
+    logoUrl: "https://assets.oku.trade/chains/corn-logo.png";
     safeReorgDistance: 90000;
     externalId: {};
     markets: {};

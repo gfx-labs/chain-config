@@ -6,7 +6,7 @@ import (
 
 var Base Network = Network{
 	ChainId:           8453,
-	LogoUrl:           "https://assets.oku.trade/base-logo.svg",
+	LogoUrl:           "https://assets.oku.trade/chains/base-logo.svg",
 	SortIndex:         8,
 	LaunchTime:        1707321600,
 	SafeReorgDistance: 90000,

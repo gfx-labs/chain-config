@@ -6,7 +6,7 @@ import (
 
 var Polygon Network = Network{
 	ChainId:           137,
-	LogoUrl:           "https://assets.oku.trade/polygon-logo.webp",
+	LogoUrl:           "https://assets.oku.trade/chains/polygon-logo.webp",
 	SortIndex:         3,
 	LaunchTime:        1688997600,
 	SafeReorgDistance: 90000,

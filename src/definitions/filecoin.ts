@@ -28,7 +28,7 @@ export const filecoin = makeConfig({
       apiUrl: "https://api.filutils.com/api",
     },
   },
-  logoUrl: "https://assets.oku.trade/filecoin-logo.svg",
+  logoUrl: "https://assets.oku.trade/chains/filecoin-logo.svg",
   externalId: {},
   markets: {},
   bridges: {},

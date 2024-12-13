@@ -6,7 +6,7 @@ import (
 
 var Bob Network = Network{
 	ChainId:           60808,
-	LogoUrl:           "https://assets.oku.trade/bob-logo.svg",
+	LogoUrl:           "https://assets.oku.trade/chains/bob-logo.svg",
 	SortIndex:         15,
 	LaunchTime:        1727359200,
 	SafeReorgDistance: 90000,

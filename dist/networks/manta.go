@@ -6,7 +6,7 @@ import (
 
 var Manta Network = Network{
 	ChainId:           169,
-	LogoUrl:           "https://assets.oku.trade/manta-logo.png",
+	LogoUrl:           "https://assets.oku.trade/chains/manta-logo.png",
 	SortIndex:         13,
 	LaunchTime:        1709910000,
 	SafeReorgDistance: 90000,
