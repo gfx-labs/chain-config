@@ -79,6 +79,8 @@ export const bob = makeConfig({
     "0x4a1df9716147b785f3f82019f36f248ac15dc308",
     "0xb091ed2491a179a9f14a34f88587cd08195e592c",
     "0x508a838922a93096c1eb23fe21d8938bbd653db6",
+    "0x41a98efc1742a60aba6afbcb2073e64477b5333a",
+    "0x45bfa70e8f387da47ffe3dec447bc16f0b9a6261",
   ],
   internalName: "bob",
   nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
