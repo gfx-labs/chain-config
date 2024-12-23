@@ -73,7 +73,8 @@ var Ethereum Network = Network{
 	},
 	Morpho: MorphoMetadata{
 		DeployBlock: 13977148,
-		MmFactory:   common.HexToAddress("0x7f1f2d3dfa99678675ece1c243d3f7bc3746db5d"),
+		MmFactory11: common.HexToAddress("0x1897A8997241C1cD4bD0698647e4EB7213535c24"),
+		MmFactory10: common.HexToAddress("0xA9c3D3a366466Fa809d1Ae982Fb2c46E5fC41101"),
 	},
 	Token: TokenMetadata{
 		UsdcAddress: common.HexToAddress("0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"),

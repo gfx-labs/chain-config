@@ -57,7 +57,8 @@ var Base Network = Network{
 	},
 	Morpho: MorphoMetadata{
 		DeployBlock: 13977148,
-		MmFactory:   common.HexToAddress("0xa9c3d3a366466fa809d1ae982fb2c46e5fc41101"),
+		MmFactory10: common.HexToAddress("0xa9c3d3a366466fa809d1ae982fb2c46e5fc41101"),
+		MmFactory11: common.HexToAddress("0xFf62A7c278C62eD665133147129245053Bbf5918"),
 	},
 	Token: TokenMetadata{
 		UsdcAddress: common.HexToAddress("0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"),

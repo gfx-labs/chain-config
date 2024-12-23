@@ -328,5 +328,6 @@ type Oracles struct {
 
 type MorphoMetadata struct {
 	DeployBlock int64
-	MmFactory   common.Address
+	MmFactory10 common.Address
+	MmFactory11 common.Address
 }

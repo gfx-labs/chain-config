@@ -304,7 +304,8 @@ const base = makeConfig({
     defaultToken1: "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
     morpho: {
         deployBlock: 13977148,
-        mmFactory: "0xa9c3d3a366466fa809d1ae982fb2c46e5fc41101",
+        mmFactory10: "0xa9c3d3a366466fa809d1ae982fb2c46e5fc41101",
+        mmFactory11: "0xFf62A7c278C62eD665133147129245053Bbf5918",
     },
     externalId: {
         zerion: "base",
@@ -1475,7 +1476,8 @@ const mainnet = makeConfig({
     logoUrl: "https://assets.oku.trade/chains/ethereum-logo.webp",
     morpho: {
         deployBlock: 13977148,
-        mmFactory: "0x7f1f2d3dfa99678675ece1c243d3f7bc3746db5d",
+        mmFactory11: "0x1897A8997241C1cD4bD0698647e4EB7213535c24",
+        mmFactory10: "0xA9c3D3a366466Fa809d1Ae982Fb2c46E5fC41101",
     },
     externalId: {
         zerion: "ethereum",
