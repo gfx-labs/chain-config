@@ -61,6 +61,7 @@ var Filecoin Network = Network{
 		WrappedNativeDecimals:      18,
 		NativeCurrencyName:         "FIL",
 	},
+	Morpho: MorphoMetadata{},
 	Token: TokenMetadata{
 		UsdcAddress: common.HexToAddress("0xEB466342C4d449BC9f53A865D5Cb90586f405215"),
 		WbtcAddress: common.HexToAddress("0x1a35EE4640b0A3B87705B0A4B45D227Ba60Ca2ad"),

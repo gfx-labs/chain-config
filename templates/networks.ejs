@@ -19,6 +19,7 @@ import (
     var props_8 = Markets.getProperties();
     var props_9 = Bridges.getProperties();
     var props_10 = Oracles.getProperties();
+    var props_11 = MorphoMetadata.getProperties();
 %>
 
 var ErrNetworkNotFound = errors.New("chain not found")
@@ -161,5 +162,9 @@ type Bridges struct {<% for(const prop of props_9) {%>
 }
 
 type Oracles struct {<% for(const prop of props_10) {%>
+    <%- helpers.displayProp(prop) %> <% } %>
+}
+
+type MorphoMetadata struct {<% for(const prop of props_11) {%>
     <%- helpers.displayProp(prop) %> <% } %>
 }

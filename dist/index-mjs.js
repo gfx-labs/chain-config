@@ -12,6 +12,7 @@ const arbitrum = makeConfig({
     blockTimeSeconds: 0.25,
     logoUrl: "https://assets.oku.trade/chains/arbitrum-logo.svg",
     safeReorgDistance: 90000 * 2,
+    morpho: {},
     externalId: {
         zerion: "arbitrum",
         debank: "arb",
@@ -301,6 +302,10 @@ const base = makeConfig({
     defaultPool: "0xd0b53d9277642d899df5c87a3966a349a798f224",
     defaultToken0: "0x4200000000000000000000000000000000000006",
     defaultToken1: "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+    morpho: {
+        deployBlock: 13977148,
+        mmFactory: "0xa9c3d3a366466fa809d1ae982fb2c46e5fc41101",
+    },
     externalId: {
         zerion: "base",
         debank: "base",
@@ -449,6 +454,7 @@ const blast = makeConfig({
     externalId: {
         zerion: "blast",
     },
+    morpho: {},
     markets: {
         kyberswap: "blast",
         openocean: "blast",
@@ -546,6 +552,7 @@ const bob = makeConfig({
     externalId: {},
     markets: {},
     bridges: {},
+    morpho: {},
     oracles: {
         coingecko: {
             slug: "bob",
@@ -649,6 +656,7 @@ const boba = makeConfig({
     externalId: {
         debank: "boba",
     },
+    morpho: {},
     markets: {},
     bridges: {},
     oracles: {
@@ -763,6 +771,7 @@ const bsc = makeConfig({
         zerion: "binance-smart-chain",
         debank: "bsc",
     },
+    morpho: {},
     markets: {
         airswap: true,
         kyberswap: "bsc",
@@ -946,6 +955,7 @@ const corn = makeConfig({
     markets: {},
     bridges: {},
     oracles: {},
+    morpho: {},
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
     uniswap: {
         deployBlock: 10878,
@@ -1019,6 +1029,7 @@ const filecoin = makeConfig({
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
     blockTimeSeconds: 30,
     safeReorgDistance: 90000,
+    morpho: {},
     blockExplorers: {
         default: {
             name: "Blockscout",
@@ -1148,6 +1159,7 @@ const gnosis = makeConfig({
     sortIndex: 18,
     logoUrl: "https://assets.oku.trade/chains/gnosis-logo.png",
     safeReorgDistance: 90000,
+    morpho: {},
     externalId: {
         zerion: "xdai",
         cowswap: "xdai",
@@ -1253,6 +1265,7 @@ const linea = makeConfig({
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
     blockTimeSeconds: 2,
     sortIndex: 15,
+    morpho: {},
     logoUrl: "https://assets.oku.trade/chains/linea-logo.svg",
     safeReorgDistance: 100,
     externalId: {
@@ -1372,6 +1385,7 @@ const lisk = makeConfig({
     logoUrl: "https://assets.oku.trade/chains/lisk-logo.png",
     safeReorgDistance: 90000,
     externalId: {},
+    morpho: {},
     markets: {},
     bridges: {},
     oracles: {
@@ -1459,6 +1473,10 @@ const mainnet = makeConfig({
     blockTimeSeconds: 15,
     safeReorgDistance: 90000,
     logoUrl: "https://assets.oku.trade/chains/ethereum-logo.webp",
+    morpho: {
+        deployBlock: 13977148,
+        mmFactory: "0x7f1f2d3dfa99678675ece1c243d3f7bc3746db5d",
+    },
     externalId: {
         zerion: "ethereum",
         debank: "eth",
@@ -1761,6 +1779,7 @@ const manta = makeConfig({
     logoUrl: "https://assets.oku.trade/chains/manta-logo.png",
     safeReorgDistance: 90000,
     externalId: {},
+    morpho: {},
     markets: {
         openocean: "manta",
     },
@@ -1864,6 +1883,7 @@ const mantle = makeConfig({
     logoUrl: "https://assets.oku.trade/chains/mantle-logo.png",
     safeReorgDistance: 90000,
     externalId: {},
+    morpho: {},
     markets: {
         openocean: "mantle",
         zeroex: true,
@@ -1980,6 +2000,7 @@ const metal = makeConfig({
     logoUrl: "https://assets.oku.trade/chains/metal-logo.png",
     safeReorgDistance: 90000,
     externalId: {},
+    morpho: {},
     markets: {},
     bridges: {},
     oracles: {},
@@ -2057,6 +2078,7 @@ const moonbeam = makeConfig({
     externalId: {
         debank: "mobm",
     },
+    morpho: {},
     markets: {},
     bridges: {
         wanbridge: {
@@ -2169,6 +2191,7 @@ const optimism = makeConfig({
         zerion: "optimism",
         debank: "op",
     },
+    morpho: {},
     markets: {
         kyberswap: "optimism",
         oneinch: true,
@@ -2450,6 +2473,7 @@ const polygon = makeConfig({
         zerion: "polygon",
         debank: "matic",
     },
+    morpho: {},
     markets: {
         airswap: true,
         kyberswap: "polygon",
@@ -2726,6 +2750,7 @@ const rootstock = makeConfig({
     markets: {
         openocean: "rootstock",
     },
+    morpho: {},
     bridges: {},
     oracles: {
         cmc: {
@@ -2824,6 +2849,7 @@ const scroll = makeConfig({
     externalId: {
         zerion: "scroll",
     },
+    morpho: {},
     markets: {
         kyberswap: "scroll",
         openocean: "scroll",
@@ -2940,6 +2966,7 @@ const sei = makeConfig({
     markets: {
         openocean: "sei",
     },
+    morpho: {},
     bridges: {
         stargate: {
             endpointID: 30280,
@@ -3057,6 +3084,7 @@ const taiko = makeConfig({
     safeReorgDistance: 90000,
     externalId: {},
     markets: {},
+    morpho: {},
     bridges: {
         rhinofi: "TAIKO",
         stargate: {
@@ -3173,6 +3201,7 @@ const xLayer = makeConfig({
     externalId: {},
     markets: {},
     bridges: {},
+    morpho: {},
     oracles: {
         cmc: {
             slug: "x-layer",
@@ -3259,6 +3288,7 @@ const polygonZkEvm = makeConfig({
     blockTimeSeconds: 7,
     logoUrl: "https://assets.oku.trade/chains/zkevm-logo.svg",
     safeReorgDistance: 90000,
+    morpho: {},
     externalId: {
         zerion: "polygon-zkevm",
     },
@@ -3363,6 +3393,7 @@ const zkSync = makeConfig({
     launchTime: 1696514400,
     logoUrl: "https://assets.oku.trade/chains/zksync-logo.svg",
     safeReorgDistance: 90000,
+    morpho: {},
     externalId: {
         zerion: "zksync-era",
     },

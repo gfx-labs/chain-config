@@ -14,6 +14,7 @@ export const sei = makeConfig({
   markets: {
     openocean: "sei",
   },
+	morpho: {},
   bridges: {
     stargate: {
       endpointID: 30280,

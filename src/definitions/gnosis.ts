@@ -8,6 +8,7 @@ export const gnosis = makeConfig({
   sortIndex: 18,
   logoUrl: "https://assets.oku.trade/chains/gnosis-logo.png",
   safeReorgDistance: 90000,
+	morpho: {},
   externalId: {
     zerion: "xdai",
     cowswap: "xdai",

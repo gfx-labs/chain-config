@@ -167,6 +167,7 @@ type Network struct {
 	InitCodeHash      common.Hash
 	BlockTimeSeconds  float64
 	Uniswap           UniswapMetadata
+	Morpho            MorphoMetadata
 	Token             TokenMetadata
 	Oku               OkuMetadata
 	Contracts         map[string]ChainContract
@@ -323,4 +324,9 @@ type Oracles struct {
 	Dexguru     interface{}
 	Dexscreener string
 	Oku         interface{}
+}
+
+type MorphoMetadata struct {
+	DeployBlock int64
+	MmFactory   common.Address
 }

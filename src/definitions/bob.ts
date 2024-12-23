@@ -11,6 +11,7 @@ export const bob = makeConfig({
   externalId: {},
   markets: {},
   bridges: {},
+	morpho: {},
   oracles: {
     coingecko: {
       slug: "bob",

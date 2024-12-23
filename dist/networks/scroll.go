@@ -52,6 +52,7 @@ var Scroll Network = Network{
 		WrappedNativeDecimals: 18,
 		NativeCurrencyName:    "ETH",
 	},
+	Morpho: MorphoMetadata{},
 	Token: TokenMetadata{
 		UsdcAddress: common.HexToAddress("0x06efdbff2a14a7c8e15944d1f4a48f9f95f663a4"),
 		WethAddress: common.HexToAddress("0x5300000000000000000000000000000000000004"),

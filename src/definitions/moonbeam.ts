@@ -14,6 +14,7 @@ export const moonbeam = makeConfig({
   externalId: {
     debank: "mobm",
   },
+	morpho: {},
   markets: {},
   bridges: {
     wanbridge: {

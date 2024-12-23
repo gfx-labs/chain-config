@@ -12,6 +12,7 @@ export const blast = makeConfig({
   externalId: {
     zerion: "blast",
   },
+  morpho: {},
   markets: {
     kyberswap: "blast",
     openocean: "blast",

@@ -14,6 +14,7 @@ const index = project.getSourceFile("src/spec/index.ts");
 
 const IChainInfo = index?.getInterface("IChainInfo");
 const UniswapMetadata = index?.getInterface("UniswapMetadata");
+const MorphoMetadata = index?.getInterface("MorphoMetadata");
 const TokenMetadata = index?.getInterface("TokenMetadata");
 const OkuMetadata = index?.getInterface("OkuMetadata");
 const OkuPricingMetadata = index?.getInterface("OkuPricingMetadata");
@@ -162,6 +163,7 @@ const output = ejs.render(networksString.toString(), {
   helpers,
   IChainInfo,
   UniswapMetadata,
+  MorphoMetadata,
   TokenMetadata,
   ChainContract,
   BlockExplorer,

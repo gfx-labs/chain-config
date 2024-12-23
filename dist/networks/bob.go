@@ -52,6 +52,7 @@ var Bob Network = Network{
 		WrappedNativeDecimals:      18,
 		NativeCurrencyName:         "ETH",
 	},
+	Morpho: MorphoMetadata{},
 	Token: TokenMetadata{
 		WethAddress: common.HexToAddress("0x4200000000000000000000000000000000000006"),
 		WbtcAddress: common.HexToAddress("0x03c7054bcb39f7b2e5b2c7acb37583e32d70cfa3"),

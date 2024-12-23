@@ -53,6 +53,7 @@ var Xlayer Network = Network{
 		WrappedNativeDecimals:      18,
 		NativeCurrencyName:         "OKB",
 	},
+	Morpho: MorphoMetadata{},
 	Token: TokenMetadata{
 		UsdcAddress: common.HexToAddress("0x74b7f16337b8972027f6196a17a631ac6de26d22"),
 		WethAddress: common.HexToAddress("0xe538905cf8410324e03a5a23c1c177a474d59b2b"),

@@ -6,6 +6,7 @@ declare const arbitrum: Readonly<{
     blockTimeSeconds: 0.25;
     logoUrl: "https://assets.oku.trade/chains/arbitrum-logo.svg";
     safeReorgDistance: number;
+    morpho: {};
     externalId: {
         zerion: string;
         debank: string;
@@ -170,7 +171,7 @@ declare const arbitrum: Readonly<{
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
     formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
 }>;
 declare const base: Readonly<{
     sortIndex: 8;
@@ -180,6 +181,10 @@ declare const base: Readonly<{
     defaultPool: "0xd0b53d9277642d899df5c87a3966a349a798f224";
     defaultToken0: "0x4200000000000000000000000000000000000006";
     defaultToken1: "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913";
+    morpho: {
+        deployBlock: number;
+        mmFactory: "0xa9c3d3a366466fa809d1ae982fb2c46e5fc41101";
+    };
     externalId: {
         zerion: string;
         debank: string;
@@ -361,53 +366,53 @@ declare const base: Readonly<{
         readonly block: {
             exclude: [
             ] | undefined;
-            format: (args: import("viem/chains").OpStackRpcBlock<import("viem").BlockTag, boolean>) => {
+            format: (args: import("viem/chains").OpStackRpcBlock) => {
                 baseFeePerGas: bigint | null;
                 blobGasUsed: bigint;
                 difficulty: bigint;
                 excessBlobGas: bigint;
-                extraData: `0x${string}`;
+                extraData: import("viem").Hex;
                 gasLimit: bigint;
                 gasUsed: bigint;
                 hash: `0x${string}` | null;
                 logsBloom: `0x${string}` | null;
-                miner: `0x${string}`;
-                mixHash: `0x${string}`;
+                miner: import("abitype").Address;
+                mixHash: import("viem").Hash;
                 nonce: `0x${string}` | null;
                 number: bigint | null;
-                parentBeaconBlockRoot?: `0x${string}` | undefined;
-                parentHash: `0x${string}`;
-                receiptsRoot: `0x${string}`;
-                sealFields: `0x${string}`[];
-                sha3Uncles: `0x${string}`;
+                parentBeaconBlockRoot?: import("viem").Hex | undefined;
+                parentHash: import("viem").Hash;
+                receiptsRoot: import("viem").Hex;
+                sealFields: import("viem").Hex[];
+                sha3Uncles: import("viem").Hash;
                 size: bigint;
-                stateRoot: `0x${string}`;
+                stateRoot: import("viem").Hash;
                 timestamp: bigint;
                 totalDifficulty: bigint | null;
                 transactions: `0x${string}`[] | import("viem/chains").OpStackTransaction<boolean>[];
-                transactionsRoot: `0x${string}`;
-                uncles: `0x${string}`[];
+                transactionsRoot: import("viem").Hash;
+                uncles: import("viem").Hash[];
                 withdrawals?: import("viem").Withdrawal[] | undefined;
-                withdrawalsRoot?: `0x${string}` | undefined;
-            };
+                withdrawalsRoot?: import("viem").Hex | undefined;
+            } & {};
             type: "block";
         };
         readonly transaction: {
             exclude: [
             ] | undefined;
-            format: (args: import("viem/chains").OpStackRpcTransaction<boolean>) => {
+            format: (args: import("viem/chains").OpStackRpcTransaction) => ({
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gas: bigint;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 nonce: number;
-                r: `0x${string}`;
-                s: `0x${string}`;
-                to: `0x${string}` | null;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 v: bigint;
                 value: bigint;
                 yParity: number;
@@ -415,25 +420,25 @@ declare const base: Readonly<{
                 maxFeePerBlobGas?: undefined;
                 maxFeePerGas: bigint;
                 maxPriorityFeePerGas: bigint;
-                isSystemTx?: boolean | undefined;
+                isSystemTx?: boolean;
                 mint?: bigint | undefined;
-                sourceHash: `0x${string}`;
+                sourceHash: import("viem").Hex;
                 type: "deposit";
             } | {
-                r: `0x${string}`;
-                s: `0x${string}`;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
                 v: bigint;
-                to: `0x${string}` | null;
-                from: `0x${string}`;
+                to: import("abitype").Address | null;
+                from: import("abitype").Address;
                 gas: bigint;
                 nonce: number;
                 value: bigint;
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 accessList?: undefined;
                 authorizationList?: undefined;
                 blobVersionedHashes?: undefined;
@@ -450,16 +455,16 @@ declare const base: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gas: bigint;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 nonce: number;
-                r: `0x${string}`;
-                s: `0x${string}`;
-                to: `0x${string}` | null;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 v: bigint;
                 value: bigint;
                 yParity: number;
@@ -478,16 +483,16 @@ declare const base: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gas: bigint;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 nonce: number;
-                r: `0x${string}`;
-                s: `0x${string}`;
-                to: `0x${string}` | null;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 v: bigint;
                 value: bigint;
                 yParity: number;
@@ -506,22 +511,22 @@ declare const base: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gas: bigint;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 nonce: number;
-                r: `0x${string}`;
-                s: `0x${string}`;
-                to: `0x${string}` | null;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 v: bigint;
                 value: bigint;
                 yParity: number;
                 accessList: import("viem").AccessList;
                 authorizationList?: undefined;
-                blobVersionedHashes: readonly `0x${string}`[];
+                blobVersionedHashes: readonly import("viem").Hex[];
                 chainId: number;
                 type: "eip4844";
                 gasPrice?: undefined;
@@ -534,21 +539,21 @@ declare const base: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gas: bigint;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 nonce: number;
-                r: `0x${string}`;
-                s: `0x${string}`;
-                to: `0x${string}` | null;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 v: bigint;
                 value: bigint;
                 yParity: number;
                 accessList: import("viem").AccessList;
-                authorizationList: import("viem/experimental").SignedAuthorizationList<number>;
+                authorizationList: import("viem/experimental").SignedAuthorizationList;
                 blobVersionedHashes?: undefined;
                 chainId: number;
                 type: "eip7702";
@@ -559,7 +564,7 @@ declare const base: Readonly<{
                 isSystemTx?: undefined;
                 mint?: undefined;
                 sourceHash?: undefined;
-            };
+            }) & {};
             type: "transaction";
         };
         readonly transactionReceipt: {
@@ -568,26 +573,26 @@ declare const base: Readonly<{
             format: (args: import("viem/chains").OpStackRpcTransactionReceipt) => {
                 blobGasPrice?: bigint | undefined;
                 blobGasUsed?: bigint | undefined;
-                blockHash: `0x${string}`;
+                blockHash: import("viem").Hash;
                 blockNumber: bigint;
-                contractAddress: `0x${string}` | null | undefined;
+                contractAddress: import("abitype").Address | null | undefined;
                 cumulativeGasUsed: bigint;
                 effectiveGasPrice: bigint;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gasUsed: bigint;
-                logs: import("viem").Log<bigint, number, false, undefined, undefined, undefined, undefined>[];
-                logsBloom: `0x${string}`;
-                root?: `0x${string}` | undefined;
+                logs: import("viem").Log<bigint, number, false>[];
+                logsBloom: import("viem").Hex;
+                root?: import("viem").Hash | undefined;
                 status: "success" | "reverted";
-                to: `0x${string}` | null;
-                transactionHash: `0x${string}`;
+                to: import("abitype").Address | null;
+                transactionHash: import("viem").Hash;
                 transactionIndex: number;
                 type: import("viem").TransactionType;
                 l1GasPrice: bigint | null;
                 l1GasUsed: bigint | null;
                 l1Fee: bigint | null;
                 l1FeeScalar: number | null;
-            };
+            } & {};
             type: "transactionReceipt";
         };
     };
@@ -604,6 +609,7 @@ declare const blast: Readonly<{
     externalId: {
         zerion: string;
     };
+    morpho: {};
     markets: {
         kyberswap: string;
         openocean: string;
@@ -713,7 +719,7 @@ declare const blast: Readonly<{
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
     formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
 }>;
 declare const bob: Readonly<{
     blockTimeSeconds: 2;
@@ -724,6 +730,7 @@ declare const bob: Readonly<{
     externalId: {};
     markets: {};
     bridges: {};
+    morpho: {};
     oracles: {
         coingecko: {
             slug: string;
@@ -866,53 +873,53 @@ declare const bob: Readonly<{
         readonly block: {
             exclude: [
             ] | undefined;
-            format: (args: import("viem/chains").OpStackRpcBlock<import("viem").BlockTag, boolean>) => {
+            format: (args: import("viem/chains").OpStackRpcBlock) => {
                 baseFeePerGas: bigint | null;
                 blobGasUsed: bigint;
                 difficulty: bigint;
                 excessBlobGas: bigint;
-                extraData: `0x${string}`;
+                extraData: import("viem").Hex;
                 gasLimit: bigint;
                 gasUsed: bigint;
                 hash: `0x${string}` | null;
                 logsBloom: `0x${string}` | null;
-                miner: `0x${string}`;
-                mixHash: `0x${string}`;
+                miner: import("abitype").Address;
+                mixHash: import("viem").Hash;
                 nonce: `0x${string}` | null;
                 number: bigint | null;
-                parentBeaconBlockRoot?: `0x${string}` | undefined;
-                parentHash: `0x${string}`;
-                receiptsRoot: `0x${string}`;
-                sealFields: `0x${string}`[];
-                sha3Uncles: `0x${string}`;
+                parentBeaconBlockRoot?: import("viem").Hex | undefined;
+                parentHash: import("viem").Hash;
+                receiptsRoot: import("viem").Hex;
+                sealFields: import("viem").Hex[];
+                sha3Uncles: import("viem").Hash;
                 size: bigint;
-                stateRoot: `0x${string}`;
+                stateRoot: import("viem").Hash;
                 timestamp: bigint;
                 totalDifficulty: bigint | null;
                 transactions: `0x${string}`[] | import("viem/chains").OpStackTransaction<boolean>[];
-                transactionsRoot: `0x${string}`;
-                uncles: `0x${string}`[];
+                transactionsRoot: import("viem").Hash;
+                uncles: import("viem").Hash[];
                 withdrawals?: import("viem").Withdrawal[] | undefined;
-                withdrawalsRoot?: `0x${string}` | undefined;
-            };
+                withdrawalsRoot?: import("viem").Hex | undefined;
+            } & {};
             type: "block";
         };
         readonly transaction: {
             exclude: [
             ] | undefined;
-            format: (args: import("viem/chains").OpStackRpcTransaction<boolean>) => {
+            format: (args: import("viem/chains").OpStackRpcTransaction) => ({
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gas: bigint;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 nonce: number;
-                r: `0x${string}`;
-                s: `0x${string}`;
-                to: `0x${string}` | null;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 v: bigint;
                 value: bigint;
                 yParity: number;
@@ -920,25 +927,25 @@ declare const bob: Readonly<{
                 maxFeePerBlobGas?: undefined;
                 maxFeePerGas: bigint;
                 maxPriorityFeePerGas: bigint;
-                isSystemTx?: boolean | undefined;
+                isSystemTx?: boolean;
                 mint?: bigint | undefined;
-                sourceHash: `0x${string}`;
+                sourceHash: import("viem").Hex;
                 type: "deposit";
             } | {
-                r: `0x${string}`;
-                s: `0x${string}`;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
                 v: bigint;
-                to: `0x${string}` | null;
-                from: `0x${string}`;
+                to: import("abitype").Address | null;
+                from: import("abitype").Address;
                 gas: bigint;
                 nonce: number;
                 value: bigint;
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 accessList?: undefined;
                 authorizationList?: undefined;
                 blobVersionedHashes?: undefined;
@@ -955,16 +962,16 @@ declare const bob: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gas: bigint;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 nonce: number;
-                r: `0x${string}`;
-                s: `0x${string}`;
-                to: `0x${string}` | null;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 v: bigint;
                 value: bigint;
                 yParity: number;
@@ -983,16 +990,16 @@ declare const bob: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gas: bigint;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 nonce: number;
-                r: `0x${string}`;
-                s: `0x${string}`;
-                to: `0x${string}` | null;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 v: bigint;
                 value: bigint;
                 yParity: number;
@@ -1011,22 +1018,22 @@ declare const bob: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gas: bigint;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 nonce: number;
-                r: `0x${string}`;
-                s: `0x${string}`;
-                to: `0x${string}` | null;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 v: bigint;
                 value: bigint;
                 yParity: number;
                 accessList: import("viem").AccessList;
                 authorizationList?: undefined;
-                blobVersionedHashes: readonly `0x${string}`[];
+                blobVersionedHashes: readonly import("viem").Hex[];
                 chainId: number;
                 type: "eip4844";
                 gasPrice?: undefined;
@@ -1039,21 +1046,21 @@ declare const bob: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gas: bigint;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 nonce: number;
-                r: `0x${string}`;
-                s: `0x${string}`;
-                to: `0x${string}` | null;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 v: bigint;
                 value: bigint;
                 yParity: number;
                 accessList: import("viem").AccessList;
-                authorizationList: import("viem/experimental").SignedAuthorizationList<number>;
+                authorizationList: import("viem/experimental").SignedAuthorizationList;
                 blobVersionedHashes?: undefined;
                 chainId: number;
                 type: "eip7702";
@@ -1064,7 +1071,7 @@ declare const bob: Readonly<{
                 isSystemTx?: undefined;
                 mint?: undefined;
                 sourceHash?: undefined;
-            };
+            }) & {};
             type: "transaction";
         };
         readonly transactionReceipt: {
@@ -1073,26 +1080,26 @@ declare const bob: Readonly<{
             format: (args: import("viem/chains").OpStackRpcTransactionReceipt) => {
                 blobGasPrice?: bigint | undefined;
                 blobGasUsed?: bigint | undefined;
-                blockHash: `0x${string}`;
+                blockHash: import("viem").Hash;
                 blockNumber: bigint;
-                contractAddress: `0x${string}` | null | undefined;
+                contractAddress: import("abitype").Address | null | undefined;
                 cumulativeGasUsed: bigint;
                 effectiveGasPrice: bigint;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gasUsed: bigint;
-                logs: import("viem").Log<bigint, number, false, undefined, undefined, undefined, undefined>[];
-                logsBloom: `0x${string}`;
-                root?: `0x${string}` | undefined;
+                logs: import("viem").Log<bigint, number, false>[];
+                logsBloom: import("viem").Hex;
+                root?: import("viem").Hash | undefined;
                 status: "success" | "reverted";
-                to: `0x${string}` | null;
-                transactionHash: `0x${string}`;
+                to: import("abitype").Address | null;
+                transactionHash: import("viem").Hash;
                 transactionIndex: number;
                 type: import("viem").TransactionType;
                 l1GasPrice: bigint | null;
                 l1GasUsed: bigint | null;
                 l1Fee: bigint | null;
                 l1FeeScalar: number | null;
-            };
+            } & {};
             type: "transactionReceipt";
         };
     };
@@ -1111,6 +1118,7 @@ declare const boba: Readonly<{
     externalId: {
         debank: string;
     };
+    morpho: {};
     markets: {};
     bridges: {};
     oracles: {
@@ -1221,7 +1229,7 @@ declare const boba: Readonly<{
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
     formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
 }>;
 declare const bsc: Readonly<{
     name: "BSC";
@@ -1235,6 +1243,7 @@ declare const bsc: Readonly<{
         zerion: string;
         debank: string;
     };
+    morpho: {};
     markets: {
         airswap: true;
         kyberswap: string;
@@ -1371,7 +1380,7 @@ declare const bsc: Readonly<{
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
     formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
 }>;
 declare const corn: Readonly<{
     name: "Corn";
@@ -1384,6 +1393,7 @@ declare const corn: Readonly<{
     markets: {};
     bridges: {};
     oracles: {};
+    morpho: {};
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     uniswap: {
         deployBlock: number;
@@ -1468,7 +1478,7 @@ declare const corn: Readonly<{
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
     formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
 }>;
 declare const filecoin: Readonly<{
     sortIndex: 10;
@@ -1477,6 +1487,7 @@ declare const filecoin: Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     blockTimeSeconds: 30;
     safeReorgDistance: 90000;
+    morpho: {};
     blockExplorers: {
         default: {
             name: string;
@@ -1597,7 +1608,7 @@ declare const filecoin: Readonly<{
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
     formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
 }>;
 declare const gnosis: Readonly<{
     blockTimeSeconds: 5;
@@ -1605,6 +1616,7 @@ declare const gnosis: Readonly<{
     sortIndex: 18;
     logoUrl: "https://assets.oku.trade/chains/gnosis-logo.png";
     safeReorgDistance: 90000;
+    morpho: {};
     externalId: {
         zerion: string;
         cowswap: string;
@@ -1726,7 +1738,7 @@ declare const gnosis: Readonly<{
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
     formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
 }>;
 declare const linea: Readonly<{
     name: "Linea";
@@ -1734,6 +1746,7 @@ declare const linea: Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     blockTimeSeconds: 2;
     sortIndex: 15;
+    morpho: {};
     logoUrl: "https://assets.oku.trade/chains/linea-logo.svg";
     safeReorgDistance: 100;
     externalId: {
@@ -1856,11 +1869,11 @@ declare const linea: Readonly<{
     testnet: false;
     custom?: Record<string, unknown> | undefined;
     fees: {
-        readonly estimateFeesPerGas: ({ client, multiply, request, type }: import("viem").ChainEstimateFeesPerGasFnParameters<import("viem").ChainFormatters | undefined>) => Promise<import("viem").EstimateFeesPerGasReturnType | null>;
+        readonly estimateFeesPerGas: ({ client, multiply, request, type }: Parameters<import("viem").ChainEstimateFeesPerGasFn>[0]) => ReturnType<import("viem").ChainEstimateFeesPerGasFn>;
         readonly maxPriorityFeePerGas: ({ block, client, request }: import("viem").ChainFeesFnParameters<import("viem").ChainFormatters | undefined>) => Promise<bigint | null>;
     };
     formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
 }>;
 declare const lisk: Readonly<{
     blockTimeSeconds: 2;
@@ -1869,6 +1882,7 @@ declare const lisk: Readonly<{
     logoUrl: "https://assets.oku.trade/chains/lisk-logo.png";
     safeReorgDistance: 90000;
     externalId: {};
+    morpho: {};
     markets: {};
     bridges: {};
     oracles: {
@@ -2001,53 +2015,53 @@ declare const lisk: Readonly<{
         readonly block: {
             exclude: [
             ] | undefined;
-            format: (args: import("viem/chains").OpStackRpcBlock<import("viem").BlockTag, boolean>) => {
+            format: (args: import("viem/chains").OpStackRpcBlock) => {
                 baseFeePerGas: bigint | null;
                 blobGasUsed: bigint;
                 difficulty: bigint;
                 excessBlobGas: bigint;
-                extraData: `0x${string}`;
+                extraData: import("viem").Hex;
                 gasLimit: bigint;
                 gasUsed: bigint;
                 hash: `0x${string}` | null;
                 logsBloom: `0x${string}` | null;
-                miner: `0x${string}`;
-                mixHash: `0x${string}`;
+                miner: import("abitype").Address;
+                mixHash: import("viem").Hash;
                 nonce: `0x${string}` | null;
                 number: bigint | null;
-                parentBeaconBlockRoot?: `0x${string}` | undefined;
-                parentHash: `0x${string}`;
-                receiptsRoot: `0x${string}`;
-                sealFields: `0x${string}`[];
-                sha3Uncles: `0x${string}`;
+                parentBeaconBlockRoot?: import("viem").Hex | undefined;
+                parentHash: import("viem").Hash;
+                receiptsRoot: import("viem").Hex;
+                sealFields: import("viem").Hex[];
+                sha3Uncles: import("viem").Hash;
                 size: bigint;
-                stateRoot: `0x${string}`;
+                stateRoot: import("viem").Hash;
                 timestamp: bigint;
                 totalDifficulty: bigint | null;
                 transactions: `0x${string}`[] | import("viem/chains").OpStackTransaction<boolean>[];
-                transactionsRoot: `0x${string}`;
-                uncles: `0x${string}`[];
+                transactionsRoot: import("viem").Hash;
+                uncles: import("viem").Hash[];
                 withdrawals?: import("viem").Withdrawal[] | undefined;
-                withdrawalsRoot?: `0x${string}` | undefined;
-            };
+                withdrawalsRoot?: import("viem").Hex | undefined;
+            } & {};
             type: "block";
         };
         readonly transaction: {
             exclude: [
             ] | undefined;
-            format: (args: import("viem/chains").OpStackRpcTransaction<boolean>) => {
+            format: (args: import("viem/chains").OpStackRpcTransaction) => ({
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gas: bigint;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 nonce: number;
-                r: `0x${string}`;
-                s: `0x${string}`;
-                to: `0x${string}` | null;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 v: bigint;
                 value: bigint;
                 yParity: number;
@@ -2055,25 +2069,25 @@ declare const lisk: Readonly<{
                 maxFeePerBlobGas?: undefined;
                 maxFeePerGas: bigint;
                 maxPriorityFeePerGas: bigint;
-                isSystemTx?: boolean | undefined;
+                isSystemTx?: boolean;
                 mint?: bigint | undefined;
-                sourceHash: `0x${string}`;
+                sourceHash: import("viem").Hex;
                 type: "deposit";
             } | {
-                r: `0x${string}`;
-                s: `0x${string}`;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
                 v: bigint;
-                to: `0x${string}` | null;
-                from: `0x${string}`;
+                to: import("abitype").Address | null;
+                from: import("abitype").Address;
                 gas: bigint;
                 nonce: number;
                 value: bigint;
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 accessList?: undefined;
                 authorizationList?: undefined;
                 blobVersionedHashes?: undefined;
@@ -2090,16 +2104,16 @@ declare const lisk: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gas: bigint;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 nonce: number;
-                r: `0x${string}`;
-                s: `0x${string}`;
-                to: `0x${string}` | null;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 v: bigint;
                 value: bigint;
                 yParity: number;
@@ -2118,16 +2132,16 @@ declare const lisk: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gas: bigint;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 nonce: number;
-                r: `0x${string}`;
-                s: `0x${string}`;
-                to: `0x${string}` | null;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 v: bigint;
                 value: bigint;
                 yParity: number;
@@ -2146,22 +2160,22 @@ declare const lisk: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gas: bigint;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 nonce: number;
-                r: `0x${string}`;
-                s: `0x${string}`;
-                to: `0x${string}` | null;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 v: bigint;
                 value: bigint;
                 yParity: number;
                 accessList: import("viem").AccessList;
                 authorizationList?: undefined;
-                blobVersionedHashes: readonly `0x${string}`[];
+                blobVersionedHashes: readonly import("viem").Hex[];
                 chainId: number;
                 type: "eip4844";
                 gasPrice?: undefined;
@@ -2174,21 +2188,21 @@ declare const lisk: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gas: bigint;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 nonce: number;
-                r: `0x${string}`;
-                s: `0x${string}`;
-                to: `0x${string}` | null;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 v: bigint;
                 value: bigint;
                 yParity: number;
                 accessList: import("viem").AccessList;
-                authorizationList: import("viem/experimental").SignedAuthorizationList<number>;
+                authorizationList: import("viem/experimental").SignedAuthorizationList;
                 blobVersionedHashes?: undefined;
                 chainId: number;
                 type: "eip7702";
@@ -2199,7 +2213,7 @@ declare const lisk: Readonly<{
                 isSystemTx?: undefined;
                 mint?: undefined;
                 sourceHash?: undefined;
-            };
+            }) & {};
             type: "transaction";
         };
         readonly transactionReceipt: {
@@ -2208,26 +2222,26 @@ declare const lisk: Readonly<{
             format: (args: import("viem/chains").OpStackRpcTransactionReceipt) => {
                 blobGasPrice?: bigint | undefined;
                 blobGasUsed?: bigint | undefined;
-                blockHash: `0x${string}`;
+                blockHash: import("viem").Hash;
                 blockNumber: bigint;
-                contractAddress: `0x${string}` | null | undefined;
+                contractAddress: import("abitype").Address | null | undefined;
                 cumulativeGasUsed: bigint;
                 effectiveGasPrice: bigint;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gasUsed: bigint;
-                logs: import("viem").Log<bigint, number, false, undefined, undefined, undefined, undefined>[];
-                logsBloom: `0x${string}`;
-                root?: `0x${string}` | undefined;
+                logs: import("viem").Log<bigint, number, false>[];
+                logsBloom: import("viem").Hex;
+                root?: import("viem").Hash | undefined;
                 status: "success" | "reverted";
-                to: `0x${string}` | null;
-                transactionHash: `0x${string}`;
+                to: import("abitype").Address | null;
+                transactionHash: import("viem").Hash;
                 transactionIndex: number;
                 type: import("viem").TransactionType;
                 l1GasPrice: bigint | null;
                 l1GasUsed: bigint | null;
                 l1Fee: bigint | null;
                 l1FeeScalar: number | null;
-            };
+            } & {};
             type: "transactionReceipt";
         };
     };
@@ -2243,6 +2257,10 @@ declare const mainnet: Readonly<{
     blockTimeSeconds: 15;
     safeReorgDistance: 90000;
     logoUrl: "https://assets.oku.trade/chains/ethereum-logo.webp";
+    morpho: {
+        deployBlock: number;
+        mmFactory: "0x7f1f2d3dfa99678675ece1c243d3f7bc3746db5d";
+    };
     externalId: {
         zerion: string;
         debank: string;
@@ -2408,7 +2426,7 @@ declare const mainnet: Readonly<{
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
     formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
 }>;
 declare const manta: Readonly<{
     name: "Manta Pacific";
@@ -2419,6 +2437,7 @@ declare const manta: Readonly<{
     logoUrl: "https://assets.oku.trade/chains/manta-logo.png";
     safeReorgDistance: 90000;
     externalId: {};
+    morpho: {};
     markets: {
         openocean: string;
     };
@@ -2530,7 +2549,7 @@ declare const manta: Readonly<{
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
     formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
     network: "manta";
 }>;
 declare const mantle: Readonly<{
@@ -2541,6 +2560,7 @@ declare const mantle: Readonly<{
     logoUrl: "https://assets.oku.trade/chains/mantle-logo.png";
     safeReorgDistance: 90000;
     externalId: {};
+    morpho: {};
     markets: {
         openocean: string;
         zeroex: true;
@@ -2651,7 +2671,7 @@ declare const mantle: Readonly<{
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
     formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
 }>;
 declare const metal: Readonly<{
     blockTimeSeconds: 2;
@@ -2660,6 +2680,7 @@ declare const metal: Readonly<{
     logoUrl: "https://assets.oku.trade/chains/metal-logo.png";
     safeReorgDistance: 90000;
     externalId: {};
+    morpho: {};
     markets: {};
     bridges: {};
     oracles: {};
@@ -2790,53 +2811,53 @@ declare const metal: Readonly<{
         readonly block: {
             exclude: [
             ] | undefined;
-            format: (args: import("viem/chains").OpStackRpcBlock<import("viem").BlockTag, boolean>) => {
+            format: (args: import("viem/chains").OpStackRpcBlock) => {
                 baseFeePerGas: bigint | null;
                 blobGasUsed: bigint;
                 difficulty: bigint;
                 excessBlobGas: bigint;
-                extraData: `0x${string}`;
+                extraData: import("viem").Hex;
                 gasLimit: bigint;
                 gasUsed: bigint;
                 hash: `0x${string}` | null;
                 logsBloom: `0x${string}` | null;
-                miner: `0x${string}`;
-                mixHash: `0x${string}`;
+                miner: import("abitype").Address;
+                mixHash: import("viem").Hash;
                 nonce: `0x${string}` | null;
                 number: bigint | null;
-                parentBeaconBlockRoot?: `0x${string}` | undefined;
-                parentHash: `0x${string}`;
-                receiptsRoot: `0x${string}`;
-                sealFields: `0x${string}`[];
-                sha3Uncles: `0x${string}`;
+                parentBeaconBlockRoot?: import("viem").Hex | undefined;
+                parentHash: import("viem").Hash;
+                receiptsRoot: import("viem").Hex;
+                sealFields: import("viem").Hex[];
+                sha3Uncles: import("viem").Hash;
                 size: bigint;
-                stateRoot: `0x${string}`;
+                stateRoot: import("viem").Hash;
                 timestamp: bigint;
                 totalDifficulty: bigint | null;
                 transactions: `0x${string}`[] | import("viem/chains").OpStackTransaction<boolean>[];
-                transactionsRoot: `0x${string}`;
-                uncles: `0x${string}`[];
+                transactionsRoot: import("viem").Hash;
+                uncles: import("viem").Hash[];
                 withdrawals?: import("viem").Withdrawal[] | undefined;
-                withdrawalsRoot?: `0x${string}` | undefined;
-            };
+                withdrawalsRoot?: import("viem").Hex | undefined;
+            } & {};
             type: "block";
         };
         readonly transaction: {
             exclude: [
             ] | undefined;
-            format: (args: import("viem/chains").OpStackRpcTransaction<boolean>) => {
+            format: (args: import("viem/chains").OpStackRpcTransaction) => ({
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gas: bigint;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 nonce: number;
-                r: `0x${string}`;
-                s: `0x${string}`;
-                to: `0x${string}` | null;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 v: bigint;
                 value: bigint;
                 yParity: number;
@@ -2844,25 +2865,25 @@ declare const metal: Readonly<{
                 maxFeePerBlobGas?: undefined;
                 maxFeePerGas: bigint;
                 maxPriorityFeePerGas: bigint;
-                isSystemTx?: boolean | undefined;
+                isSystemTx?: boolean;
                 mint?: bigint | undefined;
-                sourceHash: `0x${string}`;
+                sourceHash: import("viem").Hex;
                 type: "deposit";
             } | {
-                r: `0x${string}`;
-                s: `0x${string}`;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
                 v: bigint;
-                to: `0x${string}` | null;
-                from: `0x${string}`;
+                to: import("abitype").Address | null;
+                from: import("abitype").Address;
                 gas: bigint;
                 nonce: number;
                 value: bigint;
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 accessList?: undefined;
                 authorizationList?: undefined;
                 blobVersionedHashes?: undefined;
@@ -2879,16 +2900,16 @@ declare const metal: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gas: bigint;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 nonce: number;
-                r: `0x${string}`;
-                s: `0x${string}`;
-                to: `0x${string}` | null;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 v: bigint;
                 value: bigint;
                 yParity: number;
@@ -2907,16 +2928,16 @@ declare const metal: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gas: bigint;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 nonce: number;
-                r: `0x${string}`;
-                s: `0x${string}`;
-                to: `0x${string}` | null;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 v: bigint;
                 value: bigint;
                 yParity: number;
@@ -2935,22 +2956,22 @@ declare const metal: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gas: bigint;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 nonce: number;
-                r: `0x${string}`;
-                s: `0x${string}`;
-                to: `0x${string}` | null;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 v: bigint;
                 value: bigint;
                 yParity: number;
                 accessList: import("viem").AccessList;
                 authorizationList?: undefined;
-                blobVersionedHashes: readonly `0x${string}`[];
+                blobVersionedHashes: readonly import("viem").Hex[];
                 chainId: number;
                 type: "eip4844";
                 gasPrice?: undefined;
@@ -2963,21 +2984,21 @@ declare const metal: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gas: bigint;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 nonce: number;
-                r: `0x${string}`;
-                s: `0x${string}`;
-                to: `0x${string}` | null;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 v: bigint;
                 value: bigint;
                 yParity: number;
                 accessList: import("viem").AccessList;
-                authorizationList: import("viem/experimental").SignedAuthorizationList<number>;
+                authorizationList: import("viem/experimental").SignedAuthorizationList;
                 blobVersionedHashes?: undefined;
                 chainId: number;
                 type: "eip7702";
@@ -2988,7 +3009,7 @@ declare const metal: Readonly<{
                 isSystemTx?: undefined;
                 mint?: undefined;
                 sourceHash?: undefined;
-            };
+            }) & {};
             type: "transaction";
         };
         readonly transactionReceipt: {
@@ -2997,26 +3018,26 @@ declare const metal: Readonly<{
             format: (args: import("viem/chains").OpStackRpcTransactionReceipt) => {
                 blobGasPrice?: bigint | undefined;
                 blobGasUsed?: bigint | undefined;
-                blockHash: `0x${string}`;
+                blockHash: import("viem").Hash;
                 blockNumber: bigint;
-                contractAddress: `0x${string}` | null | undefined;
+                contractAddress: import("abitype").Address | null | undefined;
                 cumulativeGasUsed: bigint;
                 effectiveGasPrice: bigint;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gasUsed: bigint;
-                logs: import("viem").Log<bigint, number, false, undefined, undefined, undefined, undefined>[];
-                logsBloom: `0x${string}`;
-                root?: `0x${string}` | undefined;
+                logs: import("viem").Log<bigint, number, false>[];
+                logsBloom: import("viem").Hex;
+                root?: import("viem").Hash | undefined;
                 status: "success" | "reverted";
-                to: `0x${string}` | null;
-                transactionHash: `0x${string}`;
+                to: import("abitype").Address | null;
+                transactionHash: import("viem").Hash;
                 transactionIndex: number;
                 type: import("viem").TransactionType;
                 l1GasPrice: bigint | null;
                 l1GasUsed: bigint | null;
                 l1Fee: bigint | null;
                 l1FeeScalar: number | null;
-            };
+            } & {};
             type: "transactionReceipt";
         };
     };
@@ -3034,6 +3055,7 @@ declare const moonbeam: Readonly<{
     externalId: {
         debank: string;
     };
+    morpho: {};
     markets: {};
     bridges: {
         wanbridge: {
@@ -3147,7 +3169,7 @@ declare const moonbeam: Readonly<{
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
     formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
 }>;
 declare const optimism: Readonly<{
     name: "Optimism";
@@ -3161,6 +3183,7 @@ declare const optimism: Readonly<{
         zerion: string;
         debank: string;
     };
+    morpho: {};
     markets: {
         kyberswap: string;
         oneinch: true;
@@ -3353,53 +3376,53 @@ declare const optimism: Readonly<{
         readonly block: {
             exclude: [
             ] | undefined;
-            format: (args: import("viem/chains").OpStackRpcBlock<import("viem").BlockTag, boolean>) => {
+            format: (args: import("viem/chains").OpStackRpcBlock) => {
                 baseFeePerGas: bigint | null;
                 blobGasUsed: bigint;
                 difficulty: bigint;
                 excessBlobGas: bigint;
-                extraData: `0x${string}`;
+                extraData: import("viem").Hex;
                 gasLimit: bigint;
                 gasUsed: bigint;
                 hash: `0x${string}` | null;
                 logsBloom: `0x${string}` | null;
-                miner: `0x${string}`;
-                mixHash: `0x${string}`;
+                miner: import("abitype").Address;
+                mixHash: import("viem").Hash;
                 nonce: `0x${string}` | null;
                 number: bigint | null;
-                parentBeaconBlockRoot?: `0x${string}` | undefined;
-                parentHash: `0x${string}`;
-                receiptsRoot: `0x${string}`;
-                sealFields: `0x${string}`[];
-                sha3Uncles: `0x${string}`;
+                parentBeaconBlockRoot?: import("viem").Hex | undefined;
+                parentHash: import("viem").Hash;
+                receiptsRoot: import("viem").Hex;
+                sealFields: import("viem").Hex[];
+                sha3Uncles: import("viem").Hash;
                 size: bigint;
-                stateRoot: `0x${string}`;
+                stateRoot: import("viem").Hash;
                 timestamp: bigint;
                 totalDifficulty: bigint | null;
                 transactions: `0x${string}`[] | import("viem/chains").OpStackTransaction<boolean>[];
-                transactionsRoot: `0x${string}`;
-                uncles: `0x${string}`[];
+                transactionsRoot: import("viem").Hash;
+                uncles: import("viem").Hash[];
                 withdrawals?: import("viem").Withdrawal[] | undefined;
-                withdrawalsRoot?: `0x${string}` | undefined;
-            };
+                withdrawalsRoot?: import("viem").Hex | undefined;
+            } & {};
             type: "block";
         };
         readonly transaction: {
             exclude: [
             ] | undefined;
-            format: (args: import("viem/chains").OpStackRpcTransaction<boolean>) => {
+            format: (args: import("viem/chains").OpStackRpcTransaction) => ({
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gas: bigint;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 nonce: number;
-                r: `0x${string}`;
-                s: `0x${string}`;
-                to: `0x${string}` | null;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 v: bigint;
                 value: bigint;
                 yParity: number;
@@ -3407,25 +3430,25 @@ declare const optimism: Readonly<{
                 maxFeePerBlobGas?: undefined;
                 maxFeePerGas: bigint;
                 maxPriorityFeePerGas: bigint;
-                isSystemTx?: boolean | undefined;
+                isSystemTx?: boolean;
                 mint?: bigint | undefined;
-                sourceHash: `0x${string}`;
+                sourceHash: import("viem").Hex;
                 type: "deposit";
             } | {
-                r: `0x${string}`;
-                s: `0x${string}`;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
                 v: bigint;
-                to: `0x${string}` | null;
-                from: `0x${string}`;
+                to: import("abitype").Address | null;
+                from: import("abitype").Address;
                 gas: bigint;
                 nonce: number;
                 value: bigint;
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 accessList?: undefined;
                 authorizationList?: undefined;
                 blobVersionedHashes?: undefined;
@@ -3442,16 +3465,16 @@ declare const optimism: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gas: bigint;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 nonce: number;
-                r: `0x${string}`;
-                s: `0x${string}`;
-                to: `0x${string}` | null;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 v: bigint;
                 value: bigint;
                 yParity: number;
@@ -3470,16 +3493,16 @@ declare const optimism: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gas: bigint;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 nonce: number;
-                r: `0x${string}`;
-                s: `0x${string}`;
-                to: `0x${string}` | null;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 v: bigint;
                 value: bigint;
                 yParity: number;
@@ -3498,22 +3521,22 @@ declare const optimism: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gas: bigint;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 nonce: number;
-                r: `0x${string}`;
-                s: `0x${string}`;
-                to: `0x${string}` | null;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 v: bigint;
                 value: bigint;
                 yParity: number;
                 accessList: import("viem").AccessList;
                 authorizationList?: undefined;
-                blobVersionedHashes: readonly `0x${string}`[];
+                blobVersionedHashes: readonly import("viem").Hex[];
                 chainId: number;
                 type: "eip4844";
                 gasPrice?: undefined;
@@ -3526,21 +3549,21 @@ declare const optimism: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gas: bigint;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 nonce: number;
-                r: `0x${string}`;
-                s: `0x${string}`;
-                to: `0x${string}` | null;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 v: bigint;
                 value: bigint;
                 yParity: number;
                 accessList: import("viem").AccessList;
-                authorizationList: import("viem/experimental").SignedAuthorizationList<number>;
+                authorizationList: import("viem/experimental").SignedAuthorizationList;
                 blobVersionedHashes?: undefined;
                 chainId: number;
                 type: "eip7702";
@@ -3551,7 +3574,7 @@ declare const optimism: Readonly<{
                 isSystemTx?: undefined;
                 mint?: undefined;
                 sourceHash?: undefined;
-            };
+            }) & {};
             type: "transaction";
         };
         readonly transactionReceipt: {
@@ -3560,26 +3583,26 @@ declare const optimism: Readonly<{
             format: (args: import("viem/chains").OpStackRpcTransactionReceipt) => {
                 blobGasPrice?: bigint | undefined;
                 blobGasUsed?: bigint | undefined;
-                blockHash: `0x${string}`;
+                blockHash: import("viem").Hash;
                 blockNumber: bigint;
-                contractAddress: `0x${string}` | null | undefined;
+                contractAddress: import("abitype").Address | null | undefined;
                 cumulativeGasUsed: bigint;
                 effectiveGasPrice: bigint;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gasUsed: bigint;
-                logs: import("viem").Log<bigint, number, false, undefined, undefined, undefined, undefined>[];
-                logsBloom: `0x${string}`;
-                root?: `0x${string}` | undefined;
+                logs: import("viem").Log<bigint, number, false>[];
+                logsBloom: import("viem").Hex;
+                root?: import("viem").Hash | undefined;
                 status: "success" | "reverted";
-                to: `0x${string}` | null;
-                transactionHash: `0x${string}`;
+                to: import("abitype").Address | null;
+                transactionHash: import("viem").Hash;
                 transactionIndex: number;
                 type: import("viem").TransactionType;
                 l1GasPrice: bigint | null;
                 l1GasUsed: bigint | null;
                 l1Fee: bigint | null;
                 l1FeeScalar: number | null;
-            };
+            } & {};
             type: "transactionReceipt";
         };
     };
@@ -3598,6 +3621,7 @@ declare const polygon: Readonly<{
         zerion: string;
         debank: string;
     };
+    morpho: {};
     markets: {
         airswap: true;
         kyberswap: string;
@@ -3752,7 +3776,7 @@ declare const polygon: Readonly<{
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
     formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
 }>;
 declare const rootstock: Readonly<{
     sortIndex: 7;
@@ -3766,6 +3790,7 @@ declare const rootstock: Readonly<{
     markets: {
         openocean: string;
     };
+    morpho: {};
     bridges: {};
     oracles: {
         cmc: {
@@ -3871,7 +3896,7 @@ declare const rootstock: Readonly<{
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
     formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
     network: "rootstock";
 }>;
 declare const scroll: Readonly<{
@@ -3884,6 +3909,7 @@ declare const scroll: Readonly<{
     externalId: {
         zerion: string;
     };
+    morpho: {};
     markets: {
         kyberswap: string;
         openocean: string;
@@ -4014,7 +4040,7 @@ declare const scroll: Readonly<{
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
     formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
 }>;
 declare const sei: Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
@@ -4027,6 +4053,7 @@ declare const sei: Readonly<{
     markets: {
         openocean: string;
     };
+    morpho: {};
     bridges: {
         stargate: {
             endpointID: number;
@@ -4139,7 +4166,7 @@ declare const sei: Readonly<{
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
     formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
 }>;
 declare const taiko: Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
@@ -4150,6 +4177,7 @@ declare const taiko: Readonly<{
     safeReorgDistance: 90000;
     externalId: {};
     markets: {};
+    morpho: {};
     bridges: {
         rhinofi: string;
         stargate: {
@@ -4263,7 +4291,7 @@ declare const taiko: Readonly<{
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
     formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
 }>;
 declare const xLayer: Readonly<{
     blockTimeSeconds: 3;
@@ -4274,6 +4302,7 @@ declare const xLayer: Readonly<{
     externalId: {};
     markets: {};
     bridges: {};
+    morpho: {};
     oracles: {
         cmc: {
             slug: string;
@@ -4380,7 +4409,7 @@ declare const xLayer: Readonly<{
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
     formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
 }>;
 declare const polygonZkEvm: Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
@@ -4389,6 +4418,7 @@ declare const polygonZkEvm: Readonly<{
     blockTimeSeconds: 7;
     logoUrl: "https://assets.oku.trade/chains/zkevm-logo.svg";
     safeReorgDistance: 90000;
+    morpho: {};
     externalId: {
         zerion: string;
     };
@@ -4504,7 +4534,7 @@ declare const polygonZkEvm: Readonly<{
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
     formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
 }>;
 declare const zkSync: Readonly<{
     blockTimeSeconds: 2;
@@ -4512,6 +4542,7 @@ declare const zkSync: Readonly<{
     launchTime: 1696514400;
     logoUrl: "https://assets.oku.trade/chains/zksync-logo.svg";
     safeReorgDistance: 90000;
+    morpho: {};
     externalId: {
         zerion: string;
     };
@@ -4642,57 +4673,57 @@ declare const zkSync: Readonly<{
         readonly block: {
             exclude: [
             ] | undefined;
-            format: (args: import("viem/chains").ZkSyncRpcBlock<import("viem").BlockTag, boolean>) => {
+            format: (args: import("viem/chains").ZkSyncRpcBlock) => {
                 baseFeePerGas: bigint | null;
                 blobGasUsed: bigint;
                 difficulty: bigint;
                 excessBlobGas: bigint;
-                extraData: `0x${string}`;
+                extraData: import("viem").Hex;
                 gasLimit: bigint;
                 gasUsed: bigint;
                 hash: `0x${string}` | null;
                 logsBloom: `0x${string}` | null;
-                miner: `0x${string}`;
-                mixHash: `0x${string}`;
+                miner: import("abitype").Address;
+                mixHash: import("viem").Hash;
                 nonce: `0x${string}` | null;
                 number: bigint | null;
-                parentBeaconBlockRoot?: `0x${string}` | undefined;
-                parentHash: `0x${string}`;
-                receiptsRoot: `0x${string}`;
-                sealFields: `0x${string}`[];
-                sha3Uncles: `0x${string}`;
+                parentBeaconBlockRoot?: import("viem").Hex | undefined;
+                parentHash: import("viem").Hash;
+                receiptsRoot: import("viem").Hex;
+                sealFields: import("viem").Hex[];
+                sha3Uncles: import("viem").Hash;
                 size: bigint;
-                stateRoot: `0x${string}`;
+                stateRoot: import("viem").Hash;
                 timestamp: bigint;
                 totalDifficulty: bigint | null;
                 transactions: `0x${string}`[] | import("viem/chains").ZkSyncTransaction<boolean>[];
-                transactionsRoot: `0x${string}`;
-                uncles: `0x${string}`[];
+                transactionsRoot: import("viem").Hash;
+                uncles: import("viem").Hash[];
                 withdrawals?: import("viem").Withdrawal[] | undefined;
-                withdrawalsRoot?: `0x${string}` | undefined;
+                withdrawalsRoot?: import("viem").Hex | undefined;
                 l1BatchNumber: bigint | null;
                 l1BatchTimestamp: bigint | null;
-            };
+            } & {};
             type: "block";
         };
         readonly transaction: {
             exclude: [
             ] | undefined;
-            format: (args: import("viem/chains").ZkSyncRpcTransaction<boolean>) => {
-                r: `0x${string}`;
-                s: `0x${string}`;
+            format: (args: import("viem/chains").ZkSyncRpcTransaction) => ({
+                r: import("viem").Hex;
+                s: import("viem").Hex;
                 v: bigint;
-                to: `0x${string}` | null;
-                from: `0x${string}`;
+                to: import("abitype").Address | null;
+                from: import("abitype").Address;
                 gas: bigint;
                 nonce: number;
                 value: bigint;
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 accessList?: undefined;
                 authorizationList?: undefined;
                 blobVersionedHashes?: undefined;
@@ -4708,16 +4739,16 @@ declare const zkSync: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gas: bigint;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 nonce: number;
-                r: `0x${string}`;
-                s: `0x${string}`;
-                to: `0x${string}` | null;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 v: bigint;
                 value: bigint;
                 yParity: number;
@@ -4735,16 +4766,16 @@ declare const zkSync: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gas: bigint;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 nonce: number;
-                r: `0x${string}`;
-                s: `0x${string}`;
-                to: `0x${string}` | null;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 v: bigint;
                 value: bigint;
                 yParity: number;
@@ -4762,22 +4793,22 @@ declare const zkSync: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gas: bigint;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 nonce: number;
-                r: `0x${string}`;
-                s: `0x${string}`;
-                to: `0x${string}` | null;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 v: bigint;
                 value: bigint;
                 yParity: number;
                 accessList: import("viem").AccessList;
                 authorizationList?: undefined;
-                blobVersionedHashes: readonly `0x${string}`[];
+                blobVersionedHashes: readonly import("viem").Hex[];
                 chainId: number;
                 type: "eip4844";
                 gasPrice?: undefined;
@@ -4789,21 +4820,21 @@ declare const zkSync: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gas: bigint;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 nonce: number;
-                r: `0x${string}`;
-                s: `0x${string}`;
-                to: `0x${string}` | null;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 v: bigint;
                 value: bigint;
                 yParity: number;
                 accessList: import("viem").AccessList;
-                authorizationList: import("viem/experimental").SignedAuthorizationList<number>;
+                authorizationList: import("viem/experimental").SignedAuthorizationList;
                 blobVersionedHashes?: undefined;
                 chainId: number;
                 type: "eip7702";
@@ -4816,16 +4847,16 @@ declare const zkSync: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gas: bigint;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 nonce: number;
-                r: `0x${string}`;
-                s: `0x${string}`;
-                to: `0x${string}` | null;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 v: bigint;
                 value: bigint;
                 yParity: number;
@@ -4839,16 +4870,16 @@ declare const zkSync: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gas: bigint;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 nonce: number;
-                r: `0x${string}`;
-                s: `0x${string}`;
-                to: `0x${string}` | null;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 v: bigint;
                 value: bigint;
                 yParity: number;
@@ -4858,8 +4889,8 @@ declare const zkSync: Readonly<{
                 maxFeePerBlobGas?: undefined;
                 maxFeePerGas: bigint;
                 maxPriorityFeePerGas: bigint;
-                type: "priority" | "eip712";
-            };
+                type: "eip712" | "priority";
+            }) & {};
             type: "transaction";
         };
         readonly transactionReceipt: {
@@ -4867,36 +4898,36 @@ declare const zkSync: Readonly<{
             ] | undefined;
             format: (args: import("viem/chains").ZkSyncRpcTransactionReceipt) => {
                 type: import("viem/chains").ZkSyncTransactionType;
-                to: `0x${string}` | null;
-                from: `0x${string}`;
-                blockHash: `0x${string}`;
+                to: import("abitype").Address | null;
+                from: import("abitype").Address;
+                blockHash: import("viem").Hash;
                 blockNumber: bigint;
                 transactionIndex: number;
                 status: "success" | "reverted";
-                contractAddress: `0x${string}` | null | undefined;
-                logsBloom: `0x${string}`;
+                contractAddress: import("abitype").Address | null | undefined;
+                logsBloom: import("viem").Hex;
                 blobGasUsed?: bigint | undefined;
                 gasUsed: bigint;
-                transactionHash: `0x${string}`;
+                transactionHash: import("viem").Hash;
                 blobGasPrice?: bigint | undefined;
                 cumulativeGasUsed: bigint;
                 effectiveGasPrice: bigint;
-                root?: `0x${string}` | undefined;
+                root?: import("viem").Hash | undefined;
                 l1BatchNumber: bigint | null;
                 l1BatchTxIndex: bigint | null;
-                logs: import("viem/chains").ZkSyncLog<bigint, number, boolean, undefined, undefined, undefined, undefined>[];
+                logs: import("viem/chains").ZkSyncLog[];
                 l2ToL1Logs: import("viem/chains").ZkSyncL2ToL1Log[];
-            };
+            } & {};
             type: "transactionReceipt";
         };
         readonly transactionRequest: {
-            exclude: ("gasPerPubdata" | "paymaster" | "factoryDeps" | "paymasterInput" | "customSignature")[] | undefined;
-            format: (args: import("viem/chains").ZkSyncTransactionRequest<bigint, number>) => ({
-                data?: `0x${string}` | undefined;
-                from?: `0x${string}` | undefined;
+            exclude: ("paymaster" | "gasPerPubdata" | "factoryDeps" | "paymasterInput" | "customSignature")[] | undefined;
+            format: (args: import("viem/chains").ZkSyncTransactionRequest) => ({
+                data?: import("viem").Hex | undefined;
+                from?: import("abitype").Address | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
-                to?: `0x${string}` | null | undefined;
+                to?: import("abitype").Address | null | undefined;
                 type?: "0x0" | undefined;
                 value?: `0x${string}` | undefined;
                 gasPrice?: `0x${string}` | undefined;
@@ -4911,11 +4942,11 @@ declare const zkSync: Readonly<{
                 sidecars?: undefined;
                 eip712Meta?: undefined;
             } | {
-                data?: `0x${string}` | undefined;
-                from?: `0x${string}` | undefined;
+                data?: import("viem").Hex | undefined;
+                from?: import("abitype").Address | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
-                to?: `0x${string}` | null | undefined;
+                to?: import("abitype").Address | null | undefined;
                 type?: "0x1" | undefined;
                 value?: `0x${string}` | undefined;
                 gasPrice?: `0x${string}` | undefined;
@@ -4930,11 +4961,11 @@ declare const zkSync: Readonly<{
                 sidecars?: undefined;
                 eip712Meta?: undefined;
             } | {
-                data?: `0x${string}` | undefined;
-                from?: `0x${string}` | undefined;
+                data?: import("viem").Hex | undefined;
+                from?: import("abitype").Address | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
-                to?: `0x${string}` | null | undefined;
+                to?: import("abitype").Address | null | undefined;
                 type?: "0x2" | undefined;
                 value?: `0x${string}` | undefined;
                 gasPrice?: undefined;
@@ -4950,8 +4981,8 @@ declare const zkSync: Readonly<{
                 eip712Meta?: undefined;
             } | {
                 type?: "0x3" | undefined;
-                data?: `0x${string}` | undefined;
-                from?: `0x${string}` | undefined;
+                data?: import("viem").Hex | undefined;
+                from?: import("abitype").Address | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
@@ -4961,10 +4992,10 @@ declare const zkSync: Readonly<{
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
                 maxFeePerBlobGas: `0x${string}`;
                 accessList?: import("viem").AccessList | undefined;
-                blobs: readonly `0x${string}`[] | readonly Uint8Array[];
-                blobVersionedHashes?: readonly `0x${string}`[] | undefined;
+                blobs: readonly import("viem").Hex[] | readonly import("viem").ByteArray[];
+                blobVersionedHashes?: readonly import("viem").Hex[] | undefined;
                 kzg?: import("viem").Kzg | undefined;
-                sidecars?: readonly import("viem").BlobSidecar<`0x${string}`>[] | undefined;
+                sidecars?: readonly import("viem").BlobSidecar<import("viem").Hex>[] | undefined;
                 authorizationList?: undefined;
                 eip712Meta?: undefined;
             } | {
@@ -4973,9 +5004,9 @@ declare const zkSync: Readonly<{
                 maxFeePerBlobGas?: undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
-                to?: `0x${string}` | null | undefined;
-                data?: `0x${string}` | undefined;
-                from?: `0x${string}` | undefined;
+                to?: import("abitype").Address | null | undefined;
+                data?: import("viem").Hex | undefined;
+                from?: import("abitype").Address | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
@@ -4987,11 +5018,11 @@ declare const zkSync: Readonly<{
                 sidecars?: undefined;
                 eip712Meta?: undefined;
             } | {
-                data?: `0x${string}` | undefined;
-                from?: `0x${string}` | undefined;
+                data?: import("viem").Hex | undefined;
+                from?: import("abitype").Address | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
-                to?: `0x${string}` | null | undefined;
+                to?: import("abitype").Address | null | undefined;
                 type: "0xff" | "0x71";
                 value?: `0x${string}` | undefined;
                 gasPrice?: undefined;
@@ -5015,6 +5046,10 @@ declare const zkSync: Readonly<{
     network: "zksync-era";
 }>;
 type float64 = number;
+interface MorphoMetadata {
+    deployBlock?: number;
+    mmFactory?: Address;
+}
 interface UniswapMetadata {
     deployBlock?: number;
     poolFactory?: Address;
@@ -5142,6 +5177,7 @@ interface IChainInfo<formatters extends ChainFormatters | undefined = ChainForma
     initCodeHash: Hash;
     blockTimeSeconds: float64;
     uniswap: UniswapMetadata;
+    morpho: MorphoMetadata;
     token: TokenMetadata;
     oku: OkuMetadata;
     contracts: {
@@ -5165,6 +5201,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     blockTimeSeconds: 0.25;
     logoUrl: "https://assets.oku.trade/chains/arbitrum-logo.svg";
     safeReorgDistance: number;
+    morpho: {};
     externalId: {
         zerion: string;
         debank: string;
@@ -5325,7 +5362,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
     formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
 }>, Readonly<{
     sortIndex: 8;
     launchTime: 1707321600;
@@ -5334,6 +5371,10 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     defaultPool: "0xd0b53d9277642d899df5c87a3966a349a798f224";
     defaultToken0: "0x4200000000000000000000000000000000000006";
     defaultToken1: "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913";
+    morpho: {
+        deployBlock: number;
+        mmFactory: "0xa9c3d3a366466fa809d1ae982fb2c46e5fc41101";
+    };
     externalId: {
         zerion: string;
         debank: string;
@@ -5512,52 +5553,52 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     formatters: {
         readonly block: {
             exclude: [] | undefined;
-            format: (args: import("viem/chains").OpStackRpcBlock<import("viem").BlockTag, boolean>) => {
+            format: (args: import("viem/chains").OpStackRpcBlock) => {
                 baseFeePerGas: bigint | null;
                 blobGasUsed: bigint;
                 difficulty: bigint;
                 excessBlobGas: bigint;
-                extraData: `0x${string}`;
+                extraData: import("viem").Hex;
                 gasLimit: bigint;
                 gasUsed: bigint;
                 hash: `0x${string}` | null;
                 logsBloom: `0x${string}` | null;
-                miner: `0x${string}`;
-                mixHash: `0x${string}`;
+                miner: import("abitype").Address;
+                mixHash: import("viem").Hash;
                 nonce: `0x${string}` | null;
                 number: bigint | null;
-                parentBeaconBlockRoot?: `0x${string}` | undefined;
-                parentHash: `0x${string}`;
-                receiptsRoot: `0x${string}`;
-                sealFields: `0x${string}`[];
-                sha3Uncles: `0x${string}`;
+                parentBeaconBlockRoot?: import("viem").Hex | undefined;
+                parentHash: import("viem").Hash;
+                receiptsRoot: import("viem").Hex;
+                sealFields: import("viem").Hex[];
+                sha3Uncles: import("viem").Hash;
                 size: bigint;
-                stateRoot: `0x${string}`;
+                stateRoot: import("viem").Hash;
                 timestamp: bigint;
                 totalDifficulty: bigint | null;
                 transactions: `0x${string}`[] | import("viem/chains").OpStackTransaction<boolean>[];
-                transactionsRoot: `0x${string}`;
-                uncles: `0x${string}`[];
+                transactionsRoot: import("viem").Hash;
+                uncles: import("viem").Hash[];
                 withdrawals?: import("viem").Withdrawal[] | undefined;
-                withdrawalsRoot?: `0x${string}` | undefined;
-            };
+                withdrawalsRoot?: import("viem").Hex | undefined;
+            } & {};
             type: "block";
         };
         readonly transaction: {
             exclude: [] | undefined;
-            format: (args: import("viem/chains").OpStackRpcTransaction<boolean>) => {
+            format: (args: import("viem/chains").OpStackRpcTransaction) => ({
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gas: bigint;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 nonce: number;
-                r: `0x${string}`;
-                s: `0x${string}`;
-                to: `0x${string}` | null;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 v: bigint;
                 value: bigint;
                 yParity: number;
@@ -5565,25 +5606,25 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 maxFeePerBlobGas?: undefined;
                 maxFeePerGas: bigint;
                 maxPriorityFeePerGas: bigint;
-                isSystemTx?: boolean | undefined;
+                isSystemTx?: boolean;
                 mint?: bigint | undefined;
-                sourceHash: `0x${string}`;
+                sourceHash: import("viem").Hex;
                 type: "deposit";
             } | {
-                r: `0x${string}`;
-                s: `0x${string}`;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
                 v: bigint;
-                to: `0x${string}` | null;
-                from: `0x${string}`;
+                to: import("abitype").Address | null;
+                from: import("abitype").Address;
                 gas: bigint;
                 nonce: number;
                 value: bigint;
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 accessList?: undefined;
                 authorizationList?: undefined;
                 blobVersionedHashes?: undefined;
@@ -5600,16 +5641,16 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gas: bigint;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 nonce: number;
-                r: `0x${string}`;
-                s: `0x${string}`;
-                to: `0x${string}` | null;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 v: bigint;
                 value: bigint;
                 yParity: number;
@@ -5628,16 +5669,16 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gas: bigint;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 nonce: number;
-                r: `0x${string}`;
-                s: `0x${string}`;
-                to: `0x${string}` | null;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 v: bigint;
                 value: bigint;
                 yParity: number;
@@ -5656,22 +5697,22 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gas: bigint;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 nonce: number;
-                r: `0x${string}`;
-                s: `0x${string}`;
-                to: `0x${string}` | null;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 v: bigint;
                 value: bigint;
                 yParity: number;
                 accessList: import("viem").AccessList;
                 authorizationList?: undefined;
-                blobVersionedHashes: readonly `0x${string}`[];
+                blobVersionedHashes: readonly import("viem").Hex[];
                 chainId: number;
                 type: "eip4844";
                 gasPrice?: undefined;
@@ -5684,21 +5725,21 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gas: bigint;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 nonce: number;
-                r: `0x${string}`;
-                s: `0x${string}`;
-                to: `0x${string}` | null;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 v: bigint;
                 value: bigint;
                 yParity: number;
                 accessList: import("viem").AccessList;
-                authorizationList: import("viem/experimental").SignedAuthorizationList<number>;
+                authorizationList: import("viem/experimental").SignedAuthorizationList;
                 blobVersionedHashes?: undefined;
                 chainId: number;
                 type: "eip7702";
@@ -5709,7 +5750,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 isSystemTx?: undefined;
                 mint?: undefined;
                 sourceHash?: undefined;
-            };
+            }) & {};
             type: "transaction";
         };
         readonly transactionReceipt: {
@@ -5717,26 +5758,26 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             format: (args: import("viem/chains").OpStackRpcTransactionReceipt) => {
                 blobGasPrice?: bigint | undefined;
                 blobGasUsed?: bigint | undefined;
-                blockHash: `0x${string}`;
+                blockHash: import("viem").Hash;
                 blockNumber: bigint;
-                contractAddress: `0x${string}` | null | undefined;
+                contractAddress: import("abitype").Address | null | undefined;
                 cumulativeGasUsed: bigint;
                 effectiveGasPrice: bigint;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gasUsed: bigint;
-                logs: import("viem").Log<bigint, number, false, undefined, undefined, undefined, undefined>[];
-                logsBloom: `0x${string}`;
-                root?: `0x${string}` | undefined;
+                logs: import("viem").Log<bigint, number, false>[];
+                logsBloom: import("viem").Hex;
+                root?: import("viem").Hash | undefined;
                 status: "success" | "reverted";
-                to: `0x${string}` | null;
-                transactionHash: `0x${string}`;
+                to: import("abitype").Address | null;
+                transactionHash: import("viem").Hash;
                 transactionIndex: number;
                 type: import("viem").TransactionType;
                 l1GasPrice: bigint | null;
                 l1GasUsed: bigint | null;
                 l1Fee: bigint | null;
                 l1FeeScalar: number | null;
-            };
+            } & {};
             type: "transactionReceipt";
         };
     };
@@ -5754,6 +5795,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     externalId: {
         debank: string;
     };
+    morpho: {};
     markets: {};
     bridges: {};
     oracles: {
@@ -5862,7 +5904,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
     formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
 }>, Readonly<{
     blockTimeSeconds: 2;
     launchTime: 1719410400;
@@ -5872,6 +5914,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     externalId: {
         zerion: string;
     };
+    morpho: {};
     markets: {
         kyberswap: string;
         openocean: string;
@@ -5979,7 +6022,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
     formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
 }>, Readonly<{
     name: "BSC";
     launchTime: 1689346800;
@@ -5992,6 +6035,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         zerion: string;
         debank: string;
     };
+    morpho: {};
     markets: {
         airswap: true;
         kyberswap: string;
@@ -6126,7 +6170,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
     formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
 }>, Readonly<{
     sortIndex: 10;
     launchTime: 1677600000;
@@ -6134,6 +6178,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     blockTimeSeconds: 30;
     safeReorgDistance: 90000;
+    morpho: {};
     blockExplorers: {
         default: {
             name: string;
@@ -6252,7 +6297,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
     formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
 }>, Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     sortIndex: 0;
@@ -6260,6 +6305,10 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     blockTimeSeconds: 15;
     safeReorgDistance: 90000;
     logoUrl: "https://assets.oku.trade/chains/ethereum-logo.webp";
+    morpho: {
+        deployBlock: number;
+        mmFactory: "0x7f1f2d3dfa99678675ece1c243d3f7bc3746db5d";
+    };
     externalId: {
         zerion: string;
         debank: string;
@@ -6425,7 +6474,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
     formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
 }>, Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     sortIndex: 12;
@@ -6436,6 +6485,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     externalId: {
         debank: string;
     };
+    morpho: {};
     markets: {};
     bridges: {
         wanbridge: {
@@ -6545,7 +6595,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
     formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
 }>, Readonly<{
     name: "Optimism";
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
@@ -6558,6 +6608,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         zerion: string;
         debank: string;
     };
+    morpho: {};
     markets: {
         kyberswap: string;
         oneinch: true;
@@ -6747,52 +6798,52 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     formatters: {
         readonly block: {
             exclude: [] | undefined;
-            format: (args: import("viem/chains").OpStackRpcBlock<import("viem").BlockTag, boolean>) => {
+            format: (args: import("viem/chains").OpStackRpcBlock) => {
                 baseFeePerGas: bigint | null;
                 blobGasUsed: bigint;
                 difficulty: bigint;
                 excessBlobGas: bigint;
-                extraData: `0x${string}`;
+                extraData: import("viem").Hex;
                 gasLimit: bigint;
                 gasUsed: bigint;
                 hash: `0x${string}` | null;
                 logsBloom: `0x${string}` | null;
-                miner: `0x${string}`;
-                mixHash: `0x${string}`;
+                miner: import("abitype").Address;
+                mixHash: import("viem").Hash;
                 nonce: `0x${string}` | null;
                 number: bigint | null;
-                parentBeaconBlockRoot?: `0x${string}` | undefined;
-                parentHash: `0x${string}`;
-                receiptsRoot: `0x${string}`;
-                sealFields: `0x${string}`[];
-                sha3Uncles: `0x${string}`;
+                parentBeaconBlockRoot?: import("viem").Hex | undefined;
+                parentHash: import("viem").Hash;
+                receiptsRoot: import("viem").Hex;
+                sealFields: import("viem").Hex[];
+                sha3Uncles: import("viem").Hash;
                 size: bigint;
-                stateRoot: `0x${string}`;
+                stateRoot: import("viem").Hash;
                 timestamp: bigint;
                 totalDifficulty: bigint | null;
                 transactions: `0x${string}`[] | import("viem/chains").OpStackTransaction<boolean>[];
-                transactionsRoot: `0x${string}`;
-                uncles: `0x${string}`[];
+                transactionsRoot: import("viem").Hash;
+                uncles: import("viem").Hash[];
                 withdrawals?: import("viem").Withdrawal[] | undefined;
-                withdrawalsRoot?: `0x${string}` | undefined;
-            };
+                withdrawalsRoot?: import("viem").Hex | undefined;
+            } & {};
             type: "block";
         };
         readonly transaction: {
             exclude: [] | undefined;
-            format: (args: import("viem/chains").OpStackRpcTransaction<boolean>) => {
+            format: (args: import("viem/chains").OpStackRpcTransaction) => ({
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gas: bigint;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 nonce: number;
-                r: `0x${string}`;
-                s: `0x${string}`;
-                to: `0x${string}` | null;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 v: bigint;
                 value: bigint;
                 yParity: number;
@@ -6800,25 +6851,25 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 maxFeePerBlobGas?: undefined;
                 maxFeePerGas: bigint;
                 maxPriorityFeePerGas: bigint;
-                isSystemTx?: boolean | undefined;
+                isSystemTx?: boolean;
                 mint?: bigint | undefined;
-                sourceHash: `0x${string}`;
+                sourceHash: import("viem").Hex;
                 type: "deposit";
             } | {
-                r: `0x${string}`;
-                s: `0x${string}`;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
                 v: bigint;
-                to: `0x${string}` | null;
-                from: `0x${string}`;
+                to: import("abitype").Address | null;
+                from: import("abitype").Address;
                 gas: bigint;
                 nonce: number;
                 value: bigint;
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 accessList?: undefined;
                 authorizationList?: undefined;
                 blobVersionedHashes?: undefined;
@@ -6835,16 +6886,16 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gas: bigint;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 nonce: number;
-                r: `0x${string}`;
-                s: `0x${string}`;
-                to: `0x${string}` | null;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 v: bigint;
                 value: bigint;
                 yParity: number;
@@ -6863,16 +6914,16 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gas: bigint;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 nonce: number;
-                r: `0x${string}`;
-                s: `0x${string}`;
-                to: `0x${string}` | null;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 v: bigint;
                 value: bigint;
                 yParity: number;
@@ -6891,22 +6942,22 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gas: bigint;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 nonce: number;
-                r: `0x${string}`;
-                s: `0x${string}`;
-                to: `0x${string}` | null;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 v: bigint;
                 value: bigint;
                 yParity: number;
                 accessList: import("viem").AccessList;
                 authorizationList?: undefined;
-                blobVersionedHashes: readonly `0x${string}`[];
+                blobVersionedHashes: readonly import("viem").Hex[];
                 chainId: number;
                 type: "eip4844";
                 gasPrice?: undefined;
@@ -6919,21 +6970,21 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gas: bigint;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 nonce: number;
-                r: `0x${string}`;
-                s: `0x${string}`;
-                to: `0x${string}` | null;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 v: bigint;
                 value: bigint;
                 yParity: number;
                 accessList: import("viem").AccessList;
-                authorizationList: import("viem/experimental").SignedAuthorizationList<number>;
+                authorizationList: import("viem/experimental").SignedAuthorizationList;
                 blobVersionedHashes?: undefined;
                 chainId: number;
                 type: "eip7702";
@@ -6944,7 +6995,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 isSystemTx?: undefined;
                 mint?: undefined;
                 sourceHash?: undefined;
-            };
+            }) & {};
             type: "transaction";
         };
         readonly transactionReceipt: {
@@ -6952,26 +7003,26 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             format: (args: import("viem/chains").OpStackRpcTransactionReceipt) => {
                 blobGasPrice?: bigint | undefined;
                 blobGasUsed?: bigint | undefined;
-                blockHash: `0x${string}`;
+                blockHash: import("viem").Hash;
                 blockNumber: bigint;
-                contractAddress: `0x${string}` | null | undefined;
+                contractAddress: import("abitype").Address | null | undefined;
                 cumulativeGasUsed: bigint;
                 effectiveGasPrice: bigint;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gasUsed: bigint;
-                logs: import("viem").Log<bigint, number, false, undefined, undefined, undefined, undefined>[];
-                logsBloom: `0x${string}`;
-                root?: `0x${string}` | undefined;
+                logs: import("viem").Log<bigint, number, false>[];
+                logsBloom: import("viem").Hex;
+                root?: import("viem").Hash | undefined;
                 status: "success" | "reverted";
-                to: `0x${string}` | null;
-                transactionHash: `0x${string}`;
+                to: import("abitype").Address | null;
+                transactionHash: import("viem").Hash;
                 transactionIndex: number;
                 type: import("viem").TransactionType;
                 l1GasPrice: bigint | null;
                 l1GasUsed: bigint | null;
                 l1Fee: bigint | null;
                 l1FeeScalar: number | null;
-            };
+            } & {};
             type: "transactionReceipt";
         };
     };
@@ -6989,6 +7040,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         zerion: string;
         debank: string;
     };
+    morpho: {};
     markets: {
         airswap: true;
         kyberswap: string;
@@ -7141,7 +7193,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
     formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
 }>, Readonly<{
     sortIndex: 7;
     launchTime: 1702479600;
@@ -7154,6 +7206,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     markets: {
         openocean: string;
     };
+    morpho: {};
     bridges: {};
     oracles: {
         cmc: {
@@ -7257,7 +7310,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
     formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
     network: "rootstock";
 }>, Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
@@ -7269,6 +7322,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     externalId: {
         zerion: string;
     };
+    morpho: {};
     markets: {
         kyberswap: string;
         openocean: string;
@@ -7395,7 +7449,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
     formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
 }>, Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     sortIndex: 6;
@@ -7403,6 +7457,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     blockTimeSeconds: 7;
     logoUrl: "https://assets.oku.trade/chains/zkevm-logo.svg";
     safeReorgDistance: 90000;
+    morpho: {};
     externalId: {
         zerion: string;
     };
@@ -7516,13 +7571,14 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
     formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
 }>, Readonly<{
     blockTimeSeconds: 2;
     sortIndex: 4;
     launchTime: 1696514400;
     logoUrl: "https://assets.oku.trade/chains/zksync-logo.svg";
     safeReorgDistance: 90000;
+    morpho: {};
     externalId: {
         zerion: string;
     };
@@ -7648,56 +7704,56 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     formatters: {
         readonly block: {
             exclude: [] | undefined;
-            format: (args: import("viem/zksync").ZkSyncRpcBlock<import("viem").BlockTag, boolean>) => {
+            format: (args: import("viem/zksync").ZkSyncRpcBlock) => {
                 baseFeePerGas: bigint | null;
                 blobGasUsed: bigint;
                 difficulty: bigint;
                 excessBlobGas: bigint;
-                extraData: `0x${string}`;
+                extraData: import("viem").Hex;
                 gasLimit: bigint;
                 gasUsed: bigint;
                 hash: `0x${string}` | null;
                 logsBloom: `0x${string}` | null;
-                miner: `0x${string}`;
-                mixHash: `0x${string}`;
+                miner: import("abitype").Address;
+                mixHash: import("viem").Hash;
                 nonce: `0x${string}` | null;
                 number: bigint | null;
-                parentBeaconBlockRoot?: `0x${string}` | undefined;
-                parentHash: `0x${string}`;
-                receiptsRoot: `0x${string}`;
-                sealFields: `0x${string}`[];
-                sha3Uncles: `0x${string}`;
+                parentBeaconBlockRoot?: import("viem").Hex | undefined;
+                parentHash: import("viem").Hash;
+                receiptsRoot: import("viem").Hex;
+                sealFields: import("viem").Hex[];
+                sha3Uncles: import("viem").Hash;
                 size: bigint;
-                stateRoot: `0x${string}`;
+                stateRoot: import("viem").Hash;
                 timestamp: bigint;
                 totalDifficulty: bigint | null;
-                transactions: `0x${string}`[] | import("viem/zksync").ZkSyncTransaction<boolean>[];
-                transactionsRoot: `0x${string}`;
-                uncles: `0x${string}`[];
+                transactions: `0x${string}`[] | import("viem/chains").ZkSyncTransaction<boolean>[];
+                transactionsRoot: import("viem").Hash;
+                uncles: import("viem").Hash[];
                 withdrawals?: import("viem").Withdrawal[] | undefined;
-                withdrawalsRoot?: `0x${string}` | undefined;
+                withdrawalsRoot?: import("viem").Hex | undefined;
                 l1BatchNumber: bigint | null;
                 l1BatchTimestamp: bigint | null;
-            };
+            } & {};
             type: "block";
         };
         readonly transaction: {
             exclude: [] | undefined;
-            format: (args: import("viem/zksync").ZkSyncRpcTransaction<boolean>) => {
-                r: `0x${string}`;
-                s: `0x${string}`;
+            format: (args: import("viem/zksync").ZkSyncRpcTransaction) => ({
+                r: import("viem").Hex;
+                s: import("viem").Hex;
                 v: bigint;
-                to: `0x${string}` | null;
-                from: `0x${string}`;
+                to: import("abitype").Address | null;
+                from: import("abitype").Address;
                 gas: bigint;
                 nonce: number;
                 value: bigint;
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 accessList?: undefined;
                 authorizationList?: undefined;
                 blobVersionedHashes?: undefined;
@@ -7713,16 +7769,16 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gas: bigint;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 nonce: number;
-                r: `0x${string}`;
-                s: `0x${string}`;
-                to: `0x${string}` | null;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 v: bigint;
                 value: bigint;
                 yParity: number;
@@ -7740,16 +7796,16 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gas: bigint;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 nonce: number;
-                r: `0x${string}`;
-                s: `0x${string}`;
-                to: `0x${string}` | null;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 v: bigint;
                 value: bigint;
                 yParity: number;
@@ -7767,22 +7823,22 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gas: bigint;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 nonce: number;
-                r: `0x${string}`;
-                s: `0x${string}`;
-                to: `0x${string}` | null;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 v: bigint;
                 value: bigint;
                 yParity: number;
                 accessList: import("viem").AccessList;
                 authorizationList?: undefined;
-                blobVersionedHashes: readonly `0x${string}`[];
+                blobVersionedHashes: readonly import("viem").Hex[];
                 chainId: number;
                 type: "eip4844";
                 gasPrice?: undefined;
@@ -7794,21 +7850,21 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gas: bigint;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 nonce: number;
-                r: `0x${string}`;
-                s: `0x${string}`;
-                to: `0x${string}` | null;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 v: bigint;
                 value: bigint;
                 yParity: number;
                 accessList: import("viem").AccessList;
-                authorizationList: import("viem/experimental").SignedAuthorizationList<number>;
+                authorizationList: import("viem/experimental").SignedAuthorizationList;
                 blobVersionedHashes?: undefined;
                 chainId: number;
                 type: "eip7702";
@@ -7821,16 +7877,16 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gas: bigint;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 nonce: number;
-                r: `0x${string}`;
-                s: `0x${string}`;
-                to: `0x${string}` | null;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 v: bigint;
                 value: bigint;
                 yParity: number;
@@ -7844,16 +7900,16 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gas: bigint;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 nonce: number;
-                r: `0x${string}`;
-                s: `0x${string}`;
-                to: `0x${string}` | null;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 v: bigint;
                 value: bigint;
                 yParity: number;
@@ -7863,44 +7919,44 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 maxFeePerBlobGas?: undefined;
                 maxFeePerGas: bigint;
                 maxPriorityFeePerGas: bigint;
-                type: "priority" | "eip712";
-            };
+                type: "eip712" | "priority";
+            }) & {};
             type: "transaction";
         };
         readonly transactionReceipt: {
             exclude: [] | undefined;
             format: (args: import("viem/zksync").ZkSyncRpcTransactionReceipt) => {
-                type: import("viem/zksync").ZkSyncTransactionType;
-                to: `0x${string}` | null;
-                from: `0x${string}`;
-                blockHash: `0x${string}`;
+                type: import("viem/chains").ZkSyncTransactionType;
+                to: import("abitype").Address | null;
+                from: import("abitype").Address;
+                blockHash: import("viem").Hash;
                 blockNumber: bigint;
                 transactionIndex: number;
                 status: "success" | "reverted";
-                contractAddress: `0x${string}` | null | undefined;
-                logsBloom: `0x${string}`;
+                contractAddress: import("abitype").Address | null | undefined;
+                logsBloom: import("viem").Hex;
                 blobGasUsed?: bigint | undefined;
                 gasUsed: bigint;
-                transactionHash: `0x${string}`;
+                transactionHash: import("viem").Hash;
                 blobGasPrice?: bigint | undefined;
                 cumulativeGasUsed: bigint;
                 effectiveGasPrice: bigint;
-                root?: `0x${string}` | undefined;
+                root?: import("viem").Hash | undefined;
                 l1BatchNumber: bigint | null;
                 l1BatchTxIndex: bigint | null;
-                logs: import("viem/zksync").ZkSyncLog<bigint, number, boolean, undefined, undefined, undefined, undefined>[];
-                l2ToL1Logs: import("viem/zksync").ZkSyncL2ToL1Log[];
-            };
+                logs: import("viem/chains").ZkSyncLog[];
+                l2ToL1Logs: import("viem/chains").ZkSyncL2ToL1Log[];
+            } & {};
             type: "transactionReceipt";
         };
         readonly transactionRequest: {
-            exclude: ("gasPerPubdata" | "paymaster" | "factoryDeps" | "paymasterInput" | "customSignature")[] | undefined;
-            format: (args: import("viem/zksync").ZkSyncTransactionRequest<bigint, number>) => ({
-                data?: `0x${string}` | undefined;
-                from?: `0x${string}` | undefined;
+            exclude: ("paymaster" | "gasPerPubdata" | "factoryDeps" | "paymasterInput" | "customSignature")[] | undefined;
+            format: (args: import("viem/zksync").ZkSyncTransactionRequest) => ({
+                data?: import("viem").Hex | undefined;
+                from?: import("abitype").Address | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
-                to?: `0x${string}` | null | undefined;
+                to?: import("abitype").Address | null | undefined;
                 type?: "0x0" | undefined;
                 value?: `0x${string}` | undefined;
                 gasPrice?: `0x${string}` | undefined;
@@ -7915,11 +7971,11 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 sidecars?: undefined;
                 eip712Meta?: undefined;
             } | {
-                data?: `0x${string}` | undefined;
-                from?: `0x${string}` | undefined;
+                data?: import("viem").Hex | undefined;
+                from?: import("abitype").Address | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
-                to?: `0x${string}` | null | undefined;
+                to?: import("abitype").Address | null | undefined;
                 type?: "0x1" | undefined;
                 value?: `0x${string}` | undefined;
                 gasPrice?: `0x${string}` | undefined;
@@ -7934,11 +7990,11 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 sidecars?: undefined;
                 eip712Meta?: undefined;
             } | {
-                data?: `0x${string}` | undefined;
-                from?: `0x${string}` | undefined;
+                data?: import("viem").Hex | undefined;
+                from?: import("abitype").Address | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
-                to?: `0x${string}` | null | undefined;
+                to?: import("abitype").Address | null | undefined;
                 type?: "0x2" | undefined;
                 value?: `0x${string}` | undefined;
                 gasPrice?: undefined;
@@ -7954,8 +8010,8 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 eip712Meta?: undefined;
             } | {
                 type?: "0x3" | undefined;
-                data?: `0x${string}` | undefined;
-                from?: `0x${string}` | undefined;
+                data?: import("viem").Hex | undefined;
+                from?: import("abitype").Address | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
@@ -7965,10 +8021,10 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
                 maxFeePerBlobGas: `0x${string}`;
                 accessList?: import("viem").AccessList | undefined;
-                blobs: readonly `0x${string}`[] | readonly Uint8Array[];
-                blobVersionedHashes?: readonly `0x${string}`[] | undefined;
+                blobs: readonly import("viem").Hex[] | readonly import("viem").ByteArray[];
+                blobVersionedHashes?: readonly import("viem").Hex[] | undefined;
                 kzg?: import("viem").Kzg | undefined;
-                sidecars?: readonly import("viem").BlobSidecar<`0x${string}`>[] | undefined;
+                sidecars?: readonly import("viem").BlobSidecar<import("viem").Hex>[] | undefined;
                 authorizationList?: undefined;
                 eip712Meta?: undefined;
             } | {
@@ -7977,9 +8033,9 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 maxFeePerBlobGas?: undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
-                to?: `0x${string}` | null | undefined;
-                data?: `0x${string}` | undefined;
-                from?: `0x${string}` | undefined;
+                to?: import("abitype").Address | null | undefined;
+                data?: import("viem").Hex | undefined;
+                from?: import("abitype").Address | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
@@ -7991,18 +8047,18 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 sidecars?: undefined;
                 eip712Meta?: undefined;
             } | {
-                data?: `0x${string}` | undefined;
-                from?: `0x${string}` | undefined;
+                data?: import("viem").Hex | undefined;
+                from?: import("abitype").Address | undefined;
                 gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
-                to?: `0x${string}` | null | undefined;
+                to?: import("abitype").Address | null | undefined;
                 type: "0xff" | "0x71";
                 value?: `0x${string}` | undefined;
                 gasPrice?: undefined;
                 maxFeePerBlobGas?: undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
-                eip712Meta: import("viem/zksync").ZkSyncEip712Meta;
+                eip712Meta: import("viem/chains").ZkSyncEip712Meta;
             }) & {
                 paymaster: never;
                 gasPerPubdata: never;
@@ -8026,6 +8082,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     logoUrl: "https://assets.oku.trade/chains/manta-logo.png";
     safeReorgDistance: 90000;
     externalId: {};
+    morpho: {};
     markets: {
         openocean: string;
     };
@@ -8135,7 +8192,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
     formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
     network: "manta";
 }>, Readonly<{
     name: "Linea";
@@ -8143,6 +8200,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     blockTimeSeconds: 2;
     sortIndex: 15;
+    morpho: {};
     logoUrl: "https://assets.oku.trade/chains/linea-logo.svg";
     safeReorgDistance: 100;
     externalId: {
@@ -8261,11 +8319,11 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     testnet: false;
     custom?: Record<string, unknown> | undefined;
     fees: {
-        readonly estimateFeesPerGas: ({ client, multiply, request, type, }: import("viem").ChainEstimateFeesPerGasFnParameters<import("viem").ChainFormatters | undefined>) => Promise<import("viem").EstimateFeesPerGasReturnType | null>;
+        readonly estimateFeesPerGas: ({ client, multiply, request, type, }: Parameters<import("viem").ChainEstimateFeesPerGasFn>[0]) => ReturnType<import("viem").ChainEstimateFeesPerGasFn>;
         readonly maxPriorityFeePerGas: ({ block, client, request }: import("viem").ChainFeesFnParameters<import("viem").ChainFormatters | undefined>) => Promise<bigint | null>;
     };
     formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
 }>, Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     blockTimeSeconds: 24;
@@ -8275,6 +8333,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     safeReorgDistance: 90000;
     externalId: {};
     markets: {};
+    morpho: {};
     bridges: {
         rhinofi: string;
         stargate: {
@@ -8384,7 +8443,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
     formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
 }>, Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     blockTimeSeconds: 2;
@@ -8393,6 +8452,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     logoUrl: "https://assets.oku.trade/chains/mantle-logo.png";
     safeReorgDistance: 90000;
     externalId: {};
+    morpho: {};
     markets: {
         openocean: string;
         zeroex: true;
@@ -8501,7 +8561,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
     formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
 }>, Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     blockTimeSeconds: 0.4;
@@ -8513,6 +8573,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     markets: {
         openocean: string;
     };
+    morpho: {};
     bridges: {
         stargate: {
             endpointID: number;
@@ -8621,7 +8682,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
     formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
 }>, Readonly<{
     blockTimeSeconds: 2;
     launchTime: 1724076000;
@@ -8629,6 +8690,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     logoUrl: "https://assets.oku.trade/chains/lisk-logo.png";
     safeReorgDistance: 90000;
     externalId: {};
+    morpho: {};
     markets: {};
     bridges: {};
     oracles: {
@@ -8758,52 +8820,52 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     formatters: {
         readonly block: {
             exclude: [] | undefined;
-            format: (args: import("viem/chains").OpStackRpcBlock<import("viem").BlockTag, boolean>) => {
+            format: (args: import("viem/chains").OpStackRpcBlock) => {
                 baseFeePerGas: bigint | null;
                 blobGasUsed: bigint;
                 difficulty: bigint;
                 excessBlobGas: bigint;
-                extraData: `0x${string}`;
+                extraData: import("viem").Hex;
                 gasLimit: bigint;
                 gasUsed: bigint;
                 hash: `0x${string}` | null;
                 logsBloom: `0x${string}` | null;
-                miner: `0x${string}`;
-                mixHash: `0x${string}`;
+                miner: import("abitype").Address;
+                mixHash: import("viem").Hash;
                 nonce: `0x${string}` | null;
                 number: bigint | null;
-                parentBeaconBlockRoot?: `0x${string}` | undefined;
-                parentHash: `0x${string}`;
-                receiptsRoot: `0x${string}`;
-                sealFields: `0x${string}`[];
-                sha3Uncles: `0x${string}`;
+                parentBeaconBlockRoot?: import("viem").Hex | undefined;
+                parentHash: import("viem").Hash;
+                receiptsRoot: import("viem").Hex;
+                sealFields: import("viem").Hex[];
+                sha3Uncles: import("viem").Hash;
                 size: bigint;
-                stateRoot: `0x${string}`;
+                stateRoot: import("viem").Hash;
                 timestamp: bigint;
                 totalDifficulty: bigint | null;
                 transactions: `0x${string}`[] | import("viem/chains").OpStackTransaction<boolean>[];
-                transactionsRoot: `0x${string}`;
-                uncles: `0x${string}`[];
+                transactionsRoot: import("viem").Hash;
+                uncles: import("viem").Hash[];
                 withdrawals?: import("viem").Withdrawal[] | undefined;
-                withdrawalsRoot?: `0x${string}` | undefined;
-            };
+                withdrawalsRoot?: import("viem").Hex | undefined;
+            } & {};
             type: "block";
         };
         readonly transaction: {
             exclude: [] | undefined;
-            format: (args: import("viem/chains").OpStackRpcTransaction<boolean>) => {
+            format: (args: import("viem/chains").OpStackRpcTransaction) => ({
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gas: bigint;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 nonce: number;
-                r: `0x${string}`;
-                s: `0x${string}`;
-                to: `0x${string}` | null;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 v: bigint;
                 value: bigint;
                 yParity: number;
@@ -8811,25 +8873,25 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 maxFeePerBlobGas?: undefined;
                 maxFeePerGas: bigint;
                 maxPriorityFeePerGas: bigint;
-                isSystemTx?: boolean | undefined;
+                isSystemTx?: boolean;
                 mint?: bigint | undefined;
-                sourceHash: `0x${string}`;
+                sourceHash: import("viem").Hex;
                 type: "deposit";
             } | {
-                r: `0x${string}`;
-                s: `0x${string}`;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
                 v: bigint;
-                to: `0x${string}` | null;
-                from: `0x${string}`;
+                to: import("abitype").Address | null;
+                from: import("abitype").Address;
                 gas: bigint;
                 nonce: number;
                 value: bigint;
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 accessList?: undefined;
                 authorizationList?: undefined;
                 blobVersionedHashes?: undefined;
@@ -8846,16 +8908,16 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gas: bigint;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 nonce: number;
-                r: `0x${string}`;
-                s: `0x${string}`;
-                to: `0x${string}` | null;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 v: bigint;
                 value: bigint;
                 yParity: number;
@@ -8874,16 +8936,16 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gas: bigint;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 nonce: number;
-                r: `0x${string}`;
-                s: `0x${string}`;
-                to: `0x${string}` | null;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 v: bigint;
                 value: bigint;
                 yParity: number;
@@ -8902,22 +8964,22 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gas: bigint;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 nonce: number;
-                r: `0x${string}`;
-                s: `0x${string}`;
-                to: `0x${string}` | null;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 v: bigint;
                 value: bigint;
                 yParity: number;
                 accessList: import("viem").AccessList;
                 authorizationList?: undefined;
-                blobVersionedHashes: readonly `0x${string}`[];
+                blobVersionedHashes: readonly import("viem").Hex[];
                 chainId: number;
                 type: "eip4844";
                 gasPrice?: undefined;
@@ -8930,21 +8992,21 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gas: bigint;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 nonce: number;
-                r: `0x${string}`;
-                s: `0x${string}`;
-                to: `0x${string}` | null;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 v: bigint;
                 value: bigint;
                 yParity: number;
                 accessList: import("viem").AccessList;
-                authorizationList: import("viem/experimental").SignedAuthorizationList<number>;
+                authorizationList: import("viem/experimental").SignedAuthorizationList;
                 blobVersionedHashes?: undefined;
                 chainId: number;
                 type: "eip7702";
@@ -8955,7 +9017,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 isSystemTx?: undefined;
                 mint?: undefined;
                 sourceHash?: undefined;
-            };
+            }) & {};
             type: "transaction";
         };
         readonly transactionReceipt: {
@@ -8963,26 +9025,26 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             format: (args: import("viem/chains").OpStackRpcTransactionReceipt) => {
                 blobGasPrice?: bigint | undefined;
                 blobGasUsed?: bigint | undefined;
-                blockHash: `0x${string}`;
+                blockHash: import("viem").Hash;
                 blockNumber: bigint;
-                contractAddress: `0x${string}` | null | undefined;
+                contractAddress: import("abitype").Address | null | undefined;
                 cumulativeGasUsed: bigint;
                 effectiveGasPrice: bigint;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gasUsed: bigint;
-                logs: import("viem").Log<bigint, number, false, undefined, undefined, undefined, undefined>[];
-                logsBloom: `0x${string}`;
-                root?: `0x${string}` | undefined;
+                logs: import("viem").Log<bigint, number, false>[];
+                logsBloom: import("viem").Hex;
+                root?: import("viem").Hash | undefined;
                 status: "success" | "reverted";
-                to: `0x${string}` | null;
-                transactionHash: `0x${string}`;
+                to: import("abitype").Address | null;
+                transactionHash: import("viem").Hash;
                 transactionIndex: number;
                 type: import("viem").TransactionType;
                 l1GasPrice: bigint | null;
                 l1GasUsed: bigint | null;
                 l1Fee: bigint | null;
                 l1FeeScalar: number | null;
-            };
+            } & {};
             type: "transactionReceipt";
         };
     };
@@ -8999,6 +9061,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     externalId: {};
     markets: {};
     bridges: {};
+    morpho: {};
     oracles: {
         coingecko: {
             slug: string;
@@ -9136,52 +9199,52 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     formatters: {
         readonly block: {
             exclude: [] | undefined;
-            format: (args: import("viem/chains").OpStackRpcBlock<import("viem").BlockTag, boolean>) => {
+            format: (args: import("viem/chains").OpStackRpcBlock) => {
                 baseFeePerGas: bigint | null;
                 blobGasUsed: bigint;
                 difficulty: bigint;
                 excessBlobGas: bigint;
-                extraData: `0x${string}`;
+                extraData: import("viem").Hex;
                 gasLimit: bigint;
                 gasUsed: bigint;
                 hash: `0x${string}` | null;
                 logsBloom: `0x${string}` | null;
-                miner: `0x${string}`;
-                mixHash: `0x${string}`;
+                miner: import("abitype").Address;
+                mixHash: import("viem").Hash;
                 nonce: `0x${string}` | null;
                 number: bigint | null;
-                parentBeaconBlockRoot?: `0x${string}` | undefined;
-                parentHash: `0x${string}`;
-                receiptsRoot: `0x${string}`;
-                sealFields: `0x${string}`[];
-                sha3Uncles: `0x${string}`;
+                parentBeaconBlockRoot?: import("viem").Hex | undefined;
+                parentHash: import("viem").Hash;
+                receiptsRoot: import("viem").Hex;
+                sealFields: import("viem").Hex[];
+                sha3Uncles: import("viem").Hash;
                 size: bigint;
-                stateRoot: `0x${string}`;
+                stateRoot: import("viem").Hash;
                 timestamp: bigint;
                 totalDifficulty: bigint | null;
                 transactions: `0x${string}`[] | import("viem/chains").OpStackTransaction<boolean>[];
-                transactionsRoot: `0x${string}`;
-                uncles: `0x${string}`[];
+                transactionsRoot: import("viem").Hash;
+                uncles: import("viem").Hash[];
                 withdrawals?: import("viem").Withdrawal[] | undefined;
-                withdrawalsRoot?: `0x${string}` | undefined;
-            };
+                withdrawalsRoot?: import("viem").Hex | undefined;
+            } & {};
             type: "block";
         };
         readonly transaction: {
             exclude: [] | undefined;
-            format: (args: import("viem/chains").OpStackRpcTransaction<boolean>) => {
+            format: (args: import("viem/chains").OpStackRpcTransaction) => ({
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gas: bigint;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 nonce: number;
-                r: `0x${string}`;
-                s: `0x${string}`;
-                to: `0x${string}` | null;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 v: bigint;
                 value: bigint;
                 yParity: number;
@@ -9189,25 +9252,25 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 maxFeePerBlobGas?: undefined;
                 maxFeePerGas: bigint;
                 maxPriorityFeePerGas: bigint;
-                isSystemTx?: boolean | undefined;
+                isSystemTx?: boolean;
                 mint?: bigint | undefined;
-                sourceHash: `0x${string}`;
+                sourceHash: import("viem").Hex;
                 type: "deposit";
             } | {
-                r: `0x${string}`;
-                s: `0x${string}`;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
                 v: bigint;
-                to: `0x${string}` | null;
-                from: `0x${string}`;
+                to: import("abitype").Address | null;
+                from: import("abitype").Address;
                 gas: bigint;
                 nonce: number;
                 value: bigint;
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 accessList?: undefined;
                 authorizationList?: undefined;
                 blobVersionedHashes?: undefined;
@@ -9224,16 +9287,16 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gas: bigint;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 nonce: number;
-                r: `0x${string}`;
-                s: `0x${string}`;
-                to: `0x${string}` | null;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 v: bigint;
                 value: bigint;
                 yParity: number;
@@ -9252,16 +9315,16 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gas: bigint;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 nonce: number;
-                r: `0x${string}`;
-                s: `0x${string}`;
-                to: `0x${string}` | null;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 v: bigint;
                 value: bigint;
                 yParity: number;
@@ -9280,22 +9343,22 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gas: bigint;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 nonce: number;
-                r: `0x${string}`;
-                s: `0x${string}`;
-                to: `0x${string}` | null;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 v: bigint;
                 value: bigint;
                 yParity: number;
                 accessList: import("viem").AccessList;
                 authorizationList?: undefined;
-                blobVersionedHashes: readonly `0x${string}`[];
+                blobVersionedHashes: readonly import("viem").Hex[];
                 chainId: number;
                 type: "eip4844";
                 gasPrice?: undefined;
@@ -9308,21 +9371,21 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gas: bigint;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 nonce: number;
-                r: `0x${string}`;
-                s: `0x${string}`;
-                to: `0x${string}` | null;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 v: bigint;
                 value: bigint;
                 yParity: number;
                 accessList: import("viem").AccessList;
-                authorizationList: import("viem/experimental").SignedAuthorizationList<number>;
+                authorizationList: import("viem/experimental").SignedAuthorizationList;
                 blobVersionedHashes?: undefined;
                 chainId: number;
                 type: "eip7702";
@@ -9333,7 +9396,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 isSystemTx?: undefined;
                 mint?: undefined;
                 sourceHash?: undefined;
-            };
+            }) & {};
             type: "transaction";
         };
         readonly transactionReceipt: {
@@ -9341,26 +9404,26 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             format: (args: import("viem/chains").OpStackRpcTransactionReceipt) => {
                 blobGasPrice?: bigint | undefined;
                 blobGasUsed?: bigint | undefined;
-                blockHash: `0x${string}`;
+                blockHash: import("viem").Hash;
                 blockNumber: bigint;
-                contractAddress: `0x${string}` | null | undefined;
+                contractAddress: import("abitype").Address | null | undefined;
                 cumulativeGasUsed: bigint;
                 effectiveGasPrice: bigint;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gasUsed: bigint;
-                logs: import("viem").Log<bigint, number, false, undefined, undefined, undefined, undefined>[];
-                logsBloom: `0x${string}`;
-                root?: `0x${string}` | undefined;
+                logs: import("viem").Log<bigint, number, false>[];
+                logsBloom: import("viem").Hex;
+                root?: import("viem").Hash | undefined;
                 status: "success" | "reverted";
-                to: `0x${string}` | null;
-                transactionHash: `0x${string}`;
+                to: import("abitype").Address | null;
+                transactionHash: import("viem").Hash;
                 transactionIndex: number;
                 type: import("viem").TransactionType;
                 l1GasPrice: bigint | null;
                 l1GasUsed: bigint | null;
                 l1Fee: bigint | null;
                 l1FeeScalar: number | null;
-            };
+            } & {};
             type: "transactionReceipt";
         };
     };
@@ -9373,6 +9436,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     sortIndex: 18;
     logoUrl: "https://assets.oku.trade/chains/gnosis-logo.png";
     safeReorgDistance: 90000;
+    morpho: {};
     externalId: {
         zerion: string;
         cowswap: string;
@@ -9490,7 +9554,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
     formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
 }>, Readonly<{
     blockTimeSeconds: 3;
     launchTime: 0;
@@ -9500,6 +9564,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     externalId: {};
     markets: {};
     bridges: {};
+    morpho: {};
     oracles: {
         cmc: {
             slug: string;
@@ -9604,7 +9669,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
     formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
 }>, Readonly<{
     blockTimeSeconds: 2;
     launchTime: 1733882663;
@@ -9612,6 +9677,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     logoUrl: "https://assets.oku.trade/chains/metal-logo.png";
     safeReorgDistance: 90000;
     externalId: {};
+    morpho: {};
     markets: {};
     bridges: {};
     oracles: {};
@@ -9737,52 +9803,52 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     formatters: {
         readonly block: {
             exclude: [] | undefined;
-            format: (args: import("viem/chains").OpStackRpcBlock<import("viem").BlockTag, boolean>) => {
+            format: (args: import("viem/chains").OpStackRpcBlock) => {
                 baseFeePerGas: bigint | null;
                 blobGasUsed: bigint;
                 difficulty: bigint;
                 excessBlobGas: bigint;
-                extraData: `0x${string}`;
+                extraData: import("viem").Hex;
                 gasLimit: bigint;
                 gasUsed: bigint;
                 hash: `0x${string}` | null;
                 logsBloom: `0x${string}` | null;
-                miner: `0x${string}`;
-                mixHash: `0x${string}`;
+                miner: import("abitype").Address;
+                mixHash: import("viem").Hash;
                 nonce: `0x${string}` | null;
                 number: bigint | null;
-                parentBeaconBlockRoot?: `0x${string}` | undefined;
-                parentHash: `0x${string}`;
-                receiptsRoot: `0x${string}`;
-                sealFields: `0x${string}`[];
-                sha3Uncles: `0x${string}`;
+                parentBeaconBlockRoot?: import("viem").Hex | undefined;
+                parentHash: import("viem").Hash;
+                receiptsRoot: import("viem").Hex;
+                sealFields: import("viem").Hex[];
+                sha3Uncles: import("viem").Hash;
                 size: bigint;
-                stateRoot: `0x${string}`;
+                stateRoot: import("viem").Hash;
                 timestamp: bigint;
                 totalDifficulty: bigint | null;
                 transactions: `0x${string}`[] | import("viem/chains").OpStackTransaction<boolean>[];
-                transactionsRoot: `0x${string}`;
-                uncles: `0x${string}`[];
+                transactionsRoot: import("viem").Hash;
+                uncles: import("viem").Hash[];
                 withdrawals?: import("viem").Withdrawal[] | undefined;
-                withdrawalsRoot?: `0x${string}` | undefined;
-            };
+                withdrawalsRoot?: import("viem").Hex | undefined;
+            } & {};
             type: "block";
         };
         readonly transaction: {
             exclude: [] | undefined;
-            format: (args: import("viem/chains").OpStackRpcTransaction<boolean>) => {
+            format: (args: import("viem/chains").OpStackRpcTransaction) => ({
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gas: bigint;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 nonce: number;
-                r: `0x${string}`;
-                s: `0x${string}`;
-                to: `0x${string}` | null;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 v: bigint;
                 value: bigint;
                 yParity: number;
@@ -9790,25 +9856,25 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 maxFeePerBlobGas?: undefined;
                 maxFeePerGas: bigint;
                 maxPriorityFeePerGas: bigint;
-                isSystemTx?: boolean | undefined;
+                isSystemTx?: boolean;
                 mint?: bigint | undefined;
-                sourceHash: `0x${string}`;
+                sourceHash: import("viem").Hex;
                 type: "deposit";
             } | {
-                r: `0x${string}`;
-                s: `0x${string}`;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
                 v: bigint;
-                to: `0x${string}` | null;
-                from: `0x${string}`;
+                to: import("abitype").Address | null;
+                from: import("abitype").Address;
                 gas: bigint;
                 nonce: number;
                 value: bigint;
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 accessList?: undefined;
                 authorizationList?: undefined;
                 blobVersionedHashes?: undefined;
@@ -9825,16 +9891,16 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gas: bigint;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 nonce: number;
-                r: `0x${string}`;
-                s: `0x${string}`;
-                to: `0x${string}` | null;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 v: bigint;
                 value: bigint;
                 yParity: number;
@@ -9853,16 +9919,16 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gas: bigint;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 nonce: number;
-                r: `0x${string}`;
-                s: `0x${string}`;
-                to: `0x${string}` | null;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 v: bigint;
                 value: bigint;
                 yParity: number;
@@ -9881,22 +9947,22 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gas: bigint;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 nonce: number;
-                r: `0x${string}`;
-                s: `0x${string}`;
-                to: `0x${string}` | null;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 v: bigint;
                 value: bigint;
                 yParity: number;
                 accessList: import("viem").AccessList;
                 authorizationList?: undefined;
-                blobVersionedHashes: readonly `0x${string}`[];
+                blobVersionedHashes: readonly import("viem").Hex[];
                 chainId: number;
                 type: "eip4844";
                 gasPrice?: undefined;
@@ -9909,21 +9975,21 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gas: bigint;
-                hash: `0x${string}`;
-                input: `0x${string}`;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
                 nonce: number;
-                r: `0x${string}`;
-                s: `0x${string}`;
-                to: `0x${string}` | null;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
-                typeHex: `0x${string}` | null;
+                typeHex: import("viem").Hex | null;
                 v: bigint;
                 value: bigint;
                 yParity: number;
                 accessList: import("viem").AccessList;
-                authorizationList: import("viem/experimental").SignedAuthorizationList<number>;
+                authorizationList: import("viem/experimental").SignedAuthorizationList;
                 blobVersionedHashes?: undefined;
                 chainId: number;
                 type: "eip7702";
@@ -9934,7 +10000,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 isSystemTx?: undefined;
                 mint?: undefined;
                 sourceHash?: undefined;
-            };
+            }) & {};
             type: "transaction";
         };
         readonly transactionReceipt: {
@@ -9942,26 +10008,26 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             format: (args: import("viem/chains").OpStackRpcTransactionReceipt) => {
                 blobGasPrice?: bigint | undefined;
                 blobGasUsed?: bigint | undefined;
-                blockHash: `0x${string}`;
+                blockHash: import("viem").Hash;
                 blockNumber: bigint;
-                contractAddress: `0x${string}` | null | undefined;
+                contractAddress: import("abitype").Address | null | undefined;
                 cumulativeGasUsed: bigint;
                 effectiveGasPrice: bigint;
-                from: `0x${string}`;
+                from: import("abitype").Address;
                 gasUsed: bigint;
-                logs: import("viem").Log<bigint, number, false, undefined, undefined, undefined, undefined>[];
-                logsBloom: `0x${string}`;
-                root?: `0x${string}` | undefined;
+                logs: import("viem").Log<bigint, number, false>[];
+                logsBloom: import("viem").Hex;
+                root?: import("viem").Hash | undefined;
                 status: "success" | "reverted";
-                to: `0x${string}` | null;
-                transactionHash: `0x${string}`;
+                to: import("abitype").Address | null;
+                transactionHash: import("viem").Hash;
                 transactionIndex: number;
                 type: import("viem").TransactionType;
                 l1GasPrice: bigint | null;
                 l1GasUsed: bigint | null;
                 l1Fee: bigint | null;
                 l1FeeScalar: number | null;
-            };
+            } & {};
             type: "transactionReceipt";
         };
     };
@@ -9979,6 +10045,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     markets: {};
     bridges: {};
     oracles: {};
+    morpho: {};
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     uniswap: {
         deployBlock: number;
@@ -10061,7 +10128,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
     formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
 }>];
-export { arbitrum, base, blast, bob, boba, bsc, corn, filecoin, gnosis, linea, lisk, mainnet, manta, mantle, metal, moonbeam, optimism, polygon, rootstock, scroll, sei, taiko, xLayer, polygonZkEvm, zkSync, UniswapMetadata, OkuPricingMetadata, OkuMetadata, TokenMetadata, Markets, Bridges, Oracles, IChainInfo, MAINNET_CHAINS };
+export { arbitrum, base, blast, bob, boba, bsc, corn, filecoin, gnosis, linea, lisk, mainnet, manta, mantle, metal, moonbeam, optimism, polygon, rootstock, scroll, sei, taiko, xLayer, polygonZkEvm, zkSync, MorphoMetadata, UniswapMetadata, OkuPricingMetadata, OkuMetadata, TokenMetadata, Markets, Bridges, Oracles, IChainInfo, MAINNET_CHAINS };
 export { ChainContract } from "viem";

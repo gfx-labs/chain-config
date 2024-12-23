@@ -54,6 +54,7 @@ var Blast Network = Network{
 		WrappedNativeDecimals:      18,
 		NativeCurrencyName:         "ETH",
 	},
+	Morpho: MorphoMetadata{},
 	Token: TokenMetadata{
 		UsdcAddress: common.HexToAddress("0x4300000000000000000000000000000000000003"),
 		WethAddress: common.HexToAddress("0x4300000000000000000000000000000000000004"),

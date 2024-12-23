@@ -53,6 +53,7 @@ var Mantle Network = Network{
 		WrappedNativeDecimals:      18,
 		NativeCurrencyName:         "MNT",
 	},
+	Morpho: MorphoMetadata{},
 	Token: TokenMetadata{
 		UsdcAddress: common.HexToAddress("0x09Bc4E0D864854c6aFB6eB9A9cdF58aC190D0dF9"),
 		WethAddress: common.HexToAddress("0x78c1b0C915c4FAA5FffA6CAbf0219DA63d7f4cb8"),

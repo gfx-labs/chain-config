@@ -16,6 +16,7 @@ export const optimism = makeConfig({
     zerion: "optimism",
     debank: "op",
   },
+	morpho: {},
   markets: {
     kyberswap: "optimism",
     oneinch: true,

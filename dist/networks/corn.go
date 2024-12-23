@@ -53,6 +53,7 @@ var Corn Network = Network{
 		WrappedNativeDecimals:      18,
 		NativeCurrencyName:         "BTCN",
 	},
+	Morpho: MorphoMetadata{},
 	Token: TokenMetadata{
 		WethAddress: common.HexToAddress("0xda5dDd7270381A7C2717aD10D1c0ecB19e3CDFb2"),
 	},

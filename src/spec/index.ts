@@ -4,6 +4,11 @@ export { ChainContract } from "viem";
 
 type float64 = number;
 
+export interface MorphoMetadata {
+  deployBlock?: number;
+  mmFactory?: Address;
+}
+
 export interface UniswapMetadata {
   deployBlock?: number;
   poolFactory?: Address;
@@ -139,6 +144,7 @@ export interface IChainInfo<
   blockTimeSeconds: float64;
 
   uniswap: UniswapMetadata;
+  morpho: MorphoMetadata;
   token: TokenMetadata;
   oku: OkuMetadata;
 

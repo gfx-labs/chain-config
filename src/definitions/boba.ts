@@ -15,6 +15,7 @@ export const boba = makeConfig({
   externalId: {
     debank: "boba",
   },
+morpho: {},
   markets: {},
   bridges: {},
   oracles: {

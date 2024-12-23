@@ -55,6 +55,7 @@ var PolygonZkevm Network = Network{
 		WrappedNativeDecimals:      18,
 		NativeCurrencyName:         "ETH",
 	},
+	Morpho: MorphoMetadata{},
 	Token: TokenMetadata{
 		WbtcAddress: common.HexToAddress("0xea034fb02eb1808c2cc3adbc15f447b93cbe08e1"),
 		WethAddress: common.HexToAddress("0x4F9A0e7FD2Bf6067db6994CF12E4495Df938E6e9"),

@@ -13,6 +13,7 @@ export const manta = makeConfig({
   logoUrl: "https://assets.oku.trade/chains/manta-logo.png",
   safeReorgDistance: 90000,
   externalId: {},
+	morpho: {},
   markets: {
     openocean: "manta",
   },

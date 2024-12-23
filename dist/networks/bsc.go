@@ -68,6 +68,7 @@ var Bsc Network = Network{
 		WrappedNativeDecimals:              18,
 		NativeCurrencyName:                 "BNB",
 	},
+	Morpho: MorphoMetadata{},
 	Token: TokenMetadata{
 		UsdcAddress: common.HexToAddress("0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d"),
 		WbtcAddress: common.HexToAddress("0x7130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c"),

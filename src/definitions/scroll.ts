@@ -14,6 +14,7 @@ export const scroll = makeConfig({
   externalId: {
     zerion: "scroll",
   },
+	morpho: {},
   markets: {
     kyberswap: "scroll",
     openocean: "scroll",

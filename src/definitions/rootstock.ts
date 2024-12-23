@@ -16,6 +16,7 @@ export const rootstock = makeConfig({
   markets: {
     openocean: "rootstock",
   },
+	morpho: {},
   bridges: {},
   oracles: {
     cmc: {

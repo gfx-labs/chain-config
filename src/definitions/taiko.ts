@@ -12,6 +12,7 @@ export const taiko = makeConfig({
   safeReorgDistance: 90000,
   externalId: {},
   markets: {},
+	morpho: {},
   bridges: {
     rhinofi: "TAIKO",
     stargate: {

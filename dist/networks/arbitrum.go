@@ -71,6 +71,7 @@ var Arbitrum Network = Network{
 		WrappedNativeDecimals:              18,
 		NativeCurrencyName:                 "ETH",
 	},
+	Morpho: MorphoMetadata{},
 	Token: TokenMetadata{
 		WethAddress: common.HexToAddress("0x82aF49447D8a07e3bd95BD0d56f35241523fBab1"),
 		WbtcAddress: common.HexToAddress("0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f"),

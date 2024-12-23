@@ -8,6 +8,7 @@ export const zkSync = makeConfig({
   launchTime: 1696514400,
   logoUrl: "https://assets.oku.trade/chains/zksync-logo.svg",
   safeReorgDistance: 90000,
+	morpho: {},
   externalId: {
     zerion: "zksync-era",
   },

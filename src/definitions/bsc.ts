@@ -16,6 +16,7 @@ export const bsc = makeConfig({
     zerion: "binance-smart-chain",
     debank: "bsc",
   },
+	morpho: {},
   markets: {
     airswap: true,
     kyberswap: "bsc",

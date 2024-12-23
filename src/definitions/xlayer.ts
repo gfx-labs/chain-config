@@ -11,6 +11,7 @@ export const xLayer = makeConfig({
   externalId: {},
   markets: {},
   bridges: {},
+	morpho: {},
   oracles: {
     cmc: {
       slug: "x-layer",

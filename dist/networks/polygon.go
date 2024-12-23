@@ -70,6 +70,7 @@ var Polygon Network = Network{
 		WrappedNativeDecimals:              18,
 		NativeCurrencyName:                 "MATIC",
 	},
+	Morpho: MorphoMetadata{},
 	Token: TokenMetadata{
 		WbtcAddress: common.HexToAddress("0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6"),
 		UsdcAddress: common.HexToAddress("0x2791bca1f2de4661ed88a30c99a7a9449aa84174"),

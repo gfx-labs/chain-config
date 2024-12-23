@@ -60,6 +60,7 @@ var Moonbeam Network = Network{
 		WrappedNativeDecimals:              18,
 		NativeCurrencyName:                 "GLMR",
 	},
+	Morpho: MorphoMetadata{},
 	Token: TokenMetadata{
 		WethAddress: common.HexToAddress("0xab3f0245b83feb11d15aaffefd7ad465a59817ed"),
 		UsdcAddress: common.HexToAddress("0x931715FEE2d06333043d11F658C8CE934aC61D0c"),

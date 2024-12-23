@@ -16,6 +16,7 @@
       blockTimeSeconds: 0.25,
       logoUrl: "https://assets.oku.trade/chains/arbitrum-logo.svg",
       safeReorgDistance: 90000 * 2,
+      morpho: {},
       externalId: {
           zerion: "arbitrum",
           debank: "arb",
@@ -305,6 +306,10 @@
       defaultPool: "0xd0b53d9277642d899df5c87a3966a349a798f224",
       defaultToken0: "0x4200000000000000000000000000000000000006",
       defaultToken1: "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      morpho: {
+          deployBlock: 13977148,
+          mmFactory: "0xa9c3d3a366466fa809d1ae982fb2c46e5fc41101",
+      },
       externalId: {
           zerion: "base",
           debank: "base",
@@ -453,6 +458,7 @@
       externalId: {
           zerion: "blast",
       },
+      morpho: {},
       markets: {
           kyberswap: "blast",
           openocean: "blast",
@@ -550,6 +556,7 @@
       externalId: {},
       markets: {},
       bridges: {},
+      morpho: {},
       oracles: {
           coingecko: {
               slug: "bob",
@@ -653,6 +660,7 @@
       externalId: {
           debank: "boba",
       },
+      morpho: {},
       markets: {},
       bridges: {},
       oracles: {
@@ -767,6 +775,7 @@
           zerion: "binance-smart-chain",
           debank: "bsc",
       },
+      morpho: {},
       markets: {
           airswap: true,
           kyberswap: "bsc",
@@ -950,6 +959,7 @@
       markets: {},
       bridges: {},
       oracles: {},
+      morpho: {},
       initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
       uniswap: {
           deployBlock: 10878,
@@ -1023,6 +1033,7 @@
       initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
       blockTimeSeconds: 30,
       safeReorgDistance: 90000,
+      morpho: {},
       blockExplorers: {
           default: {
               name: "Blockscout",
@@ -1152,6 +1163,7 @@
       sortIndex: 18,
       logoUrl: "https://assets.oku.trade/chains/gnosis-logo.png",
       safeReorgDistance: 90000,
+      morpho: {},
       externalId: {
           zerion: "xdai",
           cowswap: "xdai",
@@ -1257,6 +1269,7 @@
       initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
       blockTimeSeconds: 2,
       sortIndex: 15,
+      morpho: {},
       logoUrl: "https://assets.oku.trade/chains/linea-logo.svg",
       safeReorgDistance: 100,
       externalId: {
@@ -1376,6 +1389,7 @@
       logoUrl: "https://assets.oku.trade/chains/lisk-logo.png",
       safeReorgDistance: 90000,
       externalId: {},
+      morpho: {},
       markets: {},
       bridges: {},
       oracles: {
@@ -1463,6 +1477,10 @@
       blockTimeSeconds: 15,
       safeReorgDistance: 90000,
       logoUrl: "https://assets.oku.trade/chains/ethereum-logo.webp",
+      morpho: {
+          deployBlock: 13977148,
+          mmFactory: "0x7f1f2d3dfa99678675ece1c243d3f7bc3746db5d",
+      },
       externalId: {
           zerion: "ethereum",
           debank: "eth",
@@ -1765,6 +1783,7 @@
       logoUrl: "https://assets.oku.trade/chains/manta-logo.png",
       safeReorgDistance: 90000,
       externalId: {},
+      morpho: {},
       markets: {
           openocean: "manta",
       },
@@ -1868,6 +1887,7 @@
       logoUrl: "https://assets.oku.trade/chains/mantle-logo.png",
       safeReorgDistance: 90000,
       externalId: {},
+      morpho: {},
       markets: {
           openocean: "mantle",
           zeroex: true,
@@ -1984,6 +2004,7 @@
       logoUrl: "https://assets.oku.trade/chains/metal-logo.png",
       safeReorgDistance: 90000,
       externalId: {},
+      morpho: {},
       markets: {},
       bridges: {},
       oracles: {},
@@ -2061,6 +2082,7 @@
       externalId: {
           debank: "mobm",
       },
+      morpho: {},
       markets: {},
       bridges: {
           wanbridge: {
@@ -2173,6 +2195,7 @@
           zerion: "optimism",
           debank: "op",
       },
+      morpho: {},
       markets: {
           kyberswap: "optimism",
           oneinch: true,
@@ -2454,6 +2477,7 @@
           zerion: "polygon",
           debank: "matic",
       },
+      morpho: {},
       markets: {
           airswap: true,
           kyberswap: "polygon",
@@ -2730,6 +2754,7 @@
       markets: {
           openocean: "rootstock",
       },
+      morpho: {},
       bridges: {},
       oracles: {
           cmc: {
@@ -2828,6 +2853,7 @@
       externalId: {
           zerion: "scroll",
       },
+      morpho: {},
       markets: {
           kyberswap: "scroll",
           openocean: "scroll",
@@ -2944,6 +2970,7 @@
       markets: {
           openocean: "sei",
       },
+      morpho: {},
       bridges: {
           stargate: {
               endpointID: 30280,
@@ -3061,6 +3088,7 @@
       safeReorgDistance: 90000,
       externalId: {},
       markets: {},
+      morpho: {},
       bridges: {
           rhinofi: "TAIKO",
           stargate: {
@@ -3177,6 +3205,7 @@
       externalId: {},
       markets: {},
       bridges: {},
+      morpho: {},
       oracles: {
           cmc: {
               slug: "x-layer",
@@ -3263,6 +3292,7 @@
       blockTimeSeconds: 7,
       logoUrl: "https://assets.oku.trade/chains/zkevm-logo.svg",
       safeReorgDistance: 90000,
+      morpho: {},
       externalId: {
           zerion: "polygon-zkevm",
       },
@@ -3367,6 +3397,7 @@
       launchTime: 1696514400,
       logoUrl: "https://assets.oku.trade/chains/zksync-logo.svg",
       safeReorgDistance: 90000,
+      morpho: {},
       externalId: {
           zerion: "zksync-era",
       },

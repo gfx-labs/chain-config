@@ -55,6 +55,10 @@ var Base Network = Network{
 		WrappedNativeDecimals:      18,
 		NativeCurrencyName:         "ETH",
 	},
+	Morpho: MorphoMetadata{
+		DeployBlock: 13977148,
+		MmFactory:   common.HexToAddress("0xa9c3d3a366466fa809d1ae982fb2c46e5fc41101"),
+	},
 	Token: TokenMetadata{
 		UsdcAddress: common.HexToAddress("0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"),
 	},
