@@ -1,5 +1,4 @@
 import { arbitrum as arbitrum$1, base as base$1, blast as blast$1, bob as bob$1, boba as boba$1, bsc as bsc$1, corn as corn$1, filecoin as filecoin$1, gnosis as gnosis$1, linea as linea$1, lisk as lisk$1, mainnet as mainnet$1, manta as manta$1, mantle as mantle$1, metalL2, moonbeam as moonbeam$1, optimism as optimism$1, polygon as polygon$1, rootstock as rootstock$1, scroll as scroll$1, sei as sei$1, sonic as sonic$1, taiko as taiko$1, xLayer as xLayer$1, polygonZkEvm as polygonZkEvm$1, zksync } from 'viem/chains';
-import { zeroAddress } from 'viem';
 
 const makeConfig = (x) => {
     return x;
@@ -3117,7 +3116,7 @@ const sonic = makeConfig({
             nativeWrappedName: "wS",
         },
     },
-    defaultPool: zeroAddress,
+    defaultPool: "0xEcb04e075503Bd678241f00155AbCB532c0a15Eb",
     defaultToken0: "0x039e2fb66102314ce7b64ce5ce3e5183bc94ad38",
     defaultToken1: "0x29219dd400f2bf60e5a23d13be72b486d4038894",
     tokenList: [

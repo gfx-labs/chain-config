@@ -1,8 +1,8 @@
 (function (global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('viem/chains'), require('viem')) :
-  typeof define === 'function' && define.amd ? define(['exports', 'viem/chains', 'viem'], factory) :
-  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global["oku-chains"] = {}, global.viem_chains, global.viem));
-})(this, (function (exports, chains, viem) { 'use strict';
+  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('viem/chains')) :
+  typeof define === 'function' && define.amd ? define(['exports', 'viem/chains'], factory) :
+  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global["oku-chains"] = {}, global.viem_chains));
+})(this, (function (exports, chains) { 'use strict';
 
   const makeConfig = (x) => {
       return x;
@@ -3120,7 +3120,7 @@
               nativeWrappedName: "wS",
           },
       },
-      defaultPool: viem.zeroAddress,
+      defaultPool: "0xEcb04e075503Bd678241f00155AbCB532c0a15Eb",
       defaultToken0: "0x039e2fb66102314ce7b64ce5ce3e5183bc94ad38",
       defaultToken1: "0x29219dd400f2bf60e5a23d13be72b486d4038894",
       tokenList: [
