@@ -44,7 +44,7 @@ export const sonic = makeConfig({
       nativeWrappedName: "wS",
     },
   },
-  defaultPool: zeroAddress,
+  defaultPool: "0xEcb04e075503Bd678241f00155AbCB532c0a15Eb",
   defaultToken0: "0x039e2fb66102314ce7b64ce5ce3e5183bc94ad38",
   defaultToken1: "0x29219dd400f2bf60e5a23d13be72b486d4038894",
   tokenList: [
