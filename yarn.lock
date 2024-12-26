@@ -256,7 +256,7 @@ __metadata:
     tslib: "npm:2.8.1"
     tsx: "npm:4.19.2"
     typescript: "npm:5.6.3"
-    viem: "npm:2.21.57"
+    viem: "npm:^2.21.57"
   peerDependencies:
     viem: 2.x
   languageName: unknown
@@ -6527,7 +6527,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"viem@npm:2.21.57":
+"viem@npm:^2.21.57":
   version: 2.21.57
   resolution: "viem@npm:2.21.57"
   dependencies:

@@ -23,6 +23,7 @@ export * from "./polygon";
 export * from "./rootstock";
 export * from "./scroll";
 export * from "./sei";
+export * from "./sonic";
 export * from "./taiko";
 export * from "./xlayer";
 export * from "./zkevm";
