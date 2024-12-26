@@ -3606,6 +3606,7 @@ const MAINNET_CHAINS = [
     xLayer,
     metal,
     corn,
+    sonic,
 ];
 
 export { MAINNET_CHAINS, arbitrum, base, blast, bob, boba, bsc, corn, filecoin, gnosis, linea, lisk, mainnet, manta, mantle, metal, moonbeam, optimism, polygon, polygonZkEvm, rootstock, scroll, sei, sonic, taiko, xLayer, zkSync };

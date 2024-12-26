@@ -3609,6 +3609,7 @@
       xLayer,
       metal,
       corn,
+      sonic,
   ];
 
   exports.MAINNET_CHAINS = MAINNET_CHAINS;
