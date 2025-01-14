@@ -158,7 +158,7 @@ export interface IChainInfo<
     multicall3?: ChainContract;
     nftManager: ChainContract;
     limitOrder?: ChainContract;
-    weth9: ChainContract;
+    weth9?: ChainContract;
   };
 }
 
