@@ -1421,6 +1421,8 @@ declare const celo: Readonly<{
         wbtcAddress: "0x03c7054bcb39f7b2e5b2c7acb37583e32d70cfa3";
     };
     oku: {
+        limitOrderRegistry: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D";
+        limitOrderRegistryDeployBlock: number;
         pricing: {
             nativeWrappedToken: "0x471EcE3750Da237f93B8E339c536989b8978a438";
             nativeWrappedName: string;
@@ -1453,8 +1455,8 @@ declare const celo: Readonly<{
         nftManager: {
             address: "0x3d79EdAaBC0EaB6F08ED885C05Fc0B014290D95A";
         };
-        weth9: {
-            address: "0x0000000000000000000000000000000000000000";
+        limitOrder: {
+            address: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D";
         };
         multicall2: {
             address: "0x633987602DE5C4F337e3DbF265303A1080324204";
@@ -6230,7 +6232,7 @@ interface IChainInfo<formatters extends ChainFormatters | undefined = ChainForma
         multicall3?: ChainContract;
         nftManager: ChainContract;
         limitOrder?: ChainContract;
-        weth9: ChainContract;
+        weth9?: ChainContract;
     };
 }
 declare const MAINNET_CHAINS: readonly [Readonly<{
@@ -11305,6 +11307,8 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         wbtcAddress: "0x03c7054bcb39f7b2e5b2c7acb37583e32d70cfa3";
     };
     oku: {
+        limitOrderRegistry: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D";
+        limitOrderRegistryDeployBlock: number;
         pricing: {
             nativeWrappedToken: "0x471EcE3750Da237f93B8E339c536989b8978a438";
             nativeWrappedName: string;
@@ -11337,8 +11341,8 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         nftManager: {
             address: "0x3d79EdAaBC0EaB6F08ED885C05Fc0B014290D95A";
         };
-        weth9: {
-            address: "0x0000000000000000000000000000000000000000";
+        limitOrder: {
+            address: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D";
         };
         multicall2: {
             address: "0x633987602DE5C4F337e3DbF265303A1080324204";

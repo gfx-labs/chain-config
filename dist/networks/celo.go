@@ -28,7 +28,8 @@ var Celo Network = Network{
 	Watchlist:        []common.Address{common.HexToAddress("0xd88D5F9E6c10E6FebC9296A454f6C2589b1E8fAE"), common.HexToAddress("0xE426E1305f5e6093864762Bf9d2D8B44BC211c59"), common.HexToAddress("0x5dC631aD6C26BEA1a59fBF2C2680CF3df43d249f"), common.HexToAddress("0x34757893070B0FC5de37AaF2844255fF90F7F1E0"), common.HexToAddress("0x1a810e0B6c2dd5629AFa2f0c898b9512C6F78846"), common.HexToAddress("0x7766BDC5ff15d3aCeB4D37914963aeBAcCF3de15"), common.HexToAddress("0x628Cb3a5a206956423D158009612813B64B19dab"), common.HexToAddress("0x1c8DafD358d308b880F71eDB5170B010b106Ca60"), common.HexToAddress("0xA1777e082fA1746eB78DD9C1fbB515419CF6e538"), common.HexToAddress("0xd80D28850bEBE6208433c298334392bC940B4fc7"), common.HexToAddress("0xf130F72F8190f662522774C3367E6e8814f5e219"), common.HexToAddress("0x7B9A5BC920610F54881f2F6359007957DE504862")},
 	BlockTimeSeconds: 2,
 	Oku: OkuMetadata{
-
+		LimitOrderRegistry:            common.HexToAddress("0xcb2436774C3e191c85056d248EF4260ce5f27A9D"),
+		LimitOrderRegistryDeployBlock: 29842546,
 		Pricing: OkuPricingMetadata{
 			NativeWrappedToken: common.HexToAddress("0x471EcE3750Da237f93B8E339c536989b8978a438"),
 			NativeWrappedName:  "CELO",
@@ -66,9 +67,9 @@ var Celo Network = Network{
 			BlockCreated: 0,
 			Address:      common.HexToAddress("0x3d79EdAaBC0EaB6F08ED885C05Fc0B014290D95A"),
 		},
-		"weth9": {
+		"limitOrder": {
 			BlockCreated: 0,
-			Address:      common.HexToAddress("0x0000000000000000000000000000000000000000"),
+			Address:      common.HexToAddress("0xcb2436774C3e191c85056d248EF4260ce5f27A9D"),
 		},
 		"multicall2": {
 			BlockCreated: 0,

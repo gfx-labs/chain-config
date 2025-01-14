@@ -1,7 +1,6 @@
 'use strict';
 
 var chains = require('viem/chains');
-var viem = require('viem');
 
 const makeConfig = (x) => {
     return x;
@@ -986,6 +985,8 @@ const celo = makeConfig({
         wbtcAddress: "0x03c7054bcb39f7b2e5b2c7acb37583e32d70cfa3",
     },
     oku: {
+        limitOrderRegistry: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D",
+        limitOrderRegistryDeployBlock: 29842546,
         pricing: {
             nativeWrappedToken: "0x471EcE3750Da237f93B8E339c536989b8978a438",
             nativeWrappedName: "CELO",
@@ -1027,8 +1028,8 @@ const celo = makeConfig({
         nftManager: {
             address: "0x3d79EdAaBC0EaB6F08ED885C05Fc0B014290D95A",
         },
-        weth9: {
-            address: viem.zeroAddress,
+        limitOrder: {
+            address: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D",
         },
         multicall2: {
             address: "0x633987602DE5C4F337e3DbF265303A1080324204",

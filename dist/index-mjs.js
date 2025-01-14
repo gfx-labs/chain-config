@@ -1,5 +1,4 @@
 import { arbitrum as arbitrum$1, base as base$1, blast as blast$1, bob as bob$1, boba as boba$1, bsc as bsc$1, celo as celo$1, corn as corn$1, filecoin as filecoin$1, gnosis as gnosis$1, linea as linea$1, lisk as lisk$1, mainnet as mainnet$1, manta as manta$1, mantle as mantle$1, metalL2, moonbeam as moonbeam$1, optimism as optimism$1, polygon as polygon$1, rootstock as rootstock$1, scroll as scroll$1, sei as sei$1, sonic as sonic$1, taiko as taiko$1, xLayer as xLayer$1, polygonZkEvm as polygonZkEvm$1, zksync } from 'viem/chains';
-import { zeroAddress } from 'viem';
 
 const makeConfig = (x) => {
     return x;
@@ -984,6 +983,8 @@ const celo = makeConfig({
         wbtcAddress: "0x03c7054bcb39f7b2e5b2c7acb37583e32d70cfa3",
     },
     oku: {
+        limitOrderRegistry: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D",
+        limitOrderRegistryDeployBlock: 29842546,
         pricing: {
             nativeWrappedToken: "0x471EcE3750Da237f93B8E339c536989b8978a438",
             nativeWrappedName: "CELO",
@@ -1025,8 +1026,8 @@ const celo = makeConfig({
         nftManager: {
             address: "0x3d79EdAaBC0EaB6F08ED885C05Fc0B014290D95A",
         },
-        weth9: {
-            address: zeroAddress,
+        limitOrder: {
+            address: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D",
         },
         multicall2: {
             address: "0x633987602DE5C4F337e3DbF265303A1080324204",
