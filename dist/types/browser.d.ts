@@ -1433,7 +1433,7 @@ declare const celo: Readonly<{
     defaultToken1: "0x66803fb87abd4aac3cbb3fad7c3aa01f6f3fb207";
     tokenList: ({
         symbol: string;
-        address: "0x4200000000000000000000000000000000000006";
+        address: "0x471EcE3750Da237f93B8E339c536989b8978a438";
     } | {
         symbol: string;
         address: "0x66803fb87abd4aac3cbb3fad7c3aa01f6f3fb207";
@@ -11319,7 +11319,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     defaultToken1: "0x66803fb87abd4aac3cbb3fad7c3aa01f6f3fb207";
     tokenList: ({
         symbol: string;
-        address: "0x4200000000000000000000000000000000000006";
+        address: "0x471EcE3750Da237f93B8E339c536989b8978a438";
     } | {
         symbol: string;
         address: "0x66803fb87abd4aac3cbb3fad7c3aa01f6f3fb207";
