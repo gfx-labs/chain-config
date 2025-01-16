@@ -1,6 +1,5 @@
 import { celo as chain } from "viem/chains";
 import { makeConfig } from "../util";
-import { zeroAddress } from "viem";
 
 export const celo = makeConfig({
   ...chain,
@@ -54,7 +53,7 @@ export const celo = makeConfig({
   defaultToken0: "0x471EcE3750Da237f93B8E339c536989b8978a438",
   defaultToken1: "0x66803fb87abd4aac3cbb3fad7c3aa01f6f3fb207",
   tokenList: [
-    { symbol: "CELO", address: "0x4200000000000000000000000000000000000006" },
+    { symbol: "CELO", address: "0x471EcE3750Da237f93B8E339c536989b8978a438" },
     { symbol: "WETH", address: "0x66803fb87abd4aac3cbb3fad7c3aa01f6f3fb207" },
     { symbol: "USDC", address: "0xceba9300f2b948710d2653dd7b07f33a8b32118c" },
     { symbol: "USDT", address: "0x48065fbbe25f71c9282ddf5e1cd6d6a887483d5e" },
