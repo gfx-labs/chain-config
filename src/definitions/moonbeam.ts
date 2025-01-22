@@ -15,7 +15,9 @@ export const moonbeam = makeConfig({
     debank: "mobm",
   },
 	morpho: {},
-  markets: {},
+  markets: {
+    icecreamswap: true
+  },
   bridges: {
     wanbridge: {
       requiredConfirmations: 30,

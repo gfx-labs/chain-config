@@ -310,6 +310,7 @@ type Markets struct {
 	Usor          interface{}
 	Zeroex        bool
 	Cowswap       string
+	Icecreamswap  bool
 }
 
 type Bridges struct {

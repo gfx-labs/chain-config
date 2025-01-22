@@ -22,6 +22,7 @@ declare const arbitrum: Readonly<{
         openocean: string;
         zeroex: true;
         cowswap: string;
+        icecreamswap: true;
     };
     bridges: {
         chainlink: {
@@ -198,6 +199,7 @@ declare const base: Readonly<{
         };
         openocean: string;
         zeroex: true;
+        icecreamswap: true;
     };
     bridges: {
         chainlink: {
@@ -615,6 +617,7 @@ declare const blast: Readonly<{
         kyberswap: string;
         openocean: string;
         zeroex: true;
+        icecreamswap: true;
     };
     bridges: {
         rhinofi: string;
@@ -729,7 +732,9 @@ declare const bob: Readonly<{
     logoUrl: "https://assets.oku.trade/chains/bob-logo.svg";
     safeReorgDistance: 90000;
     externalId: {};
-    markets: {};
+    markets: {
+        icecreamswap: true;
+    };
     bridges: {};
     morpho: {};
     oracles: {
@@ -1120,7 +1125,9 @@ declare const boba: Readonly<{
         debank: string;
     };
     morpho: {};
-    markets: {};
+    markets: {
+        icecreamswap: true;
+    };
     bridges: {};
     oracles: {
         coingecko: {
@@ -1255,6 +1262,7 @@ declare const bsc: Readonly<{
         propellerswap: string;
         openocean: string;
         zeroex: true;
+        icecreamswap: true;
     };
     bridges: {
         chainlink: {
@@ -1390,7 +1398,9 @@ declare const celo: Readonly<{
     logoUrl: "https://assets.oku.trade/chains/celo-logo.svg";
     safeReorgDistance: 90000;
     externalId: {};
-    markets: {};
+    markets: {
+        icecreamswap: true;
+    };
     bridges: {};
     morpho: {};
     oracles: {
@@ -2695,6 +2705,7 @@ declare const linea: Readonly<{
         kyberswap: string;
         openocean: string;
         zeroex: true;
+        icecreamswap: true;
     };
     bridges: {
         rhinofi: string;
@@ -3504,6 +3515,7 @@ declare const mantle: Readonly<{
     markets: {
         openocean: string;
         zeroex: true;
+        icecreamswap: true;
     };
     bridges: {
         stargate: {
@@ -3996,7 +4008,9 @@ declare const moonbeam: Readonly<{
         debank: string;
     };
     morpho: {};
-    markets: {};
+    markets: {
+        icecreamswap: true;
+    };
     bridges: {
         wanbridge: {
             requiredConfirmations: number;
@@ -4132,6 +4146,7 @@ declare const optimism: Readonly<{
         };
         openocean: string;
         zeroex: true;
+        icecreamswap: true;
     };
     bridges: {
         chainlink: {
@@ -4572,6 +4587,7 @@ declare const polygon: Readonly<{
         propellerswap: string;
         openocean: string;
         zeroex: true;
+        icecreamswap: true;
     };
     bridges: {
         chainlink: {
@@ -4729,6 +4745,7 @@ declare const rootstock: Readonly<{
     externalId: {};
     markets: {
         openocean: string;
+        icecreamswap: true;
     };
     morpho: {};
     bridges: {};
@@ -4854,6 +4871,7 @@ declare const scroll: Readonly<{
         kyberswap: string;
         openocean: string;
         zeroex: true;
+        icecreamswap: true;
     };
     bridges: {
         rhinofi: string;
@@ -5216,7 +5234,9 @@ declare const taiko: Readonly<{
     logoUrl: "https://assets.oku.trade/chains/taiko-logo.svg";
     safeReorgDistance: 90000;
     externalId: {};
-    markets: {};
+    markets: {
+        icecreamswap: true;
+    };
     morpho: {};
     bridges: {
         rhinofi: string;
@@ -5340,7 +5360,9 @@ declare const xLayer: Readonly<{
     logoUrl: "https://assets.oku.trade/chains/xlayer-logo.png";
     safeReorgDistance: 90000;
     externalId: {};
-    markets: {};
+    markets: {
+        icecreamswap: true;
+    };
     bridges: {};
     morpho: {};
     oracles: {
@@ -6148,6 +6170,7 @@ interface Markets {
     usor?: any;
     zeroex?: boolean;
     cowswap?: string;
+    icecreamswap?: boolean;
 }
 interface Bridges {
     deswap?: any;
@@ -6258,6 +6281,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         openocean: string;
         zeroex: true;
         cowswap: string;
+        icecreamswap: true;
     };
     bridges: {
         chainlink: {
@@ -6429,6 +6453,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         };
         openocean: string;
         zeroex: true;
+        icecreamswap: true;
     };
     bridges: {
         chainlink: {
@@ -6838,7 +6863,9 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         debank: string;
     };
     morpho: {};
-    markets: {};
+    markets: {
+        icecreamswap: true;
+    };
     bridges: {};
     oracles: {
         coingecko: {
@@ -6961,6 +6988,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         kyberswap: string;
         openocean: string;
         zeroex: true;
+        icecreamswap: true;
     };
     bridges: {
         rhinofi: string;
@@ -7088,6 +7116,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         propellerswap: string;
         openocean: string;
         zeroex: true;
+        icecreamswap: true;
     };
     bridges: {
         chainlink: {
@@ -7529,7 +7558,9 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         debank: string;
     };
     morpho: {};
-    markets: {};
+    markets: {
+        icecreamswap: true;
+    };
     bridges: {
         wanbridge: {
             requiredConfirmations: number;
@@ -7660,6 +7691,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         };
         openocean: string;
         zeroex: true;
+        icecreamswap: true;
     };
     bridges: {
         chainlink: {
@@ -8094,6 +8126,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         propellerswap: string;
         openocean: string;
         zeroex: true;
+        icecreamswap: true;
     };
     bridges: {
         chainlink: {
@@ -8248,6 +8281,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     externalId: {};
     markets: {
         openocean: string;
+        icecreamswap: true;
     };
     morpho: {};
     bridges: {};
@@ -8370,6 +8404,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         kyberswap: string;
         openocean: string;
         zeroex: true;
+        icecreamswap: true;
     };
     bridges: {
         rhinofi: string;
@@ -9253,6 +9288,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         kyberswap: string;
         openocean: string;
         zeroex: true;
+        icecreamswap: true;
     };
     bridges: {
         rhinofi: string;
@@ -9375,7 +9411,9 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     logoUrl: "https://assets.oku.trade/chains/taiko-logo.svg";
     safeReorgDistance: 90000;
     externalId: {};
-    markets: {};
+    markets: {
+        icecreamswap: true;
+    };
     morpho: {};
     bridges: {
         rhinofi: string;
@@ -9499,6 +9537,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     markets: {
         openocean: string;
         zeroex: true;
+        icecreamswap: true;
     };
     bridges: {
         stargate: {
@@ -10102,7 +10141,9 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     logoUrl: "https://assets.oku.trade/chains/bob-logo.svg";
     safeReorgDistance: 90000;
     externalId: {};
-    markets: {};
+    markets: {
+        icecreamswap: true;
+    };
     bridges: {};
     morpho: {};
     oracles: {
@@ -10605,7 +10646,9 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     logoUrl: "https://assets.oku.trade/chains/xlayer-logo.png";
     safeReorgDistance: 90000;
     externalId: {};
-    markets: {};
+    markets: {
+        icecreamswap: true;
+    };
     bridges: {};
     morpho: {};
     oracles: {
@@ -11276,7 +11319,9 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     logoUrl: "https://assets.oku.trade/chains/celo-logo.svg";
     safeReorgDistance: 90000;
     externalId: {};
-    markets: {};
+    markets: {
+        icecreamswap: true;
+    };
     bridges: {};
     morpho: {};
     oracles: {

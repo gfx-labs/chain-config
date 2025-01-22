@@ -71,6 +71,7 @@ export interface Markets {
   usor?: any;
   zeroex?: boolean;
   cowswap?: string;
+  icecreamswap?: boolean;
 }
 
 export interface Bridges {

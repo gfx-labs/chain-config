@@ -27,6 +27,7 @@ export const bsc = makeConfig({
     propellerswap: "bsc",
     openocean: "bsc",
     zeroex: true,
+    icecreamswap: true
   },
   bridges: {
     chainlink: {
