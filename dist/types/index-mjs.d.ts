@@ -1673,22 +1673,17 @@ declare const celo: Readonly<{
         positionsNFT: "0x3d79EdAaBC0EaB6F08ED885C05Fc0B014290D95A";
         positionsNFTDeployBlock: number;
         universalRouter: "0x643770E279d5D0733F21d6DC03A8efbABf3255B4";
-        wrappedNativeAddress: "0x4200000000000000000000000000000000000006";
-        wrappedNativeSymbol: string;
-        wrappedNativeName: string;
-        wrappedNativeDecimals: number;
         nativeCurrencyName: string;
     };
     token: {
-        wethAddress: "0x471EcE3750Da237f93B8E339c536989b8978a438";
         wbtcAddress: "0xbaab46e28388d2779e6e31fd00cf0e5ad95e327b";
+        nativeAddress: "0x471EcE3750Da237f93B8E339c536989b8978a438";
     };
     oku: {
         limitOrderRegistry: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D";
         limitOrderRegistryDeployBlock: number;
         pricing: {
-            nativeWrappedToken: "0x471EcE3750Da237f93B8E339c536989b8978a438";
-            nativeWrappedName: string;
+            nativeToken: "0x471EcE3750Da237f93B8E339c536989b8978a438";
         };
     };
     defaultPool: "0xd88D5F9E6c10E6FebC9296A454f6C2589b1E8fAE";
@@ -6386,15 +6381,17 @@ interface UniswapMetadata {
     topNativePool?: Address;
     positionsNFTDeployBlock?: number;
     universalRouter?: Address;
-    wrappedNativeAddress: Address;
-    wrappedNativeSymbol: string;
-    wrappedNativeName: string;
-    wrappedNativeDecimals: number;
+    wrappedNativeAddress?: Address;
+    wrappedNativeSymbol?: string;
+    wrappedNativeName?: string;
+    wrappedNativeDecimals?: number;
     nativeCurrencyName?: string;
 }
 interface OkuPricingMetadata {
     nativeWrappedToken?: Address;
+    nativeToken?: Address;
     nativeWrappedName?: string;
+    nativeTokenName?: string;
     nativeQuotePools?: ReadonlyArray<ChainContract>;
     pools?: ReadonlyArray<Address>;
 }
@@ -6407,6 +6404,7 @@ interface TokenMetadata {
     wethAddress?: Address;
     wbtcAddress?: Address;
     usdcAddress?: Address;
+    nativeAddress?: Address;
 }
 interface Markets {
     airswap?: boolean;
@@ -11844,22 +11842,17 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         positionsNFT: "0x3d79EdAaBC0EaB6F08ED885C05Fc0B014290D95A";
         positionsNFTDeployBlock: number;
         universalRouter: "0x643770E279d5D0733F21d6DC03A8efbABf3255B4";
-        wrappedNativeAddress: "0x4200000000000000000000000000000000000006";
-        wrappedNativeSymbol: string;
-        wrappedNativeName: string;
-        wrappedNativeDecimals: number;
         nativeCurrencyName: string;
     };
     token: {
-        wethAddress: "0x471EcE3750Da237f93B8E339c536989b8978a438";
         wbtcAddress: "0xbaab46e28388d2779e6e31fd00cf0e5ad95e327b";
+        nativeAddress: "0x471EcE3750Da237f93B8E339c536989b8978a438";
     };
     oku: {
         limitOrderRegistry: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D";
         limitOrderRegistryDeployBlock: number;
         pricing: {
-            nativeWrappedToken: "0x471EcE3750Da237f93B8E339c536989b8978a438";
-            nativeWrappedName: string;
+            nativeToken: "0x471EcE3750Da237f93B8E339c536989b8978a438";
         };
     };
     defaultPool: "0xd88D5F9E6c10E6FebC9296A454f6C2589b1E8fAE";

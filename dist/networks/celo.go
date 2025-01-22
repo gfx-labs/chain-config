@@ -31,10 +31,9 @@ var Celo Network = Network{
 		LimitOrderRegistry:            common.HexToAddress("0xcb2436774C3e191c85056d248EF4260ce5f27A9D"),
 		LimitOrderRegistryDeployBlock: 29842546,
 		Pricing: OkuPricingMetadata{
-			NativeWrappedToken: common.HexToAddress("0x471EcE3750Da237f93B8E339c536989b8978a438"),
-			NativeWrappedName:  "CELO",
-			Pools:              []common.Address{},
-			NativeQuotePools:   []ChainContract{},
+
+			Pools:            []common.Address{},
+			NativeQuotePools: []ChainContract{},
 		},
 	},
 	Uniswap: UniswapMetadata{
@@ -47,16 +46,12 @@ var Celo Network = Network{
 		PositionsNFT:               common.HexToAddress("0x3d79EdAaBC0EaB6F08ED885C05Fc0B014290D95A"),
 		PositionsNFTDeployBlock:    13916373,
 		UniversalRouter:            common.HexToAddress("0x643770E279d5D0733F21d6DC03A8efbABf3255B4"),
-		WrappedNativeAddress:       common.HexToAddress("0x4200000000000000000000000000000000000006"),
-		WrappedNativeSymbol:        "CELO",
-		WrappedNativeName:          "CELO",
-		WrappedNativeDecimals:      18,
 		NativeCurrencyName:         "CELO",
 	},
 	Morpho: MorphoMetadata{},
 	Token: TokenMetadata{
-		WethAddress: common.HexToAddress("0x471EcE3750Da237f93B8E339c536989b8978a438"),
-		WbtcAddress: common.HexToAddress("0xbaab46e28388d2779e6e31fd00cf0e5ad95e327b"),
+		WbtcAddress:   common.HexToAddress("0xbaab46e28388d2779e6e31fd00cf0e5ad95e327b"),
+		NativeAddress: common.HexToAddress("0x471EcE3750Da237f93B8E339c536989b8978a438"),
 	},
 	Contracts: map[string]ChainContract{
 		"multicall3": {

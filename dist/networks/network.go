@@ -269,9 +269,10 @@ type UniswapMetadata struct {
 }
 
 type TokenMetadata struct {
-	WethAddress common.Address
-	WbtcAddress common.Address
-	UsdcAddress common.Address
+	WethAddress   common.Address
+	WbtcAddress   common.Address
+	UsdcAddress   common.Address
+	NativeAddress common.Address
 }
 
 type OkuMetadata struct {
@@ -282,7 +283,9 @@ type OkuMetadata struct {
 
 type OkuPricingMetadata struct {
 	NativeWrappedToken common.Address
+	NativeToken        common.Address
 	NativeWrappedName  string
+	NativeTokenName    string
 	NativeQuotePools   []ChainContract
 	Pools              []common.Address
 }

@@ -962,7 +962,7 @@ const celo = makeConfig({
     safeReorgDistance: 90000,
     externalId: {},
     markets: {
-        icecreamswap: true
+        icecreamswap: true,
     },
     bridges: {},
     morpho: {},
@@ -983,22 +983,17 @@ const celo = makeConfig({
         positionsNFT: "0x3d79EdAaBC0EaB6F08ED885C05Fc0B014290D95A",
         positionsNFTDeployBlock: 13916373,
         universalRouter: "0x643770E279d5D0733F21d6DC03A8efbABf3255B4",
-        wrappedNativeAddress: "0x4200000000000000000000000000000000000006",
-        wrappedNativeSymbol: "CELO",
-        wrappedNativeName: "CELO",
-        wrappedNativeDecimals: 18,
         nativeCurrencyName: "CELO",
     },
     token: {
-        wethAddress: "0x471EcE3750Da237f93B8E339c536989b8978a438",
         wbtcAddress: "0xbaab46e28388d2779e6e31fd00cf0e5ad95e327b",
+        nativeAddress: "0x471EcE3750Da237f93B8E339c536989b8978a438",
     },
     oku: {
         limitOrderRegistry: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D",
         limitOrderRegistryDeployBlock: 29842546,
         pricing: {
-            nativeWrappedToken: "0x471EcE3750Da237f93B8E339c536989b8978a438",
-            nativeWrappedName: "CELO",
+            nativeToken: "0x471EcE3750Da237f93B8E339c536989b8978a438",
         },
     },
     defaultPool: "0xd88D5F9E6c10E6FebC9296A454f6C2589b1E8fAE",
