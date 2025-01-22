@@ -16,7 +16,9 @@ export const boba = makeConfig({
     debank: "boba",
   },
 morpho: {},
-  markets: {},
+  markets: {
+    icecreamswap: true,
+  },
   bridges: {},
   oracles: {
     coingecko: {

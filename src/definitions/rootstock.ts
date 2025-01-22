@@ -15,6 +15,7 @@ export const rootstock = makeConfig({
   externalId: {},
   markets: {
     openocean: "rootstock",
+    icecreamswap: true,
   },
 	morpho: {},
   bridges: {},

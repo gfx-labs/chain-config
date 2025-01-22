@@ -28,6 +28,7 @@ const arbitrum = makeConfig({
         openocean: "arbitrum",
         zeroex: true,
         cowswap: "arbitrum_one",
+        icecreamswap: true,
     },
     bridges: {
         chainlink: {
@@ -319,6 +320,7 @@ const base = makeConfig({
         },
         openocean: "base",
         zeroex: true,
+        icecreamswap: true,
     },
     bridges: {
         chainlink: {
@@ -460,6 +462,7 @@ const blast = makeConfig({
         kyberswap: "blast",
         openocean: "blast",
         zeroex: true,
+        icecreamswap: true,
     },
     bridges: {
         rhinofi: "BLAST",
@@ -551,7 +554,9 @@ const bob = makeConfig({
     logoUrl: "https://assets.oku.trade/chains/bob-logo.svg",
     safeReorgDistance: 90000,
     externalId: {},
-    markets: {},
+    markets: {
+        icecreamswap: true,
+    },
     bridges: {},
     morpho: {},
     oracles: {
@@ -658,7 +663,9 @@ const boba = makeConfig({
         debank: "boba",
     },
     morpho: {},
-    markets: {},
+    markets: {
+        icecreamswap: true,
+    },
     bridges: {},
     oracles: {
         coingecko: {
@@ -783,6 +790,7 @@ const bsc = makeConfig({
         propellerswap: "bsc",
         openocean: "bsc",
         zeroex: true,
+        icecreamswap: true
     },
     bridges: {
         chainlink: {
@@ -952,7 +960,9 @@ const celo = makeConfig({
     logoUrl: "https://assets.oku.trade/chains/celo-logo.svg",
     safeReorgDistance: 90000,
     externalId: {},
-    markets: {},
+    markets: {
+        icecreamswap: true
+    },
     bridges: {},
     morpho: {},
     oracles: {
@@ -1370,6 +1380,7 @@ const linea = makeConfig({
         kyberswap: "linea",
         openocean: "linea",
         zeroex: true,
+        icecreamswap: true,
     },
     bridges: {
         rhinofi: "LINEA",
@@ -1983,6 +1994,7 @@ const mantle = makeConfig({
     markets: {
         openocean: "mantle",
         zeroex: true,
+        icecreamswap: true
     },
     bridges: {
         stargate: {
@@ -2175,7 +2187,9 @@ const moonbeam = makeConfig({
         debank: "mobm",
     },
     morpho: {},
-    markets: {},
+    markets: {
+        icecreamswap: true
+    },
     bridges: {
         wanbridge: {
             requiredConfirmations: 30,
@@ -2296,6 +2310,7 @@ const optimism = makeConfig({
         },
         openocean: "optimism",
         zeroex: true,
+        icecreamswap: true
     },
     bridges: {
         chainlink: {
@@ -2580,6 +2595,7 @@ const polygon = makeConfig({
         propellerswap: "polygon",
         openocean: "polygon",
         zeroex: true,
+        icecreamswap: true
     },
     bridges: {
         chainlink: {
@@ -2845,6 +2861,7 @@ const rootstock = makeConfig({
     externalId: {},
     markets: {
         openocean: "rootstock",
+        icecreamswap: true,
     },
     morpho: {},
     bridges: {},
@@ -2950,6 +2967,7 @@ const scroll = makeConfig({
         kyberswap: "scroll",
         openocean: "scroll",
         zeroex: true,
+        icecreamswap: true,
     },
     bridges: {
         rhinofi: "SCROLL",
@@ -3250,7 +3268,9 @@ const taiko = makeConfig({
     logoUrl: "https://assets.oku.trade/chains/taiko-logo.svg",
     safeReorgDistance: 90000,
     externalId: {},
-    markets: {},
+    markets: {
+        icecreamswap: true
+    },
     morpho: {},
     bridges: {
         rhinofi: "TAIKO",
@@ -3366,7 +3386,9 @@ const xLayer = makeConfig({
     logoUrl: "https://assets.oku.trade/chains/xlayer-logo.png",
     safeReorgDistance: 90000,
     externalId: {},
-    markets: {},
+    markets: {
+        icecreamswap: true
+    },
     bridges: {},
     morpho: {},
     oracles: {

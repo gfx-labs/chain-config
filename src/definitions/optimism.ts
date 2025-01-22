@@ -25,6 +25,7 @@ export const optimism = makeConfig({
     },
     openocean: "optimism",
     zeroex: true,
+    icecreamswap: true
   },
   bridges: {
     chainlink: {

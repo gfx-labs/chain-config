@@ -11,7 +11,9 @@ export const taiko = makeConfig({
   logoUrl: "https://assets.oku.trade/chains/taiko-logo.svg",
   safeReorgDistance: 90000,
   externalId: {},
-  markets: {},
+  markets: {
+    icecreamswap: true
+  },
 	morpho: {},
   bridges: {
     rhinofi: "TAIKO",

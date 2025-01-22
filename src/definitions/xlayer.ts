@@ -9,7 +9,9 @@ export const xLayer = makeConfig({
   logoUrl: "https://assets.oku.trade/chains/xlayer-logo.png",
   safeReorgDistance: 90000,
   externalId: {},
-  markets: {},
+  markets: {
+    icecreamswap: true
+  },
   bridges: {},
 	morpho: {},
   oracles: {

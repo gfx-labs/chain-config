@@ -15,6 +15,7 @@ export const mantle = makeConfig({
   markets: {
     openocean: "mantle",
     zeroex: true,
+    icecreamswap: true
   },
   bridges: {
     stargate: {

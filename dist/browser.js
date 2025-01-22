@@ -32,6 +32,7 @@
           openocean: "arbitrum",
           zeroex: true,
           cowswap: "arbitrum_one",
+          icecreamswap: true,
       },
       bridges: {
           chainlink: {
@@ -323,6 +324,7 @@
           },
           openocean: "base",
           zeroex: true,
+          icecreamswap: true,
       },
       bridges: {
           chainlink: {
@@ -464,6 +466,7 @@
           kyberswap: "blast",
           openocean: "blast",
           zeroex: true,
+          icecreamswap: true,
       },
       bridges: {
           rhinofi: "BLAST",
@@ -555,7 +558,9 @@
       logoUrl: "https://assets.oku.trade/chains/bob-logo.svg",
       safeReorgDistance: 90000,
       externalId: {},
-      markets: {},
+      markets: {
+          icecreamswap: true,
+      },
       bridges: {},
       morpho: {},
       oracles: {
@@ -662,7 +667,9 @@
           debank: "boba",
       },
       morpho: {},
-      markets: {},
+      markets: {
+          icecreamswap: true,
+      },
       bridges: {},
       oracles: {
           coingecko: {
@@ -787,6 +794,7 @@
           propellerswap: "bsc",
           openocean: "bsc",
           zeroex: true,
+          icecreamswap: true
       },
       bridges: {
           chainlink: {
@@ -956,7 +964,9 @@
       logoUrl: "https://assets.oku.trade/chains/celo-logo.svg",
       safeReorgDistance: 90000,
       externalId: {},
-      markets: {},
+      markets: {
+          icecreamswap: true
+      },
       bridges: {},
       morpho: {},
       oracles: {
@@ -1374,6 +1384,7 @@
           kyberswap: "linea",
           openocean: "linea",
           zeroex: true,
+          icecreamswap: true,
       },
       bridges: {
           rhinofi: "LINEA",
@@ -1987,6 +1998,7 @@
       markets: {
           openocean: "mantle",
           zeroex: true,
+          icecreamswap: true
       },
       bridges: {
           stargate: {
@@ -2179,7 +2191,9 @@
           debank: "mobm",
       },
       morpho: {},
-      markets: {},
+      markets: {
+          icecreamswap: true
+      },
       bridges: {
           wanbridge: {
               requiredConfirmations: 30,
@@ -2300,6 +2314,7 @@
           },
           openocean: "optimism",
           zeroex: true,
+          icecreamswap: true
       },
       bridges: {
           chainlink: {
@@ -2584,6 +2599,7 @@
           propellerswap: "polygon",
           openocean: "polygon",
           zeroex: true,
+          icecreamswap: true
       },
       bridges: {
           chainlink: {
@@ -2849,6 +2865,7 @@
       externalId: {},
       markets: {
           openocean: "rootstock",
+          icecreamswap: true,
       },
       morpho: {},
       bridges: {},
@@ -2954,6 +2971,7 @@
           kyberswap: "scroll",
           openocean: "scroll",
           zeroex: true,
+          icecreamswap: true,
       },
       bridges: {
           rhinofi: "SCROLL",
@@ -3254,7 +3272,9 @@
       logoUrl: "https://assets.oku.trade/chains/taiko-logo.svg",
       safeReorgDistance: 90000,
       externalId: {},
-      markets: {},
+      markets: {
+          icecreamswap: true
+      },
       morpho: {},
       bridges: {
           rhinofi: "TAIKO",
@@ -3370,7 +3390,9 @@
       logoUrl: "https://assets.oku.trade/chains/xlayer-logo.png",
       safeReorgDistance: 90000,
       externalId: {},
-      markets: {},
+      markets: {
+          icecreamswap: true
+      },
       bridges: {},
       morpho: {},
       oracles: {
