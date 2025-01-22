@@ -743,6 +743,7 @@ const boba = makeConfig({
         "0xfe1a0c58e38fa71618545df15e5479559ce51108",
         "0xb1ed67e29b2497404a2ac7f2a2989c3328ec2999",
         "0x66faef55892dae3932a043d3238ecaa271d36e0d",
+        "0x67fac3b54b6391e3183d2d74b7d2c430ad44fca1",
     ],
     internalName: "boba",
     nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
@@ -3191,7 +3192,7 @@ const sei = makeConfig({
 const sonic = makeConfig({
     ...sonic$1,
     blockTimeSeconds: 3,
-    launchTime: 1735346679,
+    launchTime: 1737165834,
     sortIndex: 15,
     logoUrl: "https://assets.oku.trade/chains/sonic-logo.svg",
     safeReorgDistance: 90000,
@@ -3236,8 +3237,18 @@ const sonic = makeConfig({
         { symbol: "USDC.e", address: "0x29219dd400f2bf60e5a23d13be72b486d4038894" },
         { symbol: "WETH", address: "0x50c42deacd8fc9773493ed674b675be577f2634b" },
     ],
-    stables: ["0x29219dd400f2bf60e5a23d13be72b486d4038894"],
-    watchlist: [],
+    stables: [
+        "0x29219dd400f2bf60e5a23d13be72b486d4038894",
+        "0xd3DCe716f3eF535C5Ff8d041c1A41C3bd89b97aE",
+    ],
+    watchlist: [
+        "0xecb04e075503bd678241f00155abcb532c0a15eb",
+        "0xcfd41df89d060b72ebdd50d65f9021e4457c477e",
+        "0xb01b201ce73415071b7b99a8737240b511d203b7",
+        "0xb345489a0350f188fe70dadaa6210a9c710fed4b",
+        "0xdfcdad314b0b96ab8890391e3f0540278e3b80f7",
+        "0x21043D7Ad92d9e7bC45C055AF29771E37307B111",
+    ],
     internalName: "sonic",
     nativeLogoUrl: "https://assets.oku.trade/natives/sonic.svg",
     contracts: {

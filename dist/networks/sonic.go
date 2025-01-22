@@ -8,7 +8,7 @@ var Sonic Network = Network{
 	ChainId:           146,
 	LogoUrl:           "https://assets.oku.trade/chains/sonic-logo.svg",
 	SortIndex:         15,
-	LaunchTime:        1735346679,
+	LaunchTime:        1737165834,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {
@@ -22,9 +22,9 @@ var Sonic Network = Network{
 	DefaultToken0: common.HexToAddress("0x039e2fb66102314ce7b64ce5ce3e5183bc94ad38"),
 	DefaultToken1: common.HexToAddress("0x29219dd400f2bf60e5a23d13be72b486d4038894"),
 	//TODO: TokenList:        []any{},
-	Stables:          []common.Address{common.HexToAddress("0x29219dd400f2bf60e5a23d13be72b486d4038894")},
-	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x29219dd400f2bf60e5a23d13be72b486d4038894"): {}},
-	Watchlist:        []common.Address{},
+	Stables:          []common.Address{common.HexToAddress("0x29219dd400f2bf60e5a23d13be72b486d4038894"), common.HexToAddress("0xd3DCe716f3eF535C5Ff8d041c1A41C3bd89b97aE")},
+	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x29219dd400f2bf60e5a23d13be72b486d4038894"): {}, common.HexToAddress("0xd3DCe716f3eF535C5Ff8d041c1A41C3bd89b97aE"): {}},
+	Watchlist:        []common.Address{common.HexToAddress("0xecb04e075503bd678241f00155abcb532c0a15eb"), common.HexToAddress("0xcfd41df89d060b72ebdd50d65f9021e4457c477e"), common.HexToAddress("0xb01b201ce73415071b7b99a8737240b511d203b7"), common.HexToAddress("0xb345489a0350f188fe70dadaa6210a9c710fed4b"), common.HexToAddress("0xdfcdad314b0b96ab8890391e3f0540278e3b80f7"), common.HexToAddress("0x21043D7Ad92d9e7bC45C055AF29771E37307B111")},
 	BlockTimeSeconds: 3,
 	Oku: OkuMetadata{
 		LimitOrderRegistry:            common.HexToAddress("0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc"),
