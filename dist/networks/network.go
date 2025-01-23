@@ -340,6 +340,7 @@ type Oracles struct {
 
 type MorphoMetadata struct {
 	DeployBlock int64
+	Morpho      common.Address
 	MmFactory10 common.Address
 	MmFactory11 common.Address
 }
