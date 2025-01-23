@@ -6,6 +6,7 @@ type float64 = number;
 
 export interface MorphoMetadata {
   deployBlock?: number;
+  morpho?: Address;
   mmFactory10?: Address;
   mmFactory11?: Address;
 }
