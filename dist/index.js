@@ -1012,6 +1012,9 @@ const celo = makeConfig({
         "0xceba9300f2b948710d2653dd7b07f33a8b32118c",
         "0x48065fbbe25f71c9282ddf5e1cd6d6a887483d5e",
         "0x765de816845861e75a25fca122bb6898b8b1282a",
+        "0x37f750b7cc259a2f741af45294f6a16572cf5cad",
+        "0xeb466342c4d449bc9f53a865d5cb90586f405215",
+        "0x617f3112bf5397d0467d315cc709ef968d9ba546",
     ],
     watchlist: [
         "0xd88D5F9E6c10E6FebC9296A454f6C2589b1E8fAE",
