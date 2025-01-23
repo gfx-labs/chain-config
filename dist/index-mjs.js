@@ -1,4 +1,4 @@
-import { arbitrum as arbitrum$1, base as base$1, blast as blast$1, bob as bob$1, boba as boba$1, bsc as bsc$1, corn as corn$1, filecoin as filecoin$1, gnosis as gnosis$1, linea as linea$1, lisk as lisk$1, mainnet as mainnet$1, manta as manta$1, mantle as mantle$1, metalL2, moonbeam as moonbeam$1, optimism as optimism$1, polygon as polygon$1, rootstock as rootstock$1, scroll as scroll$1, sei as sei$1, taiko as taiko$1, xLayer as xLayer$1, polygonZkEvm as polygonZkEvm$1, zksync } from 'viem/chains';
+import { arbitrum as arbitrum$1, base as base$1, blast as blast$1, bob as bob$1, boba as boba$1, bsc as bsc$1, celo as celo$1, corn as corn$1, filecoin as filecoin$1, gnosis as gnosis$1, linea as linea$1, lisk as lisk$1, mainnet as mainnet$1, manta as manta$1, mantle as mantle$1, metalL2, moonbeam as moonbeam$1, optimism as optimism$1, polygon as polygon$1, rootstock as rootstock$1, scroll as scroll$1, sei as sei$1, sonic as sonic$1, taiko as taiko$1, xLayer as xLayer$1, polygonZkEvm as polygonZkEvm$1, zksync } from 'viem/chains';
 
 const makeConfig = (x) => {
     return x;
@@ -28,6 +28,7 @@ const arbitrum = makeConfig({
         openocean: "arbitrum",
         zeroex: true,
         cowswap: "arbitrum_one",
+        icecreamswap: true,
     },
     bridges: {
         chainlink: {
@@ -319,6 +320,7 @@ const base = makeConfig({
         },
         openocean: "base",
         zeroex: true,
+        icecreamswap: true,
     },
     bridges: {
         chainlink: {
@@ -460,6 +462,7 @@ const blast = makeConfig({
         kyberswap: "blast",
         openocean: "blast",
         zeroex: true,
+        icecreamswap: true,
     },
     bridges: {
         rhinofi: "BLAST",
@@ -551,7 +554,9 @@ const bob = makeConfig({
     logoUrl: "https://assets.oku.trade/chains/bob-logo.svg",
     safeReorgDistance: 90000,
     externalId: {},
-    markets: {},
+    markets: {
+        icecreamswap: true,
+    },
     bridges: {},
     morpho: {},
     oracles: {
@@ -658,7 +663,9 @@ const boba = makeConfig({
         debank: "boba",
     },
     morpho: {},
-    markets: {},
+    markets: {
+        icecreamswap: true,
+    },
     bridges: {},
     oracles: {
         coingecko: {
@@ -736,6 +743,7 @@ const boba = makeConfig({
         "0xfe1a0c58e38fa71618545df15e5479559ce51108",
         "0xb1ed67e29b2497404a2ac7f2a2989c3328ec2999",
         "0x66faef55892dae3932a043d3238ecaa271d36e0d",
+        "0x67fac3b54b6391e3183d2d74b7d2c430ad44fca1",
     ],
     internalName: "boba",
     nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
@@ -783,6 +791,7 @@ const bsc = makeConfig({
         propellerswap: "bsc",
         openocean: "bsc",
         zeroex: true,
+        icecreamswap: true
     },
     bridges: {
         chainlink: {
@@ -937,6 +946,100 @@ const bsc = makeConfig({
         },
         multicall2: {
             address: "0xfF6FD90A470Aaa0c1B8A54681746b07AcdFedc9B",
+        },
+        multicall3: {
+            address: "0xcA11bde05977b3631167028862bE2a173976CA11",
+        },
+    },
+});
+
+const celo = makeConfig({
+    ...celo$1,
+    blockTimeSeconds: 2,
+    launchTime: 1727359200,
+    sortIndex: 15,
+    logoUrl: "https://assets.oku.trade/chains/celo-logo.svg",
+    safeReorgDistance: 90000,
+    externalId: {},
+    markets: {
+        icecreamswap: true,
+    },
+    bridges: {},
+    morpho: {},
+    oracles: {
+        coingecko: {
+            slug: "celo",
+            native: "ethereum",
+        },
+    },
+    initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
+    uniswap: {
+        deployBlock: 5188280,
+        poolFactory: "0xAfE208a311B21f13EF87E33A90049fC17A7acDEc",
+        permit2: "0x000000000022D473030F116dDEE9F6B43aC78BA3",
+        multicall2: "0x633987602DE5C4F337e3DbF265303A1080324204",
+        tickLens: "0x5f115D9113F88e0a0Db1b5033D90D4a9690AcD3D",
+        nonfungiblePositionManager: "0x3d79EdAaBC0EaB6F08ED885C05Fc0B014290D95A",
+        positionsNFT: "0x3d79EdAaBC0EaB6F08ED885C05Fc0B014290D95A",
+        positionsNFTDeployBlock: 13916373,
+        universalRouter: "0x643770E279d5D0733F21d6DC03A8efbABf3255B4",
+        nativeCurrencyName: "CELO",
+    },
+    token: {
+        wbtcAddress: "0xbaab46e28388d2779e6e31fd00cf0e5ad95e327b",
+        nativeAddress: "0x471EcE3750Da237f93B8E339c536989b8978a438",
+    },
+    oku: {
+        limitOrderRegistry: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D",
+        limitOrderRegistryDeployBlock: 29842546,
+        pricing: {
+            nativeToken: "0x471EcE3750Da237f93B8E339c536989b8978a438",
+        },
+    },
+    defaultPool: "0xd88D5F9E6c10E6FebC9296A454f6C2589b1E8fAE",
+    defaultToken0: "0x471EcE3750Da237f93B8E339c536989b8978a438",
+    defaultToken1: "0x66803fb87abd4aac3cbb3fad7c3aa01f6f3fb207",
+    tokenList: [
+        { symbol: "CELO", address: "0x471EcE3750Da237f93B8E339c536989b8978a438" },
+        { symbol: "WETH", address: "0x66803fb87abd4aac3cbb3fad7c3aa01f6f3fb207" },
+        { symbol: "USDC", address: "0xceba9300f2b948710d2653dd7b07f33a8b32118c" },
+        { symbol: "USDT", address: "0x48065fbbe25f71c9282ddf5e1cd6d6a887483d5e" },
+        { symbol: "CUSD", address: "0x765de816845861e75a25fca122bb6898b8b1282a" },
+    ],
+    stables: [
+        "0xceba9300f2b948710d2653dd7b07f33a8b32118c",
+        "0x48065fbbe25f71c9282ddf5e1cd6d6a887483d5e",
+        "0x765de816845861e75a25fca122bb6898b8b1282a",
+        "0x37f750b7cc259a2f741af45294f6a16572cf5cad",
+        "0xeb466342c4d449bc9f53a865d5cb90586f405215",
+        "0x617f3112bf5397d0467d315cc709ef968d9ba546",
+    ],
+    watchlist: [
+        "0xd88D5F9E6c10E6FebC9296A454f6C2589b1E8fAE",
+        "0xE426E1305f5e6093864762Bf9d2D8B44BC211c59",
+        "0x5dC631aD6C26BEA1a59fBF2C2680CF3df43d249f",
+        "0x34757893070B0FC5de37AaF2844255fF90F7F1E0",
+        "0x1a810e0B6c2dd5629AFa2f0c898b9512C6F78846",
+        "0x7766BDC5ff15d3aCeB4D37914963aeBAcCF3de15",
+        "0x628Cb3a5a206956423D158009612813B64B19dab",
+        "0x1c8DafD358d308b880F71eDB5170B010b106Ca60",
+        "0xA1777e082fA1746eB78DD9C1fbB515419CF6e538",
+        "0xd80D28850bEBE6208433c298334392bC940B4fc7",
+        "0xf130F72F8190f662522774C3367E6e8814f5e219",
+        "0x7B9A5BC920610F54881f2F6359007957DE504862",
+    ],
+    internalName: "celo",
+    nativeLogoUrl: "https://assets.oku.trade/natives/celo.png",
+    contracts: {
+        ...celo$1.contracts,
+        nftManager: {
+            address: "0x3d79EdAaBC0EaB6F08ED885C05Fc0B014290D95A",
+        },
+        limitOrder: {
+            address: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D",
+        },
+        multicall2: {
+            address: "0x633987602DE5C4F337e3DbF265303A1080324204",
         },
         multicall3: {
             address: "0xcA11bde05977b3631167028862bE2a173976CA11",
@@ -1276,6 +1379,7 @@ const linea = makeConfig({
         kyberswap: "linea",
         openocean: "linea",
         zeroex: true,
+        icecreamswap: true,
     },
     bridges: {
         rhinofi: "LINEA",
@@ -1889,6 +1993,7 @@ const mantle = makeConfig({
     markets: {
         openocean: "mantle",
         zeroex: true,
+        icecreamswap: true
     },
     bridges: {
         stargate: {
@@ -2081,7 +2186,9 @@ const moonbeam = makeConfig({
         debank: "mobm",
     },
     morpho: {},
-    markets: {},
+    markets: {
+        icecreamswap: true
+    },
     bridges: {
         wanbridge: {
             requiredConfirmations: 30,
@@ -2202,6 +2309,7 @@ const optimism = makeConfig({
         },
         openocean: "optimism",
         zeroex: true,
+        icecreamswap: true
     },
     bridges: {
         chainlink: {
@@ -2486,6 +2594,7 @@ const polygon = makeConfig({
         propellerswap: "polygon",
         openocean: "polygon",
         zeroex: true,
+        icecreamswap: true
     },
     bridges: {
         chainlink: {
@@ -2751,6 +2860,7 @@ const rootstock = makeConfig({
     externalId: {},
     markets: {
         openocean: "rootstock",
+        icecreamswap: true,
     },
     morpho: {},
     bridges: {},
@@ -2856,6 +2966,7 @@ const scroll = makeConfig({
         kyberswap: "scroll",
         openocean: "scroll",
         zeroex: true,
+        icecreamswap: true,
     },
     bridges: {
         rhinofi: "SCROLL",
@@ -3076,6 +3187,87 @@ const sei = makeConfig({
     },
 });
 
+const sonic = makeConfig({
+    ...sonic$1,
+    blockTimeSeconds: 3,
+    launchTime: 1737165834,
+    sortIndex: 15,
+    logoUrl: "https://assets.oku.trade/chains/sonic-logo.svg",
+    safeReorgDistance: 90000,
+    morpho: {},
+    externalId: {},
+    markets: {},
+    bridges: {},
+    oracles: {},
+    initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
+    uniswap: {
+        deployBlock: 322744,
+        poolFactory: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D",
+        permit2: "0xB952578f3520EE8Ea45b7914994dcf4702cEe578",
+        multicall2: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435",
+        tickLens: "0xB3309C48F8407651D918ca3Da4C45DE40109E641",
+        nonfungiblePositionManager: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c",
+        positionsNFT: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c",
+        positionsNFTDeployBlock: 322763,
+        universalRouter: "0x738fD6d10bCc05c230388B4027CAd37f82fe2AF2",
+        wrappedNativeAddress: "0x039e2fB66102314Ce7b64Ce5Ce3E5183bc94aD38",
+        wrappedNativeSymbol: "wS",
+        wrappedNativeName: "Wrapped Sonic",
+        wrappedNativeDecimals: 18,
+        nativeCurrencyName: "S",
+    },
+    token: {
+        wethAddress: "0x039e2fB66102314Ce7b64Ce5Ce3E5183bc94aD38",
+    },
+    oku: {
+        limitOrderRegistry: "0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc",
+        limitOrderRegistryDeployBlock: 10948,
+        pricing: {
+            nativeWrappedToken: "0x039e2fB66102314Ce7b64Ce5Ce3E5183bc94aD38",
+            nativeWrappedName: "wS",
+        },
+    },
+    defaultPool: "0xEcb04e075503Bd678241f00155AbCB532c0a15Eb",
+    defaultToken0: "0x039e2fb66102314ce7b64ce5ce3e5183bc94ad38",
+    defaultToken1: "0x29219dd400f2bf60e5a23d13be72b486d4038894",
+    tokenList: [
+        { symbol: "wS", address: "0x039e2fB66102314Ce7b64Ce5Ce3E5183bc94aD38" },
+        { symbol: "USDC.e", address: "0x29219dd400f2bf60e5a23d13be72b486d4038894" },
+        { symbol: "WETH", address: "0x50c42deacd8fc9773493ed674b675be577f2634b" },
+    ],
+    stables: [
+        "0x29219dd400f2bf60e5a23d13be72b486d4038894",
+        "0xd3DCe716f3eF535C5Ff8d041c1A41C3bd89b97aE",
+    ],
+    watchlist: [
+        "0xecb04e075503bd678241f00155abcb532c0a15eb",
+        "0xcfd41df89d060b72ebdd50d65f9021e4457c477e",
+        "0xb01b201ce73415071b7b99a8737240b511d203b7",
+        "0xb345489a0350f188fe70dadaa6210a9c710fed4b",
+        "0xdfcdad314b0b96ab8890391e3f0540278e3b80f7",
+        "0x21043D7Ad92d9e7bC45C055AF29771E37307B111",
+    ],
+    internalName: "sonic",
+    nativeLogoUrl: "https://assets.oku.trade/natives/sonic.svg",
+    contracts: {
+        limitOrder: {
+            address: "0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc",
+        },
+        nftManager: {
+            address: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c",
+        },
+        weth9: {
+            address: "0x039e2fB66102314Ce7b64Ce5Ce3E5183bc94aD38",
+        },
+        multicall2: {
+            address: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435",
+        },
+        multicall3: {
+            address: "0xcA11bde05977b3631167028862bE2a173976CA11",
+        },
+    },
+});
+
 const taiko = makeConfig({
     ...taiko$1,
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
@@ -3085,7 +3277,9 @@ const taiko = makeConfig({
     logoUrl: "https://assets.oku.trade/chains/taiko-logo.svg",
     safeReorgDistance: 90000,
     externalId: {},
-    markets: {},
+    markets: {
+        icecreamswap: true
+    },
     morpho: {},
     bridges: {
         rhinofi: "TAIKO",
@@ -3201,7 +3395,9 @@ const xLayer = makeConfig({
     logoUrl: "https://assets.oku.trade/chains/xlayer-logo.png",
     safeReorgDistance: 90000,
     externalId: {},
-    markets: {},
+    markets: {
+        icecreamswap: true
+    },
     bridges: {},
     morpho: {},
     oracles: {
@@ -3534,6 +3730,8 @@ const MAINNET_CHAINS = [
     xLayer,
     metal,
     corn,
+    sonic,
+    celo,
 ];
 
-export { MAINNET_CHAINS, arbitrum, base, blast, bob, boba, bsc, corn, filecoin, gnosis, linea, lisk, mainnet, manta, mantle, metal, moonbeam, optimism, polygon, polygonZkEvm, rootstock, scroll, sei, taiko, xLayer, zkSync };
+export { MAINNET_CHAINS, arbitrum, base, blast, bob, boba, bsc, celo, corn, filecoin, gnosis, linea, lisk, mainnet, manta, mantle, metal, moonbeam, optimism, polygon, polygonZkEvm, rootstock, scroll, sei, sonic, taiko, xLayer, zkSync };

@@ -15,8 +15,10 @@ export const boba = makeConfig({
   externalId: {
     debank: "boba",
   },
-morpho: {},
-  markets: {},
+  morpho: {},
+  markets: {
+    icecreamswap: true,
+  },
   bridges: {},
   oracles: {
     coingecko: {
@@ -97,6 +99,7 @@ morpho: {},
     "0xfe1a0c58e38fa71618545df15e5479559ce51108",
     "0xb1ed67e29b2497404a2ac7f2a2989c3328ec2999",
     "0x66faef55892dae3932a043d3238ecaa271d36e0d",
+    "0x67fac3b54b6391e3183d2d74b7d2c430ad44fca1",
   ],
   internalName: "boba",
   nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",

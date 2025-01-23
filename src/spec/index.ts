@@ -31,16 +31,18 @@ export interface UniswapMetadata {
   topNativePool?: Address;
   positionsNFTDeployBlock?: number;
   universalRouter?: Address;
-  wrappedNativeAddress: Address;
-  wrappedNativeSymbol: string;
-  wrappedNativeName: string;
-  wrappedNativeDecimals: number;
+  wrappedNativeAddress?: Address;
+  wrappedNativeSymbol?: string;
+  wrappedNativeName?: string;
+  wrappedNativeDecimals?: number;
   nativeCurrencyName?: string;
 }
 
 export interface OkuPricingMetadata {
   nativeWrappedToken?: Address;
+  nativeToken?: Address;
   nativeWrappedName?: string;
+  nativeTokenName?: string;
   nativeQuotePools?: ReadonlyArray<ChainContract>;
   pools?: ReadonlyArray<Address>;
 }
@@ -55,6 +57,7 @@ export interface TokenMetadata {
   wethAddress?: Address;
   wbtcAddress?: Address;
   usdcAddress?: Address;
+  nativeAddress?: Address;
 }
 
 export interface Markets {
@@ -72,6 +75,7 @@ export interface Markets {
   usor?: any;
   zeroex?: boolean;
   cowswap?: string;
+  icecreamswap?: boolean;
 }
 
 export interface Bridges {
@@ -159,7 +163,7 @@ export interface IChainInfo<
     multicall3?: ChainContract;
     nftManager: ChainContract;
     limitOrder?: ChainContract;
-    weth9: ChainContract;
+    weth9?: ChainContract;
   };
 }
 

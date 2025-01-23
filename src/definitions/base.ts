@@ -29,6 +29,7 @@ export const base = makeConfig({
 		},
 		openocean: "base",
 		zeroex: true,
+		icecreamswap: true,
 	},
 	bridges: {
 		chainlink: {

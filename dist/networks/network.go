@@ -39,6 +39,8 @@ const (
 	NameXlayer       InternalName = "xlayer"
 	NameMetal        InternalName = "metal"
 	NameCorn         InternalName = "corn"
+	NameSonic        InternalName = "sonic"
+	NameCelo         InternalName = "celo"
 )
 
 var AllNetworks = []Network{
@@ -67,6 +69,8 @@ var AllNetworks = []Network{
 	Xlayer,
 	Metal,
 	Corn,
+	Sonic,
+	Celo,
 }
 
 var networksByName = map[string]Network{
@@ -95,6 +99,8 @@ var networksByName = map[string]Network{
 	"xlayer":        Xlayer,
 	"metal":         Metal,
 	"corn":          Corn,
+	"sonic":         Sonic,
+	"celo":          Celo,
 }
 
 var networksById = map[int]Network{
@@ -123,6 +129,8 @@ var networksById = map[int]Network{
 	196:      Xlayer,
 	1750:     Metal,
 	21000000: Corn,
+	146:      Sonic,
+	42220:    Celo,
 }
 
 func NetworkByName(name string) (*Network, error) {
@@ -261,9 +269,10 @@ type UniswapMetadata struct {
 }
 
 type TokenMetadata struct {
-	WethAddress common.Address
-	WbtcAddress common.Address
-	UsdcAddress common.Address
+	WethAddress   common.Address
+	WbtcAddress   common.Address
+	UsdcAddress   common.Address
+	NativeAddress common.Address
 }
 
 type OkuMetadata struct {
@@ -274,7 +283,9 @@ type OkuMetadata struct {
 
 type OkuPricingMetadata struct {
 	NativeWrappedToken common.Address
+	NativeToken        common.Address
 	NativeWrappedName  string
+	NativeTokenName    string
 	NativeQuotePools   []ChainContract
 	Pools              []common.Address
 }
@@ -302,6 +313,7 @@ type Markets struct {
 	Usor          interface{}
 	Zeroex        bool
 	Cowswap       string
+	Icecreamswap  bool
 }
 
 type Bridges struct {

@@ -20,6 +20,7 @@ export const linea = makeConfig({
     kyberswap: "linea",
     openocean: "linea",
     zeroex: true,
+    icecreamswap: true,
   },
   bridges: {
     rhinofi: "LINEA",

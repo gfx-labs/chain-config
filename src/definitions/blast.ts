@@ -17,6 +17,7 @@ export const blast = makeConfig({
     kyberswap: "blast",
     openocean: "blast",
     zeroex: true,
+    icecreamswap: true,
   },
   bridges: {
     rhinofi: "BLAST",

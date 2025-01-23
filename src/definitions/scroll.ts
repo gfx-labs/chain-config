@@ -19,6 +19,7 @@ export const scroll = makeConfig({
     kyberswap: "scroll",
     openocean: "scroll",
     zeroex: true,
+    icecreamswap: true,
   },
   bridges: {
     rhinofi: "SCROLL",

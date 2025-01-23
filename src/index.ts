@@ -28,4 +28,6 @@ export const MAINNET_CHAINS = [
   defs.xLayer,
   defs.metal,
   defs.corn,
+  defs.sonic,
+  defs.celo,
 ] as const;
