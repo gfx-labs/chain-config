@@ -1647,7 +1647,7 @@ declare const bsc: Readonly<{
 }>;
 declare const celo: Readonly<{
     blockTimeSeconds: 2;
-    launchTime: 1727359200;
+    launchTime: 1737754469;
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/chains/celo-logo.svg";
     safeReorgDistance: 90000;
@@ -11820,7 +11820,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
 }>, Readonly<{
     blockTimeSeconds: 2;
-    launchTime: 1727359200;
+    launchTime: 1737754469;
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/chains/celo-logo.svg";
     safeReorgDistance: 90000;
