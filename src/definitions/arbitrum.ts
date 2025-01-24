@@ -26,7 +26,6 @@ export const arbitrum = makeConfig({
     openocean: "arbitrum",
     zeroex: true,
     cowswap: "arbitrum_one",
-    icecreamswap: true,
   },
   bridges: {
     chainlink: {
