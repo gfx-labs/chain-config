@@ -22,7 +22,6 @@ declare const arbitrum: Readonly<{
         openocean: string;
         zeroex: true;
         cowswap: string;
-        icecreamswap: true;
     };
     bridges: {
         chainlink: {
@@ -6535,7 +6534,6 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         openocean: string;
         zeroex: true;
         cowswap: string;
-        icecreamswap: true;
     };
     bridges: {
         chainlink: {
