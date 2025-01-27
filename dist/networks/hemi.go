@@ -15,7 +15,7 @@ var Hemi Network = Network{
 			Url: "https://explorer.hemi.xyz",
 		},
 	},
-	DefaultPool:   common.HexToAddress("0x0000000000000000000000000000000000000000"),
+	DefaultPool:   common.HexToAddress("0x3A49cCD3c2A688D0766E087B30A3d27C8997A71c"),
 	InternalName:  "hemi",
 	InitCodeHash:  common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId:    map[string]string{},
@@ -24,7 +24,7 @@ var Hemi Network = Network{
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0xad11a8BEb98bbf61dbb1aa0F6d6F2ECD87b35afA"), common.HexToAddress("0xbB0D083fb1be0A9f6157ec484b6C79E0A4e31C2e"), common.HexToAddress("0x6c851F501a3F24E29A8E39a29591cddf09369080")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0xad11a8BEb98bbf61dbb1aa0F6d6F2ECD87b35afA"): {}, common.HexToAddress("0xbB0D083fb1be0A9f6157ec484b6C79E0A4e31C2e"): {}, common.HexToAddress("0x6c851F501a3F24E29A8E39a29591cddf09369080"): {}},
-	Watchlist:        []common.Address{},
+	Watchlist:        []common.Address{common.HexToAddress("0x3A49cCD3c2A688D0766E087B30A3d27C8997A71c")},
 	BlockTimeSeconds: 12,
 	Oku: OkuMetadata{
 		LimitOrderRegistry:            common.HexToAddress("0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc"),

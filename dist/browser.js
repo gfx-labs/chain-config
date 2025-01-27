@@ -1,8 +1,8 @@
 (function (global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('viem/chains'), require('viem')) :
-  typeof define === 'function' && define.amd ? define(['exports', 'viem/chains', 'viem'], factory) :
-  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global["oku-chains"] = {}, global.viem_chains, global.viem));
-})(this, (function (exports, chains, viem) { 'use strict';
+  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('viem/chains')) :
+  typeof define === 'function' && define.amd ? define(['exports', 'viem/chains'], factory) :
+  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global["oku-chains"] = {}, global.viem_chains));
+})(this, (function (exports, chains) { 'use strict';
 
   const makeConfig = (x) => {
       return x;
@@ -1407,7 +1407,7 @@
               nativeWrappedName: "ETH",
           },
       },
-      defaultPool: viem.zeroAddress,
+      defaultPool: "0x3A49cCD3c2A688D0766E087B30A3d27C8997A71c",
       defaultToken0: "0x4200000000000000000000000000000000000006",
       defaultToken1: "0xad11a8BEb98bbf61dbb1aa0F6d6F2ECD87b35afA",
       tokenList: [
@@ -1421,7 +1421,7 @@
           "0xbB0D083fb1be0A9f6157ec484b6C79E0A4e31C2e",
           "0x6c851F501a3F24E29A8E39a29591cddf09369080",
       ],
-      watchlist: [],
+      watchlist: ["0x3A49cCD3c2A688D0766E087B30A3d27C8997A71c"],
       internalName: "hemi",
       nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
       contracts: {

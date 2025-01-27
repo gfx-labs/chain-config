@@ -2977,7 +2977,7 @@ declare const hemi: Readonly<{
             nativeWrappedName: string;
         };
     };
-    defaultPool: "0x0000000000000000000000000000000000000000";
+    defaultPool: "0x3A49cCD3c2A688D0766E087B30A3d27C8997A71c";
     defaultToken0: "0x4200000000000000000000000000000000000006";
     defaultToken1: "0xad11a8BEb98bbf61dbb1aa0F6d6F2ECD87b35afA";
     tokenList: ({
@@ -2994,7 +2994,7 @@ declare const hemi: Readonly<{
         address: "0x03C7054BCB39f7b2e5B2c7AcB37583e32D70Cfa3";
     })[];
     stables: ("0xad11a8BEb98bbf61dbb1aa0F6d6F2ECD87b35afA" | "0xbB0D083fb1be0A9f6157ec484b6C79E0A4e31C2e" | "0x6c851F501a3F24E29A8E39a29591cddf09369080")[];
-    watchlist: never[];
+    watchlist: "0x3A49cCD3c2A688D0766E087B30A3d27C8997A71c"[];
     internalName: "hemi";
     nativeLogoUrl: "https://assets.oku.trade/natives/eth.png";
     contracts: {
@@ -12890,7 +12890,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             nativeWrappedName: string;
         };
     };
-    defaultPool: "0x0000000000000000000000000000000000000000";
+    defaultPool: "0x3A49cCD3c2A688D0766E087B30A3d27C8997A71c";
     defaultToken0: "0x4200000000000000000000000000000000000006";
     defaultToken1: "0xad11a8BEb98bbf61dbb1aa0F6d6F2ECD87b35afA";
     tokenList: ({
@@ -12907,7 +12907,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         address: "0x03C7054BCB39f7b2e5B2c7AcB37583e32D70Cfa3";
     })[];
     stables: ("0xad11a8BEb98bbf61dbb1aa0F6d6F2ECD87b35afA" | "0xbB0D083fb1be0A9f6157ec484b6C79E0A4e31C2e" | "0x6c851F501a3F24E29A8E39a29591cddf09369080")[];
-    watchlist: never[];
+    watchlist: "0x3A49cCD3c2A688D0766E087B30A3d27C8997A71c"[];
     internalName: "hemi";
     nativeLogoUrl: "https://assets.oku.trade/natives/eth.png";
     contracts: {

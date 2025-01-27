@@ -1,5 +1,4 @@
 import { arbitrum as arbitrum$1, base as base$1, blast as blast$1, bob as bob$1, boba as boba$1, bsc as bsc$1, celo as celo$1, corn as corn$1, filecoin as filecoin$1, gnosis as gnosis$1, hemi as hemi$1, linea as linea$1, lisk as lisk$1, mainnet as mainnet$1, manta as manta$1, mantle as mantle$1, metalL2, moonbeam as moonbeam$1, optimism as optimism$1, polygon as polygon$1, rootstock as rootstock$1, scroll as scroll$1, sei as sei$1, sonic as sonic$1, taiko as taiko$1, xLayer as xLayer$1, polygonZkEvm as polygonZkEvm$1, zksync } from 'viem/chains';
-import { zeroAddress } from 'viem';
 
 const makeConfig = (x) => {
     return x;
@@ -1404,7 +1403,7 @@ const hemi = makeConfig({
             nativeWrappedName: "ETH",
         },
     },
-    defaultPool: zeroAddress,
+    defaultPool: "0x3A49cCD3c2A688D0766E087B30A3d27C8997A71c",
     defaultToken0: "0x4200000000000000000000000000000000000006",
     defaultToken1: "0xad11a8BEb98bbf61dbb1aa0F6d6F2ECD87b35afA",
     tokenList: [
@@ -1418,7 +1417,7 @@ const hemi = makeConfig({
         "0xbB0D083fb1be0A9f6157ec484b6C79E0A4e31C2e",
         "0x6c851F501a3F24E29A8E39a29591cddf09369080",
     ],
-    watchlist: [],
+    watchlist: ["0x3A49cCD3c2A688D0766E087B30A3d27C8997A71c"],
     internalName: "hemi",
     nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
     contracts: {
