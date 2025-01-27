@@ -30,4 +30,5 @@ export const MAINNET_CHAINS = [
   defs.corn,
   defs.sonic,
   defs.celo,
+  defs.hemi,
 ] as const;

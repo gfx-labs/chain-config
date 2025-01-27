@@ -12,6 +12,7 @@ export * from "./celo";
 export * from "./corn";
 export * from "./filecoin";
 export * from "./gnosis";
+export * from "./hemi";
 export * from "./linea";
 export * from "./lisk";
 export * from "./mainnet";
