@@ -3001,6 +3001,7 @@ const rootstock = makeConfig({
     stables: [
         "0xef213441a85df4d7acbdae0cf78004e1e486bb96",
         "0x3a15461d8ae0f0fb5fa2629e9da7d66a794a6e37",
+        "0xaf368c91793cb22739386dfcbbb2f1a9e4bcbebf",
     ],
     watchlist: [
         "0xd2ffe51ab4e622a411abbe634832a19d919e9c55",
