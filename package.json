@@ -52,7 +52,7 @@
     "typescript": "5.6.3",
     "viem": "^2.22.15"
   },
-  "packageManager": "yarn@4.5.3",
+  "packageManager": "yarn@4.6.0",
   "peerDependencies": {
     "viem": "2.x"
   }
