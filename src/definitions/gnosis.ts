@@ -20,7 +20,14 @@ export const gnosis = makeConfig({
       routerContract: "0x6A000F20005980200259B80c5102003040001068"
     }
   },
-  bridges: {},
+  bridges: {
+    chainlink: {
+      atlasNetworkName: "xdai-mainnet",
+      routerAddress: "0x4aAD6071085df840abD9Baf1697d5D5992bDadce",
+      chainSelector: 465200170687744372n,
+      tokenAdminRegistry: "0x73BC11423CBF14914998C23B0aFC9BE0cb5B2229"
+    },
+  },
   oracles: {
     cmc: {
       slug: "gnosis",

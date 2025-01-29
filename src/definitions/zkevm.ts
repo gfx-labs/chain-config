@@ -23,6 +23,11 @@ export const polygonZkEvm = makeConfig({
     openocean: "polygon_zkevm",
   },
   bridges: {
+    chainlink: {
+      atlasNetworkName: "ethereum-mainnet-polygon-zkevm-1",
+      routerAddress: "0xA9999937159B293c72e2367Ce314cb3544e7C1a3",
+      chainSelector: 4348158687435793198n,
+    },
     rhinofi: "ZKEVM",
   },
   oracles: {

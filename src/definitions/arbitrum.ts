@@ -32,6 +32,7 @@ export const arbitrum = makeConfig({
       atlasNetworkName: "ethereum-mainnet-arbitrum-1",
       routerAddress: "0x141fa059441E0ca23ce184B6A78bafD2A517DdE8",
       chainSelector: 4949039107694359620n,
+      tokenAdminRegistry: "0x39AE1032cF4B334a1Ed41cdD0833bdD7c7E7751E"
     },
     rhinofi: "ARBITRUM",
     stargate: {

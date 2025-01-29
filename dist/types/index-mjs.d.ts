@@ -28,6 +28,7 @@ declare const arbitrum: Readonly<{
             atlasNetworkName: string;
             routerAddress: string;
             chainSelector: bigint;
+            tokenAdminRegistry: string;
         };
         rhinofi: string;
         stargate: {
@@ -206,6 +207,7 @@ declare const base: Readonly<{
             atlasNetworkName: string;
             routerAddress: string;
             chainSelector: bigint;
+            tokenAdminRegistry: string;
         };
         rhinofi: string;
         stargate: {
@@ -620,6 +622,12 @@ declare const blast: Readonly<{
         icecreamswap: true;
     };
     bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+            tokenAdminRegistry: string;
+        };
         rhinofi: string;
         wormhole: {
             chain: string;
@@ -988,7 +996,14 @@ declare const bob: Readonly<{
     markets: {
         icecreamswap: true;
     };
-    bridges: {};
+    bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+            tokenAdminRegistry: string;
+        };
+    };
     morpho: {};
     oracles: {
         coingecko: {
@@ -1522,6 +1537,7 @@ declare const bsc: Readonly<{
             atlasNetworkName: string;
             routerAddress: string;
             chainSelector: bigint;
+            tokenAdminRegistry: string;
         };
         rhinofi: string;
         stargate: {
@@ -1654,7 +1670,14 @@ declare const celo: Readonly<{
     markets: {
         icecreamswap: true;
     };
-    bridges: {};
+    bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+            tokenAdminRegistry: string;
+        };
+    };
     morpho: {};
     oracles: {
         coingecko: {
@@ -2588,7 +2611,14 @@ declare const corn: Readonly<{
     safeReorgDistance: 90000;
     externalId: {};
     markets: {};
-    bridges: {};
+    bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+            tokenAdminRegistry: string;
+        };
+    };
     oracles: {};
     morpho: {};
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
@@ -2825,7 +2855,14 @@ declare const gnosis: Readonly<{
             routerContract: string;
         };
     };
-    bridges: {};
+    bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+            tokenAdminRegistry: string;
+        };
+    };
     oracles: {
         cmc: {
             slug: string;
@@ -3064,6 +3101,12 @@ declare const linea: Readonly<{
         icecreamswap: true;
     };
     bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+            tokenAdminRegistry: string;
+        };
         rhinofi: string;
         stargate: {
             endpointID: number;
@@ -3596,6 +3639,7 @@ declare const mainnet: Readonly<{
             atlasNetworkName: string;
             routerAddress: string;
             chainSelector: bigint;
+            tokenAdminRegistry: string;
         };
         rhinofi: string;
         stargate: {
@@ -3875,6 +3919,12 @@ declare const mantle: Readonly<{
         icecreamswap: true;
     };
     bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+            tokenAdminRegistry: string;
+        };
         stargate: {
             endpointID: number;
             blockConfirmations: number;
@@ -4510,6 +4560,7 @@ declare const optimism: Readonly<{
             atlasNetworkName: string;
             routerAddress: string;
             chainSelector: bigint;
+            tokenAdminRegistry: string;
         };
         rhinofi: string;
         stargate: {
@@ -4951,6 +5002,7 @@ declare const polygon: Readonly<{
             atlasNetworkName: string;
             routerAddress: string;
             chainSelector: bigint;
+            tokenAdminRegistry: string;
         };
         rhinofi: string;
         stargate: {
@@ -5231,6 +5283,12 @@ declare const scroll: Readonly<{
         icecreamswap: true;
     };
     bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+            tokenAdminRegistry: string;
+        };
         rhinofi: string;
         stargate: {
             endpointID: number;
@@ -5720,7 +5778,14 @@ declare const xLayer: Readonly<{
     markets: {
         icecreamswap: true;
     };
-    bridges: {};
+    bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+            tokenAdminRegistry: string;
+        };
+    };
     morpho: {};
     oracles: {
         cmc: {
@@ -5849,6 +5914,11 @@ declare const polygonZkEvm: Readonly<{
         openocean: string;
     };
     bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+        };
         rhinofi: string;
     };
     oracles: {
@@ -5972,6 +6042,12 @@ declare const zkSync: Readonly<{
         openocean: string;
     };
     bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+            tokenAdminRegistry: string;
+        };
         rhinofi: string;
     };
     oracles: {
@@ -6548,6 +6624,7 @@ interface Bridges {
         atlasNetworkName: string;
         routerAddress: string;
         chainSelector: bigint;
+        tokenAdminRegistry?: string;
     };
     squidrouter?: any;
     wanbridge?: {
@@ -6648,6 +6725,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             atlasNetworkName: string;
             routerAddress: string;
             chainSelector: bigint;
+            tokenAdminRegistry: string;
         };
         rhinofi: string;
         stargate: {
@@ -6821,6 +6899,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             atlasNetworkName: string;
             routerAddress: string;
             chainSelector: bigint;
+            tokenAdminRegistry: string;
         };
         rhinofi: string;
         stargate: {
@@ -7352,6 +7431,12 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         icecreamswap: true;
     };
     bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+            tokenAdminRegistry: string;
+        };
         rhinofi: string;
         wormhole: {
             chain: string;
@@ -7734,6 +7819,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             atlasNetworkName: string;
             routerAddress: string;
             chainSelector: bigint;
+            tokenAdminRegistry: string;
         };
         rhinofi: string;
         stargate: {
@@ -8020,6 +8106,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             atlasNetworkName: string;
             routerAddress: string;
             chainSelector: bigint;
+            tokenAdminRegistry: string;
         };
         rhinofi: string;
         stargate: {
@@ -8310,6 +8397,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             atlasNetworkName: string;
             routerAddress: string;
             chainSelector: bigint;
+            tokenAdminRegistry: string;
         };
         rhinofi: string;
         stargate: {
@@ -8745,6 +8833,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             atlasNetworkName: string;
             routerAddress: string;
             chainSelector: bigint;
+            tokenAdminRegistry: string;
         };
         rhinofi: string;
         stargate: {
@@ -9019,6 +9108,12 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         icecreamswap: true;
     };
     bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+            tokenAdminRegistry: string;
+        };
         rhinofi: string;
         stargate: {
             endpointID: number;
@@ -9159,6 +9254,11 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         openocean: string;
     };
     bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+        };
         rhinofi: string;
     };
     oracles: {
@@ -9279,6 +9379,12 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         openocean: string;
     };
     bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+            tokenAdminRegistry: string;
+        };
         rhinofi: string;
     };
     oracles: {
@@ -9903,6 +10009,12 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         icecreamswap: true;
     };
     bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+            tokenAdminRegistry: string;
+        };
         rhinofi: string;
         stargate: {
             endpointID: number;
@@ -10152,6 +10264,12 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         icecreamswap: true;
     };
     bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+            tokenAdminRegistry: string;
+        };
         stargate: {
             endpointID: number;
             blockConfirmations: number;
@@ -10756,7 +10874,14 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     markets: {
         icecreamswap: true;
     };
-    bridges: {};
+    bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+            tokenAdminRegistry: string;
+        };
+    };
     morpho: {};
     oracles: {
         coingecko: {
@@ -11144,7 +11269,14 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             routerContract: string;
         };
     };
-    bridges: {};
+    bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+            tokenAdminRegistry: string;
+        };
+    };
     oracles: {
         cmc: {
             slug: string;
@@ -11261,7 +11393,14 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     markets: {
         icecreamswap: true;
     };
-    bridges: {};
+    bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+            tokenAdminRegistry: string;
+        };
+    };
     morpho: {};
     oracles: {
         cmc: {
@@ -11741,7 +11880,14 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     safeReorgDistance: 90000;
     externalId: {};
     markets: {};
-    bridges: {};
+    bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+            tokenAdminRegistry: string;
+        };
+    };
     oracles: {};
     morpho: {};
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
@@ -11934,7 +12080,14 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     markets: {
         icecreamswap: true;
     };
-    bridges: {};
+    bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+            tokenAdminRegistry: string;
+        };
+    };
     morpho: {};
     oracles: {
         coingecko: {

@@ -93,6 +93,7 @@ export interface Bridges {
     atlasNetworkName: string;
     routerAddress: string;
     chainSelector: bigint;
+    tokenAdminRegistry?: string;
   };
   squidrouter?: any;
   wanbridge?: {
