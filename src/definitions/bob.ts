@@ -12,7 +12,14 @@ export const bob = makeConfig({
   markets: {
     icecreamswap: true,
   },
-  bridges: {},
+  bridges: {
+    chainlink: {
+			atlasNetworkName: "bitcoin-mainnet-bob",
+			routerAddress: "0x827716e74F769AB7b6bb374A29235d9c2156932C",
+			chainSelector: 3849287863852499584n,
+      tokenAdminRegistry:"0xa57d04119AFf4884F8602213E58d8AaAD18229cb"
+		},
+  },
 	morpho: {},
   oracles: {
     coingecko: {

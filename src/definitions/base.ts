@@ -36,6 +36,7 @@ export const base = makeConfig({
 			atlasNetworkName: "ethereum-mainnet-base-1",
 			routerAddress: "0x881e3A65B4d4a04dD529061dd0071cf975F58bCD",
 			chainSelector: 15971525489660198786n,
+			tokenAdminRegistry: "0x6f6C373d09C07425BaAE72317863d7F6bb731e37"
 		},
 		rhinofi: "BASE",
 		stargate: {

@@ -11,7 +11,14 @@ export const corn = makeConfig({
   safeReorgDistance: 90000,
   externalId: {},
   markets: {},
-  bridges: {},
+  bridges: {
+    chainlink: {
+      atlasNetworkName: "corn-mainnet",
+      routerAddress: "0x183f6069A0D5c2DEC1Dd1eCF3B1581e12dEb4Efe",
+      chainSelector: 9043146809313071210n,
+      tokenAdminRegistry: "0xCd51e57cD26b9B5eecbfe3d96DAabF3d12A663DA"
+    },
+  },
   oracles: {},
 	morpho: {},
   initCodeHash:

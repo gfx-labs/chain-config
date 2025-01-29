@@ -38,6 +38,7 @@
               atlasNetworkName: "ethereum-mainnet-arbitrum-1",
               routerAddress: "0x141fa059441E0ca23ce184B6A78bafD2A517DdE8",
               chainSelector: 4949039107694359620n,
+              tokenAdminRegistry: "0x39AE1032cF4B334a1Ed41cdD0833bdD7c7E7751E"
           },
           rhinofi: "ARBITRUM",
           stargate: {
@@ -331,6 +332,7 @@
               atlasNetworkName: "ethereum-mainnet-base-1",
               routerAddress: "0x881e3A65B4d4a04dD529061dd0071cf975F58bCD",
               chainSelector: 15971525489660198786n,
+              tokenAdminRegistry: "0x6f6C373d09C07425BaAE72317863d7F6bb731e37"
           },
           rhinofi: "BASE",
           stargate: {
@@ -469,6 +471,12 @@
           icecreamswap: true,
       },
       bridges: {
+          chainlink: {
+              atlasNetworkName: "ethereum-mainnet-blast",
+              routerAddress: "0x12e0B8E349C6fb7E6E40713E8125C3cF1127ea8C",
+              chainSelector: 4411394078118774322n,
+              tokenAdminRegistry: "0x846Fccd01D4115FD1E81267495773aeB33bF1dC7"
+          },
           rhinofi: "BLAST",
           wormhole: {
               chain: "Blast",
@@ -561,7 +569,14 @@
       markets: {
           icecreamswap: true,
       },
-      bridges: {},
+      bridges: {
+          chainlink: {
+              atlasNetworkName: "bitcoin-mainnet-bob",
+              routerAddress: "0x827716e74F769AB7b6bb374A29235d9c2156932C",
+              chainSelector: 3849287863852499584n,
+              tokenAdminRegistry: "0xa57d04119AFf4884F8602213E58d8AaAD18229cb"
+          },
+      },
       morpho: {},
       oracles: {
           coingecko: {
@@ -799,9 +814,10 @@
       },
       bridges: {
           chainlink: {
-              atlasNetworkName: "binance_smart_chain-mainnet",
+              atlasNetworkName: "bsc-mainnet",
               routerAddress: "0x34B03Cb9086d7D758AC55af71584F81A598759FE",
               chainSelector: 11344663589394136015n,
+              tokenAdminRegistry: "0x736Fd8660c443547a85e4Eaf70A49C1b7Bb008fc"
           },
           rhinofi: "BINANCE",
           stargate: {
@@ -966,9 +982,16 @@
       safeReorgDistance: 90000,
       externalId: {},
       markets: {
-          icecreamswap: true,
+          icecreamswap: true
       },
-      bridges: {},
+      bridges: {
+          chainlink: {
+              atlasNetworkName: "celo-mainnet",
+              routerAddress: "0xfB48f15480926A4ADf9116Dca468bDd2EE6C5F62",
+              chainSelector: 1346049177634351622n,
+              tokenAdminRegistry: "0xf19e0555fAA9051e277eeD5A0DcdB13CDaca39a9"
+          },
+      },
       morpho: {},
       oracles: {
           coingecko: {
@@ -1061,7 +1084,14 @@
       safeReorgDistance: 90000,
       externalId: {},
       markets: {},
-      bridges: {},
+      bridges: {
+          chainlink: {
+              atlasNetworkName: "corn-mainnet",
+              routerAddress: "0x183f6069A0D5c2DEC1Dd1eCF3B1581e12dEb4Efe",
+              chainSelector: 9043146809313071210n,
+              tokenAdminRegistry: "0xCd51e57cD26b9B5eecbfe3d96DAabF3d12A663DA"
+          },
+      },
       oracles: {},
       morpho: {},
       initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
@@ -1279,7 +1309,14 @@
               routerContract: "0x6A000F20005980200259B80c5102003040001068"
           }
       },
-      bridges: {},
+      bridges: {
+          chainlink: {
+              atlasNetworkName: "xdai-mainnet",
+              routerAddress: "0x4aAD6071085df840abD9Baf1697d5D5992bDadce",
+              chainSelector: 465200170687744372n,
+              tokenAdminRegistry: "0x73BC11423CBF14914998C23B0aFC9BE0cb5B2229"
+          },
+      },
       oracles: {
           cmc: {
               slug: "gnosis",
@@ -1464,6 +1501,12 @@
           icecreamswap: true,
       },
       bridges: {
+          chainlink: {
+              atlasNetworkName: "ethereum-mainnet-linea-1",
+              routerAddress: "0x549FEB73F2348F6cD99b9fc8c69252034897f06C",
+              chainSelector: 4627098889531055414n,
+              tokenAdminRegistry: "0xBc933cEE67d2b1c08490ee8C51E2dF653a713534"
+          },
           rhinofi: "LINEA",
           stargate: {
               endpointID: 30183,
@@ -1693,6 +1736,7 @@
               atlasNetworkName: "ethereum-mainnet",
               routerAddress: "0x80226fc0Ee2b096224EeAc085Bb9a8cba1146f7D",
               chainSelector: 5009297550715157269n,
+              tokenAdminRegistry: "0xb22764f98dD05c789929716D677382Df22C05Cb6"
           },
           rhinofi: "ETHEREUM",
           stargate: {
@@ -2079,6 +2123,12 @@
           icecreamswap: true
       },
       bridges: {
+          chainlink: {
+              atlasNetworkName: "ethereum-mainnet-mantle-1",
+              routerAddress: "0x670052635a9850bb45882Cb2eCcF66bCff0F41B7",
+              chainSelector: 1556008542357238666n,
+              tokenAdminRegistry: "0x000A744940eB5D857c0d61d97015DFc83107404F"
+          },
           stargate: {
               endpointID: 30181,
               blockConfirmations: 20,
@@ -2399,6 +2449,7 @@
               atlasNetworkName: "ethereum-mainnet-optimism-1",
               routerAddress: "0x3206695CaE29952f4b0c22a169725a865bc8Ce0f",
               chainSelector: 3734403246176062136n,
+              tokenAdminRegistry: "0x657c42abE4CD8aa731Aec322f871B5b90cf6274F"
           },
           rhinofi: "OPTIMISM",
           stargate: {
@@ -2684,6 +2735,7 @@
               atlasNetworkName: "polygon-mainnet",
               routerAddress: "0x849c5ED5a80F5B408Dd4969b78c2C8fdf0565Bfe",
               chainSelector: 4051577828743386545n,
+              tokenAdminRegistry: "0x00F027eA6D0fb03256A15E9182B2B9227A4931d8"
           },
           rhinofi: "MATIC_POS",
           stargate: {
@@ -3053,6 +3105,12 @@
           icecreamswap: true,
       },
       bridges: {
+          chainlink: {
+              atlasNetworkName: "ethereum-mainnet-scroll-1",
+              routerAddress: "0x9a55E8Cab6564eb7bbd7124238932963B8Af71DC",
+              chainSelector: 13204309965629103672n,
+              tokenAdminRegistry: "0x846dEA1c1706FC35b4aa78B32d31F1599DAA47b4"
+          },
           rhinofi: "SCROLL",
           stargate: {
               endpointID: 30214,
@@ -3482,7 +3540,14 @@
       markets: {
           icecreamswap: true
       },
-      bridges: {},
+      bridges: {
+          chainlink: {
+              atlasNetworkName: "ethereum-mainnet-xlayer-1",
+              routerAddress: "0xF2b6Cb7867EB5502C3249dD37D7bc1Cc148e5232",
+              chainSelector: 3016212468291539606n,
+              tokenAdminRegistry: "0xeCf1eAEE01E82F3388dECD7f4C3792374f3f72F3"
+          },
+      },
       morpho: {},
       oracles: {
           cmc: {
@@ -3582,6 +3647,11 @@
           openocean: "polygon_zkevm",
       },
       bridges: {
+          chainlink: {
+              atlasNetworkName: "ethereum-mainnet-polygon-zkevm-1",
+              routerAddress: "0xA9999937159B293c72e2367Ce314cb3544e7C1a3",
+              chainSelector: 4348158687435793198n,
+          },
           rhinofi: "ZKEVM",
       },
       oracles: {
@@ -3686,6 +3756,12 @@
           openocean: "zksync",
       },
       bridges: {
+          chainlink: {
+              atlasNetworkName: "ethereum-mainnet-zksync-1",
+              routerAddress: "0x748Fd769d81F5D94752bf8B0875E9301d0ba71bB",
+              chainSelector: 1562403441176082196n,
+              tokenAdminRegistry: "0x100a47C9DB342884E3314B91cec076BbAC8e619c"
+          },
           rhinofi: "ZKSYNC",
       },
       oracles: {
