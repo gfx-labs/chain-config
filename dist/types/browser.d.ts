@@ -167,12 +167,12 @@ declare const arbitrum: Readonly<{
             ];
         };
     };
-    sourceId?: number | undefined;
-    testnet?: boolean | undefined;
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>;
 declare const base: Readonly<{
     sortIndex: 8;
@@ -364,7 +364,7 @@ declare const base: Readonly<{
         };
     };
     sourceId: 1;
-    testnet?: boolean | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
     formatters: {
@@ -381,7 +381,7 @@ declare const base: Readonly<{
                 gasUsed: bigint;
                 hash: `0x${string}` | null;
                 logsBloom: `0x${string}` | null;
-                miner: import("abitype").Address;
+                miner: import("viem").Address;
                 mixHash: import("viem").Hash;
                 nonce: `0x${string}` | null;
                 number: bigint | null;
@@ -408,14 +408,14 @@ declare const base: Readonly<{
             format: (args: import("viem/chains").OpStackRpcTransaction) => ({
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: import("abitype").Address;
+                from: import("viem").Address;
                 gas: bigint;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
                 nonce: number;
                 r: import("viem").Hex;
                 s: import("viem").Hex;
-                to: import("abitype").Address | null;
+                to: import("viem").Address | null;
                 transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 v: bigint;
@@ -433,8 +433,8 @@ declare const base: Readonly<{
                 r: import("viem").Hex;
                 s: import("viem").Hex;
                 v: bigint;
-                to: import("abitype").Address | null;
-                from: import("abitype").Address;
+                to: import("viem").Address | null;
+                from: import("viem").Address;
                 gas: bigint;
                 nonce: number;
                 value: bigint;
@@ -460,14 +460,14 @@ declare const base: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: import("abitype").Address;
+                from: import("viem").Address;
                 gas: bigint;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
                 nonce: number;
                 r: import("viem").Hex;
                 s: import("viem").Hex;
-                to: import("abitype").Address | null;
+                to: import("viem").Address | null;
                 transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 v: bigint;
@@ -488,14 +488,14 @@ declare const base: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: import("abitype").Address;
+                from: import("viem").Address;
                 gas: bigint;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
                 nonce: number;
                 r: import("viem").Hex;
                 s: import("viem").Hex;
-                to: import("abitype").Address | null;
+                to: import("viem").Address | null;
                 transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 v: bigint;
@@ -516,14 +516,14 @@ declare const base: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: import("abitype").Address;
+                from: import("viem").Address;
                 gas: bigint;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
                 nonce: number;
                 r: import("viem").Hex;
                 s: import("viem").Hex;
-                to: import("abitype").Address | null;
+                to: import("viem").Address | null;
                 transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 v: bigint;
@@ -544,14 +544,14 @@ declare const base: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: import("abitype").Address;
+                from: import("viem").Address;
                 gas: bigint;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
                 nonce: number;
                 r: import("viem").Hex;
                 s: import("viem").Hex;
-                to: import("abitype").Address | null;
+                to: import("viem").Address | null;
                 transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 v: bigint;
@@ -580,16 +580,16 @@ declare const base: Readonly<{
                 blobGasUsed?: bigint | undefined;
                 blockHash: import("viem").Hash;
                 blockNumber: bigint;
-                contractAddress: import("abitype").Address | null | undefined;
+                contractAddress: import("viem").Address | null | undefined;
                 cumulativeGasUsed: bigint;
                 effectiveGasPrice: bigint;
-                from: import("abitype").Address;
+                from: import("viem").Address;
                 gasUsed: bigint;
                 logs: import("viem").Log<bigint, number, false>[];
                 logsBloom: import("viem").Hex;
                 root?: import("viem").Hash | undefined;
                 status: "success" | "reverted";
-                to: import("abitype").Address | null;
+                to: import("viem").Address | null;
                 transactionHash: import("viem").Hash;
                 transactionIndex: number;
                 type: import("viem").TransactionType;
@@ -745,7 +745,7 @@ declare const blast: Readonly<{
         };
     };
     sourceId: 1;
-    testnet?: boolean | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
     formatters: {
@@ -762,7 +762,7 @@ declare const blast: Readonly<{
                 gasUsed: bigint;
                 hash: `0x${string}` | null;
                 logsBloom: `0x${string}` | null;
-                miner: import("abitype").Address;
+                miner: import("viem").Address;
                 mixHash: import("viem").Hash;
                 nonce: `0x${string}` | null;
                 number: bigint | null;
@@ -789,14 +789,14 @@ declare const blast: Readonly<{
             format: (args: import("viem/chains").OpStackRpcTransaction) => ({
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: import("abitype").Address;
+                from: import("viem").Address;
                 gas: bigint;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
                 nonce: number;
                 r: import("viem").Hex;
                 s: import("viem").Hex;
-                to: import("abitype").Address | null;
+                to: import("viem").Address | null;
                 transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 v: bigint;
@@ -814,8 +814,8 @@ declare const blast: Readonly<{
                 r: import("viem").Hex;
                 s: import("viem").Hex;
                 v: bigint;
-                to: import("abitype").Address | null;
-                from: import("abitype").Address;
+                to: import("viem").Address | null;
+                from: import("viem").Address;
                 gas: bigint;
                 nonce: number;
                 value: bigint;
@@ -841,14 +841,14 @@ declare const blast: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: import("abitype").Address;
+                from: import("viem").Address;
                 gas: bigint;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
                 nonce: number;
                 r: import("viem").Hex;
                 s: import("viem").Hex;
-                to: import("abitype").Address | null;
+                to: import("viem").Address | null;
                 transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 v: bigint;
@@ -869,14 +869,14 @@ declare const blast: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: import("abitype").Address;
+                from: import("viem").Address;
                 gas: bigint;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
                 nonce: number;
                 r: import("viem").Hex;
                 s: import("viem").Hex;
-                to: import("abitype").Address | null;
+                to: import("viem").Address | null;
                 transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 v: bigint;
@@ -897,14 +897,14 @@ declare const blast: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: import("abitype").Address;
+                from: import("viem").Address;
                 gas: bigint;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
                 nonce: number;
                 r: import("viem").Hex;
                 s: import("viem").Hex;
-                to: import("abitype").Address | null;
+                to: import("viem").Address | null;
                 transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 v: bigint;
@@ -925,14 +925,14 @@ declare const blast: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: import("abitype").Address;
+                from: import("viem").Address;
                 gas: bigint;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
                 nonce: number;
                 r: import("viem").Hex;
                 s: import("viem").Hex;
-                to: import("abitype").Address | null;
+                to: import("viem").Address | null;
                 transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 v: bigint;
@@ -961,16 +961,16 @@ declare const blast: Readonly<{
                 blobGasUsed?: bigint | undefined;
                 blockHash: import("viem").Hash;
                 blockNumber: bigint;
-                contractAddress: import("abitype").Address | null | undefined;
+                contractAddress: import("viem").Address | null | undefined;
                 cumulativeGasUsed: bigint;
                 effectiveGasPrice: bigint;
-                from: import("abitype").Address;
+                from: import("viem").Address;
                 gasUsed: bigint;
                 logs: import("viem").Log<bigint, number, false>[];
                 logsBloom: import("viem").Hex;
                 root?: import("viem").Hash | undefined;
                 status: "success" | "reverted";
-                to: import("abitype").Address | null;
+                to: import("viem").Address | null;
                 transactionHash: import("viem").Hash;
                 transactionIndex: number;
                 type: import("viem").TransactionType;
@@ -1140,7 +1140,7 @@ declare const bob: Readonly<{
         };
     };
     sourceId: 1;
-    testnet?: boolean | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
     formatters: {
@@ -1500,12 +1500,12 @@ declare const boba: Readonly<{
             ];
         };
     };
-    sourceId?: number | undefined;
-    testnet?: boolean | undefined;
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>;
 declare const bsc: Readonly<{
     name: "BSC";
@@ -1653,12 +1653,12 @@ declare const bsc: Readonly<{
             ];
         };
     };
-    sourceId?: number | undefined;
-    testnet?: boolean | undefined;
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>;
 declare const celo: Readonly<{
     blockTimeSeconds: 2;
@@ -1767,7 +1767,7 @@ declare const celo: Readonly<{
             ];
         };
     };
-    sourceId?: number | undefined;
+    sourceId?: number | undefined | undefined;
     testnet: false;
     custom?: Record<string, unknown> | undefined;
     fees: import("viem").ChainFees<{
@@ -2701,11 +2701,11 @@ declare const corn: Readonly<{
         };
     };
     sourceId: 1;
-    testnet?: boolean | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>;
 declare const filecoin: Readonly<{
     sortIndex: 10;
@@ -2830,12 +2830,12 @@ declare const filecoin: Readonly<{
             ];
         };
     };
-    sourceId?: number | undefined;
-    testnet?: boolean | undefined;
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>;
 declare const gnosis: Readonly<{
     blockTimeSeconds: 5;
@@ -2967,12 +2967,12 @@ declare const gnosis: Readonly<{
             ];
         };
     };
-    sourceId?: number | undefined;
-    testnet?: boolean | undefined;
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>;
 declare const hemi: Readonly<{
     blockTimeSeconds: 12;
@@ -3074,12 +3074,12 @@ declare const hemi: Readonly<{
             ];
         };
     };
-    sourceId?: number | undefined;
+    sourceId?: number | undefined | undefined;
     testnet: false;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
     network: "Hemi";
 }>;
 declare const linea: Readonly<{
@@ -3214,15 +3214,15 @@ declare const linea: Readonly<{
             ];
         };
     };
-    sourceId?: number | undefined;
+    sourceId?: number | undefined | undefined;
     testnet: false;
     custom?: Record<string, unknown> | undefined;
     fees: {
         readonly estimateFeesPerGas: ({ client, multiply, request, type }: Parameters<import("viem").ChainEstimateFeesPerGasFn>[0]) => ReturnType<import("viem").ChainEstimateFeesPerGasFn>;
         readonly maxPriorityFeePerGas: ({ block, client, request }: import("viem").ChainFeesFnParameters<import("viem").ChainFormatters | undefined>) => Promise<bigint | null>;
     };
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>;
 declare const lisk: Readonly<{
     blockTimeSeconds: 2;
@@ -3357,7 +3357,7 @@ declare const lisk: Readonly<{
         };
     };
     sourceId: 1;
-    testnet?: boolean | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
     formatters: {
@@ -3773,12 +3773,12 @@ declare const mainnet: Readonly<{
         readonly symbol: "ETH";
         readonly decimals: 18;
     };
-    sourceId?: number | undefined;
-    testnet?: boolean | undefined;
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>;
 declare const manta: Readonly<{
     name: "Manta Pacific";
@@ -3896,12 +3896,12 @@ declare const manta: Readonly<{
             ];
         };
     };
-    sourceId?: number | undefined;
-    testnet?: boolean | undefined;
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
     network: "manta";
 }>;
 declare const mantle: Readonly<{
@@ -4025,12 +4025,12 @@ declare const mantle: Readonly<{
             ];
         };
     };
-    sourceId?: number | undefined;
-    testnet?: boolean | undefined;
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>;
 declare const metal: Readonly<{
     blockTimeSeconds: 2;
@@ -4163,7 +4163,7 @@ declare const metal: Readonly<{
         };
     };
     sourceId: 1;
-    testnet?: boolean | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
     formatters: {
@@ -4525,12 +4525,12 @@ declare const moonbeam: Readonly<{
             ];
         };
     };
-    sourceId?: number | undefined;
+    sourceId?: number | undefined | undefined;
     testnet: false;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>;
 declare const optimism: Readonly<{
     name: "Optimism";
@@ -4732,7 +4732,7 @@ declare const optimism: Readonly<{
         };
     };
     sourceId: 1;
-    testnet?: boolean | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
     formatters: {
@@ -4749,7 +4749,7 @@ declare const optimism: Readonly<{
                 gasUsed: bigint;
                 hash: `0x${string}` | null;
                 logsBloom: `0x${string}` | null;
-                miner: import("abitype").Address;
+                miner: import("viem").Address;
                 mixHash: import("viem").Hash;
                 nonce: `0x${string}` | null;
                 number: bigint | null;
@@ -4776,14 +4776,14 @@ declare const optimism: Readonly<{
             format: (args: import("viem/chains").OpStackRpcTransaction) => ({
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: import("abitype").Address;
+                from: import("viem").Address;
                 gas: bigint;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
                 nonce: number;
                 r: import("viem").Hex;
                 s: import("viem").Hex;
-                to: import("abitype").Address | null;
+                to: import("viem").Address | null;
                 transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 v: bigint;
@@ -4801,8 +4801,8 @@ declare const optimism: Readonly<{
                 r: import("viem").Hex;
                 s: import("viem").Hex;
                 v: bigint;
-                to: import("abitype").Address | null;
-                from: import("abitype").Address;
+                to: import("viem").Address | null;
+                from: import("viem").Address;
                 gas: bigint;
                 nonce: number;
                 value: bigint;
@@ -4828,14 +4828,14 @@ declare const optimism: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: import("abitype").Address;
+                from: import("viem").Address;
                 gas: bigint;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
                 nonce: number;
                 r: import("viem").Hex;
                 s: import("viem").Hex;
-                to: import("abitype").Address | null;
+                to: import("viem").Address | null;
                 transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 v: bigint;
@@ -4856,14 +4856,14 @@ declare const optimism: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: import("abitype").Address;
+                from: import("viem").Address;
                 gas: bigint;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
                 nonce: number;
                 r: import("viem").Hex;
                 s: import("viem").Hex;
-                to: import("abitype").Address | null;
+                to: import("viem").Address | null;
                 transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 v: bigint;
@@ -4884,14 +4884,14 @@ declare const optimism: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: import("abitype").Address;
+                from: import("viem").Address;
                 gas: bigint;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
                 nonce: number;
                 r: import("viem").Hex;
                 s: import("viem").Hex;
-                to: import("abitype").Address | null;
+                to: import("viem").Address | null;
                 transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 v: bigint;
@@ -4912,14 +4912,14 @@ declare const optimism: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: import("abitype").Address;
+                from: import("viem").Address;
                 gas: bigint;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
                 nonce: number;
                 r: import("viem").Hex;
                 s: import("viem").Hex;
-                to: import("abitype").Address | null;
+                to: import("viem").Address | null;
                 transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 v: bigint;
@@ -4948,16 +4948,16 @@ declare const optimism: Readonly<{
                 blobGasUsed?: bigint | undefined;
                 blockHash: import("viem").Hash;
                 blockNumber: bigint;
-                contractAddress: import("abitype").Address | null | undefined;
+                contractAddress: import("viem").Address | null | undefined;
                 cumulativeGasUsed: bigint;
                 effectiveGasPrice: bigint;
-                from: import("abitype").Address;
+                from: import("viem").Address;
                 gasUsed: bigint;
                 logs: import("viem").Log<bigint, number, false>[];
                 logsBloom: import("viem").Hex;
                 root?: import("viem").Hash | undefined;
                 status: "success" | "reverted";
-                to: import("abitype").Address | null;
+                to: import("viem").Address | null;
                 transactionHash: import("viem").Hash;
                 transactionIndex: number;
                 type: import("viem").TransactionType;
@@ -5136,12 +5136,12 @@ declare const polygon: Readonly<{
             ];
         };
     };
-    sourceId?: number | undefined;
-    testnet?: boolean | undefined;
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>;
 declare const rootstock: Readonly<{
     sortIndex: 7;
@@ -5257,12 +5257,12 @@ declare const rootstock: Readonly<{
             ];
         };
     };
-    sourceId?: number | undefined;
-    testnet?: boolean | undefined;
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
     network: "rootstock";
 }>;
 declare const scroll: Readonly<{
@@ -5408,12 +5408,12 @@ declare const scroll: Readonly<{
             ];
         };
     };
-    sourceId?: number | undefined;
+    sourceId?: number | undefined | undefined;
     testnet: false;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>;
 declare const sei: Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
@@ -5534,12 +5534,12 @@ declare const sei: Readonly<{
             ];
         };
     };
-    sourceId?: number | undefined;
-    testnet?: boolean | undefined;
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>;
 declare const sonic: Readonly<{
     blockTimeSeconds: 3;
@@ -5634,12 +5634,12 @@ declare const sonic: Readonly<{
             ];
         };
     };
-    sourceId?: number | undefined;
+    sourceId?: number | undefined | undefined;
     testnet: false;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>;
 declare const taiko: Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
@@ -5761,12 +5761,12 @@ declare const taiko: Readonly<{
             ];
         };
     };
-    sourceId?: number | undefined;
-    testnet?: boolean | undefined;
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>;
 declare const xLayer: Readonly<{
     blockTimeSeconds: 3;
@@ -5888,12 +5888,12 @@ declare const xLayer: Readonly<{
             ];
         };
     };
-    sourceId?: number | undefined;
-    testnet?: boolean | undefined;
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>;
 declare const polygonZkEvm: Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
@@ -6018,12 +6018,12 @@ declare const polygonZkEvm: Readonly<{
             ];
         };
     };
-    sourceId?: number | undefined;
-    testnet?: boolean | undefined;
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>;
 declare const zkSync: Readonly<{
     blockTimeSeconds: 2;
@@ -6158,8 +6158,8 @@ declare const zkSync: Readonly<{
             ];
         };
     };
-    sourceId?: number | undefined;
-    testnet?: boolean | undefined;
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
     custom: {
         readonly getEip712Domain: import("viem/zksync").EIP712DomainFn<import("viem/chains").ZkSyncTransactionSerializable, import("viem/chains").ZkSyncEIP712TransactionSignable>;
     };
@@ -6860,12 +6860,12 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly http: readonly ["https://arb1.arbitrum.io/rpc"];
         };
     };
-    sourceId?: number | undefined;
-    testnet?: boolean | undefined;
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>, Readonly<{
     sortIndex: 8;
     launchTime: 1707321600;
@@ -7054,7 +7054,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         };
     };
     sourceId: 1;
-    testnet?: boolean | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
     formatters: {
@@ -7408,12 +7408,12 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly http: readonly ["https://mainnet.boba.network"];
         };
     };
-    sourceId?: number | undefined;
-    testnet?: boolean | undefined;
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>, Readonly<{
     blockTimeSeconds: 2;
     launchTime: 1719410400;
@@ -7552,7 +7552,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         };
     };
     sourceId: 1;
-    testnet?: boolean | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
     formatters: {
@@ -7933,12 +7933,12 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly http: readonly ["https://rpc.ankr.com/bsc"];
         };
     };
-    sourceId?: number | undefined;
-    testnet?: boolean | undefined;
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>, Readonly<{
     sortIndex: 10;
     launchTime: 1677600000;
@@ -8060,12 +8060,12 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly http: readonly ["https://api.node.glif.io/rpc/v1"];
         };
     };
-    sourceId?: number | undefined;
-    testnet?: boolean | undefined;
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>, Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     sortIndex: 0;
@@ -8240,12 +8240,12 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         readonly symbol: "ETH";
         readonly decimals: 18;
     };
-    sourceId?: number | undefined;
-    testnet?: boolean | undefined;
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>, Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     sortIndex: 12;
@@ -8363,12 +8363,12 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly webSocket: readonly ["wss://moonbeam.public.blastapi.io"];
         };
     };
-    sourceId?: number | undefined;
+    sourceId?: number | undefined | undefined;
     testnet: false;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>, Readonly<{
     name: "Optimism";
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
@@ -8567,7 +8567,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         };
     };
     sourceId: 1;
-    testnet?: boolean | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
     formatters: {
@@ -8965,12 +8965,12 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly http: readonly ["https://polygon-rpc.com"];
         };
     };
-    sourceId?: number | undefined;
-    testnet?: boolean | undefined;
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>, Readonly<{
     sortIndex: 7;
     launchTime: 1702479600;
@@ -9083,12 +9083,12 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly http: readonly ["https://public-node.rsk.co"];
         };
     };
-    sourceId?: number | undefined;
-    testnet?: boolean | undefined;
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
     network: "rootstock";
 }>, Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
@@ -9229,12 +9229,12 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly webSocket: readonly ["wss://wss-rpc.scroll.io/ws"];
         };
     };
-    sourceId?: number | undefined;
+    sourceId?: number | undefined | undefined;
     testnet: false;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>, Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     sortIndex: 6;
@@ -9356,12 +9356,12 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly http: readonly ["https://zkevm-rpc.com"];
         };
     };
-    sourceId?: number | undefined;
-    testnet?: boolean | undefined;
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>, Readonly<{
     blockTimeSeconds: 2;
     sortIndex: 4;
@@ -9491,8 +9491,8 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly webSocket: readonly ["wss://mainnet.era.zksync.io/ws"];
         };
     };
-    sourceId?: number | undefined;
-    testnet?: boolean | undefined;
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
     custom: {
         readonly getEip712Domain: import("viem/zksync").EIP712DomainFn<import("viem/zksync").ZkSyncTransactionSerializable, import("viem/zksync").ZkSyncEIP712TransactionSignable>;
     };
@@ -9523,7 +9523,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 stateRoot: import("viem").Hash;
                 timestamp: bigint;
                 totalDifficulty: bigint | null;
-                transactions: `0x${string}`[] | import("viem/chains").ZkSyncTransaction<boolean>[];
+                transactions: `0x${string}`[] | import("viem/zksync").ZkSyncTransaction<boolean>[];
                 transactionsRoot: import("viem").Hash;
                 uncles: import("viem").Hash[];
                 withdrawals?: import("viem").Withdrawal[] | undefined;
@@ -9722,7 +9722,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         readonly transactionReceipt: {
             exclude: [] | undefined;
             format: (args: import("viem/zksync").ZkSyncRpcTransactionReceipt) => {
-                type: import("viem/chains").ZkSyncTransactionType;
+                type: import("viem/zksync").ZkSyncTransactionType;
                 to: import("abitype").Address | null;
                 from: import("abitype").Address;
                 blockHash: import("viem").Hash;
@@ -9740,8 +9740,8 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 root?: import("viem").Hash | undefined;
                 l1BatchNumber: bigint | null;
                 l1BatchTxIndex: bigint | null;
-                logs: import("viem/chains").ZkSyncLog[];
-                l2ToL1Logs: import("viem/chains").ZkSyncL2ToL1Log[];
+                logs: import("viem/zksync").ZkSyncLog[];
+                l2ToL1Logs: import("viem/zksync").ZkSyncL2ToL1Log[];
             } & {};
             type: "transactionReceipt";
         };
@@ -9854,7 +9854,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 maxFeePerBlobGas?: undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
-                eip712Meta: import("viem/chains").ZkSyncEip712Meta;
+                eip712Meta: import("viem/zksync").ZkSyncEip712Meta;
             }) & {
                 paymaster: never;
                 gasPerPubdata: never;
@@ -9983,12 +9983,12 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly http: readonly ["https://pacific-rpc.manta.network/http"];
         };
     };
-    sourceId?: number | undefined;
-    testnet?: boolean | undefined;
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
     network: "manta";
 }>, Readonly<{
     name: "Linea";
@@ -10118,15 +10118,15 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly webSocket: readonly ["wss://rpc.linea.build"];
         };
     };
-    sourceId?: number | undefined;
+    sourceId?: number | undefined | undefined;
     testnet: false;
     custom?: Record<string, unknown> | undefined;
     fees: {
         readonly estimateFeesPerGas: ({ client, multiply, request, type, }: Parameters<import("viem").ChainEstimateFeesPerGasFn>[0]) => ReturnType<import("viem").ChainEstimateFeesPerGasFn>;
         readonly maxPriorityFeePerGas: ({ block, client, request }: import("viem").ChainFeesFnParameters<import("viem").ChainFormatters | undefined>) => Promise<bigint | null>;
     };
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>, Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     blockTimeSeconds: 24;
@@ -10243,12 +10243,12 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly webSocket: readonly ["wss://ws.mainnet.taiko.xyz"];
         };
     };
-    sourceId?: number | undefined;
-    testnet?: boolean | undefined;
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>, Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     blockTimeSeconds: 2;
@@ -10368,12 +10368,12 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly http: readonly ["https://rpc.mantle.xyz"];
         };
     };
-    sourceId?: number | undefined;
-    testnet?: boolean | undefined;
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>, Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     blockTimeSeconds: 0.4;
@@ -10489,12 +10489,12 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly webSocket: readonly ["wss://evm-ws.sei-apis.com/"];
         };
     };
-    sourceId?: number | undefined;
-    testnet?: boolean | undefined;
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>, Readonly<{
     blockTimeSeconds: 2;
     launchTime: 1724076000;
@@ -10626,7 +10626,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         };
     };
     sourceId: 1;
-    testnet?: boolean | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
     formatters: {
@@ -11014,7 +11014,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         };
     };
     sourceId: 1;
-    testnet?: boolean | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
     formatters: {
@@ -11377,12 +11377,12 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly webSocket: readonly ["wss://rpc.gnosischain.com/wss"];
         };
     };
-    sourceId?: number | undefined;
-    testnet?: boolean | undefined;
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>, Readonly<{
     blockTimeSeconds: 3;
     launchTime: 0;
@@ -11501,12 +11501,12 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly http: readonly ["https://rpc.xlayer.tech"];
         };
     };
-    sourceId?: number | undefined;
-    testnet?: boolean | undefined;
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>, Readonly<{
     blockTimeSeconds: 2;
     launchTime: 1733882663;
@@ -11634,7 +11634,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         };
     };
     sourceId: 1;
-    testnet?: boolean | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
     formatters: {
@@ -11968,11 +11968,11 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         };
     };
     sourceId: 1;
-    testnet?: boolean | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>, Readonly<{
     blockTimeSeconds: 3;
     launchTime: 1737165834;
@@ -12064,12 +12064,12 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly http: readonly ["https://rpc.soniclabs.com"];
         };
     };
-    sourceId?: number | undefined;
+    sourceId?: number | undefined | undefined;
     testnet: false;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>, Readonly<{
     blockTimeSeconds: 2;
     launchTime: 1737754469;
@@ -12175,7 +12175,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly http: readonly ["https://forno.celo.org"];
         };
     };
-    sourceId?: number | undefined;
+    sourceId?: number | undefined | undefined;
     testnet: false;
     custom?: Record<string, unknown> | undefined;
     fees: import("viem").ChainFees<{
@@ -13101,12 +13101,12 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly http: readonly ["https://rpc.hemi.network/rpc"];
         };
     };
-    sourceId?: number | undefined;
+    sourceId?: number | undefined | undefined;
     testnet: false;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
     network: "Hemi";
 }>];
 export { arbitrum, base, blast, bob, boba, bsc, celo, corn, filecoin, gnosis, hemi, linea, lisk, mainnet, manta, mantle, metal, moonbeam, optimism, polygon, rootstock, scroll, sei, sonic, taiko, xLayer, polygonZkEvm, zkSync, MorphoMetadata, UniswapMetadata, OkuPricingMetadata, OkuMetadata, TokenMetadata, Markets, Bridges, Oracles, IChainInfo, MAINNET_CHAINS };
