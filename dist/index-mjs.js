@@ -3966,6 +3966,7 @@ const MAINNET_CHAINS = [
     sonic,
     celo,
     hemi,
+    telos,
 ];
 
 export { MAINNET_CHAINS, arbitrum, base, blast, bob, boba, bsc, celo, corn, filecoin, gnosis, hemi, linea, lisk, mainnet, manta, mantle, metal, moonbeam, optimism, polygon, polygonZkEvm, rootstock, scroll, sei, sonic, taiko, telos, xLayer, zkSync };

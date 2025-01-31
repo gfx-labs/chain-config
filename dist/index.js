@@ -3968,6 +3968,7 @@ const MAINNET_CHAINS = [
     sonic,
     celo,
     hemi,
+    telos,
 ];
 
 exports.MAINNET_CHAINS = MAINNET_CHAINS;

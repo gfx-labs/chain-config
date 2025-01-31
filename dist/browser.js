@@ -3969,6 +3969,7 @@
       sonic,
       celo,
       hemi,
+      telos,
   ];
 
   exports.MAINNET_CHAINS = MAINNET_CHAINS;

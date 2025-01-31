@@ -27,6 +27,7 @@ export * from "./scroll";
 export * from "./sei";
 export * from "./sonic";
 export * from "./taiko";
+export * from "./telos";
 export * from "./xlayer";
 export * from "./zkevm";
 export * from "./zksync";
