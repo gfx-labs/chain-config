@@ -1,8 +1,8 @@
 (function (global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('viem/chains'), require('viem')) :
-  typeof define === 'function' && define.amd ? define(['exports', 'viem/chains', 'viem'], factory) :
-  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global["oku-chains"] = {}, global.viem_chains, global.viem));
-})(this, (function (exports, chains, viem) { 'use strict';
+  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('viem/chains')) :
+  typeof define === 'function' && define.amd ? define(['exports', 'viem/chains'], factory) :
+  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global["oku-chains"] = {}, global.viem_chains));
+})(this, (function (exports, chains) { 'use strict';
 
   const makeConfig = (x) => {
       return x;
@@ -3573,7 +3573,7 @@
               nativeWrappedName: "TLOS",
           },
       },
-      defaultPool: viem.zeroAddress,
+      defaultPool: "0x2E2F83DF7061561C4a29bD155B8f65674bFa31C9",
       defaultToken0: "0x8D97Cea50351Fb4329d591682b148D43a0C3611b",
       defaultToken1: "0xD102cE6A4dB07D247fcc28F366A623Df0938CA9E",
       tokenList: [
@@ -3582,7 +3582,7 @@
           { symbol: "WBTC", address: "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c" },
       ],
       stables: ["0x8D97Cea50351Fb4329d591682b148D43a0C3611b"],
-      watchlist: [],
+      watchlist: ["0x2E2F83DF7061561C4a29bD155B8f65674bFa31C9"],
       internalName: "telos",
       nativeLogoUrl: "https://assets.oku.trade/natives/telos.png",
       contracts: {

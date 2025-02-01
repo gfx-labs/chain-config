@@ -1,5 +1,4 @@
 import { arbitrum as arbitrum$1, base as base$1, blast as blast$1, bob as bob$1, boba as boba$1, bsc as bsc$1, celo as celo$1, corn as corn$1, filecoin as filecoin$1, gnosis as gnosis$1, hemi as hemi$1, linea as linea$1, lisk as lisk$1, mainnet as mainnet$1, manta as manta$1, mantle as mantle$1, metalL2, moonbeam as moonbeam$1, optimism as optimism$1, polygon as polygon$1, rootstock as rootstock$1, scroll as scroll$1, sei as sei$1, sonic as sonic$1, taiko as taiko$1, telos as telos$1, xLayer as xLayer$1, polygonZkEvm as polygonZkEvm$1, zksync } from 'viem/chains';
-import { zeroAddress } from 'viem';
 
 const makeConfig = (x) => {
     return x;
@@ -3570,7 +3569,7 @@ const telos = makeConfig({
             nativeWrappedName: "TLOS",
         },
     },
-    defaultPool: zeroAddress,
+    defaultPool: "0x2E2F83DF7061561C4a29bD155B8f65674bFa31C9",
     defaultToken0: "0x8D97Cea50351Fb4329d591682b148D43a0C3611b",
     defaultToken1: "0xD102cE6A4dB07D247fcc28F366A623Df0938CA9E",
     tokenList: [
@@ -3579,7 +3578,7 @@ const telos = makeConfig({
         { symbol: "WBTC", address: "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c" },
     ],
     stables: ["0x8D97Cea50351Fb4329d591682b148D43a0C3611b"],
-    watchlist: [],
+    watchlist: ["0x2E2F83DF7061561C4a29bD155B8f65674bFa31C9"],
     internalName: "telos",
     nativeLogoUrl: "https://assets.oku.trade/natives/telos.png",
     contracts: {
