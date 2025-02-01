@@ -48,7 +48,7 @@ export const telos = makeConfig({
       nativeWrappedName: "TLOS",
     },
   },
-  defaultPool: zeroAddress,
+  defaultPool: "0x2E2F83DF7061561C4a29bD155B8f65674bFa31C9",
   defaultToken0: "0x8D97Cea50351Fb4329d591682b148D43a0C3611b",
   defaultToken1: "0xD102cE6A4dB07D247fcc28F366A623Df0938CA9E",
   tokenList: [
@@ -57,7 +57,7 @@ export const telos = makeConfig({
     { symbol: "WBTC", address: "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c" },
   ],
   stables: ["0x8D97Cea50351Fb4329d591682b148D43a0C3611b"],
-  watchlist: [],
+  watchlist: ["0x2E2F83DF7061561C4a29bD155B8f65674bFa31C9"],
   internalName: "telos",
   nativeLogoUrl: "https://assets.oku.trade/natives/telos.png",
   contracts: {
