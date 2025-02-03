@@ -5776,6 +5776,7 @@ declare const telos: Readonly<{
     safeReorgDistance: 90000;
     externalId: {};
     markets: {
+        openocean: string;
         icecreamswap: true;
     };
     bridges: {};
@@ -5811,7 +5812,7 @@ declare const telos: Readonly<{
             nativeWrappedName: string;
         };
     };
-    defaultPool: "0x0000000000000000000000000000000000000000";
+    defaultPool: "0x2E2F83DF7061561C4a29bD155B8f65674bFa31C9";
     defaultToken0: "0x8D97Cea50351Fb4329d591682b148D43a0C3611b";
     defaultToken1: "0xD102cE6A4dB07D247fcc28F366A623Df0938CA9E";
     tokenList: ({
@@ -5825,7 +5826,7 @@ declare const telos: Readonly<{
         address: "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c";
     })[];
     stables: "0x8D97Cea50351Fb4329d591682b148D43a0C3611b"[];
-    watchlist: never[];
+    watchlist: "0x2E2F83DF7061561C4a29bD155B8f65674bFa31C9"[];
     internalName: "telos";
     nativeLogoUrl: "https://assets.oku.trade/natives/telos.png";
     contracts: {
@@ -13220,6 +13221,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     safeReorgDistance: 90000;
     externalId: {};
     markets: {
+        openocean: string;
         icecreamswap: true;
     };
     bridges: {};
@@ -13255,7 +13257,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             nativeWrappedName: string;
         };
     };
-    defaultPool: "0x0000000000000000000000000000000000000000";
+    defaultPool: "0x2E2F83DF7061561C4a29bD155B8f65674bFa31C9";
     defaultToken0: "0x8D97Cea50351Fb4329d591682b148D43a0C3611b";
     defaultToken1: "0xD102cE6A4dB07D247fcc28F366A623Df0938CA9E";
     tokenList: ({
@@ -13269,7 +13271,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         address: "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c";
     })[];
     stables: "0x8D97Cea50351Fb4329d591682b148D43a0C3611b"[];
-    watchlist: never[];
+    watchlist: "0x2E2F83DF7061561C4a29bD155B8f65674bFa31C9"[];
     internalName: "telos";
     nativeLogoUrl: "https://assets.oku.trade/natives/telos.png";
     contracts: {

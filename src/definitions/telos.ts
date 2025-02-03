@@ -1,6 +1,5 @@
 import { telos as chain } from "viem/chains";
 import { makeConfig } from "../util";
-import { zeroAddress } from "viem";
 
 export const telos = makeConfig({
   ...chain,
@@ -11,6 +10,7 @@ export const telos = makeConfig({
   safeReorgDistance: 90000,
   externalId: {},
   markets: {
+    openocean: "telos",
     icecreamswap: true,
   },
   bridges: {},

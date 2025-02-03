@@ -15,7 +15,7 @@ var Telos Network = Network{
 			Url: "https://www.teloscan.io/",
 		},
 	},
-	DefaultPool:   common.HexToAddress("0x0000000000000000000000000000000000000000"),
+	DefaultPool:   common.HexToAddress("0x2E2F83DF7061561C4a29bD155B8f65674bFa31C9"),
 	InternalName:  "telos",
 	InitCodeHash:  common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId:    map[string]string{},
@@ -24,7 +24,7 @@ var Telos Network = Network{
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0x8D97Cea50351Fb4329d591682b148D43a0C3611b")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x8D97Cea50351Fb4329d591682b148D43a0C3611b"): {}},
-	Watchlist:        []common.Address{},
+	Watchlist:        []common.Address{common.HexToAddress("0x2E2F83DF7061561C4a29bD155B8f65674bFa31C9")},
 	BlockTimeSeconds: 0.5,
 	Oku: OkuMetadata{
 		LimitOrderRegistry:            common.HexToAddress("0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc"),
