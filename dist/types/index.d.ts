@@ -5322,7 +5322,7 @@ declare const saga: Readonly<{
     stables: ("0xfc960C233B8E98e0Cf282e29BDE8d3f105fc24d5" | "0xC8fe3C1de344854f4429bB333AFFAeF97eF88CEa")[];
     watchlist: never[];
     internalName: "saga";
-    nativeLogoUrl: "https://assets.oku.trade/natives/eth.png";
+    nativeLogoUrl: "https://assets.oku.trade/natives/saga.png";
     contracts: {
         limitOrder: {
             address: "0xA9d71E1dd7ca26F26e656E66d6AA81ed7f745bf0";
@@ -13474,7 +13474,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     stables: ("0xfc960C233B8E98e0Cf282e29BDE8d3f105fc24d5" | "0xC8fe3C1de344854f4429bB333AFFAeF97eF88CEa")[];
     watchlist: never[];
     internalName: "saga";
-    nativeLogoUrl: "https://assets.oku.trade/natives/eth.png";
+    nativeLogoUrl: "https://assets.oku.trade/natives/saga.png";
     contracts: {
         limitOrder: {
             address: "0xA9d71E1dd7ca26F26e656E66d6AA81ed7f745bf0";
