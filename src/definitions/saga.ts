@@ -60,7 +60,7 @@ export const saga = makeConfig({
   ],
   watchlist: [],
   internalName: "saga",
-  nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
+  nativeLogoUrl: "https://assets.oku.trade/natives/saga.png",
   contracts: {
     ...chain.contracts,
     limitOrder: {
