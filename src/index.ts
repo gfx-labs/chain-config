@@ -32,4 +32,5 @@ export const MAINNET_CHAINS = [
   defs.celo,
   defs.hemi,
   defs.telos,
+  defs.saga,
 ] as const;

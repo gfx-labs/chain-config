@@ -23,6 +23,7 @@ export * from "./moonbeam";
 export * from "./optimism";
 export * from "./polygon";
 export * from "./rootstock";
+export * from "./saga";
 export * from "./scroll";
 export * from "./sei";
 export * from "./sonic";
