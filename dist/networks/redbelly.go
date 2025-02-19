@@ -16,7 +16,7 @@ var Redbelly Network = Network{
 			ApiUrl: "https://api.routescan.io/v2/network/mainnet/evm/151/etherscan/api",
 		},
 	},
-	DefaultPool:   common.HexToAddress("0x0000000000000000000000000000000000000000"),
+	DefaultPool:   common.HexToAddress("0xcDe3554d179b5B7ABB3ddFeE1CBC7B98b3f2E380"),
 	InternalName:  "redbelly",
 	InitCodeHash:  common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId:    map[string]string{},
@@ -25,7 +25,7 @@ var Redbelly Network = Network{
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0x8201c02d4AB2214471E8C3AD6475C8b0CD9F2D06"), common.HexToAddress("0x8C4aCd74Ff4385f3B7911432FA6787Aa14406f8B")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x8201c02d4AB2214471E8C3AD6475C8b0CD9F2D06"): {}, common.HexToAddress("0x8C4aCd74Ff4385f3B7911432FA6787Aa14406f8B"): {}},
-	Watchlist:        []common.Address{},
+	Watchlist:        []common.Address{common.HexToAddress("0xcDe3554d179b5B7ABB3ddFeE1CBC7B98b3f2E380")},
 	BlockTimeSeconds: 5,
 	Oku: OkuMetadata{
 		LimitOrderRegistry:            common.HexToAddress("0x9db70E29712Cc8Af10c2B597BaDA6784544FF407"),

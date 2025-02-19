@@ -15,7 +15,7 @@ var Goat Network = Network{
 			Url: "https://explorer.goat.network",
 		},
 	},
-	DefaultPool:   common.HexToAddress("0x0000000000000000000000000000000000000000"),
+	DefaultPool:   common.HexToAddress("0x56F689Ec1E264FAad1666F3b5db1A6a9707cc9b1"),
 	InternalName:  "goat",
 	InitCodeHash:  common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId:    map[string]string{},
@@ -24,7 +24,7 @@ var Goat Network = Network{
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0x3022b87ac063DE95b1570F46f5e470F8B53112D8")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x3022b87ac063DE95b1570F46f5e470F8B53112D8"): {}},
-	Watchlist:        []common.Address{},
+	Watchlist:        []common.Address{common.HexToAddress("0x076d72dDdE865eD0A71267E69A8E51A9fFE1E3D0"), common.HexToAddress("0x56F689Ec1E264FAad1666F3b5db1A6a9707cc9b1")},
 	BlockTimeSeconds: 3,
 	Oku: OkuMetadata{
 		LimitOrderRegistry:            common.HexToAddress("0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc"),
