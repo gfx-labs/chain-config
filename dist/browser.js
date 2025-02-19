@@ -3103,7 +3103,7 @@
       },
       defaultPool: "0xcDe3554d179b5B7ABB3ddFeE1CBC7B98b3f2E380",
       defaultToken0: "0x6ed1F491e2d31536D6561f6bdB2AdC8F092a6076",
-      defaultToken1: "0x8201c02d4AB2214471E8C3AD6475C8b0CD9F2D06",
+      defaultToken1: "0x8C4aCd74Ff4385f3B7911432FA6787Aa14406f8B",
       tokenList: [
           { symbol: "WRBNT", address: "0x6ed1F491e2d31536D6561f6bdB2AdC8F092a6076" },
           { symbol: "USDC.e", address: "0x8201c02d4AB2214471E8C3AD6475C8b0CD9F2D06" },
