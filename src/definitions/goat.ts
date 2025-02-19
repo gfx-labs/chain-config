@@ -1,6 +1,5 @@
 import { goat as chain } from "viem/chains";
 import { makeConfig } from "../util";
-import { zeroAddress } from "viem";
 
 export const goat = makeConfig({
   ...chain,
@@ -46,7 +45,7 @@ export const goat = makeConfig({
       nativeWrappedName: "WGBTC",
     },
   },
-  defaultPool: zeroAddress,
+  defaultPool: "0x56F689Ec1E264FAad1666F3b5db1A6a9707cc9b1",
   defaultToken0: "0x3022b87ac063DE95b1570F46f5e470F8B53112D8",
   defaultToken1: "0xbC10000000000000000000000000000000000000",
   tokenList: [
@@ -54,7 +53,10 @@ export const goat = makeConfig({
     { symbol: "USDC.e", address: "0x3022b87ac063DE95b1570F46f5e470F8B53112D8" },
   ],
   stables: ["0x3022b87ac063DE95b1570F46f5e470F8B53112D8"],
-  watchlist: [],
+  watchlist: [
+    "0x076d72dDdE865eD0A71267E69A8E51A9fFE1E3D0",
+    "0x56F689Ec1E264FAad1666F3b5db1A6a9707cc9b1",
+  ],
   internalName: "goat",
   nativeLogoUrl: "https://assets.oku.trade/natives/gbtc.svg",
   contracts: {
