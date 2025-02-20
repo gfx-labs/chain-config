@@ -22,6 +22,12 @@ export const scroll = makeConfig({
     icecreamswap: true,
   },
   bridges: {
+    chainlink: {
+			atlasNetworkName: "ethereum-mainnet-scroll-1",
+			routerAddress: "0x9a55E8Cab6564eb7bbd7124238932963B8Af71DC",
+			chainSelector: 13204309965629103672n,
+      tokenAdminRegistry: "0x846dEA1c1706FC35b4aa78B32d31F1599DAA47b4"
+		},
     rhinofi: "SCROLL",
     stargate: {
       endpointID: 30214,

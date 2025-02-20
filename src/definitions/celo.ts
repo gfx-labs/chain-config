@@ -4,15 +4,22 @@ import { makeConfig } from "../util";
 export const celo = makeConfig({
   ...chain,
   blockTimeSeconds: 2,
-  launchTime: 1727359200,
+  launchTime: 1737754469,
   sortIndex: 15,
   logoUrl: "https://assets.oku.trade/chains/celo-logo.svg",
   safeReorgDistance: 90000,
   externalId: {},
   markets: {
-    icecreamswap: true,
+    icecreamswap: true
   },
-  bridges: {},
+  bridges: {
+    chainlink: {
+      atlasNetworkName: "celo-mainnet",
+      routerAddress: "0xfB48f15480926A4ADf9116Dca468bDd2EE6C5F62",
+      chainSelector: 1346049177634351622n,
+      tokenAdminRegistry: "0xf19e0555fAA9051e277eeD5A0DcdB13CDaca39a9"
+    },
+  },
   morpho: {},
   oracles: {
     coingecko: {

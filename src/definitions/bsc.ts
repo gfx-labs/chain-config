@@ -31,9 +31,10 @@ export const bsc = makeConfig({
   },
   bridges: {
     chainlink: {
-      atlasNetworkName: "binance_smart_chain-mainnet",
+      atlasNetworkName: "bsc-mainnet",
       routerAddress: "0x34B03Cb9086d7D758AC55af71584F81A598759FE",
       chainSelector: 11344663589394136015n,
+      tokenAdminRegistry: "0x736Fd8660c443547a85e4Eaf70A49C1b7Bb008fc"
     },
     rhinofi: "BINANCE",
     stargate: {

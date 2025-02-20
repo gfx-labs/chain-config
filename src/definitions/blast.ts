@@ -20,6 +20,12 @@ export const blast = makeConfig({
     icecreamswap: true,
   },
   bridges: {
+    chainlink: {
+			atlasNetworkName: "ethereum-mainnet-blast",
+			routerAddress: "0x12e0B8E349C6fb7E6E40713E8125C3cF1127ea8C",
+			chainSelector: 4411394078118774322n,
+      tokenAdminRegistry: "0x846Fccd01D4115FD1E81267495773aeB33bF1dC7"
+		},
     rhinofi: "BLAST",
     wormhole: {
       chain: "Blast",

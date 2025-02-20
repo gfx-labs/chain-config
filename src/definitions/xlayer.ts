@@ -12,7 +12,14 @@ export const xLayer = makeConfig({
   markets: {
     icecreamswap: true
   },
-  bridges: {},
+  bridges: {
+    chainlink: {
+      atlasNetworkName: "ethereum-mainnet-xlayer-1",
+      routerAddress: "0xF2b6Cb7867EB5502C3249dD37D7bc1Cc148e5232",
+      chainSelector: 3016212468291539606n,
+      tokenAdminRegistry: "0xeCf1eAEE01E82F3388dECD7f4C3792374f3f72F3"
+    },
+  },
 	morpho: {},
   oracles: {
     cmc: {

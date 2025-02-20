@@ -1,4 +1,5 @@
-import { arbitrum as arbitrum$1, base as base$1, blast as blast$1, bob as bob$1, boba as boba$1, bsc as bsc$1, celo as celo$1, corn as corn$1, filecoin as filecoin$1, gnosis as gnosis$1, linea as linea$1, lisk as lisk$1, mainnet as mainnet$1, manta as manta$1, mantle as mantle$1, metalL2, moonbeam as moonbeam$1, optimism as optimism$1, polygon as polygon$1, rootstock as rootstock$1, scroll as scroll$1, sei as sei$1, sonic as sonic$1, taiko as taiko$1, xLayer as xLayer$1, polygonZkEvm as polygonZkEvm$1, zksync } from 'viem/chains';
+import { arbitrum as arbitrum$1, base as base$1, blast as blast$1, bob as bob$1, boba as boba$1, bsc as bsc$1, celo as celo$1, corn as corn$1, filecoin as filecoin$1, gnosis as gnosis$1, goat as goat$1, hemi as hemi$1, linea as linea$1, lisk as lisk$1, mainnet as mainnet$1, manta as manta$1, mantle as mantle$1, metalL2, moonbeam as moonbeam$1, optimism as optimism$1, polygon as polygon$1, redbellyMainnet, rootstock as rootstock$1, saga as saga$1, scroll as scroll$1, sei as sei$1, sonic as sonic$1, taiko as taiko$1, telos as telos$1, xLayer as xLayer$1, polygonZkEvm as polygonZkEvm$1, zksync } from 'viem/chains';
+import { zeroAddress } from 'viem';
 
 const makeConfig = (x) => {
     return x;
@@ -28,13 +29,13 @@ const arbitrum = makeConfig({
         openocean: "arbitrum",
         zeroex: true,
         cowswap: "arbitrum_one",
-        icecreamswap: true,
     },
     bridges: {
         chainlink: {
             atlasNetworkName: "ethereum-mainnet-arbitrum-1",
             routerAddress: "0x141fa059441E0ca23ce184B6A78bafD2A517DdE8",
             chainSelector: 4949039107694359620n,
+            tokenAdminRegistry: "0x39AE1032cF4B334a1Ed41cdD0833bdD7c7E7751E"
         },
         rhinofi: "ARBITRUM",
         stargate: {
@@ -328,6 +329,7 @@ const base = makeConfig({
             atlasNetworkName: "ethereum-mainnet-base-1",
             routerAddress: "0x881e3A65B4d4a04dD529061dd0071cf975F58bCD",
             chainSelector: 15971525489660198786n,
+            tokenAdminRegistry: "0x6f6C373d09C07425BaAE72317863d7F6bb731e37"
         },
         rhinofi: "BASE",
         stargate: {
@@ -466,6 +468,12 @@ const blast = makeConfig({
         icecreamswap: true,
     },
     bridges: {
+        chainlink: {
+            atlasNetworkName: "ethereum-mainnet-blast",
+            routerAddress: "0x12e0B8E349C6fb7E6E40713E8125C3cF1127ea8C",
+            chainSelector: 4411394078118774322n,
+            tokenAdminRegistry: "0x846Fccd01D4115FD1E81267495773aeB33bF1dC7"
+        },
         rhinofi: "BLAST",
         wormhole: {
             chain: "Blast",
@@ -558,7 +566,14 @@ const bob = makeConfig({
     markets: {
         icecreamswap: true,
     },
-    bridges: {},
+    bridges: {
+        chainlink: {
+            atlasNetworkName: "bitcoin-mainnet-bob",
+            routerAddress: "0x827716e74F769AB7b6bb374A29235d9c2156932C",
+            chainSelector: 3849287863852499584n,
+            tokenAdminRegistry: "0xa57d04119AFf4884F8602213E58d8AaAD18229cb"
+        },
+    },
     morpho: {},
     oracles: {
         coingecko: {
@@ -796,9 +811,10 @@ const bsc = makeConfig({
     },
     bridges: {
         chainlink: {
-            atlasNetworkName: "binance_smart_chain-mainnet",
+            atlasNetworkName: "bsc-mainnet",
             routerAddress: "0x34B03Cb9086d7D758AC55af71584F81A598759FE",
             chainSelector: 11344663589394136015n,
+            tokenAdminRegistry: "0x736Fd8660c443547a85e4Eaf70A49C1b7Bb008fc"
         },
         rhinofi: "BINANCE",
         stargate: {
@@ -957,15 +973,22 @@ const bsc = makeConfig({
 const celo = makeConfig({
     ...celo$1,
     blockTimeSeconds: 2,
-    launchTime: 1727359200,
+    launchTime: 1737754469,
     sortIndex: 15,
     logoUrl: "https://assets.oku.trade/chains/celo-logo.svg",
     safeReorgDistance: 90000,
     externalId: {},
     markets: {
-        icecreamswap: true,
+        icecreamswap: true
     },
-    bridges: {},
+    bridges: {
+        chainlink: {
+            atlasNetworkName: "celo-mainnet",
+            routerAddress: "0xfB48f15480926A4ADf9116Dca468bDd2EE6C5F62",
+            chainSelector: 1346049177634351622n,
+            tokenAdminRegistry: "0xf19e0555fAA9051e277eeD5A0DcdB13CDaca39a9"
+        },
+    },
     morpho: {},
     oracles: {
         coingecko: {
@@ -1058,7 +1081,14 @@ const corn = makeConfig({
     safeReorgDistance: 90000,
     externalId: {},
     markets: {},
-    bridges: {},
+    bridges: {
+        chainlink: {
+            atlasNetworkName: "corn-mainnet",
+            routerAddress: "0x183f6069A0D5c2DEC1Dd1eCF3B1581e12dEb4Efe",
+            chainSelector: 9043146809313071210n,
+            tokenAdminRegistry: "0xCd51e57cD26b9B5eecbfe3d96DAabF3d12A663DA"
+        },
+    },
     oracles: {},
     morpho: {},
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
@@ -1276,7 +1306,14 @@ const gnosis = makeConfig({
             routerContract: "0x6A000F20005980200259B80c5102003040001068"
         }
     },
-    bridges: {},
+    bridges: {
+        chainlink: {
+            atlasNetworkName: "xdai-mainnet",
+            routerAddress: "0x4aAD6071085df840abD9Baf1697d5D5992bDadce",
+            chainSelector: 465200170687744372n,
+            tokenAdminRegistry: "0x73BC11423CBF14914998C23B0aFC9BE0cb5B2229"
+        },
+    },
     oracles: {
         cmc: {
             slug: "gnosis",
@@ -1363,6 +1400,160 @@ const gnosis = makeConfig({
     },
 });
 
+const goat = makeConfig({
+    ...goat$1,
+    name: "Goat",
+    blockTimeSeconds: 3,
+    launchTime: 1740621916,
+    sortIndex: 15,
+    logoUrl: "https://assets.oku.trade/chains/goat-logo.svg",
+    safeReorgDistance: 90000,
+    externalId: {},
+    markets: {},
+    bridges: {},
+    oracles: {},
+    morpho: {},
+    initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
+    uniswap: {
+        deployBlock: 848385,
+        poolFactory: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D",
+        permit2: "0xB952578f3520EE8Ea45b7914994dcf4702cEe578",
+        multicall2: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435",
+        tickLens: "0xB3309C48F8407651D918ca3Da4C45DE40109E641",
+        nonfungiblePositionManager: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c",
+        positionsNFT: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c",
+        positionsNFTDeployBlock: 848408,
+        universalRouter: "0x738fD6d10bCc05c230388B4027CAd37f82fe2AF2",
+        wrappedNativeAddress: "0xbC10000000000000000000000000000000000000",
+        wrappedNativeSymbol: "WGBTC",
+        wrappedNativeName: "Wrapped Goat Bitcoin",
+        wrappedNativeDecimals: 18,
+        nativeCurrencyName: "BTC",
+    },
+    token: {
+        wethAddress: "0xbC10000000000000000000000000000000000000",
+        usdcAddress: "0x3022b87ac063DE95b1570F46f5e470F8B53112D8",
+    },
+    oku: {
+        limitOrderRegistry: "0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc",
+        limitOrderRegistryDeployBlock: 848591,
+        pricing: {
+            nativeWrappedToken: "0xbC10000000000000000000000000000000000000",
+            nativeWrappedName: "WGBTC",
+        },
+    },
+    defaultPool: "0x56F689Ec1E264FAad1666F3b5db1A6a9707cc9b1",
+    defaultToken0: "0x3022b87ac063DE95b1570F46f5e470F8B53112D8",
+    defaultToken1: "0xbC10000000000000000000000000000000000000",
+    tokenList: [
+        { symbol: "WBTC", address: "0xbC10000000000000000000000000000000000000" },
+        { symbol: "USDC.e", address: "0x3022b87ac063DE95b1570F46f5e470F8B53112D8" },
+    ],
+    stables: ["0x3022b87ac063DE95b1570F46f5e470F8B53112D8"],
+    watchlist: [
+        "0x076d72dDdE865eD0A71267E69A8E51A9fFE1E3D0",
+        "0x56F689Ec1E264FAad1666F3b5db1A6a9707cc9b1",
+    ],
+    internalName: "goat",
+    nativeLogoUrl: "https://assets.oku.trade/natives/gbtc.svg",
+    contracts: {
+        ...goat$1.contracts,
+        limitOrder: {
+            address: "0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc",
+        },
+        nftManager: {
+            address: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c",
+        },
+        weth9: {
+            address: "0xbC10000000000000000000000000000000000000",
+        },
+        multicall2: {
+            address: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435",
+        },
+        multicall3: {
+            address: "0xcA11bde05977b3631167028862bE2a173976CA11",
+        },
+    },
+});
+
+const hemi = makeConfig({
+    ...hemi$1,
+    blockTimeSeconds: 12,
+    launchTime: 1738569600,
+    sortIndex: 13,
+    logoUrl: "https://assets.oku.trade/chains/hemi-logo.svg",
+    safeReorgDistance: 90000,
+    externalId: {},
+    markets: {},
+    bridges: {},
+    morpho: {},
+    oracles: {},
+    initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
+    uniswap: {
+        deployBlock: 963965,
+        poolFactory: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D",
+        permit2: "0xB952578f3520EE8Ea45b7914994dcf4702cEe578",
+        multicall2: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435",
+        tickLens: "0xB3309C48F8407651D918ca3Da4C45DE40109E641",
+        nonfungiblePositionManager: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c",
+        positionsNFT: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c",
+        positionsNFTDeployBlock: 963981,
+        universalRouter: "0x738fD6d10bCc05c230388B4027CAd37f82fe2AF2",
+        wrappedNativeAddress: "0x4200000000000000000000000000000000000006",
+        wrappedNativeSymbol: "WETH",
+        wrappedNativeName: "Wrapped Ether",
+        wrappedNativeDecimals: 18,
+        nativeCurrencyName: "ETH",
+    },
+    token: {
+        wethAddress: "0x4200000000000000000000000000000000000006",
+        wbtcAddress: "0x03C7054BCB39f7b2e5B2c7AcB37583e32D70Cfa3",
+    },
+    oku: {
+        limitOrderRegistry: "0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc",
+        limitOrderRegistryDeployBlock: 964056,
+        pricing: {
+            nativeWrappedToken: "0x4200000000000000000000000000000000000006",
+            nativeWrappedName: "ETH",
+        },
+    },
+    defaultPool: "0x3A49cCD3c2A688D0766E087B30A3d27C8997A71c",
+    defaultToken0: "0x4200000000000000000000000000000000000006",
+    defaultToken1: "0xad11a8BEb98bbf61dbb1aa0F6d6F2ECD87b35afA",
+    tokenList: [
+        { symbol: "WETH", address: "0x4200000000000000000000000000000000000006" },
+        { symbol: "USDT", address: "0xbB0D083fb1be0A9f6157ec484b6C79E0A4e31C2e" },
+        { symbol: "USDC.e", address: "0xad11a8BEb98bbf61dbb1aa0F6d6F2ECD87b35afA" },
+        { symbol: "WBTC", address: "0x03C7054BCB39f7b2e5B2c7AcB37583e32D70Cfa3" },
+    ],
+    stables: [
+        "0xad11a8BEb98bbf61dbb1aa0F6d6F2ECD87b35afA",
+        "0xbB0D083fb1be0A9f6157ec484b6C79E0A4e31C2e",
+        "0x6c851F501a3F24E29A8E39a29591cddf09369080",
+    ],
+    watchlist: ["0x3A49cCD3c2A688D0766E087B30A3d27C8997A71c"],
+    internalName: "hemi",
+    nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
+    contracts: {
+        ...hemi$1.contracts,
+        limitOrder: {
+            address: "0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc",
+        },
+        nftManager: {
+            address: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c",
+        },
+        weth9: {
+            address: "0x4200000000000000000000000000000000000006",
+        },
+        multicall2: {
+            address: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435",
+        },
+        multicall3: {
+            address: "0xcA11bde05977b3631167028862bE2a173976CA11",
+        },
+    },
+});
+
 const linea = makeConfig({
     ...linea$1,
     name: "Linea",
@@ -1383,6 +1574,12 @@ const linea = makeConfig({
         icecreamswap: true,
     },
     bridges: {
+        chainlink: {
+            atlasNetworkName: "ethereum-mainnet-linea-1",
+            routerAddress: "0x549FEB73F2348F6cD99b9fc8c69252034897f06C",
+            chainSelector: 4627098889531055414n,
+            tokenAdminRegistry: "0xBc933cEE67d2b1c08490ee8C51E2dF653a713534"
+        },
         rhinofi: "LINEA",
         stargate: {
             endpointID: 30183,
@@ -1612,6 +1809,7 @@ const mainnet = makeConfig({
             atlasNetworkName: "ethereum-mainnet",
             routerAddress: "0x80226fc0Ee2b096224EeAc085Bb9a8cba1146f7D",
             chainSelector: 5009297550715157269n,
+            tokenAdminRegistry: "0xb22764f98dD05c789929716D677382Df22C05Cb6"
         },
         rhinofi: "ETHEREUM",
         stargate: {
@@ -1998,6 +2196,12 @@ const mantle = makeConfig({
         icecreamswap: true
     },
     bridges: {
+        chainlink: {
+            atlasNetworkName: "ethereum-mainnet-mantle-1",
+            routerAddress: "0x670052635a9850bb45882Cb2eCcF66bCff0F41B7",
+            chainSelector: 1556008542357238666n,
+            tokenAdminRegistry: "0x000A744940eB5D857c0d61d97015DFc83107404F"
+        },
         stargate: {
             endpointID: 30181,
             blockConfirmations: 20,
@@ -2318,6 +2522,7 @@ const optimism = makeConfig({
             atlasNetworkName: "ethereum-mainnet-optimism-1",
             routerAddress: "0x3206695CaE29952f4b0c22a169725a865bc8Ce0f",
             chainSelector: 3734403246176062136n,
+            tokenAdminRegistry: "0x657c42abE4CD8aa731Aec322f871B5b90cf6274F"
         },
         rhinofi: "OPTIMISM",
         stargate: {
@@ -2603,6 +2808,7 @@ const polygon = makeConfig({
             atlasNetworkName: "polygon-mainnet",
             routerAddress: "0x849c5ED5a80F5B408Dd4969b78c2C8fdf0565Bfe",
             chainSelector: 4051577828743386545n,
+            tokenAdminRegistry: "0x00F027eA6D0fb03256A15E9182B2B9227A4931d8"
         },
         rhinofi: "MATIC_POS",
         stargate: {
@@ -2850,6 +3056,83 @@ const polygon = makeConfig({
     },
 });
 
+const redbelly = makeConfig({
+    ...redbellyMainnet,
+    name: "Redbelly",
+    blockTimeSeconds: 5,
+    launchTime: 1740621916,
+    sortIndex: 15,
+    logoUrl: "https://assets.oku.trade/chains/redbelly-logo.svg",
+    safeReorgDistance: 90000,
+    externalId: {},
+    markets: {},
+    bridges: {},
+    oracles: {},
+    morpho: {},
+    initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
+    uniswap: {
+        deployBlock: 2286057,
+        poolFactory: "0x75FC67473A91335B5b8F8821277262a13B38c9b3",
+        permit2: "0xdD489C75be1039ec7d843A6aC2Fd658350B067Cf",
+        multicall2: "0x0d922Fb1Bc191F64970ac40376643808b4B74Df9",
+        tickLens: "0xE3dbcD53f4Ce1b06Ab200f4912BD35672e68f1FA",
+        nonfungiblePositionManager: "0x8B3c541c30f9b29560f56B9E44b59718916B69EF",
+        positionsNFT: "0x8B3c541c30f9b29560f56B9E44b59718916B69EF",
+        positionsNFTDeployBlock: 2286074,
+        universalRouter: "0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc",
+        wrappedNativeAddress: "0x6ed1F491e2d31536D6561f6bdB2AdC8F092a6076",
+        wrappedNativeSymbol: "WRBNT",
+        wrappedNativeName: "Wrapped RBNT",
+        wrappedNativeDecimals: 18,
+        nativeCurrencyName: "RBNT",
+    },
+    token: {
+        wethAddress: "0x6ed1F491e2d31536D6561f6bdB2AdC8F092a6076",
+        usdcAddress: "0x8201c02d4AB2214471E8C3AD6475C8b0CD9F2D06",
+    },
+    oku: {
+        limitOrderRegistry: "0x9db70E29712Cc8Af10c2B597BaDA6784544FF407",
+        limitOrderRegistryDeployBlock: 2286099,
+        pricing: {
+            nativeWrappedToken: "0x6ed1F491e2d31536D6561f6bdB2AdC8F092a6076",
+            nativeWrappedName: "RBNT",
+        },
+    },
+    defaultPool: "0xcDe3554d179b5B7ABB3ddFeE1CBC7B98b3f2E380",
+    defaultToken0: "0x6ed1F491e2d31536D6561f6bdB2AdC8F092a6076",
+    defaultToken1: "0x8C4aCd74Ff4385f3B7911432FA6787Aa14406f8B",
+    tokenList: [
+        { symbol: "WRBNT", address: "0x6ed1F491e2d31536D6561f6bdB2AdC8F092a6076" },
+        { symbol: "USDC.e", address: "0x8201c02d4AB2214471E8C3AD6475C8b0CD9F2D06" },
+        { symbol: "USDT", address: "0x8C4aCd74Ff4385f3B7911432FA6787Aa14406f8B" },
+    ],
+    stables: [
+        "0x8201c02d4AB2214471E8C3AD6475C8b0CD9F2D06",
+        "0x8C4aCd74Ff4385f3B7911432FA6787Aa14406f8B",
+    ],
+    watchlist: ["0xcDe3554d179b5B7ABB3ddFeE1CBC7B98b3f2E380"],
+    internalName: "redbelly",
+    nativeLogoUrl: "https://assets.oku.trade/natives/rbnt.svg",
+    contracts: {
+        ...redbellyMainnet.contracts,
+        limitOrder: {
+            address: "0x9db70E29712Cc8Af10c2B597BaDA6784544FF407",
+        },
+        nftManager: {
+            address: "0x8B3c541c30f9b29560f56B9E44b59718916B69EF",
+        },
+        weth9: {
+            address: "0x6ed1F491e2d31536D6561f6bdB2AdC8F092a6076",
+        },
+        multicall2: {
+            address: "0x0d922Fb1Bc191F64970ac40376643808b4B74Df9",
+        },
+        multicall3: {
+            address: "0xEe43BBcC6340038130681F98d855E416F7F728e9",
+        },
+    },
+});
+
 const rootstock = makeConfig({
     ...rootstock$1,
     sortIndex: 7,
@@ -2922,6 +3205,7 @@ const rootstock = makeConfig({
     stables: [
         "0xef213441a85df4d7acbdae0cf78004e1e486bb96",
         "0x3a15461d8ae0f0fb5fa2629e9da7d66a794a6e37",
+        "0xaf368c91793cb22739386dfcbbb2f1a9e4bcbebf",
     ],
     watchlist: [
         "0xd2ffe51ab4e622a411abbe634832a19d919e9c55",
@@ -2952,6 +3236,83 @@ const rootstock = makeConfig({
     },
 });
 
+const saga = makeConfig({
+    ...saga$1,
+    name: "Saga",
+    blockTimeSeconds: 5,
+    launchTime: 1740384000,
+    sortIndex: 13,
+    logoUrl: "https://assets.oku.trade/chains/saga-logo.png",
+    safeReorgDistance: 90000,
+    externalId: {},
+    markets: {},
+    bridges: {},
+    oracles: {},
+    morpho: {},
+    initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
+    uniswap: {
+        deployBlock: 18885,
+        poolFactory: "0x454050C4c9190390981Ac4b8d5AFcd7aC65eEffa",
+        permit2: "0x447B8E40B0CdA8e55F405C86bC635D02d0540aB8",
+        multicall2: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c",
+        tickLens: "0x6Aa54a43d7eEF5b239a18eed3Af4877f46522BCA",
+        nonfungiblePositionManager: "0xdD489C75be1039ec7d843A6aC2Fd658350B067Cf",
+        positionsNFT: "0xdD489C75be1039ec7d843A6aC2Fd658350B067Cf",
+        positionsNFTDeployBlock: 18902,
+        universalRouter: "0x352A86168e6988A1aDF9A15Cb00017AAd3B67155",
+        wrappedNativeAddress: "0xE3dbcD53f4Ce1b06Ab200f4912BD35672e68f1FA",
+        wrappedNativeSymbol: "wGAS",
+        wrappedNativeName: "Wrapped Gas",
+        wrappedNativeDecimals: 18,
+        nativeCurrencyName: "GAS",
+    },
+    token: {
+        usdcAddress: "0xfc960C233B8E98e0Cf282e29BDE8d3f105fc24d5",
+        wethAddress: "0xE3dbcD53f4Ce1b06Ab200f4912BD35672e68f1FA",
+    },
+    oku: {
+        limitOrderRegistry: "0xA9d71E1dd7ca26F26e656E66d6AA81ed7f745bf0",
+        limitOrderRegistryDeployBlock: 19372,
+        pricing: {
+            nativeWrappedToken: "0xE3dbcD53f4Ce1b06Ab200f4912BD35672e68f1FA",
+            nativeWrappedName: "GAS",
+        },
+    },
+    defaultPool: zeroAddress,
+    defaultToken0: "0xE3dbcD53f4Ce1b06Ab200f4912BD35672e68f1FA",
+    defaultToken1: "0xfc960C233B8E98e0Cf282e29BDE8d3f105fc24d5",
+    tokenList: [
+        { symbol: "wGAS", address: "0xE3dbcD53f4Ce1b06Ab200f4912BD35672e68f1FA" },
+        { symbol: "USDC", address: "0xfc960C233B8E98e0Cf282e29BDE8d3f105fc24d5" },
+        { symbol: "USDT", address: "0xC8fe3C1de344854f4429bB333AFFAeF97eF88CEa" },
+    ],
+    stables: [
+        "0xC8fe3C1de344854f4429bB333AFFAeF97eF88CEa",
+        "0xfc960C233B8E98e0Cf282e29BDE8d3f105fc24d5",
+    ],
+    watchlist: [],
+    internalName: "saga",
+    nativeLogoUrl: "https://assets.oku.trade/natives/saga.png",
+    contracts: {
+        ...saga$1.contracts,
+        limitOrder: {
+            address: "0xA9d71E1dd7ca26F26e656E66d6AA81ed7f745bf0",
+        },
+        nftManager: {
+            address: "0xdD489C75be1039ec7d843A6aC2Fd658350B067Cf",
+        },
+        weth9: {
+            address: "0xE3dbcD53f4Ce1b06Ab200f4912BD35672e68f1FA",
+        },
+        multicall2: {
+            address: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c",
+        },
+        multicall3: {
+            address: "0x864DDc9B50B9A0dF676d826c9B9EDe9F8913a160",
+        },
+    },
+});
+
 const scroll = makeConfig({
     ...scroll$1,
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
@@ -2971,6 +3332,12 @@ const scroll = makeConfig({
         icecreamswap: true,
     },
     bridges: {
+        chainlink: {
+            atlasNetworkName: "ethereum-mainnet-scroll-1",
+            routerAddress: "0x9a55E8Cab6564eb7bbd7124238932963B8Af71DC",
+            chainSelector: 13204309965629103672n,
+            tokenAdminRegistry: "0x846dEA1c1706FC35b4aa78B32d31F1599DAA47b4"
+        },
         rhinofi: "SCROLL",
         stargate: {
             endpointID: 30214,
@@ -3389,6 +3756,83 @@ const taiko = makeConfig({
     },
 });
 
+const telos = makeConfig({
+    ...telos$1,
+    blockTimeSeconds: 0.5,
+    launchTime: 1738632669,
+    sortIndex: 13,
+    logoUrl: "https://assets.oku.trade/chains/telos-logo.svg",
+    safeReorgDistance: 90000,
+    externalId: {},
+    markets: {
+        openocean: "telos",
+        icecreamswap: true,
+    },
+    bridges: {},
+    morpho: {},
+    oracles: {},
+    initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
+    uniswap: {
+        deployBlock: 386633562,
+        poolFactory: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D",
+        permit2: "0xB952578f3520EE8Ea45b7914994dcf4702cEe578",
+        multicall2: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435",
+        tickLens: "0xB3309C48F8407651D918ca3Da4C45DE40109E641",
+        nonfungiblePositionManager: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c",
+        positionsNFT: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c",
+        positionsNFTDeployBlock: 386635939,
+        universalRouter: "0x738fD6d10bCc05c230388B4027CAd37f82fe2AF2",
+        wrappedNativeAddress: "0xD102cE6A4dB07D247fcc28F366A623Df0938CA9E",
+        wrappedNativeSymbol: "wTLOS",
+        wrappedNativeName: "Wrapped TLOS",
+        wrappedNativeDecimals: 18,
+        nativeCurrencyName: "TLOS",
+    },
+    token: {
+        wethAddress: "0xD102cE6A4dB07D247fcc28F366A623Df0938CA9E",
+        wbtcAddress: "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c",
+        usdcAddress: "0x8D97Cea50351Fb4329d591682b148D43a0C3611b",
+    },
+    oku: {
+        limitOrderRegistry: "0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc",
+        limitOrderRegistryDeployBlock: 386645006,
+        pricing: {
+            nativeWrappedToken: "0xD102cE6A4dB07D247fcc28F366A623Df0938CA9E",
+            nativeWrappedName: "TLOS",
+        },
+    },
+    defaultPool: "0x2E2F83DF7061561C4a29bD155B8f65674bFa31C9",
+    defaultToken0: "0x8D97Cea50351Fb4329d591682b148D43a0C3611b",
+    defaultToken1: "0xD102cE6A4dB07D247fcc28F366A623Df0938CA9E",
+    tokenList: [
+        { symbol: "WTLOS", address: "0xD102cE6A4dB07D247fcc28F366A623Df0938CA9E" },
+        { symbol: "USDC", address: "0x8D97Cea50351Fb4329d591682b148D43a0C3611b" },
+        { symbol: "WBTC", address: "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c" },
+    ],
+    stables: ["0x8D97Cea50351Fb4329d591682b148D43a0C3611b"],
+    watchlist: ["0x2E2F83DF7061561C4a29bD155B8f65674bFa31C9"],
+    internalName: "telos",
+    nativeLogoUrl: "https://assets.oku.trade/natives/telos.png",
+    contracts: {
+        ...telos$1.contracts,
+        limitOrder: {
+            address: "0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc",
+        },
+        nftManager: {
+            address: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c",
+        },
+        weth9: {
+            address: "0xD102cE6A4dB07D247fcc28F366A623Df0938CA9E",
+        },
+        multicall2: {
+            address: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435",
+        },
+        multicall3: {
+            address: "0xcA11bde05977b3631167028862bE2a173976CA11",
+        },
+    },
+});
+
 const xLayer = makeConfig({
     ...xLayer$1,
     blockTimeSeconds: 3,
@@ -3400,7 +3844,14 @@ const xLayer = makeConfig({
     markets: {
         icecreamswap: true
     },
-    bridges: {},
+    bridges: {
+        chainlink: {
+            atlasNetworkName: "ethereum-mainnet-xlayer-1",
+            routerAddress: "0xF2b6Cb7867EB5502C3249dD37D7bc1Cc148e5232",
+            chainSelector: 3016212468291539606n,
+            tokenAdminRegistry: "0xeCf1eAEE01E82F3388dECD7f4C3792374f3f72F3"
+        },
+    },
     morpho: {},
     oracles: {
         cmc: {
@@ -3500,6 +3951,11 @@ const polygonZkEvm = makeConfig({
         openocean: "polygon_zkevm",
     },
     bridges: {
+        chainlink: {
+            atlasNetworkName: "ethereum-mainnet-polygon-zkevm-1",
+            routerAddress: "0xA9999937159B293c72e2367Ce314cb3544e7C1a3",
+            chainSelector: 4348158687435793198n,
+        },
         rhinofi: "ZKEVM",
     },
     oracles: {
@@ -3604,6 +4060,12 @@ const zkSync = makeConfig({
         openocean: "zksync",
     },
     bridges: {
+        chainlink: {
+            atlasNetworkName: "ethereum-mainnet-zksync-1",
+            routerAddress: "0x748Fd769d81F5D94752bf8B0875E9301d0ba71bB",
+            chainSelector: 1562403441176082196n,
+            tokenAdminRegistry: "0x100a47C9DB342884E3314B91cec076BbAC8e619c"
+        },
         rhinofi: "ZKSYNC",
     },
     oracles: {
@@ -3734,6 +4196,11 @@ const MAINNET_CHAINS = [
     corn,
     sonic,
     celo,
+    hemi,
+    telos,
+    saga,
+    goat,
+    redbelly,
 ];
 
-export { MAINNET_CHAINS, arbitrum, base, blast, bob, boba, bsc, celo, corn, filecoin, gnosis, linea, lisk, mainnet, manta, mantle, metal, moonbeam, optimism, polygon, polygonZkEvm, rootstock, scroll, sei, sonic, taiko, xLayer, zkSync };
+export { MAINNET_CHAINS, arbitrum, base, blast, bob, boba, bsc, celo, corn, filecoin, gnosis, goat, hemi, linea, lisk, mainnet, manta, mantle, metal, moonbeam, optimism, polygon, polygonZkEvm, redbelly, rootstock, saga, scroll, sei, sonic, taiko, telos, xLayer, zkSync };

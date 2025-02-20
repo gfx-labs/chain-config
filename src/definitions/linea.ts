@@ -23,6 +23,12 @@ export const linea = makeConfig({
     icecreamswap: true,
   },
   bridges: {
+    chainlink: {
+      atlasNetworkName: "ethereum-mainnet-linea-1",
+      routerAddress: "0x549FEB73F2348F6cD99b9fc8c69252034897f06C",
+      chainSelector: 4627098889531055414n,
+      tokenAdminRegistry: "0xBc933cEE67d2b1c08490ee8C51E2dF653a713534"
+    },
     rhinofi: "LINEA",
     stargate: {
       endpointID: 30183,

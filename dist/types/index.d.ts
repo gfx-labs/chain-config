@@ -22,13 +22,13 @@ declare const arbitrum: Readonly<{
         openocean: string;
         zeroex: true;
         cowswap: string;
-        icecreamswap: true;
     };
     bridges: {
         chainlink: {
             atlasNetworkName: string;
             routerAddress: string;
             chainSelector: bigint;
+            tokenAdminRegistry: string;
         };
         rhinofi: string;
         stargate: {
@@ -167,12 +167,12 @@ declare const arbitrum: Readonly<{
             ];
         };
     };
-    sourceId?: number | undefined;
-    testnet?: boolean | undefined;
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>;
 declare const base: Readonly<{
     sortIndex: 8;
@@ -207,6 +207,7 @@ declare const base: Readonly<{
             atlasNetworkName: string;
             routerAddress: string;
             chainSelector: bigint;
+            tokenAdminRegistry: string;
         };
         rhinofi: string;
         stargate: {
@@ -363,7 +364,7 @@ declare const base: Readonly<{
         };
     };
     sourceId: 1;
-    testnet?: boolean | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
     formatters: {
@@ -380,7 +381,7 @@ declare const base: Readonly<{
                 gasUsed: bigint;
                 hash: `0x${string}` | null;
                 logsBloom: `0x${string}` | null;
-                miner: import("abitype").Address;
+                miner: import("viem").Address;
                 mixHash: import("viem").Hash;
                 nonce: `0x${string}` | null;
                 number: bigint | null;
@@ -407,14 +408,14 @@ declare const base: Readonly<{
             format: (args: import("viem/chains").OpStackRpcTransaction) => ({
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: import("abitype").Address;
+                from: import("viem").Address;
                 gas: bigint;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
                 nonce: number;
                 r: import("viem").Hex;
                 s: import("viem").Hex;
-                to: import("abitype").Address | null;
+                to: import("viem").Address | null;
                 transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 v: bigint;
@@ -432,8 +433,8 @@ declare const base: Readonly<{
                 r: import("viem").Hex;
                 s: import("viem").Hex;
                 v: bigint;
-                to: import("abitype").Address | null;
-                from: import("abitype").Address;
+                to: import("viem").Address | null;
+                from: import("viem").Address;
                 gas: bigint;
                 nonce: number;
                 value: bigint;
@@ -459,14 +460,14 @@ declare const base: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: import("abitype").Address;
+                from: import("viem").Address;
                 gas: bigint;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
                 nonce: number;
                 r: import("viem").Hex;
                 s: import("viem").Hex;
-                to: import("abitype").Address | null;
+                to: import("viem").Address | null;
                 transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 v: bigint;
@@ -487,14 +488,14 @@ declare const base: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: import("abitype").Address;
+                from: import("viem").Address;
                 gas: bigint;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
                 nonce: number;
                 r: import("viem").Hex;
                 s: import("viem").Hex;
-                to: import("abitype").Address | null;
+                to: import("viem").Address | null;
                 transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 v: bigint;
@@ -515,14 +516,14 @@ declare const base: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: import("abitype").Address;
+                from: import("viem").Address;
                 gas: bigint;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
                 nonce: number;
                 r: import("viem").Hex;
                 s: import("viem").Hex;
-                to: import("abitype").Address | null;
+                to: import("viem").Address | null;
                 transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 v: bigint;
@@ -543,14 +544,14 @@ declare const base: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: import("abitype").Address;
+                from: import("viem").Address;
                 gas: bigint;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
                 nonce: number;
                 r: import("viem").Hex;
                 s: import("viem").Hex;
-                to: import("abitype").Address | null;
+                to: import("viem").Address | null;
                 transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 v: bigint;
@@ -579,16 +580,16 @@ declare const base: Readonly<{
                 blobGasUsed?: bigint | undefined;
                 blockHash: import("viem").Hash;
                 blockNumber: bigint;
-                contractAddress: import("abitype").Address | null | undefined;
+                contractAddress: import("viem").Address | null | undefined;
                 cumulativeGasUsed: bigint;
                 effectiveGasPrice: bigint;
-                from: import("abitype").Address;
+                from: import("viem").Address;
                 gasUsed: bigint;
                 logs: import("viem").Log<bigint, number, false>[];
                 logsBloom: import("viem").Hex;
                 root?: import("viem").Hash | undefined;
                 status: "success" | "reverted";
-                to: import("abitype").Address | null;
+                to: import("viem").Address | null;
                 transactionHash: import("viem").Hash;
                 transactionIndex: number;
                 type: import("viem").TransactionType;
@@ -621,6 +622,12 @@ declare const blast: Readonly<{
         icecreamswap: true;
     };
     bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+            tokenAdminRegistry: string;
+        };
         rhinofi: string;
         wormhole: {
             chain: string;
@@ -697,6 +704,24 @@ declare const blast: Readonly<{
             readonly address: "0xcA11bde05977b3631167028862bE2a173976CA11";
             readonly blockCreated: 212929;
         };
+        gasPriceOracle: {
+            readonly address: "0x420000000000000000000000000000000000000F";
+        };
+        l1Block: {
+            readonly address: "0x4200000000000000000000000000000000000015";
+        };
+        l2CrossDomainMessenger: {
+            readonly address: "0x4200000000000000000000000000000000000007";
+        };
+        l2Erc721Bridge: {
+            readonly address: "0x4200000000000000000000000000000000000014";
+        };
+        l2StandardBridge: {
+            readonly address: "0x4200000000000000000000000000000000000010";
+        };
+        l2ToL1MessagePasser: {
+            readonly address: "0x4200000000000000000000000000000000000016";
+        };
     };
     blockExplorers: {
         readonly default: {
@@ -720,11 +745,246 @@ declare const blast: Readonly<{
         };
     };
     sourceId: 1;
-    testnet?: boolean | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters: {
+        readonly block: {
+            exclude: [
+            ] | undefined;
+            format: (args: import("viem/chains").OpStackRpcBlock) => {
+                baseFeePerGas: bigint | null;
+                blobGasUsed: bigint;
+                difficulty: bigint;
+                excessBlobGas: bigint;
+                extraData: import("viem").Hex;
+                gasLimit: bigint;
+                gasUsed: bigint;
+                hash: `0x${string}` | null;
+                logsBloom: `0x${string}` | null;
+                miner: import("viem").Address;
+                mixHash: import("viem").Hash;
+                nonce: `0x${string}` | null;
+                number: bigint | null;
+                parentBeaconBlockRoot?: import("viem").Hex | undefined;
+                parentHash: import("viem").Hash;
+                receiptsRoot: import("viem").Hex;
+                sealFields: import("viem").Hex[];
+                sha3Uncles: import("viem").Hash;
+                size: bigint;
+                stateRoot: import("viem").Hash;
+                timestamp: bigint;
+                totalDifficulty: bigint | null;
+                transactions: `0x${string}`[] | import("viem/chains").OpStackTransaction<boolean>[];
+                transactionsRoot: import("viem").Hash;
+                uncles: import("viem").Hash[];
+                withdrawals?: import("viem").Withdrawal[] | undefined;
+                withdrawalsRoot?: import("viem").Hex | undefined;
+            } & {};
+            type: "block";
+        };
+        readonly transaction: {
+            exclude: [
+            ] | undefined;
+            format: (args: import("viem/chains").OpStackRpcTransaction) => ({
+                blockHash: `0x${string}` | null;
+                blockNumber: bigint | null;
+                from: import("viem").Address;
+                gas: bigint;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
+                nonce: number;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("viem").Address | null;
+                transactionIndex: number | null;
+                typeHex: import("viem").Hex | null;
+                v: bigint;
+                value: bigint;
+                yParity: number;
+                gasPrice?: undefined;
+                maxFeePerBlobGas?: undefined;
+                maxFeePerGas: bigint;
+                maxPriorityFeePerGas: bigint;
+                isSystemTx?: boolean;
+                mint?: bigint | undefined;
+                sourceHash: import("viem").Hex;
+                type: "deposit";
+            } | {
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                v: bigint;
+                to: import("viem").Address | null;
+                from: import("viem").Address;
+                gas: bigint;
+                nonce: number;
+                value: bigint;
+                blockHash: `0x${string}` | null;
+                blockNumber: bigint | null;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
+                transactionIndex: number | null;
+                typeHex: import("viem").Hex | null;
+                accessList?: undefined;
+                authorizationList?: undefined;
+                blobVersionedHashes?: undefined;
+                chainId?: number | undefined;
+                yParity?: undefined;
+                type: "legacy";
+                gasPrice: bigint;
+                maxFeePerBlobGas?: undefined;
+                maxFeePerGas?: undefined;
+                maxPriorityFeePerGas?: undefined;
+                isSystemTx?: undefined;
+                mint?: undefined;
+                sourceHash?: undefined;
+            } | {
+                blockHash: `0x${string}` | null;
+                blockNumber: bigint | null;
+                from: import("viem").Address;
+                gas: bigint;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
+                nonce: number;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("viem").Address | null;
+                transactionIndex: number | null;
+                typeHex: import("viem").Hex | null;
+                v: bigint;
+                value: bigint;
+                yParity: number;
+                accessList: import("viem").AccessList;
+                authorizationList?: undefined;
+                blobVersionedHashes?: undefined;
+                chainId: number;
+                type: "eip2930";
+                gasPrice: bigint;
+                maxFeePerBlobGas?: undefined;
+                maxFeePerGas?: undefined;
+                maxPriorityFeePerGas?: undefined;
+                isSystemTx?: undefined;
+                mint?: undefined;
+                sourceHash?: undefined;
+            } | {
+                blockHash: `0x${string}` | null;
+                blockNumber: bigint | null;
+                from: import("viem").Address;
+                gas: bigint;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
+                nonce: number;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("viem").Address | null;
+                transactionIndex: number | null;
+                typeHex: import("viem").Hex | null;
+                v: bigint;
+                value: bigint;
+                yParity: number;
+                accessList: import("viem").AccessList;
+                authorizationList?: undefined;
+                blobVersionedHashes?: undefined;
+                chainId: number;
+                type: "eip1559";
+                gasPrice?: undefined;
+                maxFeePerBlobGas?: undefined;
+                maxFeePerGas: bigint;
+                maxPriorityFeePerGas: bigint;
+                isSystemTx?: undefined;
+                mint?: undefined;
+                sourceHash?: undefined;
+            } | {
+                blockHash: `0x${string}` | null;
+                blockNumber: bigint | null;
+                from: import("viem").Address;
+                gas: bigint;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
+                nonce: number;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("viem").Address | null;
+                transactionIndex: number | null;
+                typeHex: import("viem").Hex | null;
+                v: bigint;
+                value: bigint;
+                yParity: number;
+                accessList: import("viem").AccessList;
+                authorizationList?: undefined;
+                blobVersionedHashes: readonly import("viem").Hex[];
+                chainId: number;
+                type: "eip4844";
+                gasPrice?: undefined;
+                maxFeePerBlobGas: bigint;
+                maxFeePerGas: bigint;
+                maxPriorityFeePerGas: bigint;
+                isSystemTx?: undefined;
+                mint?: undefined;
+                sourceHash?: undefined;
+            } | {
+                blockHash: `0x${string}` | null;
+                blockNumber: bigint | null;
+                from: import("viem").Address;
+                gas: bigint;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
+                nonce: number;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("viem").Address | null;
+                transactionIndex: number | null;
+                typeHex: import("viem").Hex | null;
+                v: bigint;
+                value: bigint;
+                yParity: number;
+                accessList: import("viem").AccessList;
+                authorizationList: import("viem/experimental").SignedAuthorizationList;
+                blobVersionedHashes?: undefined;
+                chainId: number;
+                type: "eip7702";
+                gasPrice?: undefined;
+                maxFeePerBlobGas?: undefined;
+                maxFeePerGas: bigint;
+                maxPriorityFeePerGas: bigint;
+                isSystemTx?: undefined;
+                mint?: undefined;
+                sourceHash?: undefined;
+            }) & {};
+            type: "transaction";
+        };
+        readonly transactionReceipt: {
+            exclude: [
+            ] | undefined;
+            format: (args: import("viem/chains").OpStackRpcTransactionReceipt) => {
+                blobGasPrice?: bigint | undefined;
+                blobGasUsed?: bigint | undefined;
+                blockHash: import("viem").Hash;
+                blockNumber: bigint;
+                contractAddress: import("viem").Address | null | undefined;
+                cumulativeGasUsed: bigint;
+                effectiveGasPrice: bigint;
+                from: import("viem").Address;
+                gasUsed: bigint;
+                logs: import("viem").Log<bigint, number, false>[];
+                logsBloom: import("viem").Hex;
+                root?: import("viem").Hash | undefined;
+                status: "success" | "reverted";
+                to: import("viem").Address | null;
+                transactionHash: import("viem").Hash;
+                transactionIndex: number;
+                type: import("viem").TransactionType;
+                l1GasPrice: bigint | null;
+                l1GasUsed: bigint | null;
+                l1Fee: bigint | null;
+                l1FeeScalar: number | null;
+            } & {};
+            type: "transactionReceipt";
+        };
+    };
+    serializers: {
+        readonly transaction: typeof import("viem/chains").serializeTransactionOpStack;
+    };
 }>;
 declare const bob: Readonly<{
     blockTimeSeconds: 2;
@@ -736,7 +996,14 @@ declare const bob: Readonly<{
     markets: {
         icecreamswap: true;
     };
-    bridges: {};
+    bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+            tokenAdminRegistry: string;
+        };
+    };
     morpho: {};
     oracles: {
         coingecko: {
@@ -873,7 +1140,7 @@ declare const bob: Readonly<{
         };
     };
     sourceId: 1;
-    testnet?: boolean | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
     formatters: {
@@ -1233,12 +1500,12 @@ declare const boba: Readonly<{
             ];
         };
     };
-    sourceId?: number | undefined;
-    testnet?: boolean | undefined;
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>;
 declare const bsc: Readonly<{
     name: "BSC";
@@ -1270,6 +1537,7 @@ declare const bsc: Readonly<{
             atlasNetworkName: string;
             routerAddress: string;
             chainSelector: bigint;
+            tokenAdminRegistry: string;
         };
         rhinofi: string;
         stargate: {
@@ -1385,16 +1653,16 @@ declare const bsc: Readonly<{
             ];
         };
     };
-    sourceId?: number | undefined;
-    testnet?: boolean | undefined;
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>;
 declare const celo: Readonly<{
     blockTimeSeconds: 2;
-    launchTime: 1727359200;
+    launchTime: 1737754469;
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/chains/celo-logo.svg";
     safeReorgDistance: 90000;
@@ -1402,7 +1670,14 @@ declare const celo: Readonly<{
     markets: {
         icecreamswap: true;
     };
-    bridges: {};
+    bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+            tokenAdminRegistry: string;
+        };
+    };
     morpho: {};
     oracles: {
         coingecko: {
@@ -1492,7 +1767,7 @@ declare const celo: Readonly<{
             ];
         };
     };
-    sourceId?: number | undefined;
+    sourceId?: number | undefined | undefined;
     testnet: false;
     custom?: Record<string, unknown> | undefined;
     fees: import("viem").ChainFees<{
@@ -2336,7 +2611,14 @@ declare const corn: Readonly<{
     safeReorgDistance: 90000;
     externalId: {};
     markets: {};
-    bridges: {};
+    bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+            tokenAdminRegistry: string;
+        };
+    };
     oracles: {};
     morpho: {};
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
@@ -2419,11 +2701,11 @@ declare const corn: Readonly<{
         };
     };
     sourceId: 1;
-    testnet?: boolean | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>;
 declare const filecoin: Readonly<{
     sortIndex: 10;
@@ -2548,12 +2830,12 @@ declare const filecoin: Readonly<{
             ];
         };
     };
-    sourceId?: number | undefined;
-    testnet?: boolean | undefined;
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>;
 declare const gnosis: Readonly<{
     blockTimeSeconds: 5;
@@ -2573,7 +2855,14 @@ declare const gnosis: Readonly<{
             routerContract: string;
         };
     };
-    bridges: {};
+    bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+            tokenAdminRegistry: string;
+        };
+    };
     oracles: {
         cmc: {
             slug: string;
@@ -2678,12 +2967,218 @@ declare const gnosis: Readonly<{
             ];
         };
     };
-    sourceId?: number | undefined;
-    testnet?: boolean | undefined;
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
+}>;
+declare const goat: Readonly<{
+    name: "Goat";
+    blockTimeSeconds: 3;
+    launchTime: 1740621916;
+    sortIndex: 15;
+    logoUrl: "https://assets.oku.trade/chains/goat-logo.svg";
+    safeReorgDistance: 90000;
+    externalId: {};
+    markets: {};
+    bridges: {};
+    oracles: {};
+    morpho: {};
+    initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
+    uniswap: {
+        deployBlock: number;
+        poolFactory: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D";
+        permit2: "0xB952578f3520EE8Ea45b7914994dcf4702cEe578";
+        multicall2: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435";
+        tickLens: "0xB3309C48F8407651D918ca3Da4C45DE40109E641";
+        nonfungiblePositionManager: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c";
+        positionsNFT: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c";
+        positionsNFTDeployBlock: number;
+        universalRouter: "0x738fD6d10bCc05c230388B4027CAd37f82fe2AF2";
+        wrappedNativeAddress: "0xbC10000000000000000000000000000000000000";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
+        nativeCurrencyName: string;
+    };
+    token: {
+        wethAddress: "0xbC10000000000000000000000000000000000000";
+        usdcAddress: "0x3022b87ac063DE95b1570F46f5e470F8B53112D8";
+    };
+    oku: {
+        limitOrderRegistry: "0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc";
+        limitOrderRegistryDeployBlock: number;
+        pricing: {
+            nativeWrappedToken: "0xbC10000000000000000000000000000000000000";
+            nativeWrappedName: string;
+        };
+    };
+    defaultPool: "0x56F689Ec1E264FAad1666F3b5db1A6a9707cc9b1";
+    defaultToken0: "0x3022b87ac063DE95b1570F46f5e470F8B53112D8";
+    defaultToken1: "0xbC10000000000000000000000000000000000000";
+    tokenList: ({
+        symbol: string;
+        address: "0xbC10000000000000000000000000000000000000";
+    } | {
+        symbol: string;
+        address: "0x3022b87ac063DE95b1570F46f5e470F8B53112D8";
+    })[];
+    stables: "0x3022b87ac063DE95b1570F46f5e470F8B53112D8"[];
+    watchlist: ("0x56F689Ec1E264FAad1666F3b5db1A6a9707cc9b1" | "0x076d72dDdE865eD0A71267E69A8E51A9fFE1E3D0")[];
+    internalName: "goat";
+    nativeLogoUrl: "https://assets.oku.trade/natives/gbtc.svg";
+    contracts: {
+        limitOrder: {
+            address: "0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc";
+        };
+        nftManager: {
+            address: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c";
+        };
+        weth9: {
+            address: "0xbC10000000000000000000000000000000000000";
+        };
+        multicall2: {
+            address: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435";
+        };
+        multicall3: {
+            address: "0xcA11bde05977b3631167028862bE2a173976CA11";
+        };
+    };
+    blockExplorers: {
+        readonly default: {
+            readonly name: "Goat Explorer";
+            readonly url: "https://explorer.goat.network";
+        };
+    };
+    id: 2345;
+    nativeCurrency: {
+        readonly decimals: 18;
+        readonly name: "Bitcoin";
+        readonly symbol: "BTC";
+    };
+    rpcUrls: {
+        readonly default: {
+            readonly http: readonly [
+                "https://rpc.goat.network"
+            ];
+        };
+    };
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
+    custom?: Record<string, unknown> | undefined;
+    fees?: import("viem").ChainFees<undefined> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
+}>;
+declare const hemi: Readonly<{
+    blockTimeSeconds: 12;
+    launchTime: 1738569600;
+    sortIndex: 13;
+    logoUrl: "https://assets.oku.trade/chains/hemi-logo.svg";
+    safeReorgDistance: 90000;
+    externalId: {};
+    markets: {};
+    bridges: {};
+    morpho: {};
+    oracles: {};
+    initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
+    uniswap: {
+        deployBlock: number;
+        poolFactory: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D";
+        permit2: "0xB952578f3520EE8Ea45b7914994dcf4702cEe578";
+        multicall2: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435";
+        tickLens: "0xB3309C48F8407651D918ca3Da4C45DE40109E641";
+        nonfungiblePositionManager: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c";
+        positionsNFT: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c";
+        positionsNFTDeployBlock: number;
+        universalRouter: "0x738fD6d10bCc05c230388B4027CAd37f82fe2AF2";
+        wrappedNativeAddress: "0x4200000000000000000000000000000000000006";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
+        nativeCurrencyName: string;
+    };
+    token: {
+        wethAddress: "0x4200000000000000000000000000000000000006";
+        wbtcAddress: "0x03C7054BCB39f7b2e5B2c7AcB37583e32D70Cfa3";
+    };
+    oku: {
+        limitOrderRegistry: "0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc";
+        limitOrderRegistryDeployBlock: number;
+        pricing: {
+            nativeWrappedToken: "0x4200000000000000000000000000000000000006";
+            nativeWrappedName: string;
+        };
+    };
+    defaultPool: "0x3A49cCD3c2A688D0766E087B30A3d27C8997A71c";
+    defaultToken0: "0x4200000000000000000000000000000000000006";
+    defaultToken1: "0xad11a8BEb98bbf61dbb1aa0F6d6F2ECD87b35afA";
+    tokenList: ({
+        symbol: string;
+        address: "0x4200000000000000000000000000000000000006";
+    } | {
+        symbol: string;
+        address: "0xbB0D083fb1be0A9f6157ec484b6C79E0A4e31C2e";
+    } | {
+        symbol: string;
+        address: "0xad11a8BEb98bbf61dbb1aa0F6d6F2ECD87b35afA";
+    } | {
+        symbol: string;
+        address: "0x03C7054BCB39f7b2e5B2c7AcB37583e32D70Cfa3";
+    })[];
+    stables: ("0xad11a8BEb98bbf61dbb1aa0F6d6F2ECD87b35afA" | "0xbB0D083fb1be0A9f6157ec484b6C79E0A4e31C2e" | "0x6c851F501a3F24E29A8E39a29591cddf09369080")[];
+    watchlist: "0x3A49cCD3c2A688D0766E087B30A3d27C8997A71c"[];
+    internalName: "hemi";
+    nativeLogoUrl: "https://assets.oku.trade/natives/eth.png";
+    contracts: {
+        limitOrder: {
+            address: "0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc";
+        };
+        nftManager: {
+            address: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c";
+        };
+        weth9: {
+            address: "0x4200000000000000000000000000000000000006";
+        };
+        multicall2: {
+            address: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435";
+        };
+        multicall3: {
+            address: "0xcA11bde05977b3631167028862bE2a173976CA11";
+        };
+        ensRegistry?: import("viem").ChainContract | undefined;
+        ensUniversalResolver?: import("viem").ChainContract | undefined;
+        universalSignatureVerifier?: import("viem").ChainContract | undefined;
+    };
+    blockExplorers: {
+        readonly default: {
+            readonly name: "blockscout";
+            readonly url: "https://explorer.hemi.xyz";
+        };
+    };
+    id: 43111;
+    name: "Hemi";
+    nativeCurrency: {
+        readonly name: "Ether";
+        readonly symbol: "ETH";
+        readonly decimals: 18;
+    };
+    rpcUrls: {
+        readonly default: {
+            readonly http: readonly [
+                "https://rpc.hemi.network/rpc"
+            ];
+        };
+    };
+    sourceId?: number | undefined | undefined;
+    testnet: false;
+    custom?: Record<string, unknown> | undefined;
+    fees?: import("viem").ChainFees<undefined> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
+    network: "Hemi";
 }>;
 declare const linea: Readonly<{
     name: "Linea";
@@ -2704,6 +3199,12 @@ declare const linea: Readonly<{
         icecreamswap: true;
     };
     bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+            tokenAdminRegistry: string;
+        };
         rhinofi: string;
         stargate: {
             endpointID: number;
@@ -2811,15 +3312,15 @@ declare const linea: Readonly<{
             ];
         };
     };
-    sourceId?: number | undefined;
+    sourceId?: number | undefined | undefined;
     testnet: false;
     custom?: Record<string, unknown> | undefined;
     fees: {
         readonly estimateFeesPerGas: ({ client, multiply, request, type }: Parameters<import("viem").ChainEstimateFeesPerGasFn>[0]) => ReturnType<import("viem").ChainEstimateFeesPerGasFn>;
         readonly maxPriorityFeePerGas: ({ block, client, request }: import("viem").ChainFeesFnParameters<import("viem").ChainFormatters | undefined>) => Promise<bigint | null>;
     };
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>;
 declare const lisk: Readonly<{
     blockTimeSeconds: 2;
@@ -2954,7 +3455,7 @@ declare const lisk: Readonly<{
         };
     };
     sourceId: 1;
-    testnet?: boolean | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
     formatters: {
@@ -3236,6 +3737,7 @@ declare const mainnet: Readonly<{
             atlasNetworkName: string;
             routerAddress: string;
             chainSelector: bigint;
+            tokenAdminRegistry: string;
         };
         rhinofi: string;
         stargate: {
@@ -3369,12 +3871,12 @@ declare const mainnet: Readonly<{
         readonly symbol: "ETH";
         readonly decimals: 18;
     };
-    sourceId?: number | undefined;
-    testnet?: boolean | undefined;
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>;
 declare const manta: Readonly<{
     name: "Manta Pacific";
@@ -3492,12 +3994,12 @@ declare const manta: Readonly<{
             ];
         };
     };
-    sourceId?: number | undefined;
-    testnet?: boolean | undefined;
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
     network: "manta";
 }>;
 declare const mantle: Readonly<{
@@ -3515,6 +4017,12 @@ declare const mantle: Readonly<{
         icecreamswap: true;
     };
     bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+            tokenAdminRegistry: string;
+        };
         stargate: {
             endpointID: number;
             blockConfirmations: number;
@@ -3615,12 +4123,12 @@ declare const mantle: Readonly<{
             ];
         };
     };
-    sourceId?: number | undefined;
-    testnet?: boolean | undefined;
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>;
 declare const metal: Readonly<{
     blockTimeSeconds: 2;
@@ -3753,7 +4261,7 @@ declare const metal: Readonly<{
         };
     };
     sourceId: 1;
-    testnet?: boolean | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
     formatters: {
@@ -4115,12 +4623,12 @@ declare const moonbeam: Readonly<{
             ];
         };
     };
-    sourceId?: number | undefined;
+    sourceId?: number | undefined | undefined;
     testnet: false;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>;
 declare const optimism: Readonly<{
     name: "Optimism";
@@ -4150,6 +4658,7 @@ declare const optimism: Readonly<{
             atlasNetworkName: string;
             routerAddress: string;
             chainSelector: bigint;
+            tokenAdminRegistry: string;
         };
         rhinofi: string;
         stargate: {
@@ -4321,7 +4830,7 @@ declare const optimism: Readonly<{
         };
     };
     sourceId: 1;
-    testnet?: boolean | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
     formatters: {
@@ -4338,7 +4847,7 @@ declare const optimism: Readonly<{
                 gasUsed: bigint;
                 hash: `0x${string}` | null;
                 logsBloom: `0x${string}` | null;
-                miner: import("abitype").Address;
+                miner: import("viem").Address;
                 mixHash: import("viem").Hash;
                 nonce: `0x${string}` | null;
                 number: bigint | null;
@@ -4365,14 +4874,14 @@ declare const optimism: Readonly<{
             format: (args: import("viem/chains").OpStackRpcTransaction) => ({
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: import("abitype").Address;
+                from: import("viem").Address;
                 gas: bigint;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
                 nonce: number;
                 r: import("viem").Hex;
                 s: import("viem").Hex;
-                to: import("abitype").Address | null;
+                to: import("viem").Address | null;
                 transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 v: bigint;
@@ -4390,8 +4899,8 @@ declare const optimism: Readonly<{
                 r: import("viem").Hex;
                 s: import("viem").Hex;
                 v: bigint;
-                to: import("abitype").Address | null;
-                from: import("abitype").Address;
+                to: import("viem").Address | null;
+                from: import("viem").Address;
                 gas: bigint;
                 nonce: number;
                 value: bigint;
@@ -4417,14 +4926,14 @@ declare const optimism: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: import("abitype").Address;
+                from: import("viem").Address;
                 gas: bigint;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
                 nonce: number;
                 r: import("viem").Hex;
                 s: import("viem").Hex;
-                to: import("abitype").Address | null;
+                to: import("viem").Address | null;
                 transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 v: bigint;
@@ -4445,14 +4954,14 @@ declare const optimism: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: import("abitype").Address;
+                from: import("viem").Address;
                 gas: bigint;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
                 nonce: number;
                 r: import("viem").Hex;
                 s: import("viem").Hex;
-                to: import("abitype").Address | null;
+                to: import("viem").Address | null;
                 transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 v: bigint;
@@ -4473,14 +4982,14 @@ declare const optimism: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: import("abitype").Address;
+                from: import("viem").Address;
                 gas: bigint;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
                 nonce: number;
                 r: import("viem").Hex;
                 s: import("viem").Hex;
-                to: import("abitype").Address | null;
+                to: import("viem").Address | null;
                 transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 v: bigint;
@@ -4501,14 +5010,14 @@ declare const optimism: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: import("abitype").Address;
+                from: import("viem").Address;
                 gas: bigint;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
                 nonce: number;
                 r: import("viem").Hex;
                 s: import("viem").Hex;
-                to: import("abitype").Address | null;
+                to: import("viem").Address | null;
                 transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 v: bigint;
@@ -4537,16 +5046,16 @@ declare const optimism: Readonly<{
                 blobGasUsed?: bigint | undefined;
                 blockHash: import("viem").Hash;
                 blockNumber: bigint;
-                contractAddress: import("abitype").Address | null | undefined;
+                contractAddress: import("viem").Address | null | undefined;
                 cumulativeGasUsed: bigint;
                 effectiveGasPrice: bigint;
-                from: import("abitype").Address;
+                from: import("viem").Address;
                 gasUsed: bigint;
                 logs: import("viem").Log<bigint, number, false>[];
                 logsBloom: import("viem").Hex;
                 root?: import("viem").Hash | undefined;
                 status: "success" | "reverted";
-                to: import("abitype").Address | null;
+                to: import("viem").Address | null;
                 transactionHash: import("viem").Hash;
                 transactionIndex: number;
                 type: import("viem").TransactionType;
@@ -4591,6 +5100,7 @@ declare const polygon: Readonly<{
             atlasNetworkName: string;
             routerAddress: string;
             chainSelector: bigint;
+            tokenAdminRegistry: string;
         };
         rhinofi: string;
         stargate: {
@@ -4724,12 +5234,117 @@ declare const polygon: Readonly<{
             ];
         };
     };
-    sourceId?: number | undefined;
-    testnet?: boolean | undefined;
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
+}>;
+declare const redbelly: Readonly<{
+    name: "Redbelly";
+    blockTimeSeconds: 5;
+    launchTime: 1740621916;
+    sortIndex: 15;
+    logoUrl: "https://assets.oku.trade/chains/redbelly-logo.svg";
+    safeReorgDistance: 90000;
+    externalId: {};
+    markets: {};
+    bridges: {};
+    oracles: {};
+    morpho: {};
+    initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
+    uniswap: {
+        deployBlock: number;
+        poolFactory: "0x75FC67473A91335B5b8F8821277262a13B38c9b3";
+        permit2: "0xdD489C75be1039ec7d843A6aC2Fd658350B067Cf";
+        multicall2: "0x0d922Fb1Bc191F64970ac40376643808b4B74Df9";
+        tickLens: "0xE3dbcD53f4Ce1b06Ab200f4912BD35672e68f1FA";
+        nonfungiblePositionManager: "0x8B3c541c30f9b29560f56B9E44b59718916B69EF";
+        positionsNFT: "0x8B3c541c30f9b29560f56B9E44b59718916B69EF";
+        positionsNFTDeployBlock: number;
+        universalRouter: "0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc";
+        wrappedNativeAddress: "0x6ed1F491e2d31536D6561f6bdB2AdC8F092a6076";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
+        nativeCurrencyName: string;
+    };
+    token: {
+        wethAddress: "0x6ed1F491e2d31536D6561f6bdB2AdC8F092a6076";
+        usdcAddress: "0x8201c02d4AB2214471E8C3AD6475C8b0CD9F2D06";
+    };
+    oku: {
+        limitOrderRegistry: "0x9db70E29712Cc8Af10c2B597BaDA6784544FF407";
+        limitOrderRegistryDeployBlock: number;
+        pricing: {
+            nativeWrappedToken: "0x6ed1F491e2d31536D6561f6bdB2AdC8F092a6076";
+            nativeWrappedName: string;
+        };
+    };
+    defaultPool: "0xcDe3554d179b5B7ABB3ddFeE1CBC7B98b3f2E380";
+    defaultToken0: "0x6ed1F491e2d31536D6561f6bdB2AdC8F092a6076";
+    defaultToken1: "0x8C4aCd74Ff4385f3B7911432FA6787Aa14406f8B";
+    tokenList: ({
+        symbol: string;
+        address: "0x6ed1F491e2d31536D6561f6bdB2AdC8F092a6076";
+    } | {
+        symbol: string;
+        address: "0x8201c02d4AB2214471E8C3AD6475C8b0CD9F2D06";
+    } | {
+        symbol: string;
+        address: "0x8C4aCd74Ff4385f3B7911432FA6787Aa14406f8B";
+    })[];
+    stables: ("0x8201c02d4AB2214471E8C3AD6475C8b0CD9F2D06" | "0x8C4aCd74Ff4385f3B7911432FA6787Aa14406f8B")[];
+    watchlist: "0xcDe3554d179b5B7ABB3ddFeE1CBC7B98b3f2E380"[];
+    internalName: "redbelly";
+    nativeLogoUrl: "https://assets.oku.trade/natives/rbnt.svg";
+    contracts: {
+        limitOrder: {
+            address: "0x9db70E29712Cc8Af10c2B597BaDA6784544FF407";
+        };
+        nftManager: {
+            address: "0x8B3c541c30f9b29560f56B9E44b59718916B69EF";
+        };
+        weth9: {
+            address: "0x6ed1F491e2d31536D6561f6bdB2AdC8F092a6076";
+        };
+        multicall2: {
+            address: "0x0d922Fb1Bc191F64970ac40376643808b4B74Df9";
+        };
+        multicall3: {
+            address: "0xEe43BBcC6340038130681F98d855E416F7F728e9";
+        };
+        ensRegistry?: import("viem").ChainContract | undefined;
+        ensUniversalResolver?: import("viem").ChainContract | undefined;
+        universalSignatureVerifier?: import("viem").ChainContract | undefined;
+    };
+    blockExplorers: {
+        readonly default: {
+            readonly name: "Routescan";
+            readonly url: "https://redbelly.routescan.io";
+            readonly apiUrl: "https://api.routescan.io/v2/network/mainnet/evm/151/etherscan/api";
+        };
+    };
+    id: 151;
+    nativeCurrency: {
+        readonly name: "Redbelly Native Coin";
+        readonly symbol: "RBNT";
+        readonly decimals: 18;
+    };
+    rpcUrls: {
+        readonly default: {
+            readonly http: readonly [
+                "https://governors.mainnet.redbelly.network"
+            ];
+        };
+    };
+    sourceId?: number | undefined | undefined;
+    testnet: false;
+    custom?: Record<string, unknown> | undefined;
+    fees?: import("viem").ChainFees<undefined> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>;
 declare const rootstock: Readonly<{
     sortIndex: 7;
@@ -4807,7 +5422,7 @@ declare const rootstock: Readonly<{
         symbol: string;
         address: "0xef213441a85df4d7acbdae0cf78004e1e486bb96";
     })[];
-    stables: ("0xef213441a85df4d7acbdae0cf78004e1e486bb96" | "0x3a15461d8ae0f0fb5fa2629e9da7d66a794a6e37")[];
+    stables: ("0xef213441a85df4d7acbdae0cf78004e1e486bb96" | "0x3a15461d8ae0f0fb5fa2629e9da7d66a794a6e37" | "0xaf368c91793cb22739386dfcbbb2f1a9e4bcbebf")[];
     watchlist: ("0xd2ffe51ab4e622a411abbe634832a19d919e9c55" | "0x022650756421f2e636d4138054331cbfafb55d9e" | "0x549a5d92412161a1a2828549a657a49dd9fa046c" | "0xcba7abe98fd6a65259837d76a3409841c1dd4288" | "0xbe092d38045ef7f9cdc5014278a4239e896bf5ca")[];
     internalName: "rootstock";
     nativeLogoUrl: "https://assets.oku.trade/natives/rbtc.png";
@@ -4845,13 +5460,115 @@ declare const rootstock: Readonly<{
             ];
         };
     };
-    sourceId?: number | undefined;
-    testnet?: boolean | undefined;
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
     network: "rootstock";
+}>;
+declare const saga: Readonly<{
+    name: "Saga";
+    blockTimeSeconds: 5;
+    launchTime: 1740384000;
+    sortIndex: 13;
+    logoUrl: "https://assets.oku.trade/chains/saga-logo.png";
+    safeReorgDistance: 90000;
+    externalId: {};
+    markets: {};
+    bridges: {};
+    oracles: {};
+    morpho: {};
+    initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
+    uniswap: {
+        deployBlock: number;
+        poolFactory: "0x454050C4c9190390981Ac4b8d5AFcd7aC65eEffa";
+        permit2: "0x447B8E40B0CdA8e55F405C86bC635D02d0540aB8";
+        multicall2: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c";
+        tickLens: "0x6Aa54a43d7eEF5b239a18eed3Af4877f46522BCA";
+        nonfungiblePositionManager: "0xdD489C75be1039ec7d843A6aC2Fd658350B067Cf";
+        positionsNFT: "0xdD489C75be1039ec7d843A6aC2Fd658350B067Cf";
+        positionsNFTDeployBlock: number;
+        universalRouter: "0x352A86168e6988A1aDF9A15Cb00017AAd3B67155";
+        wrappedNativeAddress: "0xE3dbcD53f4Ce1b06Ab200f4912BD35672e68f1FA";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
+        nativeCurrencyName: string;
+    };
+    token: {
+        usdcAddress: "0xfc960C233B8E98e0Cf282e29BDE8d3f105fc24d5";
+        wethAddress: "0xE3dbcD53f4Ce1b06Ab200f4912BD35672e68f1FA";
+    };
+    oku: {
+        limitOrderRegistry: "0xA9d71E1dd7ca26F26e656E66d6AA81ed7f745bf0";
+        limitOrderRegistryDeployBlock: number;
+        pricing: {
+            nativeWrappedToken: "0xE3dbcD53f4Ce1b06Ab200f4912BD35672e68f1FA";
+            nativeWrappedName: string;
+        };
+    };
+    defaultPool: "0x0000000000000000000000000000000000000000";
+    defaultToken0: "0xE3dbcD53f4Ce1b06Ab200f4912BD35672e68f1FA";
+    defaultToken1: "0xfc960C233B8E98e0Cf282e29BDE8d3f105fc24d5";
+    tokenList: ({
+        symbol: string;
+        address: "0xE3dbcD53f4Ce1b06Ab200f4912BD35672e68f1FA";
+    } | {
+        symbol: string;
+        address: "0xfc960C233B8E98e0Cf282e29BDE8d3f105fc24d5";
+    } | {
+        symbol: string;
+        address: "0xC8fe3C1de344854f4429bB333AFFAeF97eF88CEa";
+    })[];
+    stables: ("0xfc960C233B8E98e0Cf282e29BDE8d3f105fc24d5" | "0xC8fe3C1de344854f4429bB333AFFAeF97eF88CEa")[];
+    watchlist: never[];
+    internalName: "saga";
+    nativeLogoUrl: "https://assets.oku.trade/natives/saga.png";
+    contracts: {
+        limitOrder: {
+            address: "0xA9d71E1dd7ca26F26e656E66d6AA81ed7f745bf0";
+        };
+        nftManager: {
+            address: "0xdD489C75be1039ec7d843A6aC2Fd658350B067Cf";
+        };
+        weth9: {
+            address: "0xE3dbcD53f4Ce1b06Ab200f4912BD35672e68f1FA";
+        };
+        multicall2: {
+            address: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c";
+        };
+        multicall3: {
+            address: "0x864DDc9B50B9A0dF676d826c9B9EDe9F8913a160";
+        };
+    };
+    blockExplorers: {
+        readonly default: {
+            readonly name: "Saga Explorer";
+            readonly url: "https://sagaevm-5464-1.sagaexplorer.io";
+        };
+    };
+    id: 5464;
+    nativeCurrency: {
+        readonly decimals: 18;
+        readonly name: "gas";
+        readonly symbol: "GAS";
+    };
+    rpcUrls: {
+        readonly default: {
+            readonly http: readonly [
+                "http://sagaevm-5464-1.jsonrpc.sagarpc.io"
+            ];
+        };
+    };
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
+    custom?: Record<string, unknown> | undefined;
+    fees?: import("viem").ChainFees<undefined> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
+    network: "saga";
 }>;
 declare const scroll: Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
@@ -4871,6 +5588,12 @@ declare const scroll: Readonly<{
         icecreamswap: true;
     };
     bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+            tokenAdminRegistry: string;
+        };
         rhinofi: string;
         stargate: {
             endpointID: number;
@@ -4990,12 +5713,12 @@ declare const scroll: Readonly<{
             ];
         };
     };
-    sourceId?: number | undefined;
+    sourceId?: number | undefined | undefined;
     testnet: false;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>;
 declare const sei: Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
@@ -5116,12 +5839,12 @@ declare const sei: Readonly<{
             ];
         };
     };
-    sourceId?: number | undefined;
-    testnet?: boolean | undefined;
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>;
 declare const sonic: Readonly<{
     blockTimeSeconds: 3;
@@ -5216,12 +5939,12 @@ declare const sonic: Readonly<{
             ];
         };
     };
-    sourceId?: number | undefined;
+    sourceId?: number | undefined | undefined;
     testnet: false;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>;
 declare const taiko: Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
@@ -5343,12 +6066,117 @@ declare const taiko: Readonly<{
             ];
         };
     };
-    sourceId?: number | undefined;
-    testnet?: boolean | undefined;
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
+}>;
+declare const telos: Readonly<{
+    blockTimeSeconds: 0.5;
+    launchTime: 1738632669;
+    sortIndex: 13;
+    logoUrl: "https://assets.oku.trade/chains/telos-logo.svg";
+    safeReorgDistance: 90000;
+    externalId: {};
+    markets: {
+        openocean: string;
+        icecreamswap: true;
+    };
+    bridges: {};
+    morpho: {};
+    oracles: {};
+    initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
+    uniswap: {
+        deployBlock: number;
+        poolFactory: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D";
+        permit2: "0xB952578f3520EE8Ea45b7914994dcf4702cEe578";
+        multicall2: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435";
+        tickLens: "0xB3309C48F8407651D918ca3Da4C45DE40109E641";
+        nonfungiblePositionManager: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c";
+        positionsNFT: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c";
+        positionsNFTDeployBlock: number;
+        universalRouter: "0x738fD6d10bCc05c230388B4027CAd37f82fe2AF2";
+        wrappedNativeAddress: "0xD102cE6A4dB07D247fcc28F366A623Df0938CA9E";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
+        nativeCurrencyName: string;
+    };
+    token: {
+        wethAddress: "0xD102cE6A4dB07D247fcc28F366A623Df0938CA9E";
+        wbtcAddress: "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c";
+        usdcAddress: "0x8D97Cea50351Fb4329d591682b148D43a0C3611b";
+    };
+    oku: {
+        limitOrderRegistry: "0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc";
+        limitOrderRegistryDeployBlock: number;
+        pricing: {
+            nativeWrappedToken: "0xD102cE6A4dB07D247fcc28F366A623Df0938CA9E";
+            nativeWrappedName: string;
+        };
+    };
+    defaultPool: "0x2E2F83DF7061561C4a29bD155B8f65674bFa31C9";
+    defaultToken0: "0x8D97Cea50351Fb4329d591682b148D43a0C3611b";
+    defaultToken1: "0xD102cE6A4dB07D247fcc28F366A623Df0938CA9E";
+    tokenList: ({
+        symbol: string;
+        address: "0xD102cE6A4dB07D247fcc28F366A623Df0938CA9E";
+    } | {
+        symbol: string;
+        address: "0x8D97Cea50351Fb4329d591682b148D43a0C3611b";
+    } | {
+        symbol: string;
+        address: "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c";
+    })[];
+    stables: "0x8D97Cea50351Fb4329d591682b148D43a0C3611b"[];
+    watchlist: "0x2E2F83DF7061561C4a29bD155B8f65674bFa31C9"[];
+    internalName: "telos";
+    nativeLogoUrl: "https://assets.oku.trade/natives/telos.png";
+    contracts: {
+        limitOrder: {
+            address: "0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc";
+        };
+        nftManager: {
+            address: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c";
+        };
+        weth9: {
+            address: "0xD102cE6A4dB07D247fcc28F366A623Df0938CA9E";
+        };
+        multicall2: {
+            address: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435";
+        };
+        multicall3: {
+            address: "0xcA11bde05977b3631167028862bE2a173976CA11";
+        };
+    };
+    blockExplorers: {
+        readonly default: {
+            readonly name: "Teloscan";
+            readonly url: "https://www.teloscan.io/";
+        };
+    };
+    id: 40;
+    name: "Telos";
+    nativeCurrency: {
+        readonly decimals: 18;
+        readonly name: "Telos";
+        readonly symbol: "TLOS";
+    };
+    rpcUrls: {
+        readonly default: {
+            readonly http: readonly [
+                "https://mainnet.telos.net/evm"
+            ];
+        };
+    };
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
+    custom?: Record<string, unknown> | undefined;
+    fees?: import("viem").ChainFees<undefined> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>;
 declare const xLayer: Readonly<{
     blockTimeSeconds: 3;
@@ -5360,7 +6188,14 @@ declare const xLayer: Readonly<{
     markets: {
         icecreamswap: true;
     };
-    bridges: {};
+    bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+            tokenAdminRegistry: string;
+        };
+    };
     morpho: {};
     oracles: {
         cmc: {
@@ -5463,12 +6298,12 @@ declare const xLayer: Readonly<{
             ];
         };
     };
-    sourceId?: number | undefined;
-    testnet?: boolean | undefined;
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>;
 declare const polygonZkEvm: Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
@@ -5489,6 +6324,11 @@ declare const polygonZkEvm: Readonly<{
         openocean: string;
     };
     bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+        };
         rhinofi: string;
     };
     oracles: {
@@ -5588,12 +6428,12 @@ declare const polygonZkEvm: Readonly<{
             ];
         };
     };
-    sourceId?: number | undefined;
-    testnet?: boolean | undefined;
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>;
 declare const zkSync: Readonly<{
     blockTimeSeconds: 2;
@@ -5612,6 +6452,12 @@ declare const zkSync: Readonly<{
         openocean: string;
     };
     bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+            tokenAdminRegistry: string;
+        };
         rhinofi: string;
     };
     oracles: {
@@ -5722,8 +6568,8 @@ declare const zkSync: Readonly<{
             ];
         };
     };
-    sourceId?: number | undefined;
-    testnet?: boolean | undefined;
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
     custom: {
         readonly getEip712Domain: import("viem/zksync").EIP712DomainFn<import("viem/chains").ZkSyncTransactionSerializable, import("viem/chains").ZkSyncEIP712TransactionSignable>;
     };
@@ -6188,6 +7034,7 @@ interface Bridges {
         atlasNetworkName: string;
         routerAddress: string;
         chainSelector: bigint;
+        tokenAdminRegistry?: string;
     };
     squidrouter?: any;
     wanbridge?: {
@@ -6282,13 +7129,13 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         openocean: string;
         zeroex: true;
         cowswap: string;
-        icecreamswap: true;
     };
     bridges: {
         chainlink: {
             atlasNetworkName: string;
             routerAddress: string;
             chainSelector: bigint;
+            tokenAdminRegistry: string;
         };
         rhinofi: string;
         stargate: {
@@ -6423,12 +7270,12 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly http: readonly ["https://arb1.arbitrum.io/rpc"];
         };
     };
-    sourceId?: number | undefined;
-    testnet?: boolean | undefined;
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>, Readonly<{
     sortIndex: 8;
     launchTime: 1707321600;
@@ -6462,6 +7309,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             atlasNetworkName: string;
             routerAddress: string;
             chainSelector: bigint;
+            tokenAdminRegistry: string;
         };
         rhinofi: string;
         stargate: {
@@ -6616,7 +7464,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         };
     };
     sourceId: 1;
-    testnet?: boolean | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
     formatters: {
@@ -6970,12 +7818,12 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly http: readonly ["https://mainnet.boba.network"];
         };
     };
-    sourceId?: number | undefined;
-    testnet?: boolean | undefined;
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>, Readonly<{
     blockTimeSeconds: 2;
     launchTime: 1719410400;
@@ -6993,6 +7841,12 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         icecreamswap: true;
     };
     bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+            tokenAdminRegistry: string;
+        };
         rhinofi: string;
         wormhole: {
             chain: string;
@@ -7069,6 +7923,24 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly address: "0xcA11bde05977b3631167028862bE2a173976CA11";
             readonly blockCreated: 212929;
         };
+        gasPriceOracle: {
+            readonly address: "0x420000000000000000000000000000000000000F";
+        };
+        l1Block: {
+            readonly address: "0x4200000000000000000000000000000000000015";
+        };
+        l2CrossDomainMessenger: {
+            readonly address: "0x4200000000000000000000000000000000000007";
+        };
+        l2Erc721Bridge: {
+            readonly address: "0x4200000000000000000000000000000000000014";
+        };
+        l2StandardBridge: {
+            readonly address: "0x4200000000000000000000000000000000000010";
+        };
+        l2ToL1MessagePasser: {
+            readonly address: "0x4200000000000000000000000000000000000016";
+        };
     };
     blockExplorers: {
         readonly default: {
@@ -7090,11 +7962,243 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         };
     };
     sourceId: 1;
-    testnet?: boolean | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters: {
+        readonly block: {
+            exclude: [] | undefined;
+            format: (args: import("viem/chains").OpStackRpcBlock) => {
+                baseFeePerGas: bigint | null;
+                blobGasUsed: bigint;
+                difficulty: bigint;
+                excessBlobGas: bigint;
+                extraData: import("viem").Hex;
+                gasLimit: bigint;
+                gasUsed: bigint;
+                hash: `0x${string}` | null;
+                logsBloom: `0x${string}` | null;
+                miner: import("abitype").Address;
+                mixHash: import("viem").Hash;
+                nonce: `0x${string}` | null;
+                number: bigint | null;
+                parentBeaconBlockRoot?: import("viem").Hex | undefined;
+                parentHash: import("viem").Hash;
+                receiptsRoot: import("viem").Hex;
+                sealFields: import("viem").Hex[];
+                sha3Uncles: import("viem").Hash;
+                size: bigint;
+                stateRoot: import("viem").Hash;
+                timestamp: bigint;
+                totalDifficulty: bigint | null;
+                transactions: `0x${string}`[] | import("viem/chains").OpStackTransaction<boolean>[];
+                transactionsRoot: import("viem").Hash;
+                uncles: import("viem").Hash[];
+                withdrawals?: import("viem").Withdrawal[] | undefined;
+                withdrawalsRoot?: import("viem").Hex | undefined;
+            } & {};
+            type: "block";
+        };
+        readonly transaction: {
+            exclude: [] | undefined;
+            format: (args: import("viem/chains").OpStackRpcTransaction) => ({
+                blockHash: `0x${string}` | null;
+                blockNumber: bigint | null;
+                from: import("abitype").Address;
+                gas: bigint;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
+                nonce: number;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
+                transactionIndex: number | null;
+                typeHex: import("viem").Hex | null;
+                v: bigint;
+                value: bigint;
+                yParity: number;
+                gasPrice?: undefined;
+                maxFeePerBlobGas?: undefined;
+                maxFeePerGas: bigint;
+                maxPriorityFeePerGas: bigint;
+                isSystemTx?: boolean;
+                mint?: bigint | undefined;
+                sourceHash: import("viem").Hex;
+                type: "deposit";
+            } | {
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                v: bigint;
+                to: import("abitype").Address | null;
+                from: import("abitype").Address;
+                gas: bigint;
+                nonce: number;
+                value: bigint;
+                blockHash: `0x${string}` | null;
+                blockNumber: bigint | null;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
+                transactionIndex: number | null;
+                typeHex: import("viem").Hex | null;
+                accessList?: undefined;
+                authorizationList?: undefined;
+                blobVersionedHashes?: undefined;
+                chainId?: number | undefined;
+                yParity?: undefined;
+                type: "legacy";
+                gasPrice: bigint;
+                maxFeePerBlobGas?: undefined;
+                maxFeePerGas?: undefined;
+                maxPriorityFeePerGas?: undefined;
+                isSystemTx?: undefined;
+                mint?: undefined;
+                sourceHash?: undefined;
+            } | {
+                blockHash: `0x${string}` | null;
+                blockNumber: bigint | null;
+                from: import("abitype").Address;
+                gas: bigint;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
+                nonce: number;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
+                transactionIndex: number | null;
+                typeHex: import("viem").Hex | null;
+                v: bigint;
+                value: bigint;
+                yParity: number;
+                accessList: import("viem").AccessList;
+                authorizationList?: undefined;
+                blobVersionedHashes?: undefined;
+                chainId: number;
+                type: "eip2930";
+                gasPrice: bigint;
+                maxFeePerBlobGas?: undefined;
+                maxFeePerGas?: undefined;
+                maxPriorityFeePerGas?: undefined;
+                isSystemTx?: undefined;
+                mint?: undefined;
+                sourceHash?: undefined;
+            } | {
+                blockHash: `0x${string}` | null;
+                blockNumber: bigint | null;
+                from: import("abitype").Address;
+                gas: bigint;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
+                nonce: number;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
+                transactionIndex: number | null;
+                typeHex: import("viem").Hex | null;
+                v: bigint;
+                value: bigint;
+                yParity: number;
+                accessList: import("viem").AccessList;
+                authorizationList?: undefined;
+                blobVersionedHashes?: undefined;
+                chainId: number;
+                type: "eip1559";
+                gasPrice?: undefined;
+                maxFeePerBlobGas?: undefined;
+                maxFeePerGas: bigint;
+                maxPriorityFeePerGas: bigint;
+                isSystemTx?: undefined;
+                mint?: undefined;
+                sourceHash?: undefined;
+            } | {
+                blockHash: `0x${string}` | null;
+                blockNumber: bigint | null;
+                from: import("abitype").Address;
+                gas: bigint;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
+                nonce: number;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
+                transactionIndex: number | null;
+                typeHex: import("viem").Hex | null;
+                v: bigint;
+                value: bigint;
+                yParity: number;
+                accessList: import("viem").AccessList;
+                authorizationList?: undefined;
+                blobVersionedHashes: readonly import("viem").Hex[];
+                chainId: number;
+                type: "eip4844";
+                gasPrice?: undefined;
+                maxFeePerBlobGas: bigint;
+                maxFeePerGas: bigint;
+                maxPriorityFeePerGas: bigint;
+                isSystemTx?: undefined;
+                mint?: undefined;
+                sourceHash?: undefined;
+            } | {
+                blockHash: `0x${string}` | null;
+                blockNumber: bigint | null;
+                from: import("abitype").Address;
+                gas: bigint;
+                hash: import("viem").Hash;
+                input: import("viem").Hex;
+                nonce: number;
+                r: import("viem").Hex;
+                s: import("viem").Hex;
+                to: import("abitype").Address | null;
+                transactionIndex: number | null;
+                typeHex: import("viem").Hex | null;
+                v: bigint;
+                value: bigint;
+                yParity: number;
+                accessList: import("viem").AccessList;
+                authorizationList: import("viem/experimental").SignedAuthorizationList;
+                blobVersionedHashes?: undefined;
+                chainId: number;
+                type: "eip7702";
+                gasPrice?: undefined;
+                maxFeePerBlobGas?: undefined;
+                maxFeePerGas: bigint;
+                maxPriorityFeePerGas: bigint;
+                isSystemTx?: undefined;
+                mint?: undefined;
+                sourceHash?: undefined;
+            }) & {};
+            type: "transaction";
+        };
+        readonly transactionReceipt: {
+            exclude: [] | undefined;
+            format: (args: import("viem/chains").OpStackRpcTransactionReceipt) => {
+                blobGasPrice?: bigint | undefined;
+                blobGasUsed?: bigint | undefined;
+                blockHash: import("viem").Hash;
+                blockNumber: bigint;
+                contractAddress: import("abitype").Address | null | undefined;
+                cumulativeGasUsed: bigint;
+                effectiveGasPrice: bigint;
+                from: import("abitype").Address;
+                gasUsed: bigint;
+                logs: import("viem").Log<bigint, number, false>[];
+                logsBloom: import("viem").Hex;
+                root?: import("viem").Hash | undefined;
+                status: "success" | "reverted";
+                to: import("abitype").Address | null;
+                transactionHash: import("viem").Hash;
+                transactionIndex: number;
+                type: import("viem").TransactionType;
+                l1GasPrice: bigint | null;
+                l1GasUsed: bigint | null;
+                l1Fee: bigint | null;
+                l1FeeScalar: number | null;
+            } & {};
+            type: "transactionReceipt";
+        };
+    };
+    serializers: {
+        readonly transaction: typeof import("viem/chains").serializeTransactionOpStack;
+    };
 }>, Readonly<{
     name: "BSC";
     launchTime: 1689346800;
@@ -7125,6 +8229,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             atlasNetworkName: string;
             routerAddress: string;
             chainSelector: bigint;
+            tokenAdminRegistry: string;
         };
         rhinofi: string;
         stargate: {
@@ -7238,12 +8343,12 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly http: readonly ["https://rpc.ankr.com/bsc"];
         };
     };
-    sourceId?: number | undefined;
-    testnet?: boolean | undefined;
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>, Readonly<{
     sortIndex: 10;
     launchTime: 1677600000;
@@ -7365,12 +8470,12 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly http: readonly ["https://api.node.glif.io/rpc/v1"];
         };
     };
-    sourceId?: number | undefined;
-    testnet?: boolean | undefined;
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>, Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     sortIndex: 0;
@@ -7411,6 +8516,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             atlasNetworkName: string;
             routerAddress: string;
             chainSelector: bigint;
+            tokenAdminRegistry: string;
         };
         rhinofi: string;
         stargate: {
@@ -7544,12 +8650,12 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         readonly symbol: "ETH";
         readonly decimals: 18;
     };
-    sourceId?: number | undefined;
-    testnet?: boolean | undefined;
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>, Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     sortIndex: 12;
@@ -7667,12 +8773,12 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly webSocket: readonly ["wss://moonbeam.public.blastapi.io"];
         };
     };
-    sourceId?: number | undefined;
+    sourceId?: number | undefined | undefined;
     testnet: false;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>, Readonly<{
     name: "Optimism";
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
@@ -7701,6 +8807,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             atlasNetworkName: string;
             routerAddress: string;
             chainSelector: bigint;
+            tokenAdminRegistry: string;
         };
         rhinofi: string;
         stargate: {
@@ -7870,7 +8977,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         };
     };
     sourceId: 1;
-    testnet?: boolean | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
     formatters: {
@@ -8136,6 +9243,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             atlasNetworkName: string;
             routerAddress: string;
             chainSelector: bigint;
+            tokenAdminRegistry: string;
         };
         rhinofi: string;
         stargate: {
@@ -8267,12 +9375,12 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly http: readonly ["https://polygon-rpc.com"];
         };
     };
-    sourceId?: number | undefined;
-    testnet?: boolean | undefined;
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>, Readonly<{
     sortIndex: 7;
     launchTime: 1702479600;
@@ -8349,7 +9457,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         symbol: string;
         address: "0xef213441a85df4d7acbdae0cf78004e1e486bb96";
     })[];
-    stables: ("0xef213441a85df4d7acbdae0cf78004e1e486bb96" | "0x3a15461d8ae0f0fb5fa2629e9da7d66a794a6e37")[];
+    stables: ("0xef213441a85df4d7acbdae0cf78004e1e486bb96" | "0x3a15461d8ae0f0fb5fa2629e9da7d66a794a6e37" | "0xaf368c91793cb22739386dfcbbb2f1a9e4bcbebf")[];
     watchlist: ("0xd2ffe51ab4e622a411abbe634832a19d919e9c55" | "0x022650756421f2e636d4138054331cbfafb55d9e" | "0x549a5d92412161a1a2828549a657a49dd9fa046c" | "0xcba7abe98fd6a65259837d76a3409841c1dd4288" | "0xbe092d38045ef7f9cdc5014278a4239e896bf5ca")[];
     internalName: "rootstock";
     nativeLogoUrl: "https://assets.oku.trade/natives/rbtc.png";
@@ -8385,12 +9493,12 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly http: readonly ["https://public-node.rsk.co"];
         };
     };
-    sourceId?: number | undefined;
-    testnet?: boolean | undefined;
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
     network: "rootstock";
 }>, Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
@@ -8410,6 +9518,12 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         icecreamswap: true;
     };
     bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+            tokenAdminRegistry: string;
+        };
         rhinofi: string;
         stargate: {
             endpointID: number;
@@ -8525,12 +9639,12 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly webSocket: readonly ["wss://wss-rpc.scroll.io/ws"];
         };
     };
-    sourceId?: number | undefined;
+    sourceId?: number | undefined | undefined;
     testnet: false;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>, Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     sortIndex: 6;
@@ -8550,6 +9664,11 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         openocean: string;
     };
     bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+        };
         rhinofi: string;
     };
     oracles: {
@@ -8647,12 +9766,12 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly http: readonly ["https://zkevm-rpc.com"];
         };
     };
-    sourceId?: number | undefined;
-    testnet?: boolean | undefined;
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>, Readonly<{
     blockTimeSeconds: 2;
     sortIndex: 4;
@@ -8670,6 +9789,12 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         openocean: string;
     };
     bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+            tokenAdminRegistry: string;
+        };
         rhinofi: string;
     };
     oracles: {
@@ -8776,8 +9901,8 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly webSocket: readonly ["wss://mainnet.era.zksync.io/ws"];
         };
     };
-    sourceId?: number | undefined;
-    testnet?: boolean | undefined;
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
     custom: {
         readonly getEip712Domain: import("viem/zksync").EIP712DomainFn<import("viem/zksync").ZkSyncTransactionSerializable, import("viem/zksync").ZkSyncEIP712TransactionSignable>;
     };
@@ -8808,7 +9933,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 stateRoot: import("viem").Hash;
                 timestamp: bigint;
                 totalDifficulty: bigint | null;
-                transactions: `0x${string}`[] | import("viem/chains").ZkSyncTransaction<boolean>[];
+                transactions: `0x${string}`[] | import("viem/zksync").ZkSyncTransaction<boolean>[];
                 transactionsRoot: import("viem").Hash;
                 uncles: import("viem").Hash[];
                 withdrawals?: import("viem").Withdrawal[] | undefined;
@@ -9007,7 +10132,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         readonly transactionReceipt: {
             exclude: [] | undefined;
             format: (args: import("viem/zksync").ZkSyncRpcTransactionReceipt) => {
-                type: import("viem/chains").ZkSyncTransactionType;
+                type: import("viem/zksync").ZkSyncTransactionType;
                 to: import("abitype").Address | null;
                 from: import("abitype").Address;
                 blockHash: import("viem").Hash;
@@ -9025,8 +10150,8 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 root?: import("viem").Hash | undefined;
                 l1BatchNumber: bigint | null;
                 l1BatchTxIndex: bigint | null;
-                logs: import("viem/chains").ZkSyncLog[];
-                l2ToL1Logs: import("viem/chains").ZkSyncL2ToL1Log[];
+                logs: import("viem/zksync").ZkSyncLog[];
+                l2ToL1Logs: import("viem/zksync").ZkSyncL2ToL1Log[];
             } & {};
             type: "transactionReceipt";
         };
@@ -9139,7 +10264,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 maxFeePerBlobGas?: undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
-                eip712Meta: import("viem/chains").ZkSyncEip712Meta;
+                eip712Meta: import("viem/zksync").ZkSyncEip712Meta;
             }) & {
                 paymaster: never;
                 gasPerPubdata: never;
@@ -9268,12 +10393,12 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly http: readonly ["https://pacific-rpc.manta.network/http"];
         };
     };
-    sourceId?: number | undefined;
-    testnet?: boolean | undefined;
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
     network: "manta";
 }>, Readonly<{
     name: "Linea";
@@ -9294,6 +10419,12 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         icecreamswap: true;
     };
     bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+            tokenAdminRegistry: string;
+        };
         rhinofi: string;
         stargate: {
             endpointID: number;
@@ -9397,15 +10528,15 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly webSocket: readonly ["wss://rpc.linea.build"];
         };
     };
-    sourceId?: number | undefined;
+    sourceId?: number | undefined | undefined;
     testnet: false;
     custom?: Record<string, unknown> | undefined;
     fees: {
         readonly estimateFeesPerGas: ({ client, multiply, request, type, }: Parameters<import("viem").ChainEstimateFeesPerGasFn>[0]) => ReturnType<import("viem").ChainEstimateFeesPerGasFn>;
         readonly maxPriorityFeePerGas: ({ block, client, request }: import("viem").ChainFeesFnParameters<import("viem").ChainFormatters | undefined>) => Promise<bigint | null>;
     };
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>, Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     blockTimeSeconds: 24;
@@ -9522,12 +10653,12 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly webSocket: readonly ["wss://ws.mainnet.taiko.xyz"];
         };
     };
-    sourceId?: number | undefined;
-    testnet?: boolean | undefined;
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>, Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     blockTimeSeconds: 2;
@@ -9543,6 +10674,12 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         icecreamswap: true;
     };
     bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+            tokenAdminRegistry: string;
+        };
         stargate: {
             endpointID: number;
             blockConfirmations: number;
@@ -9641,12 +10778,12 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly http: readonly ["https://rpc.mantle.xyz"];
         };
     };
-    sourceId?: number | undefined;
-    testnet?: boolean | undefined;
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>, Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     blockTimeSeconds: 0.4;
@@ -9762,12 +10899,12 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly webSocket: readonly ["wss://evm-ws.sei-apis.com/"];
         };
     };
-    sourceId?: number | undefined;
-    testnet?: boolean | undefined;
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>, Readonly<{
     blockTimeSeconds: 2;
     launchTime: 1724076000;
@@ -9899,7 +11036,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         };
     };
     sourceId: 1;
-    testnet?: boolean | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
     formatters: {
@@ -10147,7 +11284,14 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     markets: {
         icecreamswap: true;
     };
-    bridges: {};
+    bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+            tokenAdminRegistry: string;
+        };
+    };
     morpho: {};
     oracles: {
         coingecko: {
@@ -10280,7 +11424,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         };
     };
     sourceId: 1;
-    testnet?: boolean | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
     formatters: {
@@ -10535,7 +11679,14 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             routerContract: string;
         };
     };
-    bridges: {};
+    bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+            tokenAdminRegistry: string;
+        };
+    };
     oracles: {
         cmc: {
             slug: string;
@@ -10636,12 +11787,12 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly webSocket: readonly ["wss://rpc.gnosischain.com/wss"];
         };
     };
-    sourceId?: number | undefined;
-    testnet?: boolean | undefined;
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>, Readonly<{
     blockTimeSeconds: 3;
     launchTime: 0;
@@ -10652,7 +11803,14 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     markets: {
         icecreamswap: true;
     };
-    bridges: {};
+    bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+            tokenAdminRegistry: string;
+        };
+    };
     morpho: {};
     oracles: {
         cmc: {
@@ -10753,12 +11911,12 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly http: readonly ["https://rpc.xlayer.tech"];
         };
     };
-    sourceId?: number | undefined;
-    testnet?: boolean | undefined;
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>, Readonly<{
     blockTimeSeconds: 2;
     launchTime: 1733882663;
@@ -10886,7 +12044,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         };
     };
     sourceId: 1;
-    testnet?: boolean | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
     formatters: {
@@ -11132,7 +12290,14 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     safeReorgDistance: 90000;
     externalId: {};
     markets: {};
-    bridges: {};
+    bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+            tokenAdminRegistry: string;
+        };
+    };
     oracles: {};
     morpho: {};
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
@@ -11213,11 +12378,11 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         };
     };
     sourceId: 1;
-    testnet?: boolean | undefined;
+    testnet?: boolean | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>, Readonly<{
     blockTimeSeconds: 3;
     launchTime: 1737165834;
@@ -11309,15 +12474,15 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly http: readonly ["https://rpc.soniclabs.com"];
         };
     };
-    sourceId?: number | undefined;
+    sourceId?: number | undefined | undefined;
     testnet: false;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>, Readonly<{
     blockTimeSeconds: 2;
-    launchTime: 1727359200;
+    launchTime: 1737754469;
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/chains/celo-logo.svg";
     safeReorgDistance: 90000;
@@ -11325,7 +12490,14 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     markets: {
         icecreamswap: true;
     };
-    bridges: {};
+    bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+            tokenAdminRegistry: string;
+        };
+    };
     morpho: {};
     oracles: {
         coingecko: {
@@ -11413,7 +12585,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly http: readonly ["https://forno.celo.org"];
         };
     };
-    sourceId?: number | undefined;
+    sourceId?: number | undefined | undefined;
     testnet: false;
     custom?: Record<string, unknown> | undefined;
     fees: import("viem").ChainFees<{
@@ -12241,6 +13413,509 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     serializers: {
         readonly transaction: typeof import("viem/chains").serializeTransactionCelo;
     };
+}>, Readonly<{
+    blockTimeSeconds: 12;
+    launchTime: 1738569600;
+    sortIndex: 13;
+    logoUrl: "https://assets.oku.trade/chains/hemi-logo.svg";
+    safeReorgDistance: 90000;
+    externalId: {};
+    markets: {};
+    bridges: {};
+    morpho: {};
+    oracles: {};
+    initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
+    uniswap: {
+        deployBlock: number;
+        poolFactory: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D";
+        permit2: "0xB952578f3520EE8Ea45b7914994dcf4702cEe578";
+        multicall2: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435";
+        tickLens: "0xB3309C48F8407651D918ca3Da4C45DE40109E641";
+        nonfungiblePositionManager: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c";
+        positionsNFT: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c";
+        positionsNFTDeployBlock: number;
+        universalRouter: "0x738fD6d10bCc05c230388B4027CAd37f82fe2AF2";
+        wrappedNativeAddress: "0x4200000000000000000000000000000000000006";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
+        nativeCurrencyName: string;
+    };
+    token: {
+        wethAddress: "0x4200000000000000000000000000000000000006";
+        wbtcAddress: "0x03C7054BCB39f7b2e5B2c7AcB37583e32D70Cfa3";
+    };
+    oku: {
+        limitOrderRegistry: "0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc";
+        limitOrderRegistryDeployBlock: number;
+        pricing: {
+            nativeWrappedToken: "0x4200000000000000000000000000000000000006";
+            nativeWrappedName: string;
+        };
+    };
+    defaultPool: "0x3A49cCD3c2A688D0766E087B30A3d27C8997A71c";
+    defaultToken0: "0x4200000000000000000000000000000000000006";
+    defaultToken1: "0xad11a8BEb98bbf61dbb1aa0F6d6F2ECD87b35afA";
+    tokenList: ({
+        symbol: string;
+        address: "0x4200000000000000000000000000000000000006";
+    } | {
+        symbol: string;
+        address: "0xbB0D083fb1be0A9f6157ec484b6C79E0A4e31C2e";
+    } | {
+        symbol: string;
+        address: "0xad11a8BEb98bbf61dbb1aa0F6d6F2ECD87b35afA";
+    } | {
+        symbol: string;
+        address: "0x03C7054BCB39f7b2e5B2c7AcB37583e32D70Cfa3";
+    })[];
+    stables: ("0xad11a8BEb98bbf61dbb1aa0F6d6F2ECD87b35afA" | "0xbB0D083fb1be0A9f6157ec484b6C79E0A4e31C2e" | "0x6c851F501a3F24E29A8E39a29591cddf09369080")[];
+    watchlist: "0x3A49cCD3c2A688D0766E087B30A3d27C8997A71c"[];
+    internalName: "hemi";
+    nativeLogoUrl: "https://assets.oku.trade/natives/eth.png";
+    contracts: {
+        limitOrder: {
+            address: "0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc";
+        };
+        nftManager: {
+            address: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c";
+        };
+        weth9: {
+            address: "0x4200000000000000000000000000000000000006";
+        };
+        multicall2: {
+            address: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435";
+        };
+        multicall3: {
+            address: "0xcA11bde05977b3631167028862bE2a173976CA11";
+        };
+        ensRegistry?: ChainContract | undefined;
+        ensUniversalResolver?: ChainContract | undefined;
+        universalSignatureVerifier?: ChainContract | undefined;
+    };
+    blockExplorers: {
+        readonly default: {
+            readonly name: "blockscout";
+            readonly url: "https://explorer.hemi.xyz";
+        };
+    };
+    id: 43111;
+    name: "Hemi";
+    nativeCurrency: {
+        readonly name: "Ether";
+        readonly symbol: "ETH";
+        readonly decimals: 18;
+    };
+    rpcUrls: {
+        readonly default: {
+            readonly http: readonly ["https://rpc.hemi.network/rpc"];
+        };
+    };
+    sourceId?: number | undefined | undefined;
+    testnet: false;
+    custom?: Record<string, unknown> | undefined;
+    fees?: import("viem").ChainFees<undefined> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
+    network: "Hemi";
+}>, Readonly<{
+    blockTimeSeconds: 0.5;
+    launchTime: 1738632669;
+    sortIndex: 13;
+    logoUrl: "https://assets.oku.trade/chains/telos-logo.svg";
+    safeReorgDistance: 90000;
+    externalId: {};
+    markets: {
+        openocean: string;
+        icecreamswap: true;
+    };
+    bridges: {};
+    morpho: {};
+    oracles: {};
+    initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
+    uniswap: {
+        deployBlock: number;
+        poolFactory: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D";
+        permit2: "0xB952578f3520EE8Ea45b7914994dcf4702cEe578";
+        multicall2: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435";
+        tickLens: "0xB3309C48F8407651D918ca3Da4C45DE40109E641";
+        nonfungiblePositionManager: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c";
+        positionsNFT: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c";
+        positionsNFTDeployBlock: number;
+        universalRouter: "0x738fD6d10bCc05c230388B4027CAd37f82fe2AF2";
+        wrappedNativeAddress: "0xD102cE6A4dB07D247fcc28F366A623Df0938CA9E";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
+        nativeCurrencyName: string;
+    };
+    token: {
+        wethAddress: "0xD102cE6A4dB07D247fcc28F366A623Df0938CA9E";
+        wbtcAddress: "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c";
+        usdcAddress: "0x8D97Cea50351Fb4329d591682b148D43a0C3611b";
+    };
+    oku: {
+        limitOrderRegistry: "0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc";
+        limitOrderRegistryDeployBlock: number;
+        pricing: {
+            nativeWrappedToken: "0xD102cE6A4dB07D247fcc28F366A623Df0938CA9E";
+            nativeWrappedName: string;
+        };
+    };
+    defaultPool: "0x2E2F83DF7061561C4a29bD155B8f65674bFa31C9";
+    defaultToken0: "0x8D97Cea50351Fb4329d591682b148D43a0C3611b";
+    defaultToken1: "0xD102cE6A4dB07D247fcc28F366A623Df0938CA9E";
+    tokenList: ({
+        symbol: string;
+        address: "0xD102cE6A4dB07D247fcc28F366A623Df0938CA9E";
+    } | {
+        symbol: string;
+        address: "0x8D97Cea50351Fb4329d591682b148D43a0C3611b";
+    } | {
+        symbol: string;
+        address: "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c";
+    })[];
+    stables: "0x8D97Cea50351Fb4329d591682b148D43a0C3611b"[];
+    watchlist: "0x2E2F83DF7061561C4a29bD155B8f65674bFa31C9"[];
+    internalName: "telos";
+    nativeLogoUrl: "https://assets.oku.trade/natives/telos.png";
+    contracts: {
+        limitOrder: {
+            address: "0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc";
+        };
+        nftManager: {
+            address: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c";
+        };
+        weth9: {
+            address: "0xD102cE6A4dB07D247fcc28F366A623Df0938CA9E";
+        };
+        multicall2: {
+            address: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435";
+        };
+        multicall3: {
+            address: "0xcA11bde05977b3631167028862bE2a173976CA11";
+        };
+    };
+    blockExplorers: {
+        readonly default: {
+            readonly name: "Teloscan";
+            readonly url: "https://www.teloscan.io/";
+        };
+    };
+    id: 40;
+    name: "Telos";
+    nativeCurrency: {
+        readonly decimals: 18;
+        readonly name: "Telos";
+        readonly symbol: "TLOS";
+    };
+    rpcUrls: {
+        readonly default: {
+            readonly http: readonly ["https://mainnet.telos.net/evm"];
+        };
+    };
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
+    custom?: Record<string, unknown> | undefined;
+    fees?: import("viem").ChainFees<undefined> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
+}>, Readonly<{
+    name: "Saga";
+    blockTimeSeconds: 5;
+    launchTime: 1740384000;
+    sortIndex: 13;
+    logoUrl: "https://assets.oku.trade/chains/saga-logo.png";
+    safeReorgDistance: 90000;
+    externalId: {};
+    markets: {};
+    bridges: {};
+    oracles: {};
+    morpho: {};
+    initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
+    uniswap: {
+        deployBlock: number;
+        poolFactory: "0x454050C4c9190390981Ac4b8d5AFcd7aC65eEffa";
+        permit2: "0x447B8E40B0CdA8e55F405C86bC635D02d0540aB8";
+        multicall2: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c";
+        tickLens: "0x6Aa54a43d7eEF5b239a18eed3Af4877f46522BCA";
+        nonfungiblePositionManager: "0xdD489C75be1039ec7d843A6aC2Fd658350B067Cf";
+        positionsNFT: "0xdD489C75be1039ec7d843A6aC2Fd658350B067Cf";
+        positionsNFTDeployBlock: number;
+        universalRouter: "0x352A86168e6988A1aDF9A15Cb00017AAd3B67155";
+        wrappedNativeAddress: "0xE3dbcD53f4Ce1b06Ab200f4912BD35672e68f1FA";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
+        nativeCurrencyName: string;
+    };
+    token: {
+        usdcAddress: "0xfc960C233B8E98e0Cf282e29BDE8d3f105fc24d5";
+        wethAddress: "0xE3dbcD53f4Ce1b06Ab200f4912BD35672e68f1FA";
+    };
+    oku: {
+        limitOrderRegistry: "0xA9d71E1dd7ca26F26e656E66d6AA81ed7f745bf0";
+        limitOrderRegistryDeployBlock: number;
+        pricing: {
+            nativeWrappedToken: "0xE3dbcD53f4Ce1b06Ab200f4912BD35672e68f1FA";
+            nativeWrappedName: string;
+        };
+    };
+    defaultPool: "0x0000000000000000000000000000000000000000";
+    defaultToken0: "0xE3dbcD53f4Ce1b06Ab200f4912BD35672e68f1FA";
+    defaultToken1: "0xfc960C233B8E98e0Cf282e29BDE8d3f105fc24d5";
+    tokenList: ({
+        symbol: string;
+        address: "0xE3dbcD53f4Ce1b06Ab200f4912BD35672e68f1FA";
+    } | {
+        symbol: string;
+        address: "0xfc960C233B8E98e0Cf282e29BDE8d3f105fc24d5";
+    } | {
+        symbol: string;
+        address: "0xC8fe3C1de344854f4429bB333AFFAeF97eF88CEa";
+    })[];
+    stables: ("0xfc960C233B8E98e0Cf282e29BDE8d3f105fc24d5" | "0xC8fe3C1de344854f4429bB333AFFAeF97eF88CEa")[];
+    watchlist: never[];
+    internalName: "saga";
+    nativeLogoUrl: "https://assets.oku.trade/natives/saga.png";
+    contracts: {
+        limitOrder: {
+            address: "0xA9d71E1dd7ca26F26e656E66d6AA81ed7f745bf0";
+        };
+        nftManager: {
+            address: "0xdD489C75be1039ec7d843A6aC2Fd658350B067Cf";
+        };
+        weth9: {
+            address: "0xE3dbcD53f4Ce1b06Ab200f4912BD35672e68f1FA";
+        };
+        multicall2: {
+            address: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c";
+        };
+        multicall3: {
+            address: "0x864DDc9B50B9A0dF676d826c9B9EDe9F8913a160";
+        };
+    };
+    blockExplorers: {
+        readonly default: {
+            readonly name: "Saga Explorer";
+            readonly url: "https://sagaevm-5464-1.sagaexplorer.io";
+        };
+    };
+    id: 5464;
+    nativeCurrency: {
+        readonly decimals: 18;
+        readonly name: "gas";
+        readonly symbol: "GAS";
+    };
+    rpcUrls: {
+        readonly default: {
+            readonly http: readonly ["http://sagaevm-5464-1.jsonrpc.sagarpc.io"];
+        };
+    };
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
+    custom?: Record<string, unknown> | undefined;
+    fees?: import("viem").ChainFees<undefined> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
+    network: "saga";
+}>, Readonly<{
+    name: "Goat";
+    blockTimeSeconds: 3;
+    launchTime: 1740621916;
+    sortIndex: 15;
+    logoUrl: "https://assets.oku.trade/chains/goat-logo.svg";
+    safeReorgDistance: 90000;
+    externalId: {};
+    markets: {};
+    bridges: {};
+    oracles: {};
+    morpho: {};
+    initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
+    uniswap: {
+        deployBlock: number;
+        poolFactory: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D";
+        permit2: "0xB952578f3520EE8Ea45b7914994dcf4702cEe578";
+        multicall2: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435";
+        tickLens: "0xB3309C48F8407651D918ca3Da4C45DE40109E641";
+        nonfungiblePositionManager: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c";
+        positionsNFT: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c";
+        positionsNFTDeployBlock: number;
+        universalRouter: "0x738fD6d10bCc05c230388B4027CAd37f82fe2AF2";
+        wrappedNativeAddress: "0xbC10000000000000000000000000000000000000";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
+        nativeCurrencyName: string;
+    };
+    token: {
+        wethAddress: "0xbC10000000000000000000000000000000000000";
+        usdcAddress: "0x3022b87ac063DE95b1570F46f5e470F8B53112D8";
+    };
+    oku: {
+        limitOrderRegistry: "0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc";
+        limitOrderRegistryDeployBlock: number;
+        pricing: {
+            nativeWrappedToken: "0xbC10000000000000000000000000000000000000";
+            nativeWrappedName: string;
+        };
+    };
+    defaultPool: "0x56F689Ec1E264FAad1666F3b5db1A6a9707cc9b1";
+    defaultToken0: "0x3022b87ac063DE95b1570F46f5e470F8B53112D8";
+    defaultToken1: "0xbC10000000000000000000000000000000000000";
+    tokenList: ({
+        symbol: string;
+        address: "0xbC10000000000000000000000000000000000000";
+    } | {
+        symbol: string;
+        address: "0x3022b87ac063DE95b1570F46f5e470F8B53112D8";
+    })[];
+    stables: "0x3022b87ac063DE95b1570F46f5e470F8B53112D8"[];
+    watchlist: ("0x56F689Ec1E264FAad1666F3b5db1A6a9707cc9b1" | "0x076d72dDdE865eD0A71267E69A8E51A9fFE1E3D0")[];
+    internalName: "goat";
+    nativeLogoUrl: "https://assets.oku.trade/natives/gbtc.svg";
+    contracts: {
+        limitOrder: {
+            address: "0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc";
+        };
+        nftManager: {
+            address: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c";
+        };
+        weth9: {
+            address: "0xbC10000000000000000000000000000000000000";
+        };
+        multicall2: {
+            address: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435";
+        };
+        multicall3: {
+            address: "0xcA11bde05977b3631167028862bE2a173976CA11";
+        };
+    };
+    blockExplorers: {
+        readonly default: {
+            readonly name: "Goat Explorer";
+            readonly url: "https://explorer.goat.network";
+        };
+    };
+    id: 2345;
+    nativeCurrency: {
+        readonly decimals: 18;
+        readonly name: "Bitcoin";
+        readonly symbol: "BTC";
+    };
+    rpcUrls: {
+        readonly default: {
+            readonly http: readonly ["https://rpc.goat.network"];
+        };
+    };
+    sourceId?: number | undefined | undefined;
+    testnet?: boolean | undefined | undefined;
+    custom?: Record<string, unknown> | undefined;
+    fees?: import("viem").ChainFees<undefined> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
+}>, Readonly<{
+    name: "Redbelly";
+    blockTimeSeconds: 5;
+    launchTime: 1740621916;
+    sortIndex: 15;
+    logoUrl: "https://assets.oku.trade/chains/redbelly-logo.svg";
+    safeReorgDistance: 90000;
+    externalId: {};
+    markets: {};
+    bridges: {};
+    oracles: {};
+    morpho: {};
+    initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
+    uniswap: {
+        deployBlock: number;
+        poolFactory: "0x75FC67473A91335B5b8F8821277262a13B38c9b3";
+        permit2: "0xdD489C75be1039ec7d843A6aC2Fd658350B067Cf";
+        multicall2: "0x0d922Fb1Bc191F64970ac40376643808b4B74Df9";
+        tickLens: "0xE3dbcD53f4Ce1b06Ab200f4912BD35672e68f1FA";
+        nonfungiblePositionManager: "0x8B3c541c30f9b29560f56B9E44b59718916B69EF";
+        positionsNFT: "0x8B3c541c30f9b29560f56B9E44b59718916B69EF";
+        positionsNFTDeployBlock: number;
+        universalRouter: "0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc";
+        wrappedNativeAddress: "0x6ed1F491e2d31536D6561f6bdB2AdC8F092a6076";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
+        nativeCurrencyName: string;
+    };
+    token: {
+        wethAddress: "0x6ed1F491e2d31536D6561f6bdB2AdC8F092a6076";
+        usdcAddress: "0x8201c02d4AB2214471E8C3AD6475C8b0CD9F2D06";
+    };
+    oku: {
+        limitOrderRegistry: "0x9db70E29712Cc8Af10c2B597BaDA6784544FF407";
+        limitOrderRegistryDeployBlock: number;
+        pricing: {
+            nativeWrappedToken: "0x6ed1F491e2d31536D6561f6bdB2AdC8F092a6076";
+            nativeWrappedName: string;
+        };
+    };
+    defaultPool: "0xcDe3554d179b5B7ABB3ddFeE1CBC7B98b3f2E380";
+    defaultToken0: "0x6ed1F491e2d31536D6561f6bdB2AdC8F092a6076";
+    defaultToken1: "0x8C4aCd74Ff4385f3B7911432FA6787Aa14406f8B";
+    tokenList: ({
+        symbol: string;
+        address: "0x6ed1F491e2d31536D6561f6bdB2AdC8F092a6076";
+    } | {
+        symbol: string;
+        address: "0x8201c02d4AB2214471E8C3AD6475C8b0CD9F2D06";
+    } | {
+        symbol: string;
+        address: "0x8C4aCd74Ff4385f3B7911432FA6787Aa14406f8B";
+    })[];
+    stables: ("0x8201c02d4AB2214471E8C3AD6475C8b0CD9F2D06" | "0x8C4aCd74Ff4385f3B7911432FA6787Aa14406f8B")[];
+    watchlist: "0xcDe3554d179b5B7ABB3ddFeE1CBC7B98b3f2E380"[];
+    internalName: "redbelly";
+    nativeLogoUrl: "https://assets.oku.trade/natives/rbnt.svg";
+    contracts: {
+        limitOrder: {
+            address: "0x9db70E29712Cc8Af10c2B597BaDA6784544FF407";
+        };
+        nftManager: {
+            address: "0x8B3c541c30f9b29560f56B9E44b59718916B69EF";
+        };
+        weth9: {
+            address: "0x6ed1F491e2d31536D6561f6bdB2AdC8F092a6076";
+        };
+        multicall2: {
+            address: "0x0d922Fb1Bc191F64970ac40376643808b4B74Df9";
+        };
+        multicall3: {
+            address: "0xEe43BBcC6340038130681F98d855E416F7F728e9";
+        };
+        ensRegistry?: ChainContract | undefined;
+        ensUniversalResolver?: ChainContract | undefined;
+        universalSignatureVerifier?: ChainContract | undefined;
+    };
+    blockExplorers: {
+        readonly default: {
+            readonly name: "Routescan";
+            readonly url: "https://redbelly.routescan.io";
+            readonly apiUrl: "https://api.routescan.io/v2/network/mainnet/evm/151/etherscan/api";
+        };
+    };
+    id: 151;
+    nativeCurrency: {
+        readonly name: "Redbelly Native Coin";
+        readonly symbol: "RBNT";
+        readonly decimals: 18;
+    };
+    rpcUrls: {
+        readonly default: {
+            readonly http: readonly ["https://governors.mainnet.redbelly.network"];
+        };
+    };
+    sourceId?: number | undefined | undefined;
+    testnet: false;
+    custom?: Record<string, unknown> | undefined;
+    fees?: import("viem").ChainFees<undefined> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>];
-export { arbitrum, base, blast, bob, boba, bsc, celo, corn, filecoin, gnosis, linea, lisk, mainnet, manta, mantle, metal, moonbeam, optimism, polygon, rootstock, scroll, sei, sonic, taiko, xLayer, polygonZkEvm, zkSync, MorphoMetadata, UniswapMetadata, OkuPricingMetadata, OkuMetadata, TokenMetadata, Markets, Bridges, Oracles, IChainInfo, MAINNET_CHAINS };
+export { arbitrum, base, blast, bob, boba, bsc, celo, corn, filecoin, gnosis, goat, hemi, linea, lisk, mainnet, manta, mantle, metal, moonbeam, optimism, polygon, redbelly, rootstock, saga, scroll, sei, sonic, taiko, telos, xLayer, polygonZkEvm, zkSync, MorphoMetadata, UniswapMetadata, OkuPricingMetadata, OkuMetadata, TokenMetadata, Markets, Bridges, Oracles, IChainInfo, MAINNET_CHAINS };
 export { ChainContract } from "viem";

@@ -33,6 +33,7 @@ export const polygon = makeConfig({
       atlasNetworkName: "polygon-mainnet",
       routerAddress: "0x849c5ED5a80F5B408Dd4969b78c2C8fdf0565Bfe",
       chainSelector: 4051577828743386545n,
+      tokenAdminRegistry: "0x00F027eA6D0fb03256A15E9182B2B9227A4931d8"
     },
     rhinofi: "MATIC_POS",
     stargate: {

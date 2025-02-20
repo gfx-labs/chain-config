@@ -32,6 +32,8 @@ export const optimism = makeConfig({
       atlasNetworkName: "ethereum-mainnet-optimism-1",
       routerAddress: "0x3206695CaE29952f4b0c22a169725a865bc8Ce0f",
       chainSelector: 3734403246176062136n,
+      tokenAdminRegistry: "0x657c42abE4CD8aa731Aec322f871B5b90cf6274F"
+
     },
     rhinofi: "OPTIMISM",
     stargate: {
