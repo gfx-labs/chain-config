@@ -3290,7 +3290,10 @@ const saga = makeConfig({
         "0xC8fe3C1de344854f4429bB333AFFAeF97eF88CEa",
         "0xfc960C233B8E98e0Cf282e29BDE8d3f105fc24d5",
     ],
-    watchlist: ["0x99429757ddeb5432b52982b0fcf6ed94620c358d"],
+    watchlist: [
+        "0x99429757ddeb5432b52982b0fcf6ed94620c358d",
+        "0xc2C5f2C94759b2829C9Fd86b8d34d33DDc4D29e4",
+    ],
     internalName: "saga",
     nativeLogoUrl: "https://assets.oku.trade/natives/saga.png",
     contracts: {
