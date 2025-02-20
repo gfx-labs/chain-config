@@ -16,6 +16,7 @@ export const base = makeConfig({
 		morpho: "0xBBBBBbbBBb9cC5e90e3b3Af64bdAF62C37EEFFCb",
 		mmFactory10: "0xa9c3d3a366466fa809d1ae982fb2c46e5fc41101",
 		mmFactory11: "0xFf62A7c278C62eD665133147129245053Bbf5918",
+		bundler3: "0x6BFd8137e702540E7A42B74178A4a49Ba43920C4",
 	},
 	externalId: {
 		zerion: "base",
