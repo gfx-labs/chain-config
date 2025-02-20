@@ -1,5 +1,4 @@
 import { arbitrum as arbitrum$1, base as base$1, blast as blast$1, bob as bob$1, boba as boba$1, bsc as bsc$1, celo as celo$1, corn as corn$1, filecoin as filecoin$1, gnosis as gnosis$1, goat as goat$1, hemi as hemi$1, linea as linea$1, lisk as lisk$1, mainnet as mainnet$1, manta as manta$1, mantle as mantle$1, metalL2, moonbeam as moonbeam$1, optimism as optimism$1, polygon as polygon$1, redbellyMainnet, rootstock as rootstock$1, saga as saga$1, scroll as scroll$1, sei as sei$1, sonic as sonic$1, taiko as taiko$1, telos as telos$1, xLayer as xLayer$1, polygonZkEvm as polygonZkEvm$1, zksync } from 'viem/chains';
-import { zeroAddress } from 'viem';
 
 const makeConfig = (x) => {
     return x;
@@ -309,6 +308,7 @@ const base = makeConfig({
         morpho: "0xBBBBBbbBBb9cC5e90e3b3Af64bdAF62C37EEFFCb",
         mmFactory10: "0xa9c3d3a366466fa809d1ae982fb2c46e5fc41101",
         mmFactory11: "0xFf62A7c278C62eD665133147129245053Bbf5918",
+        bundler3: "0x6BFd8137e702540E7A42B74178A4a49Ba43920C4",
     },
     externalId: {
         zerion: "base",
@@ -3278,8 +3278,8 @@ const saga = makeConfig({
             nativeWrappedName: "GAS",
         },
     },
-    defaultPool: zeroAddress,
-    defaultToken0: "0xE3dbcD53f4Ce1b06Ab200f4912BD35672e68f1FA",
+    defaultPool: "0x99429757ddeb5432b52982b0fcf6ed94620c358d",
+    defaultToken0: "0xC8fe3C1de344854f4429bB333AFFAeF97eF88CEa",
     defaultToken1: "0xfc960C233B8E98e0Cf282e29BDE8d3f105fc24d5",
     tokenList: [
         { symbol: "wGAS", address: "0xE3dbcD53f4Ce1b06Ab200f4912BD35672e68f1FA" },
@@ -3290,7 +3290,7 @@ const saga = makeConfig({
         "0xC8fe3C1de344854f4429bB333AFFAeF97eF88CEa",
         "0xfc960C233B8E98e0Cf282e29BDE8d3f105fc24d5",
     ],
-    watchlist: [],
+    watchlist: ["0x99429757ddeb5432b52982b0fcf6ed94620c358d"],
     internalName: "saga",
     nativeLogoUrl: "https://assets.oku.trade/natives/saga.png",
     contracts: {

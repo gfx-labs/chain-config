@@ -363,4 +363,5 @@ type MorphoMetadata struct {
 	Morpho      common.Address
 	MmFactory10 common.Address
 	MmFactory11 common.Address
+	Bundler3    common.Address
 }

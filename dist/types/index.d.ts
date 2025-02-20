@@ -187,6 +187,7 @@ declare const base: Readonly<{
         morpho: "0xBBBBBbbBBb9cC5e90e3b3Af64bdAF62C37EEFFCb";
         mmFactory10: "0xa9c3d3a366466fa809d1ae982fb2c46e5fc41101";
         mmFactory11: "0xFf62A7c278C62eD665133147129245053Bbf5918";
+        bundler3: "0x6BFd8137e702540E7A42B74178A4a49Ba43920C4";
     };
     externalId: {
         zerion: string;
@@ -5509,8 +5510,8 @@ declare const saga: Readonly<{
             nativeWrappedName: string;
         };
     };
-    defaultPool: "0x0000000000000000000000000000000000000000";
-    defaultToken0: "0xE3dbcD53f4Ce1b06Ab200f4912BD35672e68f1FA";
+    defaultPool: "0x99429757ddeb5432b52982b0fcf6ed94620c358d";
+    defaultToken0: "0xC8fe3C1de344854f4429bB333AFFAeF97eF88CEa";
     defaultToken1: "0xfc960C233B8E98e0Cf282e29BDE8d3f105fc24d5";
     tokenList: ({
         symbol: string;
@@ -5523,7 +5524,7 @@ declare const saga: Readonly<{
         address: "0xC8fe3C1de344854f4429bB333AFFAeF97eF88CEa";
     })[];
     stables: ("0xfc960C233B8E98e0Cf282e29BDE8d3f105fc24d5" | "0xC8fe3C1de344854f4429bB333AFFAeF97eF88CEa")[];
-    watchlist: never[];
+    watchlist: "0x99429757ddeb5432b52982b0fcf6ed94620c358d"[];
     internalName: "saga";
     nativeLogoUrl: "https://assets.oku.trade/natives/saga.png";
     contracts: {
@@ -6956,6 +6957,7 @@ interface MorphoMetadata {
     morpho?: Address;
     mmFactory10?: Address;
     mmFactory11?: Address;
+    bundler3?: Address;
 }
 interface UniswapMetadata {
     deployBlock?: number;
@@ -7289,6 +7291,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         morpho: "0xBBBBBbbBBb9cC5e90e3b3Af64bdAF62C37EEFFCb";
         mmFactory10: "0xa9c3d3a366466fa809d1ae982fb2c46e5fc41101";
         mmFactory11: "0xFf62A7c278C62eD665133147129245053Bbf5918";
+        bundler3: "0x6BFd8137e702540E7A42B74178A4a49Ba43920C4";
     };
     externalId: {
         zerion: string;
@@ -13661,8 +13664,8 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             nativeWrappedName: string;
         };
     };
-    defaultPool: "0x0000000000000000000000000000000000000000";
-    defaultToken0: "0xE3dbcD53f4Ce1b06Ab200f4912BD35672e68f1FA";
+    defaultPool: "0x99429757ddeb5432b52982b0fcf6ed94620c358d";
+    defaultToken0: "0xC8fe3C1de344854f4429bB333AFFAeF97eF88CEa";
     defaultToken1: "0xfc960C233B8E98e0Cf282e29BDE8d3f105fc24d5";
     tokenList: ({
         symbol: string;
@@ -13675,7 +13678,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         address: "0xC8fe3C1de344854f4429bB333AFFAeF97eF88CEa";
     })[];
     stables: ("0xfc960C233B8E98e0Cf282e29BDE8d3f105fc24d5" | "0xC8fe3C1de344854f4429bB333AFFAeF97eF88CEa")[];
-    watchlist: never[];
+    watchlist: "0x99429757ddeb5432b52982b0fcf6ed94620c358d"[];
     internalName: "saga";
     nativeLogoUrl: "https://assets.oku.trade/natives/saga.png";
     contracts: {

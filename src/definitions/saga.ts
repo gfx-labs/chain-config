@@ -1,6 +1,5 @@
 import { saga as chain } from "viem/chains";
 import { makeConfig } from "../util";
-import { zeroAddress } from "viem";
 
 export const saga = makeConfig({
   ...chain,
@@ -46,8 +45,8 @@ export const saga = makeConfig({
       nativeWrappedName: "GAS",
     },
   },
-  defaultPool: zeroAddress,
-  defaultToken0: "0xE3dbcD53f4Ce1b06Ab200f4912BD35672e68f1FA",
+  defaultPool: "0x99429757ddeb5432b52982b0fcf6ed94620c358d",
+  defaultToken0: "0xC8fe3C1de344854f4429bB333AFFAeF97eF88CEa",
   defaultToken1: "0xfc960C233B8E98e0Cf282e29BDE8d3f105fc24d5",
   tokenList: [
     { symbol: "wGAS", address: "0xE3dbcD53f4Ce1b06Ab200f4912BD35672e68f1FA" },
@@ -58,7 +57,7 @@ export const saga = makeConfig({
     "0xC8fe3C1de344854f4429bB333AFFAeF97eF88CEa",
     "0xfc960C233B8E98e0Cf282e29BDE8d3f105fc24d5",
   ],
-  watchlist: [],
+  watchlist: ["0x99429757ddeb5432b52982b0fcf6ed94620c358d"],
   internalName: "saga",
   nativeLogoUrl: "https://assets.oku.trade/natives/saga.png",
   contracts: {
