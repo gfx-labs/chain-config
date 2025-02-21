@@ -52,6 +52,8 @@ export const saga = makeConfig({
     { symbol: "wGAS", address: "0xE3dbcD53f4Ce1b06Ab200f4912BD35672e68f1FA" },
     { symbol: "USDC", address: "0xfc960C233B8E98e0Cf282e29BDE8d3f105fc24d5" },
     { symbol: "USDT", address: "0xC8fe3C1de344854f4429bB333AFFAeF97eF88CEa" },
+    { symbol: "UNI", address: "0x4e33613add93463e82a14080021f2ffaf1e062cf" },
+    { symbol: "WETH", address: "0xeb41d53f14cb9a67907f2b8b5dbc223944158ccb" },
   ],
   stables: [
     "0xC8fe3C1de344854f4429bB333AFFAeF97eF88CEa",
@@ -60,6 +62,9 @@ export const saga = makeConfig({
   watchlist: [
     "0x99429757ddeb5432b52982b0fcf6ed94620c358d",
     "0xc2C5f2C94759b2829C9Fd86b8d34d33DDc4D29e4",
+    "0xbbf2219c49efde9c64cd5f94a952c90e4e5b6e41",
+    "0x69bf9603468922c76a75068f51874f56662d35e3",
+    "0x387b99a979c79f827f0ca8a752893472dc34b7ec",
   ],
   internalName: "saga",
   nativeLogoUrl: "https://assets.oku.trade/natives/saga.png",
