@@ -12,7 +12,7 @@ var Saga Network = Network{
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {
-			Url: "https://sagaevm-5464-1.sagaexplorer.io",
+			Url: "https://sagaevm.sagaexplorer.io",
 		},
 	},
 	DefaultPool:   common.HexToAddress("0x99429757ddeb5432b52982b0fcf6ed94620c358d"),

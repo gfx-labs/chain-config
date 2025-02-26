@@ -5481,6 +5481,18 @@ declare const saga: Readonly<{
     bridges: {};
     oracles: {};
     morpho: {};
+    blockExplorers: {
+        default: {
+            name: string;
+            url: string;
+        };
+    };
+    rpcUrls: {
+        default: {
+            http: string[];
+            webSocket: string[];
+        };
+    };
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     uniswap: {
         deployBlock: number;
@@ -5550,24 +5562,11 @@ declare const saga: Readonly<{
             address: "0x864DDc9B50B9A0dF676d826c9B9EDe9F8913a160";
         };
     };
-    blockExplorers: {
-        readonly default: {
-            readonly name: "Saga Explorer";
-            readonly url: "https://sagaevm-5464-1.sagaexplorer.io";
-        };
-    };
     id: 5464;
     nativeCurrency: {
         readonly decimals: 18;
         readonly name: "gas";
         readonly symbol: "GAS";
-    };
-    rpcUrls: {
-        readonly default: {
-            readonly http: readonly [
-                "http://sagaevm-5464-1.jsonrpc.sagarpc.io"
-            ];
-        };
     };
     sourceId?: number | undefined | undefined;
     testnet?: boolean | undefined | undefined;
@@ -13641,6 +13640,18 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     bridges: {};
     oracles: {};
     morpho: {};
+    blockExplorers: {
+        default: {
+            name: string;
+            url: string;
+        };
+    };
+    rpcUrls: {
+        default: {
+            http: string[];
+            webSocket: string[];
+        };
+    };
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     uniswap: {
         deployBlock: number;
@@ -13710,22 +13721,11 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             address: "0x864DDc9B50B9A0dF676d826c9B9EDe9F8913a160";
         };
     };
-    blockExplorers: {
-        readonly default: {
-            readonly name: "Saga Explorer";
-            readonly url: "https://sagaevm-5464-1.sagaexplorer.io";
-        };
-    };
     id: 5464;
     nativeCurrency: {
         readonly decimals: 18;
         readonly name: "gas";
         readonly symbol: "GAS";
-    };
-    rpcUrls: {
-        readonly default: {
-            readonly http: readonly ["http://sagaevm-5464-1.jsonrpc.sagarpc.io"];
-        };
     };
     sourceId?: number | undefined | undefined;
     testnet?: boolean | undefined | undefined;
