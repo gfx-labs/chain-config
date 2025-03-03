@@ -1,6 +1,5 @@
 import { lightlinkPhoenix as chain } from "viem/chains";
 import { makeConfig } from "../util";
-import { zeroAddress } from "viem";
 
 export const lightlink = makeConfig({
   ...chain,
@@ -47,7 +46,7 @@ export const lightlink = makeConfig({
       nativeWrappedName: "WETH",
     },
   },
-  defaultPool: zeroAddress,
+  defaultPool: "0x1125452469E9B9A36FE69249309fCe8925C3eEDa",
   defaultToken0: "0x7ebef2a4b1b09381ec5b9df8c5c6f2dbeca59c73",
   defaultToken1: "0xbCF8C1B03bBDDA88D579330BDF236B58F8bb2cFd",
   tokenList: [
