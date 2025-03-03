@@ -3181,6 +3181,112 @@ declare const hemi: Readonly<{
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
     network: "Hemi";
 }>;
+declare const lightlink: Readonly<{
+    name: "Lightlink";
+    blockTimeSeconds: 0.5;
+    launchTime: 1741485513;
+    sortIndex: 13;
+    logoUrl: "https://assets.oku.trade/chains/lightlink-logo.svg";
+    safeReorgDistance: 90000;
+    morpho: {};
+    externalId: {};
+    markets: {};
+    bridges: {};
+    oracles: {};
+    initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
+    uniswap: {
+        deployBlock: number;
+        poolFactory: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D";
+        permit2: "0x807F4E281B7A3B324825C64ca53c69F0b418dE40";
+        multicall2: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435";
+        tickLens: "0xB3309C48F8407651D918ca3Da4C45DE40109E641";
+        nonfungiblePositionManager: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c";
+        positionsNFT: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c";
+        positionsNFTDeployBlock: number;
+        universalRouter: "0x738fD6d10bCc05c230388B4027CAd37f82fe2AF2";
+        wrappedNativeAddress: "0x7ebef2a4b1b09381ec5b9df8c5c6f2dbeca59c73";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
+        nativeCurrencyName: string;
+    };
+    token: {
+        wethAddress: "0x7ebef2a4b1b09381ec5b9df8c5c6f2dbeca59c73";
+        usdcAddress: "0x18fB38404DADeE1727Be4b805c5b242B5413Fa40";
+        wbtcAddress: "0x46A5e3Fa4a02B9Ae43D9dF9408C86eD643144A67";
+    };
+    oku: {
+        limitOrderRegistry: "0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc";
+        limitOrderRegistryDeployBlock: number;
+        pricing: {
+            nativeWrappedToken: "0x7ebef2a4b1b09381ec5b9df8c5c6f2dbeca59c73";
+            nativeWrappedName: string;
+        };
+    };
+    defaultPool: "0x0000000000000000000000000000000000000000";
+    defaultToken0: "0x18fB38404DADeE1727Be4b805c5b242B5413Fa40";
+    defaultToken1: "0x7ebef2a4b1b09381ec5b9df8c5c6f2dbeca59c73";
+    tokenList: ({
+        symbol: string;
+        address: "0xd9d7123552fA2bEdB2348bB562576D67f6E8e96E";
+    } | {
+        symbol: string;
+        address: "0x18fB38404DADeE1727Be4b805c5b242B5413Fa40";
+    } | {
+        symbol: string;
+        address: "0x7ebef2a4b1b09381ec5b9df8c5c6f2dbeca59c73";
+    } | {
+        symbol: string;
+        address: "0x46A5e3Fa4a02B9Ae43D9dF9408C86eD643144A67";
+    })[];
+    stables: ("0x18fB38404DADeE1727Be4b805c5b242B5413Fa40" | "0x6308fa9545126237158778e74AE1b6b89022C5c0")[];
+    watchlist: never[];
+    internalName: "lightlink";
+    nativeLogoUrl: "https://assets.oku.trade/natives/eth.svg";
+    contracts: {
+        limitOrder: {
+            address: "0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc";
+        };
+        nftManager: {
+            address: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c";
+        };
+        weth9: {
+            address: "0x7ebef2a4b1b09381ec5b9df8c5c6f2dbeca59c73";
+        };
+        multicall2: {
+            address: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435";
+        };
+        multicall3: {
+            address: "0xcA11bde05977b3631167028862bE2a173976CA11";
+        };
+    };
+    blockExplorers: {
+        readonly default: {
+            readonly name: "LightLink Phoenix Explorer";
+            readonly url: "https://phoenix.lightlink.io";
+        };
+    };
+    id: 1890;
+    nativeCurrency: {
+        readonly decimals: 18;
+        readonly name: "Ether";
+        readonly symbol: "ETH";
+    };
+    rpcUrls: {
+        readonly default: {
+            readonly http: readonly [
+                "https://replicator.phoenix.lightlink.io/rpc/v1"
+            ];
+        };
+    };
+    sourceId?: number | undefined | undefined;
+    testnet: false;
+    custom?: Record<string, unknown> | undefined;
+    fees?: import("viem").ChainFees<undefined> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
+    network: "lightlink-phoenix";
+}>;
 declare const linea: Readonly<{
     name: "Linea";
     launchTime: 1713362400;
@@ -13931,6 +14037,109 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     fees?: import("viem").ChainFees<undefined> | undefined;
     formatters?: undefined | undefined;
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
+}>, Readonly<{
+    name: "Lightlink";
+    blockTimeSeconds: 0.5;
+    launchTime: 1741485513;
+    sortIndex: 13;
+    logoUrl: "https://assets.oku.trade/chains/lightlink-logo.svg";
+    safeReorgDistance: 90000;
+    morpho: {};
+    externalId: {};
+    markets: {};
+    bridges: {};
+    oracles: {};
+    initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
+    uniswap: {
+        deployBlock: number;
+        poolFactory: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D";
+        permit2: "0x807F4E281B7A3B324825C64ca53c69F0b418dE40";
+        multicall2: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435";
+        tickLens: "0xB3309C48F8407651D918ca3Da4C45DE40109E641";
+        nonfungiblePositionManager: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c";
+        positionsNFT: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c";
+        positionsNFTDeployBlock: number;
+        universalRouter: "0x738fD6d10bCc05c230388B4027CAd37f82fe2AF2";
+        wrappedNativeAddress: "0x7ebef2a4b1b09381ec5b9df8c5c6f2dbeca59c73";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
+        nativeCurrencyName: string;
+    };
+    token: {
+        wethAddress: "0x7ebef2a4b1b09381ec5b9df8c5c6f2dbeca59c73";
+        usdcAddress: "0x18fB38404DADeE1727Be4b805c5b242B5413Fa40";
+        wbtcAddress: "0x46A5e3Fa4a02B9Ae43D9dF9408C86eD643144A67";
+    };
+    oku: {
+        limitOrderRegistry: "0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc";
+        limitOrderRegistryDeployBlock: number;
+        pricing: {
+            nativeWrappedToken: "0x7ebef2a4b1b09381ec5b9df8c5c6f2dbeca59c73";
+            nativeWrappedName: string;
+        };
+    };
+    defaultPool: "0x0000000000000000000000000000000000000000";
+    defaultToken0: "0x18fB38404DADeE1727Be4b805c5b242B5413Fa40";
+    defaultToken1: "0x7ebef2a4b1b09381ec5b9df8c5c6f2dbeca59c73";
+    tokenList: ({
+        symbol: string;
+        address: "0xd9d7123552fA2bEdB2348bB562576D67f6E8e96E";
+    } | {
+        symbol: string;
+        address: "0x18fB38404DADeE1727Be4b805c5b242B5413Fa40";
+    } | {
+        symbol: string;
+        address: "0x7ebef2a4b1b09381ec5b9df8c5c6f2dbeca59c73";
+    } | {
+        symbol: string;
+        address: "0x46A5e3Fa4a02B9Ae43D9dF9408C86eD643144A67";
+    })[];
+    stables: ("0x18fB38404DADeE1727Be4b805c5b242B5413Fa40" | "0x6308fa9545126237158778e74AE1b6b89022C5c0")[];
+    watchlist: never[];
+    internalName: "lightlink";
+    nativeLogoUrl: "https://assets.oku.trade/natives/eth.svg";
+    contracts: {
+        limitOrder: {
+            address: "0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc";
+        };
+        nftManager: {
+            address: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c";
+        };
+        weth9: {
+            address: "0x7ebef2a4b1b09381ec5b9df8c5c6f2dbeca59c73";
+        };
+        multicall2: {
+            address: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435";
+        };
+        multicall3: {
+            address: "0xcA11bde05977b3631167028862bE2a173976CA11";
+        };
+    };
+    blockExplorers: {
+        readonly default: {
+            readonly name: "LightLink Phoenix Explorer";
+            readonly url: "https://phoenix.lightlink.io";
+        };
+    };
+    id: 1890;
+    nativeCurrency: {
+        readonly decimals: 18;
+        readonly name: "Ether";
+        readonly symbol: "ETH";
+    };
+    rpcUrls: {
+        readonly default: {
+            readonly http: readonly ["https://replicator.phoenix.lightlink.io/rpc/v1"];
+        };
+    };
+    sourceId?: number | undefined | undefined;
+    testnet: false;
+    custom?: Record<string, unknown> | undefined;
+    fees?: import("viem").ChainFees<undefined> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
+    network: "lightlink-phoenix";
 }>];
-export { arbitrum, base, blast, bob, boba, bsc, celo, corn, filecoin, gnosis, goat, hemi, linea, lisk, mainnet, manta, mantle, metal, moonbeam, optimism, polygon, redbelly, rootstock, saga, scroll, sei, sonic, taiko, telos, xLayer, polygonZkEvm, zkSync, MorphoMetadata, UniswapMetadata, OkuPricingMetadata, OkuMetadata, TokenMetadata, Markets, Bridges, Oracles, IChainInfo, MAINNET_CHAINS };
+export { arbitrum, base, blast, bob, boba, bsc, celo, corn, filecoin, gnosis, goat, hemi, lightlink, linea, lisk, mainnet, manta, mantle, metal, moonbeam, optimism, polygon, redbelly, rootstock, saga, scroll, sei, sonic, taiko, telos, xLayer, polygonZkEvm, zkSync, MorphoMetadata, UniswapMetadata, OkuPricingMetadata, OkuMetadata, TokenMetadata, Markets, Bridges, Oracles, IChainInfo, MAINNET_CHAINS };
 export { ChainContract } from "viem";

@@ -35,4 +35,5 @@ export const MAINNET_CHAINS = [
   defs.saga,
   defs.goat,
   defs.redbelly,
+  defs.lightlink,
 ] as const;

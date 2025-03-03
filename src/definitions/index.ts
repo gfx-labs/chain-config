@@ -14,6 +14,7 @@ export * from "./filecoin";
 export * from "./gnosis";
 export * from "./goat";
 export * from "./hemi";
+export * from "./lightlink";
 export * from "./linea";
 export * from "./lisk";
 export * from "./mainnet";
