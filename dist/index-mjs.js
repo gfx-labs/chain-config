@@ -1613,7 +1613,7 @@ const lightlink = makeConfig({
     ],
     watchlist: [],
     internalName: "lightlink",
-    nativeLogoUrl: "https://assets.oku.trade/natives/eth.svg",
+    nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
     contracts: {
         limitOrder: {
             address: "0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc",

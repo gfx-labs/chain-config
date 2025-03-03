@@ -3242,7 +3242,7 @@ declare const lightlink: Readonly<{
     stables: ("0x18fB38404DADeE1727Be4b805c5b242B5413Fa40" | "0x6308fa9545126237158778e74AE1b6b89022C5c0")[];
     watchlist: never[];
     internalName: "lightlink";
-    nativeLogoUrl: "https://assets.oku.trade/natives/eth.svg";
+    nativeLogoUrl: "https://assets.oku.trade/natives/eth.png";
     contracts: {
         limitOrder: {
             address: "0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc";
@@ -14098,7 +14098,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     stables: ("0x18fB38404DADeE1727Be4b805c5b242B5413Fa40" | "0x6308fa9545126237158778e74AE1b6b89022C5c0")[];
     watchlist: never[];
     internalName: "lightlink";
-    nativeLogoUrl: "https://assets.oku.trade/natives/eth.svg";
+    nativeLogoUrl: "https://assets.oku.trade/natives/eth.png";
     contracts: {
         limitOrder: {
             address: "0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc";
