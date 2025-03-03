@@ -1,8 +1,8 @@
 (function (global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('viem/chains')) :
-  typeof define === 'function' && define.amd ? define(['exports', 'viem/chains'], factory) :
-  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global["oku-chains"] = {}, global.viem_chains));
-})(this, (function (exports, chains) { 'use strict';
+  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('viem/chains'), require('viem')) :
+  typeof define === 'function' && define.amd ? define(['exports', 'viem/chains', 'viem'], factory) :
+  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global["oku-chains"] = {}, global.viem_chains, global.viem));
+})(this, (function (exports, chains, viem) { 'use strict';
 
   const makeConfig = (x) => {
       return x;
@@ -1590,7 +1590,7 @@
       },
       token: {
           wethAddress: "0x7ebef2a4b1b09381ec5b9df8c5c6f2dbeca59c73",
-          usdcAddress: "0x18fB38404DADeE1727Be4b805c5b242B5413Fa40",
+          usdcAddress: "0xbCF8C1B03bBDDA88D579330BDF236B58F8bb2cFd",
           wbtcAddress: "0x46A5e3Fa4a02B9Ae43D9dF9408C86eD643144A67",
       },
       oku: {
@@ -1601,20 +1601,21 @@
               nativeWrappedName: "WETH",
           },
       },
-      defaultPool: "0x5B95152D1d8F9Ce6a3aAEACE0514879eD24B768e",
-      defaultToken0: "0x18fB38404DADeE1727Be4b805c5b242B5413Fa40",
-      defaultToken1: "0x7ebef2a4b1b09381ec5b9df8c5c6f2dbeca59c73",
+      defaultPool: viem.zeroAddress,
+      defaultToken0: "0x7ebef2a4b1b09381ec5b9df8c5c6f2dbeca59c73",
+      defaultToken1: "0xbCF8C1B03bBDDA88D579330BDF236B58F8bb2cFd",
       tokenList: [
           { symbol: "LL", address: "0xd9d7123552fA2bEdB2348bB562576D67f6E8e96E" },
-          { symbol: "USDC.e", address: "0x18fB38404DADeE1727Be4b805c5b242B5413Fa40" },
+          { symbol: "USDC.e", address: "0xbCF8C1B03bBDDA88D579330BDF236B58F8bb2cFd" },
+          { symbol: "USDT", address: "0x808d7c71ad2ba3FA531b068a2417C63106BC0949" },
           { symbol: "WETH", address: "0x7ebef2a4b1b09381ec5b9df8c5c6f2dbeca59c73" },
           { symbol: "WBTC", address: "0x46A5e3Fa4a02B9Ae43D9dF9408C86eD643144A67" },
       ],
       stables: [
-          "0x18fB38404DADeE1727Be4b805c5b242B5413Fa40",
-          "0x6308fa9545126237158778e74AE1b6b89022C5c0",
+          "0xbCF8C1B03bBDDA88D579330BDF236B58F8bb2cFd",
+          "0x808d7c71ad2ba3FA531b068a2417C63106BC0949",
       ],
-      watchlist: ["0x5B95152D1d8F9Ce6a3aAEACE0514879eD24B768e"],
+      watchlist: [],
       internalName: "lightlink",
       nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
       contracts: {
