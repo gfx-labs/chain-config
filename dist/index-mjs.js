@@ -1,4 +1,5 @@
 import { arbitrum as arbitrum$1, base as base$1, blast as blast$1, bob as bob$1, boba as boba$1, bsc as bsc$1, celo as celo$1, corn as corn$1, filecoin as filecoin$1, gnosis as gnosis$1, goat as goat$1, hemi as hemi$1, lightlinkPhoenix, linea as linea$1, lisk as lisk$1, mainnet as mainnet$1, manta as manta$1, mantle as mantle$1, metalL2, moonbeam as moonbeam$1, optimism as optimism$1, polygon as polygon$1, redbellyMainnet, rootstock as rootstock$1, saga as saga$1, scroll as scroll$1, sei as sei$1, sonic as sonic$1, taiko as taiko$1, telos as telos$1, xLayer as xLayer$1, polygonZkEvm as polygonZkEvm$1, zksync } from 'viem/chains';
+import { zeroAddress } from 'viem';
 
 const makeConfig = (x) => {
     return x;
@@ -1586,7 +1587,7 @@ const lightlink = makeConfig({
     },
     token: {
         wethAddress: "0x7ebef2a4b1b09381ec5b9df8c5c6f2dbeca59c73",
-        usdcAddress: "0x18fB38404DADeE1727Be4b805c5b242B5413Fa40",
+        usdcAddress: "0xbCF8C1B03bBDDA88D579330BDF236B58F8bb2cFd",
         wbtcAddress: "0x46A5e3Fa4a02B9Ae43D9dF9408C86eD643144A67",
     },
     oku: {
@@ -1597,20 +1598,21 @@ const lightlink = makeConfig({
             nativeWrappedName: "WETH",
         },
     },
-    defaultPool: "0x5B95152D1d8F9Ce6a3aAEACE0514879eD24B768e",
-    defaultToken0: "0x18fB38404DADeE1727Be4b805c5b242B5413Fa40",
-    defaultToken1: "0x7ebef2a4b1b09381ec5b9df8c5c6f2dbeca59c73",
+    defaultPool: zeroAddress,
+    defaultToken0: "0x7ebef2a4b1b09381ec5b9df8c5c6f2dbeca59c73",
+    defaultToken1: "0xbCF8C1B03bBDDA88D579330BDF236B58F8bb2cFd",
     tokenList: [
         { symbol: "LL", address: "0xd9d7123552fA2bEdB2348bB562576D67f6E8e96E" },
-        { symbol: "USDC.e", address: "0x18fB38404DADeE1727Be4b805c5b242B5413Fa40" },
+        { symbol: "USDC.e", address: "0xbCF8C1B03bBDDA88D579330BDF236B58F8bb2cFd" },
+        { symbol: "USDT", address: "0x808d7c71ad2ba3FA531b068a2417C63106BC0949" },
         { symbol: "WETH", address: "0x7ebef2a4b1b09381ec5b9df8c5c6f2dbeca59c73" },
         { symbol: "WBTC", address: "0x46A5e3Fa4a02B9Ae43D9dF9408C86eD643144A67" },
     ],
     stables: [
-        "0x18fB38404DADeE1727Be4b805c5b242B5413Fa40",
-        "0x6308fa9545126237158778e74AE1b6b89022C5c0",
+        "0xbCF8C1B03bBDDA88D579330BDF236B58F8bb2cFd",
+        "0x808d7c71ad2ba3FA531b068a2417C63106BC0949",
     ],
-    watchlist: ["0x5B95152D1d8F9Ce6a3aAEACE0514879eD24B768e"],
+    watchlist: [],
     internalName: "lightlink",
     nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
     contracts: {
