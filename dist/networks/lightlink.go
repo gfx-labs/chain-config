@@ -15,7 +15,7 @@ var Lightlink Network = Network{
 			Url: "https://phoenix.lightlink.io",
 		},
 	},
-	DefaultPool:   common.HexToAddress("0x0000000000000000000000000000000000000000"),
+	DefaultPool:   common.HexToAddress("0x5B95152D1d8F9Ce6a3aAEACE0514879eD24B768e"),
 	InternalName:  "lightlink",
 	InitCodeHash:  common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId:    map[string]string{},
@@ -24,7 +24,7 @@ var Lightlink Network = Network{
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0x18fB38404DADeE1727Be4b805c5b242B5413Fa40"), common.HexToAddress("0x6308fa9545126237158778e74AE1b6b89022C5c0")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x18fB38404DADeE1727Be4b805c5b242B5413Fa40"): {}, common.HexToAddress("0x6308fa9545126237158778e74AE1b6b89022C5c0"): {}},
-	Watchlist:        []common.Address{},
+	Watchlist:        []common.Address{common.HexToAddress("0x5B95152D1d8F9Ce6a3aAEACE0514879eD24B768e")},
 	BlockTimeSeconds: 0.5,
 	Oku: OkuMetadata{
 		LimitOrderRegistry:            common.HexToAddress("0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc"),
