@@ -1,6 +1,5 @@
 import { lightlinkPhoenix as chain } from "viem/chains";
 import { makeConfig } from "../util";
-import { zeroAddress } from "viem";
 
 export const lightlink = makeConfig({
   ...chain,
@@ -47,7 +46,7 @@ export const lightlink = makeConfig({
       nativeWrappedName: "WETH",
     },
   },
-  defaultPool: zeroAddress,
+  defaultPool: "0x5B95152D1d8F9Ce6a3aAEACE0514879eD24B768e",
   defaultToken0: "0x18fB38404DADeE1727Be4b805c5b242B5413Fa40",
   defaultToken1: "0x7ebef2a4b1b09381ec5b9df8c5c6f2dbeca59c73",
   tokenList: [
@@ -60,7 +59,7 @@ export const lightlink = makeConfig({
     "0x18fB38404DADeE1727Be4b805c5b242B5413Fa40",
     "0x6308fa9545126237158778e74AE1b6b89022C5c0",
   ],
-  watchlist: [],
+  watchlist: ["0x5B95152D1d8F9Ce6a3aAEACE0514879eD24B768e"],
   internalName: "lightlink",
   nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
   contracts: {
