@@ -15,7 +15,7 @@ var Lightlink Network = Network{
 			Url: "https://phoenix.lightlink.io",
 		},
 	},
-	DefaultPool:   common.HexToAddress("0x0000000000000000000000000000000000000000"),
+	DefaultPool:   common.HexToAddress("0x1125452469E9B9A36FE69249309fCe8925C3eEDa"),
 	InternalName:  "lightlink",
 	InitCodeHash:  common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId:    map[string]string{},
