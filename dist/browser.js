@@ -1615,7 +1615,10 @@
           "0xbCF8C1B03bBDDA88D579330BDF236B58F8bb2cFd",
           "0x808d7c71ad2ba3FA531b068a2417C63106BC0949",
       ],
-      watchlist: [],
+      watchlist: [
+          "0x1125452469E9B9A36FE69249309fCe8925C3eEDa",
+          "0x2288627C696010049f6D98a84fC10F9C5F7b3Ce2",
+      ],
       internalName: "lightlink",
       nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
       contracts: {
