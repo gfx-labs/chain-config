@@ -3182,7 +3182,7 @@ declare const hemi: Readonly<{
     network: "Hemi";
 }>;
 declare const lightlink: Readonly<{
-    name: "Lightlink";
+    name: "LightLink";
     blockTimeSeconds: 0.5;
     launchTime: 1741485513;
     sortIndex: 13;
@@ -14041,7 +14041,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     formatters?: undefined | undefined;
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>, Readonly<{
-    name: "Lightlink";
+    name: "LightLink";
     blockTimeSeconds: 0.5;
     launchTime: 1741485513;
     sortIndex: 13;

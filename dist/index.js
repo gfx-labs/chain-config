@@ -1558,7 +1558,7 @@ const hemi = makeConfig({
 
 const lightlink = makeConfig({
     ...chains.lightlinkPhoenix,
-    name: "Lightlink",
+    name: "LightLink",
     blockTimeSeconds: 0.5,
     launchTime: 1741485513,
     sortIndex: 13,
