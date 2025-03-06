@@ -26,9 +26,9 @@ var Rootstock Network = Network{
 	DefaultToken0: common.HexToAddress("0x542fda317318ebf1d3deaf76e0b632741a7e677d"),
 	DefaultToken1: common.HexToAddress("0xef213441a85df4d7acbdae0cf78004e1e486bb96"),
 	//TODO: TokenList:        []any{},
-	Stables:          []common.Address{common.HexToAddress("0xef213441a85df4d7acbdae0cf78004e1e486bb96"), common.HexToAddress("0x3a15461d8ae0f0fb5fa2629e9da7d66a794a6e37"), common.HexToAddress("0xaf368c91793cb22739386dfcbbb2f1a9e4bcbebf")},
-	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0xef213441a85df4d7acbdae0cf78004e1e486bb96"): {}, common.HexToAddress("0x3a15461d8ae0f0fb5fa2629e9da7d66a794a6e37"): {}, common.HexToAddress("0xaf368c91793cb22739386dfcbbb2f1a9e4bcbebf"): {}},
-	Watchlist:        []common.Address{common.HexToAddress("0xd2ffe51ab4e622a411abbe634832a19d919e9c55"), common.HexToAddress("0x022650756421f2e636d4138054331cbfafb55d9e"), common.HexToAddress("0x549a5d92412161a1a2828549a657a49dd9fa046c"), common.HexToAddress("0xcba7abe98fd6a65259837d76a3409841c1dd4288"), common.HexToAddress("0xbe092d38045ef7f9cdc5014278a4239e896bf5ca")},
+	Stables:          []common.Address{common.HexToAddress("0xef213441a85df4d7acbdae0cf78004e1e486bb96"), common.HexToAddress("0x3a15461d8ae0f0fb5fa2629e9da7d66a794a6e37"), common.HexToAddress("0xaf368c91793cb22739386dfcbbb2f1a9e4bcbebf"), common.HexToAddress("0x74c9f2b00581f1b11aa7ff05aa9f608b7389de67")},
+	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0xef213441a85df4d7acbdae0cf78004e1e486bb96"): {}, common.HexToAddress("0x3a15461d8ae0f0fb5fa2629e9da7d66a794a6e37"): {}, common.HexToAddress("0xaf368c91793cb22739386dfcbbb2f1a9e4bcbebf"): {}, common.HexToAddress("0x74c9f2b00581f1b11aa7ff05aa9f608b7389de67"): {}},
+	Watchlist:        []common.Address{common.HexToAddress("0xd2ffe51ab4e622a411abbe634832a19d919e9c55"), common.HexToAddress("0x022650756421f2e636d4138054331cbfafb55d9e"), common.HexToAddress("0x549a5d92412161a1a2828549a657a49dd9fa046c"), common.HexToAddress("0xcba7abe98fd6a65259837d76a3409841c1dd4288"), common.HexToAddress("0xbe092d38045ef7f9cdc5014278a4239e896bf5ca"), common.HexToAddress("0xb74d0aa1711eb859eead7cfe3fe5921eedd7e5bf")},
 	BlockTimeSeconds: 33,
 	Oku: OkuMetadata{
 		LimitOrderRegistry:            common.HexToAddress("0x83B1cF411f57F7373bBFF81dCE81437e768F4252"),
