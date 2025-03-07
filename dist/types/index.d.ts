@@ -5392,9 +5392,9 @@ declare const redbelly: Readonly<{
             nativeWrappedName: string;
         };
     };
-    defaultPool: "0xcDe3554d179b5B7ABB3ddFeE1CBC7B98b3f2E380";
+    defaultPool: "0x1f1bda1fe18aedf468abe36ed66eaf44aa6c490b";
     defaultToken0: "0x6ed1F491e2d31536D6561f6bdB2AdC8F092a6076";
-    defaultToken1: "0x8C4aCd74Ff4385f3B7911432FA6787Aa14406f8B";
+    defaultToken1: "0x8201c02d4AB2214471E8C3AD6475C8b0CD9F2D06";
     tokenList: ({
         symbol: string;
         address: "0x6ed1F491e2d31536D6561f6bdB2AdC8F092a6076";
@@ -5406,7 +5406,7 @@ declare const redbelly: Readonly<{
         address: "0x8C4aCd74Ff4385f3B7911432FA6787Aa14406f8B";
     })[];
     stables: ("0x8201c02d4AB2214471E8C3AD6475C8b0CD9F2D06" | "0x8C4aCd74Ff4385f3B7911432FA6787Aa14406f8B")[];
-    watchlist: ("0xcDe3554d179b5B7ABB3ddFeE1CBC7B98b3f2E380" | "0x2ea9dacb203d36b51b164a3d25d69d1c8198eec1" | "0x1f1bda1fe18aedf468abe36ed66eaf44aa6c490b")[];
+    watchlist: ("0x1f1bda1fe18aedf468abe36ed66eaf44aa6c490b" | "0xcDe3554d179b5B7ABB3ddFeE1CBC7B98b3f2E380" | "0x2ea9dacb203d36b51b164a3d25d69d1c8198eec1")[];
     internalName: "redbelly";
     nativeLogoUrl: "https://assets.oku.trade/natives/rbnt.svg";
     contracts: {
@@ -13985,9 +13985,9 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             nativeWrappedName: string;
         };
     };
-    defaultPool: "0xcDe3554d179b5B7ABB3ddFeE1CBC7B98b3f2E380";
+    defaultPool: "0x1f1bda1fe18aedf468abe36ed66eaf44aa6c490b";
     defaultToken0: "0x6ed1F491e2d31536D6561f6bdB2AdC8F092a6076";
-    defaultToken1: "0x8C4aCd74Ff4385f3B7911432FA6787Aa14406f8B";
+    defaultToken1: "0x8201c02d4AB2214471E8C3AD6475C8b0CD9F2D06";
     tokenList: ({
         symbol: string;
         address: "0x6ed1F491e2d31536D6561f6bdB2AdC8F092a6076";
@@ -13999,7 +13999,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         address: "0x8C4aCd74Ff4385f3B7911432FA6787Aa14406f8B";
     })[];
     stables: ("0x8201c02d4AB2214471E8C3AD6475C8b0CD9F2D06" | "0x8C4aCd74Ff4385f3B7911432FA6787Aa14406f8B")[];
-    watchlist: ("0xcDe3554d179b5B7ABB3ddFeE1CBC7B98b3f2E380" | "0x2ea9dacb203d36b51b164a3d25d69d1c8198eec1" | "0x1f1bda1fe18aedf468abe36ed66eaf44aa6c490b")[];
+    watchlist: ("0x1f1bda1fe18aedf468abe36ed66eaf44aa6c490b" | "0xcDe3554d179b5B7ABB3ddFeE1CBC7B98b3f2E380" | "0x2ea9dacb203d36b51b164a3d25d69d1c8198eec1")[];
     internalName: "redbelly";
     nativeLogoUrl: "https://assets.oku.trade/natives/rbnt.svg";
     contracts: {
