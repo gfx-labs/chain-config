@@ -5354,7 +5354,7 @@ declare const polygon: Readonly<{
 declare const redbelly: Readonly<{
     name: "Redbelly";
     blockTimeSeconds: 5;
-    launchTime: 1740621916;
+    launchTime: 1741362479;
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/chains/redbelly-logo.svg";
     safeReorgDistance: 90000;
@@ -13947,7 +13947,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
 }>, Readonly<{
     name: "Redbelly";
     blockTimeSeconds: 5;
-    launchTime: 1740621916;
+    launchTime: 1741362479;
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/chains/redbelly-logo.svg";
     safeReorgDistance: 90000;

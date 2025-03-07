@@ -8,7 +8,7 @@ var Redbelly Network = Network{
 	ChainId:           151,
 	LogoUrl:           "https://assets.oku.trade/chains/redbelly-logo.svg",
 	SortIndex:         15,
-	LaunchTime:        1740621916,
+	LaunchTime:        1741362479,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {
