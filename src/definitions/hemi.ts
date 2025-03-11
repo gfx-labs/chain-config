@@ -58,7 +58,13 @@ export const hemi = makeConfig({
     "0xbB0D083fb1be0A9f6157ec484b6C79E0A4e31C2e",
     "0x6c851F501a3F24E29A8E39a29591cddf09369080",
   ],
-  watchlist: ["0x95a8b611e90de2b682267e2f00c8dff71909298a"],
+  watchlist: [
+    "0x95a8b611e90de2b682267e2f00c8dff71909298a",
+    "0x47932f4a77cde549bf328bb33caae7f413b62612",
+    "0x875c1efa41a868fbb4274c3e06afc14b597e8828",
+    "0x0bbd621fb38f6ddc16b0089ebbeade8db9a8d354",
+    "0xc47f921d413787abf5c98d977e52062de0a3a6d4",
+  ],
   internalName: "hemi",
   nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
   contracts: {
