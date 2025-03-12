@@ -1530,6 +1530,7 @@ const hemi = makeConfig({
         "0xad11a8BEb98bbf61dbb1aa0F6d6F2ECD87b35afA",
         "0xbB0D083fb1be0A9f6157ec484b6C79E0A4e31C2e",
         "0x6c851F501a3F24E29A8E39a29591cddf09369080",
+        "0x7a06c4aef988e7925575c50261297a946ad204a8",
     ],
     watchlist: [
         "0x95a8b611e90de2b682267e2f00c8dff71909298a",
