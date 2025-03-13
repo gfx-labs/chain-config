@@ -8,7 +8,7 @@ var Hemi Network = Network{
 	ChainId:           43111,
 	LogoUrl:           "https://assets.oku.trade/chains/hemi-logo.svg",
 	SortIndex:         13,
-	LaunchTime:        1738569600,
+	LaunchTime:        1741901593,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {
