@@ -1412,7 +1412,17 @@ const goat = makeConfig({
     safeReorgDistance: 90000,
     externalId: {},
     markets: {},
-    bridges: {},
+    bridges: {
+        stargate: {
+            endpointID: 30361,
+            blockConfirmations: 20,
+            assets: [
+                '0x88853D410299BCBfE5fCC9Eef93c03115E908279',
+                '0xbbA60da06c2c5424f03f7434542280FCAd453d10',
+                '0x549943e04f40284185054145c6E4e9568C1D3241',
+            ]
+        }
+    },
     oracles: {},
     morpho: {},
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
@@ -1497,6 +1507,10 @@ const hemi = makeConfig({
                     address: "0x2F6F07CDcf3588944Bf4C42aC74ff24bF56e7590",
                 },
             ],
+            assets: [
+                "0x45f1A95A4D3f3836523F5c83673c797f4d4d263B",
+                "0xAF54BE5B6eEc24d6BFACf1cce4eaF680A8239398"
+            ]
         },
     },
     morpho: {},
