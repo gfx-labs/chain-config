@@ -1485,7 +1485,18 @@ const hemi = makeConfig({
     safeReorgDistance: 90000,
     externalId: {},
     markets: {},
-    bridges: {},
+    bridges: {
+        stargate: {
+            endpointID: 30329,
+            blockConfirmations: 20,
+            pools: [
+                {
+                    id: 13,
+                    address: "0x2F6F07CDcf3588944Bf4C42aC74ff24bF56e7590",
+                },
+            ],
+        },
+    },
     morpho: {},
     oracles: {},
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
