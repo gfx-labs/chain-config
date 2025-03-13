@@ -103,10 +103,11 @@ export interface Bridges {
   stargate?: {
     endpointID: number;
     blockConfirmations: number;
-    pools: {
+    pools?: {
       id: number;
       address: string;
     }[];
+    assets?: string[] // hydra (OFTs)
   };
 }
 

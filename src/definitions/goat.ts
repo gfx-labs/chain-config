@@ -11,7 +11,17 @@ export const goat = makeConfig({
   safeReorgDistance: 90000,
   externalId: {},
   markets: {},
-  bridges: {},
+  bridges: {
+    stargate: {
+      endpointID: 30361,
+      blockConfirmations: 20,
+      assets: [
+        '0x88853D410299BCBfE5fCC9Eef93c03115E908279',
+        '0xbbA60da06c2c5424f03f7434542280FCAd453d10',
+        '0x549943e04f40284185054145c6E4e9568C1D3241',
+      ]
+    }
+  },
   oracles: {},
   morpho: {},
   initCodeHash:
