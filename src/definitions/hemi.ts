@@ -4,7 +4,7 @@ import { makeConfig } from "../util";
 export const hemi = makeConfig({
   ...chain,
   blockTimeSeconds: 12,
-  launchTime: 1738569600,
+  launchTime: 1741901593,
   sortIndex: 13,
   logoUrl: "https://assets.oku.trade/chains/hemi-logo.svg",
   safeReorgDistance: 90000,
