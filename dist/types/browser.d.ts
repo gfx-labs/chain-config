@@ -3022,18 +3022,21 @@ declare const goat: Readonly<{
             nativeWrappedName: string;
         };
     };
-    defaultPool: "0x56F689Ec1E264FAad1666F3b5db1A6a9707cc9b1";
-    defaultToken0: "0x3022b87ac063DE95b1570F46f5e470F8B53112D8";
-    defaultToken1: "0xbC10000000000000000000000000000000000000";
+    defaultPool: "0xde2b2fb74a9b7053a6bac08fb741e19467f7a0ef";
+    defaultToken0: "0x941508f0b823f1bc40a9beefce5e544e525a94c3";
+    defaultToken1: "0xfe41e7e5cb3460c483ab2a38eb605cda9e2d248e";
     tokenList: ({
         symbol: string;
         address: "0xbC10000000000000000000000000000000000000";
     } | {
         symbol: string;
         address: "0x3022b87ac063DE95b1570F46f5e470F8B53112D8";
+    } | {
+        symbol: string;
+        address: "0xe1ad845d93853fff44990ae0dcecd8575293681e";
     })[];
-    stables: "0x3022b87ac063DE95b1570F46f5e470F8B53112D8"[];
-    watchlist: ("0x56F689Ec1E264FAad1666F3b5db1A6a9707cc9b1" | "0x076d72dDdE865eD0A71267E69A8E51A9fFE1E3D0")[];
+    stables: ("0x3022b87ac063DE95b1570F46f5e470F8B53112D8" | "0xe1ad845d93853fff44990ae0dcecd8575293681e")[];
+    watchlist: ("0xde2b2fb74a9b7053a6bac08fb741e19467f7a0ef" | "0xe84dc31691587402e59ba9f9180f8ab02a593d3c")[];
     internalName: "goat";
     nativeLogoUrl: "https://assets.oku.trade/natives/gbtc.svg";
     contracts: {
@@ -13923,18 +13926,21 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             nativeWrappedName: string;
         };
     };
-    defaultPool: "0x56F689Ec1E264FAad1666F3b5db1A6a9707cc9b1";
-    defaultToken0: "0x3022b87ac063DE95b1570F46f5e470F8B53112D8";
-    defaultToken1: "0xbC10000000000000000000000000000000000000";
+    defaultPool: "0xde2b2fb74a9b7053a6bac08fb741e19467f7a0ef";
+    defaultToken0: "0x941508f0b823f1bc40a9beefce5e544e525a94c3";
+    defaultToken1: "0xfe41e7e5cb3460c483ab2a38eb605cda9e2d248e";
     tokenList: ({
         symbol: string;
         address: "0xbC10000000000000000000000000000000000000";
     } | {
         symbol: string;
         address: "0x3022b87ac063DE95b1570F46f5e470F8B53112D8";
+    } | {
+        symbol: string;
+        address: "0xe1ad845d93853fff44990ae0dcecd8575293681e";
     })[];
-    stables: "0x3022b87ac063DE95b1570F46f5e470F8B53112D8"[];
-    watchlist: ("0x56F689Ec1E264FAad1666F3b5db1A6a9707cc9b1" | "0x076d72dDdE865eD0A71267E69A8E51A9fFE1E3D0")[];
+    stables: ("0x3022b87ac063DE95b1570F46f5e470F8B53112D8" | "0xe1ad845d93853fff44990ae0dcecd8575293681e")[];
+    watchlist: ("0xde2b2fb74a9b7053a6bac08fb741e19467f7a0ef" | "0xe84dc31691587402e59ba9f9180f8ab02a593d3c")[];
     internalName: "goat";
     nativeLogoUrl: "https://assets.oku.trade/natives/gbtc.svg";
     contracts: {
