@@ -2976,7 +2976,7 @@ declare const gnosis: Readonly<{
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>;
 declare const goat: Readonly<{
-    name: "Goat";
+    name: "GOAT";
     blockTimeSeconds: 3;
     launchTime: 1740621916;
     sortIndex: 15;
@@ -13880,7 +13880,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
     network: "saga";
 }>, Readonly<{
-    name: "Goat";
+    name: "GOAT";
     blockTimeSeconds: 3;
     launchTime: 1740621916;
     sortIndex: 15;

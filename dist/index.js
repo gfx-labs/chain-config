@@ -1404,7 +1404,7 @@ const gnosis = makeConfig({
 
 const goat = makeConfig({
     ...chains.goat,
-    name: "Goat",
+    name: "GOAT",
     blockTimeSeconds: 3,
     launchTime: 1740621916,
     sortIndex: 15,
