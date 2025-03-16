@@ -8,7 +8,7 @@ var Goat Network = Network{
 	ChainId:           2345,
 	LogoUrl:           "https://assets.oku.trade/chains/goat-logo.svg",
 	SortIndex:         15,
-	LaunchTime:        1740621916,
+	LaunchTime:        1742159744,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

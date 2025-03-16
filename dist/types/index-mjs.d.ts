@@ -2978,7 +2978,7 @@ declare const gnosis: Readonly<{
 declare const goat: Readonly<{
     name: "GOAT";
     blockTimeSeconds: 3;
-    launchTime: 1740621916;
+    launchTime: 1742159744;
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/chains/goat-logo.svg";
     safeReorgDistance: 90000;
@@ -13882,7 +13882,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
 }>, Readonly<{
     name: "GOAT";
     blockTimeSeconds: 3;
-    launchTime: 1740621916;
+    launchTime: 1742159744;
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/chains/goat-logo.svg";
     safeReorgDistance: 90000;
