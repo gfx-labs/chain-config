@@ -1605,7 +1605,22 @@
       morpho: {},
       externalId: {},
       markets: {},
-      bridges: {},
+      bridges: {
+          stargate: {
+              endpointID: 30309,
+              blockConfirmations: 20,
+              pools: [
+                  {
+                      address: "0x8731d54E9D02c286767d56ac03e8037C07e01e98",
+                      id: 13,
+                  },
+              ],
+              assets: [
+                  "0xbCF8C1B03bBDDA88D579330BDF236B58F8bb2cFd",
+                  "0x808d7c71ad2ba3FA531b068a2417C63106BC0949",
+              ],
+          },
+      },
       oracles: {},
       initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
       uniswap: {
