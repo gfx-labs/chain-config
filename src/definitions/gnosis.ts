@@ -18,7 +18,8 @@ export const gnosis = makeConfig({
     cowswap: "xdai",
     paraswap: {
       routerContract: "0x6A000F20005980200259B80c5102003040001068"
-    }
+    },
+    oneinch: true,
   },
   bridges: {
     chainlink: {

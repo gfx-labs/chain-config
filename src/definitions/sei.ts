@@ -16,6 +16,12 @@ export const sei = makeConfig({
   },
 	morpho: {},
   bridges: {
+    chainlink: {
+      atlasNetworkName: "sei-mainnet",
+      routerAddress: "0xAba60dA7E88F7E8f5868C2B6dE06CB759d693af0",
+      chainSelector: 9027416829622342829n,
+      tokenAdminRegistry: "0x910a46cA93E8086BF1d7D65190eE6AEe5256Bd61"
+    },
     stargate: {
       endpointID: 30280,
       blockConfirmations: 20,

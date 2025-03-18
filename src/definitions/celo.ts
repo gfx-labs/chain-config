@@ -10,7 +10,8 @@ export const celo = makeConfig({
   safeReorgDistance: 90000,
   externalId: {},
   markets: {
-    icecreamswap: true
+    icecreamswap: true,
+    openocean: "celo"
   },
   bridges: {
     chainlink: {
@@ -19,6 +20,10 @@ export const celo = makeConfig({
       chainSelector: 1346049177634351622n,
       tokenAdminRegistry: "0xf19e0555fAA9051e277eeD5A0DcdB13CDaca39a9"
     },
+    wormhole: {
+      chain: "Celo",
+      timeToFinalize: 10
+    }
   },
   morpho: {},
   oracles: {

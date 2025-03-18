@@ -46,6 +46,10 @@ export const mantle = makeConfig({
         },
       ],
     },
+    wormhole: {
+      chain: "Mantle",
+      timeToFinalize: 1080,
+    }
   },
   oracles: {
     cmc: {
