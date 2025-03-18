@@ -22,6 +22,7 @@ declare const arbitrum: Readonly<{
         openocean: string;
         zeroex: true;
         cowswap: string;
+        icecreamswap: true;
     };
     bridges: {
         chainlink: {
@@ -202,6 +203,7 @@ declare const base: Readonly<{
         openocean: string;
         zeroex: true;
         icecreamswap: true;
+        cowswap: string;
     };
     bridges: {
         chainlink: {
@@ -1670,6 +1672,7 @@ declare const celo: Readonly<{
     externalId: {};
     markets: {
         icecreamswap: true;
+        openocean: string;
     };
     bridges: {
         chainlink: {
@@ -1677,6 +1680,10 @@ declare const celo: Readonly<{
             routerAddress: string;
             chainSelector: bigint;
             tokenAdminRegistry: string;
+        };
+        wormhole: {
+            chain: string;
+            timeToFinalize: number;
         };
     };
     morpho: {};
@@ -2855,6 +2862,7 @@ declare const gnosis: Readonly<{
         paraswap: {
             routerContract: string;
         };
+        oneinch: true;
     };
     bridges: {
         chainlink: {
@@ -3209,7 +3217,9 @@ declare const lightlink: Readonly<{
     safeReorgDistance: 90000;
     morpho: {};
     externalId: {};
-    markets: {};
+    markets: {
+        icecreamswap: true;
+    };
     bridges: {
         stargate: {
             endpointID: number;
@@ -3336,6 +3346,7 @@ declare const linea: Readonly<{
         openocean: string;
         zeroex: true;
         icecreamswap: true;
+        oneinch: true;
     };
     bridges: {
         chainlink: {
@@ -4169,6 +4180,10 @@ declare const mantle: Readonly<{
                 id: number;
                 address: string;
             }[];
+        };
+        wormhole: {
+            chain: string;
+            timeToFinalize: number;
         };
     };
     oracles: {
@@ -5499,7 +5514,13 @@ declare const rootstock: Readonly<{
         icecreamswap: true;
     };
     morpho: {};
-    bridges: {};
+    bridges: {
+        stargate: {
+            endpointID: number;
+            blockConfirmations: number;
+            assets: string[];
+        };
+    };
     oracles: {
         cmc: {
             slug: string;
@@ -5880,6 +5901,12 @@ declare const sei: Readonly<{
     };
     morpho: {};
     bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+            tokenAdminRegistry: string;
+        };
         stargate: {
             endpointID: number;
             blockConfirmations: number;
@@ -6001,8 +6028,27 @@ declare const sonic: Readonly<{
     safeReorgDistance: 90000;
     morpho: {};
     externalId: {};
-    markets: {};
-    bridges: {};
+    markets: {
+        icecreamswap: true;
+        kyberswap: string;
+        openocean: string;
+    };
+    bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+            tokenAdminRegistry: string;
+        };
+        stargate: {
+            endpointID: number;
+            blockConfirmations: number;
+            pools: {
+                id: number;
+                address: string;
+            }[];
+        };
+    };
     oracles: {};
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     uniswap: {
@@ -7153,7 +7199,7 @@ interface TokenMetadata {
 interface Markets {
     airswap?: boolean;
     enso?: any;
-    kyberswap?: string;
+    kyberswap?: string; // from https://github.com/KyberNetwork/kyberswap-documentation/blob/main/kyberswap-solutions/kyberswap-aggregator/aggregator-api-specification/evm-swaps.md
     odos?: any;
     okx?: any;
     oneinch?: boolean;
@@ -7278,6 +7324,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         openocean: string;
         zeroex: true;
         cowswap: string;
+        icecreamswap: true;
     };
     bridges: {
         chainlink: {
@@ -7453,6 +7500,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         openocean: string;
         zeroex: true;
         icecreamswap: true;
+        cowswap: string;
     };
     bridges: {
         chainlink: {
@@ -9545,7 +9593,13 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         icecreamswap: true;
     };
     morpho: {};
-    bridges: {};
+    bridges: {
+        stargate: {
+            endpointID: number;
+            blockConfirmations: number;
+            assets: string[];
+        };
+    };
     oracles: {
         cmc: {
             slug: string;
@@ -10570,6 +10624,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         openocean: string;
         zeroex: true;
         icecreamswap: true;
+        oneinch: true;
     };
     bridges: {
         chainlink: {
@@ -10841,6 +10896,10 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 address: string;
             }[];
         };
+        wormhole: {
+            chain: string;
+            timeToFinalize: number;
+        };
     };
     oracles: {
         cmc: {
@@ -10950,6 +11009,12 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     };
     morpho: {};
     bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+            tokenAdminRegistry: string;
+        };
         stargate: {
             endpointID: number;
             blockConfirmations: number;
@@ -11831,6 +11896,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         paraswap: {
             routerContract: string;
         };
+        oneinch: true;
     };
     bridges: {
         chainlink: {
@@ -12544,8 +12610,27 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     safeReorgDistance: 90000;
     morpho: {};
     externalId: {};
-    markets: {};
-    bridges: {};
+    markets: {
+        icecreamswap: true;
+        kyberswap: string;
+        openocean: string;
+    };
+    bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+            tokenAdminRegistry: string;
+        };
+        stargate: {
+            endpointID: number;
+            blockConfirmations: number;
+            pools: {
+                id: number;
+                address: string;
+            }[];
+        };
+    };
     oracles: {};
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     uniswap: {
@@ -12642,6 +12727,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     externalId: {};
     markets: {
         icecreamswap: true;
+        openocean: string;
     };
     bridges: {
         chainlink: {
@@ -12649,6 +12735,10 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             routerAddress: string;
             chainSelector: bigint;
             tokenAdminRegistry: string;
+        };
+        wormhole: {
+            chain: string;
+            timeToFinalize: number;
         };
     };
     morpho: {};
@@ -14104,7 +14194,9 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     safeReorgDistance: 90000;
     morpho: {};
     externalId: {};
-    markets: {};
+    markets: {
+        icecreamswap: true;
+    };
     bridges: {
         stargate: {
             endpointID: number;

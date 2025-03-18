@@ -30,6 +30,7 @@ const arbitrum = makeConfig({
         openocean: "arbitrum",
         zeroex: true,
         cowswap: "arbitrum_one",
+        icecreamswap: true
     },
     bridges: {
         chainlink: {
@@ -325,6 +326,7 @@ const base = makeConfig({
         openocean: "base",
         zeroex: true,
         icecreamswap: true,
+        cowswap: "base"
     },
     bridges: {
         chainlink: {
@@ -981,7 +983,8 @@ const celo = makeConfig({
     safeReorgDistance: 90000,
     externalId: {},
     markets: {
-        icecreamswap: true
+        icecreamswap: true,
+        openocean: "celo"
     },
     bridges: {
         chainlink: {
@@ -990,6 +993,10 @@ const celo = makeConfig({
             chainSelector: 1346049177634351622n,
             tokenAdminRegistry: "0xf19e0555fAA9051e277eeD5A0DcdB13CDaca39a9"
         },
+        wormhole: {
+            chain: "Celo",
+            timeToFinalize: 10
+        }
     },
     morpho: {},
     oracles: {
@@ -1306,7 +1313,8 @@ const gnosis = makeConfig({
         cowswap: "xdai",
         paraswap: {
             routerContract: "0x6A000F20005980200259B80c5102003040001068"
-        }
+        },
+        oneinch: true,
     },
     bridges: {
         chainlink: {
@@ -1602,7 +1610,9 @@ const lightlink = makeConfig({
     safeReorgDistance: 90000,
     morpho: {},
     externalId: {},
-    markets: {},
+    markets: {
+        icecreamswap: true
+    },
     bridges: {
         stargate: {
             endpointID: 30309,
@@ -1614,8 +1624,8 @@ const lightlink = makeConfig({
                 },
             ],
             assets: [
-                "0xbCF8C1B03bBDDA88D579330BDF236B58F8bb2cFd",
-                "0x808d7c71ad2ba3FA531b068a2417C63106BC0949",
+                "0x8EE21165Ecb7562BA716c9549C1dE751282b9B33",
+                "0x06D538690AF257Da524f25D0CD52fD85b1c2173E",
             ],
         },
     },
@@ -1708,6 +1718,7 @@ const linea = makeConfig({
         openocean: "linea",
         zeroex: true,
         icecreamswap: true,
+        oneinch: true,
     },
     bridges: {
         chainlink: {
@@ -2360,6 +2371,10 @@ const mantle = makeConfig({
                 },
             ],
         },
+        wormhole: {
+            chain: "Mantle",
+            timeToFinalize: 1080,
+        }
     },
     oracles: {
         cmc: {
@@ -3288,7 +3303,17 @@ const rootstock = makeConfig({
         icecreamswap: true,
     },
     morpho: {},
-    bridges: {},
+    bridges: {
+        stargate: {
+            endpointID: 30333,
+            blockConfirmations: 20,
+            assets: [
+                "0x45f1A95A4D3f3836523F5c83673c797f4d4d263B",
+                "0xAF54BE5B6eEc24d6BFACf1cce4eaF680A8239398",
+                "0xAf5191B0De278C7286d6C7CC6ab6BB8A73bA2Cd6"
+            ]
+        }
+    },
     oracles: {
         cmc: {
             slug: "rsk-smart-bitcoin",
@@ -3613,6 +3638,12 @@ const sei = makeConfig({
     },
     morpho: {},
     bridges: {
+        chainlink: {
+            atlasNetworkName: "sei-mainnet",
+            routerAddress: "0xAba60dA7E88F7E8f5868C2B6dE06CB759d693af0",
+            chainSelector: 9027416829622342829n,
+            tokenAdminRegistry: "0x910a46cA93E8086BF1d7D65190eE6AEe5256Bd61"
+        },
         stargate: {
             endpointID: 30280,
             blockConfirmations: 20,
@@ -3728,8 +3759,29 @@ const sonic = makeConfig({
     safeReorgDistance: 90000,
     morpho: {},
     externalId: {},
-    markets: {},
-    bridges: {},
+    markets: {
+        icecreamswap: true,
+        kyberswap: "sonic",
+        openocean: "sonic"
+    },
+    bridges: {
+        chainlink: {
+            atlasNetworkName: "sonic-mainnet",
+            routerAddress: "0xB4e1Ff7882474BB93042be9AD5E1fA387949B860",
+            chainSelector: 1673871237479749969n,
+            tokenAdminRegistry: "0x2961Cb47b5111F38d75f415c21ceB4120ddd1b69"
+        },
+        stargate: {
+            endpointID: 30332,
+            blockConfirmations: 20,
+            pools: [
+                {
+                    id: 1,
+                    address: "0xA272fFe20cFfe769CdFc4b63088DCD2C82a2D8F9"
+                }
+            ]
+        }
+    },
     oracles: {},
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
     uniswap: {
