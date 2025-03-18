@@ -64,7 +64,7 @@ export interface TokenMetadata {
 export interface Markets {
   airswap?: boolean;
   enso?: any;
-  kyberswap?: string;
+  kyberswap?: string; // from https://github.com/KyberNetwork/kyberswap-documentation/blob/main/kyberswap-solutions/kyberswap-aggregator/aggregator-api-specification/evm-swaps.md
   odos?: any;
   okx?: any;
   oneinch?: boolean;

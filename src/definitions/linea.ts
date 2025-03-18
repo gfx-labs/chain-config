@@ -21,6 +21,7 @@ export const linea = makeConfig({
     openocean: "linea",
     zeroex: true,
     icecreamswap: true,
+    oneinch: true,
   },
   bridges: {
     chainlink: {

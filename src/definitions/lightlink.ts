@@ -11,7 +11,9 @@ export const lightlink = makeConfig({
   safeReorgDistance: 90000,
   morpho: {},
   externalId: {},
-  markets: {},
+  markets: {
+    icecreamswap: true
+  },
   bridges: {
     stargate: {
       endpointID: 30309,
@@ -23,8 +25,8 @@ export const lightlink = makeConfig({
         },
       ],
       assets: [
-        "0xbCF8C1B03bBDDA88D579330BDF236B58F8bb2cFd",
-        "0x808d7c71ad2ba3FA531b068a2417C63106BC0949",
+        "0x8EE21165Ecb7562BA716c9549C1dE751282b9B33",
+        "0x06D538690AF257Da524f25D0CD52fD85b1c2173E",
       ],
     },
   },

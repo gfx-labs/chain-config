@@ -10,8 +10,29 @@ export const sonic = makeConfig({
   safeReorgDistance: 90000,
   morpho: {},
   externalId: {},
-  markets: {},
-  bridges: {},
+  markets: {
+    icecreamswap: true,
+    kyberswap: "sonic",
+    openocean: "sonic"
+  },
+  bridges: {
+    chainlink: {
+      atlasNetworkName: "sonic-mainnet",
+      routerAddress: "0xB4e1Ff7882474BB93042be9AD5E1fA387949B860",
+      chainSelector: 1673871237479749969n,
+      tokenAdminRegistry: "0x2961Cb47b5111F38d75f415c21ceB4120ddd1b69"
+    },
+    stargate: {
+      endpointID: 30332,
+      blockConfirmations: 20,
+      pools: [
+        {
+          id: 1,
+          address: "0xA272fFe20cFfe769CdFc4b63088DCD2C82a2D8F9"
+        }
+      ]
+    }
+  },
   oracles: {},
   initCodeHash:
     "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
