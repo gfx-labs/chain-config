@@ -2871,6 +2871,14 @@ declare const gnosis: Readonly<{
             chainSelector: bigint;
             tokenAdminRegistry: string;
         };
+        stargate: {
+            endpointID: number;
+            blockConfirmations: number;
+            pools: {
+                id: number;
+                address: string;
+            }[];
+        };
     };
     oracles: {
         cmc: {
@@ -11904,6 +11912,14 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             routerAddress: string;
             chainSelector: bigint;
             tokenAdminRegistry: string;
+        };
+        stargate: {
+            endpointID: number;
+            blockConfirmations: number;
+            pools: {
+                id: number;
+                address: string;
+            }[];
         };
     };
     oracles: {
