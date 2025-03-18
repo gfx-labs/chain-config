@@ -8,7 +8,7 @@ export const gnosis = makeConfig({
   sortIndex: 18,
   logoUrl: "https://assets.oku.trade/chains/gnosis-logo.png",
   safeReorgDistance: 90000,
-	morpho: {},
+  morpho: {},
   externalId: {
     zerion: "xdai",
     cowswap: "xdai",
@@ -17,7 +17,7 @@ export const gnosis = makeConfig({
     openocean: "xdai",
     cowswap: "xdai",
     paraswap: {
-      routerContract: "0x6A000F20005980200259B80c5102003040001068"
+      routerContract: "0x6A000F20005980200259B80c5102003040001068",
     },
     oneinch: true,
   },
@@ -26,7 +26,21 @@ export const gnosis = makeConfig({
       atlasNetworkName: "xdai-mainnet",
       routerAddress: "0x4aAD6071085df840abD9Baf1697d5D5992bDadce",
       chainSelector: 465200170687744372n,
-      tokenAdminRegistry: "0x73BC11423CBF14914998C23B0aFC9BE0cb5B2229"
+      tokenAdminRegistry: "0x73BC11423CBF14914998C23B0aFC9BE0cb5B2229",
+    },
+    stargate: {
+      endpointID: 30145,
+      blockConfirmations: 20,
+      pools: [
+        {
+          id: 1,
+          address: "0xB1EeAD6959cb5bB9B20417d6689922523B2B86C3",
+        },
+        {
+          id: 13,
+          address: "0xe9aBA835f813ca05E50A6C0ce65D0D74390F7dE7",
+        },
+      ],
     },
   },
   oracles: {
