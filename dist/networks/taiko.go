@@ -34,6 +34,7 @@ var Taiko Network = Network{
 	Oku: OkuMetadata{
 		LimitOrderRegistry:            common.HexToAddress("0x447B8E40B0CdA8e55F405C86bC635D02d0540aB8"),
 		LimitOrderRegistryDeployBlock: 2396,
+
 		Pricing: OkuPricingMetadata{
 			NativeWrappedToken: common.HexToAddress("0xA51894664A773981C6C112C43ce576f315d5b1B6"),
 			NativeWrappedName:  "ETH",

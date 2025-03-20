@@ -29,6 +29,7 @@ var Goat Network = Network{
 	Oku: OkuMetadata{
 		LimitOrderRegistry:            common.HexToAddress("0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc"),
 		LimitOrderRegistryDeployBlock: 848591,
+
 		Pricing: OkuPricingMetadata{
 			NativeWrappedToken: common.HexToAddress("0xbC10000000000000000000000000000000000000"),
 			NativeWrappedName:  "WGBTC",

@@ -29,6 +29,7 @@ var Lightlink Network = Network{
 	Oku: OkuMetadata{
 		LimitOrderRegistry:            common.HexToAddress("0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc"),
 		LimitOrderRegistryDeployBlock: 131407726,
+
 		Pricing: OkuPricingMetadata{
 			NativeWrappedToken: common.HexToAddress("0x7ebef2a4b1b09381ec5b9df8c5c6f2dbeca59c73"),
 			NativeWrappedName:  "WETH",

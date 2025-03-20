@@ -29,6 +29,7 @@ var Telos Network = Network{
 	Oku: OkuMetadata{
 		LimitOrderRegistry:            common.HexToAddress("0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc"),
 		LimitOrderRegistryDeployBlock: 386645006,
+
 		Pricing: OkuPricingMetadata{
 			NativeWrappedToken: common.HexToAddress("0xD102cE6A4dB07D247fcc28F366A623Df0938CA9E"),
 			NativeWrappedName:  "TLOS",

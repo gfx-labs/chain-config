@@ -32,6 +32,7 @@ var Blast Network = Network{
 	Oku: OkuMetadata{
 		LimitOrderRegistry:            common.HexToAddress("0x0337d36A3dF76d882369E3cBF984a2EA40f6636F"),
 		LimitOrderRegistryDeployBlock: 402083,
+
 		Pricing: OkuPricingMetadata{
 			NativeWrappedToken: common.HexToAddress("0x4300000000000000000000000000000000000004"),
 			NativeWrappedName:  "ETH",

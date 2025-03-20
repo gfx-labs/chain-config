@@ -41,6 +41,10 @@ var <%- helpers.snakeToCamel(chainName) %> Network = Network{
   Oku:            OkuMetadata{
      <%- oku.limitOrderRegistry ? "LimitOrderRegistry:" + h.formatValue(oku.limitOrderRegistry, "a")+"," : "" %>
     <%- oku.limitOrderRegistryDeployBlock ? "LimitOrderRegistryDeployBlock:"+ h.formatValue(oku.limitOrderRegistryDeployBlock, "n")+",": "" %>
+     <%- oku.stopLimit ? "StopLimit:" + h.formatValue(oku.stopLimit, "a")+"," : "" %>
+    <%- oku.stopLimitDeployBlock ? "StopLimitDeployBlock:"+ h.formatValue(oku.stopLimitDeployBlock, "n")+",": "" %>
+     <%- oku.bracket ? "Bracket:" + h.formatValue(oku.bracket, "a")+"," : "" %>
+    <%- oku.bracketDeployBlock ? "BracketDeployBlock:"+ h.formatValue(oku.bracketDeployBlock, "n")+",": "" %>
     Pricing: OkuPricingMetadata{
 <% if(pxs.nativeWrappedToken !== undefined){%>    NativeWrappedToken: <%- h.formatValue(pxs.nativeWrappedToken, "a") %>,<% } %>
 <% if(pxs.nativeWrappedName !== undefined){%>    NativeWrappedName: <%- h.formatValue(pxs.nativeWrappedName, "s") %>,<% } %>

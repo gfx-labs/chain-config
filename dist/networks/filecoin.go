@@ -38,6 +38,7 @@ var Filecoin Network = Network{
 	Oku: OkuMetadata{
 		LimitOrderRegistry:            common.HexToAddress("0xded8791056aa39581460a005a3c400a281e24bd7"),
 		LimitOrderRegistryDeployBlock: 3413267,
+
 		Pricing: OkuPricingMetadata{
 			NativeWrappedToken: common.HexToAddress("0x60E1773636CF5E4A227d9AC24F20fEca034ee25A"),
 			NativeWrappedName:  "WFIL",

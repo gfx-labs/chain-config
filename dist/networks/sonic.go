@@ -12,7 +12,7 @@ var Sonic Network = Network{
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {
-			Url: "https://sonicscan.org/",
+			Url: "https://sonicscan.org",
 		},
 	},
 	DefaultPool:   common.HexToAddress("0xEcb04e075503Bd678241f00155AbCB532c0a15Eb"),
@@ -29,6 +29,7 @@ var Sonic Network = Network{
 	Oku: OkuMetadata{
 		LimitOrderRegistry:            common.HexToAddress("0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc"),
 		LimitOrderRegistryDeployBlock: 10948,
+
 		Pricing: OkuPricingMetadata{
 			NativeWrappedToken: common.HexToAddress("0x039e2fB66102314Ce7b64Ce5Ce3E5183bc94aD38"),
 			NativeWrappedName:  "wS",

@@ -30,6 +30,7 @@ var Manta Network = Network{
 	Oku: OkuMetadata{
 		LimitOrderRegistry:            common.HexToAddress("0xFE83E1DDa189D71093f2a716A4D01d591d6Ca66C"),
 		LimitOrderRegistryDeployBlock: 1198851,
+
 		Pricing: OkuPricingMetadata{
 			NativeWrappedToken: common.HexToAddress("0x0Dc808adcE2099A9F62AA87D9670745AbA741746"),
 			NativeWrappedName:  "ETH",

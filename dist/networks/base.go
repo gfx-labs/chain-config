@@ -33,6 +33,7 @@ var Base Network = Network{
 	Oku: OkuMetadata{
 		LimitOrderRegistry:            common.HexToAddress("0xff8b754c64e9a8473bd6e1118d0eac67f0a8ae27"),
 		LimitOrderRegistryDeployBlock: 7644835,
+
 		Pricing: OkuPricingMetadata{
 			NativeWrappedToken: common.HexToAddress("0x4200000000000000000000000000000000000006"),
 			NativeWrappedName:  "WETH",

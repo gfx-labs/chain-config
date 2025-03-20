@@ -36,6 +36,7 @@ var Zksync Network = Network{
 	Oku: OkuMetadata{
 		LimitOrderRegistry:            common.HexToAddress("0x0FD66bD1e0974e2535CB424E6675D60aC52a84Fa"),
 		LimitOrderRegistryDeployBlock: 13618344,
+
 		Pricing: OkuPricingMetadata{
 			NativeWrappedToken: common.HexToAddress("0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91"),
 			NativeWrappedName:  "ETH",

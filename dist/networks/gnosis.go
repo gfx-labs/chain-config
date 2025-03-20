@@ -33,6 +33,7 @@ var Gnosis Network = Network{
 	Oku: OkuMetadata{
 		LimitOrderRegistry:            common.HexToAddress("0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435"),
 		LimitOrderRegistryDeployBlock: 35719277,
+
 		Pricing: OkuPricingMetadata{
 			NativeWrappedToken: common.HexToAddress("0xe91d153e0b41518a2ce8dd3d7944fa863463a97d"),
 			NativeWrappedName:  "xDAI",

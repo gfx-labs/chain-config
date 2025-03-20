@@ -32,6 +32,7 @@ var PolygonZkevm Network = Network{
 	Oku: OkuMetadata{
 		LimitOrderRegistry:            common.HexToAddress("0x5f1ef1d278013567c3c67e18d2d35bfa9954f723"),
 		LimitOrderRegistryDeployBlock: 8467090,
+
 		Pricing: OkuPricingMetadata{
 			NativeWrappedToken: common.HexToAddress("0x4F9A0e7FD2Bf6067db6994CF12E4495Df938E6e9"),
 			NativeWrappedName:  "ETH",

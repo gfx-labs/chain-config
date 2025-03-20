@@ -30,6 +30,7 @@ var Celo Network = Network{
 	Oku: OkuMetadata{
 		LimitOrderRegistry:            common.HexToAddress("0xcb2436774C3e191c85056d248EF4260ce5f27A9D"),
 		LimitOrderRegistryDeployBlock: 29842546,
+
 		Pricing: OkuPricingMetadata{
 
 			Pools:            []common.Address{},

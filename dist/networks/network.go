@@ -302,6 +302,10 @@ type TokenMetadata struct {
 type OkuMetadata struct {
 	LimitOrderRegistry            common.Address
 	LimitOrderRegistryDeployBlock int64
+	Bracket                       common.Address
+	BracketDeployBlock            int64
+	StopLimit                     common.Address
+	StopLimitDeployBlock          int64
 	Pricing                       OkuPricingMetadata
 }
 

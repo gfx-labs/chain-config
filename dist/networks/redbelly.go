@@ -30,6 +30,7 @@ var Redbelly Network = Network{
 	Oku: OkuMetadata{
 		LimitOrderRegistry:            common.HexToAddress("0x9db70E29712Cc8Af10c2B597BaDA6784544FF407"),
 		LimitOrderRegistryDeployBlock: 2286099,
+
 		Pricing: OkuPricingMetadata{
 			NativeWrappedToken: common.HexToAddress("0x6ed1F491e2d31536D6561f6bdB2AdC8F092a6076"),
 			NativeWrappedName:  "RBNT",

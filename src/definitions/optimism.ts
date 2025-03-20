@@ -16,7 +16,7 @@ export const optimism = makeConfig({
     zerion: "optimism",
     debank: "op",
   },
-	morpho: {},
+  morpho: {},
   markets: {
     kyberswap: "optimism",
     oneinch: true,
@@ -25,15 +25,14 @@ export const optimism = makeConfig({
     },
     openocean: "optimism",
     zeroex: true,
-    icecreamswap: true
+    icecreamswap: true,
   },
   bridges: {
     chainlink: {
       atlasNetworkName: "ethereum-mainnet-optimism-1",
       routerAddress: "0x3206695CaE29952f4b0c22a169725a865bc8Ce0f",
       chainSelector: 3734403246176062136n,
-      tokenAdminRegistry: "0x657c42abE4CD8aa731Aec322f871B5b90cf6274F"
-
+      tokenAdminRegistry: "0x657c42abE4CD8aa731Aec322f871B5b90cf6274F",
     },
     rhinofi: "OPTIMISM",
     stargate: {
@@ -76,6 +75,10 @@ export const optimism = makeConfig({
   oku: {
     limitOrderRegistryDeployBlock: 105276132,
     limitOrderRegistry: "0x54dF9e11c7933a9cA3BD1E540B63dA15edAe40bf",
+    bracket: "0xC403Bd2e26c81049d73600Df1424ce53a945f124",
+    bracketDeployBlock: 133446228,
+    stopLimit: "0xb6D84CF63D503CE9068F91775b5F3e32D89F21D5",
+    stopLimitDeployBlock: 133446231,
     pricing: {
       nativeWrappedToken: "0x4200000000000000000000000000000000000006",
       nativeWrappedName: "WETH",

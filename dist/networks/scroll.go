@@ -32,6 +32,7 @@ var Scroll Network = Network{
 	Oku: OkuMetadata{
 		LimitOrderRegistry:            common.HexToAddress("0xeC3E5eeC51D8C3D4f03DABB84B4Db313a739f377"),
 		LimitOrderRegistryDeployBlock: 1409068,
+
 		Pricing: OkuPricingMetadata{
 			NativeWrappedToken: common.HexToAddress("0x5300000000000000000000000000000000000004"),
 			NativeWrappedName:  "ETH",

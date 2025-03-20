@@ -33,6 +33,7 @@ var Rootstock Network = Network{
 	Oku: OkuMetadata{
 		LimitOrderRegistry:            common.HexToAddress("0x83B1cF411f57F7373bBFF81dCE81437e768F4252"),
 		LimitOrderRegistryDeployBlock: 5842098,
+
 		Pricing: OkuPricingMetadata{
 			NativeWrappedToken: common.HexToAddress("0x542fDA317318eBF1d3DEAf76E0b632741A7e677d"),
 			NativeWrappedName:  "WRBTC",

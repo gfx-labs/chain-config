@@ -30,6 +30,7 @@ var Xlayer Network = Network{
 	Oku: OkuMetadata{
 		LimitOrderRegistry:            common.HexToAddress("0x9db70E29712Cc8Af10c2B597BaDA6784544FF407"),
 		LimitOrderRegistryDeployBlock: 4348466,
+
 		Pricing: OkuPricingMetadata{
 			NativeWrappedToken: common.HexToAddress("0xe538905cf8410324e03a5a23c1c177a474d59b2b"),
 			NativeWrappedName:  "OKB",

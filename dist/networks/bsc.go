@@ -33,6 +33,7 @@ var Bsc Network = Network{
 	Oku: OkuMetadata{
 		LimitOrderRegistry:            common.HexToAddress("0x19b9bd76028cab6f414ed1fc57400b75b5ca0627"),
 		LimitOrderRegistryDeployBlock: 34187988,
+
 		Pricing: OkuPricingMetadata{
 			NativeWrappedToken: common.HexToAddress("0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c"),
 			NativeWrappedName:  "WBNB",

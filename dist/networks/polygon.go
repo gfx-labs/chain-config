@@ -33,6 +33,7 @@ var Polygon Network = Network{
 	Oku: OkuMetadata{
 		LimitOrderRegistry:            common.HexToAddress("0x54dF9e11c7933a9cA3BD1E540B63dA15edAe40bf"),
 		LimitOrderRegistryDeployBlock: 43640541,
+
 		Pricing: OkuPricingMetadata{
 			NativeWrappedToken: common.HexToAddress("0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270"),
 			NativeWrappedName:  "WMATIC",

@@ -29,6 +29,7 @@ var Bob Network = Network{
 	Oku: OkuMetadata{
 		LimitOrderRegistry:            common.HexToAddress("0x447b8e40b0cda8e55f405c86bc635d02d0540ab8"),
 		LimitOrderRegistryDeployBlock: 5624845,
+
 		Pricing: OkuPricingMetadata{
 			NativeWrappedToken: common.HexToAddress("0x4200000000000000000000000000000000000006"),
 			NativeWrappedName:  "ETH",

@@ -1652,7 +1652,7 @@ declare const bsc: Readonly<{
     rpcUrls: {
         readonly default: {
             readonly http: readonly [
-                "https://rpc.ankr.com/bsc"
+                "https://56.rpc.thirdweb.com"
             ];
         };
     };
@@ -2704,7 +2704,7 @@ declare const corn: Readonly<{
     rpcUrls: {
         readonly default: {
             readonly http: readonly [
-                "https://rpc.ankr.com/corn_maizenet"
+                "https://21000000.rpc.thirdweb.com"
             ];
         };
     };
@@ -4853,6 +4853,10 @@ declare const optimism: Readonly<{
     oku: {
         limitOrderRegistryDeployBlock: number;
         limitOrderRegistry: "0x54dF9e11c7933a9cA3BD1E540B63dA15edAe40bf";
+        bracket: "0xC403Bd2e26c81049d73600Df1424ce53a945f124";
+        bracketDeployBlock: number;
+        stopLimit: "0xb6D84CF63D503CE9068F91775b5F3e32D89F21D5";
+        stopLimitDeployBlock: number;
         pricing: {
             nativeWrappedToken: "0x4200000000000000000000000000000000000006";
             nativeWrappedName: string;
@@ -6123,7 +6127,7 @@ declare const sonic: Readonly<{
     blockExplorers: {
         readonly default: {
             readonly name: "Sonic Explorer";
-            readonly url: "https://sonicscan.org/";
+            readonly url: "https://sonicscan.org";
         };
     };
     id: 146;
@@ -6368,7 +6372,7 @@ declare const telos: Readonly<{
     rpcUrls: {
         readonly default: {
             readonly http: readonly [
-                "https://mainnet.telos.net/evm"
+                "https://rpc.telos.net"
             ];
         };
     };
@@ -7196,6 +7200,10 @@ interface OkuPricingMetadata {
 interface OkuMetadata {
     limitOrderRegistry?: Address;
     limitOrderRegistryDeployBlock?: number;
+    bracket?: Address;
+    bracketDeployBlock?: number;
+    stopLimit?: Address;
+    stopLimitDeployBlock?: number;
     pricing?: OkuPricingMetadata;
 }
 interface TokenMetadata {
@@ -8546,7 +8554,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     };
     rpcUrls: {
         readonly default: {
-            readonly http: readonly ["https://rpc.ankr.com/bsc"];
+            readonly http: readonly ["https://56.rpc.thirdweb.com"];
         };
     };
     sourceId?: number | undefined | undefined;
@@ -9046,6 +9054,10 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     oku: {
         limitOrderRegistryDeployBlock: number;
         limitOrderRegistry: "0x54dF9e11c7933a9cA3BD1E540B63dA15edAe40bf";
+        bracket: "0xC403Bd2e26c81049d73600Df1424ce53a945f124";
+        bracketDeployBlock: number;
+        stopLimit: "0xb6D84CF63D503CE9068F91775b5F3e32D89F21D5";
+        stopLimitDeployBlock: number;
         pricing: {
             nativeWrappedToken: "0x4200000000000000000000000000000000000006";
             nativeWrappedName: string;
@@ -12609,7 +12621,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     };
     rpcUrls: {
         readonly default: {
-            readonly http: readonly ["https://rpc.ankr.com/corn_maizenet"];
+            readonly http: readonly ["https://21000000.rpc.thirdweb.com"];
         };
     };
     sourceId: 1;
@@ -12713,7 +12725,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     blockExplorers: {
         readonly default: {
             readonly name: "Sonic Explorer";
-            readonly url: "https://sonicscan.org/";
+            readonly url: "https://sonicscan.org";
         };
     };
     id: 146;
@@ -13880,7 +13892,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     };
     rpcUrls: {
         readonly default: {
-            readonly http: readonly ["https://mainnet.telos.net/evm"];
+            readonly http: readonly ["https://rpc.telos.net"];
         };
     };
     sourceId?: number | undefined | undefined;

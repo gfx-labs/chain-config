@@ -29,6 +29,7 @@ var Hemi Network = Network{
 	Oku: OkuMetadata{
 		LimitOrderRegistry:            common.HexToAddress("0xcd7f266E3C0D0771897aAF74BEB38072D66402A0"),
 		LimitOrderRegistryDeployBlock: 1293765,
+
 		Pricing: OkuPricingMetadata{
 			NativeWrappedToken: common.HexToAddress("0x4200000000000000000000000000000000000006"),
 			NativeWrappedName:  "ETH",

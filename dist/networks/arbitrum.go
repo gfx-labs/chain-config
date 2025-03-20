@@ -34,6 +34,7 @@ var Arbitrum Network = Network{
 	Oku: OkuMetadata{
 		LimitOrderRegistry:            common.HexToAddress("0x54dF9e11c7933a9cA3BD1E540B63dA15edAe40bf"),
 		LimitOrderRegistryDeployBlock: 98754575,
+
 		Pricing: OkuPricingMetadata{
 			NativeWrappedToken: common.HexToAddress("0x82aF49447D8a07e3bd95BD0d56f35241523fBab1"),
 			NativeWrappedName:  "WETH",

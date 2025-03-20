@@ -32,6 +32,7 @@ var Linea Network = Network{
 	Oku: OkuMetadata{
 		LimitOrderRegistry:            common.HexToAddress("0x63c8527f670d4eb3401c80c5905ceca8727f1e74"),
 		LimitOrderRegistryDeployBlock: 3610379,
+
 		Pricing: OkuPricingMetadata{
 			NativeWrappedToken: common.HexToAddress("0xe5d7c2a44ffddf6b295a15c148167daaaf5cf34f"),
 			NativeWrappedName:  "ETH",

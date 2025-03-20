@@ -32,6 +32,7 @@ var Boba Network = Network{
 	Oku: OkuMetadata{
 		LimitOrderRegistry:            common.HexToAddress("0xfefb60591cffc694c0137983a9091d64af8ecbac"),
 		LimitOrderRegistryDeployBlock: 1052192,
+
 		Pricing: OkuPricingMetadata{
 			NativeWrappedToken: common.HexToAddress("0xdeaddeaddeaddeaddeaddeaddeaddeaddead0000"),
 			NativeWrappedName:  "WETH",

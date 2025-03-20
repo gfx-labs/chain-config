@@ -51,6 +51,10 @@ export interface OkuPricingMetadata {
 export interface OkuMetadata {
   limitOrderRegistry?: Address;
   limitOrderRegistryDeployBlock?: number;
+  bracket?: Address;
+  bracketDeployBlock?: number;
+  stopLimit?: Address;
+  stopLimitDeployBlock?: number;
   pricing?: OkuPricingMetadata;
 }
 
@@ -107,7 +111,7 @@ export interface Bridges {
       id: number;
       address: string;
     }[];
-    assets?: string[] // hydra (OFTs)
+    assets?: string[]; // hydra (OFTs)
   };
 }
 
