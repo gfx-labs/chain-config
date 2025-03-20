@@ -33,10 +33,10 @@ var Optimism Network = Network{
 	Oku: OkuMetadata{
 		LimitOrderRegistry:            common.HexToAddress("0x54dF9e11c7933a9cA3BD1E540B63dA15edAe40bf"),
 		LimitOrderRegistryDeployBlock: 105276132,
-		StopLimit:                     common.HexToAddress("0xb6D84CF63D503CE9068F91775b5F3e32D89F21D5"),
-		StopLimitDeployBlock:          133446231,
-		Bracket:                       common.HexToAddress("0xC403Bd2e26c81049d73600Df1424ce53a945f124"),
-		BracketDeployBlock:            133446228,
+		StopLimit:                     common.HexToAddress("0x03d58de2EE76515340F8Ac0dFCccf9BaEd4d39d5"),
+		StopLimitDeployBlock:          133454517,
+		Bracket:                       common.HexToAddress("0x1D718B430aCF5E385024162Da9Cd27bed7c02EC1"),
+		BracketDeployBlock:            133454514,
 		Pricing: OkuPricingMetadata{
 			NativeWrappedToken: common.HexToAddress("0x4200000000000000000000000000000000000006"),
 			NativeWrappedName:  "WETH",
