@@ -15,16 +15,16 @@ var Telos Network = Network{
 			Url: "https://www.teloscan.io/",
 		},
 	},
-	DefaultPool:   common.HexToAddress("0x2E2F83DF7061561C4a29bD155B8f65674bFa31C9"),
+	DefaultPool:   common.HexToAddress("0xa89c1c7d0975f1a98442e96e18a292982b12b3cd"),
 	InternalName:  "telos",
 	InitCodeHash:  common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId:    map[string]string{},
-	DefaultToken0: common.HexToAddress("0x8D97Cea50351Fb4329d591682b148D43a0C3611b"),
+	DefaultToken0: common.HexToAddress("0xf1815bd50389c46847f0bda824ec8da914045d14"),
 	DefaultToken1: common.HexToAddress("0xD102cE6A4dB07D247fcc28F366A623Df0938CA9E"),
 	//TODO: TokenList:        []any{},
-	Stables:          []common.Address{common.HexToAddress("0x8D97Cea50351Fb4329d591682b148D43a0C3611b")},
-	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x8D97Cea50351Fb4329d591682b148D43a0C3611b"): {}},
-	Watchlist:        []common.Address{common.HexToAddress("0x2E2F83DF7061561C4a29bD155B8f65674bFa31C9")},
+	Stables:          []common.Address{common.HexToAddress("0x674843C06FF83502ddb4D37c2E09C01cdA38cbc8"), common.HexToAddress("0xF1815bd50389c46847f0Bda824eC8da914045D14")},
+	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x674843C06FF83502ddb4D37c2E09C01cdA38cbc8"): {}, common.HexToAddress("0xF1815bd50389c46847f0Bda824eC8da914045D14"): {}},
+	Watchlist:        []common.Address{common.HexToAddress("0x11856fa7683aa9edf44a6ab368ec0cd02b03e6a1"), common.HexToAddress("0xd8606afb3f48a13229f52d6251c1aa3e05ad31a1"), common.HexToAddress("0xa48c8dd45ccf9c1ebf938c63c7cbc7cc259bf207"), common.HexToAddress("0xa89c1c7d0975f1a98442e96e18a292982b12b3cd")},
 	BlockTimeSeconds: 0.5,
 	Oku: OkuMetadata{
 		LimitOrderRegistry:            common.HexToAddress("0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc"),
@@ -57,7 +57,7 @@ var Telos Network = Network{
 	Token: TokenMetadata{
 		WethAddress: common.HexToAddress("0xD102cE6A4dB07D247fcc28F366A623Df0938CA9E"),
 		WbtcAddress: common.HexToAddress("0x0555E30da8f98308EdB960aa94C0Db47230d2B9c"),
-		UsdcAddress: common.HexToAddress("0x8D97Cea50351Fb4329d591682b148D43a0C3611b"),
+		UsdcAddress: common.HexToAddress("0xF1815bd50389c46847f0Bda824eC8da914045D14"),
 	},
 	Contracts: map[string]ChainContract{
 		"multicall3": {

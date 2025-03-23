@@ -4026,7 +4026,7 @@
       token: {
           wethAddress: "0xD102cE6A4dB07D247fcc28F366A623Df0938CA9E",
           wbtcAddress: "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c",
-          usdcAddress: "0x8D97Cea50351Fb4329d591682b148D43a0C3611b",
+          usdcAddress: "0xF1815bd50389c46847f0Bda824eC8da914045D14",
       },
       oku: {
           limitOrderRegistry: "0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc",
@@ -4036,16 +4036,26 @@
               nativeWrappedName: "TLOS",
           },
       },
-      defaultPool: "0x2E2F83DF7061561C4a29bD155B8f65674bFa31C9",
-      defaultToken0: "0x8D97Cea50351Fb4329d591682b148D43a0C3611b",
+      defaultPool: "0xa89c1c7d0975f1a98442e96e18a292982b12b3cd",
+      defaultToken0: "0xf1815bd50389c46847f0bda824ec8da914045d14",
       defaultToken1: "0xD102cE6A4dB07D247fcc28F366A623Df0938CA9E",
       tokenList: [
           { symbol: "WTLOS", address: "0xD102cE6A4dB07D247fcc28F366A623Df0938CA9E" },
-          { symbol: "USDC", address: "0x8D97Cea50351Fb4329d591682b148D43a0C3611b" },
+          { symbol: "USDC.e", address: "0xF1815bd50389c46847f0Bda824eC8da914045D14" },
+          { symbol: "USDT", address: "0x674843C06FF83502ddb4D37c2E09C01cdA38cbc8" },
           { symbol: "WBTC", address: "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c" },
+          { symbol: "WETH", address: "0xBAb93B7ad7fE8692A878B95a8e689423437cc500" },
       ],
-      stables: ["0x8D97Cea50351Fb4329d591682b148D43a0C3611b"],
-      watchlist: ["0x2E2F83DF7061561C4a29bD155B8f65674bFa31C9"],
+      stables: [
+          "0x674843C06FF83502ddb4D37c2E09C01cdA38cbc8",
+          "0xF1815bd50389c46847f0Bda824eC8da914045D14",
+      ],
+      watchlist: [
+          "0x11856fa7683aa9edf44a6ab368ec0cd02b03e6a1",
+          "0xd8606afb3f48a13229f52d6251c1aa3e05ad31a1",
+          "0xa48c8dd45ccf9c1ebf938c63c7cbc7cc259bf207",
+          "0xa89c1c7d0975f1a98442e96e18a292982b12b3cd",
+      ],
       internalName: "telos",
       nativeLogoUrl: "https://assets.oku.trade/natives/telos.png",
       contracts: {
