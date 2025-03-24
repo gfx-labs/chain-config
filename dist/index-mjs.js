@@ -41,16 +41,19 @@ const arbitrum = makeConfig({
         stargate: {
             endpointID: 30110,
             blockConfirmations: 20,
-            pools: [
+            tokens: [
                 {
+                    name: "ETH",
                     id: 13,
                     address: "0xA45B5130f36CDcA45667738e2a258AB09f4A5f7F",
                 },
                 {
+                    name: "USDC",
                     id: 1,
                     address: "0xe8CDF27AcD73a434D661C84887215F7598e7d0d3",
                 },
                 {
+                    name: "USDT",
                     id: 2,
                     address: "0xcE8CcA271Ebc0533920C83d39F417ED6A0abB7D0",
                 },
@@ -337,12 +340,14 @@ const base = makeConfig({
         stargate: {
             endpointID: 30184,
             blockConfirmations: 20,
-            pools: [
+            tokens: [
                 {
+                    name: "ETH",
                     id: 13,
                     address: "0xdc181Bd607330aeeBEF6ea62e03e5e1Fb4B6F7C7",
                 },
                 {
+                    name: "USDC",
                     id: 1,
                     address: "0x27a16dc786820B16E5c9028b75B99F6f604b5d26",
                 },
@@ -822,11 +827,17 @@ const bsc = makeConfig({
         stargate: {
             endpointID: 30102,
             blockConfirmations: 20,
-            pools: [
+            tokens: [
                 {
+                    name: "USDC",
+                    id: 1,
+                    address: "0x962Bd449E630b0d928f308Ce63f1A21F02576057"
+                },
+                {
+                    name: "USDT",
                     id: 2,
                     address: "0x138EB30f73BC423c6455C53df6D89CB01d9eBc63",
-                },
+                }
             ],
         },
         wanbridge: {
@@ -1324,17 +1335,19 @@ const gnosis = makeConfig({
         stargate: {
             endpointID: 30145,
             blockConfirmations: 20,
-            pools: [
+            tokens: [
                 {
+                    name: "USDC",
                     id: 1,
-                    address: "0xB1EeAD6959cb5bB9B20417d6689922523B2B86C3",
+                    address: "0xB1EeAD6959cb5bB9B20417d6689922523B2B86C3"
                 },
                 {
+                    name: "ETH",
                     id: 13,
-                    address: "0xe9aBA835f813ca05E50A6C0ce65D0D74390F7dE7",
-                },
-            ],
-        },
+                    address: "0xe9aBA835f813ca05E50A6C0ce65D0D74390F7dE7"
+                }
+            ]
+        }
     },
     oracles: {
         cmc: {
@@ -1436,10 +1449,23 @@ const goat = makeConfig({
         stargate: {
             endpointID: 30361,
             blockConfirmations: 20,
-            assets: [
-                "0x88853D410299BCBfE5fCC9Eef93c03115E908279",
-                "0xbbA60da06c2c5424f03f7434542280FCAd453d10",
-                "0x549943e04f40284185054145c6E4e9568C1D3241",
+            tokens: [
+                {
+                    name: "ETH",
+                    type: "OFT",
+                    id: 13,
+                    address: "0x88853D410299BCBfE5fCC9Eef93c03115E908279"
+                }, {
+                    name: "USDC",
+                    type: "OFT",
+                    id: 1,
+                    address: "0xbbA60da06c2c5424f03f7434542280FCAd453d10"
+                }, {
+                    name: "USDT",
+                    type: "OFT",
+                    id: 2,
+                    address: "0x549943e04f40284185054145c6E4e9568C1D3241"
+                }
             ],
         },
     },
@@ -1525,16 +1551,24 @@ const hemi = makeConfig({
         stargate: {
             endpointID: 30329,
             blockConfirmations: 20,
-            pools: [
+            tokens: [
                 {
+                    name: "ETH",
+                    type: "POOL",
                     id: 13,
                     address: "0x2F6F07CDcf3588944Bf4C42aC74ff24bF56e7590",
-                },
+                }, {
+                    name: "USDC",
+                    type: "OFT",
+                    id: 1,
+                    address: "0x45f1A95A4D3f3836523F5c83673c797f4d4d263B",
+                }, {
+                    name: "USDT",
+                    type: "OFT",
+                    id: 2,
+                    address: "0xAF54BE5B6eEc24d6BFACf1cce4eaF680A8239398",
+                }
             ],
-            assets: [
-                "0x45f1A95A4D3f3836523F5c83673c797f4d4d263B",
-                "0xAF54BE5B6eEc24d6BFACf1cce4eaF680A8239398"
-            ]
         },
     },
     morpho: {},
@@ -1629,15 +1663,23 @@ const lightlink = makeConfig({
         stargate: {
             endpointID: 30309,
             blockConfirmations: 20,
-            pools: [
+            tokens: [
                 {
-                    address: "0x8731d54E9D02c286767d56ac03e8037C07e01e98",
+                    name: "ETH",
+                    type: "POOL",
                     id: 13,
-                },
-            ],
-            assets: [
-                "0x8EE21165Ecb7562BA716c9549C1dE751282b9B33",
-                "0x06D538690AF257Da524f25D0CD52fD85b1c2173E",
+                    address: "0x8731d54E9D02c286767d56ac03e8037C07e01e98",
+                }, {
+                    name: "USDC",
+                    type: "OFT",
+                    id: 1,
+                    address: "0x8EE21165Ecb7562BA716c9549C1dE751282b9B33",
+                }, {
+                    name: "USDT",
+                    type: "OFT",
+                    id: 2,
+                    address: "0x06D538690AF257Da524f25D0CD52fD85b1c2173E",
+                }
             ],
         },
     },
@@ -1743,8 +1785,10 @@ const linea = makeConfig({
         stargate: {
             endpointID: 30183,
             blockConfirmations: 20,
-            pools: [
+            tokens: [
                 {
+                    name: "ETH",
+                    type: "POOL",
                     id: 13,
                     address: "0x81F6138153d473E8c5EcebD3DC8Cd4903506B075",
                 },
@@ -1974,24 +2018,30 @@ const mainnet = makeConfig({
         stargate: {
             endpointID: 30101,
             blockConfirmations: 15,
-            pools: [
+            tokens: [
                 {
+                    name: "ETH",
+                    type: "POOL",
                     id: 13,
                     address: "0x77b2043768d28E9C9aB44E1aBfC95944bcE57931",
                 },
                 {
+                    name: "USDC",
                     id: 1,
                     address: "0xc026395860Db2d07ee33e05fE50ed7bD583189C7",
                 },
                 {
+                    name: "USDT",
                     id: 2,
                     address: "0x933597a323Eb81cAe705C5bC29985172fd5A3973",
                 },
                 {
+                    name: "METIS",
                     id: 17,
                     address: "0xcDafB1b2dB43f366E48e6F614b8DCCBFeeFEEcD3",
                 },
                 {
+                    name: "mETH",
                     id: 22,
                     address: "0x268Ca24DAefF1FaC2ed883c598200CcbB79E931D",
                 },
@@ -2364,20 +2414,24 @@ const mantle = makeConfig({
         stargate: {
             endpointID: 30181,
             blockConfirmations: 20,
-            pools: [
+            tokens: [
                 {
+                    name: "ETH",
                     id: 13,
                     address: "0x4c1d3Fc3fC3c177c3b633427c2F769276c547463",
                 },
                 {
+                    name: "USDC",
                     id: 1,
                     address: "0xAc290Ad4e0c891FDc295ca4F0a6214cf6dC6acDC",
                 },
                 {
+                    name: "USDT",
                     id: 2,
                     address: "0xB715B85682B731dB9D5063187C450095c91C57FC",
                 },
                 {
+                    name: "mETH",
                     id: 22,
                     address: "0xF7628d84a2BbD9bb9c8E686AC95BB5d55169F3F1",
                 },
@@ -2691,16 +2745,19 @@ const optimism = makeConfig({
         stargate: {
             endpointID: 30111,
             blockConfirmations: 20,
-            pools: [
+            tokens: [
                 {
+                    name: "ETH",
                     id: 13,
                     address: "0xe8CDF27AcD73a434D661C84887215F7598e7d0d3",
                 },
                 {
+                    name: "USDC",
                     id: 1,
                     address: "0xcE8CcA271Ebc0533920C83d39F417ED6A0abB7D0",
                 },
                 {
+                    name: "USDT",
                     id: 2,
                     address: "0x19cFCE47eD54a88614648DC3f19A5980097007dD",
                 },
@@ -2981,12 +3038,14 @@ const polygon = makeConfig({
         stargate: {
             endpointID: 30109,
             blockConfirmations: 512,
-            pools: [
+            tokens: [
                 {
+                    name: "USDC",
                     id: 1,
                     address: "0x9Aa02D4Fae7F58b8E8f34c66E756cC734DAc7fe4",
                 },
                 {
+                    name: "USDT",
                     id: 2,
                     address: "0xd47b03ee6d86Cf251ee7860FB2ACf9f91B9fD4d7",
                 },
@@ -3323,10 +3382,23 @@ const rootstock = makeConfig({
         stargate: {
             endpointID: 30333,
             blockConfirmations: 20,
-            assets: [
-                "0x45f1A95A4D3f3836523F5c83673c797f4d4d263B",
-                "0xAF54BE5B6eEc24d6BFACf1cce4eaF680A8239398",
-                "0xAf5191B0De278C7286d6C7CC6ab6BB8A73bA2Cd6"
+            tokens: [
+                {
+                    name: "ETH",
+                    type: "OFT",
+                    id: 13,
+                    address: "0x45f1A95A4D3f3836523F5c83673c797f4d4d263B"
+                }, {
+                    name: "USDC",
+                    type: "OFT",
+                    id: 1,
+                    address: "0xAF54BE5B6eEc24d6BFACf1cce4eaF680A8239398"
+                }, {
+                    name: "USDT",
+                    type: "OFT",
+                    id: 2,
+                    address: "0xAf5191B0De278C7286d6C7CC6ab6BB8A73bA2Cd6"
+                }
             ]
         }
     },
@@ -3546,12 +3618,14 @@ const scroll = makeConfig({
         stargate: {
             endpointID: 30214,
             blockConfirmations: 20,
-            pools: [
+            tokens: [
                 {
+                    name: "ETH",
                     id: 13,
                     address: "0xC2b638Cb5042c1B3c5d5C969361fB50569840583",
                 },
                 {
+                    name: "USDC",
                     id: 1,
                     address: "0x3Fc69CC4A842838bCDC9499178740226062b14E4",
                 },
@@ -3663,16 +3737,20 @@ const sei = makeConfig({
         stargate: {
             endpointID: 30280,
             blockConfirmations: 20,
-            pools: [
+            tokens: [
                 {
+                    name: "ETH",
+                    type: "OFT",
                     id: 13,
                     address: "0x5c386D85b1B82FD9Db681b9176C8a4248bb6345B",
                 },
                 {
+                    name: "USDC",
                     id: 1,
                     address: "0x45d417612e177672958dC0537C45a8f8d754Ac2E",
                 },
                 {
+                    name: "USDT",
                     id: 2,
                     address: "0x0dB9afb4C33be43a0a0e396Fd1383B4ea97aB10a",
                 },
@@ -3790,8 +3868,9 @@ const sonic = makeConfig({
         stargate: {
             endpointID: 30332,
             blockConfirmations: 20,
-            pools: [
+            tokens: [
                 {
+                    name: "USDC",
                     id: 1,
                     address: "0xA272fFe20cFfe769CdFc4b63088DCD2C82a2D8F9"
                 }
@@ -3886,12 +3965,16 @@ const taiko = makeConfig({
         stargate: {
             endpointID: 30290,
             blockConfirmations: 20,
-            pools: [
+            tokens: [
                 {
+                    name: "USDC",
+                    type: "OFT",
                     id: 1,
                     address: "0x77C71633C34C3784ede189d74223122422492a0f",
                 },
                 {
+                    name: "USDT",
+                    type: "OFT",
                     id: 2,
                     address: "0x1C10CC06DC6D35970d1D53B2A23c76ef370d4135",
                 },

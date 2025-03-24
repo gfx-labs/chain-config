@@ -35,7 +35,8 @@ declare const arbitrum: Readonly<{
         stargate: {
             endpointID: number;
             blockConfirmations: number;
-            pools: {
+            tokens: {
+                name: string;
                 id: number;
                 address: string;
             }[];
@@ -216,7 +217,8 @@ declare const base: Readonly<{
         stargate: {
             endpointID: number;
             blockConfirmations: number;
-            pools: {
+            tokens: {
+                name: string;
                 id: number;
                 address: string;
             }[];
@@ -1546,7 +1548,8 @@ declare const bsc: Readonly<{
         stargate: {
             endpointID: number;
             blockConfirmations: number;
-            pools: {
+            tokens: {
+                name: string;
                 id: number;
                 address: string;
             }[];
@@ -2874,7 +2877,8 @@ declare const gnosis: Readonly<{
         stargate: {
             endpointID: number;
             blockConfirmations: number;
-            pools: {
+            tokens: {
+                name: string;
                 id: number;
                 address: string;
             }[];
@@ -3004,7 +3008,12 @@ declare const goat: Readonly<{
         stargate: {
             endpointID: number;
             blockConfirmations: number;
-            assets: string[];
+            tokens: {
+                name: string;
+                type: string;
+                id: number;
+                address: string;
+            }[];
         };
     };
     oracles: {};
@@ -3110,11 +3119,12 @@ declare const hemi: Readonly<{
         stargate: {
             endpointID: number;
             blockConfirmations: number;
-            pools: {
+            tokens: {
+                name: string;
+                type: string;
                 id: number;
                 address: string;
             }[];
-            assets: string[];
         };
     };
     morpho: {};
@@ -3232,11 +3242,12 @@ declare const lightlink: Readonly<{
         stargate: {
             endpointID: number;
             blockConfirmations: number;
-            pools: {
-                address: string;
+            tokens: {
+                name: string;
+                type: string;
                 id: number;
+                address: string;
             }[];
-            assets: string[];
         };
     };
     oracles: {};
@@ -3367,7 +3378,9 @@ declare const linea: Readonly<{
         stargate: {
             endpointID: number;
             blockConfirmations: number;
-            pools: {
+            tokens: {
+                name: string;
+                type: string;
                 id: number;
                 address: string;
             }[];
@@ -3901,10 +3914,16 @@ declare const mainnet: Readonly<{
         stargate: {
             endpointID: number;
             blockConfirmations: number;
-            pools: {
+            tokens: ({
+                name: string;
+                type: string;
                 id: number;
                 address: string;
-            }[];
+            } | {
+                name: string;
+                id: number;
+                address: string;
+            })[];
         };
         wanbridge: {
             requiredConfirmations: number;
@@ -4184,7 +4203,8 @@ declare const mantle: Readonly<{
         stargate: {
             endpointID: number;
             blockConfirmations: number;
-            pools: {
+            tokens: {
+                name: string;
                 id: number;
                 address: string;
             }[];
@@ -4826,7 +4846,8 @@ declare const optimism: Readonly<{
         stargate: {
             endpointID: number;
             blockConfirmations: number;
-            pools: {
+            tokens: {
+                name: string;
                 id: number;
                 address: string;
             }[];
@@ -5272,7 +5293,8 @@ declare const polygon: Readonly<{
         stargate: {
             endpointID: number;
             blockConfirmations: number;
-            pools: {
+            tokens: {
+                name: string;
                 id: number;
                 address: string;
             }[];
@@ -5530,7 +5552,12 @@ declare const rootstock: Readonly<{
         stargate: {
             endpointID: number;
             blockConfirmations: number;
-            assets: string[];
+            tokens: {
+                name: string;
+                type: string;
+                id: number;
+                address: string;
+            }[];
         };
     };
     oracles: {
@@ -5778,7 +5805,8 @@ declare const scroll: Readonly<{
         stargate: {
             endpointID: number;
             blockConfirmations: number;
-            pools: {
+            tokens: {
+                name: string;
                 id: number;
                 address: string;
             }[];
@@ -5922,10 +5950,16 @@ declare const sei: Readonly<{
         stargate: {
             endpointID: number;
             blockConfirmations: number;
-            pools: {
+            tokens: ({
+                name: string;
+                type: string;
                 id: number;
                 address: string;
-            }[];
+            } | {
+                name: string;
+                id: number;
+                address: string;
+            })[];
         };
     };
     oracles: {
@@ -6055,7 +6089,8 @@ declare const sonic: Readonly<{
         stargate: {
             endpointID: number;
             blockConfirmations: number;
-            pools: {
+            tokens: {
+                name: string;
                 id: number;
                 address: string;
             }[];
@@ -6168,7 +6203,9 @@ declare const taiko: Readonly<{
         stargate: {
             endpointID: number;
             blockConfirmations: number;
-            pools: {
+            tokens: {
+                name: string;
+                type: string;
                 id: number;
                 address: string;
             }[];
@@ -7258,12 +7295,13 @@ interface Bridges {
     };
     stargate?: {
         endpointID: number;
-        blockConfirmations: number;
-        pools?: {
-            id: number;
-            address: string;
+        blockConfirmations?: number;
+        tokens?: {
+            name: string;
+            type?: string; // OFT or POOL, if missing, assume is POOL
+            id: number; // used to determine possible routes. pool id
+            address: string; // address of the stargate contract
         }[];
-        assets?: string[]; // hydra (OFTs)
     };
 }
 interface Oracles {
@@ -7359,7 +7397,8 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         stargate: {
             endpointID: number;
             blockConfirmations: number;
-            pools: {
+            tokens: {
+                name: string;
                 id: number;
                 address: string;
             }[];
@@ -7535,7 +7574,8 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         stargate: {
             endpointID: number;
             blockConfirmations: number;
-            pools: {
+            tokens: {
+                name: string;
                 id: number;
                 address: string;
             }[];
@@ -8455,7 +8495,8 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         stargate: {
             endpointID: number;
             blockConfirmations: number;
-            pools: {
+            tokens: {
+                name: string;
                 id: number;
                 address: string;
             }[];
@@ -8742,10 +8783,16 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         stargate: {
             endpointID: number;
             blockConfirmations: number;
-            pools: {
+            tokens: ({
+                name: string;
+                type: string;
                 id: number;
                 address: string;
-            }[];
+            } | {
+                name: string;
+                id: number;
+                address: string;
+            })[];
         };
         wanbridge: {
             requiredConfirmations: number;
@@ -9033,7 +9080,8 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         stargate: {
             endpointID: number;
             blockConfirmations: number;
-            pools: {
+            tokens: {
+                name: string;
                 id: number;
                 address: string;
             }[];
@@ -9473,7 +9521,8 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         stargate: {
             endpointID: number;
             blockConfirmations: number;
-            pools: {
+            tokens: {
+                name: string;
                 id: number;
                 address: string;
             }[];
@@ -9623,7 +9672,12 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         stargate: {
             endpointID: number;
             blockConfirmations: number;
-            assets: string[];
+            tokens: {
+                name: string;
+                type: string;
+                id: number;
+                address: string;
+            }[];
         };
     };
     oracles: {
@@ -9761,7 +9815,8 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         stargate: {
             endpointID: number;
             blockConfirmations: number;
-            pools: {
+            tokens: {
+                name: string;
                 id: number;
                 address: string;
             }[];
@@ -10663,7 +10718,9 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         stargate: {
             endpointID: number;
             blockConfirmations: number;
-            pools: {
+            tokens: {
+                name: string;
+                type: string;
                 id: number;
                 address: string;
             }[];
@@ -10788,7 +10845,9 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         stargate: {
             endpointID: number;
             blockConfirmations: number;
-            pools: {
+            tokens: {
+                name: string;
+                type: string;
                 id: number;
                 address: string;
             }[];
@@ -10917,7 +10976,8 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         stargate: {
             endpointID: number;
             blockConfirmations: number;
-            pools: {
+            tokens: {
+                name: string;
                 id: number;
                 address: string;
             }[];
@@ -11044,10 +11104,16 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         stargate: {
             endpointID: number;
             blockConfirmations: number;
-            pools: {
+            tokens: ({
+                name: string;
+                type: string;
                 id: number;
                 address: string;
-            }[];
+            } | {
+                name: string;
+                id: number;
+                address: string;
+            })[];
         };
     };
     oracles: {
@@ -11934,7 +12000,8 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         stargate: {
             endpointID: number;
             blockConfirmations: number;
-            pools: {
+            tokens: {
+                name: string;
                 id: number;
                 address: string;
             }[];
@@ -12659,7 +12726,8 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         stargate: {
             endpointID: number;
             blockConfirmations: number;
-            pools: {
+            tokens: {
+                name: string;
                 id: number;
                 address: string;
             }[];
@@ -13702,11 +13770,12 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         stargate: {
             endpointID: number;
             blockConfirmations: number;
-            pools: {
+            tokens: {
+                name: string;
+                type: string;
                 id: number;
                 address: string;
             }[];
-            assets: string[];
         };
     };
     morpho: {};
@@ -14032,7 +14101,12 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         stargate: {
             endpointID: number;
             blockConfirmations: number;
-            assets: string[];
+            tokens: {
+                name: string;
+                type: string;
+                id: number;
+                address: string;
+            }[];
         };
     };
     oracles: {};
@@ -14241,11 +14315,12 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         stargate: {
             endpointID: number;
             blockConfirmations: number;
-            pools: {
-                address: string;
+            tokens: {
+                name: string;
+                type: string;
                 id: number;
+                address: string;
             }[];
-            assets: string[];
         };
     };
     oracles: {};
