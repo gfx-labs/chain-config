@@ -50,24 +50,30 @@ export const mainnet = makeConfig({
 		stargate: {
 			endpointID: 30101,
 			blockConfirmations: 15,
-			pools: [
+			tokens: [
 				{
+					name: "ETH",
+					type: "POOL",
 					id: 13,
 					address: "0x77b2043768d28E9C9aB44E1aBfC95944bcE57931",
 				},
 				{
+					name: "USDC",
 					id: 1,
 					address: "0xc026395860Db2d07ee33e05fE50ed7bD583189C7",
 				},
 				{
+					name: "USDT",
 					id: 2,
 					address: "0x933597a323Eb81cAe705C5bC29985172fd5A3973",
 				},
 				{
+					name: "METIS",
 					id: 17,
 					address: "0xcDafB1b2dB43f366E48e6F614b8DCCBFeeFEEcD3",
 				},
 				{
+					name: "mETH",
 					id: 22,
 					address: "0x268Ca24DAefF1FaC2ed883c598200CcbB79E931D",
 				},

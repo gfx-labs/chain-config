@@ -22,10 +22,23 @@ export const rootstock = makeConfig({
     stargate: {
       endpointID: 30333,
       blockConfirmations: 20,
-      assets: [
-        "0x45f1A95A4D3f3836523F5c83673c797f4d4d263B",
-        "0xAF54BE5B6eEc24d6BFACf1cce4eaF680A8239398",
-        "0xAf5191B0De278C7286d6C7CC6ab6BB8A73bA2Cd6"
+      tokens: [
+        {
+          name: "ETH",
+          type: "OFT",
+          id: 13,
+          address: "0x45f1A95A4D3f3836523F5c83673c797f4d4d263B"
+        }, {
+          name: "USDC",
+          type: "OFT",
+          id: 1,
+          address: "0xAF54BE5B6eEc24d6BFACf1cce4eaF680A8239398"
+        }, {
+          name: "USDT",
+          type: "OFT",
+          id: 2,
+          address: "0xAf5191B0De278C7286d6C7CC6ab6BB8A73bA2Cd6"
+        }
       ]
     }
   },

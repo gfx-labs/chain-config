@@ -25,16 +25,20 @@ export const sei = makeConfig({
     stargate: {
       endpointID: 30280,
       blockConfirmations: 20,
-      pools: [
+      tokens: [
         {
+          name: "ETH",
+          type: "OFT",
           id: 13,
           address: "0x5c386D85b1B82FD9Db681b9176C8a4248bb6345B",
         },
         {
+          name: "USDC",
           id: 1,
           address: "0x45d417612e177672958dC0537C45a8f8d754Ac2E",
         },
         {
+          name: "USDT",
           id: 2,
           address: "0x0dB9afb4C33be43a0a0e396Fd1383B4ea97aB10a",
         },

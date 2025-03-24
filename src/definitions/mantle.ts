@@ -27,20 +27,24 @@ export const mantle = makeConfig({
     stargate: {
       endpointID: 30181,
       blockConfirmations: 20,
-      pools: [
+      tokens: [
         {
+          name: "ETH",
           id: 13,
           address: "0x4c1d3Fc3fC3c177c3b633427c2F769276c547463",
         },
         {
+          name: "USDC",
           id: 1,
           address: "0xAc290Ad4e0c891FDc295ca4F0a6214cf6dC6acDC",
         },
         {
+          name: "USDT",
           id: 2,
           address: "0xB715B85682B731dB9D5063187C450095c91C57FC",
         },
         {
+          name: "mETH",
           id: 22,
           address: "0xF7628d84a2BbD9bb9c8E686AC95BB5d55169F3F1",
         },

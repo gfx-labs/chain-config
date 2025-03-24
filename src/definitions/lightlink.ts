@@ -18,15 +18,23 @@ export const lightlink = makeConfig({
     stargate: {
       endpointID: 30309,
       blockConfirmations: 20,
-      pools: [
+      tokens: [
         {
-          address: "0x8731d54E9D02c286767d56ac03e8037C07e01e98",
+          name: "ETH",
+          type: "POOL",
           id: 13,
-        },
-      ],
-      assets: [
-        "0x8EE21165Ecb7562BA716c9549C1dE751282b9B33",
-        "0x06D538690AF257Da524f25D0CD52fD85b1c2173E",
+          address: "0x8731d54E9D02c286767d56ac03e8037C07e01e98",
+        }, {
+          name: "USDC",
+          type: "OFT",
+          id: 1,
+          address: "0x8EE21165Ecb7562BA716c9549C1dE751282b9B33",
+        }, {
+          name: "USDT",
+          type: "OFT",
+          id: 2,
+          address: "0x06D538690AF257Da524f25D0CD52fD85b1c2173E",
+        }
       ],
     },
   },

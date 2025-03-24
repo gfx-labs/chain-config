@@ -31,17 +31,19 @@ export const gnosis = makeConfig({
     stargate: {
       endpointID: 30145,
       blockConfirmations: 20,
-      pools: [
+      tokens: [
         {
+          name: "USDC",
           id: 1,
-          address: "0xB1EeAD6959cb5bB9B20417d6689922523B2B86C3",
+          address: "0xB1EeAD6959cb5bB9B20417d6689922523B2B86C3"
         },
         {
+          name: "ETH",
           id: 13,
-          address: "0xe9aBA835f813ca05E50A6C0ce65D0D74390F7dE7",
-        },
-      ],
-    },
+          address: "0xe9aBA835f813ca05E50A6C0ce65D0D74390F7dE7"
+        }
+      ]
+    }
   },
   oracles: {
     cmc: {
