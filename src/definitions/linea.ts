@@ -34,8 +34,10 @@ export const linea = makeConfig({
     stargate: {
       endpointID: 30183,
       blockConfirmations: 20,
-      pools: [
+      tokens: [
         {
+          name: "ETH",
+          type: "POOL",
           id: 13,
           address: "0x81F6138153d473E8c5EcebD3DC8Cd4903506B075",
         },

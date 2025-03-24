@@ -38,16 +38,19 @@ export const optimism = makeConfig({
     stargate: {
       endpointID: 30111,
       blockConfirmations: 20,
-      pools: [
+      tokens: [
         {
+          name: "ETH",
           id: 13,
           address: "0xe8CDF27AcD73a434D661C84887215F7598e7d0d3",
         },
         {
+          name: "USDC",
           id: 1,
           address: "0xcE8CcA271Ebc0533920C83d39F417ED6A0abB7D0",
         },
         {
+          name: "USDT",
           id: 2,
           address: "0x19cFCE47eD54a88614648DC3f19A5980097007dD",
         },

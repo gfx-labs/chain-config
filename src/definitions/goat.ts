@@ -15,10 +15,23 @@ export const goat = makeConfig({
     stargate: {
       endpointID: 30361,
       blockConfirmations: 20,
-      assets: [
-        "0x88853D410299BCBfE5fCC9Eef93c03115E908279",
-        "0xbbA60da06c2c5424f03f7434542280FCAd453d10",
-        "0x549943e04f40284185054145c6E4e9568C1D3241",
+      tokens: [
+        {
+          name: "ETH",
+          type: "OFT",
+          id: 13,
+          address: "0x88853D410299BCBfE5fCC9Eef93c03115E908279"
+        }, {
+          name: "USDC",
+          type: "OFT",
+          id: 1,
+          address: "0xbbA60da06c2c5424f03f7434542280FCAd453d10"
+        }, {
+          name: "USDT",
+          type: "OFT",
+          id: 2,
+          address: "0x549943e04f40284185054145c6E4e9568C1D3241"
+        }
       ],
     },
   },

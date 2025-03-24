@@ -44,12 +44,14 @@ export const base = makeConfig({
 		stargate: {
 			endpointID: 30184,
 			blockConfirmations: 20,
-			pools: [
+			tokens: [
 				{
+					name: "ETH",
 					id: 13,
 					address: "0xdc181Bd607330aeeBEF6ea62e03e5e1Fb4B6F7C7",
 				},
 				{
+					name: "USDC",
 					id: 1,
 					address: "0x27a16dc786820B16E5c9028b75B99F6f604b5d26",
 				},

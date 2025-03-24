@@ -106,12 +106,13 @@ export interface Bridges {
   };
   stargate?: {
     endpointID: number;
-    blockConfirmations: number;
-    pools?: {
-      id: number;
-      address: string;
+    blockConfirmations?: number;
+    tokens?: {
+      name: string;
+      type?: string; // OFT or POOL, if missing, assume is POOL
+      id: number; // used to determine possible routes. pool id
+      address: string; // address of the stargate contract
     }[];
-    assets?: string[]; // hydra (OFTs)
   };
 }
 

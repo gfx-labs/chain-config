@@ -40,11 +40,17 @@ export const bsc = makeConfig({
     stargate: {
       endpointID: 30102,
       blockConfirmations: 20,
-      pools: [
+      tokens: [
         {
+          name: "USDC",
+          id: 1,
+          address: "0x962Bd449E630b0d928f308Ce63f1A21F02576057"
+        },
+        {
+          name: "USDT",
           id: 2,
           address: "0x138EB30f73BC423c6455C53df6D89CB01d9eBc63",
-        },
+        }
       ],
     },
     wanbridge: {

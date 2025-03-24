@@ -25,8 +25,9 @@ export const sonic = makeConfig({
     stargate: {
       endpointID: 30332,
       blockConfirmations: 20,
-      pools: [
+      tokens: [
         {
+          name: "USDC",
           id: 1,
           address: "0xA272fFe20cFfe769CdFc4b63088DCD2C82a2D8F9"
         }

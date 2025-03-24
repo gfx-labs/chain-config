@@ -32,12 +32,14 @@ export const scroll = makeConfig({
     stargate: {
       endpointID: 30214,
       blockConfirmations: 20,
-      pools: [
+      tokens: [
         {
+          name: "ETH",
           id: 13,
           address: "0xC2b638Cb5042c1B3c5d5C969361fB50569840583",
         },
         {
+          name: "USDC",
           id: 1,
           address: "0x3Fc69CC4A842838bCDC9499178740226062b14E4",
         },

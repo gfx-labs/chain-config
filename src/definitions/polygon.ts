@@ -39,12 +39,14 @@ export const polygon = makeConfig({
     stargate: {
       endpointID: 30109,
       blockConfirmations: 512,
-      pools: [
+      tokens: [
         {
+          name: "USDC",
           id: 1,
           address: "0x9Aa02D4Fae7F58b8E8f34c66E756cC734DAc7fe4",
         },
         {
+          name: "USDT",
           id: 2,
           address: "0xd47b03ee6d86Cf251ee7860FB2ACf9f91B9fD4d7",
         },

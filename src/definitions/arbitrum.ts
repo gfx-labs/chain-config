@@ -39,16 +39,19 @@ export const arbitrum = makeConfig({
     stargate: {
       endpointID: 30110,
       blockConfirmations: 20,
-      pools: [
+      tokens: [
         {
+          name: "ETH",
           id: 13,
           address: "0xA45B5130f36CDcA45667738e2a258AB09f4A5f7F",
         },
         {
+          name: "USDC",
           id: 1,
           address: "0xe8CDF27AcD73a434D661C84887215F7598e7d0d3",
         },
         {
+          name: "USDT",
           id: 2,
           address: "0xcE8CcA271Ebc0533920C83d39F417ED6A0abB7D0",
         },

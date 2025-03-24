@@ -14,16 +14,24 @@ export const hemi = makeConfig({
     stargate: {
       endpointID: 30329,
       blockConfirmations: 20,
-      pools: [
+      tokens: [
         {
+          name: "ETH",
+          type: "POOL",
           id: 13,
           address: "0x2F6F07CDcf3588944Bf4C42aC74ff24bF56e7590",
-        },
+        }, {
+          name: "USDC",
+          type: "OFT",
+          id: 1,
+          address: "0x45f1A95A4D3f3836523F5c83673c797f4d4d263B",
+        }, {
+          name: "USDT",
+          type: "OFT",
+          id: 2,
+          address: "0xAF54BE5B6eEc24d6BFACf1cce4eaF680A8239398",
+        }
       ],
-      assets: [
-        "0x45f1A95A4D3f3836523F5c83673c797f4d4d263B",
-        "0xAF54BE5B6eEc24d6BFACf1cce4eaF680A8239398"
-      ]
     },
   },
   morpho: {},

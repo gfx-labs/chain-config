@@ -20,12 +20,16 @@ export const taiko = makeConfig({
     stargate: {
       endpointID: 30290,
       blockConfirmations: 20,
-      pools: [
+      tokens: [
         {
+          name: "USDC",
+          type: "OFT",
           id: 1,
           address: "0x77C71633C34C3784ede189d74223122422492a0f",
         },
         {
+          name: "USDT",
+          type: "OFT",
           id: 2,
           address: "0x1C10CC06DC6D35970d1D53B2A23c76ef370d4135",
         },
