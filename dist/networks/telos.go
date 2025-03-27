@@ -8,7 +8,7 @@ var Telos Network = Network{
 	ChainId:           40,
 	LogoUrl:           "https://assets.oku.trade/chains/telos-logo.svg",
 	SortIndex:         13,
-	LaunchTime:        1738632669,
+	LaunchTime:        1743089303,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

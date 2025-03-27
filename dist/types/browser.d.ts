@@ -6317,7 +6317,7 @@ declare const taiko: Readonly<{
 }>;
 declare const telos: Readonly<{
     blockTimeSeconds: 0.5;
-    launchTime: 1738632669;
+    launchTime: 1743089303;
     sortIndex: 13;
     logoUrl: "https://assets.oku.trade/chains/telos-logo.svg";
     safeReorgDistance: 90000;
@@ -13886,7 +13886,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     network: "Hemi";
 }>, Readonly<{
     blockTimeSeconds: 0.5;
-    launchTime: 1738632669;
+    launchTime: 1743089303;
     sortIndex: 13;
     logoUrl: "https://assets.oku.trade/chains/telos-logo.svg";
     safeReorgDistance: 90000;

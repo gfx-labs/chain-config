@@ -4077,7 +4077,7 @@
   const telos = makeConfig({
       ...chains.telos,
       blockTimeSeconds: 0.5,
-      launchTime: 1738632669,
+      launchTime: 1743089303,
       sortIndex: 13,
       logoUrl: "https://assets.oku.trade/chains/telos-logo.svg",
       safeReorgDistance: 90000,
@@ -4094,20 +4094,22 @@
                       name: "ETH",
                       type: "OFT",
                       id: 13,
-                      address: "0xA272fFe20cFfe769CdFc4b63088DCD2C82a2D8F9"
-                  }, {
+                      address: "0xA272fFe20cFfe769CdFc4b63088DCD2C82a2D8F9",
+                  },
+                  {
                       name: "USDC",
                       type: "OFT",
                       id: 1,
-                      address: "0x2086f755A6d9254045C257ea3d382ef854849B0f"
-                  }, {
+                      address: "0x2086f755A6d9254045C257ea3d382ef854849B0f",
+                  },
+                  {
                       name: "USDT",
                       type: "OFT",
                       id: 2,
-                      address: "0x3a1293Bdb83bBbDd5Ebf4fAc96605aD2021BbC0f"
-                  }
-              ]
-          }
+                      address: "0x3a1293Bdb83bBbDd5Ebf4fAc96605aD2021BbC0f",
+                  },
+              ],
+          },
       },
       morpho: {},
       oracles: {},
