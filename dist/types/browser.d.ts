@@ -6326,7 +6326,17 @@ declare const telos: Readonly<{
         openocean: string;
         icecreamswap: true;
     };
-    bridges: {};
+    bridges: {
+        stargate: {
+            endpointID: number;
+            tokens: {
+                name: string;
+                type: string;
+                id: number;
+                address: string;
+            }[];
+        };
+    };
     morpho: {};
     oracles: {};
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
@@ -7296,7 +7306,7 @@ interface Bridges {
     stargate?: {
         endpointID: number;
         blockConfirmations?: number;
-        tokens?: {
+        tokens: {
             name: string;
             type?: string; // OFT or POOL, if missing, assume is POOL
             id: number; // used to determine possible routes. pool id
@@ -13885,7 +13895,17 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         openocean: string;
         icecreamswap: true;
     };
-    bridges: {};
+    bridges: {
+        stargate: {
+            endpointID: number;
+            tokens: {
+                name: string;
+                type: string;
+                id: number;
+                address: string;
+            }[];
+        };
+    };
     morpho: {};
     oracles: {};
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
