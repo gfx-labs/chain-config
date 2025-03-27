@@ -107,7 +107,7 @@ export interface Bridges {
   stargate?: {
     endpointID: number;
     blockConfirmations?: number;
-    tokens?: {
+    tokens: {
       name: string;
       type?: string; // OFT or POOL, if missing, assume is POOL
       id: number; // used to determine possible routes. pool id

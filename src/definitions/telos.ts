@@ -13,7 +13,29 @@ export const telos = makeConfig({
     openocean: "telos",
     icecreamswap: true,
   },
-  bridges: {},
+  bridges: {
+    stargate: {
+      endpointID: 30199,
+      tokens: [
+        {
+          name: "ETH",
+          type: "OFT",
+          id: 13,
+          address: "0xA272fFe20cFfe769CdFc4b63088DCD2C82a2D8F9"
+        }, {
+          name: "USDC",
+          type: "OFT",
+          id: 1,
+          address: "0x2086f755A6d9254045C257ea3d382ef854849B0f"
+        }, {
+          name: "USDT",
+          type: "OFT",
+          id: 2,
+          address: "0x3a1293Bdb83bBbDd5Ebf4fAc96605aD2021BbC0f"
+        }
+      ]
+    }
+  },
   morpho: {},
   oracles: {},
   initCodeHash:
