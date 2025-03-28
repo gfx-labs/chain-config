@@ -1,4 +1,5 @@
-import { arbitrum as arbitrum$1, base as base$1, blast as blast$1, bob as bob$1, boba as boba$1, bsc as bsc$1, celo as celo$1, corn as corn$1, filecoin as filecoin$1, gnosis as gnosis$1, goat as goat$1, hemi as hemi$1, lightlinkPhoenix, linea as linea$1, lisk as lisk$1, mainnet as mainnet$1, manta as manta$1, mantle as mantle$1, metalL2, moonbeam as moonbeam$1, optimism as optimism$1, polygon as polygon$1, redbellyMainnet, rootstock as rootstock$1, saga as saga$1, scroll as scroll$1, sei as sei$1, sonic as sonic$1, taiko as taiko$1, telos as telos$1, xLayer as xLayer$1, polygonZkEvm as polygonZkEvm$1, zksync } from 'viem/chains';
+import { arbitrum as arbitrum$1, base as base$1, blast as blast$1, bob as bob$1, boba as boba$1, bsc as bsc$1, celo as celo$1, corn as corn$1, filecoin as filecoin$1, gnosis as gnosis$1, goat as goat$1, hemi as hemi$1, lightlinkPhoenix, linea as linea$1, lisk as lisk$1, mainnet as mainnet$1, manta as manta$1, mantle as mantle$1, metalL2, moonbeam as moonbeam$1, optimism as optimism$1, polygon as polygon$1, redbellyMainnet, rootstock as rootstock$1, saga as saga$1, scroll as scroll$1, sei as sei$1, sonic as sonic$1, taiko as taiko$1, telos as telos$1, worldchain as worldchain$1, xLayer as xLayer$1, polygonZkEvm as polygonZkEvm$1, zksync } from 'viem/chains';
+import { zeroAddress } from 'viem';
 
 const makeConfig = (x) => {
     return x;
@@ -1104,11 +1105,16 @@ const corn = makeConfig({
             atlasNetworkName: "corn-mainnet",
             routerAddress: "0x183f6069A0D5c2DEC1Dd1eCF3B1581e12dEb4Efe",
             chainSelector: 9043146809313071210n,
-            tokenAdminRegistry: "0xCd51e57cD26b9B5eecbfe3d96DAabF3d12A663DA"
+            tokenAdminRegistry: "0xCd51e57cD26b9B5eecbfe3d96DAabF3d12A663DA",
         },
     },
     oracles: {},
-    morpho: {},
+    morpho: {
+        deployBlock: 251401,
+        morpho: "0xc2B1E031540e3F3271C5F3819F0cC7479a8DdD90",
+        mmFactory11: "0xe430821595602eA5DD0cD350f86987437c7362fA",
+        bundler3: "0x086889F9bdE8349512dD77088A7114E6C1c42Af7",
+    },
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
     uniswap: {
         deployBlock: 10878,
@@ -4181,6 +4187,81 @@ const telos = makeConfig({
     },
 });
 
+const worldchain = makeConfig({
+    ...worldchain$1,
+    blockTimeSeconds: 2,
+    launchTime: 0,
+    sortIndex: 15,
+    logoUrl: "https://assets.oku.trade/chains/world-logo.png",
+    safeReorgDistance: 90000,
+    externalId: {},
+    markets: {},
+    bridges: {},
+    oracles: {},
+    morpho: {
+        deployBlock: 9025669,
+        morpho: "0xE741BC7c34758b4caE05062794E8Ae24978AF432",
+        mmFactory11: "0xae5b0884bfff430493D6C844B9fd052Af7d79278",
+        bundler3: "0x3D07BF2FFb23248034bF704F3a4786F1ffE2a448",
+    },
+    initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
+    uniswap: {
+        deployBlock: 0,
+        poolFactory: zeroAddress,
+        permit2: zeroAddress,
+        multicall2: zeroAddress,
+        tickLens: zeroAddress,
+        nonfungiblePositionManager: zeroAddress,
+        positionsNFT: zeroAddress,
+        positionsNFTDeployBlock: 0,
+        universalRouter: zeroAddress,
+        wrappedNativeAddress: "0x4200000000000000000000000000000000000006",
+        wrappedNativeSymbol: "WETH",
+        wrappedNativeName: "Wrapped Ether",
+        wrappedNativeDecimals: 18,
+        nativeCurrencyName: "ETH",
+    },
+    token: {
+        wethAddress: "0x4200000000000000000000000000000000000006",
+    },
+    oku: {
+        limitOrderRegistry: zeroAddress,
+        limitOrderRegistryDeployBlock: 0,
+        pricing: {
+            nativeWrappedToken: "0x4200000000000000000000000000000000000006",
+            nativeWrappedName: "ETH",
+        },
+    },
+    defaultPool: zeroAddress,
+    defaultToken0: zeroAddress,
+    defaultToken1: zeroAddress,
+    tokenList: [
+        { symbol: "WETH", address: "0x4200000000000000000000000000000000000006" },
+    ],
+    stables: ["0x79a02482a880bce3f13e09da970dc34db4cd24d1"],
+    watchlist: [],
+    internalName: "worldchain",
+    nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
+    contracts: {
+        ...worldchain$1.contracts,
+        limitOrder: {
+            address: zeroAddress,
+        },
+        nftManager: {
+            address: zeroAddress,
+        },
+        weth9: {
+            address: "0x4200000000000000000000000000000000000006",
+        },
+        multicall2: {
+            address: zeroAddress,
+        },
+        multicall3: {
+            address: "0xcA11bde05977b3631167028862bE2a173976CA11",
+        },
+    },
+});
+
 const xLayer = makeConfig({
     ...xLayer$1,
     blockTimeSeconds: 3,
@@ -4550,6 +4631,7 @@ const MAINNET_CHAINS = [
     goat,
     redbelly,
     lightlink,
+    worldchain,
 ];
 
-export { MAINNET_CHAINS, arbitrum, base, blast, bob, boba, bsc, celo, corn, filecoin, gnosis, goat, hemi, lightlink, linea, lisk, mainnet, manta, mantle, metal, moonbeam, optimism, polygon, polygonZkEvm, redbelly, rootstock, saga, scroll, sei, sonic, taiko, telos, xLayer, zkSync };
+export { MAINNET_CHAINS, arbitrum, base, blast, bob, boba, bsc, celo, corn, filecoin, gnosis, goat, hemi, lightlink, linea, lisk, mainnet, manta, mantle, metal, moonbeam, optimism, polygon, polygonZkEvm, redbelly, rootstock, saga, scroll, sei, sonic, taiko, telos, worldchain, xLayer, zkSync };

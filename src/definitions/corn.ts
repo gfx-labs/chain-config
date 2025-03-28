@@ -16,11 +16,16 @@ export const corn = makeConfig({
       atlasNetworkName: "corn-mainnet",
       routerAddress: "0x183f6069A0D5c2DEC1Dd1eCF3B1581e12dEb4Efe",
       chainSelector: 9043146809313071210n,
-      tokenAdminRegistry: "0xCd51e57cD26b9B5eecbfe3d96DAabF3d12A663DA"
+      tokenAdminRegistry: "0xCd51e57cD26b9B5eecbfe3d96DAabF3d12A663DA",
     },
   },
   oracles: {},
-	morpho: {},
+  morpho: {
+    deployBlock: 251401,
+    morpho: "0xc2B1E031540e3F3271C5F3819F0cC7479a8DdD90",
+    mmFactory11: "0xe430821595602eA5DD0cD350f86987437c7362fA",
+    bundler3: "0x086889F9bdE8349512dD77088A7114E6C1c42Af7",
+  },
   initCodeHash:
     "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
   uniswap: {
