@@ -55,10 +55,11 @@ var Corn Network = Network{
 		NativeCurrencyName:         "BTCN",
 	},
 	Morpho: MorphoMetadata{
-		DeployBlock: 251401,
-		Morpho:      common.HexToAddress("0xc2B1E031540e3F3271C5F3819F0cC7479a8DdD90"),
-		MmFactory11: common.HexToAddress("0xe430821595602eA5DD0cD350f86987437c7362fA"),
-		Bundler3:    common.HexToAddress("0x086889F9bdE8349512dD77088A7114E6C1c42Af7"),
+		DeployBlock:     251401,
+		Morpho:          common.HexToAddress("0xc2B1E031540e3F3271C5F3819F0cC7479a8DdD90"),
+		PublicAllocator: common.HexToAddress("0xDFde06e2B2A2D718eE5560b73dA4F830E56A2f10"),
+		MmFactory11:     common.HexToAddress("0xe430821595602eA5DD0cD350f86987437c7362fA"),
+		Bundler3:        common.HexToAddress("0x086889F9bdE8349512dD77088A7114E6C1c42Af7"),
 	},
 	Token: TokenMetadata{
 		WethAddress: common.HexToAddress("0xda5dDd7270381A7C2717aD10D1c0ecB19e3CDFb2"),
