@@ -10,6 +10,7 @@ export interface MorphoMetadata {
   mmFactory10?: Address;
   mmFactory11?: Address;
   bundler3?: Address;
+  publicAllocator?: Address;
 }
 
 export interface UniswapMetadata {
