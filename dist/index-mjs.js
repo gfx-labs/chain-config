@@ -1115,6 +1115,7 @@ const corn = makeConfig({
         publicAllocator: "0xDFde06e2B2A2D718eE5560b73dA4F830E56A2f10",
         mmFactory11: "0xe430821595602eA5DD0cD350f86987437c7362fA",
         bundler3: "0x086889F9bdE8349512dD77088A7114E6C1c42Af7",
+        urdFactory: "0xaBC2CBa3C8E265d63C04BF5fA41EE105d3D85ae3",
     },
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
     uniswap: {
