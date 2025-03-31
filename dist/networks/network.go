@@ -371,9 +371,10 @@ type Oracles struct {
 }
 
 type MorphoMetadata struct {
-	DeployBlock int64
-	Morpho      common.Address
-	MmFactory10 common.Address
-	MmFactory11 common.Address
-	Bundler3    common.Address
+	DeployBlock     int64
+	Morpho          common.Address
+	MmFactory10     common.Address
+	MmFactory11     common.Address
+	Bundler3        common.Address
+	PublicAllocator common.Address
 }

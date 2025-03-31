@@ -2634,6 +2634,7 @@ declare const corn: Readonly<{
     morpho: {
         deployBlock: number;
         morpho: "0xc2B1E031540e3F3271C5F3819F0cC7479a8DdD90";
+        publicAllocator: "0xDFde06e2B2A2D718eE5560b73dA4F830E56A2f10";
         mmFactory11: "0xe430821595602eA5DD0cD350f86987437c7362fA";
         bundler3: "0x086889F9bdE8349512dD77088A7114E6C1c42Af7";
     };
@@ -7599,6 +7600,7 @@ interface MorphoMetadata {
     mmFactory10?: Address;
     mmFactory11?: Address;
     bundler3?: Address;
+    publicAllocator?: Address;
 }
 interface UniswapMetadata {
     deployBlock?: number;
@@ -13016,6 +13018,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     morpho: {
         deployBlock: number;
         morpho: "0xc2B1E031540e3F3271C5F3819F0cC7479a8DdD90";
+        publicAllocator: "0xDFde06e2B2A2D718eE5560b73dA4F830E56A2f10";
         mmFactory11: "0xe430821595602eA5DD0cD350f86987437c7362fA";
         bundler3: "0x086889F9bdE8349512dD77088A7114E6C1c42Af7";
     };
