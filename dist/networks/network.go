@@ -377,4 +377,5 @@ type MorphoMetadata struct {
 	MmFactory11     common.Address
 	Bundler3        common.Address
 	PublicAllocator common.Address
+	UrdFactory      common.Address
 }
