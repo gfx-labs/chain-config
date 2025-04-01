@@ -579,7 +579,7 @@ const bob = makeConfig({
             atlasNetworkName: "bitcoin-mainnet-bob",
             routerAddress: "0x827716e74F769AB7b6bb374A29235d9c2156932C",
             chainSelector: 3849287863852499584n,
-            tokenAdminRegistry: "0xa57d04119AFf4884F8602213E58d8AaAD18229cb"
+            tokenAdminRegistry: "0xa57d04119AFf4884F8602213E58d8AaAD18229cb",
         },
     },
     morpho: {},
@@ -1347,15 +1347,15 @@ const gnosis = makeConfig({
                 {
                     name: "USDC",
                     id: 1,
-                    address: "0xB1EeAD6959cb5bB9B20417d6689922523B2B86C3"
+                    address: "0xB1EeAD6959cb5bB9B20417d6689922523B2B86C3",
                 },
                 {
                     name: "ETH",
                     id: 13,
-                    address: "0xe9aBA835f813ca05E50A6C0ce65D0D74390F7dE7"
-                }
-            ]
-        }
+                    address: "0xe9aBA835f813ca05E50A6C0ce65D0D74390F7dE7",
+                },
+            ],
+        },
     },
     oracles: {
         cmc: {
@@ -1393,6 +1393,7 @@ const gnosis = makeConfig({
         limitOrderRegistry: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435",
         limitOrderRegistryDeployBlock: 35719277,
         pricing: {
+            pools: ["0x5a2fb66e66b2af7f1c2f71c6c695492faab2e587"],
             nativeWrappedToken: "0xe91d153e0b41518a2ce8dd3d7944fa863463a97d",
             nativeWrappedName: "xDAI",
         },
