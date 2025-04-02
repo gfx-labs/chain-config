@@ -25,7 +25,6 @@ export const MAINNET_CHAINS = [
   defs.lisk,
   defs.bob,
   defs.gnosis,
-  defs.xLayer,
   defs.metal,
   defs.corn,
   defs.sonic,
