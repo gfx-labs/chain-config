@@ -6823,133 +6823,6 @@ declare const worldchain: Readonly<{
     };
     network: "worldchain";
 }>;
-declare const xLayer: Readonly<{
-    blockTimeSeconds: 3;
-    launchTime: 0;
-    sortIndex: 18;
-    logoUrl: "https://assets.oku.trade/chains/xlayer-logo.png";
-    safeReorgDistance: 90000;
-    externalId: {};
-    markets: {
-        icecreamswap: true;
-    };
-    bridges: {
-        chainlink: {
-            atlasNetworkName: string;
-            routerAddress: string;
-            chainSelector: bigint;
-            tokenAdminRegistry: string;
-        };
-    };
-    morpho: {};
-    oracles: {
-        cmc: {
-            slug: string;
-            native: string;
-        };
-        coingecko: {
-            slug: string;
-            native: string;
-        };
-        dexscreener: string;
-    };
-    initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
-    uniswap: {
-        deployBlock: number;
-        poolFactory: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D";
-        permit2: "0x000000000022D473030F116dDEE9F6B43aC78BA3";
-        multicall2: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435";
-        tickLens: "0xB3309C48F8407651D918ca3Da4C45DE40109E641";
-        nonfungiblePositionManager: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c";
-        positionsNFT: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c";
-        positionsNFTDeployBlock: number;
-        universalRouter: "0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc";
-        wrappedNativeAddress: "0xe538905cf8410324e03a5a23c1c177a474d59b2b";
-        wrappedNativeSymbol: string;
-        wrappedNativeName: string;
-        wrappedNativeDecimals: number;
-        nativeCurrencyName: string;
-    };
-    token: {
-        usdcAddress: "0x74b7f16337b8972027f6196a17a631ac6de26d22";
-        wethAddress: "0xe538905cf8410324e03a5a23c1c177a474d59b2b";
-    };
-    oku: {
-        limitOrderRegistry: "0x9db70E29712Cc8Af10c2B597BaDA6784544FF407";
-        limitOrderRegistryDeployBlock: number;
-        pricing: {
-            nativeWrappedToken: "0xe538905cf8410324e03a5a23c1c177a474d59b2b";
-            nativeWrappedName: string;
-        };
-    };
-    defaultPool: "0x87d7a0a51e27bf7232f97015ab3e53edc8104989";
-    defaultToken0: "0x74b7f16337b8972027f6196a17a631ac6de26d22";
-    defaultToken1: "0xe538905cf8410324e03a5a23c1c177a474d59b2b";
-    tokenList: ({
-        symbol: string;
-        address: "0xe538905cf8410324e03a5a23c1c177a474d59b2b";
-    } | {
-        symbol: string;
-        address: "0x2a22f9c3b484c3629090feed35f17ff8f88f76f0";
-    } | {
-        symbol: string;
-        address: "0x1e4a5963abfd975d8c9021ce480b42188849d41d";
-    } | {
-        symbol: string;
-        address: "0xc5015b9d9161dca7e18e32f6f25c4ad850731fd4";
-    } | {
-        symbol: string;
-        address: "0xea034fb02eb1808c2cc3adbc15f447b93cbe08e1";
-    })[];
-    stables: ("0x2a22f9c3b484c3629090feed35f17ff8f88f76f0" | "0x1e4a5963abfd975d8c9021ce480b42188849d41d" | "0xc5015b9d9161dca7e18e32f6f25c4ad850731fd4")[];
-    watchlist: "0x87d7a0a51e27bf7232f97015ab3e53edc8104989"[];
-    internalName: "xlayer";
-    nativeLogoUrl: "https://assets.oku.trade/natives/okb.png";
-    contracts: {
-        limitOrder: {
-            address: "0x9db70E29712Cc8Af10c2B597BaDA6784544FF407";
-        };
-        nftManager: {
-            address: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c";
-        };
-        weth9: {
-            address: "0xe538905cf8410324e03a5a23c1c177a474d59b2b";
-        };
-        multicall2: {
-            address: "0xcA11bde05977b3631167028862bE2a173976CA11";
-        };
-        multicall3: {
-            address: "0xcA11bde05977b3631167028862bE2a173976CA11";
-        };
-    };
-    blockExplorers: {
-        readonly default: {
-            readonly name: "OKLink";
-            readonly url: "https://www.oklink.com/xlayer";
-            readonly apiUrl: "https://www.oklink.com/api/v5/explorer/xlayer/api";
-        };
-    };
-    id: 196;
-    name: "X Layer Mainnet";
-    nativeCurrency: {
-        readonly decimals: 18;
-        readonly name: "OKB";
-        readonly symbol: "OKB";
-    };
-    rpcUrls: {
-        readonly default: {
-            readonly http: readonly [
-                "https://rpc.xlayer.tech"
-            ];
-        };
-    };
-    sourceId?: number | undefined | undefined | undefined;
-    testnet?: boolean | undefined | undefined | undefined;
-    custom?: Record<string, unknown> | undefined;
-    fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined | undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
-}>;
 declare const polygonZkEvm: Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     sortIndex: 6;
@@ -7031,7 +6904,7 @@ declare const polygonZkEvm: Readonly<{
         symbol: string;
         address: "0x744C5860ba161b5316F7E80D9Ec415e2727e5bD5";
     })[];
-    stables: ("0x1e4a5963abfd975d8c9021ce480b42188849d41d" | "0xc5015b9d9161dca7e18e32f6f25c4ad850731fd4" | "0x37eaa0ef3549a5bb7d431be78a3d99bd360d19e5" | "0xa8ce8aee21bc2a48a5ef670afcc9274c7bbbc035" | "0x744C5860ba161b5316F7E80D9Ec415e2727e5bD5")[];
+    stables: ("0x37eaa0ef3549a5bb7d431be78a3d99bd360d19e5" | "0xa8ce8aee21bc2a48a5ef670afcc9274c7bbbc035" | "0x1e4a5963abfd975d8c9021ce480b42188849d41d" | "0x744C5860ba161b5316F7E80D9Ec415e2727e5bD5" | "0xc5015b9d9161dca7e18e32f6f25c4ad850731fd4")[];
     watchlist: ("0xd6efe114c9b6058a20aab759e064f50544590914" | "0x52b18c30f1d3f5c6f5fb4badff2d0ab3c68a3ff4" | "0x90C865Da46D948EF3792fb57B0d60D14A96ecf49" | "0xd2c7e323c6f5415dc0ee4e3811901b3380d316fd" | "0x539d23BE81696560C12Cf8d24AE8bb4641381E7D" | "0x7908F0eD78de3c850A5d1DC261c39341b274D07c" | "0x0A44b12799eBC21E1dF271284921e1e4F6f17f81")[];
     internalName: "polygon-zkevm";
     nativeLogoUrl: "https://assets.oku.trade/natives/eth.png";
@@ -10413,7 +10286,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         symbol: string;
         address: "0x744C5860ba161b5316F7E80D9Ec415e2727e5bD5";
     })[];
-    stables: ("0x1e4a5963abfd975d8c9021ce480b42188849d41d" | "0xc5015b9d9161dca7e18e32f6f25c4ad850731fd4" | "0x37eaa0ef3549a5bb7d431be78a3d99bd360d19e5" | "0xa8ce8aee21bc2a48a5ef670afcc9274c7bbbc035" | "0x744C5860ba161b5316F7E80D9Ec415e2727e5bD5")[];
+    stables: ("0x37eaa0ef3549a5bb7d431be78a3d99bd360d19e5" | "0xa8ce8aee21bc2a48a5ef670afcc9274c7bbbc035" | "0x1e4a5963abfd975d8c9021ce480b42188849d41d" | "0x744C5860ba161b5316F7E80D9Ec415e2727e5bD5" | "0xc5015b9d9161dca7e18e32f6f25c4ad850731fd4")[];
     watchlist: ("0xd6efe114c9b6058a20aab759e064f50544590914" | "0x52b18c30f1d3f5c6f5fb4badff2d0ab3c68a3ff4" | "0x90C865Da46D948EF3792fb57B0d60D14A96ecf49" | "0xd2c7e323c6f5415dc0ee4e3811901b3380d316fd" | "0x539d23BE81696560C12Cf8d24AE8bb4641381E7D" | "0x7908F0eD78de3c850A5d1DC261c39341b274D07c" | "0x0A44b12799eBC21E1dF271284921e1e4F6f17f81")[];
     internalName: "polygon-zkevm";
     nativeLogoUrl: "https://assets.oku.trade/natives/eth.png";
@@ -12505,130 +12378,6 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         readonly default: {
             readonly http: readonly ["https://rpc.gnosischain.com"];
             readonly webSocket: readonly ["wss://rpc.gnosischain.com/wss"];
-        };
-    };
-    sourceId?: number | undefined | undefined | undefined;
-    testnet?: boolean | undefined | undefined | undefined;
-    custom?: Record<string, unknown> | undefined;
-    fees?: import("viem").ChainFees<undefined> | undefined;
-    formatters?: undefined | undefined;
-    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
-}>, Readonly<{
-    blockTimeSeconds: 3;
-    launchTime: 0;
-    sortIndex: 18;
-    logoUrl: "https://assets.oku.trade/chains/xlayer-logo.png";
-    safeReorgDistance: 90000;
-    externalId: {};
-    markets: {
-        icecreamswap: true;
-    };
-    bridges: {
-        chainlink: {
-            atlasNetworkName: string;
-            routerAddress: string;
-            chainSelector: bigint;
-            tokenAdminRegistry: string;
-        };
-    };
-    morpho: {};
-    oracles: {
-        cmc: {
-            slug: string;
-            native: string;
-        };
-        coingecko: {
-            slug: string;
-            native: string;
-        };
-        dexscreener: string;
-    };
-    initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
-    uniswap: {
-        deployBlock: number;
-        poolFactory: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D";
-        permit2: "0x000000000022D473030F116dDEE9F6B43aC78BA3";
-        multicall2: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435";
-        tickLens: "0xB3309C48F8407651D918ca3Da4C45DE40109E641";
-        nonfungiblePositionManager: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c";
-        positionsNFT: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c";
-        positionsNFTDeployBlock: number;
-        universalRouter: "0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc";
-        wrappedNativeAddress: "0xe538905cf8410324e03a5a23c1c177a474d59b2b";
-        wrappedNativeSymbol: string;
-        wrappedNativeName: string;
-        wrappedNativeDecimals: number;
-        nativeCurrencyName: string;
-    };
-    token: {
-        usdcAddress: "0x74b7f16337b8972027f6196a17a631ac6de26d22";
-        wethAddress: "0xe538905cf8410324e03a5a23c1c177a474d59b2b";
-    };
-    oku: {
-        limitOrderRegistry: "0x9db70E29712Cc8Af10c2B597BaDA6784544FF407";
-        limitOrderRegistryDeployBlock: number;
-        pricing: {
-            nativeWrappedToken: "0xe538905cf8410324e03a5a23c1c177a474d59b2b";
-            nativeWrappedName: string;
-        };
-    };
-    defaultPool: "0x87d7a0a51e27bf7232f97015ab3e53edc8104989";
-    defaultToken0: "0x74b7f16337b8972027f6196a17a631ac6de26d22";
-    defaultToken1: "0xe538905cf8410324e03a5a23c1c177a474d59b2b";
-    tokenList: ({
-        symbol: string;
-        address: "0xe538905cf8410324e03a5a23c1c177a474d59b2b";
-    } | {
-        symbol: string;
-        address: "0x2a22f9c3b484c3629090feed35f17ff8f88f76f0";
-    } | {
-        symbol: string;
-        address: "0x1e4a5963abfd975d8c9021ce480b42188849d41d";
-    } | {
-        symbol: string;
-        address: "0xc5015b9d9161dca7e18e32f6f25c4ad850731fd4";
-    } | {
-        symbol: string;
-        address: "0xea034fb02eb1808c2cc3adbc15f447b93cbe08e1";
-    })[];
-    stables: ("0x2a22f9c3b484c3629090feed35f17ff8f88f76f0" | "0x1e4a5963abfd975d8c9021ce480b42188849d41d" | "0xc5015b9d9161dca7e18e32f6f25c4ad850731fd4")[];
-    watchlist: "0x87d7a0a51e27bf7232f97015ab3e53edc8104989"[];
-    internalName: "xlayer";
-    nativeLogoUrl: "https://assets.oku.trade/natives/okb.png";
-    contracts: {
-        limitOrder: {
-            address: "0x9db70E29712Cc8Af10c2B597BaDA6784544FF407";
-        };
-        nftManager: {
-            address: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c";
-        };
-        weth9: {
-            address: "0xe538905cf8410324e03a5a23c1c177a474d59b2b";
-        };
-        multicall2: {
-            address: "0xcA11bde05977b3631167028862bE2a173976CA11";
-        };
-        multicall3: {
-            address: "0xcA11bde05977b3631167028862bE2a173976CA11";
-        };
-    };
-    blockExplorers: {
-        readonly default: {
-            readonly name: "OKLink";
-            readonly url: "https://www.oklink.com/xlayer";
-            readonly apiUrl: "https://www.oklink.com/api/v5/explorer/xlayer/api";
-        };
-    };
-    id: 196;
-    name: "X Layer Mainnet";
-    nativeCurrency: {
-        readonly decimals: 18;
-        readonly name: "OKB";
-        readonly symbol: "OKB";
-    };
-    rpcUrls: {
-        readonly default: {
-            readonly http: readonly ["https://rpc.xlayer.tech"];
         };
     };
     sourceId?: number | undefined | undefined | undefined;
@@ -15209,5 +14958,5 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     };
     network: "worldchain";
 }>];
-export { arbitrum, base, blast, bob, boba, bsc, celo, corn, filecoin, gnosis, goat, hemi, lightlink, linea, lisk, mainnet, manta, mantle, metal, moonbeam, optimism, polygon, redbelly, rootstock, saga, scroll, sei, sonic, taiko, telos, worldchain, xLayer, polygonZkEvm, zkSync, MorphoMetadata, UniswapMetadata, OkuPricingMetadata, OkuMetadata, TokenMetadata, Markets, Bridges, Oracles, IChainInfo, MAINNET_CHAINS };
+export { arbitrum, base, blast, bob, boba, bsc, celo, corn, filecoin, gnosis, goat, hemi, lightlink, linea, lisk, mainnet, manta, mantle, metal, moonbeam, optimism, polygon, redbelly, rootstock, saga, scroll, sei, sonic, taiko, telos, worldchain, polygonZkEvm, zkSync, MorphoMetadata, UniswapMetadata, OkuPricingMetadata, OkuMetadata, TokenMetadata, Markets, Bridges, Oracles, IChainInfo, MAINNET_CHAINS };
 export { ChainContract } from "viem";

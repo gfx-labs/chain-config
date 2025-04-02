@@ -36,7 +36,6 @@ const (
 	NameLisk         InternalName = "lisk"
 	NameBob          InternalName = "bob"
 	NameGnosis       InternalName = "gnosis"
-	NameXlayer       InternalName = "xlayer"
 	NameMetal        InternalName = "metal"
 	NameCorn         InternalName = "corn"
 	NameSonic        InternalName = "sonic"
@@ -73,7 +72,6 @@ var AllNetworks = []Network{
 	Lisk,
 	Bob,
 	Gnosis,
-	Xlayer,
 	Metal,
 	Corn,
 	Sonic,
@@ -110,7 +108,6 @@ var networksByName = map[string]Network{
 	"lisk":          Lisk,
 	"bob":           Bob,
 	"gnosis":        Gnosis,
-	"xlayer":        Xlayer,
 	"metal":         Metal,
 	"corn":          Corn,
 	"sonic":         Sonic,
@@ -147,7 +144,6 @@ var networksById = map[int]Network{
 	1135:     Lisk,
 	60808:    Bob,
 	100:      Gnosis,
-	196:      Xlayer,
 	1750:     Metal,
 	21000000: Corn,
 	146:      Sonic,
