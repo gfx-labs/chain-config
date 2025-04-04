@@ -6334,6 +6334,12 @@ declare const telos: Readonly<{
         openocean: string;
         icecreamswap: true;
     };
+    blockExplorers: {
+        default: {
+            name: string;
+            url: string;
+        };
+    };
     bridges: {
         stargate: {
             endpointID: number;
@@ -6415,12 +6421,6 @@ declare const telos: Readonly<{
         };
         multicall3: {
             address: "0xcA11bde05977b3631167028862bE2a173976CA11";
-        };
-    };
-    blockExplorers: {
-        readonly default: {
-            readonly name: "Teloscan";
-            readonly url: "https://www.teloscan.io/";
         };
     };
     id: 40;
@@ -14041,6 +14041,12 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         openocean: string;
         icecreamswap: true;
     };
+    blockExplorers: {
+        default: {
+            name: string;
+            url: string;
+        };
+    };
     bridges: {
         stargate: {
             endpointID: number;
@@ -14122,12 +14128,6 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         };
         multicall3: {
             address: "0xcA11bde05977b3631167028862bE2a173976CA11";
-        };
-    };
-    blockExplorers: {
-        readonly default: {
-            readonly name: "Teloscan";
-            readonly url: "https://www.teloscan.io/";
         };
     };
     id: 40;
