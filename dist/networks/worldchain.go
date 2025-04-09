@@ -20,19 +20,18 @@ var Worldchain Network = Network{
 			ApiUrl: "https://worldchain-mainnet.explorer.alchemy.com/api",
 		},
 	},
-	DefaultPool:   common.HexToAddress("0x0000000000000000000000000000000000000000"),
+	DefaultPool:   common.HexToAddress("0x610E319b3A3Ab56A0eD5562927D37c233774ba39"),
 	InternalName:  "worldchain",
 	InitCodeHash:  common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId:    map[string]string{},
-	DefaultToken0: common.HexToAddress("0x0000000000000000000000000000000000000000"),
-	DefaultToken1: common.HexToAddress("0x0000000000000000000000000000000000000000"),
+	DefaultToken0: common.HexToAddress("0x4200000000000000000000000000000000000006"),
+	DefaultToken1: common.HexToAddress("0x79a02482a880bce3f13e09da970dc34db4cd24d1"),
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0x79a02482a880bce3f13e09da970dc34db4cd24d1")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x79a02482a880bce3f13e09da970dc34db4cd24d1"): {}},
 	Watchlist:        []common.Address{},
 	BlockTimeSeconds: 2,
 	Oku: OkuMetadata{
-		LimitOrderRegistry: common.HexToAddress("0x0000000000000000000000000000000000000000"),
 
 		Pricing: OkuPricingMetadata{
 			NativeWrappedToken: common.HexToAddress("0x4200000000000000000000000000000000000006"),
@@ -42,15 +41,15 @@ var Worldchain Network = Network{
 		},
 	},
 	Uniswap: UniswapMetadata{
-		DeployBlock:                0,
-		PoolFactory:                common.HexToAddress("0x0000000000000000000000000000000000000000"),
-		Permit2:                    common.HexToAddress("0x0000000000000000000000000000000000000000"),
-		Multicall2:                 common.HexToAddress("0x0000000000000000000000000000000000000000"),
-		TickLens:                   common.HexToAddress("0x0000000000000000000000000000000000000000"),
-		NonfungiblePositionManager: common.HexToAddress("0x0000000000000000000000000000000000000000"),
-		PositionsNFT:               common.HexToAddress("0x0000000000000000000000000000000000000000"),
-		PositionsNFTDeployBlock:    0,
-		UniversalRouter:            common.HexToAddress("0x0000000000000000000000000000000000000000"),
+		DeployBlock:                1603366,
+		PoolFactory:                common.HexToAddress("0x7a5028BDa40e7B173C278C5342087826455ea25a"),
+		Permit2:                    common.HexToAddress("0x000000000022D473030F116dDEE9F6B43aC78BA3"),
+		Multicall2:                 common.HexToAddress("0x0a22c04215c97E3F532F4eF30e0aD9458792dAB9"),
+		TickLens:                   common.HexToAddress("0xE61df0CaC9d85876aCE5E3037005D80943570623"),
+		NonfungiblePositionManager: common.HexToAddress("0xec12a9F9a09f50550686363766Cc153D03c27b5e"),
+		PositionsNFT:               common.HexToAddress("0xec12a9F9a09f50550686363766Cc153D03c27b5e"),
+		PositionsNFTDeployBlock:    1603405,
+		UniversalRouter:            common.HexToAddress("0x8ac7bee993bb44dab564ea4bc9ea67bf9eb5e743"),
 		WrappedNativeAddress:       common.HexToAddress("0x4200000000000000000000000000000000000006"),
 		WrappedNativeSymbol:        "WETH",
 		WrappedNativeName:          "Wrapped Ether",
@@ -65,6 +64,8 @@ var Worldchain Network = Network{
 	},
 	Token: TokenMetadata{
 		WethAddress: common.HexToAddress("0x4200000000000000000000000000000000000006"),
+		UsdcAddress: common.HexToAddress("0x79a02482a880bce3f13e09da970dc34db4cd24d1"),
+		WbtcAddress: common.HexToAddress("0x03c7054bcb39f7b2e5b2c7acb37583e32d70cfa3"),
 	},
 	Contracts: map[string]ChainContract{
 		"gasPriceOracle": {
@@ -101,7 +102,7 @@ var Worldchain Network = Network{
 		},
 		"nftManager": {
 			BlockCreated: 0,
-			Address:      common.HexToAddress("0x0000000000000000000000000000000000000000"),
+			Address:      common.HexToAddress("0xec12a9F9a09f50550686363766Cc153D03c27b5e"),
 		},
 		"weth9": {
 			BlockCreated: 0,
@@ -109,7 +110,7 @@ var Worldchain Network = Network{
 		},
 		"multicall2": {
 			BlockCreated: 0,
-			Address:      common.HexToAddress("0x0000000000000000000000000000000000000000"),
+			Address:      common.HexToAddress("0x0a22c04215c97E3F532F4eF30e0aD9458792dAB9"),
 		},
 	},
 }

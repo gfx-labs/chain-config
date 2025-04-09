@@ -6463,14 +6463,14 @@ declare const worldchain: Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     uniswap: {
         deployBlock: number;
-        poolFactory: "0x0000000000000000000000000000000000000000";
-        permit2: "0x0000000000000000000000000000000000000000";
-        multicall2: "0x0000000000000000000000000000000000000000";
-        tickLens: "0x0000000000000000000000000000000000000000";
-        nonfungiblePositionManager: "0x0000000000000000000000000000000000000000";
-        positionsNFT: "0x0000000000000000000000000000000000000000";
+        poolFactory: "0x7a5028BDa40e7B173C278C5342087826455ea25a";
+        permit2: "0x000000000022D473030F116dDEE9F6B43aC78BA3";
+        multicall2: "0x0a22c04215c97E3F532F4eF30e0aD9458792dAB9";
+        tickLens: "0xE61df0CaC9d85876aCE5E3037005D80943570623";
+        nonfungiblePositionManager: "0xec12a9F9a09f50550686363766Cc153D03c27b5e";
+        positionsNFT: "0xec12a9F9a09f50550686363766Cc153D03c27b5e";
         positionsNFTDeployBlock: number;
-        universalRouter: "0x0000000000000000000000000000000000000000";
+        universalRouter: "0x8ac7bee993bb44dab564ea4bc9ea67bf9eb5e743";
         wrappedNativeAddress: "0x4200000000000000000000000000000000000006";
         wrappedNativeSymbol: string;
         wrappedNativeName: string;
@@ -6479,22 +6479,28 @@ declare const worldchain: Readonly<{
     };
     token: {
         wethAddress: "0x4200000000000000000000000000000000000006";
+        usdcAddress: "0x79a02482a880bce3f13e09da970dc34db4cd24d1";
+        wbtcAddress: "0x03c7054bcb39f7b2e5b2c7acb37583e32d70cfa3";
     };
     oku: {
-        limitOrderRegistry: "0x0000000000000000000000000000000000000000";
-        limitOrderRegistryDeployBlock: number;
         pricing: {
             nativeWrappedToken: "0x4200000000000000000000000000000000000006";
             nativeWrappedName: string;
         };
     };
-    defaultPool: "0x0000000000000000000000000000000000000000";
-    defaultToken0: "0x0000000000000000000000000000000000000000";
-    defaultToken1: "0x0000000000000000000000000000000000000000";
-    tokenList: {
+    defaultPool: "0x610E319b3A3Ab56A0eD5562927D37c233774ba39";
+    defaultToken0: "0x4200000000000000000000000000000000000006";
+    defaultToken1: "0x79a02482a880bce3f13e09da970dc34db4cd24d1";
+    tokenList: ({
         symbol: string;
         address: "0x4200000000000000000000000000000000000006";
-    }[];
+    } | {
+        symbol: string;
+        address: "0x79a02482a880bce3f13e09da970dc34db4cd24d1";
+    } | {
+        symbol: string;
+        address: "0x03c7054bcb39f7b2e5b2c7acb37583e32d70cfa3";
+    })[];
     stables: "0x79a02482a880bce3f13e09da970dc34db4cd24d1"[];
     watchlist: never[];
     internalName: "worldchain";
@@ -6504,13 +6510,13 @@ declare const worldchain: Readonly<{
             address: "0x0000000000000000000000000000000000000000";
         };
         nftManager: {
-            address: "0x0000000000000000000000000000000000000000";
+            address: "0xec12a9F9a09f50550686363766Cc153D03c27b5e";
         };
         weth9: {
             address: "0x4200000000000000000000000000000000000006";
         };
         multicall2: {
-            address: "0x0000000000000000000000000000000000000000";
+            address: "0x0a22c04215c97E3F532F4eF30e0aD9458792dAB9";
         };
         multicall3: {
             address: "0xcA11bde05977b3631167028862bE2a173976CA11";
@@ -14603,14 +14609,14 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     uniswap: {
         deployBlock: number;
-        poolFactory: "0x0000000000000000000000000000000000000000";
-        permit2: "0x0000000000000000000000000000000000000000";
-        multicall2: "0x0000000000000000000000000000000000000000";
-        tickLens: "0x0000000000000000000000000000000000000000";
-        nonfungiblePositionManager: "0x0000000000000000000000000000000000000000";
-        positionsNFT: "0x0000000000000000000000000000000000000000";
+        poolFactory: "0x7a5028BDa40e7B173C278C5342087826455ea25a";
+        permit2: "0x000000000022D473030F116dDEE9F6B43aC78BA3";
+        multicall2: "0x0a22c04215c97E3F532F4eF30e0aD9458792dAB9";
+        tickLens: "0xE61df0CaC9d85876aCE5E3037005D80943570623";
+        nonfungiblePositionManager: "0xec12a9F9a09f50550686363766Cc153D03c27b5e";
+        positionsNFT: "0xec12a9F9a09f50550686363766Cc153D03c27b5e";
         positionsNFTDeployBlock: number;
-        universalRouter: "0x0000000000000000000000000000000000000000";
+        universalRouter: "0x8ac7bee993bb44dab564ea4bc9ea67bf9eb5e743";
         wrappedNativeAddress: "0x4200000000000000000000000000000000000006";
         wrappedNativeSymbol: string;
         wrappedNativeName: string;
@@ -14619,22 +14625,28 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     };
     token: {
         wethAddress: "0x4200000000000000000000000000000000000006";
+        usdcAddress: "0x79a02482a880bce3f13e09da970dc34db4cd24d1";
+        wbtcAddress: "0x03c7054bcb39f7b2e5b2c7acb37583e32d70cfa3";
     };
     oku: {
-        limitOrderRegistry: "0x0000000000000000000000000000000000000000";
-        limitOrderRegistryDeployBlock: number;
         pricing: {
             nativeWrappedToken: "0x4200000000000000000000000000000000000006";
             nativeWrappedName: string;
         };
     };
-    defaultPool: "0x0000000000000000000000000000000000000000";
-    defaultToken0: "0x0000000000000000000000000000000000000000";
-    defaultToken1: "0x0000000000000000000000000000000000000000";
-    tokenList: {
+    defaultPool: "0x610E319b3A3Ab56A0eD5562927D37c233774ba39";
+    defaultToken0: "0x4200000000000000000000000000000000000006";
+    defaultToken1: "0x79a02482a880bce3f13e09da970dc34db4cd24d1";
+    tokenList: ({
         symbol: string;
         address: "0x4200000000000000000000000000000000000006";
-    }[];
+    } | {
+        symbol: string;
+        address: "0x79a02482a880bce3f13e09da970dc34db4cd24d1";
+    } | {
+        symbol: string;
+        address: "0x03c7054bcb39f7b2e5b2c7acb37583e32d70cfa3";
+    })[];
     stables: "0x79a02482a880bce3f13e09da970dc34db4cd24d1"[];
     watchlist: never[];
     internalName: "worldchain";
@@ -14644,13 +14656,13 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             address: "0x0000000000000000000000000000000000000000";
         };
         nftManager: {
-            address: "0x0000000000000000000000000000000000000000";
+            address: "0xec12a9F9a09f50550686363766Cc153D03c27b5e";
         };
         weth9: {
             address: "0x4200000000000000000000000000000000000006";
         };
         multicall2: {
-            address: "0x0000000000000000000000000000000000000000";
+            address: "0x0a22c04215c97E3F532F4eF30e0aD9458792dAB9";
         };
         multicall3: {
             address: "0xcA11bde05977b3631167028862bE2a173976CA11";
