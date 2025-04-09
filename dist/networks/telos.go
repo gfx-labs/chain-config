@@ -12,7 +12,7 @@ var Telos Network = Network{
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {
-			Url: "https://www.teloscan.io/",
+			Url: "https://telostx.com",
 		},
 	},
 	DefaultPool:   common.HexToAddress("0xa89c1c7d0975f1a98442e96e18a292982b12b3cd"),
