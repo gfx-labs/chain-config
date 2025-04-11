@@ -22,8 +22,8 @@ var Telos Network = Network{
 	DefaultToken0: common.HexToAddress("0xf1815bd50389c46847f0bda824ec8da914045d14"),
 	DefaultToken1: common.HexToAddress("0xD102cE6A4dB07D247fcc28F366A623Df0938CA9E"),
 	//TODO: TokenList:        []any{},
-	Stables:          []common.Address{common.HexToAddress("0x674843C06FF83502ddb4D37c2E09C01cdA38cbc8"), common.HexToAddress("0xF1815bd50389c46847f0Bda824eC8da914045D14")},
-	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x674843C06FF83502ddb4D37c2E09C01cdA38cbc8"): {}, common.HexToAddress("0xF1815bd50389c46847f0Bda824eC8da914045D14"): {}},
+	Stables:          []common.Address{common.HexToAddress("0x674843C06FF83502ddb4D37c2E09C01cdA38cbc8"), common.HexToAddress("0xF1815bd50389c46847f0Bda824eC8da914045D14"), common.HexToAddress("0x8f7D64ea96D729EF24a0F30b4526D47b80d877B9")},
+	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x674843C06FF83502ddb4D37c2E09C01cdA38cbc8"): {}, common.HexToAddress("0xF1815bd50389c46847f0Bda824eC8da914045D14"): {}, common.HexToAddress("0x8f7D64ea96D729EF24a0F30b4526D47b80d877B9"): {}},
 	Watchlist:        []common.Address{common.HexToAddress("0x11856fa7683aa9edf44a6ab368ec0cd02b03e6a1"), common.HexToAddress("0xd8606afb3f48a13229f52d6251c1aa3e05ad31a1"), common.HexToAddress("0xa48c8dd45ccf9c1ebf938c63c7cbc7cc259bf207"), common.HexToAddress("0xa89c1c7d0975f1a98442e96e18a292982b12b3cd")},
 	BlockTimeSeconds: 0.5,
 	Oku: OkuMetadata{

@@ -4171,10 +4171,12 @@
           { symbol: "USDT", address: "0x674843C06FF83502ddb4D37c2E09C01cdA38cbc8" },
           { symbol: "WBTC", address: "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c" },
           { symbol: "WETH", address: "0xBAb93B7ad7fE8692A878B95a8e689423437cc500" },
+          { symbol: "USDM", address: "0x8f7D64ea96D729EF24a0F30b4526D47b80d877B9" },
       ],
       stables: [
           "0x674843C06FF83502ddb4D37c2E09C01cdA38cbc8",
           "0xF1815bd50389c46847f0Bda824eC8da914045D14",
+          "0x8f7D64ea96D729EF24a0F30b4526D47b80d877B9",
       ],
       watchlist: [
           "0x11856fa7683aa9edf44a6ab368ec0cd02b03e6a1",

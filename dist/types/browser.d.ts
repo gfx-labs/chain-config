@@ -6441,8 +6441,11 @@ declare const telos: Readonly<{
     } | {
         symbol: string;
         address: "0xBAb93B7ad7fE8692A878B95a8e689423437cc500";
+    } | {
+        symbol: string;
+        address: "0x8f7D64ea96D729EF24a0F30b4526D47b80d877B9";
     })[];
-    stables: ("0xF1815bd50389c46847f0Bda824eC8da914045D14" | "0x674843C06FF83502ddb4D37c2E09C01cdA38cbc8")[];
+    stables: ("0xF1815bd50389c46847f0Bda824eC8da914045D14" | "0x674843C06FF83502ddb4D37c2E09C01cdA38cbc8" | "0x8f7D64ea96D729EF24a0F30b4526D47b80d877B9")[];
     watchlist: ("0xa89c1c7d0975f1a98442e96e18a292982b12b3cd" | "0x11856fa7683aa9edf44a6ab368ec0cd02b03e6a1" | "0xd8606afb3f48a13229f52d6251c1aa3e05ad31a1" | "0xa48c8dd45ccf9c1ebf938c63c7cbc7cc259bf207")[];
     internalName: "telos";
     nativeLogoUrl: "https://assets.oku.trade/natives/telos.png";
@@ -14293,8 +14296,11 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     } | {
         symbol: string;
         address: "0xBAb93B7ad7fE8692A878B95a8e689423437cc500";
+    } | {
+        symbol: string;
+        address: "0x8f7D64ea96D729EF24a0F30b4526D47b80d877B9";
     })[];
-    stables: ("0xF1815bd50389c46847f0Bda824eC8da914045D14" | "0x674843C06FF83502ddb4D37c2E09C01cdA38cbc8")[];
+    stables: ("0xF1815bd50389c46847f0Bda824eC8da914045D14" | "0x674843C06FF83502ddb4D37c2E09C01cdA38cbc8" | "0x8f7D64ea96D729EF24a0F30b4526D47b80d877B9")[];
     watchlist: ("0xa89c1c7d0975f1a98442e96e18a292982b12b3cd" | "0x11856fa7683aa9edf44a6ab368ec0cd02b03e6a1" | "0xd8606afb3f48a13229f52d6251c1aa3e05ad31a1" | "0xa48c8dd45ccf9c1ebf938c63c7cbc7cc259bf207")[];
     internalName: "telos";
     nativeLogoUrl: "https://assets.oku.trade/natives/telos.png";
