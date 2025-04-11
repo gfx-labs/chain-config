@@ -24,7 +24,8 @@ export const mainnet = makeConfig({
 	},
 	rpcUrls: {
 		default: {
-			http: ["https://rpc.ankr.com/eth"],
+			http: ["https://eth.drpc.org"],
+			webSocket: ["wss://eth.drpc.org"],
 		},
 	},
 	markets: {
