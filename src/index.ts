@@ -36,4 +36,5 @@ export const MAINNET_CHAINS = [
   defs.redbelly,
   defs.lightlink,
   defs.worldchain,
+  defs.xdc,
 ] as const;
