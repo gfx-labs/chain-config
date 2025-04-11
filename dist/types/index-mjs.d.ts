@@ -156,6 +156,7 @@ declare const arbitrum: Readonly<{
             readonly apiUrl: "https://api.arbiscan.io/api";
         };
     };
+    ensTlds?: readonly string[] | undefined;
     id: 42161;
     nativeCurrency: {
         readonly name: "Ether";
@@ -354,6 +355,7 @@ declare const base: Readonly<{
             readonly apiUrl: "https://api.basescan.org/api";
         };
     };
+    ensTlds?: readonly string[] | undefined;
     id: 8453;
     name: "Base";
     nativeCurrency: {
@@ -735,6 +737,7 @@ declare const blast: Readonly<{
             readonly apiUrl: "https://api.blastscan.io/api";
         };
     };
+    ensTlds?: readonly string[] | undefined;
     id: 81457;
     name: "Blast";
     nativeCurrency: {
@@ -1127,6 +1130,7 @@ declare const bob: Readonly<{
             readonly url: "https://explorer.gobob.xyz";
         };
     };
+    ensTlds?: readonly string[] | undefined;
     id: 60808;
     name: "BOB";
     nativeCurrency: {
@@ -1497,6 +1501,7 @@ declare const boba: Readonly<{
             address: "0xcA11bde05977b3631167028862bE2a173976CA11";
         };
     };
+    ensTlds?: readonly string[] | undefined;
     id: 288;
     rpcUrls: {
         readonly default: {
@@ -1646,6 +1651,7 @@ declare const bsc: Readonly<{
             readonly apiUrl: "https://api.bscscan.com/api";
         };
     };
+    ensTlds?: readonly string[] | undefined;
     id: 56;
     nativeCurrency: {
         readonly decimals: 18;
@@ -1764,6 +1770,7 @@ declare const celo: Readonly<{
             readonly apiUrl: "https://api.celoscan.io/api";
         };
     };
+    ensTlds?: readonly string[] | undefined;
     id: 42220;
     name: "Celo";
     nativeCurrency: {
@@ -2705,6 +2712,7 @@ declare const corn: Readonly<{
             readonly apiUrl: "https://api.routescan.io/v2/network/mainnet/evm/21000000/etherscan/api";
         };
     };
+    ensTlds?: readonly string[] | undefined;
     id: 21000000;
     nativeCurrency: {
         readonly decimals: 18;
@@ -2835,6 +2843,7 @@ declare const filecoin: Readonly<{
             address: "0xcA11bde05977b3631167028862bE2a173976CA11";
         };
     };
+    ensTlds?: readonly string[] | undefined;
     id: 314;
     nativeCurrency: {
         readonly decimals: 18;
@@ -2979,6 +2988,7 @@ declare const gnosis: Readonly<{
             readonly apiUrl: "https://api.gnosisscan.io/api";
         };
     };
+    ensTlds?: readonly string[] | undefined;
     id: 100;
     name: "Gnosis";
     nativeCurrency: {
@@ -3095,6 +3105,7 @@ declare const goat: Readonly<{
             readonly url: "https://explorer.goat.network";
         };
     };
+    ensTlds?: readonly string[] | undefined;
     id: 2345;
     nativeCurrency: {
         readonly decimals: 18;
@@ -3212,6 +3223,7 @@ declare const hemi: Readonly<{
             readonly url: "https://explorer.hemi.xyz";
         };
     };
+    ensTlds?: readonly string[] | undefined;
     id: 43111;
     name: "Hemi";
     nativeCurrency: {
@@ -3335,6 +3347,7 @@ declare const lightlink: Readonly<{
             readonly url: "https://phoenix.lightlink.io";
         };
     };
+    ensTlds?: readonly string[] | undefined;
     id: 1890;
     nativeCurrency: {
         readonly decimals: 18;
@@ -3467,6 +3480,14 @@ declare const linea: Readonly<{
         multicall3: {
             address: "0xcA11bde05977b3631167028862bE2a173976CA11";
         };
+        ensRegistry: {
+            readonly address: "0x50130b669B28C339991d8676FA73CF122a121267";
+            readonly blockCreated: 6682888;
+        };
+        ensUniversalResolver: {
+            readonly address: "0x3aA974fb3f8C1E02796048BDCdeD79e9D53a6965";
+            readonly blockCreated: 6683000;
+        };
     };
     blockExplorers: {
         readonly default: {
@@ -3475,6 +3496,9 @@ declare const linea: Readonly<{
             readonly apiUrl: "https://api.lineascan.build/api";
         };
     };
+    ensTlds: readonly [
+        ".linea.eth"
+    ];
     id: 59144;
     nativeCurrency: {
         readonly name: "Linea Ether";
@@ -3619,6 +3643,7 @@ declare const lisk: Readonly<{
             readonly address: "0x4200000000000000000000000000000000000016";
         };
     };
+    ensTlds?: readonly string[] | undefined;
     id: 1135;
     name: "Lisk";
     nativeCurrency: {
@@ -3897,6 +3922,7 @@ declare const mainnet: Readonly<{
     rpcUrls: {
         default: {
             http: string[];
+            webSocket: string[];
         };
     };
     markets: {
@@ -4049,6 +4075,7 @@ declare const mainnet: Readonly<{
             readonly apiUrl: "https://api.etherscan.io/api";
         };
     };
+    ensTlds?: readonly string[] | undefined;
     id: 1;
     name: "Ethereum";
     nativeCurrency: {
@@ -4166,6 +4193,7 @@ declare const manta: Readonly<{
             readonly apiUrl: "https://pacific-explorer.manta.network/api";
         };
     };
+    ensTlds?: readonly string[] | undefined;
     id: 169;
     nativeCurrency: {
         readonly decimals: 18;
@@ -4299,6 +4327,7 @@ declare const mantle: Readonly<{
             readonly apiUrl: "https://api.mantlescan.xyz/api";
         };
     };
+    ensTlds?: readonly string[] | undefined;
     id: 5000;
     name: "Mantle";
     nativeCurrency: {
@@ -4433,6 +4462,7 @@ declare const metal: Readonly<{
             readonly apiUrl: "https://explorer.metall2.com/api";
         };
     };
+    ensTlds?: readonly string[] | undefined;
     id: 1750;
     name: "Metal L2";
     nativeCurrency: {
@@ -4796,6 +4826,7 @@ declare const moonbeam: Readonly<{
             readonly apiUrl: "https://api-moonbeam.moonscan.io/api";
         };
     };
+    ensTlds?: readonly string[] | undefined;
     id: 1284;
     name: "Moonbeam";
     nativeCurrency: {
@@ -5011,6 +5042,7 @@ declare const optimism: Readonly<{
             readonly apiUrl: "https://api-optimistic.etherscan.io/api";
         };
     };
+    ensTlds?: readonly string[] | undefined;
     id: 10;
     nativeCurrency: {
         readonly name: "Ether";
@@ -5416,6 +5448,7 @@ declare const polygon: Readonly<{
             readonly apiUrl: "https://api.polygonscan.com/api";
         };
     };
+    ensTlds?: readonly string[] | undefined;
     id: 137;
     name: "Polygon";
     nativeCurrency: {
@@ -5522,6 +5555,7 @@ declare const redbelly: Readonly<{
             readonly apiUrl: "https://api.routescan.io/v2/network/mainnet/evm/151/etherscan/api";
         };
     };
+    ensTlds?: readonly string[] | undefined;
     id: 151;
     nativeCurrency: {
         readonly name: "Redbelly Native Coin";
@@ -5657,6 +5691,7 @@ declare const rootstock: Readonly<{
             readonly blockCreated: 4249540;
         };
     };
+    ensTlds?: readonly string[] | undefined;
     id: 30;
     nativeCurrency: {
         readonly decimals: 18;
@@ -5771,6 +5806,7 @@ declare const saga: Readonly<{
             address: "0x864DDc9B50B9A0dF676d826c9B9EDe9F8913a160";
         };
     };
+    ensTlds?: readonly string[] | undefined;
     id: 5464;
     nativeCurrency: {
         readonly decimals: 18;
@@ -5912,6 +5948,7 @@ declare const scroll: Readonly<{
             readonly apiUrl: "https://api.scrollscan.com/api";
         };
     };
+    ensTlds?: readonly string[] | undefined;
     id: 534352;
     name: "Scroll";
     nativeCurrency: {
@@ -6050,6 +6087,7 @@ declare const sei: Readonly<{
             address: "0xcA11bde05977b3631167028862bE2a173976CA11";
         };
     };
+    ensTlds?: readonly string[] | undefined;
     id: 1329;
     name: "Sei Network";
     nativeCurrency: {
@@ -6173,6 +6211,7 @@ declare const sonic: Readonly<{
             readonly url: "https://sonicscan.org";
         };
     };
+    ensTlds?: readonly string[] | undefined;
     id: 146;
     name: "Sonic";
     nativeCurrency: {
@@ -6299,6 +6338,7 @@ declare const taiko: Readonly<{
             address: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D";
         };
     };
+    ensTlds?: readonly string[] | undefined;
     id: 167000;
     name: "Taiko Mainnet";
     nativeCurrency: {
@@ -6423,6 +6463,7 @@ declare const telos: Readonly<{
             address: "0xcA11bde05977b3631167028862bE2a173976CA11";
         };
     };
+    ensTlds?: readonly string[] | undefined;
     id: 40;
     name: "Telos";
     nativeCurrency: {
@@ -6572,6 +6613,7 @@ declare const worldchain: Readonly<{
             readonly apiUrl: "https://worldchain-mainnet.explorer.alchemy.com/api";
         };
     };
+    ensTlds?: readonly string[] | undefined;
     id: 480;
     name: "World Chain";
     nativeCurrency: {
@@ -6938,6 +6980,7 @@ declare const polygonZkEvm: Readonly<{
             readonly apiUrl: "https://api-zkevm.polygonscan.com/api";
         };
     };
+    ensTlds?: readonly string[] | undefined;
     id: 1101;
     name: "Polygon zkEVM";
     nativeCurrency: {
@@ -7075,6 +7118,7 @@ declare const zkSync: Readonly<{
             readonly blockCreated: 45659388;
         };
     };
+    ensTlds?: readonly string[] | undefined;
     id: 324;
     name: "ZKsync Era";
     nativeCurrency: {
@@ -7794,6 +7838,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly apiUrl: "https://api.arbiscan.io/api";
         };
     };
+    ensTlds?: readonly string[] | undefined;
     id: 42161;
     nativeCurrency: {
         readonly name: "Ether";
@@ -7989,6 +8034,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly apiUrl: "https://api.basescan.org/api";
         };
     };
+    ensTlds?: readonly string[] | undefined;
     id: 8453;
     name: "Base";
     nativeCurrency: {
@@ -8350,6 +8396,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             address: "0xcA11bde05977b3631167028862bE2a173976CA11";
         };
     };
+    ensTlds?: readonly string[] | undefined;
     id: 288;
     rpcUrls: {
         readonly default: {
@@ -8487,6 +8534,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly apiUrl: "https://api.blastscan.io/api";
         };
     };
+    ensTlds?: readonly string[] | undefined;
     id: 81457;
     name: "Blast";
     nativeCurrency: {
@@ -8871,6 +8919,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly apiUrl: "https://api.bscscan.com/api";
         };
     };
+    ensTlds?: readonly string[] | undefined;
     id: 56;
     nativeCurrency: {
         readonly decimals: 18;
@@ -8998,6 +9047,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             address: "0xcA11bde05977b3631167028862bE2a173976CA11";
         };
     };
+    ensTlds?: readonly string[] | undefined;
     id: 314;
     nativeCurrency: {
         readonly decimals: 18;
@@ -9036,6 +9086,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     rpcUrls: {
         default: {
             http: string[];
+            webSocket: string[];
         };
     };
     markets: {
@@ -9188,6 +9239,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly apiUrl: "https://api.etherscan.io/api";
         };
     };
+    ensTlds?: readonly string[] | undefined;
     id: 1;
     name: "Ethereum";
     nativeCurrency: {
@@ -9305,6 +9357,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly apiUrl: "https://api-moonbeam.moonscan.io/api";
         };
     };
+    ensTlds?: readonly string[] | undefined;
     id: 1284;
     name: "Moonbeam";
     nativeCurrency: {
@@ -9515,6 +9568,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly apiUrl: "https://api-optimistic.etherscan.io/api";
         };
     };
+    ensTlds?: readonly string[] | undefined;
     id: 10;
     nativeCurrency: {
         readonly name: "Ether";
@@ -9914,6 +9968,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly apiUrl: "https://api.polygonscan.com/api";
         };
     };
+    ensTlds?: readonly string[] | undefined;
     id: 137;
     name: "Polygon";
     nativeCurrency: {
@@ -10047,6 +10102,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly blockCreated: 4249540;
         };
     };
+    ensTlds?: readonly string[] | undefined;
     id: 30;
     nativeCurrency: {
         readonly decimals: 18;
@@ -10192,6 +10248,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly apiUrl: "https://api.scrollscan.com/api";
         };
     };
+    ensTlds?: readonly string[] | undefined;
     id: 534352;
     name: "Scroll";
     nativeCurrency: {
@@ -10320,6 +10377,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly apiUrl: "https://api-zkevm.polygonscan.com/api";
         };
     };
+    ensTlds?: readonly string[] | undefined;
     id: 1101;
     name: "Polygon zkEVM";
     nativeCurrency: {
@@ -10454,6 +10512,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly blockCreated: 45659388;
         };
     };
+    ensTlds?: readonly string[] | undefined;
     id: 324;
     name: "ZKsync Era";
     nativeCurrency: {
@@ -10948,6 +11007,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly apiUrl: "https://pacific-explorer.manta.network/api";
         };
     };
+    ensTlds?: readonly string[] | undefined;
     id: 169;
     nativeCurrency: {
         readonly decimals: 18;
@@ -11077,6 +11137,14 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         multicall3: {
             address: "0xcA11bde05977b3631167028862bE2a173976CA11";
         };
+        ensRegistry: {
+            readonly address: "0x50130b669B28C339991d8676FA73CF122a121267";
+            readonly blockCreated: 6682888;
+        };
+        ensUniversalResolver: {
+            readonly address: "0x3aA974fb3f8C1E02796048BDCdeD79e9D53a6965";
+            readonly blockCreated: 6683000;
+        };
     };
     blockExplorers: {
         readonly default: {
@@ -11085,6 +11153,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly apiUrl: "https://api.lineascan.build/api";
         };
     };
+    ensTlds: readonly [".linea.eth"];
     id: 59144;
     nativeCurrency: {
         readonly name: "Linea Ether";
@@ -11211,6 +11280,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             address: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D";
         };
     };
+    ensTlds?: readonly string[] | undefined;
     id: 167000;
     name: "Taiko Mainnet";
     nativeCurrency: {
@@ -11342,6 +11412,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly apiUrl: "https://api.mantlescan.xyz/api";
         };
     };
+    ensTlds?: readonly string[] | undefined;
     id: 5000;
     name: "Mantle";
     nativeCurrency: {
@@ -11474,6 +11545,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             address: "0xcA11bde05977b3631167028862bE2a173976CA11";
         };
     };
+    ensTlds?: readonly string[] | undefined;
     id: 1329;
     name: "Sei Network";
     nativeCurrency: {
@@ -11611,6 +11683,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly address: "0x4200000000000000000000000000000000000016";
         };
     };
+    ensTlds?: readonly string[] | undefined;
     id: 1135;
     name: "Lisk";
     nativeCurrency: {
@@ -11998,6 +12071,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly url: "https://explorer.gobob.xyz";
         };
     };
+    ensTlds?: readonly string[] | undefined;
     id: 60808;
     name: "BOB";
     nativeCurrency: {
@@ -12373,6 +12447,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly apiUrl: "https://api.gnosisscan.io/api";
         };
     };
+    ensTlds?: readonly string[] | undefined;
     id: 100;
     name: "Gnosis";
     nativeCurrency: {
@@ -12505,6 +12580,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly apiUrl: "https://explorer.metall2.com/api";
         };
     };
+    ensTlds?: readonly string[] | undefined;
     id: 1750;
     name: "Metal L2";
     nativeCurrency: {
@@ -12848,6 +12924,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly apiUrl: "https://api.routescan.io/v2/network/mainnet/evm/21000000/etherscan/api";
         };
     };
+    ensTlds?: readonly string[] | undefined;
     id: 21000000;
     nativeCurrency: {
         readonly decimals: 18;
@@ -12964,6 +13041,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly url: "https://sonicscan.org";
         };
     };
+    ensTlds?: readonly string[] | undefined;
     id: 146;
     name: "Sonic";
     nativeCurrency: {
@@ -13080,6 +13158,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly apiUrl: "https://api.celoscan.io/api";
         };
     };
+    ensTlds?: readonly string[] | undefined;
     id: 42220;
     name: "Celo";
     nativeCurrency: {
@@ -14017,6 +14096,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly url: "https://explorer.hemi.xyz";
         };
     };
+    ensTlds?: readonly string[] | undefined;
     id: 43111;
     name: "Hemi";
     nativeCurrency: {
@@ -14136,6 +14216,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             address: "0xcA11bde05977b3631167028862bE2a173976CA11";
         };
     };
+    ensTlds?: readonly string[] | undefined;
     id: 40;
     name: "Telos";
     nativeCurrency: {
@@ -14247,6 +14328,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             address: "0x864DDc9B50B9A0dF676d826c9B9EDe9F8913a160";
         };
     };
+    ensTlds?: readonly string[] | undefined;
     id: 5464;
     nativeCurrency: {
         readonly decimals: 18;
@@ -14352,6 +14434,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly url: "https://explorer.goat.network";
         };
     };
+    ensTlds?: readonly string[] | undefined;
     id: 2345;
     nativeCurrency: {
         readonly decimals: 18;
@@ -14454,6 +14537,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly apiUrl: "https://api.routescan.io/v2/network/mainnet/evm/151/etherscan/api";
         };
     };
+    ensTlds?: readonly string[] | undefined;
     id: 151;
     nativeCurrency: {
         readonly name: "Redbelly Native Coin";
@@ -14572,6 +14656,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly url: "https://phoenix.lightlink.io";
         };
     };
+    ensTlds?: readonly string[] | undefined;
     id: 1890;
     nativeCurrency: {
         readonly decimals: 18;
@@ -14718,6 +14803,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly apiUrl: "https://worldchain-mainnet.explorer.alchemy.com/api";
         };
     };
+    ensTlds?: readonly string[] | undefined;
     id: 480;
     name: "World Chain";
     nativeCurrency: {

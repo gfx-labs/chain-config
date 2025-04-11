@@ -66,6 +66,14 @@ var Linea Network = Network{
 			BlockCreated: 0,
 			Address:      common.HexToAddress("0xcA11bde05977b3631167028862bE2a173976CA11"),
 		},
+		"ensRegistry": {
+			BlockCreated: 6682888,
+			Address:      common.HexToAddress("0x50130b669B28C339991d8676FA73CF122a121267"),
+		},
+		"ensUniversalResolver": {
+			BlockCreated: 6683000,
+			Address:      common.HexToAddress("0x3aA974fb3f8C1E02796048BDCdeD79e9D53a6965"),
+		},
 		"limitOrder": {
 			BlockCreated: 0,
 			Address:      common.HexToAddress("0x63c8527f670d4eb3401c80c5905ceca8727f1e74"),
