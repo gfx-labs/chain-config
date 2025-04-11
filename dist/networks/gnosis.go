@@ -37,7 +37,7 @@ var Gnosis Network = Network{
 		Pricing: OkuPricingMetadata{
 			NativeWrappedToken: common.HexToAddress("0xe91d153e0b41518a2ce8dd3d7944fa863463a97d"),
 			NativeWrappedName:  "xDAI",
-			Pools:              []common.Address{},
+			Pools:              []common.Address{common.HexToAddress("0x5a2fb66e66b2af7f1c2f71c6c695492faab2e587")},
 			NativeQuotePools:   []ChainContract{},
 		},
 	},

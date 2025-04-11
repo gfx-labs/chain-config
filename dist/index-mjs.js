@@ -1,4 +1,4 @@
-import { arbitrum as arbitrum$1, base as base$1, blast as blast$1, bob as bob$1, boba as boba$1, bsc as bsc$1, celo as celo$1, corn as corn$1, filecoin as filecoin$1, gnosis as gnosis$1, goat as goat$1, hemi as hemi$1, lightlinkPhoenix, linea as linea$1, lisk as lisk$1, mainnet as mainnet$1, manta as manta$1, mantle as mantle$1, metalL2, moonbeam as moonbeam$1, optimism as optimism$1, polygon as polygon$1, redbellyMainnet, rootstock as rootstock$1, saga as saga$1, scroll as scroll$1, sei as sei$1, sonic as sonic$1, taiko as taiko$1, telos as telos$1, worldchain as worldchain$1, xLayer as xLayer$1, polygonZkEvm as polygonZkEvm$1, zksync } from 'viem/chains';
+import { arbitrum as arbitrum$1, base as base$1, blast as blast$1, bob as bob$1, boba as boba$1, bsc as bsc$1, celo as celo$1, corn as corn$1, filecoin as filecoin$1, gnosis as gnosis$1, goat as goat$1, hemi as hemi$1, lightlinkPhoenix, linea as linea$1, lisk as lisk$1, mainnet as mainnet$1, manta as manta$1, mantle as mantle$1, metalL2, moonbeam as moonbeam$1, optimism as optimism$1, polygon as polygon$1, redbellyMainnet, rootstock as rootstock$1, saga as saga$1, scroll as scroll$1, sei as sei$1, sonic as sonic$1, taiko as taiko$1, telos as telos$1, worldchain as worldchain$1, polygonZkEvm as polygonZkEvm$1, zksync } from 'viem/chains';
 import { zeroAddress } from 'viem';
 
 const makeConfig = (x) => {
@@ -579,7 +579,7 @@ const bob = makeConfig({
             atlasNetworkName: "bitcoin-mainnet-bob",
             routerAddress: "0x827716e74F769AB7b6bb374A29235d9c2156932C",
             chainSelector: 3849287863852499584n,
-            tokenAdminRegistry: "0xa57d04119AFf4884F8602213E58d8AaAD18229cb"
+            tokenAdminRegistry: "0xa57d04119AFf4884F8602213E58d8AaAD18229cb",
         },
     },
     morpho: {},
@@ -1152,8 +1152,12 @@ const corn = makeConfig({
         { symbol: "WBTCN", address: "0xda5dDd7270381A7C2717aD10D1c0ecB19e3CDFb2" },
         { symbol: "USDC.e", address: "0xDF0B24095e15044538866576754F3C964e902Ee6" },
     ],
-    stables: ["0xDF0B24095e15044538866576754F3C964e902Ee6"],
+    stables: [
+        "0xDF0B24095e15044538866576754F3C964e902Ee6",
+        "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
+    ],
     watchlist: [
+        "0x660c6c6c2ad9be9fca2d40da22e1e6142ce5e7ca",
         "0xe435E14815d28a86c643E4606Ed0e8E5624782c6",
         "0x43aA32cf4f6389aB89d8C79092A0fc65899C20ba",
         "0x0F12dac5217868b3d6772632543ef16df8df17E5",
@@ -1347,15 +1351,15 @@ const gnosis = makeConfig({
                 {
                     name: "USDC",
                     id: 1,
-                    address: "0xB1EeAD6959cb5bB9B20417d6689922523B2B86C3"
+                    address: "0xB1EeAD6959cb5bB9B20417d6689922523B2B86C3",
                 },
                 {
                     name: "ETH",
                     id: 13,
-                    address: "0xe9aBA835f813ca05E50A6C0ce65D0D74390F7dE7"
-                }
-            ]
-        }
+                    address: "0xe9aBA835f813ca05E50A6C0ce65D0D74390F7dE7",
+                },
+            ],
+        },
     },
     oracles: {
         cmc: {
@@ -1393,6 +1397,7 @@ const gnosis = makeConfig({
         limitOrderRegistry: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435",
         limitOrderRegistryDeployBlock: 35719277,
         pricing: {
+            pools: ["0x5a2fb66e66b2af7f1c2f71c6c695492faab2e587"],
             nativeWrappedToken: "0xe91d153e0b41518a2ce8dd3d7944fa863463a97d",
             nativeWrappedName: "xDAI",
         },
@@ -4090,6 +4095,12 @@ const telos = makeConfig({
         openocean: "telos",
         icecreamswap: true,
     },
+    blockExplorers: {
+        default: {
+            name: "Blockscout",
+            url: "https://telostx.com",
+        },
+    },
     bridges: {
         stargate: {
             endpointID: 30199,
@@ -4208,15 +4219,15 @@ const worldchain = makeConfig({
     },
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
     uniswap: {
-        deployBlock: 0,
-        poolFactory: zeroAddress,
-        permit2: zeroAddress,
-        multicall2: zeroAddress,
-        tickLens: zeroAddress,
-        nonfungiblePositionManager: zeroAddress,
-        positionsNFT: zeroAddress,
-        positionsNFTDeployBlock: 0,
-        universalRouter: zeroAddress,
+        deployBlock: 1603366,
+        poolFactory: "0x7a5028BDa40e7B173C278C5342087826455ea25a",
+        permit2: "0x000000000022D473030F116dDEE9F6B43aC78BA3",
+        multicall2: "0x0a22c04215c97E3F532F4eF30e0aD9458792dAB9",
+        tickLens: "0xE61df0CaC9d85876aCE5E3037005D80943570623",
+        nonfungiblePositionManager: "0xec12a9F9a09f50550686363766Cc153D03c27b5e",
+        positionsNFT: "0xec12a9F9a09f50550686363766Cc153D03c27b5e",
+        positionsNFTDeployBlock: 1603405,
+        universalRouter: "0x8ac7bee993bb44dab564ea4bc9ea67bf9eb5e743",
         wrappedNativeAddress: "0x4200000000000000000000000000000000000006",
         wrappedNativeSymbol: "WETH",
         wrappedNativeName: "Wrapped Ether",
@@ -4225,20 +4236,22 @@ const worldchain = makeConfig({
     },
     token: {
         wethAddress: "0x4200000000000000000000000000000000000006",
+        usdcAddress: "0x79a02482a880bce3f13e09da970dc34db4cd24d1",
+        wbtcAddress: "0x03c7054bcb39f7b2e5b2c7acb37583e32d70cfa3",
     },
     oku: {
-        limitOrderRegistry: zeroAddress,
-        limitOrderRegistryDeployBlock: 0,
         pricing: {
             nativeWrappedToken: "0x4200000000000000000000000000000000000006",
             nativeWrappedName: "ETH",
         },
     },
-    defaultPool: zeroAddress,
-    defaultToken0: zeroAddress,
-    defaultToken1: zeroAddress,
+    defaultPool: "0x610E319b3A3Ab56A0eD5562927D37c233774ba39",
+    defaultToken0: "0x4200000000000000000000000000000000000006",
+    defaultToken1: "0x79a02482a880bce3f13e09da970dc34db4cd24d1",
     tokenList: [
         { symbol: "WETH", address: "0x4200000000000000000000000000000000000006" },
+        { symbol: "USDC", address: "0x79a02482a880bce3f13e09da970dc34db4cd24d1" },
+        { symbol: "WBTC", address: "0x03c7054bcb39f7b2e5b2c7acb37583e32d70cfa3" },
     ],
     stables: ["0x79a02482a880bce3f13e09da970dc34db4cd24d1"],
     watchlist: [],
@@ -4250,111 +4263,13 @@ const worldchain = makeConfig({
             address: zeroAddress,
         },
         nftManager: {
-            address: zeroAddress,
+            address: "0xec12a9F9a09f50550686363766Cc153D03c27b5e",
         },
         weth9: {
             address: "0x4200000000000000000000000000000000000006",
         },
         multicall2: {
-            address: zeroAddress,
-        },
-        multicall3: {
-            address: "0xcA11bde05977b3631167028862bE2a173976CA11",
-        },
-    },
-});
-
-const xLayer = makeConfig({
-    ...xLayer$1,
-    blockTimeSeconds: 3,
-    launchTime: 0,
-    sortIndex: 18,
-    logoUrl: "https://assets.oku.trade/chains/xlayer-logo.png",
-    safeReorgDistance: 90000,
-    externalId: {},
-    markets: {
-        icecreamswap: true
-    },
-    bridges: {
-        chainlink: {
-            atlasNetworkName: "ethereum-mainnet-xlayer-1",
-            routerAddress: "0xF2b6Cb7867EB5502C3249dD37D7bc1Cc148e5232",
-            chainSelector: 3016212468291539606n,
-            tokenAdminRegistry: "0xeCf1eAEE01E82F3388dECD7f4C3792374f3f72F3"
-        },
-    },
-    morpho: {},
-    oracles: {
-        cmc: {
-            slug: "x-layer",
-            native: "okb",
-        },
-        coingecko: {
-            slug: "x-layer",
-            native: "okb",
-        },
-        dexscreener: "x-layer",
-    },
-    initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
-    uniswap: {
-        deployBlock: 4345920,
-        poolFactory: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D",
-        permit2: "0x000000000022D473030F116dDEE9F6B43aC78BA3",
-        multicall2: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435",
-        tickLens: "0xB3309C48F8407651D918ca3Da4C45DE40109E641",
-        nonfungiblePositionManager: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c",
-        positionsNFT: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c",
-        positionsNFTDeployBlock: 4346185,
-        universalRouter: "0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc",
-        wrappedNativeAddress: "0xe538905cf8410324e03a5a23c1c177a474d59b2b",
-        wrappedNativeSymbol: "WOKB",
-        wrappedNativeName: "Wrapped OKB",
-        wrappedNativeDecimals: 18,
-        nativeCurrencyName: "OKB",
-    },
-    token: {
-        usdcAddress: "0x74b7f16337b8972027f6196a17a631ac6de26d22",
-        wethAddress: "0xe538905cf8410324e03a5a23c1c177a474d59b2b",
-    },
-    oku: {
-        limitOrderRegistry: "0x9db70E29712Cc8Af10c2B597BaDA6784544FF407",
-        limitOrderRegistryDeployBlock: 4348466,
-        pricing: {
-            nativeWrappedToken: "0xe538905cf8410324e03a5a23c1c177a474d59b2b",
-            nativeWrappedName: "OKB",
-        },
-    },
-    defaultPool: "0x87d7a0a51e27bf7232f97015ab3e53edc8104989",
-    defaultToken0: "0x74b7f16337b8972027f6196a17a631ac6de26d22",
-    defaultToken1: "0xe538905cf8410324e03a5a23c1c177a474d59b2b",
-    tokenList: [
-        { symbol: "WOKB", address: "0xe538905cf8410324e03a5a23c1c177a474d59b2b" },
-        { symbol: "USDC", address: "0x2a22f9c3b484c3629090feed35f17ff8f88f76f0" },
-        { symbol: "USDT", address: "0x1e4a5963abfd975d8c9021ce480b42188849d41d" },
-        { symbol: "DAI", address: "0xc5015b9d9161dca7e18e32f6f25c4ad850731fd4" },
-        { symbol: "WBTC", address: "0xea034fb02eb1808c2cc3adbc15f447b93cbe08e1" },
-    ],
-    stables: [
-        "0x2a22f9c3b484c3629090feed35f17ff8f88f76f0",
-        "0x1e4a5963abfd975d8c9021ce480b42188849d41d",
-        "0xc5015b9d9161dca7e18e32f6f25c4ad850731fd4",
-    ],
-    watchlist: ["0x87d7a0a51e27bf7232f97015ab3e53edc8104989"],
-    internalName: "xlayer",
-    nativeLogoUrl: "https://assets.oku.trade/natives/okb.png",
-    contracts: {
-        ...xLayer$1.contracts,
-        limitOrder: {
-            address: "0x9db70E29712Cc8Af10c2B597BaDA6784544FF407",
-        },
-        nftManager: {
-            address: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c",
-        },
-        weth9: {
-            address: "0xe538905cf8410324e03a5a23c1c177a474d59b2b",
-        },
-        multicall2: {
-            address: "0xcA11bde05977b3631167028862bE2a173976CA11",
+            address: "0x0a22c04215c97E3F532F4eF30e0aD9458792dAB9",
         },
         multicall3: {
             address: "0xcA11bde05977b3631167028862bE2a173976CA11",
@@ -4622,7 +4537,6 @@ const MAINNET_CHAINS = [
     lisk,
     bob,
     gnosis,
-    xLayer,
     metal,
     corn,
     sonic,
@@ -4636,4 +4550,4 @@ const MAINNET_CHAINS = [
     worldchain,
 ];
 
-export { MAINNET_CHAINS, arbitrum, base, blast, bob, boba, bsc, celo, corn, filecoin, gnosis, goat, hemi, lightlink, linea, lisk, mainnet, manta, mantle, metal, moonbeam, optimism, polygon, polygonZkEvm, redbelly, rootstock, saga, scroll, sei, sonic, taiko, telos, worldchain, xLayer, zkSync };
+export { MAINNET_CHAINS, arbitrum, base, blast, bob, boba, bsc, celo, corn, filecoin, gnosis, goat, hemi, lightlink, linea, lisk, mainnet, manta, mantle, metal, moonbeam, optimism, polygon, polygonZkEvm, redbelly, rootstock, saga, scroll, sei, sonic, taiko, telos, worldchain, zkSync };
