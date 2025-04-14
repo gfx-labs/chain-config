@@ -27,20 +27,22 @@ export const rootstock = makeConfig({
           name: "ETH",
           type: "OFT",
           id: 13,
-          address: "0x45f1A95A4D3f3836523F5c83673c797f4d4d263B"
-        }, {
+          address: "0x45f1A95A4D3f3836523F5c83673c797f4d4d263B",
+        },
+        {
           name: "USDC",
           type: "OFT",
           id: 1,
-          address: "0xAF54BE5B6eEc24d6BFACf1cce4eaF680A8239398"
-        }, {
+          address: "0xAF54BE5B6eEc24d6BFACf1cce4eaF680A8239398",
+        },
+        {
           name: "USDT",
           type: "OFT",
           id: 2,
-          address: "0xAf5191B0De278C7286d6C7CC6ab6BB8A73bA2Cd6"
-        }
-      ]
-    }
+          address: "0xAf5191B0De278C7286d6C7CC6ab6BB8A73bA2Cd6",
+        },
+      ],
+    },
   },
   oracles: {
     cmc: {
@@ -111,6 +113,8 @@ export const rootstock = makeConfig({
     "0xcba7abe98fd6a65259837d76a3409841c1dd4288",
     "0xbe092d38045ef7f9cdc5014278a4239e896bf5ca",
     "0xb74d0aa1711eb859eead7cfe3fe5921eedd7e5bf",
+    "0x8f597295f1412a079088fc51c8a95e6698c31777",
+    "0x71d0d054974121ae37a76762e1fa02ffa150eba1",
   ],
   internalName: "rootstock",
   nativeLogoUrl: "https://assets.oku.trade/natives/rbtc.png",
