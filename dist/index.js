@@ -1165,6 +1165,7 @@ const corn = makeConfig({
         "0x0F12dac5217868b3d6772632543ef16df8df17E5",
         "0xbD108c1Dd7802DFF6c24138A72949184FFbe006F",
         "0xb6a7be3ca6698859b374640b3db439fda7b7a5e3",
+        "0x255f0b304f701a0530f5dc1739a3d1469e21dd5f",
     ],
     internalName: "corn",
     nativeLogoUrl: "https://assets.oku.trade/natives/corn.png",
