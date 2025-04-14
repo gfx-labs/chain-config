@@ -5667,7 +5667,7 @@ declare const rootstock: Readonly<{
         address: "0x74c9f2b00581f1b11aa7ff05aa9f608b7389de67";
     })[];
     stables: ("0xef213441a85df4d7acbdae0cf78004e1e486bb96" | "0x74c9f2b00581f1b11aa7ff05aa9f608b7389de67" | "0x3a15461d8ae0f0fb5fa2629e9da7d66a794a6e37" | "0xaf368c91793cb22739386dfcbbb2f1a9e4bcbebf")[];
-    watchlist: ("0xd2ffe51ab4e622a411abbe634832a19d919e9c55" | "0x022650756421f2e636d4138054331cbfafb55d9e" | "0x549a5d92412161a1a2828549a657a49dd9fa046c" | "0xcba7abe98fd6a65259837d76a3409841c1dd4288" | "0xbe092d38045ef7f9cdc5014278a4239e896bf5ca" | "0xb74d0aa1711eb859eead7cfe3fe5921eedd7e5bf")[];
+    watchlist: ("0xd2ffe51ab4e622a411abbe634832a19d919e9c55" | "0x022650756421f2e636d4138054331cbfafb55d9e" | "0x549a5d92412161a1a2828549a657a49dd9fa046c" | "0xcba7abe98fd6a65259837d76a3409841c1dd4288" | "0xbe092d38045ef7f9cdc5014278a4239e896bf5ca" | "0xb74d0aa1711eb859eead7cfe3fe5921eedd7e5bf" | "0x8f597295f1412a079088fc51c8a95e6698c31777" | "0x71d0d054974121ae37a76762e1fa02ffa150eba1")[];
     internalName: "rootstock";
     nativeLogoUrl: "https://assets.oku.trade/natives/rbtc.png";
     contracts: {
@@ -6446,7 +6446,7 @@ declare const telos: Readonly<{
         address: "0x8f7D64ea96D729EF24a0F30b4526D47b80d877B9";
     })[];
     stables: ("0xF1815bd50389c46847f0Bda824eC8da914045D14" | "0x674843C06FF83502ddb4D37c2E09C01cdA38cbc8" | "0x8f7D64ea96D729EF24a0F30b4526D47b80d877B9")[];
-    watchlist: ("0xa89c1c7d0975f1a98442e96e18a292982b12b3cd" | "0x11856fa7683aa9edf44a6ab368ec0cd02b03e6a1" | "0xd8606afb3f48a13229f52d6251c1aa3e05ad31a1" | "0xa48c8dd45ccf9c1ebf938c63c7cbc7cc259bf207")[];
+    watchlist: ("0xa89c1c7d0975f1a98442e96e18a292982b12b3cd" | "0xa48c8dd45ccf9c1ebf938c63c7cbc7cc259bf207" | "0xd8606afb3f48a13229f52d6251c1aa3e05ad31a1" | "0xe8d1c7e1fcfc8cee3daac2819266ea18015829b7" | "0xc1db63d4fbb6fbc023ee74480ba53b8906263fbd" | "0x6b566fcf6c5342934e7da46d9ee3b705e74736f9" | "0x11856fa7683aa9edf44a6ab368ec0cd02b03e6a1" | "0x45b47c9207fa8298863991f1b02a5b0e77bab7b6")[];
     internalName: "telos";
     nativeLogoUrl: "https://assets.oku.trade/natives/telos.png";
     contracts: {
@@ -10180,7 +10180,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         address: "0x74c9f2b00581f1b11aa7ff05aa9f608b7389de67";
     })[];
     stables: ("0xef213441a85df4d7acbdae0cf78004e1e486bb96" | "0x74c9f2b00581f1b11aa7ff05aa9f608b7389de67" | "0x3a15461d8ae0f0fb5fa2629e9da7d66a794a6e37" | "0xaf368c91793cb22739386dfcbbb2f1a9e4bcbebf")[];
-    watchlist: ("0xd2ffe51ab4e622a411abbe634832a19d919e9c55" | "0x022650756421f2e636d4138054331cbfafb55d9e" | "0x549a5d92412161a1a2828549a657a49dd9fa046c" | "0xcba7abe98fd6a65259837d76a3409841c1dd4288" | "0xbe092d38045ef7f9cdc5014278a4239e896bf5ca" | "0xb74d0aa1711eb859eead7cfe3fe5921eedd7e5bf")[];
+    watchlist: ("0xd2ffe51ab4e622a411abbe634832a19d919e9c55" | "0x022650756421f2e636d4138054331cbfafb55d9e" | "0x549a5d92412161a1a2828549a657a49dd9fa046c" | "0xcba7abe98fd6a65259837d76a3409841c1dd4288" | "0xbe092d38045ef7f9cdc5014278a4239e896bf5ca" | "0xb74d0aa1711eb859eead7cfe3fe5921eedd7e5bf" | "0x8f597295f1412a079088fc51c8a95e6698c31777" | "0x71d0d054974121ae37a76762e1fa02ffa150eba1")[];
     internalName: "rootstock";
     nativeLogoUrl: "https://assets.oku.trade/natives/rbtc.png";
     contracts: {
@@ -14301,7 +14301,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         address: "0x8f7D64ea96D729EF24a0F30b4526D47b80d877B9";
     })[];
     stables: ("0xF1815bd50389c46847f0Bda824eC8da914045D14" | "0x674843C06FF83502ddb4D37c2E09C01cdA38cbc8" | "0x8f7D64ea96D729EF24a0F30b4526D47b80d877B9")[];
-    watchlist: ("0xa89c1c7d0975f1a98442e96e18a292982b12b3cd" | "0x11856fa7683aa9edf44a6ab368ec0cd02b03e6a1" | "0xd8606afb3f48a13229f52d6251c1aa3e05ad31a1" | "0xa48c8dd45ccf9c1ebf938c63c7cbc7cc259bf207")[];
+    watchlist: ("0xa89c1c7d0975f1a98442e96e18a292982b12b3cd" | "0xa48c8dd45ccf9c1ebf938c63c7cbc7cc259bf207" | "0xd8606afb3f48a13229f52d6251c1aa3e05ad31a1" | "0xe8d1c7e1fcfc8cee3daac2819266ea18015829b7" | "0xc1db63d4fbb6fbc023ee74480ba53b8906263fbd" | "0x6b566fcf6c5342934e7da46d9ee3b705e74736f9" | "0x11856fa7683aa9edf44a6ab368ec0cd02b03e6a1" | "0x45b47c9207fa8298863991f1b02a5b0e77bab7b6")[];
     internalName: "telos";
     nativeLogoUrl: "https://assets.oku.trade/natives/telos.png";
     contracts: {

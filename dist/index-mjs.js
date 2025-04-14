@@ -3401,20 +3401,22 @@ const rootstock = makeConfig({
                     name: "ETH",
                     type: "OFT",
                     id: 13,
-                    address: "0x45f1A95A4D3f3836523F5c83673c797f4d4d263B"
-                }, {
+                    address: "0x45f1A95A4D3f3836523F5c83673c797f4d4d263B",
+                },
+                {
                     name: "USDC",
                     type: "OFT",
                     id: 1,
-                    address: "0xAF54BE5B6eEc24d6BFACf1cce4eaF680A8239398"
-                }, {
+                    address: "0xAF54BE5B6eEc24d6BFACf1cce4eaF680A8239398",
+                },
+                {
                     name: "USDT",
                     type: "OFT",
                     id: 2,
-                    address: "0xAf5191B0De278C7286d6C7CC6ab6BB8A73bA2Cd6"
-                }
-            ]
-        }
+                    address: "0xAf5191B0De278C7286d6C7CC6ab6BB8A73bA2Cd6",
+                },
+            ],
+        },
     },
     oracles: {
         cmc: {
@@ -3483,6 +3485,8 @@ const rootstock = makeConfig({
         "0xcba7abe98fd6a65259837d76a3409841c1dd4288",
         "0xbe092d38045ef7f9cdc5014278a4239e896bf5ca",
         "0xb74d0aa1711eb859eead7cfe3fe5921eedd7e5bf",
+        "0x8f597295f1412a079088fc51c8a95e6698c31777",
+        "0x71d0d054974121ae37a76762e1fa02ffa150eba1",
     ],
     internalName: "rootstock",
     nativeLogoUrl: "https://assets.oku.trade/natives/rbtc.png",
@@ -4176,10 +4180,14 @@ const telos = makeConfig({
         "0x8f7D64ea96D729EF24a0F30b4526D47b80d877B9",
     ],
     watchlist: [
-        "0x11856fa7683aa9edf44a6ab368ec0cd02b03e6a1",
-        "0xd8606afb3f48a13229f52d6251c1aa3e05ad31a1",
         "0xa48c8dd45ccf9c1ebf938c63c7cbc7cc259bf207",
         "0xa89c1c7d0975f1a98442e96e18a292982b12b3cd",
+        "0xd8606afb3f48a13229f52d6251c1aa3e05ad31a1",
+        "0xe8d1c7e1fcfc8cee3daac2819266ea18015829b7",
+        "0xc1db63d4fbb6fbc023ee74480ba53b8906263fbd",
+        "0x6b566fcf6c5342934e7da46d9ee3b705e74736f9",
+        "0x11856fa7683aa9edf44a6ab368ec0cd02b03e6a1",
+        "0x45b47c9207fa8298863991f1b02a5b0e77bab7b6",
     ],
     internalName: "telos",
     nativeLogoUrl: "https://assets.oku.trade/natives/telos.png",
