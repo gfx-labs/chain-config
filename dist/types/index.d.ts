@@ -6532,15 +6532,20 @@ declare const tronShasta: Readonly<{
     internalName: "tronshasta";
     nativeLogoUrl: "https://assets.oku.trade/natives/tron.png";
     contracts: {
+        limitOrder: {
+            address: "0x0000000000000000000000000000000000000000";
+        };
         nftManager: {
             address: "0x358B41818D60CBF40C11FB728C8BC865726F423D";
         };
         multicall2: {
             address: "0x8C289C0A8ADA24FC0F27FCBB1200370A52A6675E";
         };
+        multicall3: {
+            address: "0x0000000000000000000000000000000000000000";
+        };
         ensRegistry?: import("viem").ChainContract | undefined;
         ensUniversalResolver?: import("viem").ChainContract | undefined;
-        multicall3?: import("viem").ChainContract | undefined;
         universalSignatureVerifier?: import("viem").ChainContract | undefined;
     };
     blockExplorers: {
@@ -15380,15 +15385,20 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     internalName: "tronshasta";
     nativeLogoUrl: "https://assets.oku.trade/natives/tron.png";
     contracts: {
+        limitOrder: {
+            address: "0x0000000000000000000000000000000000000000";
+        };
         nftManager: {
             address: "0x358B41818D60CBF40C11FB728C8BC865726F423D";
         };
         multicall2: {
             address: "0x8C289C0A8ADA24FC0F27FCBB1200370A52A6675E";
         };
+        multicall3: {
+            address: "0x0000000000000000000000000000000000000000";
+        };
         ensRegistry?: ChainContract | undefined;
         ensUniversalResolver?: ChainContract | undefined;
-        multicall3?: ChainContract | undefined;
         universalSignatureVerifier?: ChainContract | undefined;
     };
     blockExplorers: {

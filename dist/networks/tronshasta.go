@@ -54,6 +54,10 @@ var Tronshasta Network = Network{
 	Morpho: MorphoMetadata{},
 	Token:  TokenMetadata{},
 	Contracts: map[string]ChainContract{
+		"limitOrder": {
+			BlockCreated: 0,
+			Address:      common.HexToAddress("0x0000000000000000000000000000000000000000"),
+		},
 		"nftManager": {
 			BlockCreated: 0,
 			Address:      common.HexToAddress("0x358B41818D60CBF40C11FB728C8BC865726F423D"),
@@ -61,6 +65,10 @@ var Tronshasta Network = Network{
 		"multicall2": {
 			BlockCreated: 0,
 			Address:      common.HexToAddress("0x8C289C0A8ADA24FC0F27FCBB1200370A52A6675E"),
+		},
+		"multicall3": {
+			BlockCreated: 0,
+			Address:      common.HexToAddress("0x0000000000000000000000000000000000000000"),
 		},
 	},
 }
