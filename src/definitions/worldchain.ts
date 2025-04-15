@@ -10,6 +10,9 @@ export const worldchain = makeConfig({
   logoUrl: "https://assets.oku.trade/chains/world-logo.png",
   safeReorgDistance: 90000,
   externalId: {},
+  rpcUrls: {
+    default: { http: ["https://worldchain.drpc.org"] },
+  },
   markets: {},
   bridges: {},
   oracles: {},

@@ -6577,6 +6577,11 @@ declare const worldchain: Readonly<{
     logoUrl: "https://assets.oku.trade/chains/world-logo.png";
     safeReorgDistance: 90000;
     externalId: {};
+    rpcUrls: {
+        default: {
+            http: string[];
+        };
+    };
     markets: {};
     bridges: {};
     oracles: {};
@@ -6705,13 +6710,6 @@ declare const worldchain: Readonly<{
         readonly name: "Ether";
         readonly symbol: "ETH";
         readonly decimals: 18;
-    };
-    rpcUrls: {
-        readonly default: {
-            readonly http: readonly [
-                "https://worldchain-mainnet.g.alchemy.com/public"
-            ];
-        };
     };
     sourceId: 1;
     testnet: false;
@@ -14869,6 +14867,11 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     logoUrl: "https://assets.oku.trade/chains/world-logo.png";
     safeReorgDistance: 90000;
     externalId: {};
+    rpcUrls: {
+        default: {
+            http: string[];
+        };
+    };
     markets: {};
     bridges: {};
     oracles: {};
@@ -14997,11 +15000,6 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         readonly name: "Ether";
         readonly symbol: "ETH";
         readonly decimals: 18;
-    };
-    rpcUrls: {
-        readonly default: {
-            readonly http: readonly ["https://worldchain-mainnet.g.alchemy.com/public"];
-        };
     };
     sourceId: 1;
     testnet: false;
