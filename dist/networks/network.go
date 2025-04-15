@@ -48,6 +48,7 @@ const (
 	NameLightlink    InternalName = "lightlink"
 	NameWorldchain   InternalName = "worldchain"
 	NameXdc          InternalName = "xdc"
+	NameTronshasta   InternalName = "tronshasta"
 )
 
 var AllNetworks = []Network{
@@ -85,6 +86,7 @@ var AllNetworks = []Network{
 	Lightlink,
 	Worldchain,
 	Xdc,
+	Tronshasta,
 }
 
 var networksByName = map[string]Network{
@@ -122,43 +124,45 @@ var networksByName = map[string]Network{
 	"lightlink":     Lightlink,
 	"worldchain":    Worldchain,
 	"xdc":           Xdc,
+	"tronshasta":    Tronshasta,
 }
 
 var networksById = map[int]Network{
-	42161:    Arbitrum,
-	8453:     Base,
-	288:      Boba,
-	81457:    Blast,
-	56:       Bsc,
-	314:      Filecoin,
-	1:        Ethereum,
-	1284:     Moonbeam,
-	10:       Optimism,
-	137:      Polygon,
-	30:       Rootstock,
-	534352:   Scroll,
-	1101:     PolygonZkevm,
-	324:      Zksync,
-	169:      Manta,
-	59144:    Linea,
-	167000:   Taiko,
-	5000:     Mantle,
-	1329:     Sei,
-	1135:     Lisk,
-	60808:    Bob,
-	100:      Gnosis,
-	1750:     Metal,
-	21000000: Corn,
-	146:      Sonic,
-	42220:    Celo,
-	43111:    Hemi,
-	40:       Telos,
-	5464:     Saga,
-	2345:     Goat,
-	151:      Redbelly,
-	1890:     Lightlink,
-	480:      Worldchain,
-	50:       Xdc,
+	42161:      Arbitrum,
+	8453:       Base,
+	288:        Boba,
+	81457:      Blast,
+	56:         Bsc,
+	314:        Filecoin,
+	1:          Ethereum,
+	1284:       Moonbeam,
+	10:         Optimism,
+	137:        Polygon,
+	30:         Rootstock,
+	534352:     Scroll,
+	1101:       PolygonZkevm,
+	324:        Zksync,
+	169:        Manta,
+	59144:      Linea,
+	167000:     Taiko,
+	5000:       Mantle,
+	1329:       Sei,
+	1135:       Lisk,
+	60808:      Bob,
+	100:        Gnosis,
+	1750:       Metal,
+	21000000:   Corn,
+	146:        Sonic,
+	42220:      Celo,
+	43111:      Hemi,
+	40:         Telos,
+	5464:       Saga,
+	2345:       Goat,
+	151:        Redbelly,
+	1890:       Lightlink,
+	480:        Worldchain,
+	50:         Xdc,
+	2494104990: Tronshasta,
 }
 
 func NetworkByName(name string) (*Network, error) {

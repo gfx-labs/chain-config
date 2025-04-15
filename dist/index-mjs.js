@@ -1,4 +1,4 @@
-import { arbitrum as arbitrum$1, base as base$1, blast as blast$1, bob as bob$1, boba as boba$1, bsc as bsc$1, celo as celo$1, corn as corn$1, filecoin as filecoin$1, gnosis as gnosis$1, goat as goat$1, hemi as hemi$1, lightlinkPhoenix, linea as linea$1, lisk as lisk$1, mainnet as mainnet$1, manta as manta$1, mantle as mantle$1, metalL2, moonbeam as moonbeam$1, optimism as optimism$1, polygon as polygon$1, redbellyMainnet, rootstock as rootstock$1, saga as saga$1, scroll as scroll$1, sei as sei$1, sonic as sonic$1, taiko as taiko$1, telos as telos$1, worldchain as worldchain$1, xdc as xdc$1, polygonZkEvm as polygonZkEvm$1, zksync } from 'viem/chains';
+import { arbitrum as arbitrum$1, base as base$1, blast as blast$1, bob as bob$1, boba as boba$1, bsc as bsc$1, celo as celo$1, corn as corn$1, filecoin as filecoin$1, gnosis as gnosis$1, goat as goat$1, hemi as hemi$1, lightlinkPhoenix, linea as linea$1, lisk as lisk$1, mainnet as mainnet$1, manta as manta$1, mantle as mantle$1, metalL2, moonbeam as moonbeam$1, optimism as optimism$1, polygon as polygon$1, redbellyMainnet, rootstock as rootstock$1, saga as saga$1, scroll as scroll$1, sei as sei$1, sonic as sonic$1, taiko as taiko$1, telos as telos$1, tronShasta as tronShasta$1, worldchain as worldchain$1, xdc as xdc$1, polygonZkEvm as polygonZkEvm$1, zksync } from 'viem/chains';
 import { zeroAddress } from 'viem';
 
 const makeConfig = (x) => {
@@ -1163,6 +1163,7 @@ const corn = makeConfig({
         "0x0F12dac5217868b3d6772632543ef16df8df17E5",
         "0xbD108c1Dd7802DFF6c24138A72949184FFbe006F",
         "0xb6a7be3ca6698859b374640b3db439fda7b7a5e3",
+        "0x255f0b304f701a0530f5dc1739a3d1469e21dd5f",
     ],
     internalName: "corn",
     nativeLogoUrl: "https://assets.oku.trade/natives/corn.png",
@@ -4211,6 +4212,61 @@ const telos = makeConfig({
     },
 });
 
+const tronShasta = makeConfig({
+    ...tronShasta$1,
+    name: "Tron Shasta",
+    blockTimeSeconds: 5,
+    launchTime: 1746055290,
+    sortIndex: 15,
+    logoUrl: "https://assets.oku.trade/chains/tron.png",
+    safeReorgDistance: 90000,
+    externalId: {},
+    markets: {},
+    bridges: {},
+    oracles: {},
+    morpho: {},
+    initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
+    uniswap: {
+        deployBlock: 52878027,
+        poolFactory: "0x413cf78a14f90203919b8b4d690e6540745ed8074a",
+        permit2: zeroAddress,
+        multicall2: "0x418c289c0a8ada24fc0f27fcbb1200370a52a6675e",
+        tickLens: "0x41c857346cd83be79b78f1b10d5fcf158edc844796",
+        nonfungiblePositionManager: "0x41358b41818d60cbf40c11fb728c8bc865726f423d",
+        positionsNFT: "0x41358b41818d60cbf40c11fb728c8bc865726f423d",
+        positionsNFTDeployBlock: 52878030,
+        universalRouter: zeroAddress,
+        wrappedNativeAddress: "0xda5dDd7270381A7C2717aD10D1c0ecB19e3CDFb2",
+        wrappedNativeSymbol: "WBTCN",
+        wrappedNativeName: "Wrapped Bittronshasta",
+        wrappedNativeDecimals: 18,
+        nativeCurrencyName: "BTCN",
+    },
+    token: {},
+    oku: {
+        pricing: {
+            nativeWrappedToken: zeroAddress,
+        },
+    },
+    defaultPool: zeroAddress,
+    defaultToken0: zeroAddress,
+    defaultToken1: zeroAddress,
+    tokenList: [],
+    stables: [],
+    watchlist: [],
+    internalName: "tronshasta",
+    nativeLogoUrl: "https://assets.oku.trade/natives/tron.png",
+    contracts: {
+        ...tronShasta$1.contracts,
+        nftManager: {
+            address: "0x41358b41818d60cbf40c11fb728c8bc865726f423d",
+        },
+        multicall2: {
+            address: "0x418c289c0a8ada24fc0f27fcbb1200370a52a6675e",
+        },
+    },
+});
+
 const worldchain = makeConfig({
     ...worldchain$1,
     blockTimeSeconds: 2,
@@ -4633,6 +4689,7 @@ const MAINNET_CHAINS = [
     lightlink,
     worldchain,
     xdc,
+    tronShasta,
 ];
 
-export { MAINNET_CHAINS, arbitrum, base, blast, bob, boba, bsc, celo, corn, filecoin, gnosis, goat, hemi, lightlink, linea, lisk, mainnet, manta, mantle, metal, moonbeam, optimism, polygon, polygonZkEvm, redbelly, rootstock, saga, scroll, sei, sonic, taiko, telos, worldchain, xdc, zkSync };
+export { MAINNET_CHAINS, arbitrum, base, blast, bob, boba, bsc, celo, corn, filecoin, gnosis, goat, hemi, lightlink, linea, lisk, mainnet, manta, mantle, metal, moonbeam, optimism, polygon, polygonZkEvm, redbelly, rootstock, saga, scroll, sei, sonic, taiko, telos, tronShasta, worldchain, xdc, zkSync };

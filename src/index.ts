@@ -37,4 +37,5 @@ export const MAINNET_CHAINS = [
   defs.lightlink,
   defs.worldchain,
   defs.xdc,
+  defs.tronShasta,
 ] as const;

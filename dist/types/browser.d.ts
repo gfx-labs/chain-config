@@ -2685,7 +2685,7 @@ declare const corn: Readonly<{
         address: "0xDF0B24095e15044538866576754F3C964e902Ee6";
     })[];
     stables: ("0xDF0B24095e15044538866576754F3C964e902Ee6" | "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb")[];
-    watchlist: ("0xe435E14815d28a86c643E4606Ed0e8E5624782c6" | "0x660c6c6c2ad9be9fca2d40da22e1e6142ce5e7ca" | "0x43aA32cf4f6389aB89d8C79092A0fc65899C20ba" | "0x0F12dac5217868b3d6772632543ef16df8df17E5" | "0xbD108c1Dd7802DFF6c24138A72949184FFbe006F" | "0xb6a7be3ca6698859b374640b3db439fda7b7a5e3")[];
+    watchlist: ("0xe435E14815d28a86c643E4606Ed0e8E5624782c6" | "0x660c6c6c2ad9be9fca2d40da22e1e6142ce5e7ca" | "0x43aA32cf4f6389aB89d8C79092A0fc65899C20ba" | "0x0F12dac5217868b3d6772632543ef16df8df17E5" | "0xbD108c1Dd7802DFF6c24138A72949184FFbe006F" | "0xb6a7be3ca6698859b374640b3db439fda7b7a5e3" | "0x255f0b304f701a0530f5dc1739a3d1469e21dd5f")[];
     internalName: "corn";
     nativeLogoUrl: "https://assets.oku.trade/natives/corn.png";
     contracts: {
@@ -6483,6 +6483,88 @@ declare const telos: Readonly<{
     };
     sourceId?: number | undefined | undefined | undefined;
     testnet?: boolean | undefined | undefined | undefined;
+    custom?: Record<string, unknown> | undefined;
+    fees?: import("viem").ChainFees<undefined> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
+}>;
+declare const tronShasta: Readonly<{
+    name: "Tron Shasta";
+    blockTimeSeconds: 5;
+    launchTime: 1746055290;
+    sortIndex: 15;
+    logoUrl: "https://assets.oku.trade/chains/tron.png";
+    safeReorgDistance: 90000;
+    externalId: {};
+    markets: {};
+    bridges: {};
+    oracles: {};
+    morpho: {};
+    initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
+    uniswap: {
+        deployBlock: number;
+        poolFactory: "0x413cf78a14f90203919b8b4d690e6540745ed8074a";
+        permit2: "0x0000000000000000000000000000000000000000";
+        multicall2: "0x418c289c0a8ada24fc0f27fcbb1200370a52a6675e";
+        tickLens: "0x41c857346cd83be79b78f1b10d5fcf158edc844796";
+        nonfungiblePositionManager: "0x41358b41818d60cbf40c11fb728c8bc865726f423d";
+        positionsNFT: "0x41358b41818d60cbf40c11fb728c8bc865726f423d";
+        positionsNFTDeployBlock: number;
+        universalRouter: "0x0000000000000000000000000000000000000000";
+        wrappedNativeAddress: "0xda5dDd7270381A7C2717aD10D1c0ecB19e3CDFb2";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
+        nativeCurrencyName: string;
+    };
+    token: {};
+    oku: {
+        pricing: {
+            nativeWrappedToken: "0x0000000000000000000000000000000000000000";
+        };
+    };
+    defaultPool: "0x0000000000000000000000000000000000000000";
+    defaultToken0: "0x0000000000000000000000000000000000000000";
+    defaultToken1: "0x0000000000000000000000000000000000000000";
+    tokenList: never[];
+    stables: never[];
+    watchlist: never[];
+    internalName: "tronshasta";
+    nativeLogoUrl: "https://assets.oku.trade/natives/tron.png";
+    contracts: {
+        nftManager: {
+            address: "0x41358b41818d60cbf40c11fb728c8bc865726f423d";
+        };
+        multicall2: {
+            address: "0x418c289c0a8ada24fc0f27fcbb1200370a52a6675e";
+        };
+        ensRegistry?: import("viem").ChainContract | undefined;
+        ensUniversalResolver?: import("viem").ChainContract | undefined;
+        multicall3?: import("viem").ChainContract | undefined;
+        universalSignatureVerifier?: import("viem").ChainContract | undefined;
+    };
+    blockExplorers: {
+        readonly default: {
+            readonly name: "Tronscan";
+            readonly url: "https://shasta.tronscan.org";
+        };
+    };
+    ensTlds?: readonly string[] | undefined;
+    id: 2494104990;
+    nativeCurrency: {
+        readonly name: "TRON";
+        readonly symbol: "TRX";
+        readonly decimals: 6;
+    };
+    rpcUrls: {
+        readonly default: {
+            readonly http: readonly [
+                "https://api.shasta.trongrid.io/jsonrpc"
+            ];
+        };
+    };
+    sourceId?: number | undefined | undefined | undefined;
+    testnet: true;
     custom?: Record<string, unknown> | undefined;
     fees?: import("viem").ChainFees<undefined> | undefined;
     formatters?: undefined | undefined;
@@ -12999,7 +13081,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         address: "0xDF0B24095e15044538866576754F3C964e902Ee6";
     })[];
     stables: ("0xDF0B24095e15044538866576754F3C964e902Ee6" | "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb")[];
-    watchlist: ("0xe435E14815d28a86c643E4606Ed0e8E5624782c6" | "0x660c6c6c2ad9be9fca2d40da22e1e6142ce5e7ca" | "0x43aA32cf4f6389aB89d8C79092A0fc65899C20ba" | "0x0F12dac5217868b3d6772632543ef16df8df17E5" | "0xbD108c1Dd7802DFF6c24138A72949184FFbe006F" | "0xb6a7be3ca6698859b374640b3db439fda7b7a5e3")[];
+    watchlist: ("0xe435E14815d28a86c643E4606Ed0e8E5624782c6" | "0x660c6c6c2ad9be9fca2d40da22e1e6142ce5e7ca" | "0x43aA32cf4f6389aB89d8C79092A0fc65899C20ba" | "0x0F12dac5217868b3d6772632543ef16df8df17E5" | "0xbD108c1Dd7802DFF6c24138A72949184FFbe006F" | "0xb6a7be3ca6698859b374640b3db439fda7b7a5e3" | "0x255f0b304f701a0530f5dc1739a3d1469e21dd5f")[];
     internalName: "corn";
     nativeLogoUrl: "https://assets.oku.trade/natives/corn.png";
     contracts: {
@@ -15256,6 +15338,85 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     fees?: import("viem").ChainFees<undefined> | undefined;
     formatters?: undefined | undefined;
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
+}>, Readonly<{
+    name: "Tron Shasta";
+    blockTimeSeconds: 5;
+    launchTime: 1746055290;
+    sortIndex: 15;
+    logoUrl: "https://assets.oku.trade/chains/tron.png";
+    safeReorgDistance: 90000;
+    externalId: {};
+    markets: {};
+    bridges: {};
+    oracles: {};
+    morpho: {};
+    initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
+    uniswap: {
+        deployBlock: number;
+        poolFactory: "0x413cf78a14f90203919b8b4d690e6540745ed8074a";
+        permit2: "0x0000000000000000000000000000000000000000";
+        multicall2: "0x418c289c0a8ada24fc0f27fcbb1200370a52a6675e";
+        tickLens: "0x41c857346cd83be79b78f1b10d5fcf158edc844796";
+        nonfungiblePositionManager: "0x41358b41818d60cbf40c11fb728c8bc865726f423d";
+        positionsNFT: "0x41358b41818d60cbf40c11fb728c8bc865726f423d";
+        positionsNFTDeployBlock: number;
+        universalRouter: "0x0000000000000000000000000000000000000000";
+        wrappedNativeAddress: "0xda5dDd7270381A7C2717aD10D1c0ecB19e3CDFb2";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
+        nativeCurrencyName: string;
+    };
+    token: {};
+    oku: {
+        pricing: {
+            nativeWrappedToken: "0x0000000000000000000000000000000000000000";
+        };
+    };
+    defaultPool: "0x0000000000000000000000000000000000000000";
+    defaultToken0: "0x0000000000000000000000000000000000000000";
+    defaultToken1: "0x0000000000000000000000000000000000000000";
+    tokenList: never[];
+    stables: never[];
+    watchlist: never[];
+    internalName: "tronshasta";
+    nativeLogoUrl: "https://assets.oku.trade/natives/tron.png";
+    contracts: {
+        nftManager: {
+            address: "0x41358b41818d60cbf40c11fb728c8bc865726f423d";
+        };
+        multicall2: {
+            address: "0x418c289c0a8ada24fc0f27fcbb1200370a52a6675e";
+        };
+        ensRegistry?: ChainContract | undefined;
+        ensUniversalResolver?: ChainContract | undefined;
+        multicall3?: ChainContract | undefined;
+        universalSignatureVerifier?: ChainContract | undefined;
+    };
+    blockExplorers: {
+        readonly default: {
+            readonly name: "Tronscan";
+            readonly url: "https://shasta.tronscan.org";
+        };
+    };
+    ensTlds?: readonly string[] | undefined;
+    id: 2494104990;
+    nativeCurrency: {
+        readonly name: "TRON";
+        readonly symbol: "TRX";
+        readonly decimals: 6;
+    };
+    rpcUrls: {
+        readonly default: {
+            readonly http: readonly ["https://api.shasta.trongrid.io/jsonrpc"];
+        };
+    };
+    sourceId?: number | undefined | undefined | undefined;
+    testnet: true;
+    custom?: Record<string, unknown> | undefined;
+    fees?: import("viem").ChainFees<undefined> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>];
-export { arbitrum, base, blast, bob, boba, bsc, celo, corn, filecoin, gnosis, goat, hemi, lightlink, linea, lisk, mainnet, manta, mantle, metal, moonbeam, optimism, polygon, redbelly, rootstock, saga, scroll, sei, sonic, taiko, telos, worldchain, xdc, polygonZkEvm, zkSync, MorphoMetadata, UniswapMetadata, OkuPricingMetadata, OkuMetadata, TokenMetadata, Markets, Bridges, Oracles, IChainInfo, MAINNET_CHAINS };
+export { arbitrum, base, blast, bob, boba, bsc, celo, corn, filecoin, gnosis, goat, hemi, lightlink, linea, lisk, mainnet, manta, mantle, metal, moonbeam, optimism, polygon, redbelly, rootstock, saga, scroll, sei, sonic, taiko, telos, tronShasta, worldchain, xdc, polygonZkEvm, zkSync, MorphoMetadata, UniswapMetadata, OkuPricingMetadata, OkuMetadata, TokenMetadata, Markets, Bridges, Oracles, IChainInfo, MAINNET_CHAINS };
 export { ChainContract } from "viem";
