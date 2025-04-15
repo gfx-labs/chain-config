@@ -4228,19 +4228,19 @@ const tronShasta = makeConfig({
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
     uniswap: {
         deployBlock: 52878027,
-        poolFactory: "0x413cf78a14f90203919b8b4d690e6540745ed8074a",
+        poolFactory: "0x3CF78A14F90203919B8B4D690E6540745ED8074A",
         permit2: zeroAddress,
-        multicall2: "0x418c289c0a8ada24fc0f27fcbb1200370a52a6675e",
-        tickLens: "0x41c857346cd83be79b78f1b10d5fcf158edc844796",
-        nonfungiblePositionManager: "0x41358b41818d60cbf40c11fb728c8bc865726f423d",
-        positionsNFT: "0x41358b41818d60cbf40c11fb728c8bc865726f423d",
+        multicall2: "0x8C289C0A8ADA24FC0F27FCBB1200370A52A6675E",
+        tickLens: "0xC857346CD83BE79B78F1B10D5FCF158EDC844796",
+        nonfungiblePositionManager: "0x358B41818D60CBF40C11FB728C8BC865726F423D",
+        positionsNFT: "0x358B41818D60CBF40C11FB728C8BC865726F423D",
         positionsNFTDeployBlock: 52878030,
         universalRouter: zeroAddress,
-        wrappedNativeAddress: "0xda5dDd7270381A7C2717aD10D1c0ecB19e3CDFb2",
-        wrappedNativeSymbol: "WBTCN",
-        wrappedNativeName: "Wrapped Bittronshasta",
+        wrappedNativeAddress: zeroAddress,
+        wrappedNativeSymbol: "WTRX",
+        wrappedNativeName: "Wrapped TRX",
         wrappedNativeDecimals: 18,
-        nativeCurrencyName: "BTCN",
+        nativeCurrencyName: "TRX",
     },
     token: {},
     oku: {
@@ -4259,10 +4259,10 @@ const tronShasta = makeConfig({
     contracts: {
         ...tronShasta$1.contracts,
         nftManager: {
-            address: "0x41358b41818d60cbf40c11fb728c8bc865726f423d",
+            address: "0x358B41818D60CBF40C11FB728C8BC865726F423D",
         },
         multicall2: {
-            address: "0x418c289c0a8ada24fc0f27fcbb1200370a52a6675e",
+            address: "0x8C289C0A8ADA24FC0F27FCBB1200370A52A6675E",
         },
     },
 });
