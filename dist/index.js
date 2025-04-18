@@ -4428,7 +4428,7 @@ const xdc = makeConfig({
             address: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435",
         },
         multicall3: {
-            address: "0xcA11bde05977b3631167028862bE2a173976CA11",
+            address: "0x0b1795cca8e4ec4df02346a082df54d437f8d9af",
         },
     },
 });
