@@ -4402,7 +4402,7 @@ const xdc = makeConfig({
             nativeWrappedName: "XDC",
         },
     },
-    defaultPool: viem.zeroAddress,
+    defaultPool: "0x1e5aec37f6df6653c3342df75edd92beb3fb9846",
     defaultToken0: "0x2a8e898b6242355c290e1f4fc966b8788729a4d4",
     defaultToken1: "0x951857744785e80e2de051c32ee7b25f9c458c42",
     tokenList: [

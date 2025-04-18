@@ -15,7 +15,7 @@ var Xdc Network = Network{
 			Url: "https://xdcscan.com",
 		},
 	},
-	DefaultPool:   common.HexToAddress("0x0000000000000000000000000000000000000000"),
+	DefaultPool:   common.HexToAddress("0x1e5aec37f6df6653c3342df75edd92beb3fb9846"),
 	InternalName:  "xdc",
 	InitCodeHash:  common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId:    map[string]string{},
