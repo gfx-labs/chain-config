@@ -6961,6 +6961,11 @@ declare const worldchain: Readonly<{
 }>;
 declare const xdc: Readonly<{
     name: "XDC";
+    rpcUrls: {
+        default: {
+            http: string[];
+        };
+    };
     blockTimeSeconds: 2;
     launchTime: 1745040321;
     sortIndex: 15;
@@ -7043,13 +7048,6 @@ declare const xdc: Readonly<{
         readonly decimals: 18;
         readonly name: "XDC";
         readonly symbol: "XDC";
-    };
-    rpcUrls: {
-        readonly default: {
-            readonly http: readonly [
-                "https://rpc.xdcrpc.com"
-            ];
-        };
     };
     sourceId?: number | undefined | undefined | undefined;
     testnet?: boolean | undefined | undefined | undefined;
@@ -15247,6 +15245,11 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     network: "worldchain";
 }>, Readonly<{
     name: "XDC";
+    rpcUrls: {
+        default: {
+            http: string[];
+        };
+    };
     blockTimeSeconds: 2;
     launchTime: 1745040321;
     sortIndex: 15;
@@ -15329,11 +15332,6 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         readonly decimals: 18;
         readonly name: "XDC";
         readonly symbol: "XDC";
-    };
-    rpcUrls: {
-        readonly default: {
-            readonly http: readonly ["https://rpc.xdcrpc.com"];
-        };
     };
     sourceId?: number | undefined | undefined | undefined;
     testnet?: boolean | undefined | undefined | undefined;

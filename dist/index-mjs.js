@@ -4356,6 +4356,11 @@ const worldchain = makeConfig({
 const xdc = makeConfig({
     ...xdc$1,
     name: "XDC",
+    rpcUrls: {
+        default: {
+            http: ["https://erpc.xinfin.network"],
+        },
+    },
     blockTimeSeconds: 2,
     launchTime: 1745040321,
     sortIndex: 15,
