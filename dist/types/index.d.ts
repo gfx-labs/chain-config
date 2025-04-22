@@ -3289,10 +3289,10 @@ declare const lens: Readonly<{
     };
     defaultPool: "0x5eb6b146d7a5322b763c8f8b0eb2fdd5d15e49de";
     defaultToken0: "0x6bDc36E20D267Ff0dd6097799f82e78907105e2F";
-    defaultToken1: "0xda5dDd7270381A7C2717aD10D1c0ecB19e3CDFb2";
+    defaultToken1: "0x88F08E304EC4f90D644Cec3Fb69b8aD414acf884";
     tokenList: ({
         symbol: string;
-        address: "0xda5dDd7270381A7C2717aD10D1c0ecB19e3CDFb2";
+        address: "0x6bDc36E20D267Ff0dd6097799f82e78907105e2F";
     } | {
         symbol: string;
         address: "0x88F08E304EC4f90D644Cec3Fb69b8aD414acf884";
@@ -15572,10 +15572,10 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     };
     defaultPool: "0x5eb6b146d7a5322b763c8f8b0eb2fdd5d15e49de";
     defaultToken0: "0x6bDc36E20D267Ff0dd6097799f82e78907105e2F";
-    defaultToken1: "0xda5dDd7270381A7C2717aD10D1c0ecB19e3CDFb2";
+    defaultToken1: "0x88F08E304EC4f90D644Cec3Fb69b8aD414acf884";
     tokenList: ({
         symbol: string;
-        address: "0xda5dDd7270381A7C2717aD10D1c0ecB19e3CDFb2";
+        address: "0x6bDc36E20D267Ff0dd6097799f82e78907105e2F";
     } | {
         symbol: string;
         address: "0x88F08E304EC4f90D644Cec3Fb69b8aD414acf884";
