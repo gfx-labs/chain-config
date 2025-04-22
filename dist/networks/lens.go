@@ -16,7 +16,7 @@ var Lens Network = Network{
 			ApiUrl: "https://explorer.lens.xyz/api",
 		},
 	},
-	DefaultPool:   common.HexToAddress("0x0000000000000000000000000000000000000000"),
+	DefaultPool:   common.HexToAddress("0x5eb6b146d7a5322b763c8f8b0eb2fdd5d15e49de"),
 	InternalName:  "lens",
 	InitCodeHash:  common.HexToHash("0x010013f177ea1fcbc4520f9a3ca7cd2d1d77959e05aa66484027cb38e712aeed"),
 	ExternalId:    map[string]string{},
@@ -25,7 +25,7 @@ var Lens Network = Network{
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0x88F08E304EC4f90D644Cec3Fb69b8aD414acf884")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x88F08E304EC4f90D644Cec3Fb69b8aD414acf884"): {}},
-	Watchlist:        []common.Address{},
+	Watchlist:        []common.Address{common.HexToAddress("0x5eb6b146d7a5322b763c8f8b0eb2fdd5d15e49de")},
 	BlockTimeSeconds: 2,
 	Oku: OkuMetadata{
 		LimitOrderRegistry:            common.HexToAddress("0xD3239f8D4c6245359f4F050F5133A9F61F4e2ACF"),
