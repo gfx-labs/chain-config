@@ -38,4 +38,5 @@ export const MAINNET_CHAINS = [
   defs.worldchain,
   defs.xdc,
   defs.tronShasta,
+  defs.lens,
 ] as const;

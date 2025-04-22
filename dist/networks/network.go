@@ -49,6 +49,7 @@ const (
 	NameWorldchain   InternalName = "worldchain"
 	NameXdc          InternalName = "xdc"
 	NameTronshasta   InternalName = "tronshasta"
+	NameLens         InternalName = "lens"
 )
 
 var AllNetworks = []Network{
@@ -87,6 +88,7 @@ var AllNetworks = []Network{
 	Worldchain,
 	Xdc,
 	Tronshasta,
+	Lens,
 }
 
 var networksByName = map[string]Network{
@@ -125,6 +127,7 @@ var networksByName = map[string]Network{
 	"worldchain":    Worldchain,
 	"xdc":           Xdc,
 	"tronshasta":    Tronshasta,
+	"lens":          Lens,
 }
 
 var networksById = map[int]Network{
@@ -163,6 +166,7 @@ var networksById = map[int]Network{
 	480:        Worldchain,
 	50:         Xdc,
 	2494104990: Tronshasta,
+	232:        Lens,
 }
 
 func NetworkByName(name string) (*Network, error) {
