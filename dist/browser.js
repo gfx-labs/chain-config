@@ -1574,17 +1574,19 @@
                       type: "POOL",
                       id: 13,
                       address: "0x2F6F07CDcf3588944Bf4C42aC74ff24bF56e7590",
-                  }, {
+                  },
+                  {
                       name: "USDC",
                       type: "OFT",
                       id: 1,
                       address: "0x45f1A95A4D3f3836523F5c83673c797f4d4d263B",
-                  }, {
+                  },
+                  {
                       name: "USDT",
                       type: "OFT",
                       id: 2,
                       address: "0xAF54BE5B6eEc24d6BFACf1cce4eaF680A8239398",
-                  }
+                  },
               ],
           },
       },
@@ -1640,6 +1642,7 @@
           "0x875c1efa41a868fbb4274c3e06afc14b597e8828",
           "0x0bbd621fb38f6ddc16b0089ebbeade8db9a8d354",
           "0xc47f921d413787abf5c98d977e52062de0a3a6d4",
+          "0x0ec5aa557d5b2a8702ad43d253415d11f95364c0",
       ],
       internalName: "hemi",
       nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
