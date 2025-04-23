@@ -1717,9 +1717,13 @@
           { symbol: "WETH", address: "0xE5ecd226b3032910CEaa43ba92EE8232f8237553" },
       ],
       stables: ["0x88F08E304EC4f90D644Cec3Fb69b8aD414acf884"],
-      watchlist: ["0x5eb6b146d7a5322b763c8f8b0eb2fdd5d15e49de"],
+      watchlist: [
+          "0x5eb6b146d7a5322b763c8f8b0eb2fdd5d15e49de",
+          "0xdf4b8153bf91f54802a9ba16366b2111724384e4",
+          "0x6b6eb6f437bf54d22b997c3b38b79a23bc63f39f",
+      ],
       internalName: "lens",
-      nativeLogoUrl: "https://assets.oku.trade/natives/lens.png",
+      nativeLogoUrl: "https://assets.oku.trade/natives/gho.png",
       contracts: {
           ...chains.lens.contracts,
           limitOrder: {

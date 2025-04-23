@@ -25,7 +25,7 @@ var Lens Network = Network{
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0x88F08E304EC4f90D644Cec3Fb69b8aD414acf884")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x88F08E304EC4f90D644Cec3Fb69b8aD414acf884"): {}},
-	Watchlist:        []common.Address{common.HexToAddress("0x5eb6b146d7a5322b763c8f8b0eb2fdd5d15e49de")},
+	Watchlist:        []common.Address{common.HexToAddress("0x5eb6b146d7a5322b763c8f8b0eb2fdd5d15e49de"), common.HexToAddress("0xdf4b8153bf91f54802a9ba16366b2111724384e4"), common.HexToAddress("0x6b6eb6f437bf54d22b997c3b38b79a23bc63f39f")},
 	BlockTimeSeconds: 2,
 	Oku: OkuMetadata{
 		LimitOrderRegistry:            common.HexToAddress("0xD3239f8D4c6245359f4F050F5133A9F61F4e2ACF"),
