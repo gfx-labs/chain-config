@@ -49,7 +49,7 @@ var Worldchain Network = Network{
 		NonfungiblePositionManager: common.HexToAddress("0xec12a9F9a09f50550686363766Cc153D03c27b5e"),
 		PositionsNFT:               common.HexToAddress("0xec12a9F9a09f50550686363766Cc153D03c27b5e"),
 		PositionsNFTDeployBlock:    1603405,
-		UniversalRouter:            common.HexToAddress("0x8ac7bee993bb44dab564ea4bc9ea67bf9eb5e743"),
+		UniversalRouter:            common.HexToAddress("0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435"),
 		WrappedNativeAddress:       common.HexToAddress("0x4200000000000000000000000000000000000006"),
 		WrappedNativeSymbol:        "WETH",
 		WrappedNativeName:          "Wrapped Ether",
