@@ -50,6 +50,7 @@ const (
 	NameXdc          InternalName = "xdc"
 	NameTronshasta   InternalName = "tronshasta"
 	NameLens         InternalName = "lens"
+	NameNibiru       InternalName = "nibiru"
 )
 
 var AllNetworks = []Network{
@@ -89,6 +90,7 @@ var AllNetworks = []Network{
 	Xdc,
 	Tronshasta,
 	Lens,
+	Nibiru,
 }
 
 var networksByName = map[string]Network{
@@ -128,6 +130,7 @@ var networksByName = map[string]Network{
 	"xdc":           Xdc,
 	"tronshasta":    Tronshasta,
 	"lens":          Lens,
+	"nibiru":        Nibiru,
 }
 
 var networksById = map[int]Network{
@@ -167,6 +170,7 @@ var networksById = map[int]Network{
 	50:         Xdc,
 	2494104990: Tronshasta,
 	232:        Lens,
+	6900:       Nibiru,
 }
 
 func NetworkByName(name string) (*Network, error) {

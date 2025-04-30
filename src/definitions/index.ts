@@ -23,6 +23,7 @@ export * from "./manta";
 export * from "./mantle";
 export * from "./metal";
 export * from "./moonbeam";
+export * from "./nibiru";
 export * from "./optimism";
 export * from "./polygon";
 export * from "./redbelly";

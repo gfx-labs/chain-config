@@ -4957,6 +4957,105 @@ declare const moonbeam: Readonly<{
     formatters?: undefined | undefined;
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>;
+declare const nibiru: Readonly<{
+    name: "Nibiru";
+    blockTimeSeconds: 2;
+    launchTime: 1746663816;
+    sortIndex: 15;
+    logoUrl: "https://assets.oku.trade/chains/nibiru-logo.svg";
+    safeReorgDistance: 90000;
+    externalId: {};
+    markets: {};
+    bridges: {};
+    oracles: {};
+    morpho: {};
+    initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
+    uniswap: {
+        deployBlock: number;
+        poolFactory: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D";
+        permit2: "0x807F4E281B7A3B324825C64ca53c69F0b418dE40";
+        multicall2: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435";
+        tickLens: "0xB3309C48F8407651D918ca3Da4C45DE40109E641";
+        nonfungiblePositionManager: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c";
+        positionsNFT: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c";
+        positionsNFTDeployBlock: number;
+        universalRouter: "0x738fD6d10bCc05c230388B4027CAd37f82fe2AF2";
+        wrappedNativeAddress: "0x1429B38e58b97de646ACd65fdb8a4502c2131484";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
+        nativeCurrencyName: string;
+    };
+    token: {
+        wethAddress: "0x1429B38e58b97de646ACd65fdb8a4502c2131484";
+        usdcAddress: "0x0829F361A05D993d5CEb035cA6DF3446b060970b";
+    };
+    oku: {
+        limitOrderRegistry: "0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc";
+        limitOrderRegistryDeployBlock: number;
+        pricing: {
+            nativeWrappedToken: "0x1429B38e58b97de646ACd65fdb8a4502c2131484";
+            nativeWrappedName: string;
+        };
+    };
+    defaultPool: "0x0000000000000000000000000000000000000000";
+    defaultToken0: "0x0829F361A05D993d5CEb035cA6DF3446b060970b";
+    defaultToken1: "0x1429B38e58b97de646ACd65fdb8a4502c2131484";
+    tokenList: ({
+        symbol: string;
+        address: "0x1429B38e58b97de646ACd65fdb8a4502c2131484";
+    } | {
+        symbol: string;
+        address: "0x0829F361A05D993d5CEb035cA6DF3446b060970b";
+    })[];
+    stables: "0x0829F361A05D993d5CEb035cA6DF3446b060970b"[];
+    watchlist: never[];
+    internalName: "nibiru";
+    nativeLogoUrl: "https://assets.oku.trade/natives/nibi.png";
+    contracts: {
+        limitOrder: {
+            address: "0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc";
+        };
+        nftManager: {
+            address: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c";
+        };
+        weth9: {
+            address: "0x1429B38e58b97de646ACd65fdb8a4502c2131484";
+        };
+        multicall2: {
+            address: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435";
+        };
+        multicall3: {
+            address: "0xcA11bde05977b3631167028862bE2a173976CA11";
+        };
+    };
+    blockExplorers: {
+        readonly default: {
+            readonly name: "NibiScan";
+            readonly url: "https://nibiscan.io";
+        };
+    };
+    ensTlds?: readonly string[] | undefined;
+    id: 6900;
+    nativeCurrency: {
+        readonly decimals: 18;
+        readonly name: "NIBI";
+        readonly symbol: "NIBI";
+    };
+    rpcUrls: {
+        readonly default: {
+            readonly http: readonly [
+                "https://evm-rpc.nibiru.fi"
+            ];
+        };
+    };
+    sourceId?: number | undefined | undefined | undefined;
+    testnet?: boolean | undefined | undefined | undefined;
+    custom?: Record<string, unknown> | undefined;
+    fees?: import("viem").ChainFees<undefined> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
+}>;
 declare const optimism: Readonly<{
     name: "Optimism";
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
@@ -15632,6 +15731,102 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     fees?: import("viem").ChainFees<undefined> | undefined;
     formatters?: undefined | undefined;
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
+}>, Readonly<{
+    name: "Nibiru";
+    blockTimeSeconds: 2;
+    launchTime: 1746663816;
+    sortIndex: 15;
+    logoUrl: "https://assets.oku.trade/chains/nibiru-logo.svg";
+    safeReorgDistance: 90000;
+    externalId: {};
+    markets: {};
+    bridges: {};
+    oracles: {};
+    morpho: {};
+    initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
+    uniswap: {
+        deployBlock: number;
+        poolFactory: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D";
+        permit2: "0x807F4E281B7A3B324825C64ca53c69F0b418dE40";
+        multicall2: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435";
+        tickLens: "0xB3309C48F8407651D918ca3Da4C45DE40109E641";
+        nonfungiblePositionManager: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c";
+        positionsNFT: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c";
+        positionsNFTDeployBlock: number;
+        universalRouter: "0x738fD6d10bCc05c230388B4027CAd37f82fe2AF2";
+        wrappedNativeAddress: "0x1429B38e58b97de646ACd65fdb8a4502c2131484";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
+        nativeCurrencyName: string;
+    };
+    token: {
+        wethAddress: "0x1429B38e58b97de646ACd65fdb8a4502c2131484";
+        usdcAddress: "0x0829F361A05D993d5CEb035cA6DF3446b060970b";
+    };
+    oku: {
+        limitOrderRegistry: "0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc";
+        limitOrderRegistryDeployBlock: number;
+        pricing: {
+            nativeWrappedToken: "0x1429B38e58b97de646ACd65fdb8a4502c2131484";
+            nativeWrappedName: string;
+        };
+    };
+    defaultPool: "0x0000000000000000000000000000000000000000";
+    defaultToken0: "0x0829F361A05D993d5CEb035cA6DF3446b060970b";
+    defaultToken1: "0x1429B38e58b97de646ACd65fdb8a4502c2131484";
+    tokenList: ({
+        symbol: string;
+        address: "0x1429B38e58b97de646ACd65fdb8a4502c2131484";
+    } | {
+        symbol: string;
+        address: "0x0829F361A05D993d5CEb035cA6DF3446b060970b";
+    })[];
+    stables: "0x0829F361A05D993d5CEb035cA6DF3446b060970b"[];
+    watchlist: never[];
+    internalName: "nibiru";
+    nativeLogoUrl: "https://assets.oku.trade/natives/nibi.png";
+    contracts: {
+        limitOrder: {
+            address: "0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc";
+        };
+        nftManager: {
+            address: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c";
+        };
+        weth9: {
+            address: "0x1429B38e58b97de646ACd65fdb8a4502c2131484";
+        };
+        multicall2: {
+            address: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435";
+        };
+        multicall3: {
+            address: "0xcA11bde05977b3631167028862bE2a173976CA11";
+        };
+    };
+    blockExplorers: {
+        readonly default: {
+            readonly name: "NibiScan";
+            readonly url: "https://nibiscan.io";
+        };
+    };
+    ensTlds?: readonly string[] | undefined;
+    id: 6900;
+    nativeCurrency: {
+        readonly decimals: 18;
+        readonly name: "NIBI";
+        readonly symbol: "NIBI";
+    };
+    rpcUrls: {
+        readonly default: {
+            readonly http: readonly ["https://evm-rpc.nibiru.fi"];
+        };
+    };
+    sourceId?: number | undefined | undefined | undefined;
+    testnet?: boolean | undefined | undefined | undefined;
+    custom?: Record<string, unknown> | undefined;
+    fees?: import("viem").ChainFees<undefined> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>];
-export { arbitrum, base, blast, bob, boba, bsc, celo, corn, filecoin, gnosis, goat, hemi, lens, lightlink, linea, lisk, mainnet, manta, mantle, metal, moonbeam, optimism, polygon, redbelly, rootstock, saga, scroll, sei, sonic, taiko, telos, tronShasta, worldchain, xdc, polygonZkEvm, zkSync, MorphoMetadata, UniswapMetadata, OkuPricingMetadata, OkuMetadata, TokenMetadata, Markets, Bridges, Oracles, IChainInfo, MAINNET_CHAINS };
+export { arbitrum, base, blast, bob, boba, bsc, celo, corn, filecoin, gnosis, goat, hemi, lens, lightlink, linea, lisk, mainnet, manta, mantle, metal, moonbeam, nibiru, optimism, polygon, redbelly, rootstock, saga, scroll, sei, sonic, taiko, telos, tronShasta, worldchain, xdc, polygonZkEvm, zkSync, MorphoMetadata, UniswapMetadata, OkuPricingMetadata, OkuMetadata, TokenMetadata, Markets, Bridges, Oracles, IChainInfo, MAINNET_CHAINS };
 export { ChainContract } from "viem";
