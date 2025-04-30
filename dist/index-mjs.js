@@ -2848,7 +2848,7 @@ const nibiru = makeConfig({
             nativeWrappedName: "NIBI",
         },
     },
-    defaultPool: zeroAddress,
+    defaultPool: "0x4BE9Abccf5C41c7A0ddF073e7A72f4eef8B66f61",
     defaultToken0: "0x0829F361A05D993d5CEb035cA6DF3446b060970b",
     defaultToken1: "0x1429B38e58b97de646ACd65fdb8a4502c2131484",
     tokenList: [
@@ -2856,7 +2856,7 @@ const nibiru = makeConfig({
         { symbol: "USDC.e", address: "0x0829F361A05D993d5CEb035cA6DF3446b060970b" },
     ],
     stables: ["0x0829F361A05D993d5CEb035cA6DF3446b060970b"],
-    watchlist: [],
+    watchlist: ["0x4BE9Abccf5C41c7A0ddF073e7A72f4eef8B66f61"],
     internalName: "nibiru",
     nativeLogoUrl: "https://assets.oku.trade/natives/nibi.png",
     contracts: {

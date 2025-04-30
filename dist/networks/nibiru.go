@@ -15,7 +15,7 @@ var Nibiru Network = Network{
 			Url: "https://nibiscan.io",
 		},
 	},
-	DefaultPool:   common.HexToAddress("0x0000000000000000000000000000000000000000"),
+	DefaultPool:   common.HexToAddress("0x4BE9Abccf5C41c7A0ddF073e7A72f4eef8B66f61"),
 	InternalName:  "nibiru",
 	InitCodeHash:  common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId:    map[string]string{},
@@ -24,7 +24,7 @@ var Nibiru Network = Network{
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0x0829F361A05D993d5CEb035cA6DF3446b060970b")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x0829F361A05D993d5CEb035cA6DF3446b060970b"): {}},
-	Watchlist:        []common.Address{},
+	Watchlist:        []common.Address{common.HexToAddress("0x4BE9Abccf5C41c7A0ddF073e7A72f4eef8B66f61")},
 	BlockTimeSeconds: 2,
 	Oku: OkuMetadata{
 		LimitOrderRegistry:            common.HexToAddress("0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc"),
