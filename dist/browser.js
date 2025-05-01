@@ -2861,7 +2861,7 @@
       stables: ["0x0829F361A05D993d5CEb035cA6DF3446b060970b"],
       watchlist: ["0x4BE9Abccf5C41c7A0ddF073e7A72f4eef8B66f61"],
       internalName: "nibiru",
-      nativeLogoUrl: "https://assets.oku.trade/natives/nibi.png",
+      nativeLogoUrl: "https://assets.oku.trade/natives/nibi.svg",
       contracts: {
           ...chains.nibiru.contracts,
           limitOrder: {
