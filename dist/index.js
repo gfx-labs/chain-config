@@ -4564,7 +4564,10 @@ const xdc = makeConfig({
         { symbol: "USDC.e", address: "0x2a8e898b6242355c290e1f4fc966b8788729a4d4" },
     ],
     stables: ["0x2a8e898b6242355c290e1f4fc966b8788729a4d4"],
-    watchlist: [],
+    watchlist: [
+        "0x1e5aec37f6df6653c3342df75edd92beb3fb9846",
+        "0x9149b4e074f101ca0514b1d30fc78f181e21d409",
+    ],
     internalName: "xdc",
     nativeLogoUrl: "https://assets.oku.trade/natives/xdc.png",
     contracts: {
