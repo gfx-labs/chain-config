@@ -8,7 +8,7 @@ var Xdc Network = Network{
 	ChainId:           50,
 	LogoUrl:           "https://assets.oku.trade/chains/xdc-logo.png",
 	SortIndex:         15,
-	LaunchTime:        1745040321,
+	LaunchTime:        1746453600,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

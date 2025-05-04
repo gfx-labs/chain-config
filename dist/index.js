@@ -4518,7 +4518,7 @@ const xdc = makeConfig({
         },
     },
     blockTimeSeconds: 2,
-    launchTime: 1745040321,
+    launchTime: 1746453600,
     sortIndex: 15,
     logoUrl: "https://assets.oku.trade/chains/xdc-logo.png",
     safeReorgDistance: 90000,
