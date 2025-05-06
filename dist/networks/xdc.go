@@ -22,8 +22,8 @@ var Xdc Network = Network{
 	DefaultToken0: common.HexToAddress("0x2a8e898b6242355c290e1f4fc966b8788729a4d4"),
 	DefaultToken1: common.HexToAddress("0x951857744785e80e2de051c32ee7b25f9c458c42"),
 	//TODO: TokenList:        []any{},
-	Stables:          []common.Address{common.HexToAddress("0x2a8e898b6242355c290e1f4fc966b8788729a4d4")},
-	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x2a8e898b6242355c290e1f4fc966b8788729a4d4"): {}},
+	Stables:          []common.Address{common.HexToAddress("0x2a8e898b6242355c290e1f4fc966b8788729a4d4"), common.HexToAddress("0xd4b5f10d61916bd6e0860144a91ac658de8a1437")},
+	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x2a8e898b6242355c290e1f4fc966b8788729a4d4"): {}, common.HexToAddress("0xd4b5f10d61916bd6e0860144a91ac658de8a1437"): {}},
 	Watchlist:        []common.Address{common.HexToAddress("0x1e5aec37f6df6653c3342df75edd92beb3fb9846"), common.HexToAddress("0x9149b4e074f101ca0514b1d30fc78f181e21d409")},
 	BlockTimeSeconds: 2,
 	Oku: OkuMetadata{
