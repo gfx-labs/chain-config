@@ -6798,6 +6798,7 @@ declare const worldchain: Readonly<{
     morpho: {
         deployBlock: number;
         morpho: "0xE741BC7c34758b4caE05062794E8Ae24978AF432";
+        publicAllocator: "0xef9889B4e443DEd35FA0Bd060f2104Cca94e6A43";
         mmFactory11: "0xae5b0884bfff430493D6C844B9fd052Af7d79278";
         bundler3: "0x3D07BF2FFb23248034bF704F3a4786F1ffE2a448";
     };
@@ -15086,6 +15087,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     morpho: {
         deployBlock: number;
         morpho: "0xE741BC7c34758b4caE05062794E8Ae24978AF432";
+        publicAllocator: "0xef9889B4e443DEd35FA0Bd060f2104Cca94e6A43";
         mmFactory11: "0xae5b0884bfff430493D6C844B9fd052Af7d79278";
         bundler3: "0x3D07BF2FFb23248034bF704F3a4786F1ffE2a448";
     };
