@@ -14,7 +14,9 @@ declare const arbitrum: Readonly<{
     };
     markets: {
         kyberswap: string;
-        oneinch: true;
+        oneinch: {
+            spender: string;
+        };
         paraswap: {
             routerContract: string;
         };
@@ -198,7 +200,9 @@ declare const base: Readonly<{
     };
     markets: {
         kyberswap: string;
-        oneinch: true;
+        oneinch: {
+            spender: string;
+        };
         paraswap: {
             routerContract: string;
         };
@@ -1533,7 +1537,9 @@ declare const bsc: Readonly<{
     markets: {
         airswap: true;
         kyberswap: string;
-        oneinch: true;
+        oneinch: {
+            spender: string;
+        };
         paraswap: {
             routerContract: string;
         };
@@ -2881,7 +2887,9 @@ declare const gnosis: Readonly<{
         paraswap: {
             routerContract: string;
         };
-        oneinch: true;
+        oneinch: {
+            spender: string;
+        };
     };
     bridges: {
         chainlink: {
@@ -3492,7 +3500,9 @@ declare const linea: Readonly<{
         openocean: string;
         zeroex: true;
         icecreamswap: true;
-        oneinch: true;
+        oneinch: {
+            spender: string;
+        };
     };
     bridges: {
         chainlink: {
@@ -4034,7 +4044,9 @@ declare const mainnet: Readonly<{
     markets: {
         airswap: true;
         kyberswap: string;
-        oneinch: true;
+        oneinch: {
+            spender: string;
+        };
         paraswap: {
             routerContract: string;
         };
@@ -5071,7 +5083,9 @@ declare const optimism: Readonly<{
     morpho: {};
     markets: {
         kyberswap: string;
-        oneinch: true;
+        oneinch: {
+            spender: string;
+        };
         paraswap: {
             routerContract: string;
         };
@@ -5518,7 +5532,9 @@ declare const polygon: Readonly<{
     markets: {
         airswap: true;
         kyberswap: string;
-        oneinch: true;
+        oneinch: {
+            spender: string;
+        };
         paraswap: {
             routerContract: string;
         };
@@ -7405,7 +7421,9 @@ declare const zkSync: Readonly<{
     };
     markets: {
         kyberswap: string;
-        oneinch: true;
+        oneinch: {
+            spender: string;
+        };
         propellerswap: string;
         openocean: string;
     };
@@ -7974,7 +7992,9 @@ interface Markets {
     kyberswap?: string; // from https://github.com/KyberNetwork/kyberswap-documentation/blob/main/kyberswap-solutions/kyberswap-aggregator/aggregator-api-specification/evm-swaps.md
     odos?: any;
     okx?: any;
-    oneinch?: boolean;
+    oneinch?: {
+        spender: string;
+    };
     openocean?: string;
     paraswap?: {
         routerContract: string;
@@ -8089,7 +8109,9 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     };
     markets: {
         kyberswap: string;
-        oneinch: true;
+        oneinch: {
+            spender: string;
+        };
         paraswap: {
             routerContract: string;
         };
@@ -8268,7 +8290,9 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     };
     markets: {
         kyberswap: string;
-        oneinch: true;
+        oneinch: {
+            spender: string;
+        };
         paraswap: {
             routerContract: string;
         };
@@ -9192,7 +9216,9 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     markets: {
         airswap: true;
         kyberswap: string;
-        oneinch: true;
+        oneinch: {
+            spender: string;
+        };
         paraswap: {
             routerContract: string;
         };
@@ -9483,7 +9509,9 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     markets: {
         airswap: true;
         kyberswap: string;
-        oneinch: true;
+        oneinch: {
+            spender: string;
+        };
         paraswap: {
             routerContract: string;
         };
@@ -9783,7 +9811,9 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     morpho: {};
     markets: {
         kyberswap: string;
-        oneinch: true;
+        oneinch: {
+            spender: string;
+        };
         paraswap: {
             routerContract: string;
         };
@@ -10224,7 +10254,9 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     markets: {
         airswap: true;
         kyberswap: string;
-        oneinch: true;
+        oneinch: {
+            spender: string;
+        };
         paraswap: {
             routerContract: string;
         };
@@ -10799,7 +10831,9 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     };
     markets: {
         kyberswap: string;
-        oneinch: true;
+        oneinch: {
+            spender: string;
+        };
         propellerswap: string;
         openocean: string;
     };
@@ -11434,7 +11468,9 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         openocean: string;
         zeroex: true;
         icecreamswap: true;
-        oneinch: true;
+        oneinch: {
+            spender: string;
+        };
     };
     bridges: {
         chainlink: {
@@ -12731,7 +12767,9 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         paraswap: {
             routerContract: string;
         };
-        oneinch: true;
+        oneinch: {
+            spender: string;
+        };
     };
     bridges: {
         chainlink: {

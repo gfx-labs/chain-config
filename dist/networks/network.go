@@ -350,7 +350,7 @@ type Markets struct {
 	Kyberswap     string
 	Odos          interface{}
 	Okx           interface{}
-	Oneinch       bool
+	Oneinch       map[string]interface{}
 	Openocean     string
 	Paraswap      map[string]interface{}
 	Propellerswap string

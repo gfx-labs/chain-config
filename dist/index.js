@@ -23,7 +23,9 @@ const arbitrum = makeConfig({
     },
     markets: {
         kyberswap: "arbitrum",
-        oneinch: true,
+        oneinch: {
+            spender: "0x111111125421ca6dc452d289314280a0f8842a65"
+        },
         paraswap: {
             routerContract: "0x6A000F20005980200259B80c5102003040001068",
         },
@@ -323,7 +325,9 @@ const base = makeConfig({
     },
     markets: {
         kyberswap: "base",
-        oneinch: true,
+        oneinch: {
+            spender: "0x111111125421ca6dc452d289314280a0f8842a65"
+        },
         paraswap: {
             routerContract: "0x6A000F20005980200259B80c5102003040001068",
         },
@@ -810,7 +814,9 @@ const bsc = makeConfig({
     markets: {
         airswap: true,
         kyberswap: "bsc",
-        oneinch: true,
+        oneinch: {
+            spender: "0x111111125421ca6dc452d289314280a0f8842a65"
+        },
         paraswap: {
             routerContract: "0x6A000F20005980200259B80c5102003040001068",
         },
@@ -1338,7 +1344,9 @@ const gnosis = makeConfig({
         paraswap: {
             routerContract: "0x6A000F20005980200259B80c5102003040001068",
         },
-        oneinch: true,
+        oneinch: {
+            spender: "0x111111125421ca6dc452d289314280a0f8842a65"
+        },
     },
     bridges: {
         chainlink: {
@@ -1869,7 +1877,9 @@ const linea = makeConfig({
         openocean: "linea",
         zeroex: true,
         icecreamswap: true,
-        oneinch: true,
+        oneinch: {
+            spender: "0x111111125421ca6dc452d289314280a0f8842a65"
+        },
     },
     bridges: {
         chainlink: {
@@ -2096,7 +2106,9 @@ const mainnet = makeConfig({
     markets: {
         airswap: true,
         kyberswap: "ethereum",
-        oneinch: true,
+        oneinch: {
+            spender: "0x111111125421ca6dc452d289314280a0f8842a65"
+        },
         paraswap: {
             routerContract: "0x6A000F20005980200259B80c5102003040001068",
         },
@@ -2897,7 +2909,9 @@ const optimism = makeConfig({
     morpho: {},
     markets: {
         kyberswap: "optimism",
-        oneinch: true,
+        oneinch: {
+            spender: "0x111111125421ca6dc452d289314280a0f8842a65"
+        },
         paraswap: {
             routerContract: "0x6A000F20005980200259B80c5102003040001068",
         },
@@ -3189,7 +3203,9 @@ const polygon = makeConfig({
     markets: {
         airswap: true,
         kyberswap: "polygon",
-        oneinch: true,
+        oneinch: {
+            spender: "0x111111125421ca6dc452d289314280a0f8842a65"
+        },
         paraswap: {
             routerContract: "0x6A000F20005980200259B80c5102003040001068",
         },
@@ -4718,7 +4734,9 @@ const zkSync = makeConfig({
     },
     markets: {
         kyberswap: "zksync",
-        oneinch: true,
+        oneinch: {
+            spender: "0x6fd4383cb451173d5f9304f041c7bcbf27d561ff"
+        },
         propellerswap: "zksync",
         openocean: "zksync",
     },
