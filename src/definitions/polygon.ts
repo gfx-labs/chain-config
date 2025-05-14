@@ -19,7 +19,9 @@ export const polygon = makeConfig({
   markets: {
     airswap: true,
     kyberswap: "polygon",
-    oneinch: true,
+    oneinch: {
+      spender: "0x111111125421ca6dc452d289314280a0f8842a65"
+    },
     paraswap: {
       routerContract: "0x6A000F20005980200259B80c5102003040001068",
     },

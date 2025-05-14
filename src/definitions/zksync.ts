@@ -14,7 +14,9 @@ export const zkSync = makeConfig({
   },
   markets: {
     kyberswap: "zksync",
-    oneinch: true,
+    oneinch: {
+      spender:"0x6fd4383cb451173d5f9304f041c7bcbf27d561ff"
+    },
     propellerswap: "zksync",
     openocean: "zksync",
   },

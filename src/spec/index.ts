@@ -73,7 +73,9 @@ export interface Markets {
   kyberswap?: string; // from https://github.com/KyberNetwork/kyberswap-documentation/blob/main/kyberswap-solutions/kyberswap-aggregator/aggregator-api-specification/evm-swaps.md
   odos?: any;
   okx?: any;
-  oneinch?: boolean;
+  oneinch?: {
+    spender: string
+  };
   openocean?: string;
   paraswap?: {
     routerContract: string;
