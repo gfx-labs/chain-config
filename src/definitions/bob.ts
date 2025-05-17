@@ -8,7 +8,9 @@ export const bob = makeConfig({
   sortIndex: 15,
   logoUrl: "https://assets.oku.trade/chains/bob-logo.svg",
   safeReorgDistance: 90000,
-  externalId: {},
+  externalId: {
+    tenderly: "true"
+  },
   markets: {
     icecreamswap: true,
   },

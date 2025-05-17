@@ -14,6 +14,7 @@ export const boba = makeConfig({
   safeReorgDistance: 90000,
   externalId: {
     debank: "boba",
+    tenderly: "true"
   },
   morpho: {},
   markets: {

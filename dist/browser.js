@@ -21,6 +21,7 @@
           zerion: "arbitrum",
           debank: "arb",
           cowswap: "arbitrum_one",
+          tenderly: "true"
       },
       markets: {
           kyberswap: "arbitrum",
@@ -323,6 +324,7 @@
       externalId: {
           zerion: "base",
           debank: "base",
+          tenderly: "true"
       },
       markets: {
           kyberswap: "base",
@@ -474,6 +476,7 @@
       safeReorgDistance: 90000,
       externalId: {
           zerion: "blast",
+          tenderly: "true"
       },
       morpho: {},
       markets: {
@@ -577,7 +580,9 @@
       sortIndex: 15,
       logoUrl: "https://assets.oku.trade/chains/bob-logo.svg",
       safeReorgDistance: 90000,
-      externalId: {},
+      externalId: {
+          tenderly: "true"
+      },
       markets: {
           icecreamswap: true,
       },
@@ -692,6 +697,7 @@
       safeReorgDistance: 90000,
       externalId: {
           debank: "boba",
+          tenderly: "true"
       },
       morpho: {},
       markets: {
@@ -810,6 +816,7 @@
       externalId: {
           zerion: "binance-smart-chain",
           debank: "bsc",
+          tenderly: "true"
       },
       morpho: {},
       markets: {
@@ -1107,7 +1114,9 @@
       sortIndex: 15,
       logoUrl: "https://assets.oku.trade/chains/corn-logo.png",
       safeReorgDistance: 90000,
-      externalId: {},
+      externalId: {
+          tenderly: "true"
+      },
       markets: {},
       bridges: {
           chainlink: {
@@ -1338,6 +1347,7 @@
       externalId: {
           zerion: "xdai",
           cowswap: "xdai",
+          tenderly: "true"
       },
       markets: {
           openocean: "xdai",
@@ -1682,7 +1692,9 @@
       sortIndex: 15,
       logoUrl: "https://assets.oku.trade/chains/lens-logo.png",
       safeReorgDistance: 90000,
-      externalId: {},
+      externalId: {
+          tenderly: "true"
+      },
       markets: {},
       bridges: {},
       oracles: {},
@@ -1872,6 +1884,7 @@
       safeReorgDistance: 100,
       externalId: {
           zerion: "linea",
+          tenderly: "true"
       },
       markets: {
           kyberswap: "linea",
@@ -1998,7 +2011,9 @@
       sortIndex: 15,
       logoUrl: "https://assets.oku.trade/chains/lisk-logo.png",
       safeReorgDistance: 90000,
-      externalId: {},
+      externalId: {
+          tenderly: "true"
+      },
       morpho: {},
       markets: {},
       bridges: {},
@@ -2097,6 +2112,7 @@
           zerion: "ethereum",
           debank: "eth",
           cowswap: "mainnet",
+          tenderly: "true"
       },
       rpcUrls: {
           default: {
@@ -2508,7 +2524,9 @@
       sortIndex: 15,
       logoUrl: "https://assets.oku.trade/chains/mantle-logo.png",
       safeReorgDistance: 90000,
-      externalId: {},
+      externalId: {
+          tenderly: "true"
+      },
       morpho: {},
       markets: {
           openocean: "mantle",
@@ -2718,6 +2736,7 @@
       safeReorgDistance: 90000,
       externalId: {
           debank: "mobm",
+          tenderly: "true"
       },
       morpho: {},
       markets: {
@@ -2906,6 +2925,7 @@
       externalId: {
           zerion: "optimism",
           debank: "op",
+          tenderly: "true"
       },
       morpho: {},
       markets: {
@@ -3199,6 +3219,7 @@
       externalId: {
           zerion: "polygon",
           debank: "matic",
+          tenderly: "true"
       },
       morpho: {},
       markets: {
@@ -3791,6 +3812,7 @@
       safeReorgDistance: 90000,
       externalId: {
           zerion: "scroll",
+          tenderly: "true"
       },
       morpho: {},
       markets: {
@@ -3914,7 +3936,9 @@
       sortIndex: 5,
       logoUrl: "https://assets.oku.trade/chains/sei-logo.svg",
       safeReorgDistance: 90000,
-      externalId: {},
+      externalId: {
+          tenderly: "true"
+      },
       markets: {
           openocean: "sei",
       },
@@ -4044,7 +4068,9 @@
       logoUrl: "https://assets.oku.trade/chains/sonic-logo.svg",
       safeReorgDistance: 90000,
       morpho: {},
-      externalId: {},
+      externalId: {
+          tenderly: "true"
+      },
       markets: {
           icecreamswap: true,
           kyberswap: "sonic",
@@ -4147,7 +4173,9 @@
       sortIndex: 4,
       logoUrl: "https://assets.oku.trade/chains/taiko-logo.svg",
       safeReorgDistance: 90000,
-      externalId: {},
+      externalId: {
+          tenderly: "true"
+      },
       markets: {
           icecreamswap: true
       },
@@ -4453,7 +4481,9 @@
       sortIndex: 15,
       logoUrl: "https://assets.oku.trade/chains/world-logo.png",
       safeReorgDistance: 90000,
-      externalId: {},
+      externalId: {
+          tenderly: "true"
+      },
       rpcUrls: {
           default: { http: ["https://worldchain.drpc.org"] },
       },
@@ -4732,6 +4762,7 @@
       morpho: {},
       externalId: {
           zerion: "zksync-era",
+          tenderly: "true"
       },
       markets: {
           kyberswap: "zksync",

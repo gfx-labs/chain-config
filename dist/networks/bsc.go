@@ -20,8 +20,9 @@ var Bsc Network = Network{
 	InternalName: "bsc",
 	InitCodeHash: common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId: map[string]string{
-		"zerion": "binance-smart-chain",
-		"debank": "bsc",
+		"zerion":   "binance-smart-chain",
+		"debank":   "bsc",
+		"tenderly": "true",
 	},
 	DefaultToken0: common.HexToAddress("0x55d398326f99059ff775485246999027b3197955"),
 	DefaultToken1: common.HexToAddress("0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c"),

@@ -15,6 +15,7 @@ export const optimism = makeConfig({
   externalId: {
     zerion: "optimism",
     debank: "op",
+    tenderly: "true"
   },
   morpho: {},
   markets: {

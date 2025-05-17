@@ -15,6 +15,7 @@ export const arbitrum = makeConfig({
     zerion: "arbitrum",
     debank: "arb",
     cowswap: "arbitrum_one",
+    tenderly: "true"
   },
   markets: {
     kyberswap: "arbitrum",

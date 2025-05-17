@@ -11,6 +11,7 @@ export const zkSync = makeConfig({
 	morpho: {},
   externalId: {
     zerion: "zksync-era",
+    tenderly: "true"
   },
   markets: {
     kyberswap: "zksync",

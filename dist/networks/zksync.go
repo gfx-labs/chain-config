@@ -24,7 +24,8 @@ var Zksync Network = Network{
 	InternalName: "zksync",
 	InitCodeHash: common.HexToHash("0x010013f177ea1fcbc4520f9a3ca7cd2d1d77959e05aa66484027cb38e712aeed"),
 	ExternalId: map[string]string{
-		"zerion": "zksync-era",
+		"zerion":   "zksync-era",
+		"tenderly": "true",
 	},
 	DefaultToken0: common.HexToAddress("0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4"),
 	DefaultToken1: common.HexToAddress("0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91"),

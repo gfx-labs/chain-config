@@ -9,7 +9,9 @@ export const worldchain = makeConfig({
   sortIndex: 15,
   logoUrl: "https://assets.oku.trade/chains/world-logo.png",
   safeReorgDistance: 90000,
-  externalId: {},
+  externalId: {
+    tenderly: "true"
+  },
   rpcUrls: {
     default: { http: ["https://worldchain.drpc.org"] },
   },

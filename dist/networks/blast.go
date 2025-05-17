@@ -20,7 +20,8 @@ var Blast Network = Network{
 	InternalName: "blast",
 	InitCodeHash: common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId: map[string]string{
-		"zerion": "blast",
+		"zerion":   "blast",
+		"tenderly": "true",
 	},
 	DefaultToken0: common.HexToAddress("0x4300000000000000000000000000000000000003"),
 	DefaultToken1: common.HexToAddress("0x4300000000000000000000000000000000000004"),

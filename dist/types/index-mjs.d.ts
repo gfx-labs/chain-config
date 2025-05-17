@@ -11,6 +11,7 @@ declare const arbitrum: Readonly<{
         zerion: string;
         debank: string;
         cowswap: string;
+        tenderly: string;
     };
     markets: {
         kyberswap: string;
@@ -197,6 +198,7 @@ declare const base: Readonly<{
     externalId: {
         zerion: string;
         debank: string;
+        tenderly: string;
     };
     markets: {
         kyberswap: string;
@@ -624,6 +626,7 @@ declare const blast: Readonly<{
     safeReorgDistance: 90000;
     externalId: {
         zerion: string;
+        tenderly: string;
     };
     morpho: {};
     markets: {
@@ -1004,7 +1007,9 @@ declare const bob: Readonly<{
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/chains/bob-logo.svg";
     safeReorgDistance: 90000;
-    externalId: {};
+    externalId: {
+        tenderly: string;
+    };
     markets: {
         icecreamswap: true;
     };
@@ -1404,6 +1409,7 @@ declare const boba: Readonly<{
     safeReorgDistance: 90000;
     externalId: {
         debank: string;
+        tenderly: string;
     };
     morpho: {};
     markets: {
@@ -1532,6 +1538,7 @@ declare const bsc: Readonly<{
     externalId: {
         zerion: string;
         debank: string;
+        tenderly: string;
     };
     morpho: {};
     markets: {
@@ -2633,7 +2640,9 @@ declare const corn: Readonly<{
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/chains/corn-logo.png";
     safeReorgDistance: 90000;
-    externalId: {};
+    externalId: {
+        tenderly: string;
+    };
     markets: {};
     bridges: {
         chainlink: {
@@ -2880,6 +2889,7 @@ declare const gnosis: Readonly<{
     externalId: {
         zerion: string;
         cowswap: string;
+        tenderly: string;
     };
     markets: {
         openocean: string;
@@ -3261,7 +3271,9 @@ declare const lens: Readonly<{
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/chains/lens-logo.png";
     safeReorgDistance: 90000;
-    externalId: {};
+    externalId: {
+        tenderly: string;
+    };
     markets: {};
     bridges: {};
     oracles: {};
@@ -3494,6 +3506,7 @@ declare const linea: Readonly<{
     safeReorgDistance: 100;
     externalId: {
         zerion: string;
+        tenderly: string;
     };
     markets: {
         kyberswap: string;
@@ -3647,7 +3660,9 @@ declare const lisk: Readonly<{
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/chains/lisk-logo.png";
     safeReorgDistance: 90000;
-    externalId: {};
+    externalId: {
+        tenderly: string;
+    };
     morpho: {};
     markets: {};
     bridges: {};
@@ -4034,6 +4049,7 @@ declare const mainnet: Readonly<{
         zerion: string;
         debank: string;
         cowswap: string;
+        tenderly: string;
     };
     rpcUrls: {
         default: {
@@ -4340,7 +4356,9 @@ declare const mantle: Readonly<{
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/chains/mantle-logo.png";
     safeReorgDistance: 90000;
-    externalId: {};
+    externalId: {
+        tenderly: string;
+    };
     morpho: {};
     markets: {
         openocean: string;
@@ -4849,6 +4867,7 @@ declare const moonbeam: Readonly<{
     safeReorgDistance: 90000;
     externalId: {
         debank: string;
+        tenderly: string;
     };
     morpho: {};
     markets: {
@@ -5079,6 +5098,7 @@ declare const optimism: Readonly<{
     externalId: {
         zerion: string;
         debank: string;
+        tenderly: string;
     };
     morpho: {};
     markets: {
@@ -5527,6 +5547,7 @@ declare const polygon: Readonly<{
     externalId: {
         zerion: string;
         debank: string;
+        tenderly: string;
     };
     morpho: {};
     markets: {
@@ -6051,6 +6072,7 @@ declare const scroll: Readonly<{
     safeReorgDistance: 90000;
     externalId: {
         zerion: string;
+        tenderly: string;
     };
     morpho: {};
     markets: {
@@ -6201,7 +6223,9 @@ declare const sei: Readonly<{
     sortIndex: 5;
     logoUrl: "https://assets.oku.trade/chains/sei-logo.svg";
     safeReorgDistance: 90000;
-    externalId: {};
+    externalId: {
+        tenderly: string;
+    };
     markets: {
         openocean: string;
     };
@@ -6340,7 +6364,9 @@ declare const sonic: Readonly<{
     logoUrl: "https://assets.oku.trade/chains/sonic-logo.svg";
     safeReorgDistance: 90000;
     morpho: {};
-    externalId: {};
+    externalId: {
+        tenderly: string;
+    };
     markets: {
         icecreamswap: true;
         kyberswap: string;
@@ -6461,7 +6487,9 @@ declare const taiko: Readonly<{
     sortIndex: 4;
     logoUrl: "https://assets.oku.trade/chains/taiko-logo.svg";
     safeReorgDistance: 90000;
-    externalId: {};
+    externalId: {
+        tenderly: string;
+    };
     markets: {
         icecreamswap: true;
     };
@@ -6802,7 +6830,9 @@ declare const worldchain: Readonly<{
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/chains/world-logo.png";
     safeReorgDistance: 90000;
-    externalId: {};
+    externalId: {
+        tenderly: string;
+    };
     rpcUrls: {
         default: {
             http: string[];
@@ -7418,6 +7448,7 @@ declare const zkSync: Readonly<{
     morpho: {};
     externalId: {
         zerion: string;
+        tenderly: string;
     };
     markets: {
         kyberswap: string;
@@ -8070,6 +8101,7 @@ interface IChainInfo<formatters extends ChainFormatters | undefined = ChainForma
         zerion?: string;
         debank?: string;
         cowswap?: string;
+        tenderly?: string;
     };
     markets: Markets;
     bridges: Bridges;
@@ -8106,6 +8138,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         zerion: string;
         debank: string;
         cowswap: string;
+        tenderly: string;
     };
     markets: {
         kyberswap: string;
@@ -8287,6 +8320,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     externalId: {
         zerion: string;
         debank: string;
+        tenderly: string;
     };
     markets: {
         kyberswap: string;
@@ -8710,6 +8744,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     safeReorgDistance: 90000;
     externalId: {
         debank: string;
+        tenderly: string;
     };
     morpho: {};
     markets: {
@@ -8832,6 +8867,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     safeReorgDistance: 90000;
     externalId: {
         zerion: string;
+        tenderly: string;
     };
     morpho: {};
     markets: {
@@ -9211,6 +9247,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     externalId: {
         zerion: string;
         debank: string;
+        tenderly: string;
     };
     morpho: {};
     markets: {
@@ -9499,6 +9536,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         zerion: string;
         debank: string;
         cowswap: string;
+        tenderly: string;
     };
     rpcUrls: {
         default: {
@@ -9681,6 +9719,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     safeReorgDistance: 90000;
     externalId: {
         debank: string;
+        tenderly: string;
     };
     morpho: {};
     markets: {
@@ -9807,6 +9846,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     externalId: {
         zerion: string;
         debank: string;
+        tenderly: string;
     };
     morpho: {};
     markets: {
@@ -10249,6 +10289,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     externalId: {
         zerion: string;
         debank: string;
+        tenderly: string;
     };
     morpho: {};
     markets: {
@@ -10553,6 +10594,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     safeReorgDistance: 90000;
     externalId: {
         zerion: string;
+        tenderly: string;
     };
     morpho: {};
     markets: {
@@ -10828,6 +10870,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     morpho: {};
     externalId: {
         zerion: string;
+        tenderly: string;
     };
     markets: {
         kyberswap: string;
@@ -11462,6 +11505,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     safeReorgDistance: 100;
     externalId: {
         zerion: string;
+        tenderly: string;
     };
     markets: {
         kyberswap: string;
@@ -11609,7 +11653,9 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     sortIndex: 4;
     logoUrl: "https://assets.oku.trade/chains/taiko-logo.svg";
     safeReorgDistance: 90000;
-    externalId: {};
+    externalId: {
+        tenderly: string;
+    };
     markets: {
         icecreamswap: true;
     };
@@ -11734,7 +11780,9 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/chains/mantle-logo.png";
     safeReorgDistance: 90000;
-    externalId: {};
+    externalId: {
+        tenderly: string;
+    };
     morpho: {};
     markets: {
         openocean: string;
@@ -11865,7 +11913,9 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     sortIndex: 5;
     logoUrl: "https://assets.oku.trade/chains/sei-logo.svg";
     safeReorgDistance: 90000;
-    externalId: {};
+    externalId: {
+        tenderly: string;
+    };
     markets: {
         openocean: string;
     };
@@ -11998,7 +12048,9 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/chains/lisk-logo.png";
     safeReorgDistance: 90000;
-    externalId: {};
+    externalId: {
+        tenderly: string;
+    };
     morpho: {};
     markets: {};
     bridges: {};
@@ -12368,7 +12420,9 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/chains/bob-logo.svg";
     safeReorgDistance: 90000;
-    externalId: {};
+    externalId: {
+        tenderly: string;
+    };
     markets: {
         icecreamswap: true;
     };
@@ -12760,6 +12814,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     externalId: {
         zerion: string;
         cowswap: string;
+        tenderly: string;
     };
     markets: {
         openocean: string;
@@ -13268,7 +13323,9 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/chains/corn-logo.png";
     safeReorgDistance: 90000;
-    externalId: {};
+    externalId: {
+        tenderly: string;
+    };
     markets: {};
     bridges: {
         chainlink: {
@@ -13378,7 +13435,9 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     logoUrl: "https://assets.oku.trade/chains/sonic-logo.svg";
     safeReorgDistance: 90000;
     morpho: {};
-    externalId: {};
+    externalId: {
+        tenderly: string;
+    };
     markets: {
         icecreamswap: true;
         kyberswap: string;
@@ -15113,7 +15172,9 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/chains/world-logo.png";
     safeReorgDistance: 90000;
-    externalId: {};
+    externalId: {
+        tenderly: string;
+    };
     rpcUrls: {
         default: {
             http: string[];
@@ -15675,7 +15736,9 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/chains/lens-logo.png";
     safeReorgDistance: 90000;
-    externalId: {};
+    externalId: {
+        tenderly: string;
+    };
     markets: {};
     bridges: {};
     oracles: {};

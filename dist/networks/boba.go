@@ -20,7 +20,8 @@ var Boba Network = Network{
 	InternalName: "boba",
 	InitCodeHash: common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId: map[string]string{
-		"debank": "boba",
+		"debank":   "boba",
+		"tenderly": "true",
 	},
 	DefaultToken0: common.HexToAddress("0x66a2a913e447d6b4bf33efbec43aaef87890fbbc"),
 	DefaultToken1: common.HexToAddress("0xa18bf3994c0cc6e3b63ac420308e5383f53120d7"),

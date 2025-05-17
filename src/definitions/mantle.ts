@@ -10,7 +10,9 @@ export const mantle = makeConfig({
   sortIndex: 15,
   logoUrl: "https://assets.oku.trade/chains/mantle-logo.png",
   safeReorgDistance: 90000,
-  externalId: {},
+  externalId: {
+    tenderly: "true"
+  },
 	morpho: {},
   markets: {
     openocean: "mantle",

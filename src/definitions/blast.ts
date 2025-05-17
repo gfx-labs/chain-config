@@ -11,6 +11,7 @@ export const blast = makeConfig({
   safeReorgDistance: 90000,
   externalId: {
     zerion: "blast",
+    tenderly: "true"
   },
   morpho: {},
   markets: {
