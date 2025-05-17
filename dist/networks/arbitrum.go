@@ -20,9 +20,10 @@ var Arbitrum Network = Network{
 	InternalName: "arbitrum",
 	InitCodeHash: common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId: map[string]string{
-		"zerion":  "arbitrum",
-		"debank":  "arb",
-		"cowswap": "arbitrum_one",
+		"zerion":   "arbitrum",
+		"debank":   "arb",
+		"cowswap":  "arbitrum_one",
+		"tenderly": "true",
 	},
 	DefaultToken0: common.HexToAddress("0x912ce59144191c1204e64559fe8253a0e49e6548"),
 	DefaultToken1: common.HexToAddress("0xaf88d065e77c8cc2239327c5edb3a432268e5831"),

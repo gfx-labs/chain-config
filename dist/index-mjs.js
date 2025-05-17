@@ -18,6 +18,7 @@ const arbitrum = makeConfig({
         zerion: "arbitrum",
         debank: "arb",
         cowswap: "arbitrum_one",
+        tenderly: "true"
     },
     markets: {
         kyberswap: "arbitrum",
@@ -320,6 +321,7 @@ const base = makeConfig({
     externalId: {
         zerion: "base",
         debank: "base",
+        tenderly: "true"
     },
     markets: {
         kyberswap: "base",
@@ -471,6 +473,7 @@ const blast = makeConfig({
     safeReorgDistance: 90000,
     externalId: {
         zerion: "blast",
+        tenderly: "true"
     },
     morpho: {},
     markets: {
@@ -574,7 +577,9 @@ const bob = makeConfig({
     sortIndex: 15,
     logoUrl: "https://assets.oku.trade/chains/bob-logo.svg",
     safeReorgDistance: 90000,
-    externalId: {},
+    externalId: {
+        tenderly: "true"
+    },
     markets: {
         icecreamswap: true,
     },
@@ -689,6 +694,7 @@ const boba = makeConfig({
     safeReorgDistance: 90000,
     externalId: {
         debank: "boba",
+        tenderly: "true"
     },
     morpho: {},
     markets: {
@@ -807,6 +813,7 @@ const bsc = makeConfig({
     externalId: {
         zerion: "binance-smart-chain",
         debank: "bsc",
+        tenderly: "true"
     },
     morpho: {},
     markets: {
@@ -1104,7 +1111,9 @@ const corn = makeConfig({
     sortIndex: 15,
     logoUrl: "https://assets.oku.trade/chains/corn-logo.png",
     safeReorgDistance: 90000,
-    externalId: {},
+    externalId: {
+        tenderly: "true"
+    },
     markets: {},
     bridges: {
         chainlink: {
@@ -1335,6 +1344,7 @@ const gnosis = makeConfig({
     externalId: {
         zerion: "xdai",
         cowswap: "xdai",
+        tenderly: "true"
     },
     markets: {
         openocean: "xdai",
@@ -1679,7 +1689,9 @@ const lens = makeConfig({
     sortIndex: 15,
     logoUrl: "https://assets.oku.trade/chains/lens-logo.png",
     safeReorgDistance: 90000,
-    externalId: {},
+    externalId: {
+        tenderly: "true"
+    },
     markets: {},
     bridges: {},
     oracles: {},
@@ -1869,6 +1881,7 @@ const linea = makeConfig({
     safeReorgDistance: 100,
     externalId: {
         zerion: "linea",
+        tenderly: "true"
     },
     markets: {
         kyberswap: "linea",
@@ -1995,7 +2008,9 @@ const lisk = makeConfig({
     sortIndex: 15,
     logoUrl: "https://assets.oku.trade/chains/lisk-logo.png",
     safeReorgDistance: 90000,
-    externalId: {},
+    externalId: {
+        tenderly: "true"
+    },
     morpho: {},
     markets: {},
     bridges: {},
@@ -2094,6 +2109,7 @@ const mainnet = makeConfig({
         zerion: "ethereum",
         debank: "eth",
         cowswap: "mainnet",
+        tenderly: "true"
     },
     rpcUrls: {
         default: {
@@ -2505,7 +2521,9 @@ const mantle = makeConfig({
     sortIndex: 15,
     logoUrl: "https://assets.oku.trade/chains/mantle-logo.png",
     safeReorgDistance: 90000,
-    externalId: {},
+    externalId: {
+        tenderly: "true"
+    },
     morpho: {},
     markets: {
         openocean: "mantle",
@@ -2715,6 +2733,7 @@ const moonbeam = makeConfig({
     safeReorgDistance: 90000,
     externalId: {
         debank: "mobm",
+        tenderly: "true"
     },
     morpho: {},
     markets: {
@@ -2903,6 +2922,7 @@ const optimism = makeConfig({
     externalId: {
         zerion: "optimism",
         debank: "op",
+        tenderly: "true"
     },
     morpho: {},
     markets: {
@@ -3196,6 +3216,7 @@ const polygon = makeConfig({
     externalId: {
         zerion: "polygon",
         debank: "matic",
+        tenderly: "true"
     },
     morpho: {},
     markets: {
@@ -3788,6 +3809,7 @@ const scroll = makeConfig({
     safeReorgDistance: 90000,
     externalId: {
         zerion: "scroll",
+        tenderly: "true"
     },
     morpho: {},
     markets: {
@@ -3911,7 +3933,9 @@ const sei = makeConfig({
     sortIndex: 5,
     logoUrl: "https://assets.oku.trade/chains/sei-logo.svg",
     safeReorgDistance: 90000,
-    externalId: {},
+    externalId: {
+        tenderly: "true"
+    },
     markets: {
         openocean: "sei",
     },
@@ -4041,7 +4065,9 @@ const sonic = makeConfig({
     logoUrl: "https://assets.oku.trade/chains/sonic-logo.svg",
     safeReorgDistance: 90000,
     morpho: {},
-    externalId: {},
+    externalId: {
+        tenderly: "true"
+    },
     markets: {
         icecreamswap: true,
         kyberswap: "sonic",
@@ -4144,7 +4170,9 @@ const taiko = makeConfig({
     sortIndex: 4,
     logoUrl: "https://assets.oku.trade/chains/taiko-logo.svg",
     safeReorgDistance: 90000,
-    externalId: {},
+    externalId: {
+        tenderly: "true"
+    },
     markets: {
         icecreamswap: true
     },
@@ -4450,7 +4478,9 @@ const worldchain = makeConfig({
     sortIndex: 15,
     logoUrl: "https://assets.oku.trade/chains/world-logo.png",
     safeReorgDistance: 90000,
-    externalId: {},
+    externalId: {
+        tenderly: "true"
+    },
     rpcUrls: {
         default: { http: ["https://worldchain.drpc.org"] },
     },
@@ -4729,6 +4759,7 @@ const zkSync = makeConfig({
     morpho: {},
     externalId: {
         zerion: "zksync-era",
+        tenderly: "true"
     },
     markets: {
         kyberswap: "zksync",

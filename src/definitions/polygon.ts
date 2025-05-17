@@ -14,6 +14,7 @@ export const polygon = makeConfig({
   externalId: {
     zerion: "polygon",
     debank: "matic",
+    tenderly: "true"
   },
 	morpho: {},
   markets: {

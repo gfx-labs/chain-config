@@ -153,6 +153,7 @@ export interface IChainInfo<
     zerion?: string;
     debank?: string;
     cowswap?: string;
+    tenderly?: string;
   };
   markets: Markets;
   bridges: Bridges;

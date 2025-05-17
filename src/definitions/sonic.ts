@@ -9,7 +9,9 @@ export const sonic = makeConfig({
   logoUrl: "https://assets.oku.trade/chains/sonic-logo.svg",
   safeReorgDistance: 90000,
   morpho: {},
-  externalId: {},
+  externalId: {
+    tenderly: "true"
+  },
   markets: {
     icecreamswap: true,
     kyberswap: "sonic",

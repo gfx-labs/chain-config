@@ -21,6 +21,7 @@ export const base = makeConfig({
 	externalId: {
 		zerion: "base",
 		debank: "base",
+		tenderly: "true"
 	},
 	markets: {
 		kyberswap: "base",

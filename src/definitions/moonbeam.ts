@@ -13,6 +13,7 @@ export const moonbeam = makeConfig({
   safeReorgDistance: 90000,
   externalId: {
     debank: "mobm",
+    tenderly: "true"
   },
 	morpho: {},
   markets: {

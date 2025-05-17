@@ -20,8 +20,9 @@ var Base Network = Network{
 	InternalName: "base",
 	InitCodeHash: common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId: map[string]string{
-		"zerion": "base",
-		"debank": "base",
+		"zerion":   "base",
+		"debank":   "base",
+		"tenderly": "true",
 	},
 	DefaultToken0: common.HexToAddress("0x4200000000000000000000000000000000000006"),
 	DefaultToken1: common.HexToAddress("0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"),

@@ -21,6 +21,7 @@ export const mainnet = makeConfig({
 		zerion: "ethereum",
 		debank: "eth",
 		cowswap: "mainnet",
+		tenderly: "true"
 	},
 	rpcUrls: {
 		default: {

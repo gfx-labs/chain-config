@@ -15,6 +15,7 @@ export const bsc = makeConfig({
   externalId: {
     zerion: "binance-smart-chain",
     debank: "bsc",
+    tenderly: "true"
   },
 	morpho: {},
   markets: {

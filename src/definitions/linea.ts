@@ -15,6 +15,7 @@ export const linea = makeConfig({
   safeReorgDistance: 100,
   externalId: {
     zerion: "linea",
+    tenderly: "true"
   },
   markets: {
     kyberswap: "linea",

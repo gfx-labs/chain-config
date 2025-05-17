@@ -13,6 +13,7 @@ export const scroll = makeConfig({
   safeReorgDistance: 90000,
   externalId: {
     zerion: "scroll",
+    tenderly: "true"
   },
 	morpho: {},
   markets: {
