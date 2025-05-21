@@ -4569,7 +4569,30 @@ const xdc = makeConfig({
     safeReorgDistance: 90000,
     externalId: {},
     markets: {},
-    bridges: {},
+    bridges: {
+        stargate: {
+            endpointID: 30365,
+            tokens: [{
+                    name: "ETH",
+                    type: "OFT",
+                    id: 13,
+                    address: "0xB0d27478A40223e427697Da523c6A3DAF29AaFfB"
+                },
+                {
+                    name: "USDC",
+                    type: "OFT",
+                    id: 1,
+                    address: "0x8E2E38711080bF8AAb9C74f434d2bae70e67ae44"
+                },
+                {
+                    name: "USDT",
+                    type: "OFT",
+                    id: 2,
+                    address: "0xA4272ad93AC5d2FF048DD6419c88Eb4C1002Ec6b"
+                },
+            ]
+        }
+    },
     oracles: {},
     morpho: {},
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
