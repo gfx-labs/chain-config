@@ -1204,7 +1204,6 @@ const corn = makeConfig({
 
 const etherlink = makeConfig({
     ...etherlink$1,
-    name: "Corn",
     blockTimeSeconds: 0.6,
     launchTime: 1749000115,
     sortIndex: 15,

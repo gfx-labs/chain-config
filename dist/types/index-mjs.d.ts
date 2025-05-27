@@ -2741,7 +2741,6 @@ declare const corn: Readonly<{
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>;
 declare const etherlink: Readonly<{
-    name: "Corn";
     blockTimeSeconds: 0.6;
     launchTime: 1749000115;
     sortIndex: 15;
@@ -2823,6 +2822,7 @@ declare const etherlink: Readonly<{
     };
     ensTlds?: readonly string[] | undefined;
     id: 42793;
+    name: "Etherlink";
     nativeCurrency: {
         readonly decimals: 18;
         readonly name: "Tez";
@@ -16039,7 +16039,6 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     formatters?: undefined | undefined;
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>, Readonly<{
-    name: "Corn";
     blockTimeSeconds: 0.6;
     launchTime: 1749000115;
     sortIndex: 15;
@@ -16121,6 +16120,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     };
     ensTlds?: readonly string[] | undefined;
     id: 42793;
+    name: "Etherlink";
     nativeCurrency: {
         readonly decimals: 18;
         readonly name: "Tez";
