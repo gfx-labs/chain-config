@@ -1205,6 +1205,87 @@
       },
   });
 
+  const etherlink = makeConfig({
+      ...chains.etherlink,
+      name: "Corn",
+      blockTimeSeconds: 0.6,
+      launchTime: 1749000115,
+      sortIndex: 15,
+      logoUrl: "https://assets.oku.trade/chains/etherlink-logo.png",
+      safeReorgDistance: 90000,
+      externalId: {
+          tenderly: "true",
+      },
+      markets: {},
+      bridges: {},
+      oracles: {},
+      morpho: {},
+      initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
+      uniswap: {
+          deployBlock: 14584055,
+          poolFactory: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D",
+          permit2: "0xB952578f3520EE8Ea45b7914994dcf4702cEe578",
+          multicall2: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435",
+          tickLens: "0xB3309C48F8407651D918ca3Da4C45DE40109E641",
+          nonfungiblePositionManager: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c",
+          positionsNFT: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c",
+          positionsNFTDeployBlock: 14584114,
+          universalRouter: "0x9db70E29712Cc8Af10c2B597BaDA6784544FF407",
+          wrappedNativeAddress: "0xc9B53AB2679f573e480d01e0f49e2B5CFB7a3EAb",
+          wrappedNativeSymbol: "WXTZ",
+          wrappedNativeName: "Wrapped XTZ",
+          wrappedNativeDecimals: 18,
+          nativeCurrencyName: "XTZ",
+      },
+      token: {
+          wethAddress: "0xc9B53AB2679f573e480d01e0f49e2B5CFB7a3EAb",
+          usdcAddress: "0x796Ea11Fa2dD751eD01b53C372fFDB4AAa8f00F9",
+          wbtcAddress: "0xbFc94CD2B1E55999Cfc7347a9313e88702B83d0F",
+      },
+      oku: {
+          // TODO: update limit order registry address
+          limitOrderRegistry: viem.zeroAddress,
+          limitOrderRegistryDeployBlock: 14584114,
+          pricing: {
+              nativeWrappedToken: "0xc9B53AB2679f573e480d01e0f49e2B5CFB7a3EAb",
+              nativeWrappedName: "XTZ",
+          },
+      },
+      defaultPool: viem.zeroAddress,
+      defaultToken0: "0x796Ea11Fa2dD751eD01b53C372fFDB4AAa8f00F9",
+      defaultToken1: "0xc9B53AB2679f573e480d01e0f49e2B5CFB7a3EAb",
+      tokenList: [
+          { symbol: "WXTZ", address: "0xc9B53AB2679f573e480d01e0f49e2B5CFB7a3EAb" },
+          { symbol: "USDC.e", address: "0x796Ea11Fa2dD751eD01b53C372fFDB4AAa8f00F9" },
+      ],
+      stables: [
+          "0x796Ea11Fa2dD751eD01b53C372fFDB4AAa8f00F9",
+          "0x2C03058C8AFC06713be23e58D2febC8337dbfE6A",
+      ],
+      watchlist: [],
+      internalName: "etherlink",
+      nativeLogoUrl: "https://assets.oku.trade/natives/xtz.png",
+      contracts: {
+          ...chains.etherlink.contracts,
+          limitOrder: {
+              // TODO: update limit order address
+              address: viem.zeroAddress,
+          },
+          nftManager: {
+              address: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c",
+          },
+          weth9: {
+              address: "0xc9B53AB2679f573e480d01e0f49e2B5CFB7a3EAb",
+          },
+          multicall2: {
+              address: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435",
+          },
+          multicall3: {
+              address: "0xcA11bde05977b3631167028862bE2a173976CA11",
+          },
+      },
+  });
+
   const filecoin = makeConfig({
       ...chains.filecoin,
       sortIndex: 10,
@@ -2855,57 +2936,57 @@
       morpho: {},
       initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
       uniswap: {
-          deployBlock: 19842247,
-          poolFactory: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D",
-          permit2: "0x807F4E281B7A3B324825C64ca53c69F0b418dE40",
-          multicall2: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435",
-          tickLens: "0xB3309C48F8407651D918ca3Da4C45DE40109E641",
-          nonfungiblePositionManager: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c",
-          positionsNFT: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c",
-          positionsNFTDeployBlock: 19842447,
-          universalRouter: "0x738fD6d10bCc05c230388B4027CAd37f82fe2AF2",
-          wrappedNativeAddress: "0x1429B38e58b97de646ACd65fdb8a4502c2131484",
+          deployBlock: 23658063,
+          poolFactory: "0x346239972d1fa486FC4a521031BC81bFB7D6e8a4",
+          permit2: "0xB952578f3520EE8Ea45b7914994dcf4702cEe578",
+          multicall2: "0x352A86168e6988A1aDF9A15Cb00017AAd3B67155",
+          tickLens: "0xA9d71E1dd7ca26F26e656E66d6AA81ed7f745bf0",
+          nonfungiblePositionManager: "0xEFdE184f4b5d79f7c3b7Efc0388d829ff9af0050",
+          positionsNFT: "0xEFdE184f4b5d79f7c3b7Efc0388d829ff9af0050",
+          positionsNFTDeployBlock: 23658348,
+          universalRouter: "0xA7E6cB0A6B1BE8b779022A6aFcb097cF0d3Ff4A2",
+          wrappedNativeAddress: "0x0CaCF669f8446BeCA826913a3c6B96aCD4b02a97",
           wrappedNativeSymbol: "WNIBI",
           wrappedNativeName: "Wrapped NIBI",
           wrappedNativeDecimals: 18,
           nativeCurrencyName: "NIBI",
       },
       token: {
-          wethAddress: "0x1429B38e58b97de646ACd65fdb8a4502c2131484",
+          wethAddress: "0x0CaCF669f8446BeCA826913a3c6B96aCD4b02a97",
           usdcAddress: "0x0829F361A05D993d5CEb035cA6DF3446b060970b",
       },
       oku: {
-          limitOrderRegistry: "0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc",
+          limitOrderRegistry: "0x6E1293993C71Cb2E6b2Da8559f6d7Dc1fdb3AE02",
           limitOrderRegistryDeployBlock: 19842992,
           pricing: {
               nativeWrappedToken: "0x1429B38e58b97de646ACd65fdb8a4502c2131484",
               nativeWrappedName: "NIBI",
           },
       },
-      defaultPool: "0x4BE9Abccf5C41c7A0ddF073e7A72f4eef8B66f61",
+      defaultPool: viem.zeroAddress,
       defaultToken0: "0x0829F361A05D993d5CEb035cA6DF3446b060970b",
-      defaultToken1: "0x1429B38e58b97de646ACd65fdb8a4502c2131484",
+      defaultToken1: "0x0CaCF669f8446BeCA826913a3c6B96aCD4b02a97",
       tokenList: [
-          { symbol: "WNIBI", address: "0x1429B38e58b97de646ACd65fdb8a4502c2131484" },
+          { symbol: "WNIBI", address: "0x0CaCF669f8446BeCA826913a3c6B96aCD4b02a97" },
           { symbol: "USDC.e", address: "0x0829F361A05D993d5CEb035cA6DF3446b060970b" },
       ],
       stables: ["0x0829F361A05D993d5CEb035cA6DF3446b060970b"],
-      watchlist: ["0x4BE9Abccf5C41c7A0ddF073e7A72f4eef8B66f61"],
+      watchlist: [],
       internalName: "nibiru",
       nativeLogoUrl: "https://assets.oku.trade/natives/nibi.svg",
       contracts: {
           ...chains.nibiru.contracts,
           limitOrder: {
-              address: "0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc",
+              address: "0x6E1293993C71Cb2E6b2Da8559f6d7Dc1fdb3AE02",
           },
           nftManager: {
-              address: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c",
+              address: "0xEFdE184f4b5d79f7c3b7Efc0388d829ff9af0050",
           },
           weth9: {
-              address: "0x1429B38e58b97de646ACd65fdb8a4502c2131484",
+              address: "0x0CaCF669f8446BeCA826913a3c6B96aCD4b02a97",
           },
           multicall2: {
-              address: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435",
+              address: "0x352A86168e6988A1aDF9A15Cb00017AAd3B67155",
           },
           multicall3: {
               address: "0xcA11bde05977b3631167028862bE2a173976CA11",
@@ -4482,10 +4563,7 @@
       logoUrl: "https://assets.oku.trade/chains/world-logo.png",
       safeReorgDistance: 90000,
       externalId: {
-          tenderly: "true"
-      },
-      rpcUrls: {
-          default: { http: ["https://worldchain.drpc.org"] },
+          tenderly: "true",
       },
       markets: {},
       bridges: {},
@@ -4572,7 +4650,30 @@
       safeReorgDistance: 90000,
       externalId: {},
       markets: {},
-      bridges: {},
+      bridges: {
+          stargate: {
+              endpointID: 30365,
+              tokens: [{
+                      name: "ETH",
+                      type: "OFT",
+                      id: 13,
+                      address: "0xB0d27478A40223e427697Da523c6A3DAF29AaFfB"
+                  },
+                  {
+                      name: "USDC",
+                      type: "OFT",
+                      id: 1,
+                      address: "0x8E2E38711080bF8AAb9C74f434d2bae70e67ae44"
+                  },
+                  {
+                      name: "USDT",
+                      type: "OFT",
+                      id: 2,
+                      address: "0xA4272ad93AC5d2FF048DD6419c88Eb4C1002Ec6b"
+                  },
+              ]
+          }
+      },
       oracles: {},
       morpho: {},
       initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
@@ -4919,6 +5020,7 @@
       tronShasta,
       lens,
       nibiru,
+      etherlink,
   ];
 
   exports.MAINNET_CHAINS = MAINNET_CHAINS;
@@ -4930,6 +5032,7 @@
   exports.bsc = bsc;
   exports.celo = celo;
   exports.corn = corn;
+  exports.etherlink = etherlink;
   exports.filecoin = filecoin;
   exports.gnosis = gnosis;
   exports.goat = goat;

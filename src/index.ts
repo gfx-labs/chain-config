@@ -40,4 +40,5 @@ export const MAINNET_CHAINS = [
   defs.tronShasta,
   defs.lens,
   defs.nibiru,
+  defs.etherlink,
 ] as const;

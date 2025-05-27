@@ -10,6 +10,7 @@ export * from "./boba";
 export * from "./bsc";
 export * from "./celo";
 export * from "./corn";
+export * from "./etherlink";
 export * from "./filecoin";
 export * from "./gnosis";
 export * from "./goat";
