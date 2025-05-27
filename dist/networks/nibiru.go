@@ -15,7 +15,7 @@ var Nibiru Network = Network{
 			Url: "https://nibiscan.io",
 		},
 	},
-	DefaultPool:   common.HexToAddress("0x0000000000000000000000000000000000000000"),
+	DefaultPool:   common.HexToAddress("0xd8F82b8d2e82265aC25d8d4Ef3cA47917693D3d5"),
 	InternalName:  "nibiru",
 	InitCodeHash:  common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId:    map[string]string{},

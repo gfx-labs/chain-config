@@ -2959,7 +2959,7 @@ const nibiru = makeConfig({
             nativeWrappedName: "NIBI",
         },
     },
-    defaultPool: zeroAddress,
+    defaultPool: "0xd8F82b8d2e82265aC25d8d4Ef3cA47917693D3d5",
     defaultToken0: "0x0829F361A05D993d5CEb035cA6DF3446b060970b",
     defaultToken1: "0x0CaCF669f8446BeCA826913a3c6B96aCD4b02a97",
     tokenList: [
