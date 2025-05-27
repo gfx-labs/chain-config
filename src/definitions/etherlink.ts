@@ -4,7 +4,6 @@ import { zeroAddress } from "viem";
 
 export const etherlink = makeConfig({
   ...chain,
-  name: "Corn",
   blockTimeSeconds: 0.6,
   launchTime: 1749000115,
   sortIndex: 15,
