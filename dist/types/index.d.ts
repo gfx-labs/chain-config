@@ -2783,7 +2783,7 @@ declare const etherlink: Readonly<{
             nativeWrappedName: string;
         };
     };
-    defaultPool: "0x0000000000000000000000000000000000000000";
+    defaultPool: "0x2e397533BA6E0AF7889E46E4C08F97548ac080F7";
     defaultToken0: "0x796Ea11Fa2dD751eD01b53C372fFDB4AAa8f00F9";
     defaultToken1: "0xc9B53AB2679f573e480d01e0f49e2B5CFB7a3EAb";
     tokenList: ({
@@ -16081,7 +16081,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             nativeWrappedName: string;
         };
     };
-    defaultPool: "0x0000000000000000000000000000000000000000";
+    defaultPool: "0x2e397533BA6E0AF7889E46E4C08F97548ac080F7";
     defaultToken0: "0x796Ea11Fa2dD751eD01b53C372fFDB4AAa8f00F9";
     defaultToken1: "0xc9B53AB2679f573e480d01e0f49e2B5CFB7a3EAb";
     tokenList: ({

@@ -15,7 +15,7 @@ var Etherlink Network = Network{
 			Url: "https://explorer.etherlink.com",
 		},
 	},
-	DefaultPool:  common.HexToAddress("0x0000000000000000000000000000000000000000"),
+	DefaultPool:  common.HexToAddress("0x2e397533BA6E0AF7889E46E4C08F97548ac080F7"),
 	InternalName: "etherlink",
 	InitCodeHash: common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId: map[string]string{
