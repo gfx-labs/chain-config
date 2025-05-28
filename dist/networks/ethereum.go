@@ -74,10 +74,11 @@ var Ethereum Network = Network{
 		NativeCurrencyName:                 "ETH",
 	},
 	Morpho: MorphoMetadata{
-		DeployBlock: 13977148,
-		Morpho:      common.HexToAddress("0xBBBBBbbBBb9cC5e90e3b3Af64bdAF62C37EEFFCb"),
-		MmFactory11: common.HexToAddress("0x1897A8997241C1cD4bD0698647e4EB7213535c24"),
-		MmFactory10: common.HexToAddress("0xA9c3D3a366466Fa809d1Ae982Fb2c46E5fC41101"),
+		DeployBlock:     13977148,
+		Morpho:          common.HexToAddress("0xBBBBBbbBBb9cC5e90e3b3Af64bdAF62C37EEFFCb"),
+		MmFactory11:     common.HexToAddress("0x1897A8997241C1cD4bD0698647e4EB7213535c24"),
+		MmFactory10:     common.HexToAddress("0xA9c3D3a366466Fa809d1Ae982Fb2c46E5fC41101"),
+		PublicAllocator: common.HexToAddress("0xfd32fA2ca22c76dD6E550706Ad913FC6CE91c75D"),
 	},
 	Token: TokenMetadata{
 		UsdcAddress: common.HexToAddress("0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"),

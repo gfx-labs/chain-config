@@ -317,6 +317,7 @@ const base = makeConfig({
         mmFactory10: "0xa9c3d3a366466fa809d1ae982fb2c46e5fc41101",
         mmFactory11: "0xFf62A7c278C62eD665133147129245053Bbf5918",
         bundler3: "0x6BFd8137e702540E7A42B74178A4a49Ba43920C4",
+        publicAllocator: "0xA090dD1a701408Df1d4d0B85b716c87565f90467",
     },
     externalId: {
         zerion: "base",
@@ -2182,6 +2183,7 @@ const mainnet = makeConfig({
         morpho: "0xBBBBBbbBBb9cC5e90e3b3Af64bdAF62C37EEFFCb",
         mmFactory11: "0x1897A8997241C1cD4bD0698647e4EB7213535c24",
         mmFactory10: "0xA9c3D3a366466Fa809d1Ae982Fb2c46E5fC41101",
+        publicAllocator: "0xfd32fA2ca22c76dD6E550706Ad913FC6CE91c75D",
     },
     externalId: {
         zerion: "ethereum",
