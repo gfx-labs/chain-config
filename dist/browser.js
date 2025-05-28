@@ -1242,9 +1242,8 @@
           wbtcAddress: "0xbFc94CD2B1E55999Cfc7347a9313e88702B83d0F",
       },
       oku: {
-          // TODO: update limit order registry address
-          limitOrderRegistry: viem.zeroAddress,
-          limitOrderRegistryDeployBlock: 14584114,
+          limitOrderRegistry: "0x447B8E40B0CdA8e55F405C86bC635D02d0540aB8",
+          limitOrderRegistryDeployBlock: 16186329,
           pricing: {
               nativeWrappedToken: "0xc9B53AB2679f573e480d01e0f49e2B5CFB7a3EAb",
               nativeWrappedName: "XTZ",
@@ -1267,8 +1266,7 @@
       contracts: {
           ...chains.etherlink.contracts,
           limitOrder: {
-              // TODO: update limit order address
-              address: viem.zeroAddress,
+              address: "0x447B8E40B0CdA8e55F405C86bC635D02d0540aB8",
           },
           nftManager: {
               address: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c",

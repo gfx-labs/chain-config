@@ -2776,7 +2776,7 @@ declare const etherlink: Readonly<{
         wbtcAddress: "0xbFc94CD2B1E55999Cfc7347a9313e88702B83d0F";
     };
     oku: {
-        limitOrderRegistry: "0x0000000000000000000000000000000000000000";
+        limitOrderRegistry: "0x447B8E40B0CdA8e55F405C86bC635D02d0540aB8";
         limitOrderRegistryDeployBlock: number;
         pricing: {
             nativeWrappedToken: "0xc9B53AB2679f573e480d01e0f49e2B5CFB7a3EAb";
@@ -2799,7 +2799,7 @@ declare const etherlink: Readonly<{
     nativeLogoUrl: "https://assets.oku.trade/natives/xtz.png";
     contracts: {
         limitOrder: {
-            address: "0x0000000000000000000000000000000000000000";
+            address: "0x447B8E40B0CdA8e55F405C86bC635D02d0540aB8";
         };
         nftManager: {
             address: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c";
@@ -16074,7 +16074,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         wbtcAddress: "0xbFc94CD2B1E55999Cfc7347a9313e88702B83d0F";
     };
     oku: {
-        limitOrderRegistry: "0x0000000000000000000000000000000000000000";
+        limitOrderRegistry: "0x447B8E40B0CdA8e55F405C86bC635D02d0540aB8";
         limitOrderRegistryDeployBlock: number;
         pricing: {
             nativeWrappedToken: "0xc9B53AB2679f573e480d01e0f49e2B5CFB7a3EAb";
@@ -16097,7 +16097,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     nativeLogoUrl: "https://assets.oku.trade/natives/xtz.png";
     contracts: {
         limitOrder: {
-            address: "0x0000000000000000000000000000000000000000";
+            address: "0x447B8E40B0CdA8e55F405C86bC635D02d0540aB8";
         };
         nftManager: {
             address: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c";

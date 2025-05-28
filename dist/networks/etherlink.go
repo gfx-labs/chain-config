@@ -29,8 +29,8 @@ var Etherlink Network = Network{
 	Watchlist:        []common.Address{},
 	BlockTimeSeconds: 0.6,
 	Oku: OkuMetadata{
-		LimitOrderRegistry:            common.HexToAddress("0x0000000000000000000000000000000000000000"),
-		LimitOrderRegistryDeployBlock: 14584114,
+		LimitOrderRegistry:            common.HexToAddress("0x447B8E40B0CdA8e55F405C86bC635D02d0540aB8"),
+		LimitOrderRegistryDeployBlock: 16186329,
 
 		Pricing: OkuPricingMetadata{
 			NativeWrappedToken: common.HexToAddress("0xc9B53AB2679f573e480d01e0f49e2B5CFB7a3EAb"),
@@ -68,7 +68,7 @@ var Etherlink Network = Network{
 		},
 		"limitOrder": {
 			BlockCreated: 0,
-			Address:      common.HexToAddress("0x0000000000000000000000000000000000000000"),
+			Address:      common.HexToAddress("0x447B8E40B0CdA8e55F405C86bC635D02d0540aB8"),
 		},
 		"nftManager": {
 			BlockCreated: 0,
