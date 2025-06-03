@@ -15,7 +15,9 @@ export const xdc = makeConfig({
   logoUrl: "https://assets.oku.trade/chains/xdc-logo.png",
   safeReorgDistance: 90000,
   externalId: {},
-  markets: {},
+  markets: {
+    icecreamswap: true,
+  },
   bridges: {
     stargate: {
       endpointID: 30365,

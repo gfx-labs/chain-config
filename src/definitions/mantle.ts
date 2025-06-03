@@ -26,6 +26,9 @@ export const mantle = makeConfig({
       chainSelector: 1556008542357238666n,
       tokenAdminRegistry: "0x000A744940eB5D857c0d61d97015DFc83107404F"
     },
+    deswap: {
+      chainId: 100000023,
+    },
     stargate: {
       endpointID: 30181,
       blockConfirmations: 20,

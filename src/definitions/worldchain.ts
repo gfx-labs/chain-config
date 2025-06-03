@@ -12,7 +12,9 @@ export const worldchain = makeConfig({
   externalId: {
     tenderly: "true",
   },
-  markets: {},
+  markets: {
+    zeroex: true,
+  },
   bridges: {},
   oracles: {},
   morpho: {

@@ -21,6 +21,9 @@ export const bob = makeConfig({
       chainSelector: 3849287863852499584n,
       tokenAdminRegistry: "0xa57d04119AFf4884F8602213E58d8AaAD18229cb",
     },
+    deswap: {
+      chainId: 100000021
+    }
   },
   morpho: {},
   oracles: {

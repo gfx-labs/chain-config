@@ -24,6 +24,9 @@ export const sonic = makeConfig({
       chainSelector: 1673871237479749969n,
       tokenAdminRegistry: "0x2961Cb47b5111F38d75f415c21ceB4120ddd1b69"
     },
+    deswap: {
+      chainId: 100000014,
+    },
     stargate: {
       endpointID: 30332,
       blockConfirmations: 20,

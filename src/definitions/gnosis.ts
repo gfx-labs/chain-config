@@ -31,6 +31,9 @@ export const gnosis = makeConfig({
       chainSelector: 465200170687744372n,
       tokenAdminRegistry: "0x73BC11423CBF14914998C23B0aFC9BE0cb5B2229",
     },
+    deswap: {
+      chainId: 100000002
+    },
     stargate: {
       endpointID: 30145,
       blockConfirmations: 20,
