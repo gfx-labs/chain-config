@@ -88,7 +88,9 @@ export interface Markets {
 }
 
 export interface Bridges {
-  deswap?: any;
+  deswap?: {
+    chainId: number;
+  };
   bungee?: any;
   lifi?: any;
   across?: any;
