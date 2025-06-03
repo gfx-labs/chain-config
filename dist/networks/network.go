@@ -365,7 +365,7 @@ type Markets struct {
 }
 
 type Bridges struct {
-	Deswap      interface{}
+	Deswap      map[string]interface{}
 	Bungee      interface{}
 	Lifi        interface{}
 	Across      interface{}

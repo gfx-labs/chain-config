@@ -1021,6 +1021,9 @@ declare const bob: Readonly<{
             chainSelector: bigint;
             tokenAdminRegistry: string;
         };
+        deswap: {
+            chainId: number;
+        };
     };
     morpho: {};
     oracles: {
@@ -3003,6 +3006,9 @@ declare const gnosis: Readonly<{
             chainSelector: bigint;
             tokenAdminRegistry: string;
         };
+        deswap: {
+            chainId: number;
+        };
         stargate: {
             endpointID: number;
             blockConfirmations: number;
@@ -4467,6 +4473,9 @@ declare const mantle: Readonly<{
             routerAddress: string;
             chainSelector: bigint;
             tokenAdminRegistry: string;
+        };
+        deswap: {
+            chainId: number;
         };
         stargate: {
             endpointID: number;
@@ -6475,6 +6484,9 @@ declare const sonic: Readonly<{
             chainSelector: bigint;
             tokenAdminRegistry: string;
         };
+        deswap: {
+            chainId: number;
+        };
         stargate: {
             endpointID: number;
             blockConfirmations: number;
@@ -6929,7 +6941,9 @@ declare const worldchain: Readonly<{
     externalId: {
         tenderly: string;
     };
-    markets: {};
+    markets: {
+        zeroex: true;
+    };
     bridges: {};
     oracles: {};
     morpho: {
@@ -7322,7 +7336,9 @@ declare const xdc: Readonly<{
     logoUrl: "https://assets.oku.trade/chains/xdc-logo.png";
     safeReorgDistance: 90000;
     externalId: {};
-    markets: {};
+    markets: {
+        icecreamswap: true;
+    };
     bridges: {
         stargate: {
             endpointID: number;
@@ -8145,7 +8161,9 @@ interface Markets {
     icecreamswap?: boolean;
 }
 interface Bridges {
-    deswap?: any;
+    deswap?: {
+        chainId: number;
+    };
     bungee?: any;
     lifi?: any;
     across?: any;
@@ -11906,6 +11924,9 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             chainSelector: bigint;
             tokenAdminRegistry: string;
         };
+        deswap: {
+            chainId: number;
+        };
         stargate: {
             endpointID: number;
             blockConfirmations: number;
@@ -12543,6 +12564,9 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             chainSelector: bigint;
             tokenAdminRegistry: string;
         };
+        deswap: {
+            chainId: number;
+        };
     };
     morpho: {};
     oracles: {
@@ -12942,6 +12966,9 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             routerAddress: string;
             chainSelector: bigint;
             tokenAdminRegistry: string;
+        };
+        deswap: {
+            chainId: number;
         };
         stargate: {
             endpointID: number;
@@ -13559,6 +13586,9 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             routerAddress: string;
             chainSelector: bigint;
             tokenAdminRegistry: string;
+        };
+        deswap: {
+            chainId: number;
         };
         stargate: {
             endpointID: number;
@@ -15277,7 +15307,9 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     externalId: {
         tenderly: string;
     };
-    markets: {};
+    markets: {
+        zeroex: true;
+    };
     bridges: {};
     oracles: {};
     morpho: {
@@ -15664,7 +15696,9 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     logoUrl: "https://assets.oku.trade/chains/xdc-logo.png";
     safeReorgDistance: 90000;
     externalId: {};
-    markets: {};
+    markets: {
+        icecreamswap: true;
+    };
     bridges: {
         stargate: {
             endpointID: number;

@@ -594,6 +594,9 @@
               chainSelector: 3849287863852499584n,
               tokenAdminRegistry: "0xa57d04119AFf4884F8602213E58d8AaAD18229cb",
           },
+          deswap: {
+              chainId: 100000021
+          }
       },
       morpho: {},
       oracles: {
@@ -1444,6 +1447,9 @@
               routerAddress: "0x4aAD6071085df840abD9Baf1697d5D5992bDadce",
               chainSelector: 465200170687744372n,
               tokenAdminRegistry: "0x73BC11423CBF14914998C23B0aFC9BE0cb5B2229",
+          },
+          deswap: {
+              chainId: 100000002
           },
           stargate: {
               endpointID: 30145,
@@ -2619,6 +2625,9 @@
               routerAddress: "0x670052635a9850bb45882Cb2eCcF66bCff0F41B7",
               chainSelector: 1556008542357238666n,
               tokenAdminRegistry: "0x000A744940eB5D857c0d61d97015DFc83107404F"
+          },
+          deswap: {
+              chainId: 100000023,
           },
           stargate: {
               endpointID: 30181,
@@ -4163,6 +4172,9 @@
               chainSelector: 1673871237479749969n,
               tokenAdminRegistry: "0x2961Cb47b5111F38d75f415c21ceB4120ddd1b69"
           },
+          deswap: {
+              chainId: 100000014,
+          },
           stargate: {
               endpointID: 30332,
               blockConfirmations: 20,
@@ -4564,7 +4576,9 @@
       externalId: {
           tenderly: "true",
       },
-      markets: {},
+      markets: {
+          zeroex: true,
+      },
       bridges: {},
       oracles: {},
       morpho: {
@@ -4648,7 +4662,9 @@
       logoUrl: "https://assets.oku.trade/chains/xdc-logo.png",
       safeReorgDistance: 90000,
       externalId: {},
-      markets: {},
+      markets: {
+          icecreamswap: true,
+      },
       bridges: {
           stargate: {
               endpointID: 30365,
