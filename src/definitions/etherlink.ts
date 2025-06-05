@@ -12,7 +12,17 @@ export const etherlink = makeConfig({
     tenderly: "true",
   },
   markets: {},
-  bridges: {},
+  bridges: {
+    stargate: {
+      endpointID: 30292,
+      tokens: [{
+        name: "WXTZ",
+        type: "OFT",
+        id: 20,
+        address: "0xc9B53AB2679f573e480d01e0f49e2B5CFB7a3EAb"
+      }]
+    }
+  },
   oracles: {},
   morpho: {},
   initCodeHash:
