@@ -59,6 +59,12 @@ export const base = makeConfig({
 					id: 1,
 					address: "0x27a16dc786820B16E5c9028b75B99F6f604b5d26",
 				},
+				{
+          name: "WXTZ",
+          type: "OFT",
+          id: 20,
+          address: "0x91F9cc2649ac70a071602cadE9b0C1A5868af51D"
+        }
 			],
 		},
 		wanbridge: {

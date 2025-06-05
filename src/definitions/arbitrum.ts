@@ -58,6 +58,12 @@ export const arbitrum = makeConfig({
           id: 2,
           address: "0xcE8CcA271Ebc0533920C83d39F417ED6A0abB7D0",
         },
+        {
+          name: "WXTZ",
+          type: "OFT",
+          id: 20,
+          address: "0x7424f00845777A06E21F0bd8873f814A8A814B2D"
+        }
       ],
     },
     wanbridge: {

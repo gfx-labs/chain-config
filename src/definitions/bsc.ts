@@ -53,6 +53,12 @@ export const bsc = makeConfig({
           name: "USDT",
           id: 2,
           address: "0x138EB30f73BC423c6455C53df6D89CB01d9eBc63",
+        },
+        {
+          name: "WXTZ",
+          type: "OFT",
+          id: 20,
+          address: "0x91F9cc2649ac70a071602cadE9b0C1A5868af51D"
         }
       ],
     },

@@ -82,6 +82,12 @@ export const mainnet = makeConfig({
 					id: 22,
 					address: "0x268Ca24DAefF1FaC2ed883c598200CcbB79E931D",
 				},
+				{
+					name: "WXTZ",
+					type: "OFT",
+					id: 20,
+					address: "0xc9B53AB2679f573e480d01e0f49e2B5CFB7a3EAb"
+				}
 			],
 		},
 		wanbridge: {
