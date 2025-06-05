@@ -64,6 +64,12 @@
                       id: 2,
                       address: "0xcE8CcA271Ebc0533920C83d39F417ED6A0abB7D0",
                   },
+                  {
+                      name: "WXTZ",
+                      type: "OFT",
+                      id: 20,
+                      address: "0x7424f00845777A06E21F0bd8873f814A8A814B2D"
+                  }
               ],
           },
           wanbridge: {
@@ -362,6 +368,12 @@
                       id: 1,
                       address: "0x27a16dc786820B16E5c9028b75B99F6f604b5d26",
                   },
+                  {
+                      name: "WXTZ",
+                      type: "OFT",
+                      id: 20,
+                      address: "0x91F9cc2649ac70a071602cadE9b0C1A5868af51D"
+                  }
               ],
           },
           wanbridge: {
@@ -858,6 +870,12 @@
                       name: "USDT",
                       id: 2,
                       address: "0x138EB30f73BC423c6455C53df6D89CB01d9eBc63",
+                  },
+                  {
+                      name: "WXTZ",
+                      type: "OFT",
+                      id: 20,
+                      address: "0x91F9cc2649ac70a071602cadE9b0C1A5868af51D"
                   }
               ],
           },
@@ -1220,7 +1238,17 @@
           tenderly: "true",
       },
       markets: {},
-      bridges: {},
+      bridges: {
+          stargate: {
+              endpointID: 30292,
+              tokens: [{
+                      name: "WXTZ",
+                      type: "OFT",
+                      id: 20,
+                      address: "0xc9B53AB2679f573e480d01e0f49e2B5CFB7a3EAb"
+                  }]
+          }
+      },
       oracles: {},
       morpho: {},
       initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
@@ -2258,6 +2286,12 @@
                       id: 22,
                       address: "0x268Ca24DAefF1FaC2ed883c598200CcbB79E931D",
                   },
+                  {
+                      name: "WXTZ",
+                      type: "OFT",
+                      id: 20,
+                      address: "0xc9B53AB2679f573e480d01e0f49e2B5CFB7a3EAb"
+                  }
               ],
           },
           wanbridge: {

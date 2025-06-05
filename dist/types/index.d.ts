@@ -38,11 +38,16 @@ declare const arbitrum: Readonly<{
         stargate: {
             endpointID: number;
             blockConfirmations: number;
-            tokens: {
+            tokens: ({
                 name: string;
                 id: number;
                 address: string;
-            }[];
+            } | {
+                name: string;
+                type: string;
+                id: number;
+                address: string;
+            })[];
         };
         wanbridge: {
             requiredConfirmations: number;
@@ -225,11 +230,16 @@ declare const base: Readonly<{
         stargate: {
             endpointID: number;
             blockConfirmations: number;
-            tokens: {
+            tokens: ({
                 name: string;
                 id: number;
                 address: string;
-            }[];
+            } | {
+                name: string;
+                type: string;
+                id: number;
+                address: string;
+            })[];
         };
         wanbridge: {
             requiredConfirmations: number;
@@ -1570,11 +1580,16 @@ declare const bsc: Readonly<{
         stargate: {
             endpointID: number;
             blockConfirmations: number;
-            tokens: {
+            tokens: ({
                 name: string;
                 id: number;
                 address: string;
-            }[];
+            } | {
+                name: string;
+                type: string;
+                id: number;
+                address: string;
+            })[];
         };
         wanbridge: {
             requiredConfirmations: number;
@@ -2754,7 +2769,17 @@ declare const etherlink: Readonly<{
         tenderly: string;
     };
     markets: {};
-    bridges: {};
+    bridges: {
+        stargate: {
+            endpointID: number;
+            tokens: {
+                name: string;
+                type: string;
+                id: number;
+                address: string;
+            }[];
+        };
+    };
     oracles: {};
     morpho: {};
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
@@ -8291,11 +8316,16 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         stargate: {
             endpointID: number;
             blockConfirmations: number;
-            tokens: {
+            tokens: ({
                 name: string;
                 id: number;
                 address: string;
-            }[];
+            } | {
+                name: string;
+                type: string;
+                id: number;
+                address: string;
+            })[];
         };
         wanbridge: {
             requiredConfirmations: number;
@@ -8473,11 +8503,16 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         stargate: {
             endpointID: number;
             blockConfirmations: number;
-            tokens: {
+            tokens: ({
                 name: string;
                 id: number;
                 address: string;
-            }[];
+            } | {
+                name: string;
+                type: string;
+                id: number;
+                address: string;
+            })[];
         };
         wanbridge: {
             requiredConfirmations: number;
@@ -9402,11 +9437,16 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         stargate: {
             endpointID: number;
             blockConfirmations: number;
-            tokens: {
+            tokens: ({
                 name: string;
                 id: number;
                 address: string;
-            }[];
+            } | {
+                name: string;
+                type: string;
+                id: number;
+                address: string;
+            })[];
         };
         wanbridge: {
             requiredConfirmations: number;
@@ -16086,7 +16126,17 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         tenderly: string;
     };
     markets: {};
-    bridges: {};
+    bridges: {
+        stargate: {
+            endpointID: number;
+            tokens: {
+                name: string;
+                type: string;
+                id: number;
+                address: string;
+            }[];
+        };
+    };
     oracles: {};
     morpho: {};
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
