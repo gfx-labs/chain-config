@@ -15,13 +15,15 @@ export const etherlink = makeConfig({
   bridges: {
     stargate: {
       endpointID: 30292,
-      tokens: [{
-        name: "WXTZ",
-        type: "OFT",
-        id: 20,
-        address: "0xc9B53AB2679f573e480d01e0f49e2B5CFB7a3EAb"
-      }]
-    }
+      tokens: [
+        {
+          name: "WXTZ",
+          type: "OFT",
+          id: 20,
+          address: "0xc9B53AB2679f573e480d01e0f49e2B5CFB7a3EAb",
+        },
+      ],
+    },
   },
   oracles: {},
   morpho: {},
@@ -68,7 +70,11 @@ export const etherlink = makeConfig({
     "0x796Ea11Fa2dD751eD01b53C372fFDB4AAa8f00F9",
     "0x2C03058C8AFC06713be23e58D2febC8337dbfE6A",
   ],
-  watchlist: [],
+  watchlist: [
+    "0x659fe227a739d7961f3c7bbc090ea9bfafcc2a74",
+    "0xd03b92a27947bb08dd269107d4df00f8ab53fc28",
+    "0x2a5120e8b04e7f2d3fbbbd82afb4cd70de0f5d0e",
+  ],
   internalName: "etherlink",
   nativeLogoUrl: "https://assets.oku.trade/natives/xtz.png",
   contracts: {
