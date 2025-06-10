@@ -6996,7 +6996,7 @@ declare const unichain: Readonly<{
     blockTimeSeconds: 1;
     launchTime: 1733882663;
     sortIndex: 15;
-    logoUrl: "https://assets.oku.trade/chains/unichain-logo.png";
+    logoUrl: "https://assets.oku.trade/chains/unichain-logo.svg";
     safeReorgDistance: 90000;
     externalId: {
         tenderly: string;
@@ -16676,7 +16676,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     blockTimeSeconds: 1;
     launchTime: 1733882663;
     sortIndex: 15;
-    logoUrl: "https://assets.oku.trade/chains/unichain-logo.png";
+    logoUrl: "https://assets.oku.trade/chains/unichain-logo.svg";
     safeReorgDistance: 90000;
     externalId: {
         tenderly: string;

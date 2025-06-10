@@ -4609,7 +4609,7 @@ const unichain = makeConfig({
     blockTimeSeconds: 1,
     launchTime: 1733882663,
     sortIndex: 15,
-    logoUrl: "https://assets.oku.trade/chains/unichain-logo.png",
+    logoUrl: "https://assets.oku.trade/chains/unichain-logo.svg",
     safeReorgDistance: 90000,
     externalId: {
         tenderly: "true",

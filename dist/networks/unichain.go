@@ -6,7 +6,7 @@ import (
 
 var Unichain Network = Network{
 	ChainId:           130,
-	LogoUrl:           "https://assets.oku.trade/chains/unichain-logo.png",
+	LogoUrl:           "https://assets.oku.trade/chains/unichain-logo.svg",
 	SortIndex:         15,
 	LaunchTime:        1733882663,
 	SafeReorgDistance: 90000,
