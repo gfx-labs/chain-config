@@ -41,4 +41,5 @@ export const MAINNET_CHAINS = [
   defs.lens,
   defs.nibiru,
   defs.etherlink,
+  defs.unichain,
 ] as const;

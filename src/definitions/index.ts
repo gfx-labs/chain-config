@@ -36,6 +36,7 @@ export * from "./sonic";
 export * from "./taiko";
 export * from "./telos";
 export * from "./tronShasta";
+export * from "./unichain";
 export * from "./worldchain";
 export * from "./xdc";
 export * from "./zkevm";

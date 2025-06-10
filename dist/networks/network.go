@@ -52,6 +52,7 @@ const (
 	NameLens         InternalName = "lens"
 	NameNibiru       InternalName = "nibiru"
 	NameEtherlink    InternalName = "etherlink"
+	NameUnichain     InternalName = "unichain"
 )
 
 var AllNetworks = []Network{
@@ -93,6 +94,7 @@ var AllNetworks = []Network{
 	Lens,
 	Nibiru,
 	Etherlink,
+	Unichain,
 }
 
 var networksByName = map[string]Network{
@@ -134,6 +136,7 @@ var networksByName = map[string]Network{
 	"lens":          Lens,
 	"nibiru":        Nibiru,
 	"etherlink":     Etherlink,
+	"unichain":      Unichain,
 }
 
 var networksById = map[int]Network{
@@ -175,6 +178,7 @@ var networksById = map[int]Network{
 	232:        Lens,
 	6900:       Nibiru,
 	42793:      Etherlink,
+	130:        Unichain,
 }
 
 func NetworkByName(name string) (*Network, error) {
