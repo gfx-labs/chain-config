@@ -2823,7 +2823,7 @@ declare const etherlink: Readonly<{
         address: "0x796Ea11Fa2dD751eD01b53C372fFDB4AAa8f00F9";
     })[];
     stables: ("0x796Ea11Fa2dD751eD01b53C372fFDB4AAa8f00F9" | "0x2C03058C8AFC06713be23e58D2febC8337dbfE6A")[];
-    watchlist: never[];
+    watchlist: ("0x659fe227a739d7961f3c7bbc090ea9bfafcc2a74" | "0xd03b92a27947bb08dd269107d4df00f8ab53fc28" | "0x2a5120e8b04e7f2d3fbbbd82afb4cd70de0f5d0e")[];
     internalName: "etherlink";
     nativeLogoUrl: "https://assets.oku.trade/natives/xtz.png";
     contracts: {
@@ -16180,7 +16180,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         address: "0x796Ea11Fa2dD751eD01b53C372fFDB4AAa8f00F9";
     })[];
     stables: ("0x796Ea11Fa2dD751eD01b53C372fFDB4AAa8f00F9" | "0x2C03058C8AFC06713be23e58D2febC8337dbfE6A")[];
-    watchlist: never[];
+    watchlist: ("0x659fe227a739d7961f3c7bbc090ea9bfafcc2a74" | "0xd03b92a27947bb08dd269107d4df00f8ab53fc28" | "0x2a5120e8b04e7f2d3fbbbd82afb4cd70de0f5d0e")[];
     internalName: "etherlink";
     nativeLogoUrl: "https://assets.oku.trade/natives/xtz.png";
     contracts: {
