@@ -87,6 +87,10 @@ var Unichain Network = Network{
 			BlockCreated: 0,
 			Address:      common.HexToAddress("0xcA11bde05977b3631167028862bE2a173976CA11"),
 		},
+		"limitOrder": {
+			BlockCreated: 0,
+			Address:      common.HexToAddress("0x0000000000000000000000000000000000000000"),
+		},
 		"nftManager": {
 			BlockCreated: 0,
 			Address:      common.HexToAddress("0x943e6e07a7e8e791dafc44083e54041d743c46e9"),

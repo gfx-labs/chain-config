@@ -4641,6 +4641,7 @@ const unichain = makeConfig({
         wethAddress: "0x4200000000000000000000000000000000000006",
     },
     oku: {
+        // TODO: add limit order registry
         limitOrderRegistry: undefined,
         limitOrderRegistryDeployBlock: 0,
         pricing: {
@@ -4683,6 +4684,9 @@ const unichain = makeConfig({
     contracts: {
         ...chains.unichain.contracts,
         // TODO: add limit order registry
+        limitOrder: {
+            address: viem.zeroAddress,
+        },
         nftManager: {
             address: "0x943e6e07a7e8e791dafc44083e54041d743c46e9",
         },

@@ -7051,6 +7051,9 @@ declare const unichain: Readonly<{
     internalName: "unichain";
     nativeLogoUrl: "https://assets.oku.trade/natives/eth.png";
     contracts: {
+        limitOrder: {
+            address: "0x0000000000000000000000000000000000000000";
+        };
         nftManager: {
             address: "0x943e6e07a7e8e791dafc44083e54041d743c46e9";
         };
@@ -7137,7 +7140,7 @@ declare const unichain: Readonly<{
                 gasUsed: bigint;
                 hash: `0x${string}` | null;
                 logsBloom: `0x${string}` | null;
-                miner: import("abitype").Address;
+                miner: import("viem").Address;
                 mixHash: import("viem").Hash;
                 nonce: `0x${string}` | null;
                 number: bigint | null;
@@ -7164,14 +7167,14 @@ declare const unichain: Readonly<{
             format: (args: import("viem/chains").OpStackRpcTransaction) => ({
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: import("abitype").Address;
+                from: import("viem").Address;
                 gas: bigint;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
                 nonce: number;
                 r: import("viem").Hex;
                 s: import("viem").Hex;
-                to: import("abitype").Address | null;
+                to: import("viem").Address | null;
                 transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 v: bigint;
@@ -7189,8 +7192,8 @@ declare const unichain: Readonly<{
                 r: import("viem").Hex;
                 s: import("viem").Hex;
                 v: bigint;
-                to: import("abitype").Address | null;
-                from: import("abitype").Address;
+                to: import("viem").Address | null;
+                from: import("viem").Address;
                 gas: bigint;
                 nonce: number;
                 value: bigint;
@@ -7216,14 +7219,14 @@ declare const unichain: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: import("abitype").Address;
+                from: import("viem").Address;
                 gas: bigint;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
                 nonce: number;
                 r: import("viem").Hex;
                 s: import("viem").Hex;
-                to: import("abitype").Address | null;
+                to: import("viem").Address | null;
                 transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 v: bigint;
@@ -7244,14 +7247,14 @@ declare const unichain: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: import("abitype").Address;
+                from: import("viem").Address;
                 gas: bigint;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
                 nonce: number;
                 r: import("viem").Hex;
                 s: import("viem").Hex;
-                to: import("abitype").Address | null;
+                to: import("viem").Address | null;
                 transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 v: bigint;
@@ -7272,14 +7275,14 @@ declare const unichain: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: import("abitype").Address;
+                from: import("viem").Address;
                 gas: bigint;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
                 nonce: number;
                 r: import("viem").Hex;
                 s: import("viem").Hex;
-                to: import("abitype").Address | null;
+                to: import("viem").Address | null;
                 transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 v: bigint;
@@ -7300,14 +7303,14 @@ declare const unichain: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: import("abitype").Address;
+                from: import("viem").Address;
                 gas: bigint;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
                 nonce: number;
                 r: import("viem").Hex;
                 s: import("viem").Hex;
-                to: import("abitype").Address | null;
+                to: import("viem").Address | null;
                 transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 v: bigint;
@@ -7336,16 +7339,16 @@ declare const unichain: Readonly<{
                 blobGasUsed?: bigint | undefined;
                 blockHash: import("viem").Hash;
                 blockNumber: bigint;
-                contractAddress: import("abitype").Address | null | undefined;
+                contractAddress: import("viem").Address | null | undefined;
                 cumulativeGasUsed: bigint;
                 effectiveGasPrice: bigint;
-                from: import("abitype").Address;
+                from: import("viem").Address;
                 gasUsed: bigint;
                 logs: import("viem").Log<bigint, number, false>[];
                 logsBloom: import("viem").Hex;
                 root?: `0x${string}` | undefined;
                 status: "success" | "reverted";
-                to: import("abitype").Address | null;
+                to: import("viem").Address | null;
                 transactionHash: import("viem").Hash;
                 transactionIndex: number;
                 type: import("viem").TransactionType;
@@ -16731,6 +16734,9 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     internalName: "unichain";
     nativeLogoUrl: "https://assets.oku.trade/natives/eth.png";
     contracts: {
+        limitOrder: {
+            address: "0x0000000000000000000000000000000000000000";
+        };
         nftManager: {
             address: "0x943e6e07a7e8e791dafc44083e54041d743c46e9";
         };
