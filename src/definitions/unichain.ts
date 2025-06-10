@@ -1,5 +1,6 @@
 import { unichain as chain } from "viem/chains";
 import { makeConfig } from "../util";
+import { zeroAddress } from "viem";
 
 export const unichain = makeConfig({
   ...chain,
@@ -39,6 +40,7 @@ export const unichain = makeConfig({
     wethAddress: "0x4200000000000000000000000000000000000006",
   },
   oku: {
+    // TODO: add limit order registry
     limitOrderRegistry: undefined,
     limitOrderRegistryDeployBlock: 0,
     pricing: {
@@ -81,6 +83,9 @@ export const unichain = makeConfig({
   contracts: {
     ...chain.contracts,
     // TODO: add limit order registry
+    limitOrder: {
+      address: zeroAddress,
+    },
     nftManager: {
       address: "0x943e6e07a7e8e791dafc44083e54041d743c46e9",
     },
