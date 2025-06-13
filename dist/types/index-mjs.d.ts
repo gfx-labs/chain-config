@@ -7001,7 +7001,12 @@ declare const unichain: Readonly<{
     externalId: {
         tenderly: string;
     };
-    markets: {};
+    markets: {
+        icecreamswap: true;
+        zeroex: true;
+        kyberswap: string;
+        openocean: string;
+    };
     bridges: {};
     oracles: {};
     morpho: {};
@@ -16684,7 +16689,12 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     externalId: {
         tenderly: string;
     };
-    markets: {};
+    markets: {
+        icecreamswap: true;
+        zeroex: true;
+        kyberswap: string;
+        openocean: string;
+    };
     bridges: {};
     oracles: {};
     morpho: {};

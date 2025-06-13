@@ -4614,7 +4614,12 @@ const unichain = makeConfig({
     externalId: {
         tenderly: "true",
     },
-    markets: {},
+    markets: {
+        icecreamswap: true,
+        zeroex: true,
+        kyberswap: "unichain",
+        openocean: "uni",
+    },
     bridges: {},
     oracles: {},
     morpho: {},
