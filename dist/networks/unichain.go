@@ -8,7 +8,7 @@ var Unichain Network = Network{
 	ChainId:           130,
 	LogoUrl:           "https://assets.oku.trade/chains/unichain-logo.svg",
 	SortIndex:         15,
-	LaunchTime:        1733882663,
+	LaunchTime:        1750384728,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

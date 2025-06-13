@@ -8,7 +8,7 @@ var Etherlink Network = Network{
 	ChainId:           42793,
 	LogoUrl:           "https://assets.oku.trade/chains/etherlink-logo.png",
 	SortIndex:         15,
-	LaunchTime:        1749000115,
+	LaunchTime:        1750211928,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

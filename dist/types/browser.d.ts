@@ -2769,7 +2769,7 @@ declare const corn: Readonly<{
 }>;
 declare const etherlink: Readonly<{
     blockTimeSeconds: 0.6;
-    launchTime: 1749000115;
+    launchTime: 1750211928;
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/chains/etherlink-logo.png";
     safeReorgDistance: 90000;
@@ -5143,7 +5143,7 @@ declare const moonbeam: Readonly<{
 declare const nibiru: Readonly<{
     name: "Nibiru";
     blockTimeSeconds: 2;
-    launchTime: 1746663816;
+    launchTime: 1749841128;
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/chains/nibiru-logo.svg";
     safeReorgDistance: 90000;
@@ -6994,7 +6994,7 @@ declare const tronShasta: Readonly<{
 declare const unichain: Readonly<{
     name: "Unichain";
     blockTimeSeconds: 1;
-    launchTime: 1733882663;
+    launchTime: 1750384728;
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/chains/unichain-logo.svg";
     safeReorgDistance: 90000;
@@ -16470,7 +16470,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
 }>, Readonly<{
     name: "Nibiru";
     blockTimeSeconds: 2;
-    launchTime: 1746663816;
+    launchTime: 1749841128;
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/chains/nibiru-logo.svg";
     safeReorgDistance: 90000;
@@ -16566,7 +16566,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>, Readonly<{
     blockTimeSeconds: 0.6;
-    launchTime: 1749000115;
+    launchTime: 1750211928;
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/chains/etherlink-logo.png";
     safeReorgDistance: 90000;
@@ -16677,7 +16677,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
 }>, Readonly<{
     name: "Unichain";
     blockTimeSeconds: 1;
-    launchTime: 1733882663;
+    launchTime: 1750384728;
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/chains/unichain-logo.svg";
     safeReorgDistance: 90000;
