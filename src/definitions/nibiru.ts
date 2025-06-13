@@ -5,7 +5,7 @@ export const nibiru = makeConfig({
   ...chain,
   name: "Nibiru",
   blockTimeSeconds: 2,
-  launchTime: 1746663816,
+  launchTime: 1749841128,
   sortIndex: 15,
   logoUrl: "https://assets.oku.trade/chains/nibiru-logo.svg",
   safeReorgDistance: 90000,
