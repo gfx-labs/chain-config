@@ -4646,9 +4646,8 @@ const unichain = makeConfig({
         wethAddress: "0x4200000000000000000000000000000000000006",
     },
     oku: {
-        // TODO: add limit order registry
-        limitOrderRegistry: undefined,
-        limitOrderRegistryDeployBlock: 0,
+        limitOrderRegistry: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D",
+        limitOrderRegistryDeployBlock: 19179485,
         pricing: {
             nativeWrappedToken: "0x4200000000000000000000000000000000000006",
             nativeWrappedName: "ETH",
@@ -4688,9 +4687,8 @@ const unichain = makeConfig({
     nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
     contracts: {
         ...chains.unichain.contracts,
-        // TODO: add limit order registry
         limitOrder: {
-            address: viem.zeroAddress,
+            address: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D",
         },
         nftManager: {
             address: "0x943e6e07a7e8e791dafc44083e54041d743c46e9",

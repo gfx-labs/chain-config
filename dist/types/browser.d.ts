@@ -7031,7 +7031,7 @@ declare const unichain: Readonly<{
         wethAddress: "0x4200000000000000000000000000000000000006";
     };
     oku: {
-        limitOrderRegistry: undefined;
+        limitOrderRegistry: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D";
         limitOrderRegistryDeployBlock: number;
         pricing: {
             nativeWrappedToken: "0x4200000000000000000000000000000000000006";
@@ -7057,7 +7057,7 @@ declare const unichain: Readonly<{
     nativeLogoUrl: "https://assets.oku.trade/natives/eth.png";
     contracts: {
         limitOrder: {
-            address: "0x0000000000000000000000000000000000000000";
+            address: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D";
         };
         nftManager: {
             address: "0x943e6e07a7e8e791dafc44083e54041d743c46e9";
@@ -7145,7 +7145,7 @@ declare const unichain: Readonly<{
                 gasUsed: bigint;
                 hash: `0x${string}` | null;
                 logsBloom: `0x${string}` | null;
-                miner: import("viem").Address;
+                miner: import("abitype").Address;
                 mixHash: import("viem").Hash;
                 nonce: `0x${string}` | null;
                 number: bigint | null;
@@ -7172,14 +7172,14 @@ declare const unichain: Readonly<{
             format: (args: import("viem/chains").OpStackRpcTransaction) => ({
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: import("viem").Address;
+                from: import("abitype").Address;
                 gas: bigint;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
                 nonce: number;
                 r: import("viem").Hex;
                 s: import("viem").Hex;
-                to: import("viem").Address | null;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 v: bigint;
@@ -7197,8 +7197,8 @@ declare const unichain: Readonly<{
                 r: import("viem").Hex;
                 s: import("viem").Hex;
                 v: bigint;
-                to: import("viem").Address | null;
-                from: import("viem").Address;
+                to: import("abitype").Address | null;
+                from: import("abitype").Address;
                 gas: bigint;
                 nonce: number;
                 value: bigint;
@@ -7224,14 +7224,14 @@ declare const unichain: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: import("viem").Address;
+                from: import("abitype").Address;
                 gas: bigint;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
                 nonce: number;
                 r: import("viem").Hex;
                 s: import("viem").Hex;
-                to: import("viem").Address | null;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 v: bigint;
@@ -7252,14 +7252,14 @@ declare const unichain: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: import("viem").Address;
+                from: import("abitype").Address;
                 gas: bigint;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
                 nonce: number;
                 r: import("viem").Hex;
                 s: import("viem").Hex;
-                to: import("viem").Address | null;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 v: bigint;
@@ -7280,14 +7280,14 @@ declare const unichain: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: import("viem").Address;
+                from: import("abitype").Address;
                 gas: bigint;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
                 nonce: number;
                 r: import("viem").Hex;
                 s: import("viem").Hex;
-                to: import("viem").Address | null;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 v: bigint;
@@ -7308,14 +7308,14 @@ declare const unichain: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: import("viem").Address;
+                from: import("abitype").Address;
                 gas: bigint;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
                 nonce: number;
                 r: import("viem").Hex;
                 s: import("viem").Hex;
-                to: import("viem").Address | null;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 v: bigint;
@@ -7344,16 +7344,16 @@ declare const unichain: Readonly<{
                 blobGasUsed?: bigint | undefined;
                 blockHash: import("viem").Hash;
                 blockNumber: bigint;
-                contractAddress: import("viem").Address | null | undefined;
+                contractAddress: import("abitype").Address | null | undefined;
                 cumulativeGasUsed: bigint;
                 effectiveGasPrice: bigint;
-                from: import("viem").Address;
+                from: import("abitype").Address;
                 gasUsed: bigint;
                 logs: import("viem").Log<bigint, number, false>[];
                 logsBloom: import("viem").Hex;
                 root?: `0x${string}` | undefined;
                 status: "success" | "reverted";
-                to: import("viem").Address | null;
+                to: import("abitype").Address | null;
                 transactionHash: import("viem").Hash;
                 transactionIndex: number;
                 type: import("viem").TransactionType;
@@ -16719,7 +16719,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         wethAddress: "0x4200000000000000000000000000000000000006";
     };
     oku: {
-        limitOrderRegistry: undefined;
+        limitOrderRegistry: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D";
         limitOrderRegistryDeployBlock: number;
         pricing: {
             nativeWrappedToken: "0x4200000000000000000000000000000000000006";
@@ -16745,7 +16745,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     nativeLogoUrl: "https://assets.oku.trade/natives/eth.png";
     contracts: {
         limitOrder: {
-            address: "0x0000000000000000000000000000000000000000";
+            address: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D";
         };
         nftManager: {
             address: "0x943e6e07a7e8e791dafc44083e54041d743c46e9";

@@ -30,6 +30,8 @@ var Unichain Network = Network{
 	Watchlist:        []common.Address{common.HexToAddress("0x65081CB48d74A32e9CCfED75164b8c09972DBcF1"), common.HexToAddress("0x5C75bFB6194D7D763d33eA292cBc50cDa806451B"), common.HexToAddress("0xd49174DbA635489C67fA628864C2D0d04824eBd8"), common.HexToAddress("0xbDA709a0665b340898856B8B29FF87079bb130D3"), common.HexToAddress("0x18b268965E4E702bDf13469205937894b8Ab0Ee8"), common.HexToAddress("0xFF9722Cb0712261A7F02A451dd178De10234Ad0c"), common.HexToAddress("0x6b918c9F87B46a758C2B51bce427C8028DaCb720"), common.HexToAddress("0x1D6ae37DB0e36305019fB3d4bad2750B8784aDF9"), common.HexToAddress("0x12095933f1eeB066176dD2E41e5a2F8bE6974616"), common.HexToAddress("0x8EB4b07AFFbd1083F42032EeD35Cd32e382Ee8b7"), common.HexToAddress("0xfBC45aB96D02E150b2DDEb7dd4EAcd3D8c674F4a"), common.HexToAddress("0x18CE92e7a37D994657f97c3DeFAf880A805F08d5"), common.HexToAddress("0xc673d5164103357A7537C36438A6326776A14bbd"), common.HexToAddress("0xa9c6669dE2C04C2ADb22Ac7A65D75B47FEe30E35"), common.HexToAddress("0x8927058918e3CFf6F55EfE45A58db1be1F069E49")},
 	BlockTimeSeconds: 1,
 	Oku: OkuMetadata{
+		LimitOrderRegistry:            common.HexToAddress("0xcb2436774C3e191c85056d248EF4260ce5f27A9D"),
+		LimitOrderRegistryDeployBlock: 19179485,
 
 		Pricing: OkuPricingMetadata{
 			NativeWrappedToken: common.HexToAddress("0x4200000000000000000000000000000000000006"),
@@ -89,7 +91,7 @@ var Unichain Network = Network{
 		},
 		"limitOrder": {
 			BlockCreated: 0,
-			Address:      common.HexToAddress("0x0000000000000000000000000000000000000000"),
+			Address:      common.HexToAddress("0xcb2436774C3e191c85056d248EF4260ce5f27A9D"),
 		},
 		"nftManager": {
 			BlockCreated: 0,
