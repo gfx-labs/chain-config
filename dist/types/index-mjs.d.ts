@@ -5305,9 +5305,9 @@ declare const optimism: Readonly<{
     oku: {
         limitOrderRegistryDeployBlock: number;
         limitOrderRegistry: "0x54dF9e11c7933a9cA3BD1E540B63dA15edAe40bf";
-        bracket: "0x1D718B430aCF5E385024162Da9Cd27bed7c02EC1";
+        bracket: "0x8e9a03e2533f8B4641a271429496F582B89c8fD7";
         bracketDeployBlock: number;
-        stopLimit: "0x03d58de2EE76515340F8Ac0dFCccf9BaEd4d39d5";
+        stopLimit: "0xfdcFdd8267F7054facF9eA2aAD538d74da4B65c8";
         stopLimitDeployBlock: number;
         pricing: {
             nativeWrappedToken: "0x4200000000000000000000000000000000000006";
@@ -10492,9 +10492,9 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     oku: {
         limitOrderRegistryDeployBlock: number;
         limitOrderRegistry: "0x54dF9e11c7933a9cA3BD1E540B63dA15edAe40bf";
-        bracket: "0x1D718B430aCF5E385024162Da9Cd27bed7c02EC1";
+        bracket: "0x8e9a03e2533f8B4641a271429496F582B89c8fD7";
         bracketDeployBlock: number;
-        stopLimit: "0x03d58de2EE76515340F8Ac0dFCccf9BaEd4d39d5";
+        stopLimit: "0xfdcFdd8267F7054facF9eA2aAD538d74da4B65c8";
         stopLimitDeployBlock: number;
         pricing: {
             nativeWrappedToken: "0x4200000000000000000000000000000000000006";

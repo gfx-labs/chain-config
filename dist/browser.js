@@ -3054,13 +3054,13 @@
       externalId: {
           zerion: "optimism",
           debank: "op",
-          tenderly: "true"
+          tenderly: "true",
       },
       morpho: {},
       markets: {
           kyberswap: "optimism",
           oneinch: {
-              spender: "0x111111125421ca6dc452d289314280a0f8842a65"
+              spender: "0x111111125421ca6dc452d289314280a0f8842a65",
           },
           paraswap: {
               routerContract: "0x6A000F20005980200259B80c5102003040001068",
@@ -3120,10 +3120,10 @@
       oku: {
           limitOrderRegistryDeployBlock: 105276132,
           limitOrderRegistry: "0x54dF9e11c7933a9cA3BD1E540B63dA15edAe40bf",
-          bracket: "0x1D718B430aCF5E385024162Da9Cd27bed7c02EC1",
-          bracketDeployBlock: 133454514,
-          stopLimit: "0x03d58de2EE76515340F8Ac0dFCccf9BaEd4d39d5",
-          stopLimitDeployBlock: 133454517,
+          bracket: "0x8e9a03e2533f8B4641a271429496F582B89c8fD7",
+          bracketDeployBlock: 137131119,
+          stopLimit: "0xfdcFdd8267F7054facF9eA2aAD538d74da4B65c8",
+          stopLimitDeployBlock: 137131122,
           pricing: {
               nativeWrappedToken: "0x4200000000000000000000000000000000000006",
               nativeWrappedName: "WETH",
