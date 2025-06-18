@@ -31,7 +31,7 @@ var Nibiru Network = Network{
 		LimitOrderRegistryDeployBlock: 19842992,
 
 		Pricing: OkuPricingMetadata{
-			NativeWrappedToken: common.HexToAddress("0x1429B38e58b97de646ACd65fdb8a4502c2131484"),
+			NativeWrappedToken: common.HexToAddress("0x0CaCF669f8446BeCA826913a3c6B96aCD4b02a97"),
 			NativeWrappedName:  "NIBI",
 			Pools:              []common.Address{},
 			NativeQuotePools:   []ChainContract{},
