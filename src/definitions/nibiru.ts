@@ -41,7 +41,7 @@ export const nibiru = makeConfig({
     limitOrderRegistry: "0x6E1293993C71Cb2E6b2Da8559f6d7Dc1fdb3AE02",
     limitOrderRegistryDeployBlock: 19842992,
     pricing: {
-      nativeWrappedToken: "0x1429B38e58b97de646ACd65fdb8a4502c2131484",
+      nativeWrappedToken: "0x0CaCF669f8446BeCA826913a3c6B96aCD4b02a97",
       nativeWrappedName: "NIBI",
     },
   },
