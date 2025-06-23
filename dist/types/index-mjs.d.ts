@@ -5143,7 +5143,7 @@ declare const moonbeam: Readonly<{
 declare const nibiru: Readonly<{
     name: "Nibiru";
     blockTimeSeconds: 2;
-    launchTime: 1749841128;
+    launchTime: 1750705200;
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/chains/nibiru-logo.svg";
     safeReorgDistance: 90000;
@@ -16485,7 +16485,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
 }>, Readonly<{
     name: "Nibiru";
     blockTimeSeconds: 2;
-    launchTime: 1749841128;
+    launchTime: 1750705200;
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/chains/nibiru-logo.svg";
     safeReorgDistance: 90000;
