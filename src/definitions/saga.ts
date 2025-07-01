@@ -3,7 +3,7 @@ import { makeConfig } from "../util";
 
 export const saga = makeConfig({
   ...chain,
-  name: "Saga",
+  name: "Saga EVM",
   blockTimeSeconds: 5,
   launchTime: 1740384000,
   sortIndex: 13,
