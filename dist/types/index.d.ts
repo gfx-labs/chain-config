@@ -6541,6 +6541,9 @@ declare const sonic: Readonly<{
         icecreamswap: true;
         kyberswap: string;
         openocean: string;
+        paraswap: {
+            routerContract: string;
+        };
     };
     bridges: {
         chainlink: {
@@ -7016,6 +7019,9 @@ declare const unichain: Readonly<{
         zeroex: true;
         kyberswap: string;
         openocean: string;
+        paraswap: {
+            routerContract: string;
+        };
     };
     bridges: {};
     oracles: {};
@@ -14069,6 +14075,9 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         icecreamswap: true;
         kyberswap: string;
         openocean: string;
+        paraswap: {
+            routerContract: string;
+        };
     };
     bridges: {
         chainlink: {
@@ -16714,6 +16723,9 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         zeroex: true;
         kyberswap: string;
         openocean: string;
+        paraswap: {
+            routerContract: string;
+        };
     };
     bridges: {};
     oracles: {};
