@@ -6123,7 +6123,7 @@ declare const rootstock: Readonly<{
     network: "rootstock";
 }>;
 declare const saga: Readonly<{
-    name: "Saga";
+    name: "Saga EVM";
     blockTimeSeconds: 5;
     launchTime: 1740384000;
     sortIndex: 13;
@@ -15353,7 +15353,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     formatters?: undefined | undefined;
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>, Readonly<{
-    name: "Saga";
+    name: "Saga EVM";
     blockTimeSeconds: 5;
     launchTime: 1740384000;
     sortIndex: 13;
