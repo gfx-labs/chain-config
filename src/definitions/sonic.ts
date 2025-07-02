@@ -10,19 +10,22 @@ export const sonic = makeConfig({
   safeReorgDistance: 90000,
   morpho: {},
   externalId: {
-    tenderly: "true"
+    tenderly: "true",
   },
   markets: {
     icecreamswap: true,
     kyberswap: "sonic",
-    openocean: "sonic"
+    openocean: "sonic",
+    paraswap: {
+      routerContract: "0x6A000F20005980200259B80c5102003040001068",
+    },
   },
   bridges: {
     chainlink: {
       atlasNetworkName: "sonic-mainnet",
       routerAddress: "0xB4e1Ff7882474BB93042be9AD5E1fA387949B860",
       chainSelector: 1673871237479749969n,
-      tokenAdminRegistry: "0x2961Cb47b5111F38d75f415c21ceB4120ddd1b69"
+      tokenAdminRegistry: "0x2961Cb47b5111F38d75f415c21ceB4120ddd1b69",
     },
     deswap: {
       chainId: 100000014,
@@ -34,10 +37,10 @@ export const sonic = makeConfig({
         {
           name: "USDC",
           id: 1,
-          address: "0xA272fFe20cFfe769CdFc4b63088DCD2C82a2D8F9"
-        }
-      ]
-    }
+          address: "0xA272fFe20cFfe769CdFc4b63088DCD2C82a2D8F9",
+        },
+      ],
+    },
   },
   oracles: {},
   initCodeHash:
