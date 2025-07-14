@@ -2789,7 +2789,13 @@ declare const etherlink: Readonly<{
         };
     };
     oracles: {};
-    morpho: {};
+    morpho: {
+        deployBlock: number;
+        morpho: "0xbCE7364E63C3B13C73E9977a83c9704E2aCa876e";
+        publicAllocator: "0x8b8B1bd41d36c06253203CD21463994aB752c1e6";
+        mmFactory11: "0x997a79c3C04c5B9eb27d343ae126bcCFb5D74781";
+        bundler3: "0x69dc8086191437b55775b79C730BB3876397e7D1";
+    };
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     uniswap: {
         deployBlock: number;
@@ -16629,7 +16635,13 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         };
     };
     oracles: {};
-    morpho: {};
+    morpho: {
+        deployBlock: number;
+        morpho: "0xbCE7364E63C3B13C73E9977a83c9704E2aCa876e";
+        publicAllocator: "0x8b8B1bd41d36c06253203CD21463994aB752c1e6";
+        mmFactory11: "0x997a79c3C04c5B9eb27d343ae126bcCFb5D74781";
+        bundler3: "0x69dc8086191437b55775b79C730BB3876397e7D1";
+    };
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     uniswap: {
         deployBlock: number;
