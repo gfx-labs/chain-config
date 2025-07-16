@@ -22,6 +22,7 @@ export * from "./lisk";
 export * from "./mainnet";
 export * from "./manta";
 export * from "./mantle";
+export * from "./matchain";
 export * from "./metal";
 export * from "./moonbeam";
 export * from "./nibiru";

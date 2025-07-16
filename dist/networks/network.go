@@ -53,6 +53,7 @@ const (
 	NameNibiru       InternalName = "nibiru"
 	NameEtherlink    InternalName = "etherlink"
 	NameUnichain     InternalName = "unichain"
+	NameMatchain     InternalName = "matchain"
 )
 
 var AllNetworks = []Network{
@@ -95,6 +96,7 @@ var AllNetworks = []Network{
 	Nibiru,
 	Etherlink,
 	Unichain,
+	Matchain,
 }
 
 var networksByName = map[string]Network{
@@ -137,6 +139,7 @@ var networksByName = map[string]Network{
 	"nibiru":        Nibiru,
 	"etherlink":     Etherlink,
 	"unichain":      Unichain,
+	"matchain":      Matchain,
 }
 
 var networksById = map[int]Network{
@@ -179,6 +182,7 @@ var networksById = map[int]Network{
 	6900:       Nibiru,
 	42793:      Etherlink,
 	130:        Unichain,
+	698:        Matchain,
 }
 
 func NetworkByName(name string) (*Network, error) {
