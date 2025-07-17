@@ -2844,6 +2844,9 @@ declare const etherlink: Readonly<{
     } | {
         symbol: string;
         address: "0xecAc9C5F704e954931349Da37F60E39f515c11c1";
+    } | {
+        symbol: string;
+        address: "0xbFc94CD2B1E55999Cfc7347a9313e88702B83d0F";
     })[];
     stables: ("0x796Ea11Fa2dD751eD01b53C372fFDB4AAa8f00F9" | "0x2C03058C8AFC06713be23e58D2febC8337dbfE6A")[];
     watchlist: ("0x659fe227a739d7961f3c7bbc090ea9bfafcc2a74" | "0x2a5120e8b04e7f2d3fbbbd82afb4cd70de0f5d0e" | "0xd03b92a27947bb08dd269107d4df00f8ab53fc28" | "0x80c789ebb377d257b5b660100757307099f0e3c0" | "0x50fe07f16943c55220fbc36c52e98559252a93b4")[];
@@ -16802,6 +16805,9 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     } | {
         symbol: string;
         address: "0xecAc9C5F704e954931349Da37F60E39f515c11c1";
+    } | {
+        symbol: string;
+        address: "0xbFc94CD2B1E55999Cfc7347a9313e88702B83d0F";
     })[];
     stables: ("0x796Ea11Fa2dD751eD01b53C372fFDB4AAa8f00F9" | "0x2C03058C8AFC06713be23e58D2febC8337dbfE6A")[];
     watchlist: ("0x659fe227a739d7961f3c7bbc090ea9bfafcc2a74" | "0x2a5120e8b04e7f2d3fbbbd82afb4cd70de0f5d0e" | "0xd03b92a27947bb08dd269107d4df00f8ab53fc28" | "0x80c789ebb377d257b5b660100757307099f0e3c0" | "0x50fe07f16943c55220fbc36c52e98559252a93b4")[];

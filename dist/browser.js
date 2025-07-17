@@ -1298,6 +1298,7 @@
           { symbol: "USDT", address: "0x2C03058C8AFC06713be23e58D2febC8337dbfE6A" },
           { symbol: "WETH", address: "0xfc24f770F94edBca6D6f885E12d4317320BcB401" },
           { symbol: "LBTC", address: "0xecAc9C5F704e954931349Da37F60E39f515c11c1" },
+          { symbol: "WBTC", address: "0xbFc94CD2B1E55999Cfc7347a9313e88702B83d0F" },
       ],
       stables: [
           "0x796Ea11Fa2dD751eD01b53C372fFDB4AAa8f00F9",
