@@ -36,7 +36,7 @@ export const matchain = makeConfig({
   },
   token: {
     wethAddress: "0x4200000000000000000000000000000000000006",
-    usdcAddress: "0x97eec1c29f745dC7c267F90292AA663d997a601D",
+    usdcAddress: "0x679Dc08cC3A4acFeea2f7CAFAa37561aE0b41Ce7",
   },
   oku: {
     limitOrderRegistry: "0x346239972d1fa486FC4a521031BC81bFB7D6e8a4",
@@ -46,18 +46,14 @@ export const matchain = makeConfig({
       nativeWrappedName: "WBNB",
     },
   },
-  defaultPool: zeroAddress,
+  defaultPool: "0x166D111Ce22f6cb0F315CA1d706B61adcF0ea265",
   defaultToken0: "0x4200000000000000000000000000000000000006",
-  defaultToken1: "0x97eec1c29f745dC7c267F90292AA663d997a601D",
+  defaultToken1: "0x679Dc08cC3A4acFeea2f7CAFAa37561aE0b41Ce7",
   tokenList: [
     { symbol: "WBNB", address: "0x4200000000000000000000000000000000000006" },
-    { symbol: "USDC.e", address: "0x97eec1c29f745dC7c267F90292AA663d997a601D" },
-    { symbol: "USDT", address: "0xB6dc6C8b71e88642cEAD3be1025565A9eE74d1C6" },
+    { symbol: "USDC", address: "0x679Dc08cC3A4acFeea2f7CAFAa37561aE0b41Ce7" },
   ],
-  stables: [
-    "0x97eec1c29f745dC7c267F90292AA663d997a601D",
-    "0xB6dc6C8b71e88642cEAD3be1025565A9eE74d1C6",
-  ],
+  stables: ["0x679Dc08cC3A4acFeea2f7CAFAa37561aE0b41Ce7"],
   watchlist: [],
   internalName: "matchain",
   nativeLogoUrl: "https://assets.oku.trade/natives/bnb.png",
