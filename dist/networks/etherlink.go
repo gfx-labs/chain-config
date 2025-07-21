@@ -24,7 +24,7 @@ var Etherlink Network = Network{
 	DefaultToken0: common.HexToAddress("0x796Ea11Fa2dD751eD01b53C372fFDB4AAa8f00F9"),
 	DefaultToken1: common.HexToAddress("0xc9B53AB2679f573e480d01e0f49e2B5CFB7a3EAb"),
 	BlockAid:      "",
-	// TODO: TokenList:        []any{},
+	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0x796Ea11Fa2dD751eD01b53C372fFDB4AAa8f00F9"), common.HexToAddress("0x2C03058C8AFC06713be23e58D2febC8337dbfE6A")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x796Ea11Fa2dD751eD01b53C372fFDB4AAa8f00F9"): {}, common.HexToAddress("0x2C03058C8AFC06713be23e58D2febC8337dbfE6A"): {}},
 	Watchlist:        []common.Address{common.HexToAddress("0x659fe227a739d7961f3c7bbc090ea9bfafcc2a74"), common.HexToAddress("0x2a5120e8b04e7f2d3fbbbd82afb4cd70de0f5d0e"), common.HexToAddress("0xd03b92a27947bb08dd269107d4df00f8ab53fc28"), common.HexToAddress("0x80c789ebb377d257b5b660100757307099f0e3c0"), common.HexToAddress("0x50fe07f16943c55220fbc36c52e98559252a93b4")},
