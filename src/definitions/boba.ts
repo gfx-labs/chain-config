@@ -12,6 +12,7 @@ export const boba = makeConfig({
   blockTimeSeconds: 2,
   logoUrl: "https://assets.oku.trade/chains/boba-logo.svg",
   safeReorgDistance: 90000,
+  blockAid: "",
   externalId: {
     debank: "boba",
     tenderly: "true"

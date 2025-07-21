@@ -28,6 +28,7 @@ var Taiko Network = Network{
 	},
 	DefaultToken0: common.HexToAddress("0x07d83526730c7438048D55A4fc0b850e2aaB6f0b"),
 	DefaultToken1: common.HexToAddress("0xa51894664a773981c6c112c43ce576f315d5b1b6"),
+	BlockAid:      "",
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0x07d83526730c7438048D55A4fc0b850e2aaB6f0b"), common.HexToAddress("0x19e26b0638bf63aa9fa4d14c6baf8d52ebe86c5c"), common.HexToAddress("0x9c2dc7377717603eB92b2655c5f2E7997a4945BD")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x07d83526730c7438048D55A4fc0b850e2aaB6f0b"): {}, common.HexToAddress("0x19e26b0638bf63aa9fa4d14c6baf8d52ebe86c5c"): {}, common.HexToAddress("0x9c2dc7377717603eB92b2655c5f2E7997a4945BD"): {}},

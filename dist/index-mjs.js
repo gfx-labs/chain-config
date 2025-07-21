@@ -13,6 +13,7 @@ const arbitrum = makeConfig({
     blockTimeSeconds: 0.25,
     logoUrl: "https://assets.oku.trade/chains/arbitrum-logo.svg",
     safeReorgDistance: 90000 * 2,
+    blockAid: "arbitrum",
     morpho: {},
     externalId: {
         zerion: "arbitrum",
@@ -314,6 +315,7 @@ const base = makeConfig({
     launchTime: 1707321600,
     blockTimeSeconds: 2,
     logoUrl: "https://assets.oku.trade/chains/base-logo.svg",
+    blockAid: "base",
     defaultPool: "0xd0b53d9277642d899df5c87a3966a349a798f224",
     defaultToken0: "0x4200000000000000000000000000000000000006",
     defaultToken1: "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
@@ -484,6 +486,7 @@ const blast = makeConfig({
     sortIndex: 14,
     logoUrl: "https://assets.oku.trade/chains/blast-logo.svg",
     safeReorgDistance: 90000,
+    blockAid: "blast",
     externalId: {
         zerion: "blast",
         tenderly: "true"
@@ -590,6 +593,7 @@ const bob = makeConfig({
     sortIndex: 15,
     logoUrl: "https://assets.oku.trade/chains/bob-logo.svg",
     safeReorgDistance: 90000,
+    blockAid: "",
     externalId: {
         tenderly: "true"
     },
@@ -708,6 +712,7 @@ const boba = makeConfig({
     blockTimeSeconds: 2,
     logoUrl: "https://assets.oku.trade/chains/boba-logo.svg",
     safeReorgDistance: 90000,
+    blockAid: "",
     externalId: {
         debank: "boba",
         tenderly: "true"
@@ -826,6 +831,7 @@ const bsc = makeConfig({
     blockTimeSeconds: 3,
     logoUrl: "https://assets.oku.trade/chains/bsc-logo.svg",
     safeReorgDistance: 90000,
+    blockAid: "bsc",
     externalId: {
         zerion: "binance-smart-chain",
         debank: "bsc",
@@ -1026,6 +1032,7 @@ const celo = makeConfig({
     sortIndex: 15,
     logoUrl: "https://assets.oku.trade/chains/celo-logo.svg",
     safeReorgDistance: 90000,
+    blockAid: "",
     externalId: {},
     markets: {
         icecreamswap: true,
@@ -1133,6 +1140,7 @@ const corn = makeConfig({
     sortIndex: 15,
     logoUrl: "https://assets.oku.trade/chains/corn-logo.png",
     safeReorgDistance: 90000,
+    blockAid: "",
     externalId: {
         tenderly: "true"
     },
@@ -1231,6 +1239,7 @@ const etherlink = makeConfig({
     sortIndex: 15,
     logoUrl: "https://assets.oku.trade/chains/etherlink-logo.png",
     safeReorgDistance: 90000,
+    blockAid: "",
     externalId: {
         tenderly: "true",
     },
@@ -1338,6 +1347,7 @@ const filecoin = makeConfig({
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
     blockTimeSeconds: 30,
     safeReorgDistance: 90000,
+    blockAid: "",
     morpho: {},
     blockExplorers: {
         default: {
@@ -1466,13 +1476,14 @@ const gnosis = makeConfig({
     blockTimeSeconds: 5,
     launchTime: 1725890400,
     sortIndex: 18,
+    blockAid: "",
     logoUrl: "https://assets.oku.trade/chains/gnosis-logo.png",
     safeReorgDistance: 90000,
     morpho: {},
     externalId: {
         zerion: "xdai",
         cowswap: "xdai",
-        tenderly: "true"
+        tenderly: "true",
     },
     markets: {
         openocean: "xdai",
@@ -1481,7 +1492,7 @@ const gnosis = makeConfig({
             routerContract: "0x6A000F20005980200259B80c5102003040001068",
         },
         oneinch: {
-            spender: "0x111111125421ca6dc452d289314280a0f8842a65"
+            spender: "0x111111125421ca6dc452d289314280a0f8842a65",
         },
     },
     bridges: {
@@ -1492,7 +1503,7 @@ const gnosis = makeConfig({
             tokenAdminRegistry: "0x73BC11423CBF14914998C23B0aFC9BE0cb5B2229",
         },
         deswap: {
-            chainId: 100000002
+            chainId: 100000002,
         },
         stargate: {
             endpointID: 30145,
@@ -1606,6 +1617,7 @@ const goat = makeConfig({
     sortIndex: 15,
     logoUrl: "https://assets.oku.trade/chains/goat-logo.svg",
     safeReorgDistance: 90000,
+    blockAid: "",
     externalId: {},
     markets: {},
     bridges: {
@@ -1708,6 +1720,7 @@ const hemi = makeConfig({
     sortIndex: 13,
     logoUrl: "https://assets.oku.trade/chains/hemi-logo.svg",
     safeReorgDistance: 90000,
+    blockAid: "",
     externalId: {},
     markets: {},
     bridges: {
@@ -1818,10 +1831,11 @@ const lens = makeConfig({
     blockTimeSeconds: 2,
     launchTime: 1746050531,
     sortIndex: 15,
+    blockAid: "",
     logoUrl: "https://assets.oku.trade/chains/lens-logo.png",
     safeReorgDistance: 90000,
     externalId: {
-        tenderly: "true"
+        tenderly: "true",
     },
     markets: {},
     bridges: {},
@@ -1900,6 +1914,7 @@ const lightlink = makeConfig({
     sortIndex: 13,
     logoUrl: "https://assets.oku.trade/chains/lightlink-logo.svg",
     safeReorgDistance: 90000,
+    blockAid: "",
     morpho: {},
     externalId: {},
     markets: {
@@ -2010,6 +2025,7 @@ const linea = makeConfig({
     morpho: {},
     logoUrl: "https://assets.oku.trade/chains/linea-logo.svg",
     safeReorgDistance: 100,
+    blockAid: "linea",
     externalId: {
         zerion: "linea",
         tenderly: "true"
@@ -2139,6 +2155,7 @@ const lisk = makeConfig({
     sortIndex: 15,
     logoUrl: "https://assets.oku.trade/chains/lisk-logo.png",
     safeReorgDistance: 90000,
+    blockAid: "",
     externalId: {
         tenderly: "true"
     },
@@ -2230,6 +2247,7 @@ const mainnet = makeConfig({
     blockTimeSeconds: 15,
     safeReorgDistance: 90000,
     logoUrl: "https://assets.oku.trade/chains/ethereum-logo.webp",
+    blockAid: "ethereum",
     morpho: {
         deployBlock: 13977148,
         morpho: "0xBBBBBbbBBb9cC5e90e3b3Af64bdAF62C37EEFFCb",
@@ -2555,6 +2573,7 @@ const manta = makeConfig({
     sortIndex: 13,
     logoUrl: "https://assets.oku.trade/chains/manta-logo.png",
     safeReorgDistance: 90000,
+    blockAid: "",
     externalId: {},
     morpho: {},
     markets: {
@@ -2659,6 +2678,7 @@ const mantle = makeConfig({
     sortIndex: 15,
     logoUrl: "https://assets.oku.trade/chains/mantle-logo.png",
     safeReorgDistance: 90000,
+    blockAid: "",
     externalId: {
         tenderly: "true"
     },
@@ -2795,6 +2815,7 @@ const matchain = makeConfig({
     blockTimeSeconds: 0.5,
     launchTime: 1754106070,
     sortIndex: 15,
+    blockAid: "",
     logoUrl: "https://assets.oku.trade/chains/matchain-logo.png",
     safeReorgDistance: 90000,
     externalId: {},
@@ -2821,7 +2842,7 @@ const matchain = makeConfig({
     },
     token: {
         wethAddress: "0x4200000000000000000000000000000000000006",
-        usdcAddress: "0x97eec1c29f745dC7c267F90292AA663d997a601D",
+        usdcAddress: "0x679Dc08cC3A4acFeea2f7CAFAa37561aE0b41Ce7",
     },
     oku: {
         limitOrderRegistry: "0x346239972d1fa486FC4a521031BC81bFB7D6e8a4",
@@ -2831,18 +2852,14 @@ const matchain = makeConfig({
             nativeWrappedName: "WBNB",
         },
     },
-    defaultPool: zeroAddress,
+    defaultPool: "0x166D111Ce22f6cb0F315CA1d706B61adcF0ea265",
     defaultToken0: "0x4200000000000000000000000000000000000006",
-    defaultToken1: "0x97eec1c29f745dC7c267F90292AA663d997a601D",
+    defaultToken1: "0x679Dc08cC3A4acFeea2f7CAFAa37561aE0b41Ce7",
     tokenList: [
         { symbol: "WBNB", address: "0x4200000000000000000000000000000000000006" },
-        { symbol: "USDC.e", address: "0x97eec1c29f745dC7c267F90292AA663d997a601D" },
-        { symbol: "USDT", address: "0xB6dc6C8b71e88642cEAD3be1025565A9eE74d1C6" },
+        { symbol: "USDC", address: "0x679Dc08cC3A4acFeea2f7CAFAa37561aE0b41Ce7" },
     ],
-    stables: [
-        "0x97eec1c29f745dC7c267F90292AA663d997a601D",
-        "0xB6dc6C8b71e88642cEAD3be1025565A9eE74d1C6",
-    ],
+    stables: ["0x679Dc08cC3A4acFeea2f7CAFAa37561aE0b41Ce7"],
     watchlist: [],
     internalName: "matchain",
     nativeLogoUrl: "https://assets.oku.trade/natives/bnb.png",
@@ -2873,6 +2890,7 @@ const metal = makeConfig({
     sortIndex: 15,
     logoUrl: "https://assets.oku.trade/chains/metal-logo.png",
     safeReorgDistance: 90000,
+    blockAid: "",
     externalId: {},
     morpho: {},
     markets: {},
@@ -2949,6 +2967,7 @@ const moonbeam = makeConfig({
     blockTimeSeconds: 30,
     logoUrl: "https://assets.oku.trade/chains/moonbeam-logo.svg",
     safeReorgDistance: 90000,
+    blockAid: "",
     externalId: {
         debank: "mobm",
         tenderly: "true"
@@ -3064,28 +3083,32 @@ const nibiru = makeConfig({
     logoUrl: "https://assets.oku.trade/chains/nibiru-logo.svg",
     safeReorgDistance: 90000,
     externalId: {},
+    blockAid: "",
     markets: {},
     bridges: {
         stargate: {
             endpointID: 30369,
-            tokens: [{
+            tokens: [
+                {
                     name: "ETH",
                     type: "OFT",
                     id: 13,
-                    address: "0x108f4c02C9fcDF862e5f5131054c50f13703f916"
-                }, {
+                    address: "0x108f4c02C9fcDF862e5f5131054c50f13703f916",
+                },
+                {
                     name: "USDC",
                     type: "OFT",
                     id: 1,
-                    address: "0x12a272A581feE5577A5dFa371afEB4b2F3a8C2F8"
-                }, {
+                    address: "0x12a272A581feE5577A5dFa371afEB4b2F3a8C2F8",
+                },
+                {
                     name: "USDT",
                     type: "OFT",
                     id: 2,
-                    address: "0xC16977205c53Cd854136031BD2128F75D6ff63C9"
-                }
-            ]
-        }
+                    address: "0xC16977205c53Cd854136031BD2128F75D6ff63C9",
+                },
+            ],
+        },
     },
     oracles: {},
     morpho: {},
@@ -3163,6 +3186,7 @@ const optimism = makeConfig({
     sortIndex: 2,
     logoUrl: "https://assets.oku.trade/chains/optimism-logo.svg",
     safeReorgDistance: 90000,
+    blockAid: "optimism",
     externalId: {
         zerion: "optimism",
         debank: "op",
@@ -3457,6 +3481,7 @@ const polygon = makeConfig({
     sortIndex: 3,
     logoUrl: "https://assets.oku.trade/chains/polygon-logo.webp",
     safeReorgDistance: 90000,
+    blockAid: "polygon",
     externalId: {
         zerion: "polygon",
         debank: "matic",
@@ -3740,6 +3765,7 @@ const redbelly = makeConfig({
     sortIndex: 15,
     logoUrl: "https://assets.oku.trade/chains/redbelly-logo.svg",
     safeReorgDistance: 90000,
+    blockAid: "",
     externalId: {},
     markets: {},
     bridges: {},
@@ -3822,6 +3848,7 @@ const rootstock = makeConfig({
     blockTimeSeconds: 33,
     logoUrl: "https://assets.oku.trade/chains/rootstock-logo.svg",
     safeReorgDistance: 90000,
+    blockAid: "",
     externalId: {},
     markets: {
         openocean: "rootstock",
@@ -3956,6 +3983,7 @@ const saga = makeConfig({
     sortIndex: 13,
     logoUrl: "https://assets.oku.trade/chains/saga-logo.png",
     safeReorgDistance: 90000,
+    blockAid: "",
     externalId: {},
     markets: {},
     bridges: {},
@@ -4053,6 +4081,7 @@ const scroll = makeConfig({
     blockTimeSeconds: 3,
     logoUrl: "https://assets.oku.trade/chains/scroll-logo.png",
     safeReorgDistance: 90000,
+    blockAid: "scroll",
     externalId: {
         zerion: "scroll",
         tenderly: "true"
@@ -4179,6 +4208,7 @@ const sei = makeConfig({
     sortIndex: 5,
     logoUrl: "https://assets.oku.trade/chains/sei-logo.svg",
     safeReorgDistance: 90000,
+    blockAid: "",
     externalId: {
         tenderly: "true"
     },
@@ -4310,6 +4340,7 @@ const sonic = makeConfig({
     sortIndex: 15,
     logoUrl: "https://assets.oku.trade/chains/sonic-logo.svg",
     safeReorgDistance: 90000,
+    blockAid: "",
     morpho: {},
     externalId: {
         tenderly: "true",
@@ -4422,6 +4453,7 @@ const taiko = makeConfig({
     sortIndex: 4,
     logoUrl: "https://assets.oku.trade/chains/taiko-logo.svg",
     safeReorgDistance: 90000,
+    blockAid: "",
     externalId: {
         tenderly: "true"
     },
@@ -4546,6 +4578,7 @@ const telos = makeConfig({
     sortIndex: 13,
     logoUrl: "https://assets.oku.trade/chains/telos-logo.svg",
     safeReorgDistance: 90000,
+    blockAid: "",
     externalId: {},
     markets: {
         openocean: "telos",
@@ -4668,6 +4701,7 @@ const tronShasta = makeConfig({
     blockTimeSeconds: 5,
     launchTime: 1746055290,
     sortIndex: 15,
+    blockAid: "",
     logoUrl: "https://assets.oku.trade/chains/tron.png",
     safeReorgDistance: 90000,
     externalId: {},
@@ -4731,6 +4765,7 @@ const unichain = makeConfig({
     sortIndex: 15,
     logoUrl: "https://assets.oku.trade/chains/unichain-logo.svg",
     safeReorgDistance: 90000,
+    blockAid: "unichain",
     externalId: {
         tenderly: "true",
     },
@@ -4833,6 +4868,7 @@ const worldchain = makeConfig({
     sortIndex: 15,
     logoUrl: "https://assets.oku.trade/chains/world-logo.png",
     safeReorgDistance: 90000,
+    blockAid: "",
     externalId: {
         tenderly: "true",
     },
@@ -4921,6 +4957,7 @@ const xdc = makeConfig({
     sortIndex: 15,
     logoUrl: "https://assets.oku.trade/chains/xdc-logo.png",
     safeReorgDistance: 90000,
+    blockAid: "",
     externalId: {},
     markets: {
         icecreamswap: true,
@@ -5025,6 +5062,7 @@ const polygonZkEvm = makeConfig({
     blockTimeSeconds: 7,
     logoUrl: "https://assets.oku.trade/chains/zkevm-logo.svg",
     safeReorgDistance: 90000,
+    blockAid: "",
     morpho: {},
     externalId: {
         zerion: "polygon-zkevm",
@@ -5135,6 +5173,7 @@ const zkSync = makeConfig({
     launchTime: 1696514400,
     logoUrl: "https://assets.oku.trade/chains/zksync-logo.svg",
     safeReorgDistance: 90000,
+    blockAid: "zksync",
     morpho: {},
     externalId: {
         zerion: "zksync-era",

@@ -14,6 +14,7 @@ export const xdc = makeConfig({
   sortIndex: 15,
   logoUrl: "https://assets.oku.trade/chains/xdc-logo.png",
   safeReorgDistance: 90000,
+  blockAid: "",
   externalId: {},
   markets: {
     icecreamswap: true,

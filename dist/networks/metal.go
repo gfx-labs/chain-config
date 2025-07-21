@@ -22,6 +22,7 @@ var Metal Network = Network{
 	ExternalId:    map[string]string{},
 	DefaultToken0: common.HexToAddress("0x4200000000000000000000000000000000000006"),
 	DefaultToken1: common.HexToAddress("0x51E85d70944256710cb141847F1a04f568C1Db0e"),
+	BlockAid:      "",
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0x51E85d70944256710cb141847F1a04f568C1Db0e"), common.HexToAddress("0xb91CFCcA485C6E40E3bC622f9BFA02a8ACdEeBab")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x51E85d70944256710cb141847F1a04f568C1Db0e"): {}, common.HexToAddress("0xb91CFCcA485C6E40E3bC622f9BFA02a8ACdEeBab"): {}},

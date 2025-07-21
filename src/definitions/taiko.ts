@@ -10,6 +10,7 @@ export const taiko = makeConfig({
   sortIndex: 4,
   logoUrl: "https://assets.oku.trade/chains/taiko-logo.svg",
   safeReorgDistance: 90000,
+  blockAid: "",
   externalId: {
     tenderly: "true"
   },

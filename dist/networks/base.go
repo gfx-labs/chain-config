@@ -26,6 +26,7 @@ var Base Network = Network{
 	},
 	DefaultToken0: common.HexToAddress("0x4200000000000000000000000000000000000006"),
 	DefaultToken1: common.HexToAddress("0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"),
+	BlockAid:      "base",
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"), common.HexToAddress("0xd9aaec86b65d86f6a7b5b1b0c42ffa531710b6ca"), common.HexToAddress("0x50c5725949a6f0c72e6c4a641f24049a917db0cb"), common.HexToAddress("0xfde4C96c8593536E31F229EA8f37b2ADa2699bb2")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"): {}, common.HexToAddress("0xd9aaec86b65d86f6a7b5b1b0c42ffa531710b6ca"): {}, common.HexToAddress("0x50c5725949a6f0c72e6c4a641f24049a917db0cb"): {}, common.HexToAddress("0xfde4C96c8593536E31F229EA8f37b2ADa2699bb2"): {}},

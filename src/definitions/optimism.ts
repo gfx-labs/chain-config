@@ -12,6 +12,7 @@ export const optimism = makeConfig({
   sortIndex: 2,
   logoUrl: "https://assets.oku.trade/chains/optimism-logo.svg",
   safeReorgDistance: 90000,
+  blockAid: "optimism",
   externalId: {
     zerion: "optimism",
     debank: "op",

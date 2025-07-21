@@ -6,13 +6,14 @@ export const gnosis = makeConfig({
   blockTimeSeconds: 5,
   launchTime: 1725890400,
   sortIndex: 18,
+  blockAid: "",
   logoUrl: "https://assets.oku.trade/chains/gnosis-logo.png",
   safeReorgDistance: 90000,
   morpho: {},
   externalId: {
     zerion: "xdai",
     cowswap: "xdai",
-    tenderly: "true"
+    tenderly: "true",
   },
   markets: {
     openocean: "xdai",
@@ -21,7 +22,7 @@ export const gnosis = makeConfig({
       routerContract: "0x6A000F20005980200259B80c5102003040001068",
     },
     oneinch: {
-      spender: "0x111111125421ca6dc452d289314280a0f8842a65"
+      spender: "0x111111125421ca6dc452d289314280a0f8842a65",
     },
   },
   bridges: {
@@ -32,7 +33,7 @@ export const gnosis = makeConfig({
       tokenAdminRegistry: "0x73BC11423CBF14914998C23B0aFC9BE0cb5B2229",
     },
     deswap: {
-      chainId: 100000002
+      chainId: 100000002,
     },
     stargate: {
       endpointID: 30145,

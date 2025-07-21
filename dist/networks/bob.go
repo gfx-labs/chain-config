@@ -23,6 +23,7 @@ var Bob Network = Network{
 	},
 	DefaultToken0: common.HexToAddress("0x05D032ac25d322df992303dCa074EE7392C117b9"),
 	DefaultToken1: common.HexToAddress("0x4200000000000000000000000000000000000006"),
+	BlockAid:      "",
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0x05D032ac25d322df992303dCa074EE7392C117b9"), common.HexToAddress("0xe75D0fB2C24A55cA1e3F96781a2bCC7bdba058F0"), common.HexToAddress("0x6c851f501a3f24e29a8e39a29591cddf09369080")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x05D032ac25d322df992303dCa074EE7392C117b9"): {}, common.HexToAddress("0xe75D0fB2C24A55cA1e3F96781a2bCC7bdba058F0"): {}, common.HexToAddress("0x6c851f501a3f24e29a8e39a29591cddf09369080"): {}},

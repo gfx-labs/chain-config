@@ -22,6 +22,7 @@ var Manta Network = Network{
 	ExternalId:    map[string]string{},
 	DefaultToken0: common.HexToAddress("0x0dc808adce2099a9f62aa87d9670745aba741746"),
 	DefaultToken1: common.HexToAddress("0xb73603c5d87fa094b7314c74ace2e64d165016fb"),
+	BlockAid:      "",
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0xb73603C5d87fA094B7314C74ACE2e64D165016fb"), common.HexToAddress("0xf417F5A458eC102B90352F697D6e2Ac3A3d2851f")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0xb73603C5d87fA094B7314C74ACE2e64D165016fb"): {}, common.HexToAddress("0xf417F5A458eC102B90352F697D6e2Ac3A3d2851f"): {}},

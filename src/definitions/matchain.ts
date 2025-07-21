@@ -1,6 +1,5 @@
 import { matchain as chain } from "viem/chains";
 import { makeConfig } from "../util";
-import { zeroAddress } from "viem";
 
 export const matchain = makeConfig({
   ...chain,
@@ -8,6 +7,7 @@ export const matchain = makeConfig({
   blockTimeSeconds: 0.5,
   launchTime: 1754106070,
   sortIndex: 15,
+  blockAid: "",
   logoUrl: "https://assets.oku.trade/chains/matchain-logo.png",
   safeReorgDistance: 90000,
   externalId: {},

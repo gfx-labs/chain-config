@@ -29,6 +29,7 @@ var Zksync Network = Network{
 	},
 	DefaultToken0: common.HexToAddress("0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4"),
 	DefaultToken1: common.HexToAddress("0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91"),
+	BlockAid:      "zksync",
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4"), common.HexToAddress("0x503234F203fC7Eb888EEC8513210612a43Cf6115"), common.HexToAddress("0x493257fD37EDB34451f62EDf8D2a0C418852bA4C"), common.HexToAddress("0x1d17CBcF0D6D143135aE902365D2E5e2A16538D4")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4"): {}, common.HexToAddress("0x503234F203fC7Eb888EEC8513210612a43Cf6115"): {}, common.HexToAddress("0x493257fD37EDB34451f62EDf8D2a0C418852bA4C"): {}, common.HexToAddress("0x1d17CBcF0D6D143135aE902365D2E5e2A16538D4"): {}},

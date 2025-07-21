@@ -8,6 +8,7 @@ export const telos = makeConfig({
   sortIndex: 13,
   logoUrl: "https://assets.oku.trade/chains/telos-logo.svg",
   safeReorgDistance: 90000,
+  blockAid: "",
   externalId: {},
   markets: {
     openocean: "telos",

@@ -33,6 +33,7 @@ var <%- helpers.snakeToCamel(chainName) %> Network = Network{
   },
   DefaultToken0:    common.HexToAddress("<%- chain.defaultToken0 %>"),
   DefaultToken1:    common.HexToAddress("<%- chain.defaultToken1 %>"),
+  <%-"BlockAid:" + h.formatValue(chain.blockAid, "s")+","%>
   //TODO: TokenList:        []any{},
   Stables:          []common.Address{<%- chain.stables.map(h.toAddr).join(",") %>},
   StablecoinMap:          map[common.Address]struct{}{<%- chain.stables.map(x=>`${h.toAddr(x)}: {}`).join(",") %>},

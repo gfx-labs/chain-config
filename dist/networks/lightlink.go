@@ -21,6 +21,7 @@ var Lightlink Network = Network{
 	ExternalId:    map[string]string{},
 	DefaultToken0: common.HexToAddress("0x7ebef2a4b1b09381ec5b9df8c5c6f2dbeca59c73"),
 	DefaultToken1: common.HexToAddress("0xbCF8C1B03bBDDA88D579330BDF236B58F8bb2cFd"),
+	BlockAid:      "",
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0xbCF8C1B03bBDDA88D579330BDF236B58F8bb2cFd"), common.HexToAddress("0x808d7c71ad2ba3FA531b068a2417C63106BC0949")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0xbCF8C1B03bBDDA88D579330BDF236B58F8bb2cFd"): {}, common.HexToAddress("0x808d7c71ad2ba3FA531b068a2417C63106BC0949"): {}},

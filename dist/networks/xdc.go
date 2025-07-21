@@ -21,6 +21,7 @@ var Xdc Network = Network{
 	ExternalId:    map[string]string{},
 	DefaultToken0: common.HexToAddress("0x2a8e898b6242355c290e1f4fc966b8788729a4d4"),
 	DefaultToken1: common.HexToAddress("0x951857744785e80e2de051c32ee7b25f9c458c42"),
+	BlockAid:      "",
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0x2a8e898b6242355c290e1f4fc966b8788729a4d4"), common.HexToAddress("0xd4b5f10d61916bd6e0860144a91ac658de8a1437")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x2a8e898b6242355c290e1f4fc966b8788729a4d4"): {}, common.HexToAddress("0xd4b5f10d61916bd6e0860144a91ac658de8a1437"): {}},

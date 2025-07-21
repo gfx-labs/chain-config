@@ -10,6 +10,7 @@ export const sei = makeConfig({
   sortIndex: 5,
   logoUrl: "https://assets.oku.trade/chains/sei-logo.svg",
   safeReorgDistance: 90000,
+  blockAid: "",
   externalId: {
     tenderly: "true"
   },

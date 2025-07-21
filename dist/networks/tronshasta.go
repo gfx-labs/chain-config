@@ -21,6 +21,7 @@ var Tronshasta Network = Network{
 	ExternalId:    map[string]string{},
 	DefaultToken0: common.HexToAddress("0x0000000000000000000000000000000000000000"),
 	DefaultToken1: common.HexToAddress("0x0000000000000000000000000000000000000000"),
+	BlockAid:      "",
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{},
 	StablecoinMap:    map[common.Address]struct{}{},

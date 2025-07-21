@@ -15,15 +15,16 @@ var Matchain Network = Network{
 			Url: "https://matchscan.io",
 		},
 	},
-	DefaultPool:   common.HexToAddress("0x0000000000000000000000000000000000000000"),
+	DefaultPool:   common.HexToAddress("0x166D111Ce22f6cb0F315CA1d706B61adcF0ea265"),
 	InternalName:  "matchain",
 	InitCodeHash:  common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId:    map[string]string{},
 	DefaultToken0: common.HexToAddress("0x4200000000000000000000000000000000000006"),
-	DefaultToken1: common.HexToAddress("0x97eec1c29f745dC7c267F90292AA663d997a601D"),
+	DefaultToken1: common.HexToAddress("0x679Dc08cC3A4acFeea2f7CAFAa37561aE0b41Ce7"),
+	BlockAid:      "",
 	//TODO: TokenList:        []any{},
-	Stables:          []common.Address{common.HexToAddress("0x97eec1c29f745dC7c267F90292AA663d997a601D"), common.HexToAddress("0xB6dc6C8b71e88642cEAD3be1025565A9eE74d1C6")},
-	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x97eec1c29f745dC7c267F90292AA663d997a601D"): {}, common.HexToAddress("0xB6dc6C8b71e88642cEAD3be1025565A9eE74d1C6"): {}},
+	Stables:          []common.Address{common.HexToAddress("0x679Dc08cC3A4acFeea2f7CAFAa37561aE0b41Ce7")},
+	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x679Dc08cC3A4acFeea2f7CAFAa37561aE0b41Ce7"): {}},
 	Watchlist:        []common.Address{},
 	BlockTimeSeconds: 0.5,
 	Oku: OkuMetadata{
@@ -56,7 +57,7 @@ var Matchain Network = Network{
 	Morpho: MorphoMetadata{},
 	Token: TokenMetadata{
 		WethAddress: common.HexToAddress("0x4200000000000000000000000000000000000006"),
-		UsdcAddress: common.HexToAddress("0x97eec1c29f745dC7c267F90292AA663d997a601D"),
+		UsdcAddress: common.HexToAddress("0x679Dc08cC3A4acFeea2f7CAFAa37561aE0b41Ce7"),
 	},
 	Contracts: map[string]ChainContract{
 		"limitOrder": {

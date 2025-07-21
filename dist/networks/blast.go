@@ -25,6 +25,7 @@ var Blast Network = Network{
 	},
 	DefaultToken0: common.HexToAddress("0x4300000000000000000000000000000000000003"),
 	DefaultToken1: common.HexToAddress("0x4300000000000000000000000000000000000004"),
+	BlockAid:      "blast",
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0x4300000000000000000000000000000000000003")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x4300000000000000000000000000000000000003"): {}},

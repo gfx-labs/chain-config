@@ -24,6 +24,7 @@ var Mantle Network = Network{
 	},
 	DefaultToken0: common.HexToAddress("0x09Bc4E0D864854c6aFB6eB9A9cdF58aC190D0dF9"),
 	DefaultToken1: common.HexToAddress("0x78c1b0C915c4FAA5FffA6CAbf0219DA63d7f4cb8"),
+	BlockAid:      "",
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0x09Bc4E0D864854c6aFB6eB9A9cdF58aC190D0dF9"), common.HexToAddress("0x201EBa5CC46D216Ce6DC03F6a759e8E766e956aE")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x09Bc4E0D864854c6aFB6eB9A9cdF58aC190D0dF9"): {}, common.HexToAddress("0x201EBa5CC46D216Ce6DC03F6a759e8E766e956aE"): {}},

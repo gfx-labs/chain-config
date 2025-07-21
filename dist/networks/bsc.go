@@ -26,6 +26,7 @@ var Bsc Network = Network{
 	},
 	DefaultToken0: common.HexToAddress("0x55d398326f99059ff775485246999027b3197955"),
 	DefaultToken1: common.HexToAddress("0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c"),
+	BlockAid:      "bsc",
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0x55d398326f99059ff775485246999027b3197955"), common.HexToAddress("0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3"), common.HexToAddress("0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d"), common.HexToAddress("0xe9e7cea3dedca5984780bafc599bd69add087d56"), common.HexToAddress("0x40af3827F39D0EAcBF4A168f8D4ee67c121D11c9")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x55d398326f99059ff775485246999027b3197955"): {}, common.HexToAddress("0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3"): {}, common.HexToAddress("0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d"): {}, common.HexToAddress("0xe9e7cea3dedca5984780bafc599bd69add087d56"): {}, common.HexToAddress("0x40af3827F39D0EAcBF4A168f8D4ee67c121D11c9"): {}},

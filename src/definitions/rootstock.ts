@@ -12,6 +12,7 @@ export const rootstock = makeConfig({
   blockTimeSeconds: 33,
   logoUrl: "https://assets.oku.trade/chains/rootstock-logo.svg",
   safeReorgDistance: 90000,
+  blockAid: "",
   externalId: {},
   markets: {
     openocean: "rootstock",

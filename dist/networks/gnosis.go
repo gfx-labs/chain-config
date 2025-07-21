@@ -26,6 +26,7 @@ var Gnosis Network = Network{
 	},
 	DefaultToken0: common.HexToAddress("0x6a023ccd1ff6f2045c3309768ead9e68f978f6e1"),
 	DefaultToken1: common.HexToAddress("0xe91d153e0b41518a2ce8dd3d7944fa863463a97d"),
+	BlockAid:      "",
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0x4ecaba5870353805a9f068101a40e0f32ed605c6"), common.HexToAddress("0x2a22f9c3b484c3629090feed35f17ff8f88f76f0"), common.HexToAddress("0xddafbb505ad214d7b80b1f830fccc89b60fb7a83"), common.HexToAddress("0xe91d153e0b41518a2ce8dd3d7944fa863463a97d")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x4ecaba5870353805a9f068101a40e0f32ed605c6"): {}, common.HexToAddress("0x2a22f9c3b484c3629090feed35f17ff8f88f76f0"): {}, common.HexToAddress("0xddafbb505ad214d7b80b1f830fccc89b60fb7a83"): {}, common.HexToAddress("0xe91d153e0b41518a2ce8dd3d7944fa863463a97d"): {}},

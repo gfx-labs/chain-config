@@ -8,6 +8,7 @@ export const lisk = makeConfig({
   sortIndex: 15,
   logoUrl: "https://assets.oku.trade/chains/lisk-logo.png",
   safeReorgDistance: 90000,
+  blockAid: "",
   externalId: {
     tenderly: "true"
   },

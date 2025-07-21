@@ -24,6 +24,7 @@ var Sei Network = Network{
 	},
 	DefaultToken0: common.HexToAddress("0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1"),
 	DefaultToken1: common.HexToAddress("0xE30feDd158A2e3b13e9badaeABaFc5516e95e8C7"),
+	BlockAid:      "",
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1"), common.HexToAddress("0xb75d0b03c06a926e488e2659df1a861f860bd3d1")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1"): {}, common.HexToAddress("0xb75d0b03c06a926e488e2659df1a861f860bd3d1"): {}},

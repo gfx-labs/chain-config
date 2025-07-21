@@ -24,6 +24,7 @@ var Unichain Network = Network{
 	},
 	DefaultToken0: common.HexToAddress("0x078d782b760474a361dda0af3839290b0ef57ad6"),
 	DefaultToken1: common.HexToAddress("0x4200000000000000000000000000000000000006"),
+	BlockAid:      "unichain",
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0x078d782b760474a361dda0af3839290b0ef57ad6"), common.HexToAddress("0x9151434b16b9763660705744891fa906f660ecc5"), common.HexToAddress("0x20cab320a855b39f724131c69424240519573f81")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x078d782b760474a361dda0af3839290b0ef57ad6"): {}, common.HexToAddress("0x9151434b16b9763660705744891fa906f660ecc5"): {}, common.HexToAddress("0x20cab320a855b39f724131c69424240519573f81"): {}},

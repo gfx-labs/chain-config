@@ -8,6 +8,7 @@ export const tronShasta = makeConfig({
   blockTimeSeconds: 5,
   launchTime: 1746055290,
   sortIndex: 15,
+  blockAid: "",
   logoUrl: "https://assets.oku.trade/chains/tron.png",
   safeReorgDistance: 90000,
   externalId: {},

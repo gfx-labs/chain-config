@@ -21,6 +21,7 @@ var Saga Network = Network{
 	ExternalId:    map[string]string{},
 	DefaultToken0: common.HexToAddress("0xC8fe3C1de344854f4429bB333AFFAeF97eF88CEa"),
 	DefaultToken1: common.HexToAddress("0xfc960C233B8E98e0Cf282e29BDE8d3f105fc24d5"),
+	BlockAid:      "",
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0xC8fe3C1de344854f4429bB333AFFAeF97eF88CEa"), common.HexToAddress("0xfc960C233B8E98e0Cf282e29BDE8d3f105fc24d5")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0xC8fe3C1de344854f4429bB333AFFAeF97eF88CEa"): {}, common.HexToAddress("0xfc960C233B8E98e0Cf282e29BDE8d3f105fc24d5"): {}},

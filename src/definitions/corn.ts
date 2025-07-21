@@ -9,6 +9,7 @@ export const corn = makeConfig({
   sortIndex: 15,
   logoUrl: "https://assets.oku.trade/chains/corn-logo.png",
   safeReorgDistance: 90000,
+  blockAid: "",
   externalId: {
     tenderly: "true"
   },

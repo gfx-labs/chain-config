@@ -13,6 +13,7 @@ export const linea = makeConfig({
 	morpho: {},
   logoUrl: "https://assets.oku.trade/chains/linea-logo.svg",
   safeReorgDistance: 100,
+  blockAid: "linea",
   externalId: {
     zerion: "linea",
     tenderly: "true"

@@ -26,6 +26,7 @@ var Optimism Network = Network{
 	},
 	DefaultToken0: common.HexToAddress("0x4200000000000000000000000000000000000042"),
 	DefaultToken1: common.HexToAddress("0x0b2c639c533813f4aa9d7837caf62653d097ff85"),
+	BlockAid:      "optimism",
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0x0b2c639c533813f4aa9d7837caf62653d097ff85"), common.HexToAddress("0x7f5c764cbc14f9669b88837ca1490cca17c31607"), common.HexToAddress("0x94b008aA00579c1307B0EF2c499aD98a8ce58e58"), common.HexToAddress("0x8c6f28f2f1a3c87f0f938b96d27520d9751ec8d9"), common.HexToAddress("0x8aE125E8653821E851F12A49F7765db9a9ce7384"), common.HexToAddress("0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x0b2c639c533813f4aa9d7837caf62653d097ff85"): {}, common.HexToAddress("0x7f5c764cbc14f9669b88837ca1490cca17c31607"): {}, common.HexToAddress("0x94b008aA00579c1307B0EF2c499aD98a8ce58e58"): {}, common.HexToAddress("0x8c6f28f2f1a3c87f0f938b96d27520d9751ec8d9"): {}, common.HexToAddress("0x8aE125E8653821E851F12A49F7765db9a9ce7384"): {}, common.HexToAddress("0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1"): {}},

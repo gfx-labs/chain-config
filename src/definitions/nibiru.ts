@@ -10,28 +10,32 @@ export const nibiru = makeConfig({
   logoUrl: "https://assets.oku.trade/chains/nibiru-logo.svg",
   safeReorgDistance: 90000,
   externalId: {},
+  blockAid: "",
   markets: {},
   bridges: {
     stargate: {
       endpointID: 30369,
-      tokens: [{
-        name: "ETH",
-        type: "OFT",
-        id: 13,
-        address: "0x108f4c02C9fcDF862e5f5131054c50f13703f916"
-      }, {
-        name: "USDC",
-        type: "OFT",
-        id: 1,
-        address: "0x12a272A581feE5577A5dFa371afEB4b2F3a8C2F8"
-      }, {
-        name: "USDT",
-        type: "OFT",
-        id: 2,
-        address: "0xC16977205c53Cd854136031BD2128F75D6ff63C9"
-      }
-    ]
-    }
+      tokens: [
+        {
+          name: "ETH",
+          type: "OFT",
+          id: 13,
+          address: "0x108f4c02C9fcDF862e5f5131054c50f13703f916",
+        },
+        {
+          name: "USDC",
+          type: "OFT",
+          id: 1,
+          address: "0x12a272A581feE5577A5dFa371afEB4b2F3a8C2F8",
+        },
+        {
+          name: "USDT",
+          type: "OFT",
+          id: 2,
+          address: "0xC16977205c53Cd854136031BD2128F75D6ff63C9",
+        },
+      ],
+    },
   },
   oracles: {},
   morpho: {},

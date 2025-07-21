@@ -8,6 +8,7 @@ export const metal = makeConfig({
   sortIndex: 15,
   logoUrl: "https://assets.oku.trade/chains/metal-logo.png",
   safeReorgDistance: 90000,
+  blockAid: "",
   externalId: {},
 	morpho: {},
   markets: {},

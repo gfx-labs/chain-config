@@ -9,6 +9,7 @@ export const saga = makeConfig({
   sortIndex: 13,
   logoUrl: "https://assets.oku.trade/chains/saga-logo.png",
   safeReorgDistance: 90000,
+  blockAid: "",
   externalId: {},
   markets: {},
   bridges: {},

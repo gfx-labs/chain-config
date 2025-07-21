@@ -21,6 +21,7 @@ var Nibiru Network = Network{
 	ExternalId:    map[string]string{},
 	DefaultToken0: common.HexToAddress("0x0829F361A05D993d5CEb035cA6DF3446b060970b"),
 	DefaultToken1: common.HexToAddress("0x0CaCF669f8446BeCA826913a3c6B96aCD4b02a97"),
+	BlockAid:      "",
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0x0829F361A05D993d5CEb035cA6DF3446b060970b")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x0829F361A05D993d5CEb035cA6DF3446b060970b"): {}},

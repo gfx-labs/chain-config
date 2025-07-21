@@ -24,6 +24,7 @@ var Lisk Network = Network{
 	},
 	DefaultToken0: common.HexToAddress("0x4200000000000000000000000000000000000006"),
 	DefaultToken1: common.HexToAddress("0xac485391eb2d7d88253a7f1ef18c37f4242d1a24"),
+	BlockAid:      "",
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0x05D032ac25d322df992303dCa074EE7392C117b9")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x05D032ac25d322df992303dCa074EE7392C117b9"): {}},

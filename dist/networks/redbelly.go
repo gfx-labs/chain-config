@@ -22,6 +22,7 @@ var Redbelly Network = Network{
 	ExternalId:    map[string]string{},
 	DefaultToken0: common.HexToAddress("0x6ed1F491e2d31536D6561f6bdB2AdC8F092a6076"),
 	DefaultToken1: common.HexToAddress("0x8201c02d4AB2214471E8C3AD6475C8b0CD9F2D06"),
+	BlockAid:      "",
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0x8201c02d4AB2214471E8C3AD6475C8b0CD9F2D06"), common.HexToAddress("0x8C4aCd74Ff4385f3B7911432FA6787Aa14406f8B")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x8201c02d4AB2214471E8C3AD6475C8b0CD9F2D06"): {}, common.HexToAddress("0x8C4aCd74Ff4385f3B7911432FA6787Aa14406f8B"): {}},

@@ -24,6 +24,7 @@ var Corn Network = Network{
 	},
 	DefaultToken0: common.HexToAddress("0xda5dDd7270381A7C2717aD10D1c0ecB19e3CDFb2"),
 	DefaultToken1: common.HexToAddress("0xDF0B24095e15044538866576754F3C964e902Ee6"),
+	BlockAid:      "",
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0xDF0B24095e15044538866576754F3C964e902Ee6"), common.HexToAddress("0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0xDF0B24095e15044538866576754F3C964e902Ee6"): {}, common.HexToAddress("0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb"): {}},

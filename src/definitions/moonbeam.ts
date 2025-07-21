@@ -11,6 +11,7 @@ export const moonbeam = makeConfig({
   blockTimeSeconds: 30,
   logoUrl: "https://assets.oku.trade/chains/moonbeam-logo.svg",
   safeReorgDistance: 90000,
+  blockAid: "",
   externalId: {
     debank: "mobm",
     tenderly: "true"

@@ -28,6 +28,7 @@ var Worldchain Network = Network{
 	},
 	DefaultToken0: common.HexToAddress("0x4200000000000000000000000000000000000006"),
 	DefaultToken1: common.HexToAddress("0x79a02482a880bce3f13e09da970dc34db4cd24d1"),
+	BlockAid:      "",
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0x79a02482a880bce3f13e09da970dc34db4cd24d1")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x79a02482a880bce3f13e09da970dc34db4cd24d1"): {}},

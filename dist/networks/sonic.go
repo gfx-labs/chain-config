@@ -23,6 +23,7 @@ var Sonic Network = Network{
 	},
 	DefaultToken0: common.HexToAddress("0x039e2fb66102314ce7b64ce5ce3e5183bc94ad38"),
 	DefaultToken1: common.HexToAddress("0x29219dd400f2bf60e5a23d13be72b486d4038894"),
+	BlockAid:      "",
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0x29219dd400f2bf60e5a23d13be72b486d4038894"), common.HexToAddress("0xd3DCe716f3eF535C5Ff8d041c1A41C3bd89b97aE")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x29219dd400f2bf60e5a23d13be72b486d4038894"): {}, common.HexToAddress("0xd3DCe716f3eF535C5Ff8d041c1A41C3bd89b97aE"): {}},

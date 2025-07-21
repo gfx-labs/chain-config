@@ -30,6 +30,7 @@ var Filecoin Network = Network{
 	ExternalId:    map[string]string{},
 	DefaultToken0: common.HexToAddress("0x2421db204968a367cc2c866cd057fa754cb84edf"),
 	DefaultToken1: common.HexToAddress("0x60e1773636cf5e4a227d9ac24f20feca034ee25a"),
+	BlockAid:      "",
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0x2421db204968A367CC2C866CD057fA754Cb84EdF"), common.HexToAddress("0xEB466342C4d449BC9f53A865D5Cb90586f405215"), common.HexToAddress("0x7f5373AE26c3E8FfC4c77b7255DF7eC1A9aF52a6"), common.HexToAddress("0x422849b355039bc58f2780cc4854919fc9cfaf94")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x2421db204968A367CC2C866CD057fA754Cb84EdF"): {}, common.HexToAddress("0xEB466342C4d449BC9f53A865D5Cb90586f405215"): {}, common.HexToAddress("0x7f5373AE26c3E8FfC4c77b7255DF7eC1A9aF52a6"): {}, common.HexToAddress("0x422849b355039bc58f2780cc4854919fc9cfaf94"): {}},

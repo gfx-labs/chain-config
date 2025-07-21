@@ -11,6 +11,7 @@ export const polygonZkEvm = makeConfig({
   blockTimeSeconds: 7,
   logoUrl: "https://assets.oku.trade/chains/zkevm-logo.svg",
   safeReorgDistance: 90000,
+  blockAid: "",
 	morpho: {},
   externalId: {
     zerion: "polygon-zkevm",

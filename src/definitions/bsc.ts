@@ -12,6 +12,7 @@ export const bsc = makeConfig({
   blockTimeSeconds: 3,
   logoUrl: "https://assets.oku.trade/chains/bsc-logo.svg",
   safeReorgDistance: 90000,
+  blockAid: "bsc",
   externalId: {
     zerion: "binance-smart-chain",
     debank: "bsc",

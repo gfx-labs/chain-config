@@ -21,6 +21,7 @@ var Goat Network = Network{
 	ExternalId:    map[string]string{},
 	DefaultToken0: common.HexToAddress("0x941508f0b823f1bc40a9beefce5e544e525a94c3"),
 	DefaultToken1: common.HexToAddress("0xfe41e7e5cb3460c483ab2a38eb605cda9e2d248e"),
+	BlockAid:      "",
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0x3022b87ac063DE95b1570F46f5e470F8B53112D8"), common.HexToAddress("0xe1ad845d93853fff44990ae0dcecd8575293681e")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x3022b87ac063DE95b1570F46f5e470F8B53112D8"): {}, common.HexToAddress("0xe1ad845d93853fff44990ae0dcecd8575293681e"): {}},

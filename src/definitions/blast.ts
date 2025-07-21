@@ -9,6 +9,7 @@ export const blast = makeConfig({
   sortIndex: 14,
   logoUrl: "https://assets.oku.trade/chains/blast-logo.svg",
   safeReorgDistance: 90000,
+  blockAid: "blast",
   externalId: {
     zerion: "blast",
     tenderly: "true"

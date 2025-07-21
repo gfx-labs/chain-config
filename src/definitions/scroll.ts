@@ -11,6 +11,7 @@ export const scroll = makeConfig({
   blockTimeSeconds: 3,
   logoUrl: "https://assets.oku.trade/chains/scroll-logo.png",
   safeReorgDistance: 90000,
+  blockAid: "scroll",
   externalId: {
     zerion: "scroll",
     tenderly: "true"

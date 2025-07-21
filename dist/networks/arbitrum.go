@@ -27,6 +27,7 @@ var Arbitrum Network = Network{
 	},
 	DefaultToken0: common.HexToAddress("0x912ce59144191c1204e64559fe8253a0e49e6548"),
 	DefaultToken1: common.HexToAddress("0xaf88d065e77c8cc2239327c5edb3a432268e5831"),
+	BlockAid:      "arbitrum",
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0xaf88d065e77c8cc2239327c5edb3a432268e5831"), common.HexToAddress("0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8"), common.HexToAddress("0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9"), common.HexToAddress("0xda10009cbd5d07dd0cecc66161fc93d7c9000da1")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0xaf88d065e77c8cc2239327c5edb3a432268e5831"): {}, common.HexToAddress("0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8"): {}, common.HexToAddress("0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9"): {}, common.HexToAddress("0xda10009cbd5d07dd0cecc66161fc93d7c9000da1"): {}},

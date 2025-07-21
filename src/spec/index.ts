@@ -74,7 +74,7 @@ export interface Markets {
   odos?: any;
   okx?: any;
   oneinch?: {
-    spender: string
+    spender: string;
   };
   openocean?: string;
   paraswap?: {
@@ -148,6 +148,7 @@ export interface IChainInfo<
   internalName: string;
   defaultToken0: Address;
   defaultToken1: Address;
+  blockAid: string;
   tokenList: ReadonlyArray<{ symbol: string; address: Address }>;
   stables: ReadonlyArray<Address>;
   watchlist: ReadonlyArray<Address>;

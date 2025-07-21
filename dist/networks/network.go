@@ -217,6 +217,7 @@ type Network struct {
 	InternalName      string
 	DefaultToken0     common.Address
 	DefaultToken1     common.Address
+	BlockAid          string
 	TokenList         []any
 	Stables           []common.Address
 	Watchlist         []common.Address

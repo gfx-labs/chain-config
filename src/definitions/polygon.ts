@@ -11,6 +11,7 @@ export const polygon = makeConfig({
   sortIndex: 3,
   logoUrl: "https://assets.oku.trade/chains/polygon-logo.webp",
   safeReorgDistance: 90000,
+  blockAid: "polygon",
   externalId: {
     zerion: "polygon",
     debank: "matic",
