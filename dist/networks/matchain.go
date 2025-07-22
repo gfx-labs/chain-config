@@ -6,7 +6,7 @@ import (
 
 var Matchain Network = Network{
 	ChainId:           698,
-	LogoUrl:           "https://assets.oku.trade/chains/matchain-logo.png",
+	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/matchain-logo.svg",
 	SortIndex:         15,
 	LaunchTime:        1754106070,
 	SafeReorgDistance: 90000,

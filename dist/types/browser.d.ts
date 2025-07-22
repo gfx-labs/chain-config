@@ -4679,7 +4679,7 @@ declare const matchain: Readonly<{
     launchTime: 1754106070;
     sortIndex: 15;
     blockAid: "";
-    logoUrl: "https://assets.oku.trade/chains/matchain-logo.png";
+    logoUrl: "https://cms.oku.trade/cdn/public/chains/matchain-logo.svg";
     safeReorgDistance: 90000;
     externalId: {};
     markets: {};
@@ -17314,7 +17314,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     launchTime: 1754106070;
     sortIndex: 15;
     blockAid: "";
-    logoUrl: "https://assets.oku.trade/chains/matchain-logo.png";
+    logoUrl: "https://cms.oku.trade/cdn/public/chains/matchain-logo.svg";
     safeReorgDistance: 90000;
     externalId: {};
     markets: {};
