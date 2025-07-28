@@ -595,7 +595,7 @@ const bob = makeConfig({
     safeReorgDistance: 90000,
     blockAid: "",
     externalId: {
-        tenderly: "true"
+        tenderly: "true",
     },
     markets: {
         icecreamswap: true,
@@ -608,8 +608,8 @@ const bob = makeConfig({
             tokenAdminRegistry: "0xa57d04119AFf4884F8602213E58d8AaAD18229cb",
         },
         deswap: {
-            chainId: 100000021
-        }
+            chainId: 100000021,
+        },
     },
     morpho: {},
     oracles: {
@@ -669,6 +669,7 @@ const bob = makeConfig({
         "0x05D032ac25d322df992303dCa074EE7392C117b9",
         "0xe75D0fB2C24A55cA1e3F96781a2bCC7bdba058F0",
         "0x6c851f501a3f24e29a8e39a29591cddf09369080",
+        "0x1217BfE6c773EEC6cc4A38b5Dc45B92292B6E189",
     ],
     watchlist: [
         "0x9a3b17a2e2daf54ce80f2f4b2c8440902be715de",
