@@ -385,6 +385,7 @@ type Bridges struct {
 	Squidrouter interface{}
 	Wanbridge   map[string]interface{}
 	Stargate    map[string]interface{}
+	Layerzero   map[string]interface{}
 }
 
 type Oracles struct {

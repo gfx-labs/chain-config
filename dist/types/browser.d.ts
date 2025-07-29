@@ -50,6 +50,15 @@ declare const arbitrum: Readonly<{
                 address: string;
             })[];
         };
+        layerzero: {
+            eid: number;
+            tokens: {
+                id: number;
+                symbol: string;
+                project: string;
+                OFTAddress: string;
+            }[];
+        };
         wanbridge: {
             requiredConfirmations: number;
         };
@@ -251,6 +260,15 @@ declare const base: Readonly<{
             chain: string;
             timeToFinalize: number;
         };
+        layerzero: {
+            eid: number;
+            tokens: {
+                id: number;
+                symbol: string;
+                project: string;
+                OFTAddress: string;
+            }[];
+        };
     };
     oracles: {
         cmc: {
@@ -409,7 +427,7 @@ declare const base: Readonly<{
                 gasUsed: bigint;
                 hash: `0x${string}` | null;
                 logsBloom: `0x${string}` | null;
-                miner: import("viem").Address;
+                miner: import("abitype").Address;
                 mixHash: import("viem").Hash;
                 nonce: `0x${string}` | null;
                 number: bigint | null;
@@ -436,14 +454,14 @@ declare const base: Readonly<{
             format: (args: import("viem/chains").OpStackRpcTransaction) => ({
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: import("viem").Address;
+                from: import("abitype").Address;
                 gas: bigint;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
                 nonce: number;
                 r: import("viem").Hex;
                 s: import("viem").Hex;
-                to: import("viem").Address | null;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 v: bigint;
@@ -461,8 +479,8 @@ declare const base: Readonly<{
                 r: import("viem").Hex;
                 s: import("viem").Hex;
                 v: bigint;
-                to: import("viem").Address | null;
-                from: import("viem").Address;
+                to: import("abitype").Address | null;
+                from: import("abitype").Address;
                 gas: bigint;
                 nonce: number;
                 value: bigint;
@@ -488,14 +506,14 @@ declare const base: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: import("viem").Address;
+                from: import("abitype").Address;
                 gas: bigint;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
                 nonce: number;
                 r: import("viem").Hex;
                 s: import("viem").Hex;
-                to: import("viem").Address | null;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 v: bigint;
@@ -516,14 +534,14 @@ declare const base: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: import("viem").Address;
+                from: import("abitype").Address;
                 gas: bigint;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
                 nonce: number;
                 r: import("viem").Hex;
                 s: import("viem").Hex;
-                to: import("viem").Address | null;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 v: bigint;
@@ -544,14 +562,14 @@ declare const base: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: import("viem").Address;
+                from: import("abitype").Address;
                 gas: bigint;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
                 nonce: number;
                 r: import("viem").Hex;
                 s: import("viem").Hex;
-                to: import("viem").Address | null;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 v: bigint;
@@ -572,14 +590,14 @@ declare const base: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: import("viem").Address;
+                from: import("abitype").Address;
                 gas: bigint;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
                 nonce: number;
                 r: import("viem").Hex;
                 s: import("viem").Hex;
-                to: import("viem").Address | null;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 v: bigint;
@@ -608,16 +626,16 @@ declare const base: Readonly<{
                 blobGasUsed?: bigint | undefined;
                 blockHash: import("viem").Hash;
                 blockNumber: bigint;
-                contractAddress: import("viem").Address | null | undefined;
+                contractAddress: import("abitype").Address | null | undefined;
                 cumulativeGasUsed: bigint;
                 effectiveGasPrice: bigint;
-                from: import("viem").Address;
+                from: import("abitype").Address;
                 gasUsed: bigint;
                 logs: import("viem").Log<bigint, number, false>[];
                 logsBloom: import("viem").Hex;
                 root?: `0x${string}` | undefined;
                 status: "success" | "reverted";
-                to: import("viem").Address | null;
+                to: import("abitype").Address | null;
                 transactionHash: import("viem").Hash;
                 transactionIndex: number;
                 type: import("viem").TransactionType;
@@ -794,7 +812,7 @@ declare const blast: Readonly<{
                 gasUsed: bigint;
                 hash: `0x${string}` | null;
                 logsBloom: `0x${string}` | null;
-                miner: import("viem").Address;
+                miner: import("abitype").Address;
                 mixHash: import("viem").Hash;
                 nonce: `0x${string}` | null;
                 number: bigint | null;
@@ -821,14 +839,14 @@ declare const blast: Readonly<{
             format: (args: import("viem/chains").OpStackRpcTransaction) => ({
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: import("viem").Address;
+                from: import("abitype").Address;
                 gas: bigint;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
                 nonce: number;
                 r: import("viem").Hex;
                 s: import("viem").Hex;
-                to: import("viem").Address | null;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 v: bigint;
@@ -846,8 +864,8 @@ declare const blast: Readonly<{
                 r: import("viem").Hex;
                 s: import("viem").Hex;
                 v: bigint;
-                to: import("viem").Address | null;
-                from: import("viem").Address;
+                to: import("abitype").Address | null;
+                from: import("abitype").Address;
                 gas: bigint;
                 nonce: number;
                 value: bigint;
@@ -873,14 +891,14 @@ declare const blast: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: import("viem").Address;
+                from: import("abitype").Address;
                 gas: bigint;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
                 nonce: number;
                 r: import("viem").Hex;
                 s: import("viem").Hex;
-                to: import("viem").Address | null;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 v: bigint;
@@ -901,14 +919,14 @@ declare const blast: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: import("viem").Address;
+                from: import("abitype").Address;
                 gas: bigint;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
                 nonce: number;
                 r: import("viem").Hex;
                 s: import("viem").Hex;
-                to: import("viem").Address | null;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 v: bigint;
@@ -929,14 +947,14 @@ declare const blast: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: import("viem").Address;
+                from: import("abitype").Address;
                 gas: bigint;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
                 nonce: number;
                 r: import("viem").Hex;
                 s: import("viem").Hex;
-                to: import("viem").Address | null;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 v: bigint;
@@ -957,14 +975,14 @@ declare const blast: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: import("viem").Address;
+                from: import("abitype").Address;
                 gas: bigint;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
                 nonce: number;
                 r: import("viem").Hex;
                 s: import("viem").Hex;
-                to: import("viem").Address | null;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 v: bigint;
@@ -993,16 +1011,16 @@ declare const blast: Readonly<{
                 blobGasUsed?: bigint | undefined;
                 blockHash: import("viem").Hash;
                 blockNumber: bigint;
-                contractAddress: import("viem").Address | null | undefined;
+                contractAddress: import("abitype").Address | null | undefined;
                 cumulativeGasUsed: bigint;
                 effectiveGasPrice: bigint;
-                from: import("viem").Address;
+                from: import("abitype").Address;
                 gasUsed: bigint;
                 logs: import("viem").Log<bigint, number, false>[];
                 logsBloom: import("viem").Hex;
                 root?: `0x${string}` | undefined;
                 status: "success" | "reverted";
-                to: import("viem").Address | null;
+                to: import("abitype").Address | null;
                 transactionHash: import("viem").Hash;
                 transactionIndex: number;
                 type: import("viem").TransactionType;
@@ -1609,6 +1627,15 @@ declare const bsc: Readonly<{
             chain: string;
             timeToFinalize: number;
         };
+        layerzero: {
+            eid: number;
+            tokens: {
+                id: number;
+                symbol: string;
+                project: string;
+                OFTAddress: string;
+            }[];
+        };
     };
     oracles: {
         cmc: {
@@ -1738,6 +1765,15 @@ declare const celo: Readonly<{
         wormhole: {
             chain: string;
             timeToFinalize: number;
+        };
+        layerzero: {
+            eid: number;
+            tokens: {
+                id: number;
+                symbol: string;
+                project: string;
+                OFTAddress: string;
+            }[];
         };
     };
     morpho: {};
@@ -2677,6 +2713,16 @@ declare const corn: Readonly<{
             chainSelector: bigint;
             tokenAdminRegistry: string;
         };
+        layerzero: {
+            eid: number;
+            tokens: {
+                id: number;
+                symbol: string;
+                project: string;
+                OFTAddress: string;
+                address: string;
+            }[];
+        };
     };
     oracles: {};
     morpho: {
@@ -2725,7 +2771,7 @@ declare const corn: Readonly<{
         symbol: string;
         address: "0xDF0B24095e15044538866576754F3C964e902Ee6";
     })[];
-    stables: ("0xDF0B24095e15044538866576754F3C964e902Ee6" | "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb")[];
+    stables: ("0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb" | "0xDF0B24095e15044538866576754F3C964e902Ee6")[];
     watchlist: ("0xe435E14815d28a86c643E4606Ed0e8E5624782c6" | "0x660c6c6c2ad9be9fca2d40da22e1e6142ce5e7ca" | "0x43aA32cf4f6389aB89d8C79092A0fc65899C20ba" | "0x0F12dac5217868b3d6772632543ef16df8df17E5" | "0xbD108c1Dd7802DFF6c24138A72949184FFbe006F" | "0xb6a7be3ca6698859b374640b3db439fda7b7a5e3" | "0x255f0b304f701a0530f5dc1739a3d1469e21dd5f")[];
     internalName: "corn";
     nativeLogoUrl: "https://assets.oku.trade/natives/corn.png";
@@ -3080,6 +3126,15 @@ declare const gnosis: Readonly<{
                 name: string;
                 id: number;
                 address: string;
+            }[];
+        };
+        layerzero: {
+            eid: number;
+            tokens: {
+                id: number;
+                symbol: string;
+                project: string;
+                OFTAddress: string;
             }[];
         };
     };
@@ -3714,6 +3769,15 @@ declare const linea: Readonly<{
             chain: string;
             timeToFinalize: number;
         };
+        layerzero: {
+            eid: number;
+            tokens: {
+                id: number;
+                symbol: string;
+                project: string;
+                OFTAddress: string;
+            }[];
+        };
     };
     oracles: {
         cmc: {
@@ -4279,6 +4343,15 @@ declare const mainnet: Readonly<{
         wormhole: {
             chain: string;
             timeToFinalize: number;
+        };
+        layerzero: {
+            eid: number;
+            tokens: {
+                id: number;
+                symbol: string;
+                project: string;
+                OFTAddress: string;
+            }[];
         };
     };
     oracles: {
@@ -5176,6 +5249,15 @@ declare const moonbeam: Readonly<{
             chain: string;
             timeToFinalize: number;
         };
+        layerzero: {
+            eid: number;
+            tokens: {
+                id: number;
+                symbol: string;
+                project: string;
+                OFTAddress: string;
+            }[];
+        };
     };
     oracles: {
         cmc: {
@@ -5446,6 +5528,15 @@ declare const optimism: Readonly<{
             chain: string;
             timeToFinalize: number;
         };
+        layerzero: {
+            eid: number;
+            tokens: {
+                id: number;
+                symbol: string;
+                project: string;
+                OFTAddress: string;
+            }[];
+        };
     };
     oracles: {
         cmc: {
@@ -5623,7 +5714,7 @@ declare const optimism: Readonly<{
                 gasUsed: bigint;
                 hash: `0x${string}` | null;
                 logsBloom: `0x${string}` | null;
-                miner: import("viem").Address;
+                miner: import("abitype").Address;
                 mixHash: import("viem").Hash;
                 nonce: `0x${string}` | null;
                 number: bigint | null;
@@ -5650,14 +5741,14 @@ declare const optimism: Readonly<{
             format: (args: import("viem/chains").OpStackRpcTransaction) => ({
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: import("viem").Address;
+                from: import("abitype").Address;
                 gas: bigint;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
                 nonce: number;
                 r: import("viem").Hex;
                 s: import("viem").Hex;
-                to: import("viem").Address | null;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 v: bigint;
@@ -5675,8 +5766,8 @@ declare const optimism: Readonly<{
                 r: import("viem").Hex;
                 s: import("viem").Hex;
                 v: bigint;
-                to: import("viem").Address | null;
-                from: import("viem").Address;
+                to: import("abitype").Address | null;
+                from: import("abitype").Address;
                 gas: bigint;
                 nonce: number;
                 value: bigint;
@@ -5702,14 +5793,14 @@ declare const optimism: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: import("viem").Address;
+                from: import("abitype").Address;
                 gas: bigint;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
                 nonce: number;
                 r: import("viem").Hex;
                 s: import("viem").Hex;
-                to: import("viem").Address | null;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 v: bigint;
@@ -5730,14 +5821,14 @@ declare const optimism: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: import("viem").Address;
+                from: import("abitype").Address;
                 gas: bigint;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
                 nonce: number;
                 r: import("viem").Hex;
                 s: import("viem").Hex;
-                to: import("viem").Address | null;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 v: bigint;
@@ -5758,14 +5849,14 @@ declare const optimism: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: import("viem").Address;
+                from: import("abitype").Address;
                 gas: bigint;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
                 nonce: number;
                 r: import("viem").Hex;
                 s: import("viem").Hex;
-                to: import("viem").Address | null;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 v: bigint;
@@ -5786,14 +5877,14 @@ declare const optimism: Readonly<{
             } | {
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                from: import("viem").Address;
+                from: import("abitype").Address;
                 gas: bigint;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
                 nonce: number;
                 r: import("viem").Hex;
                 s: import("viem").Hex;
-                to: import("viem").Address | null;
+                to: import("abitype").Address | null;
                 transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 v: bigint;
@@ -5822,16 +5913,16 @@ declare const optimism: Readonly<{
                 blobGasUsed?: bigint | undefined;
                 blockHash: import("viem").Hash;
                 blockNumber: bigint;
-                contractAddress: import("viem").Address | null | undefined;
+                contractAddress: import("abitype").Address | null | undefined;
                 cumulativeGasUsed: bigint;
                 effectiveGasPrice: bigint;
-                from: import("viem").Address;
+                from: import("abitype").Address;
                 gasUsed: bigint;
                 logs: import("viem").Log<bigint, number, false>[];
                 logsBloom: import("viem").Hex;
                 root?: `0x${string}` | undefined;
                 status: "success" | "reverted";
-                to: import("viem").Address | null;
+                to: import("abitype").Address | null;
                 transactionHash: import("viem").Hash;
                 transactionIndex: number;
                 type: import("viem").TransactionType;
@@ -5898,6 +5989,15 @@ declare const polygon: Readonly<{
         wormhole: {
             chain: string;
             timeToFinalize: number;
+        };
+        layerzero: {
+            eid: number;
+            tokens: {
+                id: number;
+                symbol: string;
+                project: string;
+                OFTAddress: string;
+            }[];
         };
     };
     oracles: {
@@ -6575,6 +6675,15 @@ declare const sei: Readonly<{
                 address: string;
             })[];
         };
+        layerzero: {
+            eid: number;
+            tokens: {
+                id: number;
+                symbol: string;
+                project: string;
+                OFTAddress: string;
+            }[];
+        };
     };
     oracles: {
         cmc: {
@@ -6720,6 +6829,15 @@ declare const sonic: Readonly<{
                 address: string;
             }[];
         };
+        layerzero: {
+            eid: number;
+            tokens: {
+                id: number;
+                symbol: string;
+                project: string;
+                OFTAddress: string;
+            }[];
+        };
     };
     oracles: {};
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
@@ -6838,6 +6956,15 @@ declare const taiko: Readonly<{
                 type: string;
                 id: number;
                 address: string;
+            }[];
+        };
+        layerzero: {
+            eid: number;
+            tokens: {
+                id: number;
+                symbol: string;
+                project: string;
+                OFTAddress: string;
             }[];
         };
     };
@@ -7183,7 +7310,17 @@ declare const unichain: Readonly<{
             routerContract: string;
         };
     };
-    bridges: {};
+    bridges: {
+        layerzero: {
+            eid: number;
+            tokens: {
+                id: number;
+                symbol: string;
+                project: string;
+                OFTAddress: string;
+            }[];
+        };
+    };
     oracles: {};
     morpho: {};
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
@@ -8814,6 +8951,16 @@ interface Bridges {
             address: string; // address of the stargate contract
         }[];
     };
+    layerzero?: {
+        eid: number;
+        tokens: {
+            id: number; // for internal use
+            symbol?: string;
+            OFTAddress: string; // addr of oft contract for that token. sometimes these 2 are the same
+            address?: string; // addr of underlying token
+            project?: string;
+        }[];
+    };
 }
 interface Oracles {
     cmc?: {
@@ -8924,6 +9071,15 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 id: number;
                 address: string;
             })[];
+        };
+        layerzero: {
+            eid: number;
+            tokens: {
+                id: number;
+                symbol: string;
+                project: string;
+                OFTAddress: string;
+            }[];
         };
         wanbridge: {
             requiredConfirmations: number;
@@ -9120,6 +9276,15 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         wormhole: {
             chain: string;
             timeToFinalize: number;
+        };
+        layerzero: {
+            eid: number;
+            tokens: {
+                id: number;
+                symbol: string;
+                project: string;
+                OFTAddress: string;
+            }[];
         };
     };
     oracles: {
@@ -10061,6 +10226,15 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             chain: string;
             timeToFinalize: number;
         };
+        layerzero: {
+            eid: number;
+            tokens: {
+                id: number;
+                symbol: string;
+                project: string;
+                OFTAddress: string;
+            }[];
+        };
     };
     oracles: {
         cmc: {
@@ -10365,6 +10539,15 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             chain: string;
             timeToFinalize: number;
         };
+        layerzero: {
+            eid: number;
+            tokens: {
+                id: number;
+                symbol: string;
+                project: string;
+                OFTAddress: string;
+            }[];
+        };
     };
     oracles: {
         cmc: {
@@ -10512,6 +10695,15 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         wormhole: {
             chain: string;
             timeToFinalize: number;
+        };
+        layerzero: {
+            eid: number;
+            tokens: {
+                id: number;
+                symbol: string;
+                project: string;
+                OFTAddress: string;
+            }[];
         };
     };
     oracles: {
@@ -10666,6 +10858,15 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         wormhole: {
             chain: string;
             timeToFinalize: number;
+        };
+        layerzero: {
+            eid: number;
+            tokens: {
+                id: number;
+                symbol: string;
+                project: string;
+                OFTAddress: string;
+            }[];
         };
     };
     oracles: {
@@ -11113,6 +11314,15 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         wormhole: {
             chain: string;
             timeToFinalize: number;
+        };
+        layerzero: {
+            eid: number;
+            tokens: {
+                id: number;
+                symbol: string;
+                project: string;
+                OFTAddress: string;
+            }[];
         };
     };
     oracles: {
@@ -12337,6 +12547,15 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             chain: string;
             timeToFinalize: number;
         };
+        layerzero: {
+            eid: number;
+            tokens: {
+                id: number;
+                symbol: string;
+                project: string;
+                OFTAddress: string;
+            }[];
+        };
     };
     oracles: {
         cmc: {
@@ -12471,6 +12690,15 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 type: string;
                 id: number;
                 address: string;
+            }[];
+        };
+        layerzero: {
+            eid: number;
+            tokens: {
+                id: number;
+                symbol: string;
+                project: string;
+                OFTAddress: string;
             }[];
         };
     };
@@ -12748,6 +12976,15 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 id: number;
                 address: string;
             })[];
+        };
+        layerzero: {
+            eid: number;
+            tokens: {
+                id: number;
+                symbol: string;
+                project: string;
+                OFTAddress: string;
+            }[];
         };
     };
     oracles: {
@@ -13662,6 +13899,15 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 address: string;
             }[];
         };
+        layerzero: {
+            eid: number;
+            tokens: {
+                id: number;
+                symbol: string;
+                project: string;
+                OFTAddress: string;
+            }[];
+        };
     };
     oracles: {
         cmc: {
@@ -14158,6 +14404,16 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             chainSelector: bigint;
             tokenAdminRegistry: string;
         };
+        layerzero: {
+            eid: number;
+            tokens: {
+                id: number;
+                symbol: string;
+                project: string;
+                OFTAddress: string;
+                address: string;
+            }[];
+        };
     };
     oracles: {};
     morpho: {
@@ -14206,7 +14462,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         symbol: string;
         address: "0xDF0B24095e15044538866576754F3C964e902Ee6";
     })[];
-    stables: ("0xDF0B24095e15044538866576754F3C964e902Ee6" | "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb")[];
+    stables: ("0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb" | "0xDF0B24095e15044538866576754F3C964e902Ee6")[];
     watchlist: ("0xe435E14815d28a86c643E4606Ed0e8E5624782c6" | "0x660c6c6c2ad9be9fca2d40da22e1e6142ce5e7ca" | "0x43aA32cf4f6389aB89d8C79092A0fc65899C20ba" | "0x0F12dac5217868b3d6772632543ef16df8df17E5" | "0xbD108c1Dd7802DFF6c24138A72949184FFbe006F" | "0xb6a7be3ca6698859b374640b3db439fda7b7a5e3" | "0x255f0b304f701a0530f5dc1739a3d1469e21dd5f")[];
     internalName: "corn";
     nativeLogoUrl: "https://assets.oku.trade/natives/corn.png";
@@ -14289,6 +14545,15 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 name: string;
                 id: number;
                 address: string;
+            }[];
+        };
+        layerzero: {
+            eid: number;
+            tokens: {
+                id: number;
+                symbol: string;
+                project: string;
+                OFTAddress: string;
             }[];
         };
     };
@@ -14403,6 +14668,15 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         wormhole: {
             chain: string;
             timeToFinalize: number;
+        };
+        layerzero: {
+            eid: number;
+            tokens: {
+                id: number;
+                symbol: string;
+                project: string;
+                OFTAddress: string;
+            }[];
         };
     };
     morpho: {};
@@ -16952,7 +17226,17 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             routerContract: string;
         };
     };
-    bridges: {};
+    bridges: {
+        layerzero: {
+            eid: number;
+            tokens: {
+                id: number;
+                symbol: string;
+                project: string;
+                OFTAddress: string;
+            }[];
+        };
+    };
     oracles: {};
     morpho: {};
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";

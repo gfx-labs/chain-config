@@ -21,12 +21,12 @@ const arbitrum = makeConfig({
         zerion: "arbitrum",
         debank: "arb",
         cowswap: "arbitrum_one",
-        tenderly: "true"
+        tenderly: "true",
     },
     markets: {
         kyberswap: "arbitrum",
         oneinch: {
-            spender: "0x111111125421ca6dc452d289314280a0f8842a65"
+            spender: "0x111111125421ca6dc452d289314280a0f8842a65",
         },
         paraswap: {
             routerContract: "0x6A000F20005980200259B80c5102003040001068",
@@ -35,14 +35,14 @@ const arbitrum = makeConfig({
         openocean: "arbitrum",
         zeroex: true,
         cowswap: "arbitrum_one",
-        icecreamswap: true
+        icecreamswap: true,
     },
     bridges: {
         chainlink: {
             atlasNetworkName: "ethereum-mainnet-arbitrum-1",
             routerAddress: "0x141fa059441E0ca23ce184B6A78bafD2A517DdE8",
             chainSelector: 4949039107694359620n,
-            tokenAdminRegistry: "0x39AE1032cF4B334a1Ed41cdD0833bdD7c7E7751E"
+            tokenAdminRegistry: "0x39AE1032cF4B334a1Ed41cdD0833bdD7c7E7751E",
         },
         rhinofi: "ARBITRUM",
         stargate: {
@@ -68,8 +68,25 @@ const arbitrum = makeConfig({
                     name: "WXTZ",
                     type: "OFT",
                     id: 20,
-                    address: "0x7424f00845777A06E21F0bd8873f814A8A814B2D"
-                }
+                    address: "0x7424f00845777A06E21F0bd8873f814A8A814B2D",
+                },
+            ],
+        },
+        layerzero: {
+            eid: 30110,
+            tokens: [
+                {
+                    id: 1,
+                    symbol: "USDT0",
+                    project: "USDT0",
+                    OFTAddress: "0x238a52455a1ef6c987cac94b28b4081afe50ba06",
+                },
+                {
+                    id: 4,
+                    symbol: "WETH",
+                    project: "stargate",
+                    OFTAddress: "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
+                },
             ],
         },
         wanbridge: {
@@ -332,12 +349,12 @@ const base = makeConfig({
     externalId: {
         zerion: "base",
         debank: "base",
-        tenderly: "true"
+        tenderly: "true",
     },
     markets: {
         kyberswap: "base",
         oneinch: {
-            spender: "0x111111125421ca6dc452d289314280a0f8842a65"
+            spender: "0x111111125421ca6dc452d289314280a0f8842a65",
         },
         paraswap: {
             routerContract: "0x6A000F20005980200259B80c5102003040001068",
@@ -345,14 +362,14 @@ const base = makeConfig({
         openocean: "base",
         zeroex: true,
         icecreamswap: true,
-        cowswap: "base"
+        cowswap: "base",
     },
     bridges: {
         chainlink: {
             atlasNetworkName: "ethereum-mainnet-base-1",
             routerAddress: "0x881e3A65B4d4a04dD529061dd0071cf975F58bCD",
             chainSelector: 15971525489660198786n,
-            tokenAdminRegistry: "0x6f6C373d09C07425BaAE72317863d7F6bb731e37"
+            tokenAdminRegistry: "0x6f6C373d09C07425BaAE72317863d7F6bb731e37",
         },
         rhinofi: "BASE",
         stargate: {
@@ -373,8 +390,8 @@ const base = makeConfig({
                     name: "WXTZ",
                     type: "OFT",
                     id: 20,
-                    address: "0x91F9cc2649ac70a071602cadE9b0C1A5868af51D"
-                }
+                    address: "0x91F9cc2649ac70a071602cadE9b0C1A5868af51D",
+                },
             ],
         },
         wanbridge: {
@@ -383,6 +400,23 @@ const base = makeConfig({
         wormhole: {
             chain: "Base",
             timeToFinalize: 1800,
+        },
+        layerzero: {
+            eid: 30184,
+            tokens: [
+                {
+                    id: 3,
+                    symbol: "WBTC",
+                    project: "WBTC",
+                    OFTAddress: "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c",
+                },
+                {
+                    id: 4,
+                    symbol: "WETH",
+                    project: "stargate",
+                    OFTAddress: "0x4200000000000000000000000000000000000006",
+                },
+            ],
         },
     },
     oracles: {
@@ -491,7 +525,7 @@ const blast = makeConfig({
     blockAid: "blast",
     externalId: {
         zerion: "blast",
-        tenderly: "true"
+        tenderly: "true",
     },
     morpho: {},
     markets: {
@@ -505,7 +539,7 @@ const blast = makeConfig({
             atlasNetworkName: "ethereum-mainnet-blast",
             routerAddress: "0x12e0B8E349C6fb7E6E40713E8125C3cF1127ea8C",
             chainSelector: 4411394078118774322n,
-            tokenAdminRegistry: "0x846Fccd01D4115FD1E81267495773aeB33bF1dC7"
+            tokenAdminRegistry: "0x846Fccd01D4115FD1E81267495773aeB33bF1dC7",
         },
         rhinofi: "BLAST",
         wormhole: {
@@ -718,7 +752,7 @@ const boba = makeConfig({
     blockAid: "",
     externalId: {
         debank: "boba",
-        tenderly: "true"
+        tenderly: "true",
     },
     morpho: {},
     markets: {
@@ -838,14 +872,14 @@ const bsc = makeConfig({
     externalId: {
         zerion: "binance-smart-chain",
         debank: "bsc",
-        tenderly: "true"
+        tenderly: "true",
     },
     morpho: {},
     markets: {
         airswap: true,
         kyberswap: "bsc",
         oneinch: {
-            spender: "0x111111125421ca6dc452d289314280a0f8842a65"
+            spender: "0x111111125421ca6dc452d289314280a0f8842a65",
         },
         paraswap: {
             routerContract: "0x6A000F20005980200259B80c5102003040001068",
@@ -853,14 +887,14 @@ const bsc = makeConfig({
         propellerswap: "bsc",
         openocean: "bsc",
         zeroex: true,
-        icecreamswap: true
+        icecreamswap: true,
     },
     bridges: {
         chainlink: {
             atlasNetworkName: "bsc-mainnet",
             routerAddress: "0x34B03Cb9086d7D758AC55af71584F81A598759FE",
             chainSelector: 11344663589394136015n,
-            tokenAdminRegistry: "0x736Fd8660c443547a85e4Eaf70A49C1b7Bb008fc"
+            tokenAdminRegistry: "0x736Fd8660c443547a85e4Eaf70A49C1b7Bb008fc",
         },
         rhinofi: "BINANCE",
         stargate: {
@@ -870,7 +904,7 @@ const bsc = makeConfig({
                 {
                     name: "USDC",
                     id: 1,
-                    address: "0x962Bd449E630b0d928f308Ce63f1A21F02576057"
+                    address: "0x962Bd449E630b0d928f308Ce63f1A21F02576057",
                 },
                 {
                     name: "USDT",
@@ -881,8 +915,8 @@ const bsc = makeConfig({
                     name: "WXTZ",
                     type: "OFT",
                     id: 20,
-                    address: "0x91F9cc2649ac70a071602cadE9b0C1A5868af51D"
-                }
+                    address: "0x91F9cc2649ac70a071602cadE9b0C1A5868af51D",
+                },
             ],
         },
         wanbridge: {
@@ -891,6 +925,23 @@ const bsc = makeConfig({
         wormhole: {
             chain: "Bsc",
             timeToFinalize: 48,
+        },
+        layerzero: {
+            eid: 30102,
+            tokens: [
+                {
+                    id: 3,
+                    symbol: "WBTC",
+                    project: "WBTC",
+                    OFTAddress: "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c",
+                },
+                {
+                    id: 4,
+                    symbol: "WETH",
+                    project: "stargate",
+                    OFTAddress: "0x4DB5a66E937A9F4473fA95b1cAF1d1E1D62E29EA",
+                },
+            ],
         },
     },
     oracles: {
@@ -1039,19 +1090,30 @@ const celo = makeConfig({
     externalId: {},
     markets: {
         icecreamswap: true,
-        openocean: "celo"
+        openocean: "celo",
     },
     bridges: {
         chainlink: {
             atlasNetworkName: "celo-mainnet",
             routerAddress: "0xfB48f15480926A4ADf9116Dca468bDd2EE6C5F62",
             chainSelector: 1346049177634351622n,
-            tokenAdminRegistry: "0xf19e0555fAA9051e277eeD5A0DcdB13CDaca39a9"
+            tokenAdminRegistry: "0xf19e0555fAA9051e277eeD5A0DcdB13CDaca39a9",
         },
         wormhole: {
             chain: "Celo",
-            timeToFinalize: 10
-        }
+            timeToFinalize: 10,
+        },
+        layerzero: {
+            eid: 30125,
+            tokens: [
+                {
+                    id: 4,
+                    symbol: "WETH",
+                    project: "stargate",
+                    OFTAddress: "0x122013fd7dF1C6F636a5bb8f03108E876548b455",
+                },
+            ],
+        },
     },
     morpho: {},
     oracles: {
@@ -1145,7 +1207,7 @@ const corn = makeConfig({
     safeReorgDistance: 90000,
     blockAid: "",
     externalId: {
-        tenderly: "true"
+        tenderly: "true",
     },
     markets: {},
     bridges: {
@@ -1154,6 +1216,18 @@ const corn = makeConfig({
             routerAddress: "0x183f6069A0D5c2DEC1Dd1eCF3B1581e12dEb4Efe",
             chainSelector: 9043146809313071210n,
             tokenAdminRegistry: "0xCd51e57cD26b9B5eecbfe3d96DAabF3d12A663DA",
+        },
+        layerzero: {
+            eid: 30331,
+            tokens: [
+                {
+                    id: 1,
+                    symbol: "USDT0",
+                    project: "USDT0",
+                    OFTAddress: "0xCc174A13cF254E0455F0C73dB40b5F93c96DaaC2",
+                    address: "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
+                },
+            ],
         },
     },
     oracles: {},
@@ -1524,6 +1598,17 @@ const gnosis = makeConfig({
                 },
             ],
         },
+        layerzero: {
+            eid: 30145,
+            tokens: [
+                {
+                    id: 4,
+                    symbol: "WETH",
+                    project: "stargate",
+                    OFTAddress: "0x6A023CCd1ff6F2045C3309768eAd9E68F978f6e1",
+                },
+            ],
+        },
     },
     oracles: {
         cmc: {
@@ -1632,18 +1717,20 @@ const goat = makeConfig({
                     name: "ETH",
                     type: "OFT",
                     id: 13,
-                    address: "0x88853D410299BCBfE5fCC9Eef93c03115E908279"
-                }, {
+                    address: "0x88853D410299BCBfE5fCC9Eef93c03115E908279",
+                },
+                {
                     name: "USDC",
                     type: "OFT",
                     id: 1,
-                    address: "0xbbA60da06c2c5424f03f7434542280FCAd453d10"
-                }, {
+                    address: "0xbbA60da06c2c5424f03f7434542280FCAd453d10",
+                },
+                {
                     name: "USDT",
                     type: "OFT",
                     id: 2,
-                    address: "0x549943e04f40284185054145c6E4e9568C1D3241"
-                }
+                    address: "0x549943e04f40284185054145c6E4e9568C1D3241",
+                },
             ],
         },
     },
@@ -1921,7 +2008,7 @@ const lightlink = makeConfig({
     morpho: {},
     externalId: {},
     markets: {
-        icecreamswap: true
+        icecreamswap: true,
     },
     bridges: {
         stargate: {
@@ -1933,17 +2020,19 @@ const lightlink = makeConfig({
                     type: "POOL",
                     id: 13,
                     address: "0x8731d54E9D02c286767d56ac03e8037C07e01e98",
-                }, {
+                },
+                {
                     name: "USDC",
                     type: "OFT",
                     id: 1,
                     address: "0x8EE21165Ecb7562BA716c9549C1dE751282b9B33",
-                }, {
+                },
+                {
                     name: "USDT",
                     type: "OFT",
                     id: 2,
                     address: "0x06D538690AF257Da524f25D0CD52fD85b1c2173E",
-                }
+                },
             ],
         },
     },
@@ -2031,7 +2120,7 @@ const linea = makeConfig({
     blockAid: "linea",
     externalId: {
         zerion: "linea",
-        tenderly: "true"
+        tenderly: "true",
     },
     markets: {
         kyberswap: "linea",
@@ -2039,7 +2128,7 @@ const linea = makeConfig({
         zeroex: true,
         icecreamswap: true,
         oneinch: {
-            spender: "0x111111125421ca6dc452d289314280a0f8842a65"
+            spender: "0x111111125421ca6dc452d289314280a0f8842a65",
         },
     },
     bridges: {
@@ -2047,7 +2136,7 @@ const linea = makeConfig({
             atlasNetworkName: "ethereum-mainnet-linea-1",
             routerAddress: "0x549FEB73F2348F6cD99b9fc8c69252034897f06C",
             chainSelector: 4627098889531055414n,
-            tokenAdminRegistry: "0xBc933cEE67d2b1c08490ee8C51E2dF653a713534"
+            tokenAdminRegistry: "0xBc933cEE67d2b1c08490ee8C51E2dF653a713534",
         },
         rhinofi: "LINEA",
         stargate: {
@@ -2065,6 +2154,17 @@ const linea = makeConfig({
         wormhole: {
             chain: "Linea",
             timeToFinalize: 1800,
+        },
+        layerzero: {
+            eid: 30183,
+            tokens: [
+                {
+                    id: 4,
+                    symbol: "WETH",
+                    project: "stargate",
+                    OFTAddress: "0xe5D7C2a44FfDDf6b295A15c148167daaAf5Cf34f",
+                },
+            ],
         },
     },
     oracles: {
@@ -2160,7 +2260,7 @@ const lisk = makeConfig({
     safeReorgDistance: 90000,
     blockAid: "",
     externalId: {
-        tenderly: "true"
+        tenderly: "true",
     },
     morpho: {},
     markets: {},
@@ -2262,7 +2362,7 @@ const mainnet = makeConfig({
         zerion: "ethereum",
         debank: "eth",
         cowswap: "mainnet",
-        tenderly: "true"
+        tenderly: "true",
     },
     rpcUrls: {
         default: {
@@ -2274,7 +2374,7 @@ const mainnet = makeConfig({
         airswap: true,
         kyberswap: "ethereum",
         oneinch: {
-            spender: "0x111111125421ca6dc452d289314280a0f8842a65"
+            spender: "0x111111125421ca6dc452d289314280a0f8842a65",
         },
         paraswap: {
             routerContract: "0x6A000F20005980200259B80c5102003040001068",
@@ -2326,8 +2426,8 @@ const mainnet = makeConfig({
                     name: "WXTZ",
                     type: "OFT",
                     id: 20,
-                    address: "0xc9B53AB2679f573e480d01e0f49e2B5CFB7a3EAb"
-                }
+                    address: "0xc9B53AB2679f573e480d01e0f49e2B5CFB7a3EAb",
+                },
             ],
         },
         wanbridge: {
@@ -2336,6 +2436,29 @@ const mainnet = makeConfig({
         wormhole: {
             chain: "Ethereum",
             timeToFinalize: 975,
+        },
+        layerzero: {
+            eid: 30101,
+            tokens: [
+                {
+                    id: 1,
+                    symbol: "USDT0",
+                    project: "USDT0",
+                    OFTAddress: "0x811ed79dB9D34E83BDB73DF6c3e07961Cfb0D5c0",
+                },
+                {
+                    id: 3,
+                    symbol: "WBTC",
+                    project: "WBTC",
+                    OFTAddress: "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c",
+                },
+                {
+                    id: 4,
+                    symbol: "WETH",
+                    project: "stargate",
+                    OFTAddress: "0x597e6aC6a5b2413169a9588bA5D72c73b9179929",
+                },
+            ],
         },
     },
     oracles: {
@@ -2683,20 +2806,20 @@ const mantle = makeConfig({
     safeReorgDistance: 90000,
     blockAid: "",
     externalId: {
-        tenderly: "true"
+        tenderly: "true",
     },
     morpho: {},
     markets: {
         openocean: "mantle",
         zeroex: true,
-        icecreamswap: true
+        icecreamswap: true,
     },
     bridges: {
         chainlink: {
             atlasNetworkName: "ethereum-mainnet-mantle-1",
             routerAddress: "0x670052635a9850bb45882Cb2eCcF66bCff0F41B7",
             chainSelector: 1556008542357238666n,
-            tokenAdminRegistry: "0x000A744940eB5D857c0d61d97015DFc83107404F"
+            tokenAdminRegistry: "0x000A744940eB5D857c0d61d97015DFc83107404F",
         },
         deswap: {
             chainId: 100000023,
@@ -2730,7 +2853,7 @@ const mantle = makeConfig({
         wormhole: {
             chain: "Mantle",
             timeToFinalize: 1080,
-        }
+        },
     },
     oracles: {
         cmc: {
@@ -2973,11 +3096,11 @@ const moonbeam = makeConfig({
     blockAid: "",
     externalId: {
         debank: "mobm",
-        tenderly: "true"
+        tenderly: "true",
     },
     morpho: {},
     markets: {
-        icecreamswap: true
+        icecreamswap: true,
     },
     bridges: {
         wanbridge: {
@@ -2986,6 +3109,17 @@ const moonbeam = makeConfig({
         wormhole: {
             chain: "Moonbeam",
             timeToFinalize: 24,
+        },
+        layerzero: {
+            eid: 30126,
+            tokens: [
+                {
+                    id: 4,
+                    symbol: "WETH",
+                    project: "stargate",
+                    OFTAddress: "0xfA9343C3897324496A05fC75abeD6bAC29f8A40f",
+                },
+            ],
         },
     },
     oracles: {
@@ -3244,6 +3378,23 @@ const optimism = makeConfig({
             chain: "Optimism",
             timeToFinalize: 1026,
         },
+        layerzero: {
+            eid: 30111,
+            tokens: [
+                {
+                    id: 1,
+                    symbol: "USDT0",
+                    project: "USDT0",
+                    OFTAddress: "0xF03b4d9AC1D5d1E7c4cEf54C2A313b9fe051A0aD",
+                },
+                {
+                    id: 4,
+                    symbol: "WETH",
+                    project: "stargate",
+                    OFTAddress: "0x4200000000000000000000000000000000000006",
+                },
+            ],
+        },
     },
     oracles: {
         cmc: {
@@ -3488,14 +3639,14 @@ const polygon = makeConfig({
     externalId: {
         zerion: "polygon",
         debank: "matic",
-        tenderly: "true"
+        tenderly: "true",
     },
     morpho: {},
     markets: {
         airswap: true,
         kyberswap: "polygon",
         oneinch: {
-            spender: "0x111111125421ca6dc452d289314280a0f8842a65"
+            spender: "0x111111125421ca6dc452d289314280a0f8842a65",
         },
         paraswap: {
             routerContract: "0x6A000F20005980200259B80c5102003040001068",
@@ -3503,14 +3654,14 @@ const polygon = makeConfig({
         propellerswap: "polygon",
         openocean: "polygon",
         zeroex: true,
-        icecreamswap: true
+        icecreamswap: true,
     },
     bridges: {
         chainlink: {
             atlasNetworkName: "polygon-mainnet",
             routerAddress: "0x849c5ED5a80F5B408Dd4969b78c2C8fdf0565Bfe",
             chainSelector: 4051577828743386545n,
-            tokenAdminRegistry: "0x00F027eA6D0fb03256A15E9182B2B9227A4931d8"
+            tokenAdminRegistry: "0x00F027eA6D0fb03256A15E9182B2B9227A4931d8",
         },
         rhinofi: "MATIC_POS",
         stargate: {
@@ -3535,6 +3686,17 @@ const polygon = makeConfig({
         wormhole: {
             chain: "Polygon",
             timeToFinalize: 66,
+        },
+        layerzero: {
+            eid: 30109,
+            tokens: [
+                {
+                    id: 4,
+                    symbol: "WETH",
+                    project: "stargate",
+                    OFTAddress: "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
+                },
+            ],
         },
     },
     oracles: {
@@ -4087,7 +4249,7 @@ const scroll = makeConfig({
     blockAid: "scroll",
     externalId: {
         zerion: "scroll",
-        tenderly: "true"
+        tenderly: "true",
     },
     morpho: {},
     markets: {
@@ -4101,7 +4263,7 @@ const scroll = makeConfig({
             atlasNetworkName: "ethereum-mainnet-scroll-1",
             routerAddress: "0x9a55E8Cab6564eb7bbd7124238932963B8Af71DC",
             chainSelector: 13204309965629103672n,
-            tokenAdminRegistry: "0x846dEA1c1706FC35b4aa78B32d31F1599DAA47b4"
+            tokenAdminRegistry: "0x846dEA1c1706FC35b4aa78B32d31F1599DAA47b4",
         },
         rhinofi: "SCROLL",
         stargate: {
@@ -4213,7 +4375,7 @@ const sei = makeConfig({
     safeReorgDistance: 90000,
     blockAid: "",
     externalId: {
-        tenderly: "true"
+        tenderly: "true",
     },
     markets: {
         openocean: "sei",
@@ -4224,7 +4386,7 @@ const sei = makeConfig({
             atlasNetworkName: "sei-mainnet",
             routerAddress: "0xAba60dA7E88F7E8f5868C2B6dE06CB759d693af0",
             chainSelector: 9027416829622342829n,
-            tokenAdminRegistry: "0x910a46cA93E8086BF1d7D65190eE6AEe5256Bd61"
+            tokenAdminRegistry: "0x910a46cA93E8086BF1d7D65190eE6AEe5256Bd61",
         },
         stargate: {
             endpointID: 30280,
@@ -4245,6 +4407,29 @@ const sei = makeConfig({
                     name: "USDT",
                     id: 2,
                     address: "0x0dB9afb4C33be43a0a0e396Fd1383B4ea97aB10a",
+                },
+            ],
+        },
+        layerzero: {
+            eid: 30280,
+            tokens: [
+                {
+                    id: 1,
+                    symbol: "USDT0",
+                    project: "USDT0",
+                    OFTAddress: "0x56fe74a2e3b484b921c447357203431a3485cc60",
+                },
+                {
+                    id: 3,
+                    symbol: "WBTC",
+                    project: "WBTC",
+                    OFTAddress: "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c",
+                },
+                {
+                    id: 4,
+                    symbol: "WETH",
+                    project: "stargate",
+                    OFTAddress: "0x160345fC359604fC6e70E3c5fAcbdE5F7A9342d8",
                 },
             ],
         },
@@ -4377,6 +4562,17 @@ const sonic = makeConfig({
                 },
             ],
         },
+        layerzero: {
+            eid: 30332,
+            tokens: [
+                {
+                    id: 3,
+                    symbol: "WBTC",
+                    project: "WBTC",
+                    OFTAddress: "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c",
+                },
+            ],
+        },
     },
     oracles: {},
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
@@ -4458,10 +4654,10 @@ const taiko = makeConfig({
     safeReorgDistance: 90000,
     blockAid: "",
     externalId: {
-        tenderly: "true"
+        tenderly: "true",
     },
     markets: {
-        icecreamswap: true
+        icecreamswap: true,
     },
     morpho: {},
     bridges: {
@@ -4481,6 +4677,17 @@ const taiko = makeConfig({
                     type: "OFT",
                     id: 2,
                     address: "0x1C10CC06DC6D35970d1D53B2A23c76ef370d4135",
+                },
+            ],
+        },
+        layerzero: {
+            eid: 30290,
+            tokens: [
+                {
+                    id: 4,
+                    symbol: "WETH",
+                    project: "stargate",
+                    OFTAddress: "0xA51894664A773981C6C112C43ce576f315d5b1B6",
                 },
             ],
         },
@@ -4781,7 +4988,25 @@ const unichain = makeConfig({
             routerContract: "0x6A000F20005980200259B80c5102003040001068",
         },
     },
-    bridges: {},
+    bridges: {
+        layerzero: {
+            eid: 30320,
+            tokens: [
+                {
+                    id: 1,
+                    symbol: "USDT0",
+                    project: "USDT0",
+                    OFTAddress: "0xc07bE8994D035631c36fb4a89C918CeFB2f03EC3",
+                },
+                {
+                    id: 3,
+                    symbol: "WBTC",
+                    project: "WBTC",
+                    OFTAddress: "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c",
+                },
+            ],
+        },
+    },
     oracles: {},
     morpho: {},
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
@@ -4968,26 +5193,27 @@ const xdc = makeConfig({
     bridges: {
         stargate: {
             endpointID: 30365,
-            tokens: [{
+            tokens: [
+                {
                     name: "ETH",
                     type: "OFT",
                     id: 13,
-                    address: "0xB0d27478A40223e427697Da523c6A3DAF29AaFfB"
+                    address: "0xB0d27478A40223e427697Da523c6A3DAF29AaFfB",
                 },
                 {
                     name: "USDC",
                     type: "OFT",
                     id: 1,
-                    address: "0x8E2E38711080bF8AAb9C74f434d2bae70e67ae44"
+                    address: "0x8E2E38711080bF8AAb9C74f434d2bae70e67ae44",
                 },
                 {
                     name: "USDT",
                     type: "OFT",
                     id: 2,
-                    address: "0xA4272ad93AC5d2FF048DD6419c88Eb4C1002Ec6b"
+                    address: "0xA4272ad93AC5d2FF048DD6419c88Eb4C1002Ec6b",
                 },
-            ]
-        }
+            ],
+        },
     },
     oracles: {},
     morpho: {},
@@ -5180,12 +5406,12 @@ const zkSync = makeConfig({
     morpho: {},
     externalId: {
         zerion: "zksync-era",
-        tenderly: "true"
+        tenderly: "true",
     },
     markets: {
         kyberswap: "zksync",
         oneinch: {
-            spender: "0x6fd4383cb451173d5f9304f041c7bcbf27d561ff"
+            spender: "0x6fd4383cb451173d5f9304f041c7bcbf27d561ff",
         },
         propellerswap: "zksync",
         openocean: "zksync",
@@ -5195,7 +5421,7 @@ const zkSync = makeConfig({
             atlasNetworkName: "ethereum-mainnet-zksync-1",
             routerAddress: "0x748Fd769d81F5D94752bf8B0875E9301d0ba71bB",
             chainSelector: 1562403441176082196n,
-            tokenAdminRegistry: "0x100a47C9DB342884E3314B91cec076BbAC8e619c"
+            tokenAdminRegistry: "0x100a47C9DB342884E3314B91cec076BbAC8e619c",
         },
         rhinofi: "ZKSYNC",
     },

@@ -198,3 +198,15 @@ export interface IChainInfo<
 		weth9?: ChainContract;
 	};
 }
+
+// biome-ignore lint: false positive
+interface blockExplorer {
+	url: string;
+	apiUrl: string;
+}
+
+// biome-ignore lint: false positive
+interface chainContract {
+	address: Address;
+	blockCreated: number;
+}
