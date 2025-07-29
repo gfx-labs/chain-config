@@ -14,9 +14,9 @@ export const scroll = makeConfig({
   blockAid: "scroll",
   externalId: {
     zerion: "scroll",
-    tenderly: "true"
+    tenderly: "true",
   },
-	morpho: {},
+  morpho: {},
   markets: {
     kyberswap: "scroll",
     openocean: "scroll",
@@ -25,11 +25,11 @@ export const scroll = makeConfig({
   },
   bridges: {
     chainlink: {
-			atlasNetworkName: "ethereum-mainnet-scroll-1",
-			routerAddress: "0x9a55E8Cab6564eb7bbd7124238932963B8Af71DC",
-			chainSelector: 13204309965629103672n,
-      tokenAdminRegistry: "0x846dEA1c1706FC35b4aa78B32d31F1599DAA47b4"
-		},
+      atlasNetworkName: "ethereum-mainnet-scroll-1",
+      routerAddress: "0x9a55E8Cab6564eb7bbd7124238932963B8Af71DC",
+      chainSelector: 13204309965629103672n,
+      tokenAdminRegistry: "0x846dEA1c1706FC35b4aa78B32d31F1599DAA47b4",
+    },
     rhinofi: "SCROLL",
     stargate: {
       endpointID: 30214,

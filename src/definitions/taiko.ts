@@ -12,12 +12,12 @@ export const taiko = makeConfig({
   safeReorgDistance: 90000,
   blockAid: "",
   externalId: {
-    tenderly: "true"
+    tenderly: "true",
   },
   markets: {
-    icecreamswap: true
+    icecreamswap: true,
   },
-	morpho: {},
+  morpho: {},
   bridges: {
     rhinofi: "TAIKO",
     stargate: {
@@ -35,6 +35,17 @@ export const taiko = makeConfig({
           type: "OFT",
           id: 2,
           address: "0x1C10CC06DC6D35970d1D53B2A23c76ef370d4135",
+        },
+      ],
+    },
+    layerzero: {
+      eid: 30290,
+      tokens: [
+        {
+          id: 4,
+          symbol: "WETH",
+          project: "stargate",
+          OFTAddress: "0xA51894664A773981C6C112C43ce576f315d5b1B6",
         },
       ],
     },

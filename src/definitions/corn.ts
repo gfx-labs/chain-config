@@ -11,7 +11,7 @@ export const corn = makeConfig({
   safeReorgDistance: 90000,
   blockAid: "",
   externalId: {
-    tenderly: "true"
+    tenderly: "true",
   },
   markets: {},
   bridges: {
@@ -20,6 +20,18 @@ export const corn = makeConfig({
       routerAddress: "0x183f6069A0D5c2DEC1Dd1eCF3B1581e12dEb4Efe",
       chainSelector: 9043146809313071210n,
       tokenAdminRegistry: "0xCd51e57cD26b9B5eecbfe3d96DAabF3d12A663DA",
+    },
+    layerzero: {
+      eid: 30331,
+      tokens: [
+        {
+          id: 1,
+          symbol: "USDT0",
+          project: "USDT0",
+          OFTAddress: "0xCc174A13cF254E0455F0C73dB40b5F93c96DaaC2",
+          address: "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
+        },
+      ],
     },
   },
   oracles: {},

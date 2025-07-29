@@ -10,13 +10,13 @@ export const linea = makeConfig({
     "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
   blockTimeSeconds: 2,
   sortIndex: 15,
-	morpho: {},
+  morpho: {},
   logoUrl: "https://assets.oku.trade/chains/linea-logo.svg",
   safeReorgDistance: 100,
   blockAid: "linea",
   externalId: {
     zerion: "linea",
-    tenderly: "true"
+    tenderly: "true",
   },
   markets: {
     kyberswap: "linea",
@@ -24,7 +24,7 @@ export const linea = makeConfig({
     zeroex: true,
     icecreamswap: true,
     oneinch: {
-      spender: "0x111111125421ca6dc452d289314280a0f8842a65"
+      spender: "0x111111125421ca6dc452d289314280a0f8842a65",
     },
   },
   bridges: {
@@ -32,7 +32,7 @@ export const linea = makeConfig({
       atlasNetworkName: "ethereum-mainnet-linea-1",
       routerAddress: "0x549FEB73F2348F6cD99b9fc8c69252034897f06C",
       chainSelector: 4627098889531055414n,
-      tokenAdminRegistry: "0xBc933cEE67d2b1c08490ee8C51E2dF653a713534"
+      tokenAdminRegistry: "0xBc933cEE67d2b1c08490ee8C51E2dF653a713534",
     },
     rhinofi: "LINEA",
     stargate: {
@@ -50,6 +50,17 @@ export const linea = makeConfig({
     wormhole: {
       chain: "Linea",
       timeToFinalize: 1800,
+    },
+    layerzero: {
+      eid: 30183,
+      tokens: [
+        {
+          id: 4,
+          symbol: "WETH",
+          project: "stargate",
+          OFTAddress: "0xe5D7C2a44FfDDf6b295A15c148167daaAf5Cf34f",
+        },
+      ],
     },
   },
   oracles: {

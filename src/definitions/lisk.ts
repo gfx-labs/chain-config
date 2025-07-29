@@ -10,9 +10,9 @@ export const lisk = makeConfig({
   safeReorgDistance: 90000,
   blockAid: "",
   externalId: {
-    tenderly: "true"
+    tenderly: "true",
   },
-	morpho: {},
+  morpho: {},
   markets: {},
   bridges: {},
   oracles: {

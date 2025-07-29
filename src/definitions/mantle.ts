@@ -12,20 +12,20 @@ export const mantle = makeConfig({
   safeReorgDistance: 90000,
   blockAid: "",
   externalId: {
-    tenderly: "true"
+    tenderly: "true",
   },
-	morpho: {},
+  morpho: {},
   markets: {
     openocean: "mantle",
     zeroex: true,
-    icecreamswap: true
+    icecreamswap: true,
   },
   bridges: {
     chainlink: {
       atlasNetworkName: "ethereum-mainnet-mantle-1",
       routerAddress: "0x670052635a9850bb45882Cb2eCcF66bCff0F41B7",
       chainSelector: 1556008542357238666n,
-      tokenAdminRegistry: "0x000A744940eB5D857c0d61d97015DFc83107404F"
+      tokenAdminRegistry: "0x000A744940eB5D857c0d61d97015DFc83107404F",
     },
     deswap: {
       chainId: 100000023,
@@ -59,7 +59,7 @@ export const mantle = makeConfig({
     wormhole: {
       chain: "Mantle",
       timeToFinalize: 1080,
-    }
+    },
   },
   oracles: {
     cmc: {

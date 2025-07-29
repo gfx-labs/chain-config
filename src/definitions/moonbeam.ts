@@ -14,11 +14,11 @@ export const moonbeam = makeConfig({
   blockAid: "",
   externalId: {
     debank: "mobm",
-    tenderly: "true"
+    tenderly: "true",
   },
-	morpho: {},
+  morpho: {},
   markets: {
-    icecreamswap: true
+    icecreamswap: true,
   },
   bridges: {
     wanbridge: {
@@ -27,6 +27,17 @@ export const moonbeam = makeConfig({
     wormhole: {
       chain: "Moonbeam",
       timeToFinalize: 24,
+    },
+    layerzero: {
+      eid: 30126,
+      tokens: [
+        {
+          id: 4,
+          symbol: "WETH",
+          project: "stargate",
+          OFTAddress: "0xfA9343C3897324496A05fC75abeD6bAC29f8A40f",
+        },
+      ],
     },
   },
   oracles: {

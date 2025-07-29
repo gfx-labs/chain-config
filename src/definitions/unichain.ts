@@ -22,7 +22,25 @@ export const unichain = makeConfig({
       routerContract: "0x6A000F20005980200259B80c5102003040001068",
     },
   },
-  bridges: {},
+  bridges: {
+    layerzero: {
+      eid: 30320,
+      tokens: [
+        {
+          id: 1,
+          symbol: "USDT0",
+          project: "USDT0",
+          OFTAddress: "0xc07bE8994D035631c36fb4a89C918CeFB2f03EC3",
+        },
+        {
+          id: 3,
+          symbol: "WBTC",
+          project: "WBTC",
+          OFTAddress: "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c",
+        },
+      ],
+    },
+  },
   oracles: {},
   morpho: {},
   initCodeHash:

@@ -51,6 +51,17 @@ export const gnosis = makeConfig({
         },
       ],
     },
+    layerzero: {
+      eid: 30145,
+      tokens: [
+        {
+          id: 4,
+          symbol: "WETH",
+          project: "stargate",
+          OFTAddress: "0x6A023CCd1ff6F2045C3309768eAd9E68F978f6e1",
+        },
+      ],
+    },
   },
   oracles: {
     cmc: {
