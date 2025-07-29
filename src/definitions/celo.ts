@@ -12,19 +12,30 @@ export const celo = makeConfig({
   externalId: {},
   markets: {
     icecreamswap: true,
-    openocean: "celo"
+    openocean: "celo",
   },
   bridges: {
     chainlink: {
       atlasNetworkName: "celo-mainnet",
       routerAddress: "0xfB48f15480926A4ADf9116Dca468bDd2EE6C5F62",
       chainSelector: 1346049177634351622n,
-      tokenAdminRegistry: "0xf19e0555fAA9051e277eeD5A0DcdB13CDaca39a9"
+      tokenAdminRegistry: "0xf19e0555fAA9051e277eeD5A0DcdB13CDaca39a9",
     },
     wormhole: {
       chain: "Celo",
-      timeToFinalize: 10
-    }
+      timeToFinalize: 10,
+    },
+    layerzero: {
+      eid: 30125,
+      tokens: [
+        {
+          id: 4,
+          symbol: "WETH",
+          project: "stargate",
+          OFTAddress: "0x122013fd7dF1C6F636a5bb8f03108E876548b455",
+        },
+      ],
+    },
   },
   morpho: {},
   oracles: {

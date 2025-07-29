@@ -15,14 +15,14 @@ export const polygon = makeConfig({
   externalId: {
     zerion: "polygon",
     debank: "matic",
-    tenderly: "true"
+    tenderly: "true",
   },
-	morpho: {},
+  morpho: {},
   markets: {
     airswap: true,
     kyberswap: "polygon",
     oneinch: {
-      spender: "0x111111125421ca6dc452d289314280a0f8842a65"
+      spender: "0x111111125421ca6dc452d289314280a0f8842a65",
     },
     paraswap: {
       routerContract: "0x6A000F20005980200259B80c5102003040001068",
@@ -30,14 +30,14 @@ export const polygon = makeConfig({
     propellerswap: "polygon",
     openocean: "polygon",
     zeroex: true,
-    icecreamswap: true
+    icecreamswap: true,
   },
   bridges: {
     chainlink: {
       atlasNetworkName: "polygon-mainnet",
       routerAddress: "0x849c5ED5a80F5B408Dd4969b78c2C8fdf0565Bfe",
       chainSelector: 4051577828743386545n,
-      tokenAdminRegistry: "0x00F027eA6D0fb03256A15E9182B2B9227A4931d8"
+      tokenAdminRegistry: "0x00F027eA6D0fb03256A15E9182B2B9227A4931d8",
     },
     rhinofi: "MATIC_POS",
     stargate: {
@@ -62,6 +62,17 @@ export const polygon = makeConfig({
     wormhole: {
       chain: "Polygon",
       timeToFinalize: 66,
+    },
+    layerzero: {
+      eid: 30109,
+      tokens: [
+        {
+          id: 4,
+          symbol: "WETH",
+          project: "stargate",
+          OFTAddress: "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
+        },
+      ],
     },
   },
   oracles: {

@@ -15,7 +15,7 @@ export const boba = makeConfig({
   blockAid: "",
   externalId: {
     debank: "boba",
-    tenderly: "true"
+    tenderly: "true",
   },
   morpho: {},
   markets: {

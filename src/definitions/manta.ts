@@ -14,7 +14,7 @@ export const manta = makeConfig({
   safeReorgDistance: 90000,
   blockAid: "",
   externalId: {},
-	morpho: {},
+  morpho: {},
   markets: {
     openocean: "manta",
   },

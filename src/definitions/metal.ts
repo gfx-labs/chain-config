@@ -10,7 +10,7 @@ export const metal = makeConfig({
   safeReorgDistance: 90000,
   blockAid: "",
   externalId: {},
-	morpho: {},
+  morpho: {},
   markets: {},
   bridges: {},
   oracles: {},

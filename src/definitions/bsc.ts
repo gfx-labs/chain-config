@@ -16,14 +16,14 @@ export const bsc = makeConfig({
   externalId: {
     zerion: "binance-smart-chain",
     debank: "bsc",
-    tenderly: "true"
+    tenderly: "true",
   },
-	morpho: {},
+  morpho: {},
   markets: {
     airswap: true,
     kyberswap: "bsc",
     oneinch: {
-      spender: "0x111111125421ca6dc452d289314280a0f8842a65"
+      spender: "0x111111125421ca6dc452d289314280a0f8842a65",
     },
     paraswap: {
       routerContract: "0x6A000F20005980200259B80c5102003040001068",
@@ -31,14 +31,14 @@ export const bsc = makeConfig({
     propellerswap: "bsc",
     openocean: "bsc",
     zeroex: true,
-    icecreamswap: true
+    icecreamswap: true,
   },
   bridges: {
     chainlink: {
       atlasNetworkName: "bsc-mainnet",
       routerAddress: "0x34B03Cb9086d7D758AC55af71584F81A598759FE",
       chainSelector: 11344663589394136015n,
-      tokenAdminRegistry: "0x736Fd8660c443547a85e4Eaf70A49C1b7Bb008fc"
+      tokenAdminRegistry: "0x736Fd8660c443547a85e4Eaf70A49C1b7Bb008fc",
     },
     rhinofi: "BINANCE",
     stargate: {
@@ -48,7 +48,7 @@ export const bsc = makeConfig({
         {
           name: "USDC",
           id: 1,
-          address: "0x962Bd449E630b0d928f308Ce63f1A21F02576057"
+          address: "0x962Bd449E630b0d928f308Ce63f1A21F02576057",
         },
         {
           name: "USDT",
@@ -59,8 +59,8 @@ export const bsc = makeConfig({
           name: "WXTZ",
           type: "OFT",
           id: 20,
-          address: "0x91F9cc2649ac70a071602cadE9b0C1A5868af51D"
-        }
+          address: "0x91F9cc2649ac70a071602cadE9b0C1A5868af51D",
+        },
       ],
     },
     wanbridge: {
@@ -69,6 +69,23 @@ export const bsc = makeConfig({
     wormhole: {
       chain: "Bsc",
       timeToFinalize: 48,
+    },
+    layerzero: {
+      eid: 30102,
+      tokens: [
+        {
+          id: 3,
+          symbol: "WBTC",
+          project: "WBTC",
+          OFTAddress: "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c",
+        },
+        {
+          id: 4,
+          symbol: "WETH",
+          project: "stargate",
+          OFTAddress: "0x4DB5a66E937A9F4473fA95b1cAF1d1E1D62E29EA",
+        },
+      ],
     },
   },
   oracles: {

@@ -9,26 +9,26 @@ export const zkSync = makeConfig({
   logoUrl: "https://assets.oku.trade/chains/zksync-logo.svg",
   safeReorgDistance: 90000,
   blockAid: "zksync",
-	morpho: {},
+  morpho: {},
   externalId: {
     zerion: "zksync-era",
-    tenderly: "true"
+    tenderly: "true",
   },
   markets: {
     kyberswap: "zksync",
     oneinch: {
-      spender:"0x6fd4383cb451173d5f9304f041c7bcbf27d561ff"
+      spender: "0x6fd4383cb451173d5f9304f041c7bcbf27d561ff",
     },
     propellerswap: "zksync",
     openocean: "zksync",
   },
   bridges: {
     chainlink: {
-			atlasNetworkName: "ethereum-mainnet-zksync-1",
-			routerAddress: "0x748Fd769d81F5D94752bf8B0875E9301d0ba71bB",
-			chainSelector: 1562403441176082196n,
-      tokenAdminRegistry: "0x100a47C9DB342884E3314B91cec076BbAC8e619c"
-		},
+      atlasNetworkName: "ethereum-mainnet-zksync-1",
+      routerAddress: "0x748Fd769d81F5D94752bf8B0875E9301d0ba71bB",
+      chainSelector: 1562403441176082196n,
+      tokenAdminRegistry: "0x100a47C9DB342884E3314B91cec076BbAC8e619c",
+    },
     rhinofi: "ZKSYNC",
   },
   oracles: {

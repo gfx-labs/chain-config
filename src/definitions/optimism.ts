@@ -1,6 +1,6 @@
 import { optimism as chain } from "viem/chains";
 import { makeConfig } from "../util";
-import { } from "viem";
+import {} from "viem";
 
 export const optimism = makeConfig({
   ...chain,
@@ -66,6 +66,23 @@ export const optimism = makeConfig({
     wormhole: {
       chain: "Optimism",
       timeToFinalize: 1026,
+    },
+    layerzero: {
+      eid: 30111,
+      tokens: [
+        {
+          id: 1,
+          symbol: "USDT0",
+          project: "USDT0",
+          OFTAddress: "0xF03b4d9AC1D5d1E7c4cEf54C2A313b9fe051A0aD",
+        },
+        {
+          id: 4,
+          symbol: "WETH",
+          project: "stargate",
+          OFTAddress: "0x4200000000000000000000000000000000000006",
+        },
+      ],
     },
   },
   oracles: {

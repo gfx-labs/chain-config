@@ -12,18 +12,18 @@ export const sei = makeConfig({
   safeReorgDistance: 90000,
   blockAid: "",
   externalId: {
-    tenderly: "true"
+    tenderly: "true",
   },
   markets: {
     openocean: "sei",
   },
-	morpho: {},
+  morpho: {},
   bridges: {
     chainlink: {
       atlasNetworkName: "sei-mainnet",
       routerAddress: "0xAba60dA7E88F7E8f5868C2B6dE06CB759d693af0",
       chainSelector: 9027416829622342829n,
-      tokenAdminRegistry: "0x910a46cA93E8086BF1d7D65190eE6AEe5256Bd61"
+      tokenAdminRegistry: "0x910a46cA93E8086BF1d7D65190eE6AEe5256Bd61",
     },
     stargate: {
       endpointID: 30280,
@@ -44,6 +44,29 @@ export const sei = makeConfig({
           name: "USDT",
           id: 2,
           address: "0x0dB9afb4C33be43a0a0e396Fd1383B4ea97aB10a",
+        },
+      ],
+    },
+    layerzero: {
+      eid: 30280,
+      tokens: [
+        {
+          id: 1,
+          symbol: "USDT0",
+          project: "USDT0",
+          OFTAddress: "0x56fe74a2e3b484b921c447357203431a3485cc60",
+        },
+        {
+          id: 3,
+          symbol: "WBTC",
+          project: "WBTC",
+          OFTAddress: "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c",
+        },
+        {
+          id: 4,
+          symbol: "WETH",
+          project: "stargate",
+          OFTAddress: "0x160345fC359604fC6e70E3c5fAcbdE5F7A9342d8",
         },
       ],
     },

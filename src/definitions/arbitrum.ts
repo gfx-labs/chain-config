@@ -16,12 +16,12 @@ export const arbitrum = makeConfig({
     zerion: "arbitrum",
     debank: "arb",
     cowswap: "arbitrum_one",
-    tenderly: "true"
+    tenderly: "true",
   },
   markets: {
     kyberswap: "arbitrum",
     oneinch: {
-      spender: "0x111111125421ca6dc452d289314280a0f8842a65"
+      spender: "0x111111125421ca6dc452d289314280a0f8842a65",
     },
     paraswap: {
       routerContract: "0x6A000F20005980200259B80c5102003040001068",
@@ -30,14 +30,14 @@ export const arbitrum = makeConfig({
     openocean: "arbitrum",
     zeroex: true,
     cowswap: "arbitrum_one",
-    icecreamswap: true
+    icecreamswap: true,
   },
   bridges: {
     chainlink: {
       atlasNetworkName: "ethereum-mainnet-arbitrum-1",
       routerAddress: "0x141fa059441E0ca23ce184B6A78bafD2A517DdE8",
       chainSelector: 4949039107694359620n,
-      tokenAdminRegistry: "0x39AE1032cF4B334a1Ed41cdD0833bdD7c7E7751E"
+      tokenAdminRegistry: "0x39AE1032cF4B334a1Ed41cdD0833bdD7c7E7751E",
     },
     rhinofi: "ARBITRUM",
     stargate: {
@@ -63,8 +63,25 @@ export const arbitrum = makeConfig({
           name: "WXTZ",
           type: "OFT",
           id: 20,
-          address: "0x7424f00845777A06E21F0bd8873f814A8A814B2D"
-        }
+          address: "0x7424f00845777A06E21F0bd8873f814A8A814B2D",
+        },
+      ],
+    },
+    layerzero: {
+      eid: 30110,
+      tokens: [
+        {
+          id: 1,
+          symbol: "USDT0",
+          project: "USDT0",
+          OFTAddress: "0x238a52455a1ef6c987cac94b28b4081afe50ba06",
+        },
+        {
+          id: 4,
+          symbol: "WETH",
+          project: "stargate",
+          OFTAddress: "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
+        },
       ],
     },
     wanbridge: {

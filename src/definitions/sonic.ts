@@ -42,6 +42,17 @@ export const sonic = makeConfig({
         },
       ],
     },
+    layerzero: {
+      eid: 30332,
+      tokens: [
+        {
+          id: 3,
+          symbol: "WBTC",
+          project: "WBTC",
+          OFTAddress: "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c",
+        },
+      ],
+    },
   },
   oracles: {},
   initCodeHash:

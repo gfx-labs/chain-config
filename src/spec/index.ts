@@ -120,6 +120,16 @@ export interface Bridges {
       address: string; // address of the stargate contract
     }[];
   };
+  layerzero?: {
+    eid: number;
+    tokens: {
+      id: number; // for internal use
+      symbol?: string;
+      OFTAddress: string; // addr of oft contract for that token. sometimes these 2 are the same
+      address?: string; // addr of underlying token
+      project?: string;
+    }[];
+  };
 }
 
 export interface Oracles {

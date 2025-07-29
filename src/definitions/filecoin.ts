@@ -12,7 +12,7 @@ export const filecoin = makeConfig({
   blockTimeSeconds: 30,
   safeReorgDistance: 90000,
   blockAid: "",
-	morpho: {},
+  morpho: {},
   blockExplorers: {
     default: {
       name: "Blockscout",

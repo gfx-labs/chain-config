@@ -1,6 +1,6 @@
 import { rootstock as chain } from "viem/chains";
 import { makeConfig } from "../util";
-import { } from "viem";
+import {} from "viem";
 
 export const rootstock = makeConfig({
   ...chain,
