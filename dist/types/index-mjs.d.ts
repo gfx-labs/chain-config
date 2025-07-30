@@ -3375,7 +3375,9 @@ declare const hemi: Readonly<{
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {};
-    markets: {};
+    markets: {
+        icecreamswap: true;
+    };
     bridges: {
         stargate: {
             endpointID: number;
@@ -15596,7 +15598,9 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {};
-    markets: {};
+    markets: {
+        icecreamswap: true;
+    };
     bridges: {
         stargate: {
             endpointID: number;

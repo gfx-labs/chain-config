@@ -1812,7 +1812,9 @@ const hemi = makeConfig({
     safeReorgDistance: 90000,
     blockAid: "",
     externalId: {},
-    markets: {},
+    markets: {
+        icecreamswap: true,
+    },
     bridges: {
         stargate: {
             endpointID: 30329,
