@@ -4501,6 +4501,8 @@
 	        "0x41eea09c971294fcde3b6e553902b04a47be7442",
 	        "0x5cfa8db453c9904511c4ea9eb0bfc903e36b9f5f",
 	        "0xa3a573c8d14c93fca8fdecb7db168619563d9b00",
+	        "0x48ddb6384ec5d835bdb0faf7e3abc01d7a1493cd",
+	        "0xc53b65811e3d33ada5a90d476dcf2063b53bcfb3",
 	    ],
 	    internalName: "sei",
 	    nativeLogoUrl: "https://assets.oku.trade/natives/sei.png",
