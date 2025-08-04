@@ -16,9 +16,10 @@ var Scroll Network = Network{
 			ApiUrl: "https://api.scrollscan.com/api",
 		},
 	},
-	DefaultPool:  common.HexToAddress("0x813df550a32d4a9d42010d057386429ad2328ed9"),
-	InternalName: "scroll",
-	InitCodeHash: common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
+	DefaultPool:     common.HexToAddress("0x813df550a32d4a9d42010d057386429ad2328ed9"),
+	InternalName:    "scroll",
+	TransactionType: "eip1559",
+	InitCodeHash:    common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId: map[string]string{
 		"zerion":   "scroll",
 		"tenderly": "true",

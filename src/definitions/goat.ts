@@ -6,6 +6,7 @@ export const goat = makeConfig({
 	name: "GOAT",
 	blockTimeSeconds: 3,
 	launchTime: 1742159744,
+	transactionType: "eip1559",
 	sortIndex: 15,
 	logoUrl: "https://assets.oku.trade/chains/goat-logo.svg",
 	safeReorgDistance: 90000,

@@ -11,6 +11,7 @@ export const xdc = makeConfig({
 	},
 	blockTimeSeconds: 2,
 	launchTime: 1746453600,
+	transactionType: "eip1559",
 	sortIndex: 15,
 	logoUrl: "https://assets.oku.trade/chains/xdc-logo.png",
 	safeReorgDistance: 90000,

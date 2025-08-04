@@ -20,9 +20,10 @@ var Worldchain Network = Network{
 			ApiUrl: "https://worldchain-mainnet.explorer.alchemy.com/api",
 		},
 	},
-	DefaultPool:  common.HexToAddress("0x610E319b3A3Ab56A0eD5562927D37c233774ba39"),
-	InternalName: "worldchain",
-	InitCodeHash: common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
+	DefaultPool:     common.HexToAddress("0x610E319b3A3Ab56A0eD5562927D37c233774ba39"),
+	InternalName:    "worldchain",
+	TransactionType: "eip1559",
+	InitCodeHash:    common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId: map[string]string{
 		"tenderly": "true",
 	},

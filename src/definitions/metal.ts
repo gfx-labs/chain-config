@@ -5,6 +5,7 @@ export const metal = makeConfig({
 	...chain,
 	blockTimeSeconds: 2,
 	launchTime: 1733882663,
+	transactionType: "eip1559",
 	sortIndex: 15,
 	logoUrl: "https://assets.oku.trade/chains/metal-logo.png",
 	safeReorgDistance: 90000,

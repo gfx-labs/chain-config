@@ -16,9 +16,10 @@ var Polygon Network = Network{
 			ApiUrl: "https://api.polygonscan.com/api",
 		},
 	},
-	DefaultPool:  common.HexToAddress("0xa374094527e1673a86de625aa59517c5de346d32"),
-	InternalName: "polygon",
-	InitCodeHash: common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
+	DefaultPool:     common.HexToAddress("0xa374094527e1673a86de625aa59517c5de346d32"),
+	InternalName:    "polygon",
+	TransactionType: "eip1559",
+	InitCodeHash:    common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId: map[string]string{
 		"zerion":   "polygon",
 		"debank":   "matic",

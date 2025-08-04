@@ -162,6 +162,7 @@ export interface IChainInfo<
 	safeReorgDistance?: number;
 	defaultPool: Address;
 	internalName: string;
+	transactionType: string;
 	defaultToken0: Address;
 	defaultToken1: Address;
 	blockAid: string;

@@ -5,6 +5,7 @@ export const gnosis = makeConfig({
 	...chain,
 	blockTimeSeconds: 5,
 	launchTime: 1725890400,
+	transactionType: "eip1559",
 	sortIndex: 18,
 	blockAid: "",
 	logoUrl: "https://assets.oku.trade/chains/gnosis-logo.png",

@@ -6,6 +6,7 @@ export const zkSync = makeConfig({
 	blockTimeSeconds: 2,
 	sortIndex: 4,
 	launchTime: 1696514400,
+	transactionType: "eip1559",
 	logoUrl: "https://assets.oku.trade/chains/zksync-logo.svg",
 	safeReorgDistance: 90000,
 	blockAid: "zksync",

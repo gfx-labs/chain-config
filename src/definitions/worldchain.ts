@@ -6,6 +6,7 @@ export const worldchain = makeConfig({
 	...chain,
 	blockTimeSeconds: 2,
 	launchTime: 0,
+	transactionType: "eip1559",
 	sortIndex: 15,
 	logoUrl: "https://assets.oku.trade/chains/world-logo.png",
 	safeReorgDistance: 90000,

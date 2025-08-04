@@ -16,9 +16,10 @@ var Unichain Network = Network{
 			ApiUrl: "https://api.uniscan.xyz/api",
 		},
 	},
-	DefaultPool:  common.HexToAddress("0x65081CB48d74A32e9CCfED75164b8c09972DBcF1"),
-	InternalName: "unichain",
-	InitCodeHash: common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
+	DefaultPool:     common.HexToAddress("0x65081CB48d74A32e9CCfED75164b8c09972DBcF1"),
+	InternalName:    "unichain",
+	TransactionType: "eip1559",
+	InitCodeHash:    common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId: map[string]string{
 		"tenderly": "true",
 	},

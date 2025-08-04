@@ -16,9 +16,10 @@ var Lens Network = Network{
 			ApiUrl: "https://explorer.lens.xyz/api",
 		},
 	},
-	DefaultPool:  common.HexToAddress("0x5eb6b146d7a5322b763c8f8b0eb2fdd5d15e49de"),
-	InternalName: "lens",
-	InitCodeHash: common.HexToHash("0x010013f177ea1fcbc4520f9a3ca7cd2d1d77959e05aa66484027cb38e712aeed"),
+	DefaultPool:     common.HexToAddress("0x5eb6b146d7a5322b763c8f8b0eb2fdd5d15e49de"),
+	InternalName:    "lens",
+	TransactionType: "eip1559",
+	InitCodeHash:    common.HexToHash("0x010013f177ea1fcbc4520f9a3ca7cd2d1d77959e05aa66484027cb38e712aeed"),
 	ExternalId: map[string]string{
 		"tenderly": "true",
 	},

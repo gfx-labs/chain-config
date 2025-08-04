@@ -7,6 +7,7 @@ export const taiko = makeConfig({
 		"0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
 	blockTimeSeconds: 24,
 	launchTime: 1717509600,
+	transactionType: "eip1559",
 	sortIndex: 4,
 	logoUrl: "https://assets.oku.trade/chains/taiko-logo.svg",
 	safeReorgDistance: 90000,

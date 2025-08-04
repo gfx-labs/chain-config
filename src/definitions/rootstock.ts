@@ -5,6 +5,7 @@ export const rootstock = makeConfig({
 	...chain,
 	sortIndex: 7,
 	launchTime: 1702479600,
+	transactionType: "legacy",
 	name: "Rootstock",
 	initCodeHash:
 		"0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",

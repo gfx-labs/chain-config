@@ -5,6 +5,7 @@ export const telos = makeConfig({
 	...chain,
 	blockTimeSeconds: 0.5,
 	launchTime: 1743089303,
+	transactionType: "eip1559",
 	sortIndex: 13,
 	logoUrl: "https://assets.oku.trade/chains/telos-logo.svg",
 	safeReorgDistance: 90000,

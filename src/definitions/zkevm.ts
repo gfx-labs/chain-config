@@ -7,6 +7,7 @@ export const polygonZkEvm = makeConfig({
 		"0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
 	sortIndex: 6,
 	launchTime: 1722520800,
+	transactionType: "eip1559",
 	blockTimeSeconds: 7,
 	logoUrl: "https://assets.oku.trade/chains/zkevm-logo.svg",
 	safeReorgDistance: 90000,

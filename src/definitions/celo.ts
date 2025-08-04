@@ -5,6 +5,7 @@ export const celo = makeConfig({
 	...chain,
 	blockTimeSeconds: 2,
 	launchTime: 1737754469,
+	transactionType: "eip1559",
 	sortIndex: 15,
 	logoUrl: "https://assets.oku.trade/chains/celo-logo.svg",
 	safeReorgDistance: 90000,

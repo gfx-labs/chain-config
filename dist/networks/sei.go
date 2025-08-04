@@ -16,9 +16,10 @@ var Sei Network = Network{
 			ApiUrl: "https://seitrace.com/pacific-1/api",
 		},
 	},
-	DefaultPool:  common.HexToAddress("0x0A6358F069268c7dc4918D5B12c69a782b957Ead"),
-	InternalName: "sei",
-	InitCodeHash: common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
+	DefaultPool:     common.HexToAddress("0x0A6358F069268c7dc4918D5B12c69a782b957Ead"),
+	InternalName:    "sei",
+	TransactionType: "eip1559",
+	InitCodeHash:    common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId: map[string]string{
 		"tenderly": "true",
 	},
@@ -28,7 +29,7 @@ var Sei Network = Network{
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1"), common.HexToAddress("0xb75d0b03c06a926e488e2659df1a861f860bd3d1")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1"): {}, common.HexToAddress("0xb75d0b03c06a926e488e2659df1a861f860bd3d1"): {}},
-	Watchlist:        []common.Address{common.HexToAddress("0x0A6358F069268c7dc4918D5B12c69a782b957Ead"), common.HexToAddress("0x8a1a9efb7f7f74ace10a31f2f5f9f7e804f957b1"), common.HexToAddress("0x41eea09c971294fcde3b6e553902b04a47be7442"), common.HexToAddress("0x5cfa8db453c9904511c4ea9eb0bfc903e36b9f5f"), common.HexToAddress("0xa3a573c8d14c93fca8fdecb7db168619563d9b00")},
+	Watchlist:        []common.Address{common.HexToAddress("0x0A6358F069268c7dc4918D5B12c69a782b957Ead"), common.HexToAddress("0x8a1a9efb7f7f74ace10a31f2f5f9f7e804f957b1"), common.HexToAddress("0x41eea09c971294fcde3b6e553902b04a47be7442"), common.HexToAddress("0x5cfa8db453c9904511c4ea9eb0bfc903e36b9f5f"), common.HexToAddress("0xa3a573c8d14c93fca8fdecb7db168619563d9b00"), common.HexToAddress("0x48ddb6384ec5d835bdb0faf7e3abc01d7a1493cd"), common.HexToAddress("0xc53b65811e3d33ada5a90d476dcf2063b53bcfb3")},
 	BlockTimeSeconds: 0.4,
 	Oku: OkuMetadata{
 		LimitOrderRegistry:            common.HexToAddress("0xA9d71E1dd7ca26F26e656E66d6AA81ed7f745bf0"),

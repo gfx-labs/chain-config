@@ -6,6 +6,7 @@ export const matchain = makeConfig({
 	name: "Matchain",
 	blockTimeSeconds: 0.5,
 	launchTime: 1754106070,
+	transactionType: "eip1559",
 	sortIndex: 15,
 	blockAid: "",
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/matchain-logo.svg",

@@ -5,6 +5,7 @@ export const blast = makeConfig({
 	...chain,
 	blockTimeSeconds: 2,
 	launchTime: 1719410400,
+	transactionType: "eip1559",
 	sortIndex: 14,
 	logoUrl: "https://assets.oku.trade/chains/blast-logo.svg",
 	safeReorgDistance: 90000,

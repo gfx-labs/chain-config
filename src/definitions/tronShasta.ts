@@ -7,6 +7,7 @@ export const tronShasta = makeConfig({
 	name: "Tron Shasta",
 	blockTimeSeconds: 5,
 	launchTime: 1746055290,
+	transactionType: "eip1559",
 	sortIndex: 15,
 	blockAid: "",
 	logoUrl: "https://assets.oku.trade/chains/tron.png",

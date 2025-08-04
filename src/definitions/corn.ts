@@ -6,6 +6,7 @@ export const corn = makeConfig({
 	name: "Corn",
 	blockTimeSeconds: 35,
 	launchTime: 1733882663,
+	transactionType: "eip1559",
 	sortIndex: 15,
 	logoUrl: "https://assets.oku.trade/chains/corn-logo.png",
 	safeReorgDistance: 90000,

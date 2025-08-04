@@ -5,6 +5,7 @@ export const bsc = makeConfig({
 	...chain,
 	name: "BSC",
 	launchTime: 1689346800,
+	transactionType: "eip1559",
 	initCodeHash:
 		"0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
 	sortIndex: 9,

@@ -15,9 +15,10 @@ var Bob Network = Network{
 			Url: "https://explorer.gobob.xyz",
 		},
 	},
-	DefaultPool:  common.HexToAddress("0x9a3b17a2e2daf54ce80f2f4b2c8440902be715de"),
-	InternalName: "bob",
-	InitCodeHash: common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
+	DefaultPool:     common.HexToAddress("0x9a3b17a2e2daf54ce80f2f4b2c8440902be715de"),
+	InternalName:    "bob",
+	TransactionType: "eip1559",
+	InitCodeHash:    common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId: map[string]string{
 		"tenderly": "true",
 	},

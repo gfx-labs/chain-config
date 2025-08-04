@@ -6,6 +6,7 @@ export const unichain = makeConfig({
 	name: "Unichain",
 	blockTimeSeconds: 1,
 	launchTime: 1750384728,
+	transactionType: "eip1559",
 	sortIndex: 15,
 	logoUrl: "https://assets.oku.trade/chains/unichain-logo.svg",
 	safeReorgDistance: 90000,

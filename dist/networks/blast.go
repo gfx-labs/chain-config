@@ -16,9 +16,10 @@ var Blast Network = Network{
 			ApiUrl: "https://api.blastscan.io/api",
 		},
 	},
-	DefaultPool:  common.HexToAddress("0xf5A23bDD36a56EDe75D503F6f643d5eaF25B1a8F"),
-	InternalName: "blast",
-	InitCodeHash: common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
+	DefaultPool:     common.HexToAddress("0xf5A23bDD36a56EDe75D503F6f643d5eaF25B1a8F"),
+	InternalName:    "blast",
+	TransactionType: "eip1559",
+	InitCodeHash:    common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId: map[string]string{
 		"zerion":   "blast",
 		"tenderly": "true",

@@ -20,9 +20,10 @@ var Taiko Network = Network{
 			ApiUrl: "https://api.routescan.io/v2/network/mainnet/evm/43114/etherscan/api",
 		},
 	},
-	DefaultPool:  common.HexToAddress("0xe47a76e15a6f3976c8dc070b3a54c7f7083d668b"),
-	InternalName: "taiko",
-	InitCodeHash: common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
+	DefaultPool:     common.HexToAddress("0xe47a76e15a6f3976c8dc070b3a54c7f7083d668b"),
+	InternalName:    "taiko",
+	TransactionType: "eip1559",
+	InitCodeHash:    common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId: map[string]string{
 		"tenderly": "true",
 	},

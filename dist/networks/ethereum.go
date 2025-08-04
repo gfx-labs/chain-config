@@ -16,9 +16,10 @@ var Ethereum Network = Network{
 			ApiUrl: "https://api.etherscan.io/api",
 		},
 	},
-	DefaultPool:  common.HexToAddress("0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640"),
-	InternalName: "ethereum",
-	InitCodeHash: common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
+	DefaultPool:     common.HexToAddress("0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640"),
+	InternalName:    "ethereum",
+	TransactionType: "eip1559",
+	InitCodeHash:    common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId: map[string]string{
 		"zerion":   "ethereum",
 		"debank":   "eth",

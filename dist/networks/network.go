@@ -215,6 +215,7 @@ type Network struct {
 	SafeReorgDistance int64
 	DefaultPool       common.Address
 	InternalName      string
+	TransactionType   string
 	DefaultToken0     common.Address
 	DefaultToken1     common.Address
 	BlockAid          string

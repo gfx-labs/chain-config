@@ -16,9 +16,10 @@ var Optimism Network = Network{
 			ApiUrl: "https://api-optimistic.etherscan.io/api",
 		},
 	},
-	DefaultPool:  common.HexToAddress("0x1c3140ab59d6caf9fa7459c6f83d4b52ba881d36"),
-	InternalName: "optimism",
-	InitCodeHash: common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
+	DefaultPool:     common.HexToAddress("0x1c3140ab59d6caf9fa7459c6f83d4b52ba881d36"),
+	InternalName:    "optimism",
+	TransactionType: "eip1559",
+	InitCodeHash:    common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId: map[string]string{
 		"zerion":   "optimism",
 		"debank":   "op",

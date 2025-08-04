@@ -16,9 +16,10 @@ var Gnosis Network = Network{
 			ApiUrl: "https://api.gnosisscan.io/api",
 		},
 	},
-	DefaultPool:  common.HexToAddress("0x4A562E482e9e6b140b322CA50Cc4D8535Cdf85c9"),
-	InternalName: "gnosis",
-	InitCodeHash: common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
+	DefaultPool:     common.HexToAddress("0x4A562E482e9e6b140b322CA50Cc4D8535Cdf85c9"),
+	InternalName:    "gnosis",
+	TransactionType: "eip1559",
+	InitCodeHash:    common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId: map[string]string{
 		"zerion":   "xdai",
 		"cowswap":  "xdai",

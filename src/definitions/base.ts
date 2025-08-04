@@ -5,6 +5,7 @@ export const base = makeConfig({
 	...chain,
 	sortIndex: 8,
 	launchTime: 1707321600,
+	transactionType: "eip1559",
 	blockTimeSeconds: 2,
 	logoUrl: "https://assets.oku.trade/chains/base-logo.svg",
 	blockAid: "base",

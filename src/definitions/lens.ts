@@ -6,6 +6,7 @@ export const lens = makeConfig({
 	name: "Lens",
 	blockTimeSeconds: 2,
 	launchTime: 1746050531,
+	transactionType: "eip1559",
 	sortIndex: 15,
 	blockAid: "",
 	logoUrl: "https://assets.oku.trade/chains/lens-logo.png",
