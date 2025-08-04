@@ -175,7 +175,7 @@ declare const arbitrum: Readonly<{
             readonly apiUrl: "https://api.arbiscan.io/api";
         };
     };
-    blockTime?: number | undefined | undefined | undefined;
+    blockTime: 250;
     ensTlds?: readonly string[] | undefined;
     id: 42161;
     nativeCurrency: {
@@ -183,6 +183,7 @@ declare const arbitrum: Readonly<{
         readonly symbol: "ETH";
         readonly decimals: 18;
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly [
@@ -404,6 +405,7 @@ declare const base: Readonly<{
         readonly symbol: "ETH";
         readonly decimals: 18;
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly [
@@ -755,6 +757,24 @@ declare const blast: Readonly<{
             readonly address: "0xcA11bde05977b3631167028862bE2a173976CA11";
             readonly blockCreated: 212929;
         };
+        l2OutputOracle: {
+            readonly 1: {
+                readonly address: "0x826D1B0D4111Ad9146Eb8941D7Ca2B6a44215c76";
+                readonly blockCreated: 19300358;
+            };
+        };
+        portal: {
+            readonly 1: {
+                readonly address: "0x0Ec68c5B10F21EFFb74f2A5C61DFe6b08C0Db6Cb";
+                readonly blockCreated: 19300357;
+            };
+        };
+        l1StandardBridge: {
+            readonly 1: {
+                readonly address: "0x697402166Fbf2F22E970df8a6486Ef171dbfc524";
+                readonly blockCreated: 19300360;
+            };
+        };
         gasPriceOracle: {
             readonly address: "0x420000000000000000000000000000000000000F";
         };
@@ -790,6 +810,7 @@ declare const blast: Readonly<{
         readonly name: "Ether";
         readonly symbol: "ETH";
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly [
@@ -1191,6 +1212,7 @@ declare const bob: Readonly<{
         readonly name: "ETH";
         readonly symbol: "ETH";
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly [
@@ -1560,6 +1582,7 @@ declare const boba: Readonly<{
     blockTime?: number | undefined | undefined | undefined;
     ensTlds?: readonly string[] | undefined;
     id: 288;
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly [
@@ -1735,6 +1758,7 @@ declare const bsc: Readonly<{
         readonly name: "BNB";
         readonly symbol: "BNB";
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly [
@@ -1858,7 +1882,7 @@ declare const celo: Readonly<{
             readonly apiUrl: "https://api.celoscan.io/api";
         };
     };
-    blockTime: 2000;
+    blockTime: 1000;
     ensTlds?: readonly string[] | undefined;
     id: 42220;
     name: "Celo";
@@ -1867,6 +1891,7 @@ declare const celo: Readonly<{
         readonly name: "CELO";
         readonly symbol: "CELO";
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly [
@@ -2815,6 +2840,7 @@ declare const corn: Readonly<{
         readonly name: "Bitcorn";
         readonly symbol: "BTCN";
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly [
@@ -2948,6 +2974,7 @@ declare const etherlink: Readonly<{
         readonly name: "Tez";
         readonly symbol: "XTZ";
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly [
@@ -3082,6 +3109,7 @@ declare const filecoin: Readonly<{
         readonly name: "filecoin";
         readonly symbol: "FIL";
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly [
@@ -3246,6 +3274,7 @@ declare const gnosis: Readonly<{
         readonly name: "xDAI";
         readonly symbol: "XDAI";
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly [
@@ -3365,6 +3394,7 @@ declare const goat: Readonly<{
         readonly name: "Bitcoin";
         readonly symbol: "BTC";
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly [
@@ -3489,6 +3519,7 @@ declare const hemi: Readonly<{
         readonly symbol: "ETH";
         readonly decimals: 18;
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly [
@@ -3601,6 +3632,7 @@ declare const lens: Readonly<{
         readonly symbol: "GHO";
         readonly decimals: 18;
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly [
@@ -3726,6 +3758,7 @@ declare const lightlink: Readonly<{
         readonly name: "Ether";
         readonly symbol: "ETH";
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly [
@@ -3892,6 +3925,7 @@ declare const linea: Readonly<{
         readonly symbol: "ETH";
         readonly decimals: 18;
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly [
@@ -4043,6 +4077,7 @@ declare const lisk: Readonly<{
         readonly name: "Ether";
         readonly symbol: "ETH";
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly [
@@ -4491,6 +4526,7 @@ declare const mainnet: Readonly<{
         readonly symbol: "ETH";
         readonly decimals: 18;
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     sourceId?: number | undefined | undefined | undefined;
     testnet?: boolean | undefined | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
@@ -4611,6 +4647,7 @@ declare const manta: Readonly<{
         readonly name: "ETH";
         readonly symbol: "ETH";
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly [
@@ -4754,6 +4791,7 @@ declare const mantle: Readonly<{
         readonly name: "MNT";
         readonly symbol: "MNT";
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly [
@@ -4859,6 +4897,7 @@ declare const matchain: Readonly<{
         readonly symbol: "BNB";
         readonly decimals: 18;
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly [
@@ -4997,6 +5036,7 @@ declare const metal: Readonly<{
         readonly name: "Ether";
         readonly symbol: "ETH";
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly [
@@ -5374,6 +5414,7 @@ declare const moonbeam: Readonly<{
         readonly name: "GLMR";
         readonly symbol: "GLMR";
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly [
@@ -5489,6 +5530,7 @@ declare const nibiru: Readonly<{
         readonly name: "NIBI";
         readonly symbol: "NIBI";
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly [
@@ -5716,6 +5758,7 @@ declare const optimism: Readonly<{
         readonly symbol: "ETH";
         readonly decimals: 18;
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly [
@@ -6138,6 +6181,7 @@ declare const polygon: Readonly<{
         readonly symbol: "POL";
         readonly decimals: 18;
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly [
@@ -6247,6 +6291,7 @@ declare const redbelly: Readonly<{
         readonly symbol: "RBNT";
         readonly decimals: 18;
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly [
@@ -6389,6 +6434,7 @@ declare const rootstock: Readonly<{
         readonly name: "Rootstock Bitcoin";
         readonly symbol: "RBTC";
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly [
@@ -6507,6 +6553,7 @@ declare const saga: Readonly<{
         readonly name: "gas";
         readonly symbol: "GAS";
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     sourceId?: number | undefined | undefined | undefined;
     testnet?: boolean | undefined | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
@@ -6654,6 +6701,7 @@ declare const scroll: Readonly<{
         readonly symbol: "ETH";
         readonly decimals: 18;
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly [
@@ -6807,6 +6855,7 @@ declare const sei: Readonly<{
         readonly symbol: "SEI";
         readonly decimals: 18;
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly [
@@ -6951,6 +7000,7 @@ declare const sonic: Readonly<{
         readonly name: "Sonic";
         readonly symbol: "S";
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly [
@@ -7092,6 +7142,7 @@ declare const taiko: Readonly<{
         readonly name: "Ether";
         readonly symbol: "ETH";
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly [
@@ -7223,6 +7274,7 @@ declare const telos: Readonly<{
         readonly name: "Telos";
         readonly symbol: "TLOS";
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly [
@@ -7313,6 +7365,7 @@ declare const tronShasta: Readonly<{
         readonly symbol: "TRX";
         readonly decimals: 6;
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly [
@@ -7471,6 +7524,7 @@ declare const unichain: Readonly<{
         readonly symbol: "ETH";
         readonly decimals: 18;
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly [
@@ -7864,6 +7918,7 @@ declare const worldchain: Readonly<{
         readonly symbol: "ETH";
         readonly decimals: 18;
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly [
@@ -8219,6 +8274,7 @@ declare const xdc: Readonly<{
         readonly name: "XDC";
         readonly symbol: "XDC";
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     sourceId?: number | undefined | undefined | undefined;
     testnet?: boolean | undefined | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
@@ -8346,6 +8402,7 @@ declare const polygonZkEvm: Readonly<{
         readonly symbol: "ETH";
         readonly decimals: 18;
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly [
@@ -8490,6 +8547,7 @@ declare const zkSync: Readonly<{
         readonly name: "Ether";
         readonly symbol: "ETH";
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly [
@@ -9238,7 +9296,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly apiUrl: "https://api.arbiscan.io/api";
         };
     };
-    blockTime?: number | undefined | undefined | undefined;
+    blockTime: 250;
     ensTlds?: readonly string[] | undefined;
     id: 42161;
     nativeCurrency: {
@@ -9246,6 +9304,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         readonly symbol: "ETH";
         readonly decimals: 18;
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly ["https://arb1.arbitrum.io/rpc"];
@@ -9464,6 +9523,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         readonly symbol: "ETH";
         readonly decimals: 18;
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly ["https://mainnet.base.org"];
@@ -9824,6 +9884,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     blockTime?: number | undefined | undefined | undefined;
     ensTlds?: readonly string[] | undefined;
     id: 288;
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly ["https://mainnet.boba.network"];
@@ -9937,6 +9998,24 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly address: "0xcA11bde05977b3631167028862bE2a173976CA11";
             readonly blockCreated: 212929;
         };
+        l2OutputOracle: {
+            readonly 1: {
+                readonly address: "0x826D1B0D4111Ad9146Eb8941D7Ca2B6a44215c76";
+                readonly blockCreated: 19300358;
+            };
+        };
+        portal: {
+            readonly 1: {
+                readonly address: "0x0Ec68c5B10F21EFFb74f2A5C61DFe6b08C0Db6Cb";
+                readonly blockCreated: 19300357;
+            };
+        };
+        l1StandardBridge: {
+            readonly 1: {
+                readonly address: "0x697402166Fbf2F22E970df8a6486Ef171dbfc524";
+                readonly blockCreated: 19300360;
+            };
+        };
         gasPriceOracle: {
             readonly address: "0x420000000000000000000000000000000000000F";
         };
@@ -9972,6 +10051,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         readonly name: "Ether";
         readonly symbol: "ETH";
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly ["https://rpc.blast.io"];
@@ -10376,6 +10456,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         readonly name: "BNB";
         readonly symbol: "BNB";
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly ["https://56.rpc.thirdweb.com"];
@@ -10507,6 +10588,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         readonly name: "filecoin";
         readonly symbol: "FIL";
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly ["https://api.node.glif.io/rpc/v1"];
@@ -10716,6 +10798,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         readonly symbol: "ETH";
         readonly decimals: 18;
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     sourceId?: number | undefined | undefined | undefined;
     testnet?: boolean | undefined | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
@@ -10847,6 +10930,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         readonly name: "GLMR";
         readonly symbol: "GLMR";
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly ["https://moonbeam.public.blastapi.io"];
@@ -11072,6 +11156,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         readonly symbol: "ETH";
         readonly decimals: 18;
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly ["https://mainnet.optimism.io"];
@@ -11488,6 +11573,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         readonly symbol: "POL";
         readonly decimals: 18;
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly ["https://polygon-rpc.com"];
@@ -11627,6 +11713,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         readonly name: "Rootstock Bitcoin";
         readonly symbol: "RBTC";
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly ["https://public-node.rsk.co"];
@@ -11778,6 +11865,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         readonly symbol: "ETH";
         readonly decimals: 18;
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly ["https://rpc.scroll.io"];
@@ -11910,6 +11998,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         readonly symbol: "ETH";
         readonly decimals: 18;
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly ["https://zkevm-rpc.com"];
@@ -12051,6 +12140,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         readonly name: "Ether";
         readonly symbol: "ETH";
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly ["https://mainnet.era.zksync.io"];
@@ -12548,6 +12638,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         readonly name: "ETH";
         readonly symbol: "ETH";
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly ["https://pacific-rpc.manta.network/http"];
@@ -12709,6 +12800,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         readonly symbol: "ETH";
         readonly decimals: 18;
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly ["https://rpc.linea.build"];
@@ -12851,6 +12943,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         readonly name: "Ether";
         readonly symbol: "ETH";
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly ["https://rpc.mainnet.taiko.xyz"];
@@ -12991,6 +13084,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         readonly name: "MNT";
         readonly symbol: "MNT";
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly ["https://rpc.mantle.xyz"];
@@ -13138,6 +13232,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         readonly symbol: "SEI";
         readonly decimals: 18;
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly ["https://evm-rpc.sei-apis.com/"];
@@ -13281,6 +13376,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         readonly name: "Ether";
         readonly symbol: "ETH";
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly ["https://rpc.api.lisk.com"];
@@ -13677,6 +13773,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         readonly name: "ETH";
         readonly symbol: "ETH";
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly ["https://rpc.gobob.xyz"];
@@ -14071,6 +14168,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         readonly name: "xDAI";
         readonly symbol: "XDAI";
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly ["https://rpc.gnosischain.com"];
@@ -14207,6 +14305,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         readonly name: "Ether";
         readonly symbol: "ETH";
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly ["https://rpc.metall2.com"];
@@ -14565,6 +14664,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         readonly name: "Bitcorn";
         readonly symbol: "BTCN";
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly ["https://21000000.rpc.thirdweb.com"];
@@ -14703,6 +14803,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         readonly name: "Sonic";
         readonly symbol: "S";
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly ["https://rpc.soniclabs.com"];
@@ -14823,7 +14924,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly apiUrl: "https://api.celoscan.io/api";
         };
     };
-    blockTime: 2000;
+    blockTime: 1000;
     ensTlds?: readonly string[] | undefined;
     id: 42220;
     name: "Celo";
@@ -14832,6 +14933,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         readonly name: "CELO";
         readonly symbol: "CELO";
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly ["https://forno.celo.org"];
@@ -15767,6 +15869,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         readonly symbol: "ETH";
         readonly decimals: 18;
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly ["https://rpc.hemi.network/rpc"];
@@ -15893,6 +15996,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         readonly name: "Telos";
         readonly symbol: "TLOS";
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly ["https://rpc.telos.net"];
@@ -16007,6 +16111,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         readonly name: "gas";
         readonly symbol: "GAS";
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     sourceId?: number | undefined | undefined | undefined;
     testnet?: boolean | undefined | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
@@ -16116,6 +16221,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         readonly name: "Bitcoin";
         readonly symbol: "BTC";
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly ["https://rpc.goat.network"];
@@ -16222,6 +16328,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         readonly symbol: "RBNT";
         readonly decimals: 18;
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly ["https://governors.mainnet.redbelly.network"];
@@ -16344,6 +16451,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         readonly name: "Ether";
         readonly symbol: "ETH";
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly ["https://replicator.phoenix.lightlink.io/rpc/v1"];
@@ -16500,6 +16608,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         readonly symbol: "ETH";
         readonly decimals: 18;
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly ["https://worldchain-mainnet.g.alchemy.com/public"];
@@ -16849,6 +16958,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         readonly name: "XDC";
         readonly symbol: "XDC";
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     sourceId?: number | undefined | undefined | undefined;
     testnet?: boolean | undefined | undefined | undefined;
     custom?: Record<string, unknown> | undefined;
@@ -16931,6 +17041,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         readonly symbol: "TRX";
         readonly decimals: 6;
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly ["https://api.shasta.trongrid.io/jsonrpc"];
@@ -17039,6 +17150,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         readonly symbol: "GHO";
         readonly decimals: 18;
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly ["https://rpc.lens.xyz"];
@@ -17148,6 +17260,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         readonly name: "NIBI";
         readonly symbol: "NIBI";
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly ["https://evm-rpc.nibiru.fi"];
@@ -17278,6 +17391,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         readonly name: "Tez";
         readonly symbol: "XTZ";
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly ["https://node.mainnet.etherlink.com"];
@@ -17433,6 +17547,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         readonly symbol: "ETH";
         readonly decimals: 18;
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly ["https://mainnet.unichain.org/"];
@@ -17767,6 +17882,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         readonly symbol: "BNB";
         readonly decimals: 18;
     };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
     rpcUrls: {
         readonly default: {
             readonly http: readonly ["https://rpc.matchain.io"];
