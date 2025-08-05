@@ -3651,7 +3651,7 @@ declare const lightlink: Readonly<{
     name: "LightLink";
     blockTimeSeconds: 0.5;
     launchTime: 1741485513;
-    transactionType: "eip1559";
+    transactionType: "legacy";
     sortIndex: 13;
     logoUrl: "https://assets.oku.trade/chains/lightlink-logo.svg";
     safeReorgDistance: 90000;
@@ -7163,7 +7163,7 @@ declare const taiko: Readonly<{
 declare const telos: Readonly<{
     blockTimeSeconds: 0.5;
     launchTime: 1743089303;
-    transactionType: "eip1559";
+    transactionType: "legacy";
     sortIndex: 13;
     logoUrl: "https://assets.oku.trade/chains/telos-logo.svg";
     safeReorgDistance: 90000;
@@ -8178,7 +8178,7 @@ declare const xdc: Readonly<{
     };
     blockTimeSeconds: 2;
     launchTime: 1746453600;
-    transactionType: "eip1559";
+    transactionType: "legacy";
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/chains/xdc-logo.png";
     safeReorgDistance: 90000;
@@ -8286,7 +8286,7 @@ declare const polygonZkEvm: Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     sortIndex: 6;
     launchTime: 1722520800;
-    transactionType: "eip1559";
+    transactionType: "legacy";
     blockTimeSeconds: 7;
     logoUrl: "https://assets.oku.trade/chains/zkevm-logo.svg";
     safeReorgDistance: 90000;
@@ -11882,7 +11882,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     sortIndex: 6;
     launchTime: 1722520800;
-    transactionType: "eip1559";
+    transactionType: "legacy";
     blockTimeSeconds: 7;
     logoUrl: "https://assets.oku.trade/chains/zkevm-logo.svg";
     safeReorgDistance: 90000;
@@ -15885,7 +15885,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
 }>, Readonly<{
     blockTimeSeconds: 0.5;
     launchTime: 1743089303;
-    transactionType: "eip1559";
+    transactionType: "legacy";
     sortIndex: 13;
     logoUrl: "https://assets.oku.trade/chains/telos-logo.svg";
     safeReorgDistance: 90000;
@@ -16344,7 +16344,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     name: "LightLink";
     blockTimeSeconds: 0.5;
     launchTime: 1741485513;
-    transactionType: "eip1559";
+    transactionType: "legacy";
     sortIndex: 13;
     logoUrl: "https://assets.oku.trade/chains/lightlink-logo.svg";
     safeReorgDistance: 90000;
@@ -16862,7 +16862,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     };
     blockTimeSeconds: 2;
     launchTime: 1746453600;
-    transactionType: "eip1559";
+    transactionType: "legacy";
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/chains/xdc-logo.png";
     safeReorgDistance: 90000;

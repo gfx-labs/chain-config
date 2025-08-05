@@ -17,7 +17,7 @@ var Xdc Network = Network{
 	},
 	DefaultPool:     common.HexToAddress("0x1e5aec37f6df6653c3342df75edd92beb3fb9846"),
 	InternalName:    "xdc",
-	TransactionType: "eip1559",
+	TransactionType: "legacy",
 	InitCodeHash:    common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId:      map[string]string{},
 	DefaultToken0:   common.HexToAddress("0x2a8e898b6242355c290e1f4fc966b8788729a4d4"),

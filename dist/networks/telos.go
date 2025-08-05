@@ -17,7 +17,7 @@ var Telos Network = Network{
 	},
 	DefaultPool:     common.HexToAddress("0xa89c1c7d0975f1a98442e96e18a292982b12b3cd"),
 	InternalName:    "telos",
-	TransactionType: "eip1559",
+	TransactionType: "legacy",
 	InitCodeHash:    common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId:      map[string]string{},
 	DefaultToken0:   common.HexToAddress("0xf1815bd50389c46847f0bda824ec8da914045d14"),

@@ -17,7 +17,7 @@ var Lightlink Network = Network{
 	},
 	DefaultPool:     common.HexToAddress("0x1125452469E9B9A36FE69249309fCe8925C3eEDa"),
 	InternalName:    "lightlink",
-	TransactionType: "eip1559",
+	TransactionType: "legacy",
 	InitCodeHash:    common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId:      map[string]string{},
 	DefaultToken0:   common.HexToAddress("0x7ebef2a4b1b09381ec5b9df8c5c6f2dbeca59c73"),

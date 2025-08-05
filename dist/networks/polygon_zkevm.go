@@ -18,7 +18,7 @@ var PolygonZkevm Network = Network{
 	},
 	DefaultPool:     common.HexToAddress("0xd6efe114c9b6058a20aab759e064f50544590914"),
 	InternalName:    "polygon-zkevm",
-	TransactionType: "eip1559",
+	TransactionType: "legacy",
 	InitCodeHash:    common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId: map[string]string{
 		"zerion": "polygon-zkevm",
