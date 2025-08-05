@@ -6,7 +6,7 @@ export const lightlink = makeConfig({
 	name: "LightLink",
 	blockTimeSeconds: 0.5,
 	launchTime: 1741485513,
-	transactionType: "eip1559",
+	transactionType: "legacy",
 	sortIndex: 13,
 	logoUrl: "https://assets.oku.trade/chains/lightlink-logo.svg",
 	safeReorgDistance: 90000,
