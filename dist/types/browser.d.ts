@@ -2866,7 +2866,9 @@ declare const etherlink: Readonly<{
     externalId: {
         tenderly: string;
     };
-    markets: {};
+    markets: {
+        threeroute: true;
+    };
     bridges: {
         stargate: {
             endpointID: number;
@@ -9013,6 +9015,7 @@ interface Markets {
         routerContract: string;
     };
     propellerswap?: string;
+    threeroute?: boolean;
     usor?: any;
     zeroex?: boolean;
     cowswap?: string;
@@ -17283,7 +17286,9 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     externalId: {
         tenderly: string;
     };
-    markets: {};
+    markets: {
+        threeroute: true;
+    };
     bridges: {
         stargate: {
             endpointID: number;

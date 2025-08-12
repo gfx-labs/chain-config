@@ -1327,7 +1327,9 @@ const etherlink = makeConfig({
     externalId: {
         tenderly: "true",
     },
-    markets: {},
+    markets: {
+        threeroute: true,
+    },
     bridges: {
         stargate: {
             endpointID: 30292,

@@ -368,6 +368,7 @@ type Markets struct {
 	Openocean     string
 	Paraswap      map[string]interface{}
 	Propellerswap string
+	Threeroute    bool
 	Usor          interface{}
 	Zeroex        bool
 	Cowswap       string
