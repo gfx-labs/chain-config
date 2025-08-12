@@ -87,6 +87,7 @@ export interface Markets {
 		routerContract: string;
 	};
 	propellerswap?: string;
+	threeroute?: boolean;
 	usor?: any;
 	zeroex?: boolean;
 	cowswap?: string;
