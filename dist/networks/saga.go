@@ -17,7 +17,7 @@ var Saga Network = Network{
 	},
 	DefaultPool:     common.HexToAddress("0x99429757ddeb5432b52982b0fcf6ed94620c358d"),
 	InternalName:    "saga",
-	TransactionType: "eip1559",
+	TransactionType: "legacy",
 	InitCodeHash:    common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId:      map[string]string{},
 	DefaultToken0:   common.HexToAddress("0xC8fe3C1de344854f4429bB333AFFAeF97eF88CEa"),

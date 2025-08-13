@@ -4178,7 +4178,7 @@
 	    name: "Saga EVM",
 	    blockTimeSeconds: 5,
 	    launchTime: 1740384000,
-	    transactionType: "eip1559",
+	    transactionType: "legacy",
 	    sortIndex: 13,
 	    logoUrl: "https://assets.oku.trade/chains/saga-logo.png",
 	    safeReorgDistance: 90000,
