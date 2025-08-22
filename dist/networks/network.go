@@ -332,11 +332,8 @@ type TokenMetadata struct {
 type OkuMetadata struct {
 	LimitOrderRegistry            common.Address
 	LimitOrderRegistryDeployBlock int64
-	Bracket                       common.Address
-	BracketDeployBlock            int64
-	StopLimit                     common.Address
-	StopLimitDeployBlock          int64
 	Pricing                       OkuPricingMetadata
+	CustomOrderTypes              OkuCustomOrderTypesMetadata
 }
 
 type OkuPricingMetadata struct {
@@ -346,6 +343,20 @@ type OkuPricingMetadata struct {
 	NativeTokenName    string
 	NativeQuotePools   []ChainContract
 	Pools              []common.Address
+}
+
+type OkuCustomOrderTypesMetadata struct {
+	FeeBips               int64
+	Master                common.Address
+	MasterDeployBlock     int64
+	Limit                 common.Address
+	LimitDeployBlock      int64
+	Bracket               common.Address
+	BracketDeployBlock    int64
+	StopLimit             common.Address
+	StopLimitDeployBlock  int64
+	OracleLess            common.Address
+	OracleLessDeployBlock int64
 }
 
 type ChainContract struct {

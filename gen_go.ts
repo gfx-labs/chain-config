@@ -18,6 +18,7 @@ const MorphoMetadata = index?.getInterface("MorphoMetadata");
 const TokenMetadata = index?.getInterface("TokenMetadata");
 const OkuMetadata = index?.getInterface("OkuMetadata");
 const OkuPricingMetadata = index?.getInterface("OkuPricingMetadata");
+const OkuCustomOrderTypesMetadata = index?.getInterface("OkuCustomOrderTypesMetadata");
 const ChainContract = index?.getInterface("chainContract");
 const BlockExplorer = index?.getInterface("blockExplorer");
 const Markets = index?.getInterface("Markets");
@@ -169,6 +170,7 @@ const output = ejs.render(networksString.toString(), {
   BlockExplorer,
   OkuMetadata,
   OkuPricingMetadata,
+  OkuCustomOrderTypesMetadata,
   Markets,
   Bridges,
   Oracles,

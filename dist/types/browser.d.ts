@@ -5623,10 +5623,17 @@ declare const optimism: Readonly<{
     oku: {
         limitOrderRegistryDeployBlock: number;
         limitOrderRegistry: "0x54dF9e11c7933a9cA3BD1E540B63dA15edAe40bf";
-        bracket: "0xffC8C49C5B38BC9BaFD0bB0F5F189EEcD35e35E2";
-        bracketDeployBlock: number;
-        stopLimit: "0x57d0E13F353d630ab5218aC841C88985AB31A066";
-        stopLimitDeployBlock: number;
+        customOrderTypes: {
+            feeBips: number;
+            master: "0xA89A26c4d81A2cca4d0670F77f0FC88362b72248";
+            masterDeployBlock: number;
+            bracket: "0xffC8C49C5B38BC9BaFD0bB0F5F189EEcD35e35E2";
+            bracketDeployBlock: number;
+            stopLimit: "0x57d0E13F353d630ab5218aC841C88985AB31A066";
+            stopLimitDeployBlock: number;
+            oracleLess: "0x25cf2128F603754179379351B805B4F8C0B8dCA4";
+            oracleLessDeployBlock: number;
+        };
         pricing: {
             nativeWrappedToken: "0x4200000000000000000000000000000000000006";
             nativeWrappedName: string;
@@ -5640,6 +5647,7 @@ declare const optimism: Readonly<{
     uniswap: {
         deployBlock: number;
         poolFactory: "0x1F98431c8aD98523631AE4a59f267346ea31F984";
+        permit2: "0x000000000022D473030F116dDEE9F6B43aC78BA3";
         multicall2: "0x266557a864680a1401a3506c0eb72934bd13bf59";
         proxyAdmin: "0xB753548F6E010e7e680BA186F9Ca1BdAB2E90cf2";
         tickLens: "0xbfd8137f7d1516D3ea5cA83523914859ec47F573";
@@ -8986,14 +8994,24 @@ interface OkuPricingMetadata {
     nativeQuotePools?: ReadonlyArray<ChainContract>;
     pools?: ReadonlyArray<Address>;
 }
-interface OkuMetadata {
-    limitOrderRegistry?: Address;
-    limitOrderRegistryDeployBlock?: number;
+interface OkuCustomOrderTypesMetadata {
+    feeBips?: number;
+    master?: Address;
+    masterDeployBlock?: number;
+    limit?: Address;
+    limitDeployBlock?: number;
     bracket?: Address;
     bracketDeployBlock?: number;
     stopLimit?: Address;
     stopLimitDeployBlock?: number;
+    oracleLess?: Address;
+    oracleLessDeployBlock?: number;
+}
+interface OkuMetadata {
+    limitOrderRegistry?: Address;
+    limitOrderRegistryDeployBlock?: number;
     pricing?: OkuPricingMetadata;
+    customOrderTypes?: OkuCustomOrderTypesMetadata;
 }
 interface TokenMetadata {
     wethAddress?: Address;
@@ -11022,10 +11040,17 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     oku: {
         limitOrderRegistryDeployBlock: number;
         limitOrderRegistry: "0x54dF9e11c7933a9cA3BD1E540B63dA15edAe40bf";
-        bracket: "0xffC8C49C5B38BC9BaFD0bB0F5F189EEcD35e35E2";
-        bracketDeployBlock: number;
-        stopLimit: "0x57d0E13F353d630ab5218aC841C88985AB31A066";
-        stopLimitDeployBlock: number;
+        customOrderTypes: {
+            feeBips: number;
+            master: "0xA89A26c4d81A2cca4d0670F77f0FC88362b72248";
+            masterDeployBlock: number;
+            bracket: "0xffC8C49C5B38BC9BaFD0bB0F5F189EEcD35e35E2";
+            bracketDeployBlock: number;
+            stopLimit: "0x57d0E13F353d630ab5218aC841C88985AB31A066";
+            stopLimitDeployBlock: number;
+            oracleLess: "0x25cf2128F603754179379351B805B4F8C0B8dCA4";
+            oracleLessDeployBlock: number;
+        };
         pricing: {
             nativeWrappedToken: "0x4200000000000000000000000000000000000006";
             nativeWrappedName: string;
@@ -11039,6 +11064,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     uniswap: {
         deployBlock: number;
         poolFactory: "0x1F98431c8aD98523631AE4a59f267346ea31F984";
+        permit2: "0x000000000022D473030F116dDEE9F6B43aC78BA3";
         multicall2: "0x266557a864680a1401a3506c0eb72934bd13bf59";
         proxyAdmin: "0xB753548F6E010e7e680BA186F9Ca1BdAB2E90cf2";
         tickLens: "0xbfd8137f7d1516D3ea5cA83523914859ec47F573";
@@ -17900,5 +17926,5 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     formatters?: undefined | undefined;
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>];
-export { arbitrum, base, blast, bob, boba, bsc, celo, corn, etherlink, filecoin, gnosis, goat, hemi, lens, lightlink, linea, lisk, mainnet, manta, mantle, matchain, metal, moonbeam, nibiru, optimism, polygon, redbelly, rootstock, saga, scroll, sei, sonic, taiko, telos, tronShasta, unichain, worldchain, xdc, polygonZkEvm, zkSync, MorphoMetadata, UniswapMetadata, OkuPricingMetadata, OkuMetadata, TokenMetadata, Markets, Bridges, Oracles, IChainInfo, MAINNET_CHAINS };
+export { arbitrum, base, blast, bob, boba, bsc, celo, corn, etherlink, filecoin, gnosis, goat, hemi, lens, lightlink, linea, lisk, mainnet, manta, mantle, matchain, metal, moonbeam, nibiru, optimism, polygon, redbelly, rootstock, saga, scroll, sei, sonic, taiko, telos, tronShasta, unichain, worldchain, xdc, polygonZkEvm, zkSync, MorphoMetadata, UniswapMetadata, OkuPricingMetadata, OkuCustomOrderTypesMetadata, OkuMetadata, TokenMetadata, Markets, Bridges, Oracles, IChainInfo, MAINNET_CHAINS };
 export { ChainContract } from "viem";

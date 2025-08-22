@@ -43,10 +43,21 @@ var <%- helpers.snakeToCamel(chainName) %> Network = Network{
   Oku:            OkuMetadata{
      <%- oku.limitOrderRegistry ? "LimitOrderRegistry:" + h.formatValue(oku.limitOrderRegistry, "a")+"," : "" %>
     <%- oku.limitOrderRegistryDeployBlock ? "LimitOrderRegistryDeployBlock:"+ h.formatValue(oku.limitOrderRegistryDeployBlock, "n")+",": "" %>
-     <%- oku.stopLimit ? "StopLimit:" + h.formatValue(oku.stopLimit, "a")+"," : "" %>
-    <%- oku.stopLimitDeployBlock ? "StopLimitDeployBlock:"+ h.formatValue(oku.stopLimitDeployBlock, "n")+",": "" %>
-     <%- oku.bracket ? "Bracket:" + h.formatValue(oku.bracket, "a")+"," : "" %>
-    <%- oku.bracketDeployBlock ? "BracketDeployBlock:"+ h.formatValue(oku.bracketDeployBlock, "n")+",": "" %>
+    <% if (oku.customOrderTypes) { %>
+    CustomOrderTypes: OkuCustomOrderTypesMetadata{
+      <%- oku.customOrderTypes.feeBips !== undefined ? "FeeBips:" + h.formatValue(oku.customOrderTypes.feeBips, "n") + "," : "" %>
+      <%- oku.customOrderTypes.master ? "Master:" + h.formatValue(oku.customOrderTypes.master, "a") + "," : "" %>
+      <%- oku.customOrderTypes.masterDeployBlock ? "MasterDeployBlock:" + h.formatValue(oku.customOrderTypes.masterDeployBlock, "n") + "," : "" %>
+      <%- oku.customOrderTypes.limit ? "Limit:" + h.formatValue(oku.customOrderTypes.limit, "a") + "," : "" %>
+      <%- oku.customOrderTypes.limitDeployBlock ? "LimitDeployBlock:" + h.formatValue(oku.customOrderTypes.limitDeployBlock, "n") + "," : "" %>
+      <%- oku.customOrderTypes.bracket ? "Bracket:" + h.formatValue(oku.customOrderTypes.bracket, "a") + "," : "" %>
+      <%- oku.customOrderTypes.bracketDeployBlock ? "BracketDeployBlock:" + h.formatValue(oku.customOrderTypes.bracketDeployBlock, "n") + "," : "" %>
+      <%- oku.customOrderTypes.stopLimit ? "StopLimit:" + h.formatValue(oku.customOrderTypes.stopLimit, "a") + "," : "" %>
+      <%- oku.customOrderTypes.stopLimitDeployBlock ? "StopLimitDeployBlock:" + h.formatValue(oku.customOrderTypes.stopLimitDeployBlock, "n") + "," : "" %>
+      <%- oku.customOrderTypes.oracleLess ? "OracleLess:" + h.formatValue(oku.customOrderTypes.oracleLess, "a") + "," : "" %>
+      <%- oku.customOrderTypes.oracleLessDeployBlock ? "OracleLessDeployBlock:" + h.formatValue(oku.customOrderTypes.oracleLessDeployBlock, "n") + "," : "" %>
+    },
+    <% } %>
     Pricing: OkuPricingMetadata{
 <% if(pxs.nativeWrappedToken !== undefined){%>    NativeWrappedToken: <%- h.formatValue(pxs.nativeWrappedToken, "a") %>,<% } %>
 <% if(pxs.nativeWrappedName !== undefined){%>    NativeWrappedName: <%- h.formatValue(pxs.nativeWrappedName, "s") %>,<% } %>

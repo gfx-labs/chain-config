@@ -56,14 +56,25 @@ export interface OkuPricingMetadata {
 	pools?: ReadonlyArray<Address>;
 }
 
-export interface OkuMetadata {
-	limitOrderRegistry?: Address;
-	limitOrderRegistryDeployBlock?: number;
+export interface OkuCustomOrderTypesMetadata {
+	feeBips?: number;
+	master?: Address;
+	masterDeployBlock?: number;
+	limit?: Address;
+	limitDeployBlock?: number;
 	bracket?: Address;
 	bracketDeployBlock?: number;
 	stopLimit?: Address;
 	stopLimitDeployBlock?: number;
+	oracleLess?: Address;
+	oracleLessDeployBlock?: number;
+}
+
+export interface OkuMetadata {
+	limitOrderRegistry?: Address;
+	limitOrderRegistryDeployBlock?: number;
 	pricing?: OkuPricingMetadata;
+	customOrderTypes?: OkuCustomOrderTypesMetadata;
 }
 
 export interface TokenMetadata {

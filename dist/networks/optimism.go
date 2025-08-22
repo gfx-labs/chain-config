@@ -36,10 +36,20 @@ var Optimism Network = Network{
 	Oku: OkuMetadata{
 		LimitOrderRegistry:            common.HexToAddress("0x54dF9e11c7933a9cA3BD1E540B63dA15edAe40bf"),
 		LimitOrderRegistryDeployBlock: 105276132,
-		StopLimit:                     common.HexToAddress("0x57d0E13F353d630ab5218aC841C88985AB31A066"),
-		StopLimitDeployBlock:          139975811,
-		Bracket:                       common.HexToAddress("0xffC8C49C5B38BC9BaFD0bB0F5F189EEcD35e35E2"),
-		BracketDeployBlock:            139975810,
+
+		CustomOrderTypes: OkuCustomOrderTypesMetadata{
+			FeeBips:           25,
+			Master:            common.HexToAddress("0xA89A26c4d81A2cca4d0670F77f0FC88362b72248"),
+			MasterDeployBlock: 139975798,
+
+			Bracket:               common.HexToAddress("0xffC8C49C5B38BC9BaFD0bB0F5F189EEcD35e35E2"),
+			BracketDeployBlock:    139975810,
+			StopLimit:             common.HexToAddress("0x57d0E13F353d630ab5218aC841C88985AB31A066"),
+			StopLimitDeployBlock:  139975811,
+			OracleLess:            common.HexToAddress("0x25cf2128F603754179379351B805B4F8C0B8dCA4"),
+			OracleLessDeployBlock: 139975814,
+		},
+
 		Pricing: OkuPricingMetadata{
 			NativeWrappedToken: common.HexToAddress("0x4200000000000000000000000000000000000006"),
 			NativeWrappedName:  "WETH",
@@ -55,6 +65,7 @@ var Optimism Network = Network{
 	Uniswap: UniswapMetadata{
 		DeployBlock:                        0,
 		PoolFactory:                        common.HexToAddress("0x1F98431c8aD98523631AE4a59f267346ea31F984"),
+		Permit2:                            common.HexToAddress("0x000000000022D473030F116dDEE9F6B43aC78BA3"),
 		Multicall2:                         common.HexToAddress("0x266557a864680a1401a3506c0eb72934bd13bf59"),
 		ProxyAdmin:                         common.HexToAddress("0xB753548F6E010e7e680BA186F9Ca1BdAB2E90cf2"),
 		TickLens:                           common.HexToAddress("0xbfd8137f7d1516D3ea5cA83523914859ec47F573"),

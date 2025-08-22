@@ -20,6 +20,7 @@ import (
     var props_9 = Bridges.getProperties();
     var props_10 = Oracles.getProperties();
     var props_11 = MorphoMetadata.getProperties();
+    var props_12 = OkuCustomOrderTypesMetadata.getProperties();
 %>
 
 var ErrNetworkNotFound = errors.New("chain not found")
@@ -142,6 +143,10 @@ type OkuMetadata struct {<% for(const prop of props_4) {%>
 }
 
 type OkuPricingMetadata struct { <% for(const prop of props_5) {%>
+    <%- helpers.displayProp(prop) %> <% } %>
+}
+
+type OkuCustomOrderTypesMetadata struct {<% for (const prop of props_12) { %>
     <%- helpers.displayProp(prop) %> <% } %>
 }
 
