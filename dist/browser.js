@@ -3440,10 +3440,10 @@
 	    oku: {
 	        limitOrderRegistryDeployBlock: 105276132,
 	        limitOrderRegistry: "0x54dF9e11c7933a9cA3BD1E540B63dA15edAe40bf",
-	        bracket: "0x8e9a03e2533f8B4641a271429496F582B89c8fD7",
-	        bracketDeployBlock: 137131119,
-	        stopLimit: "0xfdcFdd8267F7054facF9eA2aAD538d74da4B65c8",
-	        stopLimitDeployBlock: 137131122,
+	        bracket: "0xffC8C49C5B38BC9BaFD0bB0F5F189EEcD35e35E2",
+	        bracketDeployBlock: 139975810,
+	        stopLimit: "0x57d0E13F353d630ab5218aC841C88985AB31A066",
+	        stopLimitDeployBlock: 139975811,
 	        pricing: {
 	            nativeWrappedToken: "0x4200000000000000000000000000000000000006",
 	            nativeWrappedName: "WETH",
