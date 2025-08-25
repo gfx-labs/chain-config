@@ -84,5 +84,9 @@ var Sei Network = Network{
 			BlockCreated: 0,
 			Address:      common.HexToAddress("0x9b7aC6735b23578E81260acD34E3668D0cc6000A"),
 		},
+		"metrom": {
+			BlockCreated: 141494257,
+			Address:      common.HexToAddress("0xD6e88c910329fE3597498772eB94991a0630306d"),
+		},
 	},
 }

@@ -82,5 +82,9 @@ var Telos Network = Network{
 			BlockCreated: 0,
 			Address:      common.HexToAddress("0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435"),
 		},
+		"metrom": {
+			BlockCreated: 390899406,
+			Address:      common.HexToAddress("0xD4AC4AaFb81eC774E49AA755A66EfCe4574D6276"),
+		},
 	},
 }

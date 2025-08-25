@@ -84,5 +84,9 @@ var Mantle Network = Network{
 			BlockCreated: 0,
 			Address:      common.HexToAddress("0xcb2436774C3e191c85056d248EF4260ce5f27A9D"),
 		},
+		"metrom": {
+			BlockCreated: 68933021,
+			Address:      common.HexToAddress("0x4300d4C410f87c7c1824Cbc2eF67431030106604"),
+		},
 	},
 }

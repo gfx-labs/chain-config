@@ -88,5 +88,9 @@ var Taiko Network = Network{
 			BlockCreated: 0,
 			Address:      common.HexToAddress("0x0d922Fb1Bc191F64970ac40376643808b4B74Df9"),
 		},
+		"metrom": {
+			BlockCreated: 460190,
+			Address:      common.HexToAddress("0xD4AC4AaFb81eC774E49AA755A66EfCe4574D6276"),
+		},
 	},
 }

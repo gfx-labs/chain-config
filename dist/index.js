@@ -514,6 +514,10 @@ const base = makeConfig({
         multicall3: {
             address: "0xcA11bde05977b3631167028862bE2a173976CA11",
         },
+        metrom: {
+            address: "0xD1D3Cf05Ef211C71056f0aF1a7FD1DF989E109c3",
+            blockCreated: 20622498,
+        },
     },
 });
 
@@ -1707,6 +1711,10 @@ const gnosis = makeConfig({
         multicall3: {
             address: "0xcA11bde05977b3631167028862bE2a173976CA11",
         },
+        metrom: {
+            address: "0x9430990117A7451e3d0a3d89796FC0b0c294Da9c",
+            blockCreated: 38018174,
+        },
     },
 });
 
@@ -1929,6 +1937,10 @@ const hemi = makeConfig({
         multicall3: {
             address: "0xcA11bde05977b3631167028862bE2a173976CA11",
         },
+        metrom: {
+            address: "0xD4AC4AaFb81eC774E49AA755A66EfCe4574D6276",
+            blockCreated: 1838171,
+        },
     },
 });
 
@@ -2010,6 +2022,10 @@ const lens = makeConfig({
         },
         multicall3: {
             address: "0x6b6dEa4D80e3077D076733A04c48F63c3BA49320",
+        },
+        metrom: {
+            address: "0x5319C3Fc78ac3e10Ca733A5839D65F8493A8D60A",
+            blockCreated: 2507884,
         },
     },
 });
@@ -2955,6 +2971,10 @@ const mantle = makeConfig({
         },
         multicall3: {
             address: "0xcA11bde05977b3631167028862bE2a173976CA11",
+        },
+        metrom: {
+            address: "0x4300d4C410f87c7c1824Cbc2eF67431030106604",
+            blockCreated: 68933021,
         },
     },
 });
@@ -4404,6 +4424,10 @@ const scroll = makeConfig({
         Multicall3: {
             address: "0xcA11bde05977b3631167028862bE2a173976CA11",
         },
+        metrom: {
+            address: "0xD4AC4AaFb81eC774E49AA755A66EfCe4574D6276",
+            blockCreated: 10721351,
+        },
     },
 });
 
@@ -4563,6 +4587,10 @@ const sei = makeConfig({
         multicall3: {
             address: "0xcA11bde05977b3631167028862bE2a173976CA11",
         },
+        metrom: {
+            address: "0xD6e88c910329fE3597498772eB94991a0630306d",
+            blockCreated: 141494257,
+        },
     },
 });
 
@@ -4686,6 +4714,10 @@ const sonic = makeConfig({
         },
         multicall3: {
             address: "0xcA11bde05977b3631167028862bE2a173976CA11",
+        },
+        metrom: {
+            address: "0xD4AC4AaFb81eC774E49AA755A66EfCe4574D6276",
+            blockCreated: 693310,
         },
     },
 });
@@ -4825,6 +4857,10 @@ const taiko = makeConfig({
         multicall3: {
             address: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D",
         },
+        metrom: {
+            address: "0xD4AC4AaFb81eC774E49AA755A66EfCe4574D6276",
+            blockCreated: 460190,
+        },
     },
 });
 
@@ -4949,6 +4985,10 @@ const telos = makeConfig({
         },
         multicall3: {
             address: "0xcA11bde05977b3631167028862bE2a173976CA11",
+        },
+        metrom: {
+            address: "0xD4AC4AaFb81eC774E49AA755A66EfCe4574D6276",
+            blockCreated: 390899406,
         },
     },
 });

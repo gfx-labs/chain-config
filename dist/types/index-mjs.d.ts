@@ -348,6 +348,10 @@ declare const base: Readonly<{
         multicall3: {
             address: "0xcA11bde05977b3631167028862bE2a173976CA11";
         };
+        metrom: {
+            address: "0xD1D3Cf05Ef211C71056f0aF1a7FD1DF989E109c3";
+            blockCreated: number;
+        };
         disputeGameFactory: {
             readonly 1: {
                 readonly address: "0x43edB88C4B80fDD2AdFF2412A7BebF9dF42cB40e";
@@ -3259,6 +3263,10 @@ declare const gnosis: Readonly<{
         multicall3: {
             address: "0xcA11bde05977b3631167028862bE2a173976CA11";
         };
+        metrom: {
+            address: "0x9430990117A7451e3d0a3d89796FC0b0c294Da9c";
+            blockCreated: number;
+        };
     };
     blockExplorers: {
         readonly default: {
@@ -3502,6 +3510,10 @@ declare const hemi: Readonly<{
         multicall3: {
             address: "0xcA11bde05977b3631167028862bE2a173976CA11";
         };
+        metrom: {
+            address: "0xD4AC4AaFb81eC774E49AA755A66EfCe4574D6276";
+            blockCreated: number;
+        };
         ensRegistry?: import("viem").ChainContract | undefined;
         ensUniversalResolver?: import("viem").ChainContract | undefined;
         universalSignatureVerifier?: import("viem").ChainContract | undefined;
@@ -3614,6 +3626,10 @@ declare const lens: Readonly<{
         };
         multicall3: {
             address: "0x6b6dEa4D80e3077D076733A04c48F63c3BA49320";
+        };
+        metrom: {
+            address: "0x5319C3Fc78ac3e10Ca733A5839D65F8493A8D60A";
+            blockCreated: number;
         };
         ensRegistry?: import("viem").ChainContract | undefined;
         ensUniversalResolver?: import("viem").ChainContract | undefined;
@@ -4775,6 +4791,10 @@ declare const mantle: Readonly<{
         };
         multicall3: {
             address: "0xcA11bde05977b3631167028862bE2a173976CA11";
+        };
+        metrom: {
+            address: "0x4300d4C410f87c7c1824Cbc2eF67431030106604";
+            blockCreated: number;
         };
     };
     blockExplorers: {
@@ -6690,6 +6710,10 @@ declare const scroll: Readonly<{
         Multicall3: {
             address: "0xcA11bde05977b3631167028862bE2a173976CA11";
         };
+        metrom: {
+            address: "0xD4AC4AaFb81eC774E49AA755A66EfCe4574D6276";
+            blockCreated: number;
+        };
         multicall3: {
             readonly address: "0xca11bde05977b3631167028862be2a173976ca11";
             readonly blockCreated: 14;
@@ -6855,6 +6879,10 @@ declare const sei: Readonly<{
         multicall3: {
             address: "0xcA11bde05977b3631167028862bE2a173976CA11";
         };
+        metrom: {
+            address: "0xD6e88c910329fE3597498772eB94991a0630306d";
+            blockCreated: number;
+        };
     };
     blockTime?: number | undefined | undefined | undefined;
     ensTlds?: readonly string[] | undefined;
@@ -6993,6 +7021,10 @@ declare const sonic: Readonly<{
         };
         multicall3: {
             address: "0xcA11bde05977b3631167028862bE2a173976CA11";
+        };
+        metrom: {
+            address: "0xD4AC4AaFb81eC774E49AA755A66EfCe4574D6276";
+            blockCreated: number;
         };
     };
     blockExplorers: {
@@ -7142,6 +7174,10 @@ declare const taiko: Readonly<{
         multicall3: {
             address: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D";
         };
+        metrom: {
+            address: "0xD4AC4AaFb81eC774E49AA755A66EfCe4574D6276";
+            blockCreated: number;
+        };
     };
     blockTime?: number | undefined | undefined | undefined;
     ensTlds?: readonly string[] | undefined;
@@ -7273,6 +7309,10 @@ declare const telos: Readonly<{
         };
         multicall3: {
             address: "0xcA11bde05977b3631167028862bE2a173976CA11";
+        };
+        metrom: {
+            address: "0xD4AC4AaFb81eC774E49AA755A66EfCe4574D6276";
+            blockCreated: number;
         };
     };
     blockTime?: number | undefined | undefined | undefined;
@@ -9141,6 +9181,7 @@ interface IChainInfo<formatters extends ChainFormatters | undefined = ChainForma
         nftManager: ChainContract;
         limitOrder?: ChainContract;
         weth9?: ChainContract;
+        metrom?: ChainContract;
     };
 }
 declare const MAINNET_CHAINS: readonly [Readonly<{
@@ -9486,6 +9527,10 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         };
         multicall3: {
             address: "0xcA11bde05977b3631167028862bE2a173976CA11";
+        };
+        metrom: {
+            address: "0xD1D3Cf05Ef211C71056f0aF1a7FD1DF989E109c3";
+            blockCreated: number;
         };
         disputeGameFactory: {
             readonly 1: {
@@ -11873,6 +11918,10 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         Multicall3: {
             address: "0xcA11bde05977b3631167028862bE2a173976CA11";
         };
+        metrom: {
+            address: "0xD4AC4AaFb81eC774E49AA755A66EfCe4574D6276";
+            blockCreated: number;
+        };
         multicall3: {
             readonly address: "0xca11bde05977b3631167028862be2a173976ca11";
             readonly blockCreated: 14;
@@ -12962,6 +13011,10 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         multicall3: {
             address: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D";
         };
+        metrom: {
+            address: "0xD4AC4AaFb81eC774E49AA755A66EfCe4574D6276";
+            blockCreated: number;
+        };
     };
     blockTime?: number | undefined | undefined | undefined;
     ensTlds?: readonly string[] | undefined;
@@ -13095,6 +13148,10 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         };
         multicall3: {
             address: "0xcA11bde05977b3631167028862bE2a173976CA11";
+        };
+        metrom: {
+            address: "0x4300d4C410f87c7c1824Cbc2eF67431030106604";
+            blockCreated: number;
         };
     };
     blockExplorers: {
@@ -13250,6 +13307,10 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         };
         multicall3: {
             address: "0xcA11bde05977b3631167028862bE2a173976CA11";
+        };
+        metrom: {
+            address: "0xD6e88c910329fE3597498772eB94991a0630306d";
+            blockCreated: number;
         };
     };
     blockTime?: number | undefined | undefined | undefined;
@@ -14180,6 +14241,10 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         multicall3: {
             address: "0xcA11bde05977b3631167028862bE2a173976CA11";
         };
+        metrom: {
+            address: "0x9430990117A7451e3d0a3d89796FC0b0c294Da9c";
+            blockCreated: number;
+        };
     };
     blockExplorers: {
         readonly default: {
@@ -14815,6 +14880,10 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         };
         multicall3: {
             address: "0xcA11bde05977b3631167028862bE2a173976CA11";
+        };
+        metrom: {
+            address: "0xD4AC4AaFb81eC774E49AA755A66EfCe4574D6276";
+            blockCreated: number;
         };
     };
     blockExplorers: {
@@ -15879,6 +15948,10 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         multicall3: {
             address: "0xcA11bde05977b3631167028862bE2a173976CA11";
         };
+        metrom: {
+            address: "0xD4AC4AaFb81eC774E49AA755A66EfCe4574D6276";
+            blockCreated: number;
+        };
         ensRegistry?: ChainContract | undefined;
         ensUniversalResolver?: ChainContract | undefined;
         universalSignatureVerifier?: ChainContract | undefined;
@@ -16014,6 +16087,10 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         };
         multicall3: {
             address: "0xcA11bde05977b3631167028862bE2a173976CA11";
+        };
+        metrom: {
+            address: "0xD4AC4AaFb81eC774E49AA755A66EfCe4574D6276";
+            blockCreated: number;
         };
     };
     blockTime?: number | undefined | undefined | undefined;
@@ -17159,6 +17236,10 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         };
         multicall3: {
             address: "0x6b6dEa4D80e3077D076733A04c48F63c3BA49320";
+        };
+        metrom: {
+            address: "0x5319C3Fc78ac3e10Ca733A5839D65F8493A8D60A";
+            blockCreated: number;
         };
         ensRegistry?: ChainContract | undefined;
         ensUniversalResolver?: ChainContract | undefined;

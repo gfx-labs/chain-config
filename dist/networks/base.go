@@ -115,5 +115,9 @@ var Base Network = Network{
 			BlockCreated: 0,
 			Address:      common.HexToAddress("0x41A513463248971B41C0580726CF4D425c071732"),
 		},
+		"metrom": {
+			BlockCreated: 20622498,
+			Address:      common.HexToAddress("0xD1D3Cf05Ef211C71056f0aF1a7FD1DF989E109c3"),
+		},
 	},
 }

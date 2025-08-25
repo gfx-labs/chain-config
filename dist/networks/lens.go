@@ -84,5 +84,9 @@ var Lens Network = Network{
 			BlockCreated: 0,
 			Address:      common.HexToAddress("0x6b6dEa4D80e3077D076733A04c48F63c3BA49320"),
 		},
+		"metrom": {
+			BlockCreated: 2507884,
+			Address:      common.HexToAddress("0x5319C3Fc78ac3e10Ca733A5839D65F8493A8D60A"),
+		},
 	},
 }

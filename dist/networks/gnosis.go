@@ -86,5 +86,9 @@ var Gnosis Network = Network{
 			BlockCreated: 0,
 			Address:      common.HexToAddress("0xcA11bde05977b3631167028862bE2a173976CA11"),
 		},
+		"metrom": {
+			BlockCreated: 38018174,
+			Address:      common.HexToAddress("0x9430990117A7451e3d0a3d89796FC0b0c294Da9c"),
+		},
 	},
 }
