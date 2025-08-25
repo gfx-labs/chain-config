@@ -54,6 +54,10 @@ export const sonic = makeConfig({
 				},
 			],
 		},
+		wormhole: {
+			chain: "Sonic",
+			timeToFinalize: 1,
+		},
 	},
 	oracles: {},
 	initCodeHash:

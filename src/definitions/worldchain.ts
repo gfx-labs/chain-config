@@ -17,7 +17,18 @@ export const worldchain = makeConfig({
 	markets: {
 		zeroex: true,
 	},
-	bridges: {},
+	bridges: {
+		chainlink: {
+			atlasNetworkName: "ethereum-mainnet-worldchain-1",
+			routerAddress: "0x5fd9E4986187c56826A3064954Cfa2Cf250cfA0f",
+			chainSelector: 2049429975587534727n,
+			tokenAdminRegistry: "0x02Fe6ab4fb0943F58D9D925d1d2cbA9474997Ed0",
+		},
+		wormhole: {
+			chain: "World Chain",
+			timeToFinalize: 1080,
+		},
+	},
 	oracles: {},
 	morpho: {
 		deployBlock: 9025669,

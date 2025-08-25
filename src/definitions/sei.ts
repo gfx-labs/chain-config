@@ -17,6 +17,9 @@ export const sei = makeConfig({
 	},
 	markets: {
 		openocean: "sei",
+		oneinch: {
+			spender: "0x111111125421ca6dc452d289314280a0f8842a65",
+		},
 	},
 	morpho: {},
 	bridges: {
@@ -70,6 +73,10 @@ export const sei = makeConfig({
 					OFTAddress: "0x160345fC359604fC6e70E3c5fAcbdE5F7A9342d8",
 				},
 			],
+		},
+		wormhole: {
+			chain: "Sei",
+			timeToFinalize: 1,
 		},
 	},
 	oracles: {
