@@ -22,6 +22,9 @@ export const unichain = makeConfig({
 		paraswap: {
 			routerContract: "0x6A000F20005980200259B80c5102003040001068",
 		},
+		oneinch: {
+			spender: "0x111111125421ca6dc452d289314280a0f8842a65",
+		},
 	},
 	bridges: {
 		layerzero: {
@@ -40,6 +43,16 @@ export const unichain = makeConfig({
 					OFTAddress: "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c",
 				},
 			],
+		},
+		chainlink: {
+			atlasNetworkName: "ethereum-mainnet-unichain-1",
+			routerAddress: "0x68891f5F96695ECd7dEdBE2289D1b73426ae7864",
+			chainSelector: 1923510103922296319n,
+			tokenAdminRegistry: "0xAB3Ee2e897cf23c10e76d26aB4674fEFA376bc0d",
+		},
+		wormhole: {
+			chain: "Unichain",
+			timeToFinalize: 1080,
 		},
 	},
 	oracles: {},

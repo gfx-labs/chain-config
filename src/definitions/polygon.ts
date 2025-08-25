@@ -31,6 +31,7 @@ export const polygon = makeConfig({
 		openocean: "polygon",
 		zeroex: true,
 		icecreamswap: true,
+		cowswap: "polygon",
 	},
 	bridges: {
 		chainlink: {
