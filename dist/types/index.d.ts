@@ -6066,6 +6066,7 @@ declare const polygon: Readonly<{
         openocean: string;
         zeroex: true;
         icecreamswap: true;
+        cowswap: string;
     };
     bridges: {
         chainlink: {
@@ -6767,6 +6768,9 @@ declare const sei: Readonly<{
     };
     markets: {
         openocean: string;
+        oneinch: {
+            spender: string;
+        };
     };
     morpho: {};
     bridges: {
@@ -6798,6 +6802,10 @@ declare const sei: Readonly<{
                 project: string;
                 OFTAddress: string;
             }[];
+        };
+        wormhole: {
+            chain: string;
+            timeToFinalize: number;
         };
     };
     oracles: {
@@ -6958,6 +6966,10 @@ declare const sonic: Readonly<{
                 project: string;
                 OFTAddress: string;
             }[];
+        };
+        wormhole: {
+            chain: string;
+            timeToFinalize: number;
         };
     };
     oracles: {};
@@ -7450,6 +7462,9 @@ declare const unichain: Readonly<{
         paraswap: {
             routerContract: string;
         };
+        oneinch: {
+            spender: string;
+        };
     };
     bridges: {
         layerzero: {
@@ -7460,6 +7475,16 @@ declare const unichain: Readonly<{
                 project: string;
                 OFTAddress: string;
             }[];
+        };
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+            tokenAdminRegistry: string;
+        };
+        wormhole: {
+            chain: string;
+            timeToFinalize: number;
         };
     };
     oracles: {};
@@ -7838,7 +7863,18 @@ declare const worldchain: Readonly<{
     markets: {
         zeroex: true;
     };
-    bridges: {};
+    bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+            tokenAdminRegistry: string;
+        };
+        wormhole: {
+            chain: string;
+            timeToFinalize: number;
+        };
+    };
     oracles: {};
     morpho: {
         deployBlock: number;
@@ -11502,6 +11538,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         openocean: string;
         zeroex: true;
         icecreamswap: true;
+        cowswap: string;
     };
     bridges: {
         chainlink: {
@@ -13196,6 +13233,9 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     };
     markets: {
         openocean: string;
+        oneinch: {
+            spender: string;
+        };
     };
     morpho: {};
     bridges: {
@@ -13227,6 +13267,10 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 project: string;
                 OFTAddress: string;
             }[];
+        };
+        wormhole: {
+            chain: string;
+            timeToFinalize: number;
         };
     };
     oracles: {
@@ -14817,6 +14861,10 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 project: string;
                 OFTAddress: string;
             }[];
+        };
+        wormhole: {
+            chain: string;
+            timeToFinalize: number;
         };
     };
     oracles: {};
@@ -16584,7 +16632,18 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     markets: {
         zeroex: true;
     };
-    bridges: {};
+    bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+            tokenAdminRegistry: string;
+        };
+        wormhole: {
+            chain: string;
+            timeToFinalize: number;
+        };
+    };
     oracles: {};
     morpho: {
         deployBlock: number;
@@ -17535,6 +17594,9 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         paraswap: {
             routerContract: string;
         };
+        oneinch: {
+            spender: string;
+        };
     };
     bridges: {
         layerzero: {
@@ -17545,6 +17607,16 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 project: string;
                 OFTAddress: string;
             }[];
+        };
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+            tokenAdminRegistry: string;
+        };
+        wormhole: {
+            chain: string;
+            timeToFinalize: number;
         };
     };
     oracles: {};
