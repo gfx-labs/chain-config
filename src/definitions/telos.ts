@@ -125,5 +125,9 @@ export const telos = makeConfig({
 		multicall3: {
 			address: "0xcA11bde05977b3631167028862bE2a173976CA11",
 		},
+		metrom: {
+			address: "0xD4AC4AaFb81eC774E49AA755A66EfCe4574D6276",
+			blockCreated: 390899406,
+		},
 	},
 });

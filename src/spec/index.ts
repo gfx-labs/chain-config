@@ -209,6 +209,7 @@ export interface IChainInfo<
 		nftManager: ChainContract;
 		limitOrder?: ChainContract;
 		weth9?: ChainContract;
+		metrom?: ChainContract;
 	};
 }
 

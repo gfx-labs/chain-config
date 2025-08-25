@@ -159,5 +159,9 @@ export const sei = makeConfig({
 		multicall3: {
 			address: "0xcA11bde05977b3631167028862bE2a173976CA11",
 		},
+		metrom: {
+			address: "0xD6e88c910329fE3597498772eB94991a0630306d",
+			blockCreated: 141494257,
+		},
 	},
 });

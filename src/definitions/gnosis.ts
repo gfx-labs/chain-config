@@ -150,5 +150,9 @@ export const gnosis = makeConfig({
 		multicall3: {
 			address: "0xcA11bde05977b3631167028862bE2a173976CA11",
 		},
+		metrom: {
+			address: "0x9430990117A7451e3d0a3d89796FC0b0c294Da9c",
+			blockCreated: 38018174,
+		},
 	},
 });

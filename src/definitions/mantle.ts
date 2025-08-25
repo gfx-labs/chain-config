@@ -140,5 +140,9 @@ export const mantle = makeConfig({
 		multicall3: {
 			address: "0xcA11bde05977b3631167028862bE2a173976CA11",
 		},
+		metrom: {
+			address: "0x4300d4C410f87c7c1824Cbc2eF67431030106604",
+			blockCreated: 68933021,
+		},
 	},
 });

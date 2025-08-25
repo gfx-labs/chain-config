@@ -139,5 +139,9 @@ export const taiko = makeConfig({
 		multicall3: {
 			address: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D",
 		},
+		metrom: {
+			address: "0xD4AC4AaFb81eC774E49AA755A66EfCe4574D6276",
+			blockCreated: 460190,
+		},
 	},
 });

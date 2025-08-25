@@ -187,5 +187,9 @@ export const base = makeConfig({
 		multicall3: {
 			address: "0xcA11bde05977b3631167028862bE2a173976CA11",
 		},
+		metrom: {
+			address: "0xD1D3Cf05Ef211C71056f0aF1a7FD1DF989E109c3",
+			blockCreated: 20622498,
+		},
 	},
 });
