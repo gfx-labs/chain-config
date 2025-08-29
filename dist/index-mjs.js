@@ -349,6 +349,7 @@ const base = makeConfig({
     externalId: {
         zerion: "base",
         debank: "base",
+        cowswap: "base",
         tenderly: "true",
     },
     markets: {

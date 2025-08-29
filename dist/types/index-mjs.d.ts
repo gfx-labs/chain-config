@@ -219,6 +219,7 @@ declare const base: Readonly<{
     externalId: {
         zerion: string;
         debank: string;
+        cowswap: string;
         tenderly: string;
     };
     markets: {
@@ -9435,6 +9436,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     externalId: {
         zerion: string;
         debank: string;
+        cowswap: string;
         tenderly: string;
     };
     markets: {

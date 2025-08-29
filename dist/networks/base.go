@@ -23,6 +23,7 @@ var Base Network = Network{
 	ExternalId: map[string]string{
 		"zerion":   "base",
 		"debank":   "base",
+		"cowswap":  "base",
 		"tenderly": "true",
 	},
 	DefaultToken0: common.HexToAddress("0x4200000000000000000000000000000000000006"),
