@@ -8,7 +8,7 @@ export const saga = makeConfig({
 	launchTime: 1740384000,
 	transactionType: "legacy",
 	sortIndex: 13,
-	logoUrl: "https://assets.oku.trade/chains/saga-logo.png",
+	logoUrl: "https://cms.oku.trade/cdn/public/chains/saga-logo.png",
 	safeReorgDistance: 90000,
 	blockAid: "",
 	externalId: {},

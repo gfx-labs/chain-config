@@ -6,7 +6,7 @@ import (
 
 var Saga Network = Network{
 	ChainId:           5464,
-	LogoUrl:           "https://assets.oku.trade/chains/saga-logo.png",
+	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/saga-logo.png",
 	SortIndex:         13,
 	LaunchTime:        1740384000,
 	SafeReorgDistance: 90000,
