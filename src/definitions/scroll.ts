@@ -10,6 +10,7 @@ export const scroll = makeConfig({
 	transactionType: "eip1559",
 	blockTimeSeconds: 3,
 	logoUrl: "https://assets.oku.trade/chains/scroll-logo.png",
+	deprecated: false,
 	safeReorgDistance: 90000,
 	blockAid: "scroll",
 	externalId: {

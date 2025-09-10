@@ -7,6 +7,7 @@ import (
 var Zksync Network = Network{
 	ChainId:           324,
 	LogoUrl:           "https://assets.oku.trade/chains/zksync-logo.svg",
+	Deprecated:        false,
 	SortIndex:         4,
 	LaunchTime:        1696514400,
 	SafeReorgDistance: 90000,

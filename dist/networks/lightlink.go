@@ -7,6 +7,7 @@ import (
 var Lightlink Network = Network{
 	ChainId:           1890,
 	LogoUrl:           "https://assets.oku.trade/chains/lightlink-logo.svg",
+	Deprecated:        false,
 	SortIndex:         13,
 	LaunchTime:        1741485513,
 	SafeReorgDistance: 90000,

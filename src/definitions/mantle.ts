@@ -10,6 +10,7 @@ export const mantle = makeConfig({
 	transactionType: "eip1559",
 	sortIndex: 15,
 	logoUrl: "https://assets.oku.trade/chains/mantle-logo.png",
+	deprecated: false,
 	safeReorgDistance: 90000,
 	blockAid: "",
 	externalId: {

@@ -9,6 +9,7 @@ export const unichain = makeConfig({
 	transactionType: "eip1559",
 	sortIndex: 15,
 	logoUrl: "https://assets.oku.trade/chains/unichain-logo.svg",
+	deprecated: false,
 	safeReorgDistance: 90000,
 	blockAid: "unichain",
 	externalId: {

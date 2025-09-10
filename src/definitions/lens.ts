@@ -10,6 +10,7 @@ export const lens = makeConfig({
 	sortIndex: 15,
 	blockAid: "",
 	logoUrl: "https://assets.oku.trade/chains/lens-logo.png",
+	deprecated: false,
 	safeReorgDistance: 90000,
 	externalId: {
 		tenderly: "true",

@@ -198,6 +198,7 @@ export interface IChainInfo<
 	morpho: MorphoMetadata;
 	token: TokenMetadata;
 	oku: OkuMetadata;
+	deprecated: boolean;
 
 	contracts: {
 		[key: string]: ChainContract | { [chainId: number]: ChainContract };

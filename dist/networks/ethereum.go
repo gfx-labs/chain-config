@@ -7,6 +7,7 @@ import (
 var Ethereum Network = Network{
 	ChainId:           1,
 	LogoUrl:           "https://assets.oku.trade/chains/ethereum-logo.webp",
+	Deprecated:        false,
 	SortIndex:         0,
 	LaunchTime:        1688997600,
 	SafeReorgDistance: 90000,

@@ -7,6 +7,7 @@ import (
 var Telos Network = Network{
 	ChainId:           40,
 	LogoUrl:           "https://assets.oku.trade/chains/telos-logo.svg",
+	Deprecated:        false,
 	SortIndex:         13,
 	LaunchTime:        1743089303,
 	SafeReorgDistance: 90000,

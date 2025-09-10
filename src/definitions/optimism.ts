@@ -11,6 +11,7 @@ export const optimism = makeConfig({
 	transactionType: "eip1559",
 	sortIndex: 2,
 	logoUrl: "https://assets.oku.trade/chains/optimism-logo.svg",
+	deprecated: false,
 	safeReorgDistance: 90000,
 	blockAid: "optimism",
 	externalId: {

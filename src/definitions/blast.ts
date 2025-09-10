@@ -8,6 +8,7 @@ export const blast = makeConfig({
 	transactionType: "eip1559",
 	sortIndex: 14,
 	logoUrl: "https://assets.oku.trade/chains/blast-logo.svg",
+	deprecated: true,
 	safeReorgDistance: 90000,
 	blockAid: "blast",
 	externalId: {

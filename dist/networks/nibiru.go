@@ -7,6 +7,7 @@ import (
 var Nibiru Network = Network{
 	ChainId:           6900,
 	LogoUrl:           "https://assets.oku.trade/chains/nibiru-logo.svg",
+	Deprecated:        false,
 	SortIndex:         15,
 	LaunchTime:        1750705200,
 	SafeReorgDistance: 90000,

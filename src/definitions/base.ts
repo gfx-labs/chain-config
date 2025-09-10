@@ -8,6 +8,7 @@ export const base = makeConfig({
 	transactionType: "eip1559",
 	blockTimeSeconds: 2,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/base-logo.svg",
+	deprecated: false,
 	blockAid: "base",
 	defaultPool: "0xd0b53d9277642d899df5c87a3966a349a798f224",
 	defaultToken0: "0x4200000000000000000000000000000000000006",

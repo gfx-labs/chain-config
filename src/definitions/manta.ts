@@ -11,6 +11,7 @@ export const manta = makeConfig({
 	blockTimeSeconds: 2,
 	sortIndex: 13,
 	logoUrl: "https://assets.oku.trade/chains/manta-logo.png",
+	deprecated: true,
 	safeReorgDistance: 90000,
 	blockAid: "",
 	externalId: {},

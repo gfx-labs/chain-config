@@ -7,6 +7,7 @@ import (
 var Metal Network = Network{
 	ChainId:           1750,
 	LogoUrl:           "https://assets.oku.trade/chains/metal-logo.png",
+	Deprecated:        false,
 	SortIndex:         15,
 	LaunchTime:        1733882663,
 	SafeReorgDistance: 90000,

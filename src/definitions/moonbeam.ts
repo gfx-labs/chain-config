@@ -10,6 +10,7 @@ export const moonbeam = makeConfig({
 	transactionType: "eip1559",
 	blockTimeSeconds: 30,
 	logoUrl: "https://assets.oku.trade/chains/moonbeam-logo.svg",
+	deprecated: true,
 	safeReorgDistance: 90000,
 	blockAid: "",
 	externalId: {

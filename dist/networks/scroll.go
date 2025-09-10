@@ -7,6 +7,7 @@ import (
 var Scroll Network = Network{
 	ChainId:           534352,
 	LogoUrl:           "https://assets.oku.trade/chains/scroll-logo.png",
+	Deprecated:        false,
 	SortIndex:         5,
 	LaunchTime:        1703257200,
 	SafeReorgDistance: 90000,

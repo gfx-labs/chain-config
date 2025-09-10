@@ -11,6 +11,7 @@ export const bsc = makeConfig({
 	sortIndex: 9,
 	blockTimeSeconds: 3,
 	logoUrl: "https://assets.oku.trade/chains/bsc-logo.svg",
+	deprecated: false,
 	safeReorgDistance: 90000,
 	blockAid: "bsc",
 	externalId: {

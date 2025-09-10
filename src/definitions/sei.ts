@@ -10,6 +10,7 @@ export const sei = makeConfig({
 	transactionType: "eip1559",
 	sortIndex: 5,
 	logoUrl: "https://assets.oku.trade/chains/sei-logo.svg",
+	deprecated: false,
 	safeReorgDistance: 90000,
 	blockAid: "",
 	externalId: {

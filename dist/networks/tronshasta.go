@@ -7,6 +7,7 @@ import (
 var Tronshasta Network = Network{
 	ChainId:           2494104990,
 	LogoUrl:           "https://assets.oku.trade/chains/tron.png",
+	Deprecated:        false,
 	SortIndex:         15,
 	LaunchTime:        1746055290,
 	SafeReorgDistance: 90000,

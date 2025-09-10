@@ -7,6 +7,7 @@ import (
 var Boba Network = Network{
 	ChainId:           288,
 	LogoUrl:           "https://assets.oku.trade/chains/boba-logo.svg",
+	Deprecated:        false,
 	SortIndex:         11,
 	LaunchTime:        1690297200,
 	SafeReorgDistance: 90000,

@@ -10,6 +10,7 @@ export const polygonZkEvm = makeConfig({
 	transactionType: "legacy",
 	blockTimeSeconds: 7,
 	logoUrl: "https://assets.oku.trade/chains/zkevm-logo.svg",
+	deprecated: true,
 	safeReorgDistance: 90000,
 	blockAid: "",
 	morpho: {},

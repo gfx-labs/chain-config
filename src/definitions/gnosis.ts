@@ -9,6 +9,7 @@ export const gnosis = makeConfig({
 	sortIndex: 18,
 	blockAid: "",
 	logoUrl: "https://assets.oku.trade/chains/gnosis-logo.png",
+	deprecated: false,
 	safeReorgDistance: 90000,
 	morpho: {},
 	externalId: {

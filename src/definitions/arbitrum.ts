@@ -9,6 +9,7 @@ export const arbitrum = makeConfig({
 	sortIndex: 1,
 	blockTimeSeconds: 0.25,
 	logoUrl: "https://assets.oku.trade/chains/arbitrum-logo.svg",
+	deprecated: false,
 	safeReorgDistance: 90000 * 2,
 	blockAid: "arbitrum",
 	morpho: {},

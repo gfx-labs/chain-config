@@ -8,6 +8,7 @@ export const etherlink = makeConfig({
 	transactionType: "eip1559",
 	sortIndex: 15,
 	logoUrl: "https://assets.oku.trade/chains/etherlink-logo.png",
+	deprecated: false,
 	safeReorgDistance: 90000,
 	blockAid: "",
 	externalId: {

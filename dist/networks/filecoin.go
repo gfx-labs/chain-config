@@ -7,6 +7,7 @@ import (
 var Filecoin Network = Network{
 	ChainId:           314,
 	LogoUrl:           "https://assets.oku.trade/chains/filecoin-logo.svg",
+	Deprecated:        false,
 	SortIndex:         10,
 	LaunchTime:        1677600000,
 	SafeReorgDistance: 90000,

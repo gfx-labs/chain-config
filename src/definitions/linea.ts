@@ -12,6 +12,7 @@ export const linea = makeConfig({
 	sortIndex: 15,
 	morpho: {},
 	logoUrl: "https://assets.oku.trade/chains/linea-logo.svg",
+	deprecated: false,
 	safeReorgDistance: 100,
 	blockAid: "linea",
 	externalId: {

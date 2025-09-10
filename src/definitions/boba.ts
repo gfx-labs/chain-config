@@ -11,6 +11,7 @@ export const boba = makeConfig({
 	sortIndex: 11,
 	blockTimeSeconds: 2,
 	logoUrl: "https://assets.oku.trade/chains/boba-logo.svg",
+	deprecated: false,
 	safeReorgDistance: 90000,
 	blockAid: "",
 	externalId: {

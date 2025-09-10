@@ -9,6 +9,7 @@ export const lightlink = makeConfig({
 	transactionType: "legacy",
 	sortIndex: 13,
 	logoUrl: "https://assets.oku.trade/chains/lightlink-logo.svg",
+	deprecated: false,
 	safeReorgDistance: 90000,
 	blockAid: "",
 	morpho: {},

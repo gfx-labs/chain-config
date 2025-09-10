@@ -232,6 +232,7 @@ type Network struct {
 	Morpho            MorphoMetadata
 	Token             TokenMetadata
 	Oku               OkuMetadata
+	Deprecated        bool
 	Contracts         map[string]ChainContract
 
 	ChainId        int `json:"chainId"`

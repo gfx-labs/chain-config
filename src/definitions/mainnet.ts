@@ -11,6 +11,7 @@ export const mainnet = makeConfig({
 	blockTimeSeconds: 15,
 	safeReorgDistance: 90_000,
 	logoUrl: "https://assets.oku.trade/chains/ethereum-logo.webp",
+	deprecated: false,
 	blockAid: "ethereum",
 	morpho: {
 		deployBlock: 13977148,

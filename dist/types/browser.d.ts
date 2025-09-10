@@ -6,6 +6,7 @@ declare const arbitrum: Readonly<{
     sortIndex: 1;
     blockTimeSeconds: 0.25;
     logoUrl: "https://assets.oku.trade/chains/arbitrum-logo.svg";
+    deprecated: false;
     safeReorgDistance: number;
     blockAid: "arbitrum";
     morpho: {};
@@ -204,6 +205,7 @@ declare const base: Readonly<{
     transactionType: "eip1559";
     blockTimeSeconds: 2;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/base-logo.svg";
+    deprecated: false;
     blockAid: "base";
     defaultPool: "0xd0b53d9277642d899df5c87a3966a349a798f224";
     defaultToken0: "0x4200000000000000000000000000000000000006";
@@ -666,6 +668,7 @@ declare const blast: Readonly<{
     transactionType: "eip1559";
     sortIndex: 14;
     logoUrl: "https://assets.oku.trade/chains/blast-logo.svg";
+    deprecated: true;
     safeReorgDistance: 90000;
     blockAid: "blast";
     externalId: {
@@ -1071,6 +1074,7 @@ declare const bob: Readonly<{
     transactionType: "eip1559";
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/chains/bob-logo.svg";
+    deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {
@@ -1478,6 +1482,7 @@ declare const boba: Readonly<{
     sortIndex: 11;
     blockTimeSeconds: 2;
     logoUrl: "https://assets.oku.trade/chains/boba-logo.svg";
+    deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {
@@ -1610,6 +1615,7 @@ declare const bsc: Readonly<{
     sortIndex: 9;
     blockTimeSeconds: 3;
     logoUrl: "https://assets.oku.trade/chains/bsc-logo.svg";
+    deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "bsc";
     externalId: {
@@ -1784,6 +1790,7 @@ declare const celo: Readonly<{
     transactionType: "eip1559";
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/chains/celo-logo.svg";
+    deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {};
@@ -2738,6 +2745,7 @@ declare const corn: Readonly<{
     transactionType: "eip1559";
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/chains/corn-logo.png";
+    deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {
@@ -2866,6 +2874,7 @@ declare const etherlink: Readonly<{
     transactionType: "eip1559";
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/chains/etherlink-logo.png";
+    deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {
@@ -3024,6 +3033,7 @@ declare const filecoin: Readonly<{
         };
     };
     logoUrl: "https://assets.oku.trade/chains/filecoin-logo.svg";
+    deprecated: false;
     externalId: {};
     markets: {};
     bridges: {};
@@ -3138,6 +3148,7 @@ declare const gnosis: Readonly<{
     sortIndex: 18;
     blockAid: "";
     logoUrl: "https://assets.oku.trade/chains/gnosis-logo.png";
+    deprecated: false;
     safeReorgDistance: 90000;
     morpho: {};
     externalId: {
@@ -3310,6 +3321,7 @@ declare const goat: Readonly<{
     transactionType: "eip1559";
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/chains/goat-logo.svg";
+    deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {};
@@ -3426,6 +3438,7 @@ declare const hemi: Readonly<{
     transactionType: "eip1559";
     sortIndex: 13;
     logoUrl: "https://assets.oku.trade/chains/hemi-logo.svg";
+    deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {};
@@ -3558,6 +3571,7 @@ declare const lens: Readonly<{
     sortIndex: 15;
     blockAid: "";
     logoUrl: "https://assets.oku.trade/chains/lens-logo.png";
+    deprecated: false;
     safeReorgDistance: 90000;
     externalId: {
         tenderly: string;
@@ -3673,6 +3687,7 @@ declare const lightlink: Readonly<{
     transactionType: "legacy";
     sortIndex: 13;
     logoUrl: "https://assets.oku.trade/chains/lightlink-logo.svg";
+    deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
     morpho: {};
@@ -3802,6 +3817,7 @@ declare const linea: Readonly<{
     sortIndex: 15;
     morpho: {};
     logoUrl: "https://assets.oku.trade/chains/linea-logo.svg";
+    deprecated: false;
     safeReorgDistance: 100;
     blockAid: "linea";
     externalId: {
@@ -3971,6 +3987,7 @@ declare const lisk: Readonly<{
     transactionType: "eip1559";
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/chains/lisk-logo.png";
+    deprecated: true;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {
@@ -4355,6 +4372,7 @@ declare const mainnet: Readonly<{
     blockTimeSeconds: 15;
     safeReorgDistance: 90000;
     logoUrl: "https://assets.oku.trade/chains/ethereum-logo.webp";
+    deprecated: false;
     blockAid: "ethereum";
     morpho: {
         deployBlock: number;
@@ -4561,6 +4579,7 @@ declare const manta: Readonly<{
     blockTimeSeconds: 2;
     sortIndex: 13;
     logoUrl: "https://assets.oku.trade/chains/manta-logo.png";
+    deprecated: true;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {};
@@ -4689,6 +4708,7 @@ declare const mantle: Readonly<{
     transactionType: "eip1559";
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/chains/mantle-logo.png";
+    deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {
@@ -4837,6 +4857,7 @@ declare const matchain: Readonly<{
     sortIndex: 15;
     blockAid: "";
     logoUrl: "https://cms.oku.trade/cdn/public/chains/matchain-logo.svg";
+    deprecated: false;
     safeReorgDistance: 90000;
     externalId: {};
     markets: {};
@@ -4941,6 +4962,7 @@ declare const metal: Readonly<{
     transactionType: "eip1559";
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/chains/metal-logo.png";
+    deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {};
@@ -5319,6 +5341,7 @@ declare const moonbeam: Readonly<{
     transactionType: "eip1559";
     blockTimeSeconds: 30;
     logoUrl: "https://assets.oku.trade/chains/moonbeam-logo.svg";
+    deprecated: true;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {
@@ -5462,6 +5485,7 @@ declare const nibiru: Readonly<{
     transactionType: "eip1559";
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/chains/nibiru-logo.svg";
+    deprecated: false;
     safeReorgDistance: 90000;
     externalId: {};
     blockAid: "";
@@ -5576,6 +5600,7 @@ declare const optimism: Readonly<{
     transactionType: "eip1559";
     sortIndex: 2;
     logoUrl: "https://assets.oku.trade/chains/optimism-logo.svg";
+    deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "optimism";
     externalId: {
@@ -6046,6 +6071,7 @@ declare const polygon: Readonly<{
     transactionType: "eip1559";
     sortIndex: 3;
     logoUrl: "https://assets.oku.trade/chains/polygon-logo.webp";
+    deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "polygon";
     externalId: {
@@ -6235,6 +6261,7 @@ declare const redbelly: Readonly<{
     transactionType: "eip1559";
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/chains/redbelly-logo.svg";
+    deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {};
@@ -6346,6 +6373,7 @@ declare const rootstock: Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     blockTimeSeconds: 33;
     logoUrl: "https://assets.oku.trade/chains/rootstock-logo.svg";
+    deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {};
@@ -6489,6 +6517,7 @@ declare const saga: Readonly<{
     transactionType: "legacy";
     sortIndex: 13;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/saga-logo.png";
+    deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {};
@@ -6601,6 +6630,7 @@ declare const scroll: Readonly<{
     transactionType: "eip1559";
     blockTimeSeconds: 3;
     logoUrl: "https://assets.oku.trade/chains/scroll-logo.png";
+    deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "scroll";
     externalId: {
@@ -6762,6 +6792,7 @@ declare const sei: Readonly<{
     transactionType: "eip1559";
     sortIndex: 5;
     logoUrl: "https://assets.oku.trade/chains/sei-logo.svg";
+    deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {
@@ -6926,6 +6957,7 @@ declare const sonic: Readonly<{
     transactionType: "eip1559";
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/chains/sonic-logo.svg";
+    deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
     morpho: {};
@@ -7077,6 +7109,7 @@ declare const taiko: Readonly<{
     transactionType: "eip1559";
     sortIndex: 4;
     logoUrl: "https://assets.oku.trade/chains/taiko-logo.svg";
+    deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {
@@ -7225,6 +7258,7 @@ declare const telos: Readonly<{
     transactionType: "legacy";
     sortIndex: 13;
     logoUrl: "https://assets.oku.trade/chains/telos-logo.svg";
+    deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {};
@@ -7360,6 +7394,7 @@ declare const tronShasta: Readonly<{
     sortIndex: 15;
     blockAid: "";
     logoUrl: "https://assets.oku.trade/chains/tron.png";
+    deprecated: false;
     safeReorgDistance: 90000;
     externalId: {};
     markets: {};
@@ -7450,6 +7485,7 @@ declare const unichain: Readonly<{
     transactionType: "eip1559";
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/chains/unichain-logo.svg";
+    deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "unichain";
     externalId: {
@@ -7856,6 +7892,7 @@ declare const worldchain: Readonly<{
     transactionType: "eip1559";
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/chains/world-logo.png";
+    deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {
@@ -8268,6 +8305,7 @@ declare const xdc: Readonly<{
     transactionType: "legacy";
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/chains/xdc-logo.png";
+    deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {};
@@ -8376,6 +8414,7 @@ declare const polygonZkEvm: Readonly<{
     transactionType: "legacy";
     blockTimeSeconds: 7;
     logoUrl: "https://assets.oku.trade/chains/zkevm-logo.svg";
+    deprecated: true;
     safeReorgDistance: 90000;
     blockAid: "";
     morpho: {};
@@ -8510,6 +8549,7 @@ declare const zkSync: Readonly<{
     launchTime: 1696514400;
     transactionType: "eip1559";
     logoUrl: "https://assets.oku.trade/chains/zksync-logo.svg";
+    deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "zksync";
     morpho: {};
@@ -9206,6 +9246,7 @@ interface IChainInfo<formatters extends ChainFormatters | undefined = ChainForma
     morpho: MorphoMetadata;
     token: TokenMetadata;
     oku: OkuMetadata;
+    deprecated: boolean;
     contracts: {
         [key: string]: ChainContract | {
             [chainId: number]: ChainContract;
@@ -9228,6 +9269,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     sortIndex: 1;
     blockTimeSeconds: 0.25;
     logoUrl: "https://assets.oku.trade/chains/arbitrum-logo.svg";
+    deprecated: false;
     safeReorgDistance: number;
     blockAid: "arbitrum";
     morpho: {};
@@ -9421,6 +9463,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     transactionType: "eip1559";
     blockTimeSeconds: 2;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/base-logo.svg";
+    deprecated: false;
     blockAid: "base";
     defaultPool: "0xd0b53d9277642d899df5c87a3966a349a798f224";
     defaultToken0: "0x4200000000000000000000000000000000000006";
@@ -9879,6 +9922,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     sortIndex: 11;
     blockTimeSeconds: 2;
     logoUrl: "https://assets.oku.trade/chains/boba-logo.svg";
+    deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {
@@ -10006,6 +10050,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     transactionType: "eip1559";
     sortIndex: 14;
     logoUrl: "https://assets.oku.trade/chains/blast-logo.svg";
+    deprecated: true;
     safeReorgDistance: 90000;
     blockAid: "blast";
     externalId: {
@@ -10407,6 +10452,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     sortIndex: 9;
     blockTimeSeconds: 3;
     logoUrl: "https://assets.oku.trade/chains/bsc-logo.svg";
+    deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "bsc";
     externalId: {
@@ -10600,6 +10646,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         };
     };
     logoUrl: "https://assets.oku.trade/chains/filecoin-logo.svg";
+    deprecated: false;
     externalId: {};
     markets: {};
     bridges: {};
@@ -10712,6 +10759,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     blockTimeSeconds: 15;
     safeReorgDistance: 90000;
     logoUrl: "https://assets.oku.trade/chains/ethereum-logo.webp";
+    deprecated: false;
     blockAid: "ethereum";
     morpho: {
         deployBlock: number;
@@ -10916,6 +10964,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     transactionType: "eip1559";
     blockTimeSeconds: 30;
     logoUrl: "https://assets.oku.trade/chains/moonbeam-logo.svg";
+    deprecated: true;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {
@@ -11055,6 +11104,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     transactionType: "eip1559";
     sortIndex: 2;
     logoUrl: "https://assets.oku.trade/chains/optimism-logo.svg";
+    deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "optimism";
     externalId: {
@@ -11519,6 +11569,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     transactionType: "eip1559";
     sortIndex: 3;
     logoUrl: "https://assets.oku.trade/chains/polygon-logo.webp";
+    deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "polygon";
     externalId: {
@@ -11706,6 +11757,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     blockTimeSeconds: 33;
     logoUrl: "https://assets.oku.trade/chains/rootstock-logo.svg";
+    deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {};
@@ -11846,6 +11898,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     transactionType: "eip1559";
     blockTimeSeconds: 3;
     logoUrl: "https://assets.oku.trade/chains/scroll-logo.png";
+    deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "scroll";
     externalId: {
@@ -12002,6 +12055,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     transactionType: "legacy";
     blockTimeSeconds: 7;
     logoUrl: "https://assets.oku.trade/chains/zkevm-logo.svg";
+    deprecated: true;
     safeReorgDistance: 90000;
     blockAid: "";
     morpho: {};
@@ -12133,6 +12187,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     launchTime: 1696514400;
     transactionType: "eip1559";
     logoUrl: "https://assets.oku.trade/chains/zksync-logo.svg";
+    deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "zksync";
     morpho: {};
@@ -12650,6 +12705,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     blockTimeSeconds: 2;
     sortIndex: 13;
     logoUrl: "https://assets.oku.trade/chains/manta-logo.png";
+    deprecated: true;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {};
@@ -12777,6 +12833,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     sortIndex: 15;
     morpho: {};
     logoUrl: "https://assets.oku.trade/chains/linea-logo.svg";
+    deprecated: false;
     safeReorgDistance: 100;
     blockAid: "linea";
     externalId: {
@@ -12940,6 +12997,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     transactionType: "eip1559";
     sortIndex: 4;
     logoUrl: "https://assets.oku.trade/chains/taiko-logo.svg";
+    deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {
@@ -13084,6 +13142,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     transactionType: "eip1559";
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/chains/mantle-logo.png";
+    deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {
@@ -13228,6 +13287,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     transactionType: "eip1559";
     sortIndex: 5;
     logoUrl: "https://assets.oku.trade/chains/sei-logo.svg";
+    deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {
@@ -13387,6 +13447,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     transactionType: "eip1559";
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/chains/lisk-logo.png";
+    deprecated: true;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {
@@ -13763,6 +13824,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     transactionType: "eip1559";
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/chains/bob-logo.svg";
+    deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {
@@ -14161,6 +14223,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     sortIndex: 18;
     blockAid: "";
     logoUrl: "https://assets.oku.trade/chains/gnosis-logo.png";
+    deprecated: false;
     safeReorgDistance: 90000;
     morpho: {};
     externalId: {
@@ -14327,6 +14390,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     transactionType: "eip1559";
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/chains/metal-logo.png";
+    deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {};
@@ -14697,6 +14761,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     transactionType: "eip1559";
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/chains/corn-logo.png";
+    deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {
@@ -14822,6 +14887,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     transactionType: "eip1559";
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/chains/sonic-logo.svg";
+    deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
     morpho: {};
@@ -14969,6 +15035,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     transactionType: "eip1559";
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/chains/celo-logo.svg";
+    deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {};
@@ -15913,6 +15980,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     transactionType: "eip1559";
     sortIndex: 13;
     logoUrl: "https://assets.oku.trade/chains/hemi-logo.svg";
+    deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {};
@@ -16040,6 +16108,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     transactionType: "legacy";
     sortIndex: 13;
     logoUrl: "https://assets.oku.trade/chains/telos-logo.svg";
+    deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {};
@@ -16171,6 +16240,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     transactionType: "legacy";
     sortIndex: 13;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/saga-logo.png";
+    deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {};
@@ -16282,6 +16352,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     transactionType: "eip1559";
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/chains/goat-logo.svg";
+    deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {};
@@ -16396,6 +16467,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     transactionType: "eip1559";
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/chains/redbelly-logo.svg";
+    deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {};
@@ -16503,6 +16575,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     transactionType: "legacy";
     sortIndex: 13;
     logoUrl: "https://assets.oku.trade/chains/lightlink-logo.svg";
+    deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
     morpho: {};
@@ -16626,6 +16699,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     transactionType: "eip1559";
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/chains/world-logo.png";
+    deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {
@@ -17032,6 +17106,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     transactionType: "legacy";
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/chains/xdc-logo.png";
+    deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {};
@@ -17140,6 +17215,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     sortIndex: 15;
     blockAid: "";
     logoUrl: "https://assets.oku.trade/chains/tron.png";
+    deprecated: false;
     safeReorgDistance: 90000;
     externalId: {};
     markets: {};
@@ -17228,6 +17304,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     sortIndex: 15;
     blockAid: "";
     logoUrl: "https://assets.oku.trade/chains/lens-logo.png";
+    deprecated: false;
     safeReorgDistance: 90000;
     externalId: {
         tenderly: string;
@@ -17340,6 +17417,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     transactionType: "eip1559";
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/chains/nibiru-logo.svg";
+    deprecated: false;
     safeReorgDistance: 90000;
     externalId: {};
     blockAid: "";
@@ -17449,6 +17527,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     transactionType: "eip1559";
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/chains/etherlink-logo.png";
+    deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {
@@ -17583,6 +17662,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     transactionType: "eip1559";
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/chains/unichain-logo.svg";
+    deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "unichain";
     externalId: {
@@ -17985,6 +18065,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     sortIndex: 15;
     blockAid: "";
     logoUrl: "https://cms.oku.trade/cdn/public/chains/matchain-logo.svg";
+    deprecated: false;
     safeReorgDistance: 90000;
     externalId: {};
     markets: {};

@@ -14,6 +14,7 @@ export const xdc = makeConfig({
 	transactionType: "legacy",
 	sortIndex: 15,
 	logoUrl: "https://assets.oku.trade/chains/xdc-logo.png",
+	deprecated: false,
 	safeReorgDistance: 90000,
 	blockAid: "",
 	externalId: {},

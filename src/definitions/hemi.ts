@@ -8,6 +8,7 @@ export const hemi = makeConfig({
 	transactionType: "eip1559",
 	sortIndex: 13,
 	logoUrl: "https://assets.oku.trade/chains/hemi-logo.svg",
+	deprecated: false,
 	safeReorgDistance: 90000,
 	blockAid: "",
 	externalId: {},

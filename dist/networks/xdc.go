@@ -7,6 +7,7 @@ import (
 var Xdc Network = Network{
 	ChainId:           50,
 	LogoUrl:           "https://assets.oku.trade/chains/xdc-logo.png",
+	Deprecated:        false,
 	SortIndex:         15,
 	LaunchTime:        1746453600,
 	SafeReorgDistance: 90000,

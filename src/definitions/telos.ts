@@ -8,6 +8,7 @@ export const telos = makeConfig({
 	transactionType: "legacy",
 	sortIndex: 13,
 	logoUrl: "https://assets.oku.trade/chains/telos-logo.svg",
+	deprecated: false,
 	safeReorgDistance: 90000,
 	blockAid: "",
 	externalId: {},
