@@ -14,69 +14,59 @@ var ErrNetworkNotFound = errors.New("chain not found")
 type InternalName string
 
 const (
-	NameArbitrum     InternalName = "arbitrum"
-	NameBase         InternalName = "base"
-	NameBoba         InternalName = "boba"
-	NameBlast        InternalName = "blast"
-	NameBsc          InternalName = "bsc"
-	NameFilecoin     InternalName = "filecoin"
-	NameEthereum     InternalName = "ethereum"
-	NameMoonbeam     InternalName = "moonbeam"
-	NameOptimism     InternalName = "optimism"
-	NamePolygon      InternalName = "polygon"
-	NameRootstock    InternalName = "rootstock"
-	NameScroll       InternalName = "scroll"
-	NamePolygonZkevm InternalName = "polygon-zkevm"
-	NameZksync       InternalName = "zksync"
-	NameManta        InternalName = "manta"
-	NameLinea        InternalName = "linea"
-	NameTaiko        InternalName = "taiko"
-	NameMantle       InternalName = "mantle"
-	NameSei          InternalName = "sei"
-	NameLisk         InternalName = "lisk"
-	NameBob          InternalName = "bob"
-	NameGnosis       InternalName = "gnosis"
-	NameMetal        InternalName = "metal"
-	NameCorn         InternalName = "corn"
-	NameSonic        InternalName = "sonic"
-	NameCelo         InternalName = "celo"
-	NameHemi         InternalName = "hemi"
-	NameTelos        InternalName = "telos"
-	NameSaga         InternalName = "saga"
-	NameGoat         InternalName = "goat"
-	NameRedbelly     InternalName = "redbelly"
-	NameLightlink    InternalName = "lightlink"
-	NameWorldchain   InternalName = "worldchain"
-	NameXdc          InternalName = "xdc"
-	NameTronshasta   InternalName = "tronshasta"
-	NameLens         InternalName = "lens"
-	NameNibiru       InternalName = "nibiru"
-	NameEtherlink    InternalName = "etherlink"
-	NameUnichain     InternalName = "unichain"
-	NameMatchain     InternalName = "matchain"
+	NameArbitrum   InternalName = "arbitrum"
+	NameBase       InternalName = "base"
+	NameBoba       InternalName = "boba"
+	NameBsc        InternalName = "bsc"
+	NameFilecoin   InternalName = "filecoin"
+	NameEthereum   InternalName = "ethereum"
+	NameOptimism   InternalName = "optimism"
+	NamePolygon    InternalName = "polygon"
+	NameRootstock  InternalName = "rootstock"
+	NameScroll     InternalName = "scroll"
+	NameZksync     InternalName = "zksync"
+	NameLinea      InternalName = "linea"
+	NameTaiko      InternalName = "taiko"
+	NameMantle     InternalName = "mantle"
+	NameSei        InternalName = "sei"
+	NameBob        InternalName = "bob"
+	NameGnosis     InternalName = "gnosis"
+	NameMetal      InternalName = "metal"
+	NameCorn       InternalName = "corn"
+	NameSonic      InternalName = "sonic"
+	NameCelo       InternalName = "celo"
+	NameHemi       InternalName = "hemi"
+	NameTelos      InternalName = "telos"
+	NameSaga       InternalName = "saga"
+	NameGoat       InternalName = "goat"
+	NameRedbelly   InternalName = "redbelly"
+	NameLightlink  InternalName = "lightlink"
+	NameWorldchain InternalName = "worldchain"
+	NameXdc        InternalName = "xdc"
+	NameTronshasta InternalName = "tronshasta"
+	NameLens       InternalName = "lens"
+	NameNibiru     InternalName = "nibiru"
+	NameEtherlink  InternalName = "etherlink"
+	NameUnichain   InternalName = "unichain"
+	NameMatchain   InternalName = "matchain"
 )
 
 var AllNetworks = []Network{
 	Arbitrum,
 	Base,
 	Boba,
-	Blast,
 	Bsc,
 	Filecoin,
 	Ethereum,
-	Moonbeam,
 	Optimism,
 	Polygon,
 	Rootstock,
 	Scroll,
-	PolygonZkevm,
 	Zksync,
-	Manta,
 	Linea,
 	Taiko,
 	Mantle,
 	Sei,
-	Lisk,
 	Bob,
 	Gnosis,
 	Metal,
@@ -100,69 +90,59 @@ var AllNetworks = []Network{
 }
 
 var networksByName = map[string]Network{
-	"arbitrum":      Arbitrum,
-	"base":          Base,
-	"boba":          Boba,
-	"blast":         Blast,
-	"bsc":           Bsc,
-	"filecoin":      Filecoin,
-	"ethereum":      Ethereum,
-	"moonbeam":      Moonbeam,
-	"optimism":      Optimism,
-	"polygon":       Polygon,
-	"rootstock":     Rootstock,
-	"scroll":        Scroll,
-	"polygon-zkevm": PolygonZkevm,
-	"zksync":        Zksync,
-	"manta":         Manta,
-	"linea":         Linea,
-	"taiko":         Taiko,
-	"mantle":        Mantle,
-	"sei":           Sei,
-	"lisk":          Lisk,
-	"bob":           Bob,
-	"gnosis":        Gnosis,
-	"metal":         Metal,
-	"corn":          Corn,
-	"sonic":         Sonic,
-	"celo":          Celo,
-	"hemi":          Hemi,
-	"telos":         Telos,
-	"saga":          Saga,
-	"goat":          Goat,
-	"redbelly":      Redbelly,
-	"lightlink":     Lightlink,
-	"worldchain":    Worldchain,
-	"xdc":           Xdc,
-	"tronshasta":    Tronshasta,
-	"lens":          Lens,
-	"nibiru":        Nibiru,
-	"etherlink":     Etherlink,
-	"unichain":      Unichain,
-	"matchain":      Matchain,
+	"arbitrum":   Arbitrum,
+	"base":       Base,
+	"boba":       Boba,
+	"bsc":        Bsc,
+	"filecoin":   Filecoin,
+	"ethereum":   Ethereum,
+	"optimism":   Optimism,
+	"polygon":    Polygon,
+	"rootstock":  Rootstock,
+	"scroll":     Scroll,
+	"zksync":     Zksync,
+	"linea":      Linea,
+	"taiko":      Taiko,
+	"mantle":     Mantle,
+	"sei":        Sei,
+	"bob":        Bob,
+	"gnosis":     Gnosis,
+	"metal":      Metal,
+	"corn":       Corn,
+	"sonic":      Sonic,
+	"celo":       Celo,
+	"hemi":       Hemi,
+	"telos":      Telos,
+	"saga":       Saga,
+	"goat":       Goat,
+	"redbelly":   Redbelly,
+	"lightlink":  Lightlink,
+	"worldchain": Worldchain,
+	"xdc":        Xdc,
+	"tronshasta": Tronshasta,
+	"lens":       Lens,
+	"nibiru":     Nibiru,
+	"etherlink":  Etherlink,
+	"unichain":   Unichain,
+	"matchain":   Matchain,
 }
 
 var networksById = map[int]Network{
 	42161:      Arbitrum,
 	8453:       Base,
 	288:        Boba,
-	81457:      Blast,
 	56:         Bsc,
 	314:        Filecoin,
 	1:          Ethereum,
-	1284:       Moonbeam,
 	10:         Optimism,
 	137:        Polygon,
 	30:         Rootstock,
 	534352:     Scroll,
-	1101:       PolygonZkevm,
 	324:        Zksync,
-	169:        Manta,
 	59144:      Linea,
 	167000:     Taiko,
 	5000:       Mantle,
 	1329:       Sei,
-	1135:       Lisk,
 	60808:      Bob,
 	100:        Gnosis,
 	1750:       Metal,
