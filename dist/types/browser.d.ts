@@ -490,16 +490,16 @@ declare const base: Readonly<{
                 r: import("viem").Hex;
                 s: import("viem").Hex;
                 v: bigint;
+                value: bigint;
+                gas: bigint;
                 to: import("abitype").Address | null;
                 from: import("abitype").Address;
-                gas: bigint;
                 nonce: number;
-                value: bigint;
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
+                transactionIndex: number | null;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
-                transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 accessList?: undefined | undefined;
                 authorizationList?: undefined | undefined;
@@ -896,16 +896,16 @@ declare const blast: Readonly<{
                 r: import("viem").Hex;
                 s: import("viem").Hex;
                 v: bigint;
+                value: bigint;
+                gas: bigint;
                 to: import("abitype").Address | null;
                 from: import("abitype").Address;
-                gas: bigint;
                 nonce: number;
-                value: bigint;
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
+                transactionIndex: number | null;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
-                transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 accessList?: undefined | undefined;
                 authorizationList?: undefined | undefined;
@@ -1302,16 +1302,16 @@ declare const bob: Readonly<{
                 r: import("viem").Hex;
                 s: import("viem").Hex;
                 v: bigint;
+                value: bigint;
+                gas: bigint;
                 to: import("abitype").Address | null;
                 from: import("abitype").Address;
-                gas: bigint;
                 nonce: number;
-                value: bigint;
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
+                transactionIndex: number | null;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
-                transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 accessList?: undefined | undefined;
                 authorizationList?: undefined | undefined;
@@ -1761,7 +1761,7 @@ declare const bsc: Readonly<{
             readonly apiUrl: "https://api.bscscan.com/api";
         };
     };
-    blockTime?: number | undefined | undefined | undefined;
+    blockTime: 750;
     ensTlds?: readonly string[] | undefined;
     id: 56;
     nativeCurrency: {
@@ -1956,16 +1956,16 @@ declare const celo: Readonly<{
                 r: import("viem").Hex;
                 s: import("viem").Hex;
                 v: bigint;
+                value: bigint;
+                gas: bigint;
                 to: import("abitype").Address | null;
                 from: import("abitype").Address;
-                gas: bigint;
                 nonce: number;
-                value: bigint;
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
+                transactionIndex: number | null;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
-                transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 accessList?: undefined | undefined;
                 authorizationList?: undefined | undefined;
@@ -2218,8 +2218,8 @@ declare const celo: Readonly<{
                 maxFeePerBlobGas?: undefined | undefined;
                 maxFeePerGas?: undefined | undefined;
                 maxPriorityFeePerGas?: undefined | undefined;
-                blobs?: undefined;
                 accessList?: undefined;
+                blobs?: undefined;
                 blobVersionedHashes?: undefined;
                 kzg?: undefined;
                 sidecars?: undefined;
@@ -2266,10 +2266,10 @@ declare const celo: Readonly<{
             } | {
                 type?: "0x3" | undefined;
                 data?: `0x${string}` | undefined;
-                from?: `0x${string}` | undefined;
-                gas?: `0x${string}` | undefined;
-                nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
+                gas?: `0x${string}` | undefined;
+                from?: `0x${string}` | undefined;
+                nonce?: `0x${string}` | undefined;
                 to: `0x${string}` | null;
                 gasPrice?: undefined | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
@@ -2283,17 +2283,17 @@ declare const celo: Readonly<{
                 authorizationList?: undefined;
                 feeCurrency?: `0x${string}` | undefined;
             } | {
-                type?: "0x4" | undefined;
                 gasPrice?: undefined | undefined;
                 maxFeePerBlobGas?: undefined | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
-                to?: `0x${string}` | null | undefined;
+                type?: "0x4" | undefined;
                 data?: `0x${string}` | undefined;
-                from?: `0x${string}` | undefined;
-                gas?: `0x${string}` | undefined;
-                nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
+                gas?: `0x${string}` | undefined;
+                to?: `0x${string}` | null | undefined;
+                from?: `0x${string}` | undefined;
+                nonce?: `0x${string}` | undefined;
                 accessList?: import("viem").AccessList | undefined;
                 authorizationList?: import("viem").RpcAuthorizationList | undefined;
                 blobs?: undefined;
@@ -2366,16 +2366,16 @@ declare const celo: Readonly<{
                 r: import("viem").Hex;
                 s: import("viem").Hex;
                 v: bigint;
+                value: bigint;
+                gas: bigint;
                 to: import("abitype").Address | null;
                 from: import("abitype").Address;
-                gas: bigint;
                 nonce: number;
-                value: bigint;
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
+                transactionIndex: number | null;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
-                transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 accessList?: undefined | undefined;
                 authorizationList?: undefined | undefined;
@@ -2628,8 +2628,8 @@ declare const celo: Readonly<{
                 maxFeePerBlobGas?: undefined | undefined;
                 maxFeePerGas?: undefined | undefined;
                 maxPriorityFeePerGas?: undefined | undefined;
-                blobs?: undefined;
                 accessList?: undefined;
+                blobs?: undefined;
                 blobVersionedHashes?: undefined;
                 kzg?: undefined;
                 sidecars?: undefined;
@@ -2676,10 +2676,10 @@ declare const celo: Readonly<{
             } | {
                 type?: "0x3" | undefined;
                 data?: `0x${string}` | undefined;
-                from?: `0x${string}` | undefined;
-                gas?: `0x${string}` | undefined;
-                nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
+                gas?: `0x${string}` | undefined;
+                from?: `0x${string}` | undefined;
+                nonce?: `0x${string}` | undefined;
                 to: `0x${string}` | null;
                 gasPrice?: undefined | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
@@ -2693,17 +2693,17 @@ declare const celo: Readonly<{
                 authorizationList?: undefined;
                 feeCurrency?: `0x${string}` | undefined;
             } | {
-                type?: "0x4" | undefined;
                 gasPrice?: undefined | undefined;
                 maxFeePerBlobGas?: undefined | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
-                to?: `0x${string}` | null | undefined;
+                type?: "0x4" | undefined;
                 data?: `0x${string}` | undefined;
-                from?: `0x${string}` | undefined;
-                gas?: `0x${string}` | undefined;
-                nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
+                gas?: `0x${string}` | undefined;
+                to?: `0x${string}` | null | undefined;
+                from?: `0x${string}` | undefined;
+                nonce?: `0x${string}` | undefined;
                 accessList?: import("viem").AccessList | undefined;
                 authorizationList?: import("viem").RpcAuthorizationList | undefined;
                 blobs?: undefined;
@@ -2981,7 +2981,7 @@ declare const etherlink: Readonly<{
             readonly url: "https://explorer.etherlink.com";
         };
     };
-    blockTime?: number | undefined | undefined | undefined;
+    blockTime: 4830;
     ensTlds?: readonly string[] | undefined;
     id: 42793;
     name: "Etherlink";
@@ -3530,7 +3530,7 @@ declare const hemi: Readonly<{
         };
         ensRegistry?: import("viem").ChainContract | undefined;
         ensUniversalResolver?: import("viem").ChainContract | undefined;
-        universalSignatureVerifier?: import("viem").ChainContract | undefined;
+        erc6492Verifier?: import("viem").ChainContract | undefined;
     };
     blockExplorers: {
         readonly default: {
@@ -3538,7 +3538,7 @@ declare const hemi: Readonly<{
             readonly url: "https://explorer.hemi.xyz";
         };
     };
-    blockTime?: number | undefined | undefined | undefined;
+    blockTime: 12000;
     ensTlds?: readonly string[] | undefined;
     id: 43111;
     name: "Hemi";
@@ -3648,7 +3648,7 @@ declare const lens: Readonly<{
         };
         ensRegistry?: import("viem").ChainContract | undefined;
         ensUniversalResolver?: import("viem").ChainContract | undefined;
-        universalSignatureVerifier?: import("viem").ChainContract | undefined;
+        erc6492Verifier?: import("viem").ChainContract | undefined;
     };
     blockExplorers: {
         readonly default: {
@@ -3939,8 +3939,8 @@ declare const linea: Readonly<{
             readonly blockCreated: 6682888;
         };
         ensUniversalResolver: {
-            readonly address: "0x3aA974fb3f8C1E02796048BDCdeD79e9D53a6965";
-            readonly blockCreated: 6683000;
+            readonly address: "0x4D41762915F83c76EcaF6776d9b08076aA32b492";
+            readonly blockCreated: 22222151;
         };
     };
     blockExplorers: {
@@ -4191,16 +4191,16 @@ declare const lisk: Readonly<{
                 r: import("viem").Hex;
                 s: import("viem").Hex;
                 v: bigint;
+                value: bigint;
+                gas: bigint;
                 to: import("abitype").Address | null;
                 from: import("abitype").Address;
-                gas: bigint;
                 nonce: number;
-                value: bigint;
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
+                transactionIndex: number | null;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
-                transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 accessList?: undefined | undefined;
                 authorizationList?: undefined | undefined;
@@ -4539,12 +4539,9 @@ declare const mainnet: Readonly<{
         multicall3: {
             address: "0xcA11bde05977b3631167028862bE2a173976CA11";
         };
-        ensRegistry: {
-            readonly address: "0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e";
-        };
         ensUniversalResolver: {
-            readonly address: "0xce01f8eee7E479C928F8919abD53E553a36CeF67";
-            readonly blockCreated: 19258213;
+            readonly address: "0xeeeeeeee14d718c2b47d9923deab1335e144eeee";
+            readonly blockCreated: 23085558;
         };
     };
     blockExplorers: {
@@ -4554,7 +4551,7 @@ declare const mainnet: Readonly<{
             readonly apiUrl: "https://api.etherscan.io/api";
         };
     };
-    blockTime?: number | undefined | undefined | undefined;
+    blockTime: 12000;
     ensTlds?: readonly string[] | undefined;
     id: 1;
     name: "Ethereum";
@@ -4925,7 +4922,7 @@ declare const matchain: Readonly<{
         };
         ensRegistry?: import("viem").ChainContract | undefined;
         ensUniversalResolver?: import("viem").ChainContract | undefined;
-        universalSignatureVerifier?: import("viem").ChainContract | undefined;
+        erc6492Verifier?: import("viem").ChainContract | undefined;
     };
     blockExplorers: {
         readonly default: {
@@ -5162,16 +5159,16 @@ declare const metal: Readonly<{
                 r: import("viem").Hex;
                 s: import("viem").Hex;
                 v: bigint;
+                value: bigint;
+                gas: bigint;
                 to: import("abitype").Address | null;
                 from: import("abitype").Address;
-                gas: bigint;
                 nonce: number;
-                value: bigint;
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
+                transactionIndex: number | null;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
-                transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 accessList?: undefined | undefined;
                 authorizationList?: undefined | undefined;
@@ -5892,16 +5889,16 @@ declare const optimism: Readonly<{
                 r: import("viem").Hex;
                 s: import("viem").Hex;
                 v: bigint;
+                value: bigint;
+                gas: bigint;
                 to: import("abitype").Address | null;
                 from: import("abitype").Address;
-                gas: bigint;
                 nonce: number;
-                value: bigint;
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
+                transactionIndex: number | null;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
-                transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 accessList?: undefined | undefined;
                 authorizationList?: undefined | undefined;
@@ -6063,6 +6060,109 @@ declare const optimism: Readonly<{
     serializers: {
         readonly transaction: typeof import("viem/chains").serializeTransactionOpStack;
     };
+}>;
+declare const plasma: Readonly<{
+    name: "Plasma";
+    blockTimeSeconds: 1;
+    launchTime: 1758588527;
+    transactionType: "eip1559";
+    sortIndex: 15;
+    logoUrl: "https://assets.oku.trade/chains/plasma-logo.svg";
+    deprecated: false;
+    safeReorgDistance: 90000;
+    blockAid: "";
+    externalId: {};
+    markets: {};
+    bridges: {};
+    oracles: {};
+    morpho: {};
+    initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
+    uniswap: {
+        deployBlock: number;
+        poolFactory: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D";
+        permit2: "0x000000000022D473030F116dDEE9F6B43aC78BA3";
+        multicall2: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435";
+        tickLens: "0xB3309C48F8407651D918ca3Da4C45DE40109E641";
+        nonfungiblePositionManager: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c";
+        positionsNFT: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c";
+        positionsNFTDeployBlock: number;
+        universalRouter: "0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc";
+        wrappedNativeAddress: "0x6100E367285b01F48D07953803A2d8dCA5D19873";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
+        nativeCurrencyName: string;
+    };
+    token: {
+        wethAddress: "0x6100E367285b01F48D07953803A2d8dCA5D19873";
+    };
+    oku: {
+        limitOrderRegistry: "0x9db70E29712Cc8Af10c2B597BaDA6784544FF407";
+        limitOrderRegistryDeployBlock: number;
+        pricing: {
+            nativeWrappedToken: "0x6100E367285b01F48D07953803A2d8dCA5D19873";
+            nativeWrappedName: string;
+        };
+    };
+    defaultPool: "0x0000000000000000000000000000000000000000";
+    defaultToken0: "0x6100E367285b01F48D07953803A2d8dCA5D19873";
+    defaultToken1: "0x0000000000000000000000000000000000000000";
+    tokenList: {
+        symbol: string;
+        address: "0x6100E367285b01F48D07953803A2d8dCA5D19873";
+    }[];
+    stables: never[];
+    watchlist: never[];
+    internalName: "plasma";
+    nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/xpl.png";
+    contracts: {
+        limitOrder: {
+            address: "0x9db70E29712Cc8Af10c2B597BaDA6784544FF407";
+        };
+        nftManager: {
+            address: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c";
+        };
+        weth9: {
+            address: "0x6100E367285b01F48D07953803A2d8dCA5D19873";
+        };
+        multicall2: {
+            address: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435";
+        };
+        multicall3: {
+            address: "0xcA11bde05977b3631167028862bE2a173976CA11";
+        };
+        ensRegistry?: import("viem").ChainContract | undefined;
+        ensUniversalResolver?: import("viem").ChainContract | undefined;
+        erc6492Verifier?: import("viem").ChainContract | undefined;
+    };
+    blockExplorers: {
+        readonly default: {
+            readonly name: "PlasmaScan";
+            readonly url: "https://plasmascan.to";
+        };
+    };
+    blockTime?: number | undefined | undefined | undefined;
+    ensTlds?: readonly string[] | undefined;
+    id: 9745;
+    nativeCurrency: {
+        readonly name: "Plasma";
+        readonly symbol: "XPL";
+        readonly decimals: 18;
+    };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
+    rpcUrls: {
+        readonly default: {
+            readonly http: readonly [
+                "https://rpc.plasma.to"
+            ];
+        };
+    };
+    sourceId?: number | undefined | undefined | undefined;
+    testnet?: boolean | undefined | undefined | undefined;
+    custom?: Record<string, unknown> | undefined;
+    fees?: import("viem").ChainFees<undefined> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>;
 declare const polygon: Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
@@ -6333,7 +6433,7 @@ declare const redbelly: Readonly<{
         };
         ensRegistry?: import("viem").ChainContract | undefined;
         ensUniversalResolver?: import("viem").ChainContract | undefined;
-        universalSignatureVerifier?: import("viem").ChainContract | undefined;
+        erc6492Verifier?: import("viem").ChainContract | undefined;
     };
     blockExplorers: {
         readonly default: {
@@ -7078,7 +7178,7 @@ declare const sonic: Readonly<{
             readonly url: "https://sonicscan.org";
         };
     };
-    blockTime?: number | undefined | undefined | undefined;
+    blockTime: 630;
     ensTlds?: readonly string[] | undefined;
     id: 146;
     name: "Sonic";
@@ -7447,7 +7547,7 @@ declare const tronShasta: Readonly<{
         };
         ensRegistry?: import("viem").ChainContract | undefined;
         ensUniversalResolver?: import("viem").ChainContract | undefined;
-        universalSignatureVerifier?: import("viem").ChainContract | undefined;
+        erc6492Verifier?: import("viem").ChainContract | undefined;
     };
     blockExplorers: {
         readonly default: {
@@ -7628,7 +7728,7 @@ declare const unichain: Readonly<{
             readonly apiUrl: "https://api.uniscan.xyz/api";
         };
     };
-    blockTime: 2000;
+    blockTime: 1000;
     ensTlds?: readonly string[] | undefined;
     id: 130;
     nativeCurrency: {
@@ -7714,16 +7814,16 @@ declare const unichain: Readonly<{
                 r: import("viem").Hex;
                 s: import("viem").Hex;
                 v: bigint;
+                value: bigint;
+                gas: bigint;
                 to: import("abitype").Address | null;
                 from: import("abitype").Address;
-                gas: bigint;
                 nonce: number;
-                value: bigint;
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
+                transactionIndex: number | null;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
-                transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 accessList?: undefined | undefined;
                 authorizationList?: undefined | undefined;
@@ -8120,16 +8220,16 @@ declare const worldchain: Readonly<{
                 r: import("viem").Hex;
                 s: import("viem").Hex;
                 v: bigint;
+                value: bigint;
+                gas: bigint;
                 to: import("viem").Address | null;
                 from: import("viem").Address;
-                gas: bigint;
                 nonce: number;
-                value: bigint;
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
+                transactionIndex: number | null;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
-                transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 accessList?: undefined | undefined;
                 authorizationList?: undefined | undefined;
@@ -8660,7 +8760,7 @@ declare const zkSync: Readonly<{
         multicall3: {
             address: "0xF9cda624FBC7e059355ce98a31693d299FACd963";
         };
-        universalSignatureVerifier: {
+        erc6492Verifier: {
             readonly address: "0xfB688330379976DA81eB64Fe4BF50d7401763B9C";
             readonly blockCreated: 45659388;
         };
@@ -8735,16 +8835,16 @@ declare const zkSync: Readonly<{
                 r: import("viem").Hex;
                 s: import("viem").Hex;
                 v: bigint;
+                value: bigint;
+                gas: bigint;
                 to: import("abitype").Address | null;
                 from: import("abitype").Address;
-                gas: bigint;
                 nonce: number;
-                value: bigint;
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
+                transactionIndex: number | null;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
-                transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 accessList?: undefined | undefined;
                 authorizationList?: undefined | undefined;
@@ -8919,18 +9019,18 @@ declare const zkSync: Readonly<{
             exclude: [
             ] | undefined;
             format: (args: import("viem/chains").ZkSyncRpcTransactionReceipt) => {
-                type: import("viem/chains").ZkSyncTransactionType;
                 contractAddress: import("abitype").Address | null | undefined;
+                type: import("viem/chains").ZkSyncTransactionType;
+                status: "success" | "reverted";
                 to: import("abitype").Address | null;
                 from: import("abitype").Address;
                 blockHash: import("viem").Hash;
                 blockNumber: bigint;
+                transactionHash: import("viem").Hash;
                 transactionIndex: number;
-                status: "success" | "reverted";
                 logsBloom: import("viem").Hex;
                 blobGasUsed?: bigint | undefined;
                 gasUsed: bigint;
-                transactionHash: import("viem").Hash;
                 blobGasPrice?: bigint | undefined;
                 cumulativeGasUsed: bigint;
                 effectiveGasPrice: bigint;
@@ -8956,8 +9056,8 @@ declare const zkSync: Readonly<{
                 maxFeePerBlobGas?: undefined | undefined;
                 maxFeePerGas?: undefined | undefined;
                 maxPriorityFeePerGas?: undefined | undefined;
-                blobs?: undefined;
                 accessList?: undefined;
+                blobs?: undefined;
                 blobVersionedHashes?: undefined;
                 kzg?: undefined;
                 sidecars?: undefined;
@@ -9004,10 +9104,10 @@ declare const zkSync: Readonly<{
             } | {
                 type?: "0x3" | undefined;
                 data?: `0x${string}` | undefined;
-                from?: `0x${string}` | undefined;
-                gas?: `0x${string}` | undefined;
-                nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
+                gas?: `0x${string}` | undefined;
+                from?: `0x${string}` | undefined;
+                nonce?: `0x${string}` | undefined;
                 to: `0x${string}` | null;
                 gasPrice?: undefined | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
@@ -9021,17 +9121,17 @@ declare const zkSync: Readonly<{
                 authorizationList?: undefined;
                 eip712Meta?: undefined | undefined;
             } | {
-                type?: "0x4" | undefined;
                 gasPrice?: undefined | undefined;
                 maxFeePerBlobGas?: undefined | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
-                to?: `0x${string}` | null | undefined;
+                type?: "0x4" | undefined;
                 data?: `0x${string}` | undefined;
-                from?: `0x${string}` | undefined;
-                gas?: `0x${string}` | undefined;
-                nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
+                gas?: `0x${string}` | undefined;
+                to?: `0x${string}` | null | undefined;
+                from?: `0x${string}` | undefined;
+                nonce?: `0x${string}` | undefined;
                 accessList?: import("viem").AccessList | undefined;
                 authorizationList?: import("viem").RpcAuthorizationList | undefined;
                 blobs?: undefined;
@@ -9744,16 +9844,16 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 r: import("viem").Hex;
                 s: import("viem").Hex;
                 v: bigint;
+                value: bigint;
+                gas: bigint;
                 to: import("abitype").Address | null;
                 from: import("abitype").Address;
-                gas: bigint;
                 nonce: number;
-                value: bigint;
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
+                transactionIndex: number | null;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
-                transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 accessList?: undefined | undefined;
                 authorizationList?: undefined | undefined;
@@ -10274,16 +10374,16 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 r: import("viem").Hex;
                 s: import("viem").Hex;
                 v: bigint;
+                value: bigint;
+                gas: bigint;
                 to: import("abitype").Address | null;
                 from: import("abitype").Address;
-                gas: bigint;
                 nonce: number;
-                value: bigint;
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
+                transactionIndex: number | null;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
-                transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 accessList?: undefined | undefined;
                 authorizationList?: undefined | undefined;
@@ -10598,7 +10698,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly apiUrl: "https://api.bscscan.com/api";
         };
     };
-    blockTime?: number | undefined | undefined | undefined;
+    blockTime: 750;
     ensTlds?: readonly string[] | undefined;
     id: 56;
     nativeCurrency: {
@@ -10926,12 +11026,9 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         multicall3: {
             address: "0xcA11bde05977b3631167028862bE2a173976CA11";
         };
-        ensRegistry: {
-            readonly address: "0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e";
-        };
         ensUniversalResolver: {
-            readonly address: "0xce01f8eee7E479C928F8919abD53E553a36CeF67";
-            readonly blockCreated: 19258213;
+            readonly address: "0xeeeeeeee14d718c2b47d9923deab1335e144eeee";
+            readonly blockCreated: 23085558;
         };
     };
     blockExplorers: {
@@ -10941,7 +11038,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly apiUrl: "https://api.etherscan.io/api";
         };
     };
-    blockTime?: number | undefined | undefined | undefined;
+    blockTime: 12000;
     ensTlds?: readonly string[] | undefined;
     id: 1;
     name: "Ethereum";
@@ -11392,16 +11489,16 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 r: import("viem").Hex;
                 s: import("viem").Hex;
                 v: bigint;
+                value: bigint;
+                gas: bigint;
                 to: import("abitype").Address | null;
                 from: import("abitype").Address;
-                gas: bigint;
                 nonce: number;
-                value: bigint;
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
+                transactionIndex: number | null;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
-                transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 accessList?: undefined | undefined;
                 authorizationList?: undefined | undefined;
@@ -12298,7 +12395,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         multicall3: {
             address: "0xF9cda624FBC7e059355ce98a31693d299FACd963";
         };
-        universalSignatureVerifier: {
+        erc6492Verifier: {
             readonly address: "0xfB688330379976DA81eB64Fe4BF50d7401763B9C";
             readonly blockCreated: 45659388;
         };
@@ -12367,16 +12464,16 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 r: import("viem").Hex;
                 s: import("viem").Hex;
                 v: bigint;
+                value: bigint;
+                gas: bigint;
                 to: import("abitype").Address | null;
                 from: import("abitype").Address;
-                gas: bigint;
                 nonce: number;
-                value: bigint;
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
+                transactionIndex: number | null;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
-                transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 accessList?: undefined | undefined;
                 authorizationList?: undefined | undefined;
@@ -12550,18 +12647,18 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         readonly transactionReceipt: {
             exclude: [] | undefined;
             format: (args: import("viem/zksync").ZkSyncRpcTransactionReceipt) => {
-                type: import("viem/zksync").ZkSyncTransactionType;
                 contractAddress: import("abitype").Address | null | undefined;
+                type: import("viem/zksync").ZkSyncTransactionType;
+                status: "success" | "reverted";
                 to: import("abitype").Address | null;
                 from: import("abitype").Address;
                 blockHash: import("viem").Hash;
                 blockNumber: bigint;
+                transactionHash: import("viem").Hash;
                 transactionIndex: number;
-                status: "success" | "reverted";
                 logsBloom: import("viem").Hex;
                 blobGasUsed?: bigint | undefined;
                 gasUsed: bigint;
-                transactionHash: import("viem").Hash;
                 blobGasPrice?: bigint | undefined;
                 cumulativeGasUsed: bigint;
                 effectiveGasPrice: bigint;
@@ -12587,8 +12684,8 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 maxFeePerBlobGas?: undefined | undefined;
                 maxFeePerGas?: undefined | undefined;
                 maxPriorityFeePerGas?: undefined | undefined;
-                blobs?: undefined;
                 accessList?: undefined;
+                blobs?: undefined;
                 blobVersionedHashes?: undefined;
                 kzg?: undefined;
                 sidecars?: undefined;
@@ -12635,10 +12732,10 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             } | {
                 type?: "0x3" | undefined;
                 data?: `0x${string}` | undefined;
-                from?: `0x${string}` | undefined;
-                gas?: `0x${string}` | undefined;
-                nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
+                gas?: `0x${string}` | undefined;
+                from?: `0x${string}` | undefined;
+                nonce?: `0x${string}` | undefined;
                 to: `0x${string}` | null;
                 gasPrice?: undefined | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
@@ -12652,17 +12749,17 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 authorizationList?: undefined;
                 eip712Meta?: undefined | undefined;
             } | {
-                type?: "0x4" | undefined;
                 gasPrice?: undefined | undefined;
                 maxFeePerBlobGas?: undefined | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
-                to?: `0x${string}` | null | undefined;
+                type?: "0x4" | undefined;
                 data?: `0x${string}` | undefined;
-                from?: `0x${string}` | undefined;
-                gas?: `0x${string}` | undefined;
-                nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
+                gas?: `0x${string}` | undefined;
+                to?: `0x${string}` | null | undefined;
+                from?: `0x${string}` | undefined;
+                nonce?: `0x${string}` | undefined;
                 accessList?: import("viem").AccessList | undefined;
                 authorizationList?: import("viem").RpcAuthorizationList | undefined;
                 blobs?: undefined;
@@ -12955,8 +13052,8 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly blockCreated: 6682888;
         };
         ensUniversalResolver: {
-            readonly address: "0x3aA974fb3f8C1E02796048BDCdeD79e9D53a6965";
-            readonly blockCreated: 6683000;
+            readonly address: "0x4D41762915F83c76EcaF6776d9b08076aA32b492";
+            readonly blockCreated: 22222151;
         };
     };
     blockExplorers: {
@@ -13647,16 +13744,16 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 r: import("viem").Hex;
                 s: import("viem").Hex;
                 v: bigint;
+                value: bigint;
+                gas: bigint;
                 to: import("abitype").Address | null;
                 from: import("abitype").Address;
-                gas: bigint;
                 nonce: number;
-                value: bigint;
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
+                transactionIndex: number | null;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
-                transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 accessList?: undefined | undefined;
                 authorizationList?: undefined | undefined;
@@ -14046,16 +14143,16 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 r: import("viem").Hex;
                 s: import("viem").Hex;
                 v: bigint;
+                value: bigint;
+                gas: bigint;
                 to: import("abitype").Address | null;
                 from: import("abitype").Address;
-                gas: bigint;
                 nonce: number;
-                value: bigint;
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
+                transactionIndex: number | null;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
-                transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 accessList?: undefined | undefined;
                 authorizationList?: undefined | undefined;
@@ -14584,16 +14681,16 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 r: import("viem").Hex;
                 s: import("viem").Hex;
                 v: bigint;
+                value: bigint;
+                gas: bigint;
                 to: import("abitype").Address | null;
                 from: import("abitype").Address;
-                gas: bigint;
                 nonce: number;
-                value: bigint;
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
+                transactionIndex: number | null;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
-                transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 accessList?: undefined | undefined;
                 authorizationList?: undefined | undefined;
@@ -15008,7 +15105,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly url: "https://sonicscan.org";
         };
     };
-    blockTime?: number | undefined | undefined | undefined;
+    blockTime: 630;
     ensTlds?: readonly string[] | undefined;
     id: 146;
     name: "Sonic";
@@ -15197,16 +15294,16 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 r: import("viem").Hex;
                 s: import("viem").Hex;
                 v: bigint;
+                value: bigint;
+                gas: bigint;
                 to: import("abitype").Address | null;
                 from: import("abitype").Address;
-                gas: bigint;
                 nonce: number;
-                value: bigint;
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
+                transactionIndex: number | null;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
-                transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 accessList?: undefined | undefined;
                 authorizationList?: undefined | undefined;
@@ -15458,8 +15555,8 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 maxFeePerBlobGas?: undefined | undefined;
                 maxFeePerGas?: undefined | undefined;
                 maxPriorityFeePerGas?: undefined | undefined;
-                blobs?: undefined;
                 accessList?: undefined;
+                blobs?: undefined;
                 blobVersionedHashes?: undefined;
                 kzg?: undefined;
                 sidecars?: undefined;
@@ -15506,10 +15603,10 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             } | {
                 type?: "0x3" | undefined;
                 data?: `0x${string}` | undefined;
-                from?: `0x${string}` | undefined;
-                gas?: `0x${string}` | undefined;
-                nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
+                gas?: `0x${string}` | undefined;
+                from?: `0x${string}` | undefined;
+                nonce?: `0x${string}` | undefined;
                 to: `0x${string}` | null;
                 gasPrice?: undefined | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
@@ -15523,17 +15620,17 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 authorizationList?: undefined;
                 feeCurrency?: `0x${string}` | undefined;
             } | {
-                type?: "0x4" | undefined;
                 gasPrice?: undefined | undefined;
                 maxFeePerBlobGas?: undefined | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
-                to?: `0x${string}` | null | undefined;
+                type?: "0x4" | undefined;
                 data?: `0x${string}` | undefined;
-                from?: `0x${string}` | undefined;
-                gas?: `0x${string}` | undefined;
-                nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
+                gas?: `0x${string}` | undefined;
+                to?: `0x${string}` | null | undefined;
+                from?: `0x${string}` | undefined;
+                nonce?: `0x${string}` | undefined;
                 accessList?: import("viem").AccessList | undefined;
                 authorizationList?: import("viem").RpcAuthorizationList | undefined;
                 blobs?: undefined;
@@ -15604,16 +15701,16 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 r: import("viem").Hex;
                 s: import("viem").Hex;
                 v: bigint;
+                value: bigint;
+                gas: bigint;
                 to: import("abitype").Address | null;
                 from: import("abitype").Address;
-                gas: bigint;
                 nonce: number;
-                value: bigint;
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
+                transactionIndex: number | null;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
-                transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 accessList?: undefined | undefined;
                 authorizationList?: undefined | undefined;
@@ -15865,8 +15962,8 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 maxFeePerBlobGas?: undefined | undefined;
                 maxFeePerGas?: undefined | undefined;
                 maxPriorityFeePerGas?: undefined | undefined;
-                blobs?: undefined;
                 accessList?: undefined;
+                blobs?: undefined;
                 blobVersionedHashes?: undefined;
                 kzg?: undefined;
                 sidecars?: undefined;
@@ -15913,10 +16010,10 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             } | {
                 type?: "0x3" | undefined;
                 data?: `0x${string}` | undefined;
-                from?: `0x${string}` | undefined;
-                gas?: `0x${string}` | undefined;
-                nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
+                gas?: `0x${string}` | undefined;
+                from?: `0x${string}` | undefined;
+                nonce?: `0x${string}` | undefined;
                 to: `0x${string}` | null;
                 gasPrice?: undefined | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
@@ -15930,17 +16027,17 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 authorizationList?: undefined;
                 feeCurrency?: `0x${string}` | undefined;
             } | {
-                type?: "0x4" | undefined;
                 gasPrice?: undefined | undefined;
                 maxFeePerBlobGas?: undefined | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
-                to?: `0x${string}` | null | undefined;
+                type?: "0x4" | undefined;
                 data?: `0x${string}` | undefined;
-                from?: `0x${string}` | undefined;
-                gas?: `0x${string}` | undefined;
-                nonce?: `0x${string}` | undefined;
                 value?: `0x${string}` | undefined;
+                gas?: `0x${string}` | undefined;
+                to?: `0x${string}` | null | undefined;
+                from?: `0x${string}` | undefined;
+                nonce?: `0x${string}` | undefined;
                 accessList?: import("viem").AccessList | undefined;
                 authorizationList?: import("viem").RpcAuthorizationList | undefined;
                 blobs?: undefined;
@@ -16072,7 +16169,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         };
         ensRegistry?: ChainContract | undefined;
         ensUniversalResolver?: ChainContract | undefined;
-        universalSignatureVerifier?: ChainContract | undefined;
+        erc6492Verifier?: ChainContract | undefined;
     };
     blockExplorers: {
         readonly default: {
@@ -16080,7 +16177,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly url: "https://explorer.hemi.xyz";
         };
     };
-    blockTime?: number | undefined | undefined | undefined;
+    blockTime: 12000;
     ensTlds?: readonly string[] | undefined;
     id: 43111;
     name: "Hemi";
@@ -16539,7 +16636,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         };
         ensRegistry?: ChainContract | undefined;
         ensUniversalResolver?: ChainContract | undefined;
-        universalSignatureVerifier?: ChainContract | undefined;
+        erc6492Verifier?: ChainContract | undefined;
     };
     blockExplorers: {
         readonly default: {
@@ -16923,16 +17020,16 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 r: import("viem").Hex;
                 s: import("viem").Hex;
                 v: bigint;
+                value: bigint;
+                gas: bigint;
                 to: import("abitype").Address | null;
                 from: import("abitype").Address;
-                gas: bigint;
                 nonce: number;
-                value: bigint;
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
+                transactionIndex: number | null;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
-                transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 accessList?: undefined | undefined;
                 authorizationList?: undefined | undefined;
@@ -17268,7 +17365,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         };
         ensRegistry?: ChainContract | undefined;
         ensUniversalResolver?: ChainContract | undefined;
-        universalSignatureVerifier?: ChainContract | undefined;
+        erc6492Verifier?: ChainContract | undefined;
     };
     blockExplorers: {
         readonly default: {
@@ -17381,7 +17478,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         };
         ensRegistry?: ChainContract | undefined;
         ensUniversalResolver?: ChainContract | undefined;
-        universalSignatureVerifier?: ChainContract | undefined;
+        erc6492Verifier?: ChainContract | undefined;
     };
     blockExplorers: {
         readonly default: {
@@ -17634,7 +17731,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly url: "https://explorer.etherlink.com";
         };
     };
-    blockTime?: number | undefined | undefined | undefined;
+    blockTime: 4830;
     ensTlds?: readonly string[] | undefined;
     id: 42793;
     name: "Etherlink";
@@ -17805,7 +17902,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly apiUrl: "https://api.uniscan.xyz/api";
         };
     };
-    blockTime: 2000;
+    blockTime: 1000;
     ensTlds?: readonly string[] | undefined;
     id: 130;
     nativeCurrency: {
@@ -17887,16 +17984,16 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
                 r: import("viem").Hex;
                 s: import("viem").Hex;
                 v: bigint;
+                value: bigint;
+                gas: bigint;
                 to: import("abitype").Address | null;
                 from: import("abitype").Address;
-                gas: bigint;
                 nonce: number;
-                value: bigint;
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
+                transactionIndex: number | null;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
-                transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 accessList?: undefined | undefined;
                 authorizationList?: undefined | undefined;
@@ -18133,7 +18230,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         };
         ensRegistry?: ChainContract | undefined;
         ensUniversalResolver?: ChainContract | undefined;
-        universalSignatureVerifier?: ChainContract | undefined;
+        erc6492Verifier?: ChainContract | undefined;
     };
     blockExplorers: {
         readonly default: {
@@ -18161,6 +18258,106 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     fees?: import("viem").ChainFees<undefined> | undefined;
     formatters?: undefined | undefined;
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
+}>, Readonly<{
+    name: "Plasma";
+    blockTimeSeconds: 1;
+    launchTime: 1758588527;
+    transactionType: "eip1559";
+    sortIndex: 15;
+    logoUrl: "https://assets.oku.trade/chains/plasma-logo.svg";
+    deprecated: false;
+    safeReorgDistance: 90000;
+    blockAid: "";
+    externalId: {};
+    markets: {};
+    bridges: {};
+    oracles: {};
+    morpho: {};
+    initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
+    uniswap: {
+        deployBlock: number;
+        poolFactory: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D";
+        permit2: "0x000000000022D473030F116dDEE9F6B43aC78BA3";
+        multicall2: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435";
+        tickLens: "0xB3309C48F8407651D918ca3Da4C45DE40109E641";
+        nonfungiblePositionManager: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c";
+        positionsNFT: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c";
+        positionsNFTDeployBlock: number;
+        universalRouter: "0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc";
+        wrappedNativeAddress: "0x6100E367285b01F48D07953803A2d8dCA5D19873";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
+        nativeCurrencyName: string;
+    };
+    token: {
+        wethAddress: "0x6100E367285b01F48D07953803A2d8dCA5D19873";
+    };
+    oku: {
+        limitOrderRegistry: "0x9db70E29712Cc8Af10c2B597BaDA6784544FF407";
+        limitOrderRegistryDeployBlock: number;
+        pricing: {
+            nativeWrappedToken: "0x6100E367285b01F48D07953803A2d8dCA5D19873";
+            nativeWrappedName: string;
+        };
+    };
+    defaultPool: "0x0000000000000000000000000000000000000000";
+    defaultToken0: "0x6100E367285b01F48D07953803A2d8dCA5D19873";
+    defaultToken1: "0x0000000000000000000000000000000000000000";
+    tokenList: {
+        symbol: string;
+        address: "0x6100E367285b01F48D07953803A2d8dCA5D19873";
+    }[];
+    stables: never[];
+    watchlist: never[];
+    internalName: "plasma";
+    nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/xpl.png";
+    contracts: {
+        limitOrder: {
+            address: "0x9db70E29712Cc8Af10c2B597BaDA6784544FF407";
+        };
+        nftManager: {
+            address: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c";
+        };
+        weth9: {
+            address: "0x6100E367285b01F48D07953803A2d8dCA5D19873";
+        };
+        multicall2: {
+            address: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435";
+        };
+        multicall3: {
+            address: "0xcA11bde05977b3631167028862bE2a173976CA11";
+        };
+        ensRegistry?: ChainContract | undefined;
+        ensUniversalResolver?: ChainContract | undefined;
+        erc6492Verifier?: ChainContract | undefined;
+    };
+    blockExplorers: {
+        readonly default: {
+            readonly name: "PlasmaScan";
+            readonly url: "https://plasmascan.to";
+        };
+    };
+    blockTime?: number | undefined | undefined | undefined;
+    ensTlds?: readonly string[] | undefined;
+    id: 9745;
+    nativeCurrency: {
+        readonly name: "Plasma";
+        readonly symbol: "XPL";
+        readonly decimals: 18;
+    };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
+    rpcUrls: {
+        readonly default: {
+            readonly http: readonly ["https://rpc.plasma.to"];
+        };
+    };
+    sourceId?: number | undefined | undefined | undefined;
+    testnet?: boolean | undefined | undefined | undefined;
+    custom?: Record<string, unknown> | undefined;
+    fees?: import("viem").ChainFees<undefined> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>];
-export { arbitrum, base, blast, bob, boba, bsc, celo, corn, etherlink, filecoin, gnosis, goat, hemi, lens, lightlink, linea, lisk, mainnet, manta, mantle, matchain, metal, moonbeam, nibiru, optimism, polygon, redbelly, rootstock, saga, scroll, sei, sonic, taiko, telos, tronShasta, unichain, worldchain, xdc, polygonZkEvm, zkSync, MorphoMetadata, UniswapMetadata, OkuPricingMetadata, OkuCustomOrderTypesMetadata, OkuMetadata, TokenMetadata, Markets, Bridges, Oracles, IChainInfo, MAINNET_CHAINS };
+export { arbitrum, base, blast, bob, boba, bsc, celo, corn, etherlink, filecoin, gnosis, goat, hemi, lens, lightlink, linea, lisk, mainnet, manta, mantle, matchain, metal, moonbeam, nibiru, optimism, plasma, polygon, redbelly, rootstock, saga, scroll, sei, sonic, taiko, telos, tronShasta, unichain, worldchain, xdc, polygonZkEvm, zkSync, MorphoMetadata, UniswapMetadata, OkuPricingMetadata, OkuCustomOrderTypesMetadata, OkuMetadata, TokenMetadata, Markets, Bridges, Oracles, IChainInfo, MAINNET_CHAINS };
 export { ChainContract } from "viem";

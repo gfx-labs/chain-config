@@ -27,6 +27,7 @@ export * from "./metal";
 export * from "./moonbeam";
 export * from "./nibiru";
 export * from "./optimism";
+export * from "./plasma";
 export * from "./polygon";
 export * from "./redbelly";
 export * from "./rootstock";

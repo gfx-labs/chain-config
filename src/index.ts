@@ -44,4 +44,5 @@ export const MAINNET_CHAINS = [
 	defs.etherlink,
 	defs.unichain,
 	defs.matchain,
+	defs.plasma,
 ] as const;

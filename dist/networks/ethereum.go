@@ -89,13 +89,9 @@ var Ethereum Network = Network{
 		WbtcAddress: common.HexToAddress("0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599"),
 	},
 	Contracts: map[string]ChainContract{
-		"ensRegistry": {
-			BlockCreated: 0,
-			Address:      common.HexToAddress("0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e"),
-		},
 		"ensUniversalResolver": {
-			BlockCreated: 19258213,
-			Address:      common.HexToAddress("0xce01f8eee7E479C928F8919abD53E553a36CeF67"),
+			BlockCreated: 23085558,
+			Address:      common.HexToAddress("0xeeeeeeee14d718c2b47d9923deab1335e144eeee"),
 		},
 		"multicall3": {
 			BlockCreated: 0,
