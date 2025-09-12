@@ -16,7 +16,7 @@ var Plasma Network = Network{
 			Url: "https://plasmascan.to",
 		},
 	},
-	DefaultPool:     common.HexToAddress("0x0000000000000000000000000000000000000000"),
+	DefaultPool:     common.HexToAddress("0x8603c67b7cc056ef6981a9c709854c53b699fa66"),
 	InternalName:    "plasma",
 	TransactionType: "eip1559",
 	InitCodeHash:    common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
@@ -27,7 +27,7 @@ var Plasma Network = Network{
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb"): {}},
-	Watchlist:        []common.Address{},
+	Watchlist:        []common.Address{common.HexToAddress("0x8603c67b7cc056ef6981a9c709854c53b699fa66")},
 	BlockTimeSeconds: 1,
 	Oku: OkuMetadata{
 		LimitOrderRegistry:            common.HexToAddress("0x9db70E29712Cc8Af10c2B597BaDA6784544FF407"),

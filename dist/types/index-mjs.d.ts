@@ -6104,7 +6104,7 @@ declare const plasma: Readonly<{
             nativeWrappedName: string;
         };
     };
-    defaultPool: "0x0000000000000000000000000000000000000000";
+    defaultPool: "0x8603c67b7cc056ef6981a9c709854c53b699fa66";
     defaultToken0: "0x6100E367285b01F48D07953803A2d8dCA5D19873";
     defaultToken1: "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb";
     tokenList: ({
@@ -6115,7 +6115,7 @@ declare const plasma: Readonly<{
         address: "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb";
     })[];
     stables: "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb"[];
-    watchlist: never[];
+    watchlist: "0x8603c67b7cc056ef6981a9c709854c53b699fa66"[];
     internalName: "plasma";
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/xpl.png";
     contracts: {
@@ -18304,7 +18304,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             nativeWrappedName: string;
         };
     };
-    defaultPool: "0x0000000000000000000000000000000000000000";
+    defaultPool: "0x8603c67b7cc056ef6981a9c709854c53b699fa66";
     defaultToken0: "0x6100E367285b01F48D07953803A2d8dCA5D19873";
     defaultToken1: "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb";
     tokenList: ({
@@ -18315,7 +18315,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         address: "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb";
     })[];
     stables: "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb"[];
-    watchlist: never[];
+    watchlist: "0x8603c67b7cc056ef6981a9c709854c53b699fa66"[];
     internalName: "plasma";
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/xpl.png";
     contracts: {
