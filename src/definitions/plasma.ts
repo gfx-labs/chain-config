@@ -9,7 +9,7 @@ export const plasma = makeConfig({
 	launchTime: 1758588527,
 	transactionType: "eip1559",
 	sortIndex: 15,
-	logoUrl: "https://assets.oku.trade/chains/plasma-logo.svg",
+	logoUrl: "https://cms.oku.trade/cdn/public/chains/plasma-logo.svg",
 	deprecated: false,
 	safeReorgDistance: 90000,
 	blockAid: "",
