@@ -85,6 +85,8 @@ export const nibiru = makeConfig({
 		"0x0085a09e68468a99c6ec3c0c9c98e17af614c470",
 		"0x9fe58f1883732931625c281afe2a068fe19183f5",
 		"0xd8f82b8d2e82265ac25d8d4ef3ca47917693d3d5",
+		"0x5133222db1e9f1b98d16e5fb46d6f398c60998e2",
+		"0xe7612e14a05613caf06fad766b484b0a6d146c3a",
 	],
 	internalName: "nibiru",
 	nativeLogoUrl: "https://assets.oku.trade/natives/nibi.svg",
