@@ -5540,7 +5540,7 @@ declare const nibiru: Readonly<{
         address: "0x0829F361A05D993d5CEb035cA6DF3446b060970b";
     })[];
     stables: "0x0829F361A05D993d5CEb035cA6DF3446b060970b"[];
-    watchlist: ("0x9475b76b7f77791b6147cb989187fecd9b55398a" | "0x0085a09e68468a99c6ec3c0c9c98e17af614c470" | "0x9fe58f1883732931625c281afe2a068fe19183f5" | "0xd8f82b8d2e82265ac25d8d4ef3ca47917693d3d5")[];
+    watchlist: ("0x9475b76b7f77791b6147cb989187fecd9b55398a" | "0x0085a09e68468a99c6ec3c0c9c98e17af614c470" | "0x9fe58f1883732931625c281afe2a068fe19183f5" | "0xd8f82b8d2e82265ac25d8d4ef3ca47917693d3d5" | "0x5133222db1e9f1b98d16e5fb46d6f398c60998e2" | "0xe7612e14a05613caf06fad766b484b0a6d146c3a")[];
     internalName: "nibiru";
     nativeLogoUrl: "https://assets.oku.trade/natives/nibi.svg";
     contracts: {
@@ -6106,12 +6106,15 @@ declare const plasma: Readonly<{
     };
     defaultPool: "0x0000000000000000000000000000000000000000";
     defaultToken0: "0x6100E367285b01F48D07953803A2d8dCA5D19873";
-    defaultToken1: "0x0000000000000000000000000000000000000000";
-    tokenList: {
+    defaultToken1: "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb";
+    tokenList: ({
         symbol: string;
         address: "0x6100E367285b01F48D07953803A2d8dCA5D19873";
-    }[];
-    stables: never[];
+    } | {
+        symbol: string;
+        address: "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb";
+    })[];
+    stables: "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb"[];
     watchlist: never[];
     internalName: "plasma";
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/xpl.png";
@@ -17572,7 +17575,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         address: "0x0829F361A05D993d5CEb035cA6DF3446b060970b";
     })[];
     stables: "0x0829F361A05D993d5CEb035cA6DF3446b060970b"[];
-    watchlist: ("0x9475b76b7f77791b6147cb989187fecd9b55398a" | "0x0085a09e68468a99c6ec3c0c9c98e17af614c470" | "0x9fe58f1883732931625c281afe2a068fe19183f5" | "0xd8f82b8d2e82265ac25d8d4ef3ca47917693d3d5")[];
+    watchlist: ("0x9475b76b7f77791b6147cb989187fecd9b55398a" | "0x0085a09e68468a99c6ec3c0c9c98e17af614c470" | "0x9fe58f1883732931625c281afe2a068fe19183f5" | "0xd8f82b8d2e82265ac25d8d4ef3ca47917693d3d5" | "0x5133222db1e9f1b98d16e5fb46d6f398c60998e2" | "0xe7612e14a05613caf06fad766b484b0a6d146c3a")[];
     internalName: "nibiru";
     nativeLogoUrl: "https://assets.oku.trade/natives/nibi.svg";
     contracts: {
@@ -18303,12 +18306,15 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     };
     defaultPool: "0x0000000000000000000000000000000000000000";
     defaultToken0: "0x6100E367285b01F48D07953803A2d8dCA5D19873";
-    defaultToken1: "0x0000000000000000000000000000000000000000";
-    tokenList: {
+    defaultToken1: "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb";
+    tokenList: ({
         symbol: string;
         address: "0x6100E367285b01F48D07953803A2d8dCA5D19873";
-    }[];
-    stables: never[];
+    } | {
+        symbol: string;
+        address: "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb";
+    })[];
+    stables: "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb"[];
     watchlist: never[];
     internalName: "plasma";
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/xpl.png";
