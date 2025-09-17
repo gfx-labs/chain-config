@@ -7639,7 +7639,7 @@ declare const unichain: Readonly<{
         nonfungiblePositionManager: "0x943e6e07a7e8e791dafc44083e54041d743c46e9";
         positionsNFT: "0x943e6e07a7e8e791dafc44083e54041d743c46e9";
         positionsNFTDeployBlock: number;
-        universalRouter: "0xef740bf23acae26f6492b10de645d6b98dc8eaf3";
+        universalRouter: "0x4D73A4411CA1c660035e4AECC8270E5DdDEC8C17";
         wrappedNativeAddress: "0x4200000000000000000000000000000000000006";
         wrappedNativeSymbol: string;
         wrappedNativeName: string;
@@ -8034,7 +8034,7 @@ declare const worldchain: Readonly<{
         nonfungiblePositionManager: "0xec12a9F9a09f50550686363766Cc153D03c27b5e";
         positionsNFT: "0xec12a9F9a09f50550686363766Cc153D03c27b5e";
         positionsNFTDeployBlock: number;
-        universalRouter: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435";
+        universalRouter: "0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D";
         wrappedNativeAddress: "0x4200000000000000000000000000000000000006";
         wrappedNativeSymbol: string;
         wrappedNativeName: string;
@@ -16838,7 +16838,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         nonfungiblePositionManager: "0xec12a9F9a09f50550686363766Cc153D03c27b5e";
         positionsNFT: "0xec12a9F9a09f50550686363766Cc153D03c27b5e";
         positionsNFTDeployBlock: number;
-        universalRouter: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435";
+        universalRouter: "0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D";
         wrappedNativeAddress: "0x4200000000000000000000000000000000000006";
         wrappedNativeSymbol: string;
         wrappedNativeName: string;
@@ -17813,7 +17813,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         nonfungiblePositionManager: "0x943e6e07a7e8e791dafc44083e54041d743c46e9";
         positionsNFT: "0x943e6e07a7e8e791dafc44083e54041d743c46e9";
         positionsNFTDeployBlock: number;
-        universalRouter: "0xef740bf23acae26f6492b10de645d6b98dc8eaf3";
+        universalRouter: "0x4D73A4411CA1c660035e4AECC8270E5DdDEC8C17";
         wrappedNativeAddress: "0x4200000000000000000000000000000000000006";
         wrappedNativeSymbol: string;
         wrappedNativeName: string;
