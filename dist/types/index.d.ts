@@ -8447,7 +8447,7 @@ declare const xdc: Readonly<{
     };
     token: {
         wethAddress: "0x951857744785e80e2de051c32ee7b25f9c458c42";
-        usdcAddress: "0x2a8e898b6242355c290e1f4fc966b8788729a4du4";
+        usdcAddress: "0xfa2958cb79b0491cc627c1557f441ef849ca8eb1";
     };
     oku: {
         limitOrderRegistry: "0x1b35fba9357fd9bda7ed0429c8bbabe1e8cc88fc";
@@ -8457,17 +8457,20 @@ declare const xdc: Readonly<{
             nativeWrappedName: string;
         };
     };
-    defaultPool: "0x1e5aec37f6df6653c3342df75edd92beb3fb9846";
-    defaultToken0: "0x2a8e898b6242355c290e1f4fc966b8788729a4d4";
-    defaultToken1: "0x951857744785e80e2de051c32ee7b25f9c458c42";
+    defaultPool: "0x29f804974da123e8e48acb107be76b9f2ce1b408";
+    defaultToken0: "0x951857744785e80e2de051c32ee7b25f9c458c42";
+    defaultToken1: "0xfa2958cb79b0491cc627c1557f441ef849ca8eb1";
     tokenList: ({
         symbol: string;
         address: "0x951857744785e80e2de051c32ee7b25f9c458c42";
     } | {
         symbol: string;
         address: "0x2a8e898b6242355c290e1f4fc966b8788729a4d4";
+    } | {
+        symbol: string;
+        address: "0xfa2958cb79b0491cc627c1557f441ef849ca8eb1";
     })[];
-    stables: ("0x2a8e898b6242355c290e1f4fc966b8788729a4d4" | "0xd4b5f10d61916bd6e0860144a91ac658de8a1437")[];
+    stables: ("0xfa2958cb79b0491cc627c1557f441ef849ca8eb1" | "0x2a8e898b6242355c290e1f4fc966b8788729a4d4" | "0xd4b5f10d61916bd6e0860144a91ac658de8a1437")[];
     watchlist: ("0x1e5aec37f6df6653c3342df75edd92beb3fb9846" | "0x9149b4e074f101ca0514b1d30fc78f181e21d409")[];
     internalName: "xdc";
     nativeLogoUrl: "https://assets.oku.trade/natives/xdc.png";
@@ -17245,7 +17248,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     };
     token: {
         wethAddress: "0x951857744785e80e2de051c32ee7b25f9c458c42";
-        usdcAddress: "0x2a8e898b6242355c290e1f4fc966b8788729a4du4";
+        usdcAddress: "0xfa2958cb79b0491cc627c1557f441ef849ca8eb1";
     };
     oku: {
         limitOrderRegistry: "0x1b35fba9357fd9bda7ed0429c8bbabe1e8cc88fc";
@@ -17255,17 +17258,20 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             nativeWrappedName: string;
         };
     };
-    defaultPool: "0x1e5aec37f6df6653c3342df75edd92beb3fb9846";
-    defaultToken0: "0x2a8e898b6242355c290e1f4fc966b8788729a4d4";
-    defaultToken1: "0x951857744785e80e2de051c32ee7b25f9c458c42";
+    defaultPool: "0x29f804974da123e8e48acb107be76b9f2ce1b408";
+    defaultToken0: "0x951857744785e80e2de051c32ee7b25f9c458c42";
+    defaultToken1: "0xfa2958cb79b0491cc627c1557f441ef849ca8eb1";
     tokenList: ({
         symbol: string;
         address: "0x951857744785e80e2de051c32ee7b25f9c458c42";
     } | {
         symbol: string;
         address: "0x2a8e898b6242355c290e1f4fc966b8788729a4d4";
+    } | {
+        symbol: string;
+        address: "0xfa2958cb79b0491cc627c1557f441ef849ca8eb1";
     })[];
-    stables: ("0x2a8e898b6242355c290e1f4fc966b8788729a4d4" | "0xd4b5f10d61916bd6e0860144a91ac658de8a1437")[];
+    stables: ("0xfa2958cb79b0491cc627c1557f441ef849ca8eb1" | "0x2a8e898b6242355c290e1f4fc966b8788729a4d4" | "0xd4b5f10d61916bd6e0860144a91ac658de8a1437")[];
     watchlist: ("0x1e5aec37f6df6653c3342df75edd92beb3fb9846" | "0x9149b4e074f101ca0514b1d30fc78f181e21d409")[];
     internalName: "xdc";
     nativeLogoUrl: "https://assets.oku.trade/natives/xdc.png";

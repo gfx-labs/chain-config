@@ -16,17 +16,17 @@ var Xdc Network = Network{
 			Url: "https://xdcscan.com",
 		},
 	},
-	DefaultPool:     common.HexToAddress("0x1e5aec37f6df6653c3342df75edd92beb3fb9846"),
+	DefaultPool:     common.HexToAddress("0x29f804974da123e8e48acb107be76b9f2ce1b408"),
 	InternalName:    "xdc",
 	TransactionType: "legacy",
 	InitCodeHash:    common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId:      map[string]string{},
-	DefaultToken0:   common.HexToAddress("0x2a8e898b6242355c290e1f4fc966b8788729a4d4"),
-	DefaultToken1:   common.HexToAddress("0x951857744785e80e2de051c32ee7b25f9c458c42"),
+	DefaultToken0:   common.HexToAddress("0x951857744785e80e2de051c32ee7b25f9c458c42"),
+	DefaultToken1:   common.HexToAddress("0xfa2958cb79b0491cc627c1557f441ef849ca8eb1"),
 	BlockAid:        "",
 	//TODO: TokenList:        []any{},
-	Stables:          []common.Address{common.HexToAddress("0x2a8e898b6242355c290e1f4fc966b8788729a4d4"), common.HexToAddress("0xd4b5f10d61916bd6e0860144a91ac658de8a1437")},
-	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x2a8e898b6242355c290e1f4fc966b8788729a4d4"): {}, common.HexToAddress("0xd4b5f10d61916bd6e0860144a91ac658de8a1437"): {}},
+	Stables:          []common.Address{common.HexToAddress("0x2a8e898b6242355c290e1f4fc966b8788729a4d4"), common.HexToAddress("0xd4b5f10d61916bd6e0860144a91ac658de8a1437"), common.HexToAddress("0xfa2958cb79b0491cc627c1557f441ef849ca8eb1")},
+	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x2a8e898b6242355c290e1f4fc966b8788729a4d4"): {}, common.HexToAddress("0xd4b5f10d61916bd6e0860144a91ac658de8a1437"): {}, common.HexToAddress("0xfa2958cb79b0491cc627c1557f441ef849ca8eb1"): {}},
 	Watchlist:        []common.Address{common.HexToAddress("0x1e5aec37f6df6653c3342df75edd92beb3fb9846"), common.HexToAddress("0x9149b4e074f101ca0514b1d30fc78f181e21d409")},
 	BlockTimeSeconds: 2,
 	Oku: OkuMetadata{
@@ -59,7 +59,7 @@ var Xdc Network = Network{
 	Morpho: MorphoMetadata{},
 	Token: TokenMetadata{
 		WethAddress: common.HexToAddress("0x951857744785e80e2de051c32ee7b25f9c458c42"),
-		UsdcAddress: common.HexToAddress("0x2a8e898b6242355c290e1f4fc966b8788729a4du4"),
+		UsdcAddress: common.HexToAddress("0xfa2958cb79b0491cc627c1557f441ef849ca8eb1"),
 	},
 	Contracts: map[string]ChainContract{
 		"multicall3": {
