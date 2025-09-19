@@ -27,7 +27,7 @@ var Plasma Network = Network{
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb"): {}},
-	Watchlist:        []common.Address{common.HexToAddress("0x8603c67b7cc056ef6981a9c709854c53b699fa66")},
+	Watchlist:        []common.Address{common.HexToAddress("0x8603c67b7cc056ef6981a9c709854c53b699fa66"), common.HexToAddress("0xce4ac514ca6a9db357cccc105b7848d7fd37445d"), common.HexToAddress("0x2eabb32f34b7a25c34bc9cea142ce0e060ee0682"), common.HexToAddress("0x21d5a075073e631a85ab9c02e4b703460c572b4b")},
 	BlockTimeSeconds: 1,
 	Oku: OkuMetadata{
 		LimitOrderRegistry:            common.HexToAddress("0x9db70E29712Cc8Af10c2B597BaDA6784544FF407"),
