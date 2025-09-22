@@ -27,7 +27,7 @@ var Matchain Network = Network{
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0x679Dc08cC3A4acFeea2f7CAFAa37561aE0b41Ce7")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x679Dc08cC3A4acFeea2f7CAFAa37561aE0b41Ce7"): {}},
-	Watchlist:        []common.Address{},
+	Watchlist:        []common.Address{common.HexToAddress("0x166D111Ce22f6cb0F315CA1d706B61adcF0ea265"), common.HexToAddress("0xacb767305247c1a44ee24c97dd32c052cbda1f38"), common.HexToAddress("0x6b213c3915308a453dc4da93f8c664717c6fc41e")},
 	BlockTimeSeconds: 0.5,
 	Oku: OkuMetadata{
 		LimitOrderRegistry:            common.HexToAddress("0x346239972d1fa486FC4a521031BC81bFB7D6e8a4"),
