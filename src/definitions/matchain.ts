@@ -56,7 +56,11 @@ export const matchain = makeConfig({
 		{ symbol: "USDC", address: "0x679Dc08cC3A4acFeea2f7CAFAa37561aE0b41Ce7" },
 	],
 	stables: ["0x679Dc08cC3A4acFeea2f7CAFAa37561aE0b41Ce7"],
-	watchlist: [],
+	watchlist: [
+		"0x166D111Ce22f6cb0F315CA1d706B61adcF0ea265",
+		"0xacb767305247c1a44ee24c97dd32c052cbda1f38",
+		"0x6b213c3915308a453dc4da93f8c664717c6fc41e",
+	],
 	internalName: "matchain",
 	nativeLogoUrl: "https://assets.oku.trade/natives/bnb.png",
 	contracts: {
