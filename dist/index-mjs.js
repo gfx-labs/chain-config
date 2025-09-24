@@ -3726,7 +3726,9 @@ const plasma = makeConfig({
     safeReorgDistance: 90000,
     blockAid: "",
     externalId: {},
-    markets: {},
+    markets: {
+        zeroex: true,
+    },
     bridges: {},
     oracles: {},
     morpho: {},

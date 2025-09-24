@@ -6072,7 +6072,9 @@ declare const plasma: Readonly<{
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {};
-    markets: {};
+    markets: {
+        zeroex: true;
+    };
     bridges: {};
     oracles: {};
     morpho: {};
@@ -18386,7 +18388,9 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {};
-    markets: {};
+    markets: {
+        zeroex: true;
+    };
     bridges: {};
     oracles: {};
     morpho: {};
