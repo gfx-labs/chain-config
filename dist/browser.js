@@ -5599,7 +5599,6 @@
 	    internalName: "zerog",
 	    nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/0g.svg",
 	    contracts: {
-	        ...chains.zeroGMainnet.contracts,
 	        limitOrder: {
 	            address: "0x9db70e29712cc8af10c2b597bada6784544ff407",
 	        },
