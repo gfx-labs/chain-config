@@ -5901,6 +5901,7 @@ const MAINNET_CHAINS = [
     unichain,
     matchain,
     plasma,
+    zerog,
 ];
 
 export { MAINNET_CHAINS, arbitrum, base, blast, bob, boba, bsc, celo, corn, etherlink, filecoin, gnosis, goat, hemi, lens, lightlink, linea, lisk, mainnet, manta, mantle, matchain, metal, moonbeam, nibiru, optimism, plasma, polygon, polygonZkEvm, redbelly, rootstock, saga, scroll, sei, sonic, taiko, telos, tronShasta, unichain, worldchain, xdc, zerog, zkSync };

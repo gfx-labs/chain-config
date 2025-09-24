@@ -41,5 +41,6 @@ export * from "./tronShasta";
 export * from "./unichain";
 export * from "./worldchain";
 export * from "./xdc";
+export * from "./zerog";
 export * from "./zkevm";
 export * from "./zksync";

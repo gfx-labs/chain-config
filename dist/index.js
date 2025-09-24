@@ -5903,6 +5903,7 @@ const MAINNET_CHAINS = [
     unichain,
     matchain,
     plasma,
+    zerog,
 ];
 
 exports.MAINNET_CHAINS = MAINNET_CHAINS;
