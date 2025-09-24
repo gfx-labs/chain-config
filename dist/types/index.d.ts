@@ -8560,7 +8560,7 @@ declare const zerog: Readonly<{
             nativeWrappedName: string;
         };
     };
-    defaultPool: "0x0000000000000000000000000000000000000000";
+    defaultPool: "0x5c1e4669c5208adc0163273d51928890b663237f";
     defaultToken0: "0x1cd0690ff9a693f5ef2dd976660a8dafc81a109c";
     defaultToken1: "0x1f3aa82227281ca364bfb3d253b0f1af1da6473e";
     tokenList: ({
@@ -8571,7 +8571,7 @@ declare const zerog: Readonly<{
         address: "0x1cd0690ff9a693f5ef2dd976660a8dafc81a109c";
     })[];
     stables: "0x1f3aa82227281ca364bfb3d253b0f1af1da6473e"[];
-    watchlist: never[];
+    watchlist: "0x5c1e4669c5208adc0163273d51928890b663237f"[];
     internalName: "zerog";
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/0g.svg";
     contracts: {
@@ -18524,7 +18524,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             nativeWrappedName: string;
         };
     };
-    defaultPool: "0x0000000000000000000000000000000000000000";
+    defaultPool: "0x5c1e4669c5208adc0163273d51928890b663237f";
     defaultToken0: "0x1cd0690ff9a693f5ef2dd976660a8dafc81a109c";
     defaultToken1: "0x1f3aa82227281ca364bfb3d253b0f1af1da6473e";
     tokenList: ({
@@ -18535,7 +18535,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         address: "0x1cd0690ff9a693f5ef2dd976660a8dafc81a109c";
     })[];
     stables: "0x1f3aa82227281ca364bfb3d253b0f1af1da6473e"[];
-    watchlist: never[];
+    watchlist: "0x5c1e4669c5208adc0163273d51928890b663237f"[];
     internalName: "zerog";
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/0g.svg";
     contracts: {

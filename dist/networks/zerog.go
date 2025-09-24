@@ -16,7 +16,7 @@ var Zerog Network = Network{
 			Url: "https://chainscan.0g.ai",
 		},
 	},
-	DefaultPool:     common.HexToAddress("0x0000000000000000000000000000000000000000"),
+	DefaultPool:     common.HexToAddress("0x5c1e4669c5208adc0163273d51928890b663237f"),
 	InternalName:    "zerog",
 	TransactionType: "eip1559",
 	InitCodeHash:    common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
@@ -29,7 +29,7 @@ var Zerog Network = Network{
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0x1f3aa82227281ca364bfb3d253b0f1af1da6473e")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x1f3aa82227281ca364bfb3d253b0f1af1da6473e"): {}},
-	Watchlist:        []common.Address{},
+	Watchlist:        []common.Address{common.HexToAddress("0x5c1e4669c5208adc0163273d51928890b663237f")},
 	BlockTimeSeconds: 35,
 	Oku: OkuMetadata{
 		LimitOrderRegistry:            common.HexToAddress("0x9db70e29712cc8af10c2b597bada6784544ff407"),
