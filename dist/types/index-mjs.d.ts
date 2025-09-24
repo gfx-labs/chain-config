@@ -8521,7 +8521,7 @@ declare const zerog: Readonly<{
     launchTime: 1733882663;
     transactionType: "eip1559";
     sortIndex: 15;
-    logoUrl: "https://assets.oku.trade/chains/zerog-logo.png";
+    logoUrl: "https://cms.oku.trade/cdn/public/chains/zerog-logo.svg";
     deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
@@ -8573,7 +8573,7 @@ declare const zerog: Readonly<{
     stables: "0x1f3aa82227281ca364bfb3d253b0f1af1da6473e"[];
     watchlist: never[];
     internalName: "zerog";
-    nativeLogoUrl: "https://assets.oku.trade/natives/zerog.png";
+    nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/0g.svg";
     contracts: {
         limitOrder: {
             address: "0x9db70e29712cc8af10c2b597bada6784544ff407";
@@ -18488,7 +18488,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     launchTime: 1733882663;
     transactionType: "eip1559";
     sortIndex: 15;
-    logoUrl: "https://assets.oku.trade/chains/zerog-logo.png";
+    logoUrl: "https://cms.oku.trade/cdn/public/chains/zerog-logo.svg";
     deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
@@ -18540,7 +18540,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     stables: "0x1f3aa82227281ca364bfb3d253b0f1af1da6473e"[];
     watchlist: never[];
     internalName: "zerog";
-    nativeLogoUrl: "https://assets.oku.trade/natives/zerog.png";
+    nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/0g.svg";
     contracts: {
         limitOrder: {
             address: "0x9db70e29712cc8af10c2b597bada6784544ff407";
