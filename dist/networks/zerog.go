@@ -6,7 +6,7 @@ import (
 
 var Zerog Network = Network{
 	ChainId:           16661,
-	LogoUrl:           "https://assets.oku.trade/chains/zerog-logo.png",
+	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/zerog-logo.svg",
 	Deprecated:        false,
 	SortIndex:         15,
 	LaunchTime:        1733882663,
