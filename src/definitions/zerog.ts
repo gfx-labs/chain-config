@@ -9,7 +9,7 @@ export const zerog = makeConfig({
 	launchTime: 1733882663,
 	transactionType: "eip1559",
 	sortIndex: 15,
-	logoUrl: "https://assets.oku.trade/chains/zerog-logo.png",
+	logoUrl: "https://cms.oku.trade/cdn/public/chains/zerog-logo.svg",
 	deprecated: false,
 	safeReorgDistance: 90000,
 	blockAid: "",
@@ -60,7 +60,7 @@ export const zerog = makeConfig({
 	stables: ["0x1f3aa82227281ca364bfb3d253b0f1af1da6473e"],
 	watchlist: [],
 	internalName: "zerog",
-	nativeLogoUrl: "https://assets.oku.trade/natives/zerog.png",
+	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/0g.svg",
 	contracts: {
 		...chain.contracts,
 		limitOrder: {
