@@ -6074,6 +6074,7 @@ declare const plasma: Readonly<{
     externalId: {};
     markets: {
         zeroex: true;
+        kyberswap: string;
     };
     bridges: {};
     oracles: {};
@@ -18387,6 +18388,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     externalId: {};
     markets: {
         zeroex: true;
+        kyberswap: string;
     };
     bridges: {};
     oracles: {};

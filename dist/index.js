@@ -3730,6 +3730,7 @@ const plasma = makeConfig({
     externalId: {},
     markets: {
         zeroex: true,
+        kyberswap: "plasma",
     },
     bridges: {},
     oracles: {},
