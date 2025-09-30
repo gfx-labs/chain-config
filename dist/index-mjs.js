@@ -5554,7 +5554,14 @@ const zerog = makeConfig({
         tenderly: "true",
     },
     markets: {},
-    bridges: {},
+    bridges: {
+        chainlink: {
+            atlasNetworkName: "0g-mainnet",
+            routerAddress: "0x0aA145a62153190B8f0D3cA00c441e451529f755",
+            chainSelector: 4426351306075016396n,
+            tokenAdminRegistry: "0x051665f2455116e929b9972c36d23070F5054Ce0",
+        },
+    },
     oracles: {},
     morpho: {},
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
