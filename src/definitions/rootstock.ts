@@ -21,6 +21,12 @@ export const rootstock = makeConfig({
 	},
 	morpho: {},
 	bridges: {
+		chainlink: {
+			atlasNetworkName: "rootstock-mainnet",
+			routerAddress: "0xCe7aFb0BF5F73BfDB5e9E04976eBac2005746bD0",
+			chainSelector: 11964252391146578476n,
+			tokenAdminRegistry: "0xad71ac82aCFCbDD27BBd3F3eD2fA24E26E49CBE2",
+		},
 		stargate: {
 			endpointID: 30333,
 			blockConfirmations: 20,

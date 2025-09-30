@@ -16,7 +16,14 @@ export const lens = makeConfig({
 		tenderly: "true",
 	},
 	markets: {},
-	bridges: {},
+	bridges: {
+		chainlink: {
+			atlasNetworkName: "lens-mainnet",
+			routerAddress: "0x498F3feBAd3ff75e05b7847B37a301fc2DA6fDC0",
+			chainSelector: 5608378062013572713n,
+			tokenAdminRegistry: "0xdD98482Ec0cfEFfe14EAb750A9c484F9D5d07380",
+		},
+	},
 	oracles: {},
 	morpho: {},
 	initCodeHash:

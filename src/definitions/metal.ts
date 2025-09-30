@@ -14,7 +14,14 @@ export const metal = makeConfig({
 	externalId: {},
 	morpho: {},
 	markets: {},
-	bridges: {},
+	bridges: {
+		chainlink: {
+			atlasNetworkName: "metal-mainnet",
+			routerAddress: "0x020c61ECEEE0E5DC32F2503AbB6E070fa0EbBfaA",
+			chainSelector: 13447077090413146373n,
+			tokenAdminRegistry: "0xc41640B959Ca2A62b9293509202D8615dC293634",
+		},
+	},
 	oracles: {},
 	initCodeHash:
 		"0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
