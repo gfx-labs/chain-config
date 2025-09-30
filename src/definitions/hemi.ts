@@ -16,6 +16,12 @@ export const hemi = makeConfig({
 		icecreamswap: true,
 	},
 	bridges: {
+		chainlink: {
+			atlasNetworkName: "hemi-mainnet",
+			routerAddress: "0x5e48912cFDd14417D6856872341f894AE0EF07DD",
+			chainSelector: 1804312132722180201n,
+			tokenAdminRegistry: "0x81e81F9B2C0B79C00F38357068AE049090F2DaDE",
+		},
 		stargate: {
 			endpointID: 30329,
 			blockConfirmations: 20,

@@ -21,6 +21,12 @@ export const taiko = makeConfig({
 	},
 	morpho: {},
 	bridges: {
+		chainlink: {
+			atlasNetworkName: "ethereum-mainnet-taiko-1",
+			routerAddress: "0xeb2502AeD3Cfd6E37e292c6B837a8FFF9a042367",
+			chainSelector: 16468599424800719238n,
+			tokenAdminRegistry: "0x308a2A7d13B12ba26649F381C53F7e7C60d0D9c6",
+		},
 		rhinofi: "TAIKO",
 		stargate: {
 			endpointID: 30290,

@@ -17,7 +17,14 @@ export const plasma = makeConfig({
 		zeroex: true,
 		kyberswap: "plasma",
 	},
-	bridges: {},
+	bridges: {
+		chainlink: {
+			atlasNetworkName: "plasma-mainnet",
+			routerAddress: "0xcDca5D374e46A6DDDab50bD2D9acB8c796eC35C3",
+			chainSelector: 9335212494177455608n,
+			tokenAdminRegistry: "0xc23071a8AE83671f37bdA1DaDBC745a9780f632A",
+		},
+	},
 	oracles: {},
 	morpho: {},
 	initCodeHash:
