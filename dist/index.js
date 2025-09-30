@@ -1853,6 +1853,12 @@ const hemi = makeConfig({
         icecreamswap: true,
     },
     bridges: {
+        chainlink: {
+            atlasNetworkName: "hemi-mainnet",
+            routerAddress: "0x5e48912cFDd14417D6856872341f894AE0EF07DD",
+            chainSelector: 1804312132722180201n,
+            tokenAdminRegistry: "0x81e81F9B2C0B79C00F38357068AE049090F2DaDE",
+        },
         stargate: {
             endpointID: 30329,
             blockConfirmations: 20,
@@ -1973,7 +1979,14 @@ const lens = makeConfig({
         tenderly: "true",
     },
     markets: {},
-    bridges: {},
+    bridges: {
+        chainlink: {
+            atlasNetworkName: "lens-mainnet",
+            routerAddress: "0x498F3feBAd3ff75e05b7847B37a301fc2DA6fDC0",
+            chainSelector: 5608378062013572713n,
+            tokenAdminRegistry: "0xdD98482Ec0cfEFfe14EAb750A9c484F9D5d07380",
+        },
+    },
     oracles: {},
     morpho: {},
     initCodeHash: "0x010013f177ea1fcbc4520f9a3ca7cd2d1d77959e05aa66484027cb38e712aeed",
@@ -3093,7 +3106,14 @@ const metal = makeConfig({
     externalId: {},
     morpho: {},
     markets: {},
-    bridges: {},
+    bridges: {
+        chainlink: {
+            atlasNetworkName: "metal-mainnet",
+            routerAddress: "0x020c61ECEEE0E5DC32F2503AbB6E070fa0EbBfaA",
+            chainSelector: 13447077090413146373n,
+            tokenAdminRegistry: "0xc41640B959Ca2A62b9293509202D8615dC293634",
+        },
+    },
     oracles: {},
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
     uniswap: {
@@ -3732,7 +3752,14 @@ const plasma = makeConfig({
         zeroex: true,
         kyberswap: "plasma",
     },
-    bridges: {},
+    bridges: {
+        chainlink: {
+            atlasNetworkName: "plasma-mainnet",
+            routerAddress: "0xcDca5D374e46A6DDDab50bD2D9acB8c796eC35C3",
+            chainSelector: 9335212494177455608n,
+            tokenAdminRegistry: "0xc23071a8AE83671f37bdA1DaDBC745a9780f632A",
+        },
+    },
     oracles: {},
     morpho: {},
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
@@ -4200,6 +4227,12 @@ const rootstock = makeConfig({
     },
     morpho: {},
     bridges: {
+        chainlink: {
+            atlasNetworkName: "rootstock-mainnet",
+            routerAddress: "0xCe7aFb0BF5F73BfDB5e9E04976eBac2005746bD0",
+            chainSelector: 11964252391146578476n,
+            tokenAdminRegistry: "0xad71ac82aCFCbDD27BBd3F3eD2fA24E26E49CBE2",
+        },
         stargate: {
             endpointID: 30333,
             blockConfirmations: 20,
@@ -4875,6 +4908,12 @@ const taiko = makeConfig({
     },
     morpho: {},
     bridges: {
+        chainlink: {
+            atlasNetworkName: "ethereum-mainnet-taiko-1",
+            routerAddress: "0xeb2502AeD3Cfd6E37e292c6B837a8FFF9a042367",
+            chainSelector: 16468599424800719238n,
+            tokenAdminRegistry: "0x308a2A7d13B12ba26649F381C53F7e7C60d0D9c6",
+        },
         rhinofi: "TAIKO",
         stargate: {
             endpointID: 30290,
