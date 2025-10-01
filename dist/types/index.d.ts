@@ -6095,6 +6095,7 @@ declare const plasma: Readonly<{
     markets: {
         zeroex: true;
         kyberswap: string;
+        openocean: string;
     };
     bridges: {
         chainlink: {
@@ -18467,6 +18468,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     markets: {
         zeroex: true;
         kyberswap: string;
+        openocean: string;
     };
     bridges: {
         chainlink: {

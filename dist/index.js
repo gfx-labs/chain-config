@@ -3757,6 +3757,7 @@ const plasma = makeConfig({
     markets: {
         zeroex: true,
         kyberswap: "plasma",
+        openocean: "plasma",
     },
     bridges: {
         chainlink: {
