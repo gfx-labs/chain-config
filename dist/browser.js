@@ -1978,8 +1978,11 @@
 	    safeReorgDistance: 90000,
 	    externalId: {
 	        tenderly: "true",
+	        cowswap: "lens"
 	    },
-	    markets: {},
+	    markets: {
+	        cowswap: "lens"
+	    },
 	    bridges: {
 	        chainlink: {
 	            atlasNetworkName: "lens-mainnet",
