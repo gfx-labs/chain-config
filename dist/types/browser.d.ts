@@ -9419,7 +9419,6 @@ interface Markets {
     zeroex?: boolean;
     cowswap?: string;
     icecreamswap?: boolean;
-    beam?: boolean;
 }
 interface Bridges {
     deswap?: {
