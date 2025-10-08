@@ -3581,8 +3581,11 @@ declare const lens: Readonly<{
     safeReorgDistance: 90000;
     externalId: {
         tenderly: string;
+        cowswap: string;
     };
-    markets: {};
+    markets: {
+        cowswap: string;
+    };
     bridges: {
         chainlink: {
             atlasNetworkName: string;
@@ -9416,6 +9419,7 @@ interface Markets {
     zeroex?: boolean;
     cowswap?: string;
     icecreamswap?: boolean;
+    beam?: boolean;
 }
 interface Bridges {
     deswap?: {
@@ -17594,8 +17598,11 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     safeReorgDistance: 90000;
     externalId: {
         tenderly: string;
+        cowswap: string;
     };
-    markets: {};
+    markets: {
+        cowswap: string;
+    };
     bridges: {
         chainlink: {
             atlasNetworkName: string;
