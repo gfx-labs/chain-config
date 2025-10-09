@@ -6291,7 +6291,7 @@ declare const plasma: Readonly<{
         address: "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb";
     })[];
     stables: "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb"[];
-    watchlist: ("0x8603c67b7cc056ef6981a9c709854c53b699fa66" | "0xce4ac514ca6a9db357cccc105b7848d7fd37445d" | "0x2eabb32f34b7a25c34bc9cea142ce0e060ee0682" | "0x21d5a075073e631a85ab9c02e4b703460c572b4b")[];
+    watchlist: ("0x8603c67b7cc056ef6981a9c709854c53b699fa66" | "0xce4ac514ca6a9db357cccc105b7848d7fd37445d" | "0x2eabb32f34b7a25c34bc9cea142ce0e060ee0682" | "0x21d5a075073e631a85ab9c02e4b703460c572b4b" | "0x7bf6037d3b8af69468356435032eab9010adf879")[];
     internalName: "plasma";
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/xpl.png";
     contracts: {
@@ -18740,7 +18740,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         address: "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb";
     })[];
     stables: "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb"[];
-    watchlist: ("0x8603c67b7cc056ef6981a9c709854c53b699fa66" | "0xce4ac514ca6a9db357cccc105b7848d7fd37445d" | "0x2eabb32f34b7a25c34bc9cea142ce0e060ee0682" | "0x21d5a075073e631a85ab9c02e4b703460c572b4b")[];
+    watchlist: ("0x8603c67b7cc056ef6981a9c709854c53b699fa66" | "0xce4ac514ca6a9db357cccc105b7848d7fd37445d" | "0x2eabb32f34b7a25c34bc9cea142ce0e060ee0682" | "0x21d5a075073e631a85ab9c02e4b703460c572b4b" | "0x7bf6037d3b8af69468356435032eab9010adf879")[];
     internalName: "plasma";
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/xpl.png";
     contracts: {
