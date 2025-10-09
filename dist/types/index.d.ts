@@ -3723,8 +3723,11 @@ declare const lens: Readonly<{
     safeReorgDistance: 90000;
     externalId: {
         tenderly: string;
+        cowswap: string;
     };
-    markets: {};
+    markets: {
+        cowswap: string;
+    };
     bridges: {
         chainlink: {
             atlasNetworkName: string;
@@ -17809,8 +17812,11 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     safeReorgDistance: 90000;
     externalId: {
         tenderly: string;
+        cowswap: string;
     };
-    markets: {};
+    markets: {
+        cowswap: string;
+    };
     bridges: {
         chainlink: {
             atlasNetworkName: string;
