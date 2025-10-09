@@ -56,6 +56,7 @@ const (
 	NameMatchain     InternalName = "matchain"
 	NamePlasma       InternalName = "plasma"
 	NameZerog        InternalName = "zerog"
+	NameAvalanche    InternalName = "avalanche"
 )
 
 var AllNetworks = []Network{
@@ -101,6 +102,7 @@ var AllNetworks = []Network{
 	Matchain,
 	Plasma,
 	Zerog,
+	Avalanche,
 }
 
 var networksByName = map[string]Network{
@@ -146,6 +148,7 @@ var networksByName = map[string]Network{
 	"matchain":      Matchain,
 	"plasma":        Plasma,
 	"zerog":         Zerog,
+	"avalanche":     Avalanche,
 }
 
 var networksById = map[int]Network{
@@ -191,6 +194,7 @@ var networksById = map[int]Network{
 	698:        Matchain,
 	9745:       Plasma,
 	16661:      Zerog,
+	43114:      Avalanche,
 }
 
 func NetworkByName(name string) (*Network, error) {

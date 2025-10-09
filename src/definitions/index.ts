@@ -3,6 +3,7 @@
  */
 
 export * from "./arbitrum";
+export * from "./avalanche";
 export * from "./base";
 export * from "./blast";
 export * from "./bob";

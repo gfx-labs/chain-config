@@ -1,4 +1,4 @@
-import { arbitrum as arbitrum$1, base as base$1, blast as blast$1, bob as bob$1, boba as boba$1, bsc as bsc$1, celo as celo$1, corn as corn$1, etherlink as etherlink$1, filecoin as filecoin$1, gnosis as gnosis$1, goat as goat$1, hemi as hemi$1, lens as lens$1, lightlinkPhoenix, linea as linea$1, lisk as lisk$1, mainnet as mainnet$1, manta as manta$1, mantle as mantle$1, matchain as matchain$1, metalL2, moonbeam as moonbeam$1, nibiru as nibiru$1, optimism as optimism$1, plasma as plasma$1, polygon as polygon$1, redbellyMainnet, rootstock as rootstock$1, saga as saga$1, scroll as scroll$1, sei as sei$1, sonic as sonic$1, taiko as taiko$1, telos as telos$1, tronShasta as tronShasta$1, unichain as unichain$1, worldchain as worldchain$1, xdc as xdc$1, zeroGMainnet, polygonZkEvm as polygonZkEvm$1, zksync } from 'viem/chains';
+import { arbitrum as arbitrum$1, avalanche as avalanche$1, base as base$1, blast as blast$1, bob as bob$1, boba as boba$1, bsc as bsc$1, celo as celo$1, corn as corn$1, etherlink as etherlink$1, filecoin as filecoin$1, gnosis as gnosis$1, goat as goat$1, hemi as hemi$1, lens as lens$1, lightlinkPhoenix, linea as linea$1, lisk as lisk$1, mainnet as mainnet$1, manta as manta$1, mantle as mantle$1, matchain as matchain$1, metalL2, moonbeam as moonbeam$1, nibiru as nibiru$1, optimism as optimism$1, plasma as plasma$1, polygon as polygon$1, redbellyMainnet, rootstock as rootstock$1, saga as saga$1, scroll as scroll$1, sei as sei$1, sonic as sonic$1, taiko as taiko$1, telos as telos$1, tronShasta as tronShasta$1, unichain as unichain$1, worldchain as worldchain$1, xdc as xdc$1, zeroGMainnet, polygonZkEvm as polygonZkEvm$1, zksync } from 'viem/chains';
 import { zeroAddress } from 'viem';
 
 const makeConfig = (x) => {
@@ -325,6 +325,84 @@ const arbitrum = makeConfig({
         },
         multicall2: { address: "0x842eC2c7D803033Edf55E478F461FC547Bc54EB2" },
         multicall3: { address: "0xcA11bde05977b3631167028862bE2a173976CA11" },
+    },
+});
+
+const avalanche = makeConfig({
+    ...avalanche$1,
+    name: "Avalanche",
+    blockTimeSeconds: 2,
+    launchTime: 1761794290,
+    transactionType: "eip1559",
+    sortIndex: 15,
+    logoUrl: "https://assets.oku.trade/chains/avalanche-logo.png",
+    deprecated: false,
+    safeReorgDistance: 90000,
+    blockAid: "",
+    externalId: {},
+    markets: {},
+    bridges: {},
+    oracles: {},
+    morpho: {},
+    initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
+    uniswap: {
+        deployBlock: 27832972,
+        poolFactory: "0x740b1c1de25031C31FF4fC9A62f554A55cdC1baD",
+        permit2: "0x000000000022D473030F116dDEE9F6B43aC78BA3",
+        multicall2: "0x0139141Cd4Ee88dF3Cdb65881D411bAE271Ef0C2",
+        tickLens: "0xEB9fFC8bf81b4fFd11fb6A63a6B0f098c6e21950",
+        nonfungiblePositionManager: "0x655C406EBFa14EE2006250925e54ec43AD184f8B",
+        positionsNFT: "0x655C406EBFa14EE2006250925e54ec43AD184f8B",
+        positionsNFTDeployBlock: 27833025,
+        universalRouter: "0x94b75331ae8d42c1b61065089b7d48fe14aa73b7",
+        wrappedNativeAddress: "0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7",
+        wrappedNativeSymbol: "WAVAX",
+        wrappedNativeName: "Wrapped AVAX",
+        wrappedNativeDecimals: 18,
+        nativeCurrencyName: "AVAX",
+    },
+    token: {
+        wethAddress: "0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7",
+    },
+    oku: {
+        limitOrderRegistry: zeroAddress,
+        limitOrderRegistryDeployBlock: 0,
+        pricing: {
+            nativeWrappedToken: "0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7",
+            nativeWrappedName: "AVAX",
+        },
+    },
+    defaultPool: "0xfAe3f424a0a47706811521E3ee268f00cFb5c45E",
+    defaultToken0: "0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7",
+    defaultToken1: "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+    tokenList: [
+        { symbol: "WAVAX", address: "0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7" },
+        { symbol: "USDC", address: "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e" },
+    ],
+    stables: [
+        "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+        "0x9702230A8Ea53601f5cD2dc00fDBc13d4dF4A8c7",
+    ],
+    watchlist: [],
+    internalName: "avalanche",
+    nativeLogoUrl: "https://assets.oku.trade/natives/avax.png",
+    contracts: {
+        ...avalanche$1.contracts,
+        limitOrder: {
+            address: zeroAddress,
+        },
+        nftManager: {
+            address: "0x655C406EBFa14EE2006250925e54ec43AD184f8B",
+        },
+        weth9: {
+            address: "0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7",
+        },
+        multicall2: {
+            address: "0x0139141Cd4Ee88dF3Cdb65881D411bAE271Ef0C2",
+        },
+        multicall3: {
+            address: "0xcA11bde05977b3631167028862bE2a173976CA11",
+        },
     },
 });
 
@@ -5957,6 +6035,7 @@ const MAINNET_CHAINS = [
     matchain,
     plasma,
     zerog,
+    avalanche,
 ];
 
-export { MAINNET_CHAINS, arbitrum, base, blast, bob, boba, bsc, celo, corn, etherlink, filecoin, gnosis, goat, hemi, lens, lightlink, linea, lisk, mainnet, manta, mantle, matchain, metal, moonbeam, nibiru, optimism, plasma, polygon, polygonZkEvm, redbelly, rootstock, saga, scroll, sei, sonic, taiko, telos, tronShasta, unichain, worldchain, xdc, zerog, zkSync };
+export { MAINNET_CHAINS, arbitrum, avalanche, base, blast, bob, boba, bsc, celo, corn, etherlink, filecoin, gnosis, goat, hemi, lens, lightlink, linea, lisk, mainnet, manta, mantle, matchain, metal, moonbeam, nibiru, optimism, plasma, polygon, polygonZkEvm, redbelly, rootstock, saga, scroll, sei, sonic, taiko, telos, tronShasta, unichain, worldchain, xdc, zerog, zkSync };

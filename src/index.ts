@@ -46,4 +46,5 @@ export const MAINNET_CHAINS = [
 	defs.matchain,
 	defs.plasma,
 	defs.zerog,
+	defs.avalanche,
 ] as const;
