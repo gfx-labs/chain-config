@@ -61,10 +61,6 @@ var Plasma Network = Network{
 		WethAddress: common.HexToAddress("0x6100E367285b01F48D07953803A2d8dCA5D19873"),
 	},
 	Contracts: map[string]ChainContract{
-		"multicall3": {
-			BlockCreated: 0,
-			Address:      common.HexToAddress("0xcA11bde05977b3631167028862bE2a173976CA11"),
-		},
 		"limitOrder": {
 			BlockCreated: 0,
 			Address:      common.HexToAddress("0x9db70E29712Cc8Af10c2B597BaDA6784544FF407"),
@@ -80,6 +76,10 @@ var Plasma Network = Network{
 		"multicall2": {
 			BlockCreated: 0,
 			Address:      common.HexToAddress("0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435"),
+		},
+		"multicall3": {
+			BlockCreated: 0,
+			Address:      common.HexToAddress("0xcA11bde05977b3631167028862bE2a173976CA11"),
 		},
 	},
 }
