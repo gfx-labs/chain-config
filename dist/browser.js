@@ -342,7 +342,11 @@
 	    deprecated: false,
 	    safeReorgDistance: 90000,
 	    blockAid: "",
-	    externalId: {},
+	    externalId: {
+	        zerion: "avalanche",
+	        debank: "avax",
+	        tenderly: "true",
+	    },
 	    markets: {},
 	    bridges: {},
 	    oracles: {},
