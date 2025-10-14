@@ -1,6 +1,6 @@
+import { zeroAddress } from "viem";
 import { avalanche as chain } from "viem/chains";
 import { makeConfig } from "../util";
-import { zeroAddress } from "viem";
 
 export const avalanche = makeConfig({
 	...chain,
@@ -9,7 +9,7 @@ export const avalanche = makeConfig({
 	launchTime: 1761794290,
 	transactionType: "eip1559",
 	sortIndex: 15,
-	logoUrl: "https://assets.oku.trade/chains/avalanche-logo.png",
+	logoUrl: "https://cms.oku.trade/cdn/public/chains/avalanche-logo.svg",
 	deprecated: false,
 	safeReorgDistance: 90000,
 	blockAid: "",
@@ -61,7 +61,7 @@ export const avalanche = makeConfig({
 	],
 	watchlist: [],
 	internalName: "avalanche",
-	nativeLogoUrl: "https://assets.oku.trade/natives/avax.png",
+	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/avax.svg",
 	contracts: {
 		...chain.contracts,
 		limitOrder: {
