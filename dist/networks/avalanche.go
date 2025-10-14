@@ -6,7 +6,7 @@ import (
 
 var Avalanche Network = Network{
 	ChainId:           43114,
-	LogoUrl:           "https://assets.oku.trade/chains/avalanche-logo.png",
+	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/avalanche-logo.svg",
 	Deprecated:        false,
 	SortIndex:         15,
 	LaunchTime:        1761794290,

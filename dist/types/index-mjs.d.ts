@@ -205,7 +205,7 @@ declare const avalanche: Readonly<{
     launchTime: 1761794290;
     transactionType: "eip1559";
     sortIndex: 15;
-    logoUrl: "https://assets.oku.trade/chains/avalanche-logo.png";
+    logoUrl: "https://cms.oku.trade/cdn/public/chains/avalanche-logo.svg";
     deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
@@ -255,7 +255,7 @@ declare const avalanche: Readonly<{
     stables: ("0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e" | "0x9702230A8Ea53601f5cD2dc00fDBc13d4dF4A8c7")[];
     watchlist: never[];
     internalName: "avalanche";
-    nativeLogoUrl: "https://assets.oku.trade/natives/avax.png";
+    nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/avax.svg";
     contracts: {
         limitOrder: {
             address: "0x0000000000000000000000000000000000000000";
@@ -18793,7 +18793,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     launchTime: 1761794290;
     transactionType: "eip1559";
     sortIndex: 15;
-    logoUrl: "https://assets.oku.trade/chains/avalanche-logo.png";
+    logoUrl: "https://cms.oku.trade/cdn/public/chains/avalanche-logo.svg";
     deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
@@ -18843,7 +18843,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     stables: ("0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e" | "0x9702230A8Ea53601f5cD2dc00fDBc13d4dF4A8c7")[];
     watchlist: never[];
     internalName: "avalanche";
-    nativeLogoUrl: "https://assets.oku.trade/natives/avax.png";
+    nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/avax.svg";
     contracts: {
         limitOrder: {
             address: "0x0000000000000000000000000000000000000000";
