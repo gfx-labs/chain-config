@@ -209,7 +209,11 @@ declare const avalanche: Readonly<{
     deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
-    externalId: {};
+    externalId: {
+        zerion: string;
+        debank: string;
+        tenderly: string;
+    };
     markets: {};
     bridges: {};
     oracles: {};
@@ -18797,7 +18801,11 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
-    externalId: {};
+    externalId: {
+        zerion: string;
+        debank: string;
+        tenderly: string;
+    };
     markets: {};
     bridges: {};
     oracles: {};
