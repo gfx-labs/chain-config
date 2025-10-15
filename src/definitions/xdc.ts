@@ -84,8 +84,8 @@ export const xdc = makeConfig({
 	defaultToken1: "0xfa2958cb79b0491cc627c1557f441ef849ca8eb1",
 	tokenList: [
 		{ symbol: "WXDC", address: "0x951857744785e80e2de051c32ee7b25f9c458c42" },
-		{ symbol: "USDC.e", address: "0x2a8e898b6242355c290e1f4fc966b8788729a4d4" },
 		{ symbol: "USDC", address: "0xfa2958cb79b0491cc627c1557f441ef849ca8eb1" },
+		{ symbol: "USDC.e", address: "0x2a8e898b6242355c290e1f4fc966b8788729a4d4" },
 	],
 	stables: [
 		"0x2a8e898b6242355c290e1f4fc966b8788729a4d4",
