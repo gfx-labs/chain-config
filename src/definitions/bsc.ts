@@ -3,7 +3,7 @@ import { makeConfig } from "../util";
 
 export const bsc = makeConfig({
 	...chain,
-	name: "BSC",
+	name: "BNB",
 	launchTime: 1689346800,
 	transactionType: "eip1559",
 	initCodeHash:
