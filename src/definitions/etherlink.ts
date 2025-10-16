@@ -15,6 +15,7 @@ export const etherlink = makeConfig({
 		tenderly: "true",
 	},
 	markets: {
+		kyberswap: "etherlink",
 		threeroute: true,
 	},
 	bridges: {
