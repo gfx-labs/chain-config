@@ -57,6 +57,7 @@ const (
 	NamePlasma       InternalName = "plasma"
 	NameZerog        InternalName = "zerog"
 	NameAvalanche    InternalName = "avalanche"
+	NameRonin        InternalName = "ronin"
 )
 
 var AllNetworks = []Network{
@@ -103,6 +104,7 @@ var AllNetworks = []Network{
 	Plasma,
 	Zerog,
 	Avalanche,
+	Ronin,
 }
 
 var networksByName = map[string]Network{
@@ -149,6 +151,7 @@ var networksByName = map[string]Network{
 	"plasma":        Plasma,
 	"zerog":         Zerog,
 	"avalanche":     Avalanche,
+	"ronin":         Ronin,
 }
 
 var networksById = map[int]Network{
@@ -195,6 +198,7 @@ var networksById = map[int]Network{
 	9745:       Plasma,
 	16661:      Zerog,
 	43114:      Avalanche,
+	2020:       Ronin,
 }
 
 func NetworkByName(name string) (*Network, error) {

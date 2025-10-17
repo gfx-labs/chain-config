@@ -31,6 +31,7 @@ export * from "./optimism";
 export * from "./plasma";
 export * from "./polygon";
 export * from "./redbelly";
+export * from "./ronin";
 export * from "./rootstock";
 export * from "./saga";
 export * from "./scroll";

@@ -14,10 +14,10 @@ export const lens = makeConfig({
 	safeReorgDistance: 90000,
 	externalId: {
 		tenderly: "true",
-		cowswap: "lens"
+		cowswap: "lens",
 	},
 	markets: {
-		cowswap: "lens"
+		cowswap: "lens",
 	},
 	bridges: {
 		chainlink: {
