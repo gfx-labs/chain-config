@@ -5577,6 +5577,7 @@ const worldchain = makeConfig({
     sortIndex: 15,
     logoUrl: "https://assets.oku.trade/chains/world-logo.png",
     deprecated: false,
+    liteChain: true,
     safeReorgDistance: 90000,
     blockAid: "",
     externalId: {
