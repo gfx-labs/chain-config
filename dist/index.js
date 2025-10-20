@@ -2152,7 +2152,6 @@ const lens = makeConfig({
     internalName: "lens",
     nativeLogoUrl: "https://assets.oku.trade/natives/gho.png",
     contracts: {
-        ...chains.lens.contracts,
         limitOrder: {
             address: "0xD3239f8D4c6245359f4F050F5133A9F61F4e2ACF",
         },

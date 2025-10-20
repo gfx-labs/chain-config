@@ -3840,9 +3840,6 @@ declare const lens: Readonly<{
             address: "0x5319C3Fc78ac3e10Ca733A5839D65F8493A8D60A";
             blockCreated: number;
         };
-        ensRegistry?: import("viem").ChainContract | undefined;
-        ensUniversalResolver?: import("viem").ChainContract | undefined;
-        erc6492Verifier?: import("viem").ChainContract | undefined;
     };
     blockExplorers: {
         readonly default: {
@@ -18035,9 +18032,6 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             address: "0x5319C3Fc78ac3e10Ca733A5839D65F8493A8D60A";
             blockCreated: number;
         };
-        ensRegistry?: ChainContract | undefined;
-        ensUniversalResolver?: ChainContract | undefined;
-        erc6492Verifier?: ChainContract | undefined;
     };
     blockExplorers: {
         readonly default: {
