@@ -346,9 +346,40 @@ const avalanche = makeConfig({
         debank: "avax",
         tenderly: "true",
     },
-    markets: {},
-    bridges: {},
-    oracles: {},
+    markets: {
+        openocean: "avax",
+        cowswap: "avalanche",
+    },
+    bridges: {
+        chainlink: {
+            atlasNetworkName: "avalanche-mainnet",
+            routerAddress: "0xF4c7E640EdA248ef95972845a62bdC74237805dB",
+            chainSelector: 6433500567565415381n,
+            tokenAdminRegistry: "0xc8df5D618c6a59Cc6A311E96a39450381001464F",
+        },
+        stargate: {
+            endpointID: 30106,
+            tokens: []
+        },
+        wanbridge: {
+            requiredConfirmations: 1,
+        },
+        wormhole: {
+            chain: "Avalanche",
+            timeToFinalize: 2,
+        }
+    },
+    oracles: {
+        cmc: {
+            slug: "avalanche",
+            native: "avalanche",
+        },
+        coingecko: {
+            slug: "avalanche",
+            native: "avalanche-2",
+        },
+        dexscreener: "avalanche",
+    },
     morpho: {},
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
     uniswap: {
@@ -2060,10 +2091,10 @@ const lens = makeConfig({
     safeReorgDistance: 90000,
     externalId: {
         tenderly: "true",
-        cowswap: "lens"
+        cowswap: "lens",
     },
     markets: {
-        cowswap: "lens"
+        cowswap: "lens",
     },
     bridges: {
         chainlink: {

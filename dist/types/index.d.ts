@@ -214,9 +214,40 @@ declare const avalanche: Readonly<{
         debank: string;
         tenderly: string;
     };
-    markets: {};
-    bridges: {};
-    oracles: {};
+    markets: {
+        openocean: string;
+        cowswap: string;
+    };
+    bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+            tokenAdminRegistry: string;
+        };
+        stargate: {
+            endpointID: number;
+            tokens: never[];
+        };
+        wanbridge: {
+            requiredConfirmations: number;
+        };
+        wormhole: {
+            chain: string;
+            timeToFinalize: number;
+        };
+    };
+    oracles: {
+        cmc: {
+            slug: string;
+            native: string;
+        };
+        coingecko: {
+            slug: string;
+            native: string;
+        };
+        dexscreener: string;
+    };
     morpho: {};
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     uniswap: {
@@ -19022,9 +19053,40 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         debank: string;
         tenderly: string;
     };
-    markets: {};
-    bridges: {};
-    oracles: {};
+    markets: {
+        openocean: string;
+        cowswap: string;
+    };
+    bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+            tokenAdminRegistry: string;
+        };
+        stargate: {
+            endpointID: number;
+            tokens: never[];
+        };
+        wanbridge: {
+            requiredConfirmations: number;
+        };
+        wormhole: {
+            chain: string;
+            timeToFinalize: number;
+        };
+    };
+    oracles: {
+        cmc: {
+            slug: string;
+            native: string;
+        };
+        coingecko: {
+            slug: string;
+            native: string;
+        };
+        dexscreener: string;
+    };
     morpho: {};
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     uniswap: {
