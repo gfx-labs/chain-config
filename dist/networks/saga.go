@@ -8,6 +8,7 @@ var Saga Network = Network{
 	ChainId:           5464,
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/saga-logo.png",
 	Deprecated:        false,
+	LiteChain:         false,
 	SortIndex:         13,
 	LaunchTime:        1740384000,
 	SafeReorgDistance: 90000,

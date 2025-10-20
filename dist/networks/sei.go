@@ -8,6 +8,7 @@ var Sei Network = Network{
 	ChainId:           1329,
 	LogoUrl:           "https://assets.oku.trade/chains/sei-logo.svg",
 	Deprecated:        false,
+	LiteChain:         false,
 	SortIndex:         5,
 	LaunchTime:        1687788000,
 	SafeReorgDistance: 90000,

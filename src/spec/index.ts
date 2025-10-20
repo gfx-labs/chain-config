@@ -199,6 +199,7 @@ export interface IChainInfo<
 	token: TokenMetadata;
 	oku: OkuMetadata;
 	deprecated: boolean;
+	liteChain?: boolean;
 
 	contracts: {
 		[key: string]: ChainContract | { [chainId: number]: ChainContract };

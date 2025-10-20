@@ -8,6 +8,7 @@ var Rootstock Network = Network{
 	ChainId:           30,
 	LogoUrl:           "https://assets.oku.trade/chains/rootstock-logo.svg",
 	Deprecated:        false,
+	LiteChain:         false,
 	SortIndex:         7,
 	LaunchTime:        1702479600,
 	SafeReorgDistance: 90000,

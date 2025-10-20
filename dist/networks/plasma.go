@@ -8,6 +8,7 @@ var Plasma Network = Network{
 	ChainId:           9745,
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/plasma-logo.svg",
 	Deprecated:        false,
+	LiteChain:         false,
 	SortIndex:         15,
 	LaunchTime:        1758588527,
 	SafeReorgDistance: 90000,

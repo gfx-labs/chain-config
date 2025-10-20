@@ -8,6 +8,7 @@ var Corn Network = Network{
 	ChainId:           21000000,
 	LogoUrl:           "https://assets.oku.trade/chains/corn-logo.png",
 	Deprecated:        false,
+	LiteChain:         false,
 	SortIndex:         15,
 	LaunchTime:        1733882663,
 	SafeReorgDistance: 90000,

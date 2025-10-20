@@ -8,6 +8,7 @@ var Sonic Network = Network{
 	ChainId:           146,
 	LogoUrl:           "https://assets.oku.trade/chains/sonic-logo.svg",
 	Deprecated:        false,
+	LiteChain:         false,
 	SortIndex:         15,
 	LaunchTime:        1737165834,
 	SafeReorgDistance: 90000,

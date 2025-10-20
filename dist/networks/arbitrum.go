@@ -8,6 +8,7 @@ var Arbitrum Network = Network{
 	ChainId:           42161,
 	LogoUrl:           "https://assets.oku.trade/chains/arbitrum-logo.svg",
 	Deprecated:        false,
+	LiteChain:         false,
 	SortIndex:         1,
 	LaunchTime:        1688997600,
 	SafeReorgDistance: 180000,

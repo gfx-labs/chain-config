@@ -339,6 +339,7 @@ const avalanche = makeConfig({
     sortIndex: 15,
     logoUrl: "https://cms.oku.trade/cdn/public/chains/avalanche-logo.svg",
     deprecated: false,
+    liteChain: true,
     safeReorgDistance: 90000,
     blockAid: "",
     externalId: {
@@ -359,7 +360,7 @@ const avalanche = makeConfig({
         },
         stargate: {
             endpointID: 30106,
-            tokens: []
+            tokens: [],
         },
         wanbridge: {
             requiredConfirmations: 1,
@@ -367,7 +368,7 @@ const avalanche = makeConfig({
         wormhole: {
             chain: "Avalanche",
             timeToFinalize: 2,
-        }
+        },
     },
     oracles: {
         cmc: {

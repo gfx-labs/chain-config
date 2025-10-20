@@ -8,6 +8,7 @@ var Lens Network = Network{
 	ChainId:           232,
 	LogoUrl:           "https://assets.oku.trade/chains/lens-logo.png",
 	Deprecated:        false,
+	LiteChain:         false,
 	SortIndex:         15,
 	LaunchTime:        1746050531,
 	SafeReorgDistance: 90000,

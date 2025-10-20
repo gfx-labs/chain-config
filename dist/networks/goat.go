@@ -8,6 +8,7 @@ var Goat Network = Network{
 	ChainId:           2345,
 	LogoUrl:           "https://assets.oku.trade/chains/goat-logo.svg",
 	Deprecated:        false,
+	LiteChain:         false,
 	SortIndex:         15,
 	LaunchTime:        1742159744,
 	SafeReorgDistance: 90000,

@@ -8,6 +8,7 @@ var Unichain Network = Network{
 	ChainId:           130,
 	LogoUrl:           "https://assets.oku.trade/chains/unichain-logo.svg",
 	Deprecated:        false,
+	LiteChain:         false,
 	SortIndex:         15,
 	LaunchTime:        1750384728,
 	SafeReorgDistance: 90000,

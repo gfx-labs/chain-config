@@ -8,6 +8,7 @@ var Mantle Network = Network{
 	ChainId:           5000,
 	LogoUrl:           "https://assets.oku.trade/chains/mantle-logo.png",
 	Deprecated:        false,
+	LiteChain:         false,
 	SortIndex:         15,
 	LaunchTime:        1720101600,
 	SafeReorgDistance: 90000,

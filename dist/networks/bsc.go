@@ -8,6 +8,7 @@ var Bsc Network = Network{
 	ChainId:           56,
 	LogoUrl:           "https://assets.oku.trade/chains/bsc-logo.svg",
 	Deprecated:        false,
+	LiteChain:         false,
 	SortIndex:         9,
 	LaunchTime:        1689346800,
 	SafeReorgDistance: 90000,

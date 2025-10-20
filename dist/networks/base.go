@@ -8,6 +8,7 @@ var Base Network = Network{
 	ChainId:           8453,
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/base-logo.svg",
 	Deprecated:        false,
+	LiteChain:         false,
 	SortIndex:         8,
 	LaunchTime:        1707321600,
 	SafeReorgDistance: 90000,

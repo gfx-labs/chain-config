@@ -8,6 +8,7 @@ var Taiko Network = Network{
 	ChainId:           167000,
 	LogoUrl:           "https://assets.oku.trade/chains/taiko-logo.svg",
 	Deprecated:        false,
+	LiteChain:         false,
 	SortIndex:         4,
 	LaunchTime:        1717509600,
 	SafeReorgDistance: 90000,

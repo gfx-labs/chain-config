@@ -17,6 +17,7 @@ var <%- helpers.snakeToCamel(chainName) %> Network = Network{
   ChainId: <%- chain.id %>,
   LogoUrl: "<%- chain.logoUrl %>",
   Deprecated: <%- chain.deprecated %>,
+  LiteChain: <%- chain.liteChain || false %>,
   SortIndex: <%- chain.sortIndex %>,
   LaunchTime: <%- chain.launchTime %>,
   SafeReorgDistance: <%- chain.safeReorgDistance || 90000 %>,

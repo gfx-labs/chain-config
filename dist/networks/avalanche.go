@@ -8,6 +8,7 @@ var Avalanche Network = Network{
 	ChainId:           43114,
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/avalanche-logo.svg",
 	Deprecated:        false,
+	LiteChain:         true,
 	SortIndex:         15,
 	LaunchTime:        1761794290,
 	SafeReorgDistance: 90000,

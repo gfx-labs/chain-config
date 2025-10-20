@@ -8,6 +8,7 @@ var Ronin Network = Network{
 	ChainId:           2020,
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/ronin-logo.svg",
 	Deprecated:        false,
+	LiteChain:         false,
 	SortIndex:         15,
 	LaunchTime:        1761966026,
 	SafeReorgDistance: 90000,

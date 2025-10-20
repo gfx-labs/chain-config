@@ -249,6 +249,7 @@ type Network struct {
 	Token             TokenMetadata
 	Oku               OkuMetadata
 	Deprecated        bool
+	LiteChain         bool
 	Contracts         map[string]ChainContract
 
 	ChainId        int `json:"chainId"`

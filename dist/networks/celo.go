@@ -8,6 +8,7 @@ var Celo Network = Network{
 	ChainId:           42220,
 	LogoUrl:           "https://assets.oku.trade/chains/celo-logo.svg",
 	Deprecated:        false,
+	LiteChain:         false,
 	SortIndex:         15,
 	LaunchTime:        1737754469,
 	SafeReorgDistance: 90000,

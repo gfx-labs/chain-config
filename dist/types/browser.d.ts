@@ -207,6 +207,7 @@ declare const avalanche: Readonly<{
     sortIndex: 15;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/avalanche-logo.svg";
     deprecated: false;
+    liteChain: true;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {
@@ -9808,6 +9809,7 @@ interface IChainInfo<formatters extends ChainFormatters | undefined = ChainForma
     token: TokenMetadata;
     oku: OkuMetadata;
     deprecated: boolean;
+    liteChain?: boolean;
     contracts: {
         [key: string]: ChainContract | {
             [chainId: number]: ChainContract;
@@ -19040,6 +19042,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     sortIndex: 15;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/avalanche-logo.svg";
     deprecated: false;
+    liteChain: true;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {
