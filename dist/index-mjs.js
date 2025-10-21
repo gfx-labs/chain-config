@@ -4377,7 +4377,7 @@ const ronin = makeConfig({
             nativeWrappedName: "RON",
         },
     },
-    defaultPool: zeroAddress,
+    defaultPool: "0xa7906fd31d53b895897be4528f24282b98c4b114",
     defaultToken0: "0x0b7007c13325c48911f73a2dad5fa5dcbf808adc",
     defaultToken1: "0xe514d9deb7966c8be0ca922de8a064264ea6bcd4",
     tokenList: [
