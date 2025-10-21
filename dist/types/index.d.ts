@@ -6688,8 +6688,24 @@ declare const ronin: Readonly<{
         tenderly: string;
     };
     markets: {};
-    bridges: {};
-    oracles: {};
+    bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+            tokenAdminRegistry: string;
+        };
+    };
+    oracles: {
+        cmc: {
+            slug: string;
+            native: string;
+        };
+        coingecko: {
+            slug: string;
+            native: string;
+        };
+    };
     morpho: {};
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     uniswap: {
@@ -19186,8 +19202,24 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         tenderly: string;
     };
     markets: {};
-    bridges: {};
-    oracles: {};
+    bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+            tokenAdminRegistry: string;
+        };
+    };
+    oracles: {
+        cmc: {
+            slug: string;
+            native: string;
+        };
+        coingecko: {
+            slug: string;
+            native: string;
+        };
+    };
     morpho: {};
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     uniswap: {

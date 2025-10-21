@@ -4348,8 +4348,24 @@
 	        tenderly: "true",
 	    },
 	    markets: {},
-	    bridges: {},
-	    oracles: {},
+	    bridges: {
+	        chainlink: {
+	            atlasNetworkName: "ronin-mainnet",
+	            routerAddress: "0x46527571D5D1B68eE7Eb60B18A32e6C60DcEAf99",
+	            chainSelector: 6916147374840168594n,
+	            tokenAdminRegistry: "0x90e83d532A4aD13940139c8ACE0B93b0DdbD323a",
+	        },
+	    },
+	    oracles: {
+	        cmc: {
+	            slug: "ronin",
+	            native: "ronin",
+	        },
+	        coingecko: {
+	            slug: "ronin",
+	            native: "ronin",
+	        },
+	    },
 	    morpho: {},
 	    initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
 	    uniswap: {
