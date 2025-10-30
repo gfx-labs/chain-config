@@ -92,6 +92,7 @@ export const etherlink = makeConfig({
 		"0xd03b92a27947bb08dd269107d4df00f8ab53fc28",
 		"0x80c789ebb377d257b5b660100757307099f0e3c0",
 		"0x50fe07f16943c55220fbc36c52e98559252a93b4",
+		"0xb5135165da8207f90598a2d58215aeb5f6e9f5ec",
 	],
 	internalName: "etherlink",
 	nativeLogoUrl: "https://assets.oku.trade/natives/xtz.png",
