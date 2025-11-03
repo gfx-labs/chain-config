@@ -90,7 +90,12 @@ var Optimism Network = Network{
 		WrappedNativeDecimals:              18,
 		NativeCurrencyName:                 "ETH",
 	},
-	Morpho: MorphoMetadata{},
+	Morpho: MorphoMetadata{
+		DeployBlock:     130770075,
+		Morpho:          common.HexToAddress("0xce95AfbB8EA029495c66020883F87aaE8864AF92"),
+		MmFactory11:     common.HexToAddress("0x3Bb6A6A0Bc85b367EFE0A5bAc81c5E52C892839a"),
+		PublicAllocator: common.HexToAddress("0x0d68a97324E602E02799CD83B42D337207B40658"),
+	},
 	Token: TokenMetadata{
 		UsdcAddress: common.HexToAddress("0x0b2c639c533813f4aa9d7837caf62653d097ff85"),
 		WethAddress: common.HexToAddress("0x4200000000000000000000000000000000000006"),

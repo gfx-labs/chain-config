@@ -5804,7 +5804,12 @@ declare const optimism: Readonly<{
         debank: string;
         tenderly: string;
     };
-    morpho: {};
+    morpho: {
+        deployBlock: number;
+        morpho: "0xce95AfbB8EA029495c66020883F87aaE8864AF92";
+        mmFactory11: "0x3Bb6A6A0Bc85b367EFE0A5bAc81c5E52C892839a";
+        publicAllocator: "0x0d68a97324E602E02799CD83B42D337207B40658";
+    };
     markets: {
         kyberswap: string;
         oneinch: {
@@ -11689,7 +11694,12 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         debank: string;
         tenderly: string;
     };
-    morpho: {};
+    morpho: {
+        deployBlock: number;
+        morpho: "0xce95AfbB8EA029495c66020883F87aaE8864AF92";
+        mmFactory11: "0x3Bb6A6A0Bc85b367EFE0A5bAc81c5E52C892839a";
+        publicAllocator: "0x0d68a97324E602E02799CD83B42D337207B40658";
+    };
     markets: {
         kyberswap: string;
         oneinch: {
