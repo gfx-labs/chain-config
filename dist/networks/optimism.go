@@ -95,6 +95,8 @@ var Optimism Network = Network{
 		Morpho:          common.HexToAddress("0xce95AfbB8EA029495c66020883F87aaE8864AF92"),
 		MmFactory11:     common.HexToAddress("0x3Bb6A6A0Bc85b367EFE0A5bAc81c5E52C892839a"),
 		PublicAllocator: common.HexToAddress("0x0d68a97324E602E02799CD83B42D337207B40658"),
+		Bundler3:        common.HexToAddress("0xFBCd3C258feB131D8E038F2A3a670A7bE0507C05"),
+		UrdFactory:      common.HexToAddress("0xe41AEcB4570A7B68d15a4Fb0a03ACEe421A21498"),
 	},
 	Token: TokenMetadata{
 		UsdcAddress: common.HexToAddress("0x0b2c639c533813f4aa9d7837caf62653d097ff85"),
