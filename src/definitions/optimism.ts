@@ -105,6 +105,7 @@ export const optimism = makeConfig({
 		dexscreener: "optimism",
 	},
 	oku: {
+		router: "0x80dCD2C737cAFE9f86559bBCed9938eFfB7f7D1A",
 		limitOrderRegistryDeployBlock: 105276132,
 		limitOrderRegistry: "0x54dF9e11c7933a9cA3BD1E540B63dA15edAe40bf",
 		customOrderTypes: {
