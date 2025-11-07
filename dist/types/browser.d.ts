@@ -447,6 +447,7 @@ declare const base: Readonly<{
         usdcAddress: "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913";
     };
     oku: {
+        router: "0xA89A26c4d81A2cca4d0670F77f0FC88362b72248";
         limitOrderRegistry: "0xff8b754c64e9a8473bd6e1118d0eac67f0a8ae27";
         limitOrderRegistryDeployBlock: number;
         pricing: {
@@ -5870,6 +5871,7 @@ declare const optimism: Readonly<{
         dexscreener: string;
     };
     oku: {
+        router: "0x80dCD2C737cAFE9f86559bBCed9938eFfB7f7D1A";
         limitOrderRegistryDeployBlock: number;
         limitOrderRegistry: "0x54dF9e11c7933a9cA3BD1E540B63dA15edAe40bf";
         customOrderTypes: {
@@ -8396,6 +8398,7 @@ declare const worldchain: Readonly<{
         wbtcAddress: "0x03c7054bcb39f7b2e5b2c7acb37583e32d70cfa3";
     };
     oku: {
+        router: "0x25cf2128F603754179379351B805B4F8C0B8dCA4";
         pricing: {
             nativeWrappedToken: "0x4200000000000000000000000000000000000006";
             nativeWrappedName: string;
@@ -9711,6 +9714,7 @@ interface OkuCustomOrderTypesMetadata {
     oracleLessDeployBlock?: number;
 }
 interface OkuMetadata {
+    router?: Address;
     limitOrderRegistry?: Address;
     limitOrderRegistryDeployBlock?: number;
     pricing?: OkuPricingMetadata;
@@ -10152,6 +10156,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         usdcAddress: "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913";
     };
     oku: {
+        router: "0xA89A26c4d81A2cca4d0670F77f0FC88362b72248";
         limitOrderRegistry: "0xff8b754c64e9a8473bd6e1118d0eac67f0a8ae27";
         limitOrderRegistryDeployBlock: number;
         pricing: {
@@ -11762,6 +11767,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         dexscreener: string;
     };
     oku: {
+        router: "0x80dCD2C737cAFE9f86559bBCed9938eFfB7f7D1A";
         limitOrderRegistryDeployBlock: number;
         limitOrderRegistry: "0x54dF9e11c7933a9cA3BD1E540B63dA15edAe40bf";
         customOrderTypes: {
@@ -17425,6 +17431,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         wbtcAddress: "0x03c7054bcb39f7b2e5b2c7acb37583e32d70cfa3";
     };
     oku: {
+        router: "0x25cf2128F603754179379351B805B4F8C0B8dCA4";
         pricing: {
             nativeWrappedToken: "0x4200000000000000000000000000000000000006";
             nativeWrappedName: string;

@@ -348,6 +348,7 @@ type TokenMetadata struct {
 }
 
 type OkuMetadata struct {
+	Router                        common.Address
 	LimitOrderRegistry            common.Address
 	LimitOrderRegistryDeployBlock int64
 	Pricing                       OkuPricingMetadata

@@ -38,6 +38,7 @@ var Worldchain Network = Network{
 	Watchlist:        []common.Address{},
 	BlockTimeSeconds: 2,
 	Oku: OkuMetadata{
+		Router: common.HexToAddress("0x25cf2128F603754179379351B805B4F8C0B8dCA4"),
 
 		Pricing: OkuPricingMetadata{
 			NativeWrappedToken: common.HexToAddress("0x4200000000000000000000000000000000000006"),
