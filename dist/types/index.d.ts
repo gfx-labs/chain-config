@@ -5531,6 +5531,119 @@ declare const metal: Readonly<{
         readonly transaction: typeof import("viem/chains").serializeTransactionOpStack;
     };
 }>;
+declare const monad: Readonly<{
+    name: "monad";
+    blockTimeSeconds: 0.4;
+    launchTime: 1764568406;
+    transactionType: "eip1559";
+    sortIndex: 10;
+    logoUrl: "https://assets.oku.trade/chains/monad-logo.png";
+    deprecated: false;
+    safeReorgDistance: 90000;
+    blockAid: "";
+    externalId: {
+        tenderly: string;
+    };
+    markets: {};
+    bridges: {};
+    oracles: {};
+    morpho: {};
+    initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
+    uniswap: {
+        deployBlock: number;
+        poolFactory: "0x204FAca1764B154221e35c0d20aBb3c525710498";
+        permit2: "0x000000000022D473030F116dDEE9F6B43aC78BA3";
+        multicall2: "0xd1b797d92d87b688193a2b976efc8d577d204343";
+        tickLens: "0xF025e0Fe9E331A0eF05c2ad3C4E9C64b625cda6f";
+        nonfungiblePositionManager: "0x7197E214c0b767cFB76Fb734ab638E2c192F4E53";
+        positionsNFT: "0x7197E214c0b767cFB76Fb734ab638E2c192F4E53";
+        positionsNFTDeployBlock: number;
+        universalRouter: "0x0D97Dc33264bfC1c226207428A79b26757fb9dc3";
+        wrappedNativeAddress: "0x3bd359C1119dA7Da1D913D1C4D2B7c461115433A";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
+        nativeCurrencyName: string;
+    };
+    token: {
+        usdcAddress: "0x754704Bc059F8C67012fEd69BC8A327a5aafb603";
+        wbtcAddress: "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c";
+        wethAddress: "0x3bd359C1119dA7Da1D913D1C4D2B7c461115433A";
+    };
+    oku: {
+        limitOrderRegistry: "0x0000000000000000000000000000000000000000";
+        limitOrderRegistryDeployBlock: number;
+        pricing: {
+            nativeWrappedToken: "0x3bd359C1119dA7Da1D913D1C4D2B7c461115433A";
+            nativeWrappedName: string;
+        };
+    };
+    defaultPool: "0x659bD0BC4167BA25c62E05656F78043E7eD4a9da";
+    defaultToken0: "0x3bd359C1119dA7Da1D913D1C4D2B7c461115433A";
+    defaultToken1: "0x754704Bc059F8C67012fEd69BC8A327a5aafb603";
+    tokenList: ({
+        symbol: string;
+        address: "0x3bd359C1119dA7Da1D913D1C4D2B7c461115433A";
+    } | {
+        symbol: string;
+        address: "0x754704Bc059F8C67012fEd69BC8A327a5aafb603";
+    } | {
+        symbol: string;
+        address: "0xe7cd86e13AC4309349F30B3435a9d337750fC82D";
+    })[];
+    stables: ("0x754704Bc059F8C67012fEd69BC8A327a5aafb603" | "0xe7cd86e13AC4309349F30B3435a9d337750fC82D")[];
+    watchlist: "0x659bD0BC4167BA25c62E05656F78043E7eD4a9da"[];
+    internalName: "monad";
+    nativeLogoUrl: "https://assets.oku.trade/natives/monad.png";
+    contracts: {
+        limitOrder: {
+            address: "0x0000000000000000000000000000000000000000";
+        };
+        nftManager: {
+            address: "0x7197E214c0b767cFB76Fb734ab638E2c192F4E53";
+        };
+        weth9: {
+            address: "0x3bd359C1119dA7Da1D913D1C4D2B7c461115433A";
+        };
+        multicall2: {
+            address: "0xd1b797d92d87b688193a2b976efc8d577d204343";
+        };
+        multicall3: {
+            address: "0xcA11bde05977b3631167028862bE2a173976CA11";
+        };
+        ensRegistry?: import("viem").ChainContract | undefined;
+        ensUniversalResolver?: import("viem").ChainContract | undefined;
+        erc6492Verifier?: import("viem").ChainContract | undefined;
+    };
+    blockExplorers: {
+        readonly default: {
+            readonly name: "Monvision";
+            readonly url: "https://mainnet-beta.monvision.io";
+        };
+    };
+    blockTime: 400;
+    ensTlds?: readonly string[] | undefined;
+    id: 143;
+    nativeCurrency: {
+        readonly name: "Monad";
+        readonly symbol: "MON";
+        readonly decimals: 18;
+    };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
+    rpcUrls: {
+        readonly default: {
+            readonly http: readonly [
+                "https://rpc.monad.xyz"
+            ];
+        };
+    };
+    sourceId?: number | undefined | undefined | undefined;
+    testnet: false;
+    custom?: Record<string, unknown> | undefined;
+    fees?: import("viem").ChainFees<undefined> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
+}>;
 declare const moonbeam: Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     sortIndex: 12;
@@ -19319,6 +19432,116 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     fees?: import("viem").ChainFees<undefined> | undefined;
     formatters?: undefined | undefined;
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
+}>, Readonly<{
+    name: "monad";
+    blockTimeSeconds: 0.4;
+    launchTime: 1764568406;
+    transactionType: "eip1559";
+    sortIndex: 10;
+    logoUrl: "https://assets.oku.trade/chains/monad-logo.png";
+    deprecated: false;
+    safeReorgDistance: 90000;
+    blockAid: "";
+    externalId: {
+        tenderly: string;
+    };
+    markets: {};
+    bridges: {};
+    oracles: {};
+    morpho: {};
+    initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
+    uniswap: {
+        deployBlock: number;
+        poolFactory: "0x204FAca1764B154221e35c0d20aBb3c525710498";
+        permit2: "0x000000000022D473030F116dDEE9F6B43aC78BA3";
+        multicall2: "0xd1b797d92d87b688193a2b976efc8d577d204343";
+        tickLens: "0xF025e0Fe9E331A0eF05c2ad3C4E9C64b625cda6f";
+        nonfungiblePositionManager: "0x7197E214c0b767cFB76Fb734ab638E2c192F4E53";
+        positionsNFT: "0x7197E214c0b767cFB76Fb734ab638E2c192F4E53";
+        positionsNFTDeployBlock: number;
+        universalRouter: "0x0D97Dc33264bfC1c226207428A79b26757fb9dc3";
+        wrappedNativeAddress: "0x3bd359C1119dA7Da1D913D1C4D2B7c461115433A";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
+        nativeCurrencyName: string;
+    };
+    token: {
+        usdcAddress: "0x754704Bc059F8C67012fEd69BC8A327a5aafb603";
+        wbtcAddress: "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c";
+        wethAddress: "0x3bd359C1119dA7Da1D913D1C4D2B7c461115433A";
+    };
+    oku: {
+        limitOrderRegistry: "0x0000000000000000000000000000000000000000";
+        limitOrderRegistryDeployBlock: number;
+        pricing: {
+            nativeWrappedToken: "0x3bd359C1119dA7Da1D913D1C4D2B7c461115433A";
+            nativeWrappedName: string;
+        };
+    };
+    defaultPool: "0x659bD0BC4167BA25c62E05656F78043E7eD4a9da";
+    defaultToken0: "0x3bd359C1119dA7Da1D913D1C4D2B7c461115433A";
+    defaultToken1: "0x754704Bc059F8C67012fEd69BC8A327a5aafb603";
+    tokenList: ({
+        symbol: string;
+        address: "0x3bd359C1119dA7Da1D913D1C4D2B7c461115433A";
+    } | {
+        symbol: string;
+        address: "0x754704Bc059F8C67012fEd69BC8A327a5aafb603";
+    } | {
+        symbol: string;
+        address: "0xe7cd86e13AC4309349F30B3435a9d337750fC82D";
+    })[];
+    stables: ("0x754704Bc059F8C67012fEd69BC8A327a5aafb603" | "0xe7cd86e13AC4309349F30B3435a9d337750fC82D")[];
+    watchlist: "0x659bD0BC4167BA25c62E05656F78043E7eD4a9da"[];
+    internalName: "monad";
+    nativeLogoUrl: "https://assets.oku.trade/natives/monad.png";
+    contracts: {
+        limitOrder: {
+            address: "0x0000000000000000000000000000000000000000";
+        };
+        nftManager: {
+            address: "0x7197E214c0b767cFB76Fb734ab638E2c192F4E53";
+        };
+        weth9: {
+            address: "0x3bd359C1119dA7Da1D913D1C4D2B7c461115433A";
+        };
+        multicall2: {
+            address: "0xd1b797d92d87b688193a2b976efc8d577d204343";
+        };
+        multicall3: {
+            address: "0xcA11bde05977b3631167028862bE2a173976CA11";
+        };
+        ensRegistry?: ChainContract | undefined;
+        ensUniversalResolver?: ChainContract | undefined;
+        erc6492Verifier?: ChainContract | undefined;
+    };
+    blockExplorers: {
+        readonly default: {
+            readonly name: "Monvision";
+            readonly url: "https://mainnet-beta.monvision.io";
+        };
+    };
+    blockTime: 400;
+    ensTlds?: readonly string[] | undefined;
+    id: 143;
+    nativeCurrency: {
+        readonly name: "Monad";
+        readonly symbol: "MON";
+        readonly decimals: 18;
+    };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
+    rpcUrls: {
+        readonly default: {
+            readonly http: readonly ["https://rpc.monad.xyz"];
+        };
+    };
+    sourceId?: number | undefined | undefined | undefined;
+    testnet: false;
+    custom?: Record<string, unknown> | undefined;
+    fees?: import("viem").ChainFees<undefined> | undefined;
+    formatters?: undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>];
-export { arbitrum, avalanche, base, blast, bob, boba, bsc, celo, corn, etherlink, filecoin, gnosis, goat, hemi, lens, lightlink, linea, lisk, mainnet, manta, mantle, matchain, metal, moonbeam, nibiru, optimism, plasma, polygon, redbelly, ronin, rootstock, saga, scroll, sei, sonic, taiko, telos, tronShasta, unichain, worldchain, xdc, zerog, polygonZkEvm, zkSync, MorphoMetadata, UniswapMetadata, OkuPricingMetadata, OkuCustomOrderTypesMetadata, OkuMetadata, TokenMetadata, Markets, Bridges, Oracles, IChainInfo, MAINNET_CHAINS };
+export { arbitrum, avalanche, base, blast, bob, boba, bsc, celo, corn, etherlink, filecoin, gnosis, goat, hemi, lens, lightlink, linea, lisk, mainnet, manta, mantle, matchain, metal, monad, moonbeam, nibiru, optimism, plasma, polygon, redbelly, ronin, rootstock, saga, scroll, sei, sonic, taiko, telos, tronShasta, unichain, worldchain, xdc, zerog, polygonZkEvm, zkSync, MorphoMetadata, UniswapMetadata, OkuPricingMetadata, OkuCustomOrderTypesMetadata, OkuMetadata, TokenMetadata, Markets, Bridges, Oracles, IChainInfo, MAINNET_CHAINS };
 export { ChainContract } from "viem";

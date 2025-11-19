@@ -1,4 +1,4 @@
-import { arbitrum as arbitrum$1, avalanche as avalanche$1, base as base$1, blast as blast$1, bob as bob$1, boba as boba$1, bsc as bsc$1, celo as celo$1, corn as corn$1, etherlink as etherlink$1, filecoin as filecoin$1, gnosis as gnosis$1, goat as goat$1, hemi as hemi$1, lens as lens$1, lightlinkPhoenix, linea as linea$1, lisk as lisk$1, mainnet as mainnet$1, manta as manta$1, mantle as mantle$1, matchain as matchain$1, metalL2, moonbeam as moonbeam$1, nibiru as nibiru$1, optimism as optimism$1, plasma as plasma$1, polygon as polygon$1, redbellyMainnet, ronin as ronin$1, rootstock as rootstock$1, saga as saga$1, scroll as scroll$1, sei as sei$1, sonic as sonic$1, taiko as taiko$1, telos as telos$1, tronShasta as tronShasta$1, unichain as unichain$1, worldchain as worldchain$1, xdc as xdc$1, zeroGMainnet, polygonZkEvm as polygonZkEvm$1, zksync } from 'viem/chains';
+import { arbitrum as arbitrum$1, avalanche as avalanche$1, base as base$1, blast as blast$1, bob as bob$1, boba as boba$1, bsc as bsc$1, celo as celo$1, corn as corn$1, etherlink as etherlink$1, filecoin as filecoin$1, gnosis as gnosis$1, goat as goat$1, hemi as hemi$1, lens as lens$1, lightlinkPhoenix, linea as linea$1, lisk as lisk$1, mainnet as mainnet$1, manta as manta$1, mantle as mantle$1, matchain as matchain$1, metalL2, monad as monad$1, moonbeam as moonbeam$1, nibiru as nibiru$1, optimism as optimism$1, plasma as plasma$1, polygon as polygon$1, redbellyMainnet, ronin as ronin$1, rootstock as rootstock$1, saga as saga$1, scroll as scroll$1, sei as sei$1, sonic as sonic$1, taiko as taiko$1, telos as telos$1, tronShasta as tronShasta$1, unichain as unichain$1, worldchain as worldchain$1, xdc as xdc$1, zeroGMainnet, polygonZkEvm as polygonZkEvm$1, zksync } from 'viem/chains';
 import { zeroAddress } from 'viem';
 
 const makeConfig = (x) => {
@@ -3301,6 +3301,89 @@ const metal = makeConfig({
     },
 });
 
+const monad = makeConfig({
+    ...monad$1,
+    name: "monad",
+    blockTimeSeconds: 0.4,
+    launchTime: 1764568406,
+    transactionType: "eip1559",
+    sortIndex: 10,
+    logoUrl: "https://assets.oku.trade/chains/monad-logo.png",
+    deprecated: false,
+    safeReorgDistance: 90000,
+    blockAid: "",
+    externalId: {
+        tenderly: "true",
+    },
+    markets: {},
+    bridges: {},
+    oracles: {},
+    morpho: {},
+    initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
+    uniswap: {
+        deployBlock: 29255827,
+        poolFactory: "0x204FAca1764B154221e35c0d20aBb3c525710498",
+        permit2: "0x000000000022D473030F116dDEE9F6B43aC78BA3",
+        multicall2: "0xd1b797d92d87b688193a2b976efc8d577d204343",
+        tickLens: "0xF025e0Fe9E331A0eF05c2ad3C4E9C64b625cda6f",
+        nonfungiblePositionManager: "0x7197E214c0b767cFB76Fb734ab638E2c192F4E53",
+        positionsNFT: "0x7197E214c0b767cFB76Fb734ab638E2c192F4E53",
+        positionsNFTDeployBlock: 29255879,
+        universalRouter: "0x0D97Dc33264bfC1c226207428A79b26757fb9dc3",
+        wrappedNativeAddress: "0x3bd359C1119dA7Da1D913D1C4D2B7c461115433A",
+        wrappedNativeSymbol: "WMON",
+        wrappedNativeName: "Wrapped MON",
+        wrappedNativeDecimals: 18,
+        nativeCurrencyName: "MON",
+    },
+    token: {
+        usdcAddress: "0x754704Bc059F8C67012fEd69BC8A327a5aafb603",
+        wbtcAddress: "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c",
+        wethAddress: "0x3bd359C1119dA7Da1D913D1C4D2B7c461115433A",
+    },
+    oku: {
+        limitOrderRegistry: zeroAddress,
+        limitOrderRegistryDeployBlock: 0,
+        pricing: {
+            nativeWrappedToken: "0x3bd359C1119dA7Da1D913D1C4D2B7c461115433A",
+            nativeWrappedName: "MON",
+        },
+    },
+    defaultPool: "0x659bD0BC4167BA25c62E05656F78043E7eD4a9da",
+    defaultToken0: "0x3bd359C1119dA7Da1D913D1C4D2B7c461115433A",
+    defaultToken1: "0x754704Bc059F8C67012fEd69BC8A327a5aafb603",
+    tokenList: [
+        { symbol: "WMON", address: "0x3bd359C1119dA7Da1D913D1C4D2B7c461115433A" },
+        { symbol: "USDC", address: "0x754704Bc059F8C67012fEd69BC8A327a5aafb603" },
+        { symbol: "USDT0", address: "0xe7cd86e13AC4309349F30B3435a9d337750fC82D" },
+    ],
+    stables: [
+        "0x754704Bc059F8C67012fEd69BC8A327a5aafb603",
+        "0xe7cd86e13AC4309349F30B3435a9d337750fC82D",
+    ],
+    watchlist: ["0x659bD0BC4167BA25c62E05656F78043E7eD4a9da"],
+    internalName: "monad",
+    nativeLogoUrl: "https://assets.oku.trade/natives/monad.png",
+    contracts: {
+        ...monad$1.contracts,
+        limitOrder: {
+            address: zeroAddress,
+        },
+        nftManager: {
+            address: "0x7197E214c0b767cFB76Fb734ab638E2c192F4E53",
+        },
+        weth9: {
+            address: "0x3bd359C1119dA7Da1D913D1C4D2B7c461115433A",
+        },
+        multicall2: {
+            address: "0xd1b797d92d87b688193a2b976efc8d577d204343",
+        },
+        multicall3: {
+            address: "0xcA11bde05977b3631167028862bE2a173976CA11",
+        },
+    },
+});
+
 const moonbeam = makeConfig({
     ...moonbeam$1,
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
@@ -6182,6 +6265,7 @@ const MAINNET_CHAINS = [
     zerog,
     avalanche,
     ronin,
+    monad,
 ];
 
-export { MAINNET_CHAINS, arbitrum, avalanche, base, blast, bob, boba, bsc, celo, corn, etherlink, filecoin, gnosis, goat, hemi, lens, lightlink, linea, lisk, mainnet, manta, mantle, matchain, metal, moonbeam, nibiru, optimism, plasma, polygon, polygonZkEvm, redbelly, ronin, rootstock, saga, scroll, sei, sonic, taiko, telos, tronShasta, unichain, worldchain, xdc, zerog, zkSync };
+export { MAINNET_CHAINS, arbitrum, avalanche, base, blast, bob, boba, bsc, celo, corn, etherlink, filecoin, gnosis, goat, hemi, lens, lightlink, linea, lisk, mainnet, manta, mantle, matchain, metal, monad, moonbeam, nibiru, optimism, plasma, polygon, polygonZkEvm, redbelly, ronin, rootstock, saga, scroll, sei, sonic, taiko, telos, tronShasta, unichain, worldchain, xdc, zerog, zkSync };
