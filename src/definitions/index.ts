@@ -25,6 +25,7 @@ export * from "./manta";
 export * from "./mantle";
 export * from "./matchain";
 export * from "./metal";
+export * from "./monad";
 export * from "./moonbeam";
 export * from "./nibiru";
 export * from "./optimism";

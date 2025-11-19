@@ -48,4 +48,5 @@ export const MAINNET_CHAINS = [
 	defs.zerog,
 	defs.avalanche,
 	defs.ronin,
+	defs.monad,
 ] as const;

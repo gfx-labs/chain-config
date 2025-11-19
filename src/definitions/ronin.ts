@@ -1,4 +1,3 @@
-import { zeroAddress } from "viem";
 import { ronin as chain } from "viem/chains";
 import { makeConfig } from "../util";
 
