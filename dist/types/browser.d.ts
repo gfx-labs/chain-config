@@ -7606,11 +7606,6 @@ declare const taiko: Readonly<{
             url: string;
             apiUrl: string;
         };
-        routescan: {
-            name: string;
-            url: string;
-            apiUrl: string;
-        };
     };
     uniswap: {
         deployBlock: number;
@@ -9235,7 +9230,7 @@ declare const zkSync: Readonly<{
             readonly blockCreated: 45659388;
         };
     };
-    blockTime: 1000;
+    blockTime: 200;
     ensTlds?: readonly string[] | undefined;
     id: 324;
     name: "ZKsync Era";
@@ -12906,7 +12901,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             readonly blockCreated: 45659388;
         };
     };
-    blockTime: 1000;
+    blockTime: 200;
     ensTlds?: readonly string[] | undefined;
     id: 324;
     name: "ZKsync Era";
@@ -13665,11 +13660,6 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     };
     blockExplorers: {
         default: {
-            name: string;
-            url: string;
-            apiUrl: string;
-        };
-        routescan: {
             name: string;
             url: string;
             apiUrl: string;

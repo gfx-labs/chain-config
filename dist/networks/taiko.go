@@ -14,11 +14,7 @@ var Taiko Network = Network{
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {
-			Url:    "https://taikoscan.io",
-			ApiUrl: "https://api.taikoscan.io/api",
-		},
-		"routescan": {
-			Url:    "https://taikoscan.network",
+			Url:    "https://taikoexplorer.com/",
 			ApiUrl: "https://api.routescan.io/v2/network/mainnet/evm/43114/etherscan/api",
 		},
 	},

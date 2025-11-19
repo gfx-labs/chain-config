@@ -5182,13 +5182,8 @@
 	    },
 	    blockExplorers: {
 	        default: {
-	            name: "Taikoscan",
-	            url: "https://taikoscan.io",
-	            apiUrl: "https://api.taikoscan.io/api",
-	        },
-	        routescan: {
 	            name: "Routescan",
-	            url: "https://taikoscan.network",
+	            url: "https://taikoexplorer.com/",
 	            apiUrl: "https://api.routescan.io/v2/network/mainnet/evm/43114/etherscan/api",
 	        },
 	    },
