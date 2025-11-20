@@ -6,7 +6,7 @@ import (
 
 var Monad Network = Network{
 	ChainId:           143,
-	LogoUrl:           "https://assets.oku.trade/chains/monad-logo.png",
+	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/monad-logo.png",
 	Deprecated:        false,
 	LiteChain:         false,
 	SortIndex:         10,
