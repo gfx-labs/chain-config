@@ -9,7 +9,7 @@ export const monad = makeConfig({
 	launchTime: 1764568406,
 	transactionType: "eip1559",
 	sortIndex: 10,
-	logoUrl: "https://assets.oku.trade/chains/monad-logo.png",
+	logoUrl: "https://cms.oku.trade/cdn/public/chains/monad-logo.png",
 	deprecated: false,
 	safeReorgDistance: 90000,
 	blockAid: "",
@@ -66,7 +66,7 @@ export const monad = makeConfig({
 	],
 	watchlist: ["0x659bD0BC4167BA25c62E05656F78043E7eD4a9da"],
 	internalName: "monad",
-	nativeLogoUrl: "https://assets.oku.trade/natives/monad.png",
+	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/monad.png",
 	contracts: {
 		...chain.contracts,
 		limitOrder: {
