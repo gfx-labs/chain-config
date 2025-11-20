@@ -3306,7 +3306,6 @@
 
 	const monad = makeConfig({
 	    ...chains.monad,
-	    name: "monad",
 	    blockTimeSeconds: 0.4,
 	    launchTime: 1764568406,
 	    transactionType: "eip1559",

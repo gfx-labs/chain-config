@@ -3303,7 +3303,6 @@ const metal = makeConfig({
 
 const monad = makeConfig({
     ...monad$1,
-    name: "monad",
     blockTimeSeconds: 0.4,
     launchTime: 1764568406,
     transactionType: "eip1559",

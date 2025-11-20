@@ -5532,7 +5532,6 @@ declare const metal: Readonly<{
     };
 }>;
 declare const monad: Readonly<{
-    name: "monad";
     blockTimeSeconds: 0.4;
     launchTime: 1764568406;
     transactionType: "eip1559";
@@ -5624,6 +5623,7 @@ declare const monad: Readonly<{
     blockTime: 400;
     ensTlds?: readonly string[] | undefined;
     id: 143;
+    name: "Monad";
     nativeCurrency: {
         readonly name: "Monad";
         readonly symbol: "MON";
@@ -19433,7 +19433,6 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     formatters?: undefined | undefined;
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>, Readonly<{
-    name: "monad";
     blockTimeSeconds: 0.4;
     launchTime: 1764568406;
     transactionType: "eip1559";
@@ -19525,6 +19524,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     blockTime: 400;
     ensTlds?: readonly string[] | undefined;
     id: 143;
+    name: "Monad";
     nativeCurrency: {
         readonly name: "Monad";
         readonly symbol: "MON";
