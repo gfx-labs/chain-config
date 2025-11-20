@@ -8,7 +8,7 @@ export const metal = makeConfig({
 	transactionType: "eip1559",
 	sortIndex: 15,
 	logoUrl: "https://assets.oku.trade/chains/metal-logo.png",
-	deprecated: false,
+	deprecated: true,
 	safeReorgDistance: 90000,
 	blockAid: "",
 	externalId: {},
