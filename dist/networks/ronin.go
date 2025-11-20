@@ -7,7 +7,7 @@ import (
 var Ronin Network = Network{
 	ChainId:           2020,
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/ronin-logo.svg",
-	Deprecated:        false,
+	Deprecated:        true,
 	LiteChain:         false,
 	SortIndex:         15,
 	LaunchTime:        1761966026,

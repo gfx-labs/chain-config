@@ -5152,7 +5152,7 @@ declare const metal: Readonly<{
     transactionType: "eip1559";
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/chains/metal-logo.png";
-    deprecated: false;
+    deprecated: true;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {};
@@ -6803,7 +6803,7 @@ declare const ronin: Readonly<{
     transactionType: "eip1559";
     sortIndex: 15;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/ronin-logo.svg";
-    deprecated: false;
+    deprecated: true;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {
@@ -7955,7 +7955,7 @@ declare const tronShasta: Readonly<{
     sortIndex: 15;
     blockAid: "";
     logoUrl: "https://assets.oku.trade/chains/tron.png";
-    deprecated: false;
+    deprecated: true;
     safeReorgDistance: 90000;
     externalId: {};
     markets: {};
@@ -15121,7 +15121,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     transactionType: "eip1559";
     sortIndex: 15;
     logoUrl: "https://assets.oku.trade/chains/metal-logo.png";
-    deprecated: false;
+    deprecated: true;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {};
@@ -18002,7 +18002,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     sortIndex: 15;
     blockAid: "";
     logoUrl: "https://assets.oku.trade/chains/tron.png";
-    deprecated: false;
+    deprecated: true;
     safeReorgDistance: 90000;
     externalId: {};
     markets: {};
@@ -19319,7 +19319,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     transactionType: "eip1559";
     sortIndex: 15;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/ronin-logo.svg";
-    deprecated: false;
+    deprecated: true;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {
