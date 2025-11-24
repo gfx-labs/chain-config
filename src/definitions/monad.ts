@@ -24,7 +24,11 @@ export const monad = makeConfig({
 			routerAddress: "0x33566fE5976AAa420F3d5C64996641Fc3858CaDB",
 			chainSelector: 8481857512324358265n,
 			tokenAdminRegistry: "0x11ACd984DD680363117B310f6ebdf78fD6c0195f",
-		},			
+		},
+		wormhole: {
+			chain: "Monad",
+			timeToFinalize: 2,
+		},
 	},
 	oracles: {
 		cmc: {
