@@ -3316,9 +3316,28 @@ const monad = makeConfig({
     externalId: {
         tenderly: "true",
     },
-    markets: {},
-    bridges: {},
-    oracles: {},
+    markets: {
+        openocean: "monad",
+    },
+    bridges: {
+        chainlink: {
+            atlasNetworkName: "monad-mainnet",
+            routerAddress: "0x33566fE5976AAa420F3d5C64996641Fc3858CaDB",
+            chainSelector: 8481857512324358265n,
+            tokenAdminRegistry: "0x11ACd984DD680363117B310f6ebdf78fD6c0195f",
+        },
+    },
+    oracles: {
+        cmc: {
+            slug: "monad",
+            native: "monad",
+        },
+        coingecko: {
+            slug: "monad",
+            native: "monad",
+        },
+        dexscreener: "monad",
+    },
     morpho: {},
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
     uniswap: {

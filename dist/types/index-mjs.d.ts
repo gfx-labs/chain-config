@@ -5543,9 +5543,28 @@ declare const monad: Readonly<{
     externalId: {
         tenderly: string;
     };
-    markets: {};
-    bridges: {};
-    oracles: {};
+    markets: {
+        openocean: string;
+    };
+    bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+            tokenAdminRegistry: string;
+        };
+    };
+    oracles: {
+        cmc: {
+            slug: string;
+            native: string;
+        };
+        coingecko: {
+            slug: string;
+            native: string;
+        };
+        dexscreener: string;
+    };
     morpho: {};
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     uniswap: {
@@ -19444,9 +19463,28 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     externalId: {
         tenderly: string;
     };
-    markets: {};
-    bridges: {};
-    oracles: {};
+    markets: {
+        openocean: string;
+    };
+    bridges: {
+        chainlink: {
+            atlasNetworkName: string;
+            routerAddress: string;
+            chainSelector: bigint;
+            tokenAdminRegistry: string;
+        };
+    };
+    oracles: {
+        cmc: {
+            slug: string;
+            native: string;
+        };
+        coingecko: {
+            slug: string;
+            native: string;
+        };
+        dexscreener: string;
+    };
     morpho: {};
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     uniswap: {
