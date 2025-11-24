@@ -9,7 +9,7 @@ var Monad Network = Network{
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/monad-logo.png",
 	Deprecated:        false,
 	LiteChain:         false,
-	SortIndex:         10,
+	SortIndex:         5,
 	LaunchTime:        1764568406,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
@@ -30,7 +30,7 @@ var Monad Network = Network{
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0x754704Bc059F8C67012fEd69BC8A327a5aafb603"), common.HexToAddress("0xe7cd86e13AC4309349F30B3435a9d337750fC82D")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x754704Bc059F8C67012fEd69BC8A327a5aafb603"): {}, common.HexToAddress("0xe7cd86e13AC4309349F30B3435a9d337750fC82D"): {}},
-	Watchlist:        []common.Address{common.HexToAddress("0x659bD0BC4167BA25c62E05656F78043E7eD4a9da")},
+	Watchlist:        []common.Address{common.HexToAddress("0x659bD0BC4167BA25c62E05656F78043E7eD4a9da"), common.HexToAddress("0xa00D8Ec3c0cC20E93Cad749695392a0B61fe8Ca3")},
 	BlockTimeSeconds: 0.4,
 	Oku: OkuMetadata{
 		LimitOrderRegistry: common.HexToAddress("0x0000000000000000000000000000000000000000"),

@@ -5535,7 +5535,7 @@ declare const monad: Readonly<{
     blockTimeSeconds: 0.4;
     launchTime: 1764568406;
     transactionType: "eip1559";
-    sortIndex: 10;
+    sortIndex: 5;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/monad-logo.png";
     deprecated: false;
     safeReorgDistance: 90000;
@@ -5591,7 +5591,7 @@ declare const monad: Readonly<{
         address: "0xe7cd86e13AC4309349F30B3435a9d337750fC82D";
     })[];
     stables: ("0x754704Bc059F8C67012fEd69BC8A327a5aafb603" | "0xe7cd86e13AC4309349F30B3435a9d337750fC82D")[];
-    watchlist: "0x659bD0BC4167BA25c62E05656F78043E7eD4a9da"[];
+    watchlist: ("0x659bD0BC4167BA25c62E05656F78043E7eD4a9da" | "0xa00D8Ec3c0cC20E93Cad749695392a0B61fe8Ca3")[];
     internalName: "monad";
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/monad.png";
     contracts: {
@@ -19436,7 +19436,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     blockTimeSeconds: 0.4;
     launchTime: 1764568406;
     transactionType: "eip1559";
-    sortIndex: 10;
+    sortIndex: 5;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/monad-logo.png";
     deprecated: false;
     safeReorgDistance: 90000;
@@ -19492,7 +19492,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         address: "0xe7cd86e13AC4309349F30B3435a9d337750fC82D";
     })[];
     stables: ("0x754704Bc059F8C67012fEd69BC8A327a5aafb603" | "0xe7cd86e13AC4309349F30B3435a9d337750fC82D")[];
-    watchlist: "0x659bD0BC4167BA25c62E05656F78043E7eD4a9da"[];
+    watchlist: ("0x659bD0BC4167BA25c62E05656F78043E7eD4a9da" | "0xa00D8Ec3c0cC20E93Cad749695392a0B61fe8Ca3")[];
     internalName: "monad";
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/monad.png";
     contracts: {
