@@ -5553,6 +5553,10 @@ declare const monad: Readonly<{
             chainSelector: bigint;
             tokenAdminRegistry: string;
         };
+        wormhole: {
+            chain: string;
+            timeToFinalize: number;
+        };
     };
     oracles: {
         cmc: {
@@ -19472,6 +19476,10 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             routerAddress: string;
             chainSelector: bigint;
             tokenAdminRegistry: string;
+        };
+        wormhole: {
+            chain: string;
+            timeToFinalize: number;
         };
     };
     oracles: {
