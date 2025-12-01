@@ -5101,7 +5101,7 @@
 	    transactionType: "eip1559",
 	    sortIndex: 15,
 	    logoUrl: "https://assets.oku.trade/chains/sonic-logo.svg",
-	    deprecated: false,
+	    deprecated: true,
 	    safeReorgDistance: 90000,
 	    blockAid: "",
 	    morpho: {},
