@@ -7,7 +7,7 @@ import (
 var Sonic Network = Network{
 	ChainId:           146,
 	LogoUrl:           "https://assets.oku.trade/chains/sonic-logo.svg",
-	Deprecated:        true,
+	Deprecated:        false,
 	LiteChain:         false,
 	SortIndex:         15,
 	LaunchTime:        1737165834,
