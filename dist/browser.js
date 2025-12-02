@@ -1006,6 +1006,7 @@
 	        zerion: "binance-smart-chain",
 	        debank: "bsc",
 	        tenderly: "true",
+	        cowswap: "bnb"
 	    },
 	    morpho: {},
 	    markets: {
@@ -1021,6 +1022,7 @@
 	        openocean: "bsc",
 	        zeroex: true,
 	        icecreamswap: true,
+	        cowswap: "bnb"
 	    },
 	    bridges: {
 	        chainlink: {

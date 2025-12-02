@@ -1763,6 +1763,7 @@ declare const bsc: Readonly<{
         zerion: string;
         debank: string;
         tenderly: string;
+        cowswap: string;
     };
     morpho: {};
     markets: {
@@ -1778,6 +1779,7 @@ declare const bsc: Readonly<{
         openocean: string;
         zeroex: true;
         icecreamswap: true;
+        cowswap: string;
     };
     bridges: {
         chainlink: {
@@ -11182,6 +11184,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         zerion: string;
         debank: string;
         tenderly: string;
+        cowswap: string;
     };
     morpho: {};
     markets: {
@@ -11197,6 +11200,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
         openocean: string;
         zeroex: true;
         icecreamswap: true;
+        cowswap: string;
     };
     bridges: {
         chainlink: {
