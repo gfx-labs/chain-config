@@ -47,6 +47,14 @@ export interface UniswapMetadata {
 	nativeCurrencyName?: string;
 }
 
+export interface UniswapV4Metadata {
+	deployBlock: number;
+	poolManager: Address;
+	positionManager: Address;
+	universalRouter: Address;
+	permit2: Address;
+}
+
 export interface OkuPricingMetadata {
 	nativeWrappedToken?: Address;
 	nativeToken?: Address;
@@ -196,6 +204,7 @@ export interface IChainInfo<
 	blockTimeSeconds: float64;
 
 	uniswap: UniswapMetadata;
+	uniswapv4?: UniswapV4Metadata;
 	morpho: MorphoMetadata;
 	token: TokenMetadata;
 	oku: OkuMetadata;

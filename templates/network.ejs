@@ -5,6 +5,7 @@ import (
 )
 <%
     var uni = chain.uniswap;
+    var univ4 = chain.uniswapv4;
     var tok = chain.token;
     var oku = chain.oku;
     var cons = chain.contracts;
@@ -75,6 +76,9 @@ var <%- helpers.snakeToCamel(chainName) %> Network = Network{
   Uniswap:          UniswapMetadata{ <% for(const prop of Object.entries(uni)) {%>
     <%- h.snakeToCamel(prop[0]) %>: <%- h.formatValue(prop[1], h.isString(prop[1]) ? (h.isAddress(prop[1]) ? "a" : "s") : "n") %> , <% } %>
   },
+  <% if (univ4) { %>Uniswapv4:          UniswapV4Metadata{ <% for(const prop of Object.entries(univ4)) {%>
+    <%- h.snakeToCamel(prop[0]) %>: <%- h.formatValue(prop[1], h.isString(prop[1]) ? (h.isAddress(prop[1]) ? "a" : "s") : "n") %> , <% } %>
+  },<% } %>
   Morpho:          MorphoMetadata{ <% for(const prop of Object.entries(morpho)) {%>
     <%- h.snakeToCamel(prop[0]) %>: <%- h.formatValue(prop[1], h.isString(prop[1]) ? (h.isAddress(prop[1]) ? "a" : "s") : "n") %> , <% } %>
   },
