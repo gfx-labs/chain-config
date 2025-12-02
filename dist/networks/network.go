@@ -249,6 +249,7 @@ type Network struct {
 	InitCodeHash      common.Hash
 	BlockTimeSeconds  float64
 	Uniswap           UniswapMetadata
+	Uniswapv4         UniswapV4Metadata
 	Morpho            MorphoMetadata
 	Token             TokenMetadata
 	Oku               OkuMetadata
@@ -440,4 +441,12 @@ type MorphoMetadata struct {
 	Bundler3        common.Address
 	PublicAllocator common.Address
 	UrdFactory      common.Address
+}
+
+type UniswapV4Metadata struct {
+	DeployBlock     int64
+	PoolManager     common.Address
+	PositionManager common.Address
+	UniversalRouter common.Address
+	Permit2         common.Address
 }

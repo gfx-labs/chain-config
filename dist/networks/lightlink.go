@@ -57,6 +57,7 @@ var Lightlink Network = Network{
 		WrappedNativeDecimals:      18,
 		NativeCurrencyName:         "ETH",
 	},
+
 	Morpho: MorphoMetadata{},
 	Token: TokenMetadata{
 		WethAddress: common.HexToAddress("0x7ebef2a4b1b09381ec5b9df8c5c6f2dbeca59c73"),

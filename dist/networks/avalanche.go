@@ -61,6 +61,7 @@ var Avalanche Network = Network{
 		WrappedNativeDecimals:      18,
 		NativeCurrencyName:         "AVAX",
 	},
+
 	Morpho: MorphoMetadata{},
 	Token: TokenMetadata{
 		WethAddress: common.HexToAddress("0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7"),

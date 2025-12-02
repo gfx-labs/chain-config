@@ -60,6 +60,7 @@ var Linea Network = Network{
 		WrappedNativeDecimals:      18,
 		NativeCurrencyName:         "ETH",
 	},
+
 	Morpho: MorphoMetadata{},
 	Token: TokenMetadata{
 		UsdcAddress: common.HexToAddress("0x176211869ca2b568f2a7d4ee941e073a821ee1ff"),

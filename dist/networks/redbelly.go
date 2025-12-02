@@ -58,6 +58,7 @@ var Redbelly Network = Network{
 		WrappedNativeDecimals:      18,
 		NativeCurrencyName:         "RBNT",
 	},
+
 	Morpho: MorphoMetadata{},
 	Token: TokenMetadata{
 		WethAddress: common.HexToAddress("0x6ed1F491e2d31536D6561f6bdB2AdC8F092a6076"),

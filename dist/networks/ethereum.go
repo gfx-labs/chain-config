@@ -77,6 +77,13 @@ var Ethereum Network = Network{
 		WrappedNativeDecimals:              18,
 		NativeCurrencyName:                 "ETH",
 	},
+	Uniswapv4: UniswapV4Metadata{
+		DeployBlock:     21688329,
+		PoolManager:     common.HexToAddress("0x000000000004444c5dc75cB358380D2e3dE08A90"),
+		PositionManager: common.HexToAddress("0xbd216513d74c8cf14cf4747e6aaa6420ff64ee9e"),
+		UniversalRouter: common.HexToAddress("0x66a9893cc07d91d95644aedd05d03f95e1dba8af"),
+		Permit2:         common.HexToAddress("0x000000000022D473030F116dDEE9F6B43aC78BA3"),
+	},
 	Morpho: MorphoMetadata{
 		DeployBlock:     13977148,
 		Morpho:          common.HexToAddress("0xBBBBBbbBBb9cC5e90e3b3Af64bdAF62C37EEFFCb"),

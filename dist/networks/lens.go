@@ -61,6 +61,7 @@ var Lens Network = Network{
 		WrappedNativeDecimals:      18,
 		NativeCurrencyName:         "GHO",
 	},
+
 	Morpho: MorphoMetadata{},
 	Token: TokenMetadata{
 		WethAddress: common.HexToAddress("0x6bDc36E20D267Ff0dd6097799f82e78907105e2F"),

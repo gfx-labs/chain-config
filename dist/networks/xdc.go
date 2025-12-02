@@ -57,6 +57,7 @@ var Xdc Network = Network{
 		WrappedNativeDecimals:      18,
 		NativeCurrencyName:         "XDC",
 	},
+
 	Morpho: MorphoMetadata{},
 	Token: TokenMetadata{
 		WethAddress: common.HexToAddress("0x951857744785e80e2de051c32ee7b25f9c458c42"),

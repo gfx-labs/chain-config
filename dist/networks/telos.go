@@ -57,6 +57,7 @@ var Telos Network = Network{
 		WrappedNativeDecimals:      18,
 		NativeCurrencyName:         "TLOS",
 	},
+
 	Morpho: MorphoMetadata{},
 	Token: TokenMetadata{
 		WethAddress: common.HexToAddress("0xD102cE6A4dB07D247fcc28F366A623Df0938CA9E"),

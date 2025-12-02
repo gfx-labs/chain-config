@@ -61,6 +61,7 @@ var Rootstock Network = Network{
 		WrappedNativeDecimals:      18,
 		NativeCurrencyName:         "RBTC",
 	},
+
 	Morpho: MorphoMetadata{},
 	Token: TokenMetadata{
 		UsdcAddress: common.HexToAddress("0x3A15461d8AE0f0Fb5fA2629e9dA7D66A794a6E37"),

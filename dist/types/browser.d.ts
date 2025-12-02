@@ -4652,6 +4652,13 @@ declare const mainnet: Readonly<{
         };
         dexscreener: string;
     };
+    uniswapv4: {
+        deployBlock: number;
+        poolManager: "0x000000000004444c5dc75cB358380D2e3dE08A90";
+        positionManager: "0xbd216513d74c8cf14cf4747e6aaa6420ff64ee9e";
+        universalRouter: "0x66a9893cc07d91d95644aedd05d03f95e1dba8af";
+        permit2: "0x000000000022D473030F116dDEE9F6B43aC78BA3";
+    };
     uniswap: {
         deployBlock: number;
         poolFactory: "0x1F98431c8aD98523631AE4a59f267346ea31F984";
@@ -9825,6 +9832,13 @@ interface UniswapMetadata {
     wrappedNativeDecimals?: number;
     nativeCurrencyName?: string;
 }
+interface UniswapV4Metadata {
+    deployBlock: number;
+    poolManager: Address;
+    positionManager: Address;
+    universalRouter: Address;
+    permit2: Address;
+}
 interface OkuPricingMetadata {
     nativeWrappedToken?: Address;
     nativeToken?: Address;
@@ -9966,6 +9980,7 @@ interface IChainInfo<formatters extends ChainFormatters | undefined = ChainForma
     initCodeHash: Hash;
     blockTimeSeconds: float64;
     uniswap: UniswapMetadata;
+    uniswapv4?: UniswapV4Metadata;
     morpho: MorphoMetadata;
     token: TokenMetadata;
     oku: OkuMetadata;
@@ -11570,6 +11585,13 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
             native: string;
         };
         dexscreener: string;
+    };
+    uniswapv4: {
+        deployBlock: number;
+        poolManager: "0x000000000004444c5dc75cB358380D2e3dE08A90";
+        positionManager: "0xbd216513d74c8cf14cf4747e6aaa6420ff64ee9e";
+        universalRouter: "0x66a9893cc07d91d95644aedd05d03f95e1dba8af";
+        permit2: "0x000000000022D473030F116dDEE9F6B43aC78BA3";
     };
     uniswap: {
         deployBlock: number;
@@ -19593,5 +19615,5 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     formatters?: undefined | undefined;
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
 }>];
-export { arbitrum, avalanche, base, blast, bob, boba, bsc, celo, corn, etherlink, filecoin, gnosis, goat, hemi, lens, lightlink, linea, lisk, mainnet, manta, mantle, matchain, metal, monad, moonbeam, nibiru, optimism, plasma, polygon, redbelly, ronin, rootstock, saga, scroll, sei, sonic, taiko, telos, tronShasta, unichain, worldchain, xdc, zerog, polygonZkEvm, zkSync, MorphoMetadata, UniswapMetadata, OkuPricingMetadata, OkuCustomOrderTypesMetadata, OkuMetadata, TokenMetadata, Markets, Bridges, Oracles, IChainInfo, MAINNET_CHAINS };
+export { arbitrum, avalanche, base, blast, bob, boba, bsc, celo, corn, etherlink, filecoin, gnosis, goat, hemi, lens, lightlink, linea, lisk, mainnet, manta, mantle, matchain, metal, monad, moonbeam, nibiru, optimism, plasma, polygon, redbelly, ronin, rootstock, saga, scroll, sei, sonic, taiko, telos, tronShasta, unichain, worldchain, xdc, zerog, polygonZkEvm, zkSync, MorphoMetadata, UniswapMetadata, UniswapV4Metadata, OkuPricingMetadata, OkuCustomOrderTypesMetadata, OkuMetadata, TokenMetadata, Markets, Bridges, Oracles, IChainInfo, MAINNET_CHAINS };
 export { ChainContract } from "viem";

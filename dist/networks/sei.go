@@ -60,6 +60,7 @@ var Sei Network = Network{
 		WrappedNativeDecimals:      18,
 		NativeCurrencyName:         "SEI",
 	},
+
 	Morpho: MorphoMetadata{},
 	Token: TokenMetadata{
 		UsdcAddress: common.HexToAddress("0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1"),

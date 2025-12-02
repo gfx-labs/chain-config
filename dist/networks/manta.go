@@ -58,6 +58,7 @@ var Manta Network = Network{
 		WrappedNativeDecimals:      18,
 		NativeCurrencyName:         "ETH",
 	},
+
 	Morpho: MorphoMetadata{},
 	Token: TokenMetadata{
 		UsdcAddress: common.HexToAddress("0xb73603C5d87fA094B7314C74ACE2e64D165016fb"),

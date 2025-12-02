@@ -63,6 +63,7 @@ var Worldchain Network = Network{
 		WrappedNativeDecimals:      18,
 		NativeCurrencyName:         "ETH",
 	},
+
 	Morpho: MorphoMetadata{
 		DeployBlock:     9025669,
 		Morpho:          common.HexToAddress("0xE741BC7c34758b4caE05062794E8Ae24978AF432"),

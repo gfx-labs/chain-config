@@ -60,6 +60,7 @@ var Taiko Network = Network{
 		WrappedNativeDecimals:      18,
 		NativeCurrencyName:         "ETH",
 	},
+
 	Morpho: MorphoMetadata{},
 	Token: TokenMetadata{
 		UsdcAddress: common.HexToAddress("0x07d83526730c7438048D55A4fc0b850e2aaB6f0b"),

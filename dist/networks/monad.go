@@ -58,6 +58,7 @@ var Monad Network = Network{
 		WrappedNativeDecimals:      18,
 		NativeCurrencyName:         "MON",
 	},
+
 	Morpho: MorphoMetadata{},
 	Token: TokenMetadata{
 		UsdcAddress: common.HexToAddress("0x754704Bc059F8C67012fEd69BC8A327a5aafb603"),

@@ -57,6 +57,7 @@ var Goat Network = Network{
 		WrappedNativeDecimals:      18,
 		NativeCurrencyName:         "BTC",
 	},
+
 	Morpho: MorphoMetadata{},
 	Token: TokenMetadata{
 		WethAddress: common.HexToAddress("0xbC10000000000000000000000000000000000000"),

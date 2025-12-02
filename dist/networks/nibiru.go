@@ -57,6 +57,7 @@ var Nibiru Network = Network{
 		WrappedNativeDecimals:      18,
 		NativeCurrencyName:         "NIBI",
 	},
+
 	Morpho: MorphoMetadata{},
 	Token: TokenMetadata{
 		WethAddress: common.HexToAddress("0x0CaCF669f8446BeCA826913a3c6B96aCD4b02a97"),

@@ -57,6 +57,7 @@ var Plasma Network = Network{
 		WrappedNativeDecimals:      18,
 		NativeCurrencyName:         "XPL",
 	},
+
 	Morpho: MorphoMetadata{},
 	Token: TokenMetadata{
 		WethAddress: common.HexToAddress("0x6100E367285b01F48D07953803A2d8dCA5D19873"),

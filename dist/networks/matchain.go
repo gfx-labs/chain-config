@@ -57,6 +57,7 @@ var Matchain Network = Network{
 		WrappedNativeDecimals:      18,
 		NativeCurrencyName:         "BNB",
 	},
+
 	Morpho: MorphoMetadata{},
 	Token: TokenMetadata{
 		WethAddress: common.HexToAddress("0x4200000000000000000000000000000000000006"),

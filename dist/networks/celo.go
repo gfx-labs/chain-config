@@ -53,6 +53,7 @@ var Celo Network = Network{
 		UniversalRouter:            common.HexToAddress("0x643770E279d5D0733F21d6DC03A8efbABf3255B4"),
 		NativeCurrencyName:         "CELO",
 	},
+
 	Morpho: MorphoMetadata{},
 	Token: TokenMetadata{
 		WbtcAddress:   common.HexToAddress("0xbaab46e28388d2779e6e31fd00cf0e5ad95e327b"),

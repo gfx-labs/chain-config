@@ -57,6 +57,7 @@ var Saga Network = Network{
 		WrappedNativeDecimals:      18,
 		NativeCurrencyName:         "GAS",
 	},
+
 	Morpho: MorphoMetadata{},
 	Token: TokenMetadata{
 		UsdcAddress: common.HexToAddress("0xfc960C233B8E98e0Cf282e29BDE8d3f105fc24d5"),

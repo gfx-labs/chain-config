@@ -59,6 +59,7 @@ var Etherlink Network = Network{
 		WrappedNativeDecimals:      18,
 		NativeCurrencyName:         "XTZ",
 	},
+
 	Morpho: MorphoMetadata{
 		DeployBlock:     21047448,
 		Morpho:          common.HexToAddress("0xbCE7364E63C3B13C73E9977a83c9704E2aCa876e"),

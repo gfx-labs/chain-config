@@ -55,6 +55,7 @@ var Tronshasta Network = Network{
 		WrappedNativeDecimals:      18,
 		NativeCurrencyName:         "TRX",
 	},
+
 	Morpho: MorphoMetadata{},
 	Token:  TokenMetadata{},
 	Contracts: map[string]ChainContract{

@@ -59,6 +59,7 @@ var Zerog Network = Network{
 		WrappedNativeDecimals:      18,
 		NativeCurrencyName:         "0G",
 	},
+
 	Morpho: MorphoMetadata{},
 	Token: TokenMetadata{
 		WethAddress: common.HexToAddress("0x1cd0690ff9a693f5ef2dd976660a8dafc81a109c"),

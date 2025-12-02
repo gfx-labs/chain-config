@@ -59,6 +59,7 @@ var Ronin Network = Network{
 		WrappedNativeDecimals:      18,
 		NativeCurrencyName:         "RON",
 	},
+
 	Morpho: MorphoMetadata{},
 	Token: TokenMetadata{
 		UsdcAddress: common.HexToAddress("0x0b7007c13325c48911f73a2dad5fa5dcbf808adc"),

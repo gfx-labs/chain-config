@@ -60,6 +60,7 @@ var Corn Network = Network{
 		WrappedNativeDecimals:      18,
 		NativeCurrencyName:         "BTCN",
 	},
+
 	Morpho: MorphoMetadata{
 		DeployBlock:     251401,
 		Morpho:          common.HexToAddress("0xc2B1E031540e3F3271C5F3819F0cC7479a8DdD90"),

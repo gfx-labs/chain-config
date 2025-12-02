@@ -2664,6 +2664,13 @@
 	        },
 	        dexscreener: "ethereum",
 	    },
+	    uniswapv4: {
+	        deployBlock: 21688329,
+	        poolManager: "0x000000000004444c5dc75cB358380D2e3dE08A90",
+	        positionManager: "0xbd216513d74c8cf14cf4747e6aaa6420ff64ee9e",
+	        universalRouter: "0x66a9893cc07d91d95644aedd05d03f95e1dba8af",
+	        permit2: "0x000000000022D473030F116dDEE9F6B43aC78BA3",
+	    },
 	    uniswap: {
 	        deployBlock: 12369621,
 	        poolFactory: "0x1F98431c8aD98523631AE4a59f267346ea31F984",

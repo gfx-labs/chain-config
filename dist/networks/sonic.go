@@ -59,6 +59,7 @@ var Sonic Network = Network{
 		WrappedNativeDecimals:      18,
 		NativeCurrencyName:         "S",
 	},
+
 	Morpho: MorphoMetadata{},
 	Token: TokenMetadata{
 		WethAddress: common.HexToAddress("0x039e2fB66102314Ce7b64Ce5Ce3E5183bc94aD38"),
