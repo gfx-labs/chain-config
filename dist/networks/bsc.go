@@ -26,6 +26,7 @@ var Bsc Network = Network{
 		"zerion":   "binance-smart-chain",
 		"debank":   "bsc",
 		"tenderly": "true",
+		"cowswap":  "bnb",
 	},
 	DefaultToken0: common.HexToAddress("0x55d398326f99059ff775485246999027b3197955"),
 	DefaultToken1: common.HexToAddress("0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c"),

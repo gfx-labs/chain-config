@@ -1005,6 +1005,7 @@ const bsc = makeConfig({
         zerion: "binance-smart-chain",
         debank: "bsc",
         tenderly: "true",
+        cowswap: "bnb"
     },
     morpho: {},
     markets: {
@@ -1020,6 +1021,7 @@ const bsc = makeConfig({
         openocean: "bsc",
         zeroex: true,
         icecreamswap: true,
+        cowswap: "bnb"
     },
     bridges: {
         chainlink: {
