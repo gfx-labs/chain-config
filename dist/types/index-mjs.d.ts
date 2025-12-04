@@ -3938,7 +3938,7 @@ declare const lightlink: Readonly<{
     defaultToken1: "0xbCF8C1B03bBDDA88D579330BDF236B58F8bb2cFd";
     tokenList: ({
         symbol: string;
-        address: "0xd9d7123552fA2bEdB2348bB562576D67f6E8e96E";
+        address: "0x519d3443cacc61bd844546edaea48e5502021802";
     } | {
         symbol: string;
         address: "0xbCF8C1B03bBDDA88D579330BDF236B58F8bb2cFd";
@@ -17462,7 +17462,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     defaultToken1: "0xbCF8C1B03bBDDA88D579330BDF236B58F8bb2cFd";
     tokenList: ({
         symbol: string;
-        address: "0xd9d7123552fA2bEdB2348bB562576D67f6E8e96E";
+        address: "0x519d3443cacc61bd844546edaea48e5502021802";
     } | {
         symbol: string;
         address: "0xbCF8C1B03bBDDA88D579330BDF236B58F8bb2cFd";

@@ -2257,7 +2257,7 @@
 	    defaultToken0: "0x7ebef2a4b1b09381ec5b9df8c5c6f2dbeca59c73",
 	    defaultToken1: "0xbCF8C1B03bBDDA88D579330BDF236B58F8bb2cFd",
 	    tokenList: [
-	        { symbol: "LL", address: "0xd9d7123552fA2bEdB2348bB562576D67f6E8e96E" },
+	        { symbol: "LL", address: "0x519d3443cacc61bd844546edaea48e5502021802" },
 	        { symbol: "USDC.e", address: "0xbCF8C1B03bBDDA88D579330BDF236B58F8bb2cFd" },
 	        { symbol: "USDT", address: "0x808d7c71ad2ba3FA531b068a2417C63106BC0949" },
 	        { symbol: "WETH", address: "0x7ebef2a4b1b09381ec5b9df8c5c6f2dbeca59c73" },
