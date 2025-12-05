@@ -5645,6 +5645,13 @@ const unichain = makeConfig({
         wrappedNativeDecimals: 18,
         nativeCurrencyName: "ETH",
     },
+    uniswapv4: {
+        deployBlock: 0,
+        poolManager: "0x1f98400000000000000000000000000000000004",
+        positionManager: "0x4529a01c7a0410167c5740c487a8de60232617bf",
+        universalRouter: "0xef740bf23acae26f6492b10de645d6b98dc8eaf3",
+        permit2: "0x000000000022D473030F116dDEE9F6B43aC78BA3",
+    },
     token: {
         wethAddress: "0x4200000000000000000000000000000000000006",
     },
