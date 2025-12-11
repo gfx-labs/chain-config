@@ -6,7 +6,7 @@ import (
 
 var Worldchain Network = Network{
 	ChainId:           480,
-	LogoUrl:           "https://assets.oku.trade/chains/world-logo.png",
+	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/worldchain-logo.svg",
 	Deprecated:        false,
 	LiteChain:         true,
 	SortIndex:         15,

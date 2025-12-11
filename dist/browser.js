@@ -5724,7 +5724,7 @@
 	    launchTime: 0,
 	    transactionType: "eip1559",
 	    sortIndex: 15,
-	    logoUrl: "https://assets.oku.trade/chains/world-logo.png",
+	    logoUrl: "https://cms.oku.trade/cdn/public/chains/worldchain-logo.svg",
 	    deprecated: false,
 	    liteChain: true,
 	    safeReorgDistance: 90000,
