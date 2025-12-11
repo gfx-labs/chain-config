@@ -6,7 +6,7 @@ import (
 
 var Hemi Network = Network{
 	ChainId:           43111,
-	LogoUrl:           "https://assets.oku.trade/chains/hemi-logo.svg",
+	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/hemi-logo.svg",
 	Deprecated:        false,
 	LiteChain:         false,
 	SortIndex:         13,

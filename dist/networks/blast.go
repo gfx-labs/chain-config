@@ -6,7 +6,7 @@ import (
 
 var Blast Network = Network{
 	ChainId:           81457,
-	LogoUrl:           "https://assets.oku.trade/chains/blast-logo.svg",
+	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/blast-logo.svg",
 	Deprecated:        true,
 	LiteChain:         false,
 	SortIndex:         14,

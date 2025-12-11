@@ -6,7 +6,7 @@ import (
 
 var PolygonZkevm Network = Network{
 	ChainId:           1101,
-	LogoUrl:           "https://assets.oku.trade/chains/zkevm-logo.svg",
+	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/zkevm-logo.svg",
 	Deprecated:        true,
 	LiteChain:         false,
 	SortIndex:         6,

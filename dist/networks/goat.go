@@ -6,7 +6,7 @@ import (
 
 var Goat Network = Network{
 	ChainId:           2345,
-	LogoUrl:           "https://assets.oku.trade/chains/goat-logo.svg",
+	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/goat-logo.svg",
 	Deprecated:        false,
 	LiteChain:         false,
 	SortIndex:         15,

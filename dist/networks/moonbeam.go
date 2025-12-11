@@ -6,7 +6,7 @@ import (
 
 var Moonbeam Network = Network{
 	ChainId:           1284,
-	LogoUrl:           "https://assets.oku.trade/chains/moonbeam-logo.svg",
+	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/moonbeam-logo.svg",
 	Deprecated:        true,
 	LiteChain:         false,
 	SortIndex:         12,

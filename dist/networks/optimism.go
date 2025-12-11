@@ -6,7 +6,7 @@ import (
 
 var Optimism Network = Network{
 	ChainId:           10,
-	LogoUrl:           "https://assets.oku.trade/chains/optimism-logo.svg",
+	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/optimism-logo.svg",
 	Deprecated:        false,
 	LiteChain:         false,
 	SortIndex:         2,

@@ -6,7 +6,7 @@ import (
 
 var Etherlink Network = Network{
 	ChainId:           42793,
-	LogoUrl:           "https://assets.oku.trade/chains/etherlink-logo.png",
+	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/etherlink-logo.png",
 	Deprecated:        false,
 	LiteChain:         false,
 	SortIndex:         15,

@@ -6,7 +6,7 @@ import (
 
 var Lisk Network = Network{
 	ChainId:           1135,
-	LogoUrl:           "https://assets.oku.trade/chains/lisk-logo.png",
+	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/lisk-logo.png",
 	Deprecated:        true,
 	LiteChain:         false,
 	SortIndex:         15,

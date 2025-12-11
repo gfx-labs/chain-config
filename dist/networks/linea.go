@@ -6,7 +6,7 @@ import (
 
 var Linea Network = Network{
 	ChainId:           59144,
-	LogoUrl:           "https://assets.oku.trade/chains/linea-logo.svg",
+	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/linea-logo.svg",
 	Deprecated:        false,
 	LiteChain:         false,
 	SortIndex:         15,

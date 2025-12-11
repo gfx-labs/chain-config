@@ -6,7 +6,7 @@ import (
 
 var Redbelly Network = Network{
 	ChainId:           151,
-	LogoUrl:           "https://assets.oku.trade/chains/redbelly-logo.svg",
+	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/redbelly-logo.svg",
 	Deprecated:        false,
 	LiteChain:         false,
 	SortIndex:         15,

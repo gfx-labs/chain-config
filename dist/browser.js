@@ -15,7 +15,7 @@
 	    transactionType: "eip1559",
 	    sortIndex: 1,
 	    blockTimeSeconds: 0.25,
-	    logoUrl: "https://assets.oku.trade/chains/arbitrum-logo.svg",
+	    logoUrl: "https://cms.oku.trade/cdn/public/chains/arbitrum-logo.svg",
 	    deprecated: false,
 	    safeReorgDistance: 90000 * 2,
 	    blockAid: "arbitrum",
@@ -313,7 +313,7 @@
 	        "0x50450351517117cb58189edba6bbad6284d45902",
 	    ],
 	    internalName: "arbitrum",
-	    nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
+	    nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
 	    initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
 	    contracts: {
 	        ...chains.arbitrum.contracts,
@@ -615,7 +615,7 @@
 	    ],
 	    internalName: "base",
 	    initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
-	    nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
+	    nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
 	    contracts: {
 	        ...chains.base.contracts,
 	        nftManager: {
@@ -646,7 +646,7 @@
 	    launchTime: 1719410400,
 	    transactionType: "eip1559",
 	    sortIndex: 14,
-	    logoUrl: "https://assets.oku.trade/chains/blast-logo.svg",
+	    logoUrl: "https://cms.oku.trade/cdn/public/chains/blast-logo.svg",
 	    deprecated: true,
 	    safeReorgDistance: 90000,
 	    blockAid: "blast",
@@ -731,7 +731,7 @@
 	    ],
 	    internalName: "blast",
 	    initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
-	    nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
+	    nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
 	    contracts: {
 	        ...chains.blast.contracts,
 	        limitOrder: {
@@ -755,7 +755,7 @@
 	    launchTime: 1727359200,
 	    transactionType: "eip1559",
 	    sortIndex: 15,
-	    logoUrl: "https://assets.oku.trade/chains/bob-logo.svg",
+	    logoUrl: "https://cms.oku.trade/cdn/public/chains/bob-logo.svg",
 	    deprecated: false,
 	    safeReorgDistance: 90000,
 	    blockAid: "",
@@ -848,7 +848,7 @@
 	        "0x45bfa70e8f387da47ffe3dec447bc16f0b9a6261",
 	    ],
 	    internalName: "bob",
-	    nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
+	    nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
 	    contracts: {
 	        ...chains.bob.contracts,
 	        limitOrder: {
@@ -877,7 +877,7 @@
 	    initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
 	    sortIndex: 11,
 	    blockTimeSeconds: 2,
-	    logoUrl: "https://assets.oku.trade/chains/boba-logo.svg",
+	    logoUrl: "https://cms.oku.trade/cdn/public/chains/boba-logo.svg",
 	    deprecated: false,
 	    safeReorgDistance: 90000,
 	    blockAid: "",
@@ -969,7 +969,7 @@
 	        "0x67fac3b54b6391e3183d2d74b7d2c430ad44fca1",
 	    ],
 	    internalName: "boba",
-	    nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
+	    nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
 	    contracts: {
 	        ...chains.boba.contracts,
 	        limitOrder: {
@@ -998,7 +998,7 @@
 	    initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
 	    sortIndex: 9,
 	    blockTimeSeconds: 3,
-	    logoUrl: "https://assets.oku.trade/chains/bsc-logo.svg",
+	    logoUrl: "https://cms.oku.trade/cdn/public/chains/bsc-logo.svg",
 	    deprecated: false,
 	    safeReorgDistance: 90000,
 	    blockAid: "bsc",
@@ -1193,7 +1193,7 @@
 	        "0x06396509195eb9e07c38a016694dc9ff535b128a",
 	    ],
 	    internalName: "bsc",
-	    nativeLogoUrl: "https://assets.oku.trade/natives/bnb.png",
+	    nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/bnb.png",
 	    contracts: {
 	        ...chains.bsc.contracts,
 	        limitOrder: {
@@ -1220,7 +1220,7 @@
 	    launchTime: 1737754469,
 	    transactionType: "eip1559",
 	    sortIndex: 15,
-	    logoUrl: "https://assets.oku.trade/chains/celo-logo.svg",
+	    logoUrl: "https://cms.oku.trade/cdn/public/chains/celo-logo.svg",
 	    deprecated: false,
 	    safeReorgDistance: 90000,
 	    blockAid: "",
@@ -1316,7 +1316,7 @@
 	        "0x7B9A5BC920610F54881f2F6359007957DE504862",
 	    ],
 	    internalName: "celo",
-	    nativeLogoUrl: "https://assets.oku.trade/natives/celo.png",
+	    nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/celo.png",
 	    contracts: {
 	        ...chains.celo.contracts,
 	        nftManager: {
@@ -1341,7 +1341,7 @@
 	    launchTime: 1733882663,
 	    transactionType: "eip1559",
 	    sortIndex: 15,
-	    logoUrl: "https://assets.oku.trade/chains/corn-logo.png",
+	    logoUrl: "https://cms.oku.trade/cdn/public/chains/corn-logo.png",
 	    deprecated: false,
 	    safeReorgDistance: 90000,
 	    blockAid: "",
@@ -1427,7 +1427,7 @@
 	        "0x255f0b304f701a0530f5dc1739a3d1469e21dd5f",
 	    ],
 	    internalName: "corn",
-	    nativeLogoUrl: "https://assets.oku.trade/natives/corn.png",
+	    nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/corn.png",
 	    contracts: {
 	        ...chains.corn.contracts,
 	        limitOrder: {
@@ -1454,7 +1454,7 @@
 	    launchTime: 1750211928,
 	    transactionType: "eip1559",
 	    sortIndex: 15,
-	    logoUrl: "https://assets.oku.trade/chains/etherlink-logo.png",
+	    logoUrl: "https://cms.oku.trade/cdn/public/chains/etherlink-logo.png",
 	    deprecated: false,
 	    safeReorgDistance: 90000,
 	    blockAid: "",
@@ -1540,7 +1540,7 @@
 	        "0xb5135165da8207f90598a2d58215aeb5f6e9f5ec",
 	    ],
 	    internalName: "etherlink",
-	    nativeLogoUrl: "https://assets.oku.trade/natives/xtz.png",
+	    nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/xtz.png",
 	    contracts: {
 	        ...chains.etherlink.contracts,
 	        limitOrder: {
@@ -1589,7 +1589,7 @@
 	            apiUrl: "https://api.filutils.com/api",
 	        },
 	    },
-	    logoUrl: "https://assets.oku.trade/chains/filecoin-logo.svg",
+	    logoUrl: "https://cms.oku.trade/cdn/public/chains/filecoin-logo.svg",
 	    deprecated: false,
 	    externalId: {},
 	    markets: {},
@@ -1674,7 +1674,7 @@
 	        "0xca166403c6f41e1fecc0eb40ac1947fd6399d5c5",
 	    ],
 	    internalName: "filecoin",
-	    nativeLogoUrl: "https://assets.oku.trade/natives/fil.png",
+	    nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/fil.png",
 	    contracts: {
 	        ...chains.filecoin.contracts,
 	        limitOrder: {
@@ -1702,7 +1702,7 @@
 	    transactionType: "eip1559",
 	    sortIndex: 18,
 	    blockAid: "",
-	    logoUrl: "https://assets.oku.trade/chains/gnosis-logo.png",
+	    logoUrl: "https://cms.oku.trade/cdn/public/chains/gnosis-logo.png",
 	    deprecated: false,
 	    safeReorgDistance: 90000,
 	    morpho: {},
@@ -1825,7 +1825,7 @@
 	        "0xbb98d4e20b054ede4c4143ecee59368f88ecbbe4",
 	    ],
 	    internalName: "gnosis",
-	    nativeLogoUrl: "https://assets.oku.trade/natives/xdai.png",
+	    nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/xdai.png",
 	    contracts: {
 	        ...chains.gnosis.contracts,
 	        limitOrder: {
@@ -1857,7 +1857,7 @@
 	    launchTime: 1742159744,
 	    transactionType: "eip1559",
 	    sortIndex: 15,
-	    logoUrl: "https://assets.oku.trade/chains/goat-logo.svg",
+	    logoUrl: "https://cms.oku.trade/cdn/public/chains/goat-logo.svg",
 	    deprecated: false,
 	    safeReorgDistance: 90000,
 	    blockAid: "",
@@ -1937,7 +1937,7 @@
 	        "0xde2b2fb74a9b7053a6bac08fb741e19467f7a0ef",
 	    ],
 	    internalName: "goat",
-	    nativeLogoUrl: "https://assets.oku.trade/natives/gbtc.svg",
+	    nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/gbtc.svg",
 	    contracts: {
 	        ...chains.goat.contracts,
 	        limitOrder: {
@@ -1964,7 +1964,7 @@
 	    launchTime: 1741901593,
 	    transactionType: "eip1559",
 	    sortIndex: 13,
-	    logoUrl: "https://assets.oku.trade/chains/hemi-logo.svg",
+	    logoUrl: "https://cms.oku.trade/cdn/public/chains/hemi-logo.svg",
 	    deprecated: false,
 	    safeReorgDistance: 90000,
 	    blockAid: "",
@@ -2059,7 +2059,7 @@
 	        "0x0ec5aa557d5b2a8702ad43d253415d11f95364c0",
 	    ],
 	    internalName: "hemi",
-	    nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
+	    nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
 	    contracts: {
 	        ...chains.hemi.contracts,
 	        limitOrder: {
@@ -2092,7 +2092,7 @@
 	    transactionType: "eip1559",
 	    sortIndex: 15,
 	    blockAid: "",
-	    logoUrl: "https://assets.oku.trade/chains/lens-logo.png",
+	    logoUrl: "https://cms.oku.trade/cdn/public/chains/lens-logo.png",
 	    deprecated: false,
 	    safeReorgDistance: 90000,
 	    externalId: {
@@ -2156,7 +2156,7 @@
 	        "0x6b6eb6f437bf54d22b997c3b38b79a23bc63f39f",
 	    ],
 	    internalName: "lens",
-	    nativeLogoUrl: "https://assets.oku.trade/natives/gho.png",
+	    nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/gho.png",
 	    contracts: {
 	        limitOrder: {
 	            address: "0xD3239f8D4c6245359f4F050F5133A9F61F4e2ACF",
@@ -2187,7 +2187,7 @@
 	    launchTime: 1741485513,
 	    transactionType: "legacy",
 	    sortIndex: 13,
-	    logoUrl: "https://assets.oku.trade/chains/lightlink-logo.svg",
+	    logoUrl: "https://cms.oku.trade/cdn/public/chains/lightlink-logo.svg",
 	    deprecated: false,
 	    safeReorgDistance: 90000,
 	    blockAid: "",
@@ -2273,7 +2273,7 @@
 	        "0xc87Fa6290e7F11543e76e1D240335190C15Dade8",
 	    ],
 	    internalName: "lightlink",
-	    nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
+	    nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
 	    contracts: {
 	        limitOrder: {
 	            address: "0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc",
@@ -2302,7 +2302,7 @@
 	    blockTimeSeconds: 2,
 	    sortIndex: 15,
 	    morpho: {},
-	    logoUrl: "https://assets.oku.trade/chains/linea-logo.svg",
+	    logoUrl: "https://cms.oku.trade/cdn/public/chains/linea-logo.svg",
 	    deprecated: false,
 	    safeReorgDistance: 100,
 	    blockAid: "linea",
@@ -2418,7 +2418,7 @@
 	        "0x42a72c7fbb355b2cfe08f8716595f3f3509b3bea",
 	    ],
 	    internalName: "linea",
-	    nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
+	    nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
 	    contracts: {
 	        ...chains.linea.contracts,
 	        limitOrder: {
@@ -2445,7 +2445,7 @@
 	    launchTime: 1724076000,
 	    transactionType: "eip1559",
 	    sortIndex: 15,
-	    logoUrl: "https://assets.oku.trade/chains/lisk-logo.png",
+	    logoUrl: "https://cms.oku.trade/cdn/public/chains/lisk-logo.png",
 	    deprecated: true,
 	    safeReorgDistance: 90000,
 	    blockAid: "",
@@ -2511,7 +2511,7 @@
 	        "0x304d69c5e03e030d6b298C0d0467baeb310f1f68",
 	    ],
 	    internalName: "lisk",
-	    nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
+	    nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
 	    contracts: {
 	        ...chains.lisk.contracts,
 	        limitOrder: {
@@ -2540,7 +2540,7 @@
 	    transactionType: "eip1559",
 	    blockTimeSeconds: 15,
 	    safeReorgDistance: 90000,
-	    logoUrl: "https://assets.oku.trade/chains/ethereum-logo.webp",
+	    logoUrl: "https://cms.oku.trade/cdn/public/chains/ethereum-logo.webp",
 	    deprecated: false,
 	    blockAid: "ethereum",
 	    morpho: {
@@ -2868,7 +2868,7 @@
 	        "0x7bea39867e4169dbe237d55c8242a8f2fcdcc387",
 	    ],
 	    internalName: "ethereum",
-	    nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
+	    nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
 	    contracts: {
 	        ...chains.mainnet.contracts,
 	        limitOrder: {
@@ -2897,7 +2897,7 @@
 	    initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
 	    blockTimeSeconds: 2,
 	    sortIndex: 13,
-	    logoUrl: "https://assets.oku.trade/chains/manta-logo.png",
+	    logoUrl: "https://cms.oku.trade/cdn/public/chains/manta-logo.png",
 	    deprecated: true,
 	    safeReorgDistance: 90000,
 	    blockAid: "",
@@ -2976,7 +2976,7 @@
 	        "0x5bedc5d1e1d0b32caca78db23af71126b6fe26b6",
 	    ],
 	    internalName: "manta",
-	    nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
+	    nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
 	    contracts: {
 	        ...chains.manta.contracts,
 	        limitOrder: {
@@ -3004,7 +3004,7 @@
 	    launchTime: 1720101600,
 	    transactionType: "eip1559",
 	    sortIndex: 15,
-	    logoUrl: "https://assets.oku.trade/chains/mantle-logo.png",
+	    logoUrl: "https://cms.oku.trade/cdn/public/chains/mantle-logo.png",
 	    deprecated: false,
 	    safeReorgDistance: 90000,
 	    blockAid: "",
@@ -3117,7 +3117,7 @@
 	        "0x8CFee38ab8b8f4BC2ff662E8cc8bDfb0439C9D2C",
 	    ],
 	    internalName: "mantle",
-	    nativeLogoUrl: "https://assets.oku.trade/natives/mnt.png",
+	    nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/mnt.png",
 	    contracts: {
 	        ...chains.mantle.contracts,
 	        limitOrder: {
@@ -3207,7 +3207,7 @@
 	        "0x2128e934843ad52d42b5af7288dcfa7b0598d035",
 	    ],
 	    internalName: "matchain",
-	    nativeLogoUrl: "https://assets.oku.trade/natives/bnb.png",
+	    nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/bnb.png",
 	    contracts: {
 	        ...chains.matchain.contracts,
 	        limitOrder: {
@@ -3234,7 +3234,7 @@
 	    launchTime: 1733882663,
 	    transactionType: "eip1559",
 	    sortIndex: 15,
-	    logoUrl: "https://assets.oku.trade/chains/metal-logo.png",
+	    logoUrl: "https://cms.oku.trade/cdn/public/chains/metal-logo.png",
 	    deprecated: true,
 	    safeReorgDistance: 90000,
 	    blockAid: "",
@@ -3292,7 +3292,7 @@
 	    ],
 	    watchlist: ["0xC06B6d6242E84c96AeE28C7FcfE48D2c9909e37B"],
 	    internalName: "metal",
-	    nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
+	    nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
 	    contracts: {
 	        ...chains.metalL2.contracts,
 	        limitOrder: {
@@ -3429,7 +3429,7 @@
 	    launchTime: 1696341600,
 	    transactionType: "eip1559",
 	    blockTimeSeconds: 30,
-	    logoUrl: "https://assets.oku.trade/chains/moonbeam-logo.svg",
+	    logoUrl: "https://cms.oku.trade/cdn/public/chains/moonbeam-logo.svg",
 	    deprecated: true,
 	    safeReorgDistance: 90000,
 	    blockAid: "",
@@ -3529,7 +3529,7 @@
 	        "0x45bD0680bDFd180341A6dE806Aa4637f9AfBFc39",
 	    ],
 	    internalName: "moonbeam",
-	    nativeLogoUrl: "https://assets.oku.trade/natives/glmr.png",
+	    nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/glmr.png",
 	    contracts: {
 	        ...chains.moonbeam.contracts,
 	        limitOrder: {
@@ -3557,7 +3557,7 @@
 	    launchTime: 1750705200,
 	    transactionType: "eip1559",
 	    sortIndex: 15,
-	    logoUrl: "https://assets.oku.trade/chains/nibiru-logo.svg",
+	    logoUrl: "https://cms.oku.trade/cdn/public/chains/nibiru-logo.svg",
 	    deprecated: false,
 	    safeReorgDistance: 90000,
 	    externalId: {},
@@ -3636,7 +3636,7 @@
 	        "0xe7612e14a05613caf06fad766b484b0a6d146c3a",
 	    ],
 	    internalName: "nibiru",
-	    nativeLogoUrl: "https://assets.oku.trade/natives/nibi.svg",
+	    nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/nibi.svg",
 	    contracts: {
 	        ...chains.nibiru.contracts,
 	        limitOrder: {
@@ -3665,7 +3665,7 @@
 	    launchTime: 1688997600,
 	    transactionType: "eip1559",
 	    sortIndex: 2,
-	    logoUrl: "https://assets.oku.trade/chains/optimism-logo.svg",
+	    logoUrl: "https://cms.oku.trade/cdn/public/chains/optimism-logo.svg",
 	    deprecated: false,
 	    safeReorgDistance: 90000,
 	    blockAid: "optimism",
@@ -3969,7 +3969,7 @@
 	        "0x730691cdac3cbd4d41fc5eb9d8abbb0cea795b94",
 	    ],
 	    internalName: "optimism",
-	    nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
+	    nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
 	    contracts: {
 	        ...chains.optimism.contracts,
 	        limitOrder: {
@@ -4087,7 +4087,7 @@
 	    launchTime: 1688997600,
 	    transactionType: "eip1559",
 	    sortIndex: 3,
-	    logoUrl: "https://assets.oku.trade/chains/polygon-logo.webp",
+	    logoUrl: "https://cms.oku.trade/cdn/public/chains/polygon-logo.webp",
 	    deprecated: false,
 	    safeReorgDistance: 90000,
 	    blockAid: "polygon",
@@ -4357,7 +4357,7 @@
 	        "0x357faf5843c7fd7fb4e34fbeabdac16eabe8a5bc",
 	    ],
 	    internalName: "polygon",
-	    nativeLogoUrl: "https://assets.oku.trade/natives/matic.png",
+	    nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/matic.png",
 	    contracts: {
 	        ...chains.polygon.contracts,
 	        nftManager: {
@@ -4385,7 +4385,7 @@
 	    launchTime: 1741362479,
 	    transactionType: "eip1559",
 	    sortIndex: 15,
-	    logoUrl: "https://assets.oku.trade/chains/redbelly-logo.svg",
+	    logoUrl: "https://cms.oku.trade/cdn/public/chains/redbelly-logo.svg",
 	    deprecated: false,
 	    safeReorgDistance: 90000,
 	    blockAid: "",
@@ -4441,7 +4441,7 @@
 	        "0x1f1bda1fe18aedf468abe36ed66eaf44aa6c490b",
 	    ],
 	    internalName: "redbelly",
-	    nativeLogoUrl: "https://assets.oku.trade/natives/rbnt.svg",
+	    nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/rbnt.svg",
 	    contracts: {
 	        ...chains.redbellyMainnet.contracts,
 	        limitOrder: {
@@ -4563,7 +4563,7 @@
 	    name: "Rootstock",
 	    initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
 	    blockTimeSeconds: 33,
-	    logoUrl: "https://assets.oku.trade/chains/rootstock-logo.svg",
+	    logoUrl: "https://cms.oku.trade/cdn/public/chains/rootstock-logo.svg",
 	    deprecated: false,
 	    safeReorgDistance: 90000,
 	    blockAid: "",
@@ -4678,7 +4678,7 @@
 	        "0x71d0d054974121ae37a76762e1fa02ffa150eba1",
 	    ],
 	    internalName: "rootstock",
-	    nativeLogoUrl: "https://assets.oku.trade/natives/rbtc.png",
+	    nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/rbtc.png",
 	    contracts: {
 	        ...chains.rootstock.contracts,
 	        limitOrder: {
@@ -4778,7 +4778,7 @@
 	        "0x387b99a979c79f827f0ca8a752893472dc34b7ec",
 	    ],
 	    internalName: "saga",
-	    nativeLogoUrl: "https://assets.oku.trade/natives/saga.png",
+	    nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/saga.png",
 	    contracts: {
 	        ...chains.saga.contracts,
 	        limitOrder: {
@@ -4806,7 +4806,7 @@
 	    launchTime: 1703257200,
 	    transactionType: "eip1559",
 	    blockTimeSeconds: 3,
-	    logoUrl: "https://assets.oku.trade/chains/scroll-logo.png",
+	    logoUrl: "https://cms.oku.trade/cdn/public/chains/scroll-logo.png",
 	    deprecated: false,
 	    safeReorgDistance: 90000,
 	    blockAid: "scroll",
@@ -4907,7 +4907,7 @@
 	        "0x813df550a32d4a9d42010d057386429ad2328ed9",
 	    ],
 	    internalName: "scroll",
-	    nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
+	    nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
 	    contracts: {
 	        ...chains.scroll.contracts,
 	        limitOrder: {
@@ -4939,7 +4939,7 @@
 	    launchTime: 1687788000,
 	    transactionType: "eip1559",
 	    sortIndex: 5,
-	    logoUrl: "https://assets.oku.trade/chains/sei-logo.svg",
+	    logoUrl: "https://cms.oku.trade/cdn/public/chains/sei-logo.svg",
 	    deprecated: false,
 	    safeReorgDistance: 90000,
 	    blockAid: "",
@@ -5078,7 +5078,7 @@
 	        "0xc53b65811e3d33ada5a90d476dcf2063b53bcfb3",
 	    ],
 	    internalName: "sei",
-	    nativeLogoUrl: "https://assets.oku.trade/natives/sei.png",
+	    nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/sei.png",
 	    contracts: {
 	        ...chains.sei.contracts,
 	        limitOrder: {
@@ -5109,7 +5109,7 @@
 	    launchTime: 1737165834,
 	    transactionType: "eip1559",
 	    sortIndex: 15,
-	    logoUrl: "https://assets.oku.trade/chains/sonic-logo.svg",
+	    logoUrl: "https://cms.oku.trade/cdn/public/chains/sonic-logo.svg",
 	    deprecated: false,
 	    safeReorgDistance: 90000,
 	    blockAid: "",
@@ -5212,7 +5212,7 @@
 	        "0x21043D7Ad92d9e7bC45C055AF29771E37307B111",
 	    ],
 	    internalName: "sonic",
-	    nativeLogoUrl: "https://assets.oku.trade/natives/sonic.svg",
+	    nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/sonic.svg",
 	    contracts: {
 	        limitOrder: {
 	            address: "0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc",
@@ -5243,7 +5243,7 @@
 	    launchTime: 1717509600,
 	    transactionType: "eip1559",
 	    sortIndex: 4,
-	    logoUrl: "https://assets.oku.trade/chains/taiko-logo.svg",
+	    logoUrl: "https://cms.oku.trade/cdn/public/chains/taiko-logo.svg",
 	    deprecated: false,
 	    safeReorgDistance: 90000,
 	    blockAid: "",
@@ -5355,7 +5355,7 @@
 	        "0x6dA6B21DB1Dfd19D67BfF1877f62953a2D365fc9",
 	    ],
 	    internalName: "taiko",
-	    nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
+	    nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
 	    contracts: {
 	        ...chains.taiko.contracts,
 	        limitOrder: {
@@ -5386,7 +5386,7 @@
 	    launchTime: 1743089303,
 	    transactionType: "legacy",
 	    sortIndex: 13,
-	    logoUrl: "https://assets.oku.trade/chains/telos-logo.svg",
+	    logoUrl: "https://cms.oku.trade/cdn/public/chains/telos-logo.svg",
 	    deprecated: false,
 	    safeReorgDistance: 90000,
 	    blockAid: "",
@@ -5485,7 +5485,7 @@
 	        "0x45b47c9207fa8298863991f1b02a5b0e77bab7b6",
 	    ],
 	    internalName: "telos",
-	    nativeLogoUrl: "https://assets.oku.trade/natives/telos.png",
+	    nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/telos.png",
 	    contracts: {
 	        ...chains.telos.contracts,
 	        limitOrder: {
@@ -5518,7 +5518,7 @@
 	    transactionType: "eip1559",
 	    sortIndex: 15,
 	    blockAid: "",
-	    logoUrl: "https://assets.oku.trade/chains/tron.png",
+	    logoUrl: "https://cms.oku.trade/cdn/public/chains/tron.png",
 	    deprecated: true,
 	    safeReorgDistance: 90000,
 	    externalId: {},
@@ -5556,7 +5556,7 @@
 	    stables: [],
 	    watchlist: [],
 	    internalName: "tronshasta",
-	    nativeLogoUrl: "https://assets.oku.trade/natives/tron.png",
+	    nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/tron.png",
 	    contracts: {
 	        ...chains.tronShasta.contracts,
 	        limitOrder: {
@@ -5581,7 +5581,7 @@
 	    launchTime: 1750384728,
 	    transactionType: "eip1559",
 	    sortIndex: 15,
-	    logoUrl: "https://assets.oku.trade/chains/unichain-logo.svg",
+	    logoUrl: "https://cms.oku.trade/cdn/public/chains/unichain-logo.svg",
 	    deprecated: false,
 	    safeReorgDistance: 90000,
 	    blockAid: "unichain",
@@ -5697,7 +5697,7 @@
 	        "0x8927058918e3CFf6F55EfE45A58db1be1F069E49",
 	    ],
 	    internalName: "unichain",
-	    nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
+	    nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
 	    contracts: {
 	        ...chains.unichain.contracts,
 	        limitOrder: {
@@ -5795,7 +5795,7 @@
 	    stables: ["0x79a02482a880bce3f13e09da970dc34db4cd24d1"],
 	    watchlist: [],
 	    internalName: "worldchain",
-	    nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
+	    nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
 	    contracts: {
 	        ...chains.worldchain.contracts,
 	        limitOrder: {
@@ -5828,7 +5828,7 @@
 	    launchTime: 1746453600,
 	    transactionType: "legacy",
 	    sortIndex: 15,
-	    logoUrl: "https://assets.oku.trade/chains/xdc-logo.png",
+	    logoUrl: "https://cms.oku.trade/cdn/public/chains/xdc-logo.png",
 	    deprecated: false,
 	    safeReorgDistance: 90000,
 	    blockAid: "",
@@ -5915,7 +5915,7 @@
 	        "0xd68fdf3cbe9f48422a15899318dd5cb921f92037",
 	    ],
 	    internalName: "xdc",
-	    nativeLogoUrl: "https://assets.oku.trade/natives/xdc.png",
+	    nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/xdc.png",
 	    contracts: {
 	        ...chains.xdc.contracts,
 	        limitOrder: {
@@ -6026,7 +6026,7 @@
 	    launchTime: 1722520800,
 	    transactionType: "legacy",
 	    blockTimeSeconds: 7,
-	    logoUrl: "https://assets.oku.trade/chains/zkevm-logo.svg",
+	    logoUrl: "https://cms.oku.trade/cdn/public/chains/zkevm-logo.svg",
 	    deprecated: true,
 	    safeReorgDistance: 90000,
 	    blockAid: "",
@@ -6112,7 +6112,7 @@
 	        "0x0A44b12799eBC21E1dF271284921e1e4F6f17f81",
 	    ],
 	    internalName: "polygon-zkevm",
-	    nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
+	    nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
 	    contracts: {
 	        ...chains.polygonZkEvm.contracts,
 	        limitOrder: {
@@ -6139,7 +6139,7 @@
 	    sortIndex: 4,
 	    launchTime: 1696514400,
 	    transactionType: "eip1559",
-	    logoUrl: "https://assets.oku.trade/chains/zksync-logo.svg",
+	    logoUrl: "https://cms.oku.trade/cdn/public/chains/zksync-logo.svg",
 	    deprecated: false,
 	    safeReorgDistance: 90000,
 	    blockAid: "zksync",
@@ -6244,7 +6244,7 @@
 	        "0x23C77A553AAc0ad009441C856c05D117c1131e3d",
 	    ],
 	    internalName: "zksync",
-	    nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
+	    nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
 	    contracts: {
 	        ...chains.zksync.contracts,
 	        limitOrder: {

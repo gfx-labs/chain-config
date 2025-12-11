@@ -6,7 +6,7 @@ import (
 
 var Celo Network = Network{
 	ChainId:           42220,
-	LogoUrl:           "https://assets.oku.trade/chains/celo-logo.svg",
+	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/celo-logo.svg",
 	Deprecated:        false,
 	LiteChain:         false,
 	SortIndex:         15,

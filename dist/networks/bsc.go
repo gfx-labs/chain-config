@@ -6,7 +6,7 @@ import (
 
 var Bsc Network = Network{
 	ChainId:           56,
-	LogoUrl:           "https://assets.oku.trade/chains/bsc-logo.svg",
+	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/bsc-logo.svg",
 	Deprecated:        false,
 	LiteChain:         false,
 	SortIndex:         9,
