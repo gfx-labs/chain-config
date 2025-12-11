@@ -7,7 +7,7 @@ export const sonic = makeConfig({
 	launchTime: 1737165834,
 	transactionType: "eip1559",
 	sortIndex: 15,
-	logoUrl: "https://assets.oku.trade/chains/sonic-logo.svg",
+	logoUrl: "https://cms.oku.trade/cdn/public/chains/sonic-logo.svg",
 	deprecated: false,
 	safeReorgDistance: 90000,
 	blockAid: "",
@@ -112,7 +112,7 @@ export const sonic = makeConfig({
 		"0x21043D7Ad92d9e7bC45C055AF29771E37307B111",
 	],
 	internalName: "sonic",
-	nativeLogoUrl: "https://assets.oku.trade/natives/sonic.svg",
+	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/sonic.svg",
 	contracts: {
 		limitOrder: {
 			address: "0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc",

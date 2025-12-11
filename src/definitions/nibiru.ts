@@ -8,7 +8,7 @@ export const nibiru = makeConfig({
 	launchTime: 1750705200,
 	transactionType: "eip1559",
 	sortIndex: 15,
-	logoUrl: "https://assets.oku.trade/chains/nibiru-logo.svg",
+	logoUrl: "https://cms.oku.trade/cdn/public/chains/nibiru-logo.svg",
 	deprecated: false,
 	safeReorgDistance: 90000,
 	externalId: {},
@@ -89,7 +89,7 @@ export const nibiru = makeConfig({
 		"0xe7612e14a05613caf06fad766b484b0a6d146c3a",
 	],
 	internalName: "nibiru",
-	nativeLogoUrl: "https://assets.oku.trade/natives/nibi.svg",
+	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/nibi.svg",
 	contracts: {
 		...chain.contracts,
 		limitOrder: {

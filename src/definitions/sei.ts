@@ -9,7 +9,7 @@ export const sei = makeConfig({
 	launchTime: 1687788000,
 	transactionType: "eip1559",
 	sortIndex: 5,
-	logoUrl: "https://assets.oku.trade/chains/sei-logo.svg",
+	logoUrl: "https://cms.oku.trade/cdn/public/chains/sei-logo.svg",
 	deprecated: false,
 	safeReorgDistance: 90000,
 	blockAid: "",
@@ -149,7 +149,7 @@ export const sei = makeConfig({
 		"0xc53b65811e3d33ada5a90d476dcf2063b53bcfb3",
 	],
 	internalName: "sei",
-	nativeLogoUrl: "https://assets.oku.trade/natives/sei.png",
+	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/sei.png",
 	contracts: {
 		...chain.contracts,
 		limitOrder: {

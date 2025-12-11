@@ -7,7 +7,7 @@ export const blast = makeConfig({
 	launchTime: 1719410400,
 	transactionType: "eip1559",
 	sortIndex: 14,
-	logoUrl: "https://assets.oku.trade/chains/blast-logo.svg",
+	logoUrl: "https://cms.oku.trade/cdn/public/chains/blast-logo.svg",
 	deprecated: true,
 	safeReorgDistance: 90000,
 	blockAid: "blast",
@@ -94,7 +94,7 @@ export const blast = makeConfig({
 	internalName: "blast",
 	initCodeHash:
 		"0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
-	nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
+	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
 	contracts: {
 		...chain.contracts,
 		limitOrder: {

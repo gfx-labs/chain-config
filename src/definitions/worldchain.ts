@@ -81,7 +81,7 @@ export const worldchain = makeConfig({
 	stables: ["0x79a02482a880bce3f13e09da970dc34db4cd24d1"],
 	watchlist: [],
 	internalName: "worldchain",
-	nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
+	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
 	contracts: {
 		...chain.contracts,
 		limitOrder: {

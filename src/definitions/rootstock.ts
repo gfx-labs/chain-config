@@ -10,7 +10,7 @@ export const rootstock = makeConfig({
 	initCodeHash:
 		"0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
 	blockTimeSeconds: 33,
-	logoUrl: "https://assets.oku.trade/chains/rootstock-logo.svg",
+	logoUrl: "https://cms.oku.trade/cdn/public/chains/rootstock-logo.svg",
 	deprecated: false,
 	safeReorgDistance: 90000,
 	blockAid: "",
@@ -127,7 +127,7 @@ export const rootstock = makeConfig({
 		"0x71d0d054974121ae37a76762e1fa02ffa150eba1",
 	],
 	internalName: "rootstock",
-	nativeLogoUrl: "https://assets.oku.trade/natives/rbtc.png",
+	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/rbtc.png",
 	contracts: {
 		...chain.contracts,
 		limitOrder: {

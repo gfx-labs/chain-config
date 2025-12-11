@@ -9,7 +9,7 @@ export const taiko = makeConfig({
 	launchTime: 1717509600,
 	transactionType: "eip1559",
 	sortIndex: 4,
-	logoUrl: "https://assets.oku.trade/chains/taiko-logo.svg",
+	logoUrl: "https://cms.oku.trade/cdn/public/chains/taiko-logo.svg",
 	deprecated: false,
 	safeReorgDistance: 90000,
 	blockAid: "",
@@ -123,7 +123,7 @@ export const taiko = makeConfig({
 		"0x6dA6B21DB1Dfd19D67BfF1877f62953a2D365fc9",
 	],
 	internalName: "taiko",
-	nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
+	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
 	contracts: {
 		...chain.contracts,
 		limitOrder: {

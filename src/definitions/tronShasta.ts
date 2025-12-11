@@ -10,7 +10,7 @@ export const tronShasta = makeConfig({
 	transactionType: "eip1559",
 	sortIndex: 15,
 	blockAid: "",
-	logoUrl: "https://assets.oku.trade/chains/tron.png",
+	logoUrl: "https://cms.oku.trade/cdn/public/chains/tron.png",
 	deprecated: true,
 	safeReorgDistance: 90000,
 	externalId: {},
@@ -50,7 +50,7 @@ export const tronShasta = makeConfig({
 	stables: [],
 	watchlist: [],
 	internalName: "tronshasta",
-	nativeLogoUrl: "https://assets.oku.trade/natives/tron.png",
+	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/tron.png",
 	contracts: {
 		...chain.contracts,
 		limitOrder: {

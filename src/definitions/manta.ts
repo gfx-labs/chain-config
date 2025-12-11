@@ -10,7 +10,7 @@ export const manta = makeConfig({
 		"0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
 	blockTimeSeconds: 2,
 	sortIndex: 13,
-	logoUrl: "https://assets.oku.trade/chains/manta-logo.png",
+	logoUrl: "https://cms.oku.trade/cdn/public/chains/manta-logo.png",
 	deprecated: true,
 	safeReorgDistance: 90000,
 	blockAid: "",
@@ -91,7 +91,7 @@ export const manta = makeConfig({
 		"0x5bedc5d1e1d0b32caca78db23af71126b6fe26b6",
 	],
 	internalName: "manta",
-	nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
+	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
 	contracts: {
 		...chain.contracts,
 		limitOrder: {

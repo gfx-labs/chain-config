@@ -7,7 +7,7 @@ export const hemi = makeConfig({
 	launchTime: 1741901593,
 	transactionType: "eip1559",
 	sortIndex: 13,
-	logoUrl: "https://assets.oku.trade/chains/hemi-logo.svg",
+	logoUrl: "https://cms.oku.trade/cdn/public/chains/hemi-logo.svg",
 	deprecated: false,
 	safeReorgDistance: 90000,
 	blockAid: "",
@@ -104,7 +104,7 @@ export const hemi = makeConfig({
 		"0x0ec5aa557d5b2a8702ad43d253415d11f95364c0",
 	],
 	internalName: "hemi",
-	nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
+	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
 	contracts: {
 		...chain.contracts,
 		limitOrder: {

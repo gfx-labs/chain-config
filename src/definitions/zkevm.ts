@@ -9,7 +9,7 @@ export const polygonZkEvm = makeConfig({
 	launchTime: 1722520800,
 	transactionType: "legacy",
 	blockTimeSeconds: 7,
-	logoUrl: "https://assets.oku.trade/chains/zkevm-logo.svg",
+	logoUrl: "https://cms.oku.trade/cdn/public/chains/zkevm-logo.svg",
 	deprecated: true,
 	safeReorgDistance: 90000,
 	blockAid: "",
@@ -96,7 +96,7 @@ export const polygonZkEvm = makeConfig({
 		"0x0A44b12799eBC21E1dF271284921e1e4F6f17f81",
 	],
 	internalName: "polygon-zkevm",
-	nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
+	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
 	contracts: {
 		...chain.contracts,
 		limitOrder: {

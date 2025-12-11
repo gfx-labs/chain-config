@@ -9,7 +9,7 @@ export const polygon = makeConfig({
 	launchTime: 1688997600,
 	transactionType: "eip1559",
 	sortIndex: 3,
-	logoUrl: "https://assets.oku.trade/chains/polygon-logo.webp",
+	logoUrl: "https://cms.oku.trade/cdn/public/chains/polygon-logo.webp",
 	deprecated: false,
 	safeReorgDistance: 90000,
 	blockAid: "polygon",
@@ -281,7 +281,7 @@ export const polygon = makeConfig({
 		"0x357faf5843c7fd7fb4e34fbeabdac16eabe8a5bc",
 	],
 	internalName: "polygon",
-	nativeLogoUrl: "https://assets.oku.trade/natives/matic.png",
+	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/matic.png",
 	contracts: {
 		...chain.contracts,
 		nftManager: {

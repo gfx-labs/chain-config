@@ -8,7 +8,7 @@ export const corn = makeConfig({
 	launchTime: 1733882663,
 	transactionType: "eip1559",
 	sortIndex: 15,
-	logoUrl: "https://assets.oku.trade/chains/corn-logo.png",
+	logoUrl: "https://cms.oku.trade/cdn/public/chains/corn-logo.png",
 	deprecated: false,
 	safeReorgDistance: 90000,
 	blockAid: "",
@@ -96,7 +96,7 @@ export const corn = makeConfig({
 		"0x255f0b304f701a0530f5dc1739a3d1469e21dd5f",
 	],
 	internalName: "corn",
-	nativeLogoUrl: "https://assets.oku.trade/natives/corn.png",
+	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/corn.png",
 	contracts: {
 		...chain.contracts,
 		limitOrder: {

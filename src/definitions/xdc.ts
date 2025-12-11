@@ -13,7 +13,7 @@ export const xdc = makeConfig({
 	launchTime: 1746453600,
 	transactionType: "legacy",
 	sortIndex: 15,
-	logoUrl: "https://assets.oku.trade/chains/xdc-logo.png",
+	logoUrl: "https://cms.oku.trade/cdn/public/chains/xdc-logo.png",
 	deprecated: false,
 	safeReorgDistance: 90000,
 	blockAid: "",
@@ -102,7 +102,7 @@ export const xdc = makeConfig({
 		"0xd68fdf3cbe9f48422a15899318dd5cb921f92037",
 	],
 	internalName: "xdc",
-	nativeLogoUrl: "https://assets.oku.trade/natives/xdc.png",
+	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/xdc.png",
 	contracts: {
 		...chain.contracts,
 		limitOrder: {

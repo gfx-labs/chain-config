@@ -8,7 +8,7 @@ export const redbelly = makeConfig({
 	launchTime: 1741362479,
 	transactionType: "eip1559",
 	sortIndex: 15,
-	logoUrl: "https://assets.oku.trade/chains/redbelly-logo.svg",
+	logoUrl: "https://cms.oku.trade/cdn/public/chains/redbelly-logo.svg",
 	deprecated: false,
 	safeReorgDistance: 90000,
 	blockAid: "",
@@ -66,7 +66,7 @@ export const redbelly = makeConfig({
 		"0x1f1bda1fe18aedf468abe36ed66eaf44aa6c490b",
 	],
 	internalName: "redbelly",
-	nativeLogoUrl: "https://assets.oku.trade/natives/rbnt.svg",
+	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/rbnt.svg",
 	contracts: {
 		...chain.contracts,
 		limitOrder: {

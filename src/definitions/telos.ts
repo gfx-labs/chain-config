@@ -7,7 +7,7 @@ export const telos = makeConfig({
 	launchTime: 1743089303,
 	transactionType: "legacy",
 	sortIndex: 13,
-	logoUrl: "https://assets.oku.trade/chains/telos-logo.svg",
+	logoUrl: "https://cms.oku.trade/cdn/public/chains/telos-logo.svg",
 	deprecated: false,
 	safeReorgDistance: 90000,
 	blockAid: "",
@@ -108,7 +108,7 @@ export const telos = makeConfig({
 		"0x45b47c9207fa8298863991f1b02a5b0e77bab7b6",
 	],
 	internalName: "telos",
-	nativeLogoUrl: "https://assets.oku.trade/natives/telos.png",
+	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/telos.png",
 	contracts: {
 		...chain.contracts,
 		limitOrder: {

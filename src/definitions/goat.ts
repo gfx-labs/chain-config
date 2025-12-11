@@ -8,7 +8,7 @@ export const goat = makeConfig({
 	launchTime: 1742159744,
 	transactionType: "eip1559",
 	sortIndex: 15,
-	logoUrl: "https://assets.oku.trade/chains/goat-logo.svg",
+	logoUrl: "https://cms.oku.trade/cdn/public/chains/goat-logo.svg",
 	deprecated: false,
 	safeReorgDistance: 90000,
 	blockAid: "",
@@ -90,7 +90,7 @@ export const goat = makeConfig({
 		"0xde2b2fb74a9b7053a6bac08fb741e19467f7a0ef",
 	],
 	internalName: "goat",
-	nativeLogoUrl: "https://assets.oku.trade/natives/gbtc.svg",
+	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/gbtc.svg",
 	contracts: {
 		...chain.contracts,
 		limitOrder: {

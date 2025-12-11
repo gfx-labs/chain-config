@@ -8,7 +8,7 @@ export const arbitrum = makeConfig({
 	transactionType: "eip1559",
 	sortIndex: 1,
 	blockTimeSeconds: 0.25,
-	logoUrl: "https://assets.oku.trade/chains/arbitrum-logo.svg",
+	logoUrl: "https://cms.oku.trade/cdn/public/chains/arbitrum-logo.svg",
 	deprecated: false,
 	safeReorgDistance: 90000 * 2,
 	blockAid: "arbitrum",
@@ -307,7 +307,7 @@ export const arbitrum = makeConfig({
 		"0x50450351517117cb58189edba6bbad6284d45902",
 	],
 	internalName: "arbitrum",
-	nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
+	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
 	initCodeHash:
 		"0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
 	contracts: {

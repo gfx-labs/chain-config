@@ -9,7 +9,7 @@ export const scroll = makeConfig({
 	launchTime: 1703257200,
 	transactionType: "eip1559",
 	blockTimeSeconds: 3,
-	logoUrl: "https://assets.oku.trade/chains/scroll-logo.png",
+	logoUrl: "https://cms.oku.trade/cdn/public/chains/scroll-logo.png",
 	deprecated: false,
 	safeReorgDistance: 90000,
 	blockAid: "scroll",
@@ -112,7 +112,7 @@ export const scroll = makeConfig({
 		"0x813df550a32d4a9d42010d057386429ad2328ed9",
 	],
 	internalName: "scroll",
-	nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
+	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
 	contracts: {
 		...chain.contracts,
 		limitOrder: {

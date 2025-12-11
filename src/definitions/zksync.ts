@@ -7,7 +7,7 @@ export const zkSync = makeConfig({
 	sortIndex: 4,
 	launchTime: 1696514400,
 	transactionType: "eip1559",
-	logoUrl: "https://assets.oku.trade/chains/zksync-logo.svg",
+	logoUrl: "https://cms.oku.trade/cdn/public/chains/zksync-logo.svg",
 	deprecated: false,
 	safeReorgDistance: 90000,
 	blockAid: "zksync",
@@ -114,7 +114,7 @@ export const zkSync = makeConfig({
 		"0x23C77A553AAc0ad009441C856c05D117c1131e3d",
 	],
 	internalName: "zksync",
-	nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
+	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
 	contracts: {
 		...chain.contracts,
 		limitOrder: {

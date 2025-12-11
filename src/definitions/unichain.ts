@@ -8,7 +8,7 @@ export const unichain = makeConfig({
 	launchTime: 1750384728,
 	transactionType: "eip1559",
 	sortIndex: 15,
-	logoUrl: "https://assets.oku.trade/chains/unichain-logo.svg",
+	logoUrl: "https://cms.oku.trade/cdn/public/chains/unichain-logo.svg",
 	deprecated: false,
 	safeReorgDistance: 90000,
 	blockAid: "unichain",
@@ -126,7 +126,7 @@ export const unichain = makeConfig({
 		"0x8927058918e3CFf6F55EfE45A58db1be1F069E49",
 	],
 	internalName: "unichain",
-	nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
+	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
 	contracts: {
 		...chain.contracts,
 		limitOrder: {

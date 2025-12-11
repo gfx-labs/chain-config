@@ -9,7 +9,7 @@ export const moonbeam = makeConfig({
 	launchTime: 1696341600,
 	transactionType: "eip1559",
 	blockTimeSeconds: 30,
-	logoUrl: "https://assets.oku.trade/chains/moonbeam-logo.svg",
+	logoUrl: "https://cms.oku.trade/cdn/public/chains/moonbeam-logo.svg",
 	deprecated: true,
 	safeReorgDistance: 90000,
 	blockAid: "",
@@ -111,7 +111,7 @@ export const moonbeam = makeConfig({
 		"0x45bD0680bDFd180341A6dE806Aa4637f9AfBFc39",
 	],
 	internalName: "moonbeam",
-	nativeLogoUrl: "https://assets.oku.trade/natives/glmr.png",
+	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/glmr.png",
 	contracts: {
 		...chain.contracts,
 		limitOrder: {

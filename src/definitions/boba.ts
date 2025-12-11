@@ -10,7 +10,7 @@ export const boba = makeConfig({
 		"0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
 	sortIndex: 11,
 	blockTimeSeconds: 2,
-	logoUrl: "https://assets.oku.trade/chains/boba-logo.svg",
+	logoUrl: "https://cms.oku.trade/cdn/public/chains/boba-logo.svg",
 	deprecated: false,
 	safeReorgDistance: 90000,
 	blockAid: "",
@@ -105,7 +105,7 @@ export const boba = makeConfig({
 		"0x67fac3b54b6391e3183d2d74b7d2c430ad44fca1",
 	],
 	internalName: "boba",
-	nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
+	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
 	contracts: {
 		...chain.contracts,
 		limitOrder: {

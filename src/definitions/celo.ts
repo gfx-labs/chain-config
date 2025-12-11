@@ -7,7 +7,7 @@ export const celo = makeConfig({
 	launchTime: 1737754469,
 	transactionType: "eip1559",
 	sortIndex: 15,
-	logoUrl: "https://assets.oku.trade/chains/celo-logo.svg",
+	logoUrl: "https://cms.oku.trade/cdn/public/chains/celo-logo.svg",
 	deprecated: false,
 	safeReorgDistance: 90000,
 	blockAid: "",
@@ -105,7 +105,7 @@ export const celo = makeConfig({
 		"0x7B9A5BC920610F54881f2F6359007957DE504862",
 	],
 	internalName: "celo",
-	nativeLogoUrl: "https://assets.oku.trade/natives/celo.png",
+	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/celo.png",
 	contracts: {
 		...chain.contracts,
 		nftManager: {

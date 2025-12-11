@@ -11,7 +11,7 @@ export const linea = makeConfig({
 	blockTimeSeconds: 2,
 	sortIndex: 15,
 	morpho: {},
-	logoUrl: "https://assets.oku.trade/chains/linea-logo.svg",
+	logoUrl: "https://cms.oku.trade/cdn/public/chains/linea-logo.svg",
 	deprecated: false,
 	safeReorgDistance: 100,
 	blockAid: "linea",
@@ -128,7 +128,7 @@ export const linea = makeConfig({
 		"0x42a72c7fbb355b2cfe08f8716595f3f3509b3bea",
 	],
 	internalName: "linea",
-	nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
+	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
 	contracts: {
 		...chain.contracts,
 		limitOrder: {

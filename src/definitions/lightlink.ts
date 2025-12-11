@@ -8,7 +8,7 @@ export const lightlink = makeConfig({
 	launchTime: 1741485513,
 	transactionType: "legacy",
 	sortIndex: 13,
-	logoUrl: "https://assets.oku.trade/chains/lightlink-logo.svg",
+	logoUrl: "https://cms.oku.trade/cdn/public/chains/lightlink-logo.svg",
 	deprecated: false,
 	safeReorgDistance: 90000,
 	blockAid: "",
@@ -96,7 +96,7 @@ export const lightlink = makeConfig({
 		"0xc87Fa6290e7F11543e76e1D240335190C15Dade8",
 	],
 	internalName: "lightlink",
-	nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
+	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
 	contracts: {
 		limitOrder: {
 			address: "0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc",

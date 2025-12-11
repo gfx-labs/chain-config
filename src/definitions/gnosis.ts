@@ -8,7 +8,7 @@ export const gnosis = makeConfig({
 	transactionType: "eip1559",
 	sortIndex: 18,
 	blockAid: "",
-	logoUrl: "https://assets.oku.trade/chains/gnosis-logo.png",
+	logoUrl: "https://cms.oku.trade/cdn/public/chains/gnosis-logo.png",
 	deprecated: false,
 	safeReorgDistance: 90000,
 	morpho: {},
@@ -133,7 +133,7 @@ export const gnosis = makeConfig({
 		"0xbb98d4e20b054ede4c4143ecee59368f88ecbbe4",
 	],
 	internalName: "gnosis",
-	nativeLogoUrl: "https://assets.oku.trade/natives/xdai.png",
+	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/xdai.png",
 	contracts: {
 		...chain.contracts,
 		limitOrder: {

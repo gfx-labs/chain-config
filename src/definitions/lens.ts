@@ -9,7 +9,7 @@ export const lens = makeConfig({
 	transactionType: "eip1559",
 	sortIndex: 15,
 	blockAid: "",
-	logoUrl: "https://assets.oku.trade/chains/lens-logo.png",
+	logoUrl: "https://cms.oku.trade/cdn/public/chains/lens-logo.png",
 	deprecated: false,
 	safeReorgDistance: 90000,
 	externalId: {
@@ -75,7 +75,7 @@ export const lens = makeConfig({
 		"0x6b6eb6f437bf54d22b997c3b38b79a23bc63f39f",
 	],
 	internalName: "lens",
-	nativeLogoUrl: "https://assets.oku.trade/natives/gho.png",
+	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/gho.png",
 	contracts: {
 		limitOrder: {
 			address: "0xD3239f8D4c6245359f4F050F5133A9F61F4e2ACF",

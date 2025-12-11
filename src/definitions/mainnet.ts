@@ -10,7 +10,7 @@ export const mainnet = makeConfig({
 	transactionType: "eip1559",
 	blockTimeSeconds: 15,
 	safeReorgDistance: 90_000,
-	logoUrl: "https://assets.oku.trade/chains/ethereum-logo.webp",
+	logoUrl: "https://cms.oku.trade/cdn/public/chains/ethereum-logo.webp",
 	deprecated: false,
 	blockAid: "ethereum",
 	morpho: {
@@ -340,7 +340,7 @@ export const mainnet = makeConfig({
 		"0x7bea39867e4169dbe237d55c8242a8f2fcdcc387",
 	],
 	internalName: "ethereum",
-	nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
+	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
 	contracts: {
 		...chain.contracts,
 		limitOrder: {

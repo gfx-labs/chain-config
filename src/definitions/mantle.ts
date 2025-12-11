@@ -9,7 +9,7 @@ export const mantle = makeConfig({
 	launchTime: 1720101600,
 	transactionType: "eip1559",
 	sortIndex: 15,
-	logoUrl: "https://assets.oku.trade/chains/mantle-logo.png",
+	logoUrl: "https://cms.oku.trade/cdn/public/chains/mantle-logo.png",
 	deprecated: false,
 	safeReorgDistance: 90000,
 	blockAid: "",
@@ -123,7 +123,7 @@ export const mantle = makeConfig({
 		"0x8CFee38ab8b8f4BC2ff662E8cc8bDfb0439C9D2C",
 	],
 	internalName: "mantle",
-	nativeLogoUrl: "https://assets.oku.trade/natives/mnt.png",
+	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/mnt.png",
 	contracts: {
 		...chain.contracts,
 		limitOrder: {

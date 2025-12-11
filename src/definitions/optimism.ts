@@ -10,7 +10,7 @@ export const optimism = makeConfig({
 	launchTime: 1688997600,
 	transactionType: "eip1559",
 	sortIndex: 2,
-	logoUrl: "https://assets.oku.trade/chains/optimism-logo.svg",
+	logoUrl: "https://cms.oku.trade/cdn/public/chains/optimism-logo.svg",
 	deprecated: false,
 	safeReorgDistance: 90000,
 	blockAid: "optimism",
@@ -316,7 +316,7 @@ export const optimism = makeConfig({
 		"0x730691cdac3cbd4d41fc5eb9d8abbb0cea795b94",
 	],
 	internalName: "optimism",
-	nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
+	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
 	contracts: {
 		...chain.contracts,
 		limitOrder: {

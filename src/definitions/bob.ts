@@ -7,7 +7,7 @@ export const bob = makeConfig({
 	launchTime: 1727359200,
 	transactionType: "eip1559",
 	sortIndex: 15,
-	logoUrl: "https://assets.oku.trade/chains/bob-logo.svg",
+	logoUrl: "https://cms.oku.trade/cdn/public/chains/bob-logo.svg",
 	deprecated: false,
 	safeReorgDistance: 90000,
 	blockAid: "",
@@ -102,7 +102,7 @@ export const bob = makeConfig({
 		"0x45bfa70e8f387da47ffe3dec447bc16f0b9a6261",
 	],
 	internalName: "bob",
-	nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
+	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
 	contracts: {
 		...chain.contracts,
 		limitOrder: {

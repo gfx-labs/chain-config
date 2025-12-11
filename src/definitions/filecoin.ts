@@ -30,7 +30,7 @@ export const filecoin = makeConfig({
 			apiUrl: "https://api.filutils.com/api",
 		},
 	},
-	logoUrl: "https://assets.oku.trade/chains/filecoin-logo.svg",
+	logoUrl: "https://cms.oku.trade/cdn/public/chains/filecoin-logo.svg",
 	deprecated: false,
 	externalId: {},
 	markets: {},
@@ -116,7 +116,7 @@ export const filecoin = makeConfig({
 		"0xca166403c6f41e1fecc0eb40ac1947fd6399d5c5",
 	],
 	internalName: "filecoin",
-	nativeLogoUrl: "https://assets.oku.trade/natives/fil.png",
+	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/fil.png",
 	contracts: {
 		...chain.contracts,
 		limitOrder: {

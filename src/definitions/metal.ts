@@ -7,7 +7,7 @@ export const metal = makeConfig({
 	launchTime: 1733882663,
 	transactionType: "eip1559",
 	sortIndex: 15,
-	logoUrl: "https://assets.oku.trade/chains/metal-logo.png",
+	logoUrl: "https://cms.oku.trade/cdn/public/chains/metal-logo.png",
 	deprecated: true,
 	safeReorgDistance: 90000,
 	blockAid: "",
@@ -67,7 +67,7 @@ export const metal = makeConfig({
 	],
 	watchlist: ["0xC06B6d6242E84c96AeE28C7FcfE48D2c9909e37B"],
 	internalName: "metal",
-	nativeLogoUrl: "https://assets.oku.trade/natives/eth.png",
+	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
 	contracts: {
 		...chain.contracts,
 		limitOrder: {

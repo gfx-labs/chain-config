@@ -68,7 +68,7 @@ export const matchain = makeConfig({
 		"0x2128e934843ad52d42b5af7288dcfa7b0598d035",
 	],
 	internalName: "matchain",
-	nativeLogoUrl: "https://assets.oku.trade/natives/bnb.png",
+	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/bnb.png",
 	contracts: {
 		...chain.contracts,
 		limitOrder: {

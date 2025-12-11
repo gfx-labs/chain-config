@@ -10,7 +10,7 @@ export const bsc = makeConfig({
 		"0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
 	sortIndex: 9,
 	blockTimeSeconds: 3,
-	logoUrl: "https://assets.oku.trade/chains/bsc-logo.svg",
+	logoUrl: "https://cms.oku.trade/cdn/public/chains/bsc-logo.svg",
 	deprecated: false,
 	safeReorgDistance: 90000,
 	blockAid: "bsc",
@@ -207,7 +207,7 @@ export const bsc = makeConfig({
 		"0x06396509195eb9e07c38a016694dc9ff535b128a",
 	],
 	internalName: "bsc",
-	nativeLogoUrl: "https://assets.oku.trade/natives/bnb.png",
+	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/bnb.png",
 	contracts: {
 		...chain.contracts,
 		limitOrder: {
