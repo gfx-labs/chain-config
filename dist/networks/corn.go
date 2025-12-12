@@ -6,7 +6,7 @@ import (
 
 var Corn Network = Network{
 	ChainId:           21000000,
-	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/corn-logo.png",
+	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/corn-logo.svg",
 	Deprecated:        false,
 	LiteChain:         false,
 	SortIndex:         15,

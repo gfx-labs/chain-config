@@ -6,7 +6,7 @@ import (
 
 var Lens Network = Network{
 	ChainId:           232,
-	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/lens-logo.png",
+	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/lens-logo.svg",
 	Deprecated:        false,
 	LiteChain:         false,
 	SortIndex:         15,

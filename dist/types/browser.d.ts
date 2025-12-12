@@ -2925,7 +2925,7 @@ declare const corn: Readonly<{
     launchTime: 1733882663;
     transactionType: "eip1559";
     sortIndex: 15;
-    logoUrl: "https://cms.oku.trade/cdn/public/chains/corn-logo.png";
+    logoUrl: "https://cms.oku.trade/cdn/public/chains/corn-logo.svg";
     deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
@@ -3054,7 +3054,7 @@ declare const etherlink: Readonly<{
     launchTime: 1750211928;
     transactionType: "eip1559";
     sortIndex: 15;
-    logoUrl: "https://cms.oku.trade/cdn/public/chains/etherlink-logo.png";
+    logoUrl: "https://cms.oku.trade/cdn/public/chains/etherlink-logo.svg";
     deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
@@ -3329,7 +3329,7 @@ declare const gnosis: Readonly<{
     transactionType: "eip1559";
     sortIndex: 18;
     blockAid: "";
-    logoUrl: "https://cms.oku.trade/cdn/public/chains/gnosis-logo.png";
+    logoUrl: "https://cms.oku.trade/cdn/public/chains/gnosis-logo.svg";
     deprecated: false;
     safeReorgDistance: 90000;
     morpho: {};
@@ -3758,7 +3758,7 @@ declare const lens: Readonly<{
     transactionType: "eip1559";
     sortIndex: 15;
     blockAid: "";
-    logoUrl: "https://cms.oku.trade/cdn/public/chains/lens-logo.png";
+    logoUrl: "https://cms.oku.trade/cdn/public/chains/lens-logo.svg";
     deprecated: false;
     safeReorgDistance: 90000;
     externalId: {
@@ -4906,7 +4906,7 @@ declare const mantle: Readonly<{
     launchTime: 1720101600;
     transactionType: "eip1559";
     sortIndex: 15;
-    logoUrl: "https://cms.oku.trade/cdn/public/chains/mantle-logo.png";
+    logoUrl: "https://cms.oku.trade/cdn/public/chains/mantle-logo.svg";
     deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
@@ -6534,7 +6534,7 @@ declare const polygon: Readonly<{
     launchTime: 1688997600;
     transactionType: "eip1559";
     sortIndex: 3;
-    logoUrl: "https://cms.oku.trade/cdn/public/chains/polygon-logo.webp";
+    logoUrl: "https://cms.oku.trade/cdn/public/chains/polygon-logo.svg";
     deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "polygon";
@@ -7221,7 +7221,7 @@ declare const scroll: Readonly<{
     launchTime: 1703257200;
     transactionType: "eip1559";
     blockTimeSeconds: 3;
-    logoUrl: "https://cms.oku.trade/cdn/public/chains/scroll-logo.png";
+    logoUrl: "https://cms.oku.trade/cdn/public/chains/scroll-logo.svg";
     deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "scroll";
@@ -8906,7 +8906,7 @@ declare const xdc: Readonly<{
     launchTime: 1746453600;
     transactionType: "legacy";
     sortIndex: 15;
-    logoUrl: "https://cms.oku.trade/cdn/public/chains/xdc-logo.png";
+    logoUrl: "https://cms.oku.trade/cdn/public/chains/xdc-logo.svg";
     deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
@@ -12329,7 +12329,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     launchTime: 1688997600;
     transactionType: "eip1559";
     sortIndex: 3;
-    logoUrl: "https://cms.oku.trade/cdn/public/chains/polygon-logo.webp";
+    logoUrl: "https://cms.oku.trade/cdn/public/chains/polygon-logo.svg";
     deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "polygon";
@@ -12664,7 +12664,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     launchTime: 1703257200;
     transactionType: "eip1559";
     blockTimeSeconds: 3;
-    logoUrl: "https://cms.oku.trade/cdn/public/chains/scroll-logo.png";
+    logoUrl: "https://cms.oku.trade/cdn/public/chains/scroll-logo.svg";
     deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "scroll";
@@ -13928,7 +13928,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     launchTime: 1720101600;
     transactionType: "eip1559";
     sortIndex: 15;
-    logoUrl: "https://cms.oku.trade/cdn/public/chains/mantle-logo.png";
+    logoUrl: "https://cms.oku.trade/cdn/public/chains/mantle-logo.svg";
     deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
@@ -15009,7 +15009,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     transactionType: "eip1559";
     sortIndex: 18;
     blockAid: "";
-    logoUrl: "https://cms.oku.trade/cdn/public/chains/gnosis-logo.png";
+    logoUrl: "https://cms.oku.trade/cdn/public/chains/gnosis-logo.svg";
     deprecated: false;
     safeReorgDistance: 90000;
     morpho: {};
@@ -15554,7 +15554,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     launchTime: 1733882663;
     transactionType: "eip1559";
     sortIndex: 15;
-    logoUrl: "https://cms.oku.trade/cdn/public/chains/corn-logo.png";
+    logoUrl: "https://cms.oku.trade/cdn/public/chains/corn-logo.svg";
     deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
@@ -17945,7 +17945,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     launchTime: 1746453600;
     transactionType: "legacy";
     sortIndex: 15;
-    logoUrl: "https://cms.oku.trade/cdn/public/chains/xdc-logo.png";
+    logoUrl: "https://cms.oku.trade/cdn/public/chains/xdc-logo.svg";
     deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
@@ -18146,7 +18146,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     transactionType: "eip1559";
     sortIndex: 15;
     blockAid: "";
-    logoUrl: "https://cms.oku.trade/cdn/public/chains/lens-logo.png";
+    logoUrl: "https://cms.oku.trade/cdn/public/chains/lens-logo.svg";
     deprecated: false;
     safeReorgDistance: 90000;
     externalId: {
@@ -18376,7 +18376,7 @@ declare const MAINNET_CHAINS: readonly [Readonly<{
     launchTime: 1750211928;
     transactionType: "eip1559";
     sortIndex: 15;
-    logoUrl: "https://cms.oku.trade/cdn/public/chains/etherlink-logo.png";
+    logoUrl: "https://cms.oku.trade/cdn/public/chains/etherlink-logo.svg";
     deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
