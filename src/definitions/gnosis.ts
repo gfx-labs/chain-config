@@ -8,7 +8,7 @@ export const gnosis = makeConfig({
 	transactionType: "eip1559",
 	sortIndex: 18,
 	blockAid: "",
-	logoUrl: "https://cms.oku.trade/cdn/public/chains/gnosis-logo.png",
+	logoUrl: "https://cms.oku.trade/cdn/public/chains/gnosis-logo.svg",
 	deprecated: false,
 	safeReorgDistance: 90000,
 	morpho: {},

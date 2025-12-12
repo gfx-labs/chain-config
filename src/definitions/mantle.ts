@@ -9,7 +9,7 @@ export const mantle = makeConfig({
 	launchTime: 1720101600,
 	transactionType: "eip1559",
 	sortIndex: 15,
-	logoUrl: "https://cms.oku.trade/cdn/public/chains/mantle-logo.png",
+	logoUrl: "https://cms.oku.trade/cdn/public/chains/mantle-logo.svg",
 	deprecated: false,
 	safeReorgDistance: 90000,
 	blockAid: "",

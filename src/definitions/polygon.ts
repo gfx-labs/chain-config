@@ -9,7 +9,7 @@ export const polygon = makeConfig({
 	launchTime: 1688997600,
 	transactionType: "eip1559",
 	sortIndex: 3,
-	logoUrl: "https://cms.oku.trade/cdn/public/chains/polygon-logo.webp",
+	logoUrl: "https://cms.oku.trade/cdn/public/chains/polygon-logo.svg",
 	deprecated: false,
 	safeReorgDistance: 90000,
 	blockAid: "polygon",

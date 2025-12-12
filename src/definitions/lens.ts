@@ -9,7 +9,7 @@ export const lens = makeConfig({
 	transactionType: "eip1559",
 	sortIndex: 15,
 	blockAid: "",
-	logoUrl: "https://cms.oku.trade/cdn/public/chains/lens-logo.png",
+	logoUrl: "https://cms.oku.trade/cdn/public/chains/lens-logo.svg",
 	deprecated: false,
 	safeReorgDistance: 90000,
 	externalId: {
