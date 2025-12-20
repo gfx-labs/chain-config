@@ -5067,6 +5067,7 @@
 	    stables: [
 	        "0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1",
 	        "0xb75d0b03c06a926e488e2659df1a861f860bd3d1",
+	        "0x9151434b16b9763660705744891fa906f660ecc5",
 	    ],
 	    watchlist: [
 	        "0x0A6358F069268c7dc4918D5B12c69a782b957Ead",

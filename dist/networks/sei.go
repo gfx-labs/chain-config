@@ -29,8 +29,8 @@ var Sei Network = Network{
 	DefaultToken1: common.HexToAddress("0xE30feDd158A2e3b13e9badaeABaFc5516e95e8C7"),
 	BlockAid:      "",
 	//TODO: TokenList:        []any{},
-	Stables:          []common.Address{common.HexToAddress("0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1"), common.HexToAddress("0xb75d0b03c06a926e488e2659df1a861f860bd3d1")},
-	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1"): {}, common.HexToAddress("0xb75d0b03c06a926e488e2659df1a861f860bd3d1"): {}},
+	Stables:          []common.Address{common.HexToAddress("0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1"), common.HexToAddress("0xb75d0b03c06a926e488e2659df1a861f860bd3d1"), common.HexToAddress("0x9151434b16b9763660705744891fa906f660ecc5")},
+	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1"): {}, common.HexToAddress("0xb75d0b03c06a926e488e2659df1a861f860bd3d1"): {}, common.HexToAddress("0x9151434b16b9763660705744891fa906f660ecc5"): {}},
 	Watchlist:        []common.Address{common.HexToAddress("0x0A6358F069268c7dc4918D5B12c69a782b957Ead"), common.HexToAddress("0x8a1a9efb7f7f74ace10a31f2f5f9f7e804f957b1"), common.HexToAddress("0x41eea09c971294fcde3b6e553902b04a47be7442"), common.HexToAddress("0x5cfa8db453c9904511c4ea9eb0bfc903e36b9f5f"), common.HexToAddress("0xa3a573c8d14c93fca8fdecb7db168619563d9b00"), common.HexToAddress("0x48ddb6384ec5d835bdb0faf7e3abc01d7a1493cd"), common.HexToAddress("0xc53b65811e3d33ada5a90d476dcf2063b53bcfb3")},
 	BlockTimeSeconds: 0.4,
 	Oku: OkuMetadata{
