@@ -10102,9 +10102,6 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
         multicall3: {
             address: "0xcA11bde05977b3631167028862bE2a173976CA11";
         };
-        ensRegistry?: import("viem/_types/types/chain").ChainContract | undefined;
-        ensUniversalResolver?: import("viem/_types/types/chain").ChainContract | undefined;
-        erc6492Verifier?: import("viem/_types/types/chain").ChainContract | undefined;
     };
     blockExplorers: {
         readonly default: {

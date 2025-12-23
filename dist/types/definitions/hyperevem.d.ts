@@ -72,9 +72,6 @@ export declare const hyperevm: Readonly<{
         multicall3: {
             address: "0xcA11bde05977b3631167028862bE2a173976CA11";
         };
-        ensRegistry?: import("viem").ChainContract | undefined;
-        ensUniversalResolver?: import("viem").ChainContract | undefined;
-        erc6492Verifier?: import("viem").ChainContract | undefined;
     };
     blockExplorers: {
         readonly default: {
