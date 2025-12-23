@@ -4,7 +4,7 @@ export declare const hyperevm: Readonly<{
     launchTime: 1739731200;
     transactionType: "eip1559";
     sortIndex: 15;
-    logoUrl: "";
+    logoUrl: "https://cms.oku.trade/cdn/public/chains/hyperevm-logo.svg";
     deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "HyperEVM";
@@ -61,7 +61,7 @@ export declare const hyperevm: Readonly<{
     stables: ("0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb" | "0xDF0B24095e15044538866576754F3C964e902Ee6")[];
     watchlist: never[];
     internalName: "hyperevm";
-    nativeLogoUrl: "";
+    nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/hype.png";
     contracts: {
         nftManager: {
             address: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c";

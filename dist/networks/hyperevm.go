@@ -1,0 +1,62 @@
+package networks
+
+import (
+	"github.com/ethereum/go-ethereum/common"
+)
+
+var Hyperevm Network = Network{
+	ChainId:           999,
+	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/hyperevm-logo.svg",
+	Deprecated:        false,
+	LiteChain:         true,
+	SortIndex:         15,
+	LaunchTime:        1739731200,
+	SafeReorgDistance: 90000,
+	BlockExplorers: map[string]BlockExplorer{
+		"default": {
+			Url: "https://hyperevmscan.io",
+		},
+	},
+	DefaultPool:     common.HexToAddress("0x6c9a33e3b592c0d65b3ba59355d5be0d38259285"),
+	InternalName:    "hyperevm",
+	TransactionType: "eip1559",
+	InitCodeHash:    common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
+	ExternalId:      map[string]string{},
+	DefaultToken0:   common.HexToAddress("0x5555555555555555555555555555555555555555"),
+	DefaultToken1:   common.HexToAddress("0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"),
+	BlockAid:        "HyperEVM",
+	//TODO: TokenList:        []any{},
+	Stables:          []common.Address{common.HexToAddress("0xDF0B24095e15044538866576754F3C964e902Ee6"), common.HexToAddress("0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb")},
+	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0xDF0B24095e15044538866576754F3C964e902Ee6"): {}, common.HexToAddress("0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb"): {}},
+	Watchlist:        []common.Address{},
+	BlockTimeSeconds: 1,
+	Oku: OkuMetadata{
+
+		Pricing: OkuPricingMetadata{
+			NativeWrappedToken: common.HexToAddress("0x5555555555555555555555555555555555555555"),
+			NativeWrappedName:  "WHYPE",
+			Pools:              []common.Address{},
+			NativeQuotePools:   []ChainContract{},
+		},
+	},
+	Uniswap: UniswapMetadata{},
+
+	Morpho: MorphoMetadata{},
+	Token: TokenMetadata{
+		WethAddress: common.HexToAddress("0x5555555555555555555555555555555555555555"),
+	},
+	Contracts: map[string]ChainContract{
+		"nftManager": {
+			BlockCreated: 0,
+			Address:      common.HexToAddress("0x743E03cceB4af2efA3CC76838f6E8B50B63F184c"),
+		},
+		"weth9": {
+			BlockCreated: 0,
+			Address:      common.HexToAddress("0x5555555555555555555555555555555555555555"),
+		},
+		"multicall3": {
+			BlockCreated: 0,
+			Address:      common.HexToAddress("0xcA11bde05977b3631167028862bE2a173976CA11"),
+		},
+	},
+}
