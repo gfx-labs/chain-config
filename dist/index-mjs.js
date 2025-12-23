@@ -2145,7 +2145,7 @@ const hyperevm = makeConfig({
     ],
     watchlist: [],
     internalName: "hyperevm",
-    nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/hype.png",
+    nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/hype.svg",
     contracts: {
         nftManager: {
             address: zeroAddress,
