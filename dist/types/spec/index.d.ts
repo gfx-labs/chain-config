@@ -1,0 +1,207 @@
+import type { Address, Chain, ChainContract, ChainFormatters, Hash } from "viem";
+export { ChainContract } from "viem";
+type float64 = number;
+export interface MorphoMetadata {
+    deployBlock?: number;
+    morpho?: Address;
+    mmFactory10?: Address;
+    mmFactory11?: Address;
+    bundler3?: Address;
+    publicAllocator?: Address;
+    urdFactory?: Address;
+}
+export interface UniswapMetadata {
+    deployBlock?: number;
+    poolFactory?: Address;
+    permit2?: Address;
+    multicall2?: Address;
+    proxyAdmin?: Address;
+    tickLens?: Address;
+    quoter?: Address;
+    swapRouter?: Address;
+    swapRouter02?: Address;
+    NFTDescriptor?: Address;
+    nonfungibleTokenPositionDescriptor?: Address;
+    transparentUpgradeableProxy?: Address;
+    nonfungiblePositionManager?: Address;
+    v3Migrator?: Address;
+    uniswapV3Staker?: Address;
+    positionsNFT?: Address;
+    topNativePool?: Address;
+    positionsNFTDeployBlock?: number;
+    universalRouter?: Address;
+    wrappedNativeAddress?: Address;
+    wrappedNativeSymbol?: string;
+    wrappedNativeName?: string;
+    wrappedNativeDecimals?: number;
+    nativeCurrencyName?: string;
+}
+export interface UniswapV4Metadata {
+    deployBlock: number;
+    poolManager: Address;
+    positionManager: Address;
+    universalRouter: Address;
+    permit2: Address;
+}
+export interface OkuPricingMetadata {
+    nativeWrappedToken?: Address;
+    nativeToken?: Address;
+    nativeWrappedName?: string;
+    nativeTokenName?: string;
+    nativeQuotePools?: ReadonlyArray<ChainContract>;
+    pools?: ReadonlyArray<Address>;
+}
+export interface OkuCustomOrderTypesMetadata {
+    feeBips?: number;
+    master?: Address;
+    masterDeployBlock?: number;
+    limit?: Address;
+    limitDeployBlock?: number;
+    bracket?: Address;
+    bracketDeployBlock?: number;
+    stopLimit?: Address;
+    stopLimitDeployBlock?: number;
+    oracleLess?: Address;
+    oracleLessDeployBlock?: number;
+}
+export interface OkuMetadata {
+    router?: Address;
+    limitOrderRegistry?: Address;
+    limitOrderRegistryDeployBlock?: number;
+    pricing?: OkuPricingMetadata;
+    customOrderTypes?: OkuCustomOrderTypesMetadata;
+}
+export interface TokenMetadata {
+    wethAddress?: Address;
+    wbtcAddress?: Address;
+    usdcAddress?: Address;
+    nativeAddress?: Address;
+}
+export interface Markets {
+    airswap?: boolean;
+    enso?: any;
+    kyberswap?: string;
+    odos?: any;
+    okx?: any;
+    oneinch?: {
+        spender: string;
+    };
+    openocean?: string;
+    paraswap?: {
+        routerContract: string;
+    };
+    propellerswap?: string;
+    threeroute?: boolean;
+    usor?: any;
+    zeroex?: boolean;
+    cowswap?: string;
+    icecreamswap?: boolean;
+}
+export interface Bridges {
+    deswap?: {
+        chainId: number;
+    };
+    bungee?: any;
+    lifi?: any;
+    across?: any;
+    orbiter?: any;
+    wormhole?: {
+        chain: string;
+        timeToFinalize: number;
+    };
+    rhinofi?: string;
+    chainlink?: {
+        atlasNetworkName: string;
+        routerAddress: string;
+        chainSelector: bigint;
+        tokenAdminRegistry?: string;
+    };
+    squidrouter?: any;
+    wanbridge?: {
+        requiredConfirmations: number;
+    };
+    stargate?: {
+        endpointID: number;
+        blockConfirmations?: number;
+        tokens: {
+            name: string;
+            type?: string;
+            id: number;
+            address: string;
+        }[];
+    };
+    layerzero?: {
+        eid: number;
+        tokens: {
+            id: number;
+            symbol?: string;
+            OFTAddress: string;
+            address?: string;
+            project?: string;
+        }[];
+    };
+}
+export interface Oracles {
+    cmc?: {
+        slug: string;
+        native: string;
+    };
+    coingecko?: {
+        slug: string;
+        native: string;
+    };
+    dexguru?: any;
+    dexscreener?: string;
+    oku?: any;
+}
+export interface IChainInfo<formatters extends ChainFormatters | undefined = ChainFormatters | undefined> extends Chain<formatters> {
+    logoUrl: string;
+    launchTime: number;
+    nativeLogoUrl: string;
+    sortIndex: number;
+    safeReorgDistance?: number;
+    defaultPool: Address;
+    internalName: string;
+    transactionType: string;
+    defaultToken0: Address;
+    defaultToken1: Address;
+    blockAid: string;
+    tokenList: ReadonlyArray<{
+        symbol: string;
+        address: Address;
+    }>;
+    stables: ReadonlyArray<Address>;
+    watchlist: ReadonlyArray<Address>;
+    externalId: {
+        zerion?: string;
+        debank?: string;
+        cowswap?: string;
+        tenderly?: string;
+    };
+    markets: Markets;
+    bridges: Bridges;
+    oracles: Oracles;
+    initCodeHash: Hash;
+    blockTimeSeconds: float64;
+    uniswap: UniswapMetadata;
+    uniswapv4?: UniswapV4Metadata;
+    morpho: MorphoMetadata;
+    token: TokenMetadata;
+    oku: OkuMetadata;
+    deprecated: boolean;
+    liteChain?: boolean;
+    contracts: {
+        [key: string]: ChainContract | {
+            [chainId: number]: ChainContract;
+        };
+    } & {
+        ensRegistry?: ChainContract;
+        ensUniversalResolver?: ChainContract;
+        multicall2?: ChainContract;
+        multicall3?: ChainContract;
+        nftManager: ChainContract;
+        limitOrder?: ChainContract;
+        weth9?: ChainContract;
+        metrom?: ChainContract;
+    };
+}
