@@ -2091,7 +2091,7 @@
         launchTime: 1739731200,
         transactionType: "eip1559",
         sortIndex: 15,
-        logoUrl: "",
+        logoUrl: "https://cms.oku.trade/cdn/public/chains/hyperevm-logo.svg",
         deprecated: false,
         safeReorgDistance: 90000,
         blockAid: "HyperEVM",
@@ -2148,7 +2148,7 @@
         ],
         watchlist: [],
         internalName: "hyperevm",
-        nativeLogoUrl: "",
+        nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/hype.png",
         contracts: {
             ...chains.hyperEvm.contracts,
             nftManager: {
@@ -6391,6 +6391,7 @@
         avalanche,
         ronin,
         monad,
+        hyperevm,
     ];
 
     exports.MAINNET_CHAINS = MAINNET_CHAINS;
