@@ -49,4 +49,5 @@ export const MAINNET_CHAINS = [
 	defs.avalanche,
 	defs.ronin,
 	defs.monad,
+	defs.hyperevm,
 ] as const;
