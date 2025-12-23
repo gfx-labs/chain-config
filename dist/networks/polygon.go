@@ -15,7 +15,7 @@ var Polygon Network = Network{
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {
 			Url:    "https://polygonscan.com",
-			ApiUrl: "https://api.polygonscan.com/api",
+			ApiUrl: "https://api.etherscan.io/v2/api",
 		},
 	},
 	DefaultPool:     common.HexToAddress("0xa374094527e1673a86de625aa59517c5de346d32"),

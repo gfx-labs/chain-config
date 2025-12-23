@@ -14,7 +14,11 @@ var Monad Network = Network{
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {
-			Url: "https://mainnet-beta.monvision.io",
+			Url: "https://monadvision.com",
+		},
+		"monadscan": {
+			Url:    "https://monadscan.com",
+			ApiUrl: "https://api.monadscan.com/api",
 		},
 	},
 	DefaultPool:     common.HexToAddress("0x659bD0BC4167BA25c62E05656F78043E7eD4a9da"),
@@ -66,6 +70,10 @@ var Monad Network = Network{
 		WethAddress: common.HexToAddress("0x3bd359C1119dA7Da1D913D1C4D2B7c461115433A"),
 	},
 	Contracts: map[string]ChainContract{
+		"multicall3": {
+			BlockCreated: 0,
+			Address:      common.HexToAddress("0xcA11bde05977b3631167028862bE2a173976CA11"),
+		},
 		"limitOrder": {
 			BlockCreated: 0,
 			Address:      common.HexToAddress("0x0000000000000000000000000000000000000000"),
@@ -81,10 +89,6 @@ var Monad Network = Network{
 		"multicall2": {
 			BlockCreated: 0,
 			Address:      common.HexToAddress("0xd1b797d92d87b688193a2b976efc8d577d204343"),
-		},
-		"multicall3": {
-			BlockCreated: 0,
-			Address:      common.HexToAddress("0xcA11bde05977b3631167028862bE2a173976CA11"),
 		},
 	},
 }

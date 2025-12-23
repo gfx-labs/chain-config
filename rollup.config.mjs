@@ -1,4 +1,4 @@
-import typescript from 'rollup-plugin-ts'
+import typescript from '@rollup/plugin-typescript';
 import rollupJson from '@rollup/plugin-json';
 import nodeGlobals from 'rollup-plugin-node-globals'
 import commonjs from '@rollup/plugin-commonjs';
