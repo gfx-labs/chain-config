@@ -1,5 +1,5 @@
-export * from "./definitions/";
-export * from "./spec";
+export * from "./definitions/index";
+export * from "./spec/index";
 export declare const MAINNET_CHAINS: readonly [Readonly<{
     name: "Arbitrum";
     launchTime: 1688997600;
