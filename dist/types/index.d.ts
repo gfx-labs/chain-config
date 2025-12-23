@@ -10037,7 +10037,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     logoUrl: "https://cms.oku.trade/cdn/public/chains/hyperevm-logo.svg";
     deprecated: false;
     safeReorgDistance: 90000;
-    blockAid: "HyperEVM";
+    blockAid: "";
     externalId: {};
     liteChain: true;
     markets: {

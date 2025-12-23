@@ -24,7 +24,7 @@ var Hyperevm Network = Network{
 	ExternalId:      map[string]string{},
 	DefaultToken0:   common.HexToAddress("0x5555555555555555555555555555555555555555"),
 	DefaultToken1:   common.HexToAddress("0xb88339cb7199b77e23db6e890353e22632ba630f"),
-	BlockAid:        "HyperEVM",
+	BlockAid:        "",
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0xb88339cb7199b77e23db6e890353e22632ba630f"), common.HexToAddress("0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0xb88339cb7199b77e23db6e890353e22632ba630f"): {}, common.HexToAddress("0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb"): {}},
