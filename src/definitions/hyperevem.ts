@@ -56,21 +56,21 @@ export const hyperevm = makeConfig({
 	},
 	defaultPool: "0x6c9a33e3b592c0d65b3ba59355d5be0d38259285",
 	defaultToken0: "0x5555555555555555555555555555555555555555",
-	defaultToken1: "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+	defaultToken1: "0xb88339cb7199b77e23db6e890353e22632ba630f",
 	tokenList: [
 		{ symbol: "WHYPE", address: "0x5555555555555555555555555555555555555555" },
-		{ symbol: "USDC", address: "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48" },
+		{ symbol: "USDC", address: "0xb88339cb7199b77e23db6e890353e22632ba630f" },
 	],
 	stables: [
-		"0xDF0B24095e15044538866576754F3C964e902Ee6",
-		"0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
+		"0xb88339cb7199b77e23db6e890353e22632ba630f",
+		"0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb",
 	],
 	watchlist: [],
 	internalName: "hyperevm",
 	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/hype.png",
 	contracts: {
 		nftManager: {
-			address: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c",
+			address: zeroAddress,
 		},
 		weth9: {
 			address: "0x5555555555555555555555555555555555555555",
