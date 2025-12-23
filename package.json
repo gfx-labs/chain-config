@@ -19,7 +19,7 @@
   },
   "files": [
     "dist/*.js",
-    "dist/types/*.d.ts"
+    "dist/types/**/*.d.ts"
   ],
   "devDependencies": {
     "@biomejs/biome": "2.1.3",
