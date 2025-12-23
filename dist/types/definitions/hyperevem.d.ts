@@ -9,6 +9,7 @@ export declare const hyperevm: Readonly<{
     safeReorgDistance: 90000;
     blockAid: "HyperEVM";
     externalId: {};
+    liteChain: true;
     markets: {
         openocean: string;
     };
