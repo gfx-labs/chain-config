@@ -10099,6 +10099,9 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
         weth9: {
             address: "0x5555555555555555555555555555555555555555";
         };
+        limitOrder: {
+            address: "0x0000000000000000000000000000000000000000";
+        };
         multicall3: {
             address: "0xcA11bde05977b3631167028862bE2a173976CA11";
         };

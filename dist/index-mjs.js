@@ -2153,6 +2153,9 @@ const hyperevm = makeConfig({
         weth9: {
             address: "0x5555555555555555555555555555555555555555",
         },
+        limitOrder: {
+            address: zeroAddress,
+        },
         multicall3: {
             address: "0xcA11bde05977b3631167028862bE2a173976CA11",
         },

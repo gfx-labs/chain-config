@@ -54,6 +54,10 @@ var Hyperevm Network = Network{
 			BlockCreated: 0,
 			Address:      common.HexToAddress("0x5555555555555555555555555555555555555555"),
 		},
+		"limitOrder": {
+			BlockCreated: 0,
+			Address:      common.HexToAddress("0x0000000000000000000000000000000000000000"),
+		},
 		"multicall3": {
 			BlockCreated: 0,
 			Address:      common.HexToAddress("0xcA11bde05977b3631167028862bE2a173976CA11"),
