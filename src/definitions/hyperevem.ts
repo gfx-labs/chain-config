@@ -1,5 +1,6 @@
 import { hyperEvm as chain } from "viem/chains";
 import { makeConfig } from "../util";
+import { zeroAddress } from "viem";
 
 export const hyperevm = makeConfig({
 	...chain,
@@ -73,6 +74,9 @@ export const hyperevm = makeConfig({
 		},
 		weth9: {
 			address: "0x5555555555555555555555555555555555555555",
+		},
+		limitOrder: {
+			address: zeroAddress,
 		},
 		multicall3: {
 			address: "0xcA11bde05977b3631167028862bE2a173976CA11",
