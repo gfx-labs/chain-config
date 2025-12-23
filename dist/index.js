@@ -2095,6 +2095,7 @@ const hyperevm = makeConfig({
     safeReorgDistance: 90000,
     blockAid: "HyperEVM",
     externalId: {},
+    liteChain: true,
     markets: {
         openocean: "hyperevm",
     },
