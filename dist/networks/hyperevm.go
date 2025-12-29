@@ -10,7 +10,7 @@ var Hyperevm Network = Network{
 	Deprecated:        false,
 	LiteChain:         true,
 	SortIndex:         15,
-	LaunchTime:        1739731200,
+	LaunchTime:        1767333673,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {
