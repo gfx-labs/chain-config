@@ -6,7 +6,7 @@ export const hyperevm = makeConfig({
 	...chain,
 	name: "HyperEvm",
 	blockTimeSeconds: 1,
-	launchTime: 1739731200,
+	launchTime: 1767333673,
 	transactionType: "eip1559",
 	sortIndex: 15,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/hyperevm-logo.svg",
