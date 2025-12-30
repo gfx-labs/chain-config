@@ -4,7 +4,6 @@ import { zeroAddress } from "viem";
 
 export const hyperevm = makeConfig({
 	...chain,
-	name: "HyperEvm",
 	blockTimeSeconds: 1,
 	launchTime: 1767333673,
 	transactionType: "eip1559",
