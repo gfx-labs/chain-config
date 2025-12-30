@@ -2083,7 +2083,6 @@ const hemi = makeConfig({
 
 const hyperevm = makeConfig({
     ...hyperEvm,
-    name: "HyperEvm",
     blockTimeSeconds: 1,
     launchTime: 1767333673,
     transactionType: "eip1559",

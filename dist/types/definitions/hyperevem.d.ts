@@ -1,5 +1,4 @@
 export declare const hyperevm: Readonly<{
-    name: "HyperEvm";
     blockTimeSeconds: 1;
     launchTime: 1767333673;
     transactionType: "eip1559";
@@ -85,6 +84,7 @@ export declare const hyperevm: Readonly<{
     blockTime?: number | undefined | undefined | undefined;
     ensTlds?: readonly string[] | undefined;
     id: 999;
+    name: "HyperEVM";
     nativeCurrency: {
         readonly name: "HYPE";
         readonly symbol: "HYPE";

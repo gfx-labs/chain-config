@@ -2085,7 +2085,6 @@ const hemi = makeConfig({
 
 const hyperevm = makeConfig({
     ...chains.hyperEvm,
-    name: "HyperEvm",
     blockTimeSeconds: 1,
     launchTime: 1767333673,
     transactionType: "eip1559",
