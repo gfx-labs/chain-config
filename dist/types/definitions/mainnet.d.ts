@@ -3,7 +3,7 @@ export declare const mainnet: Readonly<{
     sortIndex: 0;
     launchTime: 1688997600;
     transactionType: "eip1559";
-    blockTimeSeconds: 15;
+    blockTimeSeconds: 12;
     safeReorgDistance: 90000;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/ethereum-logo.webp";
     deprecated: false;
