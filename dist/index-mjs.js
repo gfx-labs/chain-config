@@ -4263,10 +4263,10 @@ const polygon = makeConfig({
         topNativePool: "0xa374094527e1673a86de625aa59517c5de346d32",
         universalRouter: "0x4C60051384bd2d3C01bfc845Cf5F4b44bcbE9de5",
         wrappedNativeAddress: "0x7ceb23fd6bc0add59e62ac25578270cff1b9f619",
-        wrappedNativeSymbol: "WMATIC",
-        wrappedNativeName: "Wrapped MATIC",
+        wrappedNativeSymbol: "WPOL",
+        wrappedNativeName: "Wrapped Polygon",
         wrappedNativeDecimals: 18,
-        nativeCurrencyName: "MATIC",
+        nativeCurrencyName: "WPOL",
     },
     token: {
         wbtcAddress: "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
@@ -4278,7 +4278,7 @@ const polygon = makeConfig({
         limitOrderRegistryDeployBlock: 43640541,
         pricing: {
             nativeWrappedToken: "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
-            nativeWrappedName: "WMATIC",
+            nativeWrappedName: "WPOL",
             nativeQuotePools: [
                 {
                     blockCreated: 22802494,
@@ -4397,7 +4397,7 @@ const polygon = makeConfig({
         { symbol: "USDT", address: "0xc2132d05d31c914a87c6611c10748aeb04b58e8f" },
         { symbol: "WETH", address: "0x7ceb23fd6bc0add59e62ac25578270cff1b9f619" },
         { symbol: "USDC", address: "0x2791bca1f2de4661ed88a30c99a7a9449aa84174" },
-        { symbol: "WMATIC", address: "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270" },
+        { symbol: "WPOL", address: "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270" },
     ],
     stables: [
         "0x3c499c542cef5e3811e1192ce70d8cc03d5c3359",
