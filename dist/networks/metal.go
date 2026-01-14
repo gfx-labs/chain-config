@@ -9,7 +9,7 @@ var Metal Network = Network{
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/metal-logo.png",
 	Deprecated:        true,
 	LiteChain:         false,
-	SortIndex:         15,
+	SortIndex:         42,
 	LaunchTime:        1733882663,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

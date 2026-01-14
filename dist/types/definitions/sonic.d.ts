@@ -2,7 +2,7 @@ export declare const sonic: Readonly<{
     blockTimeSeconds: 3;
     launchTime: 1737165834;
     transactionType: "eip1559";
-    sortIndex: 15;
+    sortIndex: 33;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/sonic-logo.svg";
     deprecated: false;
     safeReorgDistance: 90000;

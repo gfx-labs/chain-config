@@ -9,7 +9,7 @@ var Zksync Network = Network{
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/zksync-logo.svg",
 	Deprecated:        false,
 	LiteChain:         false,
-	SortIndex:         4,
+	SortIndex:         35,
 	LaunchTime:        1696514400,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

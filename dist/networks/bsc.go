@@ -9,7 +9,7 @@ var Bsc Network = Network{
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/bsc-logo.svg",
 	Deprecated:        false,
 	LiteChain:         false,
-	SortIndex:         9,
+	SortIndex:         6,
 	LaunchTime:        1689346800,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

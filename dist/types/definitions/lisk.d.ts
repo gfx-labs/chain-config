@@ -2,7 +2,7 @@ export declare const lisk: Readonly<{
     blockTimeSeconds: 2;
     launchTime: 1724076000;
     transactionType: "eip1559";
-    sortIndex: 15;
+    sortIndex: 43;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/lisk-logo.png";
     deprecated: true;
     safeReorgDistance: 90000;

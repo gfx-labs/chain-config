@@ -9,7 +9,7 @@ var Lightlink Network = Network{
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/lightlink-logo.svg",
 	Deprecated:        false,
 	LiteChain:         false,
-	SortIndex:         13,
+	SortIndex:         24,
 	LaunchTime:        1741485513,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

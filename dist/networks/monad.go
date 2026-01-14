@@ -9,7 +9,7 @@ var Monad Network = Network{
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/monad-logo.png",
 	Deprecated:        false,
 	LiteChain:         false,
-	SortIndex:         5,
+	SortIndex:         4,
 	LaunchTime:        1764568406,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

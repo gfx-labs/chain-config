@@ -9,7 +9,7 @@ var Scroll Network = Network{
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/scroll-logo.svg",
 	Deprecated:        false,
 	LiteChain:         false,
-	SortIndex:         5,
+	SortIndex:         34,
 	LaunchTime:        1703257200,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

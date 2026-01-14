@@ -3,7 +3,7 @@ export declare const mantle: Readonly<{
     blockTimeSeconds: 2;
     launchTime: 1720101600;
     transactionType: "eip1559";
-    sortIndex: 15;
+    sortIndex: 30;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/mantle-logo.svg";
     deprecated: false;
     safeReorgDistance: 90000;

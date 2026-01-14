@@ -9,7 +9,7 @@ var Telos Network = Network{
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/telos-logo.svg",
 	Deprecated:        false,
 	LiteChain:         false,
-	SortIndex:         13,
+	SortIndex:         32,
 	LaunchTime:        1743089303,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

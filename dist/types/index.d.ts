@@ -205,7 +205,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
     verifyHash?: ((client: import("viem").Client, parameters: import("viem").VerifyHashActionParameters) => Promise<import("viem").VerifyHashActionReturnType>) | undefined | undefined;
 }>, Readonly<{
-    sortIndex: 8;
+    sortIndex: 2;
     launchTime: 1707321600;
     transactionType: "eip1559";
     blockTimeSeconds: 2;
@@ -676,7 +676,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     launchTime: 1690297200;
     transactionType: "eip1559";
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
-    sortIndex: 11;
+    sortIndex: 14;
     blockTimeSeconds: 2;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/boba-logo.svg";
     deprecated: false;
@@ -814,7 +814,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     blockTimeSeconds: 2;
     launchTime: 1719410400;
     transactionType: "eip1559";
-    sortIndex: 14;
+    sortIndex: 40;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/blast-logo.svg";
     deprecated: true;
     safeReorgDistance: 90000;
@@ -1224,7 +1224,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     launchTime: 1689346800;
     transactionType: "eip1559";
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
-    sortIndex: 9;
+    sortIndex: 6;
     blockTimeSeconds: 3;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/bsc-logo.svg";
     deprecated: false;
@@ -1405,7 +1405,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
     verifyHash?: ((client: import("viem").Client, parameters: import("viem").VerifyHashActionParameters) => Promise<import("viem").VerifyHashActionReturnType>) | undefined | undefined;
 }>, Readonly<{
-    sortIndex: 10;
+    sortIndex: 21;
     launchTime: 1677600000;
     transactionType: "legacy";
     name: "Filecoin";
@@ -1767,7 +1767,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     verifyHash?: ((client: import("viem").Client, parameters: import("viem").VerifyHashActionParameters) => Promise<import("viem").VerifyHashActionReturnType>) | undefined | undefined;
 }>, Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
-    sortIndex: 12;
+    sortIndex: 38;
     launchTime: 1696341600;
     transactionType: "eip1559";
     blockTimeSeconds: 30;
@@ -1919,7 +1919,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     blockTimeSeconds: 0.5;
     launchTime: 1688997600;
     transactionType: "eip1559";
-    sortIndex: 2;
+    sortIndex: 8;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/optimism-logo.svg";
     deprecated: false;
     safeReorgDistance: 90000;
@@ -2401,7 +2401,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     blockTimeSeconds: 2;
     launchTime: 1688997600;
     transactionType: "eip1559";
-    sortIndex: 3;
+    sortIndex: 5;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/polygon-logo.svg";
     deprecated: false;
     safeReorgDistance: 90000;
@@ -2593,7 +2593,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
     verifyHash?: ((client: import("viem").Client, parameters: import("viem").VerifyHashActionParameters) => Promise<import("viem").VerifyHashActionReturnType>) | undefined | undefined;
 }>, Readonly<{
-    sortIndex: 7;
+    sortIndex: 12;
     launchTime: 1702479600;
     transactionType: "legacy";
     name: "Rootstock";
@@ -2751,7 +2751,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     network: "rootstock";
 }>, Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
-    sortIndex: 5;
+    sortIndex: 34;
     launchTime: 1703257200;
     transactionType: "eip1559";
     blockTimeSeconds: 3;
@@ -2917,7 +2917,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     verifyHash?: ((client: import("viem").Client, parameters: import("viem").VerifyHashActionParameters) => Promise<import("viem").VerifyHashActionReturnType>) | undefined | undefined;
 }>, Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
-    sortIndex: 6;
+    sortIndex: 37;
     launchTime: 1722520800;
     transactionType: "legacy";
     blockTimeSeconds: 7;
@@ -3059,7 +3059,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     verifyHash?: ((client: import("viem").Client, parameters: import("viem").VerifyHashActionParameters) => Promise<import("viem").VerifyHashActionReturnType>) | undefined | undefined;
 }>, Readonly<{
     blockTimeSeconds: 2;
-    sortIndex: 4;
+    sortIndex: 35;
     launchTime: 1696514400;
     transactionType: "eip1559";
     logoUrl: "https://cms.oku.trade/cdn/public/chains/zksync-logo.svg";
@@ -3607,7 +3607,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     transactionType: "eip1559";
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     blockTimeSeconds: 2;
-    sortIndex: 13;
+    sortIndex: 39;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/manta-logo.png";
     deprecated: true;
     safeReorgDistance: 90000;
@@ -3743,7 +3743,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     transactionType: "eip1559";
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     blockTimeSeconds: 2;
-    sortIndex: 15;
+    sortIndex: 19;
     morpho: {};
     logoUrl: "https://cms.oku.trade/cdn/public/chains/linea-logo.svg";
     deprecated: false;
@@ -3917,7 +3917,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     blockTimeSeconds: 24;
     launchTime: 1717509600;
     transactionType: "eip1559";
-    sortIndex: 4;
+    sortIndex: 36;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/taiko-logo.svg";
     deprecated: false;
     safeReorgDistance: 90000;
@@ -4072,7 +4072,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     blockTimeSeconds: 2;
     launchTime: 1720101600;
     transactionType: "eip1559";
-    sortIndex: 15;
+    sortIndex: 30;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/mantle-logo.svg";
     deprecated: false;
     safeReorgDistance: 90000;
@@ -4226,7 +4226,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     blockTimeSeconds: 0.4;
     launchTime: 1687788000;
     transactionType: "eip1559";
-    sortIndex: 5;
+    sortIndex: 7;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/sei-logo.svg";
     deprecated: false;
     safeReorgDistance: 90000;
@@ -4395,7 +4395,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     blockTimeSeconds: 2;
     launchTime: 1724076000;
     transactionType: "eip1559";
-    sortIndex: 15;
+    sortIndex: 43;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/lisk-logo.png";
     deprecated: true;
     safeReorgDistance: 90000;
@@ -4781,7 +4781,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     blockTimeSeconds: 2;
     launchTime: 1727359200;
     transactionType: "eip1559";
-    sortIndex: 15;
+    sortIndex: 20;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/bob-logo.svg";
     deprecated: false;
     safeReorgDistance: 90000;
@@ -5188,7 +5188,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     blockTimeSeconds: 5;
     launchTime: 1725890400;
     transactionType: "eip1559";
-    sortIndex: 18;
+    sortIndex: 16;
     blockAid: "";
     logoUrl: "https://cms.oku.trade/cdn/public/chains/gnosis-logo.svg";
     deprecated: false;
@@ -5365,7 +5365,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     blockTimeSeconds: 2;
     launchTime: 1733882663;
     transactionType: "eip1559";
-    sortIndex: 15;
+    sortIndex: 42;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/metal-logo.png";
     deprecated: true;
     safeReorgDistance: 90000;
@@ -5752,7 +5752,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     blockTimeSeconds: 35;
     launchTime: 1733882663;
     transactionType: "eip1559";
-    sortIndex: 15;
+    sortIndex: 25;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/corn-logo.svg";
     deprecated: false;
     safeReorgDistance: 90000;
@@ -5887,7 +5887,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     blockTimeSeconds: 3;
     launchTime: 1737165834;
     transactionType: "eip1559";
-    sortIndex: 15;
+    sortIndex: 33;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/sonic-logo.svg";
     deprecated: false;
     safeReorgDistance: 90000;
@@ -6044,7 +6044,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     blockTimeSeconds: 2;
     launchTime: 1737754469;
     transactionType: "eip1559";
-    sortIndex: 15;
+    sortIndex: 10;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/celo-logo.svg";
     deprecated: false;
     safeReorgDistance: 90000;
@@ -7036,7 +7036,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     blockTimeSeconds: 12;
     launchTime: 1741901593;
     transactionType: "eip1559";
-    sortIndex: 13;
+    sortIndex: 22;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/hemi-logo.svg";
     deprecated: false;
     safeReorgDistance: 90000;
@@ -7179,7 +7179,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     blockTimeSeconds: 0.5;
     launchTime: 1743089303;
     transactionType: "legacy";
-    sortIndex: 13;
+    sortIndex: 32;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/telos-logo.svg";
     deprecated: false;
     safeReorgDistance: 90000;
@@ -7320,7 +7320,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     blockTimeSeconds: 5;
     launchTime: 1740384000;
     transactionType: "legacy";
-    sortIndex: 13;
+    sortIndex: 11;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/saga-logo.png";
     deprecated: false;
     safeReorgDistance: 90000;
@@ -7441,7 +7441,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     blockTimeSeconds: 3;
     launchTime: 1742159744;
     transactionType: "eip1559";
-    sortIndex: 15;
+    sortIndex: 29;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/goat-logo.svg";
     deprecated: false;
     safeReorgDistance: 90000;
@@ -7565,7 +7565,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     blockTimeSeconds: 5;
     launchTime: 1741362479;
     transactionType: "eip1559";
-    sortIndex: 15;
+    sortIndex: 27;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/redbelly-logo.svg";
     deprecated: false;
     safeReorgDistance: 90000;
@@ -7682,7 +7682,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     blockTimeSeconds: 0.5;
     launchTime: 1741485513;
     transactionType: "legacy";
-    sortIndex: 13;
+    sortIndex: 24;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/lightlink-logo.svg";
     deprecated: false;
     safeReorgDistance: 90000;
@@ -7815,7 +7815,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     blockTimeSeconds: 2;
     launchTime: 0;
     transactionType: "eip1559";
-    sortIndex: 15;
+    sortIndex: 28;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/worldchain-logo.svg";
     deprecated: false;
     liteChain: true;
@@ -8353,7 +8353,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     blockTimeSeconds: 5;
     launchTime: 1746055290;
     transactionType: "eip1559";
-    sortIndex: 15;
+    sortIndex: 45;
     blockAid: "";
     logoUrl: "https://cms.oku.trade/cdn/public/chains/tron.png";
     deprecated: true;
@@ -8451,7 +8451,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     blockTimeSeconds: 2;
     launchTime: 1746050531;
     transactionType: "eip1559";
-    sortIndex: 15;
+    sortIndex: 31;
     blockAid: "";
     logoUrl: "https://cms.oku.trade/cdn/public/chains/lens-logo.svg";
     deprecated: false;
@@ -8581,7 +8581,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     blockTimeSeconds: 2;
     launchTime: 1750705200;
     transactionType: "eip1559";
-    sortIndex: 15;
+    sortIndex: 26;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/nibiru-logo.svg";
     deprecated: false;
     safeReorgDistance: 90000;
@@ -8700,7 +8700,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     blockTimeSeconds: 0.6;
     launchTime: 1750211928;
     transactionType: "eip1559";
-    sortIndex: 15;
+    sortIndex: 13;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/etherlink-logo.svg";
     deprecated: false;
     safeReorgDistance: 90000;
@@ -8845,7 +8845,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     blockTimeSeconds: 1;
     launchTime: 1750384728;
     transactionType: "eip1559";
-    sortIndex: 15;
+    sortIndex: 18;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/unichain-logo.svg";
     deprecated: false;
     safeReorgDistance: 90000;
@@ -9263,7 +9263,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     blockTimeSeconds: 0.5;
     launchTime: 1754106070;
     transactionType: "eip1559";
-    sortIndex: 15;
+    sortIndex: 23;
     blockAid: "";
     logoUrl: "https://cms.oku.trade/cdn/public/chains/matchain-logo.svg";
     deprecated: false;
@@ -9376,7 +9376,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     blockTimeSeconds: 1;
     launchTime: 1758588527;
     transactionType: "eip1559";
-    sortIndex: 15;
+    sortIndex: 3;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/plasma-logo.svg";
     deprecated: false;
     safeReorgDistance: 90000;
@@ -9496,7 +9496,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     blockTimeSeconds: 35;
     launchTime: 1733882663;
     transactionType: "eip1559";
-    sortIndex: 15;
+    sortIndex: 44;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/zerog-logo.svg";
     deprecated: false;
     safeReorgDistance: 90000;
@@ -9614,7 +9614,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     blockTimeSeconds: 2;
     launchTime: 1761794290;
     transactionType: "eip1559";
-    sortIndex: 15;
+    sortIndex: 17;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/avalanche-logo.svg";
     deprecated: false;
     liteChain: true;
@@ -9759,7 +9759,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     blockTimeSeconds: 3;
     launchTime: 1761966026;
     transactionType: "eip1559";
-    sortIndex: 15;
+    sortIndex: 41;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/ronin-logo.svg";
     deprecated: true;
     safeReorgDistance: 90000;
@@ -9887,7 +9887,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     blockTimeSeconds: 0.4;
     launchTime: 1764568406;
     transactionType: "eip1559";
-    sortIndex: 5;
+    sortIndex: 4;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/monad-logo.png";
     deprecated: false;
     safeReorgDistance: 90000;
@@ -10032,7 +10032,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     blockTimeSeconds: 1;
     launchTime: 1767333673;
     transactionType: "eip1559";
-    sortIndex: 15;
+    sortIndex: 9;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/hyperevm-logo.svg";
     deprecated: false;
     safeReorgDistance: 90000;

@@ -1,6 +1,6 @@
 export declare const scroll: Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
-    sortIndex: 5;
+    sortIndex: 34;
     launchTime: 1703257200;
     transactionType: "eip1559";
     blockTimeSeconds: 3;

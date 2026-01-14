@@ -2,7 +2,7 @@ export declare const telos: Readonly<{
     blockTimeSeconds: 0.5;
     launchTime: 1743089303;
     transactionType: "legacy";
-    sortIndex: 13;
+    sortIndex: 32;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/telos-logo.svg";
     deprecated: false;
     safeReorgDistance: 90000;

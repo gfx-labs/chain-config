@@ -9,7 +9,7 @@ var Taiko Network = Network{
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/taiko-logo.svg",
 	Deprecated:        false,
 	LiteChain:         false,
-	SortIndex:         4,
+	SortIndex:         36,
 	LaunchTime:        1717509600,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

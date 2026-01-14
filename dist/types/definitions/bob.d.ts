@@ -2,7 +2,7 @@ export declare const bob: Readonly<{
     blockTimeSeconds: 2;
     launchTime: 1727359200;
     transactionType: "eip1559";
-    sortIndex: 15;
+    sortIndex: 20;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/bob-logo.svg";
     deprecated: false;
     safeReorgDistance: 90000;

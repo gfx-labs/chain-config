@@ -9,7 +9,7 @@ var Etherlink Network = Network{
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/etherlink-logo.svg",
 	Deprecated:        false,
 	LiteChain:         false,
-	SortIndex:         15,
+	SortIndex:         13,
 	LaunchTime:        1750211928,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

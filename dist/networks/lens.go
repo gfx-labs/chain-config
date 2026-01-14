@@ -9,7 +9,7 @@ var Lens Network = Network{
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/lens-logo.svg",
 	Deprecated:        false,
 	LiteChain:         false,
-	SortIndex:         15,
+	SortIndex:         31,
 	LaunchTime:        1746050531,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

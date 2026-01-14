@@ -9,7 +9,7 @@ var Moonbeam Network = Network{
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/moonbeam-logo.svg",
 	Deprecated:        true,
 	LiteChain:         false,
-	SortIndex:         12,
+	SortIndex:         38,
 	LaunchTime:        1696341600,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

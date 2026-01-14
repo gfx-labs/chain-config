@@ -2,7 +2,7 @@ export declare const metal: Readonly<{
     blockTimeSeconds: 2;
     launchTime: 1733882663;
     transactionType: "eip1559";
-    sortIndex: 15;
+    sortIndex: 42;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/metal-logo.png";
     deprecated: true;
     safeReorgDistance: 90000;

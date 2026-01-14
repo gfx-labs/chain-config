@@ -9,7 +9,7 @@ var Hemi Network = Network{
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/hemi-logo.svg",
 	Deprecated:        false,
 	LiteChain:         false,
-	SortIndex:         13,
+	SortIndex:         22,
 	LaunchTime:        1741901593,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

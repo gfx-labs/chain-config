@@ -9,7 +9,7 @@ var Worldchain Network = Network{
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/worldchain-logo.svg",
 	Deprecated:        false,
 	LiteChain:         true,
-	SortIndex:         15,
+	SortIndex:         28,
 	LaunchTime:        0,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

@@ -9,7 +9,7 @@ var PolygonZkevm Network = Network{
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/zkevm-logo.svg",
 	Deprecated:        true,
 	LiteChain:         false,
-	SortIndex:         6,
+	SortIndex:         37,
 	LaunchTime:        1722520800,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

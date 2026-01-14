@@ -3,7 +3,7 @@ export declare const sei: Readonly<{
     blockTimeSeconds: 0.4;
     launchTime: 1687788000;
     transactionType: "eip1559";
-    sortIndex: 5;
+    sortIndex: 7;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/sei-logo.svg";
     deprecated: false;
     safeReorgDistance: 90000;

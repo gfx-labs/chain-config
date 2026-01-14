@@ -9,7 +9,7 @@ var Manta Network = Network{
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/manta-logo.png",
 	Deprecated:        true,
 	LiteChain:         false,
-	SortIndex:         13,
+	SortIndex:         39,
 	LaunchTime:        1709910000,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

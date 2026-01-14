@@ -9,7 +9,7 @@ var Optimism Network = Network{
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/optimism-logo.svg",
 	Deprecated:        false,
 	LiteChain:         false,
-	SortIndex:         2,
+	SortIndex:         8,
 	LaunchTime:        1688997600,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

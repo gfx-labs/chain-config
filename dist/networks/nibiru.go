@@ -9,7 +9,7 @@ var Nibiru Network = Network{
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/nibiru-logo.svg",
 	Deprecated:        false,
 	LiteChain:         false,
-	SortIndex:         15,
+	SortIndex:         26,
 	LaunchTime:        1750705200,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

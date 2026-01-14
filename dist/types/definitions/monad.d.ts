@@ -2,7 +2,7 @@ export declare const monad: Readonly<{
     blockTimeSeconds: 0.4;
     launchTime: 1764568406;
     transactionType: "eip1559";
-    sortIndex: 5;
+    sortIndex: 4;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/monad-logo.png";
     deprecated: false;
     safeReorgDistance: 90000;

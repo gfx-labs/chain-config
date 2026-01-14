@@ -9,7 +9,7 @@ var Blast Network = Network{
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/blast-logo.svg",
 	Deprecated:        true,
 	LiteChain:         false,
-	SortIndex:         14,
+	SortIndex:         40,
 	LaunchTime:        1719410400,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

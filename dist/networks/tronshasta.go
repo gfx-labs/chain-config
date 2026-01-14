@@ -9,7 +9,7 @@ var Tronshasta Network = Network{
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/tron.png",
 	Deprecated:        true,
 	LiteChain:         false,
-	SortIndex:         15,
+	SortIndex:         45,
 	LaunchTime:        1746055290,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

@@ -9,7 +9,7 @@ var Plasma Network = Network{
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/plasma-logo.svg",
 	Deprecated:        false,
 	LiteChain:         false,
-	SortIndex:         15,
+	SortIndex:         3,
 	LaunchTime:        1758588527,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

@@ -9,7 +9,7 @@ var Mantle Network = Network{
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/mantle-logo.svg",
 	Deprecated:        false,
 	LiteChain:         false,
-	SortIndex:         15,
+	SortIndex:         30,
 	LaunchTime:        1720101600,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

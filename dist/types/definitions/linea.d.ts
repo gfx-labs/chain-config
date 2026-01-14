@@ -4,7 +4,7 @@ export declare const linea: Readonly<{
     transactionType: "eip1559";
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     blockTimeSeconds: 2;
-    sortIndex: 15;
+    sortIndex: 19;
     morpho: {};
     logoUrl: "https://cms.oku.trade/cdn/public/chains/linea-logo.svg";
     deprecated: false;

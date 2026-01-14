@@ -3,7 +3,7 @@ export declare const lens: Readonly<{
     blockTimeSeconds: 2;
     launchTime: 1746050531;
     transactionType: "eip1559";
-    sortIndex: 15;
+    sortIndex: 31;
     blockAid: "";
     logoUrl: "https://cms.oku.trade/cdn/public/chains/lens-logo.svg";
     deprecated: false;

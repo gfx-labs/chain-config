@@ -3,7 +3,7 @@ export declare const polygon: Readonly<{
     blockTimeSeconds: 2;
     launchTime: 1688997600;
     transactionType: "eip1559";
-    sortIndex: 3;
+    sortIndex: 5;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/polygon-logo.svg";
     deprecated: false;
     safeReorgDistance: 90000;

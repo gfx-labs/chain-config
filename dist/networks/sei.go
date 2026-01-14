@@ -9,7 +9,7 @@ var Sei Network = Network{
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/sei-logo.svg",
 	Deprecated:        false,
 	LiteChain:         false,
-	SortIndex:         5,
+	SortIndex:         7,
 	LaunchTime:        1687788000,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

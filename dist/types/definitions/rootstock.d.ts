@@ -1,5 +1,5 @@
 export declare const rootstock: Readonly<{
-    sortIndex: 7;
+    sortIndex: 12;
     launchTime: 1702479600;
     transactionType: "legacy";
     name: "Rootstock";

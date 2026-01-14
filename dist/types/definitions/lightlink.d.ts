@@ -3,7 +3,7 @@ export declare const lightlink: Readonly<{
     blockTimeSeconds: 0.5;
     launchTime: 1741485513;
     transactionType: "legacy";
-    sortIndex: 13;
+    sortIndex: 24;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/lightlink-logo.svg";
     deprecated: false;
     safeReorgDistance: 90000;

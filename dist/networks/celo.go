@@ -9,7 +9,7 @@ var Celo Network = Network{
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/celo-logo.svg",
 	Deprecated:        false,
 	LiteChain:         false,
-	SortIndex:         15,
+	SortIndex:         10,
 	LaunchTime:        1737754469,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

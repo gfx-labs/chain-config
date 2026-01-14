@@ -9,7 +9,7 @@ var Corn Network = Network{
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/corn-logo.svg",
 	Deprecated:        false,
 	LiteChain:         false,
-	SortIndex:         15,
+	SortIndex:         25,
 	LaunchTime:        1733882663,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

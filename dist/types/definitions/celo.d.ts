@@ -2,7 +2,7 @@ export declare const celo: Readonly<{
     blockTimeSeconds: 2;
     launchTime: 1737754469;
     transactionType: "eip1559";
-    sortIndex: 15;
+    sortIndex: 10;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/celo-logo.svg";
     deprecated: false;
     safeReorgDistance: 90000;

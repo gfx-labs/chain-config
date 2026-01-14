@@ -3,7 +3,7 @@ export declare const plasma: Readonly<{
     blockTimeSeconds: 1;
     launchTime: 1758588527;
     transactionType: "eip1559";
-    sortIndex: 15;
+    sortIndex: 3;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/plasma-logo.svg";
     deprecated: false;
     safeReorgDistance: 90000;

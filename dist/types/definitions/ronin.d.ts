@@ -2,7 +2,7 @@ export declare const ronin: Readonly<{
     blockTimeSeconds: 3;
     launchTime: 1761966026;
     transactionType: "eip1559";
-    sortIndex: 15;
+    sortIndex: 41;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/ronin-logo.svg";
     deprecated: true;
     safeReorgDistance: 90000;

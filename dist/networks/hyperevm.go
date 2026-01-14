@@ -9,7 +9,7 @@ var Hyperevm Network = Network{
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/hyperevm-logo.svg",
 	Deprecated:        false,
 	LiteChain:         true,
-	SortIndex:         15,
+	SortIndex:         9,
 	LaunchTime:        1767333673,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

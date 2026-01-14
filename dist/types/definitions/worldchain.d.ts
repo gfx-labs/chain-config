@@ -2,7 +2,7 @@ export declare const worldchain: Readonly<{
     blockTimeSeconds: 2;
     launchTime: 0;
     transactionType: "eip1559";
-    sortIndex: 15;
+    sortIndex: 28;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/worldchain-logo.svg";
     deprecated: false;
     liteChain: true;

@@ -3,7 +3,7 @@ export declare const corn: Readonly<{
     blockTimeSeconds: 35;
     launchTime: 1733882663;
     transactionType: "eip1559";
-    sortIndex: 15;
+    sortIndex: 25;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/corn-logo.svg";
     deprecated: false;
     safeReorgDistance: 90000;

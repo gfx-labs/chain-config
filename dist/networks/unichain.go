@@ -9,7 +9,7 @@ var Unichain Network = Network{
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/unichain-logo.svg",
 	Deprecated:        false,
 	LiteChain:         false,
-	SortIndex:         15,
+	SortIndex:         18,
 	LaunchTime:        1750384728,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

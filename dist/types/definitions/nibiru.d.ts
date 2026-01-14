@@ -3,7 +3,7 @@ export declare const nibiru: Readonly<{
     blockTimeSeconds: 2;
     launchTime: 1750705200;
     transactionType: "eip1559";
-    sortIndex: 15;
+    sortIndex: 26;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/nibiru-logo.svg";
     deprecated: false;
     safeReorgDistance: 90000;

@@ -9,7 +9,7 @@ var Matchain Network = Network{
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/matchain-logo.svg",
 	Deprecated:        false,
 	LiteChain:         false,
-	SortIndex:         15,
+	SortIndex:         23,
 	LaunchTime:        1754106070,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

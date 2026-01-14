@@ -1,5 +1,5 @@
 export declare const filecoin: Readonly<{
-    sortIndex: 10;
+    sortIndex: 21;
     launchTime: 1677600000;
     transactionType: "legacy";
     name: "Filecoin";

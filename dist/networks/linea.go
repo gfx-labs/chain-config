@@ -9,7 +9,7 @@ var Linea Network = Network{
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/linea-logo.svg",
 	Deprecated:        false,
 	LiteChain:         false,
-	SortIndex:         15,
+	SortIndex:         19,
 	LaunchTime:        1713362400,
 	SafeReorgDistance: 100,
 	BlockExplorers: map[string]BlockExplorer{

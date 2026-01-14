@@ -1,5 +1,5 @@
 export declare const base: Readonly<{
-    sortIndex: 8;
+    sortIndex: 2;
     launchTime: 1707321600;
     transactionType: "eip1559";
     blockTimeSeconds: 2;

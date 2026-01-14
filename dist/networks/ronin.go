@@ -9,7 +9,7 @@ var Ronin Network = Network{
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/ronin-logo.svg",
 	Deprecated:        true,
 	LiteChain:         false,
-	SortIndex:         15,
+	SortIndex:         41,
 	LaunchTime:        1761966026,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

@@ -3,7 +3,7 @@ export declare const zerog: Readonly<{
     blockTimeSeconds: 35;
     launchTime: 1733882663;
     transactionType: "eip1559";
-    sortIndex: 15;
+    sortIndex: 44;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/zerog-logo.svg";
     deprecated: false;
     safeReorgDistance: 90000;

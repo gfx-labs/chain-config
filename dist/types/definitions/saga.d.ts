@@ -3,7 +3,7 @@ export declare const saga: Readonly<{
     blockTimeSeconds: 5;
     launchTime: 1740384000;
     transactionType: "legacy";
-    sortIndex: 13;
+    sortIndex: 11;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/saga-logo.png";
     deprecated: false;
     safeReorgDistance: 90000;

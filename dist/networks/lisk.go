@@ -9,7 +9,7 @@ var Lisk Network = Network{
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/lisk-logo.png",
 	Deprecated:        true,
 	LiteChain:         false,
-	SortIndex:         15,
+	SortIndex:         43,
 	LaunchTime:        1724076000,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

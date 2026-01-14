@@ -9,7 +9,7 @@ var Gnosis Network = Network{
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/gnosis-logo.svg",
 	Deprecated:        false,
 	LiteChain:         false,
-	SortIndex:         18,
+	SortIndex:         16,
 	LaunchTime:        1725890400,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

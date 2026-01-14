@@ -9,7 +9,7 @@ var Base Network = Network{
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/base-logo.svg",
 	Deprecated:        false,
 	LiteChain:         false,
-	SortIndex:         8,
+	SortIndex:         2,
 	LaunchTime:        1707321600,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

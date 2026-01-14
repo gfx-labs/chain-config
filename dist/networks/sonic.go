@@ -9,7 +9,7 @@ var Sonic Network = Network{
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/sonic-logo.svg",
 	Deprecated:        false,
 	LiteChain:         false,
-	SortIndex:         15,
+	SortIndex:         33,
 	LaunchTime:        1737165834,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

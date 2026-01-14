@@ -9,7 +9,7 @@ var Zerog Network = Network{
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/zerog-logo.svg",
 	Deprecated:        false,
 	LiteChain:         false,
-	SortIndex:         15,
+	SortIndex:         44,
 	LaunchTime:        1733882663,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

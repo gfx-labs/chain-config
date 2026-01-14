@@ -9,7 +9,7 @@ var Bob Network = Network{
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/bob-logo.svg",
 	Deprecated:        false,
 	LiteChain:         false,
-	SortIndex:         15,
+	SortIndex:         20,
 	LaunchTime:        1727359200,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

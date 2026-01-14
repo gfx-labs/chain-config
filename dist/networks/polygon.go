@@ -9,7 +9,7 @@ var Polygon Network = Network{
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/polygon-logo.svg",
 	Deprecated:        false,
 	LiteChain:         false,
-	SortIndex:         3,
+	SortIndex:         5,
 	LaunchTime:        1688997600,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

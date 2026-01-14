@@ -3,7 +3,7 @@ export declare const unichain: Readonly<{
     blockTimeSeconds: 1;
     launchTime: 1750384728;
     transactionType: "eip1559";
-    sortIndex: 15;
+    sortIndex: 18;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/unichain-logo.svg";
     deprecated: false;
     safeReorgDistance: 90000;

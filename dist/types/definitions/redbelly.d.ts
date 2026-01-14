@@ -3,7 +3,7 @@ export declare const redbelly: Readonly<{
     blockTimeSeconds: 5;
     launchTime: 1741362479;
     transactionType: "eip1559";
-    sortIndex: 15;
+    sortIndex: 27;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/redbelly-logo.svg";
     deprecated: false;
     safeReorgDistance: 90000;
