@@ -4,7 +4,7 @@ import { makeConfig } from "../util";
 export const zkSync = makeConfig({
 	...chain,
 	blockTimeSeconds: 2,
-	sortIndex: 4,
+	sortIndex: 35,
 	launchTime: 1696514400,
 	transactionType: "eip1559",
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/zksync-logo.svg",

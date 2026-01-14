@@ -3,7 +3,7 @@ import { makeConfig } from "../util";
 
 export const filecoin = makeConfig({
 	...chain,
-	sortIndex: 10,
+	sortIndex: 21,
 	launchTime: 1677600000,
 	transactionType: "legacy",
 	name: "Filecoin",

@@ -8,7 +8,7 @@ export const avalanche = makeConfig({
 	blockTimeSeconds: 2,
 	launchTime: 1761794290,
 	transactionType: "eip1559",
-	sortIndex: 15,
+	sortIndex: 17,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/avalanche-logo.svg",
 	deprecated: false,
 	liteChain: true,

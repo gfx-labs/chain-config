@@ -8,7 +8,7 @@ export const tronShasta = makeConfig({
 	blockTimeSeconds: 5,
 	launchTime: 1746055290,
 	transactionType: "eip1559",
-	sortIndex: 15,
+	sortIndex: 45,
 	blockAid: "",
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/tron.png",
 	deprecated: true,
