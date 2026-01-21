@@ -14,7 +14,9 @@ export const manta = makeConfig({
 	deprecated: true,
 	safeReorgDistance: 90000,
 	blockAid: "",
-	externalId: {},
+	externalId: {
+		coingecko: "manta-pacific",
+	},
 	morpho: {},
 	markets: {
 		openocean: "manta",

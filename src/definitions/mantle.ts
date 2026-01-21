@@ -15,6 +15,7 @@ export const mantle = makeConfig({
 	blockAid: "",
 	externalId: {
 		tenderly: "true",
+		coingecko: "mantle",
 	},
 	morpho: {},
 	markets: {

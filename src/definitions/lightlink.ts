@@ -13,7 +13,9 @@ export const lightlink = makeConfig({
 	safeReorgDistance: 90000,
 	blockAid: "",
 	morpho: {},
-	externalId: {},
+	externalId: {
+		coingecko: "lightlink",
+	},
 	markets: {
 		icecreamswap: true,
 	},

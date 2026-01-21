@@ -11,7 +11,9 @@ export const hemi = makeConfig({
 	deprecated: false,
 	safeReorgDistance: 90000,
 	blockAid: "",
-	externalId: {},
+	externalId: {
+		coingecko: "hemi",
+	},
 	markets: {
 		icecreamswap: true,
 	},

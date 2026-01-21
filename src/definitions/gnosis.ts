@@ -16,6 +16,7 @@ export const gnosis = makeConfig({
 		zerion: "xdai",
 		cowswap: "xdai",
 		tenderly: "true",
+		coingecko: "xdai",
 	},
 	markets: {
 		openocean: "xdai",

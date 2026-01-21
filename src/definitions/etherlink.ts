@@ -13,6 +13,7 @@ export const etherlink = makeConfig({
 	blockAid: "",
 	externalId: {
 		tenderly: "true",
+		coingecko: "etherlink",
 	},
 	markets: {
 		kyberswap: "etherlink",

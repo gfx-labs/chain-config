@@ -25,6 +25,7 @@ export const mainnet = makeConfig({
 		debank: "eth",
 		cowswap: "mainnet",
 		tenderly: "true",
+		coingecko: "ethereum",
 	},
 	rpcUrls: {
 		default: {

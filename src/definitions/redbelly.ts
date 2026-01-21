@@ -12,7 +12,9 @@ export const redbelly = makeConfig({
 	deprecated: false,
 	safeReorgDistance: 90000,
 	blockAid: "",
-	externalId: {},
+	externalId: {
+		coingecko: "redbelly-network",
+	},
 	markets: {},
 	bridges: {},
 	oracles: {},

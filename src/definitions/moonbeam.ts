@@ -16,6 +16,7 @@ export const moonbeam = makeConfig({
 	externalId: {
 		debank: "mobm",
 		tenderly: "true",
+		coingecko: "moonbeam",
 	},
 	morpho: {},
 	markets: {

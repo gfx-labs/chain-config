@@ -14,6 +14,7 @@ export const corn = makeConfig({
 	blockAid: "",
 	externalId: {
 		tenderly: "true",
+		coingecko: "corn",
 	},
 	markets: {},
 	bridges: {

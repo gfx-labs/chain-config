@@ -16,6 +16,7 @@ export const polygonZkEvm = makeConfig({
 	morpho: {},
 	externalId: {
 		zerion: "polygon-zkevm",
+		coingecko: "polygon-zkevm",
 	},
 	markets: {
 		kyberswap: "polygon-zkevm",

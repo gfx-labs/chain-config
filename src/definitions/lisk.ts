@@ -13,6 +13,7 @@ export const lisk = makeConfig({
 	blockAid: "",
 	externalId: {
 		tenderly: "true",
+		coingecko: "lisk",
 	},
 	morpho: {},
 	markets: {},

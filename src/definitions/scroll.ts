@@ -16,6 +16,7 @@ export const scroll = makeConfig({
 	externalId: {
 		zerion: "scroll",
 		tenderly: "true",
+		coingecko: "scroll",
 	},
 	morpho: {},
 	markets: {

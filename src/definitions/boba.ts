@@ -17,6 +17,7 @@ export const boba = makeConfig({
 	externalId: {
 		debank: "boba",
 		tenderly: "true",
+		coingecko: "boba",
 	},
 	morpho: {},
 	markets: {

@@ -18,6 +18,7 @@ export const optimism = makeConfig({
 		zerion: "optimism",
 		debank: "op",
 		tenderly: "true",
+		coingecko: "optimistic-ethereum",
 	},
 	morpho: {
 		deployBlock: 130770075,

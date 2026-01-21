@@ -15,6 +15,7 @@ export const sei = makeConfig({
 	blockAid: "",
 	externalId: {
 		tenderly: "true",
+		coingecko: "sei-v2",
 	},
 	markets: {
 		openocean: "sei",

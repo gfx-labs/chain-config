@@ -13,6 +13,7 @@ export const ronin = makeConfig({
 	blockAid: "",
 	externalId: {
 		tenderly: "true",
+		coingecko: "ronin",
 	},
 	markets: {},
 	bridges: {

@@ -12,7 +12,9 @@ export const saga = makeConfig({
 	deprecated: false,
 	safeReorgDistance: 90000,
 	blockAid: "",
-	externalId: {},
+	externalId: {
+		coingecko: "saga",
+	},
 	markets: {},
 	bridges: {},
 	oracles: {},

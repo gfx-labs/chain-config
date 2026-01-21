@@ -17,6 +17,7 @@ export const polygon = makeConfig({
 		zerion: "polygon",
 		debank: "matic",
 		tenderly: "true",
+		coingecko: "polygon-pos",
 	},
 	morpho: {},
 	markets: {

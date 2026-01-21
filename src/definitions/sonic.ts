@@ -14,6 +14,7 @@ export const sonic = makeConfig({
 	morpho: {},
 	externalId: {
 		tenderly: "true",
+		coingecko: "sonic",
 	},
 	markets: {
 		icecreamswap: true,

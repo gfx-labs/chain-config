@@ -18,6 +18,7 @@ export const linea = makeConfig({
 	externalId: {
 		zerion: "linea",
 		tenderly: "true",
+		coingecko: "linea",
 	},
 	markets: {
 		kyberswap: "linea",

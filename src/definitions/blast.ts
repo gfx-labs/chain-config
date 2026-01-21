@@ -14,6 +14,7 @@ export const blast = makeConfig({
 	externalId: {
 		zerion: "blast",
 		tenderly: "true",
+		coingecko: "blast",
 	},
 	morpho: {},
 	markets: {
