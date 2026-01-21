@@ -10,6 +10,7 @@ export declare const sei: Readonly<{
     blockAid: "";
     externalId: {
         tenderly: string;
+        coingecko: string;
     };
     markets: {
         openocean: string;

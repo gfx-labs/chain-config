@@ -11,6 +11,7 @@ export declare const polygonZkEvm: Readonly<{
     morpho: {};
     externalId: {
         zerion: string;
+        coingecko: string;
     };
     markets: {
         kyberswap: string;

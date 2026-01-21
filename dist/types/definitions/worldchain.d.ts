@@ -10,6 +10,7 @@ export declare const worldchain: Readonly<{
     blockAid: "";
     externalId: {
         tenderly: string;
+        coingecko: string;
     };
     markets: {
         zeroex: true;

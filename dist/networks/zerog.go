@@ -22,7 +22,8 @@ var Zerog Network = Network{
 	TransactionType: "eip1559",
 	InitCodeHash:    common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId: map[string]string{
-		"tenderly": "true",
+		"tenderly":  "true",
+		"coingecko": "0g",
 	},
 	DefaultToken0: common.HexToAddress("0x1cd0690ff9a693f5ef2dd976660a8dafc81a109c"),
 	DefaultToken1: common.HexToAddress("0x1f3aa82227281ca364bfb3d253b0f1af1da6473e"),

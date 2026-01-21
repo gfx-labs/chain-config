@@ -10,6 +10,7 @@ export declare const zerog: Readonly<{
     blockAid: "";
     externalId: {
         tenderly: string;
+        coingecko: string;
     };
     markets: {};
     bridges: {

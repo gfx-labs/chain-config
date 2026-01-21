@@ -12,6 +12,7 @@ export declare const gnosis: Readonly<{
         zerion: string;
         cowswap: string;
         tenderly: string;
+        coingecko: string;
     };
     markets: {
         openocean: string;

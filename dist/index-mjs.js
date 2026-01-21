@@ -22,6 +22,7 @@ const arbitrum = makeConfig({
         debank: "arb",
         cowswap: "arbitrum_one",
         tenderly: "true",
+        coingecko: "arbitrum-one",
     },
     markets: {
         kyberswap: "arbitrum",
@@ -344,6 +345,7 @@ const avalanche = makeConfig({
         zerion: "avalanche",
         debank: "avax",
         tenderly: "true",
+        coingecko: "avalanche",
     },
     markets: {
         openocean: "avax",
@@ -467,6 +469,7 @@ const base = makeConfig({
         debank: "base",
         cowswap: "base",
         tenderly: "true",
+        coingecko: "base",
     },
     markets: {
         kyberswap: "base",
@@ -650,6 +653,7 @@ const blast = makeConfig({
     externalId: {
         zerion: "blast",
         tenderly: "true",
+        coingecko: "blast",
     },
     morpho: {},
     markets: {
@@ -758,6 +762,7 @@ const bob = makeConfig({
     blockAid: "",
     externalId: {
         tenderly: "true",
+        coingecko: "bob-network",
     },
     markets: {
         icecreamswap: true,
@@ -776,7 +781,7 @@ const bob = makeConfig({
     morpho: {},
     oracles: {
         coingecko: {
-            slug: "bob",
+            slug: "bob-network",
             native: "ethereum",
         },
     },
@@ -881,6 +886,7 @@ const boba = makeConfig({
     externalId: {
         debank: "boba",
         tenderly: "true",
+        coingecko: "boba",
     },
     morpho: {},
     markets: {
@@ -1003,7 +1009,8 @@ const bsc = makeConfig({
         zerion: "binance-smart-chain",
         debank: "bsc",
         tenderly: "true",
-        cowswap: "bnb"
+        cowswap: "bnb",
+        coingecko: "binance-smart-chain",
     },
     morpho: {},
     markets: {
@@ -1221,7 +1228,9 @@ const celo = makeConfig({
     deprecated: false,
     safeReorgDistance: 90000,
     blockAid: "",
-    externalId: {},
+    externalId: {
+        coingecko: "celo",
+    },
     markets: {
         icecreamswap: true,
         openocean: "celo",
@@ -1344,6 +1353,7 @@ const corn = makeConfig({
     blockAid: "",
     externalId: {
         tenderly: "true",
+        coingecko: "corn",
     },
     markets: {},
     bridges: {
@@ -1457,6 +1467,7 @@ const etherlink = makeConfig({
     blockAid: "",
     externalId: {
         tenderly: "true",
+        coingecko: "etherlink",
     },
     markets: {
         kyberswap: "etherlink",
@@ -1588,7 +1599,9 @@ const filecoin = makeConfig({
     },
     logoUrl: "https://cms.oku.trade/cdn/public/chains/filecoin-logo.svg",
     deprecated: false,
-    externalId: {},
+    externalId: {
+        coingecko: "filecoin",
+    },
     markets: {},
     bridges: {},
     oracles: {
@@ -1707,6 +1720,7 @@ const gnosis = makeConfig({
         zerion: "xdai",
         cowswap: "xdai",
         tenderly: "true",
+        coingecko: "xdai",
     },
     markets: {
         openocean: "xdai",
@@ -1858,7 +1872,9 @@ const goat = makeConfig({
     deprecated: false,
     safeReorgDistance: 90000,
     blockAid: "",
-    externalId: {},
+    externalId: {
+        coingecko: "goat",
+    },
     markets: {},
     bridges: {
         stargate: {
@@ -1965,7 +1981,9 @@ const hemi = makeConfig({
     deprecated: false,
     safeReorgDistance: 90000,
     blockAid: "",
-    externalId: {},
+    externalId: {
+        coingecko: "hemi",
+    },
     markets: {
         icecreamswap: true,
     },
@@ -2091,7 +2109,9 @@ const hyperevm = makeConfig({
     deprecated: false,
     safeReorgDistance: 90000,
     blockAid: "",
-    externalId: {},
+    externalId: {
+        coingecko: "hyperevm",
+    },
     liteChain: true,
     markets: {
         openocean: "hyperevm",
@@ -2269,7 +2289,9 @@ const lightlink = makeConfig({
     safeReorgDistance: 90000,
     blockAid: "",
     morpho: {},
-    externalId: {},
+    externalId: {
+        coingecko: "lightlink",
+    },
     markets: {
         icecreamswap: true,
     },
@@ -2386,6 +2408,7 @@ const linea = makeConfig({
     externalId: {
         zerion: "linea",
         tenderly: "true",
+        coingecko: "linea",
     },
     markets: {
         kyberswap: "linea",
@@ -2528,6 +2551,7 @@ const lisk = makeConfig({
     blockAid: "",
     externalId: {
         tenderly: "true",
+        coingecko: "lisk",
     },
     morpho: {},
     markets: {},
@@ -2632,6 +2656,7 @@ const mainnet = makeConfig({
         debank: "eth",
         cowswap: "mainnet",
         tenderly: "true",
+        coingecko: "ethereum",
     },
     rpcUrls: {
         default: {
@@ -2978,7 +3003,9 @@ const manta = makeConfig({
     deprecated: true,
     safeReorgDistance: 90000,
     blockAid: "",
-    externalId: {},
+    externalId: {
+        coingecko: "manta-pacific",
+    },
     morpho: {},
     markets: {
         openocean: "manta",
@@ -3087,6 +3114,7 @@ const mantle = makeConfig({
     blockAid: "",
     externalId: {
         tenderly: "true",
+        coingecko: "mantle",
     },
     morpho: {},
     markets: {
@@ -3402,6 +3430,7 @@ const monad = makeConfig({
     blockAid: "",
     externalId: {
         tenderly: "true",
+        coingecko: "monad",
     },
     markets: {
         openocean: "monad",
@@ -3513,6 +3542,7 @@ const moonbeam = makeConfig({
     externalId: {
         debank: "mobm",
         tenderly: "true",
+        coingecko: "moonbeam",
     },
     morpho: {},
     markets: {
@@ -3750,6 +3780,7 @@ const optimism = makeConfig({
         zerion: "optimism",
         debank: "op",
         tenderly: "true",
+        coingecko: "optimistic-ethereum",
     },
     morpho: {
         deployBlock: 130770075,
@@ -4076,7 +4107,9 @@ const plasma = makeConfig({
     deprecated: false,
     safeReorgDistance: 90000,
     blockAid: "",
-    externalId: {},
+    externalId: {
+        coingecko: "plasma",
+    },
     markets: {
         zeroex: true,
         kyberswap: "plasma",
@@ -4172,6 +4205,7 @@ const polygon = makeConfig({
         zerion: "polygon",
         debank: "matic",
         tenderly: "true",
+        coingecko: "polygon-pos",
     },
     morpho: {},
     markets: {
@@ -4466,7 +4500,9 @@ const redbelly = makeConfig({
     deprecated: false,
     safeReorgDistance: 90000,
     blockAid: "",
-    externalId: {},
+    externalId: {
+        coingecko: "redbelly-network",
+    },
     markets: {},
     bridges: {},
     oracles: {},
@@ -4551,6 +4587,7 @@ const ronin = makeConfig({
     blockAid: "",
     externalId: {
         tenderly: "true",
+        coingecko: "ronin",
     },
     markets: {},
     bridges: {
@@ -4644,7 +4681,9 @@ const rootstock = makeConfig({
     deprecated: false,
     safeReorgDistance: 90000,
     blockAid: "",
-    externalId: {},
+    externalId: {
+        coingecko: "rootstock",
+    },
     markets: {
         openocean: "rootstock",
         icecreamswap: true,
@@ -4787,7 +4826,9 @@ const saga = makeConfig({
     deprecated: false,
     safeReorgDistance: 90000,
     blockAid: "",
-    externalId: {},
+    externalId: {
+        coingecko: "saga",
+    },
     markets: {},
     bridges: {},
     oracles: {},
@@ -4890,6 +4931,7 @@ const scroll = makeConfig({
     externalId: {
         zerion: "scroll",
         tenderly: "true",
+        coingecko: "scroll",
     },
     morpho: {},
     markets: {
@@ -5022,6 +5064,7 @@ const sei = makeConfig({
     blockAid: "",
     externalId: {
         tenderly: "true",
+        coingecko: "sei-v2",
     },
     markets: {
         openocean: "sei",
@@ -5194,6 +5237,7 @@ const sonic = makeConfig({
     morpho: {},
     externalId: {
         tenderly: "true",
+        coingecko: "sonic",
     },
     markets: {
         icecreamswap: true,
@@ -5327,6 +5371,7 @@ const taiko = makeConfig({
     blockAid: "",
     externalId: {
         tenderly: "true",
+        coingecko: "taiko",
     },
     markets: {
         icecreamswap: true,
@@ -5468,7 +5513,9 @@ const telos = makeConfig({
     deprecated: false,
     safeReorgDistance: 90000,
     blockAid: "",
-    externalId: {},
+    externalId: {
+        coingecko: "telos",
+    },
     markets: {
         openocean: "telos",
         icecreamswap: true,
@@ -5665,6 +5712,7 @@ const unichain = makeConfig({
     blockAid: "unichain",
     externalId: {
         tenderly: "true",
+        coingecko: "unichain",
     },
     markets: {
         icecreamswap: true,
@@ -5809,6 +5857,7 @@ const worldchain = makeConfig({
     blockAid: "",
     externalId: {
         tenderly: "true",
+        coingecko: "world-chain",
     },
     markets: {
         zeroex: true,
@@ -5910,7 +5959,9 @@ const xdc = makeConfig({
     deprecated: false,
     safeReorgDistance: 90000,
     blockAid: "",
-    externalId: {},
+    externalId: {
+        coingecko: "xdc-network",
+    },
     markets: {
         icecreamswap: true,
     },
@@ -6027,6 +6078,7 @@ const zerog = makeConfig({
     blockAid: "",
     externalId: {
         tenderly: "true",
+        coingecko: "0g",
     },
     markets: {},
     bridges: {
@@ -6111,6 +6163,7 @@ const polygonZkEvm = makeConfig({
     morpho: {},
     externalId: {
         zerion: "polygon-zkevm",
+        coingecko: "polygon-zkevm",
     },
     markets: {
         kyberswap: "polygon-zkevm",
@@ -6225,6 +6278,7 @@ const zkSync = makeConfig({
     externalId: {
         zerion: "zksync-era",
         tenderly: "true",
+        coingecko: "zksync",
     },
     markets: {
         kyberswap: "zksync",

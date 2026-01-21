@@ -11,6 +11,7 @@ export declare const moonbeam: Readonly<{
     externalId: {
         debank: string;
         tenderly: string;
+        coingecko: string;
     };
     morpho: {};
     markets: {

@@ -26,7 +26,8 @@ var Monad Network = Network{
 	TransactionType: "eip1559",
 	InitCodeHash:    common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId: map[string]string{
-		"tenderly": "true",
+		"tenderly":  "true",
+		"coingecko": "monad",
 	},
 	DefaultToken0: common.HexToAddress("0x3bd359C1119dA7Da1D913D1C4D2B7c461115433A"),
 	DefaultToken1: common.HexToAddress("0x754704Bc059F8C67012fEd69BC8A327a5aafb603"),

@@ -7,7 +7,9 @@ export declare const hyperevm: Readonly<{
     deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
-    externalId: {};
+    externalId: {
+        coingecko: string;
+    };
     liteChain: true;
     markets: {
         openocean: string;

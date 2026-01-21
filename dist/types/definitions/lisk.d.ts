@@ -9,6 +9,7 @@ export declare const lisk: Readonly<{
     blockAid: "";
     externalId: {
         tenderly: string;
+        coingecko: string;
     };
     morpho: {};
     markets: {};

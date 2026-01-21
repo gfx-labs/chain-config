@@ -9,7 +9,9 @@ export declare const lightlink: Readonly<{
     safeReorgDistance: 90000;
     blockAid: "";
     morpho: {};
-    externalId: {};
+    externalId: {
+        coingecko: string;
+    };
     markets: {
         icecreamswap: true;
     };

@@ -13,6 +13,7 @@ export declare const linea: Readonly<{
     externalId: {
         zerion: string;
         tenderly: string;
+        coingecko: string;
     };
     markets: {
         kyberswap: string;

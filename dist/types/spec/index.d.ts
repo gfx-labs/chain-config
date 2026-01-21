@@ -177,6 +177,7 @@ export interface IChainInfo<formatters extends ChainFormatters | undefined = Cha
         debank?: string;
         cowswap?: string;
         tenderly?: string;
+        coingecko?: string;
     };
     markets: Markets;
     bridges: Bridges;

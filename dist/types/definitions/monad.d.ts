@@ -9,6 +9,7 @@ export declare const monad: Readonly<{
     blockAid: "";
     externalId: {
         tenderly: string;
+        coingecko: string;
     };
     markets: {
         openocean: string;

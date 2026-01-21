@@ -23,7 +23,8 @@ var Taiko Network = Network{
 	TransactionType: "eip1559",
 	InitCodeHash:    common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId: map[string]string{
-		"tenderly": "true",
+		"tenderly":  "true",
+		"coingecko": "taiko",
 	},
 	DefaultToken0: common.HexToAddress("0x07d83526730c7438048D55A4fc0b850e2aaB6f0b"),
 	DefaultToken1: common.HexToAddress("0xa51894664a773981c6c112c43ce576f315d5b1b6"),

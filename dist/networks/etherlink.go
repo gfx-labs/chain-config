@@ -22,7 +22,8 @@ var Etherlink Network = Network{
 	TransactionType: "eip1559",
 	InitCodeHash:    common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId: map[string]string{
-		"tenderly": "true",
+		"tenderly":  "true",
+		"coingecko": "etherlink",
 	},
 	DefaultToken0: common.HexToAddress("0x796Ea11Fa2dD751eD01b53C372fFDB4AAa8f00F9"),
 	DefaultToken1: common.HexToAddress("0xc9B53AB2679f573e480d01e0f49e2B5CFB7a3EAb"),

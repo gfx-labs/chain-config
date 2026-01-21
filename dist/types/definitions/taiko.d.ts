@@ -10,6 +10,7 @@ export declare const taiko: Readonly<{
     blockAid: "";
     externalId: {
         tenderly: string;
+        coingecko: string;
     };
     markets: {
         icecreamswap: true;

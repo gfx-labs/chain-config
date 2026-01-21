@@ -10,6 +10,7 @@ export declare const unichain: Readonly<{
     blockAid: "unichain";
     externalId: {
         tenderly: string;
+        coingecko: string;
     };
     markets: {
         icecreamswap: true;

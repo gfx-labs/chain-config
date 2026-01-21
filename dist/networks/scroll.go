@@ -23,8 +23,9 @@ var Scroll Network = Network{
 	TransactionType: "eip1559",
 	InitCodeHash:    common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId: map[string]string{
-		"zerion":   "scroll",
-		"tenderly": "true",
+		"zerion":    "scroll",
+		"tenderly":  "true",
+		"coingecko": "scroll",
 	},
 	DefaultToken0: common.HexToAddress("0x06efdbff2a14a7c8e15944d1f4a48f9f95f663a4"),
 	DefaultToken1: common.HexToAddress("0x5300000000000000000000000000000000000004"),

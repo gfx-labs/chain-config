@@ -9,7 +9,9 @@ export declare const manta: Readonly<{
     deprecated: true;
     safeReorgDistance: 90000;
     blockAid: "";
-    externalId: {};
+    externalId: {
+        coingecko: string;
+    };
     morpho: {};
     markets: {
         openocean: string;

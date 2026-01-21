@@ -23,9 +23,10 @@ var Gnosis Network = Network{
 	TransactionType: "eip1559",
 	InitCodeHash:    common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId: map[string]string{
-		"zerion":   "xdai",
-		"cowswap":  "xdai",
-		"tenderly": "true",
+		"zerion":    "xdai",
+		"cowswap":   "xdai",
+		"tenderly":  "true",
+		"coingecko": "xdai",
 	},
 	DefaultToken0: common.HexToAddress("0x6a023ccd1ff6f2045c3309768ead9e68f978f6e1"),
 	DefaultToken1: common.HexToAddress("0xe91d153e0b41518a2ce8dd3d7944fa863463a97d"),

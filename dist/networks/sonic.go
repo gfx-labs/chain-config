@@ -22,7 +22,8 @@ var Sonic Network = Network{
 	TransactionType: "eip1559",
 	InitCodeHash:    common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId: map[string]string{
-		"tenderly": "true",
+		"tenderly":  "true",
+		"coingecko": "sonic",
 	},
 	DefaultToken0: common.HexToAddress("0x039e2fb66102314ce7b64ce5ce3e5183bc94ad38"),
 	DefaultToken1: common.HexToAddress("0x29219dd400f2bf60e5a23d13be72b486d4038894"),

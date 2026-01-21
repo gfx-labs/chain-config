@@ -14,6 +14,7 @@ export declare const bsc: Readonly<{
         debank: string;
         tenderly: string;
         cowswap: string;
+        coingecko: string;
     };
     morpho: {};
     markets: {

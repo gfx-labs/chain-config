@@ -23,7 +23,8 @@ var Unichain Network = Network{
 	TransactionType: "eip1559",
 	InitCodeHash:    common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId: map[string]string{
-		"tenderly": "true",
+		"tenderly":  "true",
+		"coingecko": "unichain",
 	},
 	DefaultToken0: common.HexToAddress("0x078d782b760474a361dda0af3839290b0ef57ad6"),
 	DefaultToken1: common.HexToAddress("0x4200000000000000000000000000000000000006"),

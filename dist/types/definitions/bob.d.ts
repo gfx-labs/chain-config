@@ -9,6 +9,7 @@ export declare const bob: Readonly<{
     blockAid: "";
     externalId: {
         tenderly: string;
+        coingecko: string;
     };
     markets: {
         icecreamswap: true;

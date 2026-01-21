@@ -23,9 +23,10 @@ var Avalanche Network = Network{
 	TransactionType: "eip1559",
 	InitCodeHash:    common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId: map[string]string{
-		"zerion":   "avalanche",
-		"debank":   "avax",
-		"tenderly": "true",
+		"zerion":    "avalanche",
+		"debank":    "avax",
+		"tenderly":  "true",
+		"coingecko": "avalanche",
 	},
 	DefaultToken0: common.HexToAddress("0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7"),
 	DefaultToken1: common.HexToAddress("0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e"),

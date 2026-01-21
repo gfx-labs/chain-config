@@ -8,7 +8,9 @@ export declare const plasma: Readonly<{
     deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
-    externalId: {};
+    externalId: {
+        coingecko: string;
+    };
     markets: {
         zeroex: true;
         kyberswap: string;

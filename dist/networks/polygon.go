@@ -23,9 +23,10 @@ var Polygon Network = Network{
 	TransactionType: "eip1559",
 	InitCodeHash:    common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId: map[string]string{
-		"zerion":   "polygon",
-		"debank":   "matic",
-		"tenderly": "true",
+		"zerion":    "polygon",
+		"debank":    "matic",
+		"tenderly":  "true",
+		"coingecko": "polygon-pos",
 	},
 	DefaultToken0: common.HexToAddress("0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270"),
 	DefaultToken1: common.HexToAddress("0x3c499c542cef5e3811e1192ce70d8cc03d5c3359"),

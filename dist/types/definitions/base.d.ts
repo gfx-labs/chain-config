@@ -22,6 +22,7 @@ export declare const base: Readonly<{
         debank: string;
         cowswap: string;
         tenderly: string;
+        coingecko: string;
     };
     markets: {
         kyberswap: string;

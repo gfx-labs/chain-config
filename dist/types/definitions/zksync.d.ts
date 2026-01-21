@@ -11,6 +11,7 @@ export declare const zkSync: Readonly<{
     externalId: {
         zerion: string;
         tenderly: string;
+        coingecko: string;
     };
     markets: {
         kyberswap: string;

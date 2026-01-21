@@ -8,7 +8,9 @@ export declare const saga: Readonly<{
     deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
-    externalId: {};
+    externalId: {
+        coingecko: string;
+    };
     markets: {};
     bridges: {};
     oracles: {};

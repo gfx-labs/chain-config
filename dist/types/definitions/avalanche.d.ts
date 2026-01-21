@@ -13,6 +13,7 @@ export declare const avalanche: Readonly<{
         zerion: string;
         debank: string;
         tenderly: string;
+        coingecko: string;
     };
     markets: {
         openocean: string;

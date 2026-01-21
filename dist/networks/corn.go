@@ -23,7 +23,8 @@ var Corn Network = Network{
 	TransactionType: "eip1559",
 	InitCodeHash:    common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId: map[string]string{
-		"tenderly": "true",
+		"tenderly":  "true",
+		"coingecko": "corn",
 	},
 	DefaultToken0: common.HexToAddress("0xda5dDd7270381A7C2717aD10D1c0ecB19e3CDFb2"),
 	DefaultToken1: common.HexToAddress("0xDF0B24095e15044538866576754F3C964e902Ee6"),

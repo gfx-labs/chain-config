@@ -11,6 +11,7 @@ export declare const scroll: Readonly<{
     externalId: {
         zerion: string;
         tenderly: string;
+        coingecko: string;
     };
     morpho: {};
     markets: {

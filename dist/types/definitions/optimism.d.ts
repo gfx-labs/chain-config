@@ -13,6 +13,7 @@ export declare const optimism: Readonly<{
         zerion: string;
         debank: string;
         tenderly: string;
+        coingecko: string;
     };
     morpho: {
         deployBlock: number;

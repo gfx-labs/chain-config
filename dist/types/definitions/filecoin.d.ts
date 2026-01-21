@@ -27,7 +27,9 @@ export declare const filecoin: Readonly<{
     };
     logoUrl: "https://cms.oku.trade/cdn/public/chains/filecoin-logo.svg";
     deprecated: false;
-    externalId: {};
+    externalId: {
+        coingecko: string;
+    };
     markets: {};
     bridges: {};
     oracles: {

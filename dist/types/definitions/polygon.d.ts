@@ -12,6 +12,7 @@ export declare const polygon: Readonly<{
         zerion: string;
         debank: string;
         tenderly: string;
+        coingecko: string;
     };
     morpho: {};
     markets: {

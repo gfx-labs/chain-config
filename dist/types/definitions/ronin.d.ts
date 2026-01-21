@@ -9,6 +9,7 @@ export declare const ronin: Readonly<{
     blockAid: "";
     externalId: {
         tenderly: string;
+        coingecko: string;
     };
     markets: {};
     bridges: {

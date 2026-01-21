@@ -10,6 +10,7 @@ export declare const corn: Readonly<{
     blockAid: "";
     externalId: {
         tenderly: string;
+        coingecko: string;
     };
     markets: {};
     bridges: {

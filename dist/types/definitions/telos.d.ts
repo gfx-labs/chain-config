@@ -7,7 +7,9 @@ export declare const telos: Readonly<{
     deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
-    externalId: {};
+    externalId: {
+        coingecko: string;
+    };
     markets: {
         openocean: string;
         icecreamswap: true;

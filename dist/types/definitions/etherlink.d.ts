@@ -9,6 +9,7 @@ export declare const etherlink: Readonly<{
     blockAid: "";
     externalId: {
         tenderly: string;
+        coingecko: string;
     };
     markets: {
         kyberswap: string;

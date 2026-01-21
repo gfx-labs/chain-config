@@ -20,6 +20,7 @@ export declare const mainnet: Readonly<{
         debank: string;
         cowswap: string;
         tenderly: string;
+        coingecko: string;
     };
     rpcUrls: {
         default: {

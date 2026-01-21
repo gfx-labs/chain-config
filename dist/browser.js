@@ -25,6 +25,7 @@
             debank: "arb",
             cowswap: "arbitrum_one",
             tenderly: "true",
+            coingecko: "arbitrum-one",
         },
         markets: {
             kyberswap: "arbitrum",
@@ -347,6 +348,7 @@
             zerion: "avalanche",
             debank: "avax",
             tenderly: "true",
+            coingecko: "avalanche",
         },
         markets: {
             openocean: "avax",
@@ -470,6 +472,7 @@
             debank: "base",
             cowswap: "base",
             tenderly: "true",
+            coingecko: "base",
         },
         markets: {
             kyberswap: "base",
@@ -653,6 +656,7 @@
         externalId: {
             zerion: "blast",
             tenderly: "true",
+            coingecko: "blast",
         },
         morpho: {},
         markets: {
@@ -761,6 +765,7 @@
         blockAid: "",
         externalId: {
             tenderly: "true",
+            coingecko: "bob-network",
         },
         markets: {
             icecreamswap: true,
@@ -779,7 +784,7 @@
         morpho: {},
         oracles: {
             coingecko: {
-                slug: "bob",
+                slug: "bob-network",
                 native: "ethereum",
             },
         },
@@ -884,6 +889,7 @@
         externalId: {
             debank: "boba",
             tenderly: "true",
+            coingecko: "boba",
         },
         morpho: {},
         markets: {
@@ -1006,7 +1012,8 @@
             zerion: "binance-smart-chain",
             debank: "bsc",
             tenderly: "true",
-            cowswap: "bnb"
+            cowswap: "bnb",
+            coingecko: "binance-smart-chain",
         },
         morpho: {},
         markets: {
@@ -1224,7 +1231,9 @@
         deprecated: false,
         safeReorgDistance: 90000,
         blockAid: "",
-        externalId: {},
+        externalId: {
+            coingecko: "celo",
+        },
         markets: {
             icecreamswap: true,
             openocean: "celo",
@@ -1347,6 +1356,7 @@
         blockAid: "",
         externalId: {
             tenderly: "true",
+            coingecko: "corn",
         },
         markets: {},
         bridges: {
@@ -1460,6 +1470,7 @@
         blockAid: "",
         externalId: {
             tenderly: "true",
+            coingecko: "etherlink",
         },
         markets: {
             kyberswap: "etherlink",
@@ -1591,7 +1602,9 @@
         },
         logoUrl: "https://cms.oku.trade/cdn/public/chains/filecoin-logo.svg",
         deprecated: false,
-        externalId: {},
+        externalId: {
+            coingecko: "filecoin",
+        },
         markets: {},
         bridges: {},
         oracles: {
@@ -1710,6 +1723,7 @@
             zerion: "xdai",
             cowswap: "xdai",
             tenderly: "true",
+            coingecko: "xdai",
         },
         markets: {
             openocean: "xdai",
@@ -1861,7 +1875,9 @@
         deprecated: false,
         safeReorgDistance: 90000,
         blockAid: "",
-        externalId: {},
+        externalId: {
+            coingecko: "goat",
+        },
         markets: {},
         bridges: {
             stargate: {
@@ -1968,7 +1984,9 @@
         deprecated: false,
         safeReorgDistance: 90000,
         blockAid: "",
-        externalId: {},
+        externalId: {
+            coingecko: "hemi",
+        },
         markets: {
             icecreamswap: true,
         },
@@ -2094,7 +2112,9 @@
         deprecated: false,
         safeReorgDistance: 90000,
         blockAid: "",
-        externalId: {},
+        externalId: {
+            coingecko: "hyperevm",
+        },
         liteChain: true,
         markets: {
             openocean: "hyperevm",
@@ -2272,7 +2292,9 @@
         safeReorgDistance: 90000,
         blockAid: "",
         morpho: {},
-        externalId: {},
+        externalId: {
+            coingecko: "lightlink",
+        },
         markets: {
             icecreamswap: true,
         },
@@ -2389,6 +2411,7 @@
         externalId: {
             zerion: "linea",
             tenderly: "true",
+            coingecko: "linea",
         },
         markets: {
             kyberswap: "linea",
@@ -2531,6 +2554,7 @@
         blockAid: "",
         externalId: {
             tenderly: "true",
+            coingecko: "lisk",
         },
         morpho: {},
         markets: {},
@@ -2635,6 +2659,7 @@
             debank: "eth",
             cowswap: "mainnet",
             tenderly: "true",
+            coingecko: "ethereum",
         },
         rpcUrls: {
             default: {
@@ -2981,7 +3006,9 @@
         deprecated: true,
         safeReorgDistance: 90000,
         blockAid: "",
-        externalId: {},
+        externalId: {
+            coingecko: "manta-pacific",
+        },
         morpho: {},
         markets: {
             openocean: "manta",
@@ -3090,6 +3117,7 @@
         blockAid: "",
         externalId: {
             tenderly: "true",
+            coingecko: "mantle",
         },
         morpho: {},
         markets: {
@@ -3405,6 +3433,7 @@
         blockAid: "",
         externalId: {
             tenderly: "true",
+            coingecko: "monad",
         },
         markets: {
             openocean: "monad",
@@ -3516,6 +3545,7 @@
         externalId: {
             debank: "mobm",
             tenderly: "true",
+            coingecko: "moonbeam",
         },
         morpho: {},
         markets: {
@@ -3753,6 +3783,7 @@
             zerion: "optimism",
             debank: "op",
             tenderly: "true",
+            coingecko: "optimistic-ethereum",
         },
         morpho: {
             deployBlock: 130770075,
@@ -4079,7 +4110,9 @@
         deprecated: false,
         safeReorgDistance: 90000,
         blockAid: "",
-        externalId: {},
+        externalId: {
+            coingecko: "plasma",
+        },
         markets: {
             zeroex: true,
             kyberswap: "plasma",
@@ -4175,6 +4208,7 @@
             zerion: "polygon",
             debank: "matic",
             tenderly: "true",
+            coingecko: "polygon-pos",
         },
         morpho: {},
         markets: {
@@ -4469,7 +4503,9 @@
         deprecated: false,
         safeReorgDistance: 90000,
         blockAid: "",
-        externalId: {},
+        externalId: {
+            coingecko: "redbelly-network",
+        },
         markets: {},
         bridges: {},
         oracles: {},
@@ -4554,6 +4590,7 @@
         blockAid: "",
         externalId: {
             tenderly: "true",
+            coingecko: "ronin",
         },
         markets: {},
         bridges: {
@@ -4647,7 +4684,9 @@
         deprecated: false,
         safeReorgDistance: 90000,
         blockAid: "",
-        externalId: {},
+        externalId: {
+            coingecko: "rootstock",
+        },
         markets: {
             openocean: "rootstock",
             icecreamswap: true,
@@ -4790,7 +4829,9 @@
         deprecated: false,
         safeReorgDistance: 90000,
         blockAid: "",
-        externalId: {},
+        externalId: {
+            coingecko: "saga",
+        },
         markets: {},
         bridges: {},
         oracles: {},
@@ -4893,6 +4934,7 @@
         externalId: {
             zerion: "scroll",
             tenderly: "true",
+            coingecko: "scroll",
         },
         morpho: {},
         markets: {
@@ -5025,6 +5067,7 @@
         blockAid: "",
         externalId: {
             tenderly: "true",
+            coingecko: "sei-v2",
         },
         markets: {
             openocean: "sei",
@@ -5197,6 +5240,7 @@
         morpho: {},
         externalId: {
             tenderly: "true",
+            coingecko: "sonic",
         },
         markets: {
             icecreamswap: true,
@@ -5330,6 +5374,7 @@
         blockAid: "",
         externalId: {
             tenderly: "true",
+            coingecko: "taiko",
         },
         markets: {
             icecreamswap: true,
@@ -5471,7 +5516,9 @@
         deprecated: false,
         safeReorgDistance: 90000,
         blockAid: "",
-        externalId: {},
+        externalId: {
+            coingecko: "telos",
+        },
         markets: {
             openocean: "telos",
             icecreamswap: true,
@@ -5668,6 +5715,7 @@
         blockAid: "unichain",
         externalId: {
             tenderly: "true",
+            coingecko: "unichain",
         },
         markets: {
             icecreamswap: true,
@@ -5812,6 +5860,7 @@
         blockAid: "",
         externalId: {
             tenderly: "true",
+            coingecko: "world-chain",
         },
         markets: {
             zeroex: true,
@@ -5913,7 +5962,9 @@
         deprecated: false,
         safeReorgDistance: 90000,
         blockAid: "",
-        externalId: {},
+        externalId: {
+            coingecko: "xdc-network",
+        },
         markets: {
             icecreamswap: true,
         },
@@ -6030,6 +6081,7 @@
         blockAid: "",
         externalId: {
             tenderly: "true",
+            coingecko: "0g",
         },
         markets: {},
         bridges: {
@@ -6114,6 +6166,7 @@
         morpho: {},
         externalId: {
             zerion: "polygon-zkevm",
+            coingecko: "polygon-zkevm",
         },
         markets: {
             kyberswap: "polygon-zkevm",
@@ -6228,6 +6281,7 @@
         externalId: {
             zerion: "zksync-era",
             tenderly: "true",
+            coingecko: "zksync",
         },
         markets: {
             kyberswap: "zksync",

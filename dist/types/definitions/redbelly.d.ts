@@ -8,7 +8,9 @@ export declare const redbelly: Readonly<{
     deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
-    externalId: {};
+    externalId: {
+        coingecko: string;
+    };
     markets: {};
     bridges: {};
     oracles: {};

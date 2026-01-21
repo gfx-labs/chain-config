@@ -23,7 +23,8 @@ var PolygonZkevm Network = Network{
 	TransactionType: "legacy",
 	InitCodeHash:    common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId: map[string]string{
-		"zerion": "polygon-zkevm",
+		"zerion":    "polygon-zkevm",
+		"coingecko": "polygon-zkevm",
 	},
 	DefaultToken0: common.HexToAddress("0x4f9a0e7fd2bf6067db6994cf12e4495df938e6e9"),
 	DefaultToken1: common.HexToAddress("0x37eaa0ef3549a5bb7d431be78a3d99bd360d19e5"),

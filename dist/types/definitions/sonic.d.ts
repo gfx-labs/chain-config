@@ -10,6 +10,7 @@ export declare const sonic: Readonly<{
     morpho: {};
     externalId: {
         tenderly: string;
+        coingecko: string;
     };
     markets: {
         icecreamswap: true;

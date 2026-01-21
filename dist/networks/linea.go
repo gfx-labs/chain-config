@@ -23,8 +23,9 @@ var Linea Network = Network{
 	TransactionType: "eip1559",
 	InitCodeHash:    common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId: map[string]string{
-		"zerion":   "linea",
-		"tenderly": "true",
+		"zerion":    "linea",
+		"tenderly":  "true",
+		"coingecko": "linea",
 	},
 	DefaultToken0: common.HexToAddress("0x176211869ca2b568f2a7d4ee941e073a821ee1ff"),
 	DefaultToken1: common.HexToAddress("0xe5d7c2a44ffddf6b295a15c148167daaaf5cf34f"),

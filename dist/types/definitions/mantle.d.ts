@@ -10,6 +10,7 @@ export declare const mantle: Readonly<{
     blockAid: "";
     externalId: {
         tenderly: string;
+        coingecko: string;
     };
     morpho: {};
     markets: {

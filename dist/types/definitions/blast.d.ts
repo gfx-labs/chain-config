@@ -10,6 +10,7 @@ export declare const blast: Readonly<{
     externalId: {
         zerion: string;
         tenderly: string;
+        coingecko: string;
     };
     morpho: {};
     markets: {

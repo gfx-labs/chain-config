@@ -16,6 +16,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
         debank: string;
         cowswap: string;
         tenderly: string;
+        coingecko: string;
     };
     markets: {
         kyberswap: string;
@@ -228,6 +229,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
         debank: string;
         cowswap: string;
         tenderly: string;
+        coingecko: string;
     };
     markets: {
         kyberswap: string;
@@ -685,6 +687,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     externalId: {
         debank: string;
         tenderly: string;
+        coingecko: string;
     };
     morpho: {};
     markets: {
@@ -822,6 +825,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     externalId: {
         zerion: string;
         tenderly: string;
+        coingecko: string;
     };
     morpho: {};
     markets: {
@@ -1235,6 +1239,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
         debank: string;
         tenderly: string;
         cowswap: string;
+        coingecko: string;
     };
     morpho: {};
     markets: {
@@ -1433,7 +1438,9 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     };
     logoUrl: "https://cms.oku.trade/cdn/public/chains/filecoin-logo.svg";
     deprecated: false;
-    externalId: {};
+    externalId: {
+        coingecko: string;
+    };
     markets: {};
     bridges: {};
     oracles: {
@@ -1568,6 +1575,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
         debank: string;
         cowswap: string;
         tenderly: string;
+        coingecko: string;
     };
     rpcUrls: {
         default: {
@@ -1778,6 +1786,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     externalId: {
         debank: string;
         tenderly: string;
+        coingecko: string;
     };
     morpho: {};
     markets: {
@@ -1928,6 +1937,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
         zerion: string;
         debank: string;
         tenderly: string;
+        coingecko: string;
     };
     morpho: {
         deployBlock: number;
@@ -2410,6 +2420,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
         zerion: string;
         debank: string;
         tenderly: string;
+        coingecko: string;
     };
     morpho: {};
     markets: {
@@ -2603,7 +2614,9 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
-    externalId: {};
+    externalId: {
+        coingecko: string;
+    };
     markets: {
         openocean: string;
         icecreamswap: true;
@@ -2762,6 +2775,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     externalId: {
         zerion: string;
         tenderly: string;
+        coingecko: string;
     };
     morpho: {};
     markets: {
@@ -2928,6 +2942,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     morpho: {};
     externalId: {
         zerion: string;
+        coingecko: string;
     };
     markets: {
         kyberswap: string;
@@ -3070,6 +3085,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     externalId: {
         zerion: string;
         tenderly: string;
+        coingecko: string;
     };
     markets: {
         kyberswap: string;
@@ -3612,7 +3628,9 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     deprecated: true;
     safeReorgDistance: 90000;
     blockAid: "";
-    externalId: {};
+    externalId: {
+        coingecko: string;
+    };
     morpho: {};
     markets: {
         openocean: string;
@@ -3752,6 +3770,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     externalId: {
         zerion: string;
         tenderly: string;
+        coingecko: string;
     };
     markets: {
         kyberswap: string;
@@ -3924,6 +3943,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     blockAid: "";
     externalId: {
         tenderly: string;
+        coingecko: string;
     };
     markets: {
         icecreamswap: true;
@@ -4079,6 +4099,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     blockAid: "";
     externalId: {
         tenderly: string;
+        coingecko: string;
     };
     morpho: {};
     markets: {
@@ -4233,6 +4254,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     blockAid: "";
     externalId: {
         tenderly: string;
+        coingecko: string;
     };
     markets: {
         openocean: string;
@@ -4402,6 +4424,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     blockAid: "";
     externalId: {
         tenderly: string;
+        coingecko: string;
     };
     morpho: {};
     markets: {};
@@ -4788,6 +4811,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     blockAid: "";
     externalId: {
         tenderly: string;
+        coingecko: string;
     };
     markets: {
         icecreamswap: true;
@@ -5198,6 +5222,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
         zerion: string;
         cowswap: string;
         tenderly: string;
+        coingecko: string;
     };
     markets: {
         openocean: string;
@@ -5759,6 +5784,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     blockAid: "";
     externalId: {
         tenderly: string;
+        coingecko: string;
     };
     markets: {};
     bridges: {
@@ -5895,6 +5921,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     morpho: {};
     externalId: {
         tenderly: string;
+        coingecko: string;
     };
     markets: {
         icecreamswap: true;
@@ -6049,7 +6076,9 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
-    externalId: {};
+    externalId: {
+        coingecko: string;
+    };
     markets: {
         icecreamswap: true;
         openocean: string;
@@ -7041,7 +7070,9 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
-    externalId: {};
+    externalId: {
+        coingecko: string;
+    };
     markets: {
         icecreamswap: true;
     };
@@ -7184,7 +7215,9 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
-    externalId: {};
+    externalId: {
+        coingecko: string;
+    };
     markets: {
         openocean: string;
         icecreamswap: true;
@@ -7325,7 +7358,9 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
-    externalId: {};
+    externalId: {
+        coingecko: string;
+    };
     markets: {};
     bridges: {};
     oracles: {};
@@ -7446,7 +7481,9 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
-    externalId: {};
+    externalId: {
+        coingecko: string;
+    };
     markets: {};
     bridges: {
         stargate: {
@@ -7570,7 +7607,9 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
-    externalId: {};
+    externalId: {
+        coingecko: string;
+    };
     markets: {};
     bridges: {};
     oracles: {};
@@ -7688,7 +7727,9 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     safeReorgDistance: 90000;
     blockAid: "";
     morpho: {};
-    externalId: {};
+    externalId: {
+        coingecko: string;
+    };
     markets: {
         icecreamswap: true;
     };
@@ -7823,6 +7864,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     blockAid: "";
     externalId: {
         tenderly: string;
+        coingecko: string;
     };
     markets: {
         zeroex: true;
@@ -8238,7 +8280,9 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
-    externalId: {};
+    externalId: {
+        coingecko: string;
+    };
     markets: {
         icecreamswap: true;
     };
@@ -8707,6 +8751,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     blockAid: "";
     externalId: {
         tenderly: string;
+        coingecko: string;
     };
     markets: {
         kyberswap: string;
@@ -8852,6 +8897,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     blockAid: "unichain";
     externalId: {
         tenderly: string;
+        coingecko: string;
     };
     markets: {
         icecreamswap: true;
@@ -9381,7 +9427,9 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
-    externalId: {};
+    externalId: {
+        coingecko: string;
+    };
     markets: {
         zeroex: true;
         kyberswap: string;
@@ -9503,6 +9551,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     blockAid: "";
     externalId: {
         tenderly: string;
+        coingecko: string;
     };
     markets: {};
     bridges: {
@@ -9624,6 +9673,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
         zerion: string;
         debank: string;
         tenderly: string;
+        coingecko: string;
     };
     markets: {
         openocean: string;
@@ -9766,6 +9816,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     blockAid: "";
     externalId: {
         tenderly: string;
+        coingecko: string;
     };
     markets: {};
     bridges: {
@@ -9894,6 +9945,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     blockAid: "";
     externalId: {
         tenderly: string;
+        coingecko: string;
     };
     markets: {
         openocean: string;
@@ -10037,7 +10089,9 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
-    externalId: {};
+    externalId: {
+        coingecko: string;
+    };
     liteChain: true;
     markets: {
         openocean: string;

@@ -7,7 +7,9 @@ export declare const hemi: Readonly<{
     deprecated: false;
     safeReorgDistance: 90000;
     blockAid: "";
-    externalId: {};
+    externalId: {
+        coingecko: string;
+    };
     markets: {
         icecreamswap: true;
     };

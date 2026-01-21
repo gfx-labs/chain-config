@@ -14,6 +14,7 @@ export declare const arbitrum: Readonly<{
         debank: string;
         cowswap: string;
         tenderly: string;
+        coingecko: string;
     };
     markets: {
         kyberswap: string;
