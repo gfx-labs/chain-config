@@ -11,7 +11,9 @@ export const telos = makeConfig({
 	deprecated: false,
 	safeReorgDistance: 90000,
 	blockAid: "",
-	externalId: {},
+	externalId: {
+		coingecko: "telos",
+	},
 	markets: {
 		openocean: "telos",
 		icecreamswap: true,

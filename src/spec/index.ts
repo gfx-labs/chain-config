@@ -195,6 +195,7 @@ export interface IChainInfo<
 		debank?: string;
 		cowswap?: string;
 		tenderly?: string;
+		coingecko?: string;
 	};
 	markets: Markets;
 	bridges: Bridges;

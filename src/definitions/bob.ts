@@ -13,6 +13,7 @@ export const bob = makeConfig({
 	blockAid: "",
 	externalId: {
 		tenderly: "true",
+		coingecko: "bob-network",
 	},
 	markets: {
 		icecreamswap: true,
@@ -31,7 +32,7 @@ export const bob = makeConfig({
 	morpho: {},
 	oracles: {
 		coingecko: {
-			slug: "bob",
+			slug: "bob-network",
 			native: "ethereum",
 		},
 	},

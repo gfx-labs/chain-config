@@ -15,6 +15,7 @@ export const taiko = makeConfig({
 	blockAid: "",
 	externalId: {
 		tenderly: "true",
+		coingecko: "taiko",
 	},
 	markets: {
 		icecreamswap: true,

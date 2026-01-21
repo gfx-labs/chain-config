@@ -18,6 +18,7 @@ export const arbitrum = makeConfig({
 		debank: "arb",
 		cowswap: "arbitrum_one",
 		tenderly: "true",
+		coingecko: "arbitrum-one",
 	},
 	markets: {
 		kyberswap: "arbitrum",

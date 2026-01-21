@@ -18,6 +18,7 @@ export const avalanche = makeConfig({
 		zerion: "avalanche",
 		debank: "avax",
 		tenderly: "true",
+		coingecko: "avalanche",
 	},
 	markets: {
 		openocean: "avax",

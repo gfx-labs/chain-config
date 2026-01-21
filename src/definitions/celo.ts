@@ -11,7 +11,9 @@ export const celo = makeConfig({
 	deprecated: false,
 	safeReorgDistance: 90000,
 	blockAid: "",
-	externalId: {},
+	externalId: {
+		coingecko: "celo",
+	},
 	markets: {
 		icecreamswap: true,
 		openocean: "celo",

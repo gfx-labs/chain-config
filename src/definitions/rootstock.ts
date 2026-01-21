@@ -14,7 +14,9 @@ export const rootstock = makeConfig({
 	deprecated: false,
 	safeReorgDistance: 90000,
 	blockAid: "",
-	externalId: {},
+	externalId: {
+		coingecko: "rootstock",
+	},
 	markets: {
 		openocean: "rootstock",
 		icecreamswap: true,

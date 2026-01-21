@@ -12,7 +12,9 @@ export const goat = makeConfig({
 	deprecated: false,
 	safeReorgDistance: 90000,
 	blockAid: "",
-	externalId: {},
+	externalId: {
+		coingecko: "goat",
+	},
 	markets: {},
 	bridges: {
 		stargate: {

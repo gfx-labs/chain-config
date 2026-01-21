@@ -14,6 +14,7 @@ export const zerog = makeConfig({
 	blockAid: "",
 	externalId: {
 		tenderly: "true",
+		coingecko: "0g",
 	},
 	markets: {},
 	bridges: {

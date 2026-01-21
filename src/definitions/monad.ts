@@ -14,6 +14,7 @@ export const monad = makeConfig({
 	blockAid: "",
 	externalId: {
 		tenderly: "true",
+		coingecko: "monad",
 	},
 	markets: {
 		openocean: "monad",

@@ -26,6 +26,7 @@ export const base = makeConfig({
 		debank: "base",
 		cowswap: "base",
 		tenderly: "true",
+		coingecko: "base",
 	},
 	markets: {
 		kyberswap: "base",

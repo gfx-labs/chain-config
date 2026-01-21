@@ -15,6 +15,7 @@ export const worldchain = makeConfig({
 	blockAid: "",
 	externalId: {
 		tenderly: "true",
+		coingecko: "world-chain",
 	},
 	markets: {
 		zeroex: true,

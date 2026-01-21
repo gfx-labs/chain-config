@@ -17,7 +17,9 @@ export const xdc = makeConfig({
 	deprecated: false,
 	safeReorgDistance: 90000,
 	blockAid: "",
-	externalId: {},
+	externalId: {
+		coingecko: "xdc-network",
+	},
 	markets: {
 		icecreamswap: true,
 	},

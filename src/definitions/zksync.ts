@@ -15,6 +15,7 @@ export const zkSync = makeConfig({
 	externalId: {
 		zerion: "zksync-era",
 		tenderly: "true",
+		coingecko: "zksync",
 	},
 	markets: {
 		kyberswap: "zksync",

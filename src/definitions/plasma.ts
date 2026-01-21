@@ -12,7 +12,9 @@ export const plasma = makeConfig({
 	deprecated: false,
 	safeReorgDistance: 90000,
 	blockAid: "",
-	externalId: {},
+	externalId: {
+		coingecko: "plasma",
+	},
 	markets: {
 		zeroex: true,
 		kyberswap: "plasma",

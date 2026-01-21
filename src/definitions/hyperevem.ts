@@ -12,7 +12,9 @@ export const hyperevm = makeConfig({
 	deprecated: false,
 	safeReorgDistance: 90000,
 	blockAid: "",
-	externalId: {},
+	externalId: {
+		coingecko: "hyperevm",
+	},
 	liteChain: true,
 	markets: {
 		openocean: "hyperevm",

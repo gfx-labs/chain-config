@@ -14,6 +14,7 @@ export const unichain = makeConfig({
 	blockAid: "unichain",
 	externalId: {
 		tenderly: "true",
+		coingecko: "unichain",
 	},
 	markets: {
 		icecreamswap: true,
