@@ -84,6 +84,7 @@ var Ethereum Network = Network{
 		PositionManager: common.HexToAddress("0xbd216513d74c8cf14cf4747e6aaa6420ff64ee9e"),
 		UniversalRouter: common.HexToAddress("0x66a9893cc07d91d95644aedd05d03f95e1dba8af"),
 		Permit2:         common.HexToAddress("0x000000000022D473030F116dDEE9F6B43aC78BA3"),
+		DefaultPool:     common.HexToAddress("0x0000000000000000000000000000000000000000"),
 	},
 	Morpho: MorphoMetadata{
 		DeployBlock:     13977148,

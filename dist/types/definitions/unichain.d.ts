@@ -70,6 +70,7 @@ export declare const unichain: Readonly<{
         positionManager: "0x4529a01c7a0410167c5740c487a8de60232617bf";
         universalRouter: "0xef740bf23acae26f6492b10de645d6b98dc8eaf3";
         permit2: "0x000000000022D473030F116dDEE9F6B43aC78BA3";
+        defaultPool: "0x3258f413c7a88cda2fa8709a589d221a80f6574f63df5a5b6774485d8acc39d9";
     };
     token: {
         wethAddress: "0x4200000000000000000000000000000000000006";
