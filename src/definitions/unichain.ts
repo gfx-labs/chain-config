@@ -86,6 +86,7 @@ export const unichain = makeConfig({
 		permit2: "0x000000000022D473030F116dDEE9F6B43aC78BA3",
 		defaultPool:
 			"0x3258f413c7a88cda2fa8709a589d221a80f6574f63df5a5b6774485d8acc39d9",
+		stateView: "0x86e8631a016f9068c3f085faf484ee3f5fdee8f2",
 	},
 	token: {
 		wethAddress: "0x4200000000000000000000000000000000000006",
