@@ -2775,6 +2775,7 @@ const mainnet = makeConfig({
         universalRouter: "0x66a9893cc07d91d95644aedd05d03f95e1dba8af",
         permit2: "0x000000000022D473030F116dDEE9F6B43aC78BA3",
         defaultPool: viem.zeroAddress,
+        stateView: "0x7ffe42c4a5deea5b0fec41c94c136cf115597227",
     },
     uniswap: {
         deployBlock: 12369621,
@@ -5784,6 +5785,7 @@ const unichain = makeConfig({
         universalRouter: "0xef740bf23acae26f6492b10de645d6b98dc8eaf3",
         permit2: "0x000000000022D473030F116dDEE9F6B43aC78BA3",
         defaultPool: "0x3258f413c7a88cda2fa8709a589d221a80f6574f63df5a5b6774485d8acc39d9",
+        stateView: "0x86e8631a016f9068c3f085faf484ee3f5fdee8f2",
     },
     token: {
         wethAddress: "0x4200000000000000000000000000000000000006",

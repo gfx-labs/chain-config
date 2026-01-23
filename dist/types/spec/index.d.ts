@@ -43,6 +43,7 @@ export interface UniswapV4Metadata {
     universalRouter: Address;
     permit2: Address;
     defaultPool: Address;
+    stateView: Address;
 }
 export interface OkuPricingMetadata {
     nativeWrappedToken?: Address;

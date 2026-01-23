@@ -454,4 +454,5 @@ type UniswapV4Metadata struct {
 	UniversalRouter common.Address
 	Permit2         common.Address
 	DefaultPool     common.Address
+	StateView       common.Address
 }

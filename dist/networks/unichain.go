@@ -68,6 +68,7 @@ var Unichain Network = Network{
 		UniversalRouter: common.HexToAddress("0xef740bf23acae26f6492b10de645d6b98dc8eaf3"),
 		Permit2:         common.HexToAddress("0x000000000022D473030F116dDEE9F6B43aC78BA3"),
 		DefaultPool:     "0x3258f413c7a88cda2fa8709a589d221a80f6574f63df5a5b6774485d8acc39d9",
+		StateView:       common.HexToAddress("0x86e8631a016f9068c3f085faf484ee3f5fdee8f2"),
 	},
 	Morpho: MorphoMetadata{},
 	Token: TokenMetadata{
