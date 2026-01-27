@@ -2771,7 +2771,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     transactionType: "eip1559";
     blockTimeSeconds: 3;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/scroll-logo.svg";
-    deprecated: false;
+    deprecated: true;
     safeReorgDistance: 90000;
     blockAid: "scroll";
     externalId: {
@@ -3080,7 +3080,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     launchTime: 1696514400;
     transactionType: "eip1559";
     logoUrl: "https://cms.oku.trade/cdn/public/chains/zksync-logo.svg";
-    deprecated: false;
+    deprecated: true;
     safeReorgDistance: 90000;
     blockAid: "zksync";
     morpho: {};
@@ -3940,7 +3940,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     transactionType: "eip1559";
     sortIndex: 36;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/taiko-logo.svg";
-    deprecated: false;
+    deprecated: true;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {
@@ -5917,7 +5917,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     transactionType: "eip1559";
     sortIndex: 33;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/sonic-logo.svg";
-    deprecated: false;
+    deprecated: true;
     safeReorgDistance: 90000;
     blockAid: "";
     morpho: {};

@@ -4,7 +4,7 @@ export declare const sonic: Readonly<{
     transactionType: "eip1559";
     sortIndex: 33;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/sonic-logo.svg";
-    deprecated: false;
+    deprecated: true;
     safeReorgDistance: 90000;
     blockAid: "";
     morpho: {};

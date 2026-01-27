@@ -7,7 +7,7 @@ import (
 var Taiko Network = Network{
 	ChainId:           167000,
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/taiko-logo.svg",
-	Deprecated:        false,
+	Deprecated:        true,
 	LiteChain:         false,
 	SortIndex:         36,
 	LaunchTime:        1717509600,
