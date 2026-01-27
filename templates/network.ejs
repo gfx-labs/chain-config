@@ -77,7 +77,7 @@ var <%- helpers.snakeToCamel(chainName) %> Network = Network{
     <%- h.snakeToCamel(prop[0]) %>: <%- h.formatValue(prop[1], h.isString(prop[1]) ? (h.isAddress(prop[1]) ? "a" : "s") : "n") %> , <% } %>
   },
   <% if (univ4) { %>Uniswapv4:          UniswapV4Metadata{ <% for(const prop of Object.entries(univ4)) {%>
-    <%- h.snakeToCamel(prop[0]) %>: <%- h.formatValue(prop[1], h.isString(prop[1]) ? (h.isAddress(prop[1]) ? "a" : "s") : "n") %> , <% } %>
+    <%- h.snakeToCamel(prop[0]) %>: <%- h.formatValue(prop[1], h.isString(prop[1]) ? (h.isAddress(prop[1]) ? "a" : (h.isHash(prop[1]) ? "h" : "s")) : "n") %> , <% } %>
   },<% } %>
   Morpho:          MorphoMetadata{ <% for(const prop of Object.entries(morpho)) {%>
     <%- h.snakeToCamel(prop[0]) %>: <%- h.formatValue(prop[1], h.isString(prop[1]) ? (h.isAddress(prop[1]) ? "a" : "s") : "n") %> , <% } %>

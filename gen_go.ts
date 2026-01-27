@@ -51,6 +51,10 @@ const toAddr = (x: string) => {
   return `common.HexToAddress("${x}")`;
 };
 
+const toHash = (x: string) => {
+  return `common.HexToHash("${x}")`;
+};
+
 const getPropType = (x: morph.PropertySignature): string => {
   const type = x.getType();
   const nodeType = x.getTypeNode()?.getText();
@@ -129,6 +133,8 @@ const displayProp = (x: morph.PropertySignature) => {
 const formatValue = (x: any, hint: string) => {
   if (hint === "a" || hint === "addr" || hint === "address") {
     return toAddr(`${x}`);
+  } else if (hint === "h" || hint === "hash") {
+    return toHash(`${x}`);
   } else if (hint === "s" || hint === "str" || hint === "string") {
     return `"${x}"`;
   } else if (hint === "n" || hint === "num") {
@@ -148,15 +154,21 @@ const isAddress = (x: any) => {
   return typeof x === "string" && /^0x[a-fA-F0-9]{40}$/.test(x);
 };
 
+const isHash = (x: any) => {
+  return typeof x === "string" && /^0x[a-fA-F0-9]{64}$/.test(x);
+};
+
 const helpers = {
   formatValue,
   isString,
   isAddress,
+  isHash,
   clean,
   snakeToCamel,
   toCamel: snakeToCamel,
   displayProp,
   toAddr,
+  toHash,
 };
 
 const output = ejs.render(networksString.toString(), {
