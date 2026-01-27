@@ -42,7 +42,7 @@ export interface UniswapV4Metadata {
     positionManager: Address;
     universalRouter: Address;
     permit2: Address;
-    defaultPool: Address;
+    defaultPool: Hash;
     stateView: Address;
 }
 export interface OkuPricingMetadata {

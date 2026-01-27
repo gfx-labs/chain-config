@@ -453,6 +453,6 @@ type UniswapV4Metadata struct {
 	PositionManager common.Address
 	UniversalRouter common.Address
 	Permit2         common.Address
-	DefaultPool     common.Address
+	DefaultPool     common.Hash
 	StateView       common.Address
 }
