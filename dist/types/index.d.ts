@@ -1653,7 +1653,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
         positionManager: "0xbd216513d74c8cf14cf4747e6aaa6420ff64ee9e";
         universalRouter: "0x66a9893cc07d91d95644aedd05d03f95e1dba8af";
         permit2: "0x000000000022D473030F116dDEE9F6B43aC78BA3";
-        defaultPool: "0x0000000000000000000000000000000000000000";
+        defaultPool: "0x0000000000000000000000000000000000000000000000000000000000000000";
         stateView: "0x7ffe42c4a5deea5b0fec41c94c136cf115597227";
     };
     uniswap: {
