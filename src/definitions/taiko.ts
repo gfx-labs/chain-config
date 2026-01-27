@@ -10,7 +10,7 @@ export const taiko = makeConfig({
 	transactionType: "eip1559",
 	sortIndex: 36,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/taiko-logo.svg",
-	deprecated: false,
+	deprecated: true,
 	safeReorgDistance: 90000,
 	blockAid: "",
 	externalId: {
