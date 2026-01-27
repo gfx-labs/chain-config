@@ -1,6 +1,6 @@
 import { mainnet as chain } from "viem/chains";
 import { makeConfig } from "../util";
-import { zeroAddress } from "viem";
+import { zeroAddress, zeroHash } from "viem";
 
 export const mainnet = makeConfig({
 	...chain,
@@ -142,7 +142,7 @@ export const mainnet = makeConfig({
 		positionManager: "0xbd216513d74c8cf14cf4747e6aaa6420ff64ee9e",
 		universalRouter: "0x66a9893cc07d91d95644aedd05d03f95e1dba8af",
 		permit2: "0x000000000022D473030F116dDEE9F6B43aC78BA3",
-		defaultPool: zeroAddress,
+		defaultPool: zeroHash,
 		stateView: "0x7ffe42c4a5deea5b0fec41c94c136cf115597227",
 	},
 	uniswap: {
