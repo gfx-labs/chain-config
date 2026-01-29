@@ -9,6 +9,10 @@ export const base = makeConfig({
 	blockTimeSeconds: 2,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/base-logo.svg",
 	deprecated: false,
+
+	estimatedSwapGas: 300_000,
+	estimatedBridgeGas: 200_000,
+	estimatedWrapGas: 60_000,
 	blockAid: "base",
 	defaultPool: "0xd0b53d9277642d899df5c87a3966a349a798f224",
 	defaultToken0: "0x4200000000000000000000000000000000000006",

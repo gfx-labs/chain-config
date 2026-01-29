@@ -5,6 +5,9 @@ export declare const lisk: Readonly<{
     sortIndex: 43;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/lisk-logo.png";
     deprecated: true;
+    estimatedSwapGas: 300000;
+    estimatedBridgeGas: 200000;
+    estimatedWrapGas: 60000;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {

@@ -9,6 +9,10 @@ export const celo = makeConfig({
 	sortIndex: 10,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/celo-logo.svg",
 	deprecated: false,
+
+	estimatedSwapGas: 300_000,
+	estimatedBridgeGas: 200_000,
+	estimatedWrapGas: 60_000,
 	safeReorgDistance: 90000,
 	blockAid: "",
 	externalId: {

@@ -7,6 +7,9 @@ export declare const tronShasta: Readonly<{
     blockAid: "";
     logoUrl: "https://cms.oku.trade/cdn/public/chains/tron.png";
     deprecated: true;
+    estimatedSwapGas: 300000;
+    estimatedBridgeGas: 200000;
+    estimatedWrapGas: 60000;
     safeReorgDistance: 90000;
     externalId: {};
     markets: {};

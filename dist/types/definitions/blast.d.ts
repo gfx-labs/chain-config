@@ -5,6 +5,9 @@ export declare const blast: Readonly<{
     sortIndex: 40;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/blast-logo.svg";
     deprecated: true;
+    estimatedSwapGas: 300000;
+    estimatedBridgeGas: 200000;
+    estimatedWrapGas: 60000;
     safeReorgDistance: 90000;
     blockAid: "blast";
     externalId: {

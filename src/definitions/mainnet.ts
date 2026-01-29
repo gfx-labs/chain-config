@@ -13,6 +13,10 @@ export const mainnet = makeConfig({
 	safeReorgDistance: 90_000,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/ethereum-logo.webp",
 	deprecated: false,
+
+	estimatedSwapGas: 300_000,
+	estimatedBridgeGas: 200_000,
+	estimatedWrapGas: 60_000,
 	blockAid: "ethereum",
 	morpho: {
 		deployBlock: 13977148,

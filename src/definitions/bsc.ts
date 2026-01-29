@@ -12,6 +12,10 @@ export const bsc = makeConfig({
 	blockTimeSeconds: 3,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/bsc-logo.svg",
 	deprecated: false,
+
+	estimatedSwapGas: 300_000,
+	estimatedBridgeGas: 200_000,
+	estimatedWrapGas: 60_000,
 	safeReorgDistance: 90000,
 	blockAid: "bsc",
 	externalId: {
@@ -35,7 +39,7 @@ export const bsc = makeConfig({
 		openocean: "bsc",
 		zeroex: true,
 		icecreamswap: true,
-		cowswap: "bnb"
+		cowswap: "bnb",
 	},
 	bridges: {
 		chainlink: {

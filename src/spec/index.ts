@@ -213,6 +213,9 @@ export interface IChainInfo<
 	oku: OkuMetadata;
 	deprecated: boolean;
 	liteChain?: boolean;
+	estimatedSwapGas: number;
+	estimatedBridgeGas: number;
+	estimatedWrapGas: number;
 
 	contracts: {
 		[key: string]: ChainContract | { [chainId: number]: ChainContract };

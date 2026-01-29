@@ -6,6 +6,9 @@ export declare const goat: Readonly<{
     sortIndex: 29;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/goat-logo.svg";
     deprecated: false;
+    estimatedSwapGas: 300000;
+    estimatedBridgeGas: 200000;
+    estimatedWrapGas: 60000;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {

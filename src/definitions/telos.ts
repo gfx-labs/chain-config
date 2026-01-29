@@ -9,6 +9,10 @@ export const telos = makeConfig({
 	sortIndex: 32,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/telos-logo.svg",
 	deprecated: false,
+
+	estimatedSwapGas: 300_000,
+	estimatedBridgeGas: 200_000,
+	estimatedWrapGas: 60_000,
 	safeReorgDistance: 90000,
 	blockAid: "",
 	externalId: {

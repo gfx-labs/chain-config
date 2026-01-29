@@ -8,6 +8,9 @@ export declare const linea: Readonly<{
     morpho: {};
     logoUrl: "https://cms.oku.trade/cdn/public/chains/linea-logo.svg";
     deprecated: false;
+    estimatedSwapGas: 300000;
+    estimatedBridgeGas: 200000;
+    estimatedWrapGas: 60000;
     safeReorgDistance: 100;
     blockAid: "linea";
     externalId: {

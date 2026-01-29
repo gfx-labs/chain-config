@@ -11,6 +11,9 @@ export declare const xdc: Readonly<{
     sortIndex: 15;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/xdc-logo.svg";
     deprecated: false;
+    estimatedSwapGas: 300000;
+    estimatedBridgeGas: 200000;
+    estimatedWrapGas: 60000;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {

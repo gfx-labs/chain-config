@@ -232,34 +232,37 @@ func NetworkByIdString(idString string) (*Network, error) {
 }
 
 type Network struct {
-	LogoUrl           string
-	LaunchTime        int64
-	NativeLogoUrl     string
-	SortIndex         int64
-	SafeReorgDistance int64
-	DefaultPool       common.Address
-	InternalName      string
-	TransactionType   string
-	DefaultToken0     common.Address
-	DefaultToken1     common.Address
-	BlockAid          string
-	TokenList         []any
-	Stables           []common.Address
-	Watchlist         []common.Address
-	ExternalId        map[string]string
-	Markets           Markets
-	Bridges           Bridges
-	Oracles           Oracles
-	InitCodeHash      common.Hash
-	BlockTimeSeconds  float64
-	Uniswap           UniswapMetadata
-	Uniswapv4         UniswapV4Metadata
-	Morpho            MorphoMetadata
-	Token             TokenMetadata
-	Oku               OkuMetadata
-	Deprecated        bool
-	LiteChain         bool
-	Contracts         map[string]ChainContract
+	LogoUrl            string
+	LaunchTime         int64
+	NativeLogoUrl      string
+	SortIndex          int64
+	SafeReorgDistance  int64
+	DefaultPool        common.Address
+	InternalName       string
+	TransactionType    string
+	DefaultToken0      common.Address
+	DefaultToken1      common.Address
+	BlockAid           string
+	TokenList          []any
+	Stables            []common.Address
+	Watchlist          []common.Address
+	ExternalId         map[string]string
+	Markets            Markets
+	Bridges            Bridges
+	Oracles            Oracles
+	InitCodeHash       common.Hash
+	BlockTimeSeconds   float64
+	Uniswap            UniswapMetadata
+	Uniswapv4          UniswapV4Metadata
+	Morpho             MorphoMetadata
+	Token              TokenMetadata
+	Oku                OkuMetadata
+	Deprecated         bool
+	LiteChain          bool
+	EstimatedSwapGas   int64
+	EstimatedBridgeGas int64
+	EstimatedWrapGas   int64
+	Contracts          map[string]ChainContract
 
 	ChainId        int `json:"chainId"`
 	BlockExplorers map[string]BlockExplorer

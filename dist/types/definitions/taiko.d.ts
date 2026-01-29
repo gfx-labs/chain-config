@@ -6,6 +6,9 @@ export declare const taiko: Readonly<{
     sortIndex: 36;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/taiko-logo.svg";
     deprecated: true;
+    estimatedSwapGas: 300000;
+    estimatedBridgeGas: 200000;
+    estimatedWrapGas: 60000;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {
