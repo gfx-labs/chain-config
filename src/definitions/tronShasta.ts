@@ -12,6 +12,10 @@ export const tronShasta = makeConfig({
 	blockAid: "",
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/tron.png",
 	deprecated: true,
+
+	estimatedSwapGas: 300_000,
+	estimatedBridgeGas: 200_000,
+	estimatedWrapGas: 60_000,
 	safeReorgDistance: 90000,
 	externalId: {},
 	markets: {},

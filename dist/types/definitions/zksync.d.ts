@@ -5,6 +5,9 @@ export declare const zkSync: Readonly<{
     transactionType: "eip1559";
     logoUrl: "https://cms.oku.trade/cdn/public/chains/zksync-logo.svg";
     deprecated: true;
+    estimatedSwapGas: 1000000;
+    estimatedBridgeGas: 600000;
+    estimatedWrapGas: 200000;
     safeReorgDistance: 90000;
     blockAid: "zksync";
     morpho: {};

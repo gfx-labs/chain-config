@@ -11,6 +11,10 @@ export const avalanche = makeConfig({
 	sortIndex: 17,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/avalanche-logo.svg",
 	deprecated: false,
+
+	estimatedSwapGas: 300_000,
+	estimatedBridgeGas: 200_000,
+	estimatedWrapGas: 60_000,
 	liteChain: true,
 	safeReorgDistance: 90000,
 	blockAid: "",

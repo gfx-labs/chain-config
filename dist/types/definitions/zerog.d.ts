@@ -6,6 +6,9 @@ export declare const zerog: Readonly<{
     sortIndex: 44;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/zerog-logo.svg";
     deprecated: false;
+    estimatedSwapGas: 300000;
+    estimatedBridgeGas: 200000;
+    estimatedWrapGas: 60000;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {

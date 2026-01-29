@@ -9,6 +9,10 @@ export const ronin = makeConfig({
 	sortIndex: 41,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/ronin-logo.svg",
 	deprecated: true,
+
+	estimatedSwapGas: 300_000,
+	estimatedBridgeGas: 200_000,
+	estimatedWrapGas: 60_000,
 	safeReorgDistance: 90000,
 	blockAid: "",
 	externalId: {

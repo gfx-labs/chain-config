@@ -7,6 +7,9 @@ export declare const mainnet: Readonly<{
     safeReorgDistance: 90000;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/ethereum-logo.webp";
     deprecated: false;
+    estimatedSwapGas: 300000;
+    estimatedBridgeGas: 200000;
+    estimatedWrapGas: 60000;
     blockAid: "ethereum";
     morpho: {
         deployBlock: number;

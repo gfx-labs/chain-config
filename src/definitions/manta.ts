@@ -12,6 +12,10 @@ export const manta = makeConfig({
 	sortIndex: 39,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/manta-logo.png",
 	deprecated: true,
+
+	estimatedSwapGas: 300_000,
+	estimatedBridgeGas: 200_000,
+	estimatedWrapGas: 60_000,
 	safeReorgDistance: 90000,
 	blockAid: "",
 	externalId: {

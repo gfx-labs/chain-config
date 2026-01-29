@@ -11,6 +11,10 @@ export const mantle = makeConfig({
 	sortIndex: 30,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/mantle-logo.svg",
 	deprecated: false,
+
+	estimatedSwapGas: 5_000_000,
+	estimatedBridgeGas: 3_000_000,
+	estimatedWrapGas: 500_000,
 	safeReorgDistance: 90000,
 	blockAid: "",
 	externalId: {

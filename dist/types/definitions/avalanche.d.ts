@@ -6,6 +6,9 @@ export declare const avalanche: Readonly<{
     sortIndex: 17;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/avalanche-logo.svg";
     deprecated: false;
+    estimatedSwapGas: 300000;
+    estimatedBridgeGas: 200000;
+    estimatedWrapGas: 60000;
     liteChain: true;
     safeReorgDistance: 90000;
     blockAid: "";

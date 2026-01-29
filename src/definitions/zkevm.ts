@@ -11,6 +11,10 @@ export const polygonZkEvm = makeConfig({
 	blockTimeSeconds: 7,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/zkevm-logo.svg",
 	deprecated: true,
+
+	estimatedSwapGas: 400_000,
+	estimatedBridgeGas: 250_000,
+	estimatedWrapGas: 80_000,
 	safeReorgDistance: 90000,
 	blockAid: "",
 	morpho: {},

@@ -6,6 +6,9 @@ export declare const lightlink: Readonly<{
     sortIndex: 24;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/lightlink-logo.svg";
     deprecated: false;
+    estimatedSwapGas: 300000;
+    estimatedBridgeGas: 200000;
+    estimatedWrapGas: 60000;
     safeReorgDistance: 90000;
     blockAid: "";
     morpho: {};

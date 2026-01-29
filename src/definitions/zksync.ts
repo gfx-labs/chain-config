@@ -9,6 +9,10 @@ export const zkSync = makeConfig({
 	transactionType: "eip1559",
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/zksync-logo.svg",
 	deprecated: true,
+
+	estimatedSwapGas: 1_000_000,
+	estimatedBridgeGas: 600_000,
+	estimatedWrapGas: 200_000,
 	safeReorgDistance: 90000,
 	blockAid: "zksync",
 	morpho: {},

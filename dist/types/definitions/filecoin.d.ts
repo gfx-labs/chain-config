@@ -27,6 +27,9 @@ export declare const filecoin: Readonly<{
     };
     logoUrl: "https://cms.oku.trade/cdn/public/chains/filecoin-logo.svg";
     deprecated: false;
+    estimatedSwapGas: 500000;
+    estimatedBridgeGas: 300000;
+    estimatedWrapGas: 100000;
     externalId: {
         coingecko: string;
     };

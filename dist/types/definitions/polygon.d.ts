@@ -6,6 +6,9 @@ export declare const polygon: Readonly<{
     sortIndex: 5;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/polygon-logo.svg";
     deprecated: false;
+    estimatedSwapGas: 300000;
+    estimatedBridgeGas: 200000;
+    estimatedWrapGas: 60000;
     safeReorgDistance: 90000;
     blockAid: "polygon";
     externalId: {

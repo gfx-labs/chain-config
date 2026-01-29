@@ -5,6 +5,9 @@ export declare const sonic: Readonly<{
     sortIndex: 33;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/sonic-logo.svg";
     deprecated: true;
+    estimatedSwapGas: 300000;
+    estimatedBridgeGas: 200000;
+    estimatedWrapGas: 60000;
     safeReorgDistance: 90000;
     blockAid: "";
     morpho: {};

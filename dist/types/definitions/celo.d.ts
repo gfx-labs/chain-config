@@ -5,6 +5,9 @@ export declare const celo: Readonly<{
     sortIndex: 10;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/celo-logo.svg";
     deprecated: false;
+    estimatedSwapGas: 300000;
+    estimatedBridgeGas: 200000;
+    estimatedWrapGas: 60000;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {

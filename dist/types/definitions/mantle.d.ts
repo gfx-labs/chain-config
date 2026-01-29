@@ -6,6 +6,9 @@ export declare const mantle: Readonly<{
     sortIndex: 30;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/mantle-logo.svg";
     deprecated: false;
+    estimatedSwapGas: 5000000;
+    estimatedBridgeGas: 3000000;
+    estimatedWrapGas: 500000;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {

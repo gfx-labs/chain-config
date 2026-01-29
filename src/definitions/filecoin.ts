@@ -32,6 +32,10 @@ export const filecoin = makeConfig({
 	},
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/filecoin-logo.svg",
 	deprecated: false,
+
+	estimatedSwapGas: 500_000,
+	estimatedBridgeGas: 300_000,
+	estimatedWrapGas: 100_000,
 	externalId: {
 		coingecko: "filecoin",
 	},

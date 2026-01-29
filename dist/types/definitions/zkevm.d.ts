@@ -6,6 +6,9 @@ export declare const polygonZkEvm: Readonly<{
     blockTimeSeconds: 7;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/zkevm-logo.svg";
     deprecated: true;
+    estimatedSwapGas: 400000;
+    estimatedBridgeGas: 250000;
+    estimatedWrapGas: 80000;
     safeReorgDistance: 90000;
     blockAid: "";
     morpho: {};

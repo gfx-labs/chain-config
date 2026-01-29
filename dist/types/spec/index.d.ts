@@ -193,6 +193,9 @@ export interface IChainInfo<formatters extends ChainFormatters | undefined = Cha
     oku: OkuMetadata;
     deprecated: boolean;
     liteChain?: boolean;
+    estimatedSwapGas: number;
+    estimatedBridgeGas: number;
+    estimatedWrapGas: number;
     contracts: {
         [key: string]: ChainContract | {
             [chainId: number]: ChainContract;

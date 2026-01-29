@@ -10,6 +10,10 @@ export const unichain = makeConfig({
 	sortIndex: 18,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/unichain-logo.svg",
 	deprecated: false,
+
+	estimatedSwapGas: 300_000,
+	estimatedBridgeGas: 200_000,
+	estimatedWrapGas: 60_000,
 	safeReorgDistance: 90000,
 	blockAid: "unichain",
 	externalId: {

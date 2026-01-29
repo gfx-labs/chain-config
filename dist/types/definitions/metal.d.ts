@@ -5,6 +5,9 @@ export declare const metal: Readonly<{
     sortIndex: 42;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/metal-logo.png";
     deprecated: true;
+    estimatedSwapGas: 300000;
+    estimatedBridgeGas: 200000;
+    estimatedWrapGas: 60000;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {};

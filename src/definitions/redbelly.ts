@@ -10,6 +10,10 @@ export const redbelly = makeConfig({
 	sortIndex: 27,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/redbelly-logo.svg",
 	deprecated: false,
+
+	estimatedSwapGas: 300_000,
+	estimatedBridgeGas: 200_000,
+	estimatedWrapGas: 60_000,
 	safeReorgDistance: 90000,
 	blockAid: "",
 	externalId: {

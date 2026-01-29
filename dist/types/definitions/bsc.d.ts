@@ -7,6 +7,9 @@ export declare const bsc: Readonly<{
     blockTimeSeconds: 3;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/bsc-logo.svg";
     deprecated: false;
+    estimatedSwapGas: 300000;
+    estimatedBridgeGas: 200000;
+    estimatedWrapGas: 60000;
     safeReorgDistance: 90000;
     blockAid: "bsc";
     externalId: {

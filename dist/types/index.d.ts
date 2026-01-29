@@ -8,6 +8,9 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     blockTimeSeconds: 0.25;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/arbitrum-logo.svg";
     deprecated: false;
+    estimatedSwapGas: 300000;
+    estimatedBridgeGas: 200000;
+    estimatedWrapGas: 60000;
     safeReorgDistance: number;
     blockAid: "arbitrum";
     morpho: {};
@@ -212,6 +215,9 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     blockTimeSeconds: 2;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/base-logo.svg";
     deprecated: false;
+    estimatedSwapGas: 300000;
+    estimatedBridgeGas: 200000;
+    estimatedWrapGas: 60000;
     blockAid: "base";
     defaultPool: "0xd0b53d9277642d899df5c87a3966a349a798f224";
     defaultToken0: "0x4200000000000000000000000000000000000006";
@@ -682,6 +688,9 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     blockTimeSeconds: 2;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/boba-logo.svg";
     deprecated: false;
+    estimatedSwapGas: 300000;
+    estimatedBridgeGas: 200000;
+    estimatedWrapGas: 60000;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {
@@ -820,6 +829,9 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     sortIndex: 40;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/blast-logo.svg";
     deprecated: true;
+    estimatedSwapGas: 300000;
+    estimatedBridgeGas: 200000;
+    estimatedWrapGas: 60000;
     safeReorgDistance: 90000;
     blockAid: "blast";
     externalId: {
@@ -1232,6 +1244,9 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     blockTimeSeconds: 3;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/bsc-logo.svg";
     deprecated: false;
+    estimatedSwapGas: 300000;
+    estimatedBridgeGas: 200000;
+    estimatedWrapGas: 60000;
     safeReorgDistance: 90000;
     blockAid: "bsc";
     externalId: {
@@ -1438,6 +1453,9 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     };
     logoUrl: "https://cms.oku.trade/cdn/public/chains/filecoin-logo.svg";
     deprecated: false;
+    estimatedSwapGas: 500000;
+    estimatedBridgeGas: 300000;
+    estimatedWrapGas: 100000;
     externalId: {
         coingecko: string;
     };
@@ -1562,6 +1580,9 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     safeReorgDistance: 90000;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/ethereum-logo.webp";
     deprecated: false;
+    estimatedSwapGas: 300000;
+    estimatedBridgeGas: 200000;
+    estimatedWrapGas: 60000;
     blockAid: "ethereum";
     morpho: {
         deployBlock: number;
@@ -1783,6 +1804,9 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     blockTimeSeconds: 30;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/moonbeam-logo.svg";
     deprecated: true;
+    estimatedSwapGas: 300000;
+    estimatedBridgeGas: 200000;
+    estimatedWrapGas: 60000;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {
@@ -1933,6 +1957,9 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     sortIndex: 8;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/optimism-logo.svg";
     deprecated: false;
+    estimatedSwapGas: 300000;
+    estimatedBridgeGas: 200000;
+    estimatedWrapGas: 60000;
     safeReorgDistance: 90000;
     blockAid: "optimism";
     externalId: {
@@ -2416,6 +2443,9 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     sortIndex: 5;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/polygon-logo.svg";
     deprecated: false;
+    estimatedSwapGas: 300000;
+    estimatedBridgeGas: 200000;
+    estimatedWrapGas: 60000;
     safeReorgDistance: 90000;
     blockAid: "polygon";
     externalId: {
@@ -2614,6 +2644,9 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     blockTimeSeconds: 33;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/rootstock-logo.svg";
     deprecated: false;
+    estimatedSwapGas: 300000;
+    estimatedBridgeGas: 200000;
+    estimatedWrapGas: 60000;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {
@@ -2772,6 +2805,9 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     blockTimeSeconds: 3;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/scroll-logo.svg";
     deprecated: true;
+    estimatedSwapGas: 300000;
+    estimatedBridgeGas: 200000;
+    estimatedWrapGas: 60000;
     safeReorgDistance: 90000;
     blockAid: "scroll";
     externalId: {
@@ -2939,6 +2975,9 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     blockTimeSeconds: 7;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/zkevm-logo.svg";
     deprecated: true;
+    estimatedSwapGas: 400000;
+    estimatedBridgeGas: 250000;
+    estimatedWrapGas: 80000;
     safeReorgDistance: 90000;
     blockAid: "";
     morpho: {};
@@ -3081,6 +3120,9 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     transactionType: "eip1559";
     logoUrl: "https://cms.oku.trade/cdn/public/chains/zksync-logo.svg";
     deprecated: true;
+    estimatedSwapGas: 1000000;
+    estimatedBridgeGas: 600000;
+    estimatedWrapGas: 200000;
     safeReorgDistance: 90000;
     blockAid: "zksync";
     morpho: {};
@@ -3628,6 +3670,9 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     sortIndex: 39;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/manta-logo.png";
     deprecated: true;
+    estimatedSwapGas: 300000;
+    estimatedBridgeGas: 200000;
+    estimatedWrapGas: 60000;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {
@@ -3767,6 +3812,9 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     morpho: {};
     logoUrl: "https://cms.oku.trade/cdn/public/chains/linea-logo.svg";
     deprecated: false;
+    estimatedSwapGas: 300000;
+    estimatedBridgeGas: 200000;
+    estimatedWrapGas: 60000;
     safeReorgDistance: 100;
     blockAid: "linea";
     externalId: {
@@ -3941,6 +3989,9 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     sortIndex: 36;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/taiko-logo.svg";
     deprecated: true;
+    estimatedSwapGas: 300000;
+    estimatedBridgeGas: 200000;
+    estimatedWrapGas: 60000;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {
@@ -4097,6 +4148,9 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     sortIndex: 30;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/mantle-logo.svg";
     deprecated: false;
+    estimatedSwapGas: 5000000;
+    estimatedBridgeGas: 3000000;
+    estimatedWrapGas: 500000;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {
@@ -4252,6 +4306,9 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     sortIndex: 7;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/sei-logo.svg";
     deprecated: false;
+    estimatedSwapGas: 300000;
+    estimatedBridgeGas: 200000;
+    estimatedWrapGas: 60000;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {
@@ -4422,6 +4479,9 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     sortIndex: 43;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/lisk-logo.png";
     deprecated: true;
+    estimatedSwapGas: 300000;
+    estimatedBridgeGas: 200000;
+    estimatedWrapGas: 60000;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {
@@ -4809,6 +4869,9 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     sortIndex: 20;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/bob-logo.svg";
     deprecated: false;
+    estimatedSwapGas: 300000;
+    estimatedBridgeGas: 200000;
+    estimatedWrapGas: 60000;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {
@@ -5218,6 +5281,9 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     blockAid: "";
     logoUrl: "https://cms.oku.trade/cdn/public/chains/gnosis-logo.svg";
     deprecated: false;
+    estimatedSwapGas: 300000;
+    estimatedBridgeGas: 200000;
+    estimatedWrapGas: 60000;
     safeReorgDistance: 90000;
     morpho: {};
     externalId: {
@@ -5395,6 +5461,9 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     sortIndex: 42;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/metal-logo.png";
     deprecated: true;
+    estimatedSwapGas: 300000;
+    estimatedBridgeGas: 200000;
+    estimatedWrapGas: 60000;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {};
@@ -5782,6 +5851,9 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     sortIndex: 25;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/corn-logo.svg";
     deprecated: false;
+    estimatedSwapGas: 300000;
+    estimatedBridgeGas: 200000;
+    estimatedWrapGas: 60000;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {
@@ -5918,6 +5990,9 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     sortIndex: 33;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/sonic-logo.svg";
     deprecated: true;
+    estimatedSwapGas: 300000;
+    estimatedBridgeGas: 200000;
+    estimatedWrapGas: 60000;
     safeReorgDistance: 90000;
     blockAid: "";
     morpho: {};
@@ -6076,6 +6151,9 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     sortIndex: 10;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/celo-logo.svg";
     deprecated: false;
+    estimatedSwapGas: 300000;
+    estimatedBridgeGas: 200000;
+    estimatedWrapGas: 60000;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {
@@ -7070,6 +7148,9 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     sortIndex: 22;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/hemi-logo.svg";
     deprecated: false;
+    estimatedSwapGas: 300000;
+    estimatedBridgeGas: 200000;
+    estimatedWrapGas: 60000;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {
@@ -7215,6 +7296,9 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     sortIndex: 32;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/telos-logo.svg";
     deprecated: false;
+    estimatedSwapGas: 300000;
+    estimatedBridgeGas: 200000;
+    estimatedWrapGas: 60000;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {
@@ -7358,6 +7442,9 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     sortIndex: 11;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/saga-logo.png";
     deprecated: false;
+    estimatedSwapGas: 300000;
+    estimatedBridgeGas: 200000;
+    estimatedWrapGas: 60000;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {
@@ -7481,6 +7568,9 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     sortIndex: 29;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/goat-logo.svg";
     deprecated: false;
+    estimatedSwapGas: 300000;
+    estimatedBridgeGas: 200000;
+    estimatedWrapGas: 60000;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {
@@ -7607,6 +7697,9 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     sortIndex: 27;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/redbelly-logo.svg";
     deprecated: false;
+    estimatedSwapGas: 300000;
+    estimatedBridgeGas: 200000;
+    estimatedWrapGas: 60000;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {
@@ -7726,6 +7819,9 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     sortIndex: 24;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/lightlink-logo.svg";
     deprecated: false;
+    estimatedSwapGas: 300000;
+    estimatedBridgeGas: 200000;
+    estimatedWrapGas: 60000;
     safeReorgDistance: 90000;
     blockAid: "";
     morpho: {};
@@ -7861,6 +7957,9 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     sortIndex: 28;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/worldchain-logo.svg";
     deprecated: false;
+    estimatedSwapGas: 300000;
+    estimatedBridgeGas: 200000;
+    estimatedWrapGas: 60000;
     liteChain: true;
     safeReorgDistance: 90000;
     blockAid: "";
@@ -8280,6 +8379,9 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     sortIndex: 15;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/xdc-logo.svg";
     deprecated: false;
+    estimatedSwapGas: 300000;
+    estimatedBridgeGas: 200000;
+    estimatedWrapGas: 60000;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {
@@ -8403,6 +8505,9 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     blockAid: "";
     logoUrl: "https://cms.oku.trade/cdn/public/chains/tron.png";
     deprecated: true;
+    estimatedSwapGas: 300000;
+    estimatedBridgeGas: 200000;
+    estimatedWrapGas: 60000;
     safeReorgDistance: 90000;
     externalId: {};
     markets: {};
@@ -8501,6 +8606,9 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     blockAid: "";
     logoUrl: "https://cms.oku.trade/cdn/public/chains/lens-logo.svg";
     deprecated: false;
+    estimatedSwapGas: 300000;
+    estimatedBridgeGas: 200000;
+    estimatedWrapGas: 60000;
     safeReorgDistance: 90000;
     externalId: {
         tenderly: string;
@@ -8630,6 +8738,9 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     sortIndex: 26;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/nibiru-logo.svg";
     deprecated: false;
+    estimatedSwapGas: 300000;
+    estimatedBridgeGas: 200000;
+    estimatedWrapGas: 60000;
     safeReorgDistance: 90000;
     externalId: {};
     blockAid: "";
@@ -8749,6 +8860,9 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     sortIndex: 13;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/etherlink-logo.svg";
     deprecated: false;
+    estimatedSwapGas: 300000;
+    estimatedBridgeGas: 200000;
+    estimatedWrapGas: 60000;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {
@@ -8895,6 +9009,9 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     sortIndex: 18;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/unichain-logo.svg";
     deprecated: false;
+    estimatedSwapGas: 300000;
+    estimatedBridgeGas: 200000;
+    estimatedWrapGas: 60000;
     safeReorgDistance: 90000;
     blockAid: "unichain";
     externalId: {
@@ -9317,6 +9434,9 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     blockAid: "";
     logoUrl: "https://cms.oku.trade/cdn/public/chains/matchain-logo.svg";
     deprecated: false;
+    estimatedSwapGas: 300000;
+    estimatedBridgeGas: 200000;
+    estimatedWrapGas: 60000;
     safeReorgDistance: 90000;
     externalId: {};
     markets: {};
@@ -9429,6 +9549,9 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     sortIndex: 3;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/plasma-logo.svg";
     deprecated: false;
+    estimatedSwapGas: 300000;
+    estimatedBridgeGas: 200000;
+    estimatedWrapGas: 60000;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {
@@ -9551,6 +9674,9 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     sortIndex: 44;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/zerog-logo.svg";
     deprecated: false;
+    estimatedSwapGas: 300000;
+    estimatedBridgeGas: 200000;
+    estimatedWrapGas: 60000;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {
@@ -9670,6 +9796,9 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     sortIndex: 17;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/avalanche-logo.svg";
     deprecated: false;
+    estimatedSwapGas: 300000;
+    estimatedBridgeGas: 200000;
+    estimatedWrapGas: 60000;
     liteChain: true;
     safeReorgDistance: 90000;
     blockAid: "";
@@ -9816,6 +9945,9 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     sortIndex: 41;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/ronin-logo.svg";
     deprecated: true;
+    estimatedSwapGas: 300000;
+    estimatedBridgeGas: 200000;
+    estimatedWrapGas: 60000;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {
@@ -9945,6 +10077,9 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     sortIndex: 4;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/monad-logo.png";
     deprecated: false;
+    estimatedSwapGas: 300000;
+    estimatedBridgeGas: 200000;
+    estimatedWrapGas: 60000;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {
@@ -10091,6 +10226,9 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     sortIndex: 9;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/hyperevm-logo.svg";
     deprecated: false;
+    estimatedSwapGas: 300000;
+    estimatedBridgeGas: 200000;
+    estimatedWrapGas: 60000;
     safeReorgDistance: 90000;
     blockAid: "";
     externalId: {
