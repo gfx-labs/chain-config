@@ -1,5 +1,5 @@
 import { arbitrum as arbitrum$1, avalanche as avalanche$1, base as base$1, blast as blast$1, bob as bob$1, boba as boba$1, bsc as bsc$1, celo as celo$1, corn as corn$1, etherlink as etherlink$1, filecoin as filecoin$1, gnosis as gnosis$1, goat as goat$1, hemi as hemi$1, hyperEvm, lens as lens$1, lightlinkPhoenix, linea as linea$1, lisk as lisk$1, mainnet as mainnet$1, manta as manta$1, mantle as mantle$1, matchain as matchain$1, metalL2, monad as monad$1, moonbeam as moonbeam$1, nibiru as nibiru$1, optimism as optimism$1, plasma as plasma$1, polygon as polygon$1, redbellyMainnet, ronin as ronin$1, rootstock as rootstock$1, saga as saga$1, scroll as scroll$1, sei as sei$1, sonic as sonic$1, taiko as taiko$1, telos as telos$1, tronShasta as tronShasta$1, unichain as unichain$1, worldchain as worldchain$1, xdc as xdc$1, zeroGMainnet, polygonZkEvm as polygonZkEvm$1, zksync } from 'viem/chains';
-import { zeroAddress, zeroHash } from 'viem';
+import { zeroAddress } from 'viem';
 
 const makeConfig = (x) => {
     return x;
@@ -2832,7 +2832,7 @@ const mainnet = makeConfig({
         positionManager: "0xbd216513d74c8cf14cf4747e6aaa6420ff64ee9e",
         universalRouter: "0x66a9893cc07d91d95644aedd05d03f95e1dba8af",
         permit2: "0x000000000022D473030F116dDEE9F6B43aC78BA3",
-        defaultPool: zeroHash,
+        defaultPool: "0xdce6394339af00981949f5f3baf27e3610c76326a700af57e4b3e3ae4977f78d",
         stateView: "0x7ffe42c4a5deea5b0fec41c94c136cf115597227",
     },
     uniswap: {
