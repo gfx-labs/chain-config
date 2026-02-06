@@ -84,7 +84,7 @@ export declare const optimism: Readonly<{
         dexscreener: string;
     };
     oku: {
-        router: "0x80dCD2C737cAFE9f86559bBCed9938eFfB7f7D1A";
+        router: "0x822CFA9749d16Fb4B4F2B0515924cec69512893b";
         limitOrderRegistryDeployBlock: number;
         limitOrderRegistry: "0x54dF9e11c7933a9cA3BD1E540B63dA15edAe40bf";
         customOrderTypes: {

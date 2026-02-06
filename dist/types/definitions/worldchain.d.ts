@@ -61,7 +61,7 @@ export declare const worldchain: Readonly<{
         wbtcAddress: "0x03c7054bcb39f7b2e5b2c7acb37583e32d70cfa3";
     };
     oku: {
-        router: "0x25cf2128F603754179379351B805B4F8C0B8dCA4";
+        router: "0x822CFA9749d16Fb4B4F2B0515924cec69512893b";
         pricing: {
             nativeWrappedToken: "0x4200000000000000000000000000000000000006";
             nativeWrappedName: string;

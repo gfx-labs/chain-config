@@ -114,6 +114,7 @@ export declare const arbitrum: Readonly<{
         usdcAddress: "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8";
     };
     oku: {
+        router: "0x822CFA9749d16Fb4B4F2B0515924cec69512893b";
         limitOrderRegistry: "0x54dF9e11c7933a9cA3BD1E540B63dA15edAe40bf";
         limitOrderRegistryDeployBlock: number;
         pricing: {

@@ -116,6 +116,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
         usdcAddress: "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8";
     };
     oku: {
+        router: "0x822CFA9749d16Fb4B4F2B0515924cec69512893b";
         limitOrderRegistry: "0x54dF9e11c7933a9cA3BD1E540B63dA15edAe40bf";
         limitOrderRegistryDeployBlock: number;
         pricing: {
@@ -320,7 +321,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
         usdcAddress: "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913";
     };
     oku: {
-        router: "0xA89A26c4d81A2cca4d0670F77f0FC88362b72248";
+        router: "0x822CFA9749d16Fb4B4F2B0515924cec69512893b";
         limitOrderRegistry: "0xff8b754c64e9a8473bd6e1118d0eac67f0a8ae27";
         limitOrderRegistryDeployBlock: number;
         pricing: {
@@ -2034,7 +2035,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
         dexscreener: string;
     };
     oku: {
-        router: "0x80dCD2C737cAFE9f86559bBCed9938eFfB7f7D1A";
+        router: "0x822CFA9749d16Fb4B4F2B0515924cec69512893b";
         limitOrderRegistryDeployBlock: number;
         limitOrderRegistry: "0x54dF9e11c7933a9cA3BD1E540B63dA15edAe40bf";
         customOrderTypes: {
@@ -8013,7 +8014,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
         wbtcAddress: "0x03c7054bcb39f7b2e5b2c7acb37583e32d70cfa3";
     };
     oku: {
-        router: "0x25cf2128F603754179379351B805B4F8C0B8dCA4";
+        router: "0x822CFA9749d16Fb4B4F2B0515924cec69512893b";
         pricing: {
             nativeWrappedToken: "0x4200000000000000000000000000000000000006";
             nativeWrappedName: string;
