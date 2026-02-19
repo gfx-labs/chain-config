@@ -50,4 +50,5 @@ export const MAINNET_CHAINS = [
 	defs.ronin,
 	defs.monad,
 	defs.hyperevm,
+	defs.gensyn,
 ] as const;

@@ -13,6 +13,7 @@ export * from "./celo";
 export * from "./corn";
 export * from "./etherlink";
 export * from "./filecoin";
+export * from "./gensyn";
 export * from "./gnosis";
 export * from "./goat";
 export * from "./hemi";
