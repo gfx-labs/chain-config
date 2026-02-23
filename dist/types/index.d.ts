@@ -8015,6 +8015,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     };
     oku: {
         router: "0x822CFA9749d16Fb4B4F2B0515924cec69512893b";
+        Permit2Proxy: "0x1B361B7cEce8920Bb5C3606B322EEC08FA85EB12";
         pricing: {
             nativeWrappedToken: "0x4200000000000000000000000000000000000006";
             nativeWrappedName: string;
