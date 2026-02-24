@@ -62,7 +62,13 @@ var Sei Network = Network{
 		NativeCurrencyName:         "SEI",
 	},
 
-	Morpho: MorphoMetadata{},
+	Morpho: MorphoMetadata{
+		Morpho:          common.HexToAddress("0xc9cDAc20FCeAAF616f7EB0bb6Cd2c69dcfa9094c"),
+		Bundler3:        common.HexToAddress("0xF9457356F18A3349Bb317Ac144c3Bcc62e5761aD"),
+		MmFactory11:     common.HexToAddress("0x8Dea49ec5bd5AeAc8bcf96B3E187F59354118291"),
+		PublicAllocator: common.HexToAddress("0xD878509446bE2C601f0f032F501851001B159D6B"),
+		DeployBlock:     166036723,
+	},
 	Token: TokenMetadata{
 		UsdcAddress: common.HexToAddress("0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1"),
 		WethAddress: common.HexToAddress("0xE30feDd158A2e3b13e9badaeABaFc5516e95e8C7"),
