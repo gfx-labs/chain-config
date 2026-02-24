@@ -9695,7 +9695,14 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
         };
     };
     oracles: {};
-    morpho: {};
+    morpho: {
+        deployBlock: number;
+        morpho: "0x9CDD13a2212D94C4f12190cA30783B743E83C89e";
+        bundler3: "0xbDaFC7ceF85C5fF69164330F521089C9E15DDDae";
+        mmFactory11: "0x41528AadC7314658b07Ca6e7213B9b77289B477f";
+        publicAllocator: "0x28a80F3713735CAD44bD9d7E1da9Fa16b0244497";
+        urdFactory: "0x40bDDbFCA5fcDF6E2Bbd019aC782b6A61388ADE6";
+    };
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     uniswap: {
         deployBlock: number;

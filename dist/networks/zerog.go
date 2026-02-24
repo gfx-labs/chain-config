@@ -61,7 +61,14 @@ var Zerog Network = Network{
 		NativeCurrencyName:         "0G",
 	},
 
-	Morpho: MorphoMetadata{},
+	Morpho: MorphoMetadata{
+		DeployBlock:     7526486,
+		Morpho:          common.HexToAddress("0x9CDD13a2212D94C4f12190cA30783B743E83C89e"),
+		Bundler3:        common.HexToAddress("0xbDaFC7ceF85C5fF69164330F521089C9E15DDDae"),
+		MmFactory11:     common.HexToAddress("0x41528AadC7314658b07Ca6e7213B9b77289B477f"),
+		PublicAllocator: common.HexToAddress("0x28a80F3713735CAD44bD9d7E1da9Fa16b0244497"),
+		UrdFactory:      common.HexToAddress("0x40bDDbFCA5fcDF6E2Bbd019aC782b6A61388ADE6"),
+	},
 	Token: TokenMetadata{
 		WethAddress: common.HexToAddress("0x1cd0690ff9a693f5ef2dd976660a8dafc81a109c"),
 	},
