@@ -7,7 +7,7 @@ export const metal = makeConfig({
 	launchTime: 1733882663,
 	transactionType: "eip1559",
 	sortIndex: 42,
-	logoUrl: "https://cms.oku.trade/cdn/public/chains/metal-logo.png",
+	logoUrl: "https://cms.oku.trade/cdn/public/chains/metal-l2-logo.svg",
 	deprecated: true,
 
 	estimatedSwapGas: 300_000,
