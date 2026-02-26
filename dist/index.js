@@ -1742,6 +1742,12 @@ const filecoin = makeConfig({
 });
 
 const gensyn = makeConfig({
+    sourceId: undefined,
+    testnet: false,
+    fees: undefined,
+    custom: undefined,
+    formatters: undefined,
+    serializers: undefined,
     id: 685689,
     name: "Gensyn AI",
     nativeCurrency: {
@@ -1812,6 +1818,10 @@ const gensyn = makeConfig({
     internalName: "gensyn",
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
     contracts: {
+        limitOrder: {
+            address: viem.zeroAddress,
+            blockCreated: 0,
+        },
         multicall3: {
             address: "0xcA11bde05977b3631167028862bE2a173976CA11",
             blockCreated: 0,

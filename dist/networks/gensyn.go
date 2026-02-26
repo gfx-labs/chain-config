@@ -61,6 +61,10 @@ var Gensyn Network = Network{
 		WethAddress: common.HexToAddress("0x4200000000000000000000000000000000000006"),
 	},
 	Contracts: map[string]ChainContract{
+		"limitOrder": {
+			BlockCreated: 0,
+			Address:      common.HexToAddress("0x0000000000000000000000000000000000000000"),
+		},
 		"multicall3": {
 			BlockCreated: 0,
 			Address:      common.HexToAddress("0xcA11bde05977b3631167028862bE2a173976CA11"),
