@@ -5,7 +5,7 @@ export declare const tronShasta: Readonly<{
     transactionType: "eip1559";
     sortIndex: 45;
     blockAid: "";
-    logoUrl: "https://cms.oku.trade/cdn/public/chains/tron.png";
+    logoUrl: "https://cms.oku.trade/cdn/public/chains/tron-shasta-logo.svg";
     deprecated: true;
     estimatedSwapGas: 300000;
     estimatedBridgeGas: 200000;

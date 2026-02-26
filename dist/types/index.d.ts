@@ -3669,7 +3669,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     blockTimeSeconds: 2;
     sortIndex: 39;
-    logoUrl: "https://cms.oku.trade/cdn/public/chains/manta-logo.png";
+    logoUrl: "https://cms.oku.trade/cdn/public/chains/manta-pacific-logo.svg";
     deprecated: true;
     estimatedSwapGas: 300000;
     estimatedBridgeGas: 200000;
@@ -4484,7 +4484,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     launchTime: 1724076000;
     transactionType: "eip1559";
     sortIndex: 43;
-    logoUrl: "https://cms.oku.trade/cdn/public/chains/lisk-logo.png";
+    logoUrl: "https://cms.oku.trade/cdn/public/chains/lisk-logo.svg";
     deprecated: true;
     estimatedSwapGas: 300000;
     estimatedBridgeGas: 200000;
@@ -5466,7 +5466,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     launchTime: 1733882663;
     transactionType: "eip1559";
     sortIndex: 42;
-    logoUrl: "https://cms.oku.trade/cdn/public/chains/metal-logo.png";
+    logoUrl: "https://cms.oku.trade/cdn/public/chains/metal-l2-logo.svg";
     deprecated: true;
     estimatedSwapGas: 300000;
     estimatedBridgeGas: 200000;
@@ -8511,7 +8511,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     transactionType: "eip1559";
     sortIndex: 45;
     blockAid: "";
-    logoUrl: "https://cms.oku.trade/cdn/public/chains/tron.png";
+    logoUrl: "https://cms.oku.trade/cdn/public/chains/tron-shasta-logo.svg";
     deprecated: true;
     estimatedSwapGas: 300000;
     estimatedBridgeGas: 200000;

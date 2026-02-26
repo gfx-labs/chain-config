@@ -3,7 +3,7 @@ export declare const lisk: Readonly<{
     launchTime: 1724076000;
     transactionType: "eip1559";
     sortIndex: 43;
-    logoUrl: "https://cms.oku.trade/cdn/public/chains/lisk-logo.png";
+    logoUrl: "https://cms.oku.trade/cdn/public/chains/lisk-logo.svg";
     deprecated: true;
     estimatedSwapGas: 300000;
     estimatedBridgeGas: 200000;

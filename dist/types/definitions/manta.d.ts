@@ -5,7 +5,7 @@ export declare const manta: Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     blockTimeSeconds: 2;
     sortIndex: 39;
-    logoUrl: "https://cms.oku.trade/cdn/public/chains/manta-logo.png";
+    logoUrl: "https://cms.oku.trade/cdn/public/chains/manta-pacific-logo.svg";
     deprecated: true;
     estimatedSwapGas: 300000;
     estimatedBridgeGas: 200000;
