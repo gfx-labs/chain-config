@@ -5745,12 +5745,6 @@ const telos = makeConfig({
         openocean: "telos",
         icecreamswap: true,
     },
-    blockExplorers: {
-        default: {
-            name: "Blockscout",
-            url: "https://telostx.com",
-        },
-    },
     bridges: {
         stargate: {
             endpointID: 30199,

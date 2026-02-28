@@ -7315,12 +7315,6 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
         openocean: string;
         icecreamswap: true;
     };
-    blockExplorers: {
-        default: {
-            name: string;
-            url: string;
-        };
-    };
     bridges: {
         stargate: {
             endpointID: number;
@@ -7409,6 +7403,12 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
         metrom: {
             address: "0xD4AC4AaFb81eC774E49AA755A66EfCe4574D6276";
             blockCreated: number;
+        };
+    };
+    blockExplorers: {
+        readonly default: {
+            readonly name: "Teloscan";
+            readonly url: "https://www.teloscan.io/";
         };
     };
     blockTime?: number | undefined | undefined | undefined;
