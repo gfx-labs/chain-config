@@ -9,7 +9,7 @@ export const gensyn = makeConfig({
 	formatters: undefined,
 	serializers: undefined,
 	id: 685_689,
-	name: "Gensyn AI",
+	name: "Gensyn",
 	nativeCurrency: {
 		decimals: 18,
 		name: "Ether",
