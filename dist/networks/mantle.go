@@ -6,6 +6,7 @@ import (
 
 var Mantle Network = Network{
 	ChainId:           5000,
+	Caip2Namespace:    "eip155",
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/mantle-logo.svg",
 	Deprecated:        false,
 	LiteChain:         false,

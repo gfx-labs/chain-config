@@ -6,6 +6,7 @@ import (
 
 var Optimism Network = Network{
 	ChainId:           10,
+	Caip2Namespace:    "eip155",
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/optimism-logo.svg",
 	Deprecated:        false,
 	LiteChain:         false,

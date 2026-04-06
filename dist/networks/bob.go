@@ -6,6 +6,7 @@ import (
 
 var Bob Network = Network{
 	ChainId:           60808,
+	Caip2Namespace:    "eip155",
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/bob-logo.svg",
 	Deprecated:        false,
 	LiteChain:         false,

@@ -6,6 +6,7 @@ import (
 
 var Matchain Network = Network{
 	ChainId:           698,
+	Caip2Namespace:    "eip155",
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/matchain-logo.svg",
 	Deprecated:        false,
 	LiteChain:         false,

@@ -6,6 +6,7 @@ import (
 
 var Hyperevm Network = Network{
 	ChainId:           999,
+	Caip2Namespace:    "eip155",
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/hyperevm-logo.svg",
 	Deprecated:        false,
 	LiteChain:         true,

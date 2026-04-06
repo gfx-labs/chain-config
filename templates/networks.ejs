@@ -66,6 +66,39 @@ func NetworkByIdString(idString string) (*Network, error) {
     return NetworkById(int(i64))
 }
 
+var ErrInvalidCAIP2 = errors.New("invalid CAIP-2 identifier")
+
+var networksByCAIP2 = map[string]Network{<% for(const chain of chains) { %>
+    "<%- chain.caip2Namespace %>:<%- chain.id %>": <%- h.toCamel(chain.internalName) %>, <% } %>
+}
+
+// ParseCAIP2 splits a CAIP-2 chain identifier into its namespace and reference.
+func ParseCAIP2(caip2 string) (namespace string, reference string, err error) {
+    i := strings.Index(caip2, ":")
+    if i == -1 || i != strings.LastIndex(caip2, ":") {
+      return "", "", fmt.Errorf("%w: %q", ErrInvalidCAIP2, caip2)
+    }
+    return caip2[:i], caip2[i+1:], nil
+}
+
+// FormatCAIP2 creates a CAIP-2 identifier string from namespace and reference.
+func FormatCAIP2(namespace, reference string) string {
+    return namespace + ":" + reference
+}
+
+// NetworkByCAIP2 looks up a network by its CAIP-2 identifier string
+// (e.g. "eip155:1" for Ethereum mainnet).
+func NetworkByCAIP2(caip2 string) (*Network, error) {
+    if _, _, err := ParseCAIP2(caip2); err != nil {
+      return nil, err
+    }
+    val, ok := networksByCAIP2[caip2]
+    if !ok {
+      return nil, fmt.Errorf("%w: %v", ErrNetworkNotFound, caip2)
+    }
+    return &val, nil
+}
+
 type Network struct { <% for(const prop of props_1) {%>
     <%- helpers.displayProp(prop) %> <% } %>
 
@@ -77,6 +110,12 @@ type Network struct { <% for(const prop of props_1) {%>
 func (n *Network) IsStable(a common.Address) bool {
     _, ok := n.StablecoinMap[a]
     return ok
+}
+
+// CAIP2 returns the CAIP-2 chain identifier for this network
+// (e.g. "eip155:1" for Ethereum mainnet).
+func (n *Network) CAIP2() string {
+    return fmt.Sprintf("%s:%d", n.Caip2Namespace, n.ChainId)
 }
 
 func (n *Network) BlockTime() time.Duration {

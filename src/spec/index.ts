@@ -179,6 +179,7 @@ export interface Oracles {
 export interface IChainInfo<
 	formatters extends ChainFormatters | undefined = ChainFormatters | undefined,
 > extends Chain<formatters> {
+	caip2Namespace: string;
 	logoUrl: string;
 	launchTime: number;
 	nativeLogoUrl: string;

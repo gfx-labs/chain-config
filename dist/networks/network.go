@@ -235,7 +235,87 @@ func NetworkByIdString(idString string) (*Network, error) {
 	return NetworkById(int(i64))
 }
 
+var ErrInvalidCAIP2 = errors.New("invalid CAIP-2 identifier")
+
+var networksByCAIP2 = map[string]Network{
+	"eip155:42161":      Arbitrum,
+	"eip155:8453":       Base,
+	"eip155:288":        Boba,
+	"eip155:81457":      Blast,
+	"eip155:56":         Bsc,
+	"eip155:314":        Filecoin,
+	"eip155:1":          Ethereum,
+	"eip155:1284":       Moonbeam,
+	"eip155:10":         Optimism,
+	"eip155:137":        Polygon,
+	"eip155:30":         Rootstock,
+	"eip155:534352":     Scroll,
+	"eip155:1101":       PolygonZkevm,
+	"eip155:324":        Zksync,
+	"eip155:169":        Manta,
+	"eip155:59144":      Linea,
+	"eip155:167000":     Taiko,
+	"eip155:5000":       Mantle,
+	"eip155:1329":       Sei,
+	"eip155:1135":       Lisk,
+	"eip155:60808":      Bob,
+	"eip155:100":        Gnosis,
+	"eip155:1750":       Metal,
+	"eip155:21000000":   Corn,
+	"eip155:146":        Sonic,
+	"eip155:42220":      Celo,
+	"eip155:43111":      Hemi,
+	"eip155:40":         Telos,
+	"eip155:5464":       Saga,
+	"eip155:2345":       Goat,
+	"eip155:151":        Redbelly,
+	"eip155:1890":       Lightlink,
+	"eip155:480":        Worldchain,
+	"eip155:50":         Xdc,
+	"eip155:2494104990": Tronshasta,
+	"eip155:232":        Lens,
+	"eip155:6900":       Nibiru,
+	"eip155:42793":      Etherlink,
+	"eip155:130":        Unichain,
+	"eip155:698":        Matchain,
+	"eip155:9745":       Plasma,
+	"eip155:16661":      Zerog,
+	"eip155:43114":      Avalanche,
+	"eip155:2020":       Ronin,
+	"eip155:143":        Monad,
+	"eip155:999":        Hyperevm,
+	"eip155:685689":     Gensyn,
+}
+
+// ParseCAIP2 splits a CAIP-2 chain identifier into its namespace and reference.
+func ParseCAIP2(caip2 string) (namespace string, reference string, err error) {
+	i := strings.Index(caip2, ":")
+	if i == -1 || i != strings.LastIndex(caip2, ":") {
+		return "", "", fmt.Errorf("%w: %q", ErrInvalidCAIP2, caip2)
+	}
+	return caip2[:i], caip2[i+1:], nil
+}
+
+// FormatCAIP2 creates a CAIP-2 identifier string from namespace and reference.
+func FormatCAIP2(namespace, reference string) string {
+	return namespace + ":" + reference
+}
+
+// NetworkByCAIP2 looks up a network by its CAIP-2 identifier string
+// (e.g. "eip155:1" for Ethereum mainnet).
+func NetworkByCAIP2(caip2 string) (*Network, error) {
+	if _, _, err := ParseCAIP2(caip2); err != nil {
+		return nil, err
+	}
+	val, ok := networksByCAIP2[caip2]
+	if !ok {
+		return nil, fmt.Errorf("%w: %v", ErrNetworkNotFound, caip2)
+	}
+	return &val, nil
+}
+
 type Network struct {
+	Caip2Namespace     string
 	LogoUrl            string
 	LaunchTime         int64
 	NativeLogoUrl      string
@@ -276,6 +356,12 @@ type Network struct {
 func (n *Network) IsStable(a common.Address) bool {
 	_, ok := n.StablecoinMap[a]
 	return ok
+}
+
+// CAIP2 returns the CAIP-2 chain identifier for this network
+// (e.g. "eip155:1" for Ethereum mainnet).
+func (n *Network) CAIP2() string {
+	return fmt.Sprintf("%s:%d", n.Caip2Namespace, n.ChainId)
 }
 
 func (n *Network) BlockTime() time.Duration {

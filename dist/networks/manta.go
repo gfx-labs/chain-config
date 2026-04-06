@@ -6,6 +6,7 @@ import (
 
 var Manta Network = Network{
 	ChainId:           169,
+	Caip2Namespace:    "eip155",
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/manta-pacific-logo.svg",
 	Deprecated:        true,
 	LiteChain:         false,

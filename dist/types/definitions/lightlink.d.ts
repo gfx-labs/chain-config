@@ -5,7 +5,7 @@ export declare const lightlink: Readonly<{
     transactionType: "legacy";
     sortIndex: 24;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/lightlink-logo.svg";
-    deprecated: false;
+    deprecated: true;
     estimatedSwapGas: 300000;
     estimatedBridgeGas: 200000;
     estimatedWrapGas: 60000;
@@ -137,4 +137,6 @@ export declare const lightlink: Readonly<{
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
     verifyHash?: ((client: import("viem").Client, parameters: import("viem").VerifyHashActionParameters) => Promise<import("viem").VerifyHashActionReturnType>) | undefined | undefined;
     network: "lightlink-phoenix";
+} & {
+    caip2Namespace: string;
 }>;

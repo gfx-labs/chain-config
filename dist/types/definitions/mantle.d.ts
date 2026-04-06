@@ -156,4 +156,6 @@ export declare const mantle: Readonly<{
     }] | undefined | undefined;
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
     verifyHash?: ((client: import("viem").Client, parameters: import("viem").VerifyHashActionParameters) => Promise<import("viem").VerifyHashActionReturnType>) | undefined | undefined;
+} & {
+    caip2Namespace: string;
 }>;

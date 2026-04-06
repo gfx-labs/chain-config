@@ -6,7 +6,7 @@ export declare const gensyn: Readonly<{
     formatters: undefined;
     serializers: undefined;
     id: 685689;
-    name: "Gensyn AI";
+    name: "Gensyn";
     nativeCurrency: {
         decimals: number;
         name: string;
@@ -98,4 +98,6 @@ export declare const gensyn: Readonly<{
             address: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435";
         };
     };
+} & {
+    caip2Namespace: string;
 }>;
