@@ -6,6 +6,7 @@ import (
 
 var Rootstock Network = Network{
 	ChainId:           30,
+	Caip2Namespace:    "eip155",
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/rootstock-logo.svg",
 	Deprecated:        false,
 	LiteChain:         false,

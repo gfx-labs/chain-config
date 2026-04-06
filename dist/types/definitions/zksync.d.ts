@@ -546,4 +546,6 @@ export declare const zkSync: Readonly<{
     };
     verifyHash?: ((client: import("viem").Client, parameters: import("viem").VerifyHashActionParameters) => Promise<import("viem").VerifyHashActionReturnType>) | undefined | undefined;
     network: "zksync-era";
+} & {
+    caip2Namespace: string;
 }>;

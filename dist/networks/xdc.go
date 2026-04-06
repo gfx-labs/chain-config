@@ -6,6 +6,7 @@ import (
 
 var Xdc Network = Network{
 	ChainId:           50,
+	Caip2Namespace:    "eip155",
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/xdc-logo.svg",
 	Deprecated:        false,
 	LiteChain:         false,

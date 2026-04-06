@@ -6,6 +6,7 @@ import (
 
 var Gnosis Network = Network{
 	ChainId:           100,
+	Caip2Namespace:    "eip155",
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/gnosis-logo.svg",
 	Deprecated:        false,
 	LiteChain:         false,

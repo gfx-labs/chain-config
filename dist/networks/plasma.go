@@ -6,6 +6,7 @@ import (
 
 var Plasma Network = Network{
 	ChainId:           9745,
+	Caip2Namespace:    "eip155",
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/plasma-logo.svg",
 	Deprecated:        false,
 	LiteChain:         false,

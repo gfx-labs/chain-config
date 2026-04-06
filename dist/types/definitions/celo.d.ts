@@ -995,4 +995,6 @@ export declare const celo: Readonly<{
         readonly transaction: typeof import("viem/chains").serializeTransactionCelo;
     };
     verifyHash?: ((client: import("viem").Client, parameters: import("viem").VerifyHashActionParameters) => Promise<import("viem").VerifyHashActionReturnType>) | undefined | undefined;
+} & {
+    caip2Namespace: string;
 }>;

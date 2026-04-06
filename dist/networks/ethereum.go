@@ -6,6 +6,7 @@ import (
 
 var Ethereum Network = Network{
 	ChainId:           1,
+	Caip2Namespace:    "eip155",
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/ethereum-logo.webp",
 	Deprecated:        false,
 	LiteChain:         false,

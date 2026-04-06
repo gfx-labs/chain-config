@@ -16,6 +16,7 @@ import (
 
 var <%- helpers.snakeToCamel(chainName) %> Network = Network{
   ChainId: <%- chain.id %>,
+  Caip2Namespace: "<%- chain.caip2Namespace %>",
   LogoUrl: "<%- chain.logoUrl %>",
   Deprecated: <%- chain.deprecated %>,
   LiteChain: <%- chain.liteChain || false %>,

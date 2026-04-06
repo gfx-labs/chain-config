@@ -6,6 +6,7 @@ import (
 
 var Ronin Network = Network{
 	ChainId:           2020,
+	Caip2Namespace:    "eip155",
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/ronin-logo.svg",
 	Deprecated:        true,
 	LiteChain:         false,

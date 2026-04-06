@@ -1,5 +1,6 @@
 export * from "./definitions/index";
 export * from "./spec/index";
+export * from "./util/caip2";
 export declare const MAINNET_CHAINS: readonly [Readonly<{
     name: "Arbitrum";
     launchTime: 1688997600;
@@ -209,6 +210,8 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     }] | undefined | undefined;
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
     verifyHash?: ((client: import("viem").Client, parameters: import("viem").VerifyHashActionParameters) => Promise<import("viem").VerifyHashActionReturnType>) | undefined | undefined;
+} & {
+    caip2Namespace: string;
 }>, Readonly<{
     sortIndex: 2;
     launchTime: 1707321600;
@@ -680,6 +683,8 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
         readonly transaction: typeof import("viem/chains").serializeTransactionOpStack;
     };
     verifyHash?: ((client: import("viem").Client, parameters: import("viem").VerifyHashActionParameters) => Promise<import("viem").VerifyHashActionReturnType>) | undefined | undefined;
+} & {
+    caip2Namespace: string;
 }>, Readonly<{
     name: "Boba";
     launchTime: 1690297200;
@@ -823,6 +828,8 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     }] | undefined | undefined;
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
     verifyHash?: ((client: import("viem").Client, parameters: import("viem").VerifyHashActionParameters) => Promise<import("viem").VerifyHashActionReturnType>) | undefined | undefined;
+} & {
+    caip2Namespace: string;
 }>, Readonly<{
     blockTimeSeconds: 2;
     launchTime: 1719410400;
@@ -1236,6 +1243,8 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
         readonly transaction: typeof import("viem/chains").serializeTransactionOpStack;
     };
     verifyHash?: ((client: import("viem").Client, parameters: import("viem").VerifyHashActionParameters) => Promise<import("viem").VerifyHashActionReturnType>) | undefined | undefined;
+} & {
+    caip2Namespace: string;
 }>, Readonly<{
     name: "BNB";
     launchTime: 1689346800;
@@ -1425,6 +1434,8 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     }] | undefined | undefined;
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
     verifyHash?: ((client: import("viem").Client, parameters: import("viem").VerifyHashActionParameters) => Promise<import("viem").VerifyHashActionReturnType>) | undefined | undefined;
+} & {
+    caip2Namespace: string;
 }>, Readonly<{
     sortIndex: 21;
     launchTime: 1677600000;
@@ -1572,6 +1583,8 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     }] | undefined | undefined;
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
     verifyHash?: ((client: import("viem").Client, parameters: import("viem").VerifyHashActionParameters) => Promise<import("viem").VerifyHashActionReturnType>) | undefined | undefined;
+} & {
+    caip2Namespace: string;
 }>, Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     sortIndex: 0;
@@ -1797,6 +1810,8 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     }] | undefined | undefined;
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
     verifyHash?: ((client: import("viem").Client, parameters: import("viem").VerifyHashActionParameters) => Promise<import("viem").VerifyHashActionReturnType>) | undefined | undefined;
+} & {
+    caip2Namespace: string;
 }>, Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     sortIndex: 38;
@@ -1949,6 +1964,8 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     }] | undefined | undefined;
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
     verifyHash?: ((client: import("viem").Client, parameters: import("viem").VerifyHashActionParameters) => Promise<import("viem").VerifyHashActionReturnType>) | undefined | undefined;
+} & {
+    caip2Namespace: string;
 }>, Readonly<{
     name: "Optimism";
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
@@ -2436,6 +2453,8 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
         readonly transaction: typeof import("viem/chains").serializeTransactionOpStack;
     };
     verifyHash?: ((client: import("viem").Client, parameters: import("viem").VerifyHashActionParameters) => Promise<import("viem").VerifyHashActionReturnType>) | undefined | undefined;
+} & {
+    caip2Namespace: string;
 }>, Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     blockTimeSeconds: 2;
@@ -2636,6 +2655,8 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     }] | undefined | undefined;
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
     verifyHash?: ((client: import("viem").Client, parameters: import("viem").VerifyHashActionParameters) => Promise<import("viem").VerifyHashActionReturnType>) | undefined | undefined;
+} & {
+    caip2Namespace: string;
 }>, Readonly<{
     sortIndex: 12;
     launchTime: 1702479600;
@@ -2798,6 +2819,8 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
     verifyHash?: ((client: import("viem").Client, parameters: import("viem").VerifyHashActionParameters) => Promise<import("viem").VerifyHashActionReturnType>) | undefined | undefined;
     network: "rootstock";
+} & {
+    caip2Namespace: string;
 }>, Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     sortIndex: 34;
@@ -2968,6 +2991,8 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     }] | undefined | undefined;
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
     verifyHash?: ((client: import("viem").Client, parameters: import("viem").VerifyHashActionParameters) => Promise<import("viem").VerifyHashActionReturnType>) | undefined | undefined;
+} & {
+    caip2Namespace: string;
 }>, Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     sortIndex: 37;
@@ -3114,6 +3139,8 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     }] | undefined | undefined;
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
     verifyHash?: ((client: import("viem").Client, parameters: import("viem").VerifyHashActionParameters) => Promise<import("viem").VerifyHashActionReturnType>) | undefined | undefined;
+} & {
+    caip2Namespace: string;
 }>, Readonly<{
     blockTimeSeconds: 2;
     sortIndex: 35;
@@ -3662,6 +3689,8 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     };
     verifyHash?: ((client: import("viem").Client, parameters: import("viem").VerifyHashActionParameters) => Promise<import("viem").VerifyHashActionReturnType>) | undefined | undefined;
     network: "zksync-era";
+} & {
+    caip2Namespace: string;
 }>, Readonly<{
     name: "Manta Pacific";
     launchTime: 1709910000;
@@ -3803,6 +3832,8 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
     verifyHash?: ((client: import("viem").Client, parameters: import("viem").VerifyHashActionParameters) => Promise<import("viem").VerifyHashActionReturnType>) | undefined | undefined;
     network: "manta";
+} & {
+    caip2Namespace: string;
 }>, Readonly<{
     name: "Linea";
     launchTime: 1713362400;
@@ -3982,6 +4013,8 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     }] | undefined | undefined;
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
     verifyHash?: ((client: import("viem").Client, parameters: import("viem").VerifyHashActionParameters) => Promise<import("viem").VerifyHashActionReturnType>) | undefined | undefined;
+} & {
+    caip2Namespace: string;
 }>, Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     blockTimeSeconds: 24;
@@ -4141,6 +4174,8 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     }] | undefined | undefined;
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
     verifyHash?: ((client: import("viem").Client, parameters: import("viem").VerifyHashActionParameters) => Promise<import("viem").VerifyHashActionReturnType>) | undefined | undefined;
+} & {
+    caip2Namespace: string;
 }>, Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     blockTimeSeconds: 2;
@@ -4299,6 +4334,8 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     }] | undefined | undefined;
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
     verifyHash?: ((client: import("viem").Client, parameters: import("viem").VerifyHashActionParameters) => Promise<import("viem").VerifyHashActionReturnType>) | undefined | undefined;
+} & {
+    caip2Namespace: string;
 }>, Readonly<{
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     blockTimeSeconds: 0.4;
@@ -4479,6 +4516,8 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     }] | undefined | undefined;
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
     verifyHash?: ((client: import("viem").Client, parameters: import("viem").VerifyHashActionParameters) => Promise<import("viem").VerifyHashActionReturnType>) | undefined | undefined;
+} & {
+    caip2Namespace: string;
 }>, Readonly<{
     blockTimeSeconds: 2;
     launchTime: 1724076000;
@@ -4869,6 +4908,8 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     };
     verifyHash?: ((client: import("viem").Client, parameters: import("viem").VerifyHashActionParameters) => Promise<import("viem").VerifyHashActionReturnType>) | undefined | undefined;
     network: "lisk";
+} & {
+    caip2Namespace: string;
 }>, Readonly<{
     blockTimeSeconds: 2;
     launchTime: 1727359200;
@@ -5280,6 +5321,8 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
         readonly transaction: typeof import("viem/chains").serializeTransactionOpStack;
     };
     verifyHash?: ((client: import("viem").Client, parameters: import("viem").VerifyHashActionParameters) => Promise<import("viem").VerifyHashActionReturnType>) | undefined | undefined;
+} & {
+    caip2Namespace: string;
 }>, Readonly<{
     blockTimeSeconds: 5;
     launchTime: 1725890400;
@@ -5461,6 +5504,8 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     }] | undefined | undefined;
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
     verifyHash?: ((client: import("viem").Client, parameters: import("viem").VerifyHashActionParameters) => Promise<import("viem").VerifyHashActionReturnType>) | undefined | undefined;
+} & {
+    caip2Namespace: string;
 }>, Readonly<{
     blockTimeSeconds: 2;
     launchTime: 1733882663;
@@ -5850,6 +5895,8 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
         readonly transaction: typeof import("viem/chains").serializeTransactionOpStack;
     };
     verifyHash?: ((client: import("viem").Client, parameters: import("viem").VerifyHashActionParameters) => Promise<import("viem").VerifyHashActionReturnType>) | undefined | undefined;
+} & {
+    caip2Namespace: string;
 }>, Readonly<{
     name: "Corn";
     blockTimeSeconds: 35;
@@ -5990,6 +6037,8 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     }] | undefined | undefined;
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
     verifyHash?: ((client: import("viem").Client, parameters: import("viem").VerifyHashActionParameters) => Promise<import("viem").VerifyHashActionReturnType>) | undefined | undefined;
+} & {
+    caip2Namespace: string;
 }>, Readonly<{
     blockTimeSeconds: 3;
     launchTime: 1737165834;
@@ -6151,6 +6200,8 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     }] | undefined | undefined;
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
     verifyHash?: ((client: import("viem").Client, parameters: import("viem").VerifyHashActionParameters) => Promise<import("viem").VerifyHashActionReturnType>) | undefined | undefined;
+} & {
+    caip2Namespace: string;
 }>, Readonly<{
     blockTimeSeconds: 2;
     launchTime: 1737754469;
@@ -7148,6 +7199,8 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
         readonly transaction: typeof import("viem/chains").serializeTransactionCelo;
     };
     verifyHash?: ((client: import("viem").Client, parameters: import("viem").VerifyHashActionParameters) => Promise<import("viem").VerifyHashActionReturnType>) | undefined | undefined;
+} & {
+    caip2Namespace: string;
 }>, Readonly<{
     blockTimeSeconds: 12;
     launchTime: 1741901593;
@@ -7296,6 +7349,8 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
     verifyHash?: ((client: import("viem").Client, parameters: import("viem").VerifyHashActionParameters) => Promise<import("viem").VerifyHashActionReturnType>) | undefined | undefined;
     network: "Hemi";
+} & {
+    caip2Namespace: string;
 }>, Readonly<{
     blockTimeSeconds: 0.5;
     launchTime: 1743089303;
@@ -7441,6 +7496,8 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     }] | undefined | undefined;
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
     verifyHash?: ((client: import("viem").Client, parameters: import("viem").VerifyHashActionParameters) => Promise<import("viem").VerifyHashActionReturnType>) | undefined | undefined;
+} & {
+    caip2Namespace: string;
 }>, Readonly<{
     name: "Saga EVM";
     blockTimeSeconds: 5;
@@ -7567,6 +7624,8 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
     verifyHash?: ((client: import("viem").Client, parameters: import("viem").VerifyHashActionParameters) => Promise<import("viem").VerifyHashActionReturnType>) | undefined | undefined;
     network: "saga";
+} & {
+    caip2Namespace: string;
 }>, Readonly<{
     name: "GOAT";
     blockTimeSeconds: 3;
@@ -7696,6 +7755,8 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     }] | undefined | undefined;
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
     verifyHash?: ((client: import("viem").Client, parameters: import("viem").VerifyHashActionParameters) => Promise<import("viem").VerifyHashActionReturnType>) | undefined | undefined;
+} & {
+    caip2Namespace: string;
 }>, Readonly<{
     name: "Redbelly";
     blockTimeSeconds: 5;
@@ -7818,6 +7879,8 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     }] | undefined | undefined;
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
     verifyHash?: ((client: import("viem").Client, parameters: import("viem").VerifyHashActionParameters) => Promise<import("viem").VerifyHashActionReturnType>) | undefined | undefined;
+} & {
+    caip2Namespace: string;
 }>, Readonly<{
     name: "LightLink";
     blockTimeSeconds: 0.5;
@@ -7825,7 +7888,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     transactionType: "legacy";
     sortIndex: 24;
     logoUrl: "https://cms.oku.trade/cdn/public/chains/lightlink-logo.svg";
-    deprecated: false;
+    deprecated: true;
     estimatedSwapGas: 300000;
     estimatedBridgeGas: 200000;
     estimatedWrapGas: 60000;
@@ -7957,6 +8020,8 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
     verifyHash?: ((client: import("viem").Client, parameters: import("viem").VerifyHashActionParameters) => Promise<import("viem").VerifyHashActionReturnType>) | undefined | undefined;
     network: "lightlink-phoenix";
+} & {
+    caip2Namespace: string;
 }>, Readonly<{
     blockTimeSeconds: 2;
     launchTime: 0;
@@ -8374,6 +8439,8 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     };
     verifyHash?: ((client: import("viem").Client, parameters: import("viem").VerifyHashActionParameters) => Promise<import("viem").VerifyHashActionReturnType>) | undefined | undefined;
     network: "worldchain";
+} & {
+    caip2Namespace: string;
 }>, Readonly<{
     name: "XDC";
     rpcUrls: {
@@ -8504,6 +8571,8 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     }] | undefined | undefined;
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
     verifyHash?: ((client: import("viem").Client, parameters: import("viem").VerifyHashActionParameters) => Promise<import("viem").VerifyHashActionReturnType>) | undefined | undefined;
+} & {
+    caip2Namespace: string;
 }>, Readonly<{
     name: "Tron Shasta";
     blockTimeSeconds: 5;
@@ -8605,6 +8674,8 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     }] | undefined | undefined;
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
     verifyHash?: ((client: import("viem").Client, parameters: import("viem").VerifyHashActionParameters) => Promise<import("viem").VerifyHashActionReturnType>) | undefined | undefined;
+} & {
+    caip2Namespace: string;
 }>, Readonly<{
     name: "Lens";
     blockTimeSeconds: 2;
@@ -8738,6 +8809,8 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     }] | undefined | undefined;
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
     verifyHash?: ((client: import("viem").Client, parameters: import("viem").VerifyHashActionParameters) => Promise<import("viem").VerifyHashActionReturnType>) | undefined | undefined;
+} & {
+    caip2Namespace: string;
 }>, Readonly<{
     name: "Nibiru";
     blockTimeSeconds: 2;
@@ -8861,6 +8934,8 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     }] | undefined | undefined;
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
     verifyHash?: ((client: import("viem").Client, parameters: import("viem").VerifyHashActionParameters) => Promise<import("viem").VerifyHashActionReturnType>) | undefined | undefined;
+} & {
+    caip2Namespace: string;
 }>, Readonly<{
     blockTimeSeconds: 0.6;
     launchTime: 1750211928;
@@ -9009,6 +9084,8 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     }] | undefined | undefined;
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
     verifyHash?: ((client: import("viem").Client, parameters: import("viem").VerifyHashActionParameters) => Promise<import("viem").VerifyHashActionReturnType>) | undefined | undefined;
+} & {
+    caip2Namespace: string;
 }>, Readonly<{
     name: "Unichain";
     blockTimeSeconds: 1;
@@ -9433,6 +9510,8 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
         readonly transaction: typeof import("viem/chains").serializeTransactionOpStack;
     };
     verifyHash?: ((client: import("viem").Client, parameters: import("viem").VerifyHashActionParameters) => Promise<import("viem").VerifyHashActionReturnType>) | undefined | undefined;
+} & {
+    caip2Namespace: string;
 }>, Readonly<{
     name: "Matchain";
     blockTimeSeconds: 0.5;
@@ -9549,6 +9628,8 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     }] | undefined | undefined;
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
     verifyHash?: ((client: import("viem").Client, parameters: import("viem").VerifyHashActionParameters) => Promise<import("viem").VerifyHashActionReturnType>) | undefined | undefined;
+} & {
+    caip2Namespace: string;
 }>, Readonly<{
     name: "Plasma";
     blockTimeSeconds: 1;
@@ -9674,6 +9755,8 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     }] | undefined | undefined;
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
     verifyHash?: ((client: import("viem").Client, parameters: import("viem").VerifyHashActionParameters) => Promise<import("viem").VerifyHashActionReturnType>) | undefined | undefined;
+} & {
+    caip2Namespace: string;
 }>, Readonly<{
     name: "0G";
     blockTimeSeconds: 35;
@@ -9803,6 +9886,8 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     }] | undefined | undefined;
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
     verifyHash?: ((client: import("viem").Client, parameters: import("viem").VerifyHashActionParameters) => Promise<import("viem").VerifyHashActionReturnType>) | undefined | undefined;
+} & {
+    caip2Namespace: string;
 }>, Readonly<{
     name: "Avalanche";
     blockTimeSeconds: 2;
@@ -9953,6 +10038,8 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     }] | undefined | undefined;
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
     verifyHash?: ((client: import("viem").Client, parameters: import("viem").VerifyHashActionParameters) => Promise<import("viem").VerifyHashActionReturnType>) | undefined | undefined;
+} & {
+    caip2Namespace: string;
 }>, Readonly<{
     blockTimeSeconds: 3;
     launchTime: 1761966026;
@@ -10085,6 +10172,8 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     }] | undefined | undefined;
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
     verifyHash?: ((client: import("viem").Client, parameters: import("viem").VerifyHashActionParameters) => Promise<import("viem").VerifyHashActionReturnType>) | undefined | undefined;
+} & {
+    caip2Namespace: string;
 }>, Readonly<{
     blockTimeSeconds: 0.4;
     launchTime: 1764568406;
@@ -10234,6 +10323,8 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     }] | undefined | undefined;
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
     verifyHash?: ((client: import("viem").Client, parameters: import("viem").VerifyHashActionParameters) => Promise<import("viem").VerifyHashActionReturnType>) | undefined | undefined;
+} & {
+    caip2Namespace: string;
 }>, Readonly<{
     blockTimeSeconds: 1;
     launchTime: 1767333673;
@@ -10352,6 +10443,8 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     }] | undefined | undefined;
     serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
     verifyHash?: ((client: import("viem").Client, parameters: import("viem").VerifyHashActionParameters) => Promise<import("viem").VerifyHashActionReturnType>) | undefined | undefined;
+} & {
+    caip2Namespace: string;
 }>, Readonly<{
     sourceId: undefined;
     testnet: false;
@@ -10360,7 +10453,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     formatters: undefined;
     serializers: undefined;
     id: 685689;
-    name: "Gensyn AI";
+    name: "Gensyn";
     nativeCurrency: {
         decimals: number;
         name: string;
@@ -10452,4 +10545,6 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
             address: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435";
         };
     };
+} & {
+    caip2Namespace: string;
 }>];

@@ -6,6 +6,7 @@ import (
 
 var Zksync Network = Network{
 	ChainId:           324,
+	Caip2Namespace:    "eip155",
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/zksync-logo.svg",
 	Deprecated:        true,
 	LiteChain:         false,

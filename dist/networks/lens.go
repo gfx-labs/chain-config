@@ -6,6 +6,7 @@ import (
 
 var Lens Network = Network{
 	ChainId:           232,
+	Caip2Namespace:    "eip155",
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/lens-logo.svg",
 	Deprecated:        false,
 	LiteChain:         false,

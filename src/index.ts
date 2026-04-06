@@ -2,6 +2,7 @@ import * as defs from "./definitions";
 
 export * from "./definitions/index";
 export * from "./spec/index";
+export * from "./util/caip2";
 
 export const MAINNET_CHAINS = [
 	defs.arbitrum,

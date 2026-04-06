@@ -6,6 +6,7 @@ import (
 
 var Taiko Network = Network{
 	ChainId:           167000,
+	Caip2Namespace:    "eip155",
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/taiko-logo.svg",
 	Deprecated:        true,
 	LiteChain:         false,
