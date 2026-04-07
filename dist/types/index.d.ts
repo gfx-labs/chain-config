@@ -7627,7 +7627,7 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
 } & {
     caip2Namespace: string;
 }>, Readonly<{
-    name: "GOAT";
+    name: "GOAT Network";
     blockTimeSeconds: 3;
     launchTime: 1742159744;
     transactionType: "eip1559";

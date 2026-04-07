@@ -2004,7 +2004,7 @@ const gnosis = makeConfig({
 
 const goat = makeConfig({
     ...goat$1,
-    name: "GOAT",
+    name: "GOAT Network",
     blockTimeSeconds: 3,
     launchTime: 1742159744,
     transactionType: "eip1559",

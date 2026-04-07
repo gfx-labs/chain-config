@@ -2007,7 +2007,7 @@
 
     const goat = makeConfig({
         ...chains.goat,
-        name: "GOAT",
+        name: "GOAT Network",
         blockTimeSeconds: 3,
         launchTime: 1742159744,
         transactionType: "eip1559",
