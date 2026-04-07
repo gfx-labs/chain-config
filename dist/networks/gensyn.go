@@ -57,7 +57,14 @@ var Gensyn Network = Network{
 		NativeCurrencyName:         "ETH",
 	},
 
-	Morpho: MorphoMetadata{},
+	Morpho: MorphoMetadata{
+		DeployBlock:                    7520470,
+		Morpho:                         common.HexToAddress("0x8c45B34999883FF4B47cD3be095D585682cd9227"),
+		Bundler3:                       common.HexToAddress("0xE09314FE5Fc41FEc8f3e6042085dD3CeE24c877c"),
+		VaultV2Factory:                 common.HexToAddress("0xe2558155AEcEF57cAADB98e39b0538ab0ae95693"),
+		MorphoMarketV1AdapterV2Factory: common.HexToAddress("0x155134544AE2Ec3AB23034BF620538482C5E3c40"),
+		MorphoMarketV1RegistryV2:       common.HexToAddress("0x53A687347c822D222058d3E99a566a3D3c0638e1"),
+	},
 	Token: TokenMetadata{
 		WethAddress: common.HexToAddress("0x4200000000000000000000000000000000000006"),
 	},

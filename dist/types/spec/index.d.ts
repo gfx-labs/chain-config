@@ -9,6 +9,9 @@ export interface MorphoMetadata {
     bundler3?: Address;
     publicAllocator?: Address;
     urdFactory?: Address;
+    vaultV2Factory?: Address;
+    morphoMarketV1AdapterV2Factory?: Address;
+    morphoMarketV1RegistryV2?: Address;
 }
 export interface UniswapMetadata {
     deployBlock?: number;

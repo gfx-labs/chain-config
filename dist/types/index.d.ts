@@ -10485,7 +10485,14 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     markets: {};
     bridges: {};
     oracles: {};
-    morpho: {};
+    morpho: {
+        deployBlock: number;
+        morpho: "0x8c45B34999883FF4B47cD3be095D585682cd9227";
+        bundler3: "0xE09314FE5Fc41FEc8f3e6042085dD3CeE24c877c";
+        vaultV2Factory: "0xe2558155AEcEF57cAADB98e39b0538ab0ae95693";
+        morphoMarketV1AdapterV2Factory: "0x155134544AE2Ec3AB23034BF620538482C5E3c40";
+        morphoMarketV1RegistryV2: "0x53A687347c822D222058d3E99a566a3D3c0638e1";
+    };
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     uniswap: {
         deployBlock: number;
