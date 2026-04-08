@@ -32,7 +32,7 @@ var Zerog Network = Network{
 	//TODO: TokenList:        []any{},
 	Stables:          []common.Address{common.HexToAddress("0x1f3aa82227281ca364bfb3d253b0f1af1da6473e")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x1f3aa82227281ca364bfb3d253b0f1af1da6473e"): {}},
-	Watchlist:        []common.Address{common.HexToAddress("0x5c1e4669c5208adc0163273d51928890b663237f")},
+	Watchlist:        []common.Address{common.HexToAddress("0x5c1e4669c5208adc0163273d51928890b663237f"), common.HexToAddress("0xb5cb173dc8f8e8379343d12faa0cd66cb2db7d2e"), common.HexToAddress("0x5B7698191ac6f42F8AA1B42EC8ce535E63423F67")},
 	BlockTimeSeconds: 35,
 	Oku: OkuMetadata{
 		LimitOrderRegistry:            common.HexToAddress("0x9db70e29712cc8af10c2b597bada6784544ff407"),

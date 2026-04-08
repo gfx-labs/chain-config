@@ -3693,7 +3693,6 @@ const monad = makeConfig({
     internalName: "monad",
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/monad.png",
     contracts: {
-        ...chains.monad.contracts,
         limitOrder: {
             address: viem.zeroAddress,
         },
@@ -6380,7 +6379,11 @@ const zerog = makeConfig({
         { symbol: "w0G", address: "0x1cd0690ff9a693f5ef2dd976660a8dafc81a109c" },
     ],
     stables: ["0x1f3aa82227281ca364bfb3d253b0f1af1da6473e"],
-    watchlist: ["0x5c1e4669c5208adc0163273d51928890b663237f"],
+    watchlist: [
+        "0x5c1e4669c5208adc0163273d51928890b663237f",
+        "0xb5cb173dc8f8e8379343d12faa0cd66cb2db7d2e",
+        "0x5B7698191ac6f42F8AA1B42EC8ce535E63423F67",
+    ],
     internalName: "zerog",
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/0g.svg",
     contracts: {

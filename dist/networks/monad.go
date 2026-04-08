@@ -72,10 +72,6 @@ var Monad Network = Network{
 		WethAddress: common.HexToAddress("0x3bd359C1119dA7Da1D913D1C4D2B7c461115433A"),
 	},
 	Contracts: map[string]ChainContract{
-		"multicall3": {
-			BlockCreated: 0,
-			Address:      common.HexToAddress("0xcA11bde05977b3631167028862bE2a173976CA11"),
-		},
 		"limitOrder": {
 			BlockCreated: 0,
 			Address:      common.HexToAddress("0x0000000000000000000000000000000000000000"),
@@ -91,6 +87,10 @@ var Monad Network = Network{
 		"multicall2": {
 			BlockCreated: 0,
 			Address:      common.HexToAddress("0xd1b797d92d87b688193a2b976efc8d577d204343"),
+		},
+		"multicall3": {
+			BlockCreated: 0,
+			Address:      common.HexToAddress("0xcA11bde05977b3631167028862bE2a173976CA11"),
 		},
 	},
 }
