@@ -99,7 +99,6 @@ export const monad = makeConfig({
 	internalName: "monad",
 	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/monad.png",
 	contracts: {
-		...chain.contracts,
 		limitOrder: {
 			address: zeroAddress,
 		},
