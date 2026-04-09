@@ -10,7 +10,7 @@ export const lens = makeConfig({
 	sortIndex: 31,
 	blockAid: "",
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/lens-logo.svg",
-	deprecated: false,
+	deprecated: true,
 
 	estimatedSwapGas: 300_000,
 	estimatedBridgeGas: 200_000,

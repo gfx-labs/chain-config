@@ -1743,28 +1743,7 @@
     });
 
     const gensyn = makeConfig({
-        sourceId: undefined,
-        testnet: false,
-        fees: undefined,
-        custom: undefined,
-        formatters: undefined,
-        serializers: undefined,
-        id: 685689,
-        name: "Gensyn",
-        nativeCurrency: {
-            decimals: 18,
-            name: "Ether",
-            symbol: "ETH",
-        },
-        rpcUrls: {
-            default: { http: ["https://gensyn-mainnet.g.alchemy.com/public"] },
-        },
-        blockExplorers: {
-            default: {
-                name: "Gensyn Explorer",
-                url: "https://ddrg456.explorer.alchemy.com/",
-            },
-        },
+        ...chains.gensyn,
         blockTimeSeconds: 2,
         launchTime: 1773970570,
         transactionType: "eip1559",
@@ -1826,12 +1805,9 @@
         internalName: "gensyn",
         nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
         contracts: {
+            ...chains.gensyn.contracts,
             limitOrder: {
                 address: viem.zeroAddress,
-                blockCreated: 0,
-            },
-            multicall3: {
-                address: "0xcA11bde05977b3631167028862bE2a173976CA11",
                 blockCreated: 0,
             },
             nftManager: {
@@ -2343,7 +2319,7 @@
         sortIndex: 31,
         blockAid: "",
         logoUrl: "https://cms.oku.trade/cdn/public/chains/lens-logo.svg",
-        deprecated: false,
+        deprecated: true,
         estimatedSwapGas: 300000,
         estimatedBridgeGas: 200000,
         estimatedWrapGas: 60000,
@@ -3432,7 +3408,7 @@
         sortIndex: 23,
         blockAid: "",
         logoUrl: "https://cms.oku.trade/cdn/public/chains/matchain-logo.svg",
-        deprecated: false,
+        deprecated: true,
         estimatedSwapGas: 300000,
         estimatedBridgeGas: 200000,
         estimatedWrapGas: 60000,

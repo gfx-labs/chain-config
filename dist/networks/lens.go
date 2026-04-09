@@ -8,7 +8,7 @@ var Lens Network = Network{
 	ChainId:           232,
 	Caip2Namespace:    "eip155",
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/lens-logo.svg",
-	Deprecated:        false,
+	Deprecated:        true,
 	LiteChain:         false,
 	SortIndex:         31,
 	LaunchTime:        1746050531,

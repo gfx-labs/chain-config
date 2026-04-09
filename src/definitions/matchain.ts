@@ -10,7 +10,7 @@ export const matchain = makeConfig({
 	sortIndex: 23,
 	blockAid: "",
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/matchain-logo.svg",
-	deprecated: false,
+	deprecated: true,
 
 	estimatedSwapGas: 300_000,
 	estimatedBridgeGas: 200_000,

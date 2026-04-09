@@ -8,7 +8,7 @@ var Matchain Network = Network{
 	ChainId:           698,
 	Caip2Namespace:    "eip155",
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/matchain-logo.svg",
-	Deprecated:        false,
+	Deprecated:        true,
 	LiteChain:         false,
 	SortIndex:         23,
 	LaunchTime:        1754106070,

@@ -189,16 +189,16 @@ export declare const zkSync: Readonly<{
                 r: import("viem").Hex;
                 s: import("viem").Hex;
                 v: bigint;
-                value: bigint;
-                gas: bigint;
                 to: import("abitype").Address | null;
                 from: import("abitype").Address;
+                gas: bigint;
                 nonce: number;
+                value: bigint;
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                transactionIndex: number | null;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
+                transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 accessList?: undefined | undefined;
                 authorizationList?: undefined | undefined;
@@ -372,15 +372,16 @@ export declare const zkSync: Readonly<{
         readonly transactionReceipt: {
             exclude: [] | undefined;
             format: (args: import("viem/chains").ZkSyncRpcTransactionReceipt, action?: string | undefined) => {
-                contractAddress: import("abitype").Address | null | undefined;
                 type: import("viem/chains").ZkSyncTransactionType;
-                status: "success" | "reverted";
+                contractAddress: import("abitype").Address | null | undefined;
                 to: import("abitype").Address | null;
                 from: import("abitype").Address;
                 blockHash: import("viem").Hash;
                 blockNumber: bigint;
-                transactionHash: import("viem").Hash;
                 transactionIndex: number;
+                status: "success" | "reverted";
+                blockTimestamp?: bigint | undefined;
+                transactionHash: import("viem").Hash;
                 logsBloom: import("viem").Hex;
                 blobGasUsed?: bigint | undefined;
                 gasUsed: bigint;
@@ -457,10 +458,10 @@ export declare const zkSync: Readonly<{
             } | {
                 type?: "0x3" | undefined;
                 data?: `0x${string}` | undefined;
-                value?: `0x${string}` | undefined;
-                gas?: `0x${string}` | undefined;
                 from?: `0x${string}` | undefined;
+                gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
+                value?: `0x${string}` | undefined;
                 to: `0x${string}` | null;
                 gasPrice?: undefined | undefined;
                 maxFeePerBlobGas?: `0x${string}` | undefined;
@@ -476,10 +477,10 @@ export declare const zkSync: Readonly<{
             } | {
                 type?: "0x3" | undefined;
                 data?: `0x${string}` | undefined;
-                value?: `0x${string}` | undefined;
-                gas?: `0x${string}` | undefined;
                 from?: `0x${string}` | undefined;
+                gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
+                value?: `0x${string}` | undefined;
                 to: `0x${string}` | null;
                 gasPrice?: undefined | undefined;
                 maxFeePerBlobGas?: `0x${string}` | undefined;
@@ -493,17 +494,17 @@ export declare const zkSync: Readonly<{
                 authorizationList?: undefined;
                 eip712Meta?: undefined | undefined;
             } | {
+                type?: "0x4" | undefined;
                 gasPrice?: undefined | undefined;
                 maxFeePerBlobGas?: undefined | undefined;
                 maxFeePerGas?: `0x${string}` | undefined;
                 maxPriorityFeePerGas?: `0x${string}` | undefined;
-                type?: "0x4" | undefined;
-                data?: `0x${string}` | undefined;
-                value?: `0x${string}` | undefined;
-                gas?: `0x${string}` | undefined;
                 to?: `0x${string}` | null | undefined;
+                data?: `0x${string}` | undefined;
                 from?: `0x${string}` | undefined;
+                gas?: `0x${string}` | undefined;
                 nonce?: `0x${string}` | undefined;
+                value?: `0x${string}` | undefined;
                 accessList?: import("viem").AccessList | undefined;
                 authorizationList?: import("viem").RpcAuthorizationList | undefined;
                 blobs?: undefined;

@@ -244,16 +244,16 @@ export declare const unichain: Readonly<{
                 r: import("viem").Hex;
                 s: import("viem").Hex;
                 v: bigint;
-                value: bigint;
-                gas: bigint;
                 to: import("abitype").Address | null;
                 from: import("abitype").Address;
+                gas: bigint;
                 nonce: number;
+                value: bigint;
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                transactionIndex: number | null;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
+                transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 accessList?: undefined | undefined;
                 authorizationList?: undefined | undefined;
@@ -390,6 +390,7 @@ export declare const unichain: Readonly<{
                 blobGasUsed?: bigint | undefined;
                 blockHash: import("viem").Hash;
                 blockNumber: bigint;
+                blockTimestamp?: bigint | undefined;
                 contractAddress: import("abitype").Address | null | undefined;
                 cumulativeGasUsed: bigint;
                 effectiveGasPrice: bigint;

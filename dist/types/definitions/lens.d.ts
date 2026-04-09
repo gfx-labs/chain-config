@@ -6,7 +6,7 @@ export declare const lens: Readonly<{
     sortIndex: 31;
     blockAid: "";
     logoUrl: "https://cms.oku.trade/cdn/public/chains/lens-logo.svg";
-    deprecated: false;
+    deprecated: true;
     estimatedSwapGas: 300000;
     estimatedBridgeGas: 200000;
     estimatedWrapGas: 60000;

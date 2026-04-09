@@ -236,16 +236,16 @@ export declare const worldchain: Readonly<{
                 r: import("viem").Hex;
                 s: import("viem").Hex;
                 v: bigint;
-                value: bigint;
-                gas: bigint;
                 to: import("viem").Address | null;
                 from: import("viem").Address;
+                gas: bigint;
                 nonce: number;
+                value: bigint;
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                transactionIndex: number | null;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
+                transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 accessList?: undefined | undefined;
                 authorizationList?: undefined | undefined;
@@ -382,6 +382,7 @@ export declare const worldchain: Readonly<{
                 blobGasUsed?: bigint | undefined;
                 blockHash: import("viem").Hash;
                 blockNumber: bigint;
+                blockTimestamp?: bigint | undefined;
                 contractAddress: import("viem").Address | null | undefined;
                 cumulativeGasUsed: bigint;
                 effectiveGasPrice: bigint;

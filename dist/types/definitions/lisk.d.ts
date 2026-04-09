@@ -91,6 +91,11 @@ export declare const lisk: Readonly<{
         multicall3: {
             address: "0xA9d71E1dd7ca26F26e656E66d6AA81ed7f745bf0";
         };
+        disputeGameFactory: {
+            readonly 1: {
+                readonly address: "0x0CF7D3706a27CCE2017aEB11E8a9c8b5388c282C";
+            };
+        };
         l2OutputOracle: {
             readonly 1: {
                 readonly address: "0x113cB99283AF242Da0A0C54347667edF531Aa7d6";
@@ -209,16 +214,16 @@ export declare const lisk: Readonly<{
                 r: import("viem").Hex;
                 s: import("viem").Hex;
                 v: bigint;
-                value: bigint;
-                gas: bigint;
                 to: import("abitype").Address | null;
                 from: import("abitype").Address;
+                gas: bigint;
                 nonce: number;
+                value: bigint;
                 blockHash: `0x${string}` | null;
                 blockNumber: bigint | null;
-                transactionIndex: number | null;
                 hash: import("viem").Hash;
                 input: import("viem").Hex;
+                transactionIndex: number | null;
                 typeHex: import("viem").Hex | null;
                 accessList?: undefined | undefined;
                 authorizationList?: undefined | undefined;
@@ -355,6 +360,7 @@ export declare const lisk: Readonly<{
                 blobGasUsed?: bigint | undefined;
                 blockHash: import("viem").Hash;
                 blockNumber: bigint;
+                blockTimestamp?: bigint | undefined;
                 contractAddress: import("abitype").Address | null | undefined;
                 cumulativeGasUsed: bigint;
                 effectiveGasPrice: bigint;

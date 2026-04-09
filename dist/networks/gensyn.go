@@ -15,7 +15,7 @@ var Gensyn Network = Network{
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {
-			Url: "https://ddrg456.explorer.alchemy.com/",
+			Url: "https://gensyn-mainnet.explorer.alchemy.com",
 		},
 	},
 	DefaultPool:     common.HexToAddress("0x0000000000000000000000000000000000000000"),
@@ -69,13 +69,13 @@ var Gensyn Network = Network{
 		WethAddress: common.HexToAddress("0x4200000000000000000000000000000000000006"),
 	},
 	Contracts: map[string]ChainContract{
-		"limitOrder": {
-			BlockCreated: 0,
-			Address:      common.HexToAddress("0x0000000000000000000000000000000000000000"),
-		},
 		"multicall3": {
 			BlockCreated: 0,
 			Address:      common.HexToAddress("0xcA11bde05977b3631167028862bE2a173976CA11"),
+		},
+		"limitOrder": {
+			BlockCreated: 0,
+			Address:      common.HexToAddress("0x0000000000000000000000000000000000000000"),
 		},
 		"nftManager": {
 			BlockCreated: 0,

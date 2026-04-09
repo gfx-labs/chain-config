@@ -1,4 +1,4 @@
-import { arbitrum as arbitrum$1, avalanche as avalanche$1, base as base$1, blast as blast$1, bob as bob$1, boba as boba$1, bsc as bsc$1, celo as celo$1, corn as corn$1, etherlink as etherlink$1, filecoin as filecoin$1, gnosis as gnosis$1, goat as goat$1, hemi as hemi$1, hyperEvm, lens as lens$1, lightlinkPhoenix, linea as linea$1, lisk as lisk$1, mainnet as mainnet$1, manta as manta$1, mantle as mantle$1, matchain as matchain$1, metalL2, monad as monad$1, moonbeam as moonbeam$1, nibiru as nibiru$1, optimism as optimism$1, plasma as plasma$1, polygon as polygon$1, redbellyMainnet, ronin as ronin$1, rootstock as rootstock$1, saga as saga$1, scroll as scroll$1, sei as sei$1, sonic as sonic$1, taiko as taiko$1, telos as telos$1, tronShasta as tronShasta$1, unichain as unichain$1, worldchain as worldchain$1, xdc as xdc$1, zeroGMainnet, polygonZkEvm as polygonZkEvm$1, zksync } from 'viem/chains';
+import { arbitrum as arbitrum$1, avalanche as avalanche$1, base as base$1, blast as blast$1, bob as bob$1, boba as boba$1, bsc as bsc$1, celo as celo$1, corn as corn$1, etherlink as etherlink$1, filecoin as filecoin$1, gensyn as gensyn$1, gnosis as gnosis$1, goat as goat$1, hemi as hemi$1, hyperEvm, lens as lens$1, lightlinkPhoenix, linea as linea$1, lisk as lisk$1, mainnet as mainnet$1, manta as manta$1, mantle as mantle$1, matchain as matchain$1, metalL2, monad as monad$1, moonbeam as moonbeam$1, nibiru as nibiru$1, optimism as optimism$1, plasma as plasma$1, polygon as polygon$1, redbellyMainnet, ronin as ronin$1, rootstock as rootstock$1, saga as saga$1, scroll as scroll$1, sei as sei$1, sonic as sonic$1, taiko as taiko$1, telos as telos$1, tronShasta as tronShasta$1, unichain as unichain$1, worldchain as worldchain$1, xdc as xdc$1, zeroGMainnet, polygonZkEvm as polygonZkEvm$1, zksync } from 'viem/chains';
 import { zeroAddress } from 'viem';
 
 const makeConfig = (x) => {
@@ -1740,28 +1740,7 @@ const filecoin = makeConfig({
 });
 
 const gensyn = makeConfig({
-    sourceId: undefined,
-    testnet: false,
-    fees: undefined,
-    custom: undefined,
-    formatters: undefined,
-    serializers: undefined,
-    id: 685689,
-    name: "Gensyn",
-    nativeCurrency: {
-        decimals: 18,
-        name: "Ether",
-        symbol: "ETH",
-    },
-    rpcUrls: {
-        default: { http: ["https://gensyn-mainnet.g.alchemy.com/public"] },
-    },
-    blockExplorers: {
-        default: {
-            name: "Gensyn Explorer",
-            url: "https://ddrg456.explorer.alchemy.com/",
-        },
-    },
+    ...gensyn$1,
     blockTimeSeconds: 2,
     launchTime: 1773970570,
     transactionType: "eip1559",
@@ -1823,12 +1802,9 @@ const gensyn = makeConfig({
     internalName: "gensyn",
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
     contracts: {
+        ...gensyn$1.contracts,
         limitOrder: {
             address: zeroAddress,
-            blockCreated: 0,
-        },
-        multicall3: {
-            address: "0xcA11bde05977b3631167028862bE2a173976CA11",
             blockCreated: 0,
         },
         nftManager: {
@@ -2340,7 +2316,7 @@ const lens = makeConfig({
     sortIndex: 31,
     blockAid: "",
     logoUrl: "https://cms.oku.trade/cdn/public/chains/lens-logo.svg",
-    deprecated: false,
+    deprecated: true,
     estimatedSwapGas: 300000,
     estimatedBridgeGas: 200000,
     estimatedWrapGas: 60000,
@@ -3429,7 +3405,7 @@ const matchain = makeConfig({
     sortIndex: 23,
     blockAid: "",
     logoUrl: "https://cms.oku.trade/cdn/public/chains/matchain-logo.svg",
-    deprecated: false,
+    deprecated: true,
     estimatedSwapGas: 300000,
     estimatedBridgeGas: 200000,
     estimatedWrapGas: 60000,

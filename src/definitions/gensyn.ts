@@ -1,29 +1,9 @@
 import { zeroAddress } from "viem";
+import { gensyn as chain } from "viem/chains";
 import { makeConfig } from "../util";
 
 export const gensyn = makeConfig({
-	sourceId: undefined,
-	testnet: false,
-	fees: undefined,
-	custom: undefined,
-	formatters: undefined,
-	serializers: undefined,
-	id: 685_689,
-	name: "Gensyn",
-	nativeCurrency: {
-		decimals: 18,
-		name: "Ether",
-		symbol: "ETH",
-	},
-	rpcUrls: {
-		default: { http: ["https://gensyn-mainnet.g.alchemy.com/public"] },
-	},
-	blockExplorers: {
-		default: {
-			name: "Gensyn Explorer",
-			url: "https://ddrg456.explorer.alchemy.com/",
-		},
-	},
+	...chain,
 	blockTimeSeconds: 2,
 	launchTime: 1773970570,
 	transactionType: "eip1559",
@@ -45,7 +25,8 @@ export const gensyn = makeConfig({
 		morpho: "0x8c45B34999883FF4B47cD3be095D585682cd9227",
 		bundler3: "0xE09314FE5Fc41FEc8f3e6042085dD3CeE24c877c",
 		vaultV2Factory: "0xe2558155AEcEF57cAADB98e39b0538ab0ae95693",
-		morphoMarketV1AdapterV2Factory: "0x155134544AE2Ec3AB23034BF620538482C5E3c40",
+		morphoMarketV1AdapterV2Factory:
+			"0x155134544AE2Ec3AB23034BF620538482C5E3c40",
 		morphoMarketV1RegistryV2: "0x53A687347c822D222058d3E99a566a3D3c0638e1",
 	},
 	initCodeHash:
@@ -88,12 +69,9 @@ export const gensyn = makeConfig({
 	internalName: "gensyn",
 	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
 	contracts: {
+		...chain.contracts,
 		limitOrder: {
 			address: zeroAddress,
-			blockCreated: 0,
-		},
-		multicall3: {
-			address: "0xcA11bde05977b3631167028862bE2a173976CA11",
 			blockCreated: 0,
 		},
 		nftManager: {

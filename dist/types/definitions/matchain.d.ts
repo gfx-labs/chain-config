@@ -6,7 +6,7 @@ export declare const matchain: Readonly<{
     sortIndex: 23;
     blockAid: "";
     logoUrl: "https://cms.oku.trade/cdn/public/chains/matchain-logo.svg";
-    deprecated: false;
+    deprecated: true;
     estimatedSwapGas: 300000;
     estimatedBridgeGas: 200000;
     estimatedWrapGas: 60000;
