@@ -1798,7 +1798,7 @@
         defaultToken1: "0x5b32c997211621d55a89Cc5abAF1cC21F3A6ddF5",
         tokenList: [
             { symbol: "WETH", address: "0x4200000000000000000000000000000000000006" },
-            { symbol: "USDC", address: "0x5b32c997211621d55a89Cc5abAF1cC21F3A6ddF5" },
+            { symbol: "USDC.e", address: "0x5b32c997211621d55a89Cc5abAF1cC21F3A6ddF5" },
         ],
         stables: ["0x1B8972370B26f6b9b7d5B823437Ba7674C53cb2a"],
         watchlist: [],
