@@ -1792,7 +1792,7 @@ const gensyn = makeConfig({
             nativeWrappedName: "ETH",
         },
     },
-    defaultPool: viem.zeroAddress,
+    defaultPool: "0xF3F77fb85A74f49a3DCb082347D7FEFa8aBA596f",
     defaultToken0: "0x4200000000000000000000000000000000000006",
     defaultToken1: "0x5b32c997211621d55a89Cc5abAF1cC21F3A6ddF5",
     tokenList: [
