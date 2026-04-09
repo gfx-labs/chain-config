@@ -10510,14 +10510,14 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
         };
     };
     defaultPool: "0x0000000000000000000000000000000000000000";
-    defaultToken0: "0x1B8972370B26f6b9b7d5B823437Ba7674C53cb2a";
-    defaultToken1: "0x4200000000000000000000000000000000000006";
+    defaultToken0: "0x4200000000000000000000000000000000000006";
+    defaultToken1: "0x5b32c997211621d55a89Cc5abAF1cC21F3A6ddF5";
     tokenList: ({
         symbol: string;
         address: "0x4200000000000000000000000000000000000006";
     } | {
         symbol: string;
-        address: "0x1B8972370B26f6b9b7d5B823437Ba7674C53cb2a";
+        address: "0x5b32c997211621d55a89Cc5abAF1cC21F3A6ddF5";
     })[];
     stables: "0x1B8972370B26f6b9b7d5B823437Ba7674C53cb2a"[];
     watchlist: never[];
