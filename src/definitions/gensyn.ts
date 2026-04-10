@@ -5,6 +5,7 @@ import { makeConfig } from "../util";
 export const gensyn = makeConfig({
 	...chain,
 	blockTimeSeconds: 2,
+	name: "Gensyn",
 	launchTime: 1773970570,
 	transactionType: "eip1559",
 	sortIndex: 25,
