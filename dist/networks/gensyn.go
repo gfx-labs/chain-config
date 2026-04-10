@@ -27,8 +27,8 @@ var Gensyn Network = Network{
 	DefaultToken1:   common.HexToAddress("0x5b32c997211621d55a89Cc5abAF1cC21F3A6ddF5"),
 	BlockAid:        "",
 	//TODO: TokenList:        []any{},
-	Stables:          []common.Address{common.HexToAddress("0x1B8972370B26f6b9b7d5B823437Ba7674C53cb2a")},
-	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x1B8972370B26f6b9b7d5B823437Ba7674C53cb2a"): {}},
+	Stables:          []common.Address{common.HexToAddress("0x5b32c997211621d55a89Cc5abAF1cC21F3A6ddF5")},
+	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x5b32c997211621d55a89Cc5abAF1cC21F3A6ddF5"): {}},
 	Watchlist:        []common.Address{},
 	BlockTimeSeconds: 2,
 	Oku: OkuMetadata{
