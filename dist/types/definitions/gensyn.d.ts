@@ -1,5 +1,6 @@
 export declare const gensyn: Readonly<{
     blockTimeSeconds: 2;
+    name: "Gensyn";
     launchTime: 1773970570;
     transactionType: "eip1559";
     sortIndex: 25;
@@ -90,7 +91,6 @@ export declare const gensyn: Readonly<{
     blockTime?: number | undefined | undefined | undefined;
     ensTlds?: readonly string[] | undefined;
     id: 685689;
-    name: "Gensyn Mainnet";
     nativeCurrency: {
         readonly decimals: 18;
         readonly name: "Ether";

@@ -1744,6 +1744,7 @@ const filecoin = makeConfig({
 const gensyn = makeConfig({
     ...chains.gensyn,
     blockTimeSeconds: 2,
+    name: "Gensyn",
     launchTime: 1773970570,
     transactionType: "eip1559",
     sortIndex: 25,
