@@ -64,7 +64,7 @@ export const gensyn = makeConfig({
 		{ symbol: "WETH", address: "0x4200000000000000000000000000000000000006" },
 		{ symbol: "USDC.e", address: "0x5b32c997211621d55a89Cc5abAF1cC21F3A6ddF5" },
 	],
-	stables: ["0x1B8972370B26f6b9b7d5B823437Ba7674C53cb2a"],
+	stables: ["0x5b32c997211621d55a89Cc5abAF1cC21F3A6ddF5"],
 	watchlist: [],
 	internalName: "gensyn",
 	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
