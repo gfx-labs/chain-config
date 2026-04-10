@@ -6284,7 +6284,7 @@ const xdc = makeConfig({
 const zerog = makeConfig({
     ...zeroGMainnet,
     name: "0G",
-    blockTimeSeconds: 35,
+    blockTimeSeconds: 1,
     launchTime: 1733882663,
     transactionType: "eip1559",
     sortIndex: 44,
