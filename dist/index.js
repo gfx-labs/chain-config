@@ -1801,7 +1801,10 @@ const gensyn = makeConfig({
         { symbol: "USDC.e", address: "0x5b32c997211621d55a89Cc5abAF1cC21F3A6ddF5" },
     ],
     stables: ["0x5b32c997211621d55a89Cc5abAF1cC21F3A6ddF5"],
-    watchlist: [],
+    watchlist: [
+        "0xF3F77fb85A74f49a3DCb082347D7FEFa8aBA596f",
+        "0x3e228359c8ce20fae623e54b438c74420ce30e5b",
+    ],
     internalName: "gensyn",
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
     contracts: {
