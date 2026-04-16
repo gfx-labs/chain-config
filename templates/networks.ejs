@@ -122,40 +122,41 @@ func NetworkByAny(v any) (*Network, error) {
     case InternalName:
         return NetworkByName(string(x))
     case string:
-        return networkByString(x)
-    case int:
-        return NetworkById(x)
-    case int8:
-        return NetworkById(int(x))
-    case int16:
-        return NetworkById(int(x))
-    case int32:
-        return NetworkById(int(x))
-    case int64:
-        return NetworkById(int(x))
-    case uint:
-        return NetworkById(int(x))
-    case uint8:
-        return NetworkById(int(x))
-    case uint16:
-        return NetworkById(int(x))
-    case uint32:
-        return NetworkById(int(x))
-    case uint64:
-        return NetworkById(int(x))
-    case float32:
-        return NetworkById(int(x))
-    case float64:
-        return NetworkById(int(x))
+        return NetworkByString(x)
+    case int:     return NetworkByNumber(x)
+    case int8:    return NetworkByNumber(x)
+    case int16:   return NetworkByNumber(x)
+    case int32:   return NetworkByNumber(x)
+    case int64:   return NetworkByNumber(x)
+    case uint:    return NetworkByNumber(x)
+    case uint8:   return NetworkByNumber(x)
+    case uint16:  return NetworkByNumber(x)
+    case uint32:  return NetworkByNumber(x)
+    case uint64:  return NetworkByNumber(x)
+    case uintptr: return NetworkByNumber(x)
+    case float32: return NetworkByNumber(x)
+    case float64: return NetworkByNumber(x)
     case fmt.Stringer:
-        return networkByString(x.String())
+        return NetworkByString(x.String())
     }
     return nil, fmt.Errorf("%w: unsupported type %T", ErrNetworkNotFound, v)
 }
 
-// networkByString tries to resolve a string as a CAIP-2 identifier,
-// an internal name, or a numeric chain id (in that order).
-func networkByString(s string) (*Network, error) {
+// Numeric is any Go numeric type that can represent a chain id.
+type Numeric interface {
+    ~int | ~int8 | ~int16 | ~int32 | ~int64 |
+        ~uint | ~uint8 | ~uint16 | ~uint32 | ~uint64 | ~uintptr |
+        ~float32 | ~float64
+}
+
+// NetworkByNumber resolves a network from any numeric chain id.
+func NetworkByNumber[T Numeric](n T) (*Network, error) {
+    return NetworkById(int(n))
+}
+
+// NetworkByString resolves a network from a string. It tries, in order:
+// CAIP-2 identifier (if it contains ":"), internal name, and numeric chain id.
+func NetworkByString(s string) (*Network, error) {
     if s == "" {
         return nil, fmt.Errorf("%w: empty string", ErrNetworkNotFound)
     }
