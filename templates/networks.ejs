@@ -99,6 +99,78 @@ func NetworkByCAIP2(caip2 string) (*Network, error) {
     return &val, nil
 }
 
+// NetworkByAny resolves a network from an arbitrary input. It accepts:
+//   - integer types (int, int8..int64, uint, uint8..uint64): treated as chain id
+//   - float32/float64: truncated to int and treated as chain id
+//   - string: tried as CAIP-2 identifier (if it contains ":"), then as
+//     internal name, then as a numeric chain id
+//   - fmt.Stringer: its String() result is resolved as a string
+//   - *Network / Network / InternalName: resolved directly
+// It returns ErrNetworkNotFound wrapped with context if no match is found.
+func NetworkByAny(v any) (*Network, error) {
+    if v == nil {
+        return nil, fmt.Errorf("%w: nil", ErrNetworkNotFound)
+    }
+    switch x := v.(type) {
+    case *Network:
+        if x == nil {
+            return nil, fmt.Errorf("%w: nil", ErrNetworkNotFound)
+        }
+        return x, nil
+    case Network:
+        return &x, nil
+    case InternalName:
+        return NetworkByName(string(x))
+    case string:
+        return networkByString(x)
+    case int:
+        return NetworkById(x)
+    case int8:
+        return NetworkById(int(x))
+    case int16:
+        return NetworkById(int(x))
+    case int32:
+        return NetworkById(int(x))
+    case int64:
+        return NetworkById(int(x))
+    case uint:
+        return NetworkById(int(x))
+    case uint8:
+        return NetworkById(int(x))
+    case uint16:
+        return NetworkById(int(x))
+    case uint32:
+        return NetworkById(int(x))
+    case uint64:
+        return NetworkById(int(x))
+    case float32:
+        return NetworkById(int(x))
+    case float64:
+        return NetworkById(int(x))
+    case fmt.Stringer:
+        return networkByString(x.String())
+    }
+    return nil, fmt.Errorf("%w: unsupported type %T", ErrNetworkNotFound, v)
+}
+
+// networkByString tries to resolve a string as a CAIP-2 identifier,
+// an internal name, or a numeric chain id (in that order).
+func networkByString(s string) (*Network, error) {
+    if s == "" {
+        return nil, fmt.Errorf("%w: empty string", ErrNetworkNotFound)
+    }
+    if strings.Contains(s, ":") {
+        return NetworkByCAIP2(s)
+    }
+    if n, ok := networksByName[s]; ok {
+        return &n, nil
+    }
+    if i64, err := strconv.ParseInt(s, 0, 64); err == nil {
+        return NetworkById(int(i64))
+    }
+    return nil, fmt.Errorf("%w: %v", ErrNetworkNotFound, s)
+}
+
 type Network struct { <% for(const prop of props_1) {%>
     <%- helpers.displayProp(prop) %> <% } %>
 
