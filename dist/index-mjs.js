@@ -4373,7 +4373,7 @@ const pharos = makeConfig({
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
     uniswap: {},
     token: {
-        usdcAddress: "0x7126c3fef4e6a680eee09fb039b2236f638384b0",
+        usdcAddress: "0xc879c018db60520f4355c26ed1a6d572cdac1815",
         wethAddress: "0x52c48d4213107b20bc583832b0d951fb9ca8f0b0",
     },
     oku: {
@@ -4386,15 +4386,15 @@ const pharos = makeConfig({
     },
     defaultPool: zeroAddress,
     defaultToken0: "0x52c48d4213107b20bc583832b0d951fb9ca8f0b0",
-    defaultToken1: "0x7126c3fef4e6a680eee09fb039b2236f638384b0",
+    defaultToken1: "0xc879c018db60520f4355c26ed1a6d572cdac1815",
     tokenList: [
         { symbol: "WPROS", address: "0x52c48d4213107b20bc583832b0d951fb9ca8f0b0" },
         {
-            symbol: "USDC.e",
-            address: "0x7126c3fef4e6a680eee09fb039b2236f638384b0",
+            symbol: "USDC",
+            address: "0xc879c018db60520f4355c26ed1a6d572cdac1815",
         },
     ],
-    stables: ["0x7126c3fef4e6a680eee09fb039b2236f638384b0"],
+    stables: ["0xc879c018db60520f4355c26ed1a6d572cdac1815"],
     watchlist: [],
     internalName: "pharos",
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/pros.png",
