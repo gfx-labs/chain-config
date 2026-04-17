@@ -1375,7 +1375,7 @@ const corn = makeConfig({
     transactionType: "eip1559",
     sortIndex: 25,
     logoUrl: "https://cms.oku.trade/cdn/public/chains/corn-logo.svg",
-    deprecated: false,
+    deprecated: true,
     estimatedSwapGas: 300000,
     estimatedBridgeGas: 200000,
     estimatedWrapGas: 60000,
