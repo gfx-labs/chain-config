@@ -24,11 +24,11 @@ var Pharos Network = Network{
 	InitCodeHash:    common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId:      map[string]string{},
 	DefaultToken0:   common.HexToAddress("0x52c48d4213107b20bc583832b0d951fb9ca8f0b0"),
-	DefaultToken1:   common.HexToAddress("0x7126c3fef4e6a680eee09fb039b2236f638384b0"),
+	DefaultToken1:   common.HexToAddress("0xc879c018db60520f4355c26ed1a6d572cdac1815"),
 	BlockAid:        "",
 	//TODO: TokenList:        []any{},
-	Stables:          []common.Address{common.HexToAddress("0x7126c3fef4e6a680eee09fb039b2236f638384b0")},
-	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x7126c3fef4e6a680eee09fb039b2236f638384b0"): {}},
+	Stables:          []common.Address{common.HexToAddress("0xc879c018db60520f4355c26ed1a6d572cdac1815")},
+	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0xc879c018db60520f4355c26ed1a6d572cdac1815"): {}},
 	Watchlist:        []common.Address{},
 	BlockTimeSeconds: 2,
 	Oku: OkuMetadata{
@@ -51,7 +51,7 @@ var Pharos Network = Network{
 		MorphoMarketV1AdapterV2Factory: common.HexToAddress("0xe510e1fcC429943cA3455A7bfBD79f0307Cd8403"),
 	},
 	Token: TokenMetadata{
-		UsdcAddress: common.HexToAddress("0x7126c3fef4e6a680eee09fb039b2236f638384b0"),
+		UsdcAddress: common.HexToAddress("0xc879c018db60520f4355c26ed1a6d572cdac1815"),
 		WethAddress: common.HexToAddress("0x52c48d4213107b20bc583832b0d951fb9ca8f0b0"),
 	},
 	Contracts: map[string]ChainContract{
