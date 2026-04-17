@@ -55,6 +55,10 @@ var Pharos Network = Network{
 		WethAddress: common.HexToAddress("0x52c48d4213107b20bc583832b0d951fb9ca8f0b0"),
 	},
 	Contracts: map[string]ChainContract{
+		"multicall3": {
+			BlockCreated: 0,
+			Address:      common.HexToAddress("0xca11bde05977b3631167028862be2a173976ca11"),
+		},
 		"limitOrder": {
 			BlockCreated: 0,
 			Address:      common.HexToAddress("0x0000000000000000000000000000000000000000"),

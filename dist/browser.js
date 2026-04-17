@@ -4344,7 +4344,10 @@
             },
         },
         contracts: {
-        // No canonical multicall3 deployment confirmed yet; add when known.
+            multicall3: {
+                address: "0xca11bde05977b3631167028862be2a173976ca11",
+            },
+            // No canonical multicall3 deployment confirmed yet; add when known.
         },
     });
 
