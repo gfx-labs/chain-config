@@ -52,4 +52,5 @@ export const MAINNET_CHAINS = [
 	defs.monad,
 	defs.hyperevm,
 	defs.gensyn,
+	defs.pharos,
 ] as const;

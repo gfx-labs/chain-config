@@ -1,5 +1,5 @@
 import { arbitrum as arbitrum$1, avalanche as avalanche$1, base as base$1, blast as blast$1, bob as bob$1, boba as boba$1, bsc as bsc$1, celo as celo$1, corn as corn$1, etherlink as etherlink$1, filecoin as filecoin$1, gensyn as gensyn$1, gnosis as gnosis$1, goat as goat$1, hemi as hemi$1, hyperEvm, lens as lens$1, lightlinkPhoenix, linea as linea$1, lisk as lisk$1, mainnet as mainnet$1, manta as manta$1, mantle as mantle$1, matchain as matchain$1, metalL2, monad as monad$1, moonbeam as moonbeam$1, nibiru as nibiru$1, optimism as optimism$1, plasma as plasma$1, polygon as polygon$1, redbellyMainnet, ronin as ronin$1, rootstock as rootstock$1, saga as saga$1, scroll as scroll$1, sei as sei$1, sonic as sonic$1, taiko as taiko$1, telos as telos$1, tronShasta as tronShasta$1, unichain as unichain$1, worldchain as worldchain$1, xdc as xdc$1, zeroGMainnet, polygonZkEvm as polygonZkEvm$1, zksync } from 'viem/chains';
-import { zeroAddress } from 'viem';
+import { zeroAddress, defineChain } from 'viem';
 
 const makeConfig = (x) => {
     return { caip2Namespace: "eip155", ...x };
@@ -4266,6 +4266,153 @@ const optimism = makeConfig({
     },
 });
 
+/**
+ * Define a chain internally when `viem/chains` does not yet export it
+ * (or ships it too slowly).
+ *
+ * Wraps viem's own {@link defineChain} so the result is a valid `Chain` and
+ * can be consumed anywhere a `viem/chains` import would be. The intent is
+ * that once viem merges the chain upstream, a definition in
+ * `src/definitions/<chain>.ts` can swap
+ *
+ *   import { foo as chain } from "../internal-chains";
+ *
+ * for
+ *
+ *   import { foo as chain } from "viem/chains";
+ *
+ * with no other code changes.
+ *
+ * @example
+ * ```ts
+ * // src/internal-chains/mychain.ts
+ * import { makeInternalChain } from "./util";
+ *
+ * export const mychain = makeInternalChain({
+ *   id: 123456,
+ *   name: "My Chain",
+ *   nativeCurrency: { name: "MyToken", symbol: "MYT", decimals: 18 },
+ *   rpcUrls: { default: { http: ["https://rpc.mychain.example"] } },
+ *   blockExplorers: {
+ *     default: { name: "MyScan", url: "https://explorer.mychain.example" },
+ *   },
+ *   contracts: {
+ *     multicall3: {
+ *       address: "0xca11bde05977b3631167028862be2a173976ca11",
+ *       blockCreated: 1,
+ *     },
+ *   },
+ * });
+ * ```
+ */
+const makeInternalChain = (params) => {
+    return defineChain(params);
+};
+
+/**
+ * Pharos Mainnet.
+ *
+ * Not (yet) exported by `viem/chains`; defined internally so we can ship
+ * chain-config support ahead of upstream. Swap this import for
+ * `viem/chains` once viem adds it.
+ *
+ * Refs:
+ *   - https://rpc.pharos.xyz
+ *   - https://pharos.socialscan.io
+ *   - https://linear.app/gfx-labs/project/pharos-morpho-985c928b0010
+ */
+const pharos$1 = makeInternalChain({
+    id: 1672,
+    name: "Pharos Mainnet",
+    nativeCurrency: {
+        name: "Pharos",
+        symbol: "PROS",
+        decimals: 18,
+    },
+    rpcUrls: {
+        default: {
+            http: ["https://rpc.pharos.xyz"],
+        },
+    },
+    blockExplorers: {
+        default: {
+            name: "SocialScan",
+            url: "https://pharos.socialscan.io",
+        },
+    },
+    contracts: {
+    // No canonical multicall3 deployment confirmed yet; add when known.
+    },
+});
+
+const pharos = makeConfig({
+    ...pharos$1,
+    blockTimeSeconds: 2,
+    launchTime: 1777014000,
+    transactionType: "eip1559",
+    sortIndex: 46,
+    logoUrl: "https://cms.oku.trade/cdn/public/chains/pharos-logo.svg",
+    deprecated: false,
+    liteChain: true,
+    estimatedSwapGas: 300000,
+    estimatedBridgeGas: 200000,
+    estimatedWrapGas: 60000,
+    safeReorgDistance: 90000,
+    blockAid: "",
+    externalId: {},
+    markets: {},
+    bridges: {},
+    oracles: {},
+    morpho: {
+        deployBlock: 4202147,
+        morpho: "0x18573fA18fd17dDfD790B4a5B5b2977aad3b4Efb",
+        bundler3: "0x3c90c09F8c5d927a117F681fB924952DbbD99120",
+        vaultV2Factory: "0x8E01ed1E1A41029b3137FcE9Aa880c0A54827498",
+        morphoMarketV1AdapterV2Factory: "0xe510e1fcC429943cA3455A7bfBD79f0307Cd8403",
+    },
+    initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
+    uniswap: {},
+    token: {
+        usdcAddress: "0x7126c3fef4e6a680eee09fb039b2236f638384b0",
+        wethAddress: "0x52c48d4213107b20bc583832b0d951fb9ca8f0b0",
+    },
+    oku: {
+        limitOrderRegistry: zeroAddress,
+        limitOrderRegistryDeployBlock: 0,
+        pricing: {
+            nativeWrappedToken: "0x52c48d4213107b20bc583832b0d951fb9ca8f0b0",
+            nativeWrappedName: "PROS",
+        },
+    },
+    defaultPool: zeroAddress,
+    defaultToken0: "0x52c48d4213107b20bc583832b0d951fb9ca8f0b0",
+    defaultToken1: "0x7126c3fef4e6a680eee09fb039b2236f638384b0",
+    tokenList: [
+        { symbol: "WPROS", address: "0x52c48d4213107b20bc583832b0d951fb9ca8f0b0" },
+        {
+            symbol: "USDC.e",
+            address: "0x7126c3fef4e6a680eee09fb039b2236f638384b0",
+        },
+    ],
+    stables: ["0x7126c3fef4e6a680eee09fb039b2236f638384b0"],
+    watchlist: [],
+    internalName: "pharos",
+    nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/pros.png",
+    contracts: {
+        ...pharos$1.contracts,
+        limitOrder: {
+            address: zeroAddress,
+            blockCreated: 0,
+        },
+        nftManager: {
+            address: zeroAddress,
+        },
+        weth9: {
+            address: "0x52c48d4213107b20bc583832b0d951fb9ca8f0b0",
+        },
+    },
+});
+
 const plasma = makeConfig({
     ...plasma$1,
     name: "Plasma",
@@ -6755,6 +6902,7 @@ const MAINNET_CHAINS = [
     monad,
     hyperevm,
     gensyn,
+    pharos,
 ];
 
-export { MAINNET_CHAINS, arbitrum, avalanche, base, blast, bob, boba, bsc, celo, corn, etherlink, filecoin, formatCAIP2, fromCAIP2, gensyn, gnosis, goat, hemi, hyperevm, lens, lightlink, linea, lisk, mainnet, manta, mantle, matchain, metal, monad, moonbeam, nibiru, optimism, parseCAIP2, plasma, polygon, polygonZkEvm, redbelly, ronin, rootstock, saga, scroll, sei, sonic, taiko, telos, toCAIP2, tronShasta, unichain, worldchain, xdc, zerog, zkSync };
+export { MAINNET_CHAINS, arbitrum, avalanche, base, blast, bob, boba, bsc, celo, corn, etherlink, filecoin, formatCAIP2, fromCAIP2, gensyn, gnosis, goat, hemi, hyperevm, lens, lightlink, linea, lisk, mainnet, manta, mantle, matchain, metal, monad, moonbeam, nibiru, optimism, parseCAIP2, pharos, plasma, polygon, polygonZkEvm, redbelly, ronin, rootstock, saga, scroll, sei, sonic, taiko, telos, toCAIP2, tronShasta, unichain, worldchain, xdc, zerog, zkSync };

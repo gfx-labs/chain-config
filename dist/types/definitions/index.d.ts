@@ -30,6 +30,7 @@ export * from "./monad";
 export * from "./moonbeam";
 export * from "./nibiru";
 export * from "./optimism";
+export * from "./pharos";
 export * from "./plasma";
 export * from "./polygon";
 export * from "./redbelly";

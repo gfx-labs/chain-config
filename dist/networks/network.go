@@ -61,6 +61,7 @@ const (
 	NameMonad        InternalName = "monad"
 	NameHyperevm     InternalName = "hyperevm"
 	NameGensyn       InternalName = "gensyn"
+	NamePharos       InternalName = "pharos"
 )
 
 var AllNetworks = []Network{
@@ -111,6 +112,7 @@ var AllNetworks = []Network{
 	Monad,
 	Hyperevm,
 	Gensyn,
+	Pharos,
 }
 
 var networksByName = map[string]Network{
@@ -161,6 +163,7 @@ var networksByName = map[string]Network{
 	"monad":         Monad,
 	"hyperevm":      Hyperevm,
 	"gensyn":        Gensyn,
+	"pharos":        Pharos,
 }
 
 var networksById = map[int]Network{
@@ -211,6 +214,7 @@ var networksById = map[int]Network{
 	143:        Monad,
 	999:        Hyperevm,
 	685689:     Gensyn,
+	1672:       Pharos,
 }
 
 func NetworkByName(name string) (*Network, error) {
@@ -285,6 +289,7 @@ var networksByCAIP2 = map[string]Network{
 	"eip155:143":        Monad,
 	"eip155:999":        Hyperevm,
 	"eip155:685689":     Gensyn,
+	"eip155:1672":       Pharos,
 }
 
 // ParseCAIP2 splits a CAIP-2 chain identifier into its namespace and reference.
