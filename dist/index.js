@@ -6363,7 +6363,14 @@ const xdc = makeConfig({
         },
     },
     oracles: {},
-    morpho: {},
+    morpho: {
+        deployBlock: 101757515,
+        morpho: "0xEa49B0fE898aF913A3826F9f462eE2cDcb854fD9",
+        bundler3: "0xed9bdc3E6081db528b6D5CDDf47EcB05337c62A7",
+        vaultV2Factory: "0x227544d6989cD15c05AAB6dde4F29523dcfdbe2B",
+        morphoMarketV1AdapterV2Factory: "0x5C00c99F2235439725417E9f037B7D38FfF35d31",
+        morphoMarketV1RegistryV2: "0x773Eee84bc3c4c9CD7CB79C198c5434E765ac67e",
+    },
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
     uniswap: {
         deployBlock: 87230664,

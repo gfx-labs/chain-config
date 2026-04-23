@@ -61,7 +61,14 @@ var Xdc Network = Network{
 		NativeCurrencyName:         "XDC",
 	},
 
-	Morpho: MorphoMetadata{},
+	Morpho: MorphoMetadata{
+		DeployBlock:                    101757515,
+		Morpho:                         common.HexToAddress("0xEa49B0fE898aF913A3826F9f462eE2cDcb854fD9"),
+		Bundler3:                       common.HexToAddress("0xed9bdc3E6081db528b6D5CDDf47EcB05337c62A7"),
+		VaultV2Factory:                 common.HexToAddress("0x227544d6989cD15c05AAB6dde4F29523dcfdbe2B"),
+		MorphoMarketV1AdapterV2Factory: common.HexToAddress("0x5C00c99F2235439725417E9f037B7D38FfF35d31"),
+		MorphoMarketV1RegistryV2:       common.HexToAddress("0x773Eee84bc3c4c9CD7CB79C198c5434E765ac67e"),
+	},
 	Token: TokenMetadata{
 		WethAddress: common.HexToAddress("0x951857744785e80e2de051c32ee7b25f9c458c42"),
 		UsdcAddress: common.HexToAddress("0xfa2958cb79b0491cc627c1557f441ef849ca8eb1"),
