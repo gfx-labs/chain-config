@@ -107,6 +107,7 @@ export const telos = makeConfig({
 		"0x11856fa7683aa9edf44a6ab368ec0cd02b03e6a1",
 		"0x45b47c9207fa8298863991f1b02a5b0e77bab7b6",
 	],
+	v4Watchlist: [],
 	internalName: "telos",
 	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/telos.png",
 	contracts: {

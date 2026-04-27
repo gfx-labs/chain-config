@@ -73,6 +73,7 @@ export declare const lisk: Readonly<{
     })[];
     stables: "0x05D032ac25d322df992303dCa074EE7392C117b9"[];
     watchlist: ("0xd501d4e381491f64274cc65fdec32b47264a2422" | "0x3a670179bdece7eb4f570e30ee9d560f7ff4fac3" | "0x304d69c5e03e030d6b298C0d0467baeb310f1f68")[];
+    v4Watchlist: never[];
     internalName: "lisk";
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png";
     contracts: {

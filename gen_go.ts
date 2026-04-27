@@ -64,6 +64,9 @@ const getPropType = (x: morph.PropertySignature): string => {
   if (nodeType == "ReadonlyArray<Address>") {
     return "[]common.Address";
   }
+  if (nodeType == "ReadonlyArray<Hash>") {
+    return "[]common.Hash";
+  }
   if (type.isArray()) {
     return `[]${getTypeType(type.getArrayElementType()!)}`;
   }

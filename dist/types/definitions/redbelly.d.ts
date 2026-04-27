@@ -62,6 +62,7 @@ export declare const redbelly: Readonly<{
     })[];
     stables: ("0x8201c02d4AB2214471E8C3AD6475C8b0CD9F2D06" | "0x8C4aCd74Ff4385f3B7911432FA6787Aa14406f8B" | "0x420e07cec544b8A52B7d0c62b1C9BF990cc58083" | "0xE08DED898D7782B085cD240d7B234063696765aD")[];
     watchlist: ("0x1f1bda1fe18aedf468abe36ed66eaf44aa6c490b" | "0xcDe3554d179b5B7ABB3ddFeE1CBC7B98b3f2E380" | "0x2ea9dacb203d36b51b164a3d25d69d1c8198eec1")[];
+    v4Watchlist: never[];
     internalName: "redbelly";
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/rbnt.svg";
     contracts: {

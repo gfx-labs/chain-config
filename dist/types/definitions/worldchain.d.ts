@@ -83,6 +83,7 @@ export declare const worldchain: Readonly<{
     })[];
     stables: "0x79a02482a880bce3f13e09da970dc34db4cd24d1"[];
     watchlist: never[];
+    v4Watchlist: never[];
     internalName: "worldchain";
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png";
     contracts: {

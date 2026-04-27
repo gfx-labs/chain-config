@@ -124,6 +124,7 @@ export declare const sei: Readonly<{
     })[];
     stables: ("0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1" | "0xb75d0b03c06a926e488e2659df1a861f860bd3d1" | "0x9151434b16b9763660705744891fa906f660ecc5")[];
     watchlist: ("0x0A6358F069268c7dc4918D5B12c69a782b957Ead" | "0x8a1a9efb7f7f74ace10a31f2f5f9f7e804f957b1" | "0x41eea09c971294fcde3b6e553902b04a47be7442" | "0x5cfa8db453c9904511c4ea9eb0bfc903e36b9f5f" | "0xa3a573c8d14c93fca8fdecb7db168619563d9b00" | "0x48ddb6384ec5d835bdb0faf7e3abc01d7a1493cd" | "0xc53b65811e3d33ada5a90d476dcf2063b53bcfb3")[];
+    v4Watchlist: never[];
     internalName: "sei";
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/sei.png";
     contracts: {

@@ -211,6 +211,7 @@ export const bsc = makeConfig({
 		"0xcb99fe720124129520f7a09ca3cbef78d58ed934",
 		"0x06396509195eb9e07c38a016694dc9ff535b128a",
 	],
+	v4Watchlist: [],
 	internalName: "bsc",
 	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/bnb.png",
 	contracts: {

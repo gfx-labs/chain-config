@@ -320,6 +320,7 @@ export const optimism = makeConfig({
 		"0xadb35413ec50e0afe41039eac8b930d313e94fa4",
 		"0x730691cdac3cbd4d41fc5eb9d8abbb0cea795b94",
 	],
+	v4Watchlist: [],
 	internalName: "optimism",
 	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
 	contracts: {

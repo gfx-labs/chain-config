@@ -137,6 +137,7 @@ export const gnosis = makeConfig({
 		"0xE9E1793954f32D880Ec0B2186E96d88e2b870e40",
 		"0xbb98d4e20b054ede4c4143ecee59368f88ecbbe4",
 	],
+	v4Watchlist: [],
 	internalName: "gnosis",
 	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/xdai.png",
 	contracts: {

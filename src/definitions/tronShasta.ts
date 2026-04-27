@@ -53,6 +53,7 @@ export const tronShasta = makeConfig({
 	tokenList: [],
 	stables: [],
 	watchlist: [],
+	v4Watchlist: [],
 	internalName: "tronshasta",
 	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/tron.png",
 	contracts: {

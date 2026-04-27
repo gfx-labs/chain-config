@@ -115,6 +115,7 @@ export const xdc = makeConfig({
 		"0x898488dc884ee5ece8079499f4c7ddc5c281e85f",
 		"0xd68fdf3cbe9f48422a15899318dd5cb921f92037",
 	],
+	v4Watchlist: [],
 	internalName: "xdc",
 	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/xdc.png",
 	contracts: {

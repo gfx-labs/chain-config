@@ -98,6 +98,7 @@ export declare const boba: Readonly<{
     })[];
     stables: ("0x66a2a913e447d6b4bf33efbec43aaef87890fbbc" | "0x5de1677344d3cb0d7d465c10b72a8f60699c062d" | "0xf74195bb8a5cf652411867c5c2c5b8c2a402be35")[];
     watchlist: ("0xdF37543dae7986E48E3ce83F390A828A9F3D23BA" | "0x162b1fda171463974e5262bac5824da233f11e00" | "0xfe1a0c58e38fa71618545df15e5479559ce51108" | "0xb1ed67e29b2497404a2ac7f2a2989c3328ec2999" | "0x66faef55892dae3932a043d3238ecaa271d36e0d" | "0x67fac3b54b6391e3183d2d74b7d2c430ad44fca1")[];
+    v4Watchlist: never[];
     internalName: "boba";
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png";
     contracts: {

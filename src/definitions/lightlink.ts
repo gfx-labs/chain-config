@@ -101,6 +101,7 @@ export const lightlink = makeConfig({
 		"0x2288627C696010049f6D98a84fC10F9C5F7b3Ce2",
 		"0xc87Fa6290e7F11543e76e1D240335190C15Dade8",
 	],
+	v4Watchlist: [],
 	internalName: "lightlink",
 	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
 	contracts: {

@@ -109,6 +109,7 @@ export const boba = makeConfig({
 		"0x66faef55892dae3932a043d3238ecaa271d36e0d",
 		"0x67fac3b54b6391e3183d2d74b7d2c430ad44fca1",
 	],
+	v4Watchlist: [],
 	internalName: "boba",
 	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
 	contracts: {

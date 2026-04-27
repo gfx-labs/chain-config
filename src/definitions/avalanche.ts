@@ -101,6 +101,7 @@ export const avalanche = makeConfig({
 		"0x9702230A8Ea53601f5cD2dc00fDBc13d4dF4A8c7",
 	],
 	watchlist: [],
+	v4Watchlist: [],
 	internalName: "avalanche",
 	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/avax.svg",
 	contracts: {

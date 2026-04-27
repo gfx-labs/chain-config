@@ -35,6 +35,7 @@ var Scroll Network = Network{
 	Stables:          []common.Address{common.HexToAddress("0x06efdbff2a14a7c8e15944d1f4a48f9f95f663a4"), common.HexToAddress("0xf55bec9cafdbe8730f096aa55dad6d22d44099df"), common.HexToAddress("0xca77eb3fefe3725dc33bccb54edefc3d9f764f97")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x06efdbff2a14a7c8e15944d1f4a48f9f95f663a4"): {}, common.HexToAddress("0xf55bec9cafdbe8730f096aa55dad6d22d44099df"): {}, common.HexToAddress("0xca77eb3fefe3725dc33bccb54edefc3d9f764f97"): {}},
 	Watchlist:        []common.Address{common.HexToAddress("0xf1783f3377b3a70465c193ef33942c0803121ba0"), common.HexToAddress("0x813df550a32d4a9d42010d057386429ad2328ed9")},
+	V4Watchlist:      []common.Hash{},
 	BlockTimeSeconds: 3,
 	Oku: OkuMetadata{
 		LimitOrderRegistry:            common.HexToAddress("0xeC3E5eeC51D8C3D4f03DABB84B4Db313a739f377"),

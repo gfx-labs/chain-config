@@ -79,6 +79,7 @@ export const lisk = makeConfig({
 		"0xd501d4e381491f64274cc65fdec32b47264a2422",
 		"0x304d69c5e03e030d6b298C0d0467baeb310f1f68",
 	],
+	v4Watchlist: [],
 	internalName: "lisk",
 	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
 	contracts: {

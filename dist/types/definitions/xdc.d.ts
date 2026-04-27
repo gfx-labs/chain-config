@@ -34,7 +34,14 @@ export declare const xdc: Readonly<{
         };
     };
     oracles: {};
-    morpho: {};
+    morpho: {
+        deployBlock: number;
+        morpho: "0xEa49B0fE898aF913A3826F9f462eE2cDcb854fD9";
+        bundler3: "0xed9bdc3E6081db528b6D5CDDf47EcB05337c62A7";
+        vaultV2Factory: "0x227544d6989cD15c05AAB6dde4F29523dcfdbe2B";
+        morphoMarketV1AdapterV2Factory: "0x5C00c99F2235439725417E9f037B7D38FfF35d31";
+        morphoMarketV1RegistryV2: "0x773Eee84bc3c4c9CD7CB79C198c5434E765ac67e";
+    };
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
     uniswap: {
         deployBlock: number;
@@ -79,6 +86,7 @@ export declare const xdc: Readonly<{
     })[];
     stables: ("0xfa2958cb79b0491cc627c1557f441ef849ca8eb1" | "0x2a8e898b6242355c290e1f4fc966b8788729a4d4" | "0xd4b5f10d61916bd6e0860144a91ac658de8a1437")[];
     watchlist: ("0x1e5aec37f6df6653c3342df75edd92beb3fb9846" | "0x9149b4e074f101ca0514b1d30fc78f181e21d409" | "0xd68fdf3cbe9f48422a15899318dd5cb921f92037" | "0x97bb50ace84058254df2e2f6482f5549e80b7267" | "0x9fb200504e3e9eb9b8e332fa21e47a657adfa099" | "0x898488dc884ee5ece8079499f4c7ddc5c281e85f")[];
+    v4Watchlist: never[];
     internalName: "xdc";
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/xdc.png";
     contracts: {

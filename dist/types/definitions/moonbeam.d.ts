@@ -93,6 +93,7 @@ export declare const moonbeam: Readonly<{
     })[];
     stables: ("0x931715FEE2d06333043d11F658C8CE934aC61D0c" | "0xffffffff7d2b0b761af01ca8e25242976ac0ad7d" | "0x818ec0a7fe18ff94269904fced6ae3dae6d6dc0b" | "0x765277eebeca2e31912c9946eae1021199b39c61" | "0x06e605775296e851ff43b4daa541bb0984e9d6fd" | "0xefaeee334f0fd1712f9a8cc375f427d9cdd40d73" | "0x8e70cd5b4ff3f62659049e74b6649c6603a0e594")[];
     watchlist: ("0xba66370d96a9d61afa66283900b78c1f6ed02782" | "0xB64fD2Cf30588e4ACbb92e98b28d976a61914D29" | "0x19156c03a6fd894beb4fa6a828e854d3a4bed372" | "0xCb1f81BEf053d3C8adfFd37D2da84Fcc3BcC9954" | "0x53c1341cd81562c1b1a7562fff712CD7be95D51e" | "0x45bD0680bDFd180341A6dE806Aa4637f9AfBFc39")[];
+    v4Watchlist: never[];
     internalName: "moonbeam";
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/glmr.png";
     contracts: {

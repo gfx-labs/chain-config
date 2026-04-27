@@ -32,6 +32,7 @@ var Saga Network = Network{
 	Stables:          []common.Address{common.HexToAddress("0xC8fe3C1de344854f4429bB333AFFAeF97eF88CEa"), common.HexToAddress("0xfc960C233B8E98e0Cf282e29BDE8d3f105fc24d5")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0xC8fe3C1de344854f4429bB333AFFAeF97eF88CEa"): {}, common.HexToAddress("0xfc960C233B8E98e0Cf282e29BDE8d3f105fc24d5"): {}},
 	Watchlist:        []common.Address{common.HexToAddress("0x99429757ddeb5432b52982b0fcf6ed94620c358d"), common.HexToAddress("0xc2C5f2C94759b2829C9Fd86b8d34d33DDc4D29e4"), common.HexToAddress("0xbbf2219c49efde9c64cd5f94a952c90e4e5b6e41"), common.HexToAddress("0x69bf9603468922c76a75068f51874f56662d35e3"), common.HexToAddress("0x387b99a979c79f827f0ca8a752893472dc34b7ec")},
+	V4Watchlist:      []common.Hash{},
 	BlockTimeSeconds: 5,
 	Oku: OkuMetadata{
 		LimitOrderRegistry:            common.HexToAddress("0xA9d71E1dd7ca26F26e656E66d6AA81ed7f745bf0"),

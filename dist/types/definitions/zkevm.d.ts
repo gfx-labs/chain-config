@@ -88,6 +88,7 @@ export declare const polygonZkEvm: Readonly<{
     })[];
     stables: ("0x37eaa0ef3549a5bb7d431be78a3d99bd360d19e5" | "0xa8ce8aee21bc2a48a5ef670afcc9274c7bbbc035" | "0x1e4a5963abfd975d8c9021ce480b42188849d41d" | "0x744C5860ba161b5316F7E80D9Ec415e2727e5bD5" | "0xc5015b9d9161dca7e18e32f6f25c4ad850731fd4")[];
     watchlist: ("0xd6efe114c9b6058a20aab759e064f50544590914" | "0x52b18c30f1d3f5c6f5fb4badff2d0ab3c68a3ff4" | "0x90C865Da46D948EF3792fb57B0d60D14A96ecf49" | "0xd2c7e323c6f5415dc0ee4e3811901b3380d316fd" | "0x539d23BE81696560C12Cf8d24AE8bb4641381E7D" | "0x7908F0eD78de3c850A5d1DC261c39341b274D07c" | "0x0A44b12799eBC21E1dF271284921e1e4F6f17f81")[];
+    v4Watchlist: never[];
     internalName: "polygon-zkevm";
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png";
     contracts: {

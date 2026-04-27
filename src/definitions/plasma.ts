@@ -79,6 +79,7 @@ export const plasma = makeConfig({
 		"0x21d5a075073e631a85ab9c02e4b703460c572b4b",
 		"0x7bf6037d3b8af69468356435032eab9010adf879",
 	],
+	v4Watchlist: [],
 	internalName: "plasma",
 	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/xpl.png",
 	contracts: {

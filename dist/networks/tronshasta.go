@@ -30,6 +30,7 @@ var Tronshasta Network = Network{
 	Stables:          []common.Address{},
 	StablecoinMap:    map[common.Address]struct{}{},
 	Watchlist:        []common.Address{},
+	V4Watchlist:      []common.Hash{},
 	BlockTimeSeconds: 5,
 	Oku: OkuMetadata{
 

@@ -64,6 +64,7 @@ export declare const hyperevm: Readonly<{
     })[];
     stables: ("0xb88339cb7199b77e23db6e890353e22632ba630f" | "0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb")[];
     watchlist: never[];
+    v4Watchlist: never[];
     internalName: "hyperevm";
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/hype.svg";
     contracts: {

@@ -79,6 +79,7 @@ export const ronin = makeConfig({
 	],
 	stables: ["0x0b7007c13325c48911f73a2dad5fa5dcbf808adc"],
 	watchlist: [],
+	v4Watchlist: [],
 	internalName: "ronin",
 	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/ron.svg",
 	contracts: {

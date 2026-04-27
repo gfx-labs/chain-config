@@ -197,6 +197,7 @@ export interface IChainInfo<
 	tokenList: ReadonlyArray<{ symbol: string; address: Address }>;
 	stables: ReadonlyArray<Address>;
 	watchlist: ReadonlyArray<Address>;
+	v4Watchlist: ReadonlyArray<Hash>;
 	externalId: {
 		zerion?: string;
 		debank?: string;

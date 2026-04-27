@@ -32,6 +32,7 @@ var Hemi Network = Network{
 	Stables:          []common.Address{common.HexToAddress("0xad11a8BEb98bbf61dbb1aa0F6d6F2ECD87b35afA"), common.HexToAddress("0xbB0D083fb1be0A9f6157ec484b6C79E0A4e31C2e"), common.HexToAddress("0x6c851F501a3F24E29A8E39a29591cddf09369080"), common.HexToAddress("0x7a06c4aef988e7925575c50261297a946ad204a8")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0xad11a8BEb98bbf61dbb1aa0F6d6F2ECD87b35afA"): {}, common.HexToAddress("0xbB0D083fb1be0A9f6157ec484b6C79E0A4e31C2e"): {}, common.HexToAddress("0x6c851F501a3F24E29A8E39a29591cddf09369080"): {}, common.HexToAddress("0x7a06c4aef988e7925575c50261297a946ad204a8"): {}},
 	Watchlist:        []common.Address{common.HexToAddress("0x95a8b611e90de2b682267e2f00c8dff71909298a"), common.HexToAddress("0x47932f4a77cde549bf328bb33caae7f413b62612"), common.HexToAddress("0x875c1efa41a868fbb4274c3e06afc14b597e8828"), common.HexToAddress("0x0bbd621fb38f6ddc16b0089ebbeade8db9a8d354"), common.HexToAddress("0xc47f921d413787abf5c98d977e52062de0a3a6d4"), common.HexToAddress("0x0ec5aa557d5b2a8702ad43d253415d11f95364c0")},
+	V4Watchlist:      []common.Hash{},
 	BlockTimeSeconds: 12,
 	Oku: OkuMetadata{
 		LimitOrderRegistry:            common.HexToAddress("0xcd7f266E3C0D0771897aAF74BEB38072D66402A0"),

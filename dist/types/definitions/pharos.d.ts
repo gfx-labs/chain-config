@@ -48,6 +48,7 @@ export declare const pharos: Readonly<{
     })[];
     stables: "0xc879c018db60520f4355c26ed1a6d572cdac1815"[];
     watchlist: never[];
+    v4Watchlist: never[];
     internalName: "pharos";
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/pros.png";
     contracts: {

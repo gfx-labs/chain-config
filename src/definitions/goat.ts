@@ -95,6 +95,7 @@ export const goat = makeConfig({
 		"0xe84dc31691587402e59ba9f9180f8ab02a593d3c",
 		"0xde2b2fb74a9b7053a6bac08fb741e19467f7a0ef",
 	],
+	v4Watchlist: [],
 	internalName: "goat",
 	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/gbtc.svg",
 	contracts: {

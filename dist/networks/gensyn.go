@@ -30,6 +30,7 @@ var Gensyn Network = Network{
 	Stables:          []common.Address{common.HexToAddress("0x5b32c997211621d55a89Cc5abAF1cC21F3A6ddF5")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x5b32c997211621d55a89Cc5abAF1cC21F3A6ddF5"): {}},
 	Watchlist:        []common.Address{common.HexToAddress("0xF3F77fb85A74f49a3DCb082347D7FEFa8aBA596f"), common.HexToAddress("0x3e228359c8ce20fae623e54b438c74420ce30e5b")},
+	V4Watchlist:      []common.Hash{},
 	BlockTimeSeconds: 2,
 	Oku: OkuMetadata{
 

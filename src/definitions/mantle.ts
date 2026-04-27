@@ -127,6 +127,7 @@ export const mantle = makeConfig({
 		"0x48EF5640E71001CaC842f5627A0bfec1EF09DeB7",
 		"0x8CFee38ab8b8f4BC2ff662E8cc8bDfb0439C9D2C",
 	],
+	v4Watchlist: [],
 	internalName: "mantle",
 	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/mnt.png",
 	contracts: {

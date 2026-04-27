@@ -312,6 +312,7 @@ export const arbitrum = makeConfig({
 		"0xa8328bf492ba1b77ad6381b3f7567d942b000baf",
 		"0x50450351517117cb58189edba6bbad6284d45902",
 	],
+	v4Watchlist: [],
 	internalName: "arbitrum",
 	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
 	initCodeHash:

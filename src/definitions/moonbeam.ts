@@ -115,6 +115,7 @@ export const moonbeam = makeConfig({
 		"0x53c1341cd81562c1b1a7562fff712CD7be95D51e",
 		"0x45bD0680bDFd180341A6dE806Aa4637f9AfBFc39",
 	],
+	v4Watchlist: [],
 	internalName: "moonbeam",
 	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/glmr.png",
 	contracts: {

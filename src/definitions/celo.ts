@@ -110,6 +110,7 @@ export const celo = makeConfig({
 		"0xf130F72F8190f662522774C3367E6e8814f5e219",
 		"0x7B9A5BC920610F54881f2F6359007957DE504862",
 	],
+	v4Watchlist: [],
 	internalName: "celo",
 	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/celo.png",
 	contracts: {

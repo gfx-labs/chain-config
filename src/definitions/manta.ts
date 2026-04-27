@@ -96,6 +96,7 @@ export const manta = makeConfig({
 		"0x6e32805add5f5255c22d8f0125a0c7d351926bc3",
 		"0x5bedc5d1e1d0b32caca78db23af71126b6fe26b6",
 	],
+	v4Watchlist: [],
 	internalName: "manta",
 	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
 	contracts: {

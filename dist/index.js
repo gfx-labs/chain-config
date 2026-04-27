@@ -316,6 +316,7 @@ const arbitrum = makeConfig({
         "0xa8328bf492ba1b77ad6381b3f7567d942b000baf",
         "0x50450351517117cb58189edba6bbad6284d45902",
     ],
+    v4Watchlist: [],
     internalName: "arbitrum",
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
@@ -431,6 +432,7 @@ const avalanche = makeConfig({
         "0x9702230A8Ea53601f5cD2dc00fDBc13d4dF4A8c7",
     ],
     watchlist: [],
+    v4Watchlist: [],
     internalName: "avalanche",
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/avax.svg",
     contracts: {
@@ -625,6 +627,7 @@ const base = makeConfig({
         "0xe745a591970e0fa981204cf525e170a2b9e4fb93",
         "0x7e904aaf3439402eb21958fe090bd852d5e882cf",
     ],
+    v4Watchlist: [],
     internalName: "base",
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
@@ -745,6 +748,7 @@ const blast = makeConfig({
         "0xf52df2cde73228cc058abfe88f3801dcddf885eb",
         "0x99f8a29a332eb9004f83abb1b4690de8b00dfccf",
     ],
+    v4Watchlist: [],
     internalName: "blast",
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
@@ -867,6 +871,7 @@ const bob = makeConfig({
         "0x41a98efc1742a60aba6afbcb2073e64477b5333a",
         "0x45bfa70e8f387da47ffe3dec447bc16f0b9a6261",
     ],
+    v4Watchlist: [],
     internalName: "bob",
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
     contracts: {
@@ -992,6 +997,7 @@ const boba = makeConfig({
         "0x66faef55892dae3932a043d3238ecaa271d36e0d",
         "0x67fac3b54b6391e3183d2d74b7d2c430ad44fca1",
     ],
+    v4Watchlist: [],
     internalName: "boba",
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
     contracts: {
@@ -1220,6 +1226,7 @@ const bsc = makeConfig({
         "0xcb99fe720124129520f7a09ca3cbef78d58ed934",
         "0x06396509195eb9e07c38a016694dc9ff535b128a",
     ],
+    v4Watchlist: [],
     internalName: "bsc",
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/bnb.png",
     contracts: {
@@ -1348,6 +1355,7 @@ const celo = makeConfig({
         "0xf130F72F8190f662522774C3367E6e8814f5e219",
         "0x7B9A5BC920610F54881f2F6359007957DE504862",
     ],
+    v4Watchlist: [],
     internalName: "celo",
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/celo.png",
     contracts: {
@@ -1463,6 +1471,7 @@ const corn = makeConfig({
         "0xb6a7be3ca6698859b374640b3db439fda7b7a5e3",
         "0x255f0b304f701a0530f5dc1739a3d1469e21dd5f",
     ],
+    v4Watchlist: [],
     internalName: "corn",
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/corn.png",
     contracts: {
@@ -1580,6 +1589,7 @@ const etherlink = makeConfig({
         "0x50fe07f16943c55220fbc36c52e98559252a93b4",
         "0xb5135165da8207f90598a2d58215aeb5f6e9f5ec",
     ],
+    v4Watchlist: [],
     internalName: "etherlink",
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/xtz.png",
     contracts: {
@@ -1719,6 +1729,7 @@ const filecoin = makeConfig({
         "0x443a6243a36ef0ae1c46523d563c15abd787f4e9",
         "0xca166403c6f41e1fecc0eb40ac1947fd6399d5c5",
     ],
+    v4Watchlist: [],
     internalName: "filecoin",
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/fil.png",
     contracts: {
@@ -1805,6 +1816,7 @@ const gensyn = makeConfig({
         "0xF3F77fb85A74f49a3DCb082347D7FEFa8aBA596f",
         "0x3e228359c8ce20fae623e54b438c74420ce30e5b",
     ],
+    v4Watchlist: [],
     internalName: "gensyn",
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
     contracts: {
@@ -1958,6 +1970,7 @@ const gnosis = makeConfig({
         "0xE9E1793954f32D880Ec0B2186E96d88e2b870e40",
         "0xbb98d4e20b054ede4c4143ecee59368f88ecbbe4",
     ],
+    v4Watchlist: [],
     internalName: "gnosis",
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/xdai.png",
     contracts: {
@@ -2075,6 +2088,7 @@ const goat = makeConfig({
         "0xe84dc31691587402e59ba9f9180f8ab02a593d3c",
         "0xde2b2fb74a9b7053a6bac08fb741e19467f7a0ef",
     ],
+    v4Watchlist: [],
     internalName: "goat",
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/gbtc.svg",
     contracts: {
@@ -2202,6 +2216,7 @@ const hemi = makeConfig({
         "0xc47f921d413787abf5c98d977e52062de0a3a6d4",
         "0x0ec5aa557d5b2a8702ad43d253415d11f95364c0",
     ],
+    v4Watchlist: [],
     internalName: "hemi",
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
     contracts: {
@@ -2295,6 +2310,7 @@ const hyperevm = makeConfig({
         "0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb",
     ],
     watchlist: [],
+    v4Watchlist: [],
     internalName: "hyperevm",
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/hype.svg",
     contracts: {
@@ -2387,6 +2403,7 @@ const lens = makeConfig({
         "0xdf4b8153bf91f54802a9ba16366b2111724384e4",
         "0x6b6eb6f437bf54d22b997c3b38b79a23bc63f39f",
     ],
+    v4Watchlist: [],
     internalName: "lens",
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/gho.png",
     contracts: {
@@ -2509,6 +2526,7 @@ const lightlink = makeConfig({
         "0x2288627C696010049f6D98a84fC10F9C5F7b3Ce2",
         "0xc87Fa6290e7F11543e76e1D240335190C15Dade8",
     ],
+    v4Watchlist: [],
     internalName: "lightlink",
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
     contracts: {
@@ -2658,6 +2676,7 @@ const linea = makeConfig({
         "0x30b44df5010f8b2a4d4e566a2ba638496e76a8fc",
         "0x42a72c7fbb355b2cfe08f8716595f3f3509b3bea",
     ],
+    v4Watchlist: [],
     internalName: "linea",
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
     contracts: {
@@ -2755,6 +2774,7 @@ const lisk = makeConfig({
         "0xd501d4e381491f64274cc65fdec32b47264a2422",
         "0x304d69c5e03e030d6b298C0d0467baeb310f1f68",
     ],
+    v4Watchlist: [],
     internalName: "lisk",
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
     contracts: {
@@ -3118,6 +3138,7 @@ const mainnet = makeConfig({
         "0xc5af84701f98fa483ece78af83f11b6c38aca71d",
         "0x7bea39867e4169dbe237d55c8242a8f2fcdcc387",
     ],
+    v4Watchlist: [],
     internalName: "ethereum",
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
     contracts: {
@@ -3231,6 +3252,7 @@ const manta = makeConfig({
         "0x6e32805add5f5255c22d8f0125a0c7d351926bc3",
         "0x5bedc5d1e1d0b32caca78db23af71126b6fe26b6",
     ],
+    v4Watchlist: [],
     internalName: "manta",
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
     contracts: {
@@ -3376,6 +3398,7 @@ const mantle = makeConfig({
         "0x48EF5640E71001CaC842f5627A0bfec1EF09DeB7",
         "0x8CFee38ab8b8f4BC2ff662E8cc8bDfb0439C9D2C",
     ],
+    v4Watchlist: [],
     internalName: "mantle",
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/mnt.png",
     contracts: {
@@ -3469,6 +3492,7 @@ const matchain = makeConfig({
         "0x6b213c3915308a453dc4da93f8c664717c6fc41e",
         "0x2128e934843ad52d42b5af7288dcfa7b0598d035",
     ],
+    v4Watchlist: [],
     internalName: "matchain",
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/bnb.png",
     contracts: {
@@ -3557,6 +3581,7 @@ const metal = makeConfig({
         "0xb91CFCcA485C6E40E3bC622f9BFA02a8ACdEeBab",
     ],
     watchlist: ["0xC06B6d6242E84c96AeE28C7FcfE48D2c9909e37B"],
+    v4Watchlist: [],
     internalName: "metal",
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
     contracts: {
@@ -3670,6 +3695,7 @@ const monad = makeConfig({
         "0x659bD0BC4167BA25c62E05656F78043E7eD4a9da",
         "0xa00D8Ec3c0cC20E93Cad749695392a0B61fe8Ca3",
     ],
+    v4Watchlist: [],
     internalName: "monad",
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/monad.png",
     contracts: {
@@ -3801,6 +3827,7 @@ const moonbeam = makeConfig({
         "0x53c1341cd81562c1b1a7562fff712CD7be95D51e",
         "0x45bD0680bDFd180341A6dE806Aa4637f9AfBFc39",
     ],
+    v4Watchlist: [],
     internalName: "moonbeam",
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/glmr.png",
     contracts: {
@@ -3911,6 +3938,7 @@ const nibiru = makeConfig({
         "0x5133222db1e9f1b98d16e5fb46d6f398c60998e2",
         "0xe7612e14a05613caf06fad766b484b0a6d146c3a",
     ],
+    v4Watchlist: [],
     internalName: "nibiru",
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/nibi.svg",
     contracts: {
@@ -4248,6 +4276,7 @@ const optimism = makeConfig({
         "0xadb35413ec50e0afe41039eac8b930d313e94fa4",
         "0x730691cdac3cbd4d41fc5eb9d8abbb0cea795b94",
     ],
+    v4Watchlist: [],
     internalName: "optimism",
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
     contracts: {
@@ -4401,6 +4430,7 @@ const pharos = makeConfig({
     ],
     stables: ["0xc879c018db60520f4355c26ed1a6d572cdac1815"],
     watchlist: [],
+    v4Watchlist: [],
     internalName: "pharos",
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/pros.png",
     contracts: {
@@ -4493,6 +4523,7 @@ const plasma = makeConfig({
         "0x21d5a075073e631a85ab9c02e4b703460c572b4b",
         "0x7bf6037d3b8af69468356435032eab9010adf879",
     ],
+    v4Watchlist: [],
     internalName: "plasma",
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/xpl.png",
     contracts: {
@@ -4795,6 +4826,7 @@ const polygon = makeConfig({
         "0xfe343675878100b344802a6763fd373fdeed07a4",
         "0x357faf5843c7fd7fb4e34fbeabdac16eabe8a5bc",
     ],
+    v4Watchlist: [],
     internalName: "polygon",
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/matic.png",
     contracts: {
@@ -4886,6 +4918,7 @@ const redbelly = makeConfig({
         "0x2ea9dacb203d36b51b164a3d25d69d1c8198eec1",
         "0x1f1bda1fe18aedf468abe36ed66eaf44aa6c490b",
     ],
+    v4Watchlist: [],
     internalName: "redbelly",
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/rbnt.svg",
     contracts: {
@@ -4983,6 +5016,7 @@ const ronin = makeConfig({
     ],
     stables: ["0x0b7007c13325c48911f73a2dad5fa5dcbf808adc"],
     watchlist: [],
+    v4Watchlist: [],
     internalName: "ronin",
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/ron.svg",
     contracts: {
@@ -5132,6 +5166,7 @@ const rootstock = makeConfig({
         "0x8f597295f1412a079088fc51c8a95e6698c31777",
         "0x71d0d054974121ae37a76762e1fa02ffa150eba1",
     ],
+    v4Watchlist: [],
     internalName: "rootstock",
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/rbtc.png",
     contracts: {
@@ -5237,6 +5272,7 @@ const saga = makeConfig({
         "0x69bf9603468922c76a75068f51874f56662d35e3",
         "0x387b99a979c79f827f0ca8a752893472dc34b7ec",
     ],
+    v4Watchlist: [],
     internalName: "saga",
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/saga.png",
     contracts: {
@@ -5370,6 +5406,7 @@ const scroll = makeConfig({
         "0xf1783f3377b3a70465c193ef33942c0803121ba0",
         "0x813df550a32d4a9d42010d057386429ad2328ed9",
     ],
+    v4Watchlist: [],
     internalName: "scroll",
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
     contracts: {
@@ -5552,6 +5589,7 @@ const sei = makeConfig({
         "0x48ddb6384ec5d835bdb0faf7e3abc01d7a1493cd",
         "0xc53b65811e3d33ada5a90d476dcf2063b53bcfb3",
     ],
+    v4Watchlist: [],
     internalName: "sei",
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/sei.png",
     contracts: {
@@ -5690,6 +5728,7 @@ const sonic = makeConfig({
         "0xdfcdad314b0b96ab8890391e3f0540278e3b80f7",
         "0x21043D7Ad92d9e7bC45C055AF29771E37307B111",
     ],
+    v4Watchlist: [],
     internalName: "sonic",
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/sonic.svg",
     contracts: {
@@ -5837,6 +5876,7 @@ const taiko = makeConfig({
         "0x4e35666b3ebf367842b9b6d5b297a2a069f862f5",
         "0x6dA6B21DB1Dfd19D67BfF1877f62953a2D365fc9",
     ],
+    v4Watchlist: [],
     internalName: "taiko",
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
     contracts: {
@@ -5966,6 +6006,7 @@ const telos = makeConfig({
         "0x11856fa7683aa9edf44a6ab368ec0cd02b03e6a1",
         "0x45b47c9207fa8298863991f1b02a5b0e77bab7b6",
     ],
+    v4Watchlist: [],
     internalName: "telos",
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/telos.png",
     contracts: {
@@ -6040,6 +6081,7 @@ const tronShasta = makeConfig({
     tokenList: [],
     stables: [],
     watchlist: [],
+    v4Watchlist: [],
     internalName: "tronshasta",
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/tron.png",
     contracts: {
@@ -6187,6 +6229,14 @@ const unichain = makeConfig({
         "0xa9c6669dE2C04C2ADb22Ac7A65D75B47FEe30E35",
         "0x8927058918e3CFf6F55EfE45A58db1be1F069E49",
     ],
+    v4Watchlist: [
+        "0x3258f413c7a88cda2fa8709a589d221a80f6574f63df5a5b6774485d8acc39d9",
+        "0x04b7dd024db64cfbe325191c818266e4776918cd9eaf021c26949a859e654b16",
+        "0xbd0f3a7cf4cf5f48ebe850474c8c0012fa5fe893ab811a8b8743a52b83aa8939",
+        "0x51f9d63dda41107d6513047f7ed18133346ce4f3f4c4faf899151d8939b3496e",
+        "0x05dbb214bd7b9461f9c2f6690b612629b65b9f81d7312fdd3e552d2dda85f771",
+        "0xb2f3bbaf23e0197ec2e6f9ab730d00aaf26a9119ecd583bbb9ef3146b4afa248",
+    ],
     internalName: "unichain",
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
     contracts: {
@@ -6290,6 +6340,7 @@ const worldchain = makeConfig({
     ],
     stables: ["0x79a02482a880bce3f13e09da970dc34db4cd24d1"],
     watchlist: [],
+    v4Watchlist: [],
     internalName: "worldchain",
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
     contracts: {
@@ -6363,7 +6414,14 @@ const xdc = makeConfig({
         },
     },
     oracles: {},
-    morpho: {},
+    morpho: {
+        deployBlock: 101757515,
+        morpho: "0xEa49B0fE898aF913A3826F9f462eE2cDcb854fD9",
+        bundler3: "0xed9bdc3E6081db528b6D5CDDf47EcB05337c62A7",
+        vaultV2Factory: "0x227544d6989cD15c05AAB6dde4F29523dcfdbe2B",
+        morphoMarketV1AdapterV2Factory: "0x5C00c99F2235439725417E9f037B7D38FfF35d31",
+        morphoMarketV1RegistryV2: "0x773Eee84bc3c4c9CD7CB79C198c5434E765ac67e",
+    },
     initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
     uniswap: {
         deployBlock: 87230664,
@@ -6415,6 +6473,7 @@ const xdc = makeConfig({
         "0x898488dc884ee5ece8079499f4c7ddc5c281e85f",
         "0xd68fdf3cbe9f48422a15899318dd5cb921f92037",
     ],
+    v4Watchlist: [],
     internalName: "xdc",
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/xdc.png",
     contracts: {
@@ -6517,6 +6576,7 @@ const zerog = makeConfig({
         "0xf0766611cb1288186f74f401fdb5e606c4b23693",
         "0x362452a081e028d1ed4f43fa3329890d79526309",
     ],
+    v4Watchlist: [],
     internalName: "zerog",
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/0g.svg",
     contracts: {
@@ -6634,6 +6694,7 @@ const polygonZkEvm = makeConfig({
         "0x7908F0eD78de3c850A5d1DC261c39341b274D07c",
         "0x0A44b12799eBC21E1dF271284921e1e4F6f17f81",
     ],
+    v4Watchlist: [],
     internalName: "polygon-zkevm",
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
     contracts: {
@@ -6770,6 +6831,7 @@ const zkSync = makeConfig({
         "0xa07028B453a1f6Ac277e93f3A0eA73B4bE5c7d63",
         "0x23C77A553AAc0ad009441C856c05D117c1131e3d",
     ],
+    v4Watchlist: [],
     internalName: "zksync",
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
     contracts: {

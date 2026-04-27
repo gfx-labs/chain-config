@@ -116,6 +116,7 @@ export const scroll = makeConfig({
 		"0xf1783f3377b3a70465c193ef33942c0803121ba0",
 		"0x813df550a32d4a9d42010d057386429ad2328ed9",
 	],
+	v4Watchlist: [],
 	internalName: "scroll",
 	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
 	contracts: {

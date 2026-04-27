@@ -82,6 +82,7 @@ export declare const lightlink: Readonly<{
     })[];
     stables: ("0xbCF8C1B03bBDDA88D579330BDF236B58F8bb2cFd" | "0x808d7c71ad2ba3FA531b068a2417C63106BC0949")[];
     watchlist: ("0x1125452469E9B9A36FE69249309fCe8925C3eEDa" | "0x2288627C696010049f6D98a84fC10F9C5F7b3Ce2" | "0xc87Fa6290e7F11543e76e1D240335190C15Dade8")[];
+    v4Watchlist: never[];
     internalName: "lightlink";
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png";
     contracts: {

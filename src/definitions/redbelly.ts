@@ -73,6 +73,7 @@ export const redbelly = makeConfig({
 		"0x2ea9dacb203d36b51b164a3d25d69d1c8198eec1",
 		"0x1f1bda1fe18aedf468abe36ed66eaf44aa6c490b",
 	],
+	v4Watchlist: [],
 	internalName: "redbelly",
 	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/rbnt.svg",
 	contracts: {

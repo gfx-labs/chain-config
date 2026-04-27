@@ -72,6 +72,7 @@ export declare const lens: Readonly<{
     })[];
     stables: "0x88F08E304EC4f90D644Cec3Fb69b8aD414acf884"[];
     watchlist: ("0x5eb6b146d7a5322b763c8f8b0eb2fdd5d15e49de" | "0xdf4b8153bf91f54802a9ba16366b2111724384e4" | "0x6b6eb6f437bf54d22b997c3b38b79a23bc63f39f")[];
+    v4Watchlist: never[];
     internalName: "lens";
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/gho.png";
     contracts: {

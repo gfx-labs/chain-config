@@ -38,6 +38,7 @@ var Worldchain Network = Network{
 	Stables:          []common.Address{common.HexToAddress("0x79a02482a880bce3f13e09da970dc34db4cd24d1")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x79a02482a880bce3f13e09da970dc34db4cd24d1"): {}},
 	Watchlist:        []common.Address{},
+	V4Watchlist:      []common.Hash{},
 	BlockTimeSeconds: 2,
 	Oku: OkuMetadata{
 		Router: common.HexToAddress("0x822CFA9749d16Fb4B4F2B0515924cec69512893b"),

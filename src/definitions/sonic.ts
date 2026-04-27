@@ -116,6 +116,7 @@ export const sonic = makeConfig({
 		"0xdfcdad314b0b96ab8890391e3f0540278e3b80f7",
 		"0x21043D7Ad92d9e7bC45C055AF29771E37307B111",
 	],
+	v4Watchlist: [],
 	internalName: "sonic",
 	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/sonic.svg",
 	contracts: {

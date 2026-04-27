@@ -71,6 +71,7 @@ export const hyperevm = makeConfig({
 		"0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb",
 	],
 	watchlist: [],
+	v4Watchlist: [],
 	internalName: "hyperevm",
 	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/hype.svg",
 	contracts: {

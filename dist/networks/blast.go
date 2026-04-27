@@ -35,6 +35,7 @@ var Blast Network = Network{
 	Stables:          []common.Address{common.HexToAddress("0x4300000000000000000000000000000000000003")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x4300000000000000000000000000000000000003"): {}},
 	Watchlist:        []common.Address{common.HexToAddress("0xf5A23bDD36a56EDe75D503F6f643d5eaF25B1a8F"), common.HexToAddress("0xf52b4b69123cbcf07798ae8265642793b2e8990c"), common.HexToAddress("0xf52b4b69123cbcf07798ae8265642793b2e8990c"), common.HexToAddress("0x310a0a4bc2edd2f29321356d880e0906d7700c14"), common.HexToAddress("0xbb60bb410182d8e96c41dfc92e017dd79f5100bf"), common.HexToAddress("0xf52df2cde73228cc058abfe88f3801dcddf885eb"), common.HexToAddress("0x99f8a29a332eb9004f83abb1b4690de8b00dfccf")},
+	V4Watchlist:      []common.Hash{},
 	BlockTimeSeconds: 2,
 	Oku: OkuMetadata{
 		LimitOrderRegistry:            common.HexToAddress("0x0337d36A3dF76d882369E3cBF984a2EA40f6636F"),

@@ -107,6 +107,7 @@ export declare const rootstock: Readonly<{
     })[];
     stables: ("0x779ded0c9e1022225f8e0630b35a9b54be713736" | "0xef213441a85df4d7acbdae0cf78004e1e486bb96" | "0x74c9f2b00581f1b11aa7ff05aa9f608b7389de67" | "0x3a15461d8ae0f0fb5fa2629e9da7d66a794a6e37" | "0xaf368c91793cb22739386dfcbbb2f1a9e4bcbebf")[];
     watchlist: ("0xd2ffe51ab4e622a411abbe634832a19d919e9c55" | "0x022650756421f2e636d4138054331cbfafb55d9e" | "0x549a5d92412161a1a2828549a657a49dd9fa046c" | "0xcba7abe98fd6a65259837d76a3409841c1dd4288" | "0xbe092d38045ef7f9cdc5014278a4239e896bf5ca" | "0xb74d0aa1711eb859eead7cfe3fe5921eedd7e5bf" | "0x8f597295f1412a079088fc51c8a95e6698c31777" | "0x71d0d054974121ae37a76762e1fa02ffa150eba1")[];
+    v4Watchlist: never[];
     internalName: "rootstock";
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/rbtc.png";
     contracts: {

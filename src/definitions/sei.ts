@@ -160,6 +160,7 @@ export const sei = makeConfig({
 		"0x48ddb6384ec5d835bdb0faf7e3abc01d7a1493cd",
 		"0xc53b65811e3d33ada5a90d476dcf2063b53bcfb3",
 	],
+	v4Watchlist: [],
 	internalName: "sei",
 	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/sei.png",
 	contracts: {

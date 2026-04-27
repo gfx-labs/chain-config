@@ -422,6 +422,7 @@ type Network struct {
 	TokenList          []any
 	Stables            []common.Address
 	Watchlist          []common.Address
+	V4Watchlist        []common.Hash
 	ExternalId         map[string]string
 	Markets            Markets
 	Bridges            Bridges

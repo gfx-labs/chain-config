@@ -100,6 +100,7 @@ export const corn = makeConfig({
 		"0xb6a7be3ca6698859b374640b3db439fda7b7a5e3",
 		"0x255f0b304f701a0530f5dc1739a3d1469e21dd5f",
 	],
+	v4Watchlist: [],
 	internalName: "corn",
 	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/corn.png",
 	contracts: {

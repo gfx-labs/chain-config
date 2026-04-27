@@ -84,6 +84,7 @@ export const zerog = makeConfig({
 		"0xf0766611cb1288186f74f401fdb5e606c4b23693",
 		"0x362452a081e028d1ed4f43fa3329890d79526309",
 	],
+	v4Watchlist: [],
 	internalName: "zerog",
 	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/0g.svg",
 	contracts: {

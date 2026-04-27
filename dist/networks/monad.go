@@ -37,6 +37,7 @@ var Monad Network = Network{
 	Stables:          []common.Address{common.HexToAddress("0x754704Bc059F8C67012fEd69BC8A327a5aafb603"), common.HexToAddress("0xe7cd86e13AC4309349F30B3435a9d337750fC82D"), common.HexToAddress("0x00000000efe302beaa2b3e6e1b18d08d69a9012a")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x754704Bc059F8C67012fEd69BC8A327a5aafb603"): {}, common.HexToAddress("0xe7cd86e13AC4309349F30B3435a9d337750fC82D"): {}, common.HexToAddress("0x00000000efe302beaa2b3e6e1b18d08d69a9012a"): {}},
 	Watchlist:        []common.Address{common.HexToAddress("0x659bD0BC4167BA25c62E05656F78043E7eD4a9da"), common.HexToAddress("0xa00D8Ec3c0cC20E93Cad749695392a0B61fe8Ca3")},
+	V4Watchlist:      []common.Hash{},
 	BlockTimeSeconds: 0.4,
 	Oku: OkuMetadata{
 		LimitOrderRegistry: common.HexToAddress("0x0000000000000000000000000000000000000000"),

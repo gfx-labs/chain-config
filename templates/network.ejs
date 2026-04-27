@@ -43,6 +43,7 @@ var <%- helpers.snakeToCamel(chainName) %> Network = Network{
   Stables:          []common.Address{<%- chain.stables.map(h.toAddr).join(",") %>},
   StablecoinMap:          map[common.Address]struct{}{<%- chain.stables.map(x=>`${h.toAddr(x)}: {}`).join(",") %>},
   Watchlist:          []common.Address{<%- chain.watchlist.map(h.toAddr).join(",") %>},
+  V4Watchlist:          []common.Hash{<%- chain.v4Watchlist.map(h.toHash).join(",") %>},
   BlockTimeSeconds: <%- chain.blockTimeSeconds %>,
   Oku:            OkuMetadata{<%- oku.router ? "\n    Router:" + h.formatValue(oku.router, "a")+"," : "" %>
     <%- oku.limitOrderRegistry ? "LimitOrderRegistry:" + h.formatValue(oku.limitOrderRegistry, "a")+"," : "" %>

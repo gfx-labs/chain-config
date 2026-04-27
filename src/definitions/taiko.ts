@@ -127,6 +127,7 @@ export const taiko = makeConfig({
 		"0x4e35666b3ebf367842b9b6d5b297a2a069f862f5",
 		"0x6dA6B21DB1Dfd19D67BfF1877f62953a2D365fc9",
 	],
+	v4Watchlist: [],
 	internalName: "taiko",
 	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
 	contracts: {

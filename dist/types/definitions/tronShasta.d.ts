@@ -45,6 +45,7 @@ export declare const tronShasta: Readonly<{
     tokenList: never[];
     stables: never[];
     watchlist: never[];
+    v4Watchlist: never[];
     internalName: "tronshasta";
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/tron.png";
     contracts: {

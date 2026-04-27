@@ -67,6 +67,7 @@ export declare const nibiru: Readonly<{
     })[];
     stables: "0x0829F361A05D993d5CEb035cA6DF3446b060970b"[];
     watchlist: ("0x9475b76b7f77791b6147cb989187fecd9b55398a" | "0x0085a09e68468a99c6ec3c0c9c98e17af614c470" | "0x9fe58f1883732931625c281afe2a068fe19183f5" | "0xd8f82b8d2e82265ac25d8d4ef3ca47917693d3d5" | "0x5133222db1e9f1b98d16e5fb46d6f398c60998e2" | "0xe7612e14a05613caf06fad766b484b0a6d146c3a")[];
+    v4Watchlist: never[];
     internalName: "nibiru";
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/nibi.svg";
     contracts: {

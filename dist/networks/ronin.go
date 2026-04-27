@@ -33,6 +33,7 @@ var Ronin Network = Network{
 	Stables:          []common.Address{common.HexToAddress("0x0b7007c13325c48911f73a2dad5fa5dcbf808adc")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x0b7007c13325c48911f73a2dad5fa5dcbf808adc"): {}},
 	Watchlist:        []common.Address{},
+	V4Watchlist:      []common.Hash{},
 	BlockTimeSeconds: 3,
 	Oku: OkuMetadata{
 		LimitOrderRegistry:            common.HexToAddress("0x9db70E29712Cc8Af10c2B597BaDA6784544FF407"),

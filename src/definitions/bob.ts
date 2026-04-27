@@ -106,6 +106,7 @@ export const bob = makeConfig({
 		"0x41a98efc1742a60aba6afbcb2073e64477b5333a",
 		"0x45bfa70e8f387da47ffe3dec447bc16f0b9a6261",
 	],
+	v4Watchlist: [],
 	internalName: "bob",
 	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
 	contracts: {

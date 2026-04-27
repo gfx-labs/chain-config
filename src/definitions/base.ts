@@ -174,6 +174,7 @@ export const base = makeConfig({
 		"0xe745a591970e0fa981204cf525e170a2b9e4fb93",
 		"0x7e904aaf3439402eb21958fe090bd852d5e882cf",
 	],
+	v4Watchlist: [],
 	internalName: "base",
 	initCodeHash:
 		"0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",

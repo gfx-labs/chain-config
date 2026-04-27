@@ -33,6 +33,7 @@ var Redbelly Network = Network{
 	Stables:          []common.Address{common.HexToAddress("0x8201c02d4AB2214471E8C3AD6475C8b0CD9F2D06"), common.HexToAddress("0x8C4aCd74Ff4385f3B7911432FA6787Aa14406f8B"), common.HexToAddress("0x420e07cec544b8A52B7d0c62b1C9BF990cc58083"), common.HexToAddress("0xE08DED898D7782B085cD240d7B234063696765aD")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x8201c02d4AB2214471E8C3AD6475C8b0CD9F2D06"): {}, common.HexToAddress("0x8C4aCd74Ff4385f3B7911432FA6787Aa14406f8B"): {}, common.HexToAddress("0x420e07cec544b8A52B7d0c62b1C9BF990cc58083"): {}, common.HexToAddress("0xE08DED898D7782B085cD240d7B234063696765aD"): {}},
 	Watchlist:        []common.Address{common.HexToAddress("0xcDe3554d179b5B7ABB3ddFeE1CBC7B98b3f2E380"), common.HexToAddress("0x2ea9dacb203d36b51b164a3d25d69d1c8198eec1"), common.HexToAddress("0x1f1bda1fe18aedf468abe36ed66eaf44aa6c490b")},
+	V4Watchlist:      []common.Hash{},
 	BlockTimeSeconds: 5,
 	Oku: OkuMetadata{
 		LimitOrderRegistry:            common.HexToAddress("0x9db70E29712Cc8Af10c2B597BaDA6784544FF407"),

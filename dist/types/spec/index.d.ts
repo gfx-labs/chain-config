@@ -179,6 +179,7 @@ export interface IChainInfo<formatters extends ChainFormatters | undefined = Cha
     }>;
     stables: ReadonlyArray<Address>;
     watchlist: ReadonlyArray<Address>;
+    v4Watchlist: ReadonlyArray<Hash>;
     externalId: {
         zerion?: string;
         debank?: string;

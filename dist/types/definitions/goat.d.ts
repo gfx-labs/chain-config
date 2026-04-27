@@ -73,6 +73,7 @@ export declare const goat: Readonly<{
     })[];
     stables: ("0x3022b87ac063DE95b1570F46f5e470F8B53112D8" | "0xe1ad845d93853fff44990ae0dcecd8575293681e")[];
     watchlist: ("0xde2b2fb74a9b7053a6bac08fb741e19467f7a0ef" | "0xe84dc31691587402e59ba9f9180f8ab02a593d3c")[];
+    v4Watchlist: never[];
     internalName: "goat";
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/gbtc.svg";
     contracts: {

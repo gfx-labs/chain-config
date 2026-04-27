@@ -100,6 +100,7 @@ export const polygonZkEvm = makeConfig({
 		"0x7908F0eD78de3c850A5d1DC261c39341b274D07c",
 		"0x0A44b12799eBC21E1dF271284921e1e4F6f17f81",
 	],
+	v4Watchlist: [],
 	internalName: "polygon-zkevm",
 	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
 	contracts: {

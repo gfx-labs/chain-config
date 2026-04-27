@@ -70,6 +70,7 @@ export const metal = makeConfig({
 		"0xb91CFCcA485C6E40E3bC622f9BFA02a8ACdEeBab",
 	],
 	watchlist: ["0xC06B6d6242E84c96AeE28C7FcfE48D2c9909e37B"],
+	v4Watchlist: [],
 	internalName: "metal",
 	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
 	contracts: {

@@ -132,6 +132,7 @@ export const rootstock = makeConfig({
 		"0x8f597295f1412a079088fc51c8a95e6698c31777",
 		"0x71d0d054974121ae37a76762e1fa02ffa150eba1",
 	],
+	v4Watchlist: [],
 	internalName: "rootstock",
 	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/rbtc.png",
 	contracts: {

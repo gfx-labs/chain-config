@@ -132,6 +132,7 @@ export const linea = makeConfig({
 		"0x30b44df5010f8b2a4d4e566a2ba638496e76a8fc",
 		"0x42a72c7fbb355b2cfe08f8716595f3f3509b3bea",
 	],
+	v4Watchlist: [],
 	internalName: "linea",
 	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
 	contracts: {

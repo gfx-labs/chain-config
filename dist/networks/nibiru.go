@@ -30,6 +30,7 @@ var Nibiru Network = Network{
 	Stables:          []common.Address{common.HexToAddress("0x0829F361A05D993d5CEb035cA6DF3446b060970b")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x0829F361A05D993d5CEb035cA6DF3446b060970b"): {}},
 	Watchlist:        []common.Address{common.HexToAddress("0x9475b76b7f77791b6147cb989187fecd9b55398a"), common.HexToAddress("0x0085a09e68468a99c6ec3c0c9c98e17af614c470"), common.HexToAddress("0x9fe58f1883732931625c281afe2a068fe19183f5"), common.HexToAddress("0xd8f82b8d2e82265ac25d8d4ef3ca47917693d3d5"), common.HexToAddress("0x5133222db1e9f1b98d16e5fb46d6f398c60998e2"), common.HexToAddress("0xe7612e14a05613caf06fad766b484b0a6d146c3a")},
+	V4Watchlist:      []common.Hash{},
 	BlockTimeSeconds: 2,
 	Oku: OkuMetadata{
 		LimitOrderRegistry:            common.HexToAddress("0x6E1293993C71Cb2E6b2Da8559f6d7Dc1fdb3AE02"),

@@ -96,6 +96,7 @@ export declare const mantle: Readonly<{
     })[];
     stables: ("0x09Bc4E0D864854c6aFB6eB9A9cdF58aC190D0dF9" | "0x201EBa5CC46D216Ce6DC03F6a759e8E766e956aE")[];
     watchlist: ("0x086F766b336DFB0f705Dc030dB01993b22D81266" | "0x076eb72E74C16b208c692EEAB3750978D76B8F28" | "0xFc60a4d05ac8C93F62276e046Ad5a098f5C7820a" | "0x4cdFc22bF05209de87Ee564746Dc7E5174631d2b" | "0x48EF5640E71001CaC842f5627A0bfec1EF09DeB7" | "0x8CFee38ab8b8f4BC2ff662E8cc8bDfb0439C9D2C")[];
+    v4Watchlist: never[];
     internalName: "mantle";
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/mnt.png";
     contracts: {

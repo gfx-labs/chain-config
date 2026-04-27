@@ -96,6 +96,7 @@ export const blast = makeConfig({
 		"0xf52df2cde73228cc058abfe88f3801dcddf885eb",
 		"0x99f8a29a332eb9004f83abb1b4690de8b00dfccf",
 	],
+	v4Watchlist: [],
 	internalName: "blast",
 	initCodeHash:
 		"0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",

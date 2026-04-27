@@ -70,6 +70,7 @@ export const gensyn = makeConfig({
 		"0xF3F77fb85A74f49a3DCb082347D7FEFa8aBA596f",
 		"0x3e228359c8ce20fae623e54b438c74420ce30e5b",
 	],
+	v4Watchlist: [],
 	internalName: "gensyn",
 	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
 	contracts: {

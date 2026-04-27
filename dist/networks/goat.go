@@ -32,6 +32,7 @@ var Goat Network = Network{
 	Stables:          []common.Address{common.HexToAddress("0x3022b87ac063DE95b1570F46f5e470F8B53112D8"), common.HexToAddress("0xe1ad845d93853fff44990ae0dcecd8575293681e")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x3022b87ac063DE95b1570F46f5e470F8B53112D8"): {}, common.HexToAddress("0xe1ad845d93853fff44990ae0dcecd8575293681e"): {}},
 	Watchlist:        []common.Address{common.HexToAddress("0xe84dc31691587402e59ba9f9180f8ab02a593d3c"), common.HexToAddress("0xde2b2fb74a9b7053a6bac08fb741e19467f7a0ef")},
+	V4Watchlist:      []common.Hash{},
 	BlockTimeSeconds: 3,
 	Oku: OkuMetadata{
 		LimitOrderRegistry:            common.HexToAddress("0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc"),

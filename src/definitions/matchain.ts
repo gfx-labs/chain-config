@@ -71,6 +71,7 @@ export const matchain = makeConfig({
 		"0x6b213c3915308a453dc4da93f8c664717c6fc41e",
 		"0x2128e934843ad52d42b5af7288dcfa7b0598d035",
 	],
+	v4Watchlist: [],
 	internalName: "matchain",
 	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/bnb.png",
 	contracts: {

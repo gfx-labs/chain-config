@@ -133,6 +133,14 @@ export const unichain = makeConfig({
 		"0xa9c6669dE2C04C2ADb22Ac7A65D75B47FEe30E35",
 		"0x8927058918e3CFf6F55EfE45A58db1be1F069E49",
 	],
+	v4Watchlist: [
+		"0x3258f413c7a88cda2fa8709a589d221a80f6574f63df5a5b6774485d8acc39d9",
+		"0x04b7dd024db64cfbe325191c818266e4776918cd9eaf021c26949a859e654b16",
+		"0xbd0f3a7cf4cf5f48ebe850474c8c0012fa5fe893ab811a8b8743a52b83aa8939",
+		"0x51f9d63dda41107d6513047f7ed18133346ce4f3f4c4faf899151d8939b3496e",
+		"0x05dbb214bd7b9461f9c2f6690b612629b65b9f81d7312fdd3e552d2dda85f771",
+		"0xb2f3bbaf23e0197ec2e6f9ab730d00aaf26a9119ecd583bbb9ef3146b4afa248",
+	],
 	internalName: "unichain",
 	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
 	contracts: {

@@ -30,6 +30,7 @@ var Pharos Network = Network{
 	Stables:          []common.Address{common.HexToAddress("0xc879c018db60520f4355c26ed1a6d572cdac1815")},
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0xc879c018db60520f4355c26ed1a6d572cdac1815"): {}},
 	Watchlist:        []common.Address{},
+	V4Watchlist:      []common.Hash{},
 	BlockTimeSeconds: 2,
 	Oku: OkuMetadata{
 		LimitOrderRegistry: common.HexToAddress("0x0000000000000000000000000000000000000000"),

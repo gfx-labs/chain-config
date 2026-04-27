@@ -285,6 +285,7 @@ export const polygon = makeConfig({
 		"0xfe343675878100b344802a6763fd373fdeed07a4",
 		"0x357faf5843c7fd7fb4e34fbeabdac16eabe8a5bc",
 	],
+	v4Watchlist: [],
 	internalName: "polygon",
 	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/matic.png",
 	contracts: {

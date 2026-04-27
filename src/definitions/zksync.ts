@@ -118,6 +118,7 @@ export const zkSync = makeConfig({
 		"0xa07028B453a1f6Ac277e93f3A0eA73B4bE5c7d63",
 		"0x23C77A553AAc0ad009441C856c05D117c1131e3d",
 	],
+	v4Watchlist: [],
 	internalName: "zksync",
 	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
 	contracts: {

@@ -347,6 +347,7 @@ export const mainnet = makeConfig({
 		"0xc5af84701f98fa483ece78af83f11b6c38aca71d",
 		"0x7bea39867e4169dbe237d55c8242a8f2fcdcc387",
 	],
+	v4Watchlist: [],
 	internalName: "ethereum",
 	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/eth.png",
 	contracts: {

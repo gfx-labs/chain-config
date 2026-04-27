@@ -121,6 +121,7 @@ export const filecoin = makeConfig({
 		"0x443a6243a36ef0ae1c46523d563c15abd787f4e9",
 		"0xca166403c6f41e1fecc0eb40ac1947fd6399d5c5",
 	],
+	v4Watchlist: [],
 	internalName: "filecoin",
 	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/fil.png",
 	contracts: {

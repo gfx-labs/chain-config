@@ -93,6 +93,7 @@ export declare const avalanche: Readonly<{
     })[];
     stables: ("0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e" | "0x9702230A8Ea53601f5cD2dc00fDBc13d4dF4A8c7")[];
     watchlist: never[];
+    v4Watchlist: never[];
     internalName: "avalanche";
     nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/avax.svg";
     contracts: {

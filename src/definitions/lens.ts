@@ -78,6 +78,7 @@ export const lens = makeConfig({
 		"0xdf4b8153bf91f54802a9ba16366b2111724384e4",
 		"0x6b6eb6f437bf54d22b997c3b38b79a23bc63f39f",
 	],
+	v4Watchlist: [],
 	internalName: "lens",
 	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/gho.png",
 	contracts: {
