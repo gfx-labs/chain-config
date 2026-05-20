@@ -40,6 +40,7 @@ var Bsc Network = Network{
 	V4Watchlist:      []common.Hash{},
 	BlockTimeSeconds: 3,
 	Oku: OkuMetadata{
+		Router:                        common.HexToAddress("0x25132a6F4f0A993d62e57D0510df1395729125ad"),
 		LimitOrderRegistry:            common.HexToAddress("0x19b9bd76028cab6f414ed1fc57400b75b5ca0627"),
 		LimitOrderRegistryDeployBlock: 34187988,
 
