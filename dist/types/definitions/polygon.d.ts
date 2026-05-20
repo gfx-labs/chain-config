@@ -109,6 +109,7 @@ export declare const polygon: Readonly<{
         wethAddress: "0x7ceb23fd6bc0add59e62ac25578270cff1b9f619";
     };
     oku: {
+        router: "0x25132a6F4f0A993d62e57D0510df1395729125ad";
         limitOrderRegistry: "0x54dF9e11c7933a9cA3BD1E540B63dA15edAe40bf";
         limitOrderRegistryDeployBlock: number;
         pricing: {

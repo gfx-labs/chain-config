@@ -146,7 +146,7 @@
             usdcAddress: "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8",
         },
         oku: {
-            router: "0x822CFA9749d16Fb4B4F2B0515924cec69512893b",
+            router: "0x25132a6F4f0A993d62e57D0510df1395729125ad",
             limitOrderRegistry: "0x54dF9e11c7933a9cA3BD1E540B63dA15edAe40bf",
             limitOrderRegistryDeployBlock: 98754575,
             pricing: {
@@ -585,7 +585,7 @@
             usdcAddress: "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
         },
         oku: {
-            router: "0x822CFA9749d16Fb4B4F2B0515924cec69512893b",
+            router: "0x25132a6F4f0A993d62e57D0510df1395729125ad",
             limitOrderRegistry: "0xff8b754c64e9a8473bd6e1118d0eac67f0a8ae27",
             limitOrderRegistryDeployBlock: 7644835,
             pricing: {
@@ -1154,6 +1154,7 @@
             wethAddress: "0x2170ed0880ac9a755fd29b2688956bd959f933f8",
         },
         oku: {
+            router: "0x25132a6F4f0A993d62e57D0510df1395729125ad",
             limitOrderRegistry: "0x19b9bd76028cab6f414ed1fc57400b75b5ca0627",
             limitOrderRegistryDeployBlock: 34187988,
             pricing: {
@@ -4062,7 +4063,7 @@
             dexscreener: "optimism",
         },
         oku: {
-            router: "0x822CFA9749d16Fb4B4F2B0515924cec69512893b",
+            router: "0x25132a6F4f0A993d62e57D0510df1395729125ad",
             limitOrderRegistryDeployBlock: 105276132,
             limitOrderRegistry: "0x54dF9e11c7933a9cA3BD1E540B63dA15edAe40bf",
             customOrderTypes: {
@@ -4661,6 +4662,7 @@
             wethAddress: "0x7ceb23fd6bc0add59e62ac25578270cff1b9f619",
         },
         oku: {
+            router: "0x25132a6F4f0A993d62e57D0510df1395729125ad",
             limitOrderRegistry: "0x54dF9e11c7933a9cA3BD1E540B63dA15edAe40bf",
             limitOrderRegistryDeployBlock: 43640541,
             pricing: {
@@ -6307,8 +6309,8 @@
             wbtcAddress: "0x03c7054bcb39f7b2e5b2c7acb37583e32d70cfa3",
         },
         oku: {
-            router: "0x822CFA9749d16Fb4B4F2B0515924cec69512893b",
-            Permit2Proxy: "0x1B361B7cEce8920Bb5C3606B322EEC08FA85EB12",
+            router: "0x25132a6F4f0A993d62e57D0510df1395729125ad",
+            Permit2Proxy: "0x43830FE2074eaD6562586b512D87aa6af840a688",
             pricing: {
                 nativeWrappedToken: "0x4200000000000000000000000000000000000006",
                 nativeWrappedName: "ETH",
