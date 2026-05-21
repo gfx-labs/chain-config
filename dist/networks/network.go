@@ -543,8 +543,10 @@ type TokenMetadata struct {
 }
 
 type OkuMetadata struct {
-	Router                        common.Address
-	Permit2Proxy                  common.Address
+	Router10                      common.Address
+	Router11                      common.Address
+	Permit2Proxy10                common.Address
+	Permit2Proxy11                common.Address
 	LimitOrderRegistry            common.Address
 	LimitOrderRegistryDeployBlock int64
 	Pricing                       OkuPricingMetadata

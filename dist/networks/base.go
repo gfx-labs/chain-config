@@ -40,7 +40,6 @@ var Base Network = Network{
 	V4Watchlist:      []common.Hash{},
 	BlockTimeSeconds: 2,
 	Oku: OkuMetadata{
-		Router:                        common.HexToAddress("0x25132a6F4f0A993d62e57D0510df1395729125ad"),
 		LimitOrderRegistry:            common.HexToAddress("0xff8b754c64e9a8473bd6e1118d0eac67f0a8ae27"),
 		LimitOrderRegistryDeployBlock: 7644835,
 
