@@ -84,8 +84,10 @@ export interface OkuCustomOrderTypesMetadata {
 }
 
 export interface OkuMetadata {
-	router?: Address;
-	Permit2Proxy?: Address;
+	router10?: Address;
+	router11?: Address;
+	permit2Proxy10?: Address;
+	permit2Proxy11?: Address;
 	limitOrderRegistry?: Address;
 	limitOrderRegistryDeployBlock?: number;
 	pricing?: OkuPricingMetadata;

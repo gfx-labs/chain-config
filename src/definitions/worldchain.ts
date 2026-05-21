@@ -69,8 +69,10 @@ export const worldchain = makeConfig({
 		wbtcAddress: "0x03c7054bcb39f7b2e5b2c7acb37583e32d70cfa3",
 	},
 	oku: {
-		router: "0x25132a6F4f0A993d62e57D0510df1395729125ad",
-		Permit2Proxy: "0x43830FE2074eaD6562586b512D87aa6af840a688",
+		router10: "0x822CFA9749d16Fb4B4F2B0515924cec69512893b",
+		router11: "0x25132a6F4f0A993d62e57D0510df1395729125ad",
+		permit2Proxy10: "0x1B361B7cEce8920Bb5C3606B322EEC08FA85EB12",
+		permit2Proxy11: "0x43830FE2074eaD6562586b512D87aa6af840a688",
 		pricing: {
 			nativeWrappedToken: "0x4200000000000000000000000000000000000006",
 			nativeWrappedName: "ETH",
