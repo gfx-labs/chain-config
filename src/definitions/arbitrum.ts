@@ -141,7 +141,8 @@ export const arbitrum = makeConfig({
 		usdcAddress: "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8",
 	},
 	oku: {
-		router: "0x25132a6F4f0A993d62e57D0510df1395729125ad",
+		router10: "0x822CFA9749d16Fb4B4F2B0515924cec69512893b",
+		router11: "0x25132a6F4f0A993d62e57D0510df1395729125ad",
 		limitOrderRegistry: "0x54dF9e11c7933a9cA3BD1E540B63dA15edAe40bf",
 		limitOrderRegistryDeployBlock: 98754575,
 		pricing: {
