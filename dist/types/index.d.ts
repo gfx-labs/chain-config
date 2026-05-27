@@ -1,6 +1,8 @@
 export * from "./definitions/index";
 export * from "./spec/index";
 export * from "./util/caip2";
+export { NetworkNotFoundError, type NetworkIndex, buildNetworkIndex, } from "./util/lookup";
+import type { IChainInfo } from "./spec";
 export declare const MAINNET_CHAINS: readonly [Readonly<{
     name: "Arbitrum";
     launchTime: 1688997600;
@@ -10760,3 +10762,52 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
 } & {
     caip2Namespace: string;
 }>];
+/**
+ * Resolve a chain from an arbitrary input. Accepts:
+ * - `number`: treated as chain ID
+ * - `string`: tried as CAIP-2 identifier (if it contains ":"), then as
+ *   internal name, then as a numeric chain ID string
+ * - `IChainInfo`: returned directly (pass-through)
+ *
+ * Mirrors the Go `NetworkByAny` function.
+ *
+ * @example
+ * ```ts
+ * import { networkByAny } from "@gfxlabs/oku-chains";
+ *
+ * networkByAny(1)           // by chain ID
+ * networkByAny("mainnet")   // by internal name
+ * networkByAny("eip155:1")  // by CAIP-2
+ * networkByAny("42161")     // by chain ID string
+ * ```
+ *
+ * @throws {NetworkNotFoundError} if no matching chain is found
+ */
+export declare function networkByAny(v: string | number | IChainInfo): IChainInfo;
+/**
+ * Look up a chain by its numeric chain ID.
+ *
+ * @throws {NetworkNotFoundError} if no matching chain is found
+ */
+export declare function networkById(id: number): IChainInfo;
+/**
+ * Look up a chain by its internal name (e.g. "arbitrum", "mainnet").
+ *
+ * @throws {NetworkNotFoundError} if no matching chain is found
+ */
+export declare function networkByName(name: string): IChainInfo;
+/**
+ * Look up a chain from a string. Tries, in order:
+ * 1. CAIP-2 identifier (if the string contains ":")
+ * 2. Internal name
+ * 3. Numeric chain ID (parsed from string)
+ *
+ * @throws {NetworkNotFoundError} if no matching chain is found
+ */
+export declare function networkByString(s: string): IChainInfo;
+/**
+ * Look up a chain by its CAIP-2 identifier string (e.g. "eip155:1").
+ *
+ * @throws {NetworkNotFoundError} if no matching chain is found
+ */
+export declare function networkByCAIP2(caip2: string): IChainInfo;

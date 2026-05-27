@@ -6912,6 +6912,123 @@ function fromCAIP2(caip2, chains) {
     return chain;
 }
 
+/**
+ * Error thrown when a network cannot be found by any lookup method.
+ */
+class NetworkNotFoundError extends Error {
+    constructor(input) {
+        super(`chain not found: ${String(input)}`);
+        this.name = "NetworkNotFoundError";
+    }
+}
+/**
+ * Build a lookup index from a list of chains for fast repeated lookups.
+ * Pre-computes maps keyed by chain ID, internal name, and CAIP-2 identifier.
+ */
+function buildNetworkIndex(chains) {
+    const byId = new Map();
+    const byName = new Map();
+    const byCAIP2 = new Map();
+    for (const chain of chains) {
+        byId.set(chain.id, chain);
+        byName.set(chain.internalName, chain);
+        byCAIP2.set(`${chain.caip2Namespace}:${chain.id}`, chain);
+    }
+    return { byId, byName, byCAIP2 };
+}
+/**
+ * Look up a chain by its numeric chain ID.
+ */
+function networkById$1(id, idx) {
+    const chain = idx.byId.get(id);
+    if (!chain) {
+        throw new NetworkNotFoundError(id);
+    }
+    return chain;
+}
+/**
+ * Look up a chain by its internal name (e.g. "arbitrum", "mainnet").
+ */
+function networkByName$1(name, idx) {
+    const chain = idx.byName.get(name);
+    if (!chain) {
+        throw new NetworkNotFoundError(name);
+    }
+    return chain;
+}
+/**
+ * Look up a chain by its CAIP-2 identifier string (e.g. "eip155:1").
+ */
+function networkByCAIP2$1(caip2, idx) {
+    // Validate the format
+    parseCAIP2(caip2);
+    const chain = idx.byCAIP2.get(caip2);
+    if (!chain) {
+        throw new NetworkNotFoundError(caip2);
+    }
+    return chain;
+}
+/**
+ * Look up a chain from a string. Tries, in order:
+ * 1. CAIP-2 identifier (if the string contains ":")
+ * 2. Internal name
+ * 3. Numeric chain ID (parsed from string)
+ *
+ * Mirrors the Go `NetworkByString` function.
+ */
+function networkByString$1(s, idx) {
+    if (s === "") {
+        throw new NetworkNotFoundError("empty string");
+    }
+    // Try CAIP-2
+    if (s.includes(":")) {
+        return networkByCAIP2$1(s, idx);
+    }
+    // Try internal name
+    const byName = idx.byName.get(s);
+    if (byName) {
+        return byName;
+    }
+    // Try numeric chain ID
+    const parsed = Number(s);
+    if (!Number.isNaN(parsed) && Number.isFinite(parsed)) {
+        const byId = idx.byId.get(Math.trunc(parsed));
+        if (byId) {
+            return byId;
+        }
+    }
+    throw new NetworkNotFoundError(s);
+}
+/**
+ * Resolve a chain from an arbitrary input. Accepts:
+ * - `number`: treated as chain ID
+ * - `string`: tried as CAIP-2 identifier (if it contains ":"), then as
+ *   internal name, then as a numeric chain ID string
+ * - `IChainInfo`: returned directly (pass-through)
+ *
+ * Mirrors the Go `NetworkByAny` function.
+ *
+ * @throws {NetworkNotFoundError} if no matching chain is found
+ */
+function networkByAny$1(v, idx) {
+    if (v == null) {
+        throw new NetworkNotFoundError("null");
+    }
+    // Pass-through if already a chain config object
+    if (typeof v === "object" && "id" in v && "internalName" in v) {
+        return v;
+    }
+    // Numeric chain ID
+    if (typeof v === "number") {
+        return networkById$1(Math.trunc(v), idx);
+    }
+    // String: CAIP-2, name, or numeric string
+    if (typeof v === "string") {
+        return networkByString$1(v, idx);
+    }
+    throw new NetworkNotFoundError(v);
+}
+
 const MAINNET_CHAINS = [
     arbitrum,
     base,
@@ -6962,5 +7079,66 @@ const MAINNET_CHAINS = [
     gensyn,
     pharos,
 ];
+/** Pre-built lookup index over MAINNET_CHAINS (like Go's module-level maps). */
+const _idx = buildNetworkIndex(MAINNET_CHAINS);
+/**
+ * Resolve a chain from an arbitrary input. Accepts:
+ * - `number`: treated as chain ID
+ * - `string`: tried as CAIP-2 identifier (if it contains ":"), then as
+ *   internal name, then as a numeric chain ID string
+ * - `IChainInfo`: returned directly (pass-through)
+ *
+ * Mirrors the Go `NetworkByAny` function.
+ *
+ * @example
+ * ```ts
+ * import { networkByAny } from "@gfxlabs/oku-chains";
+ *
+ * networkByAny(1)           // by chain ID
+ * networkByAny("mainnet")   // by internal name
+ * networkByAny("eip155:1")  // by CAIP-2
+ * networkByAny("42161")     // by chain ID string
+ * ```
+ *
+ * @throws {NetworkNotFoundError} if no matching chain is found
+ */
+function networkByAny(v) {
+    return networkByAny$1(v, _idx);
+}
+/**
+ * Look up a chain by its numeric chain ID.
+ *
+ * @throws {NetworkNotFoundError} if no matching chain is found
+ */
+function networkById(id) {
+    return networkById$1(id, _idx);
+}
+/**
+ * Look up a chain by its internal name (e.g. "arbitrum", "mainnet").
+ *
+ * @throws {NetworkNotFoundError} if no matching chain is found
+ */
+function networkByName(name) {
+    return networkByName$1(name, _idx);
+}
+/**
+ * Look up a chain from a string. Tries, in order:
+ * 1. CAIP-2 identifier (if the string contains ":")
+ * 2. Internal name
+ * 3. Numeric chain ID (parsed from string)
+ *
+ * @throws {NetworkNotFoundError} if no matching chain is found
+ */
+function networkByString(s) {
+    return networkByString$1(s, _idx);
+}
+/**
+ * Look up a chain by its CAIP-2 identifier string (e.g. "eip155:1").
+ *
+ * @throws {NetworkNotFoundError} if no matching chain is found
+ */
+function networkByCAIP2(caip2) {
+    return networkByCAIP2$1(caip2, _idx);
+}
 
-export { MAINNET_CHAINS, arbitrum, avalanche, base, blast, bob, boba, bsc, celo, corn, etherlink, filecoin, formatCAIP2, fromCAIP2, gensyn, gnosis, goat, hemi, hyperevm, lens, lightlink, linea, lisk, mainnet, manta, mantle, matchain, metal, monad, moonbeam, nibiru, optimism, parseCAIP2, pharos, plasma, polygon, polygonZkEvm, redbelly, ronin, rootstock, saga, scroll, sei, sonic, taiko, telos, toCAIP2, tronShasta, unichain, worldchain, xdc, zerog, zkSync };
+export { MAINNET_CHAINS, NetworkNotFoundError, arbitrum, avalanche, base, blast, bob, boba, bsc, buildNetworkIndex, celo, corn, etherlink, filecoin, formatCAIP2, fromCAIP2, gensyn, gnosis, goat, hemi, hyperevm, lens, lightlink, linea, lisk, mainnet, manta, mantle, matchain, metal, monad, moonbeam, networkByAny, networkByCAIP2, networkById, networkByName, networkByString, nibiru, optimism, parseCAIP2, pharos, plasma, polygon, polygonZkEvm, redbelly, ronin, rootstock, saga, scroll, sei, sonic, taiko, telos, toCAIP2, tronShasta, unichain, worldchain, xdc, zerog, zkSync };
