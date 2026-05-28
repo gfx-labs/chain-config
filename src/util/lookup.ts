@@ -1,5 +1,6 @@
 import type { IChainInfo } from "../spec";
-import { parseCAIP2 } from "./caip2";
+import { NON_EVM_CHAIN_ID } from "../spec";
+import { caip2Reference, parseCAIP2 } from "./caip2";
 
 /**
  * Error thrown when a network cannot be found by any lookup method.
@@ -23,6 +24,11 @@ export interface NetworkIndex {
 /**
  * Build a lookup index from a list of chains for fast repeated lookups.
  * Pre-computes maps keyed by chain ID, internal name, and CAIP-2 identifier.
+ *
+ * Non-EVM chains use the {@link NON_EVM_CHAIN_ID} (`0`) placeholder id and are
+ * intentionally NOT registered in `byId` (they are not resolvable by numeric
+ * id, and would otherwise all collide on `0`). They remain resolvable by
+ * internal name and by their explicit CAIP-2 identifier.
  */
 export function buildNetworkIndex(chains: readonly IChainInfo[]): NetworkIndex {
 	const byId = new Map<number, IChainInfo>();
@@ -30,16 +36,19 @@ export function buildNetworkIndex(chains: readonly IChainInfo[]): NetworkIndex {
 	const byCAIP2 = new Map<string, IChainInfo>();
 
 	for (const chain of chains) {
-		byId.set(chain.id, chain);
+		if (chain.id !== NON_EVM_CHAIN_ID) {
+			byId.set(chain.id, chain);
+		}
 		byName.set(chain.internalName, chain);
-		byCAIP2.set(`${chain.caip2Namespace}:${chain.id}`, chain);
+		byCAIP2.set(`${chain.caip2Namespace}:${caip2Reference(chain)}`, chain);
 	}
 
 	return { byId, byName, byCAIP2 };
 }
 
 /**
- * Look up a chain by its numeric chain ID.
+ * Look up a chain by its numeric chain ID. Non-EVM chains use the
+ * {@link NON_EVM_CHAIN_ID} placeholder and are not resolvable here.
  */
 export function networkById(id: number, idx: NetworkIndex): IChainInfo {
 	const chain = idx.byId.get(id);
@@ -50,7 +59,8 @@ export function networkById(id: number, idx: NetworkIndex): IChainInfo {
 }
 
 /**
- * Look up a chain by its internal name (e.g. "arbitrum", "mainnet").
+ * Look up a chain by its internal name (e.g. "arbitrum", "mainnet",
+ * "bitcoin").
  */
 export function networkByName(name: string, idx: NetworkIndex): IChainInfo {
 	const chain = idx.byName.get(name);
@@ -61,7 +71,9 @@ export function networkByName(name: string, idx: NetworkIndex): IChainInfo {
 }
 
 /**
- * Look up a chain by its CAIP-2 identifier string (e.g. "eip155:1").
+ * Look up a chain by its CAIP-2 identifier string (e.g. "eip155:1" or
+ * "bip122:000000000019d6689c085ae165831e93"). This is the way to resolve
+ * non-EVM chains.
  */
 export function networkByCAIP2(caip2: string, idx: NetworkIndex): IChainInfo {
 	// Validate the format
@@ -78,6 +90,9 @@ export function networkByCAIP2(caip2: string, idx: NetworkIndex): IChainInfo {
  * 1. CAIP-2 identifier (if the string contains ":")
  * 2. Internal name
  * 3. Numeric chain ID (parsed from string)
+ *
+ * Non-EVM chains are only reachable via the CAIP-2 or internal-name paths,
+ * never via the numeric-id fallback.
  *
  * Mirrors the Go `NetworkByString` function.
  */
@@ -111,10 +126,13 @@ export function networkByString(s: string, idx: NetworkIndex): IChainInfo {
 
 /**
  * Resolve a chain from an arbitrary input. Accepts:
- * - `number`: treated as chain ID
+ * - `number`: treated as a numeric chain ID (EVM-only)
  * - `string`: tried as CAIP-2 identifier (if it contains ":"), then as
  *   internal name, then as a numeric chain ID string
  * - `IChainInfo`: returned directly (pass-through)
+ *
+ * Non-EVM chains have a placeholder numeric id, so they can only be resolved
+ * via their CAIP-2 identifier or internal name (or passed through directly).
  *
  * Mirrors the Go `NetworkByAny` function.
  *

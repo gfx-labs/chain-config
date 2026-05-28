@@ -164,6 +164,19 @@ export interface Oracles {
 }
 export interface IChainInfo<formatters extends ChainFormatters | undefined = ChainFormatters | undefined> extends Chain<formatters> {
     caip2Namespace: string;
+    /**
+     * Explicit CAIP-2 reference component.
+     *
+     * When set, it is used verbatim as the reference half of the chain's CAIP-2
+     * identifier (e.g. Bitcoin's genesis hash prefix
+     * "000000000019d6689c085ae165831e93"). When omitted, the reference is
+     * derived from the numeric `id` (the historical behavior, e.g. "1" for
+     * Ethereum mainnet).
+     *
+     * Non-EVM chains (which use `id: 0` as a placeholder since viem requires a
+     * numeric id) MUST set this so their CAIP-2 identifier resolves correctly.
+     */
+    caip2Reference?: string;
     logoUrl: string;
     launchTime: number;
     nativeLogoUrl: string;
@@ -219,3 +232,21 @@ export interface IChainInfo<formatters extends ChainFormatters | undefined = Cha
         metrom?: ChainContract;
     };
 }
+/**
+ * Placeholder numeric `id` used by non-EVM chains.
+ *
+ * viem's `Chain` (which {@link IChainInfo} extends) requires a numeric `id`,
+ * but non-EVM chains (e.g. Bitcoin) have no EVM chain id. They use `0` as a
+ * sentinel and rely on `caip2Namespace` + `caip2Reference` for identity and
+ * resolution instead. `0` is never a valid EVM chain id, so it cannot collide.
+ */
+export declare const NON_EVM_CHAIN_ID = 0;
+/**
+ * True if the chain is non-EVM (i.e. uses the {@link NON_EVM_CHAIN_ID}
+ * placeholder id and a non-`eip155` CAIP-2 namespace). Non-EVM chains live in
+ * the same {@link IChainInfo} shape as EVM chains, so EVM-only fields
+ * (contracts, uniswap metadata, etc.) will be present but empty.
+ */
+export declare function isNonEvmChain(c: IChainInfo): boolean;
+/** True if the chain is an EVM chain. Inverse of {@link isNonEvmChain}. */
+export declare function isEvmChain(c: IChainInfo): boolean;

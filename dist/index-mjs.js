@@ -6843,6 +6843,111 @@ const zkSync = makeConfig({
 });
 
 /**
+ * Placeholder numeric `id` used by non-EVM chains.
+ *
+ * viem's `Chain` (which {@link IChainInfo} extends) requires a numeric `id`,
+ * but non-EVM chains (e.g. Bitcoin) have no EVM chain id. They use `0` as a
+ * sentinel and rely on `caip2Namespace` + `caip2Reference` for identity and
+ * resolution instead. `0` is never a valid EVM chain id, so it cannot collide.
+ */
+const NON_EVM_CHAIN_ID = 0;
+/**
+ * True if the chain is non-EVM (i.e. uses the {@link NON_EVM_CHAIN_ID}
+ * placeholder id and a non-`eip155` CAIP-2 namespace). Non-EVM chains live in
+ * the same {@link IChainInfo} shape as EVM chains, so EVM-only fields
+ * (contracts, uniswap metadata, etc.) will be present but empty.
+ */
+function isNonEvmChain(c) {
+    return c.id === NON_EVM_CHAIN_ID && c.caip2Namespace !== "eip155";
+}
+/** True if the chain is an EVM chain. Inverse of {@link isNonEvmChain}. */
+function isEvmChain(c) {
+    return !isNonEvmChain(c);
+}
+
+/**
+ * Bitcoin mainnet.
+ *
+ * A non-EVM chain expressed within the EVM-shaped {@link IChainInfo} so it
+ * flows through the existing resolvers and consumers unchanged. Because viem's
+ * `Chain` requires a numeric `id`, Bitcoin uses the {@link NON_EVM_CHAIN_ID}
+ * (`0`) placeholder and is identified/resolved via CAIP-2 instead:
+ * `bip122:000000000019d6689c085ae165831e93`, where the reference is the first
+ * 32 hex chars of the genesis block hash per the CAIP-2 `bip122` namespace.
+ *
+ * EVM-only fields (uniswap, morpho, contracts, etc.) are present but empty.
+ *
+ * Refs:
+ *   - https://github.com/ChainAgnostic/namespaces/blob/main/bip122/caip2.md
+ */
+const chain = defineChain({
+    id: NON_EVM_CHAIN_ID,
+    name: "Bitcoin",
+    nativeCurrency: {
+        name: "Bitcoin",
+        symbol: "BTC",
+        decimals: 8,
+    },
+    rpcUrls: {
+        default: {
+            http: ["https://bitcoin-rpc.publicnode.com"],
+        },
+    },
+    blockExplorers: {
+        default: {
+            name: "mempool.space",
+            url: "https://mempool.space",
+            apiUrl: "https://mempool.space/api",
+        },
+    },
+});
+const bitcoin = makeConfig({
+    ...chain,
+    caip2Namespace: "bip122",
+    caip2Reference: "000000000019d6689c085ae165831e93",
+    internalName: "bitcoin",
+    transactionType: "bitcoin",
+    sortIndex: 1000,
+    launchTime: 1231006505,
+    blockTimeSeconds: 600,
+    deprecated: false,
+    logoUrl: "https://cms.oku.trade/cdn/public/chains/bitcoin-logo.webp",
+    nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/btc.png",
+    blockAid: "bitcoin",
+    estimatedSwapGas: 0,
+    estimatedBridgeGas: 0,
+    estimatedWrapGas: 0,
+    initCodeHash: "0x0000000000000000000000000000000000000000000000000000000000000000",
+    defaultPool: "0x0000000000000000000000000000000000000000",
+    defaultToken0: "0x0000000000000000000000000000000000000000",
+    defaultToken1: "0x0000000000000000000000000000000000000000",
+    tokenList: [],
+    stables: [],
+    watchlist: [],
+    v4Watchlist: [],
+    externalId: {
+        coingecko: "bitcoin",
+    },
+    markets: {},
+    bridges: {},
+    oracles: {
+        coingecko: {
+            slug: "bitcoin",
+            native: "bitcoin",
+        },
+    },
+    uniswap: {},
+    morpho: {},
+    token: {},
+    oku: {},
+    contracts: {
+        nftManager: {
+            address: "0x0000000000000000000000000000000000000000",
+        },
+    },
+});
+
+/**
  * Parse a CAIP-2 chain ID string into its namespace and reference components.
  *
  * @example
@@ -6876,19 +6981,32 @@ function formatCAIP2(id) {
     return `${id.namespace}:${id.reference}`;
 }
 /**
+ * The CAIP-2 reference component for a chain.
+ *
+ * If the chain sets an explicit `caip2Reference` (e.g. a non-EVM chain like
+ * Bitcoin, whose reference is a genesis hash prefix), it is used verbatim.
+ * Otherwise the reference is derived from the numeric `id` (the historical
+ * behavior for EVM chains, e.g. "1" for Ethereum mainnet).
+ */
+function caip2Reference(chain) {
+    return chain.caip2Reference ?? String(chain.id);
+}
+/**
  * Convert a chain config to its CAIP-2 identifier string.
  *
  * @example
  * ```ts
- * import { mainnet } from "@gfxlabs/oku-chains";
+ * import { mainnet, bitcoin } from "@gfxlabs/oku-chains";
  * toCAIP2(mainnet)
  * // => "eip155:1"
+ * toCAIP2(bitcoin)
+ * // => "bip122:000000000019d6689c085ae165831e93"
  * ```
  */
 function toCAIP2(chain) {
     return formatCAIP2({
         namespace: chain.caip2Namespace,
-        reference: String(chain.id),
+        reference: caip2Reference(chain),
     });
 }
 /**
@@ -6905,7 +7023,7 @@ function toCAIP2(chain) {
  */
 function fromCAIP2(caip2, chains) {
     const { namespace, reference } = parseCAIP2(caip2);
-    const chain = chains.find((c) => c.caip2Namespace === namespace && String(c.id) === reference);
+    const chain = chains.find((c) => c.caip2Namespace === namespace && caip2Reference(c) === reference);
     if (!chain) {
         throw new Error(`No chain found for CAIP-2 identifier: "${caip2}"`);
     }
@@ -6924,20 +7042,28 @@ class NetworkNotFoundError extends Error {
 /**
  * Build a lookup index from a list of chains for fast repeated lookups.
  * Pre-computes maps keyed by chain ID, internal name, and CAIP-2 identifier.
+ *
+ * Non-EVM chains use the {@link NON_EVM_CHAIN_ID} (`0`) placeholder id and are
+ * intentionally NOT registered in `byId` (they are not resolvable by numeric
+ * id, and would otherwise all collide on `0`). They remain resolvable by
+ * internal name and by their explicit CAIP-2 identifier.
  */
 function buildNetworkIndex(chains) {
     const byId = new Map();
     const byName = new Map();
     const byCAIP2 = new Map();
     for (const chain of chains) {
-        byId.set(chain.id, chain);
+        if (chain.id !== NON_EVM_CHAIN_ID) {
+            byId.set(chain.id, chain);
+        }
         byName.set(chain.internalName, chain);
-        byCAIP2.set(`${chain.caip2Namespace}:${chain.id}`, chain);
+        byCAIP2.set(`${chain.caip2Namespace}:${caip2Reference(chain)}`, chain);
     }
     return { byId, byName, byCAIP2 };
 }
 /**
- * Look up a chain by its numeric chain ID.
+ * Look up a chain by its numeric chain ID. Non-EVM chains use the
+ * {@link NON_EVM_CHAIN_ID} placeholder and are not resolvable here.
  */
 function networkById$1(id, idx) {
     const chain = idx.byId.get(id);
@@ -6947,7 +7073,8 @@ function networkById$1(id, idx) {
     return chain;
 }
 /**
- * Look up a chain by its internal name (e.g. "arbitrum", "mainnet").
+ * Look up a chain by its internal name (e.g. "arbitrum", "mainnet",
+ * "bitcoin").
  */
 function networkByName$1(name, idx) {
     const chain = idx.byName.get(name);
@@ -6957,7 +7084,9 @@ function networkByName$1(name, idx) {
     return chain;
 }
 /**
- * Look up a chain by its CAIP-2 identifier string (e.g. "eip155:1").
+ * Look up a chain by its CAIP-2 identifier string (e.g. "eip155:1" or
+ * "bip122:000000000019d6689c085ae165831e93"). This is the way to resolve
+ * non-EVM chains.
  */
 function networkByCAIP2$1(caip2, idx) {
     // Validate the format
@@ -6973,6 +7102,9 @@ function networkByCAIP2$1(caip2, idx) {
  * 1. CAIP-2 identifier (if the string contains ":")
  * 2. Internal name
  * 3. Numeric chain ID (parsed from string)
+ *
+ * Non-EVM chains are only reachable via the CAIP-2 or internal-name paths,
+ * never via the numeric-id fallback.
  *
  * Mirrors the Go `NetworkByString` function.
  */
@@ -7001,10 +7133,13 @@ function networkByString$1(s, idx) {
 }
 /**
  * Resolve a chain from an arbitrary input. Accepts:
- * - `number`: treated as chain ID
+ * - `number`: treated as a numeric chain ID (EVM-only)
  * - `string`: tried as CAIP-2 identifier (if it contains ":"), then as
  *   internal name, then as a numeric chain ID string
  * - `IChainInfo`: returned directly (pass-through)
+ *
+ * Non-EVM chains have a placeholder numeric id, so they can only be resolved
+ * via their CAIP-2 identifier or internal name (or passed through directly).
  *
  * Mirrors the Go `NetworkByAny` function.
  *
@@ -7079,8 +7214,29 @@ const MAINNET_CHAINS = [
     gensyn,
     pharos,
 ];
-/** Pre-built lookup index over MAINNET_CHAINS (like Go's module-level maps). */
-const _idx = buildNetworkIndex(MAINNET_CHAINS);
+/**
+ * Non-EVM chains (e.g. Bitcoin). These share the {@link IChainInfo} shape as
+ * EVM chains but use the `NON_EVM_CHAIN_ID` (`0`) placeholder id and are
+ * resolvable only via CAIP-2 (or internal name). Kept as a separate array so
+ * the EVM-only surface (and the Go codegen, which reads `MAINNET_CHAINS`) is
+ * unaffected.
+ */
+const NON_EVM_CHAINS = [
+    bitcoin,
+];
+/**
+ * All networks, EVM and non-EVM. Use this when you need to enumerate every
+ * supported chain regardless of type.
+ */
+const ALL_NETWORKS = [
+    ...MAINNET_CHAINS,
+    ...NON_EVM_CHAINS,
+];
+/**
+ * Pre-built lookup index over all networks (EVM + non-EVM), like Go's
+ * module-level maps. Resolution functions below bind to this index.
+ */
+const _idx = buildNetworkIndex(ALL_NETWORKS);
 /**
  * Resolve a chain from an arbitrary input. Accepts:
  * - `number`: treated as chain ID
@@ -7090,14 +7246,20 @@ const _idx = buildNetworkIndex(MAINNET_CHAINS);
  *
  * Mirrors the Go `NetworkByAny` function.
  *
+ * Non-EVM chains (e.g. Bitcoin) use a placeholder numeric id and can only be
+ * resolved via their CAIP-2 identifier or internal name. Use `isNonEvmChain`
+ * if you need to distinguish them.
+ *
  * @example
  * ```ts
  * import { networkByAny } from "@gfxlabs/oku-chains";
  *
- * networkByAny(1)           // by chain ID
+ * networkByAny(1)           // by chain ID (EVM)
  * networkByAny("mainnet")   // by internal name
- * networkByAny("eip155:1")  // by CAIP-2
- * networkByAny("42161")     // by chain ID string
+ * networkByAny("eip155:1")  // by CAIP-2 (EVM)
+ * networkByAny("42161")     // by chain ID string (EVM)
+ * networkByAny("bip122:000000000019d6689c085ae165831e93") // by CAIP-2 (non-EVM)
+ * networkByAny("bitcoin")   // by internal name (non-EVM)
  * ```
  *
  * @throws {NetworkNotFoundError} if no matching chain is found
@@ -7106,7 +7268,8 @@ function networkByAny(v) {
     return networkByAny$1(v, _idx);
 }
 /**
- * Look up a chain by its numeric chain ID.
+ * Look up a chain by its numeric chain ID. Non-EVM chains use a placeholder id
+ * and are not resolvable here.
  *
  * @throws {NetworkNotFoundError} if no matching chain is found
  */
@@ -7114,7 +7277,8 @@ function networkById(id) {
     return networkById$1(id, _idx);
 }
 /**
- * Look up a chain by its internal name (e.g. "arbitrum", "mainnet").
+ * Look up a chain by its internal name (e.g. "arbitrum", "mainnet",
+ * "bitcoin").
  *
  * @throws {NetworkNotFoundError} if no matching chain is found
  */
@@ -7133,7 +7297,9 @@ function networkByString(s) {
     return networkByString$1(s, _idx);
 }
 /**
- * Look up a chain by its CAIP-2 identifier string (e.g. "eip155:1").
+ * Look up a chain by its CAIP-2 identifier string (e.g. "eip155:1" or
+ * "bip122:000000000019d6689c085ae165831e93"). This is the way to resolve
+ * non-EVM chains.
  *
  * @throws {NetworkNotFoundError} if no matching chain is found
  */
@@ -7141,4 +7307,4 @@ function networkByCAIP2(caip2) {
     return networkByCAIP2$1(caip2, _idx);
 }
 
-export { MAINNET_CHAINS, NetworkNotFoundError, arbitrum, avalanche, base, blast, bob, boba, bsc, buildNetworkIndex, celo, corn, etherlink, filecoin, formatCAIP2, fromCAIP2, gensyn, gnosis, goat, hemi, hyperevm, lens, lightlink, linea, lisk, mainnet, manta, mantle, matchain, metal, monad, moonbeam, networkByAny, networkByCAIP2, networkById, networkByName, networkByString, nibiru, optimism, parseCAIP2, pharos, plasma, polygon, polygonZkEvm, redbelly, ronin, rootstock, saga, scroll, sei, sonic, taiko, telos, toCAIP2, tronShasta, unichain, worldchain, xdc, zerog, zkSync };
+export { ALL_NETWORKS, MAINNET_CHAINS, NON_EVM_CHAINS, NON_EVM_CHAIN_ID, NetworkNotFoundError, arbitrum, avalanche, base, bitcoin, blast, bob, boba, bsc, buildNetworkIndex, caip2Reference, celo, corn, etherlink, filecoin, formatCAIP2, fromCAIP2, gensyn, gnosis, goat, hemi, hyperevm, isEvmChain, isNonEvmChain, lens, lightlink, linea, lisk, mainnet, makeConfig, manta, mantle, matchain, metal, monad, moonbeam, networkByAny, networkByCAIP2, networkById, networkByName, networkByString, nibiru, optimism, parseCAIP2, pharos, plasma, polygon, polygonZkEvm, redbelly, ronin, rootstock, saga, scroll, sei, sonic, taiko, telos, toCAIP2, tronShasta, unichain, worldchain, xdc, zerog, zkSync };

@@ -408,6 +408,7 @@ func NetworkByString(s string) (*Network, error) {
 
 type Network struct {
 	Caip2Namespace     string
+	Caip2Reference     string
 	LogoUrl            string
 	LaunchTime         int64
 	NativeLogoUrl      string

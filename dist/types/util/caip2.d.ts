@@ -27,13 +27,24 @@ export declare function parseCAIP2(caip2: string): CAIP2Identifier;
  */
 export declare function formatCAIP2(id: CAIP2Identifier): string;
 /**
+ * The CAIP-2 reference component for a chain.
+ *
+ * If the chain sets an explicit `caip2Reference` (e.g. a non-EVM chain like
+ * Bitcoin, whose reference is a genesis hash prefix), it is used verbatim.
+ * Otherwise the reference is derived from the numeric `id` (the historical
+ * behavior for EVM chains, e.g. "1" for Ethereum mainnet).
+ */
+export declare function caip2Reference(chain: IChainInfo): string;
+/**
  * Convert a chain config to its CAIP-2 identifier string.
  *
  * @example
  * ```ts
- * import { mainnet } from "@gfxlabs/oku-chains";
+ * import { mainnet, bitcoin } from "@gfxlabs/oku-chains";
  * toCAIP2(mainnet)
  * // => "eip155:1"
+ * toCAIP2(bitcoin)
+ * // => "bip122:000000000019d6689c085ae165831e93"
  * ```
  */
 export declare function toCAIP2(chain: IChainInfo): string;

@@ -1,7 +1,9 @@
 export * from "./definitions/index";
+export * from "./non-evm/index";
 export * from "./spec/index";
 export * from "./util/caip2";
-export { NetworkNotFoundError, type NetworkIndex, buildNetworkIndex, } from "./util/lookup";
+export { makeConfig } from "./util/index";
+export { buildNetworkIndex, type NetworkIndex, NetworkNotFoundError, } from "./util/lookup";
 import type { IChainInfo } from "./spec";
 export declare const MAINNET_CHAINS: readonly [Readonly<{
     name: "Arbitrum";
@@ -10763,6 +10765,19 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
     caip2Namespace: string;
 }>];
 /**
+ * Non-EVM chains (e.g. Bitcoin). These share the {@link IChainInfo} shape as
+ * EVM chains but use the `NON_EVM_CHAIN_ID` (`0`) placeholder id and are
+ * resolvable only via CAIP-2 (or internal name). Kept as a separate array so
+ * the EVM-only surface (and the Go codegen, which reads `MAINNET_CHAINS`) is
+ * unaffected.
+ */
+export declare const NON_EVM_CHAINS: readonly IChainInfo[];
+/**
+ * All networks, EVM and non-EVM. Use this when you need to enumerate every
+ * supported chain regardless of type.
+ */
+export declare const ALL_NETWORKS: readonly IChainInfo[];
+/**
  * Resolve a chain from an arbitrary input. Accepts:
  * - `number`: treated as chain ID
  * - `string`: tried as CAIP-2 identifier (if it contains ":"), then as
@@ -10771,27 +10786,35 @@ export declare const MAINNET_CHAINS: readonly [Readonly<{
  *
  * Mirrors the Go `NetworkByAny` function.
  *
+ * Non-EVM chains (e.g. Bitcoin) use a placeholder numeric id and can only be
+ * resolved via their CAIP-2 identifier or internal name. Use `isNonEvmChain`
+ * if you need to distinguish them.
+ *
  * @example
  * ```ts
  * import { networkByAny } from "@gfxlabs/oku-chains";
  *
- * networkByAny(1)           // by chain ID
+ * networkByAny(1)           // by chain ID (EVM)
  * networkByAny("mainnet")   // by internal name
- * networkByAny("eip155:1")  // by CAIP-2
- * networkByAny("42161")     // by chain ID string
+ * networkByAny("eip155:1")  // by CAIP-2 (EVM)
+ * networkByAny("42161")     // by chain ID string (EVM)
+ * networkByAny("bip122:000000000019d6689c085ae165831e93") // by CAIP-2 (non-EVM)
+ * networkByAny("bitcoin")   // by internal name (non-EVM)
  * ```
  *
  * @throws {NetworkNotFoundError} if no matching chain is found
  */
 export declare function networkByAny(v: string | number | IChainInfo): IChainInfo;
 /**
- * Look up a chain by its numeric chain ID.
+ * Look up a chain by its numeric chain ID. Non-EVM chains use a placeholder id
+ * and are not resolvable here.
  *
  * @throws {NetworkNotFoundError} if no matching chain is found
  */
 export declare function networkById(id: number): IChainInfo;
 /**
- * Look up a chain by its internal name (e.g. "arbitrum", "mainnet").
+ * Look up a chain by its internal name (e.g. "arbitrum", "mainnet",
+ * "bitcoin").
  *
  * @throws {NetworkNotFoundError} if no matching chain is found
  */
@@ -10806,7 +10829,9 @@ export declare function networkByName(name: string): IChainInfo;
  */
 export declare function networkByString(s: string): IChainInfo;
 /**
- * Look up a chain by its CAIP-2 identifier string (e.g. "eip155:1").
+ * Look up a chain by its CAIP-2 identifier string (e.g. "eip155:1" or
+ * "bip122:000000000019d6689c085ae165831e93"). This is the way to resolve
+ * non-EVM chains.
  *
  * @throws {NetworkNotFoundError} if no matching chain is found
  */
