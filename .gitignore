@@ -40,5 +40,12 @@ dist/**
 dist
 dist-browser
 
+# ...but the generated Go package under dist/networks is the published
+# Go module and MUST be committed. Un-ignore it so newly generated chain
+# files (e.g. non-EVM chains like bitcoin.go) cannot silently fall through
+# the dist ignore rule and ship a non-compiling module.
+!dist/networks/
+!dist/networks/**
+
 # ignore package-lock.json
 package-lock.json
