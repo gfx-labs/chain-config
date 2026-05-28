@@ -5,8 +5,9 @@ import (
 )
 
 var Monad Network = Network{
-	ChainId:           143,
-	Caip2Namespace:    "eip155",
+	ChainId:        143,
+	Caip2Namespace: "eip155",
+
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/monad-logo.png",
 	Deprecated:        false,
 	LiteChain:         false,

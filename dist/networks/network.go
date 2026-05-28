@@ -62,6 +62,7 @@ const (
 	NameHyperevm     InternalName = "hyperevm"
 	NameGensyn       InternalName = "gensyn"
 	NamePharos       InternalName = "pharos"
+	NameBitcoin      InternalName = "bitcoin"
 )
 
 var AllNetworks = []Network{
@@ -113,6 +114,7 @@ var AllNetworks = []Network{
 	Hyperevm,
 	Gensyn,
 	Pharos,
+	Bitcoin,
 }
 
 var networksByName = map[string]Network{
@@ -164,6 +166,7 @@ var networksByName = map[string]Network{
 	"hyperevm":      Hyperevm,
 	"gensyn":        Gensyn,
 	"pharos":        Pharos,
+	"bitcoin":       Bitcoin,
 }
 
 var networksById = map[int]Network{
@@ -290,6 +293,7 @@ var networksByCAIP2 = map[string]Network{
 	"eip155:999":        Hyperevm,
 	"eip155:685689":     Gensyn,
 	"eip155:1672":       Pharos,
+	"bip122:000000000019d6689c085ae165831e93": Bitcoin,
 }
 
 // ParseCAIP2 splits a CAIP-2 chain identifier into its namespace and reference.
@@ -453,8 +457,15 @@ func (n *Network) IsStable(a common.Address) bool {
 }
 
 // CAIP2 returns the CAIP-2 chain identifier for this network
-// (e.g. "eip155:1" for Ethereum mainnet).
+// (e.g. "eip155:1" for Ethereum mainnet, or
+// "bip122:000000000019d6689c085ae165831e93" for Bitcoin).
+//
+// When Caip2Reference is set (non-EVM chains), it is used verbatim as the
+// reference; otherwise the numeric ChainId is used (EVM chains).
 func (n *Network) CAIP2() string {
+	if n.Caip2Reference != "" {
+		return fmt.Sprintf("%s:%s", n.Caip2Namespace, n.Caip2Reference)
+	}
 	return fmt.Sprintf("%s:%d", n.Caip2Namespace, n.ChainId)
 }
 

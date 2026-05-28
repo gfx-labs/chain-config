@@ -5,8 +5,9 @@ import (
 )
 
 var Goat Network = Network{
-	ChainId:           2345,
-	Caip2Namespace:    "eip155",
+	ChainId:        2345,
+	Caip2Namespace: "eip155",
+
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/goat-logo.svg",
 	Deprecated:        false,
 	LiteChain:         false,

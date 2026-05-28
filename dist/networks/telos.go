@@ -5,8 +5,9 @@ import (
 )
 
 var Telos Network = Network{
-	ChainId:           40,
-	Caip2Namespace:    "eip155",
+	ChainId:        40,
+	Caip2Namespace: "eip155",
+
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/telos-logo.svg",
 	Deprecated:        true,
 	LiteChain:         false,

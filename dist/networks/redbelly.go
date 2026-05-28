@@ -5,8 +5,9 @@ import (
 )
 
 var Redbelly Network = Network{
-	ChainId:           151,
-	Caip2Namespace:    "eip155",
+	ChainId:        151,
+	Caip2Namespace: "eip155",
+
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/redbelly-logo.svg",
 	Deprecated:        false,
 	LiteChain:         false,

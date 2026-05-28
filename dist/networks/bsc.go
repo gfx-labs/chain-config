@@ -5,8 +5,9 @@ import (
 )
 
 var Bsc Network = Network{
-	ChainId:           56,
-	Caip2Namespace:    "eip155",
+	ChainId:        56,
+	Caip2Namespace: "eip155",
+
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/bsc-logo.svg",
 	Deprecated:        false,
 	LiteChain:         false,

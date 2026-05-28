@@ -5,8 +5,9 @@ import (
 )
 
 var Base Network = Network{
-	ChainId:           8453,
-	Caip2Namespace:    "eip155",
+	ChainId:        8453,
+	Caip2Namespace: "eip155",
+
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/base-logo.svg",
 	Deprecated:        false,
 	LiteChain:         false,

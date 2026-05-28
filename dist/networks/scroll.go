@@ -5,8 +5,9 @@ import (
 )
 
 var Scroll Network = Network{
-	ChainId:           534352,
-	Caip2Namespace:    "eip155",
+	ChainId:        534352,
+	Caip2Namespace: "eip155",
+
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/scroll-logo.svg",
 	Deprecated:        true,
 	LiteChain:         false,

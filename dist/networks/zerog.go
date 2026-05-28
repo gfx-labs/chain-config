@@ -5,8 +5,9 @@ import (
 )
 
 var Zerog Network = Network{
-	ChainId:           16661,
-	Caip2Namespace:    "eip155",
+	ChainId:        16661,
+	Caip2Namespace: "eip155",
+
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/zerog-logo.svg",
 	Deprecated:        false,
 	LiteChain:         false,

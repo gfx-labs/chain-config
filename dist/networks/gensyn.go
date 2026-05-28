@@ -5,8 +5,9 @@ import (
 )
 
 var Gensyn Network = Network{
-	ChainId:           685689,
-	Caip2Namespace:    "eip155",
+	ChainId:        685689,
+	Caip2Namespace: "eip155",
+
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/gensyn-logo.svg",
 	Deprecated:        false,
 	LiteChain:         false,

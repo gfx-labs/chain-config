@@ -5,8 +5,9 @@ import (
 )
 
 var Boba Network = Network{
-	ChainId:           288,
-	Caip2Namespace:    "eip155",
+	ChainId:        288,
+	Caip2Namespace: "eip155",
+
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/boba-logo.svg",
 	Deprecated:        false,
 	LiteChain:         false,

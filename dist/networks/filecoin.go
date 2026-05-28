@@ -5,8 +5,9 @@ import (
 )
 
 var Filecoin Network = Network{
-	ChainId:           314,
-	Caip2Namespace:    "eip155",
+	ChainId:        314,
+	Caip2Namespace: "eip155",
+
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/filecoin-logo.svg",
 	Deprecated:        false,
 	LiteChain:         false,

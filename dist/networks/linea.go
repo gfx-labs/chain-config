@@ -5,8 +5,9 @@ import (
 )
 
 var Linea Network = Network{
-	ChainId:           59144,
-	Caip2Namespace:    "eip155",
+	ChainId:        59144,
+	Caip2Namespace: "eip155",
+
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/linea-logo.svg",
 	Deprecated:        false,
 	LiteChain:         false,

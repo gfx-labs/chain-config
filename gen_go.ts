@@ -2,7 +2,7 @@ import init, { format } from "@wasm-fmt/gofmt";
 import ejs from "ejs";
 import { mkdirSync, writeFileSync } from "fs";
 import * as morph from "ts-morph";
-import { IChainInfo, MAINNET_CHAINS } from ".";
+import { ALL_NETWORKS, IChainInfo } from ".";
 
 const formatFunc = format;
 
@@ -176,7 +176,7 @@ const helpers = {
 
 const output = ejs.render(networksString.toString(), {
   h: helpers,
-  chains: MAINNET_CHAINS,
+  chains: ALL_NETWORKS,
   helpers,
   IChainInfo,
   UniswapMetadata,
@@ -196,7 +196,7 @@ const output = ejs.render(networksString.toString(), {
 const main = async () => {
   await init();
   writeFileSync(`${rootDir}/network.go`, formatFunc(output));
-  for (const chain of MAINNET_CHAINS) {
+  for (const chain of ALL_NETWORKS) {
     const chainName = clean(chain.internalName);
     const output = ejs.render(networkString.toString(), {
       h: helpers,

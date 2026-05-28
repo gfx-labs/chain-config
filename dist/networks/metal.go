@@ -5,8 +5,9 @@ import (
 )
 
 var Metal Network = Network{
-	ChainId:           1750,
-	Caip2Namespace:    "eip155",
+	ChainId:        1750,
+	Caip2Namespace: "eip155",
+
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/metal-l2-logo.svg",
 	Deprecated:        true,
 	LiteChain:         false,

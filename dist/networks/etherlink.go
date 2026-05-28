@@ -5,8 +5,9 @@ import (
 )
 
 var Etherlink Network = Network{
-	ChainId:           42793,
-	Caip2Namespace:    "eip155",
+	ChainId:        42793,
+	Caip2Namespace: "eip155",
+
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/etherlink-logo.svg",
 	Deprecated:        false,
 	LiteChain:         false,

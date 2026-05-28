@@ -5,8 +5,9 @@ import (
 )
 
 var Blast Network = Network{
-	ChainId:           81457,
-	Caip2Namespace:    "eip155",
+	ChainId:        81457,
+	Caip2Namespace: "eip155",
+
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/blast-logo.svg",
 	Deprecated:        true,
 	LiteChain:         false,

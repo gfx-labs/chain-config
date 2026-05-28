@@ -5,8 +5,9 @@ import (
 )
 
 var Saga Network = Network{
-	ChainId:           5464,
-	Caip2Namespace:    "eip155",
+	ChainId:        5464,
+	Caip2Namespace: "eip155",
+
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/saga-logo.png",
 	Deprecated:        false,
 	LiteChain:         false,

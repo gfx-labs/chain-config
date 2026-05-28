@@ -5,8 +5,9 @@ import (
 )
 
 var Corn Network = Network{
-	ChainId:           21000000,
-	Caip2Namespace:    "eip155",
+	ChainId:        21000000,
+	Caip2Namespace: "eip155",
+
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/corn-logo.svg",
 	Deprecated:        true,
 	LiteChain:         false,

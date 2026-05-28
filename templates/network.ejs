@@ -4,19 +4,20 @@ import (
 "github.com/ethereum/go-ethereum/common"
 )
 <%
-    var uni = chain.uniswap;
+    var uni = chain.uniswap || {};
     var univ4 = chain.uniswapv4;
-    var tok = chain.token;
-    var oku = chain.oku;
-    var cons = chain.contracts;
-    var pxs = oku.pricing;
-    var explorers = chain.blockExplorers;
-    var morpho = chain.morpho;
+    var tok = chain.token || {};
+    var oku = chain.oku || {};
+    var cons = chain.contracts || {};
+    var pxs = oku.pricing || {};
+    var explorers = chain.blockExplorers || {};
+    var morpho = chain.morpho || {};
 %>
 
 var <%- helpers.snakeToCamel(chainName) %> Network = Network{
   ChainId: <%- chain.id %>,
   Caip2Namespace: "<%- chain.caip2Namespace %>",
+  <%- chain.caip2Reference ? `Caip2Reference: "${chain.caip2Reference}",` : "" %>
   LogoUrl: "<%- chain.logoUrl %>",
   Deprecated: <%- chain.deprecated %>,
   LiteChain: <%- chain.liteChain || false %>,

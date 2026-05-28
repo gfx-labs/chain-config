@@ -5,8 +5,9 @@ import (
 )
 
 var Pharos Network = Network{
-	ChainId:           1672,
-	Caip2Namespace:    "eip155",
+	ChainId:        1672,
+	Caip2Namespace: "eip155",
+
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/pharos-logo.svg",
 	Deprecated:        false,
 	LiteChain:         true,
