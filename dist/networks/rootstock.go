@@ -5,9 +5,13 @@ import (
 )
 
 var Rootstock Network = Network{
-	ChainId:        30,
-	Caip2Namespace: "eip155",
-
+	ChainId: 30,
+	NativeCurrency: NativeCurrency{
+		Name:     "Rootstock Bitcoin",
+		Symbol:   "RBTC",
+		Decimals: 18,
+	},
+	Caip2Namespace:    "eip155",
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/rootstock-logo.svg",
 	Deprecated:        false,
 	LiteChain:         false,

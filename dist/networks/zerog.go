@@ -5,9 +5,13 @@ import (
 )
 
 var Zerog Network = Network{
-	ChainId:        16661,
-	Caip2Namespace: "eip155",
-
+	ChainId: 16661,
+	NativeCurrency: NativeCurrency{
+		Name:     "0G",
+		Symbol:   "0G",
+		Decimals: 18,
+	},
+	Caip2Namespace:    "eip155",
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/zerog-logo.svg",
 	Deprecated:        false,
 	LiteChain:         false,

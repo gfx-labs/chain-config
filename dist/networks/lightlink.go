@@ -5,9 +5,13 @@ import (
 )
 
 var Lightlink Network = Network{
-	ChainId:        1890,
-	Caip2Namespace: "eip155",
-
+	ChainId: 1890,
+	NativeCurrency: NativeCurrency{
+		Name:     "Ether",
+		Symbol:   "ETH",
+		Decimals: 18,
+	},
+	Caip2Namespace:    "eip155",
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/lightlink-logo.svg",
 	Deprecated:        true,
 	LiteChain:         false,

@@ -5,9 +5,13 @@ import (
 )
 
 var Lisk Network = Network{
-	ChainId:        1135,
-	Caip2Namespace: "eip155",
-
+	ChainId: 1135,
+	NativeCurrency: NativeCurrency{
+		Name:     "Ether",
+		Symbol:   "ETH",
+		Decimals: 18,
+	},
+	Caip2Namespace:    "eip155",
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/lisk-logo.svg",
 	Deprecated:        true,
 	LiteChain:         false,

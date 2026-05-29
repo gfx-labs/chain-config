@@ -5,9 +5,13 @@ import (
 )
 
 var Optimism Network = Network{
-	ChainId:        10,
-	Caip2Namespace: "eip155",
-
+	ChainId: 10,
+	NativeCurrency: NativeCurrency{
+		Name:     "Ether",
+		Symbol:   "ETH",
+		Decimals: 18,
+	},
+	Caip2Namespace:    "eip155",
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/optimism-logo.svg",
 	Deprecated:        false,
 	LiteChain:         false,

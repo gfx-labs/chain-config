@@ -5,9 +5,13 @@ import (
 )
 
 var Sonic Network = Network{
-	ChainId:        146,
-	Caip2Namespace: "eip155",
-
+	ChainId: 146,
+	NativeCurrency: NativeCurrency{
+		Name:     "Sonic",
+		Symbol:   "S",
+		Decimals: 18,
+	},
+	Caip2Namespace:    "eip155",
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/sonic-logo.svg",
 	Deprecated:        true,
 	LiteChain:         false,

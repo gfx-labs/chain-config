@@ -5,9 +5,13 @@ import (
 )
 
 var Avalanche Network = Network{
-	ChainId:        43114,
-	Caip2Namespace: "eip155",
-
+	ChainId: 43114,
+	NativeCurrency: NativeCurrency{
+		Name:     "Avalanche",
+		Symbol:   "AVAX",
+		Decimals: 18,
+	},
+	Caip2Namespace:    "eip155",
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/avalanche-logo.svg",
 	Deprecated:        false,
 	LiteChain:         true,

@@ -5,9 +5,13 @@ import (
 )
 
 var Worldchain Network = Network{
-	ChainId:        480,
-	Caip2Namespace: "eip155",
-
+	ChainId: 480,
+	NativeCurrency: NativeCurrency{
+		Name:     "Ether",
+		Symbol:   "ETH",
+		Decimals: 18,
+	},
+	Caip2Namespace:    "eip155",
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/worldchain-logo.svg",
 	Deprecated:        false,
 	LiteChain:         true,
