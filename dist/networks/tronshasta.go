@@ -5,9 +5,13 @@ import (
 )
 
 var Tronshasta Network = Network{
-	ChainId:        2494104990,
-	Caip2Namespace: "eip155",
-
+	ChainId: 2494104990,
+	NativeCurrency: NativeCurrency{
+		Name:     "TRON",
+		Symbol:   "TRX",
+		Decimals: 6,
+	},
+	Caip2Namespace:    "eip155",
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/tron-shasta-logo.svg",
 	Deprecated:        true,
 	LiteChain:         false,

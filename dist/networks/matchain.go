@@ -5,9 +5,13 @@ import (
 )
 
 var Matchain Network = Network{
-	ChainId:        698,
-	Caip2Namespace: "eip155",
-
+	ChainId: 698,
+	NativeCurrency: NativeCurrency{
+		Name:     "BNB",
+		Symbol:   "BNB",
+		Decimals: 18,
+	},
+	Caip2Namespace:    "eip155",
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/matchain-logo.svg",
 	Deprecated:        true,
 	LiteChain:         false,

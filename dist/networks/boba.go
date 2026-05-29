@@ -5,9 +5,13 @@ import (
 )
 
 var Boba Network = Network{
-	ChainId:        288,
-	Caip2Namespace: "eip155",
-
+	ChainId: 288,
+	NativeCurrency: NativeCurrency{
+		Name:     "Ether",
+		Symbol:   "ETH",
+		Decimals: 18,
+	},
+	Caip2Namespace:    "eip155",
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/boba-logo.svg",
 	Deprecated:        false,
 	LiteChain:         false,

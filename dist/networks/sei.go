@@ -5,9 +5,13 @@ import (
 )
 
 var Sei Network = Network{
-	ChainId:        1329,
-	Caip2Namespace: "eip155",
-
+	ChainId: 1329,
+	NativeCurrency: NativeCurrency{
+		Name:     "Sei",
+		Symbol:   "SEI",
+		Decimals: 18,
+	},
+	Caip2Namespace:    "eip155",
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/sei-logo.svg",
 	Deprecated:        false,
 	LiteChain:         false,

@@ -5,9 +5,13 @@ import (
 )
 
 var Celo Network = Network{
-	ChainId:        42220,
-	Caip2Namespace: "eip155",
-
+	ChainId: 42220,
+	NativeCurrency: NativeCurrency{
+		Name:     "CELO",
+		Symbol:   "CELO",
+		Decimals: 18,
+	},
+	Caip2Namespace:    "eip155",
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/celo-logo.svg",
 	Deprecated:        false,
 	LiteChain:         false,

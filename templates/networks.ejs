@@ -176,6 +176,7 @@ type Network struct { <% for(const prop of props_1) {%>
     <%- helpers.displayProp(prop) %> <% } %>
 
     ChainId int `json:"chainId"`
+    NativeCurrency NativeCurrency
     BlockExplorers map[string]BlockExplorer
     StablecoinMap map[common.Address]struct{}
 }
@@ -296,4 +297,10 @@ type MorphoMetadata struct {<% for(const prop of props_11) {%>
 
 type UniswapV4Metadata struct {<% for(const prop of props_13) {%>
     <%- helpers.displayProp(prop) %> <% } %>
+}
+
+type NativeCurrency struct {
+    Name     string
+    Symbol   string
+    Decimals int
 }

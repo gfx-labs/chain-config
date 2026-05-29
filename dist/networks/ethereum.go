@@ -5,9 +5,13 @@ import (
 )
 
 var Ethereum Network = Network{
-	ChainId:        1,
-	Caip2Namespace: "eip155",
-
+	ChainId: 1,
+	NativeCurrency: NativeCurrency{
+		Name:     "Ether",
+		Symbol:   "ETH",
+		Decimals: 18,
+	},
+	Caip2Namespace:    "eip155",
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/ethereum-logo.webp",
 	Deprecated:        false,
 	LiteChain:         false,

@@ -5,7 +5,12 @@ import (
 )
 
 var Bitcoin Network = Network{
-	ChainId:           0,
+	ChainId: 0,
+	NativeCurrency: NativeCurrency{
+		Name:     "Bitcoin",
+		Symbol:   "BTC",
+		Decimals: 8,
+	},
 	Caip2Namespace:    "bip122",
 	Caip2Reference:    "000000000019d6689c085ae165831e93",
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/bitcoin-logo.webp",

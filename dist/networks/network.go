@@ -447,6 +447,7 @@ type Network struct {
 	Contracts          map[string]ChainContract
 
 	ChainId        int `json:"chainId"`
+	NativeCurrency NativeCurrency
 	BlockExplorers map[string]BlockExplorer
 	StablecoinMap  map[common.Address]struct{}
 }
@@ -659,4 +660,10 @@ type UniswapV4Metadata struct {
 	Permit2         common.Address
 	DefaultPool     common.Hash
 	StateView       common.Address
+}
+
+type NativeCurrency struct {
+	Name     string
+	Symbol   string
+	Decimals int
 }

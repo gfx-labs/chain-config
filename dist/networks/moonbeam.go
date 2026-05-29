@@ -5,9 +5,13 @@ import (
 )
 
 var Moonbeam Network = Network{
-	ChainId:        1284,
-	Caip2Namespace: "eip155",
-
+	ChainId: 1284,
+	NativeCurrency: NativeCurrency{
+		Name:     "GLMR",
+		Symbol:   "GLMR",
+		Decimals: 18,
+	},
+	Caip2Namespace:    "eip155",
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/moonbeam-logo.svg",
 	Deprecated:        true,
 	LiteChain:         false,

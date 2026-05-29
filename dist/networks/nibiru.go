@@ -5,9 +5,13 @@ import (
 )
 
 var Nibiru Network = Network{
-	ChainId:        6900,
-	Caip2Namespace: "eip155",
-
+	ChainId: 6900,
+	NativeCurrency: NativeCurrency{
+		Name:     "NIBI",
+		Symbol:   "NIBI",
+		Decimals: 18,
+	},
+	Caip2Namespace:    "eip155",
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/nibiru-logo.svg",
 	Deprecated:        false,
 	LiteChain:         false,
