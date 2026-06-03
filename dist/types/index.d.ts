@@ -5,6 +5,7 @@ export * from "./util/caip2";
 export { makeConfig } from "./util/index";
 export { buildNetworkIndex, type NetworkIndex, NetworkNotFoundError, } from "./util/lookup";
 import type { IChainInfo } from "./spec";
+import { ChainType } from "./spec";
 export declare const MAINNET_CHAINS: readonly [Readonly<{
     name: "Arbitrum";
     launchTime: 1688997600;
@@ -10836,3 +10837,59 @@ export declare function networkByString(s: string): IChainInfo;
  * @throws {NetworkNotFoundError} if no matching chain is found
  */
 export declare function networkByCAIP2(caip2: string): IChainInfo;
+/**
+ * Accepted input for the chain-family helpers ({@link chainType},
+ * {@link isNetworkType}, etc.).
+ *
+ * - `IChainInfo`: classified by its `caip2Namespace`.
+ * - CAIP-2 string (contains `:`, e.g. `"eip155:1"`) or bare namespace
+ *   (e.g. `"bip122"`): classified directly by the namespace, no lookup needed.
+ * - internal name (e.g. `"bitcoin"`) or numeric id / id string: resolved to a
+ *   chain via the network index first, then classified.
+ */
+export type ChainLike = IChainInfo | string | number;
+/**
+ * The {@link ChainType} of a chain. Accepts an {@link IChainInfo} object, a
+ * CAIP-2 identifier or namespace string, an internal name, or a numeric chain
+ * id. Internal names and numeric ids are resolved via the network index.
+ *
+ * @example
+ * ```ts
+ * import { chainType, ChainType } from "@gfxlabs/oku-chains";
+ * chainType(1)            // => ChainType.EVM
+ * chainType("mainnet")    // => ChainType.EVM
+ * chainType("eip155:1")   // => ChainType.EVM
+ * chainType("bitcoin")    // => ChainType.Bitcoin
+ * chainType("bip122")     // => ChainType.Bitcoin
+ * ```
+ */
+export declare function chainType(c: ChainLike): ChainType;
+/**
+ * True if the chain belongs to the given {@link ChainType} family. Accepts an
+ * {@link IChainInfo} object, a CAIP-2 identifier or namespace string, an
+ * internal name, or a numeric chain id.
+ *
+ * Reusable, namespace-driven replacement for one-off `isBitcoinChain` style
+ * checks, e.g. `isNetworkType(ChainType.Bitcoin, "bitcoin")`.
+ *
+ * @example
+ * ```ts
+ * import { isNetworkType, ChainType } from "@gfxlabs/oku-chains";
+ * isNetworkType(ChainType.Bitcoin, "bitcoin")   // => true
+ * isNetworkType(ChainType.EVM, 1)               // => true
+ * isNetworkType(ChainType.EVM, "eip155:1")      // => true
+ * ```
+ */
+export declare function isNetworkType(type: ChainType, c: ChainLike): boolean;
+/**
+ * True if the chain is an EVM chain (CAIP-2 namespace `eip155`). Accepts an
+ * {@link IChainInfo} object, a CAIP-2 string, an internal name, or a numeric
+ * chain id.
+ */
+export declare function isEvmChain(c: ChainLike): boolean;
+/**
+ * True if the chain is non-EVM (its CAIP-2 namespace is not `eip155`). Accepts
+ * an {@link IChainInfo} object, a CAIP-2 string, an internal name, or a
+ * numeric chain id.
+ */
+export declare function isNonEvmChain(c: ChainLike): boolean;

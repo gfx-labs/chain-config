@@ -242,11 +242,67 @@ export interface IChainInfo<formatters extends ChainFormatters | undefined = Cha
  */
 export declare const NON_EVM_CHAIN_ID = 0;
 /**
- * True if the chain is non-EVM (i.e. uses the {@link NON_EVM_CHAIN_ID}
- * placeholder id and a non-`eip155` CAIP-2 namespace). Non-EVM chains live in
- * the same {@link IChainInfo} shape as EVM chains, so EVM-only fields
- * (contracts, uniswap metadata, etc.) will be present but empty.
+ * High-level chain family, derived from the chain's CAIP-2 namespace.
+ *
+ * The underlying string value of each member is the CAIP-2 namespace it maps
+ * to (e.g. `eip155` for EVM, `bip122` for Bitcoin), so {@link chainType} can
+ * resolve a chain's type directly from its `caip2Namespace` without relying on
+ * sentinel values like {@link NON_EVM_CHAIN_ID}.
+ *
+ * @see https://chainagnostic.org/CAIPs/caip-2
  */
-export declare function isNonEvmChain(c: IChainInfo): boolean;
-/** True if the chain is an EVM chain. Inverse of {@link isNonEvmChain}. */
-export declare function isEvmChain(c: IChainInfo): boolean;
+export declare enum ChainType {
+    /** EVM chains (CAIP-2 namespace `eip155`). */
+    EVM = "eip155",
+    /** Bitcoin (CAIP-2 namespace `bip122`). */
+    Bitcoin = "bip122",
+    /** Solana (CAIP-2 namespace `solana`). */
+    Solana = "solana",
+    /** Unknown / unrecognized CAIP-2 namespace. */
+    Unknown = ""
+}
+/**
+ * The {@link ChainType} of a chain, derived from its CAIP-2 namespace.
+ *
+ * Accepts an {@link IChainInfo} object or a CAIP-2 string (a full identifier
+ * like `"eip155:1"` or a bare namespace like `"bip122"`). This is the
+ * canonical way to determine a chain's family. Prefer it over inspecting the
+ * numeric `id` (which is a placeholder for non-EVM chains).
+ *
+ * @example
+ * ```ts
+ * import { mainnet, bitcoin } from "@gfxlabs/oku-chains";
+ * chainType(mainnet)        // => ChainType.EVM
+ * chainType(bitcoin)        // => ChainType.Bitcoin
+ * chainType("eip155:1")     // => ChainType.EVM
+ * chainType("bip122")       // => ChainType.Bitcoin
+ * ```
+ */
+export declare function chainType(c: IChainInfo | string): ChainType;
+/**
+ * True if the chain belongs to the given {@link ChainType} family.
+ *
+ * Reusable, namespace-driven replacement for one-off `isBitcoinChain` style
+ * checks. The chain may be an {@link IChainInfo} object or a CAIP-2 string.
+ *
+ * @example
+ * ```ts
+ * import { ChainType, isNetworkType, bitcoin } from "@gfxlabs/oku-chains";
+ * isNetworkType(ChainType.Bitcoin, bitcoin)        // => true
+ * isNetworkType(ChainType.EVM, bitcoin)            // => false
+ * isNetworkType(ChainType.EVM, "eip155:1")         // => true
+ * ```
+ */
+export declare function isNetworkType(type: ChainType, c: IChainInfo | string): boolean;
+/**
+ * True if the chain is an EVM chain (CAIP-2 namespace `eip155`). Accepts an
+ * {@link IChainInfo} object or a CAIP-2 string.
+ */
+export declare function isEvmChain(c: IChainInfo | string): boolean;
+/**
+ * True if the chain is non-EVM (i.e. its CAIP-2 namespace is not `eip155`).
+ * Non-EVM chains live in the same {@link IChainInfo} shape as EVM chains, so
+ * EVM-only fields (contracts, uniswap metadata, etc.) will be present but
+ * empty. Accepts an {@link IChainInfo} object or a CAIP-2 string.
+ */
+export declare function isNonEvmChain(c: IChainInfo | string): boolean;

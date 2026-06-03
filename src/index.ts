@@ -14,6 +14,13 @@ export {
 
 import type { IChainInfo } from "./spec";
 import {
+	chainType as _chainType,
+	isEvmChain as _isEvmChain,
+	isNetworkType as _isNetworkType,
+	isNonEvmChain as _isNonEvmChain,
+	ChainType,
+} from "./spec";
+import {
 	networkByAny as _networkByAny,
 	networkByCAIP2 as _networkByCAIP2,
 	networkById as _networkById,
@@ -171,4 +178,106 @@ export function networkByString(s: string): IChainInfo {
  */
 export function networkByCAIP2(caip2: string): IChainInfo {
 	return _networkByCAIP2(caip2, _idx);
+}
+
+/**
+ * Accepted input for the chain-family helpers ({@link chainType},
+ * {@link isNetworkType}, etc.).
+ *
+ * - `IChainInfo`: classified by its `caip2Namespace`.
+ * - CAIP-2 string (contains `:`, e.g. `"eip155:1"`) or bare namespace
+ *   (e.g. `"bip122"`): classified directly by the namespace, no lookup needed.
+ * - internal name (e.g. `"bitcoin"`) or numeric id / id string: resolved to a
+ *   chain via the network index first, then classified.
+ */
+export type ChainLike = IChainInfo | string | number;
+
+/**
+ * Resolve a {@link ChainLike} input to the chain's `caip2Namespace`. Returns
+ * `""` (→ {@link ChainType.Unknown}) when the input cannot be classified.
+ */
+function namespaceOfChainLike(c: ChainLike): string {
+	if (typeof c === "object") {
+		return c.caip2Namespace;
+	}
+	if (typeof c === "string") {
+		// Full CAIP-2 identifier (namespace:reference) — classify by namespace.
+		const sep = c.indexOf(":");
+		if (sep !== -1) {
+			return c.slice(0, sep);
+		}
+		// Bare CAIP-2 namespace (e.g. "eip155", "bip122").
+		if (Object.values(ChainType).includes(c as ChainType) && c !== "") {
+			return c;
+		}
+		// Otherwise treat as an internal name or numeric id string: resolve it.
+		try {
+			return _networkByString(c, _idx).caip2Namespace;
+		} catch {
+			return "";
+		}
+	}
+	// Numeric chain id.
+	try {
+		return _networkById(Math.trunc(c), _idx).caip2Namespace;
+	} catch {
+		return "";
+	}
+}
+
+/**
+ * The {@link ChainType} of a chain. Accepts an {@link IChainInfo} object, a
+ * CAIP-2 identifier or namespace string, an internal name, or a numeric chain
+ * id. Internal names and numeric ids are resolved via the network index.
+ *
+ * @example
+ * ```ts
+ * import { chainType, ChainType } from "@gfxlabs/oku-chains";
+ * chainType(1)            // => ChainType.EVM
+ * chainType("mainnet")    // => ChainType.EVM
+ * chainType("eip155:1")   // => ChainType.EVM
+ * chainType("bitcoin")    // => ChainType.Bitcoin
+ * chainType("bip122")     // => ChainType.Bitcoin
+ * ```
+ */
+export function chainType(c: ChainLike): ChainType {
+	return _chainType(namespaceOfChainLike(c));
+}
+
+/**
+ * True if the chain belongs to the given {@link ChainType} family. Accepts an
+ * {@link IChainInfo} object, a CAIP-2 identifier or namespace string, an
+ * internal name, or a numeric chain id.
+ *
+ * Reusable, namespace-driven replacement for one-off `isBitcoinChain` style
+ * checks, e.g. `isNetworkType(ChainType.Bitcoin, "bitcoin")`.
+ *
+ * @example
+ * ```ts
+ * import { isNetworkType, ChainType } from "@gfxlabs/oku-chains";
+ * isNetworkType(ChainType.Bitcoin, "bitcoin")   // => true
+ * isNetworkType(ChainType.EVM, 1)               // => true
+ * isNetworkType(ChainType.EVM, "eip155:1")      // => true
+ * ```
+ */
+export function isNetworkType(type: ChainType, c: ChainLike): boolean {
+	return _isNetworkType(type, namespaceOfChainLike(c));
+}
+
+/**
+ * True if the chain is an EVM chain (CAIP-2 namespace `eip155`). Accepts an
+ * {@link IChainInfo} object, a CAIP-2 string, an internal name, or a numeric
+ * chain id.
+ */
+export function isEvmChain(c: ChainLike): boolean {
+	return _isEvmChain(namespaceOfChainLike(c));
+}
+
+/**
+ * True if the chain is non-EVM (its CAIP-2 namespace is not `eip155`). Accepts
+ * an {@link IChainInfo} object, a CAIP-2 string, an internal name, or a
+ * numeric chain id.
+ */
+export function isNonEvmChain(c: ChainLike): boolean {
+	return _isNonEvmChain(namespaceOfChainLike(c));
 }

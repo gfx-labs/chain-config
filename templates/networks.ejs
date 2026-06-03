@@ -199,6 +199,130 @@ func (n *Network) CAIP2() string {
     return fmt.Sprintf("%s:%d", n.Caip2Namespace, n.ChainId)
 }
 
+// ChainType is the high-level chain family, derived from a network's CAIP-2
+// namespace. The underlying string value of each constant is the CAIP-2
+// namespace it maps to (e.g. "eip155" for EVM, "bip122" for Bitcoin).
+//
+// See https://chainagnostic.org/CAIPs/caip-2.
+type ChainType string
+
+const (
+    // ChainTypeEVM are EVM chains (CAIP-2 namespace "eip155").
+    ChainTypeEVM     ChainType = "eip155"
+    // ChainTypeBitcoin is Bitcoin (CAIP-2 namespace "bip122").
+    ChainTypeBitcoin ChainType = "bip122"
+    // ChainTypeSolana is Solana (CAIP-2 namespace "solana").
+    ChainTypeSolana  ChainType = "solana"
+    // ChainTypeUnknown is an unrecognized CAIP-2 namespace.
+    ChainTypeUnknown ChainType = ""
+)
+
+var chainTypeByNamespace = map[string]ChainType{
+    string(ChainTypeEVM):     ChainTypeEVM,
+    string(ChainTypeBitcoin): ChainTypeBitcoin,
+    string(ChainTypeSolana):  ChainTypeSolana,
+}
+
+// chainTypeFromNamespace maps a bare CAIP-2 namespace to a ChainType,
+// returning ChainTypeUnknown for unrecognized namespaces.
+func chainTypeFromNamespace(namespace string) ChainType {
+    if t, ok := chainTypeByNamespace[namespace]; ok {
+        return t
+    }
+    return ChainTypeUnknown
+}
+
+// ChainType returns the ChainType of the network, derived from its CAIP-2
+// namespace. This is the canonical way to determine a chain's family; prefer
+// it over inspecting the numeric ChainId (which is a placeholder for non-EVM
+// chains).
+func (n *Network) ChainType() ChainType {
+    return chainTypeFromNamespace(n.Caip2Namespace)
+}
+
+// IsEVM reports whether the network is an EVM chain (CAIP-2 namespace
+// "eip155").
+func (n *Network) IsEVM() bool {
+    return n.ChainType() == ChainTypeEVM
+}
+
+// IsNonEVM reports whether the network is non-EVM (its CAIP-2 namespace is not
+// "eip155").
+func (n *Network) IsNonEVM() bool {
+    return !n.IsEVM()
+}
+
+// namespaceOfAny resolves an arbitrary chain-like input to its CAIP-2
+// namespace. It accepts:
+//   - *Network / Network: classified by its Caip2Namespace
+//   - a CAIP-2 identifier ("eip155:1") or bare namespace ("bip122") string:
+//     classified directly, with no lookup
+//   - an internal name ("bitcoin") or numeric id / id string: resolved via the
+//     network index first, then classified
+// It returns "" (-> ChainTypeUnknown) when the input cannot be classified.
+func namespaceOfAny(v any) string {
+    switch x := v.(type) {
+    case nil:
+        return ""
+    case *Network:
+        if x == nil {
+            return ""
+        }
+        return x.Caip2Namespace
+    case Network:
+        return x.Caip2Namespace
+    case ChainType:
+        return string(x)
+    case string:
+        // Full CAIP-2 identifier (namespace:reference) -> classify by namespace.
+        if i := strings.Index(x, ":"); i != -1 {
+            return x[:i]
+        }
+        // Bare CAIP-2 namespace (e.g. "eip155", "bip122").
+        if _, ok := chainTypeByNamespace[x]; ok {
+            return x
+        }
+        // Otherwise treat as internal name or numeric id string: resolve it.
+        if n, err := NetworkByString(x); err == nil {
+            return n.Caip2Namespace
+        }
+        return ""
+    }
+    // Fall back to NetworkByAny for numeric ids, fmt.Stringer, InternalName, etc.
+    if n, err := NetworkByAny(v); err == nil {
+        return n.Caip2Namespace
+    }
+    return ""
+}
+
+// ChainTypeOf returns the ChainType for an arbitrary chain-like input. It
+// accepts a *Network/Network, a CAIP-2 identifier or namespace string, an
+// internal name, or a numeric chain id (see namespaceOfAny). Unrecognized
+// input yields ChainTypeUnknown.
+func ChainTypeOf(v any) ChainType {
+    return chainTypeFromNamespace(namespaceOfAny(v))
+}
+
+// IsNetworkType reports whether the given chain-like input belongs to the
+// ChainType family t. Reusable, namespace-driven replacement for one-off
+// "is bitcoin" style checks, e.g. IsNetworkType(ChainTypeBitcoin, "bitcoin")
+// or IsNetworkType(ChainTypeEVM, 1).
+func IsNetworkType(t ChainType, v any) bool {
+    return ChainTypeOf(v) == t
+}
+
+// IsEVM reports whether the chain-like input is an EVM chain (CAIP-2 namespace
+// "eip155").
+func IsEVM(v any) bool {
+    return ChainTypeOf(v) == ChainTypeEVM
+}
+
+// IsNonEVM reports whether the chain-like input is non-EVM (CAIP-2 namespace
+// is not "eip155").
+func IsNonEVM(v any) bool {
+    return !IsEVM(v)
+}
+
 func (n *Network) BlockTime() time.Duration {
     return time.Duration(n.BlockTimeSeconds * float64(time.Second))
 }
