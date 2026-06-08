@@ -1261,6 +1261,7 @@
         sortIndex: 10,
         logoUrl: "https://cms.oku.trade/cdn/public/chains/celo-logo.svg",
         deprecated: false,
+        liteChain: true,
         estimatedSwapGas: 300000,
         estimatedBridgeGas: 200000,
         estimatedWrapGas: 60000,

@@ -14,7 +14,7 @@ var Celo Network = Network{
 	Caip2Namespace:    "eip155",
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/celo-logo.svg",
 	Deprecated:        false,
-	LiteChain:         false,
+	LiteChain:         true,
 	SortIndex:         10,
 	LaunchTime:        1737754469,
 	SafeReorgDistance: 90000,
