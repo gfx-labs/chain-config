@@ -70,6 +70,7 @@ export declare const boba: Readonly<{
         usdcAddress: "0x66a2A913e447d6b4BF33EFbec43aAeF87890FBbc";
     };
     oku: {
+        router11: "0x25132a6F4f0A993d62e57D0510df1395729125ad";
         limitOrderRegistry: "0xfefb60591cffc694c0137983a9091d64af8ecbac";
         limitOrderRegistryDeployBlock: number;
         pricing: {

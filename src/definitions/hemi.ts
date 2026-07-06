@@ -79,6 +79,7 @@ export const hemi = makeConfig({
 		wbtcAddress: "0x03C7054BCB39f7b2e5B2c7AcB37583e32D70Cfa3",
 	},
 	oku: {
+		router11: "0x25132a6F4f0A993d62e57D0510df1395729125ad",
 		limitOrderRegistry: "0xcd7f266E3C0D0771897aAF74BEB38072D66402A0",
 		limitOrderRegistryDeployBlock: 1293765,
 		pricing: {

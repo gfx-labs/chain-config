@@ -44,6 +44,7 @@ export declare const gensyn: Readonly<{
         wethAddress: "0x4200000000000000000000000000000000000006";
     };
     oku: {
+        router11: "0x25132a6F4f0A993d62e57D0510df1395729125ad";
         pricing: {
             nativeWrappedToken: "0x4200000000000000000000000000000000000006";
             nativeWrappedName: string;

@@ -969,6 +969,7 @@ const boba = makeConfig({
         usdcAddress: "0x66a2A913e447d6b4BF33EFbec43aAeF87890FBbc",
     },
     oku: {
+        router11: "0x25132a6F4f0A993d62e57D0510df1395729125ad",
         limitOrderRegistry: "0xfefb60591cffc694c0137983a9091d64af8ecbac",
         limitOrderRegistryDeployBlock: 1052192,
         pricing: {
@@ -1683,6 +1684,7 @@ const filecoin = makeConfig({
         wethAddress: "0xb829b68f57CC546dA7E5806A929e53bE32a4625D",
     },
     oku: {
+        router11: "0x25132a6F4f0A993d62e57D0510df1395729125ad",
         pricing: {
             pools: [],
             nativeWrappedToken: "0x60E1773636CF5E4A227d9AC24F20fEca034ee25A",
@@ -1803,6 +1805,7 @@ const gensyn = makeConfig({
         wethAddress: "0x4200000000000000000000000000000000000006",
     },
     oku: {
+        router11: "0x25132a6F4f0A993d62e57D0510df1395729125ad",
         pricing: {
             nativeWrappedToken: "0x4200000000000000000000000000000000000006",
             nativeWrappedName: "ETH",
@@ -2191,6 +2194,7 @@ const hemi = makeConfig({
         wbtcAddress: "0x03C7054BCB39f7b2e5B2c7AcB37583e32D70Cfa3",
     },
     oku: {
+        router11: "0x25132a6F4f0A993d62e57D0510df1395729125ad",
         limitOrderRegistry: "0xcd7f266E3C0D0771897aAF74BEB38072D66402A0",
         limitOrderRegistryDeployBlock: 1293765,
         pricing: {
@@ -2651,6 +2655,7 @@ const linea = makeConfig({
         wbtcAddress: "0x3aab2285ddcddad8edf438c1bab47e1a9d05a9b4",
     },
     oku: {
+        router11: "0x25132a6F4f0A993d62e57D0510df1395729125ad",
         limitOrderRegistry: "0x63c8527f670d4eb3401c80c5905ceca8727f1e74",
         limitOrderRegistryDeployBlock: 3610379,
         pricing: {
@@ -3369,6 +3374,7 @@ const mantle = makeConfig({
         wethAddress: "0x78c1b0C915c4FAA5FffA6CAbf0219DA63d7f4cb8",
     },
     oku: {
+        router11: "0x25132a6F4f0A993d62e57D0510df1395729125ad",
         limitOrderRegistry: "0x346239972d1fa486FC4a521031BC81bFB7D6e8a4",
         limitOrderRegistryDeployBlock: 63839894,
         pricing: {
@@ -3912,6 +3918,7 @@ const nibiru = makeConfig({
         usdcAddress: "0x0829F361A05D993d5CEb035cA6DF3446b060970b",
     },
     oku: {
+        router11: "0x25132a6F4f0A993d62e57D0510df1395729125ad",
         limitOrderRegistry: "0x6E1293993C71Cb2E6b2Da8559f6d7Dc1fdb3AE02",
         limitOrderRegistryDeployBlock: 19842992,
         pricing: {
@@ -4891,6 +4898,7 @@ const redbelly = makeConfig({
         usdcAddress: "0x8201c02d4AB2214471E8C3AD6475C8b0CD9F2D06",
     },
     oku: {
+        router11: "0x25132a6F4f0A993d62e57D0510df1395729125ad",
         limitOrderRegistry: "0x9db70E29712Cc8Af10c2B597BaDA6784544FF407",
         limitOrderRegistryDeployBlock: 2286099,
         pricing: {
@@ -5972,6 +5980,7 @@ const telos = makeConfig({
         usdcAddress: "0xF1815bd50389c46847f0Bda824eC8da914045D14",
     },
     oku: {
+        router11: "0x25132a6F4f0A993d62e57D0510df1395729125ad",
         limitOrderRegistry: "0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc",
         limitOrderRegistryDeployBlock: 386645006,
         pricing: {
@@ -6191,6 +6200,7 @@ const unichain = makeConfig({
         wethAddress: "0x4200000000000000000000000000000000000006",
     },
     oku: {
+        router11: "0x25132a6F4f0A993d62e57D0510df1395729125ad",
         limitOrderRegistry: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D",
         limitOrderRegistryDeployBlock: 19179485,
         pricing: {

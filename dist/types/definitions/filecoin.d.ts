@@ -64,6 +64,7 @@ export declare const filecoin: Readonly<{
         wethAddress: "0xb829b68f57CC546dA7E5806A929e53bE32a4625D";
     };
     oku: {
+        router11: "0x25132a6F4f0A993d62e57D0510df1395729125ad";
         pricing: {
             pools: never[];
             nativeWrappedToken: "0x60E1773636CF5E4A227d9AC24F20fEca034ee25A";
