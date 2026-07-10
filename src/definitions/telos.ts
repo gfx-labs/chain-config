@@ -74,7 +74,7 @@ export const telos = makeConfig({
 		usdcAddress: "0xF1815bd50389c46847f0Bda824eC8da914045D14",
 	},
 	oku: {
-		router11: "0x25132a6F4f0A993d62e57D0510df1395729125ad",
+		router: "0x1a84c0daAf3948392ccA68f475141cF8dC5B8045",
 		limitOrderRegistry: "0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc",
 		limitOrderRegistryDeployBlock: 386645006,
 		pricing: {

@@ -69,7 +69,7 @@ export const nibiru = makeConfig({
 		usdcAddress: "0x0829F361A05D993d5CEb035cA6DF3446b060970b",
 	},
 	oku: {
-		router11: "0x25132a6F4f0A993d62e57D0510df1395729125ad",
+		router: "0x1a84c0daAf3948392ccA68f475141cF8dC5B8045",
 		limitOrderRegistry: "0x6E1293993C71Cb2E6b2Da8559f6d7Dc1fdb3AE02",
 		limitOrderRegistryDeployBlock: 19842992,
 		pricing: {

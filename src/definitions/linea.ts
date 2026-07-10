@@ -102,7 +102,7 @@ export const linea = makeConfig({
 		wbtcAddress: "0x3aab2285ddcddad8edf438c1bab47e1a9d05a9b4",
 	},
 	oku: {
-		router11: "0x25132a6F4f0A993d62e57D0510df1395729125ad",
+		router: "0x25132a6F4f0A993d62e57D0510df1395729125ad",
 		limitOrderRegistry: "0x63c8527f670d4eb3401c80c5905ceca8727f1e74",
 		limitOrderRegistryDeployBlock: 3610379,
 		pricing: {
