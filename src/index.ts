@@ -78,6 +78,7 @@ export const MAINNET_CHAINS = [
 	defs.hyperevm,
 	defs.gensyn,
 	defs.pharos,
+	defs.robinhood,
 ] as const;
 
 /**

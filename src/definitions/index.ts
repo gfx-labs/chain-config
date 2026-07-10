@@ -35,6 +35,7 @@ export * from "./pharos";
 export * from "./plasma";
 export * from "./polygon";
 export * from "./redbelly";
+export * from "./robinhood";
 export * from "./ronin";
 export * from "./rootstock";
 export * from "./saga";
