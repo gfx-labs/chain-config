@@ -34,18 +34,14 @@ bower_components
 .DS_Store
 Thumbs.db
 
-# Ignore built ts files
-dist/**/*
-dist/**
-dist
-dist-browser
-
-# ...but the generated Go package under dist/networks is the published
-# Go module and MUST be committed. Un-ignore it so newly generated chain
-# files (e.g. non-EVM chains like bitcoin.go) cannot silently fall through
-# the dist ignore rule and ship a non-compiling module.
+# Ignore built files except the published Go module.
+dist/*
 !dist/networks/
-!dist/networks/**
+dist/networks/*
+!dist/networks/*.go
+!dist/networks/*.mod
+!dist/networks/*.sum
+dist-browser
 
 # ignore package-lock.json
 package-lock.json

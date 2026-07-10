@@ -1,0 +1,109 @@
+package networks
+
+import (
+	"github.com/ethereum/go-ethereum/common"
+)
+
+var Sei Network = Network{
+	ChainId: 1329,
+	NativeCurrency: NativeCurrency{
+		Name:     "Sei",
+		Symbol:   "SEI",
+		Decimals: 18,
+	},
+	Caip2Namespace:    "eip155",
+	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/sei-logo.svg",
+	Deprecated:        false,
+	LiteChain:         false,
+	SortIndex:         7,
+	LaunchTime:        1687788000,
+	SafeReorgDistance: 90000,
+	BlockExplorers: map[string]BlockExplorer{
+		"default": {
+			Url:    "https://seitrace.com",
+			ApiUrl: "https://seitrace.com/pacific-1/api",
+		},
+	},
+	DefaultPool:     common.HexToAddress("0x0A6358F069268c7dc4918D5B12c69a782b957Ead"),
+	InternalName:    "sei",
+	TransactionType: "eip1559",
+	InitCodeHash:    common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
+	ExternalId: map[string]string{
+		"tenderly":  "true",
+		"coingecko": "sei-v2",
+	},
+	DefaultToken0: common.HexToAddress("0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1"),
+	DefaultToken1: common.HexToAddress("0xE30feDd158A2e3b13e9badaeABaFc5516e95e8C7"),
+	BlockAid:      "",
+	//TODO: TokenList:        []any{},
+	Stables:          []common.Address{common.HexToAddress("0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1"), common.HexToAddress("0xb75d0b03c06a926e488e2659df1a861f860bd3d1"), common.HexToAddress("0x9151434b16b9763660705744891fa906f660ecc5")},
+	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1"): {}, common.HexToAddress("0xb75d0b03c06a926e488e2659df1a861f860bd3d1"): {}, common.HexToAddress("0x9151434b16b9763660705744891fa906f660ecc5"): {}},
+	Watchlist:        []common.Address{common.HexToAddress("0x0A6358F069268c7dc4918D5B12c69a782b957Ead"), common.HexToAddress("0x8a1a9efb7f7f74ace10a31f2f5f9f7e804f957b1"), common.HexToAddress("0x41eea09c971294fcde3b6e553902b04a47be7442"), common.HexToAddress("0x5cfa8db453c9904511c4ea9eb0bfc903e36b9f5f"), common.HexToAddress("0xa3a573c8d14c93fca8fdecb7db168619563d9b00"), common.HexToAddress("0x48ddb6384ec5d835bdb0faf7e3abc01d7a1493cd"), common.HexToAddress("0xc53b65811e3d33ada5a90d476dcf2063b53bcfb3")},
+	V4Watchlist:      []common.Hash{},
+	BlockTimeSeconds: 0.4,
+	Oku: OkuMetadata{
+		LimitOrderRegistry:            common.HexToAddress("0xA9d71E1dd7ca26F26e656E66d6AA81ed7f745bf0"),
+		LimitOrderRegistryDeployBlock: 79448363,
+
+		Pricing: OkuPricingMetadata{
+			NativeWrappedToken: common.HexToAddress("0xE30feDd158A2e3b13e9badaeABaFc5516e95e8C7"),
+			NativeWrappedName:  "SEI",
+			Pools:              []common.Address{},
+			NativeQuotePools:   []ChainContract{},
+		},
+	},
+	Uniswap: UniswapMetadata{
+		DeployBlock:                79245151,
+		PoolFactory:                common.HexToAddress("0x75FC67473A91335B5b8F8821277262a13B38c9b3"),
+		Permit2:                    common.HexToAddress("0xB952578f3520EE8Ea45b7914994dcf4702cEe578"),
+		Multicall2:                 common.HexToAddress("0x0d922Fb1Bc191F64970ac40376643808b4B74Df9"),
+		TickLens:                   common.HexToAddress("0xE3dbcD53f4Ce1b06Ab200f4912BD35672e68f1FA"),
+		NonfungiblePositionManager: common.HexToAddress("0x8B3c541c30f9b29560f56B9E44b59718916B69EF"),
+		PositionsNFT:               common.HexToAddress("0x8B3c541c30f9b29560f56B9E44b59718916B69EF"),
+		PositionsNFTDeployBlock:    79245279,
+		UniversalRouter:            common.HexToAddress("0xa683c66045ad16abb1bCE5ad46A64d95f9A25785"),
+		WrappedNativeAddress:       common.HexToAddress("0xE30feDd158A2e3b13e9badaeABaFc5516e95e8C7"),
+		WrappedNativeSymbol:        "WSEI",
+		WrappedNativeName:          "Wrapped SEI",
+		WrappedNativeDecimals:      18,
+		NativeCurrencyName:         "SEI",
+	},
+
+	Morpho: MorphoMetadata{
+		Morpho:          common.HexToAddress("0xc9cDAc20FCeAAF616f7EB0bb6Cd2c69dcfa9094c"),
+		Bundler3:        common.HexToAddress("0xF9457356F18A3349Bb317Ac144c3Bcc62e5761aD"),
+		MmFactory11:     common.HexToAddress("0x8Dea49ec5bd5AeAc8bcf96B3E187F59354118291"),
+		PublicAllocator: common.HexToAddress("0xD878509446bE2C601f0f032F501851001B159D6B"),
+		DeployBlock:     166036723,
+	},
+	Token: TokenMetadata{
+		UsdcAddress: common.HexToAddress("0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1"),
+		WethAddress: common.HexToAddress("0xE30feDd158A2e3b13e9badaeABaFc5516e95e8C7"),
+	},
+	Contracts: map[string]ChainContract{
+		"multicall3": {
+			BlockCreated: 0,
+			Address:      common.HexToAddress("0xcA11bde05977b3631167028862bE2a173976CA11"),
+		},
+		"limitOrder": {
+			BlockCreated: 0,
+			Address:      common.HexToAddress("0xA9d71E1dd7ca26F26e656E66d6AA81ed7f745bf0"),
+		},
+		"nftManager": {
+			BlockCreated: 0,
+			Address:      common.HexToAddress("0x8B3c541c30f9b29560f56B9E44b59718916B69EF"),
+		},
+		"weth9": {
+			BlockCreated: 0,
+			Address:      common.HexToAddress("0xE30feDd158A2e3b13e9badaeABaFc5516e95e8C7"),
+		},
+		"multicall2": {
+			BlockCreated: 0,
+			Address:      common.HexToAddress("0x9b7aC6735b23578E81260acD34E3668D0cc6000A"),
+		},
+		"metrom": {
+			BlockCreated: 141494257,
+			Address:      common.HexToAddress("0xD6e88c910329fE3597498772eB94991a0630306d"),
+		},
+	},
+}
