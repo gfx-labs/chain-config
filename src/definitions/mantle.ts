@@ -101,7 +101,7 @@ export const mantle = makeConfig({
 		wethAddress: "0x78c1b0C915c4FAA5FffA6CAbf0219DA63d7f4cb8",
 	},
 	oku: {
-		router11: "0x25132a6F4f0A993d62e57D0510df1395729125ad",
+		router: "0xCF883b5926F1c782308381121BA80234000000cE",
 		limitOrderRegistry: "0x346239972d1fa486FC4a521031BC81bFB7D6e8a4",
 		limitOrderRegistryDeployBlock: 63839894,
 		pricing: {

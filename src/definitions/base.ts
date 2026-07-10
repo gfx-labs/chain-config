@@ -132,8 +132,7 @@ export const base = makeConfig({
 		usdcAddress: "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
 	},
 	oku: {
-		router10: "0x822CFA9749d16Fb4B4F2B0515924cec69512893b",
-		router11: "0x25132a6F4f0A993d62e57D0510df1395729125ad",
+		router: "0x25132a6F4f0A993d62e57D0510df1395729125ad",
 		limitOrderRegistry: "0xff8b754c64e9a8473bd6e1118d0eac67f0a8ae27",
 		limitOrderRegistryDeployBlock: 7644835,
 		pricing: {
