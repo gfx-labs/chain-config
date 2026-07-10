@@ -4,6 +4,7 @@ import { makeConfig } from "../util";
 export const base = makeConfig({
 	...chain,
 	sortIndex: 2,
+	liteChain: true,
 	launchTime: 1707321600,
 	transactionType: "eip1559",
 	blockTimeSeconds: 2,

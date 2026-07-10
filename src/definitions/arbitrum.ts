@@ -4,6 +4,7 @@ import { makeConfig } from "../util";
 export const arbitrum = makeConfig({
 	...chain,
 	name: "Arbitrum",
+	liteChain: true,
 	launchTime: 1688997600,
 	transactionType: "eip1559",
 	sortIndex: 1,
