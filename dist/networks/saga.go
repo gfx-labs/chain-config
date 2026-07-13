@@ -59,7 +59,7 @@ var Saga Network = Network{
 		NonfungiblePositionManager: common.HexToAddress("0xdD489C75be1039ec7d843A6aC2Fd658350B067Cf"),
 		PositionsNFT:               common.HexToAddress("0xdD489C75be1039ec7d843A6aC2Fd658350B067Cf"),
 		PositionsNFTDeployBlock:    18902,
-		UniversalRouter:            common.HexToAddress("0x352A86168e6988A1aDF9A15Cb00017AAd3B67155"),
+		UniversalRouter:            common.HexToAddress("0xa683c66045ad16abb1bCE5ad46A64d95f9A25785"),
 		WrappedNativeAddress:       common.HexToAddress("0xE3dbcD53f4Ce1b06Ab200f4912BD35672e68f1FA"),
 		WrappedNativeSymbol:        "wGAS",
 		WrappedNativeName:          "Wrapped Gas",

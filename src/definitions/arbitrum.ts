@@ -129,7 +129,7 @@ export const arbitrum = makeConfig({
 		positionsNFT: "0xC36442b4a4522E871399CD717aBDD847Ab11FE88",
 		topNativePool: "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640",
 		positionsNFTDeployBlock: 173,
-		universalRouter: "0x4C60051384bd2d3C01bfc845Cf5F4b44bcbE9de5",
+		universalRouter: "0x8B844f885672f333Bc0042cB669255f93a4C1E6b",
 		wrappedNativeAddress: "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
 		wrappedNativeSymbol: "WETH",
 		wrappedNativeName: "Wrapped Ether",

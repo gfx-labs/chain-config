@@ -62,7 +62,7 @@ var Avalanche Network = Network{
 		NonfungiblePositionManager: common.HexToAddress("0x655C406EBFa14EE2006250925e54ec43AD184f8B"),
 		PositionsNFT:               common.HexToAddress("0x655C406EBFa14EE2006250925e54ec43AD184f8B"),
 		PositionsNFTDeployBlock:    27833025,
-		UniversalRouter:            common.HexToAddress("0x94b75331ae8d42c1b61065089b7d48fe14aa73b7"),
+		UniversalRouter:            common.HexToAddress("0x8B844f885672f333Bc0042cB669255f93a4C1E6b"),
 		WrappedNativeAddress:       common.HexToAddress("0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7"),
 		WrappedNativeSymbol:        "WAVAX",
 		WrappedNativeName:          "Wrapped AVAX",

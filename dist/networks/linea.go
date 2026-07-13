@@ -62,7 +62,7 @@ var Linea Network = Network{
 		NonfungiblePositionManager: common.HexToAddress("0x4615C383F85D0a2BbED973d83ccecf5CB7121463"),
 		PositionsNFT:               common.HexToAddress("0x4615C383F85D0a2BbED973d83ccecf5CB7121463"),
 		PositionsNFTDeployBlock:    25264,
-		UniversalRouter:            common.HexToAddress("0xd7c7d7f18dd5388d5217c9696c7e799fcd75c6bd"),
+		UniversalRouter:            common.HexToAddress("0x8B844f885672f333Bc0042cB669255f93a4C1E6b"),
 		WrappedNativeAddress:       common.HexToAddress("0xe5d7c2a44ffddf6b295a15c148167daaaf5cf34f"),
 		WrappedNativeSymbol:        "WETH",
 		WrappedNativeName:          "Wrapped Ether",

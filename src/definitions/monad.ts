@@ -58,7 +58,7 @@ export const monad = makeConfig({
 		nonfungiblePositionManager: "0x7197E214c0b767cFB76Fb734ab638E2c192F4E53",
 		positionsNFT: "0x7197E214c0b767cFB76Fb734ab638E2c192F4E53",
 		positionsNFTDeployBlock: 29255879,
-		universalRouter: "0x0D97Dc33264bfC1c226207428A79b26757fb9dc3",
+		universalRouter: "0xFdf682F51FE81Aa4898F0AE2163d8A55c127fbC7",
 
 		wrappedNativeAddress: "0x3bd359C1119dA7Da1D913D1C4D2B7c461115433A",
 		wrappedNativeSymbol: "WMON",

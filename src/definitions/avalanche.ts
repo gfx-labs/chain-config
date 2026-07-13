@@ -70,7 +70,7 @@ export const avalanche = makeConfig({
 		nonfungiblePositionManager: "0x655C406EBFa14EE2006250925e54ec43AD184f8B",
 		positionsNFT: "0x655C406EBFa14EE2006250925e54ec43AD184f8B",
 		positionsNFTDeployBlock: 27833025,
-		universalRouter: "0x94b75331ae8d42c1b61065089b7d48fe14aa73b7",
+		universalRouter: "0x8B844f885672f333Bc0042cB669255f93a4C1E6b",
 
 		wrappedNativeAddress: "0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7",
 		wrappedNativeSymbol: "WAVAX",

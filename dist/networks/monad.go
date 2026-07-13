@@ -63,7 +63,7 @@ var Monad Network = Network{
 		NonfungiblePositionManager: common.HexToAddress("0x7197E214c0b767cFB76Fb734ab638E2c192F4E53"),
 		PositionsNFT:               common.HexToAddress("0x7197E214c0b767cFB76Fb734ab638E2c192F4E53"),
 		PositionsNFTDeployBlock:    29255879,
-		UniversalRouter:            common.HexToAddress("0x0D97Dc33264bfC1c226207428A79b26757fb9dc3"),
+		UniversalRouter:            common.HexToAddress("0xFdf682F51FE81Aa4898F0AE2163d8A55c127fbC7"),
 		WrappedNativeAddress:       common.HexToAddress("0x3bd359C1119dA7Da1D913D1C4D2B7c461115433A"),
 		WrappedNativeSymbol:        "WMON",
 		WrappedNativeName:          "Wrapped MON",

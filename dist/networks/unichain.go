@@ -62,7 +62,7 @@ var Unichain Network = Network{
 		NonfungiblePositionManager: common.HexToAddress("0x943e6e07a7e8e791dafc44083e54041d743c46e9"),
 		PositionsNFT:               common.HexToAddress("0x943e6e07a7e8e791dafc44083e54041d743c46e9"),
 		PositionsNFTDeployBlock:    294152,
-		UniversalRouter:            common.HexToAddress("0x4D73A4411CA1c660035e4AECC8270E5DdDEC8C17"),
+		UniversalRouter:            common.HexToAddress("0xFdf682F51FE81Aa4898F0AE2163d8A55c127fbC7"),
 		WrappedNativeAddress:       common.HexToAddress("0x4200000000000000000000000000000000000006"),
 		WrappedNativeSymbol:        "WETH",
 		WrappedNativeName:          "Wrapped Ether",

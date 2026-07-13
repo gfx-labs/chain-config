@@ -64,7 +64,7 @@ var Base Network = Network{
 		NonfungiblePositionManager: common.HexToAddress("0x03a520b32C04BF3bEEf7BEb72E919cf822Ed34f1"),
 		PositionsNFT:               common.HexToAddress("0x03a520b32C04BF3bEEf7BEb72E919cf822Ed34f1"),
 		PositionsNFTDeployBlock:    1371714,
-		UniversalRouter:            common.HexToAddress("0xec8b0f7ffe3ae75d7ffab09429e3675bb63503e4"),
+		UniversalRouter:            common.HexToAddress("0xFdf682F51FE81Aa4898F0AE2163d8A55c127fbC7"),
 		WrappedNativeAddress:       common.HexToAddress("0x4200000000000000000000000000000000000006"),
 		WrappedNativeSymbol:        "WETH",
 		WrappedNativeName:          "Wrapped Ether",

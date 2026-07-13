@@ -79,7 +79,7 @@ var Arbitrum Network = Network{
 		PositionsNFT:                       common.HexToAddress("0xC36442b4a4522E871399CD717aBDD847Ab11FE88"),
 		TopNativePool:                      common.HexToAddress("0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640"),
 		PositionsNFTDeployBlock:            173,
-		UniversalRouter:                    common.HexToAddress("0x4C60051384bd2d3C01bfc845Cf5F4b44bcbE9de5"),
+		UniversalRouter:                    common.HexToAddress("0x8B844f885672f333Bc0042cB669255f93a4C1E6b"),
 		WrappedNativeAddress:               common.HexToAddress("0x82aF49447D8a07e3bd95BD0d56f35241523fBab1"),
 		WrappedNativeSymbol:                "WETH",
 		WrappedNativeName:                  "Wrapped Ether",

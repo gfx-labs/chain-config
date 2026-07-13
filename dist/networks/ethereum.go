@@ -78,7 +78,7 @@ var Ethereum Network = Network{
 		PositionsNFT:                       common.HexToAddress("0xC36442b4a4522E871399CD717aBDD847Ab11FE88"),
 		TopNativePool:                      common.HexToAddress("0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640"),
 		PositionsNFTDeployBlock:            12369651,
-		UniversalRouter:                    common.HexToAddress("0xEf1c6E67703c7BD7107eed8303Fbe6EC2554BF6B"),
+		UniversalRouter:                    common.HexToAddress("0xCb640A86855f1A828c27241bA364348de28abe66"),
 		WrappedNativeAddress:               common.HexToAddress("0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"),
 		WrappedNativeSymbol:                "WETH",
 		WrappedNativeName:                  "Wrapped Ether",

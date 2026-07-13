@@ -258,7 +258,7 @@ export const optimism = makeConfig({
 		positionsNFT: "0xC36442b4a4522E871399CD717aBDD847Ab11FE88",
 		topNativePool: "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640",
 		positionsNFTDeployBlock: 0,
-		universalRouter: "0xb555edF5dcF85f42cEeF1f3630a52A108E55A654",
+		universalRouter: "0x8B844f885672f333Bc0042cB669255f93a4C1E6b",
 
 		wrappedNativeAddress: "0x4200000000000000000000000000000000000006",
 		wrappedNativeSymbol: "WETH",

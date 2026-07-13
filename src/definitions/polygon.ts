@@ -112,7 +112,7 @@ export const polygon = makeConfig({
 		positionsNFT: "0xC36442b4a4522E871399CD717aBDD847Ab11FE88",
 		positionsNFTDeployBlock: 22760586,
 		topNativePool: "0xa374094527e1673a86de625aa59517c5de346d32",
-		universalRouter: "0x4C60051384bd2d3C01bfc845Cf5F4b44bcbE9de5",
+		universalRouter: "0x8B844f885672f333Bc0042cB669255f93a4C1E6b",
 
 		wrappedNativeAddress: "0x7ceb23fd6bc0add59e62ac25578270cff1b9f619",
 		wrappedNativeSymbol: "WPOL",

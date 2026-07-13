@@ -59,7 +59,7 @@ export const blast = makeConfig({
 		nonfungiblePositionManager: "0xB218e4f7cF0533d4696fDfC419A0023D33345F28",
 		positionsNFT: "0xB218e4f7cF0533d4696fDfC419A0023D33345F28",
 		positionsNFTDeployBlock: 400947,
-		universalRouter: "0x643770E279d5D0733F21d6DC03A8efbABf3255B4",
+		universalRouter: "0x8B844f885672f333Bc0042cB669255f93a4C1E6b",
 
 		wrappedNativeAddress: "0x4300000000000000000000000000000000000004",
 		wrappedNativeSymbol: "WETH",

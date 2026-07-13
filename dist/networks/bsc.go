@@ -77,7 +77,7 @@ var Bsc Network = Network{
 		UniswapV3Staker:                    common.HexToAddress("0x49B53C35AF9072fC71767577BF6380a88EE32C71"),
 		PositionsNFT:                       common.HexToAddress("0x7b8A01B39D58278b5DE7e48c8449c9f4F5170613"),
 		PositionsNFTDeployBlock:            26324045,
-		UniversalRouter:                    common.HexToAddress("0xeC8B0F7Ffe3ae75d7FfAb09429e3675bb63503e4"),
+		UniversalRouter:                    common.HexToAddress("0x8B844f885672f333Bc0042cB669255f93a4C1E6b"),
 		WrappedNativeAddress:               common.HexToAddress("0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c"),
 		WrappedNativeSymbol:                "WBNB",
 		WrappedNativeName:                  "Wrapped BNB",

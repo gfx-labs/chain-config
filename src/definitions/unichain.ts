@@ -74,7 +74,7 @@ export const unichain = makeConfig({
 		nonfungiblePositionManager: "0x943e6e07a7e8e791dafc44083e54041d743c46e9",
 		positionsNFT: "0x943e6e07a7e8e791dafc44083e54041d743c46e9",
 		positionsNFTDeployBlock: 294152,
-		universalRouter: "0x4D73A4411CA1c660035e4AECC8270E5DdDEC8C17",
+		universalRouter: "0xFdf682F51FE81Aa4898F0AE2163d8A55c127fbC7",
 
 		wrappedNativeAddress: "0x4200000000000000000000000000000000000006",
 		wrappedNativeSymbol: "WETH",

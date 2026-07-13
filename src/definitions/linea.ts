@@ -88,7 +88,7 @@ export const linea = makeConfig({
 		nonfungiblePositionManager: "0x4615C383F85D0a2BbED973d83ccecf5CB7121463",
 		positionsNFT: "0x4615C383F85D0a2BbED973d83ccecf5CB7121463",
 		positionsNFTDeployBlock: 25264,
-		universalRouter: "0xd7c7d7f18dd5388d5217c9696c7e799fcd75c6bd",
+		universalRouter: "0x8B844f885672f333Bc0042cB669255f93a4C1E6b",
 
 		wrappedNativeAddress: "0xe5d7c2a44ffddf6b295a15c148167daaaf5cf34f",
 		wrappedNativeSymbol: "WETH",

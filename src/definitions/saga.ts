@@ -46,7 +46,7 @@ export const saga = makeConfig({
 		nonfungiblePositionManager: "0xdD489C75be1039ec7d843A6aC2Fd658350B067Cf",
 		positionsNFT: "0xdD489C75be1039ec7d843A6aC2Fd658350B067Cf",
 		positionsNFTDeployBlock: 18902,
-		universalRouter: "0x352A86168e6988A1aDF9A15Cb00017AAd3B67155",
+		universalRouter: "0xa683c66045ad16abb1bCE5ad46A64d95f9A25785",
 
 		wrappedNativeAddress: "0xE3dbcD53f4Ce1b06Ab200f4912BD35672e68f1FA",
 		wrappedNativeSymbol: "wGAS",

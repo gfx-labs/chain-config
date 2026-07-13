@@ -55,7 +55,7 @@ export const worldchain = makeConfig({
 		nonfungiblePositionManager: "0xec12a9F9a09f50550686363766Cc153D03c27b5e",
 		positionsNFT: "0xec12a9F9a09f50550686363766Cc153D03c27b5e",
 		positionsNFTDeployBlock: 1603405,
-		universalRouter: "0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D",
+		universalRouter: "0x8B844f885672f333Bc0042cB669255f93a4C1E6b",
 
 		wrappedNativeAddress: "0x4200000000000000000000000000000000000006",
 		wrappedNativeSymbol: "WETH",

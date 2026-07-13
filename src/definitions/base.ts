@@ -121,7 +121,7 @@ export const base = makeConfig({
 		nonfungiblePositionManager: "0x03a520b32C04BF3bEEf7BEb72E919cf822Ed34f1",
 		positionsNFT: "0x03a520b32C04BF3bEEf7BEb72E919cf822Ed34f1",
 		positionsNFTDeployBlock: 1371714,
-		universalRouter: "0xec8b0f7ffe3ae75d7ffab09429e3675bb63503e4",
+		universalRouter: "0xFdf682F51FE81Aa4898F0AE2163d8A55c127fbC7",
 		wrappedNativeAddress: "0x4200000000000000000000000000000000000006",
 		wrappedNativeSymbol: "WETH",
 		wrappedNativeName: "Wrapped Ether",

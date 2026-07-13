@@ -59,7 +59,7 @@ var Celo Network = Network{
 		NonfungiblePositionManager: common.HexToAddress("0x3d79EdAaBC0EaB6F08ED885C05Fc0B014290D95A"),
 		PositionsNFT:               common.HexToAddress("0x3d79EdAaBC0EaB6F08ED885C05Fc0B014290D95A"),
 		PositionsNFTDeployBlock:    13916373,
-		UniversalRouter:            common.HexToAddress("0x643770E279d5D0733F21d6DC03A8efbABf3255B4"),
+		UniversalRouter:            common.HexToAddress("0x8B844f885672f333Bc0042cB669255f93a4C1E6b"),
 		NativeCurrencyName:         "CELO",
 	},
 
