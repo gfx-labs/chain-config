@@ -24,9 +24,17 @@ export const robinhood = makeConfig({
 	initCodeHash:
 		"0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
 	uniswap: {
+		deployBlock: 8930,
 		poolFactory: "0x1f7d7550B1b028f7571E69A784071F0205FD2EfA",
+		permit2: "0x000000000022D473030F116dDEE9F6B43aC78BA3",
+		multicall2: "0x282A3C4D320Cc7f0d5eaf56B8029e4B88338f0a3",
+		tickLens: "0x7DfD4F31be6814D2906BDE155c3e1B146EAc1468",
+		quoter: "0x33e885eD0Ec9bF04EcfB19341582aADCb4c8A9E7",
+		swapRouter02: "0xCaf681a66D020601342297493863E78C959E5cb2",
 		nonfungiblePositionManager: "0x73991a25C818Bf1f1128dEAaB1492D45638DE0D3",
 		positionsNFT: "0x73991a25C818Bf1f1128dEAaB1492D45638DE0D3",
+		positionsNFTDeployBlock: 9069,
+		universalRouter: "0x8876789976dEcBfCbBbe364623C63652db8C0904",
 		wrappedNativeAddress: "0x0Bd7D308f8E1639FAb988df18A8011f41EAcAD73",
 		wrappedNativeSymbol: "WETH",
 		wrappedNativeName: "Wrapped Ether",
