@@ -686,8 +686,7 @@ type TokenMetadata struct {
 }
 
 type OkuMetadata struct {
-	Router10                      common.Address
-	Router11                      common.Address
+	Router                        common.Address
 	Permit2Proxy10                common.Address
 	Permit2Proxy11                common.Address
 	LimitOrderRegistry            common.Address

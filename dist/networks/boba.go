@@ -43,6 +43,7 @@ var Boba Network = Network{
 	V4Watchlist:      []common.Hash{},
 	BlockTimeSeconds: 2,
 	Oku: OkuMetadata{
+		Router:                        common.HexToAddress("0x87a3721df43fd6788a6b11662D2a804F27911506"),
 		LimitOrderRegistry:            common.HexToAddress("0xfefb60591cffc694c0137983a9091d64af8ecbac"),
 		LimitOrderRegistryDeployBlock: 1052192,
 

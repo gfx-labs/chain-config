@@ -41,6 +41,7 @@ var Redbelly Network = Network{
 	V4Watchlist:      []common.Hash{},
 	BlockTimeSeconds: 5,
 	Oku: OkuMetadata{
+		Router:                        common.HexToAddress("0x028F7f81D6816735207A19a3b5C1B72f95B655E5"),
 		LimitOrderRegistry:            common.HexToAddress("0x9db70E29712Cc8Af10c2B597BaDA6784544FF407"),
 		LimitOrderRegistryDeployBlock: 2286099,
 

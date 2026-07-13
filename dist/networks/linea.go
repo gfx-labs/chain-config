@@ -43,6 +43,7 @@ var Linea Network = Network{
 	V4Watchlist:      []common.Hash{},
 	BlockTimeSeconds: 2,
 	Oku: OkuMetadata{
+		Router:                        common.HexToAddress("0x25132a6F4f0A993d62e57D0510df1395729125ad"),
 		LimitOrderRegistry:            common.HexToAddress("0x63c8527f670d4eb3401c80c5905ceca8727f1e74"),
 		LimitOrderRegistryDeployBlock: 3610379,
 
