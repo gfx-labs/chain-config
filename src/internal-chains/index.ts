@@ -17,5 +17,4 @@
 
 // Re-export concrete chains below. Keep alphabetical.
 export * from "./pharos";
-export * from "./robinhood";
 export * from "./util";

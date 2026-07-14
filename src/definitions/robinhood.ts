@@ -1,5 +1,5 @@
 import { zeroAddress } from "viem";
-import { robinhood as chain } from "../internal-chains";
+import { robinhood as chain } from "viem/chains";
 import { makeConfig } from "../util";
 
 export const robinhood = makeConfig({
