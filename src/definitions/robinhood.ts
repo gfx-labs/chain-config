@@ -1,5 +1,5 @@
 import { zeroAddress } from "viem";
-import { robinhood as chain } from "viem/chains";
+import { robinhood as chain } from "../internal-chains";
 import { makeConfig } from "../util";
 
 export const robinhood = makeConfig({
@@ -45,6 +45,7 @@ export const robinhood = makeConfig({
 		wethAddress: "0x0Bd7D308f8E1639FAb988df18A8011f41EAcAD73",
 	},
 	oku: {
+		router: "0x47A708142C348e2B4260cCEf3abC2Aff03486eBc",
 		pricing: {
 			nativeWrappedToken: "0x0Bd7D308f8E1639FAb988df18A8011f41EAcAD73",
 			nativeWrappedName: "ETH",

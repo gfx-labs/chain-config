@@ -20,8 +20,7 @@ var Robinhood Network = Network{
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {
-			Url:    "https://robinhoodchain.blockscout.com",
-			ApiUrl: "https://robinhoodchain.blockscout.com/api",
+			Url: "https://robinhoodchain.blockscout.com",
 		},
 	},
 	DefaultPool:     common.HexToAddress("0x69BfaF19C9f377BB306a89aEd9F6B07e2c1a8d9a"),
@@ -39,6 +38,7 @@ var Robinhood Network = Network{
 	V4Watchlist:      []common.Hash{},
 	BlockTimeSeconds: 2,
 	Oku: OkuMetadata{
+		Router: common.HexToAddress("0x47A708142C348e2B4260cCEf3abC2Aff03486eBc"),
 
 		Pricing: OkuPricingMetadata{
 			NativeWrappedToken: common.HexToAddress("0x0Bd7D308f8E1639FAb988df18A8011f41EAcAD73"),
@@ -73,7 +73,7 @@ var Robinhood Network = Network{
 	Contracts: map[string]ChainContract{
 		"multicall3": {
 			BlockCreated: 0,
-			Address:      common.HexToAddress("0xca11bde05977b3631167028862be2a173976ca11"),
+			Address:      common.HexToAddress("0xcA11bde05977b3631167028862bE2a173976CA11"),
 		},
 		"limitOrder": {
 			BlockCreated: 0,

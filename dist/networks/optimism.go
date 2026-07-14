@@ -44,7 +44,7 @@ var Optimism Network = Network{
 	V4Watchlist:      []common.Hash{},
 	BlockTimeSeconds: 0.5,
 	Oku: OkuMetadata{
-		Router:                        common.HexToAddress("0x25132a6F4f0A993d62e57D0510df1395729125ad"),
+		Router:                        common.HexToAddress("0x47A708142C348e2B4260cCEf3abC2Aff03486eBc"),
 		LimitOrderRegistry:            common.HexToAddress("0x54dF9e11c7933a9cA3BD1E540B63dA15edAe40bf"),
 		LimitOrderRegistryDeployBlock: 105276132,
 
