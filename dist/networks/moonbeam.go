@@ -7,7 +7,7 @@ import (
 var Moonbeam Network = Network{
 	ChainId: 1284,
 	NativeCurrency: NativeCurrency{
-		Name:     "GLMR",
+		Name:     "Moonbeam",
 		Symbol:   "GLMR",
 		Decimals: 18,
 	},

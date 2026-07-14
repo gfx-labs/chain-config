@@ -20,11 +20,11 @@ var Monad Network = Network{
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {
-			Url: "https://monadvision.com",
-		},
-		"monadscan": {
 			Url:    "https://monadscan.com",
-			ApiUrl: "https://api.monadscan.com/api",
+			ApiUrl: "https://api.etherscan.io/v2/api?chainid=143",
+		},
+		"monadvision": {
+			Url: "https://monadvision.com",
 		},
 	},
 	DefaultPool:     common.HexToAddress("0x659bD0BC4167BA25c62E05656F78043E7eD4a9da"),
