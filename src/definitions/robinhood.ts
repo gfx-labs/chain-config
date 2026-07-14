@@ -4,10 +4,11 @@ import { makeConfig } from "../util";
 
 export const robinhood = makeConfig({
 	...chain,
+	name: "Robinhood",
 	blockTimeSeconds: 2,
 	launchTime: 1784047160,
 	transactionType: "eip1559",
-	sortIndex: 6,
+	sortIndex: 5,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/robinhood-logo.svg",
 	deprecated: false,
 	liteChain: true,
