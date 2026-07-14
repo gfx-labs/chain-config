@@ -15,8 +15,8 @@ var Robinhood Network = Network{
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/robinhood-logo.svg",
 	Deprecated:        false,
 	LiteChain:         true,
-	SortIndex:         47,
-	LaunchTime:        0,
+	SortIndex:         6,
+	LaunchTime:        1784047160,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {
