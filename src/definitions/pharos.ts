@@ -4,6 +4,7 @@ import { makeConfig } from "../util";
 
 export const pharos = makeConfig({
 	...chain,
+	name: "Pharos",
 	blockTimeSeconds: 2,
 	launchTime: 1777014000,
 	transactionType: "eip1559",
