@@ -63,6 +63,7 @@ const (
 	NameGensyn       InternalName = "gensyn"
 	NamePharos       InternalName = "pharos"
 	NameRobinhood    InternalName = "robinhood"
+	NameSepolia      InternalName = "sepolia"
 	NameBitcoin      InternalName = "bitcoin"
 )
 
@@ -116,6 +117,7 @@ var AllNetworks = []Network{
 	Gensyn,
 	Pharos,
 	Robinhood,
+	Sepolia,
 	Bitcoin,
 }
 
@@ -169,6 +171,7 @@ var networksByName = map[string]Network{
 	"gensyn":        Gensyn,
 	"pharos":        Pharos,
 	"robinhood":     Robinhood,
+	"sepolia":       Sepolia,
 	"bitcoin":       Bitcoin,
 }
 
@@ -222,6 +225,7 @@ var networksById = map[int]Network{
 	685689:     Gensyn,
 	1672:       Pharos,
 	4663:       Robinhood,
+	11155111:   Sepolia,
 }
 
 func NetworkByName(name string) (*Network, error) {
@@ -298,6 +302,7 @@ var networksByCAIP2 = map[string]Network{
 	"eip155:685689":     Gensyn,
 	"eip155:1672":       Pharos,
 	"eip155:4663":       Robinhood,
+	"eip155:11155111":   Sepolia,
 	"bip122:000000000019d6689c085ae165831e93": Bitcoin,
 }
 

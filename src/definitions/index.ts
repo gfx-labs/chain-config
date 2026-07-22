@@ -41,6 +41,7 @@ export * from "./rootstock";
 export * from "./saga";
 export * from "./scroll";
 export * from "./sei";
+export * from "./sepolia";
 export * from "./sonic";
 export * from "./taiko";
 export * from "./telos";
