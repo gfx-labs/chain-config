@@ -18,7 +18,9 @@ export const robinhood = makeConfig({
 	safeReorgDistance: 90_000,
 	blockAid: "",
 	externalId: {},
-	markets: {},
+	markets: {
+		openocean: "robinhood",
+	},
 	bridges: {},
 	oracles: {},
 	morpho: {},
