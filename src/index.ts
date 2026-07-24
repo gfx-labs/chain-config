@@ -91,6 +91,8 @@ export const MAINNET_CHAINS = [
  */
 export const NON_EVM_CHAINS: readonly IChainInfo[] = [
 	nonEvmDefs.bitcoin,
+	nonEvmDefs.solana,
+	nonEvmDefs.zcash,
 ] as const;
 
 /**

@@ -12,3 +12,5 @@
 
 // Re-export concrete chains below. Keep alphabetical.
 export * from "./bitcoin";
+export * from "./solana";
+export * from "./zcash";

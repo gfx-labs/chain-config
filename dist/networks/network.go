@@ -65,6 +65,8 @@ const (
 	NameRobinhood    InternalName = "robinhood"
 	NameSepolia      InternalName = "sepolia"
 	NameBitcoin      InternalName = "bitcoin"
+	NameSolana       InternalName = "solana"
+	NameZcash        InternalName = "zcash"
 )
 
 var AllNetworks = []Network{
@@ -119,6 +121,8 @@ var AllNetworks = []Network{
 	Robinhood,
 	Sepolia,
 	Bitcoin,
+	Solana,
+	Zcash,
 }
 
 var networksByName = map[string]Network{
@@ -173,6 +177,8 @@ var networksByName = map[string]Network{
 	"robinhood":     Robinhood,
 	"sepolia":       Sepolia,
 	"bitcoin":       Bitcoin,
+	"solana":        Solana,
+	"zcash":         Zcash,
 }
 
 var networksById = map[int]Network{
@@ -304,6 +310,8 @@ var networksByCAIP2 = map[string]Network{
 	"eip155:4663":       Robinhood,
 	"eip155:11155111":   Sepolia,
 	"bip122:000000000019d6689c085ae165831e93": Bitcoin,
+	"solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp": Solana,
+	"bip122:00040fe8ec8471911baa1db1266ea15d": Zcash,
 }
 
 // ParseCAIP2 splits a CAIP-2 chain identifier into its namespace and reference.

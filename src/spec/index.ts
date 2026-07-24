@@ -273,7 +273,10 @@ export const NON_EVM_CHAIN_ID = 0;
 export enum ChainType {
 	/** EVM chains (CAIP-2 namespace `eip155`). */
 	EVM = "eip155",
-	/** Bitcoin (CAIP-2 namespace `bip122`). */
+	/**
+	 * Bitcoin and Bitcoin-derived chains, e.g. Zcash (CAIP-2 namespace
+	 * `bip122`).
+	 */
 	Bitcoin = "bip122",
 	/** Solana (CAIP-2 namespace `solana`). */
 	Solana = "solana",
