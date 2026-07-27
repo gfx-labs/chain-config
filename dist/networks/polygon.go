@@ -14,7 +14,7 @@ var Polygon Network = Network{
 	Caip2Namespace:    "eip155",
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/polygon-logo.svg",
 	Deprecated:        false,
-	LiteChain:         false,
+	LiteChain:         true,
 	SortIndex:         5,
 	LaunchTime:        1688997600,
 	SafeReorgDistance: 90000,

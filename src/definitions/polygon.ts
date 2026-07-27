@@ -6,6 +6,7 @@ export const polygon = makeConfig({
 	initCodeHash:
 		"0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
 	blockTimeSeconds: 2,
+	liteChain: true,
 	launchTime: 1688997600,
 	transactionType: "eip1559",
 	sortIndex: 5,
