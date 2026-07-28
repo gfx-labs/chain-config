@@ -40,6 +40,25 @@ export const polygon = makeConfig({
 		icecreamswap: true,
 		cowswap: "polygon",
 	},
+	marketRouters: {
+		binance: ["0xB44446b0c8E56988c34f7Ff73Ae904982b5FdDA5"],
+		enso: ["0xF75584eF6673aD213a685a1B58Cc0330B8eA22Cf"],
+		icecreamswap: ["0x99bA7d569EA69671B399A7cC488b687515F7EC23"],
+		kyberswap: ["0x6131B5fae19EA4f9D964eAc0408E4408b66337b5"],
+		odos: ["0x4E3288c9ca110bCC82bf38F09A7b425c095d92Bf"],
+		okx: ["0xF6E1B4b201e220FC3741bd7a75675ffEA25c02AD"],
+		openocean: ["0x6352a56caadC4F1E25CD6c75970Fa768A3304e64"],
+		paraswap: ["0x6A000F20005980200259B80c5102003040001068"],
+		uniswap: [
+			"0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45",
+			"0x8B844f885672f333Bc0042cB669255f93a4C1E6b",
+			"0xec7BE89e9d109e7e3Fec59c222CF297125FEFda2",
+		],
+		zeroex: [
+			"0x0000000000001fF3684f28c67538d4D072C22734",
+			"0x7150ea07D00d8E5a46bcC809f1c9FDf5cb5f8E81",
+		],
+	},
 	bridges: {
 		chainlink: {
 			atlasNetworkName: "polygon-mainnet",

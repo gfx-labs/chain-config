@@ -79,6 +79,12 @@ var Worldchain Network = Network{
 		MmFactory11:     common.HexToAddress("0xae5b0884bfff430493D6C844B9fd052Af7d79278"),
 		Bundler3:        common.HexToAddress("0x3D07BF2FFb23248034bF704F3a4786F1ffE2a448"),
 	},
+	MarketRouters: MarketRouters{
+		Enso:         []common.Address{common.HexToAddress("0xF75584eF6673aD213a685a1B58Cc0330B8eA22Cf")},
+		Icecreamswap: []common.Address{common.HexToAddress("0xC87De04e2EC1F4282dFF2933A2D58199f688fC3d")},
+		Uniswap:      []common.Address{common.HexToAddress("0x091AD9e2e6e5eD44c1c66dB50e49A601F9f36cF6"), common.HexToAddress("0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D"), common.HexToAddress("0x8B844f885672f333Bc0042cB669255f93a4C1E6b")},
+		Zeroex:       []common.Address{common.HexToAddress("0x0000000000001fF3684f28c67538d4D072C22734"), common.HexToAddress("0x1072a0A713A23a2Da9BAB99E9CD68187970E89a4")},
+	},
 	Token: TokenMetadata{
 		WethAddress: common.HexToAddress("0x4200000000000000000000000000000000000006"),
 		UsdcAddress: common.HexToAddress("0x79a02482a880bce3f13e09da970dc34db4cd24d1"),

@@ -63,8 +63,9 @@ var Tronshasta Network = Network{
 		NativeCurrencyName:         "TRX",
 	},
 
-	Morpho: MorphoMetadata{},
-	Token:  TokenMetadata{},
+	Morpho:        MorphoMetadata{},
+	MarketRouters: MarketRouters{},
+	Token:         TokenMetadata{},
 	Contracts: map[string]ChainContract{
 		"limitOrder": {
 			BlockCreated: 0,

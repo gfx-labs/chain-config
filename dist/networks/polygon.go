@@ -87,6 +87,18 @@ var Polygon Network = Network{
 	},
 
 	Morpho: MorphoMetadata{},
+	MarketRouters: MarketRouters{
+		Binance:      []common.Address{common.HexToAddress("0xB44446b0c8E56988c34f7Ff73Ae904982b5FdDA5")},
+		Enso:         []common.Address{common.HexToAddress("0xF75584eF6673aD213a685a1B58Cc0330B8eA22Cf")},
+		Icecreamswap: []common.Address{common.HexToAddress("0x99bA7d569EA69671B399A7cC488b687515F7EC23")},
+		Kyberswap:    []common.Address{common.HexToAddress("0x6131B5fae19EA4f9D964eAc0408E4408b66337b5")},
+		Odos:         []common.Address{common.HexToAddress("0x4E3288c9ca110bCC82bf38F09A7b425c095d92Bf")},
+		Okx:          []common.Address{common.HexToAddress("0xF6E1B4b201e220FC3741bd7a75675ffEA25c02AD")},
+		Openocean:    []common.Address{common.HexToAddress("0x6352a56caadC4F1E25CD6c75970Fa768A3304e64")},
+		Paraswap:     []common.Address{common.HexToAddress("0x6A000F20005980200259B80c5102003040001068")},
+		Uniswap:      []common.Address{common.HexToAddress("0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45"), common.HexToAddress("0x8B844f885672f333Bc0042cB669255f93a4C1E6b"), common.HexToAddress("0xec7BE89e9d109e7e3Fec59c222CF297125FEFda2")},
+		Zeroex:       []common.Address{common.HexToAddress("0x0000000000001fF3684f28c67538d4D072C22734"), common.HexToAddress("0x7150ea07D00d8E5a46bcC809f1c9FDf5cb5f8E81")},
+	},
 	Token: TokenMetadata{
 		WbtcAddress: common.HexToAddress("0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6"),
 		UsdcAddress: common.HexToAddress("0x2791bca1f2de4661ed88a30c99a7a9449aa84174"),

@@ -68,6 +68,9 @@ var Saga Network = Network{
 	},
 
 	Morpho: MorphoMetadata{},
+	MarketRouters: MarketRouters{
+		Uniswap: []common.Address{common.HexToAddress("0x346239972d1fa486FC4a521031BC81bFB7D6e8a4"), common.HexToAddress("0xa683c66045ad16abb1bCE5ad46A64d95f9A25785")},
+	},
 	Token: TokenMetadata{
 		UsdcAddress: common.HexToAddress("0xfc960C233B8E98e0Cf282e29BDE8d3f105fc24d5"),
 		WethAddress: common.HexToAddress("0xE3dbcD53f4Ce1b06Ab200f4912BD35672e68f1FA"),

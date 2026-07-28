@@ -11,7 +11,13 @@ export {
 	type NetworkIndex,
 	NetworkNotFoundError,
 } from "./util/lookup";
+export type {
+	MarketRouterChainInput,
+	MarketRouterEntry,
+	MarketRouterName,
+} from "./util/routers";
 
+import type { Address } from "viem";
 import type { IChainInfo } from "./spec";
 import {
 	chainType as _chainType,
@@ -28,6 +34,16 @@ import {
 	networkByString as _networkByString,
 	buildNetworkIndex,
 } from "./util/lookup";
+import {
+	isAllowedRouter as _isAllowedRouter,
+	marketRouterEntries as _marketRouterEntries,
+	marketsForRouter as _marketsForRouter,
+	routerAllowlist as _routerAllowlist,
+	routersForMarket as _routersForMarket,
+	type MarketRouterChainInput,
+	type MarketRouterEntry,
+	type MarketRouterName,
+} from "./util/routers";
 
 export const MAINNET_CHAINS = [
 	defs.arbitrum,
@@ -182,6 +198,77 @@ export function networkByString(s: string): IChainInfo {
  */
 export function networkByCAIP2(caip2: string): IChainInfo {
 	return _networkByCAIP2(caip2, _idx);
+}
+
+/**
+ * Every market router configured for a chain, flattened to `(market, address)`
+ * pairs. Accepts anything {@link networkByAny} accepts.
+ *
+ * @example
+ * ```ts
+ * marketRouterEntries(8453)          // by chain ID
+ * marketRouterEntries("base")        // by internal name
+ * marketRouterEntries("eip155:8453") // by CAIP-2
+ * marketRouterEntries(someChain)     // by chain object
+ * ```
+ *
+ * @throws {NetworkNotFoundError} if no matching chain is found
+ */
+export function marketRouterEntries(
+	chain: MarketRouterChainInput,
+): MarketRouterEntry[] {
+	return _marketRouterEntries(chain, _idx);
+}
+
+/**
+ * The routers configured for a single market on a chain, or an empty array
+ * when that market has no deployment there.
+ *
+ * @throws {NetworkNotFoundError} if no matching chain is found
+ */
+export function routersForMarket(
+	chain: MarketRouterChainInput,
+	market: MarketRouterName,
+): ReadonlyArray<Address> {
+	return _routersForMarket(chain, market, _idx);
+}
+
+/**
+ * The set of contract addresses the Oku Router may call on a chain, lowercased
+ * and de-duplicated. Markets share deployments on some chains, so this is
+ * smaller than {@link marketRouterEntries}.
+ *
+ * @throws {NetworkNotFoundError} if no matching chain is found
+ */
+export function routerAllowlist(chain: MarketRouterChainInput): Set<string> {
+	return _routerAllowlist(chain, _idx);
+}
+
+/**
+ * Whether `address` is a market router the Oku Router may call on this chain.
+ * Case-insensitive, so an unchecksummed `to` from an upstream quote can be
+ * passed directly.
+ *
+ * @throws {NetworkNotFoundError} if no matching chain is found
+ */
+export function isAllowedRouter(
+	chain: MarketRouterChainInput,
+	address: string,
+): boolean {
+	return _isAllowedRouter(chain, address, _idx);
+}
+
+/**
+ * Every market `address` is registered under on this chain. Empty when the
+ * address is not allowlisted; more than one when markets share a deployment.
+ *
+ * @throws {NetworkNotFoundError} if no matching chain is found
+ */
+export function marketsForRouter(
+	chain: MarketRouterChainInput,
+	address: string,
+): MarketRouterName[] {
+	return _marketsForRouter(chain, address, _idx);
 }
 
 /**

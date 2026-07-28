@@ -77,7 +77,8 @@ var Sepolia Network = Network{
 		DefaultPool:     common.HexToHash("0x0000000000000000000000000000000000000000000000000000000000000000"),
 		StateView:       common.HexToAddress("0xE1Dd9c3fA50EDB962E442f60DfBc432e24537E4C"),
 	},
-	Morpho: MorphoMetadata{},
+	Morpho:        MorphoMetadata{},
+	MarketRouters: MarketRouters{},
 	Token: TokenMetadata{
 		UsdcAddress: common.HexToAddress("0x699CFe8997D647d03325Ef4BFd039d5bb0984A17"),
 		WethAddress: common.HexToAddress("0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14"),

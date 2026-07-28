@@ -27,6 +27,15 @@ export const sei = makeConfig({
 			spender: "0x111111125421ca6dc452d289314280a0f8842a65",
 		},
 	},
+	marketRouters: {
+		enso: ["0x300b3D30aaBf46b05983284f0297D966E92bbeB2"],
+		icecreamswap: ["0xC87De04e2EC1F4282dFF2933A2D58199f688fC3d"],
+		openocean: ["0x6352a56caadC4F1E25CD6c75970Fa768A3304e64"],
+		uniswap: [
+			"0xa683c66045ad16abb1bCE5ad46A64d95f9A25785",
+			"0xdD489C75be1039ec7d843A6aC2Fd658350B067Cf",
+		],
+	},
 	morpho: {
 		morpho: "0xc9cDAc20FCeAAF616f7EB0bb6Cd2c69dcfa9094c",
 		bundler3: "0xF9457356F18A3349Bb317Ac144c3Bcc62e5761aD",

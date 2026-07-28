@@ -75,6 +75,11 @@ var Etherlink Network = Network{
 		MmFactory11:     common.HexToAddress("0x997a79c3C04c5B9eb27d343ae126bcCFb5D74781"),
 		Bundler3:        common.HexToAddress("0x69dc8086191437b55775b79C730BB3876397e7D1"),
 	},
+	MarketRouters: MarketRouters{
+		Kyberswap:  []common.Address{common.HexToAddress("0x6131B5fae19EA4f9D964eAc0408E4408b66337b5")},
+		Threeroute: []common.Address{common.HexToAddress("0x1B62C2CEf163E3120E512F71F6e6E99058c80F6E")},
+		Uniswap:    []common.Address{common.HexToAddress("0x9db70E29712Cc8Af10c2B597BaDA6784544FF407"), common.HexToAddress("0xdD489C75be1039ec7d843A6aC2Fd658350B067Cf")},
+	},
 	Token: TokenMetadata{
 		WethAddress: common.HexToAddress("0xc9B53AB2679f573e480d01e0f49e2B5CFB7a3EAb"),
 		UsdcAddress: common.HexToAddress("0x796Ea11Fa2dD751eD01b53C372fFDB4AAa8f00F9"),

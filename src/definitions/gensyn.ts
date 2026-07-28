@@ -19,6 +19,13 @@ export const gensyn = makeConfig({
 	blockAid: "",
 	externalId: {},
 	markets: {},
+	marketRouters: {
+		icecreamswap: ["0x9E6d21E759A7A288b80eef94E4737D313D31c13f"],
+		uniswap: [
+			"0x447B8E40B0CdA8e55F405C86bC635D02d0540aB8",
+			"0x807F4E281B7A3B324825C64ca53c69F0b418dE40",
+		],
+	},
 	bridges: {},
 	oracles: {},
 	morpho: {

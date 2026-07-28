@@ -69,6 +69,10 @@ var Hemi Network = Network{
 	},
 
 	Morpho: MorphoMetadata{},
+	MarketRouters: MarketRouters{
+		Icecreamswap: []common.Address{common.HexToAddress("0xC87De04e2EC1F4282dFF2933A2D58199f688fC3d")},
+		Uniswap:      []common.Address{common.HexToAddress("0x533c7A53389e0538AB6aE1D7798D6C1213eAc28B"), common.HexToAddress("0x864DDc9B50B9A0dF676d826c9B9EDe9F8913a160")},
+	},
 	Token: TokenMetadata{
 		WethAddress: common.HexToAddress("0x4200000000000000000000000000000000000006"),
 		WbtcAddress: common.HexToAddress("0x03C7054BCB39f7b2e5B2c7AcB37583e32D70Cfa3"),

@@ -23,6 +23,7 @@ const OkuCustomOrderTypesMetadata = index?.getInterface("OkuCustomOrderTypesMeta
 const ChainContract = index?.getInterface("chainContract");
 const BlockExplorer = index?.getInterface("blockExplorer");
 const Markets = index?.getInterface("Markets");
+const MarketRouters = index?.getInterface("MarketRouters");
 const Bridges = index?.getInterface("Bridges");
 const Oracles = index?.getInterface("Oracles");
 
@@ -189,6 +190,7 @@ const output = ejs.render(networksString.toString(), {
   OkuPricingMetadata,
   OkuCustomOrderTypesMetadata,
   Markets,
+  MarketRouters,
   Bridges,
   Oracles,
 });

@@ -56,6 +56,7 @@ var Pharos Network = Network{
 		VaultV2Factory:                 common.HexToAddress("0x8E01ed1E1A41029b3137FcE9Aa880c0A54827498"),
 		MorphoMarketV1AdapterV2Factory: common.HexToAddress("0xe510e1fcC429943cA3455A7bfBD79f0307Cd8403"),
 	},
+	MarketRouters: MarketRouters{},
 	Token: TokenMetadata{
 		UsdcAddress: common.HexToAddress("0xc879c018db60520f4355c26ed1a6d572cdac1815"),
 		WethAddress: common.HexToAddress("0x52c48d4213107b20bc583832b0d951fb9ca8f0b0"),

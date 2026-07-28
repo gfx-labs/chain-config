@@ -67,6 +67,9 @@ var Nibiru Network = Network{
 	},
 
 	Morpho: MorphoMetadata{},
+	MarketRouters: MarketRouters{
+		Uniswap: []common.Address{common.HexToAddress("0x533c7A53389e0538AB6aE1D7798D6C1213eAc28B"), common.HexToAddress("0xA7E6cB0A6B1BE8b779022A6aFcb097cF0d3Ff4A2")},
+	},
 	Token: TokenMetadata{
 		WethAddress: common.HexToAddress("0x0CaCF669f8446BeCA826913a3c6B96aCD4b02a97"),
 		UsdcAddress: common.HexToAddress("0x0829F361A05D993d5CEb035cA6DF3446b060970b"),

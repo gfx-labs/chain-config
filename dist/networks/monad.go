@@ -72,6 +72,17 @@ var Monad Network = Network{
 	},
 
 	Morpho: MorphoMetadata{},
+	MarketRouters: MarketRouters{
+		Binance:      []common.Address{common.HexToAddress("0xB44446b0c8E56988c34f7Ff73Ae904982b5FdDA5")},
+		Enso:         []common.Address{common.HexToAddress("0xCfBAa9Cfce952Ca4F4069874fF1Df8c05e37a3c7")},
+		Icecreamswap: []common.Address{common.HexToAddress("0xC87De04e2EC1F4282dFF2933A2D58199f688fC3d")},
+		Kyberswap:    []common.Address{common.HexToAddress("0x6131B5fae19EA4f9D964eAc0408E4408b66337b5")},
+		Native:       []common.Address{common.HexToAddress("0x332e56e0b91eC3F08553eC7964E19CC041A38672")},
+		Okx:          []common.Address{common.HexToAddress("0x7A7AD9aa93cd0A2D0255326E5Fb145CEc14997FF")},
+		Openocean:    []common.Address{common.HexToAddress("0x6352a56caadC4F1E25CD6c75970Fa768A3304e64")},
+		Uniswap:      []common.Address{common.HexToAddress("0x75FC67473A91335B5b8F8821277262a13B38c9b3"), common.HexToAddress("0xFdf682F51FE81Aa4898F0AE2163d8A55c127fbC7"), common.HexToAddress("0xfE31F71C1b106EAc32F1A19239c9a9A72ddfb900")},
+		Zeroex:       []common.Address{common.HexToAddress("0x0000000000001fF3684f28c67538d4D072C22734"), common.HexToAddress("0xfb78Fcae443eB423b59B8C186518c5dF94416344")},
+	},
 	Token: TokenMetadata{
 		UsdcAddress: common.HexToAddress("0x754704Bc059F8C67012fEd69BC8A327a5aafb603"),
 		WbtcAddress: common.HexToAddress("0x0555E30da8f98308EdB960aa94C0Db47230d2B9c"),

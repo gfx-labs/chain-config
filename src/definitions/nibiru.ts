@@ -18,6 +18,12 @@ export const nibiru = makeConfig({
 	externalId: {},
 	blockAid: "",
 	markets: {},
+	marketRouters: {
+		uniswap: [
+			"0x533c7A53389e0538AB6aE1D7798D6C1213eAc28B",
+			"0xA7E6cB0A6B1BE8b779022A6aFcb097cF0d3Ff4A2",
+		],
+	},
 	bridges: {
 		stargate: {
 			endpointID: 30369,

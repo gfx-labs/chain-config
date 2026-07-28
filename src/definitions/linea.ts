@@ -33,6 +33,24 @@ export const linea = makeConfig({
 			spender: "0x111111125421ca6dc452d289314280a0f8842a65",
 		},
 	},
+	marketRouters: {
+		binance: ["0xB44446b0c8E56988c34f7Ff73Ae904982b5FdDA5"],
+		enso: ["0xA146d46823f3F594B785200102Be5385CAfCE9B5"],
+		icecreamswap: ["0x2fF506ed9729580EF8Bf04429614beB1baE5F76D"],
+		kyberswap: ["0x6131B5fae19EA4f9D964eAc0408E4408b66337b5"],
+		odos: ["0x2d8879046f1559E53eb052E949e9544bCB72f414"],
+		okx: ["0x2E1Dee213BA8d7af0934C49a23187BabEACa8764"],
+		openocean: ["0x6352a56caadC4F1E25CD6c75970Fa768A3304e64"],
+		uniswap: [
+			"0x3d4e44Eb1374240CE5F1B871ab261CD16335B76a",
+			"0x8B844f885672f333Bc0042cB669255f93a4C1E6b",
+			"0xD7c7D7F18dD5388D5217c9696C7e799fCd75c6bD",
+		],
+		zeroex: [
+			"0x0000000000001fF3684f28c67538d4D072C22734",
+			"0x1816eA2150e74Eb3068A4e3809E461Cc6977A7D7",
+		],
+	},
 	bridges: {
 		chainlink: {
 			atlasNetworkName: "ethereum-mainnet-linea-1",

@@ -45,6 +45,25 @@ export const optimism = makeConfig({
 		zeroex: true,
 		icecreamswap: true,
 	},
+	marketRouters: {
+		binance: ["0xB44446b0c8E56988c34f7Ff73Ae904982b5FdDA5"],
+		enso: ["0xF75584eF6673aD213a685a1B58Cc0330B8eA22Cf"],
+		icecreamswap: ["0xa575f37e869e6887564F87c07e2885e08D542C4a"],
+		kyberswap: ["0x6131B5fae19EA4f9D964eAc0408E4408b66337b5"],
+		odos: ["0xCa423977156BB05b13A2BA3b76Bc5419E2fE9680"],
+		okx: ["0xDd5E9B947c99Aa60bab00ca4631Dce63b49983E7"],
+		openocean: ["0x6352a56caadC4F1E25CD6c75970Fa768A3304e64"],
+		paraswap: ["0x6A000F20005980200259B80c5102003040001068"],
+		uniswap: [
+			"0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45",
+			"0x8B844f885672f333Bc0042cB669255f93a4C1E6b",
+			"0xCb1355ff08Ab38bBCE60111F1bb2B784bE25D7e8",
+		],
+		zeroex: [
+			"0x0000000000001fF3684f28c67538d4D072C22734",
+			"0x8CF38ec1BB723e6B948442Dc604b35a54D3Dc893",
+		],
+	},
 	bridges: {
 		chainlink: {
 			atlasNetworkName: "ethereum-mainnet-optimism-1",

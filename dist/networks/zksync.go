@@ -74,7 +74,8 @@ var Zksync Network = Network{
 		NativeCurrencyName:         "ETH",
 	},
 
-	Morpho: MorphoMetadata{},
+	Morpho:        MorphoMetadata{},
+	MarketRouters: MarketRouters{},
 	Token: TokenMetadata{
 		UsdcAddress: common.HexToAddress("0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4"),
 		WethAddress: common.HexToAddress("0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91"),

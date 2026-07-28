@@ -23,6 +23,24 @@ export const monad = makeConfig({
 	markets: {
 		openocean: "monad",
 	},
+	marketRouters: {
+		binance: ["0xB44446b0c8E56988c34f7Ff73Ae904982b5FdDA5"],
+		enso: ["0xCfBAa9Cfce952Ca4F4069874fF1Df8c05e37a3c7"],
+		icecreamswap: ["0xC87De04e2EC1F4282dFF2933A2D58199f688fC3d"],
+		kyberswap: ["0x6131B5fae19EA4f9D964eAc0408E4408b66337b5"],
+		native: ["0x332e56e0b91eC3F08553eC7964E19CC041A38672"],
+		okx: ["0x7A7AD9aa93cd0A2D0255326E5Fb145CEc14997FF"],
+		openocean: ["0x6352a56caadC4F1E25CD6c75970Fa768A3304e64"],
+		uniswap: [
+			"0x75FC67473A91335B5b8F8821277262a13B38c9b3",
+			"0xFdf682F51FE81Aa4898F0AE2163d8A55c127fbC7",
+			"0xfE31F71C1b106EAc32F1A19239c9a9A72ddfb900",
+		],
+		zeroex: [
+			"0x0000000000001fF3684f28c67538d4D072C22734",
+			"0xfb78Fcae443eB423b59B8C186518c5dF94416344",
+		],
+	},
 	bridges: {
 		chainlink: {
 			atlasNetworkName: "monad-mainnet",

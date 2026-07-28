@@ -76,6 +76,12 @@ var Sei Network = Network{
 		PublicAllocator: common.HexToAddress("0xD878509446bE2C601f0f032F501851001B159D6B"),
 		DeployBlock:     166036723,
 	},
+	MarketRouters: MarketRouters{
+		Enso:         []common.Address{common.HexToAddress("0x300b3D30aaBf46b05983284f0297D966E92bbeB2")},
+		Icecreamswap: []common.Address{common.HexToAddress("0xC87De04e2EC1F4282dFF2933A2D58199f688fC3d")},
+		Openocean:    []common.Address{common.HexToAddress("0x6352a56caadC4F1E25CD6c75970Fa768A3304e64")},
+		Uniswap:      []common.Address{common.HexToAddress("0xa683c66045ad16abb1bCE5ad46A64d95f9A25785"), common.HexToAddress("0xdD489C75be1039ec7d843A6aC2Fd658350B067Cf")},
+	},
 	Token: TokenMetadata{
 		UsdcAddress: common.HexToAddress("0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1"),
 		WethAddress: common.HexToAddress("0xE30feDd158A2e3b13e9badaeABaFc5516e95e8C7"),

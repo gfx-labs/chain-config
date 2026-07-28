@@ -80,6 +80,10 @@ var Boba Network = Network{
 	},
 
 	Morpho: MorphoMetadata{},
+	MarketRouters: MarketRouters{
+		Icecreamswap: []common.Address{common.HexToAddress("0xC87De04e2EC1F4282dFF2933A2D58199f688fC3d")},
+		Uniswap:      []common.Address{common.HexToAddress("0x4BA622997559F9b5Ac68751D7Fc3dEecc23a0e88"), common.HexToAddress("0x759E8B0cb9d65291e258aE3e043258ae1dD0df16")},
+	},
 	Token: TokenMetadata{
 		WethAddress: common.HexToAddress("0xdeaddeaddeaddeaddeaddeaddeaddeaddead0000"),
 		UsdcAddress: common.HexToAddress("0x66a2A913e447d6b4BF33EFbec43aAeF87890FBbc"),

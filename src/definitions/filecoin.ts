@@ -40,6 +40,12 @@ export const filecoin = makeConfig({
 		coingecko: "filecoin",
 	},
 	markets: {},
+	marketRouters: {
+		uniswap: [
+			"0x83702C6356A1028A900F83d446D189a31646a16b",
+			"0xcAb04058e60020d65D18D4B3DFF2cA1445D7099f",
+		],
+	},
 	bridges: {},
 	oracles: {
 		coingecko: {

@@ -39,6 +39,27 @@ export const arbitrum = makeConfig({
 		cowswap: "arbitrum_one",
 		icecreamswap: true,
 	},
+	marketRouters: {
+		binance: ["0xB44446b0c8E56988c34f7Ff73Ae904982b5FdDA5"],
+		enso: ["0xF75584eF6673aD213a685a1B58Cc0330B8eA22Cf"],
+		fabric: ["0x3A7f029E3ad003AB5Aa78ccf101b1B543eaed6F9"],
+		icecreamswap: ["0x57f96440f1b1cAD53B40A8924BD540b1279A491c"],
+		kyberswap: ["0x6131B5fae19EA4f9D964eAc0408E4408b66337b5"],
+		native: ["0x0FC85a171bD0b53BF0bBace74F04B66170Ae3eAb"],
+		odos: ["0xa669e7A0d4b3e4Fa48af2dE86BD4CD7126Be4e13"],
+		okx: ["0x7CF6b330b437E9fb432B1400DE17B03357Cf049A"],
+		openocean: ["0x6352a56caadC4F1E25CD6c75970Fa768A3304e64"],
+		paraswap: ["0x6A000F20005980200259B80c5102003040001068"],
+		uniswap: [
+			"0x5E325eDA8064b456f4781070C0738d849c824258",
+			"0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45",
+			"0x8B844f885672f333Bc0042cB669255f93a4C1E6b",
+		],
+		zeroex: [
+			"0x0000000000001fF3684f28c67538d4D072C22734",
+			"0xfeEA2A79D7d3d36753C8917AF744D71f13C9b02a",
+		],
+	},
 	bridges: {
 		chainlink: {
 			atlasNetworkName: "ethereum-mainnet-arbitrum-1",

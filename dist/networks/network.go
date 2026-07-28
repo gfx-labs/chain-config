@@ -4,6 +4,7 @@ import (
 	"errors"
 	"fmt"
 	"github.com/ethereum/go-ethereum/common"
+	"sort"
 	"strconv"
 	"strings"
 	"time"
@@ -448,6 +449,7 @@ type Network struct {
 	V4Watchlist        []common.Hash
 	ExternalId         map[string]string
 	Markets            Markets
+	MarketRouters      MarketRouters
 	Bridges            Bridges
 	Oracles            Oracles
 	InitCodeHash       common.Hash
@@ -755,6 +757,95 @@ type Markets struct {
 	Zeroex        bool
 	Cowswap       string
 	Icecreamswap  bool
+}
+
+type MarketRouters struct {
+	Binance      []common.Address
+	Enso         []common.Address
+	Fabric       []common.Address
+	Icecreamswap []common.Address
+	Kyberswap    []common.Address
+	Native       []common.Address
+	Odos         []common.Address
+	Okx          []common.Address
+	Openocean    []common.Address
+	Paraswap     []common.Address
+	Threeroute   []common.Address
+	Uniswap      []common.Address
+	Zeroex       []common.Address
+}
+
+func (m *MarketRouters) All() map[string][]common.Address {
+	out := make(map[string][]common.Address)
+	if len(m.Binance) > 0 {
+		out["binance"] = m.Binance
+	}
+	if len(m.Enso) > 0 {
+		out["enso"] = m.Enso
+	}
+	if len(m.Fabric) > 0 {
+		out["fabric"] = m.Fabric
+	}
+	if len(m.Icecreamswap) > 0 {
+		out["icecreamswap"] = m.Icecreamswap
+	}
+	if len(m.Kyberswap) > 0 {
+		out["kyberswap"] = m.Kyberswap
+	}
+	if len(m.Native) > 0 {
+		out["native"] = m.Native
+	}
+	if len(m.Odos) > 0 {
+		out["odos"] = m.Odos
+	}
+	if len(m.Okx) > 0 {
+		out["okx"] = m.Okx
+	}
+	if len(m.Openocean) > 0 {
+		out["openocean"] = m.Openocean
+	}
+	if len(m.Paraswap) > 0 {
+		out["paraswap"] = m.Paraswap
+	}
+	if len(m.Threeroute) > 0 {
+		out["threeroute"] = m.Threeroute
+	}
+	if len(m.Uniswap) > 0 {
+		out["uniswap"] = m.Uniswap
+	}
+	if len(m.Zeroex) > 0 {
+		out["zeroex"] = m.Zeroex
+	}
+	return out
+}
+
+func (n *Network) RouterAllowlist() map[common.Address]struct{} {
+	out := make(map[common.Address]struct{})
+	for _, addrs := range n.MarketRouters.All() {
+		for _, addr := range addrs {
+			out[addr] = struct{}{}
+		}
+	}
+	return out
+}
+
+func (n *Network) IsAllowedRouter(addr common.Address) bool {
+	_, ok := n.RouterAllowlist()[addr]
+	return ok
+}
+
+func (n *Network) MarketsForRouter(addr common.Address) []string {
+	var found []string
+	for market, addrs := range n.MarketRouters.All() {
+		for _, a := range addrs {
+			if a == addr {
+				found = append(found, market)
+				break
+			}
+		}
+	}
+	sort.Strings(found)
+	return found
 }
 
 type Bridges struct {

@@ -72,6 +72,11 @@ var Rootstock Network = Network{
 	},
 
 	Morpho: MorphoMetadata{},
+	MarketRouters: MarketRouters{
+		Icecreamswap: []common.Address{common.HexToAddress("0x63d3C7Ab37ca36A2A0A338076C163fF60c72527c")},
+		Openocean:    []common.Address{common.HexToAddress("0x6352a56caadC4F1E25CD6c75970Fa768A3304e64")},
+		Uniswap:      []common.Address{common.HexToAddress("0x0B14ff67f0014046b4b99057Aec4509640b3947A"), common.HexToAddress("0x244f68e77357f86a8522323eBF80b5FC2F814d3E")},
+	},
 	Token: TokenMetadata{
 		UsdcAddress: common.HexToAddress("0x3A15461d8AE0f0Fb5fA2629e9dA7D66A794a6E37"),
 	},

@@ -72,6 +72,10 @@ var Gensyn Network = Network{
 		MorphoMarketV1AdapterV2Factory: common.HexToAddress("0x155134544AE2Ec3AB23034BF620538482C5E3c40"),
 		MorphoMarketV1RegistryV2:       common.HexToAddress("0x53A687347c822D222058d3E99a566a3D3c0638e1"),
 	},
+	MarketRouters: MarketRouters{
+		Icecreamswap: []common.Address{common.HexToAddress("0x9E6d21E759A7A288b80eef94E4737D313D31c13f")},
+		Uniswap:      []common.Address{common.HexToAddress("0x447B8E40B0CdA8e55F405C86bC635D02d0540aB8"), common.HexToAddress("0x807F4E281B7A3B324825C64ca53c69F0b418dE40")},
+	},
 	Token: TokenMetadata{
 		WethAddress: common.HexToAddress("0x4200000000000000000000000000000000000006"),
 	},

@@ -24,6 +24,22 @@ export const plasma = makeConfig({
 		kyberswap: "plasma",
 		openocean: "plasma",
 	},
+	marketRouters: {
+		binance: ["0xB44446b0c8E56988c34f7Ff73Ae904982b5FdDA5"],
+		enso: ["0xCfBAa9Cfce952Ca4F4069874fF1Df8c05e37a3c7"],
+		icecreamswap: ["0xC87De04e2EC1F4282dFF2933A2D58199f688fC3d"],
+		kyberswap: ["0x6131B5fae19EA4f9D964eAc0408E4408b66337b5"],
+		okx: ["0x19D345f95A80cc136d898f41b490E023cFF78658"],
+		openocean: ["0x6352a56caadC4F1E25CD6c75970Fa768A3304e64"],
+		uniswap: [
+			"0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc",
+			"0x807F4E281B7A3B324825C64ca53c69F0b418dE40",
+		],
+		zeroex: [
+			"0x0000000000001fF3684f28c67538d4D072C22734",
+			"0x7F2194E8d4D5B5F889b17aeCe891F89Da74F5384",
+		],
+	},
 	bridges: {
 		chainlink: {
 			atlasNetworkName: "plasma-mainnet",

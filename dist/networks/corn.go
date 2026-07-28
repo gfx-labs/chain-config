@@ -77,6 +77,7 @@ var Corn Network = Network{
 		Bundler3:        common.HexToAddress("0x086889F9bdE8349512dD77088A7114E6C1c42Af7"),
 		UrdFactory:      common.HexToAddress("0xaBC2CBa3C8E265d63C04BF5fA41EE105d3D85ae3"),
 	},
+	MarketRouters: MarketRouters{},
 	Token: TokenMetadata{
 		WethAddress: common.HexToAddress("0xda5dDd7270381A7C2717aD10D1c0ecB19e3CDFb2"),
 	},
