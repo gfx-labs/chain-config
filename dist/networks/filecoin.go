@@ -78,6 +78,9 @@ var Filecoin Network = Network{
 	},
 
 	Morpho: MorphoMetadata{},
+	MarketRouters: MarketRouters{
+		Uniswap: []common.Address{common.HexToAddress("0x83702C6356A1028A900F83d446D189a31646a16b"), common.HexToAddress("0xcAb04058e60020d65D18D4B3DFF2cA1445D7099f")},
+	},
 	Token: TokenMetadata{
 		UsdcAddress: common.HexToAddress("0xEB466342C4d449BC9f53A865D5Cb90586f405215"),
 		WbtcAddress: common.HexToAddress("0x1a35EE4640b0A3B87705B0A4B45D227Ba60Ca2ad"),

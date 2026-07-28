@@ -20,6 +20,13 @@ export const goat = makeConfig({
 		coingecko: "goat",
 	},
 	markets: {},
+	marketRouters: {
+		icecreamswap: ["0xC87De04e2EC1F4282dFF2933A2D58199f688fC3d"],
+		uniswap: [
+			"0x738fD6d10bCc05c230388B4027CAd37f82fe2AF2",
+			"0xaa52bB8110fE38D0d2d2AF0B85C3A3eE622CA455",
+		],
+	},
 	bridges: {
 		stargate: {
 			endpointID: 30361,

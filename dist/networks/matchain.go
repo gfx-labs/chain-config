@@ -65,7 +65,8 @@ var Matchain Network = Network{
 		NativeCurrencyName:         "BNB",
 	},
 
-	Morpho: MorphoMetadata{},
+	Morpho:        MorphoMetadata{},
+	MarketRouters: MarketRouters{},
 	Token: TokenMetadata{
 		WethAddress: common.HexToAddress("0x4200000000000000000000000000000000000006"),
 		UsdcAddress: common.HexToAddress("0x679Dc08cC3A4acFeea2f7CAFAa37561aE0b41Ce7"),

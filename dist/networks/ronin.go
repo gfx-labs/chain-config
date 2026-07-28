@@ -68,7 +68,8 @@ var Ronin Network = Network{
 		NativeCurrencyName:         "RON",
 	},
 
-	Morpho: MorphoMetadata{},
+	Morpho:        MorphoMetadata{},
+	MarketRouters: MarketRouters{},
 	Token: TokenMetadata{
 		UsdcAddress: common.HexToAddress("0x0b7007c13325c48911f73a2dad5fa5dcbf808adc"),
 		WethAddress: common.HexToAddress("0xe514d9deb7966c8be0ca922de8a064264ea6bcd4"),

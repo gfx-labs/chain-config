@@ -76,6 +76,10 @@ var Zerog Network = Network{
 		PublicAllocator: common.HexToAddress("0x28a80F3713735CAD44bD9d7E1da9Fa16b0244497"),
 		UrdFactory:      common.HexToAddress("0x40bDDbFCA5fcDF6E2Bbd019aC782b6A61388ADE6"),
 	},
+	MarketRouters: MarketRouters{
+		Icecreamswap: []common.Address{common.HexToAddress("0x9E6d21E759A7A288b80eef94E4737D313D31c13f")},
+		Uniswap:      []common.Address{common.HexToAddress("0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc"), common.HexToAddress("0x807F4E281B7A3B324825C64ca53c69F0b418dE40")},
+	},
 	Token: TokenMetadata{
 		WethAddress: common.HexToAddress("0x1cd0690ff9a693f5ef2dd976660a8dafc81a109c"),
 	},

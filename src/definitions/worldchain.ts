@@ -24,6 +24,19 @@ export const worldchain = makeConfig({
 	markets: {
 		zeroex: true,
 	},
+	marketRouters: {
+		enso: ["0xF75584eF6673aD213a685a1B58Cc0330B8eA22Cf"],
+		icecreamswap: ["0xC87De04e2EC1F4282dFF2933A2D58199f688fC3d"],
+		uniswap: [
+			"0x091AD9e2e6e5eD44c1c66dB50e49A601F9f36cF6",
+			"0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D",
+			"0x8B844f885672f333Bc0042cB669255f93a4C1E6b",
+		],
+		zeroex: [
+			"0x0000000000001fF3684f28c67538d4D072C22734",
+			"0x1072a0A713A23a2Da9BAB99E9CD68187970E89a4",
+		],
+	},
 	bridges: {
 		chainlink: {
 			atlasNetworkName: "ethereum-mainnet-worldchain-1",

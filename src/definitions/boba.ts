@@ -27,6 +27,13 @@ export const boba = makeConfig({
 	markets: {
 		icecreamswap: true,
 	},
+	marketRouters: {
+		icecreamswap: ["0xC87De04e2EC1F4282dFF2933A2D58199f688fC3d"],
+		uniswap: [
+			"0x4BA622997559F9b5Ac68751D7Fc3dEecc23a0e88",
+			"0x759E8B0cb9d65291e258aE3e043258ae1dD0df16",
+		],
+	},
 	bridges: {},
 	oracles: {
 		coingecko: {

@@ -108,6 +108,18 @@ var Optimism Network = Network{
 		Bundler3:        common.HexToAddress("0xFBCd3C258feB131D8E038F2A3a670A7bE0507C05"),
 		UrdFactory:      common.HexToAddress("0xe41AEcB4570A7B68d15a4Fb0a03ACEe421A21498"),
 	},
+	MarketRouters: MarketRouters{
+		Binance:      []common.Address{common.HexToAddress("0xB44446b0c8E56988c34f7Ff73Ae904982b5FdDA5")},
+		Enso:         []common.Address{common.HexToAddress("0xF75584eF6673aD213a685a1B58Cc0330B8eA22Cf")},
+		Icecreamswap: []common.Address{common.HexToAddress("0xa575f37e869e6887564F87c07e2885e08D542C4a")},
+		Kyberswap:    []common.Address{common.HexToAddress("0x6131B5fae19EA4f9D964eAc0408E4408b66337b5")},
+		Odos:         []common.Address{common.HexToAddress("0xCa423977156BB05b13A2BA3b76Bc5419E2fE9680")},
+		Okx:          []common.Address{common.HexToAddress("0xDd5E9B947c99Aa60bab00ca4631Dce63b49983E7")},
+		Openocean:    []common.Address{common.HexToAddress("0x6352a56caadC4F1E25CD6c75970Fa768A3304e64")},
+		Paraswap:     []common.Address{common.HexToAddress("0x6A000F20005980200259B80c5102003040001068")},
+		Uniswap:      []common.Address{common.HexToAddress("0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45"), common.HexToAddress("0x8B844f885672f333Bc0042cB669255f93a4C1E6b"), common.HexToAddress("0xCb1355ff08Ab38bBCE60111F1bb2B784bE25D7e8")},
+		Zeroex:       []common.Address{common.HexToAddress("0x0000000000001fF3684f28c67538d4D072C22734"), common.HexToAddress("0x8CF38ec1BB723e6B948442Dc604b35a54D3Dc893")},
+	},
 	Token: TokenMetadata{
 		UsdcAddress: common.HexToAddress("0x0b2c639c533813f4aa9d7837caf62653d097ff85"),
 		WethAddress: common.HexToAddress("0x4200000000000000000000000000000000000006"),

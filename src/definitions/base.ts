@@ -46,6 +46,27 @@ export const base = makeConfig({
 		icecreamswap: true,
 		cowswap: "base",
 	},
+	marketRouters: {
+		binance: ["0xB44446b0c8E56988c34f7Ff73Ae904982b5FdDA5"],
+		enso: ["0xF75584eF6673aD213a685a1B58Cc0330B8eA22Cf"],
+		fabric: ["0x7C137a37742437d2212B7bd873ed135b5C4c61da"],
+		icecreamswap: ["0xC87De04e2EC1F4282dFF2933A2D58199f688fC3d"],
+		kyberswap: ["0x6131B5fae19EA4f9D964eAc0408E4408b66337b5"],
+		native: ["0xaEC634d949df14Be76dC317504C7b9a6a8A5f576"],
+		odos: ["0x19cEeAd7105607Cd444F5ad10dd51356436095a1"],
+		okx: ["0xC8F6b8Ba0DC0f175B568B99440B0867F69A29265"],
+		openocean: ["0x6352a56caadC4F1E25CD6c75970Fa768A3304e64"],
+		paraswap: ["0x6A000F20005980200259B80c5102003040001068"],
+		uniswap: [
+			"0x2626664c2603336E57B271c5C0b26F421741e481",
+			"0x3fC91A3afd70395Cd496C647d5a6CC9D4B2b7FAD",
+			"0xFdf682F51FE81Aa4898F0AE2163d8A55c127fbC7",
+		],
+		zeroex: [
+			"0x0000000000001fF3684f28c67538d4D072C22734",
+			"0x7747F8D2a76BD6345Cc29622a946A929647F2359",
+		],
+	},
 	bridges: {
 		chainlink: {
 			atlasNetworkName: "ethereum-mainnet-base-1",

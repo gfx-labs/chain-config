@@ -20,6 +20,12 @@ export const redbelly = makeConfig({
 		coingecko: "redbelly-network",
 	},
 	markets: {},
+	marketRouters: {
+		uniswap: [
+			"0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc",
+			"0x807F4E281B7A3B324825C64ca53c69F0b418dE40",
+		],
+	},
 	bridges: {},
 	oracles: {},
 	morpho: {},

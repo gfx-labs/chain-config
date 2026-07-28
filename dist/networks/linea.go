@@ -71,6 +71,17 @@ var Linea Network = Network{
 	},
 
 	Morpho: MorphoMetadata{},
+	MarketRouters: MarketRouters{
+		Binance:      []common.Address{common.HexToAddress("0xB44446b0c8E56988c34f7Ff73Ae904982b5FdDA5")},
+		Enso:         []common.Address{common.HexToAddress("0xA146d46823f3F594B785200102Be5385CAfCE9B5")},
+		Icecreamswap: []common.Address{common.HexToAddress("0x2fF506ed9729580EF8Bf04429614beB1baE5F76D")},
+		Kyberswap:    []common.Address{common.HexToAddress("0x6131B5fae19EA4f9D964eAc0408E4408b66337b5")},
+		Odos:         []common.Address{common.HexToAddress("0x2d8879046f1559E53eb052E949e9544bCB72f414")},
+		Okx:          []common.Address{common.HexToAddress("0x2E1Dee213BA8d7af0934C49a23187BabEACa8764")},
+		Openocean:    []common.Address{common.HexToAddress("0x6352a56caadC4F1E25CD6c75970Fa768A3304e64")},
+		Uniswap:      []common.Address{common.HexToAddress("0x3d4e44Eb1374240CE5F1B871ab261CD16335B76a"), common.HexToAddress("0x8B844f885672f333Bc0042cB669255f93a4C1E6b"), common.HexToAddress("0xD7c7D7F18dD5388D5217c9696C7e799fCd75c6bD")},
+		Zeroex:       []common.Address{common.HexToAddress("0x0000000000001fF3684f28c67538d4D072C22734"), common.HexToAddress("0x1816eA2150e74Eb3068A4e3809E461Cc6977A7D7")},
+	},
 	Token: TokenMetadata{
 		UsdcAddress: common.HexToAddress("0x176211869ca2b568f2a7d4ee941e073a821ee1ff"),
 		WethAddress: common.HexToAddress("0xe5d7c2a44ffddf6b295a15c148167daaaf5cf34f"),

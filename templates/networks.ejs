@@ -5,6 +5,7 @@ import (
   "errors"
   "time"
   "fmt"
+  "sort"
   "strings"
   "strconv"
 )
@@ -22,6 +23,7 @@ import (
     var props_11 = MorphoMetadata.getProperties();
     var props_12 = OkuCustomOrderTypesMetadata.getProperties();
     var props_13 = UniswapV4Metadata.getProperties();
+    var props_14 = MarketRouters.getProperties();
 %>
 
 var ErrNetworkNotFound = errors.New("chain not found")
@@ -405,6 +407,47 @@ type BlockExplorer struct {<% for(const prop of props_7) {%>
 
 type Markets struct {<% for(const prop of props_8) {%>
     <%- helpers.displayProp(prop) %> <% } %>
+}
+
+type MarketRouters struct {<% for(const prop of props_14) {%>
+    <%- helpers.displayProp(prop) %> <% } %>
+}
+
+func (m *MarketRouters) All() map[string][]common.Address {
+    out := make(map[string][]common.Address)<% for(const prop of props_14) {%>
+    if len(m.<%- h.snakeToCamel(prop.getName()) %>) > 0 {
+        out["<%- prop.getName() %>"] = m.<%- h.snakeToCamel(prop.getName()) %>
+    } <% } %>
+    return out
+}
+
+func (n *Network) RouterAllowlist() map[common.Address]struct{} {
+    out := make(map[common.Address]struct{})
+    for _, addrs := range n.MarketRouters.All() {
+        for _, addr := range addrs {
+            out[addr] = struct{}{}
+        }
+    }
+    return out
+}
+
+func (n *Network) IsAllowedRouter(addr common.Address) bool {
+    _, ok := n.RouterAllowlist()[addr]
+    return ok
+}
+
+func (n *Network) MarketsForRouter(addr common.Address) []string {
+    var found []string
+    for market, addrs := range n.MarketRouters.All() {
+        for _, a := range addrs {
+            if a == addr {
+                found = append(found, market)
+                break
+            }
+        }
+    }
+    sort.Strings(found)
+    return found
 }
 
 type Bridges struct {<% for(const prop of props_9) {%>

@@ -51,6 +51,26 @@ export const mainnet = makeConfig({
 		zeroex: true,
 		cowswap: "mainnet",
 	},
+	marketRouters: {
+		binance: ["0xB44446b0c8E56988c34f7Ff73Ae904982b5FdDA5"],
+		enso: ["0xF75584eF6673aD213a685a1B58Cc0330B8eA22Cf"],
+		icecreamswap: ["0xa929c559E5e6537359680F39CB4E3708E1a14dd1"],
+		kyberswap: ["0x6131B5fae19EA4f9D964eAc0408E4408b66337b5"],
+		native: ["0x8a2ddc0461Fcf96F81a05529Bed540d4f1eb2a00"],
+		odos: ["0x0D05a7D3448512B78fa8A9e46c4872C88C4a0D05"],
+		okx: ["0x28b1Dc1a5E3699A428BC51d234DFab7C9CB2a183"],
+		openocean: ["0x6352a56caadC4F1E25CD6c75970Fa768A3304e64"],
+		paraswap: ["0x6A000F20005980200259B80c5102003040001068"],
+		uniswap: [
+			"0x66a9893cC07D91D95644AEDD05D03f95e1dBA8Af",
+			"0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45",
+			"0xCb640A86855f1A828c27241bA364348de28abe66",
+		],
+		zeroex: [
+			"0x0000000000001fF3684f28c67538d4D072C22734",
+			"0x7f54F05635d15Cde17A49502fEdB9D1803A3Be8A",
+		],
+	},
 	bridges: {
 		chainlink: {
 			atlasNetworkName: "ethereum-mainnet",

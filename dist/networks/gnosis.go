@@ -72,6 +72,13 @@ var Gnosis Network = Network{
 	},
 
 	Morpho: MorphoMetadata{},
+	MarketRouters: MarketRouters{
+		Enso:         []common.Address{common.HexToAddress("0xF75584eF6673aD213a685a1B58Cc0330B8eA22Cf")},
+		Icecreamswap: []common.Address{common.HexToAddress("0xC87De04e2EC1F4282dFF2933A2D58199f688fC3d")},
+		Openocean:    []common.Address{common.HexToAddress("0x6352a56caadC4F1E25CD6c75970Fa768A3304e64")},
+		Paraswap:     []common.Address{common.HexToAddress("0x6A000F20005980200259B80c5102003040001068")},
+		Uniswap:      []common.Address{common.HexToAddress("0x75FC67473A91335B5b8F8821277262a13B38c9b3"), common.HexToAddress("0xc6D25285D5C5b62b7ca26D6092751A145D50e9Be")},
+	},
 	Token: TokenMetadata{
 		UsdcAddress: common.HexToAddress("0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4"),
 		WethAddress: common.HexToAddress("0xe91d153e0b41518a2ce8dd3d7944fa863463a97d"),

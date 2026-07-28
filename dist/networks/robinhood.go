@@ -68,6 +68,14 @@ var Robinhood Network = Network{
 	},
 
 	Morpho: MorphoMetadata{},
+	MarketRouters: MarketRouters{
+		Icecreamswap: []common.Address{common.HexToAddress("0x603206D6105217DD972E4Ab30676A220CA393346")},
+		Kyberswap:    []common.Address{common.HexToAddress("0x6131B5fae19EA4f9D964eAc0408E4408b66337b5")},
+		Native:       []common.Address{common.HexToAddress("0xa5ec1f0aC784C3620fFDcdf2A7DbcEF9DA658ea4")},
+		Okx:          []common.Address{common.HexToAddress("0xE58b3089dF6667fBf99b75595a1671BaF6797D6d")},
+		Uniswap:      []common.Address{common.HexToAddress("0x8876789976dEcBfCbBbe364623C63652db8C0904"), common.HexToAddress("0xCaf681a66D020601342297493863E78C959E5cb2")},
+		Zeroex:       []common.Address{common.HexToAddress("0x0000000000001fF3684f28c67538d4D072C22734"), common.HexToAddress("0xe72688F7d25D7318B9A81F21EdDa640CA948c83B")},
+	},
 	Token: TokenMetadata{
 		WethAddress: common.HexToAddress("0x0Bd7D308f8E1639FAb988df18A8011f41EAcAD73"),
 	},

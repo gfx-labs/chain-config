@@ -70,6 +70,9 @@ var Redbelly Network = Network{
 	},
 
 	Morpho: MorphoMetadata{},
+	MarketRouters: MarketRouters{
+		Uniswap: []common.Address{common.HexToAddress("0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc"), common.HexToAddress("0x807F4E281B7A3B324825C64ca53c69F0b418dE40")},
+	},
 	Token: TokenMetadata{
 		WethAddress: common.HexToAddress("0x6ed1F491e2d31536D6561f6bdB2AdC8F092a6076"),
 		UsdcAddress: common.HexToAddress("0x8201c02d4AB2214471E8C3AD6475C8b0CD9F2D06"),

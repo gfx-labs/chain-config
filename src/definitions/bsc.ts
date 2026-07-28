@@ -41,6 +41,26 @@ export const bsc = makeConfig({
 		icecreamswap: true,
 		cowswap: "bnb",
 	},
+	marketRouters: {
+		binance: ["0xB44446b0c8E56988c34f7Ff73Ae904982b5FdDA5"],
+		enso: ["0xF75584eF6673aD213a685a1B58Cc0330B8eA22Cf"],
+		icecreamswap: ["0x1a3304cBef66de00FbE1548CC4C6585aD22FbCFf"],
+		kyberswap: ["0x6131B5fae19EA4f9D964eAc0408E4408b66337b5"],
+		native: ["0xF064b069Ed18Eb5c61159247C55C5af79B28a968"],
+		odos: ["0x89b8AA89FDd0507a99d334CBe3C808fAFC7d850E"],
+		okx: ["0x62cceF0b4545166f721cAa9fEe13c1d3767E27dc"],
+		openocean: ["0x6352a56caadC4F1E25CD6c75970Fa768A3304e64"],
+		paraswap: ["0x6A000F20005980200259B80c5102003040001068"],
+		uniswap: [
+			"0x4Dae2f939ACf50408e13d58534Ff8c2776d45265",
+			"0x8B844f885672f333Bc0042cB669255f93a4C1E6b",
+			"0xB971eF87ede563556b2ED4b1C0b0019111Dd85d2",
+		],
+		zeroex: [
+			"0x0000000000001fF3684f28c67538d4D072C22734",
+			"0xc2eff1F1cE35d395408A34Ad881dBCD978F40b89",
+		],
+	},
 	bridges: {
 		chainlink: {
 			atlasNetworkName: "bsc-mainnet",

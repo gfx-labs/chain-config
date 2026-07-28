@@ -68,6 +68,10 @@ var Goat Network = Network{
 	},
 
 	Morpho: MorphoMetadata{},
+	MarketRouters: MarketRouters{
+		Icecreamswap: []common.Address{common.HexToAddress("0xC87De04e2EC1F4282dFF2933A2D58199f688fC3d")},
+		Uniswap:      []common.Address{common.HexToAddress("0x738fD6d10bCc05c230388B4027CAd37f82fe2AF2"), common.HexToAddress("0xaa52bB8110fE38D0d2d2AF0B85C3A3eE622CA455")},
+	},
 	Token: TokenMetadata{
 		WethAddress: common.HexToAddress("0xbC10000000000000000000000000000000000000"),
 		UsdcAddress: common.HexToAddress("0x3022b87ac063DE95b1570F46f5e470F8B53112D8"),

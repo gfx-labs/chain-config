@@ -22,6 +22,13 @@ export const bob = makeConfig({
 	markets: {
 		icecreamswap: true,
 	},
+	marketRouters: {
+		icecreamswap: ["0xC87De04e2EC1F4282dFF2933A2D58199f688fC3d"],
+		uniswap: [
+			"0x346239972d1fa486FC4a521031BC81bFB7D6e8a4",
+			"0x807F4E281B7A3B324825C64ca53c69F0b418dE40",
+		],
+	},
 	bridges: {
 		chainlink: {
 			atlasNetworkName: "bitcoin-mainnet-bob",

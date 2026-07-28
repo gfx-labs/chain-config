@@ -71,6 +71,16 @@ var Avalanche Network = Network{
 	},
 
 	Morpho: MorphoMetadata{},
+	MarketRouters: MarketRouters{
+		Enso:         []common.Address{common.HexToAddress("0xF75584eF6673aD213a685a1B58Cc0330B8eA22Cf")},
+		Icecreamswap: []common.Address{common.HexToAddress("0xa575f37e869e6887564F87c07e2885e08D542C4a")},
+		Kyberswap:    []common.Address{common.HexToAddress("0x6131B5fae19EA4f9D964eAc0408E4408b66337b5")},
+		Odos:         []common.Address{common.HexToAddress("0x88de50B233052e4Fb783d4F6db78Cc34fEa3e9FC")},
+		Okx:          []common.Address{common.HexToAddress("0xa94Fcf9fc56a864f8DE51e6315aee5863AD63C91")},
+		Openocean:    []common.Address{common.HexToAddress("0x6352a56caadC4F1E25CD6c75970Fa768A3304e64")},
+		Uniswap:      []common.Address{common.HexToAddress("0x4Dae2f939ACf50408e13d58534Ff8c2776d45265"), common.HexToAddress("0x8B844f885672f333Bc0042cB669255f93a4C1E6b"), common.HexToAddress("0xbb00FF08d01D300023C629E8fFfFcb65A5a578cE")},
+		Zeroex:       []common.Address{common.HexToAddress("0x0000000000001fF3684f28c67538d4D072C22734"), common.HexToAddress("0x6De411A14aEaafB3f23697A4472a4D4ed275Ac0f")},
+	},
 	Token: TokenMetadata{
 		WethAddress: common.HexToAddress("0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7"),
 	},

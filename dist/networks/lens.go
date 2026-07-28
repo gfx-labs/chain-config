@@ -69,7 +69,8 @@ var Lens Network = Network{
 		NativeCurrencyName:         "GHO",
 	},
 
-	Morpho: MorphoMetadata{},
+	Morpho:        MorphoMetadata{},
+	MarketRouters: MarketRouters{},
 	Token: TokenMetadata{
 		WethAddress: common.HexToAddress("0x6bDc36E20D267Ff0dd6097799f82e78907105e2F"),
 		UsdcAddress: common.HexToAddress("0x88F08E304EC4f90D644Cec3Fb69b8aD414acf884"),

@@ -27,6 +27,13 @@ export const xdc = makeConfig({
 	markets: {
 		icecreamswap: true,
 	},
+	marketRouters: {
+		icecreamswap: ["0x0EE6f0900990b23A2a96a6F41EB56693c9076031"],
+		uniswap: [
+			"0x738fD6d10bCc05c230388B4027CAd37f82fe2AF2",
+			"0xaa52bB8110fE38D0d2d2AF0B85C3A3eE622CA455",
+		],
+	},
 	bridges: {
 		stargate: {
 			endpointID: 30365,

@@ -21,6 +21,13 @@ export const hemi = makeConfig({
 	markets: {
 		icecreamswap: true,
 	},
+	marketRouters: {
+		icecreamswap: ["0xC87De04e2EC1F4282dFF2933A2D58199f688fC3d"],
+		uniswap: [
+			"0x533c7A53389e0538AB6aE1D7798D6C1213eAc28B",
+			"0x864DDc9B50B9A0dF676d826c9B9EDe9F8913a160",
+		],
+	},
 	bridges: {
 		chainlink: {
 			atlasNetworkName: "hemi-mainnet",

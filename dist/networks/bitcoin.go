@@ -51,8 +51,9 @@ var Bitcoin Network = Network{
 	},
 	Uniswap: UniswapMetadata{},
 
-	Morpho: MorphoMetadata{},
-	Token:  TokenMetadata{},
+	Morpho:        MorphoMetadata{},
+	MarketRouters: MarketRouters{},
+	Token:         TokenMetadata{},
 	Contracts: map[string]ChainContract{
 		"nftManager": {
 			BlockCreated: 0,

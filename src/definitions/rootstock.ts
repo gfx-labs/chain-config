@@ -25,6 +25,14 @@ export const rootstock = makeConfig({
 		openocean: "rootstock",
 		icecreamswap: true,
 	},
+	marketRouters: {
+		icecreamswap: ["0x63d3C7Ab37ca36A2A0A338076C163fF60c72527c"],
+		openocean: ["0x6352a56caadC4F1E25CD6c75970Fa768A3304e64"],
+		uniswap: [
+			"0x0B14ff67f0014046b4b99057Aec4509640b3947A",
+			"0x244f68e77357f86a8522323eBF80b5FC2F814d3E",
+		],
+	},
 	morpho: {},
 	bridges: {
 		chainlink: {

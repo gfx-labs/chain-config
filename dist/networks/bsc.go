@@ -86,6 +86,19 @@ var Bsc Network = Network{
 	},
 
 	Morpho: MorphoMetadata{},
+	MarketRouters: MarketRouters{
+		Binance:      []common.Address{common.HexToAddress("0xB44446b0c8E56988c34f7Ff73Ae904982b5FdDA5")},
+		Enso:         []common.Address{common.HexToAddress("0xF75584eF6673aD213a685a1B58Cc0330B8eA22Cf")},
+		Icecreamswap: []common.Address{common.HexToAddress("0x1a3304cBef66de00FbE1548CC4C6585aD22FbCFf")},
+		Kyberswap:    []common.Address{common.HexToAddress("0x6131B5fae19EA4f9D964eAc0408E4408b66337b5")},
+		Native:       []common.Address{common.HexToAddress("0xF064b069Ed18Eb5c61159247C55C5af79B28a968")},
+		Odos:         []common.Address{common.HexToAddress("0x89b8AA89FDd0507a99d334CBe3C808fAFC7d850E")},
+		Okx:          []common.Address{common.HexToAddress("0x62cceF0b4545166f721cAa9fEe13c1d3767E27dc")},
+		Openocean:    []common.Address{common.HexToAddress("0x6352a56caadC4F1E25CD6c75970Fa768A3304e64")},
+		Paraswap:     []common.Address{common.HexToAddress("0x6A000F20005980200259B80c5102003040001068")},
+		Uniswap:      []common.Address{common.HexToAddress("0x4Dae2f939ACf50408e13d58534Ff8c2776d45265"), common.HexToAddress("0x8B844f885672f333Bc0042cB669255f93a4C1E6b"), common.HexToAddress("0xB971eF87ede563556b2ED4b1C0b0019111Dd85d2")},
+		Zeroex:       []common.Address{common.HexToAddress("0x0000000000001fF3684f28c67538d4D072C22734"), common.HexToAddress("0xc2eff1F1cE35d395408A34Ad881dBCD978F40b89")},
+	},
 	Token: TokenMetadata{
 		UsdcAddress: common.HexToAddress("0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d"),
 		WbtcAddress: common.HexToAddress("0x7130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c"),

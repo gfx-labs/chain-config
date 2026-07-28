@@ -23,6 +23,14 @@ export const etherlink = makeConfig({
 		kyberswap: "etherlink",
 		threeroute: true,
 	},
+	marketRouters: {
+		kyberswap: ["0x6131B5fae19EA4f9D964eAc0408E4408b66337b5"],
+		threeroute: ["0x1B62C2CEf163E3120E512F71F6e6E99058c80F6E"],
+		uniswap: [
+			"0x9db70E29712Cc8Af10c2B597BaDA6784544FF407",
+			"0xdD489C75be1039ec7d843A6aC2Fd658350B067Cf",
+		],
+	},
 	bridges: {
 		stargate: {
 			endpointID: 30292,

@@ -21,6 +21,20 @@ export const robinhood = makeConfig({
 	markets: {
 		openocean: "robinhood",
 	},
+	marketRouters: {
+		icecreamswap: ["0x603206D6105217DD972E4Ab30676A220CA393346"],
+		kyberswap: ["0x6131B5fae19EA4f9D964eAc0408E4408b66337b5"],
+		native: ["0xa5ec1f0aC784C3620fFDcdf2A7DbcEF9DA658ea4"],
+		okx: ["0xE58b3089dF6667fBf99b75595a1671BaF6797D6d"],
+		uniswap: [
+			"0x8876789976dEcBfCbBbe364623C63652db8C0904",
+			"0xCaf681a66D020601342297493863E78C959E5cb2",
+		],
+		zeroex: [
+			"0x0000000000001fF3684f28c67538d4D072C22734",
+			"0xe72688F7d25D7318B9A81F21EdDa640CA948c83B",
+		],
+	},
 	bridges: {},
 	oracles: {},
 	morpho: {},

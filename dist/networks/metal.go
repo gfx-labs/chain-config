@@ -66,7 +66,8 @@ var Metal Network = Network{
 		NativeCurrencyName:         "ETH",
 	},
 
-	Morpho: MorphoMetadata{},
+	Morpho:        MorphoMetadata{},
+	MarketRouters: MarketRouters{},
 	Token: TokenMetadata{
 		WethAddress: common.HexToAddress("0x4200000000000000000000000000000000000006"),
 	},

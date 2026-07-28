@@ -21,6 +21,13 @@ export const zerog = makeConfig({
 		coingecko: "0g",
 	},
 	markets: {},
+	marketRouters: {
+		icecreamswap: ["0x9E6d21E759A7A288b80eef94E4737D313D31c13f"],
+		uniswap: [
+			"0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc",
+			"0x807F4E281B7A3B324825C64ca53c69F0b418dE40",
+		],
+	},
 	bridges: {
 		chainlink: {
 			atlasNetworkName: "0g-mainnet",

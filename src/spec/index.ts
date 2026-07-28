@@ -120,6 +120,22 @@ export interface Markets {
 	icecreamswap?: boolean;
 }
 
+export interface MarketRouters {
+	binance?: ReadonlyArray<Address>;
+	enso?: ReadonlyArray<Address>;
+	fabric?: ReadonlyArray<Address>;
+	icecreamswap?: ReadonlyArray<Address>;
+	kyberswap?: ReadonlyArray<Address>;
+	native?: ReadonlyArray<Address>;
+	odos?: ReadonlyArray<Address>;
+	okx?: ReadonlyArray<Address>;
+	openocean?: ReadonlyArray<Address>;
+	paraswap?: ReadonlyArray<Address>;
+	threeroute?: ReadonlyArray<Address>;
+	uniswap?: ReadonlyArray<Address>;
+	zeroex?: ReadonlyArray<Address>;
+}
+
 export interface Bridges {
 	deswap?: {
 		chainId: number;
@@ -219,6 +235,7 @@ export interface IChainInfo<
 		coingecko?: string;
 	};
 	markets: Markets;
+	marketRouters?: MarketRouters;
 	bridges: Bridges;
 	oracles: Oracles;
 
