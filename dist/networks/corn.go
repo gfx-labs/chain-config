@@ -13,6 +13,7 @@ var Corn Network = Network{
 	},
 	Caip2Namespace:    "eip155",
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/corn-logo.svg",
+	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/corn.png",
 	Deprecated:        true,
 	LiteChain:         false,
 	SortIndex:         25,

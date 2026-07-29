@@ -13,6 +13,7 @@ var Moonbeam Network = Network{
 	},
 	Caip2Namespace:    "eip155",
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/moonbeam-logo.svg",
+	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/glmr.png",
 	Deprecated:        true,
 	LiteChain:         false,
 	SortIndex:         38,

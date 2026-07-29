@@ -13,6 +13,7 @@ var Telos Network = Network{
 	},
 	Caip2Namespace:    "eip155",
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/telos-logo.svg",
+	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/telos.png",
 	Deprecated:        true,
 	LiteChain:         false,
 	SortIndex:         32,

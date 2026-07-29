@@ -13,6 +13,7 @@ var Matchain Network = Network{
 	},
 	Caip2Namespace:    "eip155",
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/matchain-logo.svg",
+	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/bnb.png",
 	Deprecated:        true,
 	LiteChain:         false,
 	SortIndex:         23,

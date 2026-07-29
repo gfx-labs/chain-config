@@ -14,6 +14,7 @@ var Zcash Network = Network{
 	Caip2Namespace:    "bip122",
 	Caip2Reference:    "00040fe8ec8471911baa1db1266ea15d",
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/zcash-logo.webp",
+	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/zec.png",
 	Deprecated:        false,
 	LiteChain:         false,
 	SortIndex:         1002,

@@ -14,6 +14,7 @@ var Solana Network = Network{
 	Caip2Namespace:    "solana",
 	Caip2Reference:    "5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/solana-logo.webp",
+	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/sol.png",
 	Deprecated:        false,
 	LiteChain:         false,
 	SortIndex:         1001,

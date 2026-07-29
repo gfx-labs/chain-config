@@ -13,6 +13,7 @@ var Bsc Network = Network{
 	},
 	Caip2Namespace:    "eip155",
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/bsc-logo.svg",
+	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/bnb.png",
 	Deprecated:        false,
 	LiteChain:         false,
 	SortIndex:         6,

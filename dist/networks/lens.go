@@ -13,6 +13,7 @@ var Lens Network = Network{
 	},
 	Caip2Namespace:    "eip155",
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/lens-logo.svg",
+	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/gho.png",
 	Deprecated:        true,
 	LiteChain:         false,
 	SortIndex:         31,

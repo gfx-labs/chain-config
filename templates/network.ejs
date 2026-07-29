@@ -25,6 +25,7 @@ var <%- helpers.snakeToCamel(chainName) %> Network = Network{
   Caip2Namespace: "<%- chain.caip2Namespace %>",
 <% if (chain.caip2Reference) { %>  Caip2Reference: "<%- chain.caip2Reference %>",
 <% } %>  LogoUrl: "<%- chain.logoUrl %>",
+  NativeLogoUrl: "<%- chain.nativeLogoUrl %>",
   Deprecated: <%- chain.deprecated %>,
   LiteChain: <%- chain.liteChain || false %>,
   SortIndex: <%- chain.sortIndex %>,

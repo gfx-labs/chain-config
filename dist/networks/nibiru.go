@@ -13,6 +13,7 @@ var Nibiru Network = Network{
 	},
 	Caip2Namespace:    "eip155",
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/nibiru-logo.svg",
+	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/nibi.svg",
 	Deprecated:        false,
 	LiteChain:         false,
 	SortIndex:         26,

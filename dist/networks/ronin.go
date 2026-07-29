@@ -13,6 +13,7 @@ var Ronin Network = Network{
 	},
 	Caip2Namespace:    "eip155",
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/ronin-logo.svg",
+	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/ron.svg",
 	Deprecated:        true,
 	LiteChain:         false,
 	SortIndex:         41,

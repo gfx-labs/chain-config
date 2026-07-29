@@ -13,6 +13,7 @@ var Avalanche Network = Network{
 	},
 	Caip2Namespace:    "eip155",
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/avalanche-logo.svg",
+	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/avax.svg",
 	Deprecated:        false,
 	LiteChain:         true,
 	SortIndex:         17,
