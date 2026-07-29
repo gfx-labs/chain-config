@@ -19,7 +19,12 @@ export const pharos = makeConfig({
 	blockAid: "",
 	externalId: {},
 	markets: {},
-	bridges: {},
+	bridges: {
+		cctp: {
+			domain: 31,
+			messageTransmitterV2: "0x81D40F21F12A8F0E3252Bccb954D722d4c464B64",
+		},
+	},
 	oracles: {},
 	morpho: {
 		deployBlock: 4202147,

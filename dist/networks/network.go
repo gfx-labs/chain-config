@@ -849,6 +849,7 @@ func (n *Network) MarketsForRouter(addr common.Address) []string {
 }
 
 type Bridges struct {
+	Cctp        map[string]interface{}
 	Deswap      map[string]interface{}
 	Bungee      interface{}
 	Lifi        interface{}

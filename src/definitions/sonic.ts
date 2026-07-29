@@ -29,6 +29,10 @@ export const sonic = makeConfig({
 		},
 	},
 	bridges: {
+		cctp: {
+			domain: 13,
+			messageTransmitterV2: "0x81D40F21F12A8F0E3252Bccb954D722d4c464B64",
+		},
 		chainlink: {
 			atlasNetworkName: "sonic-mainnet",
 			routerAddress: "0xB4e1Ff7882474BB93042be9AD5E1fA387949B860",

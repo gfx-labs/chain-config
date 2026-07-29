@@ -51,6 +51,10 @@ export const unichain = makeConfig({
 		],
 	},
 	bridges: {
+		cctp: {
+			domain: 10,
+			messageTransmitterV2: "0x81D40F21F12A8F0E3252Bccb954D722d4c464B64",
+		},
 		layerzero: {
 			eid: 30320,
 			tokens: [

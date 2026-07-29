@@ -68,6 +68,10 @@ export const base = makeConfig({
 		],
 	},
 	bridges: {
+		cctp: {
+			domain: 6,
+			messageTransmitterV2: "0x81D40F21F12A8F0E3252Bccb954D722d4c464B64",
+		},
 		chainlink: {
 			atlasNetworkName: "ethereum-mainnet-base-1",
 			routerAddress: "0x881e3A65B4d4a04dD529061dd0071cf975F58bCD",

@@ -61,6 +61,10 @@ export const arbitrum = makeConfig({
 		],
 	},
 	bridges: {
+		cctp: {
+			domain: 3,
+			messageTransmitterV2: "0x81D40F21F12A8F0E3252Bccb954D722d4c464B64",
+		},
 		chainlink: {
 			atlasNetworkName: "ethereum-mainnet-arbitrum-1",
 			routerAddress: "0x141fa059441E0ca23ce184B6A78bafD2A517DdE8",

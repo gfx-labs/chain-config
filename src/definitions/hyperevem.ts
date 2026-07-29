@@ -35,6 +35,10 @@ export const hyperevm = makeConfig({
 		],
 	},
 	bridges: {
+		cctp: {
+			domain: 19,
+			messageTransmitterV2: "0x81D40F21F12A8F0E3252Bccb954D722d4c464B64",
+		},
 		chainlink: {
 			atlasNetworkName: "hyperliquid-mainnet",
 			routerAddress: "0x13b3332b66389B1467CA6eBd6fa79775CCeF65ec",

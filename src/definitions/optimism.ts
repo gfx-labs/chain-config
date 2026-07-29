@@ -65,6 +65,10 @@ export const optimism = makeConfig({
 		],
 	},
 	bridges: {
+		cctp: {
+			domain: 2,
+			messageTransmitterV2: "0x81D40F21F12A8F0E3252Bccb954D722d4c464B64",
+		},
 		chainlink: {
 			atlasNetworkName: "ethereum-mainnet-optimism-1",
 			routerAddress: "0x3206695CaE29952f4b0c22a169725a865bc8Ce0f",

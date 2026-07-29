@@ -137,6 +137,10 @@ export interface MarketRouters {
 }
 
 export interface Bridges {
+	cctp?: {
+		domain: number;
+		messageTransmitterV2: Address;
+	};
 	deswap?: {
 		chainId: number;
 	};

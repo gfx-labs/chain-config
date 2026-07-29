@@ -38,6 +38,10 @@ export const worldchain = makeConfig({
 		],
 	},
 	bridges: {
+		cctp: {
+			domain: 14,
+			messageTransmitterV2: "0x81D40F21F12A8F0E3252Bccb954D722d4c464B64",
+		},
 		chainlink: {
 			atlasNetworkName: "ethereum-mainnet-worldchain-1",
 			routerAddress: "0x5fd9E4986187c56826A3064954Cfa2Cf250cfA0f",

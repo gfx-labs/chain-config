@@ -44,6 +44,10 @@ export const sei = makeConfig({
 		deployBlock: 166036723,
 	},
 	bridges: {
+		cctp: {
+			domain: 16,
+			messageTransmitterV2: "0x81D40F21F12A8F0E3252Bccb954D722d4c464B64",
+		},
 		chainlink: {
 			atlasNetworkName: "sei-mainnet",
 			routerAddress: "0xAba60dA7E88F7E8f5868C2B6dE06CB759d693af0",

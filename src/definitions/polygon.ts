@@ -60,6 +60,10 @@ export const polygon = makeConfig({
 		],
 	},
 	bridges: {
+		cctp: {
+			domain: 7,
+			messageTransmitterV2: "0x81D40F21F12A8F0E3252Bccb954D722d4c464B64",
+		},
 		chainlink: {
 			atlasNetworkName: "polygon-mainnet",
 			routerAddress: "0x849c5ED5a80F5B408Dd4969b78c2C8fdf0565Bfe",

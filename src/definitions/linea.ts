@@ -52,6 +52,10 @@ export const linea = makeConfig({
 		],
 	},
 	bridges: {
+		cctp: {
+			domain: 11,
+			messageTransmitterV2: "0x81D40F21F12A8F0E3252Bccb954D722d4c464B64",
+		},
 		chainlink: {
 			atlasNetworkName: "ethereum-mainnet-linea-1",
 			routerAddress: "0x549FEB73F2348F6cD99b9fc8c69252034897f06C",

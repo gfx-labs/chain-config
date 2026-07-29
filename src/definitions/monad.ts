@@ -42,6 +42,10 @@ export const monad = makeConfig({
 		],
 	},
 	bridges: {
+		cctp: {
+			domain: 15,
+			messageTransmitterV2: "0x81D40F21F12A8F0E3252Bccb954D722d4c464B64",
+		},
 		chainlink: {
 			atlasNetworkName: "monad-mainnet",
 			routerAddress: "0x33566fE5976AAa420F3d5C64996641Fc3858CaDB",

@@ -46,6 +46,10 @@ export const avalanche = makeConfig({
 		],
 	},
 	bridges: {
+		cctp: {
+			domain: 1,
+			messageTransmitterV2: "0x81D40F21F12A8F0E3252Bccb954D722d4c464B64",
+		},
 		chainlink: {
 			atlasNetworkName: "avalanche-mainnet",
 			routerAddress: "0xF4c7E640EdA248ef95972845a62bdC74237805dB",
