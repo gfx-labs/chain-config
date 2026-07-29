@@ -13,6 +13,7 @@ var Polygon Network = Network{
 	},
 	Caip2Namespace:    "eip155",
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/polygon-logo.svg",
+	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/matic.png",
 	Deprecated:        false,
 	LiteChain:         true,
 	SortIndex:         5,

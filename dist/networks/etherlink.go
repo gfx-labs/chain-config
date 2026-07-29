@@ -13,6 +13,7 @@ var Etherlink Network = Network{
 	},
 	Caip2Namespace:    "eip155",
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/etherlink-logo.svg",
+	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/xtz.png",
 	Deprecated:        false,
 	LiteChain:         false,
 	SortIndex:         13,

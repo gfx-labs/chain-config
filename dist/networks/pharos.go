@@ -13,6 +13,7 @@ var Pharos Network = Network{
 	},
 	Caip2Namespace:    "eip155",
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/pharos-logo.svg",
+	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/pros.png",
 	Deprecated:        false,
 	LiteChain:         true,
 	SortIndex:         46,

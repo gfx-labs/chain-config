@@ -13,6 +13,7 @@ var Gnosis Network = Network{
 	},
 	Caip2Namespace:    "eip155",
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/gnosis-logo.svg",
+	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/xdai.png",
 	Deprecated:        false,
 	LiteChain:         false,
 	SortIndex:         16,

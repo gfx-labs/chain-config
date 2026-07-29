@@ -13,6 +13,7 @@ var Plasma Network = Network{
 	},
 	Caip2Namespace:    "eip155",
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/plasma-logo.svg",
+	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/xpl.png",
 	Deprecated:        false,
 	LiteChain:         false,
 	SortIndex:         3,

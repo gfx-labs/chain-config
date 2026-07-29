@@ -13,6 +13,7 @@ var Saga Network = Network{
 	},
 	Caip2Namespace:    "eip155",
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/saga-logo.png",
+	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/saga.png",
 	Deprecated:        false,
 	LiteChain:         false,
 	SortIndex:         11,

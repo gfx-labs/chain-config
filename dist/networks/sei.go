@@ -13,6 +13,7 @@ var Sei Network = Network{
 	},
 	Caip2Namespace:    "eip155",
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/sei-logo.svg",
+	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/sei.png",
 	Deprecated:        false,
 	LiteChain:         false,
 	SortIndex:         7,

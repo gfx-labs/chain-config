@@ -13,6 +13,7 @@ var Tronshasta Network = Network{
 	},
 	Caip2Namespace:    "eip155",
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/tron-shasta-logo.svg",
+	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/tron.png",
 	Deprecated:        true,
 	LiteChain:         false,
 	SortIndex:         45,

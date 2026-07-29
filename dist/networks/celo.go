@@ -13,6 +13,7 @@ var Celo Network = Network{
 	},
 	Caip2Namespace:    "eip155",
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/celo-logo.svg",
+	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/celo.png",
 	Deprecated:        false,
 	LiteChain:         true,
 	SortIndex:         10,

@@ -14,6 +14,7 @@ var Bitcoin Network = Network{
 	Caip2Namespace:    "bip122",
 	Caip2Reference:    "000000000019d6689c085ae165831e93",
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/bitcoin-logo.webp",
+	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/btc.png",
 	Deprecated:        false,
 	LiteChain:         false,
 	SortIndex:         1000,

@@ -13,6 +13,7 @@ var Xdc Network = Network{
 	},
 	Caip2Namespace:    "eip155",
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/xdc-logo.svg",
+	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/xdc.png",
 	Deprecated:        false,
 	LiteChain:         false,
 	SortIndex:         15,
