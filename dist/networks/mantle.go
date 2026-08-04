@@ -75,7 +75,7 @@ var Mantle Network = Network{
 	MarketRouters: MarketRouters{
 		Icecreamswap: []common.Address{common.HexToAddress("0x3FFc2315A992b01dc4B3f79C8EEa1921091Ee24f")},
 		Odos:         []common.Address{common.HexToAddress("0xD9F4e85489aDCD0bAF0Cd63b4231c6af58c26745")},
-		Okx:          []common.Address{common.HexToAddress("0xcF76984119C7f6ae56fAfE680d39C08278b7eCF4")},
+		Okx:          []common.Address{common.HexToAddress("0xcF76984119C7f6ae56fAfE680d39C08278b7eCF4"), common.HexToAddress("0x57df6092665eb6058DE53939612413ff4B09114E")},
 		Openocean:    []common.Address{common.HexToAddress("0x6352a56caadC4F1E25CD6c75970Fa768A3304e64")},
 		Uniswap:      []common.Address{common.HexToAddress("0x447B8E40B0CdA8e55F405C86bC635D02d0540aB8"), common.HexToAddress("0x738fD6d10bCc05c230388B4027CAd37f82fe2AF2")},
 		Zeroex:       []common.Address{common.HexToAddress("0x0000000000005E88410CcDFaDe4a5EfaE4b49562"), common.HexToAddress("0xe3fBE7889A51d62AcD4E056d756F6eA04a3d8D2d")},

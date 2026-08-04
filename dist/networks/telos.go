@@ -69,8 +69,12 @@ var Telos Network = Network{
 		NativeCurrencyName:         "TLOS",
 	},
 
-	Morpho:        MorphoMetadata{},
-	MarketRouters: MarketRouters{},
+	Morpho: MorphoMetadata{},
+	MarketRouters: MarketRouters{
+		Icecreamswap: []common.Address{common.HexToAddress("0xBb5e1777A331ED93E07cF043363e48d320eb96c4")},
+		Openocean:    []common.Address{common.HexToAddress("0x6352a56caadC4F1E25CD6c75970Fa768A3304e64")},
+		Uniswap:      []common.Address{common.HexToAddress("0xaa52bB8110fE38D0d2d2AF0B85C3A3eE622CA455")},
+	},
 	Token: TokenMetadata{
 		WethAddress: common.HexToAddress("0xD102cE6A4dB07D247fcc28F366A623Df0938CA9E"),
 		WbtcAddress: common.HexToAddress("0x0555E30da8f98308EdB960aa94C0Db47230d2B9c"),

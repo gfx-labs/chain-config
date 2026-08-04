@@ -129,10 +129,13 @@ export interface MarketRouters {
 	native?: ReadonlyArray<Address>;
 	odos?: ReadonlyArray<Address>;
 	okx?: ReadonlyArray<Address>;
+	oneinch?: ReadonlyArray<Address>;
 	openocean?: ReadonlyArray<Address>;
 	paraswap?: ReadonlyArray<Address>;
+	propellerswap?: ReadonlyArray<Address>;
 	threeroute?: ReadonlyArray<Address>;
 	uniswap?: ReadonlyArray<Address>;
+	unizen?: ReadonlyArray<Address>;
 	zeroex?: ReadonlyArray<Address>;
 }
 

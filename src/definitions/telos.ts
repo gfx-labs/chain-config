@@ -22,6 +22,11 @@ export const telos = makeConfig({
 		openocean: "telos",
 		icecreamswap: true,
 	},
+	marketRouters: {
+		icecreamswap: ["0xBb5e1777A331ED93E07cF043363e48d320eb96c4"],
+		openocean: ["0x6352a56caadC4F1E25CD6c75970Fa768A3304e64"],
+		uniswap: ["0xaa52bB8110fE38D0d2d2AF0B85C3A3eE622CA455"],
+	},
 	bridges: {
 		stargate: {
 			endpointID: 30199,
