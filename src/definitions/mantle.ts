@@ -30,7 +30,10 @@ export const mantle = makeConfig({
 	marketRouters: {
 		icecreamswap: ["0x3FFc2315A992b01dc4B3f79C8EEa1921091Ee24f"],
 		odos: ["0xD9F4e85489aDCD0bAF0Cd63b4231c6af58c26745"],
-		okx: ["0xcF76984119C7f6ae56fAfE680d39C08278b7eCF4"],
+		okx: [
+			"0xcF76984119C7f6ae56fAfE680d39C08278b7eCF4",
+			"0x57df6092665eb6058DE53939612413ff4B09114E",
+		],
 		openocean: ["0x6352a56caadC4F1E25CD6c75970Fa768A3304e64"],
 		uniswap: [
 			"0x447B8E40B0CdA8e55F405C86bC635D02d0540aB8",

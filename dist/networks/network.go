@@ -760,19 +760,22 @@ type Markets struct {
 }
 
 type MarketRouters struct {
-	Binance      []common.Address
-	Enso         []common.Address
-	Fabric       []common.Address
-	Icecreamswap []common.Address
-	Kyberswap    []common.Address
-	Native       []common.Address
-	Odos         []common.Address
-	Okx          []common.Address
-	Openocean    []common.Address
-	Paraswap     []common.Address
-	Threeroute   []common.Address
-	Uniswap      []common.Address
-	Zeroex       []common.Address
+	Binance       []common.Address
+	Enso          []common.Address
+	Fabric        []common.Address
+	Icecreamswap  []common.Address
+	Kyberswap     []common.Address
+	Native        []common.Address
+	Odos          []common.Address
+	Okx           []common.Address
+	Oneinch       []common.Address
+	Openocean     []common.Address
+	Paraswap      []common.Address
+	Propellerswap []common.Address
+	Threeroute    []common.Address
+	Uniswap       []common.Address
+	Unizen        []common.Address
+	Zeroex        []common.Address
 }
 
 func (m *MarketRouters) All() map[string][]common.Address {
@@ -801,17 +804,26 @@ func (m *MarketRouters) All() map[string][]common.Address {
 	if len(m.Okx) > 0 {
 		out["okx"] = m.Okx
 	}
+	if len(m.Oneinch) > 0 {
+		out["oneinch"] = m.Oneinch
+	}
 	if len(m.Openocean) > 0 {
 		out["openocean"] = m.Openocean
 	}
 	if len(m.Paraswap) > 0 {
 		out["paraswap"] = m.Paraswap
 	}
+	if len(m.Propellerswap) > 0 {
+		out["propellerswap"] = m.Propellerswap
+	}
 	if len(m.Threeroute) > 0 {
 		out["threeroute"] = m.Threeroute
 	}
 	if len(m.Uniswap) > 0 {
 		out["uniswap"] = m.Uniswap
+	}
+	if len(m.Unizen) > 0 {
+		out["unizen"] = m.Unizen
 	}
 	if len(m.Zeroex) > 0 {
 		out["zeroex"] = m.Zeroex
