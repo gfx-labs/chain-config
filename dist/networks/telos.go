@@ -16,7 +16,7 @@ var Telos Network = Network{
 	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/telos.png",
 	Deprecated:        true,
 	LiteChain:         false,
-	SortIndex:         32,
+	SortIndex:         35,
 	LaunchTime:        1743089303,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

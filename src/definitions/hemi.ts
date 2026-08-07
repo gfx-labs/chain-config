@@ -6,7 +6,7 @@ export const hemi = makeConfig({
 	blockTimeSeconds: 12,
 	launchTime: 1741901593,
 	transactionType: "eip1559",
-	sortIndex: 22,
+	sortIndex: 24,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/hemi-logo.svg",
 	deprecated: false,
 

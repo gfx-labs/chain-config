@@ -16,7 +16,7 @@ var Mantle Network = Network{
 	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/mnt.png",
 	Deprecated:        false,
 	LiteChain:         false,
-	SortIndex:         30,
+	SortIndex:         33,
 	LaunchTime:        1720101600,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

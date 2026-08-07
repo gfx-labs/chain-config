@@ -16,7 +16,7 @@ var Tronshasta Network = Network{
 	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/tron.png",
 	Deprecated:        true,
 	LiteChain:         false,
-	SortIndex:         45,
+	SortIndex:         48,
 	LaunchTime:        1746055290,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

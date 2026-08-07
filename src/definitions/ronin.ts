@@ -6,7 +6,7 @@ export const ronin = makeConfig({
 	blockTimeSeconds: 3,
 	launchTime: 1761966026,
 	transactionType: "eip1559",
-	sortIndex: 41,
+	sortIndex: 44,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/ronin-logo.svg",
 	deprecated: true,
 

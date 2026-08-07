@@ -48,7 +48,7 @@ export const zcash = makeConfig({
 	caip2Reference: "00040fe8ec8471911baa1db1266ea15d",
 	internalName: "zcash",
 	transactionType: "zcash",
-	sortIndex: 1002,
+	sortIndex: 52,
 	launchTime: 1477641360,
 	blockTimeSeconds: 75,
 	deprecated: false,

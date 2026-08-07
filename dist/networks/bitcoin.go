@@ -17,7 +17,7 @@ var Bitcoin Network = Network{
 	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/btc.png",
 	Deprecated:        false,
 	LiteChain:         false,
-	SortIndex:         9,
+	SortIndex:         8,
 	LaunchTime:        1231006505,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

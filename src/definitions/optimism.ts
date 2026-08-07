@@ -10,7 +10,7 @@ export const optimism = makeConfig({
 	blockTimeSeconds: 0.5,
 	launchTime: 1688997600,
 	transactionType: "eip1559",
-	sortIndex: 8,
+	sortIndex: 10,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/optimism-logo.svg",
 	deprecated: false,
 

@@ -16,7 +16,7 @@ var Zksync Network = Network{
 	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/eth.png",
 	Deprecated:        true,
 	LiteChain:         false,
-	SortIndex:         35,
+	SortIndex:         38,
 	LaunchTime:        1696514400,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

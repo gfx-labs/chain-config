@@ -16,7 +16,7 @@ var Sei Network = Network{
 	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/sei.png",
 	Deprecated:        false,
 	LiteChain:         false,
-	SortIndex:         7,
+	SortIndex:         9,
 	LaunchTime:        1687788000,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

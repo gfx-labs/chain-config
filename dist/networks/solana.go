@@ -17,7 +17,7 @@ var Solana Network = Network{
 	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/sol.png",
 	Deprecated:        false,
 	LiteChain:         false,
-	SortIndex:         1001,
+	SortIndex:         51,
 	LaunchTime:        1584368940,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

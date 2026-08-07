@@ -6,7 +6,7 @@ export const sonic = makeConfig({
 	blockTimeSeconds: 3,
 	launchTime: 1737165834,
 	transactionType: "eip1559",
-	sortIndex: 33,
+	sortIndex: 36,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/sonic-logo.svg",
 	deprecated: true,
 

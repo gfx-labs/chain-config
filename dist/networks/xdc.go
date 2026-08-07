@@ -16,7 +16,7 @@ var Xdc Network = Network{
 	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/xdc.png",
 	Deprecated:        false,
 	LiteChain:         false,
-	SortIndex:         15,
+	SortIndex:         17,
 	LaunchTime:        1746453600,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

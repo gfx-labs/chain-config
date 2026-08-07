@@ -16,7 +16,7 @@ var Unichain Network = Network{
 	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/eth.png",
 	Deprecated:        false,
 	LiteChain:         false,
-	SortIndex:         18,
+	SortIndex:         20,
 	LaunchTime:        1750384728,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

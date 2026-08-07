@@ -16,7 +16,7 @@ var Boba Network = Network{
 	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/eth.png",
 	Deprecated:        false,
 	LiteChain:         false,
-	SortIndex:         14,
+	SortIndex:         16,
 	LaunchTime:        1690297200,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

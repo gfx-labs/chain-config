@@ -16,7 +16,7 @@ var Lightlink Network = Network{
 	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/eth.png",
 	Deprecated:        true,
 	LiteChain:         false,
-	SortIndex:         24,
+	SortIndex:         26,
 	LaunchTime:        1741485513,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

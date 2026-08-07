@@ -16,7 +16,7 @@ var Bsc Network = Network{
 	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/bnb.png",
 	Deprecated:        false,
 	LiteChain:         false,
-	SortIndex:         6,
+	SortIndex:         7,
 	LaunchTime:        1689346800,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

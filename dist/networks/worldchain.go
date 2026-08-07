@@ -16,7 +16,7 @@ var Worldchain Network = Network{
 	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/eth.png",
 	Deprecated:        false,
 	LiteChain:         true,
-	SortIndex:         28,
+	SortIndex:         31,
 	LaunchTime:        0,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

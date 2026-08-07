@@ -6,7 +6,7 @@ export const telos = makeConfig({
 	blockTimeSeconds: 0.5,
 	launchTime: 1743089303,
 	transactionType: "legacy",
-	sortIndex: 32,
+	sortIndex: 35,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/telos-logo.svg",
 	deprecated: true,
 

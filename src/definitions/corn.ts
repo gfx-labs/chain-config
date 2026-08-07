@@ -7,7 +7,7 @@ export const corn = makeConfig({
 	blockTimeSeconds: 35,
 	launchTime: 1733882663,
 	transactionType: "eip1559",
-	sortIndex: 25,
+	sortIndex: 27,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/corn-logo.svg",
 	deprecated: true,
 

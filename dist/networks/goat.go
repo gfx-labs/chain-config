@@ -16,7 +16,7 @@ var Goat Network = Network{
 	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/gbtc.svg",
 	Deprecated:        false,
 	LiteChain:         false,
-	SortIndex:         29,
+	SortIndex:         32,
 	LaunchTime:        1742159744,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

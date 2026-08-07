@@ -7,7 +7,7 @@ export const goat = makeConfig({
 	blockTimeSeconds: 3,
 	launchTime: 1742159744,
 	transactionType: "eip1559",
-	sortIndex: 29,
+	sortIndex: 32,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/goat-logo.svg",
 	deprecated: false,
 

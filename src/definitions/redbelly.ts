@@ -7,7 +7,7 @@ export const redbelly = makeConfig({
 	blockTimeSeconds: 5,
 	launchTime: 1741362479,
 	transactionType: "eip1559",
-	sortIndex: 27,
+	sortIndex: 30,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/redbelly-logo.svg",
 	deprecated: false,
 

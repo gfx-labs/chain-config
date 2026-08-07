@@ -16,7 +16,7 @@ var Taiko Network = Network{
 	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/eth.png",
 	Deprecated:        true,
 	LiteChain:         false,
-	SortIndex:         36,
+	SortIndex:         39,
 	LaunchTime:        1717509600,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

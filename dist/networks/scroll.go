@@ -16,7 +16,7 @@ var Scroll Network = Network{
 	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/eth.png",
 	Deprecated:        true,
 	LiteChain:         false,
-	SortIndex:         34,
+	SortIndex:         37,
 	LaunchTime:        1703257200,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

@@ -16,7 +16,7 @@ var Corn Network = Network{
 	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/corn.png",
 	Deprecated:        true,
 	LiteChain:         false,
-	SortIndex:         25,
+	SortIndex:         27,
 	LaunchTime:        1733882663,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

@@ -3,7 +3,7 @@ import { makeConfig } from "../util";
 
 export const rootstock = makeConfig({
 	...chain,
-	sortIndex: 12,
+	sortIndex: 14,
 	launchTime: 1702479600,
 	transactionType: "legacy",
 	name: "Rootstock",

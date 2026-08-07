@@ -16,7 +16,7 @@ var Rootstock Network = Network{
 	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/rbtc.png",
 	Deprecated:        false,
 	LiteChain:         false,
-	SortIndex:         12,
+	SortIndex:         14,
 	LaunchTime:        1702479600,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

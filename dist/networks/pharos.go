@@ -16,7 +16,7 @@ var Pharos Network = Network{
 	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/pros.png",
 	Deprecated:        false,
 	LiteChain:         true,
-	SortIndex:         46,
+	SortIndex:         49,
 	LaunchTime:        1777014000,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

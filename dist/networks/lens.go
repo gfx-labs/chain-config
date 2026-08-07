@@ -16,7 +16,7 @@ var Lens Network = Network{
 	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/gho.png",
 	Deprecated:        true,
 	LiteChain:         false,
-	SortIndex:         31,
+	SortIndex:         34,
 	LaunchTime:        1746050531,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

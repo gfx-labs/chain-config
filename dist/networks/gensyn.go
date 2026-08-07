@@ -16,7 +16,7 @@ var Gensyn Network = Network{
 	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/eth.png",
 	Deprecated:        false,
 	LiteChain:         false,
-	SortIndex:         25,
+	SortIndex:         28,
 	LaunchTime:        1773970570,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

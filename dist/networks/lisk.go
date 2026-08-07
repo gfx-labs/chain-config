@@ -16,7 +16,7 @@ var Lisk Network = Network{
 	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/eth.png",
 	Deprecated:        true,
 	LiteChain:         false,
-	SortIndex:         43,
+	SortIndex:         46,
 	LaunchTime:        1724076000,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

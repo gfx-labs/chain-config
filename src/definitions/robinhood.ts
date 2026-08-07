@@ -8,7 +8,7 @@ export const robinhood = makeConfig({
 	blockTimeSeconds: 2,
 	launchTime: 1784047160,
 	transactionType: "eip1559",
-	sortIndex: 5,
+	sortIndex: 6,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/robinhood-logo.svg",
 	deprecated: false,
 	liteChain: true,

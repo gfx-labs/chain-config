@@ -7,7 +7,7 @@ export const nibiru = makeConfig({
 	blockTimeSeconds: 2,
 	launchTime: 1750705200,
 	transactionType: "eip1559",
-	sortIndex: 26,
+	sortIndex: 29,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/nibiru-logo.svg",
 	deprecated: false,
 

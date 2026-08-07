@@ -7,7 +7,7 @@ export const worldchain = makeConfig({
 	blockTimeSeconds: 2,
 	launchTime: 0,
 	transactionType: "eip1559",
-	sortIndex: 28,
+	sortIndex: 31,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/worldchain-logo.svg",
 	deprecated: false,
 

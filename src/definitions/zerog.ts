@@ -7,7 +7,7 @@ export const zerog = makeConfig({
 	blockTimeSeconds: 1,
 	launchTime: 1733882663,
 	transactionType: "eip1559",
-	sortIndex: 44,
+	sortIndex: 47,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/zerog-logo.svg",
 	deprecated: false,
 

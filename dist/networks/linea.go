@@ -16,7 +16,7 @@ var Linea Network = Network{
 	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/eth.png",
 	Deprecated:        false,
 	LiteChain:         false,
-	SortIndex:         19,
+	SortIndex:         21,
 	LaunchTime:        1713362400,
 	SafeReorgDistance: 100,
 	BlockExplorers: map[string]BlockExplorer{

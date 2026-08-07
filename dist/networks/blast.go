@@ -16,7 +16,7 @@ var Blast Network = Network{
 	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/eth.png",
 	Deprecated:        true,
 	LiteChain:         false,
-	SortIndex:         40,
+	SortIndex:         43,
 	LaunchTime:        1719410400,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

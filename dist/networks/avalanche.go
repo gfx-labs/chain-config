@@ -16,7 +16,7 @@ var Avalanche Network = Network{
 	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/avax.svg",
 	Deprecated:        false,
 	LiteChain:         true,
-	SortIndex:         17,
+	SortIndex:         19,
 	LaunchTime:        1761794290,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

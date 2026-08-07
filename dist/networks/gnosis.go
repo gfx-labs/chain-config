@@ -16,7 +16,7 @@ var Gnosis Network = Network{
 	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/xdai.png",
 	Deprecated:        false,
 	LiteChain:         false,
-	SortIndex:         16,
+	SortIndex:         18,
 	LaunchTime:        1725890400,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

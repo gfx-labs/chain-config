@@ -7,7 +7,7 @@ export const sepolia = makeConfig({
 	blockTimeSeconds: 12,
 	launchTime: 1655683200,
 	transactionType: "eip1559",
-	sortIndex: 47,
+	sortIndex: 50,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/ethereum-logo.webp",
 	deprecated: true,
 	liteChain: true,

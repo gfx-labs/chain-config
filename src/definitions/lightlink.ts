@@ -7,7 +7,7 @@ export const lightlink = makeConfig({
 	blockTimeSeconds: 0.5,
 	launchTime: 1741485513,
 	transactionType: "legacy",
-	sortIndex: 24,
+	sortIndex: 26,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/lightlink-logo.svg",
 	deprecated: true,
 

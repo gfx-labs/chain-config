@@ -16,7 +16,7 @@ var Robinhood Network = Network{
 	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/eth.png",
 	Deprecated:        false,
 	LiteChain:         true,
-	SortIndex:         5,
+	SortIndex:         6,
 	LaunchTime:        1784047160,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

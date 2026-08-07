@@ -45,7 +45,7 @@ export const bitcoin = makeConfig({
 	caip2Reference: "000000000019d6689c085ae165831e93",
 	internalName: "bitcoin",
 	transactionType: "bitcoin",
-	sortIndex: 9,
+	sortIndex: 8,
 	launchTime: 1231006505,
 	blockTimeSeconds: 600,
 	deprecated: false,

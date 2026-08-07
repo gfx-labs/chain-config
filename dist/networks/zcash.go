@@ -17,7 +17,7 @@ var Zcash Network = Network{
 	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/zec.png",
 	Deprecated:        false,
 	LiteChain:         false,
-	SortIndex:         1002,
+	SortIndex:         52,
 	LaunchTime:        1477641360,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

@@ -6,7 +6,7 @@ export const bob = makeConfig({
 	blockTimeSeconds: 2,
 	launchTime: 1727359200,
 	transactionType: "eip1559",
-	sortIndex: 20,
+	sortIndex: 22,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/bob-logo.svg",
 	deprecated: false,
 

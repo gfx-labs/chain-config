@@ -16,7 +16,7 @@ var Celo Network = Network{
 	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/celo.png",
 	Deprecated:        false,
 	LiteChain:         true,
-	SortIndex:         10,
+	SortIndex:         12,
 	LaunchTime:        1737754469,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
