@@ -1,6 +1,6 @@
 {
   "name": "@gfxlabs/oku-chains",
-  "version": "1.12.30",
+  "version": "1.12.31",
   "license": "MIT",
   "main": "./dist/index.js",
   "module": "./dist/index-mjs.js",
@@ -51,7 +51,7 @@
     "tslib": "^2.8.1",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3",
-    "viem": "^2.55.0"
+    "viem": "^2.55.13"
   },
   "packageManager": "yarn@4.15.0",
   "peerDependencies": {
