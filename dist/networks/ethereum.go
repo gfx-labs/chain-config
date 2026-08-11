@@ -46,6 +46,7 @@ var Ethereum Network = Network{
 	V4Watchlist:      []common.Hash{common.HexToHash("0x2f92b371aef58f0abe9c10c06423de083405991f2839638914a1031e91d9a723"), common.HexToHash("0xdce6394339af00981949f5f3baf27e3610c76326a700af57e4b3e3ae4977f78d"), common.HexToHash("0x72331fcb696b0151904c03584b66dc8365bc63f8a144d89a773384e3a579ca73"), common.HexToHash("0xb98437c7ba28c6590dd4e1cc46aa89eed181f97108e5b6221730d41347bc817f"), common.HexToHash("0x8aa4e11cbdf30eedc92100f4c8a31ff748e201d44712cc8c90d189edaa8e4e47")},
 	BlockTimeSeconds: 12,
 	Oku: OkuMetadata{
+		Router:                        common.HexToAddress("0xb1f3a7B816B0681188F54dFa400991B93ADf00ed"),
 		LimitOrderRegistry:            common.HexToAddress("0x54dF9e11c7933a9cA3BD1E540B63dA15edAe40bf"),
 		LimitOrderRegistryDeployBlock: 17429412,
 
@@ -64,6 +65,7 @@ var Ethereum Network = Network{
 	Uniswap: UniswapMetadata{
 		DeployBlock:                        12369621,
 		PoolFactory:                        common.HexToAddress("0x1F98431c8aD98523631AE4a59f267346ea31F984"),
+		Permit2:                            common.HexToAddress("0x000000000022D473030F116dDEE9F6B43aC78BA3"),
 		Multicall2:                         common.HexToAddress("0x5BA1e12693Dc8F9c48aAD8770482f4739bEeD696"),
 		ProxyAdmin:                         common.HexToAddress("0xB753548F6E010e7e680BA186F9Ca1BdAB2E90cf2"),
 		TickLens:                           common.HexToAddress("0xbfd8137f7d1516D3ea5cA83523914859ec47F573"),

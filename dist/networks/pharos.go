@@ -48,7 +48,9 @@ var Pharos Network = Network{
 			NativeQuotePools:   []ChainContract{},
 		},
 	},
-	Uniswap: UniswapMetadata{},
+	Uniswap: UniswapMetadata{
+		Permit2: common.HexToAddress("0x000000000022D473030F116dDEE9F6B43aC78BA3"),
+	},
 
 	Morpho: MorphoMetadata{
 		DeployBlock:                    4202147,

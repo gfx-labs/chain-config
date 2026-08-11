@@ -64,8 +64,10 @@ var Celo Network = Network{
 		NativeCurrencyName:         "CELO",
 	},
 
-	Morpho:        MorphoMetadata{},
-	MarketRouters: MarketRouters{},
+	Morpho: MorphoMetadata{},
+	MarketRouters: MarketRouters{
+		Openocean: []common.Address{common.HexToAddress("0x6352a56caadC4F1E25CD6c75970Fa768A3304e64")},
+	},
 	Token: TokenMetadata{
 		WbtcAddress:   common.HexToAddress("0xbaab46e28388d2779e6e31fd00cf0e5ad95e327b"),
 		NativeAddress: common.HexToAddress("0x471EcE3750Da237f93B8E339c536989b8978a438"),

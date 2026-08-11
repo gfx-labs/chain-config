@@ -144,6 +144,7 @@ export const sei = makeConfig({
 		wethAddress: "0xE30feDd158A2e3b13e9badaeABaFc5516e95e8C7",
 	},
 	oku: {
+		router: "0x7B060A98BA242Ae42D6027a60937787eBe33DEBe",
 		limitOrderRegistry: "0xA9d71E1dd7ca26F26e656E66d6AA81ed7f745bf0",
 		limitOrderRegistryDeployBlock: 79448363,
 		pricing: {

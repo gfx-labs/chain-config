@@ -122,7 +122,7 @@ export const unichain = makeConfig({
 		wethAddress: "0x4200000000000000000000000000000000000006",
 	},
 	oku: {
-		router: "0x47A708142C348e2B4260cCEf3abC2Aff03486eBc",
+		router: "0xb1f3a7B816B0681188F54dFa400991B93ADf00ed",
 		limitOrderRegistry: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D",
 		limitOrderRegistryDeployBlock: 19179485,
 		pricing: {

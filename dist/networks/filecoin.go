@@ -50,7 +50,7 @@ var Filecoin Network = Network{
 	V4Watchlist:      []common.Hash{},
 	BlockTimeSeconds: 30,
 	Oku: OkuMetadata{
-		Router:                        common.HexToAddress("0x961feB343932036fa057D80A057aB746dFEe294e"),
+		Router:                        common.HexToAddress("0x4Ae4041BFa135413A845b803226943198a2F1BeE"),
 		LimitOrderRegistry:            common.HexToAddress("0xded8791056aa39581460a005a3c400a281e24bd7"),
 		LimitOrderRegistryDeployBlock: 3413267,
 

@@ -94,6 +94,7 @@ export const monad = makeConfig({
 		wethAddress: "0x3bd359C1119dA7Da1D913D1C4D2B7c461115433A",
 	},
 	oku: {
+		router: "0xb1f3a7B816B0681188F54dFa400991B93ADf00ed",
 		limitOrderRegistry: zeroAddress,
 		limitOrderRegistryDeployBlock: 0,
 		pricing: {

@@ -77,7 +77,7 @@ export const filecoin = makeConfig({
 		wethAddress: "0xb829b68f57CC546dA7E5806A929e53bE32a4625D",
 	},
 	oku: {
-		router: "0x961feB343932036fa057D80A057aB746dFEe294e",
+		router: "0x4Ae4041BFa135413A845b803226943198a2F1BeE",
 		pricing: {
 			pools: [],
 			nativeWrappedToken: "0x60E1773636CF5E4A227d9AC24F20fEca034ee25A",

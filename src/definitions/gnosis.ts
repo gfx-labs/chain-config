@@ -115,6 +115,7 @@ export const gnosis = makeConfig({
 		wethAddress: "0xe91d153e0b41518a2ce8dd3d7944fa863463a97d",
 	},
 	oku: {
+		router: "0xb1f3a7B816B0681188F54dFa400991B93ADf00ed",
 		limitOrderRegistry: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435",
 		limitOrderRegistryDeployBlock: 35719277,
 		pricing: {

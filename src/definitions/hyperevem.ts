@@ -64,11 +64,16 @@ export const hyperevm = makeConfig({
 	morpho: {},
 	initCodeHash:
 		"0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
-	uniswap: {},
+	uniswap: {
+		// Manually confirmed via eth_getCode against the canonical Permit2
+		// deployment address (not yet sourced from an automated registry).
+		permit2: "0x000000000022D473030F116dDEE9F6B43aC78BA3",
+	},
 	token: {
 		wethAddress: "0x5555555555555555555555555555555555555555",
 	},
 	oku: {
+		router: "0xb1f3a7B816B0681188F54dFa400991B93ADf00ed",
 		pricing: {
 			nativeWrappedToken: "0x5555555555555555555555555555555555555555",
 			nativeWrappedName: "WHYPE",
