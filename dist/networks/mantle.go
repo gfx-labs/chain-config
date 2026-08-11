@@ -43,7 +43,7 @@ var Mantle Network = Network{
 	V4Watchlist:      []common.Hash{},
 	BlockTimeSeconds: 2,
 	Oku: OkuMetadata{
-		Router:                        common.HexToAddress("0xCF883b5926F1c782308381121BA80234000000cE"),
+		Router:                        common.HexToAddress("0x86d61277970685075a0BF66023c219dc4A6e3F6d"),
 		LimitOrderRegistry:            common.HexToAddress("0x346239972d1fa486FC4a521031BC81bFB7D6e8a4"),
 		LimitOrderRegistryDeployBlock: 63839894,
 

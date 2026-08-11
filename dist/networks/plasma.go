@@ -41,6 +41,7 @@ var Plasma Network = Network{
 	V4Watchlist:      []common.Hash{},
 	BlockTimeSeconds: 1,
 	Oku: OkuMetadata{
+		Router:                        common.HexToAddress("0xb1f3a7B816B0681188F54dFa400991B93ADf00ed"),
 		LimitOrderRegistry:            common.HexToAddress("0x9db70E29712Cc8Af10c2B597BaDA6784544FF407"),
 		LimitOrderRegistryDeployBlock: 431349,
 

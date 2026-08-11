@@ -42,6 +42,7 @@ var Etherlink Network = Network{
 	V4Watchlist:      []common.Hash{},
 	BlockTimeSeconds: 0.6,
 	Oku: OkuMetadata{
+		Router:                        common.HexToAddress("0x7B060A98BA242Ae42D6027a60937787eBe33DEBe"),
 		LimitOrderRegistry:            common.HexToAddress("0x447B8E40B0CdA8e55F405C86bC635D02d0540aB8"),
 		LimitOrderRegistryDeployBlock: 16186329,
 

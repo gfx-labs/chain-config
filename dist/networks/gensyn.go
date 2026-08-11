@@ -39,7 +39,7 @@ var Gensyn Network = Network{
 	V4Watchlist:      []common.Hash{},
 	BlockTimeSeconds: 2,
 	Oku: OkuMetadata{
-		Router: common.HexToAddress("0x47A708142C348e2B4260cCEf3abC2Aff03486eBc"),
+		Router: common.HexToAddress("0xb1f3a7B816B0681188F54dFa400991B93ADf00ed"),
 
 		Pricing: OkuPricingMetadata{
 			NativeWrappedToken: common.HexToAddress("0x4200000000000000000000000000000000000006"),

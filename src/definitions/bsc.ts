@@ -165,7 +165,7 @@ export const bsc = makeConfig({
 		wethAddress: "0x2170ed0880ac9a755fd29b2688956bd959f933f8",
 	},
 	oku: {
-		router: "0x47A708142C348e2B4260cCEf3abC2Aff03486eBc",
+		router: "0xb1f3a7B816B0681188F54dFa400991B93ADf00ed",
 		limitOrderRegistry: "0x19b9bd76028cab6f414ed1fc57400b75b5ca0627",
 		limitOrderRegistryDeployBlock: 34187988,
 		pricing: {

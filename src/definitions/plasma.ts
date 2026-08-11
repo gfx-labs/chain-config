@@ -73,6 +73,7 @@ export const plasma = makeConfig({
 		wethAddress: "0x6100E367285b01F48D07953803A2d8dCA5D19873",
 	},
 	oku: {
+		router: "0xb1f3a7B816B0681188F54dFa400991B93ADf00ed",
 		limitOrderRegistry: "0x9db70E29712Cc8Af10c2B597BaDA6784544FF407",
 		limitOrderRegistryDeployBlock: 431349,
 		pricing: {

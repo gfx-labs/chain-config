@@ -176,6 +176,9 @@ export const mainnet = makeConfig({
 	uniswap: {
 		deployBlock: 12369621,
 		poolFactory: "0x1F98431c8aD98523631AE4a59f267346ea31F984",
+		// Manually confirmed via eth_getCode against the canonical Permit2
+		// deployment address (not yet sourced from an automated registry).
+		permit2: "0x000000000022D473030F116dDEE9F6B43aC78BA3",
 		multicall2: "0x5BA1e12693Dc8F9c48aAD8770482f4739bEeD696",
 		proxyAdmin: "0xB753548F6E010e7e680BA186F9Ca1BdAB2E90cf2",
 		tickLens: "0xbfd8137f7d1516D3ea5cA83523914859ec47F573",
@@ -206,6 +209,7 @@ export const mainnet = makeConfig({
 		wbtcAddress: "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
 	},
 	oku: {
+		router: "0xb1f3a7B816B0681188F54dFa400991B93ADf00ed",
 		limitOrderRegistry: "0x54dF9e11c7933a9cA3BD1E540B63dA15edAe40bf",
 		limitOrderRegistryDeployBlock: 17429412,
 		pricing: {

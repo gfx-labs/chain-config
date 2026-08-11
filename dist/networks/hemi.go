@@ -41,7 +41,7 @@ var Hemi Network = Network{
 	V4Watchlist:      []common.Hash{},
 	BlockTimeSeconds: 12,
 	Oku: OkuMetadata{
-		Router:                        common.HexToAddress("0x1a84c0daAf3948392ccA68f475141cF8dC5B8045"),
+		Router:                        common.HexToAddress("0x7B060A98BA242Ae42D6027a60937787eBe33DEBe"),
 		LimitOrderRegistry:            common.HexToAddress("0xcd7f266E3C0D0771897aAF74BEB38072D66402A0"),
 		LimitOrderRegistryDeployBlock: 1293765,
 

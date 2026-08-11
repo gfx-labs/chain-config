@@ -36,7 +36,13 @@ export const pharos = makeConfig({
 	},
 	initCodeHash:
 		"0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
-	uniswap: {},
+	uniswap: {
+		// Confirmed canonical per https://docs.pharos.xyz/getting-started/canonical-contracts
+		// (Pacific Mainnet), and manually verified via eth_getCode against the
+		// canonical Permit2 deployment address (not yet sourced from an
+		// automated registry).
+		permit2: "0x000000000022D473030F116dDEE9F6B43aC78BA3",
+	},
 	token: {
 		usdcAddress: "0xc879c018db60520f4355c26ed1a6d572cdac1815",
 		wethAddress: "0x52c48d4213107b20bc583832b0d951fb9ca8f0b0",

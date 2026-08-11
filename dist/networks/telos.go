@@ -41,7 +41,7 @@ var Telos Network = Network{
 	V4Watchlist:      []common.Hash{},
 	BlockTimeSeconds: 0.5,
 	Oku: OkuMetadata{
-		Router:                        common.HexToAddress("0x1a84c0daAf3948392ccA68f475141cF8dC5B8045"),
+		Router:                        common.HexToAddress("0x7B060A98BA242Ae42D6027a60937787eBe33DEBe"),
 		LimitOrderRegistry:            common.HexToAddress("0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc"),
 		LimitOrderRegistryDeployBlock: 386645006,
 

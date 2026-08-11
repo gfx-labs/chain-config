@@ -40,7 +40,7 @@ var Robinhood Network = Network{
 	V4Watchlist:      []common.Hash{},
 	BlockTimeSeconds: 2,
 	Oku: OkuMetadata{
-		Router: common.HexToAddress("0x47A708142C348e2B4260cCEf3abC2Aff03486eBc"),
+		Router: common.HexToAddress("0xb1f3a7B816B0681188F54dFa400991B93ADf00ed"),
 
 		Pricing: OkuPricingMetadata{
 			NativeWrappedToken: common.HexToAddress("0x0Bd7D308f8E1639FAb988df18A8011f41EAcAD73"),

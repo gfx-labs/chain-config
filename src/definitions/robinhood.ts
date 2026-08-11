@@ -62,7 +62,7 @@ export const robinhood = makeConfig({
 		wethAddress: "0x0Bd7D308f8E1639FAb988df18A8011f41EAcAD73",
 	},
 	oku: {
-		router: "0x47A708142C348e2B4260cCEf3abC2Aff03486eBc",
+		router: "0xb1f3a7B816B0681188F54dFa400991B93ADf00ed",
 		pricing: {
 			nativeWrappedToken: "0x0Bd7D308f8E1639FAb988df18A8011f41EAcAD73",
 			nativeWrappedName: "ETH",

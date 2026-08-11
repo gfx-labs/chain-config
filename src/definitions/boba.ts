@@ -86,7 +86,7 @@ export const boba = makeConfig({
 		usdcAddress: "0x66a2A913e447d6b4BF33EFbec43aAeF87890FBbc",
 	},
 	oku: {
-		router: "0x87a3721df43fd6788a6b11662D2a804F27911506",
+		router: "0x7bf7770Ecd4fd573C32272Ef80c8818A8E8e289A",
 		limitOrderRegistry: "0xfefb60591cffc694c0137983a9091d64af8ecbac",
 		limitOrderRegistryDeployBlock: 1052192,
 		pricing: {

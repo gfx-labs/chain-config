@@ -77,6 +77,7 @@ export const etherlink = makeConfig({
 		wbtcAddress: "0xbFc94CD2B1E55999Cfc7347a9313e88702B83d0F",
 	},
 	oku: {
+		router: "0x7B060A98BA242Ae42D6027a60937787eBe33DEBe",
 		limitOrderRegistry: "0x447B8E40B0CdA8e55F405C86bC635D02d0540aB8",
 		limitOrderRegistryDeployBlock: 16186329,
 		pricing: {

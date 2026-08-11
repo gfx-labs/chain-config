@@ -103,6 +103,7 @@ export const avalanche = makeConfig({
 		wethAddress: "0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7",
 	},
 	oku: {
+		router: "0xb1f3a7B816B0681188F54dFa400991B93ADf00ed",
 		limitOrderRegistry: zeroAddress,
 		limitOrderRegistryDeployBlock: 0,
 		pricing: {

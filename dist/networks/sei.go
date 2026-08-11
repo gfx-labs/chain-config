@@ -43,6 +43,7 @@ var Sei Network = Network{
 	V4Watchlist:      []common.Hash{},
 	BlockTimeSeconds: 0.4,
 	Oku: OkuMetadata{
+		Router:                        common.HexToAddress("0x7B060A98BA242Ae42D6027a60937787eBe33DEBe"),
 		LimitOrderRegistry:            common.HexToAddress("0xA9d71E1dd7ca26F26e656E66d6AA81ed7f745bf0"),
 		LimitOrderRegistryDeployBlock: 79448363,
 

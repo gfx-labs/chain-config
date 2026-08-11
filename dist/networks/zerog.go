@@ -42,6 +42,7 @@ var Zerog Network = Network{
 	V4Watchlist:      []common.Hash{},
 	BlockTimeSeconds: 1,
 	Oku: OkuMetadata{
+		Router:                        common.HexToAddress("0x7B060A98BA242Ae42D6027a60937787eBe33DEBe"),
 		LimitOrderRegistry:            common.HexToAddress("0x9db70e29712cc8af10c2b597bada6784544ff407"),
 		LimitOrderRegistryDeployBlock: 6449021,
 

@@ -39,7 +39,7 @@ var Nibiru Network = Network{
 	V4Watchlist:      []common.Hash{},
 	BlockTimeSeconds: 2,
 	Oku: OkuMetadata{
-		Router:                        common.HexToAddress("0x1a84c0daAf3948392ccA68f475141cF8dC5B8045"),
+		Router:                        common.HexToAddress("0x7B060A98BA242Ae42D6027a60937787eBe33DEBe"),
 		LimitOrderRegistry:            common.HexToAddress("0x6E1293993C71Cb2E6b2Da8559f6d7Dc1fdb3AE02"),
 		LimitOrderRegistryDeployBlock: 19842992,
 

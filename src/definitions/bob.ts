@@ -71,6 +71,7 @@ export const bob = makeConfig({
 		wbtcAddress: "0x03c7054bcb39f7b2e5b2c7acb37583e32d70cfa3",
 	},
 	oku: {
+		router: "0x3132f599bde0e251ba12d5FF95E256FbBeCbDA83",
 		limitOrderRegistry: "0x447b8e40b0cda8e55f405c86bc635d02d0540ab8",
 		limitOrderRegistryDeployBlock: 5624845,
 		pricing: {

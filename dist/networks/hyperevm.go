@@ -41,6 +41,7 @@ var Hyperevm Network = Network{
 	V4Watchlist:      []common.Hash{},
 	BlockTimeSeconds: 1,
 	Oku: OkuMetadata{
+		Router: common.HexToAddress("0xb1f3a7B816B0681188F54dFa400991B93ADf00ed"),
 
 		Pricing: OkuPricingMetadata{
 			NativeWrappedToken: common.HexToAddress("0x5555555555555555555555555555555555555555"),
@@ -49,7 +50,9 @@ var Hyperevm Network = Network{
 			NativeQuotePools:   []ChainContract{},
 		},
 	},
-	Uniswap: UniswapMetadata{},
+	Uniswap: UniswapMetadata{
+		Permit2: common.HexToAddress("0x000000000022D473030F116dDEE9F6B43aC78BA3"),
+	},
 
 	Morpho: MorphoMetadata{},
 	MarketRouters: MarketRouters{

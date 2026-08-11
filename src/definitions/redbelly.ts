@@ -53,7 +53,7 @@ export const redbelly = makeConfig({
 		usdcAddress: "0x8201c02d4AB2214471E8C3AD6475C8b0CD9F2D06",
 	},
 	oku: {
-		router: "0x028F7f81D6816735207A19a3b5C1B72f95B655E5",
+		router: "0x44a81236E892faEdc1f7c08362a4A0eC90dDd203",
 		limitOrderRegistry: "0x9db70E29712Cc8Af10c2B597BaDA6784544FF407",
 		limitOrderRegistryDeployBlock: 2286099,
 		pricing: {
