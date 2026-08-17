@@ -48,6 +48,7 @@ export const pharos = makeConfig({
 		wethAddress: "0x52c48d4213107b20bc583832b0d951fb9ca8f0b0",
 	},
 	oku: {
+		router: "0xb1f3a7B816B0681188F54dFa400991B93ADf00ed",
 		limitOrderRegistry: zeroAddress,
 		limitOrderRegistryDeployBlock: 0,
 		pricing: {

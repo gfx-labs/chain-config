@@ -41,6 +41,7 @@ var Goat Network = Network{
 	V4Watchlist:      []common.Hash{},
 	BlockTimeSeconds: 3,
 	Oku: OkuMetadata{
+		Router:                        common.HexToAddress("0x7B060A98BA242Ae42D6027a60937787eBe33DEBe"),
 		LimitOrderRegistry:            common.HexToAddress("0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc"),
 		LimitOrderRegistryDeployBlock: 848591,
 

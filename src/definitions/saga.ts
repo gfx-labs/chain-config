@@ -65,6 +65,7 @@ export const saga = makeConfig({
 		wethAddress: "0xE3dbcD53f4Ce1b06Ab200f4912BD35672e68f1FA",
 	},
 	oku: {
+		router: "0x2D8261402d4777975AE43877A189b0Ab6b526e26",
 		limitOrderRegistry: "0xA9d71E1dd7ca26F26e656E66d6AA81ed7f745bf0",
 		limitOrderRegistryDeployBlock: 19372,
 		pricing: {

@@ -105,6 +105,7 @@ export const rootstock = makeConfig({
 		usdcAddress: "0x3A15461d8AE0f0Fb5fA2629e9dA7D66A794a6E37",
 	},
 	oku: {
+		router: "0x0906896E8564c61F40778E2B7A46E1269Aaa681e",
 		limitOrderRegistry: "0x83B1cF411f57F7373bBFF81dCE81437e768F4252",
 		limitOrderRegistryDeployBlock: 5842098,
 		pricing: {

@@ -39,6 +39,7 @@ var Pharos Network = Network{
 	V4Watchlist:      []common.Hash{},
 	BlockTimeSeconds: 2,
 	Oku: OkuMetadata{
+		Router:             common.HexToAddress("0xb1f3a7B816B0681188F54dFa400991B93ADf00ed"),
 		LimitOrderRegistry: common.HexToAddress("0x0000000000000000000000000000000000000000"),
 
 		Pricing: OkuPricingMetadata{
