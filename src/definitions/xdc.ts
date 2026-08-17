@@ -97,6 +97,7 @@ export const xdc = makeConfig({
 		usdcAddress: "0xfa2958cb79b0491cc627c1557f441ef849ca8eb1",
 	},
 	oku: {
+		router: "0x7B060A98BA242Ae42D6027a60937787eBe33DEBe",
 		limitOrderRegistry: "0x1b35fba9357fd9bda7ed0429c8bbabe1e8cc88fc",
 		limitOrderRegistryDeployBlock: 87231348,
 		pricing: {

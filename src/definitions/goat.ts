@@ -79,6 +79,7 @@ export const goat = makeConfig({
 		usdcAddress: "0x3022b87ac063DE95b1570F46f5e470F8B53112D8",
 	},
 	oku: {
+		router: "0x7B060A98BA242Ae42D6027a60937787eBe33DEBe",
 		limitOrderRegistry: "0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc",
 		limitOrderRegistryDeployBlock: 848591,
 		pricing: {

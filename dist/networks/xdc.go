@@ -41,6 +41,7 @@ var Xdc Network = Network{
 	V4Watchlist:      []common.Hash{},
 	BlockTimeSeconds: 2,
 	Oku: OkuMetadata{
+		Router:                        common.HexToAddress("0x7B060A98BA242Ae42D6027a60937787eBe33DEBe"),
 		LimitOrderRegistry:            common.HexToAddress("0x1b35fba9357fd9bda7ed0429c8bbabe1e8cc88fc"),
 		LimitOrderRegistryDeployBlock: 87231348,
 

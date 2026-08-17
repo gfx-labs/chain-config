@@ -45,6 +45,7 @@ var Rootstock Network = Network{
 	V4Watchlist:      []common.Hash{},
 	BlockTimeSeconds: 33,
 	Oku: OkuMetadata{
+		Router:                        common.HexToAddress("0x0906896E8564c61F40778E2B7A46E1269Aaa681e"),
 		LimitOrderRegistry:            common.HexToAddress("0x83B1cF411f57F7373bBFF81dCE81437e768F4252"),
 		LimitOrderRegistryDeployBlock: 5842098,
 

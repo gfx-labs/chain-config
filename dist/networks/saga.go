@@ -41,6 +41,7 @@ var Saga Network = Network{
 	V4Watchlist:      []common.Hash{},
 	BlockTimeSeconds: 5,
 	Oku: OkuMetadata{
+		Router:                        common.HexToAddress("0x2D8261402d4777975AE43877A189b0Ab6b526e26"),
 		LimitOrderRegistry:            common.HexToAddress("0xA9d71E1dd7ca26F26e656E66d6AA81ed7f745bf0"),
 		LimitOrderRegistryDeployBlock: 19372,
 
