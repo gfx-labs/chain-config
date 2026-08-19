@@ -50,7 +50,7 @@ export const zerog = makeConfig({
 	uniswap: {
 		deployBlock: 6444619,
 		poolFactory: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D",
-		permit2: "0xB952578f3520EE8Ea45b7914994dcf4702cEe578",
+		permit2: "0x000000000022D473030F116dDEE9F6B43aC78BA3",
 		multicall2: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435",
 		tickLens: "0xB3309C48F8407651D918ca3Da4C45DE40109E641",
 		nonfungiblePositionManager: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c",
