@@ -22,10 +22,13 @@ export const robinhood = makeConfig({
 		openocean: "robinhood",
 	},
 	marketRouters: {
+		enso: ["0xCfBAa9Cfce952Ca4F4069874fF1Df8c05e37a3c7"],
+		fabric: ["0x3A7f029E3ad003AB5Aa78ccf101b1B543eaed6F9"],
 		icecreamswap: ["0x603206D6105217DD972E4Ab30676A220CA393346"],
 		kyberswap: ["0x6131B5fae19EA4f9D964eAc0408E4408b66337b5"],
 		native: ["0xa5ec1f0aC784C3620fFDcdf2A7DbcEF9DA658ea4"],
 		okx: ["0xE58b3089dF6667fBf99b75595a1671BaF6797D6d"],
+		openocean: ["0x6352a56caadC4F1E25CD6c75970Fa768A3304e64"],
 		uniswap: [
 			"0x8876789976dEcBfCbBbe364623C63652db8C0904",
 			"0xCaf681a66D020601342297493863E78C959E5cb2",
