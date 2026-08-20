@@ -25,6 +25,10 @@ export const celo = makeConfig({
 	marketRouters: {
 		icecreamswap: ["0x911a744ab8eccB504173fBCAbBD7C34648F2A773"],
 		openocean: ["0x6352a56caadC4F1E25CD6c75970Fa768A3304e64"],
+		uniswap: [
+			"0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45",
+			"0x8B844f885672f333Bc0042cB669255f93a4C1E6b",
+		],
 	},
 	bridges: {
 		chainlink: {
