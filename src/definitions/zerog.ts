@@ -68,7 +68,7 @@ export const zerog = makeConfig({
 		wethAddress: "0x1cd0690ff9a693f5ef2dd976660a8dafc81a109c",
 	},
 	oku: {
-		router: "0x7B060A98BA242Ae42D6027a60937787eBe33DEBe",
+		router: "0xb1f3a7B816B0681188F54dFa400991B93ADf00ed",
 		limitOrderRegistry: "0x9db70e29712cc8af10c2b597bada6784544ff407",
 		limitOrderRegistryDeployBlock: 6449021,
 		pricing: {
