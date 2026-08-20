@@ -23,6 +23,7 @@ export const celo = makeConfig({
 		openocean: "celo",
 	},
 	marketRouters: {
+		icecreamswap: ["0x911a744ab8eccB504173fBCAbBD7C34648F2A773"],
 		openocean: ["0x6352a56caadC4F1E25CD6c75970Fa768A3304e64"],
 	},
 	bridges: {
