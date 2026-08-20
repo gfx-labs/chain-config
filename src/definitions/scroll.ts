@@ -89,6 +89,7 @@ export const scroll = makeConfig({
 		wbtcAddress: "0x3c1bca5a656e69edcd0d4e36bebb3fcdaca60cf1",
 	},
 	oku: {
+		router: "0xb1f3a7B816B0681188F54dFa400991B93ADf00ed",
 		limitOrderRegistry: "0xeC3E5eeC51D8C3D4f03DABB84B4Db313a739f377",
 		limitOrderRegistryDeployBlock: 1409068,
 		pricing: {
