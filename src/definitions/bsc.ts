@@ -44,6 +44,7 @@ export const bsc = makeConfig({
 	marketRouters: {
 		binance: ["0xB44446b0c8E56988c34f7Ff73Ae904982b5FdDA5"],
 		enso: ["0xF75584eF6673aD213a685a1B58Cc0330B8eA22Cf"],
+		fabric: ["0x3A7f029E3ad003AB5Aa78ccf101b1B543eaed6F9"],
 		icecreamswap: ["0x1a3304cBef66de00FbE1548CC4C6585aD22FbCFf"],
 		kyberswap: ["0x6131B5fae19EA4f9D964eAc0408E4408b66337b5"],
 		native: ["0xF064b069Ed18Eb5c61159247C55C5af79B28a968"],
