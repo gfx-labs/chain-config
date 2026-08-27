@@ -42,6 +42,7 @@ export const linea = makeConfig({
 		okx: [
 			"0x2E1Dee213BA8d7af0934C49a23187BabEACa8764",
 			"0x57df6092665eb6058DE53939612413ff4B09114E",
+			"0xdfcb0cEcC10e78F3F3749F3f3d3EE4047b2c9829",
 		],
 		oneinch: ["0x111111125421ca6dc452d289314280a0f8842a65"],
 		openocean: ["0x6352a56caadC4F1E25CD6c75970Fa768A3304e64"],

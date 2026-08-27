@@ -33,6 +33,7 @@ export const mantle = makeConfig({
 		okx: [
 			"0xcF76984119C7f6ae56fAfE680d39C08278b7eCF4",
 			"0x57df6092665eb6058DE53939612413ff4B09114E",
+			"0x472fc4f7fd3C9F06f0b8637c5505815ac80938Ad",
 		],
 		openocean: ["0x6352a56caadC4F1E25CD6c75970Fa768A3304e64"],
 		uniswap: [
