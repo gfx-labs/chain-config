@@ -59,7 +59,7 @@ var Hyperevm Network = Network{
 		Enso:         []common.Address{common.HexToAddress("0xF75584eF6673aD213a685a1B58Cc0330B8eA22Cf")},
 		Icecreamswap: []common.Address{common.HexToAddress("0x2fF506ed9729580EF8Bf04429614beB1baE5F76D")},
 		Kyberswap:    []common.Address{common.HexToAddress("0x6131B5fae19EA4f9D964eAc0408E4408b66337b5")},
-		Okx:          []common.Address{common.HexToAddress("0x9Ac7b1FFEE0f58c0a3c89AA54Afb62efD25DC9fd")},
+		Okx:          []common.Address{common.HexToAddress("0x9Ac7b1FFEE0f58c0a3c89AA54Afb62efD25DC9fd"), common.HexToAddress("0xb193874f0C77948d2bCFeC2EfAF8Bc65B4C2ca89"), common.HexToAddress("0x56e6983D59bF472Ced0E63966A14d94A3A291589")},
 		Openocean:    []common.Address{common.HexToAddress("0x6352a56caadC4F1E25CD6c75970Fa768A3304e64")},
 		Zeroex:       []common.Address{common.HexToAddress("0x0000000000001fF3684f28c67538d4D072C22734"), common.HexToAddress("0xb32b027C59F540C22B4c76bF849BcF853B99F158")},
 	},

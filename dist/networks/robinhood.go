@@ -75,7 +75,7 @@ var Robinhood Network = Network{
 		Icecreamswap: []common.Address{common.HexToAddress("0x603206D6105217DD972E4Ab30676A220CA393346")},
 		Kyberswap:    []common.Address{common.HexToAddress("0x6131B5fae19EA4f9D964eAc0408E4408b66337b5")},
 		Native:       []common.Address{common.HexToAddress("0xa5ec1f0aC784C3620fFDcdf2A7DbcEF9DA658ea4")},
-		Okx:          []common.Address{common.HexToAddress("0xE58b3089dF6667fBf99b75595a1671BaF6797D6d")},
+		Okx:          []common.Address{common.HexToAddress("0xE58b3089dF6667fBf99b75595a1671BaF6797D6d"), common.HexToAddress("0x6e2A35A7AD683cF634D91492d73bb7FF774c6919"), common.HexToAddress("0x42170295F1173c9e5874ea9d00c6d137E1a4f53d")},
 		Openocean:    []common.Address{common.HexToAddress("0x6352a56caadC4F1E25CD6c75970Fa768A3304e64")},
 		Uniswap:      []common.Address{common.HexToAddress("0x8876789976dEcBfCbBbe364623C63652db8C0904"), common.HexToAddress("0xCaf681a66D020601342297493863E78C959E5cb2")},
 		Zeroex:       []common.Address{common.HexToAddress("0x0000000000001fF3684f28c67538d4D072C22734"), common.HexToAddress("0xe72688F7d25D7318B9A81F21EdDa640CA948c83B")},

@@ -111,7 +111,7 @@ var Ethereum Network = Network{
 		Kyberswap:    []common.Address{common.HexToAddress("0x6131B5fae19EA4f9D964eAc0408E4408b66337b5")},
 		Native:       []common.Address{common.HexToAddress("0x8a2ddc0461Fcf96F81a05529Bed540d4f1eb2a00")},
 		Odos:         []common.Address{common.HexToAddress("0x0D05a7D3448512B78fa8A9e46c4872C88C4a0D05")},
-		Okx:          []common.Address{common.HexToAddress("0x28b1Dc1a5E3699A428BC51d234DFab7C9CB2a183")},
+		Okx:          []common.Address{common.HexToAddress("0x28b1Dc1a5E3699A428BC51d234DFab7C9CB2a183"), common.HexToAddress("0x8feAB81D36E7576107D5dE0758c1b839Be31B4F6"), common.HexToAddress("0xa875Fb2204cE71679BE054d97f7fAFFeb6536D67"), common.HexToAddress("0x40aA958dd87FC8305b97f2BA922CDdCa374bcD7f")},
 		Openocean:    []common.Address{common.HexToAddress("0x6352a56caadC4F1E25CD6c75970Fa768A3304e64")},
 		Paraswap:     []common.Address{common.HexToAddress("0x6A000F20005980200259B80c5102003040001068")},
 		Uniswap:      []common.Address{common.HexToAddress("0x66a9893cC07D91D95644AEDD05D03f95e1dBA8Af"), common.HexToAddress("0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45"), common.HexToAddress("0xCb640A86855f1A828c27241bA364348de28abe66")},

@@ -85,7 +85,7 @@ var Unichain Network = Network{
 		Icecreamswap:  []common.Address{common.HexToAddress("0x3FFc2315A992b01dc4B3f79C8EEa1921091Ee24f")},
 		Kyberswap:     []common.Address{common.HexToAddress("0x6131B5fae19EA4f9D964eAc0408E4408b66337b5")},
 		Odos:          []common.Address{common.HexToAddress("0x6409722F3a1C4486A3b1FE566cBDd5e9D946A1f3")},
-		Okx:           []common.Address{common.HexToAddress("0x6733Eb2E75B1625F1Fe5f18aD2cB2BaBDA510d19"), common.HexToAddress("0x2e28281Cf3D58f475cebE27bec4B8a23dFC7782c")},
+		Okx:           []common.Address{common.HexToAddress("0x6733Eb2E75B1625F1Fe5f18aD2cB2BaBDA510d19"), common.HexToAddress("0x2e28281Cf3D58f475cebE27bec4B8a23dFC7782c"), common.HexToAddress("0xe3dAb8Bf5187F9B4E8E89FF5414D7CF71E2C82e1")},
 		Openocean:     []common.Address{common.HexToAddress("0x6352a56caadC4F1E25CD6c75970Fa768A3304e64")},
 		Paraswap:      []common.Address{common.HexToAddress("0x6A000F20005980200259B80c5102003040001068")},
 		Propellerswap: []common.Address{common.HexToAddress("0xFfA5ec2e444e4285108e4a17b82dA495c178427B")},

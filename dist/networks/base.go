@@ -89,7 +89,7 @@ var Base Network = Network{
 		Kyberswap:     []common.Address{common.HexToAddress("0x6131B5fae19EA4f9D964eAc0408E4408b66337b5")},
 		Native:        []common.Address{common.HexToAddress("0xaEC634d949df14Be76dC317504C7b9a6a8A5f576")},
 		Odos:          []common.Address{common.HexToAddress("0x19cEeAd7105607Cd444F5ad10dd51356436095a1"), common.HexToAddress("0x0d05a7d3448512b78fa8a9e46c4872c88c4a0d05")},
-		Okx:           []common.Address{common.HexToAddress("0xC8F6b8Ba0DC0f175B568B99440B0867F69A29265"), common.HexToAddress("0x57df6092665eb6058DE53939612413ff4B09114E")},
+		Okx:           []common.Address{common.HexToAddress("0xC8F6b8Ba0DC0f175B568B99440B0867F69A29265"), common.HexToAddress("0x57df6092665eb6058DE53939612413ff4B09114E"), common.HexToAddress("0x67d03631FE51B741C0C00c4E16eb662AC84381df"), common.HexToAddress("0x77449Ff075C0A385796Da0762BCB46fd5cc884c6")},
 		Oneinch:       []common.Address{common.HexToAddress("0x111111125421ca6dc452d289314280a0f8842a65")},
 		Openocean:     []common.Address{common.HexToAddress("0x6352a56caadC4F1E25CD6c75970Fa768A3304e64")},
 		Paraswap:      []common.Address{common.HexToAddress("0x6A000F20005980200259B80c5102003040001068")},

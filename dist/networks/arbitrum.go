@@ -97,7 +97,7 @@ var Arbitrum Network = Network{
 		Kyberswap:    []common.Address{common.HexToAddress("0x6131B5fae19EA4f9D964eAc0408E4408b66337b5")},
 		Native:       []common.Address{common.HexToAddress("0x0FC85a171bD0b53BF0bBace74F04B66170Ae3eAb")},
 		Odos:         []common.Address{common.HexToAddress("0xa669e7A0d4b3e4Fa48af2dE86BD4CD7126Be4e13")},
-		Okx:          []common.Address{common.HexToAddress("0x7CF6b330b437E9fb432B1400DE17B03357Cf049A"), common.HexToAddress("0x70cBb871E8f30Fc8Ce23609E9E0Ea87B6b222F58")},
+		Okx:          []common.Address{common.HexToAddress("0x7CF6b330b437E9fb432B1400DE17B03357Cf049A"), common.HexToAddress("0x70cBb871E8f30Fc8Ce23609E9E0Ea87B6b222F58"), common.HexToAddress("0x09f94b5Fc68e227C323A6FbaE3Bd98C97fD8c849"), common.HexToAddress("0x9736d9a45115E33411390EbD54e5A5C3A6E25aA6")},
 		Oneinch:      []common.Address{common.HexToAddress("0x111111125421ca6dc452d289314280a0f8842a65")},
 		Openocean:    []common.Address{common.HexToAddress("0x6352a56caadC4F1E25CD6c75970Fa768A3304e64")},
 		Paraswap:     []common.Address{common.HexToAddress("0x6A000F20005980200259B80c5102003040001068")},

@@ -94,7 +94,7 @@ var Bsc Network = Network{
 		Kyberswap:    []common.Address{common.HexToAddress("0x6131B5fae19EA4f9D964eAc0408E4408b66337b5")},
 		Native:       []common.Address{common.HexToAddress("0xF064b069Ed18Eb5c61159247C55C5af79B28a968")},
 		Odos:         []common.Address{common.HexToAddress("0x89b8AA89FDd0507a99d334CBe3C808fAFC7d850E"), common.HexToAddress("0x0D05a7D3448512B78fa8A9e46c4872C88C4a0D05")},
-		Okx:          []common.Address{common.HexToAddress("0x62cceF0b4545166f721cAa9fEe13c1d3767E27dc"), common.HexToAddress("0x2c34A2Fb1d0b4f55de51E1d0bDEfaDDce6b7cDD6")},
+		Okx:          []common.Address{common.HexToAddress("0x62cceF0b4545166f721cAa9fEe13c1d3767E27dc"), common.HexToAddress("0x2c34A2Fb1d0b4f55de51E1d0bDEfaDDce6b7cDD6"), common.HexToAddress("0x5994814f2C4040b863A0125A45DE152a8c2A4DEc"), common.HexToAddress("0x5cb43Bae4f36E2f9f858232B4Dce0dbE27bb85e3")},
 		Oneinch:      []common.Address{common.HexToAddress("0x111111125421ca6dc452d289314280a0f8842a65")},
 		Openocean:    []common.Address{common.HexToAddress("0x6352a56caadC4F1E25CD6c75970Fa768A3304e64")},
 		Paraswap:     []common.Address{common.HexToAddress("0x6A000F20005980200259B80c5102003040001068")},

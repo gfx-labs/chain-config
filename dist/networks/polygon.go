@@ -94,7 +94,7 @@ var Polygon Network = Network{
 		Icecreamswap: []common.Address{common.HexToAddress("0x99bA7d569EA69671B399A7cC488b687515F7EC23")},
 		Kyberswap:    []common.Address{common.HexToAddress("0x6131B5fae19EA4f9D964eAc0408E4408b66337b5")},
 		Odos:         []common.Address{common.HexToAddress("0x4E3288c9ca110bCC82bf38F09A7b425c095d92Bf")},
-		Okx:          []common.Address{common.HexToAddress("0xF6E1B4b201e220FC3741bd7a75675ffEA25c02AD"), common.HexToAddress("0x3B86917369B83a6892f553609F3c2F439C184e31")},
+		Okx:          []common.Address{common.HexToAddress("0xF6E1B4b201e220FC3741bd7a75675ffEA25c02AD"), common.HexToAddress("0x3B86917369B83a6892f553609F3c2F439C184e31"), common.HexToAddress("0x3C4829196BFadFF4394726b45159aeaAC6FCd41c")},
 		Oneinch:      []common.Address{common.HexToAddress("0x111111125421ca6dc452d289314280a0f8842a65")},
 		Openocean:    []common.Address{common.HexToAddress("0x6352a56caadC4F1E25CD6c75970Fa768A3304e64")},
 		Paraswap:     []common.Address{common.HexToAddress("0x6A000F20005980200259B80c5102003040001068")},

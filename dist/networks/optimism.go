@@ -115,7 +115,7 @@ var Optimism Network = Network{
 		Icecreamswap: []common.Address{common.HexToAddress("0xa575f37e869e6887564F87c07e2885e08D542C4a"), common.HexToAddress("0xC87De04e2EC1F4282dFF2933A2D58199f688fC3d")},
 		Kyberswap:    []common.Address{common.HexToAddress("0x6131B5fae19EA4f9D964eAc0408E4408b66337b5")},
 		Odos:         []common.Address{common.HexToAddress("0xCa423977156BB05b13A2BA3b76Bc5419E2fE9680"), common.HexToAddress("0x0d05a7d3448512b78fa8a9e46c4872c88c4a0d05")},
-		Okx:          []common.Address{common.HexToAddress("0xDd5E9B947c99Aa60bab00ca4631Dce63b49983E7"), common.HexToAddress("0x68D6B739D2020067D1e2F713b999dA97E4d54812")},
+		Okx:          []common.Address{common.HexToAddress("0xDd5E9B947c99Aa60bab00ca4631Dce63b49983E7"), common.HexToAddress("0x68D6B739D2020067D1e2F713b999dA97E4d54812"), common.HexToAddress("0x1f5B43127414E36c31eCb5Ff5567262997CD24D0")},
 		Oneinch:      []common.Address{common.HexToAddress("0x111111125421ca6dc452d289314280a0f8842a65")},
 		Openocean:    []common.Address{common.HexToAddress("0x6352a56caadC4F1E25CD6c75970Fa768A3304e64")},
 		Paraswap:     []common.Address{common.HexToAddress("0x6A000F20005980200259B80c5102003040001068")},
