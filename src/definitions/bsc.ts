@@ -54,6 +54,8 @@ export const bsc = makeConfig({
 		okx: [
 			"0x62cceF0b4545166f721cAa9fEe13c1d3767E27dc",
 			"0x2c34A2Fb1d0b4f55de51E1d0bDEfaDDce6b7cDD6",
+			"0x5994814f2C4040b863A0125A45DE152a8c2A4DEc",
+			"0x5cb43Bae4f36E2f9f858232B4Dce0dbE27bb85e3",
 		],
 		oneinch: ["0x111111125421ca6dc452d289314280a0f8842a65"],
 		openocean: ["0x6352a56caadC4F1E25CD6c75970Fa768A3304e64"],
