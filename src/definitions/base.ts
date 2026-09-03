@@ -50,6 +50,7 @@ export const base = makeConfig({
 		binance: ["0xB44446b0c8E56988c34f7Ff73Ae904982b5FdDA5"],
 		enso: ["0xF75584eF6673aD213a685a1B58Cc0330B8eA22Cf"],
 		fabric: ["0x7C137a37742437d2212B7bd873ed135b5C4c61da"],
+		fynd: ["0x9bA632d83e9eF57571256Cf4cc951b8aF1158e9C"],
 		icecreamswap: ["0xC87De04e2EC1F4282dFF2933A2D58199f688fC3d"],
 		kyberswap: ["0x6131B5fae19EA4f9D964eAc0408E4408b66337b5"],
 		native: ["0xaEC634d949df14Be76dC317504C7b9a6a8A5f576"],

@@ -124,6 +124,7 @@ export interface MarketRouters {
 	binance?: ReadonlyArray<Address>;
 	enso?: ReadonlyArray<Address>;
 	fabric?: ReadonlyArray<Address>;
+	fynd?: ReadonlyArray<Address>;
 	icecreamswap?: ReadonlyArray<Address>;
 	kyberswap?: ReadonlyArray<Address>;
 	native?: ReadonlyArray<Address>;

@@ -43,6 +43,7 @@ export const polygon = makeConfig({
 	marketRouters: {
 		binance: ["0xB44446b0c8E56988c34f7Ff73Ae904982b5FdDA5"],
 		enso: ["0xF75584eF6673aD213a685a1B58Cc0330B8eA22Cf"],
+		fynd: ["0x0C85409014d6c8cAEF60C837198c931246BD6296"],
 		icecreamswap: ["0x99bA7d569EA69671B399A7cC488b687515F7EC23"],
 		kyberswap: ["0x6131B5fae19EA4f9D964eAc0408E4408b66337b5"],
 		odos: ["0x4E3288c9ca110bCC82bf38F09A7b425c095d92Bf"],

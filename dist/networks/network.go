@@ -763,6 +763,7 @@ type MarketRouters struct {
 	Binance       []common.Address
 	Enso          []common.Address
 	Fabric        []common.Address
+	Fynd          []common.Address
 	Icecreamswap  []common.Address
 	Kyberswap     []common.Address
 	Native        []common.Address
@@ -788,6 +789,9 @@ func (m *MarketRouters) All() map[string][]common.Address {
 	}
 	if len(m.Fabric) > 0 {
 		out["fabric"] = m.Fabric
+	}
+	if len(m.Fynd) > 0 {
+		out["fynd"] = m.Fynd
 	}
 	if len(m.Icecreamswap) > 0 {
 		out["icecreamswap"] = m.Icecreamswap
