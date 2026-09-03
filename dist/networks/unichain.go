@@ -82,6 +82,7 @@ var Unichain Network = Network{
 	Morpho: MorphoMetadata{},
 	MarketRouters: MarketRouters{
 		Enso:          []common.Address{common.HexToAddress("0xF75584eF6673aD213a685a1B58Cc0330B8eA22Cf")},
+		Fynd:          []common.Address{common.HexToAddress("0xa0498D0Fa4081c9a735b137a2E6A1910FaA0E0bC")},
 		Icecreamswap:  []common.Address{common.HexToAddress("0x3FFc2315A992b01dc4B3f79C8EEa1921091Ee24f")},
 		Kyberswap:     []common.Address{common.HexToAddress("0x6131B5fae19EA4f9D964eAc0408E4408b66337b5")},
 		Odos:          []common.Address{common.HexToAddress("0x6409722F3a1C4486A3b1FE566cBDd5e9D946A1f3")},

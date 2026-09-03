@@ -24,6 +24,7 @@ export const robinhood = makeConfig({
 	marketRouters: {
 		enso: ["0xCfBAa9Cfce952Ca4F4069874fF1Df8c05e37a3c7"],
 		fabric: ["0x3A7f029E3ad003AB5Aa78ccf101b1B543eaed6F9"],
+		fynd: ["0x345e48768a65Ae596ac6A2Aee71202753C4866F5"],
 		icecreamswap: ["0x603206D6105217DD972E4Ab30676A220CA393346"],
 		kyberswap: ["0x6131B5fae19EA4f9D964eAc0408E4408b66337b5"],
 		native: ["0xa5ec1f0aC784C3620fFDcdf2A7DbcEF9DA658ea4"],
