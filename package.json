@@ -9,6 +9,7 @@
   "scripts": {
     "fmt": "biome check --write",
     "clean": "rm -rf dist",
+    "check:swap-targets": "tsx src/script/check-swap-targets.ts",
     "generate-barrels": "barrelsby --delete --directory './src/definitions/'",
     "build": "yarn generate-barrels && npx rollup -c && yarn tsx gen_go.ts",
     "prepack": "yarn build",

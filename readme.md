@@ -4,6 +4,15 @@
 
 `go get gfx.cafe/gfx/chain-config/dist/networks`
 
+## Checking market routers
+
+Run `yarn check:swap-targets` to verify that every address under each chain's
+`marketRouters` configuration is allowed by `swapTargets` on its configured
+`oku.router`, using `https://venn.lat.gfx.town/{internalName}` as the RPC. The
+command prints `all good` when every router is allowed. Otherwise, it prints the
+routers that are not allowed or could not be checked, grouped by chain, and
+exits with a non-zero status.
+
 ## Adding a chain viem doesn't ship yet
 
 When a chain is not exported from `viem/chains`, define it under
