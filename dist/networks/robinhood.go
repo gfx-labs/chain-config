@@ -72,7 +72,7 @@ var Robinhood Network = Network{
 	MarketRouters: MarketRouters{
 		Enso:         []common.Address{common.HexToAddress("0xCfBAa9Cfce952Ca4F4069874fF1Df8c05e37a3c7")},
 		Fabric:       []common.Address{common.HexToAddress("0x3A7f029E3ad003AB5Aa78ccf101b1B543eaed6F9")},
-		Fynd:         []common.Address{common.HexToAddress("0x345e48768a65Ae596ac6A2Aee71202753C4866F5")},
+		Fynd:         []common.Address{common.HexToAddress("0x345e48768a65Ae596ac6A2Aee71202753C4866F5"), common.HexToAddress("0x09215a470bD585E59EB3F4B612fBD2678131fF9e")},
 		Icecreamswap: []common.Address{common.HexToAddress("0x603206D6105217DD972E4Ab30676A220CA393346")},
 		Kyberswap:    []common.Address{common.HexToAddress("0x6131B5fae19EA4f9D964eAc0408E4408b66337b5")},
 		Native:       []common.Address{common.HexToAddress("0xa5ec1f0aC784C3620fFDcdf2A7DbcEF9DA658ea4")},

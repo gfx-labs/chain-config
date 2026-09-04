@@ -73,6 +73,7 @@ var Plasma Network = Network{
 	MarketRouters: MarketRouters{
 		Binance:      []common.Address{common.HexToAddress("0xB44446b0c8E56988c34f7Ff73Ae904982b5FdDA5")},
 		Enso:         []common.Address{common.HexToAddress("0xCfBAa9Cfce952Ca4F4069874fF1Df8c05e37a3c7")},
+		Fynd:         []common.Address{common.HexToAddress("0x0953c7E23B44259e5e5630e9b97C31D7278C4c85")},
 		Icecreamswap: []common.Address{common.HexToAddress("0xC87De04e2EC1F4282dFF2933A2D58199f688fC3d")},
 		Kyberswap:    []common.Address{common.HexToAddress("0x6131B5fae19EA4f9D964eAc0408E4408b66337b5")},
 		Okx:          []common.Address{common.HexToAddress("0x19D345f95A80cc136d898f41b490E023cFF78658"), common.HexToAddress("0xd72f9Af181A0eB1B8550a00124ECdb71Bb758C89"), common.HexToAddress("0x9FD43F5E4c24543b2eBC807321E58e6D350d6a5A")},

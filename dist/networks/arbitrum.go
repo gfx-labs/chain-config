@@ -93,7 +93,7 @@ var Arbitrum Network = Network{
 		Binance:      []common.Address{common.HexToAddress("0xB44446b0c8E56988c34f7Ff73Ae904982b5FdDA5")},
 		Enso:         []common.Address{common.HexToAddress("0xF75584eF6673aD213a685a1B58Cc0330B8eA22Cf")},
 		Fabric:       []common.Address{common.HexToAddress("0x3A7f029E3ad003AB5Aa78ccf101b1B543eaed6F9")},
-		Fynd:         []common.Address{common.HexToAddress("0x8A8Ba3973C84252BF7D357E4C0244b7EedB8B658")},
+		Fynd:         []common.Address{common.HexToAddress("0x8A8Ba3973C84252BF7D357E4C0244b7EedB8B658"), common.HexToAddress("0x924F147c50eA59f5180a26031A8b65B2aA1e81Cd")},
 		Icecreamswap: []common.Address{common.HexToAddress("0x57f96440f1b1cAD53B40A8924BD540b1279A491c")},
 		Kyberswap:    []common.Address{common.HexToAddress("0x6131B5fae19EA4f9D964eAc0408E4408b66337b5")},
 		Native:       []common.Address{common.HexToAddress("0x0FC85a171bD0b53BF0bBace74F04B66170Ae3eAb")},

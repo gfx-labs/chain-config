@@ -27,6 +27,7 @@ export const plasma = makeConfig({
 	marketRouters: {
 		binance: ["0xB44446b0c8E56988c34f7Ff73Ae904982b5FdDA5"],
 		enso: ["0xCfBAa9Cfce952Ca4F4069874fF1Df8c05e37a3c7"],
+		fynd: ["0x0953c7E23B44259e5e5630e9b97C31D7278C4c85"],
 		icecreamswap: ["0xC87De04e2EC1F4282dFF2933A2D58199f688fC3d"],
 		kyberswap: ["0x6131B5fae19EA4f9D964eAc0408E4408b66337b5"],
 		okx: [

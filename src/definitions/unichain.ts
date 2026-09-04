@@ -34,7 +34,10 @@ export const unichain = makeConfig({
 	},
 	marketRouters: {
 		enso: ["0xF75584eF6673aD213a685a1B58Cc0330B8eA22Cf"],
-		fynd: ["0xa0498D0Fa4081c9a735b137a2E6A1910FaA0E0bC"],
+		fynd: [
+			"0xa0498D0Fa4081c9a735b137a2E6A1910FaA0E0bC",
+			"0xCba5574597Ad00EA250Fd106DAB4Fc7461949635",
+		],
 		icecreamswap: ["0x3FFc2315A992b01dc4B3f79C8EEa1921091Ee24f"],
 		kyberswap: ["0x6131B5fae19EA4f9D964eAc0408E4408b66337b5"],
 		odos: ["0x6409722F3a1C4486A3b1FE566cBDd5e9D946A1f3"],

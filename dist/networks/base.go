@@ -85,7 +85,7 @@ var Base Network = Network{
 		Binance:       []common.Address{common.HexToAddress("0xB44446b0c8E56988c34f7Ff73Ae904982b5FdDA5")},
 		Enso:          []common.Address{common.HexToAddress("0xF75584eF6673aD213a685a1B58Cc0330B8eA22Cf")},
 		Fabric:        []common.Address{common.HexToAddress("0x7C137a37742437d2212B7bd873ed135b5C4c61da")},
-		Fynd:          []common.Address{common.HexToAddress("0x9bA632d83e9eF57571256Cf4cc951b8aF1158e9C")},
+		Fynd:          []common.Address{common.HexToAddress("0x9bA632d83e9eF57571256Cf4cc951b8aF1158e9C"), common.HexToAddress("0xAbA5B53b03eAfaD1C5fc8BD5Fc765fC85Bb3de67")},
 		Icecreamswap:  []common.Address{common.HexToAddress("0xC87De04e2EC1F4282dFF2933A2D58199f688fC3d")},
 		Kyberswap:     []common.Address{common.HexToAddress("0x6131B5fae19EA4f9D964eAc0408E4408b66337b5")},
 		Native:        []common.Address{common.HexToAddress("0xaEC634d949df14Be76dC317504C7b9a6a8A5f576")},
