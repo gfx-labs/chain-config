@@ -38,7 +38,7 @@ var Robinhood Network = Network{
 	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0x5fc5360D0400a0Fd4f2af552ADD042D716F1d168"): {}, common.HexToAddress("0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"): {}},
 	Watchlist:        []common.Address{},
 	V4Watchlist:      []common.Hash{},
-	BlockTimeSeconds: 2,
+	BlockTimeSeconds: 0.1,
 	Oku: OkuMetadata{
 		Router: common.HexToAddress("0xb1f3a7B816B0681188F54dFa400991B93ADf00ed"),
 
