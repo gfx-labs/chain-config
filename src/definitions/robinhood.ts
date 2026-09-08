@@ -5,7 +5,7 @@ import { makeConfig } from "../util";
 export const robinhood = makeConfig({
 	...chain,
 	name: "Robinhood",
-	blockTimeSeconds: 2,
+	blockTimeSeconds: 0.1,
 	launchTime: 1784047160,
 	transactionType: "eip1559",
 	sortIndex: 6,
