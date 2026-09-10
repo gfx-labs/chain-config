@@ -49,6 +49,13 @@ export const robinhood = makeConfig({
 	bridges: {},
 	oracles: {},
 	morpho: {},
+	launchpad: {
+		name: "pons",
+		decoder: "pons-v2",
+		factory: "0x7ed598bcef8bd9edd8c97a195c6d13f40801ec7e",
+		router: "0xe33e9e479df8802cb0866d5d05258bec4cf62948",
+		deployBlock: 26841846,
+	},
 	initCodeHash:
 		"0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
 	uniswap: {

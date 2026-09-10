@@ -69,6 +69,13 @@ var Robinhood Network = Network{
 	},
 
 	Morpho: MorphoMetadata{},
+	Launchpad: LaunchpadMetadata{
+		Name:        "pons",
+		Decoder:     "pons-v2",
+		Factory:     common.HexToAddress("0x7ed598bcef8bd9edd8c97a195c6d13f40801ec7e"),
+		Router:      common.HexToAddress("0xe33e9e479df8802cb0866d5d05258bec4cf62948"),
+		DeployBlock: 26841846,
+	},
 	MarketRouters: MarketRouters{
 		Enso:         []common.Address{common.HexToAddress("0xCfBAa9Cfce952Ca4F4069874fF1Df8c05e37a3c7")},
 		Fabric:       []common.Address{common.HexToAddress("0x3A7f029E3ad003AB5Aa78ccf101b1B543eaed6F9")},
