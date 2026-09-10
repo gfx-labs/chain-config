@@ -457,6 +457,7 @@ type Network struct {
 	Uniswap            UniswapMetadata
 	Uniswapv4          UniswapV4Metadata
 	Morpho             MorphoMetadata
+	Launchpad          LaunchpadMetadata
 	Token              TokenMetadata
 	Oku                OkuMetadata
 	Deprecated         bool
@@ -730,6 +731,14 @@ type OkuCustomOrderTypesMetadata struct {
 	StopLimitDeployBlock  int64
 	OracleLess            common.Address
 	OracleLessDeployBlock int64
+}
+
+type LaunchpadMetadata struct {
+	Name        string
+	Decoder     string
+	Factory     common.Address
+	Router      common.Address
+	DeployBlock int64
 }
 
 type ChainContract struct {
