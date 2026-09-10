@@ -89,6 +89,7 @@ var Bsc Network = Network{
 	Morpho: MorphoMetadata{},
 	MarketRouters: MarketRouters{
 		Binance:      []common.Address{common.HexToAddress("0xB44446b0c8E56988c34f7Ff73Ae904982b5FdDA5")},
+		Bitget:       []common.Address{common.HexToAddress("0xBc1D9760bd6ca468CA9fB5Ff2CFbEAC35d86c973")},
 		Enso:         []common.Address{common.HexToAddress("0xF75584eF6673aD213a685a1B58Cc0330B8eA22Cf")},
 		Fabric:       []common.Address{common.HexToAddress("0x3A7f029E3ad003AB5Aa78ccf101b1B543eaed6F9")},
 		Fynd:         []common.Address{common.HexToAddress("0x712d0213439d99e56eFe5453253C12131C4019C9"), common.HexToAddress("0x7f3D12BBaFb8955E51B3ab9588b34c8ad95BDA4e")},

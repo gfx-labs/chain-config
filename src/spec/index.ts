@@ -122,6 +122,7 @@ export interface Markets {
 
 export interface MarketRouters {
 	binance?: ReadonlyArray<Address>;
+	bitget?: ReadonlyArray<Address>;
 	enso?: ReadonlyArray<Address>;
 	fabric?: ReadonlyArray<Address>;
 	fynd?: ReadonlyArray<Address>;

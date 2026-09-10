@@ -106,6 +106,7 @@ var Ethereum Network = Network{
 	},
 	MarketRouters: MarketRouters{
 		Binance:      []common.Address{common.HexToAddress("0xB44446b0c8E56988c34f7Ff73Ae904982b5FdDA5")},
+		Bitget:       []common.Address{common.HexToAddress("0xBc1D9760bd6ca468CA9fB5Ff2CFbEAC35d86c973")},
 		Enso:         []common.Address{common.HexToAddress("0xF75584eF6673aD213a685a1B58Cc0330B8eA22Cf")},
 		Fabric:       []common.Address{common.HexToAddress("0x4296339B4Ff8E67f07De40D97A49a680F2598e0F")},
 		Fynd:         []common.Address{common.HexToAddress("0xea290cE3Eae57BdB37E57872a5a14DC0d2f6e614"), common.HexToAddress("0x1644D2477f809cc2C71bCCFd6Dc9497E3F83210d")},
