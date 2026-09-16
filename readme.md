@@ -2,7 +2,7 @@
 
 `yarn add @gfxlabs/oku-chains`
 
-`go get gfx.cafe/gfx/chain-config/dist/networks`
+`go get github.com/gfx-labs/chain-config/dist/networks`
 
 ## Checking market routers
 

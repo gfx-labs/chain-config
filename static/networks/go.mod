@@ -1,4 +1,4 @@
-module gfx.cafe/gfx/chain-config/dist/networks
+module github.com/gfx-labs/chain-config/dist/networks
 
 go 1.21.3
 
