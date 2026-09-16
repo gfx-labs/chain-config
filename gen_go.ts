@@ -1,4 +1,4 @@
-import init, { format } from "@wasm-fmt/gofmt";
+import { format } from "@wasm-fmt/gofmt";
 import ejs from "ejs";
 import { mkdirSync, writeFileSync } from "fs";
 import * as morph from "ts-morph";
@@ -198,7 +198,6 @@ const output = ejs.render(networksString.toString(), {
 });
 
 const main = async () => {
-  await init();
   writeFileSync(`${rootDir}/network.go`, formatFunc(output));
   for (const chain of ALL_NETWORKS) {
     const chainName = clean(chain.internalName);
