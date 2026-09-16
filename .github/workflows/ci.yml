@@ -27,6 +27,24 @@ jobs:
 
       - run: yarn build
 
+      # The generated Go module is published via the dist/networks/v* tag, so it
+      # must compile and match what is committed.
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: dist/networks/go.mod
+          cache-dependency-path: dist/networks/go.sum
+
+      - name: Verify generated Go builds
+        working-directory: dist/networks
+        run: go build ./... && go vet ./...
+
+      - name: Verify generated output is up to date
+        run: |
+          if ! git diff --exit-code --stat -- dist/networks; then
+            echo "::error::dist/networks is out of date; run 'yarn build' and commit the result"
+            exit 1
+          fi
+
       - uses: actions/upload-artifact@v4
         with:
           name: dist
@@ -63,9 +81,6 @@ jobs:
           node-version: 24
           cache: yarn
           registry-url: https://registry.npmjs.org
-
-      # `npm stage publish` requires npm >= 11.15
-      - run: npm install -g npm@^11.19
 
       - run: yarn install --immutable
 
