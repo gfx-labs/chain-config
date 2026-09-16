@@ -24,6 +24,7 @@ export const hyperevm = makeConfig({
 		openocean: "hyperevm",
 	},
 	marketRouters: {
+		bitget: ["0x9515d72BcE20cD9e695EE61D2a76A099EA511311"],
 		enso: ["0xF75584eF6673aD213a685a1B58Cc0330B8eA22Cf"],
 		icecreamswap: ["0x2fF506ed9729580EF8Bf04429614beB1baE5F76D"],
 		kyberswap: ["0x6131B5fae19EA4f9D964eAc0408E4408b66337b5"],

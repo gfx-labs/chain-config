@@ -90,6 +90,7 @@ var Polygon Network = Network{
 	Morpho: MorphoMetadata{},
 	MarketRouters: MarketRouters{
 		Binance:      []common.Address{common.HexToAddress("0xB44446b0c8E56988c34f7Ff73Ae904982b5FdDA5")},
+		Bitget:       []common.Address{common.HexToAddress("0xBc1D9760bd6ca468CA9fB5Ff2CFbEAC35d86c973")},
 		Enso:         []common.Address{common.HexToAddress("0xF75584eF6673aD213a685a1B58Cc0330B8eA22Cf")},
 		Fynd:         []common.Address{common.HexToAddress("0x0C85409014d6c8cAEF60C837198c931246BD6296"), common.HexToAddress("0xbd4e6011F03355C2A377Fd9Af939322A7d0A1bC1")},
 		Icecreamswap: []common.Address{common.HexToAddress("0x99bA7d569EA69671B399A7cC488b687515F7EC23")},

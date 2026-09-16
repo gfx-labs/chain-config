@@ -24,6 +24,7 @@ import (
     var props_12 = OkuCustomOrderTypesMetadata.getProperties();
     var props_13 = UniswapV4Metadata.getProperties();
     var props_14 = MarketRouters.getProperties();
+    var props_15 = LaunchpadMetadata.getProperties();
 %>
 
 var ErrNetworkNotFound = errors.New("chain not found")
@@ -394,6 +395,10 @@ type OkuPricingMetadata struct { <% for(const prop of props_5) {%>
 }
 
 type OkuCustomOrderTypesMetadata struct {<% for (const prop of props_12) { %>
+    <%- helpers.displayProp(prop) %> <% } %>
+}
+
+type LaunchpadMetadata struct {<% for(const prop of props_15) {%>
     <%- helpers.displayProp(prop) %> <% } %>
 }
 

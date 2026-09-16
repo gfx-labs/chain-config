@@ -60,6 +60,21 @@ export interface UniswapV4Metadata {
 	stateView: Address;
 }
 
+/**
+ * Bonding-curve launchpad deployment for a chain.
+ *
+ * `name` selects the supported launchpad implementation and `decoder` selects
+ * its event decoder; consumers validate both. `deployBlock` is the block the
+ * factory was deployed in, the earliest block worth indexing.
+ */
+export interface LaunchpadMetadata {
+	name: string;
+	decoder: string;
+	factory: Address;
+	router?: Address;
+	deployBlock?: number;
+}
+
 export interface OkuPricingMetadata {
 	nativeWrappedToken?: Address;
 	nativeToken?: Address;
@@ -122,6 +137,7 @@ export interface Markets {
 
 export interface MarketRouters {
 	binance?: ReadonlyArray<Address>;
+	bitget?: ReadonlyArray<Address>;
 	enso?: ReadonlyArray<Address>;
 	fabric?: ReadonlyArray<Address>;
 	fynd?: ReadonlyArray<Address>;
@@ -253,6 +269,7 @@ export interface IChainInfo<
 	uniswap: UniswapMetadata;
 	uniswapv4?: UniswapV4Metadata;
 	morpho: MorphoMetadata;
+	launchpad?: LaunchpadMetadata;
 	token: TokenMetadata;
 	oku: OkuMetadata;
 	deprecated: boolean;

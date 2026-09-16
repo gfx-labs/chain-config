@@ -457,6 +457,7 @@ type Network struct {
 	Uniswap            UniswapMetadata
 	Uniswapv4          UniswapV4Metadata
 	Morpho             MorphoMetadata
+	Launchpad          LaunchpadMetadata
 	Token              TokenMetadata
 	Oku                OkuMetadata
 	Deprecated         bool
@@ -732,6 +733,14 @@ type OkuCustomOrderTypesMetadata struct {
 	OracleLessDeployBlock int64
 }
 
+type LaunchpadMetadata struct {
+	Name        string
+	Decoder     string
+	Factory     common.Address
+	Router      common.Address
+	DeployBlock int64
+}
+
 type ChainContract struct {
 	Address      common.Address
 	BlockCreated int64
@@ -761,6 +770,7 @@ type Markets struct {
 
 type MarketRouters struct {
 	Binance       []common.Address
+	Bitget        []common.Address
 	Enso          []common.Address
 	Fabric        []common.Address
 	Fynd          []common.Address
@@ -783,6 +793,9 @@ func (m *MarketRouters) All() map[string][]common.Address {
 	out := make(map[string][]common.Address)
 	if len(m.Binance) > 0 {
 		out["binance"] = m.Binance
+	}
+	if len(m.Bitget) > 0 {
+		out["bitget"] = m.Bitget
 	}
 	if len(m.Enso) > 0 {
 		out["enso"] = m.Enso

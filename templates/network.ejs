@@ -12,6 +12,7 @@ import (
     var pxs = oku.pricing || {};
     var explorers = chain.blockExplorers || {};
     var morpho = chain.morpho || {};
+    var launchpad = chain.launchpad;
     var marketRouters = chain.marketRouters || {};
 %>
 
@@ -92,7 +93,10 @@ var <%- helpers.snakeToCamel(chainName) %> Network = Network{
   Morpho:          MorphoMetadata{ <% for(const prop of Object.entries(morpho)) {%>
     <%- h.snakeToCamel(prop[0]) %>: <%- h.formatValue(prop[1], h.isString(prop[1]) ? (h.isAddress(prop[1]) ? "a" : "s") : "n") %> , <% } %>
   },
-  MarketRouters:   MarketRouters{ <% for(const prop of Object.entries(marketRouters)) {%>
+<% if (launchpad) { %>  Launchpad:          LaunchpadMetadata{ <% for(const prop of Object.entries(launchpad)) {%>
+    <%- h.snakeToCamel(prop[0]) %>: <%- h.formatValue(prop[1], h.isString(prop[1]) ? (h.isAddress(prop[1]) ? "a" : "s") : "n") %> , <% } %>
+  },
+<% } %>  MarketRouters:   MarketRouters{ <% for(const prop of Object.entries(marketRouters)) {%>
     <%- h.snakeToCamel(prop[0]) %>: []common.Address{<%- prop[1].map(h.toAddr).join(",") %>}, <% } %>
   },
   Token:          TokenMetadata{ <% for(const prop of Object.entries(tok)) {%>

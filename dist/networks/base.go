@@ -83,6 +83,7 @@ var Base Network = Network{
 	},
 	MarketRouters: MarketRouters{
 		Binance:       []common.Address{common.HexToAddress("0xB44446b0c8E56988c34f7Ff73Ae904982b5FdDA5")},
+		Bitget:        []common.Address{common.HexToAddress("0xBc1D9760bd6ca468CA9fB5Ff2CFbEAC35d86c973")},
 		Enso:          []common.Address{common.HexToAddress("0xF75584eF6673aD213a685a1B58Cc0330B8eA22Cf")},
 		Fabric:        []common.Address{common.HexToAddress("0x7C137a37742437d2212B7bd873ed135b5C4c61da")},
 		Fynd:          []common.Address{common.HexToAddress("0x9bA632d83e9eF57571256Cf4cc951b8aF1158e9C"), common.HexToAddress("0xAbA5B53b03eAfaD1C5fc8BD5Fc765fC85Bb3de67")},
