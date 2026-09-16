@@ -58,8 +58,5 @@
   "packageManager": "yarn@4.15.0",
   "peerDependencies": {
     "viem": "2.x"
-  },
-  "resolutions": {
-    "npm": "^11.19.1"
   }
 }
