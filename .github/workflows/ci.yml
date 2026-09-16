@@ -27,6 +27,25 @@ jobs:
 
       - run: yarn build
 
+      # The generated Go in dist/networks is published as a Go module via the
+      # `dist/networks/v*` tag, so it has to actually compile. `yarn build` only
+      # runs it through gofmt, which accepts code that does not type check.
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: dist/networks/go.mod
+          cache-dependency-path: dist/networks/go.sum
+
+      - name: Verify generated Go builds
+        working-directory: dist/networks
+        run: go build ./... && go vet ./...
+
+      - name: Check generated output is up to date
+        run: |
+          if ! git diff --quiet -- dist/networks; then
+            echo "::warning::dist/networks is out of date with src/; the release job regenerates it, but committing it keeps diffs reviewable."
+            git diff --stat -- dist/networks
+          fi
+
       - uses: actions/upload-artifact@v4
         with:
           name: dist
