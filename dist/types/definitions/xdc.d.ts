@@ -1,0 +1,153 @@
+export declare const xdc: Readonly<{
+    name: "XDC";
+    rpcUrls: {
+        default: {
+            http: string[];
+        };
+    };
+    blockTimeSeconds: 2;
+    launchTime: 1746453600;
+    transactionType: "legacy";
+    sortIndex: 17;
+    logoUrl: "https://cms.oku.trade/cdn/public/chains/xdc-logo.svg";
+    deprecated: false;
+    estimatedSwapGas: 300000;
+    estimatedBridgeGas: 200000;
+    estimatedWrapGas: 60000;
+    safeReorgDistance: 90000;
+    blockAid: "";
+    externalId: {
+        coingecko: string;
+    };
+    markets: {
+        icecreamswap: true;
+    };
+    marketRouters: {
+        icecreamswap: "0x0EE6f0900990b23A2a96a6F41EB56693c9076031"[];
+        uniswap: ("0x738fD6d10bCc05c230388B4027CAd37f82fe2AF2" | "0xaa52bB8110fE38D0d2d2AF0B85C3A3eE622CA455")[];
+    };
+    bridges: {
+        cctp: {
+            domain: number;
+            messageTransmitterV2: "0x81D40F21F12A8F0E3252Bccb954D722d4c464B64";
+        };
+        stargate: {
+            endpointID: number;
+            tokens: {
+                name: string;
+                type: string;
+                id: number;
+                address: string;
+            }[];
+        };
+    };
+    oracles: {};
+    morpho: {
+        deployBlock: number;
+        morpho: "0xEa49B0fE898aF913A3826F9f462eE2cDcb854fD9";
+        bundler3: "0xed9bdc3E6081db528b6D5CDDf47EcB05337c62A7";
+        vaultV2Factory: "0x227544d6989cD15c05AAB6dde4F29523dcfdbe2B";
+        morphoMarketV1AdapterV2Factory: "0x5C00c99F2235439725417E9f037B7D38FfF35d31";
+        morphoMarketV1RegistryV2: "0x773Eee84bc3c4c9CD7CB79C198c5434E765ac67e";
+    };
+    initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54";
+    uniswap: {
+        deployBlock: number;
+        poolFactory: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D";
+        permit2: "0xB952578f3520EE8Ea45b7914994dcf4702cEe578";
+        multicall2: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435";
+        tickLens: "0xB3309C48F8407651D918ca3Da4C45DE40109E641";
+        nonfungiblePositionManager: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c";
+        positionsNFT: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c";
+        positionsNFTDeployBlock: number;
+        universalRouter: "0x738fD6d10bCc05c230388B4027CAd37f82fe2AF2";
+        wrappedNativeAddress: "0x951857744785e80e2de051c32ee7b25f9c458c42";
+        wrappedNativeSymbol: string;
+        wrappedNativeName: string;
+        wrappedNativeDecimals: number;
+        nativeCurrencyName: string;
+    };
+    token: {
+        wethAddress: "0x951857744785e80e2de051c32ee7b25f9c458c42";
+        usdcAddress: "0xfa2958cb79b0491cc627c1557f441ef849ca8eb1";
+    };
+    oku: {
+        router: "0x7B060A98BA242Ae42D6027a60937787eBe33DEBe";
+        limitOrderRegistry: "0x1b35fba9357fd9bda7ed0429c8bbabe1e8cc88fc";
+        limitOrderRegistryDeployBlock: number;
+        pricing: {
+            nativeWrappedToken: "0x951857744785e80e2de051c32ee7b25f9c458c42";
+            nativeWrappedName: string;
+        };
+    };
+    defaultPool: "0x29f804974da123e8e48acb107be76b9f2ce1b408";
+    defaultToken0: "0x951857744785e80e2de051c32ee7b25f9c458c42";
+    defaultToken1: "0xfa2958cb79b0491cc627c1557f441ef849ca8eb1";
+    tokenList: ({
+        symbol: string;
+        address: "0x951857744785e80e2de051c32ee7b25f9c458c42";
+    } | {
+        symbol: string;
+        address: "0xfa2958cb79b0491cc627c1557f441ef849ca8eb1";
+    } | {
+        symbol: string;
+        address: "0x2a8e898b6242355c290e1f4fc966b8788729a4d4";
+    })[];
+    stables: ("0xfa2958cb79b0491cc627c1557f441ef849ca8eb1" | "0x2a8e898b6242355c290e1f4fc966b8788729a4d4" | "0xd4b5f10d61916bd6e0860144a91ac658de8a1437")[];
+    watchlist: ("0x1e5aec37f6df6653c3342df75edd92beb3fb9846" | "0x9149b4e074f101ca0514b1d30fc78f181e21d409" | "0xd68fdf3cbe9f48422a15899318dd5cb921f92037" | "0x97bb50ace84058254df2e2f6482f5549e80b7267" | "0x9fb200504e3e9eb9b8e332fa21e47a657adfa099" | "0x898488dc884ee5ece8079499f4c7ddc5c281e85f")[];
+    v4Watchlist: never[];
+    internalName: "xdc";
+    nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/xdc.png";
+    contracts: {
+        limitOrder: {
+            address: "0x1b35fba9357fd9bda7ed0429c8bbabe1e8cc88fc";
+        };
+        nftManager: {
+            address: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c";
+        };
+        weth9: {
+            address: "0x951857744785e80e2de051c32ee7b25f9c458c42";
+        };
+        multicall2: {
+            address: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435";
+        };
+        multicall3: {
+            address: "0x0b1795cca8e4ec4df02346a082df54d437f8d9af";
+        };
+    };
+    blockExplorers: {
+        readonly default: {
+            readonly name: "XDCScan";
+            readonly url: "https://xdcscan.com";
+        };
+    };
+    blockTime?: number | undefined | undefined | undefined;
+    ensTlds?: readonly string[] | undefined;
+    id: 50;
+    nativeCurrency: {
+        readonly decimals: 18;
+        readonly name: "XDC";
+        readonly symbol: "XDC";
+    };
+    experimental_preconfirmationTime?: number | undefined | undefined | undefined;
+    sourceId?: number | undefined | undefined | undefined;
+    supportsTransactionReplacementDetection?: boolean | undefined | undefined | undefined;
+    testnet?: boolean | undefined | undefined | undefined;
+    custom?: Record<string, unknown> | undefined;
+    extendSchema?: Record<string, unknown> | undefined;
+    fees?: import("viem").ChainFees<undefined> | undefined;
+    formatters?: undefined | undefined;
+    prepareTransactionRequest?: ((args: import("viem").PrepareTransactionRequestParameters, options: {
+        client: import("viem").Client;
+        phase: "beforeFillTransaction" | "beforeFillParameters" | "afterFillParameters";
+    }) => Promise<import("viem").PrepareTransactionRequestParameters>) | [fn: ((args: import("viem").PrepareTransactionRequestParameters, options: {
+        client: import("viem").Client;
+        phase: "beforeFillTransaction" | "beforeFillParameters" | "afterFillParameters";
+    }) => Promise<import("viem").PrepareTransactionRequestParameters>) | undefined, options: {
+        runAt: readonly ("beforeFillTransaction" | "beforeFillParameters" | "afterFillParameters")[];
+    }] | undefined | undefined;
+    serializers?: import("viem").ChainSerializers<undefined, import("viem").TransactionSerializable<bigint, number>> | undefined;
+    verifyHash?: ((client: import("viem").Client, parameters: import("viem").VerifyHashActionParameters) => Promise<import("viem").VerifyHashActionReturnType>) | undefined | undefined;
+} & {
+    caip2Namespace: string;
+}>;
