@@ -132,5 +132,9 @@ var Arbitrum Network = Network{
 			BlockCreated: 0,
 			Address:      common.HexToAddress("0x842eC2c7D803033Edf55E478F461FC547Bc54EB2"),
 		},
+		"arbGasInfo": {
+			BlockCreated: 0,
+			Address:      common.HexToAddress("0x000000000000000000000000000000000000006C"),
+		},
 	},
 }

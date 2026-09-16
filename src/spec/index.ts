@@ -289,6 +289,7 @@ export interface IChainInfo<
 		limitOrder?: ChainContract;
 		weth9?: ChainContract;
 		metrom?: ChainContract;
+		arbGasInfo?: ChainContract;
 	};
 }
 

@@ -367,5 +367,6 @@ export const arbitrum = makeConfig({
 		},
 		multicall2: { address: "0x842eC2c7D803033Edf55E478F461FC547Bc54EB2" },
 		multicall3: { address: "0xcA11bde05977b3631167028862bE2a173976CA11" },
+		arbGasInfo: { address: "0x000000000000000000000000000000000000006C" },
 	},
 });
