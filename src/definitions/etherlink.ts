@@ -8,7 +8,7 @@ export const etherlink = makeConfig({
 	transactionType: "eip1559",
 	sortIndex: 15,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/etherlink-logo.svg",
-	deprecated: false,
+	deprecated: true,
 
 	estimatedSwapGas: 300_000,
 	estimatedBridgeGas: 200_000,
