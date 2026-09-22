@@ -14,7 +14,7 @@ var Etherlink Network = Network{
 	Caip2Namespace:    "eip155",
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/etherlink-logo.svg",
 	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/xtz.png",
-	Deprecated:        false,
+	Deprecated:        true,
 	LiteChain:         false,
 	SortIndex:         15,
 	LaunchTime:        1750211928,
