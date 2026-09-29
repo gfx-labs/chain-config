@@ -19,6 +19,11 @@ export default {
       },
     },
     {
+      file: "dist/index.mjs",
+      format: "es",
+    },
+    // Kept for consumers that alias or import this path directly.
+    {
       file: "dist/index-mjs.js",
       format: "es",
     },
