@@ -6,7 +6,7 @@ import type {
 	Hash,
 } from "viem";
 
-export { ChainContract } from "viem";
+export type { ChainContract } from "viem";
 
 type float64 = number;
 

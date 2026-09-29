@@ -1,5 +1,5 @@
 import type { Chain, ChainContract, ChainFormatters } from "viem";
-import { defineChain } from "viem";
+import { defineChain } from "viem/utils";
 
 /**
  * Parameters accepted by {@link makeInternalChain}.

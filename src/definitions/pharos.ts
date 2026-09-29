@@ -1,6 +1,6 @@
-import { zeroAddress } from "viem";
 import { pharos as chain } from "../internal-chains";
 import { makeConfig } from "../util";
+import { zeroAddress } from "../util/constants";
 
 export const pharos = makeConfig({
 	...chain,
