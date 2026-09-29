@@ -1,6 +1,6 @@
-import { zeroAddress, zeroHash } from "viem";
 import { sepolia as chain } from "viem/chains";
 import { makeConfig } from "../util";
+import { zeroAddress, zeroHash } from "../util/constants";
 
 export const sepolia = makeConfig({
 	...chain,

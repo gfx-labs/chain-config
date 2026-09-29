@@ -1,4 +1,4 @@
-import { defineChain } from "viem";
+import { defineChain } from "viem/utils";
 import { NON_EVM_CHAIN_ID } from "../spec";
 import { makeConfig } from "../util";
 

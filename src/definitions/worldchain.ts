@@ -1,6 +1,6 @@
-import { zeroAddress } from "viem";
 import { worldchain as chain } from "viem/chains";
 import { makeConfig } from "../util";
+import { zeroAddress } from "../util/constants";
 
 export const worldchain = makeConfig({
 	...chain,
