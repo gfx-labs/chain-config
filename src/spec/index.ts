@@ -136,6 +136,7 @@ export interface Markets {
 }
 
 export interface MarketRouters {
+	akka?: ReadonlyArray<Address>;
 	binance?: ReadonlyArray<Address>;
 	bitget?: ReadonlyArray<Address>;
 	enso?: ReadonlyArray<Address>;

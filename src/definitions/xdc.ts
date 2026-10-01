@@ -28,6 +28,7 @@ export const xdc = makeConfig({
 		icecreamswap: true,
 	},
 	marketRouters: {
+		akka: ["0x0B00004Ccc39408Fa289e9F6853BFE4eac3E52c8"],
 		icecreamswap: ["0x0EE6f0900990b23A2a96a6F41EB56693c9076031"],
 		uniswap: [
 			"0x738fD6d10bCc05c230388B4027CAd37f82fe2AF2",
