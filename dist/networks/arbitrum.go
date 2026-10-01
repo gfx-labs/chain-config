@@ -90,6 +90,7 @@ var Arbitrum Network = Network{
 
 	Morpho: MorphoMetadata{},
 	MarketRouters: MarketRouters{
+		Akka:         []common.Address{common.HexToAddress("0xfB33E11e44547f31f55CAa5e77028b844a6d6fE3")},
 		Binance:      []common.Address{common.HexToAddress("0xB44446b0c8E56988c34f7Ff73Ae904982b5FdDA5")},
 		Bitget:       []common.Address{common.HexToAddress("0xBc1D9760bd6ca468CA9fB5Ff2CFbEAC35d86c973")},
 		Enso:         []common.Address{common.HexToAddress("0xF75584eF6673aD213a685a1B58Cc0330B8eA22Cf")},

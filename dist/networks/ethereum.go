@@ -105,6 +105,7 @@ var Ethereum Network = Network{
 		PublicAllocator: common.HexToAddress("0xfd32fA2ca22c76dD6E550706Ad913FC6CE91c75D"),
 	},
 	MarketRouters: MarketRouters{
+		Akka:         []common.Address{common.HexToAddress("0x0B00004Ccc39408Fa289e9F6853BFE4eac3E52c8")},
 		Binance:      []common.Address{common.HexToAddress("0xB44446b0c8E56988c34f7Ff73Ae904982b5FdDA5")},
 		Bitget:       []common.Address{common.HexToAddress("0xBc1D9760bd6ca468CA9fB5Ff2CFbEAC35d86c973")},
 		Enso:         []common.Address{common.HexToAddress("0xF75584eF6673aD213a685a1B58Cc0330B8eA22Cf")},

@@ -769,6 +769,7 @@ type Markets struct {
 }
 
 type MarketRouters struct {
+	Akka          []common.Address
 	Binance       []common.Address
 	Bitget        []common.Address
 	Enso          []common.Address
@@ -791,6 +792,9 @@ type MarketRouters struct {
 
 func (m *MarketRouters) All() map[string][]common.Address {
 	out := make(map[string][]common.Address)
+	if len(m.Akka) > 0 {
+		out["akka"] = m.Akka
+	}
 	if len(m.Binance) > 0 {
 		out["binance"] = m.Binance
 	}

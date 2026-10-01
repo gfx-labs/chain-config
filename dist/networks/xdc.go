@@ -78,6 +78,7 @@ var Xdc Network = Network{
 		MorphoMarketV1RegistryV2:       common.HexToAddress("0x773Eee84bc3c4c9CD7CB79C198c5434E765ac67e"),
 	},
 	MarketRouters: MarketRouters{
+		Akka:         []common.Address{common.HexToAddress("0x0B00004Ccc39408Fa289e9F6853BFE4eac3E52c8")},
 		Icecreamswap: []common.Address{common.HexToAddress("0x0EE6f0900990b23A2a96a6F41EB56693c9076031")},
 		Uniswap:      []common.Address{common.HexToAddress("0x738fD6d10bCc05c230388B4027CAd37f82fe2AF2"), common.HexToAddress("0xaa52bB8110fE38D0d2d2AF0B85C3A3eE622CA455")},
 	},

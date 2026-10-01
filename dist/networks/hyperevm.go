@@ -56,6 +56,7 @@ var Hyperevm Network = Network{
 
 	Morpho: MorphoMetadata{},
 	MarketRouters: MarketRouters{
+		Akka:         []common.Address{common.HexToAddress("0xcCe7452Db4392b40Aa0E1592A7C486e13Bf69654")},
 		Bitget:       []common.Address{common.HexToAddress("0x9515d72BcE20cD9e695EE61D2a76A099EA511311")},
 		Enso:         []common.Address{common.HexToAddress("0xF75584eF6673aD213a685a1B58Cc0330B8eA22Cf")},
 		Icecreamswap: []common.Address{common.HexToAddress("0x2fF506ed9729580EF8Bf04429614beB1baE5F76D")},
