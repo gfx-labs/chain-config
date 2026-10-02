@@ -25,6 +25,13 @@ export const pharos = makeConfig({
 			messageTransmitterV2: "0x81D40F21F12A8F0E3252Bccb954D722d4c464B64",
 		},
 	},
+	marketRouters: {
+		icecreamswap: ["0x2Ca37ff95caF25366eF16fc2E655b78a165D125F"],
+		okx: [
+			"0x974d1cF6FFA4fCE5a4d62955AFc02F45aAC29f35",
+			"0x78466A1488f1883d71cFddd1c621351572dE0a1C",
+		],
+	},
 	oracles: {},
 	morpho: {
 		deployBlock: 4202147,

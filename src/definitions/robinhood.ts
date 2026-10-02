@@ -23,6 +23,7 @@ export const robinhood = makeConfig({
 	},
 	marketRouters: {
 		akka: ["0x0B00004Ccc39408Fa289e9F6853BFE4eac3E52c8"],
+		binance: ["0xB44446b0c8E56988c34f7Ff73Ae904982b5FdDA5"],
 		enso: ["0xCfBAa9Cfce952Ca4F4069874fF1Df8c05e37a3c7"],
 		fabric: ["0x3A7f029E3ad003AB5Aa78ccf101b1B543eaed6F9"],
 		fynd: [

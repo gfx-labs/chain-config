@@ -29,6 +29,7 @@ export const avalanche = makeConfig({
 		cowswap: "avalanche",
 	},
 	marketRouters: {
+		binance: ["0xB44446b0c8E56988c34f7Ff73Ae904982b5FdDA5"],
 		bitget: ["0xBc1D9760bd6ca468CA9fB5Ff2CFbEAC35d86c973"],
 		enso: ["0xF75584eF6673aD213a685a1B58Cc0330B8eA22Cf"],
 		icecreamswap: ["0xa575f37e869e6887564F87c07e2885e08D542C4a"],
