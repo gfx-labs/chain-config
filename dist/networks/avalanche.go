@@ -74,6 +74,7 @@ var Avalanche Network = Network{
 
 	Morpho: MorphoMetadata{},
 	MarketRouters: MarketRouters{
+		Binance:      []common.Address{common.HexToAddress("0xB44446b0c8E56988c34f7Ff73Ae904982b5FdDA5")},
 		Bitget:       []common.Address{common.HexToAddress("0xBc1D9760bd6ca468CA9fB5Ff2CFbEAC35d86c973")},
 		Enso:         []common.Address{common.HexToAddress("0xF75584eF6673aD213a685a1B58Cc0330B8eA22Cf")},
 		Icecreamswap: []common.Address{common.HexToAddress("0xa575f37e869e6887564F87c07e2885e08D542C4a")},
