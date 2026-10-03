@@ -4,7 +4,7 @@ import { makeConfig } from "../util";
 export const goat = makeConfig({
 	...chain,
 	name: "GOAT Network",
-	blockTimeSeconds: 3,
+	blockTimeSeconds: 3.5,
 	launchTime: 1742159744,
 	transactionType: "eip1559",
 	sortIndex: 32,
