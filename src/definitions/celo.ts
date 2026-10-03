@@ -3,7 +3,7 @@ import { makeConfig } from "../util";
 
 export const celo = makeConfig({
 	...chain,
-	blockTimeSeconds: 2,
+	blockTimeSeconds: 1,
 	launchTime: 1737754469,
 	transactionType: "eip1559",
 	sortIndex: 12,
