@@ -15,7 +15,7 @@ var Monad Network = Network{
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/monad-logo.png",
 	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/monad.png",
 	Deprecated:        false,
-	LiteChain:         false,
+	LiteChain:         true,
 	SortIndex:         4,
 	LaunchTime:        1764568406,
 	SafeReorgDistance: 90000,

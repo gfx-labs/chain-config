@@ -10,7 +10,7 @@ export const monad = makeConfig({
 	sortIndex: 4,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/monad-logo.png",
 	deprecated: false,
-
+	liteChain: true,
 	estimatedSwapGas: 300_000,
 	estimatedBridgeGas: 200_000,
 	estimatedWrapGas: 60_000,
@@ -73,8 +73,7 @@ export const monad = makeConfig({
 		dexscreener: "monad",
 	},
 	morpho: {},
-	initCodeHash:
-		"0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
+	initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
 	uniswap: {
 		deployBlock: 29255827,
 		poolFactory: "0x204FAca1764B154221e35c0d20aBb3c525710498",
