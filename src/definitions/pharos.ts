@@ -17,7 +17,9 @@ export const pharos = makeConfig({
 	estimatedWrapGas: 60_000,
 	safeReorgDistance: 90_000,
 	blockAid: "",
-	externalId: {},
+	externalId: {
+		coingecko: "pharos",
+	},
 	markets: {},
 	bridges: {
 		cctp: {

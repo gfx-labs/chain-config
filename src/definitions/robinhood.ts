@@ -17,7 +17,9 @@ export const robinhood = makeConfig({
 	estimatedWrapGas: 60_000,
 	safeReorgDistance: 90_000,
 	blockAid: "",
-	externalId: {},
+	externalId: {
+		coingecko: "robinhood",
+	},
 	markets: {
 		openocean: "robinhood",
 	},
