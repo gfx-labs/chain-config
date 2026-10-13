@@ -784,6 +784,7 @@ type MarketRouters struct {
 	Openocean     []common.Address
 	Paraswap      []common.Address
 	Propellerswap []common.Address
+	Rango         []common.Address
 	Threeroute    []common.Address
 	Uniswap       []common.Address
 	Unizen        []common.Address
@@ -836,6 +837,9 @@ func (m *MarketRouters) All() map[string][]common.Address {
 	}
 	if len(m.Propellerswap) > 0 {
 		out["propellerswap"] = m.Propellerswap
+	}
+	if len(m.Rango) > 0 {
+		out["rango"] = m.Rango
 	}
 	if len(m.Threeroute) > 0 {
 		out["threeroute"] = m.Threeroute

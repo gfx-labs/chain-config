@@ -41,6 +41,7 @@ export const avalanche = makeConfig({
 			"0x40aA958dd87FC8305b97f2BA922CDdCa374bcD7f",
 		],
 		openocean: ["0x6352a56caadC4F1E25CD6c75970Fa768A3304e64"],
+		rango: ["0x69460570c93f9DE5E2edbC3052bf10125f0Ca22d"],
 		uniswap: [
 			"0x4Dae2f939ACf50408e13d58534Ff8c2776d45265",
 			"0x8B844f885672f333Bc0042cB669255f93a4C1E6b",

@@ -101,6 +101,7 @@ var Bsc Network = Network{
 		Oneinch:      []common.Address{common.HexToAddress("0x111111125421ca6dc452d289314280a0f8842a65")},
 		Openocean:    []common.Address{common.HexToAddress("0x6352a56caadC4F1E25CD6c75970Fa768A3304e64")},
 		Paraswap:     []common.Address{common.HexToAddress("0x6A000F20005980200259B80c5102003040001068")},
+		Rango:        []common.Address{common.HexToAddress("0x69460570c93f9DE5E2edbC3052bf10125f0Ca22d")},
 		Uniswap:      []common.Address{common.HexToAddress("0x4Dae2f939ACf50408e13d58534Ff8c2776d45265"), common.HexToAddress("0x8B844f885672f333Bc0042cB669255f93a4C1E6b"), common.HexToAddress("0xB971eF87ede563556b2ED4b1C0b0019111Dd85d2")},
 		Zeroex:       []common.Address{common.HexToAddress("0x0000000000001fF3684f28c67538d4D072C22734"), common.HexToAddress("0xc2eff1F1cE35d395408A34Ad881dBCD978F40b89")},
 	},

@@ -104,6 +104,7 @@ var Arbitrum Network = Network{
 		Oneinch:      []common.Address{common.HexToAddress("0x111111125421ca6dc452d289314280a0f8842a65")},
 		Openocean:    []common.Address{common.HexToAddress("0x6352a56caadC4F1E25CD6c75970Fa768A3304e64")},
 		Paraswap:     []common.Address{common.HexToAddress("0x6A000F20005980200259B80c5102003040001068")},
+		Rango:        []common.Address{common.HexToAddress("0x69460570c93f9DE5E2edbC3052bf10125f0Ca22d")},
 		Uniswap:      []common.Address{common.HexToAddress("0x5E325eDA8064b456f4781070C0738d849c824258"), common.HexToAddress("0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45"), common.HexToAddress("0x8B844f885672f333Bc0042cB669255f93a4C1E6b")},
 		Zeroex:       []common.Address{common.HexToAddress("0x0000000000001fF3684f28c67538d4D072C22734"), common.HexToAddress("0xfeEA2A79D7d3d36753C8917AF744D71f13C9b02a")},
 	},

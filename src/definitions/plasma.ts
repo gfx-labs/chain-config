@@ -36,6 +36,7 @@ export const plasma = makeConfig({
 			"0x9FD43F5E4c24543b2eBC807321E58e6D350d6a5A",
 		],
 		openocean: ["0x6352a56caadC4F1E25CD6c75970Fa768A3304e64"],
+		rango: ["0x69460570c93f9DE5E2edbC3052bf10125f0Ca22d"],
 		uniswap: [
 			"0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc",
 			"0x807F4E281B7A3B324825C64ca53c69F0b418dE40",

@@ -81,6 +81,7 @@ var Linea Network = Network{
 		Okx:          []common.Address{common.HexToAddress("0x2E1Dee213BA8d7af0934C49a23187BabEACa8764"), common.HexToAddress("0x57df6092665eb6058DE53939612413ff4B09114E"), common.HexToAddress("0xdfcb0cEcC10e78F3F3749F3f3d3EE4047b2c9829")},
 		Oneinch:      []common.Address{common.HexToAddress("0x111111125421ca6dc452d289314280a0f8842a65")},
 		Openocean:    []common.Address{common.HexToAddress("0x6352a56caadC4F1E25CD6c75970Fa768A3304e64")},
+		Rango:        []common.Address{common.HexToAddress("0x69460570c93f9DE5E2edbC3052bf10125f0Ca22d")},
 		Uniswap:      []common.Address{common.HexToAddress("0x3d4e44Eb1374240CE5F1B871ab261CD16335B76a"), common.HexToAddress("0x8B844f885672f333Bc0042cB669255f93a4C1E6b"), common.HexToAddress("0xD7c7D7F18dD5388D5217c9696C7e799fCd75c6bD")},
 		Zeroex:       []common.Address{common.HexToAddress("0x0000000000001fF3684f28c67538d4D072C22734"), common.HexToAddress("0x1816eA2150e74Eb3068A4e3809E461Cc6977A7D7")},
 	},

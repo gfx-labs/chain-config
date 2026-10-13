@@ -49,6 +49,7 @@ export const unichain = makeConfig({
 		openocean: ["0x6352a56caadC4F1E25CD6c75970Fa768A3304e64"],
 		paraswap: ["0x6A000F20005980200259B80c5102003040001068"],
 		propellerswap: ["0xFfA5ec2e444e4285108e4a17b82dA495c178427B"],
+		rango: ["0x69460570c93f9DE5E2edbC3052bf10125f0Ca22d"],
 		uniswap: [
 			"0x73855d06DE49d0fe4A9c42636Ba96c62da12FF9C",
 			"0xEf740bf23aCaE26f6492B10de645D6B98dC8Eaf3",
