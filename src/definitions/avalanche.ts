@@ -18,6 +18,10 @@ export const avalanche = makeConfig({
 	liteChain: true,
 	safeReorgDistance: 90000,
 	blockAid: "",
+	euler: {
+		evc: "0xddcbe30A761Edd2e19bba930A977475265F36Fa1",
+		eVaultFactory: "0xaf4B4c18B17F6a2B32F6c398a3910bdCD7f26181",
+	},
 	externalId: {
 		zerion: "avalanche",
 		debank: "avax",

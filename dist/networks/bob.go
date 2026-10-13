@@ -71,6 +71,10 @@ var Bob Network = Network{
 	},
 
 	Morpho: MorphoMetadata{},
+	Euler: EulerMetadata{
+		Evc:           common.HexToAddress("0x59f0FeEc4fA474Ad4ffC357cC8d8595B68abE47d"),
+		EVaultFactory: common.HexToAddress("0x046a9837A61d6b6263f54F4E27EE072bA4bdC7e4"),
+	},
 	MarketRouters: MarketRouters{
 		Icecreamswap: []common.Address{common.HexToAddress("0xC87De04e2EC1F4282dFF2933A2D58199f688fC3d")},
 		Uniswap:      []common.Address{common.HexToAddress("0x346239972d1fa486FC4a521031BC81bFB7D6e8a4"), common.HexToAddress("0x807F4E281B7A3B324825C64ca53c69F0b418dE40")},

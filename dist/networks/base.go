@@ -81,6 +81,10 @@ var Base Network = Network{
 		Bundler3:        common.HexToAddress("0x6BFd8137e702540E7A42B74178A4a49Ba43920C4"),
 		PublicAllocator: common.HexToAddress("0xA090dD1a701408Df1d4d0B85b716c87565f90467"),
 	},
+	Euler: EulerMetadata{
+		Evc:           common.HexToAddress("0x5301c7dD20bD945D2013b48ed0DEE3A284ca8989"),
+		EVaultFactory: common.HexToAddress("0x7F321498A801A191a93C840750ed637149dDf8D0"),
+	},
 	MarketRouters: MarketRouters{
 		Binance:       []common.Address{common.HexToAddress("0xB44446b0c8E56988c34f7Ff73Ae904982b5FdDA5")},
 		Bitget:        []common.Address{common.HexToAddress("0xBc1D9760bd6ca468CA9fB5Ff2CFbEAC35d86c973")},

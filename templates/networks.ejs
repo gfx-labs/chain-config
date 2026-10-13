@@ -25,6 +25,7 @@ import (
     var props_13 = UniswapV4Metadata.getProperties();
     var props_14 = MarketRouters.getProperties();
     var props_15 = LaunchpadMetadata.getProperties();
+    var props_16 = EulerMetadata.getProperties();
 %>
 
 var ErrNetworkNotFound = errors.New("chain not found")
@@ -399,6 +400,10 @@ type OkuCustomOrderTypesMetadata struct {<% for (const prop of props_12) { %>
 }
 
 type LaunchpadMetadata struct {<% for(const prop of props_15) {%>
+    <%- helpers.displayProp(prop) %> <% } %>
+}
+
+type EulerMetadata struct {<% for(const prop of props_16) {%>
     <%- helpers.displayProp(prop) %> <% } %>
 }
 

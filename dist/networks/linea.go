@@ -72,6 +72,10 @@ var Linea Network = Network{
 	},
 
 	Morpho: MorphoMetadata{},
+	Euler: EulerMetadata{
+		Evc:           common.HexToAddress("0xd8CeCEe9A04eA3d941a959F68fb4486f23271d09"),
+		EVaultFactory: common.HexToAddress("0x84711986Fd3BF0bFe4a8e6d7f4E22E67f7f27F04"),
+	},
 	MarketRouters: MarketRouters{
 		Binance:      []common.Address{common.HexToAddress("0xB44446b0c8E56988c34f7Ff73Ae904982b5FdDA5")},
 		Enso:         []common.Address{common.HexToAddress("0xA146d46823f3F594B785200102Be5385CAfCE9B5")},

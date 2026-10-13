@@ -18,6 +18,13 @@ export const bsc = makeConfig({
 	estimatedWrapGas: 60_000,
 	safeReorgDistance: 90000,
 	blockAid: "bsc",
+	euler: {
+		evc: "0xb2E5a73CeE08593d1a076a2AE7A6e02925a640ea",
+		eVaultFactory: "0x7F53E2755eB3c43824E162F7F6F087832B9C9Df6",
+		cowOpenPositionWrapper: "0x64C26b3A182826fe2AB8c04C8Caf40B0c4Bf9a66",
+		cowClosePositionWrapper: "0x4f4CE927188637b4a1d91350c3114F4BD301dd02",
+		cowCollateralSwapWrapper: "0xCC054CD4b814a2caEb63C6F6A446435480a383F3",
+	},
 	externalId: {
 		zerion: "binance-smart-chain",
 		debank: "bsc",

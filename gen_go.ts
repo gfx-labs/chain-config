@@ -17,6 +17,7 @@ const UniswapMetadata = index?.getInterface("UniswapMetadata");
 const UniswapV4Metadata = index?.getInterface("UniswapV4Metadata");
 const MorphoMetadata = index?.getInterface("MorphoMetadata");
 const LaunchpadMetadata = index?.getInterface("LaunchpadMetadata");
+const EulerMetadata = index?.getInterface("EulerMetadata");
 const TokenMetadata = index?.getInterface("TokenMetadata");
 const OkuMetadata = index?.getInterface("OkuMetadata");
 const OkuPricingMetadata = index?.getInterface("OkuPricingMetadata");
@@ -185,6 +186,7 @@ const output = ejs.render(networksString.toString(), {
   UniswapV4Metadata,
   MorphoMetadata,
   LaunchpadMetadata,
+  EulerMetadata,
   TokenMetadata,
   ChainContract,
   BlockExplorer,

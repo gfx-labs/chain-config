@@ -89,6 +89,10 @@ var Arbitrum Network = Network{
 	},
 
 	Morpho: MorphoMetadata{},
+	Euler: EulerMetadata{
+		Evc:           common.HexToAddress("0x6302ef0F34100CDDFb5489fbcB6eE1AA95CD1066"),
+		EVaultFactory: common.HexToAddress("0x78Df1CF5bf06a7f27f2ACc580B934238C1b80D50"),
+	},
 	MarketRouters: MarketRouters{
 		Akka:         []common.Address{common.HexToAddress("0xfB33E11e44547f31f55CAa5e77028b844a6d6fE3")},
 		Binance:      []common.Address{common.HexToAddress("0xB44446b0c8E56988c34f7Ff73Ae904982b5FdDA5")},

@@ -16,6 +16,10 @@ export const monad = makeConfig({
 	estimatedWrapGas: 60_000,
 	safeReorgDistance: 90000,
 	blockAid: "",
+	euler: {
+		evc: "0x7a9324E8f270413fa2E458f5831226d99C7477CD",
+		eVaultFactory: "0xba4Dd672062dE8FeeDb665DD4410658864483f1E",
+	},
 	externalId: {
 		tenderly: "true",
 		coingecko: "monad",

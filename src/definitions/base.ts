@@ -26,6 +26,10 @@ export const base = makeConfig({
 		bundler3: "0x6BFd8137e702540E7A42B74178A4a49Ba43920C4",
 		publicAllocator: "0xA090dD1a701408Df1d4d0B85b716c87565f90467",
 	},
+	euler: {
+		evc: "0x5301c7dD20bD945D2013b48ed0DEE3A284ca8989",
+		eVaultFactory: "0x7F321498A801A191a93C840750ed637149dDf8D0",
+	},
 	externalId: {
 		zerion: "base",
 		debank: "base",

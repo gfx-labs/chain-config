@@ -15,6 +15,10 @@ export const bob = makeConfig({
 	estimatedWrapGas: 60_000,
 	safeReorgDistance: 90000,
 	blockAid: "",
+	euler: {
+		evc: "0x59f0FeEc4fA474Ad4ffC357cC8d8595B68abE47d",
+		eVaultFactory: "0x046a9837A61d6b6263f54F4E27EE072bA4bdC7e4",
+	},
 	externalId: {
 		tenderly: "true",
 		coingecko: "bob-network",

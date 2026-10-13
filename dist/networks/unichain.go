@@ -80,6 +80,10 @@ var Unichain Network = Network{
 		StateView:       common.HexToAddress("0x86e8631a016f9068c3f085faf484ee3f5fdee8f2"),
 	},
 	Morpho: MorphoMetadata{},
+	Euler: EulerMetadata{
+		Evc:           common.HexToAddress("0x2A1176964F5D7caE5406B627Bf6166664FE83c60"),
+		EVaultFactory: common.HexToAddress("0xbAd8b5BDFB2bcbcd78Cc9f1573D3Aad6E865e752"),
+	},
 	MarketRouters: MarketRouters{
 		Enso:          []common.Address{common.HexToAddress("0xF75584eF6673aD213a685a1B58Cc0330B8eA22Cf")},
 		Fynd:          []common.Address{common.HexToAddress("0xa0498D0Fa4081c9a735b137a2E6A1910FaA0E0bC"), common.HexToAddress("0xCba5574597Ad00EA250Fd106DAB4Fc7461949635")},

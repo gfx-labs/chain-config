@@ -13,6 +13,7 @@ import (
     var explorers = chain.blockExplorers || {};
     var morpho = chain.morpho || {};
     var launchpad = chain.launchpad;
+    var euler = chain.euler;
     var marketRouters = chain.marketRouters || {};
 %>
 
@@ -95,6 +96,9 @@ var <%- helpers.snakeToCamel(chainName) %> Network = Network{
   },
 <% if (launchpad) { %>  Launchpad:          LaunchpadMetadata{ <% for(const prop of Object.entries(launchpad)) {%>
     <%- h.snakeToCamel(prop[0]) %>: <%- h.formatValue(prop[1], h.isString(prop[1]) ? (h.isAddress(prop[1]) ? "a" : "s") : "n") %> , <% } %>
+  },
+<% } %><% if (euler) { %>  Euler:          EulerMetadata{ <% for(const prop of Object.entries(euler)) {%>
+    <%- h.snakeToCamel(prop[0]) %>: <%- h.formatValue(prop[1], "a") %> , <% } %>
   },
 <% } %>  MarketRouters:   MarketRouters{ <% for(const prop of Object.entries(marketRouters)) {%>
     <%- h.snakeToCamel(prop[0]) %>: []common.Address{<%- prop[1].map(h.toAddr).join(",") %>}, <% } %>

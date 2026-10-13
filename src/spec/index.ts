@@ -75,6 +75,19 @@ export interface LaunchpadMetadata {
 	deployBlock?: number;
 }
 
+/**
+ * Euler V2 deployment for a chain (euler-xyz/euler-interfaces CoreAddresses).
+ * The `cow*Wrapper` fields are CoW Protocol wrappers that settle Euler
+ * position changes atomically with a CoW order.
+ */
+export interface EulerMetadata {
+	evc: Address;
+	eVaultFactory: Address;
+	cowOpenPositionWrapper?: Address;
+	cowClosePositionWrapper?: Address;
+	cowCollateralSwapWrapper?: Address;
+}
+
 export interface OkuPricingMetadata {
 	nativeWrappedToken?: Address;
 	nativeToken?: Address;
@@ -271,6 +284,7 @@ export interface IChainInfo<
 	uniswap: UniswapMetadata;
 	uniswapv4?: UniswapV4Metadata;
 	morpho: MorphoMetadata;
+	euler?: EulerMetadata;
 	launchpad?: LaunchpadMetadata;
 	token: TokenMetadata;
 	oku: OkuMetadata;

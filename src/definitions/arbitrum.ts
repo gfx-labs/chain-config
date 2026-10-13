@@ -18,6 +18,10 @@ export const arbitrum = makeConfig({
 	safeReorgDistance: 90000 * 2,
 	blockAid: "arbitrum",
 	morpho: {},
+	euler: {
+		evc: "0x6302ef0F34100CDDFb5489fbcB6eE1AA95CD1066",
+		eVaultFactory: "0x78Df1CF5bf06a7f27f2ACc580B934238C1b80D50",
+	},
 	externalId: {
 		zerion: "arbitrum",
 		debank: "arb",

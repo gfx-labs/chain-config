@@ -69,7 +69,11 @@ var Sonic Network = Network{
 		NativeCurrencyName:         "S",
 	},
 
-	Morpho:        MorphoMetadata{},
+	Morpho: MorphoMetadata{},
+	Euler: EulerMetadata{
+		Evc:           common.HexToAddress("0x4860C903f6Ad709c3eDA46D3D502943f184D4315"),
+		EVaultFactory: common.HexToAddress("0xF075cC8660B51D0b8a4474e3f47eDAC5fA034cFB"),
+	},
 	MarketRouters: MarketRouters{},
 	Token: TokenMetadata{
 		WethAddress: common.HexToAddress("0x039e2fB66102314Ce7b64Ce5Ce3E5183bc94aD38"),

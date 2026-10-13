@@ -73,6 +73,10 @@ var Avalanche Network = Network{
 	},
 
 	Morpho: MorphoMetadata{},
+	Euler: EulerMetadata{
+		Evc:           common.HexToAddress("0xddcbe30A761Edd2e19bba930A977475265F36Fa1"),
+		EVaultFactory: common.HexToAddress("0xaf4B4c18B17F6a2B32F6c398a3910bdCD7f26181"),
+	},
 	MarketRouters: MarketRouters{
 		Binance:      []common.Address{common.HexToAddress("0xB44446b0c8E56988c34f7Ff73Ae904982b5FdDA5")},
 		Bitget:       []common.Address{common.HexToAddress("0xBc1D9760bd6ca468CA9fB5Ff2CFbEAC35d86c973")},

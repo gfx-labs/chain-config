@@ -16,6 +16,10 @@ export const sonic = makeConfig({
 	safeReorgDistance: 90000,
 	blockAid: "",
 	morpho: {},
+	euler: {
+		evc: "0x4860C903f6Ad709c3eDA46D3D502943f184D4315",
+		eVaultFactory: "0xF075cC8660B51D0b8a4474e3f47eDAC5fA034cFB",
+	},
 	externalId: {
 		tenderly: "true",
 		coingecko: "sonic",
