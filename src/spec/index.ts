@@ -151,6 +151,7 @@ export interface MarketRouters {
 	openocean?: ReadonlyArray<Address>;
 	paraswap?: ReadonlyArray<Address>;
 	propellerswap?: ReadonlyArray<Address>;
+	rango?: ReadonlyArray<Address>;
 	threeroute?: ReadonlyArray<Address>;
 	uniswap?: ReadonlyArray<Address>;
 	unizen?: ReadonlyArray<Address>;

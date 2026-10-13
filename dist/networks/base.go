@@ -96,6 +96,7 @@ var Base Network = Network{
 		Openocean:     []common.Address{common.HexToAddress("0x6352a56caadC4F1E25CD6c75970Fa768A3304e64")},
 		Paraswap:      []common.Address{common.HexToAddress("0x6A000F20005980200259B80c5102003040001068")},
 		Propellerswap: []common.Address{common.HexToAddress("0xea3207778e39EB02D72C9D3c4Eac7E224ac5d369")},
+		Rango:         []common.Address{common.HexToAddress("0x69460570c93f9DE5E2edbC3052bf10125f0Ca22d")},
 		Uniswap:       []common.Address{common.HexToAddress("0x2626664c2603336E57B271c5C0b26F421741e481"), common.HexToAddress("0x3fC91A3afd70395Cd496C647d5a6CC9D4B2b7FAD"), common.HexToAddress("0xFdf682F51FE81Aa4898F0AE2163d8A55c127fbC7")},
 		Unizen:        []common.Address{common.HexToAddress("0xef58b643240178c2bc37681f8d4e50d7ec37ee22")},
 		Zeroex:        []common.Address{common.HexToAddress("0x0000000000001fF3684f28c67538d4D072C22734"), common.HexToAddress("0x7747F8D2a76BD6345Cc29622a946A929647F2359")},

@@ -35,6 +35,7 @@ export const monad = makeConfig({
 			"0xf534A8a1CAD0543Cd6438f7534CA3486c01998d4",
 		],
 		openocean: ["0x6352a56caadC4F1E25CD6c75970Fa768A3304e64"],
+		rango: ["0x69460570c93f9DE5E2edbC3052bf10125f0Ca22d"],
 		uniswap: [
 			"0x75FC67473A91335B5b8F8821277262a13B38c9b3",
 			"0xFdf682F51FE81Aa4898F0AE2163d8A55c127fbC7",
@@ -73,7 +74,8 @@ export const monad = makeConfig({
 		dexscreener: "monad",
 	},
 	morpho: {},
-	initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
+	initCodeHash:
+		"0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
 	uniswap: {
 		deployBlock: 29255827,
 		poolFactory: "0x204FAca1764B154221e35c0d20aBb3c525710498",

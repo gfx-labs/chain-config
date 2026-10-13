@@ -63,6 +63,7 @@ var Hyperevm Network = Network{
 		Kyberswap:    []common.Address{common.HexToAddress("0x6131B5fae19EA4f9D964eAc0408E4408b66337b5")},
 		Okx:          []common.Address{common.HexToAddress("0x9Ac7b1FFEE0f58c0a3c89AA54Afb62efD25DC9fd"), common.HexToAddress("0xb193874f0C77948d2bCFeC2EfAF8Bc65B4C2ca89"), common.HexToAddress("0x56e6983D59bF472Ced0E63966A14d94A3A291589")},
 		Openocean:    []common.Address{common.HexToAddress("0x6352a56caadC4F1E25CD6c75970Fa768A3304e64")},
+		Rango:        []common.Address{common.HexToAddress("0x69460570c93f9DE5E2edbC3052bf10125f0Ca22d")},
 		Zeroex:       []common.Address{common.HexToAddress("0x0000000000001fF3684f28c67538d4D072C22734"), common.HexToAddress("0xb32b027C59F540C22B4c76bF849BcF853B99F158")},
 	},
 	Token: TokenMetadata{

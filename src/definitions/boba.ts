@@ -29,6 +29,7 @@ export const boba = makeConfig({
 	},
 	marketRouters: {
 		icecreamswap: ["0xC87De04e2EC1F4282dFF2933A2D58199f688fC3d"],
+		rango: ["0xd9BdD77E9017C4727D3CdB87D91b7a0Fc7d63da4"],
 		uniswap: [
 			"0x4BA622997559F9b5Ac68751D7Fc3dEecc23a0e88",
 			"0x759E8B0cb9d65291e258aE3e043258ae1dD0df16",

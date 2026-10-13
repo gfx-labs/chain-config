@@ -90,6 +90,7 @@ var Unichain Network = Network{
 		Openocean:     []common.Address{common.HexToAddress("0x6352a56caadC4F1E25CD6c75970Fa768A3304e64")},
 		Paraswap:      []common.Address{common.HexToAddress("0x6A000F20005980200259B80c5102003040001068")},
 		Propellerswap: []common.Address{common.HexToAddress("0xFfA5ec2e444e4285108e4a17b82dA495c178427B")},
+		Rango:         []common.Address{common.HexToAddress("0x69460570c93f9DE5E2edbC3052bf10125f0Ca22d")},
 		Uniswap:       []common.Address{common.HexToAddress("0x73855d06DE49d0fe4A9c42636Ba96c62da12FF9C"), common.HexToAddress("0xEf740bf23aCaE26f6492B10de645D6B98dC8Eaf3"), common.HexToAddress("0xFdf682F51FE81Aa4898F0AE2163d8A55c127fbC7")},
 		Zeroex:        []common.Address{common.HexToAddress("0x0000000000001fF3684f28c67538d4D072C22734"), common.HexToAddress("0x972655fACb8Df3CdF40395E4262f874f81674D46")},
 	},
