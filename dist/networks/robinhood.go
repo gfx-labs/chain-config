@@ -90,6 +90,7 @@ var Robinhood Network = Network{
 		Okx:          []common.Address{common.HexToAddress("0xE58b3089dF6667fBf99b75595a1671BaF6797D6d"), common.HexToAddress("0x6e2A35A7AD683cF634D91492d73bb7FF774c6919"), common.HexToAddress("0x42170295F1173c9e5874ea9d00c6d137E1a4f53d")},
 		Openocean:    []common.Address{common.HexToAddress("0x6352a56caadC4F1E25CD6c75970Fa768A3304e64")},
 		Rango:        []common.Address{common.HexToAddress("0x69460570c93f9DE5E2edbC3052bf10125f0Ca22d")},
+		Threeroute:   []common.Address{common.HexToAddress("0x333333333c306C76f341028122ae7c90A334D176")},
 		Uniswap:      []common.Address{common.HexToAddress("0x8876789976dEcBfCbBbe364623C63652db8C0904"), common.HexToAddress("0xCaf681a66D020601342297493863E78C959E5cb2")},
 		Zeroex:       []common.Address{common.HexToAddress("0x0000000000001fF3684f28c67538d4D072C22734"), common.HexToAddress("0xe72688F7d25D7318B9A81F21EdDa640CA948c83B")},
 	},

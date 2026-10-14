@@ -62,6 +62,7 @@ var Celo Network = Network{
 		PositionsNFT:               common.HexToAddress("0x3d79EdAaBC0EaB6F08ED885C05Fc0B014290D95A"),
 		PositionsNFTDeployBlock:    13916373,
 		UniversalRouter:            common.HexToAddress("0x8B844f885672f333Bc0042cB669255f93a4C1E6b"),
+		SwapRouter02:               common.HexToAddress("0x5615CDAb10dc425a742d643d949a7F474C01abc4"),
 		NativeCurrencyName:         "CELO",
 	},
 
@@ -70,7 +71,7 @@ var Celo Network = Network{
 		Icecreamswap: []common.Address{common.HexToAddress("0x911a744ab8eccB504173fBCAbBD7C34648F2A773")},
 		Openocean:    []common.Address{common.HexToAddress("0x6352a56caadC4F1E25CD6c75970Fa768A3304e64")},
 		Rango:        []common.Address{common.HexToAddress("0x69460570c93f9DE5E2edbC3052bf10125f0Ca22d")},
-		Uniswap:      []common.Address{common.HexToAddress("0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45"), common.HexToAddress("0x8B844f885672f333Bc0042cB669255f93a4C1E6b")},
+		Uniswap:      []common.Address{common.HexToAddress("0x5615CDAb10dc425a742d643d949a7F474C01abc4"), common.HexToAddress("0x8B844f885672f333Bc0042cB669255f93a4C1E6b")},
 	},
 	Token: TokenMetadata{
 		WbtcAddress:   common.HexToAddress("0xbaab46e28388d2779e6e31fd00cf0e5ad95e327b"),

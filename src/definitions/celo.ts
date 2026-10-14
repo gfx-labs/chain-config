@@ -27,7 +27,7 @@ export const celo = makeConfig({
 		openocean: ["0x6352a56caadC4F1E25CD6c75970Fa768A3304e64"],
 		rango: ["0x69460570c93f9DE5E2edbC3052bf10125f0Ca22d"],
 		uniswap: [
-			"0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45",
+			"0x5615CDAb10dc425a742d643d949a7F474C01abc4",
 			"0x8B844f885672f333Bc0042cB669255f93a4C1E6b",
 		],
 	},
@@ -73,6 +73,8 @@ export const celo = makeConfig({
 		positionsNFT: "0x3d79EdAaBC0EaB6F08ED885C05Fc0B014290D95A",
 		positionsNFTDeployBlock: 13916373,
 		universalRouter: "0x8B844f885672f333Bc0042cB669255f93a4C1E6b",
+		// 0x68b3...Fc45 (SwapRouter02 on most chains) is an unrelated contract on Celo.
+		swapRouter02: "0x5615CDAb10dc425a742d643d949a7F474C01abc4",
 
 		nativeCurrencyName: "CELO",
 	},

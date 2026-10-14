@@ -25,12 +25,16 @@ export const sonic = makeConfig({
 		coingecko: "sonic",
 	},
 	markets: {
+		threeroute: true,
 		icecreamswap: true,
 		kyberswap: "sonic",
 		openocean: "sonic",
 		paraswap: {
 			routerContract: "0x6A000F20005980200259B80c5102003040001068",
 		},
+	},
+	marketRouters: {
+		threeroute: ["0x333333333c306C76f341028122ae7c90A334D176"],
 	},
 	bridges: {
 		cctp: {

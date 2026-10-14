@@ -38,6 +38,7 @@ export const base = makeConfig({
 		coingecko: "base",
 	},
 	markets: {
+		threeroute: true,
 		kyberswap: "base",
 		oneinch: {
 			spender: "0x111111125421ca6dc452d289314280a0f8842a65",
@@ -77,6 +78,7 @@ export const base = makeConfig({
 		paraswap: ["0x6A000F20005980200259B80c5102003040001068"],
 		propellerswap: ["0xea3207778e39EB02D72C9D3c4Eac7E224ac5d369"],
 		rango: ["0x69460570c93f9DE5E2edbC3052bf10125f0Ca22d"],
+		threeroute: ["0x333333333c306C76f341028122ae7c90A334D176"],
 		uniswap: [
 			"0x2626664c2603336E57B271c5C0b26F421741e481",
 			"0x3fC91A3afd70395Cd496C647d5a6CC9D4B2b7FAD",

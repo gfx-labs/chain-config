@@ -87,6 +87,7 @@ var Monad Network = Network{
 		Okx:          []common.Address{common.HexToAddress("0x7A7AD9aa93cd0A2D0255326E5Fb145CEc14997FF"), common.HexToAddress("0xc1C76E784Db8D68585fb608ce68FC5DcFF14000E"), common.HexToAddress("0xf534A8a1CAD0543Cd6438f7534CA3486c01998d4")},
 		Openocean:    []common.Address{common.HexToAddress("0x6352a56caadC4F1E25CD6c75970Fa768A3304e64")},
 		Rango:        []common.Address{common.HexToAddress("0x69460570c93f9DE5E2edbC3052bf10125f0Ca22d")},
+		Threeroute:   []common.Address{common.HexToAddress("0x333333333c306C76f341028122ae7c90A334D176")},
 		Uniswap:      []common.Address{common.HexToAddress("0x75FC67473A91335B5b8F8821277262a13B38c9b3"), common.HexToAddress("0xFdf682F51FE81Aa4898F0AE2163d8A55c127fbC7"), common.HexToAddress("0xfE31F71C1b106EAc32F1A19239c9a9A72ddfb900")},
 		Zeroex:       []common.Address{common.HexToAddress("0x0000000000001fF3684f28c67538d4D072C22734"), common.HexToAddress("0xfb78Fcae443eB423b59B8C186518c5dF94416344")},
 	},
