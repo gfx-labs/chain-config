@@ -21,6 +21,7 @@ export const robinhood = makeConfig({
 		coingecko: "robinhood",
 	},
 	markets: {
+		threeroute: true,
 		openocean: "robinhood",
 	},
 	marketRouters: {
@@ -42,6 +43,7 @@ export const robinhood = makeConfig({
 		],
 		openocean: ["0x6352a56caadC4F1E25CD6c75970Fa768A3304e64"],
 		rango: ["0x69460570c93f9DE5E2edbC3052bf10125f0Ca22d"],
+		threeroute: ["0x333333333c306C76f341028122ae7c90A334D176"],
 		uniswap: [
 			"0x8876789976dEcBfCbBbe364623C63652db8C0904",
 			"0xCaf681a66D020601342297493863E78C959E5cb2",

@@ -38,6 +38,7 @@ export const mainnet = makeConfig({
 		},
 	},
 	markets: {
+		threeroute: true,
 		airswap: true,
 		kyberswap: "ethereum",
 		oneinch: {
@@ -74,6 +75,7 @@ export const mainnet = makeConfig({
 		openocean: ["0x6352a56caadC4F1E25CD6c75970Fa768A3304e64"],
 		paraswap: ["0x6A000F20005980200259B80c5102003040001068"],
 		rango: ["0x69460570c93f9DE5E2edbC3052bf10125f0Ca22d"],
+		threeroute: ["0x333333333c306C76f341028122ae7c90A334D176"],
 		uniswap: [
 			"0x66a9893cC07D91D95644AEDD05D03f95e1dBA8Af",
 			"0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45",
