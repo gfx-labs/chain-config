@@ -16,6 +16,10 @@ export const plasma = makeConfig({
 	estimatedWrapGas: 60_000,
 	safeReorgDistance: 90000,
 	blockAid: "",
+	euler: {
+		evc: "0x7bdbd0A7114aA42CA957F292145F6a931a345583",
+		eVaultFactory: "0x42388213C6F56D7E1477632b58Ae6Bba9adeEeA3",
+	},
 	externalId: {
 		coingecko: "plasma",
 	},

@@ -70,6 +70,10 @@ var Plasma Network = Network{
 	},
 
 	Morpho: MorphoMetadata{},
+	Euler: EulerMetadata{
+		Evc:           common.HexToAddress("0x7bdbd0A7114aA42CA957F292145F6a931a345583"),
+		EVaultFactory: common.HexToAddress("0x42388213C6F56D7E1477632b58Ae6Bba9adeEeA3"),
+	},
 	MarketRouters: MarketRouters{
 		Binance:      []common.Address{common.HexToAddress("0xB44446b0c8E56988c34f7Ff73Ae904982b5FdDA5")},
 		Enso:         []common.Address{common.HexToAddress("0xCfBAa9Cfce952Ca4F4069874fF1Df8c05e37a3c7")},

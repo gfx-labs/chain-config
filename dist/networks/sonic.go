@@ -70,6 +70,10 @@ var Sonic Network = Network{
 	},
 
 	Morpho: MorphoMetadata{},
+	Euler: EulerMetadata{
+		Evc:           common.HexToAddress("0x4860C903f6Ad709c3eDA46D3D502943f184D4315"),
+		EVaultFactory: common.HexToAddress("0xF075cC8660B51D0b8a4474e3f47eDAC5fA034cFB"),
+	},
 	MarketRouters: MarketRouters{
 		Threeroute: []common.Address{common.HexToAddress("0x333333333c306C76f341028122ae7c90A334D176")},
 	},

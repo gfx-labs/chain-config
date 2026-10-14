@@ -74,6 +74,10 @@ var Monad Network = Network{
 	},
 
 	Morpho: MorphoMetadata{},
+	Euler: EulerMetadata{
+		Evc:           common.HexToAddress("0x7a9324E8f270413fa2E458f5831226d99C7477CD"),
+		EVaultFactory: common.HexToAddress("0xba4Dd672062dE8FeeDb665DD4410658864483f1E"),
+	},
 	MarketRouters: MarketRouters{
 		Binance:      []common.Address{common.HexToAddress("0xB44446b0c8E56988c34f7Ff73Ae904982b5FdDA5")},
 		Enso:         []common.Address{common.HexToAddress("0xCfBAa9Cfce952Ca4F4069874fF1Df8c05e37a3c7")},

@@ -457,6 +457,7 @@ type Network struct {
 	Uniswap            UniswapMetadata
 	Uniswapv4          UniswapV4Metadata
 	Morpho             MorphoMetadata
+	Euler              EulerMetadata
 	Launchpad          LaunchpadMetadata
 	Token              TokenMetadata
 	Oku                OkuMetadata
@@ -739,6 +740,14 @@ type LaunchpadMetadata struct {
 	Factory     common.Address
 	Router      common.Address
 	DeployBlock int64
+}
+
+type EulerMetadata struct {
+	Evc                      common.Address
+	EVaultFactory            common.Address
+	CowOpenPositionWrapper   common.Address
+	CowClosePositionWrapper  common.Address
+	CowCollateralSwapWrapper common.Address
 }
 
 type ChainContract struct {

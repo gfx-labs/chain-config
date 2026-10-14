@@ -18,6 +18,10 @@ export const polygon = makeConfig({
 	estimatedWrapGas: 60_000,
 	safeReorgDistance: 90000,
 	blockAid: "polygon",
+	euler: {
+		evc: "0x90811DacA4BD23Fc79A87FBdff7522bED2d24B4B",
+		eVaultFactory: "0xB1771a13e2a13fCafA89B00335915E732B9466b7",
+	},
 	externalId: {
 		zerion: "polygon",
 		debank: "matic",

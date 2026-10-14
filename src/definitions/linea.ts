@@ -19,6 +19,10 @@ export const linea = makeConfig({
 	estimatedWrapGas: 60_000,
 	safeReorgDistance: 100,
 	blockAid: "linea",
+	euler: {
+		evc: "0xd8CeCEe9A04eA3d941a959F68fb4486f23271d09",
+		eVaultFactory: "0x84711986Fd3BF0bFe4a8e6d7f4E22E67f7f27F04",
+	},
 	externalId: {
 		zerion: "linea",
 		tenderly: "true",

@@ -16,6 +16,10 @@ export const hyperevm = makeConfig({
 	estimatedWrapGas: 60_000,
 	safeReorgDistance: 90000,
 	blockAid: "",
+	euler: {
+		evc: "0xceAA7cdCD7dDBee8601127a9Abb17A974d613db4",
+		eVaultFactory: "0xcF5552580fD364cdBBFcB5Ae345f75674c59273A",
+	},
 	externalId: {
 		coingecko: "hyperevm",
 	},

@@ -16,6 +16,10 @@ export const unichain = makeConfig({
 	estimatedWrapGas: 60_000,
 	safeReorgDistance: 90000,
 	blockAid: "unichain",
+	euler: {
+		evc: "0x2A1176964F5D7caE5406B627Bf6166664FE83c60",
+		eVaultFactory: "0xbAd8b5BDFB2bcbcd78Cc9f1573D3Aad6E865e752",
+	},
 	externalId: {
 		tenderly: "true",
 		coingecko: "unichain",

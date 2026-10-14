@@ -87,6 +87,13 @@ var Bsc Network = Network{
 	},
 
 	Morpho: MorphoMetadata{},
+	Euler: EulerMetadata{
+		Evc:                      common.HexToAddress("0xb2E5a73CeE08593d1a076a2AE7A6e02925a640ea"),
+		EVaultFactory:            common.HexToAddress("0x7F53E2755eB3c43824E162F7F6F087832B9C9Df6"),
+		CowOpenPositionWrapper:   common.HexToAddress("0x64C26b3A182826fe2AB8c04C8Caf40B0c4Bf9a66"),
+		CowClosePositionWrapper:  common.HexToAddress("0x4f4CE927188637b4a1d91350c3114F4BD301dd02"),
+		CowCollateralSwapWrapper: common.HexToAddress("0xCC054CD4b814a2caEb63C6F6A446435480a383F3"),
+	},
 	MarketRouters: MarketRouters{
 		Binance:      []common.Address{common.HexToAddress("0xB44446b0c8E56988c34f7Ff73Ae904982b5FdDA5")},
 		Bitget:       []common.Address{common.HexToAddress("0xBc1D9760bd6ca468CA9fB5Ff2CFbEAC35d86c973")},

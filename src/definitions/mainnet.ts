@@ -24,6 +24,13 @@ export const mainnet = makeConfig({
 		mmFactory10: "0xA9c3D3a366466Fa809d1Ae982Fb2c46E5fC41101",
 		publicAllocator: "0xfd32fA2ca22c76dD6E550706Ad913FC6CE91c75D",
 	},
+	euler: {
+		evc: "0x0C9a3dd6b8F28529d72d7f9cE918D493519EE383",
+		eVaultFactory: "0x29a56a1b8214D9Cf7c5561811750D5cBDb45CC8e",
+		cowOpenPositionWrapper: "0x59684A689D4a1CAc0f0632F54ec8cDd42612D728",
+		cowClosePositionWrapper: "0xa18c87849eF90190117FF1E1e8b4acE6Dac7A54b",
+		cowCollateralSwapWrapper: "0x175FBD01874e92C9b081F493371fEFE009760a42",
+	},
 	externalId: {
 		zerion: "ethereum",
 		debank: "eth",

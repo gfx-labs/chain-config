@@ -104,6 +104,13 @@ var Ethereum Network = Network{
 		MmFactory10:     common.HexToAddress("0xA9c3D3a366466Fa809d1Ae982Fb2c46E5fC41101"),
 		PublicAllocator: common.HexToAddress("0xfd32fA2ca22c76dD6E550706Ad913FC6CE91c75D"),
 	},
+	Euler: EulerMetadata{
+		Evc:                      common.HexToAddress("0x0C9a3dd6b8F28529d72d7f9cE918D493519EE383"),
+		EVaultFactory:            common.HexToAddress("0x29a56a1b8214D9Cf7c5561811750D5cBDb45CC8e"),
+		CowOpenPositionWrapper:   common.HexToAddress("0x59684A689D4a1CAc0f0632F54ec8cDd42612D728"),
+		CowClosePositionWrapper:  common.HexToAddress("0xa18c87849eF90190117FF1E1e8b4acE6Dac7A54b"),
+		CowCollateralSwapWrapper: common.HexToAddress("0x175FBD01874e92C9b081F493371fEFE009760a42"),
+	},
 	MarketRouters: MarketRouters{
 		Akka:         []common.Address{common.HexToAddress("0x0B00004Ccc39408Fa289e9F6853BFE4eac3E52c8")},
 		Binance:      []common.Address{common.HexToAddress("0xB44446b0c8E56988c34f7Ff73Ae904982b5FdDA5")},
