@@ -83,6 +83,14 @@ export const robinhood = makeConfig({
 		wrappedNativeDecimals: 18,
 		nativeCurrencyName: "ETH",
 	},
+	uniswapv4: {
+		deployBlock: 9070,
+		poolManager: "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+		positionManager: "0x58daec3116aae6d93017baaea7749052e8a04fa7",
+		universalRouter: "0x8876789976dEcBfCbBbe364623C63652db8C0904",
+		permit2: "0x000000000022D473030F116dDEE9F6B43aC78BA3",
+		stateView: "0xf3334192d15450cdd385c8b70e03f9a6bd9e673b",
+	},
 	token: {
 		wethAddress: "0x0Bd7D308f8E1639FAb988df18A8011f41EAcAD73",
 	},
