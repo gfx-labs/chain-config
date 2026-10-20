@@ -75,6 +75,7 @@ var Robinhood Network = Network{
 		PositionManager: common.HexToAddress("0x58daec3116aae6d93017baaea7749052e8a04fa7"),
 		UniversalRouter: common.HexToAddress("0x8876789976dEcBfCbBbe364623C63652db8C0904"),
 		Permit2:         common.HexToAddress("0x000000000022D473030F116dDEE9F6B43aC78BA3"),
+		DefaultPool:     common.HexToHash("0x0000000000000000000000000000000000000000000000000000000000000000"),
 		StateView:       common.HexToAddress("0xf3334192d15450cdd385c8b70e03f9a6bd9e673b"),
 	},
 	Morpho: MorphoMetadata{},
