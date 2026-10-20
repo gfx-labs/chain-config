@@ -76,6 +76,7 @@ var Etherlink Network = Network{
 		PublicAllocator: common.HexToAddress("0x8b8B1bd41d36c06253203CD21463994aB752c1e6"),
 		MmFactory11:     common.HexToAddress("0x997a79c3C04c5B9eb27d343ae126bcCFb5D74781"),
 		Bundler3:        common.HexToAddress("0x69dc8086191437b55775b79C730BB3876397e7D1"),
+		GeneralAdapter1: common.HexToAddress("0xEabdAC78A7f0a9B3dF0e23D69A5a5fF7f580a910"),
 	},
 	MarketRouters: MarketRouters{
 		Kyberswap:  []common.Address{common.HexToAddress("0x6131B5fae19EA4f9D964eAc0408E4408b66337b5")},

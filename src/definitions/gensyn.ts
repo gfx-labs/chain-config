@@ -32,6 +32,7 @@ export const gensyn = makeConfig({
 		deployBlock: 7520470,
 		morpho: "0x8c45B34999883FF4B47cD3be095D585682cd9227",
 		bundler3: "0xE09314FE5Fc41FEc8f3e6042085dD3CeE24c877c",
+		generalAdapter1: "0x79e6825ccb881d276f988a5dA8125e1c6BEa07Ae",
 		vaultV2Factory: "0xe2558155AEcEF57cAADB98e39b0538ab0ae95693",
 		morphoMarketV1AdapterV2Factory:
 			"0x155134544AE2Ec3AB23034BF620538482C5E3c40",

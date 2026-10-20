@@ -73,6 +73,7 @@ var Xdc Network = Network{
 		DeployBlock:                    101757515,
 		Morpho:                         common.HexToAddress("0xEa49B0fE898aF913A3826F9f462eE2cDcb854fD9"),
 		Bundler3:                       common.HexToAddress("0xed9bdc3E6081db528b6D5CDDf47EcB05337c62A7"),
+		GeneralAdapter1:                common.HexToAddress("0xAB2Ab6A8bb1082C5d8400D6206c6A13cE413e0c0"),
 		VaultV2Factory:                 common.HexToAddress("0x227544d6989cD15c05AAB6dde4F29523dcfdbe2B"),
 		MorphoMarketV1AdapterV2Factory: common.HexToAddress("0x5C00c99F2235439725417E9f037B7D38FfF35d31"),
 		MorphoMarketV1RegistryV2:       common.HexToAddress("0x773Eee84bc3c4c9CD7CB79C198c5434E765ac67e"),

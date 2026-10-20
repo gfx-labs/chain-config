@@ -59,6 +59,7 @@ var Pharos Network = Network{
 		DeployBlock:                    4202147,
 		Morpho:                         common.HexToAddress("0x18573fA18fd17dDfD790B4a5B5b2977aad3b4Efb"),
 		Bundler3:                       common.HexToAddress("0x3c90c09F8c5d927a117F681fB924952DbbD99120"),
+		GeneralAdapter1:                common.HexToAddress("0x0A5819708bCAD9C716dFD58ecB58cF91399A53f8"),
 		VaultV2Factory:                 common.HexToAddress("0x8E01ed1E1A41029b3137FcE9Aa880c0A54827498"),
 		MorphoMarketV1AdapterV2Factory: common.HexToAddress("0xe510e1fcC429943cA3455A7bfBD79f0307Cd8403"),
 	},

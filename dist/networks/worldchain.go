@@ -79,6 +79,7 @@ var Worldchain Network = Network{
 		PublicAllocator: common.HexToAddress("0xef9889B4e443DEd35FA0Bd060f2104Cca94e6A43"),
 		MmFactory11:     common.HexToAddress("0xae5b0884bfff430493D6C844B9fd052Af7d79278"),
 		Bundler3:        common.HexToAddress("0x3D07BF2FFb23248034bF704F3a4786F1ffE2a448"),
+		GeneralAdapter1: common.HexToAddress("0x30fa9A3cF56931ACEea42E28D35519a97D90aA67"),
 	},
 	MarketRouters: MarketRouters{
 		Enso:         []common.Address{common.HexToAddress("0xF75584eF6673aD213a685a1B58Cc0330B8eA22Cf")},

@@ -16,6 +16,7 @@ export interface MorphoMetadata {
 	mmFactory10?: Address;
 	mmFactory11?: Address;
 	bundler3?: Address;
+	generalAdapter1?: Address;
 	publicAllocator?: Address;
 	urdFactory?: Address;
 	vaultV2Factory?: Address;

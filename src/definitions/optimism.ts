@@ -31,6 +31,7 @@ export const optimism = makeConfig({
 		mmFactory11: "0x3Bb6A6A0Bc85b367EFE0A5bAc81c5E52C892839a",
 		publicAllocator: "0x0d68a97324E602E02799CD83B42D337207B40658",
 		bundler3: "0xFBCd3C258feB131D8E038F2A3a670A7bE0507C05",
+		generalAdapter1: "0x79481C87f24A3C4332442A2E9faaf675e5F141f0",
 		urdFactory: "0xe41AEcB4570A7B68d15a4Fb0a03ACEe421A21498",
 	},
 	markets: {
