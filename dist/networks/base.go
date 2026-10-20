@@ -79,6 +79,7 @@ var Base Network = Network{
 		MmFactory10:     common.HexToAddress("0xa9c3d3a366466fa809d1ae982fb2c46e5fc41101"),
 		MmFactory11:     common.HexToAddress("0xFf62A7c278C62eD665133147129245053Bbf5918"),
 		Bundler3:        common.HexToAddress("0x6BFd8137e702540E7A42B74178A4a49Ba43920C4"),
+		GeneralAdapter1: common.HexToAddress("0xb98c948CFA24072e58935BC004a8A7b376AE746A"),
 		PublicAllocator: common.HexToAddress("0xA090dD1a701408Df1d4d0B85b716c87565f90467"),
 	},
 	Euler: EulerMetadata{

@@ -51,6 +51,7 @@ export const etherlink = makeConfig({
 		publicAllocator: "0x8b8B1bd41d36c06253203CD21463994aB752c1e6",
 		mmFactory11: "0x997a79c3C04c5B9eb27d343ae126bcCFb5D74781",
 		bundler3: "0x69dc8086191437b55775b79C730BB3876397e7D1",
+		generalAdapter1: "0xEabdAC78A7f0a9B3dF0e23D69A5a5fF7f580a910",
 	},
 	initCodeHash:
 		"0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",

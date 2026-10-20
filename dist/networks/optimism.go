@@ -107,6 +107,7 @@ var Optimism Network = Network{
 		MmFactory11:     common.HexToAddress("0x3Bb6A6A0Bc85b367EFE0A5bAc81c5E52C892839a"),
 		PublicAllocator: common.HexToAddress("0x0d68a97324E602E02799CD83B42D337207B40658"),
 		Bundler3:        common.HexToAddress("0xFBCd3C258feB131D8E038F2A3a670A7bE0507C05"),
+		GeneralAdapter1: common.HexToAddress("0x79481C87f24A3C4332442A2E9faaf675e5F141f0"),
 		UrdFactory:      common.HexToAddress("0xe41AEcB4570A7B68d15a4Fb0a03ACEe421A21498"),
 	},
 	MarketRouters: MarketRouters{

@@ -22,6 +22,8 @@ export const mainnet = makeConfig({
 		morpho: "0xBBBBBbbBBb9cC5e90e3b3Af64bdAF62C37EEFFCb",
 		mmFactory11: "0x1897A8997241C1cD4bD0698647e4EB7213535c24",
 		mmFactory10: "0xA9c3D3a366466Fa809d1Ae982Fb2c46E5fC41101",
+		bundler3: "0x6566194141eefa99Af43Bb5Aa71460Ca2Dc90245",
+		generalAdapter1: "0x4A6c312ec70E8747a587EE860a0353cd42Be0aE0",
 		publicAllocator: "0xfd32fA2ca22c76dD6E550706Ad913FC6CE91c75D",
 	},
 	euler: {
