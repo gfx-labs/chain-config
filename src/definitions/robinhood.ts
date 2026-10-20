@@ -1,6 +1,6 @@
 import { robinhood as chain } from "viem/chains";
 import { makeConfig } from "../util";
-import { zeroAddress } from "../util/constants";
+import { zeroAddress, zeroHash } from "../util/constants";
 
 export const robinhood = makeConfig({
 	...chain,
@@ -89,6 +89,7 @@ export const robinhood = makeConfig({
 		positionManager: "0x58daec3116aae6d93017baaea7749052e8a04fa7",
 		universalRouter: "0x8876789976dEcBfCbBbe364623C63652db8C0904",
 		permit2: "0x000000000022D473030F116dDEE9F6B43aC78BA3",
+		defaultPool: zeroHash,
 		stateView: "0xf3334192d15450cdd385c8b70e03f9a6bd9e673b",
 	},
 	token: {
