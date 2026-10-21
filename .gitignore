@@ -41,6 +41,7 @@ dist/networks/*
 !dist/networks/*.go
 !dist/networks/*.mod
 !dist/networks/*.sum
+!dist/networks/LICENSE
 dist-browser
 
 # ignore package-lock.json
