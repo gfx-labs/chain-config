@@ -10,7 +10,7 @@ export const gensyn = makeConfig({
 	transactionType: "eip1559",
 	sortIndex: 28,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/gensyn-logo.svg",
-	deprecated: false,
+	deprecated: true,
 
 	estimatedSwapGas: 300_000,
 	estimatedBridgeGas: 200_000,
@@ -34,12 +34,10 @@ export const gensyn = makeConfig({
 		bundler3: "0xE09314FE5Fc41FEc8f3e6042085dD3CeE24c877c",
 		generalAdapter1: "0x79e6825ccb881d276f988a5dA8125e1c6BEa07Ae",
 		vaultV2Factory: "0xe2558155AEcEF57cAADB98e39b0538ab0ae95693",
-		morphoMarketV1AdapterV2Factory:
-			"0x155134544AE2Ec3AB23034BF620538482C5E3c40",
+		morphoMarketV1AdapterV2Factory: "0x155134544AE2Ec3AB23034BF620538482C5E3c40",
 		morphoMarketV1RegistryV2: "0x53A687347c822D222058d3E99a566a3D3c0638e1",
 	},
-	initCodeHash:
-		"0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
+	initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
 	uniswap: {
 		deployBlock: 6184635,
 		poolFactory: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D",
