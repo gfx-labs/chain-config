@@ -14,7 +14,7 @@ var Gensyn Network = Network{
 	Caip2Namespace:    "eip155",
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/gensyn-logo.svg",
 	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/eth.png",
-	Deprecated:        false,
+	Deprecated:        true,
 	LiteChain:         false,
 	SortIndex:         28,
 	LaunchTime:        1773970570,
