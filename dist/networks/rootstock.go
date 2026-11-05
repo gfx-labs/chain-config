@@ -33,6 +33,7 @@ var Rootstock Network = Network{
 	TransactionType: "legacy",
 	InitCodeHash:    common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId: map[string]string{
+		"debank":    "rsk",
 		"coingecko": "rootstock",
 	},
 	DefaultToken0: common.HexToAddress("0x542fda317318ebf1d3deaf76e0b632741a7e677d"),

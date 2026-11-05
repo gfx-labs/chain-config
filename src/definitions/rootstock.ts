@@ -19,6 +19,7 @@ export const rootstock = makeConfig({
 	safeReorgDistance: 90000,
 	blockAid: "",
 	externalId: {
+		debank: "rsk",
 		coingecko: "rootstock",
 	},
 	markets: {

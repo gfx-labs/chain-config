@@ -21,6 +21,8 @@ export const unichain = makeConfig({
 		eVaultFactory: "0xbAd8b5BDFB2bcbcd78Cc9f1573D3Aad6E865e752",
 	},
 	externalId: {
+		zerion: "unichain",
+		debank: "uni",
 		tenderly: "true",
 		coingecko: "unichain",
 	},

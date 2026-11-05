@@ -30,6 +30,8 @@ var Celo Network = Network{
 	TransactionType: "eip1559",
 	InitCodeHash:    common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId: map[string]string{
+		"zerion":    "celo",
+		"debank":    "celo",
 		"coingecko": "celo",
 	},
 	DefaultToken0: common.HexToAddress("0x471EcE3750Da237f93B8E339c536989b8978a438"),

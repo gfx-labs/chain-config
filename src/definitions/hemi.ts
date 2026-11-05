@@ -16,6 +16,7 @@ export const hemi = makeConfig({
 	safeReorgDistance: 90000,
 	blockAid: "",
 	externalId: {
+		debank: "hemi",
 		coingecko: "hemi",
 	},
 	markets: {

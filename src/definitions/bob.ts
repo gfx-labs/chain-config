@@ -20,6 +20,8 @@ export const bob = makeConfig({
 		eVaultFactory: "0x046a9837A61d6b6263f54F4E27EE072bA4bdC7e4",
 	},
 	externalId: {
+		zerion: "bob",
+		debank: "bob",
 		tenderly: "true",
 		coingecko: "bob-network",
 	},

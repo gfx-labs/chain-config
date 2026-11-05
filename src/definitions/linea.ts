@@ -25,6 +25,7 @@ export const linea = makeConfig({
 	},
 	externalId: {
 		zerion: "linea",
+		debank: "linea",
 		tenderly: "true",
 		coingecko: "linea",
 	},

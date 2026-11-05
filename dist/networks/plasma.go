@@ -29,6 +29,8 @@ var Plasma Network = Network{
 	TransactionType: "eip1559",
 	InitCodeHash:    common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId: map[string]string{
+		"zerion":    "plasma",
+		"debank":    "plasma",
 		"coingecko": "plasma",
 	},
 	DefaultToken0: common.HexToAddress("0x6100E367285b01F48D07953803A2d8dCA5D19873"),

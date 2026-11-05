@@ -33,6 +33,8 @@ var Monad Network = Network{
 	TransactionType: "eip1559",
 	InitCodeHash:    common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId: map[string]string{
+		"zerion":    "monad",
+		"debank":    "monad",
 		"tenderly":  "true",
 		"coingecko": "monad",
 	},

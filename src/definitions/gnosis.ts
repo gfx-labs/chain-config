@@ -18,6 +18,7 @@ export const gnosis = makeConfig({
 	morpho: {},
 	externalId: {
 		zerion: "xdai",
+		debank: "xdai",
 		cowswap: "xdai",
 		tenderly: "true",
 		coingecko: "xdai",
