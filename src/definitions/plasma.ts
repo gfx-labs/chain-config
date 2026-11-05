@@ -21,6 +21,8 @@ export const plasma = makeConfig({
 		eVaultFactory: "0x42388213C6F56D7E1477632b58Ae6Bba9adeEeA3",
 	},
 	externalId: {
+		zerion: "plasma",
+		debank: "plasma",
 		coingecko: "plasma",
 	},
 	markets: {

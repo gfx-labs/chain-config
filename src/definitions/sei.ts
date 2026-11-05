@@ -18,6 +18,7 @@ export const sei = makeConfig({
 	safeReorgDistance: 90000,
 	blockAid: "",
 	externalId: {
+		zerion: "sei",
 		tenderly: "true",
 		coingecko: "sei-v2",
 	},

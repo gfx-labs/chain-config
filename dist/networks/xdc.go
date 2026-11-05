@@ -29,6 +29,8 @@ var Xdc Network = Network{
 	TransactionType: "legacy",
 	InitCodeHash:    common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId: map[string]string{
+		"zerion":    "xinfin-xdc",
+		"debank":    "xdc",
 		"coingecko": "xdc-network",
 	},
 	DefaultToken0: common.HexToAddress("0x951857744785e80e2de051c32ee7b25f9c458c42"),

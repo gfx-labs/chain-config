@@ -18,6 +18,8 @@ export const robinhood = makeConfig({
 	safeReorgDistance: 90_000,
 	blockAid: "",
 	externalId: {
+		zerion: "robinhood",
+		debank: "hood",
 		coingecko: "robinhood",
 	},
 	markets: {

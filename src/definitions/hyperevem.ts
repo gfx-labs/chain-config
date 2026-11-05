@@ -21,6 +21,8 @@ export const hyperevm = makeConfig({
 		eVaultFactory: "0xcF5552580fD364cdBBFcB5Ae345f75674c59273A",
 	},
 	externalId: {
+		zerion: "hyperevm",
+		debank: "hyper",
 		coingecko: "hyperevm",
 	},
 	liteChain: true,

@@ -22,6 +22,8 @@ export const xdc = makeConfig({
 	safeReorgDistance: 90000,
 	blockAid: "",
 	externalId: {
+		zerion: "xinfin-xdc",
+		debank: "xdc",
 		coingecko: "xdc-network",
 	},
 	markets: {

@@ -16,6 +16,8 @@ export const celo = makeConfig({
 	safeReorgDistance: 90000,
 	blockAid: "",
 	externalId: {
+		zerion: "celo",
+		debank: "celo",
 		coingecko: "celo",
 	},
 	markets: {

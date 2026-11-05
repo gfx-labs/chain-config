@@ -17,6 +17,8 @@ export const zerog = makeConfig({
 	safeReorgDistance: 90000,
 	blockAid: "",
 	externalId: {
+		zerion: "0g",
+		debank: "g0",
 		tenderly: "true",
 		coingecko: "0g",
 	},

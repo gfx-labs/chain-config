@@ -18,6 +18,8 @@ export const mantle = makeConfig({
 	safeReorgDistance: 90000,
 	blockAid: "",
 	externalId: {
+		zerion: "mantle",
+		debank: "mnt",
 		tenderly: "true",
 		coingecko: "mantle",
 	},

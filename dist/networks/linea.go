@@ -31,6 +31,7 @@ var Linea Network = Network{
 	InitCodeHash:    common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId: map[string]string{
 		"zerion":    "linea",
+		"debank":    "linea",
 		"tenderly":  "true",
 		"coingecko": "linea",
 	},

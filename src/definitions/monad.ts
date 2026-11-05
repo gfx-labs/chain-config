@@ -21,6 +21,8 @@ export const monad = makeConfig({
 		eVaultFactory: "0xba4Dd672062dE8FeeDb665DD4410658864483f1E",
 	},
 	externalId: {
+		zerion: "monad",
+		debank: "monad",
 		tenderly: "true",
 		coingecko: "monad",
 	},

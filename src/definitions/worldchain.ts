@@ -18,6 +18,8 @@ export const worldchain = makeConfig({
 	safeReorgDistance: 90000,
 	blockAid: "",
 	externalId: {
+		zerion: "world",
+		debank: "world",
 		tenderly: "true",
 		coingecko: "world-chain",
 	},
