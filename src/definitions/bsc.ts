@@ -230,7 +230,10 @@ export const bsc = makeConfig({
 	defaultPool: "0x47a90a2d92a8367a91efa1906bfc8c1e05bf10c4",
 	defaultToken0: "0x55d398326f99059ff775485246999027b3197955",
 	defaultToken1: "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
-	tokenList: [],
+	tokenList: [
+		{ symbol: "USDT", address: "0x55d398326f99059ff775485246999027b3197955" },
+		{ symbol: "USDC", address: "0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d" },
+	],
 	stables: [
 		"0x55d398326f99059ff775485246999027b3197955",
 		"0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3",

@@ -319,7 +319,8 @@ export const optimism = makeConfig({
 	tokenList: [
 		{ symbol: "USDT", address: "0x94b008aa00579c1307b0ef2c499ad98a8ce58e58" },
 		{ symbol: "DAI", address: "0xda10009cbd5d07dd0cecc66161fc93d7c9000da1" },
-		{ symbol: "USDC", address: "0x7f5c764cbc14f9669b88837ca1490cca17c31607" },
+		{ symbol: "USDC", address: "0x0b2c639c533813f4aa9d7837caf62653d097ff85" },
+		{ symbol: "USDC.e", address: "0x7f5c764cbc14f9669b88837ca1490cca17c31607" },
 		{ symbol: "WETH", address: "0x4200000000000000000000000000000000000006" },
 		{ symbol: "OP", address: "0x4200000000000000000000000000000000000042" },
 	],
