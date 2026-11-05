@@ -142,7 +142,7 @@ export const sei = makeConfig({
 		nativeCurrencyName: "SEI",
 	},
 	token: {
-		usdcAddress: "0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1",
+		usdcAddress: "0xe15fC38F6D8c56aF07bbCBe3BAf5708A2Bf42392",
 		wethAddress: "0xE30feDd158A2e3b13e9badaeABaFc5516e95e8C7",
 	},
 	oku: {
@@ -155,14 +155,16 @@ export const sei = makeConfig({
 		},
 	},
 	defaultPool: "0x0A6358F069268c7dc4918D5B12c69a782b957Ead",
-	defaultToken0: "0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1",
+	defaultToken0: "0xe15fC38F6D8c56aF07bbCBe3BAf5708A2Bf42392",
 	defaultToken1: "0xE30feDd158A2e3b13e9badaeABaFc5516e95e8C7",
 	tokenList: [
 		{ symbol: "WSEI", address: "0xE30feDd158A2e3b13e9badaeABaFc5516e95e8C7" },
-		{ symbol: "USDC", address: "0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1" },
+		{ symbol: "USDC", address: "0xe15fC38F6D8c56aF07bbCBe3BAf5708A2Bf42392" },
+		{ symbol: "USDC.n", address: "0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1" },
 		{ symbol: "USDT", address: "0xb75d0b03c06a926e488e2659df1a861f860bd3d1" },
 	],
 	stables: [
+		"0xe15fC38F6D8c56aF07bbCBe3BAf5708A2Bf42392",
 		"0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1",
 		"0xb75d0b03c06a926e488e2659df1a861f860bd3d1",
 		"0x9151434b16b9763660705744891fa906f660ecc5",
