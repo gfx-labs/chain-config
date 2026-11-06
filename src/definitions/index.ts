@@ -11,6 +11,7 @@ export * from "./boba";
 export * from "./bsc";
 export * from "./celo";
 export * from "./corn";
+export * from "./elysium";
 export * from "./etherlink";
 export * from "./filecoin";
 export * from "./gensyn";

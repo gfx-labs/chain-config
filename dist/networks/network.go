@@ -64,6 +64,7 @@ const (
 	NameGensyn       InternalName = "gensyn"
 	NamePharos       InternalName = "pharos"
 	NameRobinhood    InternalName = "robinhood"
+	NameElysium      InternalName = "elysium"
 	NameSepolia      InternalName = "sepolia"
 	NameBitcoin      InternalName = "bitcoin"
 	NameSolana       InternalName = "solana"
@@ -120,6 +121,7 @@ var AllNetworks = []Network{
 	Gensyn,
 	Pharos,
 	Robinhood,
+	Elysium,
 	Sepolia,
 	Bitcoin,
 	Solana,
@@ -176,6 +178,7 @@ var networksByName = map[string]Network{
 	"gensyn":        Gensyn,
 	"pharos":        Pharos,
 	"robinhood":     Robinhood,
+	"elysium":       Elysium,
 	"sepolia":       Sepolia,
 	"bitcoin":       Bitcoin,
 	"solana":        Solana,
@@ -232,6 +235,7 @@ var networksById = map[int]Network{
 	685689:     Gensyn,
 	1672:       Pharos,
 	4663:       Robinhood,
+	99901:      Elysium,
 	11155111:   Sepolia,
 }
 
@@ -309,6 +313,7 @@ var networksByCAIP2 = map[string]Network{
 	"eip155:685689":     Gensyn,
 	"eip155:1672":       Pharos,
 	"eip155:4663":       Robinhood,
+	"eip155:99901":      Elysium,
 	"eip155:11155111":   Sepolia,
 	"bip122:000000000019d6689c085ae165831e93": Bitcoin,
 	"solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp": Solana,

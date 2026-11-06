@@ -95,6 +95,7 @@ export const MAINNET_CHAINS = [
 	defs.gensyn,
 	defs.pharos,
 	defs.robinhood,
+	defs.elysium,
 	defs.sepolia,
 ] as const;
 

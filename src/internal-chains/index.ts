@@ -16,5 +16,6 @@
  */
 
 // Re-export concrete chains below. Keep alphabetical.
+export * from "./elysium";
 export * from "./pharos";
 export * from "./util";
