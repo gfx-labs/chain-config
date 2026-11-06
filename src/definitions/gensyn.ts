@@ -8,7 +8,7 @@ export const gensyn = makeConfig({
 	name: "Gensyn",
 	launchTime: 1773970570,
 	transactionType: "eip1559",
-	sortIndex: 28,
+	sortIndex: 29,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/gensyn-logo.svg",
 	deprecated: true,
 
