@@ -54,7 +54,7 @@ export const elysium = makeConfig({
 	watchlist: [],
 	v4Watchlist: [],
 	internalName: "elysium",
-	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/hype.png",
+	nativeLogoUrl: "https://cms.oku.trade/cdn/public/natives/hype.svg",
 	contracts: {
 		...chain.contracts,
 		limitOrder: {

@@ -13,7 +13,7 @@ var Elysium Network = Network{
 	},
 	Caip2Namespace:    "eip155",
 	LogoUrl:           "https://cms.oku.trade/cdn/public/chains/elysium-logo.svg",
-	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/hype.png",
+	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/hype.svg",
 	Deprecated:        false,
 	LiteChain:         true,
 	SortIndex:         51,
