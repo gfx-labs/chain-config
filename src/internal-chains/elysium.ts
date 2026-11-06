@@ -21,7 +21,7 @@ export const elysium = makeInternalChain({
 	},
 	rpcUrls: {
 		default: {
-			http: ["https://rpc-elysium-mainnet.t.conduit.xyz"],
+			http: ["https://rpc-live.elysp.com", "https://rpc-live.boxa.club"],
 		},
 	},
 	blockExplorers: {
