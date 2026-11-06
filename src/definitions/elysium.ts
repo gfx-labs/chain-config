@@ -28,17 +28,16 @@ export const elysium = makeConfig({
 	// Left empty until aggregator deployments are officially confirmed.
 	marketRouters: {},
 	oracles: {},
-	initCodeHash:
-		"0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
+	initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
 	uniswap: {
 		permit2: "0x000000000022D473030F116dDEE9F6B43aC78BA3",
 	},
 	token: {
-		usdcAddress: zeroAddress,
+		usdcAddress: "0xb47c4C8F73F009CC0C0d3f92B388d13E293F0B65",
 		wethAddress: WHYPE,
 	},
 	oku: {
-		router: zeroAddress,
+		router: "0xA89A26c4d81A2cca4d0670F77f0FC88362b72248",
 		limitOrderRegistry: zeroAddress,
 		limitOrderRegistryDeployBlock: 0,
 		pricing: {
@@ -48,9 +47,9 @@ export const elysium = makeConfig({
 	},
 	defaultPool: zeroAddress,
 	defaultToken0: WHYPE,
-	defaultToken1: zeroAddress,
+	defaultToken1: "0xb47c4C8F73F009CC0C0d3f92B388d13E293F0B65",
 	tokenList: [{ symbol: "WHYPE", address: WHYPE }],
-	stables: [],
+	stables: ["0xb47c4C8F73F009CC0C0d3f92B388d13E293F0B65"],
 	watchlist: [],
 	v4Watchlist: [],
 	internalName: "elysium",
