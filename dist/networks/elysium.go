@@ -30,16 +30,16 @@ var Elysium Network = Network{
 	InitCodeHash:    common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId:      map[string]string{},
 	DefaultToken0:   common.HexToAddress("0xbA876237B0F021A6c6D852d6c26E107997cC5E81"),
-	DefaultToken1:   common.HexToAddress("0x0000000000000000000000000000000000000000"),
+	DefaultToken1:   common.HexToAddress("0xb47c4C8F73F009CC0C0d3f92B388d13E293F0B65"),
 	BlockAid:        "",
 	//TODO: TokenList:        []any{},
-	Stables:          []common.Address{},
-	StablecoinMap:    map[common.Address]struct{}{},
+	Stables:          []common.Address{common.HexToAddress("0xb47c4C8F73F009CC0C0d3f92B388d13E293F0B65")},
+	StablecoinMap:    map[common.Address]struct{}{common.HexToAddress("0xb47c4C8F73F009CC0C0d3f92B388d13E293F0B65"): {}},
 	Watchlist:        []common.Address{},
 	V4Watchlist:      []common.Hash{},
 	BlockTimeSeconds: 0.1,
 	Oku: OkuMetadata{
-		Router:             common.HexToAddress("0x0000000000000000000000000000000000000000"),
+		Router:             common.HexToAddress("0xA89A26c4d81A2cca4d0670F77f0FC88362b72248"),
 		LimitOrderRegistry: common.HexToAddress("0x0000000000000000000000000000000000000000"),
 
 		Pricing: OkuPricingMetadata{
@@ -56,7 +56,7 @@ var Elysium Network = Network{
 	Morpho:        MorphoMetadata{},
 	MarketRouters: MarketRouters{},
 	Token: TokenMetadata{
-		UsdcAddress: common.HexToAddress("0x0000000000000000000000000000000000000000"),
+		UsdcAddress: common.HexToAddress("0xb47c4C8F73F009CC0C0d3f92B388d13E293F0B65"),
 		WethAddress: common.HexToAddress("0xbA876237B0F021A6c6D852d6c26E107997cC5E81"),
 	},
 	Contracts: map[string]ChainContract{
