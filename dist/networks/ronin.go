@@ -16,7 +16,7 @@ var Ronin Network = Network{
 	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/ron.svg",
 	Deprecated:        true,
 	LiteChain:         false,
-	SortIndex:         44,
+	SortIndex:         45,
 	LaunchTime:        1761966026,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

@@ -16,7 +16,7 @@ var Redbelly Network = Network{
 	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/rbnt.svg",
 	Deprecated:        false,
 	LiteChain:         false,
-	SortIndex:         30,
+	SortIndex:         31,
 	LaunchTime:        1741362479,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

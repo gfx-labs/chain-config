@@ -16,7 +16,7 @@ var Zerog Network = Network{
 	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/0g.svg",
 	Deprecated:        false,
 	LiteChain:         false,
-	SortIndex:         47,
+	SortIndex:         48,
 	LaunchTime:        1733882663,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

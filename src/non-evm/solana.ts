@@ -45,7 +45,7 @@ export const solana = makeConfig({
 	caip2Reference: "5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
 	internalName: "solana",
 	transactionType: "solana",
-	sortIndex: 51,
+	sortIndex: 52,
 	launchTime: 1584368940,
 	blockTimeSeconds: 0.4,
 	deprecated: false,

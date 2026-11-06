@@ -16,7 +16,7 @@ var Filecoin Network = Network{
 	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/fil.png",
 	Deprecated:        false,
 	LiteChain:         false,
-	SortIndex:         23,
+	SortIndex:         24,
 	LaunchTime:        1677600000,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

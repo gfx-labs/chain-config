@@ -16,7 +16,7 @@ var Saga Network = Network{
 	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/saga.png",
 	Deprecated:        false,
 	LiteChain:         false,
-	SortIndex:         13,
+	SortIndex:         14,
 	LaunchTime:        1740384000,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

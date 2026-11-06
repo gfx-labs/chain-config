@@ -16,7 +16,7 @@ var Polygon Network = Network{
 	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/matic.png",
 	Deprecated:        false,
 	LiteChain:         true,
-	SortIndex:         5,
+	SortIndex:         6,
 	LaunchTime:        1688997600,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

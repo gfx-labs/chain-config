@@ -16,7 +16,7 @@ var Elysium Network = Network{
 	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/hype.svg",
 	Deprecated:        false,
 	LiteChain:         true,
-	SortIndex:         51,
+	SortIndex:         5,
 	LaunchTime:        1794182400,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

@@ -8,7 +8,7 @@ export const pharos = makeConfig({
 	blockTimeSeconds: 2,
 	launchTime: 1777014000,
 	transactionType: "eip1559",
-	sortIndex: 49,
+	sortIndex: 50,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/pharos-logo.svg",
 	deprecated: false,
 	liteChain: true,

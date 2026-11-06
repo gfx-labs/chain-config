@@ -6,7 +6,7 @@ export const celo = makeConfig({
 	blockTimeSeconds: 1,
 	launchTime: 1737754469,
 	transactionType: "eip1559",
-	sortIndex: 12,
+	sortIndex: 13,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/celo-logo.svg",
 	deprecated: false,
 	liteChain: true,

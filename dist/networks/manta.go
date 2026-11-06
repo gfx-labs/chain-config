@@ -16,7 +16,7 @@ var Manta Network = Network{
 	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/eth.png",
 	Deprecated:        true,
 	LiteChain:         false,
-	SortIndex:         42,
+	SortIndex:         43,
 	LaunchTime:        1709910000,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

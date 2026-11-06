@@ -16,7 +16,7 @@ var Sepolia Network = Network{
 	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/eth.png",
 	Deprecated:        true,
 	LiteChain:         true,
-	SortIndex:         50,
+	SortIndex:         51,
 	LaunchTime:        1655683200,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

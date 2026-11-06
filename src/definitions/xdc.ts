@@ -12,7 +12,7 @@ export const xdc = makeConfig({
 	blockTimeSeconds: 2,
 	launchTime: 1746453600,
 	transactionType: "legacy",
-	sortIndex: 17,
+	sortIndex: 18,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/xdc-logo.svg",
 	deprecated: false,
 

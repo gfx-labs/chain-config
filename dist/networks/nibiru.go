@@ -16,7 +16,7 @@ var Nibiru Network = Network{
 	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/nibi.svg",
 	Deprecated:        false,
 	LiteChain:         false,
-	SortIndex:         29,
+	SortIndex:         30,
 	LaunchTime:        1750705200,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

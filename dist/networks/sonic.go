@@ -16,7 +16,7 @@ var Sonic Network = Network{
 	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/sonic.svg",
 	Deprecated:        true,
 	LiteChain:         false,
-	SortIndex:         36,
+	SortIndex:         37,
 	LaunchTime:        1737165834,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

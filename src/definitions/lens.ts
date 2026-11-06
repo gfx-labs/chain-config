@@ -7,7 +7,7 @@ export const lens = makeConfig({
 	blockTimeSeconds: 2,
 	launchTime: 1746050531,
 	transactionType: "eip1559",
-	sortIndex: 34,
+	sortIndex: 35,
 	blockAid: "",
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/lens-logo.svg",
 	deprecated: true,

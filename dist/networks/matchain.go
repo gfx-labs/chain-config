@@ -16,7 +16,7 @@ var Matchain Network = Network{
 	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/bnb.png",
 	Deprecated:        true,
 	LiteChain:         false,
-	SortIndex:         25,
+	SortIndex:         26,
 	LaunchTime:        1754106070,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

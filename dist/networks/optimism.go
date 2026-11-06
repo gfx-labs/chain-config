@@ -16,7 +16,7 @@ var Optimism Network = Network{
 	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/eth.png",
 	Deprecated:        false,
 	LiteChain:         true,
-	SortIndex:         10,
+	SortIndex:         11,
 	LaunchTime:        1688997600,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

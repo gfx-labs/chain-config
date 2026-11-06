@@ -16,7 +16,7 @@ var Etherlink Network = Network{
 	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/xtz.png",
 	Deprecated:        true,
 	LiteChain:         false,
-	SortIndex:         15,
+	SortIndex:         16,
 	LaunchTime:        1750211928,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

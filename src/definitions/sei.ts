@@ -8,7 +8,7 @@ export const sei = makeConfig({
 	blockTimeSeconds: 0.4,
 	launchTime: 1687788000,
 	transactionType: "eip1559",
-	sortIndex: 9,
+	sortIndex: 10,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/sei-logo.svg",
 	deprecated: false,
 

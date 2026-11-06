@@ -16,7 +16,7 @@ var Hemi Network = Network{
 	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/eth.png",
 	Deprecated:        false,
 	LiteChain:         false,
-	SortIndex:         24,
+	SortIndex:         25,
 	LaunchTime:        1741901593,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

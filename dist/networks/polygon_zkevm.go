@@ -16,7 +16,7 @@ var PolygonZkevm Network = Network{
 	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/eth.png",
 	Deprecated:        true,
 	LiteChain:         false,
-	SortIndex:         40,
+	SortIndex:         41,
 	LaunchTime:        1722520800,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{

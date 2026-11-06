@@ -5,7 +5,7 @@ export const polygonZkEvm = makeConfig({
 	...chain,
 	initCodeHash:
 		"0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
-	sortIndex: 40,
+	sortIndex: 41,
 	launchTime: 1722520800,
 	transactionType: "legacy",
 	blockTimeSeconds: 7,

@@ -16,7 +16,7 @@ var Hyperevm Network = Network{
 	NativeLogoUrl:     "https://cms.oku.trade/cdn/public/natives/hype.svg",
 	Deprecated:        false,
 	LiteChain:         true,
-	SortIndex:         11,
+	SortIndex:         12,
 	LaunchTime:        1767333673,
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
