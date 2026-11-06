@@ -49,11 +49,17 @@ var Elysium Network = Network{
 			NativeQuotePools:   []ChainContract{},
 		},
 	},
-	Uniswap: UniswapMetadata{},
+	Uniswap: UniswapMetadata{
+		Permit2: common.HexToAddress("0x000000000022D473030F116dDEE9F6B43aC78BA3"),
+	},
 
 	Morpho: MorphoMetadata{},
 	MarketRouters: MarketRouters{
+		Enso:      []common.Address{common.HexToAddress("0xCfBAa9Cfce952Ca4F4069874fF1Df8c05e37a3c7")},
 		Kyberswap: []common.Address{common.HexToAddress("0x6131B5fae19EA4f9D964eAc0408E4408b66337b5")},
+		Openocean: []common.Address{common.HexToAddress("0x6352a56caadC4F1E25CD6c75970Fa768A3304e64")},
+		Uniswap:   []common.Address{common.HexToAddress("0xFE31F71C1b106EAc32F1A19239c9a9A72ddfb900")},
+		Zeroex:    []common.Address{common.HexToAddress("0x0000000000001fF3684f28c67538d4D072C22734")},
 	},
 	Token: TokenMetadata{
 		UsdcAddress: common.HexToAddress("0x0000000000000000000000000000000000000000"),

@@ -23,13 +23,22 @@ export const elysium = makeConfig({
 	blockAid: "",
 	externalId: {},
 	markets: {},
+	bridges: {},
+	morpho: {},
+	// Verified via eth_getCode on rpc-live.elysp.com (2026-11-06).
 	marketRouters: {
+		enso: ["0xCfBAa9Cfce952Ca4F4069874fF1Df8c05e37a3c7"],
 		kyberswap: ["0x6131B5fae19EA4f9D964eAc0408E4408b66337b5"],
+		openocean: ["0x6352a56caadC4F1E25CD6c75970Fa768A3304e64"],
+		uniswap: ["0xFE31F71C1b106EAc32F1A19239c9a9A72ddfb900"],
+		zeroex: ["0x0000000000001fF3684f28c67538d4D072C22734"],
 	},
 	oracles: {},
 	initCodeHash:
 		"0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
-	uniswap: {},
+	uniswap: {
+		permit2: "0x000000000022D473030F116dDEE9F6B43aC78BA3",
+	},
 	token: {
 		usdcAddress: zeroAddress,
 		wethAddress: WHYPE,
