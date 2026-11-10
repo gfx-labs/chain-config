@@ -18,6 +18,7 @@ var Gensyn Network = Network{
 	LiteChain:         false,
 	SortIndex:         29,
 	LaunchTime:        1773970570,
+	RpcUrls:           []string{"https://gensyn-mainnet.g.alchemy.com/public"},
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

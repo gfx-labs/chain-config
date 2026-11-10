@@ -18,6 +18,7 @@ var Sepolia Network = Network{
 	LiteChain:         true,
 	SortIndex:         51,
 	LaunchTime:        1655683200,
+	RpcUrls:           []string{"https://11155111.rpc.thirdweb.com"},
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

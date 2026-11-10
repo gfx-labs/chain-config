@@ -18,6 +18,7 @@ var Avalanche Network = Network{
 	LiteChain:         true,
 	SortIndex:         20,
 	LaunchTime:        1761794290,
+	RpcUrls:           []string{"https://api.avax.network/ext/bc/C/rpc"},
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

@@ -18,6 +18,7 @@ var Taiko Network = Network{
 	LiteChain:         false,
 	SortIndex:         40,
 	LaunchTime:        1717509600,
+	RpcUrls:           []string{"https://rpc.mainnet.taiko.xyz"},
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

@@ -18,6 +18,7 @@ var Sonic Network = Network{
 	LiteChain:         false,
 	SortIndex:         37,
 	LaunchTime:        1737165834,
+	RpcUrls:           []string{"https://rpc.soniclabs.com"},
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

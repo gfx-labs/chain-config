@@ -18,6 +18,7 @@ var Worldchain Network = Network{
 	LiteChain:         true,
 	SortIndex:         32,
 	LaunchTime:        0,
+	RpcUrls:           []string{"https://worldchain-mainnet.g.alchemy.com/public"},
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

@@ -18,6 +18,7 @@ var Matchain Network = Network{
 	LiteChain:         false,
 	SortIndex:         26,
 	LaunchTime:        1754106070,
+	RpcUrls:           []string{"https://rpc.matchain.io"},
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

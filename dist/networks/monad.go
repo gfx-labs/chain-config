@@ -18,6 +18,7 @@ var Monad Network = Network{
 	LiteChain:         true,
 	SortIndex:         4,
 	LaunchTime:        1764568406,
+	RpcUrls:           []string{"https://rpc.monad.xyz", "https://rpc1.monad.xyz"},
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

@@ -18,6 +18,7 @@ var Bsc Network = Network{
 	LiteChain:         false,
 	SortIndex:         8,
 	LaunchTime:        1689346800,
+	RpcUrls:           []string{"https://56.rpc.thirdweb.com"},
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

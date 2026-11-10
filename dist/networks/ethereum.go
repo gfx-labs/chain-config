@@ -18,6 +18,7 @@ var Ethereum Network = Network{
 	LiteChain:         false,
 	SortIndex:         0,
 	LaunchTime:        1688997600,
+	RpcUrls:           []string{"https://eth.drpc.org"},
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

@@ -18,6 +18,7 @@ var Rootstock Network = Network{
 	LiteChain:         false,
 	SortIndex:         15,
 	LaunchTime:        1702479600,
+	RpcUrls:           []string{"https://public-node.rsk.co"},
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

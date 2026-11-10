@@ -18,6 +18,7 @@ var Mantle Network = Network{
 	LiteChain:         false,
 	SortIndex:         34,
 	LaunchTime:        1720101600,
+	RpcUrls:           []string{"https://rpc.mantle.xyz"},
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

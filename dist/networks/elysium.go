@@ -18,6 +18,7 @@ var Elysium Network = Network{
 	LiteChain:         true,
 	SortIndex:         5,
 	LaunchTime:        1794182400,
+	RpcUrls:           []string{"https://rpc-live.elysp.com", "https://rpc-live.boxa.club"},
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

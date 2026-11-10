@@ -18,6 +18,7 @@ var Sei Network = Network{
 	LiteChain:         false,
 	SortIndex:         10,
 	LaunchTime:        1687788000,
+	RpcUrls:           []string{"https://evm-rpc.sei-apis.com/"},
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

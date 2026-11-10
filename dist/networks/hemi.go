@@ -18,6 +18,7 @@ var Hemi Network = Network{
 	LiteChain:         false,
 	SortIndex:         25,
 	LaunchTime:        1741901593,
+	RpcUrls:           []string{"https://rpc.hemi.network/rpc"},
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

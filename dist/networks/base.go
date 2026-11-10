@@ -18,6 +18,7 @@ var Base Network = Network{
 	LiteChain:         true,
 	SortIndex:         2,
 	LaunchTime:        1707321600,
+	RpcUrls:           []string{"https://mainnet.base.org"},
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

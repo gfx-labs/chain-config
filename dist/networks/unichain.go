@@ -18,6 +18,7 @@ var Unichain Network = Network{
 	LiteChain:         false,
 	SortIndex:         21,
 	LaunchTime:        1750384728,
+	RpcUrls:           []string{"https://mainnet.unichain.org/"},
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

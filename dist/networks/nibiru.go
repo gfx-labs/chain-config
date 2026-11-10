@@ -18,6 +18,7 @@ var Nibiru Network = Network{
 	LiteChain:         false,
 	SortIndex:         30,
 	LaunchTime:        1750705200,
+	RpcUrls:           []string{"https://evm-rpc.nibiru.fi"},
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

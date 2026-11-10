@@ -18,6 +18,7 @@ var Optimism Network = Network{
 	LiteChain:         true,
 	SortIndex:         11,
 	LaunchTime:        1688997600,
+	RpcUrls:           []string{"https://mainnet.optimism.io"},
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

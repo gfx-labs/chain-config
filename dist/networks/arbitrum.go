@@ -18,6 +18,7 @@ var Arbitrum Network = Network{
 	LiteChain:         true,
 	SortIndex:         1,
 	LaunchTime:        1688997600,
+	RpcUrls:           []string{"https://arb1.arbitrum.io/rpc"},
 	SafeReorgDistance: 180000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

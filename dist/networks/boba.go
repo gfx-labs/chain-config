@@ -18,6 +18,7 @@ var Boba Network = Network{
 	LiteChain:         false,
 	SortIndex:         17,
 	LaunchTime:        1690297200,
+	RpcUrls:           []string{"https://mainnet.boba.network"},
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

@@ -18,6 +18,7 @@ var Polygon Network = Network{
 	LiteChain:         true,
 	SortIndex:         6,
 	LaunchTime:        1688997600,
+	RpcUrls:           []string{"https://polygon.drpc.org"},
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

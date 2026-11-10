@@ -18,6 +18,7 @@ var Metal Network = Network{
 	LiteChain:         false,
 	SortIndex:         46,
 	LaunchTime:        1733882663,
+	RpcUrls:           []string{"https://rpc.metall2.com"},
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {
