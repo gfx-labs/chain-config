@@ -18,6 +18,7 @@ var Scroll Network = Network{
 	LiteChain:         false,
 	SortIndex:         38,
 	LaunchTime:        1703257200,
+	RpcUrls:           []string{"https://rpc.scroll.io"},
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

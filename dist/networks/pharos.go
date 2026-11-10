@@ -18,6 +18,7 @@ var Pharos Network = Network{
 	LiteChain:         true,
 	SortIndex:         50,
 	LaunchTime:        1777014000,
+	RpcUrls:           []string{"https://rpc.pharos.xyz"},
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

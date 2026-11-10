@@ -18,6 +18,7 @@ var PolygonZkevm Network = Network{
 	LiteChain:         false,
 	SortIndex:         41,
 	LaunchTime:        1722520800,
+	RpcUrls:           []string{"https://zkevm-rpc.com"},
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

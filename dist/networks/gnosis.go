@@ -18,6 +18,7 @@ var Gnosis Network = Network{
 	LiteChain:         false,
 	SortIndex:         19,
 	LaunchTime:        1725890400,
+	RpcUrls:           []string{"https://rpc.gnosischain.com"},
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

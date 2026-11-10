@@ -18,6 +18,7 @@ var Moonbeam Network = Network{
 	LiteChain:         false,
 	SortIndex:         42,
 	LaunchTime:        1696341600,
+	RpcUrls:           []string{"https://rpc.api.moonbeam.network"},
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

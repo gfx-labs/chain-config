@@ -18,6 +18,7 @@ var Tronshasta Network = Network{
 	LiteChain:         false,
 	SortIndex:         49,
 	LaunchTime:        1746055290,
+	RpcUrls:           []string{"https://api.shasta.trongrid.io/jsonrpc"},
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

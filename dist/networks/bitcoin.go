@@ -19,6 +19,7 @@ var Bitcoin Network = Network{
 	LiteChain:         false,
 	SortIndex:         9,
 	LaunchTime:        1231006505,
+	RpcUrls:           []string{"https://bitcoin-rpc.publicnode.com"},
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

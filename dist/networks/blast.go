@@ -18,6 +18,7 @@ var Blast Network = Network{
 	LiteChain:         false,
 	SortIndex:         44,
 	LaunchTime:        1719410400,
+	RpcUrls:           []string{"https://rpc.blast.io"},
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

@@ -18,6 +18,7 @@ var Zksync Network = Network{
 	LiteChain:         false,
 	SortIndex:         39,
 	LaunchTime:        1696514400,
+	RpcUrls:           []string{"https://mainnet.era.zksync.io"},
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

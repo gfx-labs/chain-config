@@ -18,6 +18,7 @@ var Bob Network = Network{
 	LiteChain:         false,
 	SortIndex:         23,
 	LaunchTime:        1727359200,
+	RpcUrls:           []string{"https://rpc.gobob.xyz"},
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

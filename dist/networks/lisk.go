@@ -18,6 +18,7 @@ var Lisk Network = Network{
 	LiteChain:         false,
 	SortIndex:         47,
 	LaunchTime:        1724076000,
+	RpcUrls:           []string{"https://rpc.api.lisk.com"},
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

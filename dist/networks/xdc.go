@@ -18,6 +18,7 @@ var Xdc Network = Network{
 	LiteChain:         false,
 	SortIndex:         18,
 	LaunchTime:        1746453600,
+	RpcUrls:           []string{"https://erpc.xinfin.network"},
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

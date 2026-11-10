@@ -18,6 +18,7 @@ var Linea Network = Network{
 	LiteChain:         false,
 	SortIndex:         22,
 	LaunchTime:        1713362400,
+	RpcUrls:           []string{"https://rpc.linea.build"},
 	SafeReorgDistance: 100,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

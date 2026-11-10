@@ -18,6 +18,7 @@ var Zerog Network = Network{
 	LiteChain:         false,
 	SortIndex:         48,
 	LaunchTime:        1733882663,
+	RpcUrls:           []string{"https://evmrpc.0g.ai"},
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

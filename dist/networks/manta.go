@@ -18,6 +18,7 @@ var Manta Network = Network{
 	LiteChain:         false,
 	SortIndex:         43,
 	LaunchTime:        1709910000,
+	RpcUrls:           []string{"https://pacific-rpc.manta.network/http"},
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

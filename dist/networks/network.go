@@ -477,6 +477,15 @@ type Network struct {
 	NativeCurrency NativeCurrency
 	BlockExplorers map[string]BlockExplorer
 	StablecoinMap  map[common.Address]struct{}
+	RpcUrls        []string
+}
+
+// DefaultRPCURL returns the first default RPC URL, or "" if none.
+func (n *Network) DefaultRPCURL() string {
+	if len(n.RpcUrls) == 0 {
+		return ""
+	}
+	return n.RpcUrls[0]
 }
 
 func (n *Network) IsStable(a common.Address) bool {

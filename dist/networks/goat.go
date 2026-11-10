@@ -18,6 +18,7 @@ var Goat Network = Network{
 	LiteChain:         false,
 	SortIndex:         33,
 	LaunchTime:        1742159744,
+	RpcUrls:           []string{"https://rpc.goat.network"},
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

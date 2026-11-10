@@ -18,6 +18,7 @@ var Ronin Network = Network{
 	LiteChain:         false,
 	SortIndex:         45,
 	LaunchTime:        1761966026,
+	RpcUrls:           []string{"https://api.roninchain.com/rpc"},
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

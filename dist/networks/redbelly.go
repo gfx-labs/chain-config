@@ -18,6 +18,7 @@ var Redbelly Network = Network{
 	LiteChain:         false,
 	SortIndex:         31,
 	LaunchTime:        1741362479,
+	RpcUrls:           []string{"https://governors.mainnet.redbelly.network"},
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

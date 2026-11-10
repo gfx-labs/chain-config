@@ -18,6 +18,7 @@ var Filecoin Network = Network{
 	LiteChain:         false,
 	SortIndex:         24,
 	LaunchTime:        1677600000,
+	RpcUrls:           []string{"https://api.node.glif.io/rpc/v1"},
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

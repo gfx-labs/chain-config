@@ -18,6 +18,7 @@ var Telos Network = Network{
 	LiteChain:         false,
 	SortIndex:         36,
 	LaunchTime:        1743089303,
+	RpcUrls:           []string{"https://rpc.telos.net"},
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

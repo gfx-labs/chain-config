@@ -18,6 +18,7 @@ var Robinhood Network = Network{
 	LiteChain:         true,
 	SortIndex:         7,
 	LaunchTime:        1784047160,
+	RpcUrls:           []string{"https://rpc.mainnet.chain.robinhood.com"},
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

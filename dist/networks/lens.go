@@ -18,6 +18,7 @@ var Lens Network = Network{
 	LiteChain:         false,
 	SortIndex:         35,
 	LaunchTime:        1746050531,
+	RpcUrls:           []string{"https://rpc.lens.xyz"},
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

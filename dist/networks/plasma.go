@@ -18,6 +18,7 @@ var Plasma Network = Network{
 	LiteChain:         false,
 	SortIndex:         3,
 	LaunchTime:        1758588527,
+	RpcUrls:           []string{"https://rpc.plasma.to"},
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

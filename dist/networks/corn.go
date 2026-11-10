@@ -18,6 +18,7 @@ var Corn Network = Network{
 	LiteChain:         false,
 	SortIndex:         28,
 	LaunchTime:        1733882663,
+	RpcUrls:           []string{"https://21000000.rpc.thirdweb.com"},
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

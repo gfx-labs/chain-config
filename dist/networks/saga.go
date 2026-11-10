@@ -18,6 +18,7 @@ var Saga Network = Network{
 	LiteChain:         false,
 	SortIndex:         14,
 	LaunchTime:        1740384000,
+	RpcUrls:           []string{"https://sagaevm.jsonrpc.sagarpc.io"},
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

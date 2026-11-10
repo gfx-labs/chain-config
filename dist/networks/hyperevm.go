@@ -18,6 +18,7 @@ var Hyperevm Network = Network{
 	LiteChain:         true,
 	SortIndex:         12,
 	LaunchTime:        1767333673,
+	RpcUrls:           []string{"https://rpc.hyperliquid.xyz/evm"},
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

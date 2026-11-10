@@ -19,6 +19,7 @@ var Zcash Network = Network{
 	LiteChain:         false,
 	SortIndex:         53,
 	LaunchTime:        1477641360,
+	RpcUrls:           []string{"https://zec.rocks:443"},
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

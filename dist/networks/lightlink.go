@@ -18,6 +18,7 @@ var Lightlink Network = Network{
 	LiteChain:         false,
 	SortIndex:         27,
 	LaunchTime:        1741485513,
+	RpcUrls:           []string{"https://replicator.phoenix.lightlink.io/rpc/v1"},
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

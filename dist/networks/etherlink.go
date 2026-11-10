@@ -18,6 +18,7 @@ var Etherlink Network = Network{
 	LiteChain:         false,
 	SortIndex:         16,
 	LaunchTime:        1750211928,
+	RpcUrls:           []string{"https://node.mainnet.etherlink.com"},
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {

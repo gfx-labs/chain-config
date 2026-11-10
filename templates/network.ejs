@@ -32,7 +32,8 @@ var <%- helpers.snakeToCamel(chainName) %> Network = Network{
   LiteChain: <%- chain.liteChain || false %>,
   SortIndex: <%- chain.sortIndex %>,
   LaunchTime: <%- chain.launchTime %>,
-  SafeReorgDistance: <%- chain.safeReorgDistance || 90000 %>,
+<% var rpcs = (chain.rpcUrls && chain.rpcUrls.default && chain.rpcUrls.default.http) || []; if (rpcs.length) { %>  RpcUrls: []string{<%- rpcs.map(x => JSON.stringify(x)).join(", ") %>},
+<% } %>  SafeReorgDistance: <%- chain.safeReorgDistance || 90000 %>,
   BlockExplorers: map[string]BlockExplorer {<% for(const prop of Object.entries(explorers)) {%> <% if(prop[1].name){ %>
     <%- h.formatValue(prop[0],"s") %>: {
       Url: <%- h.formatValue(prop[1].url,"s") %>,

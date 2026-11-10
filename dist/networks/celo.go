@@ -18,6 +18,7 @@ var Celo Network = Network{
 	LiteChain:         true,
 	SortIndex:         13,
 	LaunchTime:        1737754469,
+	RpcUrls:           []string{"https://forno.celo.org"},
 	SafeReorgDistance: 90000,
 	BlockExplorers: map[string]BlockExplorer{
 		"default": {
