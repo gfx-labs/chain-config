@@ -1,8 +1,10 @@
 import { bsc as chain } from "viem/chains";
+import { COWSWAP_CREATE2_DEPLOYMENT } from "../cowswap";
 import { makeConfig } from "../util";
 
 export const bsc = makeConfig({
 	...chain,
+	cowswap: COWSWAP_CREATE2_DEPLOYMENT,
 	name: "BNB",
 	launchTime: 1689346800,
 	transactionType: "eip1559",

@@ -109,6 +109,10 @@ var Polygon Network = Network{
 		Uniswap:      []common.Address{common.HexToAddress("0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45"), common.HexToAddress("0x8B844f885672f333Bc0042cB669255f93a4C1E6b"), common.HexToAddress("0xec7BE89e9d109e7e3Fec59c222CF297125FEFda2")},
 		Zeroex:       []common.Address{common.HexToAddress("0x0000000000001fF3684f28c67538d4D072C22734"), common.HexToAddress("0x7150ea07D00d8E5a46bcC809f1c9FDf5cb5f8E81")},
 	},
+	Cowswap: CowSwapMetadata{
+		Settlement:   common.HexToAddress("0x9008D19f58AAbD9eD0D60971565AA8510560ab41"),
+		VaultRelayer: common.HexToAddress("0xC92E8bdf79f0507f65a392b0ab4667716BFE0110"),
+	},
 	Token: TokenMetadata{
 		WbtcAddress: common.HexToAddress("0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6"),
 		UsdcAddress: common.HexToAddress("0x2791bca1f2de4661ed88a30c99a7a9449aa84174"),

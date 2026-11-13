@@ -108,6 +108,10 @@ var Base Network = Network{
 		Unizen:        []common.Address{common.HexToAddress("0xef58b643240178c2bc37681f8d4e50d7ec37ee22")},
 		Zeroex:        []common.Address{common.HexToAddress("0x0000000000001fF3684f28c67538d4D072C22734"), common.HexToAddress("0x7747F8D2a76BD6345Cc29622a946A929647F2359")},
 	},
+	Cowswap: CowSwapMetadata{
+		Settlement:   common.HexToAddress("0x9008D19f58AAbD9eD0D60971565AA8510560ab41"),
+		VaultRelayer: common.HexToAddress("0xC92E8bdf79f0507f65a392b0ab4667716BFE0110"),
+	},
 	Token: TokenMetadata{
 		UsdcAddress: common.HexToAddress("0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"),
 	},

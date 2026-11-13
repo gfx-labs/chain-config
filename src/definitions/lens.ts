@@ -1,8 +1,10 @@
 import { lens as chain } from "viem/chains";
+import { COWSWAP_CREATE2_DEPLOYMENT } from "../cowswap";
 import { makeConfig } from "../util";
 
 export const lens = makeConfig({
 	...chain,
+	cowswap: COWSWAP_CREATE2_DEPLOYMENT,
 	name: "Lens",
 	blockTimeSeconds: 2,
 	launchTime: 1746050531,

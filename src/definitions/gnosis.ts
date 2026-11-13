@@ -1,8 +1,10 @@
 import { gnosis as chain } from "viem/chains";
+import { COWSWAP_CREATE2_DEPLOYMENT } from "../cowswap";
 import { makeConfig } from "../util";
 
 export const gnosis = makeConfig({
 	...chain,
+	cowswap: COWSWAP_CREATE2_DEPLOYMENT,
 	blockTimeSeconds: 5,
 	launchTime: 1725890400,
 	transactionType: "eip1559",

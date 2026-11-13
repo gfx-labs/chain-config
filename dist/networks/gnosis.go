@@ -84,6 +84,10 @@ var Gnosis Network = Network{
 		Rango:        []common.Address{common.HexToAddress("0x69460570c93f9DE5E2edbC3052bf10125f0Ca22d")},
 		Uniswap:      []common.Address{common.HexToAddress("0x75FC67473A91335B5b8F8821277262a13B38c9b3"), common.HexToAddress("0xc6D25285D5C5b62b7ca26D6092751A145D50e9Be")},
 	},
+	Cowswap: CowSwapMetadata{
+		Settlement:   common.HexToAddress("0x9008D19f58AAbD9eD0D60971565AA8510560ab41"),
+		VaultRelayer: common.HexToAddress("0xC92E8bdf79f0507f65a392b0ab4667716BFE0110"),
+	},
 	Token: TokenMetadata{
 		UsdcAddress: common.HexToAddress("0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4"),
 		WethAddress: common.HexToAddress("0xe91d153e0b41518a2ce8dd3d7944fa863463a97d"),

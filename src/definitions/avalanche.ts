@@ -1,9 +1,11 @@
 import { avalanche as chain } from "viem/chains";
+import { COWSWAP_CREATE2_DEPLOYMENT } from "../cowswap";
 import { makeConfig } from "../util";
 import { zeroAddress } from "../util/constants";
 
 export const avalanche = makeConfig({
 	...chain,
+	cowswap: COWSWAP_CREATE2_DEPLOYMENT,
 	name: "Avalanche",
 	blockTimeSeconds: 2,
 	launchTime: 1761794290,

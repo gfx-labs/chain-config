@@ -1,8 +1,10 @@
 import { base as chain } from "viem/chains";
+import { COWSWAP_CREATE2_DEPLOYMENT } from "../cowswap";
 import { makeConfig } from "../util";
 
 export const base = makeConfig({
 	...chain,
+	cowswap: COWSWAP_CREATE2_DEPLOYMENT,
 	sortIndex: 2,
 	liteChain: true,
 	launchTime: 1707321600,

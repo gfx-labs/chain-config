@@ -1,8 +1,10 @@
 import { linea as chain } from "viem/chains";
+import { COWSWAP_CREATE2_DEPLOYMENT } from "../cowswap";
 import { makeConfig } from "../util";
 
 export const linea = makeConfig({
 	...chain,
+	cowswap: COWSWAP_CREATE2_DEPLOYMENT,
 	name: "Linea",
 	launchTime: 1713362400,
 	transactionType: "eip1559",
@@ -24,12 +26,14 @@ export const linea = makeConfig({
 		eVaultFactory: "0x84711986Fd3BF0bFe4a8e6d7f4E22E67f7f27F04",
 	},
 	externalId: {
+		cowswap: "linea",
 		zerion: "linea",
 		debank: "linea",
 		tenderly: "true",
 		coingecko: "linea",
 	},
 	markets: {
+		cowswap: "linea",
 		kyberswap: "linea",
 		openocean: "linea",
 		zeroex: true,

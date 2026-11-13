@@ -31,6 +31,7 @@ var Linea Network = Network{
 	TransactionType: "eip1559",
 	InitCodeHash:    common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId: map[string]string{
+		"cowswap":   "linea",
 		"zerion":    "linea",
 		"debank":    "linea",
 		"tenderly":  "true",
@@ -90,6 +91,10 @@ var Linea Network = Network{
 		Rango:        []common.Address{common.HexToAddress("0x69460570c93f9DE5E2edbC3052bf10125f0Ca22d")},
 		Uniswap:      []common.Address{common.HexToAddress("0x3d4e44Eb1374240CE5F1B871ab261CD16335B76a"), common.HexToAddress("0x8B844f885672f333Bc0042cB669255f93a4C1E6b"), common.HexToAddress("0xD7c7D7F18dD5388D5217c9696C7e799fCd75c6bD")},
 		Zeroex:       []common.Address{common.HexToAddress("0x0000000000001fF3684f28c67538d4D072C22734"), common.HexToAddress("0x1816eA2150e74Eb3068A4e3809E461Cc6977A7D7")},
+	},
+	Cowswap: CowSwapMetadata{
+		Settlement:   common.HexToAddress("0x9008D19f58AAbD9eD0D60971565AA8510560ab41"),
+		VaultRelayer: common.HexToAddress("0xC92E8bdf79f0507f65a392b0ab4667716BFE0110"),
 	},
 	Token: TokenMetadata{
 		UsdcAddress: common.HexToAddress("0x176211869ca2b568f2a7d4ee941e073a821ee1ff"),
