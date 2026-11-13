@@ -91,6 +91,10 @@ var Avalanche Network = Network{
 		Uniswap:      []common.Address{common.HexToAddress("0x4Dae2f939ACf50408e13d58534Ff8c2776d45265"), common.HexToAddress("0x8B844f885672f333Bc0042cB669255f93a4C1E6b"), common.HexToAddress("0xbb00FF08d01D300023C629E8fFfFcb65A5a578cE")},
 		Zeroex:       []common.Address{common.HexToAddress("0x0000000000001fF3684f28c67538d4D072C22734"), common.HexToAddress("0x6De411A14aEaafB3f23697A4472a4D4ed275Ac0f")},
 	},
+	Cowswap: CowSwapMetadata{
+		Settlement:   common.HexToAddress("0x9008D19f58AAbD9eD0D60971565AA8510560ab41"),
+		VaultRelayer: common.HexToAddress("0xC92E8bdf79f0507f65a392b0ab4667716BFE0110"),
+	},
 	Token: TokenMetadata{
 		WethAddress: common.HexToAddress("0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7"),
 	},

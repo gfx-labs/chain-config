@@ -73,6 +73,10 @@ var Lens Network = Network{
 
 	Morpho:        MorphoMetadata{},
 	MarketRouters: MarketRouters{},
+	Cowswap: CowSwapMetadata{
+		Settlement:   common.HexToAddress("0x9008D19f58AAbD9eD0D60971565AA8510560ab41"),
+		VaultRelayer: common.HexToAddress("0xC92E8bdf79f0507f65a392b0ab4667716BFE0110"),
+	},
 	Token: TokenMetadata{
 		WethAddress: common.HexToAddress("0x6bDc36E20D267Ff0dd6097799f82e78907105e2F"),
 		UsdcAddress: common.HexToAddress("0x88F08E304EC4f90D644Cec3Fb69b8aD414acf884"),

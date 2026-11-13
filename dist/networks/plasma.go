@@ -30,6 +30,7 @@ var Plasma Network = Network{
 	TransactionType: "eip1559",
 	InitCodeHash:    common.HexToHash("0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54"),
 	ExternalId: map[string]string{
+		"cowswap":   "plasma",
 		"zerion":    "plasma",
 		"debank":    "plasma",
 		"coingecko": "plasma",
@@ -88,6 +89,10 @@ var Plasma Network = Network{
 		Rango:        []common.Address{common.HexToAddress("0x69460570c93f9DE5E2edbC3052bf10125f0Ca22d")},
 		Uniswap:      []common.Address{common.HexToAddress("0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc"), common.HexToAddress("0x807F4E281B7A3B324825C64ca53c69F0b418dE40")},
 		Zeroex:       []common.Address{common.HexToAddress("0x0000000000001fF3684f28c67538d4D072C22734"), common.HexToAddress("0x7F2194E8d4D5B5F889b17aeCe891F89Da74F5384")},
+	},
+	Cowswap: CowSwapMetadata{
+		Settlement:   common.HexToAddress("0x9008D19f58AAbD9eD0D60971565AA8510560ab41"),
+		VaultRelayer: common.HexToAddress("0xC92E8bdf79f0507f65a392b0ab4667716BFE0110"),
 	},
 	Token: TokenMetadata{
 		WethAddress: common.HexToAddress("0x6100E367285b01F48D07953803A2d8dCA5D19873"),

@@ -113,6 +113,10 @@ var Arbitrum Network = Network{
 		Uniswap:      []common.Address{common.HexToAddress("0x5E325eDA8064b456f4781070C0738d849c824258"), common.HexToAddress("0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45"), common.HexToAddress("0x8B844f885672f333Bc0042cB669255f93a4C1E6b")},
 		Zeroex:       []common.Address{common.HexToAddress("0x0000000000001fF3684f28c67538d4D072C22734"), common.HexToAddress("0xfeEA2A79D7d3d36753C8917AF744D71f13C9b02a")},
 	},
+	Cowswap: CowSwapMetadata{
+		Settlement:   common.HexToAddress("0x9008D19f58AAbD9eD0D60971565AA8510560ab41"),
+		VaultRelayer: common.HexToAddress("0xC92E8bdf79f0507f65a392b0ab4667716BFE0110"),
+	},
 	Token: TokenMetadata{
 		WethAddress: common.HexToAddress("0x82aF49447D8a07e3bd95BD0d56f35241523fBab1"),
 		WbtcAddress: common.HexToAddress("0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f"),

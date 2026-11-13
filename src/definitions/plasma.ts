@@ -1,8 +1,10 @@
 import { plasma as chain } from "viem/chains";
+import { COWSWAP_CREATE2_DEPLOYMENT } from "../cowswap";
 import { makeConfig } from "../util";
 
 export const plasma = makeConfig({
 	...chain,
+	cowswap: COWSWAP_CREATE2_DEPLOYMENT,
 	name: "Plasma",
 	blockTimeSeconds: 1,
 	launchTime: 1758588527,
@@ -21,11 +23,13 @@ export const plasma = makeConfig({
 		eVaultFactory: "0x42388213C6F56D7E1477632b58Ae6Bba9adeEeA3",
 	},
 	externalId: {
+		cowswap: "plasma",
 		zerion: "plasma",
 		debank: "plasma",
 		coingecko: "plasma",
 	},
 	markets: {
+		cowswap: "plasma",
 		zeroex: true,
 		kyberswap: "plasma",
 		openocean: "plasma",

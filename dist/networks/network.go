@@ -463,6 +463,7 @@ type Network struct {
 	Uniswapv4          UniswapV4Metadata
 	Morpho             MorphoMetadata
 	Euler              EulerMetadata
+	Cowswap            CowSwapMetadata
 	Launchpad          LaunchpadMetadata
 	Token              TokenMetadata
 	Oku                OkuMetadata
@@ -762,6 +763,11 @@ type EulerMetadata struct {
 	CowOpenPositionWrapper   common.Address
 	CowClosePositionWrapper  common.Address
 	CowCollateralSwapWrapper common.Address
+}
+
+type CowSwapMetadata struct {
+	Settlement   common.Address
+	VaultRelayer common.Address
 }
 
 type ChainContract struct {

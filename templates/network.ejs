@@ -104,7 +104,11 @@ var <%- helpers.snakeToCamel(chainName) %> Network = Network{
 <% } %>  MarketRouters:   MarketRouters{ <% for(const prop of Object.entries(marketRouters)) {%>
     <%- h.snakeToCamel(prop[0]) %>: []common.Address{<%- prop[1].map(h.toAddr).join(",") %>}, <% } %>
   },
-  Token:          TokenMetadata{ <% for(const prop of Object.entries(tok)) {%>
+<% if (chain.cowswap) { %>  Cowswap: CowSwapMetadata{
+    Settlement: <%- h.toAddr(chain.cowswap.settlement) %>,
+    VaultRelayer: <%- h.toAddr(chain.cowswap.vaultRelayer) %>,
+  },
+<% } %>  Token:          TokenMetadata{ <% for(const prop of Object.entries(tok)) {%>
     <%- h.snakeToCamel(prop[0]) %>: <%- h.formatValue(prop[1], h.isString(prop[1]) ? "a" : "n") %> , <% } %>
   },
   Contracts: map[string]ChainContract{<% for(const prop of Object.entries(cons)) {%> <% if(prop[1].address){ %>

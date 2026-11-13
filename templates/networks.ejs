@@ -416,6 +416,10 @@ type EulerMetadata struct {<% for(const prop of props_16) {%>
     <%- helpers.displayProp(prop) %> <% } %>
 }
 
+type CowSwapMetadata struct {<% for(const prop of CowSwapMetadata.getProperties()) {%>
+    <%- helpers.displayProp(prop) %> <% } %>
+}
+
 type ChainContract struct {<% for(const prop of props_6) {%>
     <%- helpers.displayProp(prop) %> <% } %>
 }

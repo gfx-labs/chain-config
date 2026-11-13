@@ -4,6 +4,17 @@
 
 `go get github.com/gfx-labs/chain-config/dist/networks`
 
+## CoW Protocol deployments
+
+`chain.markets.cowswap` and `chain.externalId.cowswap` remain API slug strings.
+`chain.cowswap.settlement` is the order signing contract, and
+`chain.cowswap.vaultRelayer` is the ERC-20 approval spender. The optional
+`cowswap` metadata is present on every chain with a CoW slug, including Lens.
+Go consumers use `Network.Cowswap.Settlement` and `Network.Cowswap.VaultRelayer`.
+
+After building, run `node --test integration/cowswap.test.cjs` to check the
+CommonJS and ESM package exports.
+
 ## Checking market routers
 
 Run `yarn check:swap-targets` to verify that every address under each chain's

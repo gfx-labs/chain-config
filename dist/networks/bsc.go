@@ -113,6 +113,10 @@ var Bsc Network = Network{
 		Uniswap:      []common.Address{common.HexToAddress("0x4Dae2f939ACf50408e13d58534Ff8c2776d45265"), common.HexToAddress("0x8B844f885672f333Bc0042cB669255f93a4C1E6b"), common.HexToAddress("0xB971eF87ede563556b2ED4b1C0b0019111Dd85d2")},
 		Zeroex:       []common.Address{common.HexToAddress("0x0000000000001fF3684f28c67538d4D072C22734"), common.HexToAddress("0xc2eff1F1cE35d395408A34Ad881dBCD978F40b89")},
 	},
+	Cowswap: CowSwapMetadata{
+		Settlement:   common.HexToAddress("0x9008D19f58AAbD9eD0D60971565AA8510560ab41"),
+		VaultRelayer: common.HexToAddress("0xC92E8bdf79f0507f65a392b0ab4667716BFE0110"),
+	},
 	Token: TokenMetadata{
 		UsdcAddress: common.HexToAddress("0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d"),
 		WbtcAddress: common.HexToAddress("0x7130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c"),

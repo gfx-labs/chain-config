@@ -1,8 +1,10 @@
 import { arbitrum as chain } from "viem/chains";
+import { COWSWAP_CREATE2_DEPLOYMENT } from "../cowswap";
 import { makeConfig } from "../util";
 
 export const arbitrum = makeConfig({
 	...chain,
+	cowswap: COWSWAP_CREATE2_DEPLOYMENT,
 	name: "Arbitrum",
 	liteChain: true,
 	launchTime: 1688997600,

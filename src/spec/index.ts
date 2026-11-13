@@ -89,6 +89,12 @@ export interface EulerMetadata {
 	cowCollateralSwapWrapper?: Address;
 }
 
+/** CoW order signing contract and ERC-20 approval spender for a chain. */
+export interface CowSwapMetadata {
+	readonly settlement: Address;
+	readonly vaultRelayer: Address;
+}
+
 export interface OkuPricingMetadata {
 	nativeWrappedToken?: Address;
 	nativeToken?: Address;
@@ -286,6 +292,7 @@ export interface IChainInfo<
 	uniswapv4?: UniswapV4Metadata;
 	morpho: MorphoMetadata;
 	euler?: EulerMetadata;
+	cowswap?: CowSwapMetadata;
 	launchpad?: LaunchpadMetadata;
 	token: TokenMetadata;
 	oku: OkuMetadata;
