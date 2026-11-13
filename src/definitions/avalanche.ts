@@ -3,6 +3,8 @@ import { COWSWAP_CREATE2_DEPLOYMENT } from "../cowswap";
 import { makeConfig } from "../util";
 import { zeroAddress } from "../util/constants";
 
+const paraswapRouter = "0x6A000F20005980200259B80c5102003040001068";
+
 export const avalanche = makeConfig({
 	...chain,
 	cowswap: COWSWAP_CREATE2_DEPLOYMENT,
@@ -33,6 +35,7 @@ export const avalanche = makeConfig({
 	markets: {
 		openocean: "avax",
 		cowswap: "avalanche",
+		paraswap: { routerContract: paraswapRouter },
 	},
 	marketRouters: {
 		binance: ["0xB44446b0c8E56988c34f7Ff73Ae904982b5FdDA5"],
@@ -47,6 +50,7 @@ export const avalanche = makeConfig({
 			"0x40aA958dd87FC8305b97f2BA922CDdCa374bcD7f",
 		],
 		openocean: ["0x6352a56caadC4F1E25CD6c75970Fa768A3304e64"],
+		paraswap: [paraswapRouter],
 		rango: ["0x69460570c93f9DE5E2edbC3052bf10125f0Ca22d"],
 		uniswap: [
 			"0x4Dae2f939ACf50408e13d58534Ff8c2776d45265",
