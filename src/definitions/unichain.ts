@@ -47,6 +47,7 @@ export const unichain = makeConfig({
 		icecreamswap: ["0x3FFc2315A992b01dc4B3f79C8EEa1921091Ee24f"],
 		kyberswap: ["0x6131B5fae19EA4f9D964eAc0408E4408b66337b5"],
 		odos: ["0x6409722F3a1C4486A3b1FE566cBDd5e9D946A1f3"],
+		oneinch: ["0x111111125421ca6dc452d289314280a0f8842a65"],
 		okx: [
 			"0x6733Eb2E75B1625F1Fe5f18aD2cB2BaBDA510d19",
 			"0x2e28281Cf3D58f475cebE27bec4B8a23dFC7782c",

@@ -24,9 +24,6 @@ export const sei = makeConfig({
 	},
 	markets: {
 		openocean: "sei",
-		oneinch: {
-			spender: "0x111111125421ca6dc452d289314280a0f8842a65",
-		},
 	},
 	marketRouters: {
 		enso: ["0x300b3D30aaBf46b05983284f0297D966E92bbeB2"],
