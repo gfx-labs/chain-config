@@ -38,6 +38,7 @@ export const gnosis = makeConfig({
 	marketRouters: {
 		enso: ["0xF75584eF6673aD213a685a1B58Cc0330B8eA22Cf"],
 		icecreamswap: ["0xC87De04e2EC1F4282dFF2933A2D58199f688fC3d"],
+		oneinch: ["0x111111125421ca6dc452d289314280a0f8842a65"],
 		openocean: ["0x6352a56caadC4F1E25CD6c75970Fa768A3304e64"],
 		paraswap: ["0x6A000F20005980200259B80c5102003040001068"],
 		rango: ["0x69460570c93f9DE5E2edbC3052bf10125f0Ca22d"],
