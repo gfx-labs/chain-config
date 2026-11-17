@@ -33,7 +33,7 @@
     "build": "tsdown && yarn tsx gen_go.ts",
     "prepack": "yarn build",
     "semantic-release": "npx semantic-release",
-    "lint": "oxlint --deny-warnings src",
+    "lint": "oxlint --deny-warnings .",
     "fmt:check": "oxfmt --check",
     "check": "yarn lint && yarn fmt:check",
     "typecheck": "tsc --noEmit",
