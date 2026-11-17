@@ -35,7 +35,8 @@
     "semantic-release": "npx semantic-release",
     "lint": "oxlint --deny-warnings src",
     "fmt:check": "oxfmt --check",
-    "check": "yarn lint && yarn fmt:check"
+    "check": "yarn lint && yarn fmt:check",
+    "typecheck": "tsc --noEmit"
   },
   "publishConfig": {
     "access": "public"

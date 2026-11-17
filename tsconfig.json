@@ -4,13 +4,10 @@
 		"module": "esnext",
 		"moduleResolution": "bundler",
 		"lib": ["es2022", "dom"],
-		"declaration": true,
-		"declarationDir": "./dist/types",
-		"rootDir": "src",
+		"noEmit": true,
 		"strict": true,
 		"esModuleInterop": true,
 		"types": ["node"]
 	},
-	"experimentalDecorators": true,
-	"exclude": ["node_modules", "dist", "integration"]
+	"include": ["src", "gen_go.ts", "tsdown.config.mts"]
 }
