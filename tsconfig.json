@@ -9,5 +9,5 @@
 		"esModuleInterop": true,
 		"types": ["node"]
 	},
-	"include": ["src", "gen_go.ts", "tsdown.config.mts"]
+	"include": ["src", "gen_go.ts", "tsdown.config.mts", "vitest.config.mts"]
 }

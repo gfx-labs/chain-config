@@ -36,7 +36,8 @@
     "lint": "oxlint --deny-warnings src",
     "fmt:check": "oxfmt --check",
     "check": "yarn lint && yarn fmt:check",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
   },
   "publishConfig": {
     "access": "public"
@@ -65,7 +66,9 @@
     "tsdown": "^0.23.7",
     "tsx": "^4.23.13",
     "typescript": "^5.9.3",
-    "viem": "^2.58.0"
+    "viem": "^2.58.0",
+    "vite": "^8.3.8",
+    "vitest": "^5.1.0"
   },
   "packageManager": "yarn@4.18.1",
   "peerDependencies": {
