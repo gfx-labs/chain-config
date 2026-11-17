@@ -25,6 +25,10 @@ jobs:
 
       - run: yarn install --immutable
 
+      - run: yarn check
+
+      - run: yarn typecheck
+
       - run: yarn build
 
       # The generated Go in dist/networks is published as a Go module via the
