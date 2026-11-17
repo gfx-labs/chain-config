@@ -782,16 +782,16 @@ type BlockExplorer struct {
 
 type Markets struct {
 	Airswap       bool
-	Enso          interface{}
+	Enso          bool
 	Kyberswap     string
-	Odos          interface{}
-	Okx           interface{}
+	Odos          bool
+	Okx           bool
 	Oneinch       map[string]interface{}
 	Openocean     string
 	Paraswap      map[string]interface{}
 	Propellerswap string
 	Threeroute    bool
-	Usor          interface{}
+	Usor          bool
 	Zeroex        bool
 	Cowswap       string
 	Icecreamswap  bool
@@ -917,14 +917,14 @@ func (n *Network) MarketsForRouter(addr common.Address) []string {
 type Bridges struct {
 	Cctp        map[string]interface{}
 	Deswap      map[string]interface{}
-	Bungee      interface{}
-	Lifi        interface{}
-	Across      interface{}
-	Orbiter     interface{}
+	Bungee      bool
+	Lifi        bool
+	Across      bool
+	Orbiter     bool
 	Wormhole    map[string]interface{}
 	Rhinofi     string
 	Chainlink   map[string]interface{}
-	Squidrouter interface{}
+	Squidrouter bool
 	Wanbridge   map[string]interface{}
 	Stargate    map[string]interface{}
 	Layerzero   map[string]interface{}
@@ -933,9 +933,9 @@ type Bridges struct {
 type Oracles struct {
 	Cmc         map[string]interface{}
 	Coingecko   map[string]interface{}
-	Dexguru     interface{}
+	Dexguru     bool
 	Dexscreener string
-	Oku         interface{}
+	Oku         bool
 }
 
 type MorphoMetadata struct {

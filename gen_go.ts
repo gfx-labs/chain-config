@@ -141,7 +141,7 @@ const displayProp = (x: morph.PropertySignature) => {
 	return `${snakeToCamel(x.getName())} ${getPropType(x)}`;
 };
 
-const formatValue = (x: any, hint: string) => {
+const formatValue = (x: unknown, hint: string) => {
 	switch (hint) {
 		case "a":
 		case "addr":
@@ -170,15 +170,15 @@ const formatValue = (x: any, hint: string) => {
 	}
 };
 
-const isString = (x: any) => {
+const isString = (x: unknown) => {
 	return typeof x === "string";
 };
 
-const isAddress = (x: any) => {
+const isAddress = (x: unknown) => {
 	return typeof x === "string" && /^0x[a-fA-F0-9]{40}$/.test(x);
 };
 
-const isHash = (x: any) => {
+const isHash = (x: unknown) => {
 	return typeof x === "string" && /^0x[a-fA-F0-9]{64}$/.test(x);
 };
 

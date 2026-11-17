@@ -7,7 +7,7 @@
 		"perf": "error"
 	},
 	"rules": {
-		"typescript/no-explicit-any": "off",
+		"typescript/no-explicit-any": "error",
 		"eslint/eqeqeq": ["error", "always", { "null": "ignore" }],
 		"eslint/curly": "error",
 		"eslint/no-duplicate-imports": "error",

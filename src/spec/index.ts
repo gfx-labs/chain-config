@@ -136,10 +136,10 @@ export interface TokenMetadata {
 
 export interface Markets {
 	airswap?: boolean;
-	enso?: any;
+	enso?: boolean;
 	kyberswap?: string; // from https://github.com/KyberNetwork/kyberswap-documentation/blob/main/kyberswap-solutions/kyberswap-aggregator/aggregator-api-specification/evm-swaps.md
-	odos?: any;
-	okx?: any;
+	odos?: boolean;
+	okx?: boolean;
 	oneinch?: {
 		spender: Address;
 	};
@@ -149,7 +149,7 @@ export interface Markets {
 	};
 	propellerswap?: string;
 	threeroute?: boolean;
-	usor?: any;
+	usor?: boolean;
 	zeroex?: boolean;
 	cowswap?: string;
 	icecreamswap?: boolean;
@@ -186,10 +186,10 @@ export interface Bridges {
 	deswap?: {
 		chainId: number;
 	};
-	bungee?: any;
-	lifi?: any;
-	across?: any;
-	orbiter?: any;
+	bungee?: boolean;
+	lifi?: boolean;
+	across?: boolean;
+	orbiter?: boolean;
 	wormhole?: {
 		chain: string;
 		timeToFinalize: number;
@@ -201,7 +201,7 @@ export interface Bridges {
 		chainSelector: bigint;
 		tokenAdminRegistry?: Address;
 	};
-	squidrouter?: any;
+	squidrouter?: boolean;
 	wanbridge?: {
 		requiredConfirmations: number;
 	};
@@ -236,9 +236,9 @@ export interface Oracles {
 		slug: string;
 		native: string;
 	};
-	dexguru?: any;
+	dexguru?: boolean;
 	dexscreener?: string;
-	oku?: any;
+	oku?: boolean;
 }
 
 export interface IChainInfo<
