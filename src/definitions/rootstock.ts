@@ -5,7 +5,7 @@ import { makeConfig } from "../util";
 export const rootstock = makeConfig({
 	...chain,
 	sortIndex: 15,
-	launchTime: 1702479600,
+	launchTime: 1_702_479_600,
 	transactionType: "legacy",
 	name: "Rootstock",
 	initCodeHash:
@@ -17,7 +17,7 @@ export const rootstock = makeConfig({
 	estimatedSwapGas: 300_000,
 	estimatedBridgeGas: 200_000,
 	estimatedWrapGas: 60_000,
-	safeReorgDistance: 90000,
+	safeReorgDistance: 90_000,
 	blockAid: "",
 	externalId: {
 		debank: "rsk",
@@ -40,11 +40,11 @@ export const rootstock = makeConfig({
 		chainlink: {
 			atlasNetworkName: "rootstock-mainnet",
 			routerAddress: "0xCe7aFb0BF5F73BfDB5e9E04976eBac2005746bD0",
-			chainSelector: 11964252391146578476n,
+			chainSelector: 11_964_252_391_146_578_476n,
 			tokenAdminRegistry: "0xad71ac82aCFCbDD27BBd3F3eD2fA24E26E49CBE2",
 		},
 		stargate: {
-			endpointID: 30333,
+			endpointID: 30_333,
 			blockConfirmations: 20,
 			tokens: [
 				{
@@ -87,14 +87,14 @@ export const rootstock = makeConfig({
 		rsk: chain.blockExplorers.default,
 	},
 	uniswap: {
-		deployBlock: 5829210,
+		deployBlock: 5_829_210,
 		poolFactory: "0xaF37EC98A00FD63689CF3060BF3B6784E00caD82",
 		permit2: "0xFcf5986450E4A014fFE7ad4Ae24921B589D039b5",
 		multicall2: "0x996a9858cDfa45Ad68E47c9A30a7201E29c6a386",
 		tickLens: "0x55B9dF5bF68ADe972191a91980459f48ecA16afC",
 		nonfungiblePositionManager: "0x9d9386c042F194B460Ec424a1e57ACDE25f5C4b1",
 		positionsNFT: "0x9d9386c042F194B460Ec424a1e57ACDE25f5C4b1",
-		positionsNFTDeployBlock: 5829891,
+		positionsNFTDeployBlock: 5_829_891,
 		universalRouter: "0x244f68e77357f86a8522323eBF80b5FC2F814d3E",
 
 		wrappedNativeAddress: "0x542fDA317318eBF1d3DEAf76E0b632741A7e677d",
@@ -109,7 +109,7 @@ export const rootstock = makeConfig({
 	oku: {
 		router: "0x0906896E8564c61F40778E2B7A46E1269Aaa681e",
 		limitOrderRegistry: "0x83B1cF411f57F7373bBFF81dCE81437e768F4252",
-		limitOrderRegistryDeployBlock: 5842098,
+		limitOrderRegistryDeployBlock: 5_842_098,
 		pricing: {
 			nativeWrappedToken: "0x542fDA317318eBF1d3DEAf76E0b632741A7e677d",
 			nativeWrappedName: "WRBTC",

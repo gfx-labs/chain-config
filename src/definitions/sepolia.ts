@@ -6,7 +6,7 @@ import { zeroAddress, zeroHash } from "../util/constants";
 export const sepolia = makeConfig({
 	...chain,
 	blockTimeSeconds: 12,
-	launchTime: 1655683200,
+	launchTime: 1_655_683_200,
 	transactionType: "eip1559",
 	sortIndex: 51,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/ethereum-logo.webp",

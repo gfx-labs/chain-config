@@ -5,7 +5,7 @@ import { makeConfig } from "../util";
 export const metal = makeConfig({
 	...chain,
 	blockTimeSeconds: 2,
-	launchTime: 1733882663,
+	launchTime: 1_733_882_663,
 	transactionType: "eip1559",
 	sortIndex: 46,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/metal-l2-logo.svg",
@@ -14,7 +14,7 @@ export const metal = makeConfig({
 	estimatedSwapGas: 300_000,
 	estimatedBridgeGas: 200_000,
 	estimatedWrapGas: 60_000,
-	safeReorgDistance: 90000,
+	safeReorgDistance: 90_000,
 	blockAid: "",
 	externalId: {},
 	morpho: {},
@@ -23,7 +23,7 @@ export const metal = makeConfig({
 		chainlink: {
 			atlasNetworkName: "metal-mainnet",
 			routerAddress: "0x020c61ECEEE0E5DC32F2503AbB6E070fa0EbBfaA",
-			chainSelector: 13447077090413146373n,
+			chainSelector: 13_447_077_090_413_146_373n,
 			tokenAdminRegistry: "0xc41640B959Ca2A62b9293509202D8615dC293634",
 		},
 	},
@@ -31,14 +31,14 @@ export const metal = makeConfig({
 	initCodeHash:
 		"0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
 	uniswap: {
-		deployBlock: 10810498,
+		deployBlock: 10_810_498,
 		poolFactory: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D",
 		permit2: "0xB952578f3520EE8Ea45b7914994dcf4702cEe578",
 		multicall2: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435",
 		tickLens: "0xB3309C48F8407651D918ca3Da4C45DE40109E641",
 		nonfungiblePositionManager: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c",
 		positionsNFT: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c",
-		positionsNFTDeployBlock: 10810692,
+		positionsNFTDeployBlock: 10_810_692,
 		universalRouter: "0x346239972d1fa486FC4a521031BC81bFB7D6e8a4",
 
 		wrappedNativeAddress: "0x4200000000000000000000000000000000000006",
@@ -52,7 +52,7 @@ export const metal = makeConfig({
 	},
 	oku: {
 		limitOrderRegistry: "0x352A86168e6988A1aDF9A15Cb00017AAd3B67155",
-		limitOrderRegistryDeployBlock: 10815725,
+		limitOrderRegistryDeployBlock: 10_815_725,
 		pricing: {
 			nativeWrappedToken: "0x4200000000000000000000000000000000000006",
 			nativeWrappedName: "ETH",

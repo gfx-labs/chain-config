@@ -6,7 +6,7 @@ export const pharos = makeConfig({
 	...chain,
 	name: "Pharos",
 	blockTimeSeconds: 2,
-	launchTime: 1777014000,
+	launchTime: 1_777_014_000,
 	transactionType: "eip1559",
 	sortIndex: 50,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/pharos-logo.svg",
@@ -36,7 +36,7 @@ export const pharos = makeConfig({
 	},
 	oracles: {},
 	morpho: {
-		deployBlock: 4202147,
+		deployBlock: 4_202_147,
 		morpho: "0x18573fA18fd17dDfD790B4a5B5b2977aad3b4Efb",
 		bundler3: "0x3c90c09F8c5d927a117F681fB924952DbbD99120",
 		generalAdapter1: "0x0A5819708bCAD9C716dFD58ecB58cF91399A53f8",

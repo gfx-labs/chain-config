@@ -16,7 +16,7 @@ export const worldchain = makeConfig({
 	estimatedBridgeGas: 200_000,
 	estimatedWrapGas: 60_000,
 	liteChain: true,
-	safeReorgDistance: 90000,
+	safeReorgDistance: 90_000,
 	blockAid: "",
 	externalId: {
 		zerion: "world",
@@ -48,7 +48,7 @@ export const worldchain = makeConfig({
 		chainlink: {
 			atlasNetworkName: "ethereum-mainnet-worldchain-1",
 			routerAddress: "0x5fd9E4986187c56826A3064954Cfa2Cf250cfA0f",
-			chainSelector: 2049429975587534727n,
+			chainSelector: 2_049_429_975_587_534_727n,
 			tokenAdminRegistry: "0x02Fe6ab4fb0943F58D9D925d1d2cbA9474997Ed0",
 		},
 		wormhole: {
@@ -58,7 +58,7 @@ export const worldchain = makeConfig({
 	},
 	oracles: {},
 	morpho: {
-		deployBlock: 9025669,
+		deployBlock: 9_025_669,
 		morpho: "0xE741BC7c34758b4caE05062794E8Ae24978AF432",
 		publicAllocator: "0xef9889B4e443DEd35FA0Bd060f2104Cca94e6A43",
 		mmFactory11: "0xae5b0884bfff430493D6C844B9fd052Af7d79278",
@@ -68,14 +68,14 @@ export const worldchain = makeConfig({
 	initCodeHash:
 		"0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
 	uniswap: {
-		deployBlock: 1603366,
+		deployBlock: 1_603_366,
 		poolFactory: "0x7a5028BDa40e7B173C278C5342087826455ea25a",
 		permit2: "0x000000000022D473030F116dDEE9F6B43aC78BA3",
 		multicall2: "0x0a22c04215c97E3F532F4eF30e0aD9458792dAB9",
 		tickLens: "0xE61df0CaC9d85876aCE5E3037005D80943570623",
 		nonfungiblePositionManager: "0xec12a9F9a09f50550686363766Cc153D03c27b5e",
 		positionsNFT: "0xec12a9F9a09f50550686363766Cc153D03c27b5e",
-		positionsNFTDeployBlock: 1603405,
+		positionsNFTDeployBlock: 1_603_405,
 		universalRouter: "0x8B844f885672f333Bc0042cB669255f93a4C1E6b",
 
 		wrappedNativeAddress: "0x4200000000000000000000000000000000000006",

@@ -7,7 +7,7 @@ export const robinhood = makeConfig({
 	...chain,
 	name: "Robinhood",
 	blockTimeSeconds: 0.1,
-	launchTime: 1784047160,
+	launchTime: 1_784_047_160,
 	transactionType: "eip1559",
 	sortIndex: 7,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/robinhood-logo.svg",
@@ -64,7 +64,7 @@ export const robinhood = makeConfig({
 		decoder: "pons-v2",
 		factory: "0x7ed598bcef8bd9edd8c97a195c6d13f40801ec7e",
 		router: "0xe33e9e479df8802cb0866d5d05258bec4cf62948",
-		deployBlock: 26841846,
+		deployBlock: 26_841_846,
 	},
 	initCodeHash:
 		"0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",

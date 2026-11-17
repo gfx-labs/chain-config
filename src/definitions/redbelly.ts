@@ -6,7 +6,7 @@ export const redbelly = makeConfig({
 	...chain,
 	name: "Redbelly",
 	blockTimeSeconds: 5,
-	launchTime: 1741362479,
+	launchTime: 1_741_362_479,
 	transactionType: "eip1559",
 	sortIndex: 31,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/redbelly-logo.svg",
@@ -15,7 +15,7 @@ export const redbelly = makeConfig({
 	estimatedSwapGas: 300_000,
 	estimatedBridgeGas: 200_000,
 	estimatedWrapGas: 60_000,
-	safeReorgDistance: 90000,
+	safeReorgDistance: 90_000,
 	blockAid: "",
 	externalId: {
 		coingecko: "redbelly-network",
@@ -33,14 +33,14 @@ export const redbelly = makeConfig({
 	initCodeHash:
 		"0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
 	uniswap: {
-		deployBlock: 2286057,
+		deployBlock: 2_286_057,
 		poolFactory: "0x75FC67473A91335B5b8F8821277262a13B38c9b3",
 		permit2: "0xdD489C75be1039ec7d843A6aC2Fd658350B067Cf",
 		multicall2: "0x0d922Fb1Bc191F64970ac40376643808b4B74Df9",
 		tickLens: "0xE3dbcD53f4Ce1b06Ab200f4912BD35672e68f1FA",
 		nonfungiblePositionManager: "0x8B3c541c30f9b29560f56B9E44b59718916B69EF",
 		positionsNFT: "0x8B3c541c30f9b29560f56B9E44b59718916B69EF",
-		positionsNFTDeployBlock: 2286074,
+		positionsNFTDeployBlock: 2_286_074,
 		universalRouter: "0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc",
 
 		wrappedNativeAddress: "0x6ed1F491e2d31536D6561f6bdB2AdC8F092a6076",
@@ -56,7 +56,7 @@ export const redbelly = makeConfig({
 	oku: {
 		router: "0x44a81236E892faEdc1f7c08362a4A0eC90dDd203",
 		limitOrderRegistry: "0x9db70E29712Cc8Af10c2B597BaDA6784544FF407",
-		limitOrderRegistryDeployBlock: 2286099,
+		limitOrderRegistryDeployBlock: 2_286_099,
 		pricing: {
 			nativeWrappedToken: "0x6ed1F491e2d31536D6561f6bdB2AdC8F092a6076",
 			nativeWrappedName: "RBNT",

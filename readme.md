@@ -36,13 +36,13 @@ from `src/definitions/` just like any `viem/chains` import.
    import { makeInternalChain } from "./util";
 
    export const mychain = makeInternalChain({
-     id: 1234,
-     name: "My Chain",
-     nativeCurrency: { name: "Token", symbol: "TKN", decimals: 18 },
-     rpcUrls: { default: { http: ["https://rpc.mychain.example"] } },
-     blockExplorers: {
-       default: { name: "Explorer", url: "https://explorer.example" },
-     },
+   	id: 1234,
+   	name: "My Chain",
+   	nativeCurrency: { name: "Token", symbol: "TKN", decimals: 18 },
+   	rpcUrls: { default: { http: ["https://rpc.mychain.example"] } },
+   	blockExplorers: {
+   		default: { name: "Explorer", url: "https://explorer.example" },
+   	},
    });
    ```
 

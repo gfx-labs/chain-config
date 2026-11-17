@@ -10,7 +10,7 @@ export const elysium = makeConfig({
 	name: "Elysium",
 	blockTimeSeconds: 0.1,
 	// Mainnet launch 2026-11-09 00:00 UTC; update with genesis timestamp.
-	launchTime: 1794182400,
+	launchTime: 1_794_182_400,
 	transactionType: "eip1559",
 	sortIndex: 5,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/elysium-logo.svg",

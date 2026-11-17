@@ -8,7 +8,7 @@ export const base = makeConfig({
 	cowswap: COWSWAP_CREATE2_DEPLOYMENT,
 	sortIndex: 2,
 	liteChain: true,
-	launchTime: 1707321600,
+	launchTime: 1_707_321_600,
 	transactionType: "eip1559",
 	blockTimeSeconds: 2,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/base-logo.svg",
@@ -22,7 +22,7 @@ export const base = makeConfig({
 	defaultToken0: "0x4200000000000000000000000000000000000006",
 	defaultToken1: "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
 	morpho: {
-		deployBlock: 13977148,
+		deployBlock: 13_977_148,
 		morpho: "0xBBBBBbbBBb9cC5e90e3b3Af64bdAF62C37EEFFCb",
 		mmFactory10: "0xa9c3d3a366466fa809d1ae982fb2c46e5fc41101",
 		mmFactory11: "0xFf62A7c278C62eD665133147129245053Bbf5918",
@@ -102,12 +102,12 @@ export const base = makeConfig({
 		chainlink: {
 			atlasNetworkName: "ethereum-mainnet-base-1",
 			routerAddress: "0x881e3A65B4d4a04dD529061dd0071cf975F58bCD",
-			chainSelector: 15971525489660198786n,
+			chainSelector: 15_971_525_489_660_198_786n,
 			tokenAdminRegistry: "0x6f6C373d09C07425BaAE72317863d7F6bb731e37",
 		},
 		rhinofi: "BASE",
 		stargate: {
-			endpointID: 30184,
+			endpointID: 30_184,
 			blockConfirmations: 20,
 			tokens: [
 				{
@@ -136,7 +136,7 @@ export const base = makeConfig({
 			timeToFinalize: 1800,
 		},
 		layerzero: {
-			eid: 30184,
+			eid: 30_184,
 			tokens: [
 				{
 					id: 3,
@@ -164,15 +164,15 @@ export const base = makeConfig({
 		},
 		dexscreener: "base",
 	},
-	safeReorgDistance: 90000,
+	safeReorgDistance: 90_000,
 	uniswap: {
-		deployBlock: 1371680,
+		deployBlock: 1_371_680,
 		poolFactory: "0x33128a8fC17869897dcE68Ed026d694621f6FDfD",
 		multicall2: "0x41A513463248971B41C0580726CF4D425c071732",
 		tickLens: "0x0CdeE061c75D43c82520eD998C23ac2991c9ac6d",
 		nonfungiblePositionManager: "0x03a520b32C04BF3bEEf7BEb72E919cf822Ed34f1",
 		positionsNFT: "0x03a520b32C04BF3bEEf7BEb72E919cf822Ed34f1",
-		positionsNFTDeployBlock: 1371714,
+		positionsNFTDeployBlock: 1_371_714,
 		universalRouter: "0xFdf682F51FE81Aa4898F0AE2163d8A55c127fbC7",
 		wrappedNativeAddress: "0x4200000000000000000000000000000000000006",
 		wrappedNativeSymbol: "WETH",
@@ -186,7 +186,7 @@ export const base = makeConfig({
 	oku: {
 		router: "0xb1f3a7B816B0681188F54dFa400991B93ADf00ed",
 		limitOrderRegistry: "0xff8b754c64e9a8473bd6e1118d0eac67f0a8ae27",
-		limitOrderRegistryDeployBlock: 7644835,
+		limitOrderRegistryDeployBlock: 7_644_835,
 		pricing: {
 			nativeWrappedToken: "0x4200000000000000000000000000000000000006",
 			nativeWrappedName: "WETH",
@@ -251,7 +251,7 @@ export const base = makeConfig({
 		},
 		metrom: {
 			address: "0xD1D3Cf05Ef211C71056f0aF1a7FD1DF989E109c3",
-			blockCreated: 20622498,
+			blockCreated: 20_622_498,
 		},
 	},
 });

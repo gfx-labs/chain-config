@@ -1,78 +1,78 @@
 {
-  "name": "@gfxlabs/oku-chains",
-  "version": "1.24.0",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gfx-labs/chain-config.git"
-  },
-  "homepage": "https://github.com/gfx-labs/chain-config#readme",
-  "bugs": {
-    "url": "https://github.com/gfx-labs/chain-config/issues"
-  },
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
-  "exports": {
-    ".": {
-      "import": {
-        "types": "./dist/index.d.mts",
-        "default": "./dist/index.mjs"
-      },
-      "require": {
-        "types": "./dist/index.d.ts",
-        "default": "./dist/index.js"
-      }
-    },
-    "./package.json": "./package.json"
-  },
-  "scripts": {
-    "fmt": "oxfmt",
-    "clean": "rm -rf dist",
-    "check:swap-targets": "tsx src/script/check-swap-targets.ts",
-    "build": "tsdown && yarn tsx gen_go.ts",
-    "prepack": "yarn build",
-    "semantic-release": "npx semantic-release",
-    "lint": "oxlint --deny-warnings .",
-    "fmt:check": "oxfmt --check",
-    "check": "yarn lint && yarn fmt:check",
-    "typecheck": "tsc --noEmit",
-    "test": "vitest run",
-    "test:pack": "node scripts/test-pack.mjs"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
-  "files": [
-    "dist/*.js",
-    "dist/*.mjs",
-    "dist/*.d.ts",
-    "dist/*.d.mts"
-  ],
-  "devDependencies": {
-    "@semantic-release/commit-analyzer": "^13.0.1",
-    "@semantic-release/exec": "^7.1.0",
-    "@semantic-release/git": "^10.0.1",
-    "@semantic-release/github": "^12.0.9",
-    "@semantic-release/npm": "^13.1.5",
-    "@types/ejs": "^3.1.5",
-    "@types/node": "^25.9.7",
-    "@wasm-fmt/gofmt": "0.7.3",
-    "conventional-changelog-conventionalcommits": "8.0.0",
-    "ejs": "^3.1.10",
-    "oxfmt": "^0.79.0",
-    "oxlint": "^1.94.0",
-    "semantic-release": "^25.0.9",
-    "ts-morph": "^27.0.2",
-    "tsdown": "^0.23.7",
-    "tsx": "^4.23.13",
-    "typescript": "^5.9.3",
-    "viem": "^2.58.0",
-    "vite": "^8.3.8",
-    "vitest": "^5.1.0"
-  },
-  "packageManager": "yarn@4.18.1",
-  "peerDependencies": {
-    "viem": "2.x"
-  }
+	"name": "@gfxlabs/oku-chains",
+	"version": "1.24.0",
+	"homepage": "https://github.com/gfx-labs/chain-config#readme",
+	"bugs": {
+		"url": "https://github.com/gfx-labs/chain-config/issues"
+	},
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/gfx-labs/chain-config.git"
+	},
+	"files": [
+		"dist/*.js",
+		"dist/*.mjs",
+		"dist/*.d.ts",
+		"dist/*.d.mts"
+	],
+	"main": "./dist/index.js",
+	"module": "./dist/index.mjs",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		".": {
+			"import": {
+				"types": "./dist/index.d.mts",
+				"default": "./dist/index.mjs"
+			},
+			"require": {
+				"types": "./dist/index.d.ts",
+				"default": "./dist/index.js"
+			}
+		},
+		"./package.json": "./package.json"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"scripts": {
+		"fmt": "oxfmt",
+		"clean": "rm -rf dist",
+		"check:swap-targets": "tsx src/script/check-swap-targets.ts",
+		"build": "tsdown && yarn tsx gen_go.ts",
+		"prepack": "yarn build",
+		"semantic-release": "npx semantic-release",
+		"lint": "oxlint --deny-warnings .",
+		"fmt:check": "oxfmt --check",
+		"check": "yarn lint && yarn fmt:check",
+		"typecheck": "tsc --noEmit",
+		"test": "vitest run",
+		"test:pack": "node scripts/test-pack.mjs"
+	},
+	"devDependencies": {
+		"@semantic-release/commit-analyzer": "^13.0.1",
+		"@semantic-release/exec": "^7.1.0",
+		"@semantic-release/git": "^10.0.1",
+		"@semantic-release/github": "^12.0.9",
+		"@semantic-release/npm": "^13.1.5",
+		"@types/ejs": "^3.1.5",
+		"@types/node": "^25.9.7",
+		"@wasm-fmt/gofmt": "0.7.3",
+		"conventional-changelog-conventionalcommits": "8.0.0",
+		"ejs": "^3.1.10",
+		"oxfmt": "^0.79.0",
+		"oxlint": "^1.94.0",
+		"semantic-release": "^25.0.9",
+		"ts-morph": "^27.0.2",
+		"tsdown": "^0.23.7",
+		"tsx": "^4.23.13",
+		"typescript": "^5.9.3",
+		"viem": "^2.58.0",
+		"vite": "^8.3.8",
+		"vitest": "^5.1.0"
+	},
+	"peerDependencies": {
+		"viem": "2.x"
+	},
+	"packageManager": "yarn@4.18.1"
 }

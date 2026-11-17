@@ -89,10 +89,14 @@ describe("network invariants", () => {
 				return;
 			}
 			if (v && typeof v === "object") {
-				for (const [k, child] of Object.entries(v)) walk(child, `${path}.${k}`);
+				for (const [k, child] of Object.entries(v)) {
+					walk(child, `${path}.${k}`);
+				}
 			}
 		};
-		for (const c of ALL_NETWORKS) walk(c, c.internalName);
+		for (const c of ALL_NETWORKS) {
+			walk(c, c.internalName);
+		}
 		expect(bad).toEqual([]);
 	});
 });

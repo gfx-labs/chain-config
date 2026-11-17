@@ -19,13 +19,13 @@ export type {
 
 import type { Address } from "viem";
 
-import type { IChainInfo } from "./spec";
 import {
 	chainType as _chainType,
 	isEvmChain as _isEvmChain,
 	isNetworkType as _isNetworkType,
 	isNonEvmChain as _isNonEvmChain,
 	ChainType,
+	type IChainInfo,
 } from "./spec";
 import {
 	networkByAny as _networkByAny,
@@ -53,7 +53,7 @@ type DefinedChain = (typeof defs)[keyof typeof defs];
  * here with a reason. Everything else in src/definitions is picked up
  * automatically.
  */
-const EXCLUDED_DEFINITIONS: ReadonlySet<keyof typeof defs> = new Set([]);
+const EXCLUDED_DEFINITIONS: ReadonlySet<keyof typeof defs> = new Set();
 
 const bySortIndex = (a: IChainInfo, b: IChainInfo) =>
 	a.sortIndex - b.sortIndex || a.internalName.localeCompare(b.internalName);

@@ -6,7 +6,7 @@ export const unichain = makeConfig({
 	...chain,
 	name: "Unichain",
 	blockTimeSeconds: 1,
-	launchTime: 1750384728,
+	launchTime: 1_750_384_728,
 	transactionType: "eip1559",
 	sortIndex: 21,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/unichain-logo.svg",
@@ -15,7 +15,7 @@ export const unichain = makeConfig({
 	estimatedSwapGas: 300_000,
 	estimatedBridgeGas: 200_000,
 	estimatedWrapGas: 60_000,
-	safeReorgDistance: 90000,
+	safeReorgDistance: 90_000,
 	blockAid: "unichain",
 	euler: {
 		evc: "0x2A1176964F5D7caE5406B627Bf6166664FE83c60",
@@ -74,7 +74,7 @@ export const unichain = makeConfig({
 			messageTransmitterV2: "0x81D40F21F12A8F0E3252Bccb954D722d4c464B64",
 		},
 		layerzero: {
-			eid: 30320,
+			eid: 30_320,
 			tokens: [
 				{
 					id: 1,
@@ -93,7 +93,7 @@ export const unichain = makeConfig({
 		chainlink: {
 			atlasNetworkName: "ethereum-mainnet-unichain-1",
 			routerAddress: "0x68891f5F96695ECd7dEdBE2289D1b73426ae7864",
-			chainSelector: 1923510103922296319n,
+			chainSelector: 1_923_510_103_922_296_319n,
 			tokenAdminRegistry: "0xAB3Ee2e897cf23c10e76d26aB4674fEFA376bc0d",
 		},
 		wormhole: {
@@ -113,7 +113,7 @@ export const unichain = makeConfig({
 		tickLens: "0xd5d76fa166ab8d8ad4c9f61aaa81457b66cbe443",
 		nonfungiblePositionManager: "0x943e6e07a7e8e791dafc44083e54041d743c46e9",
 		positionsNFT: "0x943e6e07a7e8e791dafc44083e54041d743c46e9",
-		positionsNFTDeployBlock: 294152,
+		positionsNFTDeployBlock: 294_152,
 		universalRouter: "0xFdf682F51FE81Aa4898F0AE2163d8A55c127fbC7",
 
 		wrappedNativeAddress: "0x4200000000000000000000000000000000000006",
@@ -138,7 +138,7 @@ export const unichain = makeConfig({
 	oku: {
 		router: "0xb1f3a7B816B0681188F54dFa400991B93ADf00ed",
 		limitOrderRegistry: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D",
-		limitOrderRegistryDeployBlock: 19179485,
+		limitOrderRegistryDeployBlock: 19_179_485,
 		pricing: {
 			nativeWrappedToken: "0x4200000000000000000000000000000000000006",
 			nativeWrappedName: "ETH",

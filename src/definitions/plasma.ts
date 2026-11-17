@@ -8,7 +8,7 @@ export const plasma = makeConfig({
 	cowswap: COWSWAP_CREATE2_DEPLOYMENT,
 	name: "Plasma",
 	blockTimeSeconds: 1,
-	launchTime: 1758588527,
+	launchTime: 1_758_588_527,
 	transactionType: "eip1559",
 	sortIndex: 3,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/plasma-logo.svg",
@@ -17,7 +17,7 @@ export const plasma = makeConfig({
 	estimatedSwapGas: 300_000,
 	estimatedBridgeGas: 200_000,
 	estimatedWrapGas: 60_000,
-	safeReorgDistance: 90000,
+	safeReorgDistance: 90_000,
 	blockAid: "",
 	euler: {
 		evc: "0x7bdbd0A7114aA42CA957F292145F6a931a345583",
@@ -61,7 +61,7 @@ export const plasma = makeConfig({
 		chainlink: {
 			atlasNetworkName: "plasma-mainnet",
 			routerAddress: "0xcDca5D374e46A6DDDab50bD2D9acB8c796eC35C3",
-			chainSelector: 9335212494177455608n,
+			chainSelector: 9_335_212_494_177_455_608n,
 			tokenAdminRegistry: "0xc23071a8AE83671f37bdA1DaDBC745a9780f632A",
 		},
 	},
@@ -70,14 +70,14 @@ export const plasma = makeConfig({
 	initCodeHash:
 		"0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
 	uniswap: {
-		deployBlock: 430127,
+		deployBlock: 430_127,
 		poolFactory: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D",
 		permit2: "0x000000000022D473030F116dDEE9F6B43aC78BA3",
 		multicall2: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435",
 		tickLens: "0xB3309C48F8407651D918ca3Da4C45DE40109E641",
 		nonfungiblePositionManager: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c",
 		positionsNFT: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c",
-		positionsNFTDeployBlock: 430178,
+		positionsNFTDeployBlock: 430_178,
 		universalRouter: "0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc",
 
 		wrappedNativeAddress: "0x6100E367285b01F48D07953803A2d8dCA5D19873",
@@ -92,7 +92,7 @@ export const plasma = makeConfig({
 	oku: {
 		router: "0xb1f3a7B816B0681188F54dFa400991B93ADf00ed",
 		limitOrderRegistry: "0x9db70E29712Cc8Af10c2B597BaDA6784544FF407",
-		limitOrderRegistryDeployBlock: 431349,
+		limitOrderRegistryDeployBlock: 431_349,
 		pricing: {
 			nativeWrappedToken: "0x6100E367285b01F48D07953803A2d8dCA5D19873",
 			nativeWrappedName: "XPL",

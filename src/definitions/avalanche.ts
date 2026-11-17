@@ -11,7 +11,7 @@ export const avalanche = makeConfig({
 	cowswap: COWSWAP_CREATE2_DEPLOYMENT,
 	name: "Avalanche",
 	blockTimeSeconds: 2,
-	launchTime: 1761794290,
+	launchTime: 1_761_794_290,
 	transactionType: "eip1559",
 	sortIndex: 20,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/avalanche-logo.svg",
@@ -21,7 +21,7 @@ export const avalanche = makeConfig({
 	estimatedBridgeGas: 200_000,
 	estimatedWrapGas: 60_000,
 	liteChain: true,
-	safeReorgDistance: 90000,
+	safeReorgDistance: 90_000,
 	blockAid: "",
 	euler: {
 		evc: "0xddcbe30A761Edd2e19bba930A977475265F36Fa1",
@@ -71,11 +71,11 @@ export const avalanche = makeConfig({
 		chainlink: {
 			atlasNetworkName: "avalanche-mainnet",
 			routerAddress: "0xF4c7E640EdA248ef95972845a62bdC74237805dB",
-			chainSelector: 6433500567565415381n,
+			chainSelector: 6_433_500_567_565_415_381n,
 			tokenAdminRegistry: "0xc8df5D618c6a59Cc6A311E96a39450381001464F",
 		},
 		stargate: {
-			endpointID: 30106,
+			endpointID: 30_106,
 			tokens: [],
 		},
 		wanbridge: {
@@ -101,14 +101,14 @@ export const avalanche = makeConfig({
 	initCodeHash:
 		"0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
 	uniswap: {
-		deployBlock: 27832972,
+		deployBlock: 27_832_972,
 		poolFactory: "0x740b1c1de25031C31FF4fC9A62f554A55cdC1baD",
 		permit2: "0x000000000022D473030F116dDEE9F6B43aC78BA3",
 		multicall2: "0x0139141Cd4Ee88dF3Cdb65881D411bAE271Ef0C2",
 		tickLens: "0xEB9fFC8bf81b4fFd11fb6A63a6B0f098c6e21950",
 		nonfungiblePositionManager: "0x655C406EBFa14EE2006250925e54ec43AD184f8B",
 		positionsNFT: "0x655C406EBFa14EE2006250925e54ec43AD184f8B",
-		positionsNFTDeployBlock: 27833025,
+		positionsNFTDeployBlock: 27_833_025,
 		universalRouter: "0x8B844f885672f333Bc0042cB669255f93a4C1E6b",
 
 		wrappedNativeAddress: "0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7",

@@ -5,7 +5,7 @@ import { makeConfig } from "../util";
 export const celo = makeConfig({
 	...chain,
 	blockTimeSeconds: 1,
-	launchTime: 1737754469,
+	launchTime: 1_737_754_469,
 	transactionType: "eip1559",
 	sortIndex: 13,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/celo-logo.svg",
@@ -14,7 +14,7 @@ export const celo = makeConfig({
 	estimatedSwapGas: 300_000,
 	estimatedBridgeGas: 200_000,
 	estimatedWrapGas: 60_000,
-	safeReorgDistance: 90000,
+	safeReorgDistance: 90_000,
 	blockAid: "",
 	externalId: {
 		zerion: "celo",
@@ -38,7 +38,7 @@ export const celo = makeConfig({
 		chainlink: {
 			atlasNetworkName: "celo-mainnet",
 			routerAddress: "0xfB48f15480926A4ADf9116Dca468bDd2EE6C5F62",
-			chainSelector: 1346049177634351622n,
+			chainSelector: 1_346_049_177_634_351_622n,
 			tokenAdminRegistry: "0xf19e0555fAA9051e277eeD5A0DcdB13CDaca39a9",
 		},
 		wormhole: {
@@ -46,7 +46,7 @@ export const celo = makeConfig({
 			timeToFinalize: 10,
 		},
 		layerzero: {
-			eid: 30125,
+			eid: 30_125,
 			tokens: [
 				{
 					id: 4,
@@ -67,14 +67,14 @@ export const celo = makeConfig({
 	initCodeHash:
 		"0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
 	uniswap: {
-		deployBlock: 5188280,
+		deployBlock: 5_188_280,
 		poolFactory: "0xAfE208a311B21f13EF87E33A90049fC17A7acDEc",
 		permit2: "0x000000000022D473030F116dDEE9F6B43aC78BA3",
 		multicall2: "0x633987602DE5C4F337e3DbF265303A1080324204",
 		tickLens: "0x5f115D9113F88e0a0Db1b5033D90D4a9690AcD3D",
 		nonfungiblePositionManager: "0x3d79EdAaBC0EaB6F08ED885C05Fc0B014290D95A",
 		positionsNFT: "0x3d79EdAaBC0EaB6F08ED885C05Fc0B014290D95A",
-		positionsNFTDeployBlock: 13916373,
+		positionsNFTDeployBlock: 13_916_373,
 		universalRouter: "0x8B844f885672f333Bc0042cB669255f93a4C1E6b",
 		// 0x68b3...Fc45 (SwapRouter02 on most chains) is an unrelated contract on Celo.
 		swapRouter02: "0x5615CDAb10dc425a742d643d949a7F474C01abc4",
@@ -88,7 +88,7 @@ export const celo = makeConfig({
 	oku: {
 		router: "0xb1f3a7B816B0681188F54dFa400991B93ADf00ed",
 		limitOrderRegistry: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D",
-		limitOrderRegistryDeployBlock: 29842546,
+		limitOrderRegistryDeployBlock: 29_842_546,
 		pricing: {
 			nativeToken: "0x471EcE3750Da237f93B8E339c536989b8978a438",
 		},

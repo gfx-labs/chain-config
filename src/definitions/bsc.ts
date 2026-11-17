@@ -7,7 +7,7 @@ export const bsc = makeConfig({
 	...chain,
 	cowswap: COWSWAP_CREATE2_DEPLOYMENT,
 	name: "BNB",
-	launchTime: 1689346800,
+	launchTime: 1_689_346_800,
 	transactionType: "eip1559",
 	initCodeHash:
 		"0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
@@ -19,7 +19,7 @@ export const bsc = makeConfig({
 	estimatedSwapGas: 300_000,
 	estimatedBridgeGas: 200_000,
 	estimatedWrapGas: 60_000,
-	safeReorgDistance: 90000,
+	safeReorgDistance: 90_000,
 	blockAid: "bsc",
 	euler: {
 		evc: "0xb2E5a73CeE08593d1a076a2AE7A6e02925a640ea",
@@ -91,12 +91,12 @@ export const bsc = makeConfig({
 		chainlink: {
 			atlasNetworkName: "bsc-mainnet",
 			routerAddress: "0x34B03Cb9086d7D758AC55af71584F81A598759FE",
-			chainSelector: 11344663589394136015n,
+			chainSelector: 11_344_663_589_394_136_015n,
 			tokenAdminRegistry: "0x736Fd8660c443547a85e4Eaf70A49C1b7Bb008fc",
 		},
 		rhinofi: "BINANCE",
 		stargate: {
-			endpointID: 30102,
+			endpointID: 30_102,
 			blockConfirmations: 20,
 			tokens: [
 				{
@@ -125,7 +125,7 @@ export const bsc = makeConfig({
 			timeToFinalize: 48,
 		},
 		layerzero: {
-			eid: 30102,
+			eid: 30_102,
 			tokens: [
 				{
 					id: 3,
@@ -154,7 +154,7 @@ export const bsc = makeConfig({
 		dexscreener: "bsc",
 	},
 	uniswap: {
-		deployBlock: 26324014,
+		deployBlock: 26_324_014,
 		poolFactory: "0xdB1d10011AD0Ff90774D0C6Bb92e5C5c8b4461F7",
 		multicall2: "0xfF6FD90A470Aaa0c1B8A54681746b07AcdFedc9B",
 		proxyAdmin: "0xC9A7f5b73E853664044ab31936D0E6583d8b1c79",
@@ -169,7 +169,7 @@ export const bsc = makeConfig({
 		v3Migrator: "0x32681814957e0C13117ddc0c2aba232b5c9e760f",
 		uniswapV3Staker: "0x49B53C35AF9072fC71767577BF6380a88EE32C71",
 		positionsNFT: "0x7b8A01B39D58278b5DE7e48c8449c9f4F5170613",
-		positionsNFTDeployBlock: 26324045,
+		positionsNFTDeployBlock: 26_324_045,
 		universalRouter: "0x8B844f885672f333Bc0042cB669255f93a4C1E6b",
 
 		wrappedNativeAddress: "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
@@ -186,11 +186,11 @@ export const bsc = makeConfig({
 	oku: {
 		router: "0xb1f3a7B816B0681188F54dFa400991B93ADf00ed",
 		limitOrderRegistry: "0x19b9bd76028cab6f414ed1fc57400b75b5ca0627",
-		limitOrderRegistryDeployBlock: 34187988,
+		limitOrderRegistryDeployBlock: 34_187_988,
 		pricing: {
 			nativeQuotePools: [
 				{
-					blockCreated: 26495967,
+					blockCreated: 26_495_967,
 					address: "0x6fe9e9de56356f7edbfcbb29fab7cd69471a4869",
 				},
 			],

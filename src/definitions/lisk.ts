@@ -5,7 +5,7 @@ import { makeConfig } from "../util";
 export const lisk = makeConfig({
 	...chain,
 	blockTimeSeconds: 2,
-	launchTime: 1724076000,
+	launchTime: 1_724_076_000,
 	transactionType: "eip1559",
 	sortIndex: 47,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/lisk-logo.svg",
@@ -14,7 +14,7 @@ export const lisk = makeConfig({
 	estimatedSwapGas: 300_000,
 	estimatedBridgeGas: 200_000,
 	estimatedWrapGas: 60_000,
-	safeReorgDistance: 90000,
+	safeReorgDistance: 90_000,
 	blockAid: "",
 	externalId: {
 		tenderly: "true",
@@ -39,14 +39,14 @@ export const lisk = makeConfig({
 	initCodeHash:
 		"0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
 	uniswap: {
-		deployBlock: 577168,
+		deployBlock: 577_168,
 		poolFactory: "0x0d922Fb1Bc191F64970ac40376643808b4B74Df9",
 		permit2: "0xB952578f3520EE8Ea45b7914994dcf4702cEe578",
 		multicall2: "0xE3dbcD53f4Ce1b06Ab200f4912BD35672e68f1FA",
 		tickLens: "0x38EB9e62ABe4d3F70C0e161971F29593b8aE29FF",
 		nonfungiblePositionManager: "0x5911cB3633e764939edc2d92b7e1ad375Bb57649",
 		positionsNFT: "0x5911cB3633e764939edc2d92b7e1ad375Bb57649",
-		positionsNFTDeployBlock: 578398,
+		positionsNFTDeployBlock: 578_398,
 		universalRouter: "0x447B8E40B0CdA8e55F405C86bC635D02d0540aB8",
 
 		wrappedNativeAddress: "0x4200000000000000000000000000000000000006",
@@ -60,7 +60,7 @@ export const lisk = makeConfig({
 	},
 	oku: {
 		limitOrderRegistry: "0x352A86168e6988A1aDF9A15Cb00017AAd3B67155",
-		limitOrderRegistryDeployBlock: 579872,
+		limitOrderRegistryDeployBlock: 579_872,
 		pricing: {
 			nativeWrappedToken: "0x4200000000000000000000000000000000000006",
 			nativeWrappedName: "ETH",

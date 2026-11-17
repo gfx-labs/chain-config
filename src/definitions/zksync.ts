@@ -6,7 +6,7 @@ export const zkSync = makeConfig({
 	...chain,
 	blockTimeSeconds: 2,
 	sortIndex: 39,
-	launchTime: 1696514400,
+	launchTime: 1_696_514_400,
 	transactionType: "eip1559",
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/zksync-logo.svg",
 	deprecated: true,
@@ -14,7 +14,7 @@ export const zkSync = makeConfig({
 	estimatedSwapGas: 1_000_000,
 	estimatedBridgeGas: 600_000,
 	estimatedWrapGas: 200_000,
-	safeReorgDistance: 90000,
+	safeReorgDistance: 90_000,
 	blockAid: "zksync",
 	morpho: {},
 	externalId: {
@@ -34,7 +34,7 @@ export const zkSync = makeConfig({
 		chainlink: {
 			atlasNetworkName: "ethereum-mainnet-zksync-1",
 			routerAddress: "0x748Fd769d81F5D94752bf8B0875E9301d0ba71bB",
-			chainSelector: 1562403441176082196n,
+			chainSelector: 1_562_403_441_176_082_196n,
 			tokenAdminRegistry: "0x100a47C9DB342884E3314B91cec076BbAC8e619c",
 		},
 		rhinofi: "ZKSYNC",
@@ -65,14 +65,14 @@ export const zkSync = makeConfig({
 		},
 	},
 	uniswap: {
-		deployBlock: 12637075,
+		deployBlock: 12_637_075,
 		poolFactory: "0x8FdA5a7a8dCA67BBcDd10F02Fa0649A937215422",
 		permit2: "0x0000000000225e31d15943971f47ad3022f714fa",
 		multicall2: "0x8bB86A31795d3e8ef12c630C288770e13eEcF038",
 		tickLens: "0xe10FF11b809f8EE07b056B452c3B2caa7FE24f89",
 		nonfungiblePositionManager: "0x0616e5762c1E7Dc3723c50663dF10a162D690a86",
 		positionsNFT: "0x0616e5762c1E7Dc3723c50663dF10a162D690a86",
-		positionsNFTDeployBlock: 12637120,
+		positionsNFTDeployBlock: 12_637_120,
 		universalRouter: "0x28731BCC616B5f51dD52CF2e4dF0E78dD1136C06",
 
 		wrappedNativeAddress: "0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91",
@@ -88,7 +88,7 @@ export const zkSync = makeConfig({
 	},
 	oku: {
 		limitOrderRegistry: "0x0FD66bD1e0974e2535CB424E6675D60aC52a84Fa",
-		limitOrderRegistryDeployBlock: 13618344,
+		limitOrderRegistryDeployBlock: 13_618_344,
 		pricing: {
 			nativeWrappedToken: "0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91",
 			nativeWrappedName: "ETH",

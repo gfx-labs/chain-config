@@ -50,7 +50,7 @@ export const zcash = makeConfig({
 	internalName: "zcash",
 	transactionType: "zcash",
 	sortIndex: 53,
-	launchTime: 1477641360,
+	launchTime: 1_477_641_360,
 	blockTimeSeconds: 75,
 	deprecated: false,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/zcash-logo.webp",

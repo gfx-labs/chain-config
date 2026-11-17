@@ -47,7 +47,7 @@ export const solana = makeConfig({
 	internalName: "solana",
 	transactionType: "solana",
 	sortIndex: 52,
-	launchTime: 1584368940,
+	launchTime: 1_584_368_940,
 	blockTimeSeconds: 0.4,
 	deprecated: false,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/solana-logo.webp",

@@ -17,10 +17,14 @@ export function marketRouterEntries(
 	idx: NetworkIndex,
 ): MarketRouterEntry[] {
 	const routers = networkByAny(chain, idx).marketRouters;
-	if (!routers) return [];
+	if (!routers) {
+		return [];
+	}
 	const out: MarketRouterEntry[] = [];
 	for (const [market, addresses] of Object.entries(routers)) {
-		if (!addresses) continue;
+		if (!addresses) {
+			continue;
+		}
 		for (const address of addresses) {
 			out.push({ market: market as MarketRouterName, address });
 		}

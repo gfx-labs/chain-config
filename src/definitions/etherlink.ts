@@ -5,7 +5,7 @@ import { makeConfig } from "../util";
 export const etherlink = makeConfig({
 	...chain,
 	blockTimeSeconds: 0.6,
-	launchTime: 1750211928,
+	launchTime: 1_750_211_928,
 	transactionType: "eip1559",
 	sortIndex: 16,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/etherlink-logo.svg",
@@ -14,7 +14,7 @@ export const etherlink = makeConfig({
 	estimatedSwapGas: 300_000,
 	estimatedBridgeGas: 200_000,
 	estimatedWrapGas: 60_000,
-	safeReorgDistance: 90000,
+	safeReorgDistance: 90_000,
 	blockAid: "",
 	externalId: {
 		tenderly: "true",
@@ -34,7 +34,7 @@ export const etherlink = makeConfig({
 	},
 	bridges: {
 		stargate: {
-			endpointID: 30292,
+			endpointID: 30_292,
 			tokens: [
 				{
 					name: "WXTZ",
@@ -47,7 +47,7 @@ export const etherlink = makeConfig({
 	},
 	oracles: {},
 	morpho: {
-		deployBlock: 21047448,
+		deployBlock: 21_047_448,
 		morpho: "0xbCE7364E63C3B13C73E9977a83c9704E2aCa876e",
 		publicAllocator: "0x8b8B1bd41d36c06253203CD21463994aB752c1e6",
 		mmFactory11: "0x997a79c3C04c5B9eb27d343ae126bcCFb5D74781",
@@ -57,14 +57,14 @@ export const etherlink = makeConfig({
 	initCodeHash:
 		"0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
 	uniswap: {
-		deployBlock: 14584055,
+		deployBlock: 14_584_055,
 		poolFactory: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D",
 		permit2: "0xB952578f3520EE8Ea45b7914994dcf4702cEe578",
 		multicall2: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435",
 		tickLens: "0xB3309C48F8407651D918ca3Da4C45DE40109E641",
 		nonfungiblePositionManager: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c",
 		positionsNFT: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c",
-		positionsNFTDeployBlock: 14584114,
+		positionsNFTDeployBlock: 14_584_114,
 		universalRouter: "0x9db70E29712Cc8Af10c2B597BaDA6784544FF407",
 
 		wrappedNativeAddress: "0xc9B53AB2679f573e480d01e0f49e2B5CFB7a3EAb",
@@ -81,7 +81,7 @@ export const etherlink = makeConfig({
 	oku: {
 		router: "0x7B060A98BA242Ae42D6027a60937787eBe33DEBe",
 		limitOrderRegistry: "0x447B8E40B0CdA8e55F405C86bC635D02d0540aB8",
-		limitOrderRegistryDeployBlock: 16186329,
+		limitOrderRegistryDeployBlock: 16_186_329,
 		pricing: {
 			nativeWrappedToken: "0xc9B53AB2679f573e480d01e0f49e2B5CFB7a3EAb",
 			nativeWrappedName: "XTZ",

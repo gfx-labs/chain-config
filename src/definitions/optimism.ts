@@ -9,7 +9,7 @@ export const optimism = makeConfig({
 	initCodeHash:
 		"0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
 	blockTimeSeconds: 0.5,
-	launchTime: 1688997600,
+	launchTime: 1_688_997_600,
 	transactionType: "eip1559",
 	sortIndex: 11,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/optimism-logo.svg",
@@ -18,7 +18,7 @@ export const optimism = makeConfig({
 	estimatedSwapGas: 300_000,
 	estimatedBridgeGas: 200_000,
 	estimatedWrapGas: 60_000,
-	safeReorgDistance: 90000,
+	safeReorgDistance: 90_000,
 	blockAid: "optimism",
 	externalId: {
 		zerion: "optimism",
@@ -27,7 +27,7 @@ export const optimism = makeConfig({
 		coingecko: "optimistic-ethereum",
 	},
 	morpho: {
-		deployBlock: 130770075,
+		deployBlock: 130_770_075,
 		morpho: "0xce95AfbB8EA029495c66020883F87aaE8864AF92",
 		mmFactory11: "0x3Bb6A6A0Bc85b367EFE0A5bAc81c5E52C892839a",
 		publicAllocator: "0x0d68a97324E602E02799CD83B42D337207B40658",
@@ -92,12 +92,12 @@ export const optimism = makeConfig({
 		chainlink: {
 			atlasNetworkName: "ethereum-mainnet-optimism-1",
 			routerAddress: "0x3206695CaE29952f4b0c22a169725a865bc8Ce0f",
-			chainSelector: 3734403246176062136n,
+			chainSelector: 3_734_403_246_176_062_136n,
 			tokenAdminRegistry: "0x657c42abE4CD8aa731Aec322f871B5b90cf6274F",
 		},
 		rhinofi: "OPTIMISM",
 		stargate: {
-			endpointID: 30111,
+			endpointID: 30_111,
 			blockConfirmations: 20,
 			tokens: [
 				{
@@ -125,7 +125,7 @@ export const optimism = makeConfig({
 			timeToFinalize: 1026,
 		},
 		layerzero: {
-			eid: 30111,
+			eid: 30_111,
 			tokens: [
 				{
 					id: 1,
@@ -155,18 +155,18 @@ export const optimism = makeConfig({
 	},
 	oku: {
 		router: "0xb1f3a7B816B0681188F54dFa400991B93ADf00ed",
-		limitOrderRegistryDeployBlock: 105276132,
+		limitOrderRegistryDeployBlock: 105_276_132,
 		limitOrderRegistry: "0x54dF9e11c7933a9cA3BD1E540B63dA15edAe40bf",
 		customOrderTypes: {
 			feeBips: 25,
 			master: "0xA89A26c4d81A2cca4d0670F77f0FC88362b72248",
-			masterDeployBlock: 139975798,
+			masterDeployBlock: 139_975_798,
 			bracket: "0xffC8C49C5B38BC9BaFD0bB0F5F189EEcD35e35E2",
-			bracketDeployBlock: 139975810,
+			bracketDeployBlock: 139_975_810,
 			stopLimit: "0x57d0E13F353d630ab5218aC841C88985AB31A066",
-			stopLimitDeployBlock: 139975811,
+			stopLimitDeployBlock: 139_975_811,
 			oracleLess: "0x25cf2128F603754179379351B805B4F8C0B8dCA4",
-			oracleLessDeployBlock: 139975814,
+			oracleLessDeployBlock: 139_975_814,
 		},
 		pricing: {
 			nativeWrappedToken: "0x4200000000000000000000000000000000000006",

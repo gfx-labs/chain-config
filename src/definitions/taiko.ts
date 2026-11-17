@@ -7,7 +7,7 @@ export const taiko = makeConfig({
 	initCodeHash:
 		"0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
 	blockTimeSeconds: 24,
-	launchTime: 1717509600,
+	launchTime: 1_717_509_600,
 	transactionType: "eip1559",
 	sortIndex: 40,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/taiko-logo.svg",
@@ -16,7 +16,7 @@ export const taiko = makeConfig({
 	estimatedSwapGas: 300_000,
 	estimatedBridgeGas: 200_000,
 	estimatedWrapGas: 60_000,
-	safeReorgDistance: 90000,
+	safeReorgDistance: 90_000,
 	blockAid: "",
 	externalId: {
 		tenderly: "true",
@@ -30,12 +30,12 @@ export const taiko = makeConfig({
 		chainlink: {
 			atlasNetworkName: "ethereum-mainnet-taiko-1",
 			routerAddress: "0xeb2502AeD3Cfd6E37e292c6B837a8FFF9a042367",
-			chainSelector: 16468599424800719238n,
+			chainSelector: 16_468_599_424_800_719_238n,
 			tokenAdminRegistry: "0x308a2A7d13B12ba26649F381C53F7e7C60d0D9c6",
 		},
 		rhinofi: "TAIKO",
 		stargate: {
-			endpointID: 30290,
+			endpointID: 30_290,
 			blockConfirmations: 20,
 			tokens: [
 				{
@@ -53,7 +53,7 @@ export const taiko = makeConfig({
 			],
 		},
 		layerzero: {
-			eid: 30290,
+			eid: 30_290,
 			tokens: [
 				{
 					id: 4,
@@ -150,7 +150,7 @@ export const taiko = makeConfig({
 		},
 		metrom: {
 			address: "0xD4AC4AaFb81eC774E49AA755A66EfCe4574D6276",
-			blockCreated: 460190,
+			blockCreated: 460_190,
 		},
 	},
 });

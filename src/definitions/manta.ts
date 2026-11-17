@@ -5,7 +5,7 @@ import { makeConfig } from "../util";
 export const manta = makeConfig({
 	...chain,
 	name: "Manta Pacific",
-	launchTime: 1709910000,
+	launchTime: 1_709_910_000,
 	transactionType: "eip1559",
 	initCodeHash:
 		"0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
@@ -17,7 +17,7 @@ export const manta = makeConfig({
 	estimatedSwapGas: 300_000,
 	estimatedBridgeGas: 200_000,
 	estimatedWrapGas: 60_000,
-	safeReorgDistance: 90000,
+	safeReorgDistance: 90_000,
 	blockAid: "",
 	externalId: {
 		coingecko: "manta-pacific",
@@ -41,14 +41,14 @@ export const manta = makeConfig({
 		dexscreener: "manta",
 	},
 	uniswap: {
-		deployBlock: 1191705,
+		deployBlock: 1_191_705,
 		poolFactory: "0x06D830e15081f65923674268121FF57Cc54e4e23",
 		permit2: "0x83986Ff655A54ee061F6B7F476B92f4Fed111B93",
 		multicall2: "0x52dFC0D9960F11A9Ca9FF616e791B91188446a60",
 		tickLens: "0xC94Fb2D13587b0b5af78094933490B35E004eAbE",
 		nonfungiblePositionManager: "0xA4F2Db71348697C65A64a146F709C73030C2ebcD",
 		positionsNFT: "0xA4F2Db71348697C65A64a146F709C73030C2ebcD",
-		positionsNFTDeployBlock: 1191836,
+		positionsNFTDeployBlock: 1_191_836,
 		universalRouter: "0x42Bff1f6b647462fcD8c28a488Be9C9988830ef6",
 
 		wrappedNativeAddress: "0x0Dc808adcE2099A9F62AA87D9670745AbA741746",
@@ -64,7 +64,7 @@ export const manta = makeConfig({
 	},
 	oku: {
 		limitOrderRegistry: "0xFE83E1DDa189D71093f2a716A4D01d591d6Ca66C",
-		limitOrderRegistryDeployBlock: 1198851,
+		limitOrderRegistryDeployBlock: 1_198_851,
 		pricing: {
 			nativeWrappedToken: "0x0Dc808adcE2099A9F62AA87D9670745AbA741746",
 			nativeWrappedName: "ETH",

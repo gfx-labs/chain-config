@@ -7,7 +7,7 @@ export const gnosis = makeConfig({
 	...chain,
 	cowswap: COWSWAP_CREATE2_DEPLOYMENT,
 	blockTimeSeconds: 5,
-	launchTime: 1725890400,
+	launchTime: 1_725_890_400,
 	transactionType: "eip1559",
 	sortIndex: 19,
 	blockAid: "",
@@ -17,7 +17,7 @@ export const gnosis = makeConfig({
 	estimatedSwapGas: 300_000,
 	estimatedBridgeGas: 200_000,
 	estimatedWrapGas: 60_000,
-	safeReorgDistance: 90000,
+	safeReorgDistance: 90_000,
 	morpho: {},
 	externalId: {
 		zerion: "xdai",
@@ -52,14 +52,14 @@ export const gnosis = makeConfig({
 		chainlink: {
 			atlasNetworkName: "xdai-mainnet",
 			routerAddress: "0x4aAD6071085df840abD9Baf1697d5D5992bDadce",
-			chainSelector: 465200170687744372n,
+			chainSelector: 465_200_170_687_744_372n,
 			tokenAdminRegistry: "0x73BC11423CBF14914998C23B0aFC9BE0cb5B2229",
 		},
 		deswap: {
-			chainId: 100000002,
+			chainId: 100_000_002,
 		},
 		stargate: {
-			endpointID: 30145,
+			endpointID: 30_145,
 			blockConfirmations: 20,
 			tokens: [
 				{
@@ -75,7 +75,7 @@ export const gnosis = makeConfig({
 			],
 		},
 		layerzero: {
-			eid: 30145,
+			eid: 30_145,
 			tokens: [
 				{
 					id: 4,
@@ -100,14 +100,14 @@ export const gnosis = makeConfig({
 	initCodeHash:
 		"0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
 	uniswap: {
-		deployBlock: 27416614,
+		deployBlock: 27_416_614,
 		poolFactory: "0xe32F7dD7e3f098D518ff19A22d5f028e076489B1",
 		permit2: "0x000000000022D473030F116dDEE9F6B43aC78BA3",
 		multicall2: "0x4dfa9a980efE4802E969AC33968E3d6E59B8a19e",
 		tickLens: "0x8fe3D346B53dCA838B228e0e53aCdBED5DEC70Dc",
 		nonfungiblePositionManager: "0xAE8fbE656a77519a7490054274910129c9244FA3",
 		positionsNFT: "0xAE8fbE656a77519a7490054274910129c9244FA3",
-		positionsNFTDeployBlock: 27416645,
+		positionsNFTDeployBlock: 27_416_645,
 		universalRouter: "0x75FC67473A91335B5b8F8821277262a13B38c9b3",
 
 		wrappedNativeAddress: "0xe91d153e0b41518a2ce8dd3d7944fa863463a97d",
@@ -123,7 +123,7 @@ export const gnosis = makeConfig({
 	oku: {
 		router: "0xb1f3a7B816B0681188F54dFa400991B93ADf00ed",
 		limitOrderRegistry: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435",
-		limitOrderRegistryDeployBlock: 35719277,
+		limitOrderRegistryDeployBlock: 35_719_277,
 		pricing: {
 			pools: ["0x5a2fb66e66b2af7f1c2f71c6c695492faab2e587"],
 			nativeWrappedToken: "0xe91d153e0b41518a2ce8dd3d7944fa863463a97d",
@@ -176,7 +176,7 @@ export const gnosis = makeConfig({
 		},
 		metrom: {
 			address: "0x9430990117A7451e3d0a3d89796FC0b0c294Da9c",
-			blockCreated: 38018174,
+			blockCreated: 38_018_174,
 		},
 	},
 });

@@ -1,10 +1,10 @@
-import { mkdirSync, writeFileSync } from "fs";
+import { mkdirSync, writeFileSync } from "node:fs";
 
 import { format } from "@wasm-fmt/gofmt";
 import ejs from "ejs";
 import * as morph from "ts-morph";
 
-import { ALL_NETWORKS, type IChainInfo } from "./src";
+import { ALL_NETWORKS } from "./src";
 
 const formatFunc = format;
 
@@ -46,7 +46,7 @@ function capitalize(s: string) {
 
 const snakeToCamel = (str: string) =>
 	capitalize(
-		str.replace(/([-_][a-z])/g, (group) =>
+		str.replaceAll(/([-_][a-z])/g, (group) =>
 			group.toUpperCase().replace("-", "").replace("_", ""),
 		),
 	);
@@ -66,13 +66,13 @@ const toHash = (x: string) => {
 const getPropType = (x: morph.PropertySignature): string => {
 	const type = x.getType();
 	const nodeType = x.getTypeNode()?.getText();
-	if (x.getName() == "externalId") {
+	if (x.getName() === "externalId") {
 		return "map[string]string";
 	}
-	if (nodeType == "ReadonlyArray<Address>") {
+	if (nodeType === "ReadonlyArray<Address>") {
 		return "[]common.Address";
 	}
-	if (nodeType == "ReadonlyArray<Hash>") {
+	if (nodeType === "ReadonlyArray<Hash>") {
 		return "[]common.Hash";
 	}
 	if (type.isArray()) {
@@ -96,7 +96,7 @@ const getPropType = (x: morph.PropertySignature): string => {
 	if (type.isObject()) {
 		return "map[string]interface{}";
 	}
-	if (x.getName() == "contracts") {
+	if (x.getName() === "contracts") {
 		return "map[string]ChainContract";
 	}
 	if (type.isNumber()) {
@@ -122,7 +122,7 @@ const getTypeType = (type: morph.Type): string => {
 		undefined,
 		morph.TypeFormatFlags.UseAliasDefinedOutsideCurrentScope,
 	);
-	if (typeText && typeText[0] != "{") {
+	if (typeText && typeText[0] !== "{") {
 		return typeText;
 	}
 	if (type.isNumber()) {
@@ -145,23 +145,28 @@ const formatValue = (x: any, hint: string) => {
 	switch (hint) {
 		case "a":
 		case "addr":
-		case "address":
+		case "address": {
 			return toAddr(`${x}`);
+		}
 		case "h":
-		case "hash":
+		case "hash": {
 			return toHash(`${x}`);
+		}
 		case "s":
 		case "str":
-		case "string":
+		case "string": {
 			return `"${x}"`;
+		}
 		case "n":
-		case "num":
+		case "num": {
 			return `${x}`;
-		default:
+		}
+		default: {
 			if (x === undefined) {
 				return `undefined`;
 			}
 			return `${x}`;
+		}
 	}
 };
 
@@ -217,14 +222,14 @@ const main = async () => {
 	writeFileSync(`${rootDir}/network.go`, formatFunc(output));
 	for (const chain of ALL_NETWORKS) {
 		const chainName = clean(chain.internalName);
-		const output = ejs.render(networkString.toString(), {
+		const chainOutput = ejs.render(networkString.toString(), {
 			h: helpers,
 			chainName,
 			helpers,
 			chain,
 			entries: Object.entries(chain),
 		});
-		writeFileSync(`${rootDir}/${chainName}.go`, formatFunc(output));
+		writeFileSync(`${rootDir}/${chainName}.go`, formatFunc(chainOutput));
 	}
 };
 

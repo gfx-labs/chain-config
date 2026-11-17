@@ -7,7 +7,7 @@ export const sei = makeConfig({
 	initCodeHash:
 		"0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
 	blockTimeSeconds: 0.4,
-	launchTime: 1687788000,
+	launchTime: 1_687_788_000,
 	transactionType: "eip1559",
 	sortIndex: 10,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/sei-logo.svg",
@@ -16,7 +16,7 @@ export const sei = makeConfig({
 	estimatedSwapGas: 300_000,
 	estimatedBridgeGas: 200_000,
 	estimatedWrapGas: 60_000,
-	safeReorgDistance: 90000,
+	safeReorgDistance: 90_000,
 	blockAid: "",
 	externalId: {
 		zerion: "sei",
@@ -41,7 +41,7 @@ export const sei = makeConfig({
 		generalAdapter1: "0x02e0e71e145f254820B9D89c9E6068f08256F601",
 		mmFactory11: "0x8Dea49ec5bd5AeAc8bcf96B3E187F59354118291",
 		publicAllocator: "0xD878509446bE2C601f0f032F501851001B159D6B",
-		deployBlock: 166036723,
+		deployBlock: 166_036_723,
 	},
 	bridges: {
 		cctp: {
@@ -51,11 +51,11 @@ export const sei = makeConfig({
 		chainlink: {
 			atlasNetworkName: "sei-mainnet",
 			routerAddress: "0xAba60dA7E88F7E8f5868C2B6dE06CB759d693af0",
-			chainSelector: 9027416829622342829n,
+			chainSelector: 9_027_416_829_622_342_829n,
 			tokenAdminRegistry: "0x910a46cA93E8086BF1d7D65190eE6AEe5256Bd61",
 		},
 		stargate: {
-			endpointID: 30280,
+			endpointID: 30_280,
 			blockConfirmations: 20,
 			tokens: [
 				{
@@ -77,7 +77,7 @@ export const sei = makeConfig({
 			],
 		},
 		layerzero: {
-			eid: 30280,
+			eid: 30_280,
 			tokens: [
 				{
 					id: 1,
@@ -123,14 +123,14 @@ export const sei = makeConfig({
 		},
 	},
 	uniswap: {
-		deployBlock: 79245151,
+		deployBlock: 79_245_151,
 		poolFactory: "0x75FC67473A91335B5b8F8821277262a13B38c9b3",
 		permit2: "0xB952578f3520EE8Ea45b7914994dcf4702cEe578",
 		multicall2: "0x0d922Fb1Bc191F64970ac40376643808b4B74Df9",
 		tickLens: "0xE3dbcD53f4Ce1b06Ab200f4912BD35672e68f1FA",
 		nonfungiblePositionManager: "0x8B3c541c30f9b29560f56B9E44b59718916B69EF",
 		positionsNFT: "0x8B3c541c30f9b29560f56B9E44b59718916B69EF",
-		positionsNFTDeployBlock: 79245279,
+		positionsNFTDeployBlock: 79_245_279,
 		universalRouter: "0xa683c66045ad16abb1bCE5ad46A64d95f9A25785",
 
 		wrappedNativeAddress: "0xE30feDd158A2e3b13e9badaeABaFc5516e95e8C7",
@@ -146,7 +146,7 @@ export const sei = makeConfig({
 	oku: {
 		router: "0x7B060A98BA242Ae42D6027a60937787eBe33DEBe",
 		limitOrderRegistry: "0xA9d71E1dd7ca26F26e656E66d6AA81ed7f745bf0",
-		limitOrderRegistryDeployBlock: 79448363,
+		limitOrderRegistryDeployBlock: 79_448_363,
 		pricing: {
 			nativeWrappedToken: "0xE30feDd158A2e3b13e9badaeABaFc5516e95e8C7",
 			nativeWrappedName: "SEI",
@@ -198,7 +198,7 @@ export const sei = makeConfig({
 		},
 		metrom: {
 			address: "0xD6e88c910329fE3597498772eB94991a0630306d",
-			blockCreated: 141494257,
+			blockCreated: 141_494_257,
 		},
 	},
 });

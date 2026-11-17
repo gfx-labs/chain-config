@@ -6,7 +6,7 @@ export const lightlink = makeConfig({
 	...chain,
 	name: "LightLink",
 	blockTimeSeconds: 0.5,
-	launchTime: 1741485513,
+	launchTime: 1_741_485_513,
 	transactionType: "legacy",
 	sortIndex: 27,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/lightlink-logo.svg",
@@ -15,7 +15,7 @@ export const lightlink = makeConfig({
 	estimatedSwapGas: 300_000,
 	estimatedBridgeGas: 200_000,
 	estimatedWrapGas: 60_000,
-	safeReorgDistance: 90000,
+	safeReorgDistance: 90_000,
 	blockAid: "",
 	morpho: {},
 	externalId: {
@@ -26,7 +26,7 @@ export const lightlink = makeConfig({
 	},
 	bridges: {
 		stargate: {
-			endpointID: 30309,
+			endpointID: 30_309,
 			blockConfirmations: 20,
 			tokens: [
 				{
@@ -54,14 +54,14 @@ export const lightlink = makeConfig({
 	initCodeHash:
 		"0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
 	uniswap: {
-		deployBlock: 131405097,
+		deployBlock: 131_405_097,
 		poolFactory: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D",
 		permit2: "0x807F4E281B7A3B324825C64ca53c69F0b418dE40",
 		multicall2: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435",
 		tickLens: "0xB3309C48F8407651D918ca3Da4C45DE40109E641",
 		nonfungiblePositionManager: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c",
 		positionsNFT: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c",
-		positionsNFTDeployBlock: 131405537,
+		positionsNFTDeployBlock: 131_405_537,
 		universalRouter: "0x738fD6d10bCc05c230388B4027CAd37f82fe2AF2",
 
 		wrappedNativeAddress: "0x7ebef2a4b1b09381ec5b9df8c5c6f2dbeca59c73",
@@ -77,7 +77,7 @@ export const lightlink = makeConfig({
 	},
 	oku: {
 		limitOrderRegistry: "0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc",
-		limitOrderRegistryDeployBlock: 131407726,
+		limitOrderRegistryDeployBlock: 131_407_726,
 		pricing: {
 			nativeWrappedToken: "0x7ebef2a4b1b09381ec5b9df8c5c6f2dbeca59c73",
 			nativeWrappedName: "WETH",

@@ -7,7 +7,7 @@ export const scroll = makeConfig({
 	initCodeHash:
 		"0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
 	sortIndex: 38,
-	launchTime: 1703257200,
+	launchTime: 1_703_257_200,
 	transactionType: "eip1559",
 	blockTimeSeconds: 3,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/scroll-logo.svg",
@@ -16,7 +16,7 @@ export const scroll = makeConfig({
 	estimatedSwapGas: 300_000,
 	estimatedBridgeGas: 200_000,
 	estimatedWrapGas: 60_000,
-	safeReorgDistance: 90000,
+	safeReorgDistance: 90_000,
 	blockAid: "scroll",
 	externalId: {
 		zerion: "scroll",
@@ -34,12 +34,12 @@ export const scroll = makeConfig({
 		chainlink: {
 			atlasNetworkName: "ethereum-mainnet-scroll-1",
 			routerAddress: "0x9a55E8Cab6564eb7bbd7124238932963B8Af71DC",
-			chainSelector: 13204309965629103672n,
+			chainSelector: 13_204_309_965_629_103_672n,
 			tokenAdminRegistry: "0x846dEA1c1706FC35b4aa78B32d31F1599DAA47b4",
 		},
 		rhinofi: "SCROLL",
 		stargate: {
-			endpointID: 30214,
+			endpointID: 30_214,
 			blockConfirmations: 20,
 			tokens: [
 				{
@@ -92,7 +92,7 @@ export const scroll = makeConfig({
 	oku: {
 		router: "0xb1f3a7B816B0681188F54dFa400991B93ADf00ed",
 		limitOrderRegistry: "0xeC3E5eeC51D8C3D4f03DABB84B4Db313a739f377",
-		limitOrderRegistryDeployBlock: 1409068,
+		limitOrderRegistryDeployBlock: 1_409_068,
 		pricing: {
 			nativeWrappedToken: "0x5300000000000000000000000000000000000004",
 			nativeWrappedName: "ETH",
@@ -140,7 +140,7 @@ export const scroll = makeConfig({
 		},
 		metrom: {
 			address: "0xD4AC4AaFb81eC774E49AA755A66EfCe4574D6276",
-			blockCreated: 10721351,
+			blockCreated: 10_721_351,
 		},
 	},
 });

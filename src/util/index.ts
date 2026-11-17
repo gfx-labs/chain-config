@@ -8,9 +8,13 @@ import type { IChainInfo } from "../spec";
  * chain config types would then reference viem internals (TS2742), so we
  * re-declare it as a locally exported interface.
  */
+// An interface (not a type alias) gives TS a local name to emit; an alias
+// would resolve back to viem's unexported type and reintroduce TS2742.
+/* oxlint-disable typescript/no-empty-object-type */
 export interface ChainTransactionReplacement extends NonNullable<
 	Chain["transactionReplacement"]
 > {}
+/* oxlint-enable typescript/no-empty-object-type */
 
 type ChainConfigOutput<T> = {
 	[K in keyof T]: K extends "transactionReplacement"

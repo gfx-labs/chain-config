@@ -5,7 +5,7 @@ import { makeConfig } from "../util";
 export const blast = makeConfig({
 	...chain,
 	blockTimeSeconds: 2,
-	launchTime: 1719410400,
+	launchTime: 1_719_410_400,
 	transactionType: "eip1559",
 	sortIndex: 44,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/blast-logo.svg",
@@ -14,7 +14,7 @@ export const blast = makeConfig({
 	estimatedSwapGas: 300_000,
 	estimatedBridgeGas: 200_000,
 	estimatedWrapGas: 60_000,
-	safeReorgDistance: 90000,
+	safeReorgDistance: 90_000,
 	blockAid: "blast",
 	externalId: {
 		zerion: "blast",
@@ -32,7 +32,7 @@ export const blast = makeConfig({
 		chainlink: {
 			atlasNetworkName: "ethereum-mainnet-blast",
 			routerAddress: "0x12e0B8E349C6fb7E6E40713E8125C3cF1127ea8C",
-			chainSelector: 4411394078118774322n,
+			chainSelector: 4_411_394_078_118_774_322n,
 			tokenAdminRegistry: "0x846Fccd01D4115FD1E81267495773aeB33bF1dC7",
 		},
 		rhinofi: "BLAST",
@@ -53,13 +53,13 @@ export const blast = makeConfig({
 		dexscreener: "blast",
 	},
 	uniswap: {
-		deployBlock: 400903,
+		deployBlock: 400_903,
 		poolFactory: "0x792edAdE80af5fC680d96a2eD80A44247D2Cf6Fd",
 		multicall2: "0xc228c0343Ee4D4B3EAdF701154f1f1bD9E29d833",
 		tickLens: "0x2E95185bCdD928a3e984B7e2D6560Ab1b17d7274",
 		nonfungiblePositionManager: "0xB218e4f7cF0533d4696fDfC419A0023D33345F28",
 		positionsNFT: "0xB218e4f7cF0533d4696fDfC419A0023D33345F28",
-		positionsNFTDeployBlock: 400947,
+		positionsNFTDeployBlock: 400_947,
 		universalRouter: "0x8B844f885672f333Bc0042cB669255f93a4C1E6b",
 
 		wrappedNativeAddress: "0x4300000000000000000000000000000000000004",
@@ -74,7 +74,7 @@ export const blast = makeConfig({
 	},
 	oku: {
 		limitOrderRegistry: "0x0337d36A3dF76d882369E3cBF984a2EA40f6636F",
-		limitOrderRegistryDeployBlock: 402083,
+		limitOrderRegistryDeployBlock: 402_083,
 		pricing: {
 			nativeWrappedToken: "0x4300000000000000000000000000000000000004",
 			nativeWrappedName: "ETH",

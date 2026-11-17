@@ -6,7 +6,7 @@ export const matchain = makeConfig({
 	...chain,
 	name: "Matchain",
 	blockTimeSeconds: 0.5,
-	launchTime: 1754106070,
+	launchTime: 1_754_106_070,
 	transactionType: "eip1559",
 	sortIndex: 26,
 	blockAid: "",
@@ -16,7 +16,7 @@ export const matchain = makeConfig({
 	estimatedSwapGas: 300_000,
 	estimatedBridgeGas: 200_000,
 	estimatedWrapGas: 60_000,
-	safeReorgDistance: 90000,
+	safeReorgDistance: 90_000,
 	externalId: {},
 	markets: {},
 	bridges: {},
@@ -25,14 +25,14 @@ export const matchain = makeConfig({
 	initCodeHash:
 		"0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
 	uniswap: {
-		deployBlock: 37612670,
+		deployBlock: 37_612_670,
 		poolFactory: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D",
 		permit2: "0xB952578f3520EE8Ea45b7914994dcf4702cEe578",
 		multicall2: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435",
 		tickLens: "0xB3309C48F8407651D918ca3Da4C45DE40109E641",
 		nonfungiblePositionManager: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c",
 		positionsNFT: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c",
-		positionsNFTDeployBlock: 37613469,
+		positionsNFTDeployBlock: 37_613_469,
 		universalRouter: "0x9db70E29712Cc8Af10c2B597BaDA6784544FF407",
 
 		wrappedNativeAddress: "0x4200000000000000000000000000000000000006",
@@ -47,7 +47,7 @@ export const matchain = makeConfig({
 	},
 	oku: {
 		limitOrderRegistry: "0x346239972d1fa486FC4a521031BC81bFB7D6e8a4",
-		limitOrderRegistryDeployBlock: 37616150,
+		limitOrderRegistryDeployBlock: 37_616_150,
 		pricing: {
 			nativeWrappedToken: "0x4200000000000000000000000000000000000006",
 			nativeWrappedName: "WBNB",

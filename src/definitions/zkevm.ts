@@ -7,7 +7,7 @@ export const polygonZkEvm = makeConfig({
 	initCodeHash:
 		"0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
 	sortIndex: 41,
-	launchTime: 1722520800,
+	launchTime: 1_722_520_800,
 	transactionType: "legacy",
 	blockTimeSeconds: 7,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/zkevm-logo.svg",
@@ -16,7 +16,7 @@ export const polygonZkEvm = makeConfig({
 	estimatedSwapGas: 400_000,
 	estimatedBridgeGas: 250_000,
 	estimatedWrapGas: 80_000,
-	safeReorgDistance: 90000,
+	safeReorgDistance: 90_000,
 	blockAid: "",
 	morpho: {},
 	externalId: {
@@ -34,7 +34,7 @@ export const polygonZkEvm = makeConfig({
 		chainlink: {
 			atlasNetworkName: "ethereum-mainnet-polygon-zkevm-1",
 			routerAddress: "0xA9999937159B293c72e2367Ce314cb3544e7C1a3",
-			chainSelector: 4348158687435793198n,
+			chainSelector: 4_348_158_687_435_793_198n,
 		},
 		rhinofi: "ZKEVM",
 	},
@@ -46,14 +46,14 @@ export const polygonZkEvm = makeConfig({
 		dexscreener: "polygonzkevm",
 	},
 	uniswap: {
-		deployBlock: 8466867,
+		deployBlock: 8_466_867,
 		poolFactory: "0xff83c3c800Fec21de45C5Ec30B69ddd5Ee60DFC2",
 		permit2: "0xCEc9e219281B78E1946b6b894f75ae89Bc10FEb6",
 		multicall2: "0x1FaE28D9C07a8a96E2ECc53BB328E787D5B88674",
 		tickLens: "0x64519b94A7248Bf17929fB03b9648ce277Fd7fDA",
 		nonfungiblePositionManager: "0xf0D61Aeda516CCa1FF20Be65Cfb0213be688A24f",
 		positionsNFT: "0xf0D61Aeda516CCa1FF20Be65Cfb0213be688A24f",
-		positionsNFTDeployBlock: 8466897,
+		positionsNFTDeployBlock: 8_466_897,
 		universalRouter: "0x32454e81d065FAA95Ec0d0Ab6Fe326599Af30fd7",
 
 		wrappedNativeAddress: "0x4F9A0e7FD2Bf6067db6994CF12E4495Df938E6e9",
@@ -69,7 +69,7 @@ export const polygonZkEvm = makeConfig({
 	},
 	oku: {
 		limitOrderRegistry: "0x5f1ef1d278013567c3c67e18d2d35bfa9954f723",
-		limitOrderRegistryDeployBlock: 8467090,
+		limitOrderRegistryDeployBlock: 8_467_090,
 		pricing: {
 			nativeWrappedToken: "0x4F9A0e7FD2Bf6067db6994CF12E4495Df938E6e9",
 			nativeWrappedName: "ETH",

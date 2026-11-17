@@ -8,7 +8,7 @@ export const lens = makeConfig({
 	cowswap: COWSWAP_CREATE2_DEPLOYMENT,
 	name: "Lens",
 	blockTimeSeconds: 2,
-	launchTime: 1746050531,
+	launchTime: 1_746_050_531,
 	transactionType: "eip1559",
 	sortIndex: 35,
 	blockAid: "",
@@ -18,7 +18,7 @@ export const lens = makeConfig({
 	estimatedSwapGas: 300_000,
 	estimatedBridgeGas: 200_000,
 	estimatedWrapGas: 60_000,
-	safeReorgDistance: 90000,
+	safeReorgDistance: 90_000,
 	externalId: {
 		tenderly: "true",
 		cowswap: "lens",
@@ -30,7 +30,7 @@ export const lens = makeConfig({
 		chainlink: {
 			atlasNetworkName: "lens-mainnet",
 			routerAddress: "0x498F3feBAd3ff75e05b7847B37a301fc2DA6fDC0",
-			chainSelector: 5608378062013572713n,
+			chainSelector: 5_608_378_062_013_572_713n,
 			tokenAdminRegistry: "0xdD98482Ec0cfEFfe14EAb750A9c484F9D5d07380",
 		},
 	},
@@ -39,14 +39,14 @@ export const lens = makeConfig({
 	initCodeHash:
 		"0x010013f177ea1fcbc4520f9a3ca7cd2d1d77959e05aa66484027cb38e712aeed",
 	uniswap: {
-		deployBlock: 184120,
+		deployBlock: 184_120,
 		poolFactory: "0xe0704DB90bcAA1eAFc00E958FF815Ab7aa11Ef47",
 		permit2: "0x0000000000225e31d15943971f47ad3022f714fa",
 		multicall2: "0x5900c97b683e69CD752aF7DC7003d69315E2a288",
 		tickLens: "0x5499510c2e95F59b1Df0eC7C1bd2Fa76347df5Be",
 		nonfungiblePositionManager: "0xC5d0CAaE8aa00032F6DA993A69Ffa6ff80b5F031",
 		positionsNFT: "0xC5d0CAaE8aa00032F6DA993A69Ffa6ff80b5F031",
-		positionsNFTDeployBlock: 184128,
+		positionsNFTDeployBlock: 184_128,
 		universalRouter: "0xAA904d497e42608C014BE83a026E984aFc16129b",
 
 		wrappedNativeAddress: "0x6bDc36E20D267Ff0dd6097799f82e78907105e2F",
@@ -61,7 +61,7 @@ export const lens = makeConfig({
 	},
 	oku: {
 		limitOrderRegistry: "0xD3239f8D4c6245359f4F050F5133A9F61F4e2ACF",
-		limitOrderRegistryDeployBlock: 852140,
+		limitOrderRegistryDeployBlock: 852_140,
 		pricing: {
 			nativeWrappedToken: "0x6bDc36E20D267Ff0dd6097799f82e78907105e2F",
 			nativeWrappedName: "GHO",
@@ -102,7 +102,7 @@ export const lens = makeConfig({
 		},
 		metrom: {
 			address: "0x5319C3Fc78ac3e10Ca733A5839D65F8493A8D60A",
-			blockCreated: 2507884,
+			blockCreated: 2_507_884,
 		},
 	},
 });

@@ -12,7 +12,7 @@ import { makeInternalChain } from "./util";
  *   - https://kinetiq.xyz/docs/elysium-technical-overview
  */
 export const elysium = makeInternalChain({
-	id: 99901,
+	id: 99_901,
 	name: "Elysium",
 	nativeCurrency: {
 		name: "HYPE",

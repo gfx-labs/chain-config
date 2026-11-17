@@ -4,17 +4,15 @@
 	"singleQuote": false,
 	"printWidth": 80,
 	"sortImports": {},
+	"sortPackageJson": true,
 	"ignorePatterns": [
 		"dist/**",
 		"static/**",
 		"templates/**",
 		"integration/**",
 		"bump/**",
+		".yarn/**",
 		"yarn.lock",
-		"package.json",
-		"*.md",
-		"*.yml",
-		"*.yaml",
-		"renovate.json"
+		"CHANGELOG.md"
 	]
 }

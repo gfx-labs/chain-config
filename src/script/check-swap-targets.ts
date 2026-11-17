@@ -55,7 +55,9 @@ function shortError(error: unknown): string {
 		return String(error.shortMessage).split("\n", 1)[0];
 	}
 
-	if (error instanceof Error) return error.message.split("\n", 1)[0];
+	if (error instanceof Error) {
+		return error.message.split("\n", 1)[0];
+	}
 	return String(error).split("\n", 1)[0];
 }
 
@@ -83,7 +85,9 @@ async function checkChain(
 	chain: IChainInfo,
 ): Promise<ChainFailures | undefined> {
 	const marketRouters = chain.marketRouters;
-	if (!marketRouters) return undefined;
+	if (!marketRouters) {
+		return undefined;
+	}
 
 	const routers = configuredRouters(marketRouters);
 	const okuRouter = chain.oku.router;

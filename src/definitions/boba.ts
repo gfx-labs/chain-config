@@ -5,7 +5,7 @@ import { makeConfig } from "../util";
 export const boba = makeConfig({
 	...chain,
 	name: "Boba",
-	launchTime: 1690297200,
+	launchTime: 1_690_297_200,
 	transactionType: "eip1559",
 	initCodeHash:
 		"0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
@@ -17,7 +17,7 @@ export const boba = makeConfig({
 	estimatedSwapGas: 300_000,
 	estimatedBridgeGas: 200_000,
 	estimatedWrapGas: 60_000,
-	safeReorgDistance: 90000,
+	safeReorgDistance: 90_000,
 	blockAid: "",
 	externalId: {
 		debank: "boba",
@@ -58,7 +58,7 @@ export const boba = makeConfig({
 		symbol: "ETH",
 	},
 	uniswap: {
-		deployBlock: 969351,
+		deployBlock: 969_351,
 		poolFactory: "0xFFCd7Aed9C627E82A765c3247d562239507f6f1B",
 		permit2: "0xF80c91442D3EF66632958C0d395667075FC82fB0",
 		multicall2: "0x07956092c0F4818D6792a42035d2d2fa0C75E76B",
@@ -74,7 +74,7 @@ export const boba = makeConfig({
 		v3Migrator: "0x9ab1E646877732DD76bd662DC242723D7e4B42ba",
 		uniswapV3Staker: "0x6a6c1198f85B084822138DFd3fA9686e4029c091",
 		positionsNFT: "0x0bfc9aC7E52f38EAA6dC8d10942478f695C6Cf71",
-		positionsNFTDeployBlock: 969359,
+		positionsNFTDeployBlock: 969_359,
 		universalRouter: "0x4BA622997559F9b5Ac68751D7Fc3dEecc23a0e88",
 
 		wrappedNativeAddress: "0xdeaddeaddeaddeaddeaddeaddeaddeaddead0000",
@@ -90,7 +90,7 @@ export const boba = makeConfig({
 	oku: {
 		router: "0x7bf7770Ecd4fd573C32272Ef80c8818A8E8e289A",
 		limitOrderRegistry: "0xfefb60591cffc694c0137983a9091d64af8ecbac",
-		limitOrderRegistryDeployBlock: 1052192,
+		limitOrderRegistryDeployBlock: 1_052_192,
 		pricing: {
 			nativeWrappedToken: "0xdeaddeaddeaddeaddeaddeaddeaddeaddead0000",
 			nativeWrappedName: "WETH",

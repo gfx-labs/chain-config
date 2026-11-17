@@ -47,7 +47,7 @@ export const bitcoin = makeConfig({
 	internalName: "bitcoin",
 	transactionType: "bitcoin",
 	sortIndex: 9,
-	launchTime: 1231006505,
+	launchTime: 1_231_006_505,
 	blockTimeSeconds: 600,
 	deprecated: false,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/bitcoin-logo.webp",

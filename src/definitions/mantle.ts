@@ -7,7 +7,7 @@ export const mantle = makeConfig({
 	initCodeHash:
 		"0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
 	blockTimeSeconds: 2,
-	launchTime: 1720101600,
+	launchTime: 1_720_101_600,
 	transactionType: "eip1559",
 	sortIndex: 34,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/mantle-logo.svg",
@@ -16,7 +16,7 @@ export const mantle = makeConfig({
 	estimatedSwapGas: 5_000_000,
 	estimatedBridgeGas: 3_000_000,
 	estimatedWrapGas: 500_000,
-	safeReorgDistance: 90000,
+	safeReorgDistance: 90_000,
 	blockAid: "",
 	externalId: {
 		zerion: "mantle",
@@ -52,14 +52,14 @@ export const mantle = makeConfig({
 		chainlink: {
 			atlasNetworkName: "ethereum-mainnet-mantle-1",
 			routerAddress: "0x670052635a9850bb45882Cb2eCcF66bCff0F41B7",
-			chainSelector: 1556008542357238666n,
+			chainSelector: 1_556_008_542_357_238_666n,
 			tokenAdminRegistry: "0x000A744940eB5D857c0d61d97015DFc83107404F",
 		},
 		deswap: {
-			chainId: 100000023,
+			chainId: 100_000_023,
 		},
 		stargate: {
-			endpointID: 30181,
+			endpointID: 30_181,
 			blockConfirmations: 20,
 			tokens: [
 				{
@@ -101,14 +101,14 @@ export const mantle = makeConfig({
 		dexscreener: "mantle",
 	},
 	uniswap: {
-		deployBlock: 63795918,
+		deployBlock: 63_795_918,
 		poolFactory: "0x0d922Fb1Bc191F64970ac40376643808b4B74Df9",
 		permit2: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435",
 		multicall2: "0xE3dbcD53f4Ce1b06Ab200f4912BD35672e68f1FA",
 		tickLens: "0x38EB9e62ABe4d3F70C0e161971F29593b8aE29FF",
 		nonfungiblePositionManager: "0x5911cB3633e764939edc2d92b7e1ad375Bb57649",
 		positionsNFT: "0x5911cB3633e764939edc2d92b7e1ad375Bb57649",
-		positionsNFTDeployBlock: 63796102,
+		positionsNFTDeployBlock: 63_796_102,
 		universalRouter: "0x447B8E40B0CdA8e55F405C86bC635D02d0540aB8",
 
 		wrappedNativeAddress: "0x78c1b0C915c4FAA5FffA6CAbf0219DA63d7f4cb8",
@@ -124,7 +124,7 @@ export const mantle = makeConfig({
 	oku: {
 		router: "0x86d61277970685075a0BF66023c219dc4A6e3F6d",
 		limitOrderRegistry: "0x346239972d1fa486FC4a521031BC81bFB7D6e8a4",
-		limitOrderRegistryDeployBlock: 63839894,
+		limitOrderRegistryDeployBlock: 63_839_894,
 		pricing: {
 			nativeWrappedToken: "0x78c1b0C915c4FAA5FffA6CAbf0219DA63d7f4cb8",
 			nativeWrappedName: "MNT",
@@ -171,7 +171,7 @@ export const mantle = makeConfig({
 		},
 		metrom: {
 			address: "0x4300d4C410f87c7c1824Cbc2eF67431030106604",
-			blockCreated: 68933021,
+			blockCreated: 68_933_021,
 		},
 	},
 });

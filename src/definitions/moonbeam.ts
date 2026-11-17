@@ -7,7 +7,7 @@ export const moonbeam = makeConfig({
 	initCodeHash:
 		"0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
 	sortIndex: 42,
-	launchTime: 1696341600,
+	launchTime: 1_696_341_600,
 	transactionType: "eip1559",
 	blockTimeSeconds: 30,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/moonbeam-logo.svg",
@@ -16,7 +16,7 @@ export const moonbeam = makeConfig({
 	estimatedSwapGas: 300_000,
 	estimatedBridgeGas: 200_000,
 	estimatedWrapGas: 60_000,
-	safeReorgDistance: 90000,
+	safeReorgDistance: 90_000,
 	blockAid: "",
 	externalId: {
 		debank: "mobm",
@@ -36,7 +36,7 @@ export const moonbeam = makeConfig({
 			timeToFinalize: 24,
 		},
 		layerzero: {
-			eid: 30126,
+			eid: 30_126,
 			tokens: [
 				{
 					id: 4,
@@ -59,7 +59,7 @@ export const moonbeam = makeConfig({
 		dexscreener: "moonbeam",
 	},
 	uniswap: {
-		deployBlock: 3340452,
+		deployBlock: 3_340_452,
 		poolFactory: "0x28f1158795A3585CaAA3cD6469CD65382b89BB70",
 		permit2: "0xe96e30e92e01dc8a880f701b2d2160f93da18df7",
 		multicall2: "0x65dA327b1740D00fF7B366a4fd8F33830a2f03A2",
@@ -73,7 +73,7 @@ export const moonbeam = makeConfig({
 		nonfungiblePositionManager: "0x0bfc9aC7E52f38EAA6dC8d10942478f695C6Cf71",
 		v3Migrator: "0x76776b10d782a1d194fbfc92d4b01db1ce1eeb4b",
 		positionsNFT: "0x9036D0DcB5a059C9371B05D508f0072Df773854e",
-		positionsNFTDeployBlock: 3340476,
+		positionsNFTDeployBlock: 3_340_476,
 		universalRouter: "0x1F56F4e1648e96633c7FE79002036E967403CDfF",
 
 		wrappedNativeAddress: "0xab3f0245b83feb11d15aaffefd7ad465a59817ed",

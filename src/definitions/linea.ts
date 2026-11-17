@@ -7,7 +7,7 @@ export const linea = makeConfig({
 	...chain,
 	cowswap: COWSWAP_CREATE2_DEPLOYMENT,
 	name: "Linea",
-	launchTime: 1713362400,
+	launchTime: 1_713_362_400,
 	transactionType: "eip1559",
 	initCodeHash:
 		"0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
@@ -75,12 +75,12 @@ export const linea = makeConfig({
 		chainlink: {
 			atlasNetworkName: "ethereum-mainnet-linea-1",
 			routerAddress: "0x549FEB73F2348F6cD99b9fc8c69252034897f06C",
-			chainSelector: 4627098889531055414n,
+			chainSelector: 4_627_098_889_531_055_414n,
 			tokenAdminRegistry: "0xBc933cEE67d2b1c08490ee8C51E2dF653a713534",
 		},
 		rhinofi: "LINEA",
 		stargate: {
-			endpointID: 30183,
+			endpointID: 30_183,
 			blockConfirmations: 20,
 			tokens: [
 				{
@@ -96,7 +96,7 @@ export const linea = makeConfig({
 			timeToFinalize: 1800,
 		},
 		layerzero: {
-			eid: 30183,
+			eid: 30_183,
 			tokens: [
 				{
 					id: 4,
@@ -119,13 +119,13 @@ export const linea = makeConfig({
 		dexscreener: "linea",
 	},
 	uniswap: {
-		deployBlock: 25248,
+		deployBlock: 25_248,
 		poolFactory: "0x31FAfd4889FA1269F7a13A66eE0fB458f27D72A9",
 		multicall2: "0x93e253D101519578A8DF0BCe2A43D8292BFb3A1F",
 		tickLens: "0x3334d83e224aF5ef9C2E7DDA7c7C98Efd9621fA9",
 		nonfungiblePositionManager: "0x4615C383F85D0a2BbED973d83ccecf5CB7121463",
 		positionsNFT: "0x4615C383F85D0a2BbED973d83ccecf5CB7121463",
-		positionsNFTDeployBlock: 25264,
+		positionsNFTDeployBlock: 25_264,
 		universalRouter: "0x8B844f885672f333Bc0042cB669255f93a4C1E6b",
 
 		wrappedNativeAddress: "0xe5d7c2a44ffddf6b295a15c148167daaaf5cf34f",
@@ -142,7 +142,7 @@ export const linea = makeConfig({
 	oku: {
 		router: "0xb1f3a7B816B0681188F54dFa400991B93ADf00ed",
 		limitOrderRegistry: "0x63c8527f670d4eb3401c80c5905ceca8727f1e74",
-		limitOrderRegistryDeployBlock: 3610379,
+		limitOrderRegistryDeployBlock: 3_610_379,
 		pricing: {
 			nativeWrappedToken: "0xe5d7c2a44ffddf6b295a15c148167daaaf5cf34f",
 			nativeWrappedName: "ETH",

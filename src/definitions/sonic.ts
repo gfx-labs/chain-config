@@ -5,7 +5,7 @@ import { makeConfig } from "../util";
 export const sonic = makeConfig({
 	...chain,
 	blockTimeSeconds: 3,
-	launchTime: 1737165834,
+	launchTime: 1_737_165_834,
 	transactionType: "eip1559",
 	sortIndex: 37,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/sonic-logo.svg",
@@ -14,7 +14,7 @@ export const sonic = makeConfig({
 	estimatedSwapGas: 300_000,
 	estimatedBridgeGas: 200_000,
 	estimatedWrapGas: 60_000,
-	safeReorgDistance: 90000,
+	safeReorgDistance: 90_000,
 	blockAid: "",
 	morpho: {},
 	euler: {
@@ -45,14 +45,14 @@ export const sonic = makeConfig({
 		chainlink: {
 			atlasNetworkName: "sonic-mainnet",
 			routerAddress: "0xB4e1Ff7882474BB93042be9AD5E1fA387949B860",
-			chainSelector: 1673871237479749969n,
+			chainSelector: 1_673_871_237_479_749_969n,
 			tokenAdminRegistry: "0x2961Cb47b5111F38d75f415c21ceB4120ddd1b69",
 		},
 		deswap: {
-			chainId: 100000014,
+			chainId: 100_000_014,
 		},
 		stargate: {
-			endpointID: 30332,
+			endpointID: 30_332,
 			blockConfirmations: 20,
 			tokens: [
 				{
@@ -63,7 +63,7 @@ export const sonic = makeConfig({
 			],
 		},
 		layerzero: {
-			eid: 30332,
+			eid: 30_332,
 			tokens: [
 				{
 					id: 3,
@@ -82,14 +82,14 @@ export const sonic = makeConfig({
 	initCodeHash:
 		"0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
 	uniswap: {
-		deployBlock: 322744,
+		deployBlock: 322_744,
 		poolFactory: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D",
 		permit2: "0x000000000022D473030F116dDEE9F6B43aC78BA3",
 		multicall2: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435",
 		tickLens: "0xB3309C48F8407651D918ca3Da4C45DE40109E641",
 		nonfungiblePositionManager: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c",
 		positionsNFT: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c",
-		positionsNFTDeployBlock: 322763,
+		positionsNFTDeployBlock: 322_763,
 		universalRouter: "0x738fD6d10bCc05c230388B4027CAd37f82fe2AF2",
 
 		wrappedNativeAddress: "0x039e2fB66102314Ce7b64Ce5Ce3E5183bc94aD38",
@@ -103,7 +103,7 @@ export const sonic = makeConfig({
 	},
 	oku: {
 		limitOrderRegistry: "0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc",
-		limitOrderRegistryDeployBlock: 10948,
+		limitOrderRegistryDeployBlock: 10_948,
 		pricing: {
 			nativeWrappedToken: "0x039e2fB66102314Ce7b64Ce5Ce3E5183bc94aD38",
 			nativeWrappedName: "wS",
@@ -150,7 +150,7 @@ export const sonic = makeConfig({
 		},
 		metrom: {
 			address: "0xD4AC4AaFb81eC774E49AA755A66EfCe4574D6276",
-			blockCreated: 693310,
+			blockCreated: 693_310,
 		},
 	},
 });

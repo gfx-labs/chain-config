@@ -5,7 +5,7 @@ import { makeConfig } from "../util";
 export const telos = makeConfig({
 	...chain,
 	blockTimeSeconds: 0.5,
-	launchTime: 1743089303,
+	launchTime: 1_743_089_303,
 	transactionType: "legacy",
 	sortIndex: 36,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/telos-logo.svg",
@@ -14,7 +14,7 @@ export const telos = makeConfig({
 	estimatedSwapGas: 300_000,
 	estimatedBridgeGas: 200_000,
 	estimatedWrapGas: 60_000,
-	safeReorgDistance: 90000,
+	safeReorgDistance: 90_000,
 	blockAid: "",
 	externalId: {
 		coingecko: "telos",
@@ -30,7 +30,7 @@ export const telos = makeConfig({
 	},
 	bridges: {
 		stargate: {
-			endpointID: 30199,
+			endpointID: 30_199,
 			tokens: [
 				{
 					name: "ETH",
@@ -58,14 +58,14 @@ export const telos = makeConfig({
 	initCodeHash:
 		"0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
 	uniswap: {
-		deployBlock: 386633562,
+		deployBlock: 386_633_562,
 		poolFactory: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D",
 		permit2: "0xB952578f3520EE8Ea45b7914994dcf4702cEe578",
 		multicall2: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435",
 		tickLens: "0xB3309C48F8407651D918ca3Da4C45DE40109E641",
 		nonfungiblePositionManager: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c",
 		positionsNFT: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c",
-		positionsNFTDeployBlock: 386635939,
+		positionsNFTDeployBlock: 386_635_939,
 		universalRouter: "0x738fD6d10bCc05c230388B4027CAd37f82fe2AF2",
 
 		wrappedNativeAddress: "0xD102cE6A4dB07D247fcc28F366A623Df0938CA9E",
@@ -82,7 +82,7 @@ export const telos = makeConfig({
 	oku: {
 		router: "0x7B060A98BA242Ae42D6027a60937787eBe33DEBe",
 		limitOrderRegistry: "0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc",
-		limitOrderRegistryDeployBlock: 386645006,
+		limitOrderRegistryDeployBlock: 386_645_006,
 		pricing: {
 			nativeWrappedToken: "0xD102cE6A4dB07D247fcc28F366A623Df0938CA9E",
 			nativeWrappedName: "TLOS",
@@ -136,7 +136,7 @@ export const telos = makeConfig({
 		},
 		metrom: {
 			address: "0xD4AC4AaFb81eC774E49AA755A66EfCe4574D6276",
-			blockCreated: 390899406,
+			blockCreated: 390_899_406,
 		},
 	},
 });

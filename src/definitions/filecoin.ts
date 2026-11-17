@@ -5,13 +5,13 @@ import { makeConfig } from "../util";
 export const filecoin = makeConfig({
 	...chain,
 	sortIndex: 24,
-	launchTime: 1677600000,
+	launchTime: 1_677_600_000,
 	transactionType: "legacy",
 	name: "Filecoin",
 	initCodeHash:
 		"0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
 	blockTimeSeconds: 30,
-	safeReorgDistance: 90000,
+	safeReorgDistance: 90_000,
 	blockAid: "",
 	morpho: {},
 	blockExplorers: {
@@ -56,14 +56,14 @@ export const filecoin = makeConfig({
 		dexscreener: "filecoin",
 	},
 	uniswap: {
-		deployBlock: 3195837,
+		deployBlock: 3_195_837,
 		poolFactory: "0xB4C47eD546Fc31E26470a186eC2C5F19eF09BA41",
 		permit2: "0xb81363578d377F8DA3902e9e705FD60198a9cEc2",
 		multicall2: "0x732f5baac411e427d130fed03c2e82a3e0d64d35",
 		tickLens: "0x76c001ad9E527FEfA8Fa822a987Ad44ce720BAeD",
 		nonfungiblePositionManager: "0x4cd986dD509fbB6A695aE971d5C56c8795f640ee",
 		positionsNFT: "0x4cd986dD509fbB6A695aE971d5C56c8795f640ee",
-		positionsNFTDeployBlock: 3195861,
+		positionsNFTDeployBlock: 3_195_861,
 		universalRouter: "0x83702C6356A1028A900F83d446D189a31646a16b",
 
 		wrappedNativeAddress: "0x60E1773636CF5E4A227d9AC24F20fEca034ee25A",
@@ -86,7 +86,7 @@ export const filecoin = makeConfig({
 			nativeQuotePools: undefined,
 		},
 		limitOrderRegistry: "0xded8791056aa39581460a005a3c400a281e24bd7",
-		limitOrderRegistryDeployBlock: 3413267,
+		limitOrderRegistryDeployBlock: 3_413_267,
 	},
 	defaultPool: "0x74eb355808481587a1fa7101c210592e8d591e34",
 	defaultToken0: "0x2421db204968a367cc2c866cd057fa754cb84edf",

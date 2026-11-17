@@ -5,7 +5,7 @@ import { makeConfig } from "../util";
 export const hemi = makeConfig({
 	...chain,
 	blockTimeSeconds: 12,
-	launchTime: 1741901593,
+	launchTime: 1_741_901_593,
 	transactionType: "eip1559",
 	sortIndex: 25,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/hemi-logo.svg",
@@ -14,7 +14,7 @@ export const hemi = makeConfig({
 	estimatedSwapGas: 300_000,
 	estimatedBridgeGas: 200_000,
 	estimatedWrapGas: 60_000,
-	safeReorgDistance: 90000,
+	safeReorgDistance: 90_000,
 	blockAid: "",
 	externalId: {
 		debank: "hemi",
@@ -34,11 +34,11 @@ export const hemi = makeConfig({
 		chainlink: {
 			atlasNetworkName: "hemi-mainnet",
 			routerAddress: "0x5e48912cFDd14417D6856872341f894AE0EF07DD",
-			chainSelector: 1804312132722180201n,
+			chainSelector: 1_804_312_132_722_180_201n,
 			tokenAdminRegistry: "0x81e81F9B2C0B79C00F38357068AE049090F2DaDE",
 		},
 		stargate: {
-			endpointID: 30329,
+			endpointID: 30_329,
 			blockConfirmations: 20,
 			tokens: [
 				{
@@ -67,14 +67,14 @@ export const hemi = makeConfig({
 	initCodeHash:
 		"0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
 	uniswap: {
-		deployBlock: 1293598,
+		deployBlock: 1_293_598,
 		poolFactory: "0x346239972d1fa486FC4a521031BC81bFB7D6e8a4",
 		permit2: "0xB952578f3520EE8Ea45b7914994dcf4702cEe578",
 		multicall2: "0x352A86168e6988A1aDF9A15Cb00017AAd3B67155",
 		tickLens: "0xA9d71E1dd7ca26F26e656E66d6AA81ed7f745bf0",
 		nonfungiblePositionManager: "0xEFdE184f4b5d79f7c3b7Efc0388d829ff9af0050",
 		positionsNFT: "0xEFdE184f4b5d79f7c3b7Efc0388d829ff9af0050",
-		positionsNFTDeployBlock: 1293633,
+		positionsNFTDeployBlock: 1_293_633,
 		universalRouter: "0x533c7A53389e0538AB6aE1D7798D6C1213eAc28B",
 
 		wrappedNativeAddress: "0x4200000000000000000000000000000000000006",
@@ -90,7 +90,7 @@ export const hemi = makeConfig({
 	oku: {
 		router: "0x7B060A98BA242Ae42D6027a60937787eBe33DEBe",
 		limitOrderRegistry: "0xcd7f266E3C0D0771897aAF74BEB38072D66402A0",
-		limitOrderRegistryDeployBlock: 1293765,
+		limitOrderRegistryDeployBlock: 1_293_765,
 		pricing: {
 			nativeWrappedToken: "0x4200000000000000000000000000000000000006",
 			nativeWrappedName: "ETH",
@@ -141,7 +141,7 @@ export const hemi = makeConfig({
 		},
 		metrom: {
 			address: "0xD4AC4AaFb81eC774E49AA755A66EfCe4574D6276",
-			blockCreated: 1838171,
+			blockCreated: 1_838_171,
 		},
 	},
 });

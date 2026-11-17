@@ -24,7 +24,9 @@ async function main() {
 	await Promise.all(
 		chains.map(async (chain) => {
 			const supported = await checkEIP1559(chain.internalName);
-			if (!supported) unsupported.push(chain.internalName);
+			if (!supported) {
+				unsupported.push(chain.internalName);
+			}
 		}),
 	);
 

@@ -5,7 +5,7 @@ import { makeConfig } from "../util";
 export const bob = makeConfig({
 	...chain,
 	blockTimeSeconds: 2,
-	launchTime: 1727359200,
+	launchTime: 1_727_359_200,
 	transactionType: "eip1559",
 	sortIndex: 23,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/bob-logo.svg",
@@ -14,7 +14,7 @@ export const bob = makeConfig({
 	estimatedSwapGas: 300_000,
 	estimatedBridgeGas: 200_000,
 	estimatedWrapGas: 60_000,
-	safeReorgDistance: 90000,
+	safeReorgDistance: 90_000,
 	blockAid: "",
 	euler: {
 		evc: "0x59f0FeEc4fA474Ad4ffC357cC8d8595B68abE47d",
@@ -40,11 +40,11 @@ export const bob = makeConfig({
 		chainlink: {
 			atlasNetworkName: "bitcoin-mainnet-bob",
 			routerAddress: "0x827716e74F769AB7b6bb374A29235d9c2156932C",
-			chainSelector: 3849287863852499584n,
+			chainSelector: 3_849_287_863_852_499_584n,
 			tokenAdminRegistry: "0xa57d04119AFf4884F8602213E58d8AaAD18229cb",
 		},
 		deswap: {
-			chainId: 100000021,
+			chainId: 100_000_021,
 		},
 	},
 	morpho: {},
@@ -57,14 +57,14 @@ export const bob = makeConfig({
 	initCodeHash:
 		"0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
 	uniswap: {
-		deployBlock: 5188280,
+		deployBlock: 5_188_280,
 		poolFactory: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D",
 		permit2: "0xCbe9Be2C87b24b063A21369b6AB0Aa9f149c598F",
 		multicall2: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435",
 		tickLens: "0xB3309C48F8407651D918ca3Da4C45DE40109E641",
 		nonfungiblePositionManager: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c",
 		positionsNFT: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c",
-		positionsNFTDeployBlock: 5189019,
+		positionsNFTDeployBlock: 5_189_019,
 		universalRouter: "0x346239972d1fa486FC4a521031BC81bFB7D6e8a4",
 
 		wrappedNativeAddress: "0x4200000000000000000000000000000000000006",
@@ -80,7 +80,7 @@ export const bob = makeConfig({
 	oku: {
 		router: "0x3132f599bde0e251ba12d5FF95E256FbBeCbDA83",
 		limitOrderRegistry: "0x447b8e40b0cda8e55f405c86bc635d02d0540ab8",
-		limitOrderRegistryDeployBlock: 5624845,
+		limitOrderRegistryDeployBlock: 5_624_845,
 		pricing: {
 			nativeWrappedToken: "0x4200000000000000000000000000000000000006",
 			nativeWrappedName: "ETH",

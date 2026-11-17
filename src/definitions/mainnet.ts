@@ -9,7 +9,7 @@ export const mainnet = makeConfig({
 	initCodeHash:
 		"0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
 	sortIndex: 0,
-	launchTime: 1688997600,
+	launchTime: 1_688_997_600,
 	transactionType: "eip1559",
 	blockTimeSeconds: 12,
 	safeReorgDistance: 90_000,
@@ -21,7 +21,7 @@ export const mainnet = makeConfig({
 	estimatedWrapGas: 60_000,
 	blockAid: "ethereum",
 	morpho: {
-		deployBlock: 13977148,
+		deployBlock: 13_977_148,
 		morpho: "0xBBBBBbbBBb9cC5e90e3b3Af64bdAF62C37EEFFCb",
 		mmFactory11: "0x1897A8997241C1cD4bD0698647e4EB7213535c24",
 		mmFactory10: "0xA9c3D3a366466Fa809d1Ae982Fb2c46E5fC41101",
@@ -107,12 +107,12 @@ export const mainnet = makeConfig({
 		chainlink: {
 			atlasNetworkName: "ethereum-mainnet",
 			routerAddress: "0x80226fc0Ee2b096224EeAc085Bb9a8cba1146f7D",
-			chainSelector: 5009297550715157269n,
+			chainSelector: 5_009_297_550_715_157_269n,
 			tokenAdminRegistry: "0xb22764f98dD05c789929716D677382Df22C05Cb6",
 		},
 		rhinofi: "ETHEREUM",
 		stargate: {
-			endpointID: 30101,
+			endpointID: 30_101,
 			blockConfirmations: 15,
 			tokens: [
 				{
@@ -157,7 +157,7 @@ export const mainnet = makeConfig({
 			timeToFinalize: 975,
 		},
 		layerzero: {
-			eid: 30101,
+			eid: 30_101,
 			tokens: [
 				{
 					id: 1,
@@ -192,7 +192,7 @@ export const mainnet = makeConfig({
 		dexscreener: "ethereum",
 	},
 	uniswapv4: {
-		deployBlock: 21688329,
+		deployBlock: 21_688_329,
 		poolManager: "0x000000000004444c5dc75cB358380D2e3dE08A90",
 		positionManager: "0xbd216513d74c8cf14cf4747e6aaa6420ff64ee9e",
 		universalRouter: "0x66a9893cc07d91d95644aedd05d03f95e1dba8af",
@@ -202,7 +202,7 @@ export const mainnet = makeConfig({
 		stateView: "0x7ffe42c4a5deea5b0fec41c94c136cf115597227",
 	},
 	uniswap: {
-		deployBlock: 12369621,
+		deployBlock: 12_369_621,
 		poolFactory: "0x1F98431c8aD98523631AE4a59f267346ea31F984",
 		// Manually confirmed via eth_getCode against the canonical Permit2
 		// deployment address (not yet sourced from an automated registry).
@@ -222,7 +222,7 @@ export const mainnet = makeConfig({
 		uniswapV3Staker: "0xe34139463bA50bD61336E0c446Bd8C0867c6fE65",
 		positionsNFT: "0xC36442b4a4522E871399CD717aBDD847Ab11FE88",
 		topNativePool: "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640",
-		positionsNFTDeployBlock: 12369651,
+		positionsNFTDeployBlock: 12_369_651,
 		universalRouter: "0xCb640A86855f1A828c27241bA364348de28abe66",
 
 		wrappedNativeAddress: "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
@@ -239,14 +239,14 @@ export const mainnet = makeConfig({
 	oku: {
 		router: "0xb1f3a7B816B0681188F54dFa400991B93ADf00ed",
 		limitOrderRegistry: "0x54dF9e11c7933a9cA3BD1E540B63dA15edAe40bf",
-		limitOrderRegistryDeployBlock: 17429412,
+		limitOrderRegistryDeployBlock: 17_429_412,
 		pricing: {
 			nativeWrappedToken: "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
 			nativeWrappedName: "WETH",
 			nativeQuotePools: [
 				{
 					address: "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640",
-					blockCreated: 12369621,
+					blockCreated: 12_369_621,
 				},
 			],
 			pools: [

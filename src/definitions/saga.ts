@@ -6,7 +6,7 @@ export const saga = makeConfig({
 	...chain,
 	name: "Saga EVM",
 	blockTimeSeconds: 5,
-	launchTime: 1740384000,
+	launchTime: 1_740_384_000,
 	transactionType: "legacy",
 	sortIndex: 14,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/saga-logo.png",
@@ -15,7 +15,7 @@ export const saga = makeConfig({
 	estimatedSwapGas: 300_000,
 	estimatedBridgeGas: 200_000,
 	estimatedWrapGas: 60_000,
-	safeReorgDistance: 90000,
+	safeReorgDistance: 90_000,
 	blockAid: "",
 	externalId: {
 		coingecko: "saga",
@@ -45,14 +45,14 @@ export const saga = makeConfig({
 	initCodeHash:
 		"0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
 	uniswap: {
-		deployBlock: 18885,
+		deployBlock: 18_885,
 		poolFactory: "0x454050C4c9190390981Ac4b8d5AFcd7aC65eEffa",
 		permit2: "0x447B8E40B0CdA8e55F405C86bC635D02d0540aB8",
 		multicall2: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c",
 		tickLens: "0x6Aa54a43d7eEF5b239a18eed3Af4877f46522BCA",
 		nonfungiblePositionManager: "0xdD489C75be1039ec7d843A6aC2Fd658350B067Cf",
 		positionsNFT: "0xdD489C75be1039ec7d843A6aC2Fd658350B067Cf",
-		positionsNFTDeployBlock: 18902,
+		positionsNFTDeployBlock: 18_902,
 		universalRouter: "0xa683c66045ad16abb1bCE5ad46A64d95f9A25785",
 
 		wrappedNativeAddress: "0xE3dbcD53f4Ce1b06Ab200f4912BD35672e68f1FA",
@@ -68,7 +68,7 @@ export const saga = makeConfig({
 	oku: {
 		router: "0x2D8261402d4777975AE43877A189b0Ab6b526e26",
 		limitOrderRegistry: "0xA9d71E1dd7ca26F26e656E66d6AA81ed7f745bf0",
-		limitOrderRegistryDeployBlock: 19372,
+		limitOrderRegistryDeployBlock: 19_372,
 		pricing: {
 			nativeWrappedToken: "0xE3dbcD53f4Ce1b06Ab200f4912BD35672e68f1FA",
 			nativeWrappedName: "GAS",

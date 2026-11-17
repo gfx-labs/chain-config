@@ -5,7 +5,7 @@ import { makeConfig } from "../util";
 export const ronin = makeConfig({
 	...chain,
 	blockTimeSeconds: 3,
-	launchTime: 1761966026,
+	launchTime: 1_761_966_026,
 	transactionType: "eip1559",
 	sortIndex: 45,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/ronin-logo.svg",
@@ -14,7 +14,7 @@ export const ronin = makeConfig({
 	estimatedSwapGas: 300_000,
 	estimatedBridgeGas: 200_000,
 	estimatedWrapGas: 60_000,
-	safeReorgDistance: 90000,
+	safeReorgDistance: 90_000,
 	blockAid: "",
 	externalId: {
 		tenderly: "true",
@@ -25,7 +25,7 @@ export const ronin = makeConfig({
 		chainlink: {
 			atlasNetworkName: "ronin-mainnet",
 			routerAddress: "0x46527571D5D1B68eE7Eb60B18A32e6C60DcEAf99",
-			chainSelector: 6916147374840168594n,
+			chainSelector: 6_916_147_374_840_168_594n,
 			tokenAdminRegistry: "0x90e83d532A4aD13940139c8ACE0B93b0DdbD323a",
 		},
 	},
@@ -43,14 +43,14 @@ export const ronin = makeConfig({
 	initCodeHash:
 		"0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
 	uniswap: {
-		deployBlock: 49590756,
+		deployBlock: 49_590_756,
 		poolFactory: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D",
 		permit2: "0x000000000022d473030f116ddee9f6b43ac78ba3",
 		multicall2: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435",
 		tickLens: "0xB3309C48F8407651D918ca3Da4C45DE40109E641",
 		nonfungiblePositionManager: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c",
 		positionsNFT: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c",
-		positionsNFTDeployBlock: 49590795,
+		positionsNFTDeployBlock: 49_590_795,
 		universalRouter: "0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc",
 
 		wrappedNativeAddress: "0xe514d9deb7966c8be0ca922de8a064264ea6bcd4",
@@ -65,7 +65,7 @@ export const ronin = makeConfig({
 	},
 	oku: {
 		limitOrderRegistry: "0x9db70E29712Cc8Af10c2B597BaDA6784544FF407",
-		limitOrderRegistryDeployBlock: 49623205,
+		limitOrderRegistryDeployBlock: 49_623_205,
 		pricing: {
 			nativeWrappedToken: "0xe514d9deb7966c8be0ca922de8a064264ea6bcd4",
 			nativeWrappedName: "RON",

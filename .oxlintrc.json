@@ -2,10 +2,36 @@
 	"$schema": "./node_modules/oxlint/configuration_schema.json",
 	"plugins": ["typescript", "unicorn", "oxc", "import"],
 	"categories": {
-		"correctness": "error"
+		"correctness": "error",
+		"suspicious": "error",
+		"perf": "error"
 	},
 	"rules": {
-		"typescript/no-explicit-any": "off"
+		"typescript/no-explicit-any": "off",
+		"eslint/eqeqeq": ["error", "always", { "null": "ignore" }],
+		"eslint/curly": "error",
+		"eslint/no-duplicate-imports": "error",
+		"eslint/no-redeclare": "error",
+		"eslint/no-var": "error",
+		"eslint/prefer-const": "error",
+		"eslint/no-shadow": "error",
+		"eslint/no-underscore-dangle": "off",
+		"typescript/consistent-type-imports": "error",
+		"typescript/no-empty-object-type": "error",
+		"typescript/prefer-for-of": "error",
+		"unicorn/no-array-sort": "off",
+		"unicorn/numeric-separators-style": "error",
+		"unicorn/prefer-node-protocol": "error",
+		"unicorn/prefer-string-replace-all": "error",
+		"unicorn/switch-case-braces": "error",
+		"unicorn/no-useless-collection-argument": "error",
+		"unicorn/no-abusive-eslint-disable": "error"
 	},
-	"ignorePatterns": ["dist/**", "integration/**", "node_modules/**"]
+	"overrides": [
+		{
+			"files": ["src/script/**", "scripts/**", "gen_go.ts"],
+			"rules": { "eslint/no-await-in-loop": "off" }
+		}
+	],
+	"ignorePatterns": ["dist/**", "integration/**", "node_modules/**", ".yarn/**"]
 }

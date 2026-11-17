@@ -10,7 +10,7 @@ export const polygon = makeConfig({
 		"0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
 	blockTimeSeconds: 2,
 	liteChain: true,
-	launchTime: 1688997600,
+	launchTime: 1_688_997_600,
 	transactionType: "eip1559",
 	sortIndex: 6,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/polygon-logo.svg",
@@ -19,7 +19,7 @@ export const polygon = makeConfig({
 	estimatedSwapGas: 300_000,
 	estimatedBridgeGas: 200_000,
 	estimatedWrapGas: 60_000,
-	safeReorgDistance: 90000,
+	safeReorgDistance: 90_000,
 	blockAid: "polygon",
 	euler: {
 		evc: "0x90811DacA4BD23Fc79A87FBdff7522bED2d24B4B",
@@ -85,12 +85,12 @@ export const polygon = makeConfig({
 		chainlink: {
 			atlasNetworkName: "polygon-mainnet",
 			routerAddress: "0x849c5ED5a80F5B408Dd4969b78c2C8fdf0565Bfe",
-			chainSelector: 4051577828743386545n,
+			chainSelector: 4_051_577_828_743_386_545n,
 			tokenAdminRegistry: "0x00F027eA6D0fb03256A15E9182B2B9227A4931d8",
 		},
 		rhinofi: "MATIC_POS",
 		stargate: {
-			endpointID: 30109,
+			endpointID: 30_109,
 			blockConfirmations: 512,
 			tokens: [
 				{
@@ -113,7 +113,7 @@ export const polygon = makeConfig({
 			timeToFinalize: 66,
 		},
 		layerzero: {
-			eid: 30109,
+			eid: 30_109,
 			tokens: [
 				{
 					id: 4,
@@ -136,7 +136,7 @@ export const polygon = makeConfig({
 		dexscreener: "polygon",
 	},
 	uniswap: {
-		deployBlock: 22757547,
+		deployBlock: 22_757_547,
 		poolFactory: "0x1F98431c8aD98523631AE4a59f267346ea31F984",
 		multicall2: "0x275617327c958bD06b5D6b871E7f491D76113dd8",
 		proxyAdmin: "0xB753548F6E010e7e680BA186F9Ca1BdAB2E90cf2",
@@ -152,7 +152,7 @@ export const polygon = makeConfig({
 		v3Migrator: "0xA5644E29708357803b5A882D272c41cC0dF92B34",
 		uniswapV3Staker: "0xe34139463bA50bD61336E0c446Bd8C0867c6fE65",
 		positionsNFT: "0xC36442b4a4522E871399CD717aBDD847Ab11FE88",
-		positionsNFTDeployBlock: 22760586,
+		positionsNFTDeployBlock: 22_760_586,
 		topNativePool: "0xa374094527e1673a86de625aa59517c5de346d32",
 		universalRouter: "0x8B844f885672f333Bc0042cB669255f93a4C1E6b",
 
@@ -170,13 +170,13 @@ export const polygon = makeConfig({
 	oku: {
 		router: "0xb1f3a7B816B0681188F54dFa400991B93ADf00ed",
 		limitOrderRegistry: "0x54dF9e11c7933a9cA3BD1E540B63dA15edAe40bf",
-		limitOrderRegistryDeployBlock: 43640541,
+		limitOrderRegistryDeployBlock: 43_640_541,
 		pricing: {
 			nativeWrappedToken: "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
 			nativeWrappedName: "WPOL",
 			nativeQuotePools: [
 				{
-					blockCreated: 22802494,
+					blockCreated: 22_802_494,
 					address: "0xa374094527e1673a86de625aa59517c5de346d32",
 				},
 			],

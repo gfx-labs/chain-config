@@ -6,7 +6,7 @@ export const corn = makeConfig({
 	...chain,
 	name: "Corn",
 	blockTimeSeconds: 35,
-	launchTime: 1733882663,
+	launchTime: 1_733_882_663,
 	transactionType: "eip1559",
 	sortIndex: 28,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/corn-logo.svg",
@@ -15,7 +15,7 @@ export const corn = makeConfig({
 	estimatedSwapGas: 300_000,
 	estimatedBridgeGas: 200_000,
 	estimatedWrapGas: 60_000,
-	safeReorgDistance: 90000,
+	safeReorgDistance: 90_000,
 	blockAid: "",
 	externalId: {
 		tenderly: "true",
@@ -26,11 +26,11 @@ export const corn = makeConfig({
 		chainlink: {
 			atlasNetworkName: "corn-mainnet",
 			routerAddress: "0x183f6069A0D5c2DEC1Dd1eCF3B1581e12dEb4Efe",
-			chainSelector: 9043146809313071210n,
+			chainSelector: 9_043_146_809_313_071_210n,
 			tokenAdminRegistry: "0xCd51e57cD26b9B5eecbfe3d96DAabF3d12A663DA",
 		},
 		layerzero: {
-			eid: 30331,
+			eid: 30_331,
 			tokens: [
 				{
 					id: 1,
@@ -44,7 +44,7 @@ export const corn = makeConfig({
 	},
 	oracles: {},
 	morpho: {
-		deployBlock: 251401,
+		deployBlock: 251_401,
 		morpho: "0xc2B1E031540e3F3271C5F3819F0cC7479a8DdD90",
 		publicAllocator: "0xDFde06e2B2A2D718eE5560b73dA4F830E56A2f10",
 		mmFactory11: "0xe430821595602eA5DD0cD350f86987437c7362fA",
@@ -55,14 +55,14 @@ export const corn = makeConfig({
 	initCodeHash:
 		"0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
 	uniswap: {
-		deployBlock: 10878,
+		deployBlock: 10_878,
 		poolFactory: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D",
 		permit2: "0xB952578f3520EE8Ea45b7914994dcf4702cEe578",
 		multicall2: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435",
 		tickLens: "0xB3309C48F8407651D918ca3Da4C45DE40109E641",
 		nonfungiblePositionManager: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c",
 		positionsNFT: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c",
-		positionsNFTDeployBlock: 10901,
+		positionsNFTDeployBlock: 10_901,
 		universalRouter: "0x9db70E29712Cc8Af10c2B597BaDA6784544FF407",
 
 		wrappedNativeAddress: "0xda5dDd7270381A7C2717aD10D1c0ecB19e3CDFb2",
@@ -76,7 +76,7 @@ export const corn = makeConfig({
 	},
 	oku: {
 		limitOrderRegistry: "0x346239972d1fa486FC4a521031BC81bFB7D6e8a4",
-		limitOrderRegistryDeployBlock: 10948,
+		limitOrderRegistryDeployBlock: 10_948,
 		pricing: {
 			nativeWrappedToken: "0xda5dDd7270381A7C2717aD10D1c0ecB19e3CDFb2",
 			nativeWrappedName: "BTCN",

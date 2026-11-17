@@ -11,7 +11,7 @@ export const xdc = makeConfig({
 		},
 	},
 	blockTimeSeconds: 2,
-	launchTime: 1746453600,
+	launchTime: 1_746_453_600,
 	transactionType: "legacy",
 	sortIndex: 18,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/xdc-logo.svg",
@@ -20,7 +20,7 @@ export const xdc = makeConfig({
 	estimatedSwapGas: 300_000,
 	estimatedBridgeGas: 200_000,
 	estimatedWrapGas: 60_000,
-	safeReorgDistance: 90000,
+	safeReorgDistance: 90_000,
 	blockAid: "",
 	externalId: {
 		zerion: "xinfin-xdc",
@@ -44,7 +44,7 @@ export const xdc = makeConfig({
 			messageTransmitterV2: "0x81D40F21F12A8F0E3252Bccb954D722d4c464B64",
 		},
 		stargate: {
-			endpointID: 30365,
+			endpointID: 30_365,
 			tokens: [
 				{
 					name: "ETH",
@@ -69,7 +69,7 @@ export const xdc = makeConfig({
 	},
 	oracles: {},
 	morpho: {
-		deployBlock: 101757515,
+		deployBlock: 101_757_515,
 		morpho: "0xEa49B0fE898aF913A3826F9f462eE2cDcb854fD9",
 		bundler3: "0xed9bdc3E6081db528b6D5CDDf47EcB05337c62A7",
 		generalAdapter1: "0xAB2Ab6A8bb1082C5d8400D6206c6A13cE413e0c0",
@@ -81,14 +81,14 @@ export const xdc = makeConfig({
 	initCodeHash:
 		"0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
 	uniswap: {
-		deployBlock: 87230664,
+		deployBlock: 87_230_664,
 		poolFactory: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D",
 		permit2: "0xB952578f3520EE8Ea45b7914994dcf4702cEe578",
 		multicall2: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435",
 		tickLens: "0xB3309C48F8407651D918ca3Da4C45DE40109E641",
 		nonfungiblePositionManager: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c",
 		positionsNFT: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c",
-		positionsNFTDeployBlock: 87230700,
+		positionsNFTDeployBlock: 87_230_700,
 		universalRouter: "0x738fD6d10bCc05c230388B4027CAd37f82fe2AF2",
 
 		wrappedNativeAddress: "0x951857744785e80e2de051c32ee7b25f9c458c42",
@@ -104,7 +104,7 @@ export const xdc = makeConfig({
 	oku: {
 		router: "0x7B060A98BA242Ae42D6027a60937787eBe33DEBe",
 		limitOrderRegistry: "0x1b35fba9357fd9bda7ed0429c8bbabe1e8cc88fc",
-		limitOrderRegistryDeployBlock: 87231348,
+		limitOrderRegistryDeployBlock: 87_231_348,
 		pricing: {
 			nativeWrappedToken: "0x951857744785e80e2de051c32ee7b25f9c458c42",
 			nativeWrappedName: "XDC",

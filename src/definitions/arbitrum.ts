@@ -8,7 +8,7 @@ export const arbitrum = makeConfig({
 	cowswap: COWSWAP_CREATE2_DEPLOYMENT,
 	name: "Arbitrum",
 	liteChain: true,
-	launchTime: 1688997600,
+	launchTime: 1_688_997_600,
 	transactionType: "eip1559",
 	sortIndex: 1,
 	blockTimeSeconds: 0.25,
@@ -18,7 +18,7 @@ export const arbitrum = makeConfig({
 	estimatedSwapGas: 300_000,
 	estimatedBridgeGas: 200_000,
 	estimatedWrapGas: 60_000,
-	safeReorgDistance: 90000 * 2,
+	safeReorgDistance: 90_000 * 2,
 	blockAid: "arbitrum",
 	morpho: {},
 	euler: {
@@ -88,12 +88,12 @@ export const arbitrum = makeConfig({
 		chainlink: {
 			atlasNetworkName: "ethereum-mainnet-arbitrum-1",
 			routerAddress: "0x141fa059441E0ca23ce184B6A78bafD2A517DdE8",
-			chainSelector: 4949039107694359620n,
+			chainSelector: 4_949_039_107_694_359_620n,
 			tokenAdminRegistry: "0x39AE1032cF4B334a1Ed41cdD0833bdD7c7E7751E",
 		},
 		rhinofi: "ARBITRUM",
 		stargate: {
-			endpointID: 30110,
+			endpointID: 30_110,
 			blockConfirmations: 20,
 			tokens: [
 				{
@@ -120,7 +120,7 @@ export const arbitrum = makeConfig({
 			],
 		},
 		layerzero: {
-			eid: 30110,
+			eid: 30_110,
 			tokens: [
 				{
 					id: 1,
@@ -189,13 +189,13 @@ export const arbitrum = makeConfig({
 	oku: {
 		router: "0xb1f3a7B816B0681188F54dFa400991B93ADf00ed",
 		limitOrderRegistry: "0x54dF9e11c7933a9cA3BD1E540B63dA15edAe40bf",
-		limitOrderRegistryDeployBlock: 98754575,
+		limitOrderRegistryDeployBlock: 98_754_575,
 		pricing: {
 			nativeWrappedToken: "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
 			nativeWrappedName: "WETH",
 			nativeQuotePools: [
 				{
-					blockCreated: 100909,
+					blockCreated: 100_909,
 					address: "0xc31e54c7a869b9fcbecc14363cf510d1c41fa443",
 				},
 			] as const,

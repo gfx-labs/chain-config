@@ -6,7 +6,7 @@ export const zerog = makeConfig({
 	...chain,
 	name: "0G",
 	blockTimeSeconds: 1,
-	launchTime: 1733882663,
+	launchTime: 1_733_882_663,
 	transactionType: "eip1559",
 	sortIndex: 48,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/zerog-logo.svg",
@@ -15,7 +15,7 @@ export const zerog = makeConfig({
 	estimatedSwapGas: 300_000,
 	estimatedBridgeGas: 200_000,
 	estimatedWrapGas: 60_000,
-	safeReorgDistance: 90000,
+	safeReorgDistance: 90_000,
 	blockAid: "",
 	externalId: {
 		zerion: "0g",
@@ -35,13 +35,13 @@ export const zerog = makeConfig({
 		chainlink: {
 			atlasNetworkName: "0g-mainnet",
 			routerAddress: "0x0aA145a62153190B8f0D3cA00c441e451529f755",
-			chainSelector: 4426351306075016396n,
+			chainSelector: 4_426_351_306_075_016_396n,
 			tokenAdminRegistry: "0x051665f2455116e929b9972c36d23070F5054Ce0",
 		},
 	},
 	oracles: {},
 	morpho: {
-		deployBlock: 7526486,
+		deployBlock: 7_526_486,
 		morpho: "0x9CDD13a2212D94C4f12190cA30783B743E83C89e",
 		bundler3: "0xbDaFC7ceF85C5fF69164330F521089C9E15DDDae",
 		generalAdapter1: "0xFaD987d0EedfbAC709EC27ee4a94f36A1300a054",
@@ -52,14 +52,14 @@ export const zerog = makeConfig({
 	initCodeHash:
 		"0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
 	uniswap: {
-		deployBlock: 6444619,
+		deployBlock: 6_444_619,
 		poolFactory: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D",
 		permit2: "0x000000000022D473030F116dDEE9F6B43aC78BA3",
 		multicall2: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435",
 		tickLens: "0xB3309C48F8407651D918ca3Da4C45DE40109E641",
 		nonfungiblePositionManager: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c",
 		positionsNFT: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c",
-		positionsNFTDeployBlock: 6444746,
+		positionsNFTDeployBlock: 6_444_746,
 		universalRouter: "0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc",
 
 		wrappedNativeAddress: "0x1cd0690ff9a693f5ef2dd976660a8dafc81a109c",
@@ -74,7 +74,7 @@ export const zerog = makeConfig({
 	oku: {
 		router: "0xb1f3a7B816B0681188F54dFa400991B93ADf00ed",
 		limitOrderRegistry: "0x9db70e29712cc8af10c2b597bada6784544ff407",
-		limitOrderRegistryDeployBlock: 6449021,
+		limitOrderRegistryDeployBlock: 6_449_021,
 		pricing: {
 			nativeWrappedToken: "0x1cd0690ff9a693f5ef2dd976660a8dafc81a109c",
 			nativeWrappedName: "0G",

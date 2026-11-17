@@ -6,7 +6,7 @@ export const goat = makeConfig({
 	...chain,
 	name: "GOAT Network",
 	blockTimeSeconds: 3.5,
-	launchTime: 1742159744,
+	launchTime: 1_742_159_744,
 	transactionType: "eip1559",
 	sortIndex: 33,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/goat-logo.svg",
@@ -15,7 +15,7 @@ export const goat = makeConfig({
 	estimatedSwapGas: 300_000,
 	estimatedBridgeGas: 200_000,
 	estimatedWrapGas: 60_000,
-	safeReorgDistance: 90000,
+	safeReorgDistance: 90_000,
 	blockAid: "",
 	externalId: {
 		coingecko: "goat",
@@ -30,7 +30,7 @@ export const goat = makeConfig({
 	},
 	bridges: {
 		stargate: {
-			endpointID: 30361,
+			endpointID: 30_361,
 			blockConfirmations: 20,
 			tokens: [
 				{
@@ -59,14 +59,14 @@ export const goat = makeConfig({
 	initCodeHash:
 		"0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
 	uniswap: {
-		deployBlock: 848385,
+		deployBlock: 848_385,
 		poolFactory: "0xcb2436774C3e191c85056d248EF4260ce5f27A9D",
 		permit2: "0xB952578f3520EE8Ea45b7914994dcf4702cEe578",
 		multicall2: "0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435",
 		tickLens: "0xB3309C48F8407651D918ca3Da4C45DE40109E641",
 		nonfungiblePositionManager: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c",
 		positionsNFT: "0x743E03cceB4af2efA3CC76838f6E8B50B63F184c",
-		positionsNFTDeployBlock: 848408,
+		positionsNFTDeployBlock: 848_408,
 		universalRouter: "0x738fD6d10bCc05c230388B4027CAd37f82fe2AF2",
 
 		wrappedNativeAddress: "0xbC10000000000000000000000000000000000000",
@@ -82,7 +82,7 @@ export const goat = makeConfig({
 	oku: {
 		router: "0x7B060A98BA242Ae42D6027a60937787eBe33DEBe",
 		limitOrderRegistry: "0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc",
-		limitOrderRegistryDeployBlock: 848591,
+		limitOrderRegistryDeployBlock: 848_591,
 		pricing: {
 			nativeWrappedToken: "0xbC10000000000000000000000000000000000000",
 			nativeWrappedName: "WGBTC",

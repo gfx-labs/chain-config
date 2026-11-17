@@ -6,7 +6,7 @@ import { zeroAddress } from "../util/constants";
 export const hyperevm = makeConfig({
 	...chain,
 	blockTimeSeconds: 1,
-	launchTime: 1767333673,
+	launchTime: 1_767_333_673,
 	transactionType: "eip1559",
 	sortIndex: 12,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/hyperevm-logo.svg",
@@ -15,7 +15,7 @@ export const hyperevm = makeConfig({
 	estimatedSwapGas: 300_000,
 	estimatedBridgeGas: 200_000,
 	estimatedWrapGas: 60_000,
-	safeReorgDistance: 90000,
+	safeReorgDistance: 90_000,
 	blockAid: "",
 	euler: {
 		evc: "0xceAA7cdCD7dDBee8601127a9Abb17A974d613db4",
@@ -56,7 +56,7 @@ export const hyperevm = makeConfig({
 		chainlink: {
 			atlasNetworkName: "hyperliquid-mainnet",
 			routerAddress: "0x13b3332b66389B1467CA6eBd6fa79775CCeF65ec",
-			chainSelector: 2442541497099098535n,
+			chainSelector: 2_442_541_497_099_098_535n,
 			tokenAdminRegistry: "0xcE44363496ABc3a9e53B3F404a740F992D977bDF",
 		},
 		wormhole: {

@@ -1,5 +1,4 @@
-import type { IChainInfo } from "../spec";
-import { NON_EVM_CHAIN_ID } from "../spec";
+import { type IChainInfo, NON_EVM_CHAIN_ID } from "../spec";
 import { caip2Reference, parseCAIP2 } from "./caip2";
 
 /**
