@@ -107,11 +107,19 @@ export const MAINNET_CHAINS = [
  * the EVM-only surface (and the Go codegen, which reads `MAINNET_CHAINS`) is
  * unaffected.
  */
-export const NON_EVM_CHAINS: readonly IChainInfo[] = [
+export const NON_EVM_CHAINS = [
 	nonEvmDefs.bitcoin,
 	nonEvmDefs.solana,
 	nonEvmDefs.zcash,
-] as const;
+] as const satisfies readonly IChainInfo[];
+
+/**
+ * Literal union of every supported chain's `internalName`
+ * (e.g. `"arbitrum" | "base" | ... | "bitcoin"`).
+ */
+export type InternalName =
+	| (typeof MAINNET_CHAINS)[number]["internalName"]
+	| (typeof NON_EVM_CHAINS)[number]["internalName"];
 
 /**
  * All networks, EVM and non-EVM. Use this when you need to enumerate every
@@ -175,7 +183,7 @@ export function networkById(id: number): IChainInfo {
  *
  * @throws {NetworkNotFoundError} if no matching chain is found
  */
-export function networkByName(name: string): IChainInfo {
+export function networkByName(name: InternalName | (string & {})): IChainInfo {
 	return _networkByName(name, _idx);
 }
 
