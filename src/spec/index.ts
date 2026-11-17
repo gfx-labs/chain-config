@@ -437,13 +437,13 @@ export function isNonEvmChain(c: IChainInfo | string): boolean {
 	return !isEvmChain(c);
 }
 
-// biome-ignore lint: false positive
+// oxlint-disable-next-line no-unused-vars -- read by gen_go.ts via ts-morph
 interface blockExplorer {
 	url: string;
 	apiUrl: string;
 }
 
-// biome-ignore lint: false positive
+// oxlint-disable-next-line no-unused-vars -- read by gen_go.ts via ts-morph
 interface chainContract {
 	address: Address;
 	blockCreated: number;

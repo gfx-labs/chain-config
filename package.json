@@ -24,13 +24,16 @@
     "./package.json": "./package.json"
   },
   "scripts": {
-    "fmt": "biome check --write",
+    "fmt": "oxfmt",
     "clean": "rm -rf dist",
     "check:swap-targets": "tsx src/script/check-swap-targets.ts",
     "generate-barrels": "barrelsby --delete --directory './src/definitions/'",
     "build": "yarn generate-barrels && npx rollup -c && yarn tsx gen_go.ts",
     "prepack": "yarn build",
-    "semantic-release": "npx semantic-release"
+    "semantic-release": "npx semantic-release",
+    "lint": "oxlint --deny-warnings src",
+    "fmt:check": "oxfmt --check",
+    "check": "yarn lint && yarn fmt:check"
   },
   "publishConfig": {
     "access": "public"
@@ -41,7 +44,6 @@
     "dist/types/**/*.d.ts"
   ],
   "devDependencies": {
-    "@biomejs/biome": "2.1.3",
     "@rollup/plugin-commonjs": "^29.0.3",
     "@rollup/plugin-json": "^6.1.0",
     "@rollup/plugin-node-resolve": "^16.0.3",
@@ -59,7 +61,8 @@
     "barrelsby": "2.8.1",
     "conventional-changelog-conventionalcommits": "8.0.0",
     "ejs": "^3.1.10",
-    "prettier": "3.9.7",
+    "oxfmt": "^0.79.0",
+    "oxlint": "^1.94.0",
     "rollup": "^4.63.3",
     "rollup-plugin-cleandir": "^3.0.0",
     "rollup-plugin-copy": "^3.5.0",

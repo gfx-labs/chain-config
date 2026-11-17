@@ -63,7 +63,7 @@ async function mapWithConcurrency<T, R>(
 	concurrency: number,
 	fn: (item: T) => Promise<R>,
 ): Promise<R[]> {
-	const results = new Array<R>(items.length);
+	const results = Array.from<R>({ length: items.length });
 	let nextIndex = 0;
 
 	await Promise.all(

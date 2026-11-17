@@ -1,0 +1,20 @@
+{
+	"$schema": "./node_modules/oxfmt/configuration_schema.json",
+	"useTabs": true,
+	"singleQuote": false,
+	"printWidth": 80,
+	"sortImports": {},
+	"ignorePatterns": [
+		"dist/**",
+		"static/**",
+		"templates/**",
+		"integration/**",
+		"bump/**",
+		"yarn.lock",
+		"package.json",
+		"*.md",
+		"*.yml",
+		"*.yaml",
+		"renovate.json"
+	]
+}
