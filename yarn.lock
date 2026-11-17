@@ -289,7 +289,6 @@ __metadata:
     "@types/node": "npm:^25.9.7"
     "@types/rollup-plugin-peer-deps-external": "npm:^2.2.6"
     "@wasm-fmt/gofmt": "npm:0.7.3"
-    barrelsby: "npm:2.8.1"
     conventional-changelog-conventionalcommits: "npm:8.0.0"
     ejs: "npm:^3.1.10"
     oxfmt: "npm:^0.79.0"
@@ -1741,22 +1740,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/yargs-parser@npm:*":
-  version: 21.0.3
-  resolution: "@types/yargs-parser@npm:21.0.3"
-  checksum: 10c0/e71c3bd9d0b73ca82e10bee2064c384ab70f61034bbfb78e74f5206283fc16a6d85267b606b5c22cb2a3338373586786fed595b2009825d6a9115afba36560a0
-  languageName: node
-  linkType: hard
-
-"@types/yargs@npm:^17.0.10":
-  version: 17.0.35
-  resolution: "@types/yargs@npm:17.0.35"
-  dependencies:
-    "@types/yargs-parser": "npm:*"
-  checksum: 10c0/609557826a6b85e73ccf587923f6429850d6dc70e420b455bab4601b670bfadf684b09ae288bccedab042c48ba65f1666133cf375814204b544009f57d6eef63
-  languageName: node
-  linkType: hard
-
 "@wasm-fmt/gofmt@npm:0.7.3":
   version: 0.7.3
   resolution: "@wasm-fmt/gofmt@npm:0.7.3"
@@ -1994,19 +1977,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"barrelsby@npm:2.8.1":
-  version: 2.8.1
-  resolution: "barrelsby@npm:2.8.1"
-  dependencies:
-    "@types/yargs": "npm:^17.0.10"
-    signale: "npm:^1.4.0"
-    yargs: "npm:^17.4.1"
-  bin:
-    barrelsby: bin/cli.js
-  checksum: 10c0/a326d39d5e78e803dd0fb25c9a36bbf8d0a4dcc0a161063d9d71bb6840f55712bbf42cc75c0204bcdb70e7be85f59aabe2667df0998025fd361cfe18b46d1b7b
-  languageName: node
-  linkType: hard
-
 "before-after-hook@npm:^4.0.0":
   version: 4.0.0
   resolution: "before-after-hook@npm:4.0.0"
@@ -2219,17 +2189,6 @@ __metadata:
     strip-ansi: "npm:^6.0.0"
     wrap-ansi: "npm:^7.0.0"
   checksum: 10c0/6035f5daf7383470cef82b3d3db00bec70afb3423538c50394386ffbbab135e26c3689c41791f911fa71b62d13d3863c712fdd70f0fbdffd938a1e6fd09aac00
-  languageName: node
-  linkType: hard
-
-"cliui@npm:^8.0.1":
-  version: 8.0.1
-  resolution: "cliui@npm:8.0.1"
-  dependencies:
-    string-width: "npm:^4.2.0"
-    strip-ansi: "npm:^6.0.1"
-    wrap-ansi: "npm:^7.0.0"
-  checksum: 10c0/4bda0f09c340cbb6dfdc1ed508b3ca080f12992c18d68c6be4d9cf51756033d5266e61ec57529e610dacbf4da1c634423b0c1b11037709cc6b09045cbd815df5
   languageName: node
   linkType: hard
 
@@ -5488,7 +5447,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"signale@npm:^1.2.1, signale@npm:^1.4.0":
+"signale@npm:^1.2.1":
   version: 1.4.0
   resolution: "signale@npm:1.4.0"
   dependencies:
@@ -5643,7 +5602,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"string-width@npm:^4.1.0, string-width@npm:^4.2.0, string-width@npm:^4.2.3":
+"string-width@npm:^4.1.0, string-width@npm:^4.2.0":
   version: 4.2.3
   resolution: "string-width@npm:4.2.3"
   dependencies:
@@ -6371,13 +6330,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yargs-parser@npm:^21.1.1":
-  version: 21.1.1
-  resolution: "yargs-parser@npm:21.1.1"
-  checksum: 10c0/f84b5e48169479d2f402239c59f084cfd1c3acc197a05c59b98bab067452e6b3ea46d4dd8ba2985ba7b3d32a343d77df0debd6b343e5dae3da2aab2cdf5886b2
-  languageName: node
-  linkType: hard
-
 "yargs-parser@npm:^22.0.0":
   version: 22.0.0
   resolution: "yargs-parser@npm:22.0.0"
@@ -6397,21 +6349,6 @@ __metadata:
     y18n: "npm:^5.0.5"
     yargs-parser: "npm:^20.2.2"
   checksum: 10c0/1ca2152581ee7c9c9fb4174767ff7294b1c272d2d0a1f6eb13c39ce177fded85eb9c96711e00cd7913c0a9b88b6e763713ee11cae81b9b62fd97bdd0b03d5549
-  languageName: node
-  linkType: hard
-
-"yargs@npm:^17.4.1":
-  version: 17.7.3
-  resolution: "yargs@npm:17.7.3"
-  dependencies:
-    cliui: "npm:^8.0.1"
-    escalade: "npm:^3.1.1"
-    get-caller-file: "npm:^2.0.5"
-    require-directory: "npm:^2.1.1"
-    string-width: "npm:^4.2.3"
-    y18n: "npm:^5.0.5"
-    yargs-parser: "npm:^21.1.1"
-  checksum: 10c0/7a28572f7e785a57886e34fdbddb9b28756dec552e1453d5f6e7cdd00ad8721a4e8c4321d33683f5e61cacb36ad43258adbb48396b71ec4ed14abee0fc0d0c1f
   languageName: node
   linkType: hard
 
