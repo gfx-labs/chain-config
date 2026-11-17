@@ -56,7 +56,7 @@ export const sepolia = makeConfig({
 		stateView: "0xE1Dd9c3fA50EDB962E442f60DfBc432e24537E4C",
 	},
 	token: {
-		usdcAddress: "0x699CFe8997D647d03325Ef4BFd039d5bb0984A17",
+		usdcAddress: "0x699cFE8997d647D03325Ef4bfD039d5bB0984A17",
 		wethAddress: "0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14",
 	},
 	oku: {
@@ -66,13 +66,13 @@ export const sepolia = makeConfig({
 		},
 	},
 	defaultPool: zeroAddress,
-	defaultToken0: "0x699CFe8997D647d03325Ef4BFd039d5bb0984A17",
+	defaultToken0: "0x699cFE8997d647D03325Ef4bfD039d5bB0984A17",
 	defaultToken1: "0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14",
 	tokenList: [
-		{ symbol: "USDC", address: "0x699CFe8997D647d03325Ef4BFd039d5bb0984A17" },
+		{ symbol: "USDC", address: "0x699cFE8997d647D03325Ef4bfD039d5bB0984A17" },
 		{ symbol: "WETH", address: "0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14" },
 	],
-	stables: ["0x699CFe8997D647d03325Ef4BFd039d5bb0984A17"],
+	stables: ["0x699cFE8997d647D03325Ef4bfD039d5bB0984A17"],
 	watchlist: [],
 	v4Watchlist: [],
 	internalName: "sepolia",

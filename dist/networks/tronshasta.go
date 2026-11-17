@@ -50,12 +50,12 @@ var Tronshasta Network = Network{
 	},
 	Uniswap: UniswapMetadata{
 		DeployBlock:                52878027,
-		PoolFactory:                common.HexToAddress("0x3CF78A14F90203919B8B4D690E6540745ED8074A"),
+		PoolFactory:                common.HexToAddress("0x3cF78A14f90203919B8b4D690e6540745ed8074A"),
 		Permit2:                    common.HexToAddress("0x0000000000000000000000000000000000000000"),
-		Multicall2:                 common.HexToAddress("0x8C289C0A8ADA24FC0F27FCBB1200370A52A6675E"),
-		TickLens:                   common.HexToAddress("0xC857346CD83BE79B78F1B10D5FCF158EDC844796"),
-		NonfungiblePositionManager: common.HexToAddress("0x358B41818D60CBF40C11FB728C8BC865726F423D"),
-		PositionsNFT:               common.HexToAddress("0x358B41818D60CBF40C11FB728C8BC865726F423D"),
+		Multicall2:                 common.HexToAddress("0x8c289c0a8aDa24fc0f27fCBB1200370A52a6675e"),
+		TickLens:                   common.HexToAddress("0xc857346cD83Be79B78F1b10d5fcf158edc844796"),
+		NonfungiblePositionManager: common.HexToAddress("0x358B41818d60Cbf40c11fb728c8Bc865726F423D"),
+		PositionsNFT:               common.HexToAddress("0x358B41818d60Cbf40c11fb728c8Bc865726F423D"),
 		PositionsNFTDeployBlock:    52878030,
 		UniversalRouter:            common.HexToAddress("0x0000000000000000000000000000000000000000"),
 		WrappedNativeAddress:       common.HexToAddress("0x0000000000000000000000000000000000000000"),
@@ -75,11 +75,11 @@ var Tronshasta Network = Network{
 		},
 		"nftManager": {
 			BlockCreated: 0,
-			Address:      common.HexToAddress("0x358B41818D60CBF40C11FB728C8BC865726F423D"),
+			Address:      common.HexToAddress("0x358B41818d60Cbf40c11fb728c8Bc865726F423D"),
 		},
 		"multicall2": {
 			BlockCreated: 0,
-			Address:      common.HexToAddress("0x8C289C0A8ADA24FC0F27FCBB1200370A52A6675E"),
+			Address:      common.HexToAddress("0x8c289c0a8aDa24fc0f27fCBB1200370A52a6675e"),
 		},
 		"multicall3": {
 			BlockCreated: 0,

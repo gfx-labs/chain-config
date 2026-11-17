@@ -90,7 +90,7 @@ export const rootstock = makeConfig({
 		deployBlock: 5829210,
 		poolFactory: "0xaF37EC98A00FD63689CF3060BF3B6784E00caD82",
 		permit2: "0xFcf5986450E4A014fFE7ad4Ae24921B589D039b5",
-		multicall2: "0x996a9858cdFa45aD68E47C9a30A7201E29c6A386",
+		multicall2: "0x996a9858cDfa45Ad68E47c9A30a7201E29c6a386",
 		tickLens: "0x55B9dF5bF68ADe972191a91980459f48ecA16afC",
 		nonfungiblePositionManager: "0x9d9386c042F194B460Ec424a1e57ACDE25f5C4b1",
 		positionsNFT: "0x9d9386c042F194B460Ec424a1e57ACDE25f5C4b1",
@@ -104,7 +104,7 @@ export const rootstock = makeConfig({
 		nativeCurrencyName: "RBTC",
 	},
 	token: {
-		usdcAddress: "0x3A15461d8AE0f0Fb5fA2629e9dA7D66A794a6E37",
+		usdcAddress: "0x3A15461d8aE0F0Fb5Fa2629e9DA7D66A794a6e37",
 	},
 	oku: {
 		router: "0x0906896E8564c61F40778E2B7A46E1269Aaa681e",
@@ -158,7 +158,7 @@ export const rootstock = makeConfig({
 			address: "0x542fDA317318eBF1d3DEAf76E0b632741A7e677d",
 		},
 		Multicall2: {
-			address: "0x996a9858cdFa45aD68E47C9a30A7201E29c6A386",
+			address: "0x996a9858cDfa45Ad68E47c9A30a7201E29c6a386",
 		},
 		Multicall3: {
 			address: "0xca11bde05977b3631167028862be2a173976ca11",

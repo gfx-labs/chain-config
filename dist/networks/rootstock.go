@@ -62,7 +62,7 @@ var Rootstock Network = Network{
 		DeployBlock:                5829210,
 		PoolFactory:                common.HexToAddress("0xaF37EC98A00FD63689CF3060BF3B6784E00caD82"),
 		Permit2:                    common.HexToAddress("0xFcf5986450E4A014fFE7ad4Ae24921B589D039b5"),
-		Multicall2:                 common.HexToAddress("0x996a9858cdFa45aD68E47C9a30A7201E29c6A386"),
+		Multicall2:                 common.HexToAddress("0x996a9858cDfa45Ad68E47c9A30a7201E29c6a386"),
 		TickLens:                   common.HexToAddress("0x55B9dF5bF68ADe972191a91980459f48ecA16afC"),
 		NonfungiblePositionManager: common.HexToAddress("0x9d9386c042F194B460Ec424a1e57ACDE25f5C4b1"),
 		PositionsNFT:               common.HexToAddress("0x9d9386c042F194B460Ec424a1e57ACDE25f5C4b1"),
@@ -82,7 +82,7 @@ var Rootstock Network = Network{
 		Uniswap:      []common.Address{common.HexToAddress("0x0B14ff67f0014046b4b99057Aec4509640b3947A"), common.HexToAddress("0x244f68e77357f86a8522323eBF80b5FC2F814d3E")},
 	},
 	Token: TokenMetadata{
-		UsdcAddress: common.HexToAddress("0x3A15461d8AE0f0Fb5fA2629e9dA7D66A794a6E37"),
+		UsdcAddress: common.HexToAddress("0x3A15461d8aE0F0Fb5Fa2629e9DA7D66A794a6e37"),
 	},
 	Contracts: map[string]ChainContract{
 		"multicall3": {
@@ -103,7 +103,7 @@ var Rootstock Network = Network{
 		},
 		"Multicall2": {
 			BlockCreated: 0,
-			Address:      common.HexToAddress("0x996a9858cdFa45aD68E47C9a30A7201E29c6A386"),
+			Address:      common.HexToAddress("0x996a9858cDfa45Ad68E47c9A30a7201E29c6a386"),
 		},
 		"Multicall3": {
 			BlockCreated: 0,

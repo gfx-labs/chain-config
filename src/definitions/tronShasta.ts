@@ -27,12 +27,12 @@ export const tronShasta = makeConfig({
 		"0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
 	uniswap: {
 		deployBlock: 52878027,
-		poolFactory: "0x3CF78A14F90203919B8B4D690E6540745ED8074A",
+		poolFactory: "0x3cF78A14f90203919B8b4D690e6540745ed8074A",
 		permit2: zeroAddress,
-		multicall2: "0x8C289C0A8ADA24FC0F27FCBB1200370A52A6675E",
-		tickLens: "0xC857346CD83BE79B78F1B10D5FCF158EDC844796",
-		nonfungiblePositionManager: "0x358B41818D60CBF40C11FB728C8BC865726F423D",
-		positionsNFT: "0x358B41818D60CBF40C11FB728C8BC865726F423D",
+		multicall2: "0x8c289c0a8aDa24fc0f27fCBB1200370A52a6675e",
+		tickLens: "0xc857346cD83Be79B78F1b10d5fcf158edc844796",
+		nonfungiblePositionManager: "0x358B41818d60Cbf40c11fb728c8Bc865726F423D",
+		positionsNFT: "0x358B41818d60Cbf40c11fb728c8Bc865726F423D",
 		positionsNFTDeployBlock: 52878030,
 		universalRouter: zeroAddress,
 
@@ -63,10 +63,10 @@ export const tronShasta = makeConfig({
 			address: zeroAddress,
 		},
 		nftManager: {
-			address: "0x358B41818D60CBF40C11FB728C8BC865726F423D",
+			address: "0x358B41818d60Cbf40c11fb728c8Bc865726F423D",
 		},
 		multicall2: {
-			address: "0x8C289C0A8ADA24FC0F27FCBB1200370A52A6675E",
+			address: "0x8c289c0a8aDa24fc0f27fCBB1200370A52a6675e",
 		},
 		multicall3: {
 			address: zeroAddress,
