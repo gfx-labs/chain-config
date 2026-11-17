@@ -4,7 +4,7 @@ import { format } from "@wasm-fmt/gofmt";
 import ejs from "ejs";
 import * as morph from "ts-morph";
 
-import { ALL_NETWORKS, IChainInfo } from ".";
+import { ALL_NETWORKS, type IChainInfo } from "./src";
 
 const formatFunc = format;
 
