@@ -142,18 +142,26 @@ const displayProp = (x: morph.PropertySignature) => {
 };
 
 const formatValue = (x: any, hint: string) => {
-	if (hint === "a" || hint === "addr" || hint === "address") {
-		return toAddr(`${x}`);
-	} else if (hint === "h" || hint === "hash") {
-		return toHash(`${x}`);
-	} else if (hint === "s" || hint === "str" || hint === "string") {
-		return `"${x}"`;
-	} else if (hint === "n" || hint === "num") {
-		return `${x}`;
-	} else if (x === undefined) {
-		return `undefined`;
-	} else {
-		return `${x}`;
+	switch (hint) {
+		case "a":
+		case "addr":
+		case "address":
+			return toAddr(`${x}`);
+		case "h":
+		case "hash":
+			return toHash(`${x}`);
+		case "s":
+		case "str":
+		case "string":
+			return `"${x}"`;
+		case "n":
+		case "num":
+			return `${x}`;
+		default:
+			if (x === undefined) {
+				return `undefined`;
+			}
+			return `${x}`;
 	}
 };
 
