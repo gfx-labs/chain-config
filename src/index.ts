@@ -46,59 +46,38 @@ import {
 	type MarketRouterName,
 } from "./util/routers";
 
-export const MAINNET_CHAINS = [
-	defs.arbitrum,
-	defs.base,
-	defs.boba,
-	defs.blast,
-	defs.bsc,
-	defs.filecoin,
-	defs.mainnet,
-	defs.moonbeam,
-	defs.optimism,
-	defs.polygon,
-	defs.rootstock,
-	defs.scroll,
-	defs.polygonZkEvm,
-	defs.zkSync,
-	defs.manta,
-	defs.linea,
-	defs.taiko,
-	defs.mantle,
-	defs.sei,
-	defs.lisk,
-	defs.bob,
-	defs.gnosis,
-	defs.metal,
-	defs.corn,
-	defs.sonic,
-	defs.celo,
-	defs.hemi,
-	defs.telos,
-	defs.saga,
-	defs.goat,
-	defs.redbelly,
-	defs.lightlink,
-	defs.worldchain,
-	defs.xdc,
-	defs.tronShasta,
-	defs.lens,
-	defs.nibiru,
-	defs.etherlink,
-	defs.unichain,
-	defs.matchain,
-	defs.plasma,
-	defs.zerog,
-	defs.avalanche,
-	defs.ronin,
-	defs.monad,
-	defs.hyperevm,
-	defs.gensyn,
-	defs.pharos,
-	defs.robinhood,
-	defs.elysium,
-	defs.sepolia,
-] as const;
+type DefinedChain = (typeof defs)[keyof typeof defs];
+
+/**
+ * Definitions that should not ship in any chain list. Add the export name
+ * here with a reason. Everything else in src/definitions is picked up
+ * automatically.
+ */
+const EXCLUDED_DEFINITIONS: ReadonlySet<keyof typeof defs> = new Set([]);
+
+const bySortIndex = (a: IChainInfo, b: IChainInfo) =>
+	a.sortIndex - b.sortIndex || a.internalName.localeCompare(b.internalName);
+
+const DEFINED_CHAINS: readonly DefinedChain[] = (
+	Object.entries(defs) as [keyof typeof defs, DefinedChain][]
+)
+	.filter(([key]) => !EXCLUDED_DEFINITIONS.has(key))
+	.map(([, chain]) => chain)
+	.sort(bySortIndex);
+
+/**
+ * Every EVM mainnet in src/definitions, sorted by `sortIndex`. Built
+ * automatically: adding a definition (and exporting it from
+ * src/definitions/index.ts) is enough to include it.
+ */
+export const MAINNET_CHAINS: readonly DefinedChain[] = DEFINED_CHAINS.filter(
+	(c) => !c.testnet,
+);
+
+/** EVM testnets in src/definitions (e.g. Sepolia), sorted by `sortIndex`. */
+export const TESTNET_CHAINS: readonly DefinedChain[] = DEFINED_CHAINS.filter(
+	(c) => !!c.testnet,
+);
 
 /**
  * Non-EVM chains (e.g. Bitcoin). These share the {@link IChainInfo} shape as
@@ -118,7 +97,7 @@ export const NON_EVM_CHAINS = [
  * (e.g. `"arbitrum" | "base" | ... | "bitcoin"`).
  */
 export type InternalName =
-	| (typeof MAINNET_CHAINS)[number]["internalName"]
+	| DefinedChain["internalName"]
 	| (typeof NON_EVM_CHAINS)[number]["internalName"];
 
 /**
@@ -127,6 +106,7 @@ export type InternalName =
  */
 export const ALL_NETWORKS: readonly IChainInfo[] = [
 	...MAINNET_CHAINS,
+	...TESTNET_CHAINS,
 	...NON_EVM_CHAINS,
 ] as const;
 

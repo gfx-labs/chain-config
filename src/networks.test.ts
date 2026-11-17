@@ -10,6 +10,7 @@ import {
 	type IChainInfo,
 	type InternalName,
 	MAINNET_CHAINS,
+	TESTNET_CHAINS,
 	NON_EVM_CHAIN_ID,
 	networkByAny,
 	networkByCAIP2,
@@ -18,13 +19,6 @@ import {
 	parseCAIP2,
 	toCAIP2,
 } from "./index";
-
-/**
- * Chains defined in src/definitions that are intentionally not part of
- * MAINNET_CHAINS (testnets or disabled chains). Add an entry here, with a
- * reason, when a definition should not ship in MAINNET_CHAINS.
- */
-const EXCLUDED_DEFINITIONS: ReadonlySet<string> = new Set<string>([]);
 
 const dupes = <T>(xs: readonly T[]): T[] =>
 	xs.filter((x, i) => xs.indexOf(x) !== i);
@@ -57,13 +51,20 @@ describe("network invariants", () => {
 		expect(dupes(live.map((c) => c.sortIndex))).toEqual([]);
 	});
 
-	it("includes every definition in MAINNET_CHAINS or the excluded list", () => {
-		const included = new Set<unknown>(MAINNET_CHAINS);
-		const orphans = Object.entries(defs)
-			.filter(([, v]) => typeof v === "object" && v && "internalName" in v)
-			.filter(([k, v]) => !included.has(v) && !EXCLUDED_DEFINITIONS.has(k))
+	it("ships every definition in exactly one of MAINNET_CHAINS / TESTNET_CHAINS", () => {
+		const mainnet = new Set<unknown>(MAINNET_CHAINS);
+		const testnet = new Set<unknown>(TESTNET_CHAINS);
+		const bad = Object.entries(defs)
+			.filter(([, v]) => mainnet.has(v) === testnet.has(v))
 			.map(([k]) => k);
-		expect(orphans).toEqual([]);
+		expect(bad).toEqual([]);
+		expect(MAINNET_CHAINS.some((c) => c.testnet)).toBe(false);
+		expect(TESTNET_CHAINS.every((c) => c.testnet)).toBe(true);
+	});
+
+	it("sorts MAINNET_CHAINS by sortIndex", () => {
+		const idx = MAINNET_CHAINS.map((c) => c.sortIndex);
+		expect(idx).toEqual([...idx].sort((x, y) => x - y));
 	});
 
 	it("exports every file in src/definitions from the barrel", () => {
