@@ -37,16 +37,17 @@
     "fmt:check": "oxfmt --check",
     "check": "yarn lint && yarn fmt:check",
     "typecheck": "tsc --noEmit",
-    "test": "vitest run"
+    "test": "vitest run",
+    "test:pack": "node scripts/test-pack.mjs"
   },
   "publishConfig": {
     "access": "public"
   },
   "files": [
-    "dist/index.js",
-    "dist/index.mjs",
-    "dist/index.d.ts",
-    "dist/index.d.mts"
+    "dist/*.js",
+    "dist/*.mjs",
+    "dist/*.d.ts",
+    "dist/*.d.mts"
   ],
   "devDependencies": {
     "@semantic-release/commit-analyzer": "^13.0.1",

@@ -33,6 +33,9 @@ jobs:
 
       - run: yarn build
 
+      - name: Verify packed tarball loads (ESM + CJS)
+        run: yarn test:pack
+
       # The generated Go in dist/networks is published as a Go module via the
       # `dist/networks/v*` tag, so it has to actually compile. `yarn build` only
       # runs it through gofmt, which accepts code that does not type check.

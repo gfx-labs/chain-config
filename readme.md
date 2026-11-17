@@ -46,9 +46,7 @@ from `src/definitions/` just like any `viem/chains` import.
    });
    ```
 
-2. Re-export it from `src/internal-chains/index.ts` (this barrel is
-   maintained by hand; `barrelsby` only regenerates
-   `src/definitions/`).
+2. Re-export it from `src/internal-chains/index.ts`.
 
 3. Create `src/definitions/<chain>.ts` and import from
    `../internal-chains` instead of `viem/chains`:
@@ -60,8 +58,10 @@ from `src/definitions/` just like any `viem/chains` import.
    export const mychain = makeConfig({ ...chain /* oku fields */ });
    ```
 
-4. Register it in the `MAINNET_CHAINS` array in `src/index.ts`.
+4. Export it from `src/definitions/index.ts`. It is added to
+   `MAINNET_CHAINS` (or `TESTNET_CHAINS` if `testnet: true`) automatically,
+   ordered by `sortIndex`. Run `yarn test` to check ids, names and addresses.
 
 When viem upstream merges the chain, swap the import in step 3 back to
 `viem/chains` and delete the internal definition. No other consumer
-changes are required — `makeInternalChain` returns a full viem `Chain`.
+changes are required. `makeInternalChain` returns a full viem `Chain`.
