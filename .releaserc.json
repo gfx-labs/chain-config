@@ -1,21 +1,30 @@
 {
-  "branches": ["master"],
-  "tagFormat": "dist/networks/v${version}",
-  "plugins": [
-    ["@semantic-release/commit-analyzer",{"preset": "conventionalcommits"}],
-    ["@semantic-release/release-notes-generator",{"preset": "conventionalcommits"} ],
-    ["@semantic-release/github"],
-    ["@semantic-release/npm", { "npmPublish": false }],
-    ["@semantic-release/exec", { "publishCmd": "npm stage publish --provenance --access public --tag ${nextRelease.channel || 'latest'}" }],
-    [
-      "@semantic-release/git", {
-        "assets": [
-          "package.json",
-          "dist/networks/*.{go,mod,sum}",
-          "dist/networks/LICENSE"
-        ],
-        "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
-      }
-    ]
-  ]
+	"branches": ["master"],
+	"tagFormat": "dist/networks/v${version}",
+	"plugins": [
+		["@semantic-release/commit-analyzer", { "preset": "conventionalcommits" }],
+		[
+			"@semantic-release/release-notes-generator",
+			{ "preset": "conventionalcommits" }
+		],
+		["@semantic-release/github"],
+		["@semantic-release/npm", { "npmPublish": false }],
+		[
+			"@semantic-release/exec",
+			{
+				"publishCmd": "npm stage publish --provenance --access public --tag ${nextRelease.channel || 'latest'}"
+			}
+		],
+		[
+			"@semantic-release/git",
+			{
+				"assets": [
+					"package.json",
+					"dist/networks/*.{go,mod,sum}",
+					"dist/networks/LICENSE"
+				],
+				"message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+			}
+		]
+	]
 }

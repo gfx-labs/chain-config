@@ -1,4 +1,5 @@
 import { goat as chain } from "viem/chains";
+
 import { makeConfig } from "../util";
 
 export const goat = makeConfig({

@@ -1,4 +1,5 @@
 import { hyperEvm as chain } from "viem/chains";
+
 import { makeConfig } from "../util";
 import { zeroAddress } from "../util/constants";
 

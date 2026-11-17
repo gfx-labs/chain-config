@@ -1,4 +1,5 @@
 import { zksync as chain } from "viem/chains";
+
 import { makeConfig } from "../util";
 
 export const zkSync = makeConfig({

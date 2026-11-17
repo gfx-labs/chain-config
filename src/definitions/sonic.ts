@@ -1,4 +1,5 @@
 import { sonic as chain } from "viem/chains";
+
 import { makeConfig } from "../util";
 
 export const sonic = makeConfig({

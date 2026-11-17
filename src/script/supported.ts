@@ -1,4 +1,5 @@
 import { createPublicClient, http } from "viem";
+
 import * as allChains from "../definitions/";
 
 const chains = Object.values(allChains);

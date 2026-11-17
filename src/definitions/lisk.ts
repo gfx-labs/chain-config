@@ -1,4 +1,5 @@
 import { lisk as chain } from "viem/chains";
+
 import { makeConfig } from "../util";
 
 export const lisk = makeConfig({

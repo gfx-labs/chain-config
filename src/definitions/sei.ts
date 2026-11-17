@@ -1,4 +1,5 @@
 import { sei as chain } from "viem/chains";
+
 import { makeConfig } from "../util";
 
 export const sei = makeConfig({

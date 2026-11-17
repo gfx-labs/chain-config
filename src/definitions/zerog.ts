@@ -1,4 +1,5 @@
 import { zeroGMainnet as chain } from "viem/chains";
+
 import { makeConfig } from "../util";
 
 export const zerog = makeConfig({

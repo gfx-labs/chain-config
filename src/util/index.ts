@@ -1,4 +1,5 @@
 import type { Chain, ChainFormatters } from "viem";
+
 import type { IChainInfo } from "../spec";
 
 /**
@@ -7,8 +8,9 @@ import type { IChainInfo } from "../spec";
  * chain config types would then reference viem internals (TS2742), so we
  * re-declare it as a locally exported interface.
  */
-export interface ChainTransactionReplacement
-	extends NonNullable<Chain["transactionReplacement"]> {}
+export interface ChainTransactionReplacement extends NonNullable<
+	Chain["transactionReplacement"]
+> {}
 
 type ChainConfigOutput<T> = {
 	[K in keyof T]: K extends "transactionReplacement"

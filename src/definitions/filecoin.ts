@@ -1,4 +1,5 @@
 import { filecoin as chain } from "viem/chains";
+
 import { makeConfig } from "../util";
 
 export const filecoin = makeConfig({

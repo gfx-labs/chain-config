@@ -1,4 +1,5 @@
 import { lightlinkPhoenix as chain } from "viem/chains";
+
 import { makeConfig } from "../util";
 
 export const lightlink = makeConfig({

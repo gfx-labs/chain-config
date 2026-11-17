@@ -1,4 +1,5 @@
 import { scroll as chain } from "viem/chains";
+
 import { makeConfig } from "../util";
 
 export const scroll = makeConfig({

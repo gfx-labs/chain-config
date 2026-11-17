@@ -28,7 +28,8 @@ export const elysium = makeConfig({
 	// Left empty until aggregator deployments are officially confirmed.
 	marketRouters: {},
 	oracles: {},
-	initCodeHash: "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
+	initCodeHash:
+		"0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
 	uniswap: {
 		permit2: "0x000000000022D473030F116dDEE9F6B43aC78BA3",
 	},
