@@ -29,6 +29,8 @@ jobs:
 
       - run: yarn typecheck
 
+      - run: yarn test
+
       - run: yarn build
 
       # The generated Go in dist/networks is published as a Go module via the
@@ -46,8 +48,9 @@ jobs:
       - name: Check generated output is up to date
         run: |
           if ! git diff --quiet -- dist/networks; then
-            echo "::warning::dist/networks is out of date with src/; the release job regenerates it, but committing it keeps diffs reviewable."
-            git diff --stat -- dist/networks
+            echo "::error::dist/networks is out of date with src/. Run 'yarn build' and commit dist/networks."
+            git diff -- dist/networks
+            exit 1
           fi
 
       - uses: actions/upload-artifact@v4
