@@ -141,11 +141,11 @@ export interface Markets {
 	odos?: any;
 	okx?: any;
 	oneinch?: {
-		spender: string;
+		spender: Address;
 	};
 	openocean?: string;
 	paraswap?: {
-		routerContract: string;
+		routerContract: Address;
 	};
 	propellerswap?: string;
 	threeroute?: boolean;
@@ -197,9 +197,9 @@ export interface Bridges {
 	rhinofi?: string;
 	chainlink?: {
 		atlasNetworkName: string;
-		routerAddress: string;
+		routerAddress: Address;
 		chainSelector: bigint;
-		tokenAdminRegistry?: string;
+		tokenAdminRegistry?: Address;
 	};
 	squidrouter?: any;
 	wanbridge?: {
@@ -212,7 +212,7 @@ export interface Bridges {
 			name: string;
 			type?: string; // OFT or POOL, if missing, assume is POOL
 			id: number; // used to determine possible routes. pool id
-			address: string; // address of the stargate contract
+			address: Address; // address of the stargate contract
 		}[];
 	};
 	layerzero?: {
@@ -220,8 +220,8 @@ export interface Bridges {
 		tokens: {
 			id: number; // for internal use
 			symbol?: string;
-			OFTAddress: string; // addr of oft contract for that token. sometimes these 2 are the same
-			address?: string; // addr of underlying token
+			OFTAddress: Address; // addr of oft contract for that token. sometimes these 2 are the same
+			address?: Address; // addr of underlying token
 			project?: string;
 		}[];
 	};
