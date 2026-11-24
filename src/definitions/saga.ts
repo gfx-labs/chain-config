@@ -10,7 +10,7 @@ export const saga = makeConfig({
 	transactionType: "legacy",
 	sortIndex: 14,
 	logoUrl: "https://cms.oku.trade/cdn/public/chains/saga-logo.png",
-	deprecated: false,
+	deprecated: true,
 
 	estimatedSwapGas: 300_000,
 	estimatedBridgeGas: 200_000,
